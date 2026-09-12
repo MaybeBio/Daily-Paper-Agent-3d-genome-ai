@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hi-cGAN: Prediction of Hi-C interaction matrices with conditional generative adversarial networks · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-high">9</span>
+    <div>
+      <h1>Hi-cGAN: Prediction of Hi-C interaction matrices with conditional generative adversarial networks</h1>
+      <div class="meta">Krauth R; Kumar A; Wolff J</div>
+      <div class="meta muted">
+        
+        <span class="journal">bioRxiv</span> <span class="preprint-badge">预印本</span>
+        · 2026-09-03
+         · 仅摘要
+         · <a href="https://www.biorxiv.org/content/10.64898/2026.08.30.748103">原文</a>
+      </div>
+      <p class="one-liner">该文提出基于条件生成对抗网络（cGAN）的Hi-cGAN模型，从染色质因子占据数据预测Hi-C互作矩阵，直接针对三维基因组空间组织建模，方法新颖且与AI深度学习高度相关。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">&lt;h4&gt;Background&lt;/h4&gt; The three-dimensional organization of the genome is a fundamental aspect of its function and regulation. High-throughput chromosome conformation capture techniques, such as Hi-C, have revolutionized our understanding of spatial genome organization. However, 3C-based methods are resource-intensive and technically demanding. This has driven the development of computational approaches for predicting Hi-C interaction matrices. Hi-cGAN, a novel approach based on conditional generative adversarial networks, offers a computational alternative to extensive wet-lab work by predicting Hi-C interaction matrices. This computational approach contributes to a broader exploration and understanding of genome architecture. &lt;h4&gt;Findings&lt;/h4&gt; The network pairs a convolutional generator with a convolutional discriminator, evaluated across bin sizes, inputs and cell types. It predicts a whole genome as a cool file at bin sizes from 2 to 25 kb, where Akita, C.Origami and Epiphany emit fixed windows of 1 Mb, 2 Mb and 990 kb. With the input chosen on a validation chromosome, agreement approaches Epiphany’s and stays below the sequence-based C.Origami and Akita: over Akita’s 411 held-out windows the mean correlation is 0.238 against 0.506. Boundary and loop calls agree less closely, placing the maps at the domain scale. &lt;h4&gt;Conclusions&lt;/h4&gt; Chromatin factor occupancy determines a substantial part of contact structure, and two tracks capture most of it. The most informative track depends on the resolution: CTCF and the cohesin subunits at 5 to 10 kb, active histone marks at 25 kb. Transfer to an unseen cell type costs about 0.12 SCC, and which method leads depends on the measure. &lt;h4&gt;Key points&lt;/h4&gt; Hi-cGAN predicts Hi-C interaction matrices with a conditional generative adversarial network from chromatin factor occupancy alone, without DNA sequence. The same architecture learns raw contact counts, genomic-distance z-scores and observed/ expected normalized data. On held-out data Hi-cGAN reaches matrix-level agreement slightly below Epiphany’s, when the input configuration is chosen on a validation chromosome rather than the chromosomes scored, and well below C.Origami’s and Akita’s, which read DNA sequence. Which method is better depends on the measure used, and boundary and loop recovery does not follow the matrix-level scores. A ridge regression on the same single track reaches 0.691 against Hi-cGAN’s 0.715 on HiCRep, while its predicted matrix shows stripes but no domains, so that measure alone does not establish what the network contributes. Bin sizes of 2 to 25 kb are evaluated and freely configurable, whole chromosomes are predicted, and the result is written as a cool file, whereas the sequence-based methods emit a single fixed window.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">&lt;h4&gt;背景&lt;/h4&gt; 基因组的三维组织是其功能和调控的基本方面。高通量染色体构象捕获技术，如Hi-C，彻底改变了我们对空间基因组组织的理解。然而，基于3C的方法资源密集且技术要求高。这推动了用于预测Hi-C相互作用矩阵的计算方法的发展。Hi-cGAN，一种基于条件生成对抗网络的新方法，通过预测Hi-C相互作用矩阵，为广泛的湿实验工作提供了一种计算替代方案。这种计算方法有助于更广泛地探索和理解基因组结构。&lt;h4&gt;发现&lt;/h4&gt; 该网络将卷积生成器与卷积判别器配对，并在不同bin大小、输入和细胞类型下进行评估。它以2至25 kb的bin大小预测整个基因组为cool文件，而Akita、C.Origami和Epiphany则输出1 Mb、2 Mb和990 kb的固定窗口。当输入在验证染色体上选择时，一致性接近Epiphany的水平，但低于基于序列的C.Origami和Akita：在Akita的411个保留窗口上，平均相关性为0.238，而后者为0.506。边界和环调用的一致性较低，将图谱置于域尺度。&lt;h4&gt;结论&lt;/h4&gt; 染色质因子占据决定了接触结构的相当大一部分，而两个轨道捕获了其中的大部分。最具信息量的轨道取决于分辨率：在5至10 kb时是CTCF和cohesin亚基，在25 kb时是活性组蛋白标记。转移到未见过的细胞类型大约损失0.12 SCC，而哪种方法领先取决于度量标准。&lt;h4&gt;关键点&lt;/h4&gt; Hi-cGAN仅利用染色质因子占据，通过条件生成对抗网络预测Hi-C相互作用矩阵，而不依赖DNA序列。相同的架构学习原始接触计数、基因组距离z分数和观察/期望归一化数据。在保留数据上，当输入配置在验证染色体而非评分染色体上选择时，Hi-cGAN达到的矩阵级一致性略低于Epiphany，且远低于读取DNA序列的C.Origami和Akita。哪种方法更好取决于所用度量，而边界和环恢复并不遵循矩阵级分数。在相同单轨道上的岭回归在HiCRep上达到0.691，而Hi-cGAN为0.715，但其预测矩阵显示条纹而无域，因此仅凭该度量无法确定网络的贡献。评估了2至25 kb的bin大小且可自由配置，预测整个染色体，结果写入cool文件，而基于序列的方法输出单一固定窗口。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>: Hi-cGAN: Prediction of Hi-C interaction matrices with conditional generative adversarial networks</li>
+<li><strong>作者与单位</strong>: Krauth R; Kumar A; Wolff J（单位未提供）</li>
+<li><strong>期刊/预印本平台</strong>: bioRxiv</li>
+<li><strong>年份</strong>: 2026</li>
+<li><strong>论文类型</strong>: 预印本（方法论文）</li>
+<li><strong>领域</strong>: 三维基因组 / 染色质组织 × AI 方法</li>
+<li><strong>关键词</strong>: Hi-C, conditional GAN, chromatin factor occupancy, contact matrix prediction, cool file</li>
+<li><strong>DOI/arXiv 号</strong>: 10.64898/2026.08.30.748103</li>
+<li><strong>代码</strong>: 未提供</li>
+<li><strong>数据</strong>: 未提供</li>
+<li><strong>阅读日期</strong>: 2026-09-03</li>
+<li><strong>该文在「三维基因组/染色质组织 × AI 方法/物理模拟」方向中的位置</strong>: 本文提出一种基于条件生成对抗网络（cGAN）的Hi-C接触矩阵预测方法，输入仅为染色质因子占据（chromatin factor occupancy），不依赖DNA序列。该方法与序列依赖的深度学习方法（如Akita、C.Origami、Epiphany）形成对比，探索了染色质因子在决定接触结构中的独立作用，属于AI驱动的染色质结构预测方法。</li>
+</ul>
+<h2>02 一句话总结</h2>
+<p>本文提出Hi-cGAN，一种条件生成对抗网络，仅从染色质因子占据数据预测Hi-C接触矩阵，在矩阵级一致性上接近Epiphany但低于Akita和C.Origami，且边界和环恢复能力较弱。</p>
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>: 能否仅从染色质因子占据（而非DNA序列）预测Hi-C接触矩阵？</li>
+<li><strong>为什么重要</strong>: Hi-C实验资源密集且技术要求高，计算预测可降低成本并加速基因组结构研究。理解染色质因子在接触结构中的独立作用有助于揭示三维基因组组织的机制。</li>
+<li><strong>现有方法为何不足</strong>: 现有深度学习方法（如Akita、C.Origami、Epiphany）主要依赖DNA序列作为输入，忽略了染色质因子占据可能直接决定接触结构的部分。此外，这些方法输出固定窗口（如1 Mb、2 Mb），缺乏灵活性。</li>
+<li><strong>精确研究问题</strong>: Can a conditional generative adversarial network, using only chromatin factor occupancy as input, predict Hi-C interaction matrices at whole-chromosome scale with competitive accuracy compared to sequence-based methods?</li>
+</ul>
+<h2>04 背景与发展脉络</h2>
+<ul>
+<li><strong>脉络来源</strong>: 仅本文框架</li>
+<li><strong>阶段1</strong>: 实验方法（Hi-C等3C技术）—— 直接测量染色质接触，但资源密集、技术要求高。</li>
+<li><strong>阶段2</strong>: 序列依赖的深度学习方法（Akita、C.Origami、Epiphany）—— 从DNA序列预测接触矩阵，输出固定窗口，精度较高。</li>
+<li><strong>阶段3</strong>: 本文方法（Hi-cGAN）—— 从染色质因子占据预测接触矩阵，输出可配置的cool文件（2-25 kb bin size），全染色体预测，探索因子占据的独立预测能力。</li>
+<li><strong>本文主张的位置</strong>: 在序列依赖方法之外，提供一种仅依赖染色质因子的替代路径，揭示因子占据在接触结构中的主导作用，但整体精度低于序列方法。</li>
+</ul>
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>序列依赖方法输出窗口固定</td>
+<td>Akita输出1 Mb、C.Origami输出2 Mb、Epiphany输出990 kb</td>
+<td>设计限制，无法灵活调整分辨率或覆盖全染色体</td>
+<td>Findings节：Akita, C.Origami and Epiphany emit fixed windows of 1 Mb, 2 Mb and 990 kb</td>
+</tr>
+<tr>
+<td>矩阵级指标不能反映结构特征</td>
+<td>Hi-cGAN在HiCRep上接近Epiphany，但边界和环恢复差</td>
+<td>指标（如HiCRep）可能对结构细节不敏感</td>
+<td>Key points节：boundary and loop calls agree less closely, placing the maps at the domain scale</td>
+</tr>
+<tr>
+<td>单变量回归也能达到类似矩阵级分数</td>
+<td>单track的ridge regression在HiCRep上达0.691，Hi-cGAN为0.715</td>
+<td>矩阵级指标可能被简单统计特征主导</td>
+<td>Key points节：a ridge regression on the same single track reaches 0.691 against Hi-cGAN’s 0.715 on HiCRep</td>
+</tr>
+<tr>
+<td>跨细胞类型迁移性能下降</td>
+<td>转移至未见细胞类型时SCC下降约0.12</td>
+<td>因子占据谱在不同细胞类型间存在差异</td>
+<td>Conclusions节：Transfer to an unseen cell type costs about 0.12 SCC</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<ol>
+<li><strong>表面方法</strong>: 使用条件生成对抗网络（cGAN），以染色质因子占据（如CTCF、cohesin、组蛋白修饰）为条件输入，生成Hi-C接触矩阵。网络包含卷积生成器和卷积判别器，输出为cool文件格式，支持2-25 kb bin size和全染色体预测。</li>
+<li><strong>核心洞察</strong>: 染色质因子占据本身（而非DNA序列）足以解释接触矩阵的大部分结构，且不同因子在不同分辨率下贡献不同（如CTCF和cohesin在5-10 kb重要，活性组蛋白标记在25 kb重要）。</li>
+<li><strong>[Analysis] 可能的普适教训</strong>: 在生物序列预测任务中，输入特征的选择（如序列vs.表观遗传标记）可能比模型架构更关键；矩阵级指标可能掩盖结构细节，需结合结构特征（如边界、环）评估模型。</li>
+</ol>
+<h2>07 方法总览</h2>
+<ul>
+<li><strong>输入</strong>: 染色质因子占据数据（如CTCF、cohesin、组蛋白修饰等），以track形式提供。</li>
+<li><strong>输出</strong>: Hi-C接触矩阵，以cool文件格式保存，支持2-25 kb bin size，全染色体预测。</li>
+<li><strong>模块</strong>: 
+  1. 生成器（Generator）：卷积神经网络，从因子占据生成接触矩阵。
+  2. 判别器（Discriminator）：卷积神经网络，区分真实与生成的接触矩阵。
+  3. 条件机制：因子占据作为条件输入，指导生成过程。</li>
+<li><strong>训练</strong>: 对抗训练，生成器试图欺骗判别器，判别器试图区分真假。评估在验证染色体上选择输入配置。</li>
+<li><strong>工具</strong>: 未提供具体框架或库。</li>
+<li><strong>反馈回路</strong>: 判别器的损失反馈给生成器，优化生成质量。</li>
+<li><strong>假设</strong>: 染色质因子占据是接触结构的主要决定因素，且cGAN能学习从因子占据到接触矩阵的映射。</li>
+<li><strong>文字流程</strong>: 输入染色质因子占据数据 → 生成器卷积处理 → 输出预测的接触矩阵 → 判别器与真实矩阵比较 → 对抗训练优化 → 输出cool文件。</li>
+</ul>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>卷积生成器</td>
+<td>从因子占据生成接触矩阵</td>
+<td>学习因子占据到接触结构的映射</td>
+<td>输入：因子占据track；输出：预测接触矩阵</td>
+<td>Findings节：网络配对卷积生成器与判别器</td>
+<td>[预期] 生成质量下降，无法产生合理接触矩阵</td>
+</tr>
+<tr>
+<td>卷积判别器</td>
+<td>区分真实与生成接触矩阵</td>
+<td>提供对抗训练信号，迫使生成器提高质量</td>
+<td>输入：真实或生成接触矩阵；输出：真/假判别</td>
+<td>Findings节：网络配对卷积生成器与判别器</td>
+<td>[预期] 训练不稳定，生成器可能产生模糊或模式崩溃的结果</td>
+</tr>
+<tr>
+<td>条件机制</td>
+<td>将因子占据作为条件输入</td>
+<td>确保生成矩阵与输入因子占据一致</td>
+<td>输入：因子占据track；输出：条件化生成</td>
+<td>未提供具体机制</td>
+<td>[预期] 生成矩阵与输入因子占据无关，失去条件预测能力</td>
+</tr>
+<tr>
+<td>全染色体预测</td>
+<td>输出整个染色体的cool文件</td>
+<td>提供灵活、可配置的预测，优于固定窗口方法</td>
+<td>输入：全染色体因子占据；输出：全染色体cool文件</td>
+<td>Findings节：predicts a whole genome as a cool file</td>
+<td>[预期] 无法覆盖全染色体，需拼接窗口，增加误差</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式符号</h2>
+<p>不适用（本文未提供具体公式）。</p>
+<h2>10 实验设计与证据链</h2>
+<ul>
+<li><strong>数据集/群体</strong>: 未提供具体细胞类型或数据集名称。</li>
+<li><strong>规模</strong>: 未提供。</li>
+<li><strong>指标</strong>: 平均相关性（mean correlation）、HiCRep、SCC（Spearman correlation coefficient）。</li>
+<li><strong>基线</strong>: Akita、C.Origami、Epiphany；ridge regression on single track。</li>
+<li><strong>预算</strong>: 未提供。</li>
+<li><strong>骨干/仪器</strong>: 未提供。</li>
+<li><strong>Oracle输入</strong>: 未提供。</li>
+<li><strong>评测协议</strong>: 在验证染色体上选择输入配置，在411个held-out窗口上评估。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>矩阵级一致性比较</td>
+<td>Hi-cGAN与序列方法在矩阵级一致性的比较</td>
+<td>在Akita的411个held-out窗口上，比较平均相关性</td>
+<td>Hi-cGAN: 0.238, Akita: 0.506</td>
+<td>Hi-cGAN低于序列方法</td>
+<td>Hi-cGAN在矩阵级上接近或超过序列方法</td>
+<td>Findings节</td>
+</tr>
+<tr>
+<td>边界和环恢复</td>
+<td>Hi-cGAN能否准确恢复结构特征</td>
+<td>与序列方法比较边界和环调用</td>
+<td>边界和环一致性较低</td>
+<td>矩阵级指标不能反映结构特征</td>
+<td>Hi-cGAN在结构特征上表现良好</td>
+<td>Findings节</td>
+</tr>
+<tr>
+<td>单track回归比较</td>
+<td>矩阵级指标是否反映网络贡献</td>
+<td>Hi-cGAN vs. ridge regression on single track</td>
+<td>Hi-cGAN: 0.715, ridge: 0.691 (HiCRep)</td>
+<td>矩阵级指标可能被简单统计特征主导</td>
+<td>Hi-cGAN在结构上优于简单回归</td>
+<td>Key points节</td>
+</tr>
+<tr>
+<td>跨细胞类型迁移</td>
+<td>模型泛化能力</td>
+<td>转移至未见细胞类型，测量SCC下降</td>
+<td>SCC下降约0.12</td>
+<td>模型有一定泛化能力但有限</td>
+<td>模型能完美泛化</td>
+<td>Conclusions节</td>
+</tr>
+</tbody>
+</table>
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>: 仅从染色质因子占据预测Hi-C接触矩阵，不涉及DNA序列或功能预测。</li>
+<li><strong>Oracle/真值输入</strong>: 使用实验测得的因子占据数据，非预测或模拟数据。</li>
+<li><strong>端到端状态</strong>: 端到端预测，从因子占据到接触矩阵，无需中间步骤。</li>
+<li><strong>算力成本</strong>: 未提供。</li>
+<li><strong>历史数据依赖</strong>: 依赖已知的染色质因子占据数据，可能受数据质量和覆盖度影响。</li>
+<li><strong>模型依赖</strong>: 依赖cGAN架构，可能受训练不稳定影响。</li>
+<li><strong>最难情形</strong>: 边界和环恢复，以及跨细胞类型迁移。</li>
+<li><strong>群体/领域边界</strong>: 仅适用于有因子占据数据的细胞类型和分辨率范围（2-25 kb）。</li>
+<li><strong>不确定性</strong>: 矩阵级指标可能高估模型性能，结构特征恢复能力有限。</li>
+<li><strong>有边界的复述</strong>: Hi-cGAN能从染色质因子占据预测Hi-C接触矩阵，在矩阵级一致性上接近Epiphany但低于Akita和C.Origami，且边界和环恢复能力较弱，跨细胞类型迁移时SCC下降约0.12。</li>
+</ul>
+<h2>12 作者自认局限</h2>
+<p>在提供的材料中未发现作者明确承认的局限。</p>
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>矩阵级指标（如HiCRep）可能不敏感于结构细节</td>
+<td>单track回归达到类似分数，但无域结构</td>
+<td>指标选择可能误导模型评估</td>
+<td>使用结构特异性指标（如边界F1、环召回率）重新评估</td>
+<td>Key points节：ridge regression reaches 0.691 against Hi-cGAN’s 0.715 on HiCRep, while its predicted matrix shows stripes but no domains</td>
+</tr>
+<tr>
+<td>输入配置在验证染色体上选择，而非测试染色体</td>
+<td>可能过拟合验证染色体，高估泛化能力</td>
+<td>评估协议可能不严格</td>
+<td>在独立测试染色体上固定输入配置，重复实验</td>
+<td>Findings节：With the input chosen on a validation chromosome</td>
+</tr>
+<tr>
+<td>未与序列方法公平比较输入信息量</td>
+<td>序列方法使用更多信息（DNA序列），而Hi-cGAN使用因子占据</td>
+<td>比较不公平，因子占据可能包含序列信息</td>
+<td>控制输入信息量，如使用序列预测因子占据再输入Hi-cGAN</td>
+<td>未提供</td>
+</tr>
+<tr>
+<td>未提供代码和数据</td>
+<td>结果不可复现</td>
+<td>科学可重复性</td>
+<td>要求作者公开代码和数据</td>
+<td>未提供</td>
+</tr>
+</tbody>
+</table>
+<h2>14 学到什么</h2>
+<p><strong>Agent 提炼的知识候选</strong>
+1. <strong>可迁移概念</strong>: 条件生成对抗网络（cGAN）可用于从表观遗传特征预测基因组结构，不依赖序列。可迁移到三维基因组课题，用于从其他表观特征（如ATAC-seq、ChIP-seq）预测染色质接触。
+2. <strong>可迁移方法</strong>: 使用卷积生成器和判别器处理一维track和二维接触矩阵。可迁移到本课题，用于设计从一维特征到二维接触矩阵的预测模型。
+3. <strong>可迁移实验设计</strong>: 比较矩阵级指标与结构特征指标，避免单一指标误导。可迁移到本课题，在评估模型时同时使用HiCRep和边界/环指标。
+4. <strong>可迁移洞察</strong>: 不同染色质因子在不同分辨率下贡献不同（CTCF/cohesin在5-10 kb，活性组蛋白在25 kb）。可迁移到本课题，指导特征选择和分辨率设计。</p>
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>相似方法</strong>: 与Akita（Fudenberg et al., 2020）、C.Origami（Tan et al., 2023）、Epiphany（Schreiber et al., 2020）同属深度学习预测Hi-C接触矩阵的方法，但输入不同（序列vs.因子占据）。</li>
+<li><strong>组合方向</strong>: 可结合序列方法和因子占据方法，如先预测因子占据再预测接触矩阵，或融合两种输入。</li>
+<li><strong>冲突</strong>: 本文主张因子占据足以解释大部分接触结构，与序列方法强调序列决定性的观点形成对比。需进一步实验验证。</li>
+<li><strong>可迁移领域</strong>: 该方法可迁移到其他基因组结构预测任务，如ChIP-seq峰预测、增强子-启动子相互作用预测。</li>
+</ul>
+<h2>16 研究想法</h2>
+<p><strong>Agent 生成的研究候选</strong></p>
+<ol>
+<li>
+<p><strong>名称</strong>: 融合序列与因子占据的Hi-C预测模型
+   - <strong>来源局限/观察</strong>: Hi-cGAN仅使用因子占据，精度低于序列方法；序列方法忽略因子占据的独立贡献。
+   - <strong>核心假设</strong>: 融合序列和因子占据作为输入，可同时利用两者的信息，提高预测精度。
+   - <strong>相对本文的增量</strong>: 在Hi-cGAN基础上增加序列编码器，或修改Akita/C.Origami以接受因子占据输入。
+   - <strong>初步方法</strong>: 设计双编码器架构，分别处理序列和因子占据，融合后输入生成器。
+   - <strong>验证方式</strong>: 在多个细胞类型上比较融合模型与单独使用序列或因子占据的模型。
+   - <strong>可能的失败模式</strong>: 信息冗余导致过拟合；融合策略不当导致性能下降。
+   - <strong>创新状态</strong>: unverified</p>
+</li>
+<li>
+<p><strong>名称</strong>: 结构特征感知的Hi-C预测评估指标
+   - <strong>来源局限/观察</strong>: 矩阵级指标（如HiCRep）不能反映结构特征（边界、环）恢复能力。
+   - <strong>核心假设</strong>: 结合矩阵级和结构特征指标可更全面评估模型。
+   - <strong>相对本文的增量</strong>: 提出新指标或评估框架，量化边界和环恢复精度。
+   - <strong>初步方法</strong>: 定义边界F1分数、环召回率等，与HiCRep结合形成综合评分。
+   - <strong>验证方式</strong>: 在多个模型（Hi-cGAN、Akita等）上计算新指标，验证其区分能力。
+   - <strong>可能的失败模式</strong>: 新指标与现有指标高度相关，无额外信息；结构特征定义不统一。
+   - <strong>创新状态</strong>: unverified</p>
+</li>
+<li>
+<p><strong>名称</strong>: 跨细胞类型迁移的因子占据预测模型
+   - <strong>来源局限/观察</strong>: Hi-cGAN跨细胞类型迁移时SCC下降约0.12，泛化能力有限。
+   - <strong>核心假设</strong>: 通过域适应或迁移学习技术，可提高跨细胞类型预测精度。
+   - <strong>相对本文的增量</strong>: 在Hi-cGAN基础上引入域适应模块，或使用多任务学习。
+   - <strong>初步方法</strong>: 使用对抗域适应，使因子占据表示在不同细胞类型间对齐。
+   - <strong>验证方式</strong>: 在多个细胞类型对上进行迁移实验，比较SCC下降幅度。
+   - <strong>可能的失败模式</strong>: 域适应导致信息丢失；不同细胞类型因子占据谱差异过大。
+   - <strong>创新状态</strong>: unverified</p>
+</li>
+</ol></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Abstract / summary</li>
+<li><strong>Assessment boundary</strong> Claims and evidence presented in the abstract only</li>
+<li><strong>Shared manuscript claim summary</strong> Hi-cGAN is a conditional GAN that predicts Hi-C interaction matrices from chromatin factor occupancy alone (no DNA sequence), achieving matrix-level agreement slightly below Epiphany and well below sequence-based methods (C.Origami, Akita), with performance dependent on measure, resolution, and cell type.</li>
+<li><strong>Visible evidence base</strong> Abstract text; no figures, tables, or supplementary materials provided</li>
+<li><strong>Missing materials affecting confidence</strong> Full manuscript, figures, tables, supplementary data, code, and detailed methods</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li>
+<p><strong>Overall assessment</strong> The abstract presents a potentially useful computational tool for predicting Hi-C maps from chromatin factor tracks, but the claims are poorly structured, internally inconsistent, and lack sufficient quantitative detail to evaluate the method’s novelty or utility. The key finding—that Hi-cGAN underperforms sequence-based methods—is stated without clear justification for why this approach is valuable. The conclusions appear to extend beyond the evidence presented, and several critical technical details are missing. The abstract reads more like a discussion than a concise summary of results.</p>
+</li>
+<li>
+<p><strong>Who would be interested in the results, and why</strong> Researchers in computational genomics and 3D genome organization may be interested in a method that predicts Hi-C from chromatin factor occupancy, potentially enabling predictions in cell types where only ChIP-seq data are available. However, the abstract does not convincingly demonstrate that this approach offers advantages over existing sequence-based methods.</p>
+</li>
+<li>
+<p><strong>Major strengths</strong> </p>
+</li>
+<li>Addresses a relevant problem: reducing the experimental burden of Hi-C by computational prediction.</li>
+<li>Evaluates multiple bin sizes (2–25 kb) and whole-genome prediction, which is more flexible than fixed-window methods.</li>
+<li>
+<p>Compares against three existing methods (Akita, C.Origami, Epiphany).</p>
+</li>
+<li>
+<p><strong>Major Concerns</strong></p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M1</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Clarity and consistency of claims</li>
+<li><strong>Claim pointer</strong> "Hi-cGAN predicts Hi-C interaction matrices with a conditional generative adversarial network from chromatin factor occupancy alone, without DNA sequence."</li>
+<li><strong>Evidence pointer</strong> Abstract, Findings and Key points</li>
+<li><strong>Concern</strong> The abstract states that Hi-cGAN uses "chromatin factor occupancy alone" as input, yet the Conclusions claim that "chromatin factor occupancy determines a substantial part of contact structure, and two tracks capture most of it." It is unclear whether the model uses all available factor tracks or only two. The number and identity of input tracks are not specified.</li>
+<li><strong>Why it matters</strong> The input dimensionality is fundamental to understanding the model’s scope, generalizability, and comparison to sequence-based methods. Without this information, the reader cannot assess whether the comparison is fair or whether the model is practically useful.</li>
+<li>
+<p><strong>Resolution test</strong> Specify the exact number and identity of chromatin factor tracks used as input. Clarify whether the "two tracks" in the Conclusions refer to a subset of inputs or a different analysis.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M2</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Quantitative evidence and internal consistency</li>
+<li><strong>Claim pointer</strong> "On held-out data Hi-cGAN reaches matrix-level agreement slightly below Epiphany’s... and well below C.Origami’s and Akita’s."</li>
+<li><strong>Evidence pointer</strong> Abstract, Findings and Key points</li>
+<li><strong>Concern</strong> The abstract provides only one quantitative comparison: "over Akita’s 411 held-out windows the mean correlation is 0.238 against 0.506." This is a single metric (Pearson correlation?) on a single test set. The claim that Hi-cGAN is "slightly below Epiphany" is not supported by any number. The claim that "which method is better depends on the measure used" is stated but no alternative measures or their values are given.</li>
+<li><strong>Why it matters</strong> Without multiple quantitative comparisons across methods and metrics, the relative performance claims are unsubstantiated. The reader cannot evaluate whether Hi-cGAN is competitive or useful.</li>
+<li>
+<p><strong>Resolution test</strong> Provide correlation (or other metric) values for all methods on the same test sets. Specify which metric is used (e.g., Pearson, Spearman, HiCRep, SCC). Report performance for boundary and loop recovery with quantitative values.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M3</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Logical coherence of conclusions</li>
+<li><strong>Claim pointer</strong> "Chromatin factor occupancy determines a substantial part of contact structure, and two tracks capture most of it."</li>
+<li><strong>Evidence pointer</strong> Abstract, Conclusions</li>
+<li><strong>Concern</strong> This conclusion appears to be a biological claim about the importance of specific factors, but the abstract provides no evidence that Hi-cGAN’s predictions are biologically interpretable or that the model’s performance is driven by specific tracks. The claim that "two tracks capture most of it" is not supported by any ablation analysis or feature importance measure.</li>
+<li><strong>Why it matters</strong> The conclusion conflates model performance with biological insight. Without feature importance analysis, the statement is speculative and potentially misleading.</li>
+<li>
+<p><strong>Resolution test</strong> Provide ablation experiments or feature attribution analysis showing that removing specific tracks degrades performance. Clarify whether this conclusion is derived from the model or from prior knowledge.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M4</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Clarity of evaluation protocol</li>
+<li><strong>Claim pointer</strong> "With the input chosen on a validation chromosome, agreement approaches Epiphany’s and stays below the sequence-based C.Origami and Akita."</li>
+<li><strong>Evidence pointer</strong> Abstract, Findings</li>
+<li><strong>Concern</strong> The phrase "input chosen on a validation chromosome" is ambiguous. Does this mean hyperparameters were tuned on a validation chromosome? Which chromosome? Were the test chromosomes completely held out from any tuning? The comparison to Akita uses "Akita’s 411 held-out windows"—are these the same test windows used for Hi-cGAN? The evaluation protocol is not described clearly enough to assess potential overfitting or data leakage.</li>
+<li><strong>Why it matters</strong> Fair comparison requires identical or clearly described test sets. Ambiguity in the evaluation protocol undermines confidence in the reported performance.</li>
+<li>
+<p><strong>Resolution test</strong> Clearly describe the train/validation/test split. Specify which chromosome(s) were used for validation and which for testing. Confirm that test chromosomes were never used for model selection.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M5</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Interpretation of baseline comparison</li>
+<li><strong>Claim pointer</strong> "A ridge regression on the same single track reaches 0.691 against Hi-cGAN’s 0.715 on HiCRep, while its predicted matrix shows stripes but no domains, so that measure alone does not establish what the network contributes."</li>
+<li><strong>Evidence pointer</strong> Abstract, Key points</li>
+<li><strong>Concern</strong> This is a critical comparison that undermines the claimed contribution of the GAN architecture. If a simple ridge regression on a single track achieves nearly the same HiCRep score, the added complexity of a GAN may not be justified. The dismissal of this result ("so that measure alone does not establish what the network contributes") is a non-sequitur: the measure does establish that the GAN’s advantage is marginal on this metric. The abstract does not provide any metric where the GAN clearly outperforms the ridge regression.</li>
+<li><strong>Why it matters</strong> The core claim of the paper is that a GAN is useful for this task. If a simple baseline performs similarly, the novelty and utility of the method are in question.</li>
+<li>
+<p><strong>Resolution test</strong> Provide metrics where Hi-cGAN significantly outperforms the ridge regression (e.g., boundary/loop recovery, visual quality, biological interpretability). Alternatively, acknowledge that the GAN’s advantage is limited to specific aspects.</p>
+</li>
+<li>
+<p><strong>Minor Comments</strong></p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m1</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Readability</li>
+<li><strong>Affected element</strong> Abstract, Findings</li>
+<li><strong>Evidence pointer</strong> "It predicts a whole genome as a cool file at bin sizes from 2 to 25 kb, where Akita, C.Origami and Epiphany emit fixed windows of 1 Mb, 2 Mb and 990 kb."</li>
+<li><strong>Issue</strong> The sentence is grammatically awkward and the comparison is unclear. "Where" should be "whereas" or "while." The fixed window sizes are listed without context for why this matters.</li>
+<li>
+<p><strong>Required correction</strong> Rewrite for clarity: "Hi-cGAN predicts whole-genome contact maps as cool files at bin sizes from 2 to 25 kb, whereas Akita, C.Origami, and Epiphany emit fixed windows of 1 Mb, 2 Mb, and 990 kb, respectively."</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m2</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Precision</li>
+<li><strong>Affected element</strong> Abstract, Key points</li>
+<li><strong>Evidence pointer</strong> "The same architecture learns raw contact counts, genomic-distance z-scores and observed/expected normalized data."</li>
+<li><strong>Issue</strong> It is unclear whether this means the model was trained separately on each data type, or whether it can handle all three simultaneously. The phrase "learns" is ambiguous.</li>
+<li>
+<p><strong>Required correction</strong> Specify: "The same architecture can be trained to predict raw contact counts, genomic-distance z-scores, or observed/expected normalized data."</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m3</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Completeness</li>
+<li><strong>Affected element</strong> Abstract, Conclusions</li>
+<li><strong>Evidence pointer</strong> "Transfer to an unseen cell type costs about 0.12 SCC"</li>
+<li><strong>Issue</strong> The value "0.12 SCC" is given without context. Is this a drop in SCC? What is the baseline SCC in the source cell type? Is this a large or small drop?</li>
+<li>
+<p><strong>Required correction</strong> Provide the baseline SCC in the source cell type and the SCC after transfer. Clarify whether 0.12 is an absolute or relative change.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m4</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Clarity</li>
+<li><strong>Affected element</strong> Abstract, Conclusions</li>
+<li><strong>Evidence pointer</strong> "which method leads depends on the measure"</li>
+<li><strong>Issue</strong> This is vague. Which measures favor which method? Without examples, the statement is uninformative.</li>
+<li><strong>Required correction</strong> Provide at least one example: "For example, on HiCRep, method X leads, while on SCC, method Y leads."</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>"Chromatin factor occupancy determines a substantial part of contact structure" – unsupported by any evidence in the abstract; no causal or correlational analysis is presented.</li>
+<li>"Two tracks capture most of it" – unsupported; no ablation or feature importance analysis is described.</li>
+<li>"Transfer to an unseen cell type costs about 0.12 SCC" – unsupported without baseline values and context.</li>
+<li>"Which method is better depends on the measure used" – unsupported; no alternative measures or their values are provided.</li>
+<li>"Boundary and loop recovery does not follow the matrix-level scores" – unsupported; no quantitative values for boundary/loop recovery are given.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

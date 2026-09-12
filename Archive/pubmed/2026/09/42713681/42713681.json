@@ -1,0 +1,356 @@
+{
+  "identity": {
+    "pmid": "42713681",
+    "doi": "10.1111/cge.70246",
+    "title": "A Novel De Novo STAG1 Variant at the RAD21 Binding Interface Is Associated With Hypoglycemia, Recurrent Fever, Immunodeficiency and Features of Classical Cohesinopathies."
+  },
+  "content": {
+    "abstract": "The cohesin complex, composed of SMC1, SMC3, RAD21, and STAG1/STAG2, is essential for chromosome cohesion, DNA repair, and transcriptional regulation. Pathogenic variants in cohesin components cause cohesinopathies. The classical characteristics of cohesinopathies include developmental delay (DD), intellectual disability (ID), feeding difficulties, hypotonia, short stature, hearing loss, and dysmorphic features. Here, we present a 5-year-old boy with classical cohesinopathy features, including DD/ID and feeding difficulties, along with non-classical features such as hypoglycemia, recurrent fever, and immunodeficiency. Trio exome sequencing identified a novel de novo missense variant of uncertain significance (NM_005862.3:c.643G>A(p.Val215Ile)) in the STAG1 gene. The variant localizes to the RAD21 interaction interface, and molecular dynamics (MD) simulations revealed conformational changes comparable to other STAG1 variants reported as likely pathogenic in patients, supporting a deleterious effect which may disrupt the STAG1-RAD21 interaction interface. This case expands the phenotypic and molecular spectrum of STAG1-related cohesinopathy and advances our understanding of the disease mechanism.",
+    "keywords": [
+      "STAG1",
+      "de novo",
+      "cohesinopathies",
+      "hypoglycemia",
+      "immunodeficiency",
+      "recurrent fever"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Hussain, Hafiz Muhammad Jafar",
+        "Zimmermann, Michael",
+        "Safgren, Stephanie L",
+        "Farris, Joseph D",
+        "Panwar, Deepak",
+        "Thurman, Sarah Allen",
+        "Muthusamy, Karthik",
+        "Urrutia, Raul",
+        "Wick, Myra J",
+        "E Vairo, Filippo Pinto",
+        "Klee, Eric W"
+      ],
+      "short_names": [
+        "Hussain HMJ",
+        "Zimmermann M",
+        "Safgren SL",
+        "Farris JD",
+        "Panwar D",
+        "Thurman SA",
+        "Muthusamy K",
+        "Urrutia R",
+        "Wick MJ",
+        "E Vairo FP",
+        "Klee EW"
+      ],
+      "auids": [
+        "ORCID: 0000-0001-5269-8971",
+        "ORCID: 0000-0001-7073-0525",
+        "ORCID: 0000-0002-5503-7324",
+        "ORCID: 0000-0001-7691-8334",
+        "ORCID: 0000-0002-2521-2937",
+        "ORCID: 0009-0003-7162-4005",
+        "ORCID: 0000-0003-1009-6555",
+        "ORCID: 0000-0002-1640-6780",
+        "ORCID: 0000-0001-6030-1903",
+        "ORCID: 0000-0003-2946-5795"
+      ],
+      "affiliations": [
+        "Center for Individualized Medicine, Mayo Clinic, Rochester, Minnesota, USA.",
+        "Department of Quantitative Health Sciences, Mayo Clinic, Rochester, Minnesota, USA.",
+        "Computational Structural Genomics Laboratory, Genomic Sciences and Precision Medicine Center, Medical College of Wisconsin, Milwaukee, Wisconsin, USA.",
+        "Data Science Institute, Medical College of Wisconsin, Milwaukee, Wisconsin, USA.",
+        "Division of Oncology Research, Mayo Clinic, Rochester, Minnesota, USA.",
+        "Division of Laboratory Genetics and Genomics, Department of Laboratory Medicine and Pathology, Mayo Clinic, Rochester, Minnesota, USA.",
+        "Center for Individualized Medicine, Mayo Clinic, Rochester, Minnesota, USA.",
+        "Department of Quantitative Health Sciences, Mayo Clinic, Rochester, Minnesota, USA.",
+        "Department of Clinical Genomics, Mayo Clinic, Rochester, Minnesota, USA.",
+        "Department of Clinical Genomics, Mayo Clinic, Jacksonville, Florida, USA.",
+        "Mellowes Center for Genomic Sciences and Precision Medicine, Medical College of Wisconsin, Milwaukee, Wisconsin, USA.",
+        "Department of Clinical Genomics, Mayo Clinic, Rochester, Minnesota, USA.",
+        "Center for Individualized Medicine, Mayo Clinic, Rochester, Minnesota, USA.",
+        "Department of Medicine, Division of Gastroenterology and Hepatology, Mayo Clinic, Rochester, Minnesota, USA.",
+        "Center for Individualized Medicine, Mayo Clinic, Rochester, Minnesota, USA.",
+        "Department of Quantitative Health Sciences, Mayo Clinic, Rochester, Minnesota, USA.",
+        "Department of Clinical Genomics, Mayo Clinic, Rochester, Minnesota, USA."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Hussain, Hafiz Muhammad Jafar",
+        "short_name": "Hussain HMJ",
+        "identifiers": [
+          "0000-0001-5269-8971"
+        ],
+        "affiliations": [
+          "Center for Individualized Medicine, Mayo Clinic, Rochester, Minnesota, USA.",
+          "Department of Quantitative Health Sciences, Mayo Clinic, Rochester, Minnesota, USA."
+        ]
+      },
+      {
+        "full_name": "Zimmermann, Michael",
+        "short_name": "Zimmermann M",
+        "identifiers": [
+          "0000-0001-7073-0525"
+        ],
+        "affiliations": [
+          "Computational Structural Genomics Laboratory, Genomic Sciences and Precision Medicine Center, Medical College of Wisconsin, Milwaukee, Wisconsin, USA.",
+          "Data Science Institute, Medical College of Wisconsin, Milwaukee, Wisconsin, USA."
+        ]
+      },
+      {
+        "full_name": "Safgren, Stephanie L",
+        "short_name": "Safgren SL",
+        "identifiers": [
+          "0000-0002-5503-7324"
+        ],
+        "affiliations": [
+          "Division of Oncology Research, Mayo Clinic, Rochester, Minnesota, USA."
+        ]
+      },
+      {
+        "full_name": "Farris, Joseph D",
+        "short_name": "Farris JD",
+        "identifiers": [
+          "0000-0001-7691-8334"
+        ],
+        "affiliations": [
+          "Division of Laboratory Genetics and Genomics, Department of Laboratory Medicine and Pathology, Mayo Clinic, Rochester, Minnesota, USA."
+        ]
+      },
+      {
+        "full_name": "Panwar, Deepak",
+        "short_name": "Panwar D",
+        "identifiers": [
+          "0000-0002-2521-2937"
+        ],
+        "affiliations": [
+          "Center for Individualized Medicine, Mayo Clinic, Rochester, Minnesota, USA.",
+          "Department of Quantitative Health Sciences, Mayo Clinic, Rochester, Minnesota, USA."
+        ]
+      },
+      {
+        "full_name": "Thurman, Sarah Allen",
+        "short_name": "Thurman SA",
+        "identifiers": [
+          "0009-0003-7162-4005"
+        ],
+        "affiliations": [
+          "Department of Clinical Genomics, Mayo Clinic, Rochester, Minnesota, USA."
+        ]
+      },
+      {
+        "full_name": "Muthusamy, Karthik",
+        "short_name": "Muthusamy K",
+        "identifiers": [
+          "0000-0003-1009-6555"
+        ],
+        "affiliations": [
+          "Department of Clinical Genomics, Mayo Clinic, Jacksonville, Florida, USA."
+        ]
+      },
+      {
+        "full_name": "Urrutia, Raul",
+        "short_name": "Urrutia R",
+        "identifiers": [
+          "0000-0002-1640-6780"
+        ],
+        "affiliations": [
+          "Mellowes Center for Genomic Sciences and Precision Medicine, Medical College of Wisconsin, Milwaukee, Wisconsin, USA."
+        ]
+      },
+      {
+        "full_name": "Wick, Myra J",
+        "short_name": "Wick MJ",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Clinical Genomics, Mayo Clinic, Rochester, Minnesota, USA."
+        ]
+      },
+      {
+        "full_name": "E Vairo, Filippo Pinto",
+        "short_name": "E Vairo FP",
+        "identifiers": [
+          "0000-0001-6030-1903"
+        ],
+        "affiliations": [
+          "Center for Individualized Medicine, Mayo Clinic, Rochester, Minnesota, USA.",
+          "Department of Medicine, Division of Gastroenterology and Hepatology, Mayo Clinic, Rochester, Minnesota, USA."
+        ]
+      },
+      {
+        "full_name": "Klee, Eric W",
+        "short_name": "Klee EW",
+        "identifiers": [
+          "0000-0003-2946-5795"
+        ],
+        "affiliations": [
+          "Center for Individualized Medicine, Mayo Clinic, Rochester, Minnesota, USA.",
+          "Department of Quantitative Health Sciences, Mayo Clinic, Rochester, Minnesota, USA.",
+          "Department of Clinical Genomics, Mayo Clinic, Rochester, Minnesota, USA."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Clinical genetics"
+    ],
+    "journal_abbrev": [
+      "Clin Genet"
+    ],
+    "pub_date": "2026 Sep 9",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/09 11:38",
+    "fetched_at": "2026-09-12 11:08:09"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42713681",
+      "39224759",
+      "30447054",
+      "28296084",
+      "34440290",
+      "30158690",
+      "31516082",
+      "41560868",
+      "28119487",
+      "39336775",
+      "41300816",
+      "30125677",
+      "40361893",
+      "36467423",
+      "34478686",
+      "40625213",
+      "33639073",
+      "31926053",
+      "32687945",
+      "41669812",
+      "34530748",
+      "39528574",
+      "30819258",
+      "42074601",
+      "41788411",
+      "41210242",
+      "32253279",
+      "30055086",
+      "41507692",
+      "42053849",
+      "32714884",
+      "25574841",
+      "41492387",
+      "38281861",
+      "40899458",
+      "20301283",
+      "41795723",
+      "40777882",
+      "28963436",
+      "22633399",
+      "31602191",
+      "26647308",
+      "40742416",
+      "32152250",
+      "30929739",
+      "34183358",
+      "32467316",
+      "33365313",
+      "41226818",
+      "42606787",
+      "32778134",
+      "27108886",
+      "38073621",
+      "34659104",
+      "20301377",
+      "41532374",
+      "31698099",
+      "39264305",
+      "39286962",
+      "23683030",
+      "34567527",
+      "42069659",
+      "37198333",
+      "40861044",
+      "37467311",
+      "34886823",
+      "40055822",
+      "35422839",
+      "38975838",
+      "38404251",
+      "27804958",
+      "35959892",
+      "35396900",
+      "40717333",
+      "28607419",
+      "35371307",
+      "28487885",
+      "41233135",
+      "29907796",
+      "42510805",
+      "41291913",
+      "38279279",
+      "40063003",
+      "32646507",
+      "39363971",
+      "36624491",
+      "39415983",
+      "29423971",
+      "35563565",
+      "42125344",
+      "42436272",
+      "38297832",
+      "37928246",
+      "37808847",
+      "36368327",
+      "29961569",
+      "38662876",
+      "36268036",
+      "40492837",
+      "27964749"
+    ],
+    "review": [
+      "42713681",
+      "31516082",
+      "30125677",
+      "34478686",
+      "40625213",
+      "32687945",
+      "40899458",
+      "28963436",
+      "34659104",
+      "39264305",
+      "39286962",
+      "40055822",
+      "40063003"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://doi.org/10.1111/cge.70246",
+        "provider": "Wiley",
+        "category": "Full Text Sources",
+        "attribute": "subscription/membership/fee required",
+        "linkname": ""
+      },
+      {
+        "url": "https://assays.cancer.gov/CPTAC-1006",
+        "provider": "NCI CPTAC Assay Portal",
+        "category": "Miscellaneous",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

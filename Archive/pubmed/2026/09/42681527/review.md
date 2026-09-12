@@ -1,0 +1,70 @@
+## Review setup
+- **Input scope** Abstract only
+- **Assessment boundary** The abstract describes a method chapter for an AI-based 3D heterogeneous network model for epigenetic functional prediction. Assessment is limited to claims made in the abstract; no figures, methods details, or validation data are available.
+- **Shared manuscript claim summary** The authors present an AI-based model that generates 3D heterogeneous networks by integrating multimodal data, aimed at functional prediction of epigenetic mechanisms, with stated applications in medicine, developmental biology, and personalized therapeutics.
+- **Visible evidence base** Abstract text only. No figures, tables, equations, or supplementary materials were provided.
+- **Missing materials affecting confidence** Full methods, model architecture, training/validation datasets, performance metrics, comparison against existing approaches, and any case studies or application examples. Without these, the core claims of model capability and utility cannot be independently assessed.
+
+## Reviewer
+- **Overall assessment** This abstract describes a methods chapter for an AI-based 3D heterogeneous network model targeting epigenetic functional prediction. The topic is timely and relevant, and the integration of multimodal data into a 3D network representation is a potentially valuable contribution to the field. However, the abstract is largely descriptive and provides no quantitative evidence of model performance, no details on the network construction methodology, and no comparison with existing tools. The claims of application in medicine and personalized therapeutics are stated without supporting examples or validation. As presented, the work is a protocol description rather than a demonstrated advance, and the scientific case for its utility is not established from the supplied material.
+- **Who would be interested in the results, and why** Computational biologists and bioinformaticians working on epigenetic data integration, network-based functional prediction, and multiomics analysis would find this protocol relevant. Researchers in epigenetics seeking AI-based tools for gene regulation prediction may also be interested. The methods chapter format suggests the target audience is practitioners looking for step-by-step implementation guidance.
+- **Major strengths** The abstract addresses a relevant and growing area, namely AI-driven integration of multimodal epigenetic data. The concept of a 3D heterogeneous network for functional prediction is conceptually interesting and could offer advantages over flat network representations. The stated scope, covering medicine, developmental biology, and personalized therapeutics, indicates broad potential applicability.
+- **Major Concerns**
+  - **Concern ID** R1-M1
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** The abstract claims the model is "capable of generating 3-dimensional heterogeneous network by integrating multimodal data for the functional prediction of epigenetic mechanisms."
+  - **Evidence pointer** Abstract, location not provided
+  - **Concern** No technical details are provided regarding how the 3D heterogeneous network is constructed, what AI architectures are used, how multimodal data are integrated, or how functional prediction is performed. The abstract does not specify input data types, preprocessing steps, or output formats.
+  - **Why it matters** For a methods chapter, the core value lies in the reproducibility and clarity of the described approach. Without any methodological detail, the reader cannot evaluate the novelty, feasibility, or correctness of the proposed model. The claim of capability is unverifiable.
+  - **Resolution test** Provide a summary of the model architecture, data integration strategy, and prediction task formulation in the abstract, or clarify that full details are in the chapter body.
+  - **Concern ID** R1-M2
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Evidence quality
+  - **Claim pointer** The abstract implies the model has applications in "medicine, developmental biology, and personalized therapeutics."
+  - **Evidence pointer** Abstract, location not provided
+  - **Concern** No validation results, case studies, or performance metrics are presented. The abstract does not demonstrate that the model works on any real dataset or outperforms existing methods.
+  - **Why it matters** Application claims without evidence are unsupported. For a methods chapter, even a brief indication of validation on a benchmark dataset or a biological case study would substantiate the utility claims.
+  - **Resolution test** Include a sentence in the abstract summarizing validation results, such as prediction accuracy on a known epigenetic dataset or a demonstrated biological insight.
+  - **Concern ID** R1-M3
+  - **Severity** Major
+  - **Blocking** No
+  - **Axis** Originality
+  - **Claim pointer** The abstract positions the model as a novel contribution by combining AI, 3D networks, and multimodal data integration.
+  - **Evidence pointer** Abstract, location not provided
+  - **Concern** The abstract does not distinguish this approach from existing heterogeneous network models or AI-based epigenetic prediction tools. No comparison with prior work is mentioned.
+  - **Why it matters** Without a clear statement of novelty relative to existing methods, the contribution is unclear. Readers cannot assess whether this is a new paradigm or an incremental variation.
+  - **Resolution test** Add a sentence in the abstract that explicitly states what is new compared to existing network-based epigenetic prediction approaches.
+- **Minor Comments**
+  - **Concern ID** R1-m1
+  - **Severity** Minor
+  - **Axis** Readability
+  - **Affected element** Abstract structure
+  - **Evidence pointer** Abstract, location not provided
+  - **Issue** The abstract is dense with background information on epigenetics and heterogeneous networks, which consumes space that could be used for model specifics.
+  - **Required correction** Condense the background and allocate more text to describing the model, its inputs, outputs, and validation.
+  - **Concern ID** R1-m2
+  - **Severity** Minor
+  - **Axis** Terminology
+  - **Affected element** "3D heterogeneous network"
+  - **Evidence pointer** Abstract, location not provided
+  - **Issue** The term "3D" is not defined in the context of a network model. It is unclear whether this refers to spatial coordinates, a third dimension in the network topology, or a visualization technique.
+  - **Required correction** Briefly clarify what "3D" means in this context, e.g., spatial embedding, multi-layer network, or tensor representation.
+  - **Concern ID** R1-m3
+  - **Severity** Minor
+  - **Axis** Scope clarity
+  - **Affected element** Applications
+  - **Evidence pointer** Abstract, location not provided
+  - **Issue** The applications listed (medicine, developmental biology, personalized therapeutics) are broad and not tied to specific use cases or examples.
+  - **Required correction** Provide one concrete example of how the model could be applied in each domain, or narrow the scope to the most relevant application.
+- **Technical failings that need to be addressed before the case is established** R1-M1 and R1-M2 are the primary technical and evidential gaps. The model's capability and utility claims cannot be evaluated without methodological detail and validation evidence. R1-M3 on novelty is secondary but relevant for positioning.
+- **Assessment against Nature-style criteria** Originality: The concept of a 3D heterogeneous network for epigenetic prediction is potentially original, but the abstract does not establish novelty relative to existing work. Scientific importance: Epigenetic functional prediction is an important area, and multimodal integration is a recognized need, so the topic is of interest. Interdisciplinary readership: The work bridges AI, network biology, and epigenetics, which could attract a broad audience, but the abstract does not make the interdisciplinary value explicit. Technical soundness: Not assessable from the abstract alone; no methodological or validation details are provided. Readability for nonspecialists: The abstract is accessible in its background sections but lacks clarity on the model itself, which may confuse nonspecialist readers.
+- **Recommendation posture** Currently not established from the provided evidence. The abstract describes a protocol but does not provide sufficient technical or validation detail to support the claims of model capability and application. A revised abstract with methodological specifics and validation evidence could change this assessment.
+
+## Risk / unsupported claims
+- The claim that the model is "capable of generating 3-dimensional heterogeneous network" is unsupported without methodological detail.
+- The claim of applications in "medicine, developmental biology, and personalized therapeutics" is unsupported without validation examples or case studies.
+- The implicit novelty of the approach is unassessable without comparison to existing methods.
+- The term "3D" is ambiguous and not defined, making the core concept difficult to evaluate.

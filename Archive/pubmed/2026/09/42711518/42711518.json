@@ -1,0 +1,274 @@
+{
+  "identity": {
+    "pmid": "42711518",
+    "doi": "10.1038/s41588-026-02743-3",
+    "title": "Mechanisms underlying disease-causing variants in promoters and enhancers."
+  },
+  "content": {
+    "abstract": "The study of human monogenic disorders has been a powerful tool for generating a deep understanding of protein function/dysfunction and for uncovering underlying biological mechanisms. Here we explore the insights that an expanding catalog of noncoding monogenic disease variants can provide into the functions of the noncoding genome. We focus on small genetic alterations (one to a few tens of base pairs) in cis-regulatory elements-promoters, enhancers and silencers-and their potential mechanisms of action, such as loss or gain of function. We discuss the challenges in determining pathogenicity for variants in the noncoding genome, discuss why there might be so few concrete examples and highlight the opportunities for advancing this area of human genetics by using experimental and machine-learning tools.",
+    "keywords": [],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Long, Hannah K",
+        "Wu, Kun",
+        "Barkham, Ryan S",
+        "Bickmore, Wendy A"
+      ],
+      "short_names": [
+        "Long HK",
+        "Wu K",
+        "Barkham RS",
+        "Bickmore WA"
+      ],
+      "auids": [
+        "ORCID: 0000-0002-5694-0398",
+        "ORCID: 0009-0007-4982-9863",
+        "ORCID: 0009-0005-0637-5772",
+        "ORCID: 0000-0001-6660-7735"
+      ],
+      "affiliations": [
+        "MRC Human Genetics Unit, Institute of Genetics and Cancer, University of Edinburgh, Edinburgh, UK. hannah.long@ed.ac.uk.",
+        "MRC Human Genetics Unit, Institute of Genetics and Cancer, University of Edinburgh, Edinburgh, UK.",
+        "MRC Human Genetics Unit, Institute of Genetics and Cancer, University of Edinburgh, Edinburgh, UK.",
+        "MRC Human Genetics Unit, Institute of Genetics and Cancer, University of Edinburgh, Edinburgh, UK. wendy.bickmore@ed.ac.uk."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Long, Hannah K",
+        "short_name": "Long HK",
+        "identifiers": [
+          "0000-0002-5694-0398"
+        ],
+        "affiliations": [
+          "MRC Human Genetics Unit, Institute of Genetics and Cancer, University of Edinburgh, Edinburgh, UK. hannah.long@ed.ac.uk."
+        ]
+      },
+      {
+        "full_name": "Wu, Kun",
+        "short_name": "Wu K",
+        "identifiers": [
+          "0009-0007-4982-9863"
+        ],
+        "affiliations": [
+          "MRC Human Genetics Unit, Institute of Genetics and Cancer, University of Edinburgh, Edinburgh, UK."
+        ]
+      },
+      {
+        "full_name": "Barkham, Ryan S",
+        "short_name": "Barkham RS",
+        "identifiers": [
+          "0009-0005-0637-5772"
+        ],
+        "affiliations": [
+          "MRC Human Genetics Unit, Institute of Genetics and Cancer, University of Edinburgh, Edinburgh, UK."
+        ]
+      },
+      {
+        "full_name": "Bickmore, Wendy A",
+        "short_name": "Bickmore WA",
+        "identifiers": [
+          "0000-0001-6660-7735"
+        ],
+        "affiliations": [
+          "MRC Human Genetics Unit, Institute of Genetics and Cancer, University of Edinburgh, Edinburgh, UK. wendy.bickmore@ed.ac.uk."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Nature genetics"
+    ],
+    "journal_abbrev": [
+      "Nat Genet"
+    ],
+    "pub_date": "2026 Sep 8",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/09 07:07",
+    "fetched_at": "2026-09-12 11:08:09"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42711518",
+      "42475469",
+      "34541447",
+      "35472292",
+      "39838281",
+      "31771951",
+      "41614802",
+      "36466610",
+      "28407294",
+      "31527394",
+      "26499213",
+      "38978133",
+      "27807102",
+      "37283586",
+      "31289032",
+      "35483347",
+      "37292699",
+      "34486522",
+      "40421528",
+      "40382355",
+      "42166680",
+      "26433090",
+      "30786239",
+      "37562413",
+      "40581089",
+      "36060805",
+      "35887306",
+      "32197056",
+      "38355306",
+      "26555224",
+      "33828297",
+      "33155827",
+      "39068338",
+      "32248749",
+      "31395865",
+      "26110593",
+      "35247231",
+      "42136963",
+      "26072435",
+      "39217658",
+      "40881170",
+      "41503698",
+      "40614114",
+      "36189259",
+      "30905396",
+      "38966948",
+      "32243438",
+      "38048082",
+      "29378629",
+      "29893792",
+      "30589856",
+      "38594933",
+      "25634368",
+      "29855387",
+      "31561366",
+      "38699372",
+      "37012250",
+      "26817822",
+      "40918684",
+      "32809547",
+      "36424644",
+      "32005150",
+      "38203513",
+      "41367498",
+      "38181897",
+      "40118058",
+      "36222139",
+      "24007299",
+      "37262323",
+      "33691767",
+      "33117405",
+      "39606363",
+      "38798661",
+      "32819422",
+      "32741549",
+      "41146606",
+      "16719718",
+      "42191839",
+      "38037155",
+      "32879140",
+      "40326299",
+      "30184074",
+      "40408169",
+      "35121955",
+      "33001599",
+      "29080249",
+      "30113658",
+      "30224808",
+      "34462306",
+      "24667321",
+      "41616807",
+      "25770910",
+      "31704182",
+      "30268153",
+      "37547663",
+      "19641089",
+      "27863249",
+      "18366609",
+      "19929985",
+      "28964259"
+    ],
+    "review": [
+      "42711518",
+      "35472292",
+      "31771951",
+      "41614802",
+      "36466610",
+      "28407294",
+      "31527394",
+      "26499213",
+      "27807102",
+      "37283586",
+      "31289032",
+      "35483347",
+      "42166680",
+      "26433090",
+      "37562413",
+      "40581089",
+      "36060805",
+      "32197056",
+      "26555224",
+      "26072435",
+      "39217658",
+      "40881170",
+      "41503698",
+      "40614114",
+      "36189259",
+      "38048082",
+      "29893792",
+      "38594933",
+      "25634368",
+      "40918684",
+      "38203513",
+      "41367498",
+      "38181897",
+      "40118058",
+      "24007299",
+      "37262323",
+      "33691767",
+      "33117405",
+      "32741549",
+      "16719718",
+      "42191839",
+      "40408169",
+      "35121955",
+      "29080249",
+      "24667321",
+      "41616807",
+      "25770910",
+      "30268153",
+      "19641089",
+      "28964259"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://doi.org/10.1038/s41588-026-02743-3",
+        "provider": "Nature Publishing Group",
+        "category": "Full Text Sources",
+        "attribute": "subscription/membership/fee required",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

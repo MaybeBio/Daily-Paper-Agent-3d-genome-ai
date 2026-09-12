@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42686907",
+  "title": "3D epigenome of glial cell types in developing human cortex.",
+  "authors": "Jones, Ian R; Wang, Li; Kosicki, Michael; Battle, Stephanie L; Narayan, Vivek Jj; Bi, Qiuli; Gemenes, Kaila; Liu, Yuxi; Zhou, Lingbo; Song, Mengyi; White, Matthew; Olson, Wendy; Beuchat, Gabriel; Dickel, Diane; Li, Yun; Pennacchio, Len A; Hawkins, R David; Kriegstein, Arnold; Shen, Yin",
+  "journal": "Nature",
+  "published_date": "2026-09-03",
+  "window": {
+    "start": "2026-08-29",
+    "end": "2026-09-11"
+  },
+  "score": 6,
+  "one_liner_zh": "该研究整合3D染色质互作、可及性、甲基化等多组学数据，对发育中人类皮层胶质细胞类型进行三维表观基因组分析，并用机器学习优先排序精神分裂症风险变异，虽涉及染色质环和细胞类型特异性调控，但以实验组学为主，AI仅用于变异筛选，缺乏染色质三维架构建模深度。",
+  "abstract": "The human cortex is complex and heterogeneous, undergoing extensive expansion during development(1,2). Our prior study of neurogenesis, including radial glia (RG), intermediate progenitor cells, excitatory neurons and interneurons demonstrated that chromatin looping underlies transcriptional regulation for lineage-specific genes, shedding light on how non-coding genetic variants contribute to neuropsychiatric disorders by means of cell-type-specific gene regulation(3). RG have a crucial role in generating cellular diversity through both neurogenesis and gliogenesis and can be further classified into ventricular RG (vRG) and outer RG (oRG)(4,5). Given their significance in cortical development, we conducted a comprehensive three-dimensional (3D) epigenomic analysis of four main glial populations, including vRG, oRG, oligodendrocyte precursor cells and microglia, from the mid-gestational human neocortex. By integrating gene expression, chromatin accessibility, DNA methylation and 3D chromatin interactions, we identified cell-type-specific candidate cis-regulatory elements (cCREs) and validated their regulatory function using transgenic mouse embryos. Using machine learning, we prioritized 112 schizophrenia risk variants within glia cCREs and further confirmed the predicted vRG enhancer disruption by the rs4449074 risk allele in vivo. Finally, oRG cCREs are enriched for human accelerated regions compared with other cCREs and a subset of human accelerated regions show activity differences from their chimpanzee orthologues that interact with genes involved in neuronal development. Our findings advance the understanding of human-specific gene regulation during corticogenesis.",
+  "abstract_zh": "人类大脑皮层复杂且异质，在发育过程中经历广泛扩张(1,2)。我们先前对神经发生（包括放射状胶质细胞 (radial glia, RG)、中间前体细胞、兴奋性神经元和中间神经元）的研究表明，染色质环化是谱系特异性基因转录调控的基础，揭示了非编码遗传变异如何通过细胞类型特异性基因调控导致神经精神疾病(3)。RG通过神经发生和胶质发生对产生细胞多样性起关键作用，并可进一步分为脑室区RG (ventricular RG, vRG) 和外侧RG (outer RG, oRG)(4,5)。鉴于它们在皮层发育中的重要性，我们对来自中孕期人类新皮层的四种主要胶质细胞群体（包括vRG、oRG、少突胶质前体细胞和小胶质细胞）进行了全面的三维 (three-dimensional, 3D) 表观基因组分析。通过整合基因表达、染色质可及性、DNA甲基化和3D染色质相互作用，我们鉴定了细胞类型特异性候选顺式调控元件 (candidate cis-regulatory elements, cCREs)，并利用转基因小鼠胚胎验证了其调控功能。利用机器学习，我们在胶质细胞cCREs中优先筛选出112个精神分裂症风险变异，并进一步在体内证实了rs4449074风险等位基因对预测的vRG增强子的破坏作用。最后，与其他cCREs相比，oRG cCREs富集了人类加速区域 (human accelerated regions)，且其中一部分人类加速区域与其黑猩猩直系同源序列相比表现出活性差异，这些差异与参与神经元发育的基因相互作用。我们的发现推进了对皮层发生过程中人类特异性基因调控的理解。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42686907/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42686907/",
+  "paper_page_path": "papers/pubmed/42686907/index.html"
+}

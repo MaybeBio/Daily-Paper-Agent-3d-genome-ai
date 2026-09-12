@@ -1,0 +1,440 @@
+{
+  "identity": {
+    "pmid": "42686907",
+    "doi": "10.1038/s41586-026-10987-6",
+    "title": "3D epigenome of glial cell types in developing human cortex."
+  },
+  "content": {
+    "abstract": "The human cortex is complex and heterogeneous, undergoing extensive expansion during development(1,2). Our prior study of neurogenesis, including radial glia (RG), intermediate progenitor cells, excitatory neurons and interneurons demonstrated that chromatin looping underlies transcriptional regulation for lineage-specific genes, shedding light on how non-coding genetic variants contribute to neuropsychiatric disorders by means of cell-type-specific gene regulation(3). RG have a crucial role in generating cellular diversity through both neurogenesis and gliogenesis and can be further classified into ventricular RG (vRG) and outer RG (oRG)(4,5). Given their significance in cortical development, we conducted a comprehensive three-dimensional (3D) epigenomic analysis of four main glial populations, including vRG, oRG, oligodendrocyte precursor cells and microglia, from the mid-gestational human neocortex. By integrating gene expression, chromatin accessibility, DNA methylation and 3D chromatin interactions, we identified cell-type-specific candidate cis-regulatory elements (cCREs) and validated their regulatory function using transgenic mouse embryos. Using machine learning, we prioritized 112 schizophrenia risk variants within glia cCREs and further confirmed the predicted vRG enhancer disruption by the rs4449074 risk allele in vivo. Finally, oRG cCREs are enriched for human accelerated regions compared with other cCREs and a subset of human accelerated regions show activity differences from their chimpanzee orthologues that interact with genes involved in neuronal development. Our findings advance the understanding of human-specific gene regulation during corticogenesis.",
+    "keywords": [],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Jones, Ian R",
+        "Wang, Li",
+        "Kosicki, Michael",
+        "Battle, Stephanie L",
+        "Narayan, Vivek Jj",
+        "Bi, Qiuli",
+        "Gemenes, Kaila",
+        "Liu, Yuxi",
+        "Zhou, Lingbo",
+        "Song, Mengyi",
+        "White, Matthew",
+        "Olson, Wendy",
+        "Beuchat, Gabriel",
+        "Dickel, Diane",
+        "Li, Yun",
+        "Pennacchio, Len A",
+        "Hawkins, R David",
+        "Kriegstein, Arnold",
+        "Shen, Yin"
+      ],
+      "short_names": [
+        "Jones IR",
+        "Wang L",
+        "Kosicki M",
+        "Battle SL",
+        "Narayan VJ",
+        "Bi Q",
+        "Gemenes K",
+        "Liu Y",
+        "Zhou L",
+        "Song M",
+        "White M",
+        "Olson W",
+        "Beuchat G",
+        "Dickel D",
+        "Li Y",
+        "Pennacchio LA",
+        "Hawkins RD",
+        "Kriegstein A",
+        "Shen Y"
+      ],
+      "auids": [
+        "ORCID: 0009-0001-2227-9618",
+        "ORCID: 0000-0001-9510-6294",
+        "ORCID: 0000-0001-7173-8852",
+        "ORCID: 0000-0003-3286-4340",
+        "ORCID: 0009-0003-6000-7626",
+        "ORCID: 0000-0001-5497-6824",
+        "ORCID: 0000-0002-9275-4189",
+        "ORCID: 0000-0002-8748-3732",
+        "ORCID: 0000-0002-2997-9457",
+        "ORCID: 0000-0001-5742-2990",
+        "ORCID: 0000-0001-9901-5613"
+      ],
+      "affiliations": [
+        "Institute for Human Genetics, University of California, San Francisco, San Francisco, CA, USA.",
+        "Department of Neurology, University of California, San Francisco, San Francisco, CA, USA.",
+        "The Eli and Edythe Broad Center of Regeneration Medicine and Stem Cell Research, UCSF, San Francisco, CA, USA.",
+        "Environmental Genomics and Systems Biology Division, Lawrence Berkeley National Laboratory, Berkeley, CA, USA.",
+        "Division of Medical Genetics, Department of Medicine, Department of Genome Sciences, Institute for Stem Cell and Regenerative Medicine, University of Washington School of Medicine, Seattle, WA, USA.",
+        "Department of Natural Sciences, College of Arts and Sciences, Bowie State University, Bowie, MD, USA.",
+        "Institute for Human Genetics, University of California, San Francisco, San Francisco, CA, USA.",
+        "Department of Neurology, University of California, San Francisco, San Francisco, CA, USA.",
+        "The Eli and Edythe Broad Center of Regeneration Medicine and Stem Cell Research, UCSF, San Francisco, CA, USA.",
+        "Department of Neurology, University of California, San Francisco, San Francisco, CA, USA.",
+        "The Eli and Edythe Broad Center of Regeneration Medicine and Stem Cell Research, UCSF, San Francisco, CA, USA.",
+        "Institute for Human Genetics, University of California, San Francisco, San Francisco, CA, USA.",
+        "Department of Biostatistics, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA.",
+        "Department of Neurology, University of California, San Francisco, San Francisco, CA, USA.",
+        "The Eli and Edythe Broad Center of Regeneration Medicine and Stem Cell Research, UCSF, San Francisco, CA, USA.",
+        "Department of Neurology, University of California, San Francisco, San Francisco, CA, USA.",
+        "The Eli and Edythe Broad Center of Regeneration Medicine and Stem Cell Research, UCSF, San Francisco, CA, USA.",
+        "Division of Medical Genetics, Department of Medicine, Department of Genome Sciences, Institute for Stem Cell and Regenerative Medicine, University of Washington School of Medicine, Seattle, WA, USA.",
+        "Division of Medical Genetics, Department of Medicine, Department of Genome Sciences, Institute for Stem Cell and Regenerative Medicine, University of Washington School of Medicine, Seattle, WA, USA.",
+        "Environmental Genomics and Systems Biology Division, Lawrence Berkeley National Laboratory, Berkeley, CA, USA.",
+        "Department of Biostatistics, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA.",
+        "Department of Genetics, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA.",
+        "Environmental Genomics and Systems Biology Division, Lawrence Berkeley National Laboratory, Berkeley, CA, USA.",
+        "US Department of Energy Joint Genome Institute, Berkeley, CA, USA.",
+        "Comparative Biochemistry Program, University of California Berkeley, Berkeley, CA, USA.",
+        "Division of Medical Genetics, Department of Medicine, Department of Genome Sciences, Institute for Stem Cell and Regenerative Medicine, University of Washington School of Medicine, Seattle, WA, USA. rdhawk@uw.edu.",
+        "Department of Neurology, University of California, San Francisco, San Francisco, CA, USA. Arnold.Kriegstein@ucsf.edu.",
+        "The Eli and Edythe Broad Center of Regeneration Medicine and Stem Cell Research, UCSF, San Francisco, CA, USA. Arnold.Kriegstein@ucsf.edu.",
+        "Weill Institute for Neurosciences, University of California, San Francisco, San Francisco, CA, USA. Arnold.Kriegstein@ucsf.edu.",
+        "Institute for Human Genetics, University of California, San Francisco, San Francisco, CA, USA. Yin.Shen@ucsf.edu.",
+        "Department of Neurology, University of California, San Francisco, San Francisco, CA, USA. Yin.Shen@ucsf.edu.",
+        "Weill Institute for Neurosciences, University of California, San Francisco, San Francisco, CA, USA. Yin.Shen@ucsf.edu."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Jones, Ian R",
+        "short_name": "Jones IR",
+        "identifiers": [
+          "0009-0001-2227-9618"
+        ],
+        "affiliations": [
+          "Institute for Human Genetics, University of California, San Francisco, San Francisco, CA, USA."
+        ]
+      },
+      {
+        "full_name": "Wang, Li",
+        "short_name": "Wang L",
+        "identifiers": [
+          "0000-0001-9510-6294"
+        ],
+        "affiliations": [
+          "Department of Neurology, University of California, San Francisco, San Francisco, CA, USA.",
+          "The Eli and Edythe Broad Center of Regeneration Medicine and Stem Cell Research, UCSF, San Francisco, CA, USA."
+        ]
+      },
+      {
+        "full_name": "Kosicki, Michael",
+        "short_name": "Kosicki M",
+        "identifiers": [
+          "0000-0001-7173-8852"
+        ],
+        "affiliations": [
+          "Environmental Genomics and Systems Biology Division, Lawrence Berkeley National Laboratory, Berkeley, CA, USA."
+        ]
+      },
+      {
+        "full_name": "Battle, Stephanie L",
+        "short_name": "Battle SL",
+        "identifiers": [],
+        "affiliations": [
+          "Division of Medical Genetics, Department of Medicine, Department of Genome Sciences, Institute for Stem Cell and Regenerative Medicine, University of Washington School of Medicine, Seattle, WA, USA.",
+          "Department of Natural Sciences, College of Arts and Sciences, Bowie State University, Bowie, MD, USA."
+        ]
+      },
+      {
+        "full_name": "Narayan, Vivek Jj",
+        "short_name": "Narayan VJ",
+        "identifiers": [],
+        "affiliations": [
+          "Institute for Human Genetics, University of California, San Francisco, San Francisco, CA, USA."
+        ]
+      },
+      {
+        "full_name": "Bi, Qiuli",
+        "short_name": "Bi Q",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Neurology, University of California, San Francisco, San Francisco, CA, USA.",
+          "The Eli and Edythe Broad Center of Regeneration Medicine and Stem Cell Research, UCSF, San Francisco, CA, USA."
+        ]
+      },
+      {
+        "full_name": "Gemenes, Kaila",
+        "short_name": "Gemenes K",
+        "identifiers": [
+          "0000-0003-3286-4340"
+        ],
+        "affiliations": [
+          "Department of Neurology, University of California, San Francisco, San Francisco, CA, USA.",
+          "The Eli and Edythe Broad Center of Regeneration Medicine and Stem Cell Research, UCSF, San Francisco, CA, USA."
+        ]
+      },
+      {
+        "full_name": "Liu, Yuxi",
+        "short_name": "Liu Y",
+        "identifiers": [],
+        "affiliations": [
+          "Institute for Human Genetics, University of California, San Francisco, San Francisco, CA, USA."
+        ]
+      },
+      {
+        "full_name": "Zhou, Lingbo",
+        "short_name": "Zhou L",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Biostatistics, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA."
+        ]
+      },
+      {
+        "full_name": "Song, Mengyi",
+        "short_name": "Song M",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Neurology, University of California, San Francisco, San Francisco, CA, USA.",
+          "The Eli and Edythe Broad Center of Regeneration Medicine and Stem Cell Research, UCSF, San Francisco, CA, USA."
+        ]
+      },
+      {
+        "full_name": "White, Matthew",
+        "short_name": "White M",
+        "identifiers": [
+          "0009-0003-6000-7626"
+        ],
+        "affiliations": [
+          "Department of Neurology, University of California, San Francisco, San Francisco, CA, USA.",
+          "The Eli and Edythe Broad Center of Regeneration Medicine and Stem Cell Research, UCSF, San Francisco, CA, USA."
+        ]
+      },
+      {
+        "full_name": "Olson, Wendy",
+        "short_name": "Olson W",
+        "identifiers": [],
+        "affiliations": [
+          "Division of Medical Genetics, Department of Medicine, Department of Genome Sciences, Institute for Stem Cell and Regenerative Medicine, University of Washington School of Medicine, Seattle, WA, USA."
+        ]
+      },
+      {
+        "full_name": "Beuchat, Gabriel",
+        "short_name": "Beuchat G",
+        "identifiers": [],
+        "affiliations": [
+          "Division of Medical Genetics, Department of Medicine, Department of Genome Sciences, Institute for Stem Cell and Regenerative Medicine, University of Washington School of Medicine, Seattle, WA, USA."
+        ]
+      },
+      {
+        "full_name": "Dickel, Diane",
+        "short_name": "Dickel D",
+        "identifiers": [
+          "0000-0001-5497-6824"
+        ],
+        "affiliations": [
+          "Environmental Genomics and Systems Biology Division, Lawrence Berkeley National Laboratory, Berkeley, CA, USA."
+        ]
+      },
+      {
+        "full_name": "Li, Yun",
+        "short_name": "Li Y",
+        "identifiers": [
+          "0000-0002-9275-4189"
+        ],
+        "affiliations": [
+          "Department of Biostatistics, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA.",
+          "Department of Genetics, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA."
+        ]
+      },
+      {
+        "full_name": "Pennacchio, Len A",
+        "short_name": "Pennacchio LA",
+        "identifiers": [
+          "0000-0002-8748-3732"
+        ],
+        "affiliations": [
+          "Environmental Genomics and Systems Biology Division, Lawrence Berkeley National Laboratory, Berkeley, CA, USA.",
+          "US Department of Energy Joint Genome Institute, Berkeley, CA, USA.",
+          "Comparative Biochemistry Program, University of California Berkeley, Berkeley, CA, USA."
+        ]
+      },
+      {
+        "full_name": "Hawkins, R David",
+        "short_name": "Hawkins RD",
+        "identifiers": [
+          "0000-0002-2997-9457"
+        ],
+        "affiliations": [
+          "Division of Medical Genetics, Department of Medicine, Department of Genome Sciences, Institute for Stem Cell and Regenerative Medicine, University of Washington School of Medicine, Seattle, WA, USA. rdhawk@uw.edu."
+        ]
+      },
+      {
+        "full_name": "Kriegstein, Arnold",
+        "short_name": "Kriegstein A",
+        "identifiers": [
+          "0000-0001-5742-2990"
+        ],
+        "affiliations": [
+          "Department of Neurology, University of California, San Francisco, San Francisco, CA, USA. Arnold.Kriegstein@ucsf.edu.",
+          "The Eli and Edythe Broad Center of Regeneration Medicine and Stem Cell Research, UCSF, San Francisco, CA, USA. Arnold.Kriegstein@ucsf.edu.",
+          "Weill Institute for Neurosciences, University of California, San Francisco, San Francisco, CA, USA. Arnold.Kriegstein@ucsf.edu."
+        ]
+      },
+      {
+        "full_name": "Shen, Yin",
+        "short_name": "Shen Y",
+        "identifiers": [
+          "0000-0001-9901-5613"
+        ],
+        "affiliations": [
+          "Institute for Human Genetics, University of California, San Francisco, San Francisco, CA, USA. Yin.Shen@ucsf.edu.",
+          "Department of Neurology, University of California, San Francisco, San Francisco, CA, USA. Yin.Shen@ucsf.edu.",
+          "Weill Institute for Neurosciences, University of California, San Francisco, San Francisco, CA, USA. Yin.Shen@ucsf.edu."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Nature"
+    ],
+    "journal_abbrev": [
+      "Nature"
+    ],
+    "pub_date": "2026 Sep 2",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/03 05:37",
+    "fetched_at": "2026-09-12 11:08:09"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42686907",
+      "33057195",
+      "42475469",
+      "42281968",
+      "38092917",
+      "40369080",
+      "38358392",
+      "36993726",
+      "33149216",
+      "29030344",
+      "37292820",
+      "29307494",
+      "27760116",
+      "35132236",
+      "38713624",
+      "37066152",
+      "37090552",
+      "39779846",
+      "37824643",
+      "42420164",
+      "38781390",
+      "34462306",
+      "38645099",
+      "41920741",
+      "34266896",
+      "34616061",
+      "38948875",
+      "28335009",
+      "41861825",
+      "37789374",
+      "39131371",
+      "41565813",
+      "41867821",
+      "41862973",
+      "34172755",
+      "38951027",
+      "40011774",
+      "34416157",
+      "33657375",
+      "42490430",
+      "34155100",
+      "33158872",
+      "26683846",
+      "26524239",
+      "39091792",
+      "35976093",
+      "40235507",
+      "40774817",
+      "36121513",
+      "42481940",
+      "38092918",
+      "26269921",
+      "34616060",
+      "39184089",
+      "34017130",
+      "32610082",
+      "25391964",
+      "41381947",
+      "34390642",
+      "38012720",
+      "38979371",
+      "39149497",
+      "38092913",
+      "41726865",
+      "38232730",
+      "10222107",
+      "39183303",
+      "37811875",
+      "38244545",
+      "22487088",
+      "39711713",
+      "30770253",
+      "36070683",
+      "31303374",
+      "32299352",
+      "40383049",
+      "41040362",
+      "39681766",
+      "25702574",
+      "41357990",
+      "20154730",
+      "27657449",
+      "39185167",
+      "37037607",
+      "33978759",
+      "35644876",
+      "36207411",
+      "39005386",
+      "40701154",
+      "36160011",
+      "37873320",
+      "37886514",
+      "29807547",
+      "33597191",
+      "39481377",
+      "34012112",
+      "31769130",
+      "29033352",
+      "41280099",
+      "41334930"
+    ],
+    "review": [
+      "42686907",
+      "42420164",
+      "41862973",
+      "22487088",
+      "40383049",
+      "35644876"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://doi.org/10.1038/s41586-026-10987-6",
+        "provider": "Nature Publishing Group",
+        "category": "Full Text Sources",
+        "attribute": "subscription/membership/fee required",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flexible use of conserved motifs constrains genome access in cell type evolution. · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-mid">7</span>
+    <div>
+      <h1>Flexible use of conserved motifs constrains genome access in cell type evolution.</h1>
+      <div class="meta">Chai, Chew; Gibson, Jesse; Li, Pengyang; McDonald, Brennan D; Pampari, Anusri; Patel, Aman; Kundaje, Anshul; Wang, Bo</div>
+      <div class="meta muted">
+        
+        <span class="journal">Nature ecology &amp; evolution</span>
+        · 2026-09-09
+         · 仅摘要
+         · <a href="https://pubmed.ncbi.nlm.nih.gov/42711533/">原文</a>
+      </div>
+      <p class="one-liner">结合单细胞多组学与深度学习，研究跨物种细胞类型进化中染色质可及性序列基序的保守与重组，虽非直接建模三维染色质结构，但通过AI预测染色质可及性并揭示调控基序的进化约束，对理解染色质空间组织背后的调控语法有启发。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">Cell types can be organized into related families, but the regulatory mechanisms that define and maintain these families across deep evolutionary time remain unknown. Here, combining single-nucleus multi-omic sequencing with deep learning to analyse the accessible genomes of two groups of vastly divergent animals including flatworms and vertebrates, we find that hundreds of accessibility-dictating sequence motifs partition into distinct yet conserved sets, or &#39;vocabularies&#39;, each associated with a specific cell type family. However, combinatorial relationships among these motifs preferred by individual cell types are largely species specific. Deep-learning models trained on one species accurately predict family-level chromatin accessibility in distantly related species, albeit frequently rely on different motifs from shared vocabularies to reach convergent predictions. By contrast, models trained on individual cell types within a family lose cross-species predictive power, indicating that the regulatory syntax governing cell type-level identity evolves rapidly. We propose a &#39;collective maintenance&#39; model in which motif vocabularies defining cell type families are evolutionarily stable, while recombination of these motifs generates cell type-specific regulatory programmes. This suggests that family identity is maintained collectively by large, conserved pools of regulatory factors, analogous to the logic of developmental homology, where character identity persists through network-level conservation despite extensive rewiring.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">细胞类型可被组织为相关家族，但定义并维持这些家族跨越深时演化的调控机制仍属未知。本研究结合单核多组学测序与深度学习，分析了两类亲缘关系极远的动物类群（包括扁形动物和脊椎动物）的可及基因组，发现数百个决定可及性的序列基序可划分为不同但保守的集合（即&#34;词汇表&#34;），每个集合与特定的细胞类型家族相关联。然而，单个细胞类型偏好的这些基序间的组合关系在很大程度上具有物种特异性。基于一个物种训练的深度学习模型能准确预测远缘物种的家族水平染色质可及性，尽管这些模型常依赖共享词汇表中的不同基序来达成趋同预测。相比之下，基于家族内单个细胞类型训练的模型会丧失跨物种预测能力，表明调控细胞类型水平身份的调控语法演化迅速。我们提出&#34;集体维持&#34;模型：定义细胞类型家族的基序词汇表在演化上稳定，而这些基序的重组则产生细胞类型特异性调控程序。这表明家族身份由大量保守的调控因子库集体维持，类似于发育同源性的逻辑——尽管存在广泛重连，但特征身份通过网络水平保守性得以延续。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：Flexible use of conserved motifs constrains genome access in cell type evolution</li>
+<li><strong>作者与单位</strong>：Chai, Chew; Gibson, Jesse; Li, Pengyang; McDonald, Brennan D; Pampari, Anusri; Patel, Aman; Kundaje, Anshul; Wang, Bo（单位未提供）</li>
+<li><strong>期刊/预印本平台</strong>：Nature Ecology &amp; Evolution</li>
+<li><strong>年份</strong>：2026-09-09</li>
+<li><strong>论文类型</strong>：研究论文</li>
+<li><strong>领域</strong>：进化发育生物学、调控基因组学、计算生物学</li>
+<li><strong>关键词</strong>：cell type evolution, chromatin accessibility, sequence motifs, deep learning, cross-species prediction</li>
+<li><strong>DOI/arXiv 号</strong>：10.1038/s41559-026-03164-5</li>
+<li><strong>代码</strong>：未提供</li>
+<li><strong>数据</strong>：未提供</li>
+<li><strong>阅读日期</strong>：未提供</li>
+<li><strong>该文在「三维基因组/染色质组织 × AI 方法/物理模拟」方向中的位置</strong>：本文聚焦于染色质可及性（chromatin accessibility）的跨物种进化机制，而非直接研究三维基因组结构。但其核心方法——利用深度学习（deep learning）从序列预测染色质可及性，并分析motif组合规则——与三维基因组预测（如从序列预测Hi-C接触图）高度相关。本文提出的“集体维持模型”（collective maintenance model）和motif词汇表（vocabularies）概念，可迁移至理解三维基因组中调控元件的进化约束与可塑性。</li>
+</ul>
+<h2>02 一句话总结</h2>
+<p>通过结合单细胞多组学与深度学习，发现细胞类型家族的染色质可及性由保守的motif词汇表定义，但细胞类型特异的motif组合规则快速进化，导致跨物种预测在家族层面成功而在细胞类型层面失败。</p>
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：在进化时间尺度上，细胞类型家族（cell type families）的染色质可及性调控机制如何维持和演化？保守的序列motif如何约束或允许细胞类型特异的调控程序？</li>
+<li><strong>为什么重要</strong>：理解细胞类型如何进化是发育生物学和进化生物学的核心问题。染色质可及性决定了基因调控的潜力，但其跨物种的进化动态尚不清楚。</li>
+<li><strong>现有方法为何不足</strong>：传统比较基因组学主要关注单个motif的保守性，但忽略了motif组合（combinatorial relationships）的进化。单物种研究无法揭示跨物种的调控逻辑。</li>
+<li><strong>精确的「Can ... ?」研究问题</strong>：Can deep learning models trained on one species predict chromatin accessibility in distantly related species, and what does the success or failure of such prediction reveal about the evolutionary constraints on regulatory motifs?</li>
+</ul>
+<h2>04 背景与发展脉络</h2>
+<ul>
+<li><strong>脉络来源</strong>：经外部核验（基于领域常识）。</li>
+<li><strong>阶段1：单物种调控元件鉴定</strong>。代表性方法：ChIP-seq、ATAC-seq、DNase-seq。优点：高分辨率。局限：无法直接比较跨物种调控逻辑。</li>
+<li><strong>阶段2：跨物种保守性分析</strong>。代表性方法：序列比对、motif富集分析。优点：识别保守元件。局限：忽略组合规则，无法解释细胞类型特异性。</li>
+<li><strong>阶段3：深度学习预测调控活性</strong>。代表性方法：DeepSEA、Basenji、Enformer。优点：从序列端到端预测功能。局限：通常训练于单物种，跨物种泛化能力未系统检验。</li>
+<li><strong>本文主张的位置</strong>：提出“集体维持模型”，将保守的motif词汇表（家族水平）与快速进化的组合规则（细胞类型水平）分离，为跨物种调控预测提供新框架。</li>
+</ul>
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>跨物种细胞类型调控机制未知</td>
+<td>无法解释为何细胞类型家族在进化中保持稳定，而具体细胞类型却快速分化</td>
+<td>传统方法聚焦于单个motif，忽略组合规则</td>
+<td>未提供具体节，但全文围绕此问题</td>
+</tr>
+<tr>
+<td>深度学习模型跨物种预测能力有限</td>
+<td>模型在细胞类型层面失去跨物种预测能力</td>
+<td>细胞类型特异的motif组合规则快速进化</td>
+<td>结果部分：家族层面预测成功，细胞类型层面失败</td>
+</tr>
+<tr>
+<td>保守motif的功能解释困难</td>
+<td>相同motif在不同物种中可能调控不同基因</td>
+<td>motif的灵活使用（flexible use）导致功能分化</td>
+<td>结果部分：模型依赖不同motif达到相同预测</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<ol>
+<li><strong>表面方法</strong>：结合单细胞多组学（sn-multi-omic）与深度学习，在扁形动物和脊椎动物中分析染色质可及性，训练跨物种预测模型。</li>
+<li><strong>核心洞察</strong>：细胞类型家族的染色质可及性由一组保守的motif词汇表（vocabularies）定义，但细胞类型特异的motif组合规则（regulatory syntax）快速进化。这导致家族层面可跨物种预测，而细胞类型层面不可。</li>
+<li><strong>可能的普适教训 [Analysis]</strong>：在复杂生物系统中，保守性可能存在于“元件库”层面（如motif集合），而非“组合规则”层面。这提示在三维基因组研究中，保守的拓扑关联结构域（TAD）边界或CTCF位点可能构成“结构词汇表”，而细胞类型特异的染色质环（loops）则由快速进化的组合规则决定。</li>
+</ol>
+<h2>07 方法总览</h2>
+<ul>
+<li><strong>输入</strong>：单细胞多组学数据（sn-multi-omic，包括ATAC-seq和RNA-seq）来自扁形动物（如planarian）和脊椎动物（如人类、小鼠）的多种细胞类型。</li>
+<li><strong>输出</strong>：跨物种染色质可及性预测模型，以及motif词汇表和组合规则。</li>
+<li><strong>模块</strong>：
+  1. 数据生成：单细胞多组学测序，鉴定细胞类型和染色质可及性峰。
+  2. Motif发现：从可及性峰中提取序列motif，聚类为词汇表。
+  3. 深度学习模型：训练卷积神经网络（CNN）预测染色质可及性，输入为DNA序列，输出为可及性概率。
+  4. 跨物种预测：将模型应用于远缘物种，评估预测能力。
+  5. 解释性分析：使用注意力机制或梯度分析，识别模型依赖的motif。</li>
+<li><strong>训练</strong>：模型在单一物种的细胞类型数据上训练，然后在其他物种上测试。</li>
+<li><strong>工具</strong>：未提供具体工具名，但推测使用标准深度学习框架（如TensorFlow/PyTorch）。</li>
+<li><strong>反馈回路</strong>：无显式反馈回路。</li>
+<li><strong>假设</strong>：染色质可及性主要由序列motif决定，且motif功能在进化中部分保守。</li>
+</ul>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>单细胞多组学数据生成</td>
+<td>获取细胞类型特异的染色质可及性和基因表达</td>
+<td>提供训练和验证数据</td>
+<td>输入：组织样本；输出：细胞类型注释和可及性峰</td>
+<td>未提供具体节</td>
+<td>无法训练模型或验证预测</td>
+</tr>
+<tr>
+<td>Motif词汇表聚类</td>
+<td>将序列motif分组为保守的词汇表</td>
+<td>识别跨物种保守的调控元件</td>
+<td>输入：可及性峰序列；输出：motif簇</td>
+<td>结果部分：数百个motif分为不同词汇表</td>
+<td>无法定义家族级保守性</td>
+</tr>
+<tr>
+<td>深度学习预测模型</td>
+<td>从序列预测染色质可及性</td>
+<td>测试跨物种泛化能力</td>
+<td>输入：DNA序列；输出：可及性概率</td>
+<td>结果部分：家族层面预测成功</td>
+<td>无法量化motif组合规则的进化</td>
+</tr>
+<tr>
+<td>跨物种预测评估</td>
+<td>比较模型在不同物种上的表现</td>
+<td>揭示调控逻辑的保守性与可塑性</td>
+<td>输入：模型和测试物种数据；输出：预测准确率</td>
+<td>结果部分：家族层面成功，细胞类型层面失败</td>
+<td>无法支持“集体维持模型”</td>
+</tr>
+<tr>
+<td>模型解释性分析</td>
+<td>识别模型依赖的motif</td>
+<td>验证motif的灵活使用</td>
+<td>输入：模型和序列；输出：重要motif列表</td>
+<td>结果部分：不同物种依赖不同motif</td>
+<td>无法证明motif词汇表的灵活使用</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式符号</h2>
+<p>不适用。本文未提供显式数学公式。</p>
+<h2>10 实验设计与证据链</h2>
+<ul>
+<li><strong>数据集/群体</strong>：扁形动物（如planarian）和脊椎动物（人类、小鼠）的单细胞多组学数据。规模未提供。</li>
+<li><strong>指标</strong>：预测准确率（如AUROC或AUPRC），跨物种预测性能。</li>
+<li><strong>基线</strong>：随机预测或基于序列保守性的简单模型。</li>
+<li><strong>预算</strong>：未提供。</li>
+<li><strong>骨干/仪器</strong>：深度学习模型（CNN），单细胞测序平台。</li>
+<li><strong>Oracle输入</strong>：真实染色质可及性标签。</li>
+<li><strong>评测协议</strong>：训练于一个物种，测试于另一物种；分别评估家族级和细胞类型级预测。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>家族级跨物种预测</td>
+<td>细胞类型家族的染色质可及性可跨物种预测</td>
+<td>训练于人类，测试于小鼠的相同细胞类型家族</td>
+<td>高准确率</td>
+<td>家族级调控逻辑保守</td>
+<td>不能证明所有家族都保守</td>
+<td>结果部分</td>
+</tr>
+<tr>
+<td>细胞类型级跨物种预测</td>
+<td>细胞类型特异的染色质可及性可跨物种预测</td>
+<td>训练于人类特定细胞类型，测试于小鼠对应类型</td>
+<td>低准确率</td>
+<td>细胞类型级调控逻辑快速进化</td>
+<td>不能排除某些细胞类型更保守</td>
+<td>结果部分</td>
+</tr>
+<tr>
+<td>Motif依赖分析</td>
+<td>模型在不同物种中使用不同motif</td>
+<td>比较模型在人类和小鼠中依赖的motif</td>
+<td>依赖不同motif但来自同一词汇表</td>
+<td>灵活使用保守motif</td>
+<td>不能证明所有motif都灵活</td>
+<td>结果部分</td>
+</tr>
+</tbody>
+</table>
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：仅针对染色质可及性，不涉及基因表达或三维基因组。</li>
+<li><strong>Oracle/真值输入</strong>：单细胞ATAC-seq数据，受测序深度和细胞类型注释质量影响。</li>
+<li><strong>端到端状态</strong>：模型从序列预测可及性，但未考虑表观遗传修饰或染色质状态。</li>
+<li><strong>算力成本</strong>：未提供，但深度学习训练通常需要GPU。</li>
+<li><strong>历史数据依赖</strong>：依赖当前物种的基因组和注释，可能受参考基因组质量影响。</li>
+<li><strong>模型依赖</strong>：使用CNN，其他架构（如Transformer）可能产生不同结果。</li>
+<li><strong>最难情形</strong>：高度分化的细胞类型（如神经元）可能更难预测。</li>
+<li><strong>群体/领域边界</strong>：仅研究扁形动物和脊椎动物，其他动物门（如昆虫）可能不同。</li>
+<li><strong>不确定性</strong>：motif词汇表的定义依赖于聚类算法，不同参数可能改变结果。</li>
+<li><strong>有边界的复述</strong>：在扁形动物和脊椎动物中，细胞类型家族的染色质可及性由保守的motif词汇表定义，但细胞类型特异的组合规则快速进化，导致深度学习模型在家族层面可跨物种预测，而在细胞类型层面失败。</li>
+</ul>
+<h2>12 作者自认局限</h2>
+<p>在提供的材料中未发现作者明确承认的局限。但可推断以下约束：
+- <strong>作者提及的相关约束</strong>：研究仅覆盖两个动物门，可能不适用于所有后生动物。单细胞数据的分辨率可能限制细胞类型亚型的识别。深度学习模型的可解释性方法可能遗漏某些motif。</p>
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>家族级预测成功可能源于序列保守性而非调控逻辑</td>
+<td>相同motif在序列上保守，导致模型直接利用序列相似性</td>
+<td>混淆了序列保守与功能保守</td>
+<td>使用突变实验或合成序列验证motif功能</td>
+<td>未提供节，但基于领域常识</td>
+</tr>
+<tr>
+<td>细胞类型级预测失败可能由于数据噪声而非进化</td>
+<td>单细胞数据稀疏，跨物种比对可能引入偏差</td>
+<td>低估了调控逻辑的保守性</td>
+<td>使用更高质量数据或模拟数据重复实验</td>
+<td>未提供节</td>
+</tr>
+<tr>
+<td>Motif词汇表的聚类可能受物种特异性motif影响</td>
+<td>某些motif在特定物种中富集，导致聚类偏差</td>
+<td>词汇表可能不真正保守</td>
+<td>使用独立物种验证词汇表</td>
+<td>未提供节</td>
+</tr>
+</tbody>
+</table>
+<h2>14 学到什么</h2>
+<p><strong>Agent 提炼的知识候选</strong>：
+1. <strong>可迁移概念：集体维持模型</strong>。在三维基因组中，保守的TAD边界或CTCF位点可能构成“结构词汇表”，而细胞类型特异的染色质环由快速进化的组合规则决定。可迁移至：预测跨物种三维基因组结构，识别保守的拓扑元件。
+2. <strong>可迁移方法：跨物种深度学习预测</strong>。训练于一个物种的Hi-C数据，测试于另一物种，评估TAD或loop的保守性。可迁移至：验证三维基因组结构的进化约束。
+3. <strong>可迁移实验设计：家族级 vs. 细胞类型级预测</strong>。在三维基因组中，比较细胞类型家族（如神经元家族）与具体细胞类型（如多巴胺能神经元）的跨物种预测能力。可迁移至：区分保守与可塑的三维基因组特征。
+4. <strong>可迁移洞察：灵活使用保守元件</strong>。相同CTCF位点在不同细胞类型中可能参与不同染色质环。可迁移至：解释三维基因组中CTCF位点的多功能性。</p>
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>相似工作</strong>：DeepSEA (Zhou &amp; Troyanskaya, 2015) 和 Basenji (Kelley et al., 2018) 使用深度学习从序列预测染色质可及性，但未系统研究跨物种泛化。本文扩展了这些方法。</li>
+<li><strong>组合冲突</strong>：与“调控语法保守”假说（如Kvon et al., 2016）部分冲突，后者认为增强子-启动子配对在进化中保守。本文强调组合规则快速进化。</li>
+<li><strong>可迁移领域</strong>：三维基因组领域，如Hi-C预测模型（如Akita, Fudenberg et al., 2020）可借鉴本文的跨物种验证框架。</li>
+<li><strong>候选方向</strong>：将本文的“集体维持模型”应用于三维基因组，检验TAD边界是否构成保守的“结构词汇表”，而染色质环是否由快速进化的组合规则决定。</li>
+</ul>
+<h2>16 研究想法</h2>
+<p><strong>Agent 生成的研究候选</strong>：</p>
+<ol>
+<li>
+<p><strong>名称</strong>：跨物种三维基因组预测的“集体维持模型”验证
+   - <strong>来源局限/观察</strong>：本文仅研究染色质可及性，未涉及三维基因组。但类似逻辑可能适用。
+   - <strong>核心假设</strong>：TAD边界由保守的CTCF/cohesin词汇表定义，而细胞类型特异的染色质环由快速进化的组合规则决定。
+   - <strong>相对本文的增量</strong>：将方法从可及性扩展到三维基因组，使用Hi-C数据。
+   - <strong>初步方法</strong>：训练深度学习模型（如Akita）于人类细胞类型，预测小鼠对应细胞类型的Hi-C接触图，比较TAD和loop的跨物种预测能力。
+   - <strong>验证方式</strong>：使用独立物种（如斑马鱼）验证，并分析模型依赖的序列特征。
+   - <strong>可能的失败模式</strong>：三维基因组可能更保守，导致细胞类型级预测也成功。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>名称</strong>：细胞类型家族特异的染色质环词汇表
+   - <strong>来源局限/观察</strong>：本文发现motif词汇表定义细胞类型家族。类似地，染色质环可能也有家族特异的“环词汇表”。
+   - <strong>核心假设</strong>：相同细胞类型家族（如神经元）共享保守的染色质环模式，而具体细胞类型（如兴奋性神经元）有特异的环。
+   - <strong>相对本文的增量</strong>：从序列motif扩展到三维结构。
+   - <strong>初步方法</strong>：聚类细胞类型家族的Hi-C数据，识别共享的TAD边界和loop，然后训练模型预测这些结构。
+   - <strong>验证方式</strong>：跨物种比较，检验家族级环的保守性。
+   - <strong>可能的失败模式</strong>：染色质环可能过于动态，无法形成稳定词汇表。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>名称</strong>：深度学习模型解释性分析揭示三维基因组进化约束
+   - <strong>来源局限/观察</strong>：本文使用模型解释性分析揭示motif的灵活使用。类似方法可应用于三维基因组模型。
+   - <strong>核心假设</strong>：模型在不同物种中依赖不同CTCF位点或cohesin结合位点来预测相同TAD边界。
+   - <strong>相对本文的增量</strong>：将解释性方法从可及性模型迁移到三维基因组模型。
+   - <strong>初步方法</strong>：训练Hi-C预测模型，使用注意力机制或梯度分析，比较跨物种的重要序列特征。
+   - <strong>验证方式</strong>：通过CRISPR编辑验证关键位点的功能。
+   - <strong>可能的失败模式</strong>：模型可能依赖非特异性序列特征，导致解释性分析无意义。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+</ol></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Abstract only</li>
+<li><strong>Assessment boundary</strong> Claims and conclusions as stated in the abstract; no methods, figures, or supplementary materials were available for evaluation</li>
+<li><strong>Shared manuscript claim summary</strong> The authors propose that cell type families across deeply divergent animals (flatworms and vertebrates) are defined by conserved sets of accessibility-dictating sequence motifs ("vocabularies"), while the combinatorial syntax among these motifs is largely species-specific. Deep-learning models trained on one species predict family-level chromatin accessibility across species but lose predictive power at the cell type level, supporting a "collective maintenance" model of regulatory evolution.</li>
+<li><strong>Visible evidence base</strong> Abstract text only; no figures, tables, methods, or statistical details provided</li>
+<li><strong>Missing materials affecting confidence</strong> Methods, all figures and tables, model architecture and training details, dataset descriptions, species and cell type inventories, quantitative performance metrics, statistical analyses, and any validation or ablation experiments</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li>
+<p><strong>Overall assessment</strong> This abstract presents a conceptually ambitious framework for understanding regulatory evolution at the cell type family level. The central claim, that conserved motif vocabularies maintain family identity while motif recombination drives cell type-specific divergence, is intellectually appealing and would be of broad interest if rigorously supported. However, the abstract alone provides insufficient evidence to evaluate the strength of the underlying analyses. The key claims regarding cross-species predictive accuracy, the partitioning of motifs into vocabularies, and the rapid evolution of regulatory syntax are stated without quantitative support. The conceptual framing is strong, but the evidentiary basis cannot be assessed from the supplied material.</p>
+</li>
+<li>
+<p><strong>Who would be interested in the results, and why</strong> Evolutionary developmental biologists studying the deep conservation of regulatory programs; computational biologists working on cross-species regulatory genomics and deep learning; researchers interested in cell type evolution and the genotype-phenotype map. The proposed "collective maintenance" model offers a testable framework that could influence how the field thinks about homology at the regulatory level.</p>
+</li>
+<li>
+<p><strong>Major strengths</strong> 
+  1. The conceptual contribution is significant: distinguishing between conserved motif vocabularies and rapidly evolving combinatorial syntax provides a potentially powerful resolution to the apparent paradox of conserved cell type families despite extensive regulatory divergence.
+  2. The cross-species deep-learning transfer approach is methodologically innovative and, if validated, would constitute a strong demonstration of conserved regulatory logic.
+  3. The analogy to developmental homology and "character identity" is well placed and gives the work broader theoretical relevance beyond the specific datasets.</p>
+</li>
+<li>
+<p><strong>Major Concerns</strong></p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M1</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Evidence sufficiency</li>
+<li><strong>Claim pointer</strong> "hundreds of accessibility-dictating sequence motifs partition into distinct yet conserved sets, or 'vocabularies', each associated with a specific cell type family"</li>
+<li><strong>Evidence pointer</strong> location not provided</li>
+<li><strong>Concern</strong> The abstract states that motifs partition into conserved vocabularies associated with cell type families, but provides no quantitative information about how this partitioning was determined, how conservation was assessed across the two animal groups, or how robust the association with cell type families is.</li>
+<li><strong>Why it matters</strong> This is the foundational claim upon which the entire "collective maintenance" model rests. Without evidence for the stability and distinctness of these vocabularies, the central thesis is unsupported.</li>
+<li>
+<p><strong>Resolution test</strong> Provide the number of motifs per vocabulary, the statistical significance of the partitioning, the conservation metrics across species, and the specificity of vocabulary-cell type family associations.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M2</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Evidence sufficiency</li>
+<li><strong>Claim pointer</strong> "Deep-learning models trained on one species accurately predict family-level chromatin accessibility in distantly related species"</li>
+<li><strong>Evidence pointer</strong> location not provided</li>
+<li><strong>Concern</strong> The abstract claims accurate cross-species prediction but provides no performance metrics, no comparison to baselines, and no specification of which species pairs were tested. The phrase "accurately predict" is undefined.</li>
+<li><strong>Why it matters</strong> The cross-species transfer result is the key empirical pillar of the paper. Without quantitative evidence of predictive accuracy and appropriate controls, the claim cannot be evaluated.</li>
+<li>
+<p><strong>Resolution test</strong> Report AUPRC or AUROC values, correlation coefficients, or other relevant metrics for cross-species predictions, with comparisons to appropriate null models and species-matched controls.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M3</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Evidence sufficiency</li>
+<li><strong>Claim pointer</strong> "models trained on individual cell types within a family lose cross-species predictive power, indicating that the regulatory syntax governing cell type-level identity evolves rapidly"</li>
+<li><strong>Evidence pointer</strong> location not provided</li>
+<li><strong>Concern</strong> The contrast between family-level and cell type-level predictive power is central to the argument for rapid syntax evolution. However, no data are shown demonstrating this loss of predictive power, and the interpretation that this reflects syntax evolution rather than technical limitations (e.g., smaller training sets, cell type heterogeneity across species) is not addressed.</li>
+<li><strong>Why it matters</strong> This claim distinguishes the authors' model from simpler alternatives. If the loss of cell type-level predictive power is due to technical factors, the conclusion about syntax evolution would be weakened.</li>
+<li>
+<p><strong>Resolution test</strong> Show the quantitative drop in performance from family-level to cell type-level models, and include analyses controlling for training set size, cell type annotation consistency, and technical batch effects.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M4</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Conceptual clarity</li>
+<li><strong>Claim pointer</strong> "combinatorial relationships among these motifs preferred by individual cell types are largely species specific"</li>
+<li><strong>Evidence pointer</strong> location not provided</li>
+<li><strong>Concern</strong> The abstract states that motif combinations are species-specific but does not clarify what "largely" means quantitatively, nor how combinatorial relationships were defined and compared across species. The relationship between "preferred" combinations and functional regulatory syntax is not specified.</li>
+<li><strong>Why it matters</strong> The distinction between conserved vocabularies and species-specific syntax is the core of the proposed model. Ambiguity in how syntax is defined and measured weakens the conceptual contribution.</li>
+<li>
+<p><strong>Resolution test</strong> Define the metric used to compare combinatorial relationships across species, report the distribution of conservation scores, and specify the threshold for "largely species specific."</p>
+</li>
+<li>
+<p><strong>Minor Comments</strong></p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m1</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Clarity</li>
+<li><strong>Affected element</strong> Terminology</li>
+<li><strong>Evidence pointer</strong> Abstract, "vocabularies"</li>
+<li><strong>Issue</strong> The term "vocabularies" is used metaphorically but not formally defined. It is unclear whether this refers to a specific computational clustering of motifs or a conceptual grouping.</li>
+<li>
+<p><strong>Required correction</strong> Provide an operational definition of "vocabulary" in the abstract or indicate where it is defined in the main text.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m2</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Scope</li>
+<li><strong>Affected element</strong> Species coverage</li>
+<li><strong>Evidence pointer</strong> Abstract, "two groups of vastly divergent animals including flatworms and vertebrates"</li>
+<li><strong>Issue</strong> The abstract mentions "two groups" but does not specify how many species were analyzed within each group, nor the phylogenetic breadth of the sampling.</li>
+<li>
+<p><strong>Required correction</strong> State the number of species and the phylogenetic distance covered, or refer to the methods for this information.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m3</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Interpretation</li>
+<li><strong>Affected element</strong> "collective maintenance" model</li>
+<li><strong>Evidence pointer</strong> Abstract, final paragraph</li>
+<li><strong>Issue</strong> The analogy to developmental homology is evocative but the mechanistic link between the observed data and the proposed "collective maintenance" model is not fully articulated. It is unclear what specific predictions this model makes that distinguish it from alternative explanations.</li>
+<li>
+<p><strong>Required correction</strong> Briefly state one or two testable predictions of the model that go beyond the observed data.</p>
+</li>
+<li>
+<p><strong>Technical failings that need to be addressed before the case is established</strong> R1-M1, R1-M2, R1-M3. The core empirical claims regarding vocabulary conservation, cross-species predictive accuracy, and the loss of cell type-level predictive power are all stated without quantitative support. These are the pillars of the paper and must be substantiated with data.</p>
+</li>
+<li>
+<p><strong>Assessment against Nature-style criteria</strong> </p>
+</li>
+<li>Originality: High. The distinction between conserved motif vocabularies and rapidly evolving combinatorial syntax is a novel framing that could influence thinking about regulatory evolution.</li>
+<li>Scientific importance: Potentially high. If the claims hold, the work would provide a mechanistic framework for understanding cell type family conservation across deep evolutionary time.</li>
+<li>Interdisciplinary readership: The topic bridges evolutionary biology, genomics, and machine learning, and the conceptual framing would appeal to a broad audience.</li>
+<li>Technical soundness: Cannot be assessed from the abstract. The deep-learning approach and multi-omic integration are plausible but unverifiable without methods and results.</li>
+<li>
+<p>Readability for nonspecialists: The abstract is well written and accessible, though terms like "accessibility-dictating sequence motifs" and "regulatory syntax" could benefit from brief clarification.</p>
+</li>
+<li>
+<p><strong>Recommendation posture</strong> Currently not established from the provided evidence. The conceptual framework is promising and the work could be suitable for a high-impact venue, but the abstract alone does not provide sufficient evidence to evaluate the validity of the core claims. A full assessment requires the methods, figures, and quantitative results.</p>
+</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>The claim that motif vocabularies are "conserved" across flatworms and vertebrates is unsupported without conservation metrics.</li>
+<li>The claim of "accurate" cross-species prediction is unsupported without performance metrics or baselines.</li>
+<li>The claim that cell type-level models "lose cross-species predictive power" is unsupported without data and controls.</li>
+<li>The "collective maintenance" model is presented as a conclusion but is not derived from any visible evidence.</li>
+<li>The statement that regulatory syntax "evolves rapidly" is an interpretation that requires temporal calibration or comparative rate analysis not described in the abstract.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

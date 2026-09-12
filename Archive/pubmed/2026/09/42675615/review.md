@@ -1,0 +1,84 @@
+## Review setup
+- **Input scope** Abstract only
+- **Assessment boundary** Claims and evidence presented in the abstract
+- **Shared manuscript claim summary** The authors present mmVelo, a deep generative model that uses RNA velocity (spliced/unspliced mRNA) to infer dynamics in other modalities (e.g., chromatin accessibility), producing “chromatin velocity” at single-peak resolution. The model is validated in developing mouse brain and mouse skin, and is used to infer dynamics of missing modalities from single-modal human brain data.
+- **Visible evidence base** Abstract text only; no figures, tables, methods, or supplementary data provided.
+- **Missing materials affecting confidence** Full manuscript, methods, figures, tables, supplementary data, code repository (only URL provided), and detailed validation results.
+
+## Reviewer
+- **Overall assessment** The abstract presents a conceptually interesting and potentially impactful approach to extending velocity analysis beyond RNA to other modalities. However, the abstract alone provides insufficient detail to evaluate the core claims, particularly regarding the model’s architecture, validation metrics, and the biological significance of the results. The claim of “chromatin velocity at single-peak resolution” is novel but requires rigorous demonstration that is not visible here.
+- **Who would be interested in the results, and why** Researchers in single-cell multiomics, computational biology, and developmental biology would be interested. The method addresses a key limitation of RNA velocity—its inability to capture dynamics in other modalities—and could enable new insights into regulatory dynamics across layers.
+- **Major strengths** 1. Addresses a clear and important gap: extending velocity-like analysis to non-RNA modalities. 2. The concept of “chromatin velocity” is novel and could be transformative for studying regulatory dynamics. 3. The application to infer missing modalities from single-modal data is a practical and valuable extension.
+- **Major Concerns**
+    - **Concern ID** R1-M1
+    - **Severity** Major
+    - **Blocking** Yes
+    - **Axis** Technical soundness / Validation
+    - **Claim pointer** “mmVelo accurately recovered accessibility dynamics” in developing mouse brain.
+    - **Evidence pointer** Abstract text; location not provided.
+    - **Concern** The abstract states that mmVelo “accurately recovered” accessibility dynamics, but provides no quantitative metrics (e.g., correlation with ground truth, comparison to baselines, or statistical tests). Without such evidence, the claim of accuracy is unsubstantiated.
+    - **Why it matters** The core novelty of the method hinges on its ability to predict dynamics in other modalities. If the validation is weak or absent, the entire contribution is undermined.
+    - **Resolution test** Provide quantitative validation metrics (e.g., Pearson/Spearman correlation, mean squared error) against ground-truth chromatin accessibility data, and compare to a null model or existing methods (e.g., scVelo, CellRank).
+    - **Concern ID** R1-M2
+    - **Severity** Major
+    - **Blocking** Yes
+    - **Axis** Methodological clarity / Reproducibility
+    - **Claim pointer** “mmVelo infers cell state dynamics from spliced and unspliced mRNA and projects them onto other modalities.”
+    - **Evidence pointer** Abstract text; location not provided.
+    - **Concern** The abstract does not describe the model architecture, loss function, or how the projection from RNA velocity to other modalities is achieved. It is unclear whether this is a direct mapping, a learned transformation, or a shared latent space approach. This lack of detail prevents assessment of the method’s novelty and soundness.
+    - **Why it matters** Without understanding the model’s design, it is impossible to evaluate whether the approach is principled, generalizable, or prone to artifacts.
+    - **Resolution test** Provide a clear description of the model architecture, including how RNA velocity is used to infer dynamics in other modalities, and the training procedure.
+    - **Concern ID** R1-M3
+    - **Severity** Major
+    - **Blocking** Yes
+    - **Axis** Biological validation / Interpretability
+    - **Claim pointer** “In mouse skin, it identified transcription factors regulating accessibility.”
+    - **Evidence pointer** Abstract text; location not provided.
+    - **Concern** The abstract claims that mmVelo identified transcription factors (TFs) regulating accessibility, but does not specify which TFs, how they were identified (e.g., via motif enrichment, correlation with velocity), or whether these findings were validated experimentally or against known biology.
+    - **Why it matters** The biological utility of the method is a key selling point. If the TF identification is not validated or is trivial, the claim loses impact.
+    - **Resolution test** List the identified TFs, describe the method used to infer them, and provide evidence (e.g., literature support, ChIP-seq data, or perturbation experiments) that they are genuine regulators.
+    - **Concern ID** R1-M4
+    - **Severity** Major
+    - **Blocking** No
+    - **Axis** Generalizability / Data requirements
+    - **Claim pointer** “Using multiomics data as a bridge, mmVelo inferred the dynamics of missing modalities from single-modal human brain data.”
+    - **Evidence pointer** Abstract text; location not provided.
+    - **Concern** The abstract does not specify what “missing modalities” were inferred, how the bridge was constructed, or what validation was performed (e.g., comparison to held-out multiomics data). The claim of inferring dynamics from single-modal data is ambitious and requires strong evidence.
+    - **Why it matters** This application is a major extension of the method, but without validation, it remains speculative.
+    - **Resolution test** Provide details on the bridge construction, the inferred modalities, and validation against ground-truth multiomics data or independent datasets.
+- **Minor Comments**
+    - **Concern ID** R1-m1
+    - **Severity** Minor
+    - **Axis** Clarity
+    - **Affected element** Terminology
+    - **Evidence pointer** Abstract text
+    - **Issue** The term “chromatin velocity” is introduced but not defined. It is unclear whether this refers to changes in chromatin accessibility over pseudotime, or a vector field in a latent space.
+    - **Required correction** Define “chromatin velocity” explicitly, and distinguish it from RNA velocity.
+    - **Concern ID** R1-m2
+    - **Severity** Minor
+    - **Axis** Reproducibility
+    - **Affected element** Code availability
+    - **Evidence pointer** Abstract text
+    - **Issue** The code repository URL is provided, but the abstract does not state whether the code is documented, includes tutorials, or has been tested on the provided data.
+    - **Required correction** Add a statement about code documentation and reproducibility (e.g., “Code is accompanied by a tutorial and test data to reproduce key results”).
+    - **Concern ID** R1-m3
+    - **Severity** Minor
+    - **Axis** Readability
+    - **Affected element** Abstract structure
+    - **Evidence pointer** Abstract text
+    - **Issue** The abstract jumps from method description to results to application without a clear logical flow. The sentence “Decomposing posterior velocity variability…” is dense and may confuse nonspecialists.
+    - **Required correction** Restructure the abstract to first state the problem, then the method, then key results, and finally the application. Simplify the sentence about posterior variability.
+- **Technical failings that need to be addressed before the case is established** R1-M1 (validation metrics), R1-M2 (model architecture), R1-M3 (TF identification validation), R1-M4 (bridge construction and validation).
+- **Assessment against Nature-style criteria** 
+  - **Originality**: High. The concept of extending velocity to other modalities (chromatin velocity) is novel and not, to my knowledge, previously reported.
+  - **Scientific importance**: Potentially high. If validated, the method could enable new insights into regulatory dynamics across modalities, a key challenge in single-cell biology.
+  - **Interdisciplinary readership**: Moderate. The work is primarily of interest to computational biologists and bioinformaticians, but the biological applications (e.g., TF identification) could attract experimentalists.
+  - **Technical soundness**: Not assessable from the abstract. The core claims lack quantitative validation and methodological detail.
+  - **Readability for nonspecialists**: Poor. The abstract uses jargon (e.g., “manifold-aligned and off-manifold components”) without explanation, and the logical flow is unclear.
+- **Recommendation posture** Currently not established from the provided evidence. The abstract presents a promising idea, but the lack of validation metrics, methodological detail, and biological validation prevents a positive assessment. The authors should provide a full manuscript with rigorous evidence before the case can be evaluated.
+
+## Risk / unsupported claims
+- “mmVelo accurately recovered accessibility dynamics” – no quantitative evidence provided.
+- “mmVelo identified transcription factors regulating accessibility” – no specific TFs or validation provided.
+- “mmVelo inferred the dynamics of missing modalities from single-modal human brain data” – no details on bridge construction or validation.
+- “Decomposing posterior velocity variability into manifold-aligned and off-manifold components revealed modality-specific uncertainty structure” – no evidence or interpretation provided.

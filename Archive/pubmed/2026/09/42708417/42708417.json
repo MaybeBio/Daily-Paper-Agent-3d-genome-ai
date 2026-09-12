@@ -1,0 +1,280 @@
+{
+  "identity": {
+    "pmid": "42708417",
+    "doi": "10.1111/jipb.70386",
+    "title": "Plant cis-regulatory grammar: Decoding the multidimensional code of transcriptional regulation for programmable crop engineering."
+  },
+  "content": {
+    "abstract": "Cis-regulatory elements (CREs) orchestrate the spatiotemporal precision of gene expression that underlies plant development, adaptation, and domestication. Decoding the cis-regulatory grammar of plant genomes remains a central challenge in modern biology, with profound implications for programmable crop engineering. Here, recent conceptual and technological advances are synthesized to reshape our understanding of plant CREs. This review first argues that CRE function is not only an intrinsic property of DNA sequence alone but also emerges from a multidimensional context, including chromatin accessibility, histone modifications, three-dimensional genome topology, and cell type-specific regulatory landscapes. Furthermore, the convergence of single-cell epigenomics, high-throughput functional assays, and CRISPR-based dissection has begun to unravel this contextual grammar, revealing the computational principles governing transcriptional regulation. Critically, we propose that artificial intelligence (AI) platforms are catalyzing an ongoing transition from descriptive discovery to predictive engineering, wherein these platforms outperform natural evolution in designing synthetic CREs. Finally, a roadmap is outlined toward a plant regulatory grammar foundation model, which will enable truly predictive engineering of gene expression when fine-tuned for specific tasks. Collectively, the integration of single-cell resolution maps, precise genome editing, AI-driven design, and regulatory-compliant delivery systems promises to transform our ability to reprogram plant gene regulation for next-generation agriculture, bridging the gap between foundational regulatory biology and tangible crop improvement.",
+    "keywords": [
+      "artificial intelligence",
+      "cis-regulatory elements",
+      "multidimensional context",
+      "programmable crop engineering",
+      "transcriptional regulation"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Zhang, Libin",
+        "Li, Maoteng"
+      ],
+      "short_names": [
+        "Zhang L",
+        "Li M"
+      ],
+      "auids": [
+        "ORCID: 0000-0001-6419-5562",
+        "ORCID: 0000-0003-1655-9637"
+      ],
+      "affiliations": [
+        "Key Laboratory of Molecular Biophysics of the Ministry of Education, College of Life Science and Technology, Huazhong University of Science and Technology, Wuhan, 430074, China.",
+        "Key Laboratory of Molecular Biophysics of the Ministry of Education, College of Life Science and Technology, Huazhong University of Science and Technology, Wuhan, 430074, China.",
+        "Biological Seed Industry Research Institute, Xianghu Laboratory, Hangzhou, 311231, China."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Zhang, Libin",
+        "short_name": "Zhang L",
+        "identifiers": [
+          "0000-0001-6419-5562"
+        ],
+        "affiliations": [
+          "Key Laboratory of Molecular Biophysics of the Ministry of Education, College of Life Science and Technology, Huazhong University of Science and Technology, Wuhan, 430074, China."
+        ]
+      },
+      {
+        "full_name": "Li, Maoteng",
+        "short_name": "Li M",
+        "identifiers": [
+          "0000-0003-1655-9637"
+        ],
+        "affiliations": [
+          "Key Laboratory of Molecular Biophysics of the Ministry of Education, College of Life Science and Technology, Huazhong University of Science and Technology, Wuhan, 430074, China.",
+          "Biological Seed Industry Research Institute, Xianghu Laboratory, Hangzhou, 311231, China."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Journal of integrative plant biology"
+    ],
+    "journal_abbrev": [
+      "J Integr Plant Biol"
+    ],
+    "pub_date": "2026 Sep 8",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/08 12:33",
+    "fetched_at": "2026-09-12 11:08:09"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42708417",
+      "42475469",
+      "42643124",
+      "41768065",
+      "41862973",
+      "42588840",
+      "36031021",
+      "41376168",
+      "40140332",
+      "37309871",
+      "37294468",
+      "42278408",
+      "42430021",
+      "41999049",
+      "41889171",
+      "42127490",
+      "41092254",
+      "42392239",
+      "42272755",
+      "26876195",
+      "42359401",
+      "40065399",
+      "41854240",
+      "41024337",
+      "33964211",
+      "33193733",
+      "42328080",
+      "42713468",
+      "38338756",
+      "33152519",
+      "31740772",
+      "41554183",
+      "41437153",
+      "32043966",
+      "38715516",
+      "41486594",
+      "25442502",
+      "40240259",
+      "42648065",
+      "28119334",
+      "41125905",
+      "29704803",
+      "37549968",
+      "41108914",
+      "42100688",
+      "41937163",
+      "41636766",
+      "31541446",
+      "40767619",
+      "38187729",
+      "41971552",
+      "41280085",
+      "36608347",
+      "23102583",
+      "39668563",
+      "30835493",
+      "41819024",
+      "41036476",
+      "26930114",
+      "40538131",
+      "37950299",
+      "40994446",
+      "41901428",
+      "25303887",
+      "40369872",
+      "40566685",
+      "41713401",
+      "41429956",
+      "38903438",
+      "41541662",
+      "42371108",
+      "41455555",
+      "27499678",
+      "41330932",
+      "41285681",
+      "38889146",
+      "41457591",
+      "32194972",
+      "42494486",
+      "36777038",
+      "41688767",
+      "34456947",
+      "27193099",
+      "42133116",
+      "35840754",
+      "41465249",
+      "42187150",
+      "29194997",
+      "39603170",
+      "41420926",
+      "37402253",
+      "17535887",
+      "42140530",
+      "41221676",
+      "42140663",
+      "41801512",
+      "28066481",
+      "41910071",
+      "36945371",
+      "40782710"
+    ],
+    "review": [
+      "42708417",
+      "42643124",
+      "41768065",
+      "41862973",
+      "42588840",
+      "36031021",
+      "41376168",
+      "40140332",
+      "37309871",
+      "37294468",
+      "42278408",
+      "42430021",
+      "41999049",
+      "41889171",
+      "42127490",
+      "41092254",
+      "42392239",
+      "42272755",
+      "26876195",
+      "42359401",
+      "41854240",
+      "33193733",
+      "42328080",
+      "42713468",
+      "38338756",
+      "33152519",
+      "41554183",
+      "38715516",
+      "40240259",
+      "42648065",
+      "41125905",
+      "29704803",
+      "37549968",
+      "41108914",
+      "42100688",
+      "41636766",
+      "41971552",
+      "36608347",
+      "23102583",
+      "39668563",
+      "30835493",
+      "41819024",
+      "41036476",
+      "40538131",
+      "40994446",
+      "41901428",
+      "40566685",
+      "41713401",
+      "38903438",
+      "41541662",
+      "42371108",
+      "41455555",
+      "41330932",
+      "41457591",
+      "32194972",
+      "41688767",
+      "34456947",
+      "42133116",
+      "35840754",
+      "41465249",
+      "42187150",
+      "29194997",
+      "39603170",
+      "41420926",
+      "37402253",
+      "42140530",
+      "41221676",
+      "28066481",
+      "41910071"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://doi.org/10.1111/jipb.70386",
+        "provider": "Wiley",
+        "category": "Full Text Sources",
+        "attribute": "subscription/membership/fee required",
+        "linkname": ""
+      },
+      {
+        "url": "https://assays.cancer.gov/CPTAC-1548",
+        "provider": "NCI CPTAC Assay Portal",
+        "category": "Miscellaneous",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42692011",
+  "title": "Methylome profiling of SetDB1-deficient ESCs reveals coordinated epigenetic cross-talk during pluripotency.",
+  "authors": "Bovee, Nick G P; Habibi, Ehsan; Liu, Zicong; Hoogland, Stefan H A; Frolich, Siebren; Diepenbroek, Danielle; Bosman, Kim C M; Arand, Julia; Maksakova, Irina A; Kranenbarg, Anouk Klein; Walter, Jorn; Brinkman, Arie B; Mulder, Klaas W; Jansen, Joop H; Vermeulen, Michiel; Lorincz, Matthew; Stunnenberg, Hendrik G; Marks, Hendrik",
+  "journal": "Stem cell reports",
+  "published_date": "2026-09-03",
+  "window": {
+    "start": "2026-08-29",
+    "end": "2026-09-11"
+  },
+  "score": 3,
+  "one_liner_zh": "该文研究SetDB1敲除后DNA甲基化与组蛋白修饰的互作，虽涉及CTCF结合和表观遗传调控，但核心是甲基化谱而非染色质三维空间架构建模，且无AI或分子模拟方法贡献。",
+  "abstract": "SetDB1 is best known for catalyzing H3K9me3, but it also influences H3K27me3 deposition, CTCF-binding, and DNA methylation (DNAme). Given the interplay between DNAme and the other epigenetic features, we profiled DNAme following Setdb1 knockout (KO) in ground-state and serum-grown mouse embryonic stem cells (ESCs) to illuminate DNAme-dependent and -independent functions of SetDB1. Time-course whole-genome bisulfite sequencing of serum-grown ESCs shows that nearly half of SetDB1 binding sites are enriched with DNAme and H3K9me3, primarily at retrotransposons. Upon Setdb1 KO, both H3K9me3 and DNAme are reduced, with DNAme rapidly removed at many sites by TET enzymes. Some retrotransposons, primarily IAPs, are TET-resistant and lose DNAme slowly via passive dilution. Notably, SetDB1-mediated regulation of H3K27me3, CTCF-binding, and SMAD3 are uncoupled from the DNAme-H3K9me3 axis, and from each other. AlphaFold modeling and co-immunoprecipitation mass spectrometry suggest this uncoupling involves competitive binding to distinct SetDB1 protein domains, highlighting the complex coordination underlying SetDB1 functions.",
+  "abstract_zh": "SetDB1最著名的是催化H3K9me3，但它也影响H3K27me3的沉积、CTCF结合和DNA甲基化（DNAme）。鉴于DNAme与其他表观遗传特征之间的相互作用，我们在基础状态和血清培养的小鼠胚胎干细胞（ESCs）中对Setdb1敲除（KO）后的DNAme进行了分析，以阐明SetDB1的DNAme依赖性和非依赖性功能。对血清培养ESCs进行的时间序列全基因组亚硫酸盐测序显示，近一半的SetDB1结合位点富含DNAme和H3K9me3，主要位于反转录转座子区域。Setdb1 KO后，H3K9me3和DNAme均减少，其中DNAme在许多位点被TET酶快速去除。一些反转录转座子，主要是IAPs，对TET具有抗性，并通过被动稀释缓慢丢失DNAme。值得注意的是，SetDB1介导的H3K27me3、CTCF结合和SMAD3的调控与DNAme-H3K9me3轴以及彼此之间是解耦的。AlphaFold建模和免疫共沉淀质谱分析表明，这种解耦涉及与SetDB1不同蛋白结构域的竞争性结合，突显了SetDB1功能背后复杂的协调机制。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42692011/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42692011/",
+  "paper_page_path": "papers/pubmed/42692011/index.html"
+}

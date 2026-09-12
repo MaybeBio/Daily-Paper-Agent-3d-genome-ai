@@ -1,0 +1,411 @@
+{
+  "identity": {
+    "pmid": "42717197",
+    "doi": "10.1038/s41467-026-76567-4",
+    "title": "Towards efficient perturbation for the noncoding genome."
+  },
+  "content": {
+    "abstract": "Deciphering the functionality of the noncoding genome, which includes important cis-regulatory elements (CREs) and transcribed noncoding RNA genes, remains technically challenging. Here, using massively parallel genetic screening, we systematically benchmark the performance of five representative loss-of-function perturbation tools, including single-guide RNA (gRNA) mediated SpCas9 cleavage or CRISPR interference, and paired gRNA (pgRNA) involved dual-SpCas9, Big Papi (paired SpCas9 and SaCas9) or dual-enAsCas12a fragment deletion methods, in decoding the roles of the noncoding genome. For targeting CREs such as enhancers, dual-SpCas9 outperforms other methods with superior efficiency in destroying functional genomic regions. For perturbing noncoding RNA genes, in addition to dual-SpCas9, other RNA-targeting methods such as RNA interference are recommended to discriminate transcript-dependent or -independent roles. A deep learning model, DeepDC, with an associated web server, is built to facilitate optimal dual-SpCas9 pgRNA design for efficiently deleting a genomic fragment. Together, our work provides practical guidance on selecting appropriate loss-of-function tools to resolve the functional complexity of the noncoding genome.",
+    "keywords": [],
+    "mesh_terms": [
+      "CRISPR-Cas Systems/genetics",
+      "*RNA, Untranslated/genetics",
+      "RNA, Guide, CRISPR-Cas Systems/genetics",
+      "*Genome",
+      "Humans",
+      "Animals",
+      "CRISPR-Associated Protein 9/metabolism/genetics",
+      "*Gene Editing/methods"
+    ],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Zhang, Han",
+        "Luo, Shijie",
+        "Wang, Xiaofeng",
+        "Lin, Liquan",
+        "Liang, Ruipu",
+        "Zhong, Chunge",
+        "Zhang, Yunhan",
+        "Zhao, Wenchang",
+        "Chen, Zhisong",
+        "Liu, Xiaoya",
+        "Gao, Yunyan",
+        "Chen, Feng",
+        "Sun, Ning",
+        "Huang, Jialiang",
+        "Fei, Teng"
+      ],
+      "short_names": [
+        "Zhang H",
+        "Luo S",
+        "Wang X",
+        "Lin L",
+        "Liang R",
+        "Zhong C",
+        "Zhang Y",
+        "Zhao W",
+        "Chen Z",
+        "Liu X",
+        "Gao Y",
+        "Chen F",
+        "Sun N",
+        "Huang J",
+        "Fei T"
+      ],
+      "auids": [
+        "ORCID: 0009-0002-5766-1099",
+        "ORCID: 0009-0000-7017-7459",
+        "ORCID: 0000-0002-5218-1144",
+        "ORCID: 0000-0001-9620-0450"
+      ],
+      "affiliations": [
+        "Interdisciplinary Research Center for Brain-Computer Interface, Key Laboratory of Bioresource Research and Development of Liaoning Province, College of Life and Health Sciences, Northeastern University, Shenyang, China.",
+        "National Frontiers Science Center for Industrial Intelligence and Systems Optimization, Northeastern University, Shenyang, China.",
+        "Key Laboratory of Data Analytics and Optimization for Smart Industry (Northeastern University), Ministry of Education, Shenyang, China.",
+        "State Key Laboratory of Cellular Stress Biology, School of Life Sciences, Faculty of Medicine and Life Sciences, Xiamen University, Xiamen, Fujian, China.",
+        "National Institute for Data Science in Health and Medicine, Xiamen University, Xiamen, Fujian, China.",
+        "Interdisciplinary Research Center for Brain-Computer Interface, Key Laboratory of Bioresource Research and Development of Liaoning Province, College of Life and Health Sciences, Northeastern University, Shenyang, China.",
+        "National Frontiers Science Center for Industrial Intelligence and Systems Optimization, Northeastern University, Shenyang, China.",
+        "Key Laboratory of Data Analytics and Optimization for Smart Industry (Northeastern University), Ministry of Education, Shenyang, China.",
+        "State Key Laboratory of Cellular Stress Biology, School of Life Sciences, Faculty of Medicine and Life Sciences, Xiamen University, Xiamen, Fujian, China.",
+        "National Institute for Data Science in Health and Medicine, Xiamen University, Xiamen, Fujian, China.",
+        "Interdisciplinary Research Center for Brain-Computer Interface, Key Laboratory of Bioresource Research and Development of Liaoning Province, College of Life and Health Sciences, Northeastern University, Shenyang, China.",
+        "National Frontiers Science Center for Industrial Intelligence and Systems Optimization, Northeastern University, Shenyang, China.",
+        "Key Laboratory of Data Analytics and Optimization for Smart Industry (Northeastern University), Ministry of Education, Shenyang, China.",
+        "Interdisciplinary Research Center for Brain-Computer Interface, Key Laboratory of Bioresource Research and Development of Liaoning Province, College of Life and Health Sciences, Northeastern University, Shenyang, China.",
+        "National Frontiers Science Center for Industrial Intelligence and Systems Optimization, Northeastern University, Shenyang, China.",
+        "Key Laboratory of Data Analytics and Optimization for Smart Industry (Northeastern University), Ministry of Education, Shenyang, China.",
+        "School of Science, Liaodong University, Dandong, China.",
+        "Interdisciplinary Research Center for Brain-Computer Interface, Key Laboratory of Bioresource Research and Development of Liaoning Province, College of Life and Health Sciences, Northeastern University, Shenyang, China.",
+        "National Frontiers Science Center for Industrial Intelligence and Systems Optimization, Northeastern University, Shenyang, China.",
+        "Key Laboratory of Data Analytics and Optimization for Smart Industry (Northeastern University), Ministry of Education, Shenyang, China.",
+        "Interdisciplinary Research Center for Brain-Computer Interface, Key Laboratory of Bioresource Research and Development of Liaoning Province, College of Life and Health Sciences, Northeastern University, Shenyang, China.",
+        "National Frontiers Science Center for Industrial Intelligence and Systems Optimization, Northeastern University, Shenyang, China.",
+        "Key Laboratory of Data Analytics and Optimization for Smart Industry (Northeastern University), Ministry of Education, Shenyang, China.",
+        "Interdisciplinary Research Center for Brain-Computer Interface, Key Laboratory of Bioresource Research and Development of Liaoning Province, College of Life and Health Sciences, Northeastern University, Shenyang, China.",
+        "National Frontiers Science Center for Industrial Intelligence and Systems Optimization, Northeastern University, Shenyang, China.",
+        "Key Laboratory of Data Analytics and Optimization for Smart Industry (Northeastern University), Ministry of Education, Shenyang, China.",
+        "Interdisciplinary Research Center for Brain-Computer Interface, Key Laboratory of Bioresource Research and Development of Liaoning Province, College of Life and Health Sciences, Northeastern University, Shenyang, China.",
+        "National Frontiers Science Center for Industrial Intelligence and Systems Optimization, Northeastern University, Shenyang, China.",
+        "Key Laboratory of Data Analytics and Optimization for Smart Industry (Northeastern University), Ministry of Education, Shenyang, China.",
+        "State Key Laboratory of Cellular Stress Biology, School of Life Sciences, Faculty of Medicine and Life Sciences, Xiamen University, Xiamen, Fujian, China.",
+        "Chengdu Wiser Matrix technology Co. Ltd., Chengdu, Sichuan, China.",
+        "Chengdu Wiser Matrix technology Co. Ltd., Chengdu, Sichuan, China.",
+        "State Key Laboratory of Cellular Stress Biology, School of Life Sciences, Faculty of Medicine and Life Sciences, Xiamen University, Xiamen, Fujian, China. jhuang@xmu.edu.cn.",
+        "National Institute for Data Science in Health and Medicine, Xiamen University, Xiamen, Fujian, China. jhuang@xmu.edu.cn.",
+        "Department of Hematology, the First Affiliated Hospital of Xiamen University, Xiamen University, Xiamen, China. jhuang@xmu.edu.cn.",
+        "Interdisciplinary Research Center for Brain-Computer Interface, Key Laboratory of Bioresource Research and Development of Liaoning Province, College of Life and Health Sciences, Northeastern University, Shenyang, China. feiteng@mail.neu.edu.cn.",
+        "National Frontiers Science Center for Industrial Intelligence and Systems Optimization, Northeastern University, Shenyang, China. feiteng@mail.neu.edu.cn.",
+        "Key Laboratory of Data Analytics and Optimization for Smart Industry (Northeastern University), Ministry of Education, Shenyang, China. feiteng@mail.neu.edu.cn."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Zhang, Han",
+        "short_name": "Zhang H",
+        "identifiers": [
+          "0009-0002-5766-1099"
+        ],
+        "affiliations": [
+          "Interdisciplinary Research Center for Brain-Computer Interface, Key Laboratory of Bioresource Research and Development of Liaoning Province, College of Life and Health Sciences, Northeastern University, Shenyang, China.",
+          "National Frontiers Science Center for Industrial Intelligence and Systems Optimization, Northeastern University, Shenyang, China.",
+          "Key Laboratory of Data Analytics and Optimization for Smart Industry (Northeastern University), Ministry of Education, Shenyang, China."
+        ]
+      },
+      {
+        "full_name": "Luo, Shijie",
+        "short_name": "Luo S",
+        "identifiers": [],
+        "affiliations": [
+          "State Key Laboratory of Cellular Stress Biology, School of Life Sciences, Faculty of Medicine and Life Sciences, Xiamen University, Xiamen, Fujian, China.",
+          "National Institute for Data Science in Health and Medicine, Xiamen University, Xiamen, Fujian, China."
+        ]
+      },
+      {
+        "full_name": "Wang, Xiaofeng",
+        "short_name": "Wang X",
+        "identifiers": [],
+        "affiliations": [
+          "Interdisciplinary Research Center for Brain-Computer Interface, Key Laboratory of Bioresource Research and Development of Liaoning Province, College of Life and Health Sciences, Northeastern University, Shenyang, China.",
+          "National Frontiers Science Center for Industrial Intelligence and Systems Optimization, Northeastern University, Shenyang, China.",
+          "Key Laboratory of Data Analytics and Optimization for Smart Industry (Northeastern University), Ministry of Education, Shenyang, China."
+        ]
+      },
+      {
+        "full_name": "Lin, Liquan",
+        "short_name": "Lin L",
+        "identifiers": [],
+        "affiliations": [
+          "State Key Laboratory of Cellular Stress Biology, School of Life Sciences, Faculty of Medicine and Life Sciences, Xiamen University, Xiamen, Fujian, China.",
+          "National Institute for Data Science in Health and Medicine, Xiamen University, Xiamen, Fujian, China."
+        ]
+      },
+      {
+        "full_name": "Liang, Ruipu",
+        "short_name": "Liang R",
+        "identifiers": [],
+        "affiliations": [
+          "Interdisciplinary Research Center for Brain-Computer Interface, Key Laboratory of Bioresource Research and Development of Liaoning Province, College of Life and Health Sciences, Northeastern University, Shenyang, China.",
+          "National Frontiers Science Center for Industrial Intelligence and Systems Optimization, Northeastern University, Shenyang, China.",
+          "Key Laboratory of Data Analytics and Optimization for Smart Industry (Northeastern University), Ministry of Education, Shenyang, China."
+        ]
+      },
+      {
+        "full_name": "Zhong, Chunge",
+        "short_name": "Zhong C",
+        "identifiers": [
+          "0009-0000-7017-7459"
+        ],
+        "affiliations": [
+          "Interdisciplinary Research Center for Brain-Computer Interface, Key Laboratory of Bioresource Research and Development of Liaoning Province, College of Life and Health Sciences, Northeastern University, Shenyang, China.",
+          "National Frontiers Science Center for Industrial Intelligence and Systems Optimization, Northeastern University, Shenyang, China.",
+          "Key Laboratory of Data Analytics and Optimization for Smart Industry (Northeastern University), Ministry of Education, Shenyang, China.",
+          "School of Science, Liaodong University, Dandong, China."
+        ]
+      },
+      {
+        "full_name": "Zhang, Yunhan",
+        "short_name": "Zhang Y",
+        "identifiers": [],
+        "affiliations": [
+          "Interdisciplinary Research Center for Brain-Computer Interface, Key Laboratory of Bioresource Research and Development of Liaoning Province, College of Life and Health Sciences, Northeastern University, Shenyang, China.",
+          "National Frontiers Science Center for Industrial Intelligence and Systems Optimization, Northeastern University, Shenyang, China.",
+          "Key Laboratory of Data Analytics and Optimization for Smart Industry (Northeastern University), Ministry of Education, Shenyang, China."
+        ]
+      },
+      {
+        "full_name": "Zhao, Wenchang",
+        "short_name": "Zhao W",
+        "identifiers": [],
+        "affiliations": [
+          "Interdisciplinary Research Center for Brain-Computer Interface, Key Laboratory of Bioresource Research and Development of Liaoning Province, College of Life and Health Sciences, Northeastern University, Shenyang, China.",
+          "National Frontiers Science Center for Industrial Intelligence and Systems Optimization, Northeastern University, Shenyang, China.",
+          "Key Laboratory of Data Analytics and Optimization for Smart Industry (Northeastern University), Ministry of Education, Shenyang, China."
+        ]
+      },
+      {
+        "full_name": "Chen, Zhisong",
+        "short_name": "Chen Z",
+        "identifiers": [],
+        "affiliations": [
+          "Interdisciplinary Research Center for Brain-Computer Interface, Key Laboratory of Bioresource Research and Development of Liaoning Province, College of Life and Health Sciences, Northeastern University, Shenyang, China.",
+          "National Frontiers Science Center for Industrial Intelligence and Systems Optimization, Northeastern University, Shenyang, China.",
+          "Key Laboratory of Data Analytics and Optimization for Smart Industry (Northeastern University), Ministry of Education, Shenyang, China."
+        ]
+      },
+      {
+        "full_name": "Liu, Xiaoya",
+        "short_name": "Liu X",
+        "identifiers": [],
+        "affiliations": [
+          "Interdisciplinary Research Center for Brain-Computer Interface, Key Laboratory of Bioresource Research and Development of Liaoning Province, College of Life and Health Sciences, Northeastern University, Shenyang, China.",
+          "National Frontiers Science Center for Industrial Intelligence and Systems Optimization, Northeastern University, Shenyang, China.",
+          "Key Laboratory of Data Analytics and Optimization for Smart Industry (Northeastern University), Ministry of Education, Shenyang, China."
+        ]
+      },
+      {
+        "full_name": "Gao, Yunyan",
+        "short_name": "Gao Y",
+        "identifiers": [],
+        "affiliations": [
+          "State Key Laboratory of Cellular Stress Biology, School of Life Sciences, Faculty of Medicine and Life Sciences, Xiamen University, Xiamen, Fujian, China."
+        ]
+      },
+      {
+        "full_name": "Chen, Feng",
+        "short_name": "Chen F",
+        "identifiers": [],
+        "affiliations": [
+          "Chengdu Wiser Matrix technology Co. Ltd., Chengdu, Sichuan, China."
+        ]
+      },
+      {
+        "full_name": "Sun, Ning",
+        "short_name": "Sun N",
+        "identifiers": [],
+        "affiliations": [
+          "Chengdu Wiser Matrix technology Co. Ltd., Chengdu, Sichuan, China."
+        ]
+      },
+      {
+        "full_name": "Huang, Jialiang",
+        "short_name": "Huang J",
+        "identifiers": [
+          "0000-0002-5218-1144"
+        ],
+        "affiliations": [
+          "State Key Laboratory of Cellular Stress Biology, School of Life Sciences, Faculty of Medicine and Life Sciences, Xiamen University, Xiamen, Fujian, China. jhuang@xmu.edu.cn.",
+          "National Institute for Data Science in Health and Medicine, Xiamen University, Xiamen, Fujian, China. jhuang@xmu.edu.cn.",
+          "Department of Hematology, the First Affiliated Hospital of Xiamen University, Xiamen University, Xiamen, China. jhuang@xmu.edu.cn."
+        ]
+      },
+      {
+        "full_name": "Fei, Teng",
+        "short_name": "Fei T",
+        "identifiers": [
+          "0000-0001-9620-0450"
+        ],
+        "affiliations": [
+          "Interdisciplinary Research Center for Brain-Computer Interface, Key Laboratory of Bioresource Research and Development of Liaoning Province, College of Life and Health Sciences, Northeastern University, Shenyang, China. feiteng@mail.neu.edu.cn.",
+          "National Frontiers Science Center for Industrial Intelligence and Systems Optimization, Northeastern University, Shenyang, China. feiteng@mail.neu.edu.cn.",
+          "Key Laboratory of Data Analytics and Optimization for Smart Industry (Northeastern University), Ministry of Education, Shenyang, China. feiteng@mail.neu.edu.cn."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Nature communications"
+    ],
+    "journal_abbrev": [
+      "Nat Commun"
+    ],
+    "pub_date": "2026 Aug 11",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/10 05:36",
+    "fetched_at": "2026-09-12 11:08:09"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42717197",
+      "36549468",
+      "29040704",
+      "39939860",
+      "35301321",
+      "27210042",
+      "40151952",
+      "31198958",
+      "32681501",
+      "31537810",
+      "39743295",
+      "36429003",
+      "42106677",
+      "35552388",
+      "38573428",
+      "31373227",
+      "28985510",
+      "42029722",
+      "32710418",
+      "32926381",
+      "39579214",
+      "40138428",
+      "40558035",
+      "42163455",
+      "40111000",
+      "41968241",
+      "31494246",
+      "29748239",
+      "29331077",
+      "33782402",
+      "30043367",
+      "39499471",
+      "39570312",
+      "38943587",
+      "29860374",
+      "35543560",
+      "40151969",
+      "32006410",
+      "34508260",
+      "41663678",
+      "31694550",
+      "42310064",
+      "29019352",
+      "38338898",
+      "38656525",
+      "35292641",
+      "30222773",
+      "32051236",
+      "28303677",
+      "34015926",
+      "33165782",
+      "30531939",
+      "41253931",
+      "39937081",
+      "38504114",
+      "34382198",
+      "31010727",
+      "41830765",
+      "40461565",
+      "42052944",
+      "40952014",
+      "34643425",
+      "31043479",
+      "38468089",
+      "30362544",
+      "29637228",
+      "40011813",
+      "30759231",
+      "27261176",
+      "29431739",
+      "33847986",
+      "30033371",
+      "30877356",
+      "29221488",
+      "32907859",
+      "41715004",
+      "29804684",
+      "40972450",
+      "29771955",
+      "40228775",
+      "33139742",
+      "29300083",
+      "29968520",
+      "35619054",
+      "39179566",
+      "30424953",
+      "36361580",
+      "35166844",
+      "31723604",
+      "30291498",
+      "35513429",
+      "39920233",
+      "34347875",
+      "30669572",
+      "34791245",
+      "32926383",
+      "28790199",
+      "31943080",
+      "29913329",
+      "37116617"
+    ],
+    "review": [
+      "42717197",
+      "27210042",
+      "40151952",
+      "28985510",
+      "29748239",
+      "32006410",
+      "34508260",
+      "28303677",
+      "30362544",
+      "30877356",
+      "29300083",
+      "29968520",
+      "30291498"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://doi.org/10.1038/s41467-026-76567-4",
+        "provider": "Nature Publishing Group",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

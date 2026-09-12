@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42669660",
+  "title": "Ribo-ITP enables identification of translons from limited input samples.",
+  "authors": "Ghatpande, Vighnesh; Paul, Uma; Persyn, Logan; Tian, Yifan; Howard, MacKenzie A; Cenik, Can",
+  "journal": "Nature communications",
+  "published_date": "2026-08-31",
+  "window": {
+    "start": "2026-08-29",
+    "end": "2026-09-11"
+  },
+  "score": 2,
+  "one_liner_zh": "该文开发Ribo-ITP方法从低输入样本中鉴定翻译区域（translons），虽涉及机器学习预测，但对象为翻译调控而非三维基因组/染色质组织，且无染色质空间架构建模或分子模拟，与本课题关联极低。",
+  "abstract": "In the last decade, an unexpectedly large number of translated regions (translons) have been discovered using ribosome profiling and proteomics. Translons can act as regulatory elements or encode functional micropeptides. However, identification of translons has been limited to cell lines or large organs due to high input requirements for conventional ribosome profiling and mass spectrometry. Here, we address this input limitation using Ribo-ITP on difficult-to-collect samples such as microdissected hippocampal tissues and single preimplantation embryos to identify thousands of translons. To test the translational capacity of the identified translons, we engineer a translon-dependent GFP reporter system and detect expression of translons initiating at ATG and near-cognate start codons in mouse embryonic stem cells (mESCs). We identify distinct expression patterns of translons using a comparative analysis of more than a thousand ribosome profiling datasets across a wide range of cell types. Further, using a machine learning model, we predict that specific upstream translons in synaptically enriched mRNAs regulate translation efficiency of the annotated coding region. Taken together, we present a proof-of-concept study to identify non-canonical translation events from low input samples which can be applied to cell and tissue types inaccessible to conventional methods.",
+  "abstract_zh": "在过去十年中，通过核糖体图谱分析（ribosome profiling）和蛋白质组学（proteomics）发现了数量出乎意料庞大的翻译区域（translons）。Translons可以作为调控元件或编码功能性微肽。然而，由于传统核糖体图谱分析和质谱法对输入量要求较高，translons的鉴定一直局限于细胞系或大型器官。在此，我们通过使用Ribo-ITP技术，针对难以采集的样本（如显微切割的海马组织和单个植入前胚胎）解决了这一输入量限制，鉴定出数千个translons。为测试所鉴定translons的翻译能力，我们构建了一个依赖于translon的GFP报告系统，并检测了小鼠胚胎干细胞（mESCs）中起始于ATG和近同源起始密码子的translons表达。通过对超过一千个跨多种细胞类型的核糖体图谱分析数据集进行比较分析，我们识别出translons的不同表达模式。此外，利用机器学习模型，我们预测突触富集mRNA中的特定上游translons调节注释编码区的翻译效率。综合来看，我们提出了一项概念验证研究，用于从低输入样本中识别非经典翻译事件，该方法可应用于传统方法无法触及的细胞和组织类型。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42669660/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42669660/",
+  "paper_page_path": "papers/pubmed/42669660/index.html"
+}

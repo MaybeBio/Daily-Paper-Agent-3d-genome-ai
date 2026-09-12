@@ -1,0 +1,257 @@
+{
+  "identity": {
+    "pmid": "42711869",
+    "doi": "10.1002/advs.202524180",
+    "title": "Overcoming Artificial Structures in Resolution-Enhanced Hi-C Data by Signal Decomposition and Multi-Scale Attention."
+  },
+  "content": {
+    "abstract": "Computational enhancement is an important strategy for inferring high-resolution features from genome-wide chromosome conformation capture (Hi-C) data, which typically have limited resolution. Deep learning has been highly successful in this task but we show that it creates prevalent artificial structures in the enhanced data due to the need to divide the large contact matrix into small patches. In addition, previous deep learning methods largely focus on local patterns, which cannot fully capture the complexity of Hi-C data. Here we propose Smooth, High-resolution, and Accurate Reconstruction of Patterns (SHARP) for enhancing Hi-C data. It uses the novel approach of decomposing the data into three types of signals, due to one-dimensional proximity, contiguous domains, and other fine structures, respectively, and applies deep learning only to the third type of signals, such that enhancement of the first two is unaffected by the patches. For the deep learning part, SHARP uses both local and global attention mechanisms to capture multi-scale contextual information. We compare SHARP with state-of-the-art methods extensively, including application to data from new samples and another species, and show that SHARP has superior performance in terms of resolution enhancement accuracy, avoiding creation of artificial structures, identifying significant interactions, and enrichment in chromatin states.",
+    "keywords": [
+      "Hi-C",
+      "artifacts",
+      "chromatin interactions",
+      "data resolution",
+      "machine learning"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Li, Qinyao",
+        "Li, Kelly Yichen",
+        "Nicoletti, Chiara",
+        "Tsui, Stephen Kwok-Wing",
+        "Puri, Pier Lorenzo",
+        "Cao, Qin",
+        "Yip, Kevin Y"
+      ],
+      "short_names": [
+        "Li Q",
+        "Li KY",
+        "Nicoletti C",
+        "Tsui SK",
+        "Puri PL",
+        "Cao Q",
+        "Yip KY"
+      ],
+      "auids": [],
+      "affiliations": [
+        "Department of Computer Science and Engineering, The Chinese University of Hong Kong, New Territories, Hong Kong SAR, China.",
+        "Center for Data Science and Artificial Intelligence, Sanford Burnham Prebys Medical Discovery Institute, La Jolla, California, USA.",
+        "Center for Data Science and Artificial Intelligence, Sanford Burnham Prebys Medical Discovery Institute, La Jolla, California, USA.",
+        "Center for Cardiovascular and Muscular Diseases, Sanford Burnham Prebys Medical Discovery Institute, La Jolla, California, USA.",
+        "School of Biomedical Sciences, The Chinese University of Hong Kong, New Territories, Hong Kong SAR, China.",
+        "Center for Data Science and Artificial Intelligence, Sanford Burnham Prebys Medical Discovery Institute, La Jolla, California, USA.",
+        "Center for Cardiovascular and Muscular Diseases, Sanford Burnham Prebys Medical Discovery Institute, La Jolla, California, USA.",
+        "Cancer Genome and Epigenetics Program, NCI-Designated Cancer Center, Sanford Burnham Prebys Medical Discovery Institute, La Jolla, California, USA.",
+        "School of Biomedical Sciences, The Chinese University of Hong Kong, New Territories, Hong Kong SAR, China.",
+        "Shenzhen Research Institute, The Chinese University of Hong Kong, Shenzhen, China.",
+        "Center for Data Science and Artificial Intelligence, Sanford Burnham Prebys Medical Discovery Institute, La Jolla, California, USA.",
+        "Cancer Genome and Epigenetics Program, NCI-Designated Cancer Center, Sanford Burnham Prebys Medical Discovery Institute, La Jolla, California, USA.",
+        "Center for Neurologic Diseases, Sanford Burnham Prebys Medical Discovery Institute, La Jolla, California, USA."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Li, Qinyao",
+        "short_name": "Li Q",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Computer Science and Engineering, The Chinese University of Hong Kong, New Territories, Hong Kong SAR, China."
+        ]
+      },
+      {
+        "full_name": "Li, Kelly Yichen",
+        "short_name": "Li KY",
+        "identifiers": [],
+        "affiliations": [
+          "Center for Data Science and Artificial Intelligence, Sanford Burnham Prebys Medical Discovery Institute, La Jolla, California, USA."
+        ]
+      },
+      {
+        "full_name": "Nicoletti, Chiara",
+        "short_name": "Nicoletti C",
+        "identifiers": [],
+        "affiliations": [
+          "Center for Data Science and Artificial Intelligence, Sanford Burnham Prebys Medical Discovery Institute, La Jolla, California, USA.",
+          "Center for Cardiovascular and Muscular Diseases, Sanford Burnham Prebys Medical Discovery Institute, La Jolla, California, USA."
+        ]
+      },
+      {
+        "full_name": "Tsui, Stephen Kwok-Wing",
+        "short_name": "Tsui SK",
+        "identifiers": [],
+        "affiliations": [
+          "School of Biomedical Sciences, The Chinese University of Hong Kong, New Territories, Hong Kong SAR, China."
+        ]
+      },
+      {
+        "full_name": "Puri, Pier Lorenzo",
+        "short_name": "Puri PL",
+        "identifiers": [],
+        "affiliations": [
+          "Center for Data Science and Artificial Intelligence, Sanford Burnham Prebys Medical Discovery Institute, La Jolla, California, USA.",
+          "Center for Cardiovascular and Muscular Diseases, Sanford Burnham Prebys Medical Discovery Institute, La Jolla, California, USA.",
+          "Cancer Genome and Epigenetics Program, NCI-Designated Cancer Center, Sanford Burnham Prebys Medical Discovery Institute, La Jolla, California, USA."
+        ]
+      },
+      {
+        "full_name": "Cao, Qin",
+        "short_name": "Cao Q",
+        "identifiers": [],
+        "affiliations": [
+          "School of Biomedical Sciences, The Chinese University of Hong Kong, New Territories, Hong Kong SAR, China.",
+          "Shenzhen Research Institute, The Chinese University of Hong Kong, Shenzhen, China."
+        ]
+      },
+      {
+        "full_name": "Yip, Kevin Y",
+        "short_name": "Yip KY",
+        "identifiers": [],
+        "affiliations": [
+          "Center for Data Science and Artificial Intelligence, Sanford Burnham Prebys Medical Discovery Institute, La Jolla, California, USA.",
+          "Cancer Genome and Epigenetics Program, NCI-Designated Cancer Center, Sanford Burnham Prebys Medical Discovery Institute, La Jolla, California, USA.",
+          "Center for Neurologic Diseases, Sanford Burnham Prebys Medical Discovery Institute, La Jolla, California, USA."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Advanced science (Weinheim, Baden-Wurttemberg, Germany)"
+    ],
+    "journal_abbrev": [
+      "Adv Sci (Weinh)"
+    ],
+    "pub_date": "2026 Sep 8",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/09 11:38",
+    "fetched_at": "2026-09-12 11:08:09"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42711869",
+      "39484541",
+      "34252966",
+      "33685371",
+      "42475469",
+      "35274679",
+      "37084258",
+      "40226920",
+      "40160860",
+      "37387127",
+      "40058875",
+      "38940142",
+      "42239130",
+      "40136544",
+      "31056636",
+      "37381618",
+      "41875404",
+      "35488276",
+      "39763871",
+      "31671634",
+      "40995863",
+      "36206320",
+      "40996990",
+      "38254945",
+      "32322265",
+      "31510693",
+      "36495179",
+      "40236218",
+      "29382556",
+      "33160308",
+      "40802526",
+      "34904892",
+      "42470130",
+      "34395764",
+      "33893353",
+      "40662782",
+      "29950012",
+      "38513390",
+      "39831891",
+      "41930893",
+      "37498561",
+      "29467363",
+      "37287135",
+      "41507775",
+      "40186170",
+      "40246224",
+      "40791469",
+      "36321557",
+      "37591842",
+      "38495565",
+      "39283464",
+      "36352464",
+      "35198004",
+      "36460680",
+      "41845241",
+      "40727355",
+      "35551182",
+      "30591009",
+      "37515382",
+      "38856167",
+      "34850813",
+      "41840705",
+      "33724986",
+      "37496267",
+      "40513402",
+      "29848293",
+      "30945203",
+      "29137603",
+      "26553003",
+      "34286910",
+      "41986002",
+      "37986943",
+      "41624276",
+      "32084131",
+      "35593869",
+      "32820401",
+      "36993500",
+      "36131326",
+      "40652995",
+      "31510653",
+      "32093610",
+      "38015443",
+      "36864700",
+      "38017297",
+      "42289051",
+      "28435001",
+      "39658249",
+      "39137961",
+      "32758136",
+      "40311439",
+      "32998686",
+      "40986587",
+      "33923653",
+      "35749574",
+      "39724385",
+      "35397520",
+      "36698967",
+      "35741810",
+      "31445093",
+      "32611376"
+    ],
+    "review": [
+      "42711869",
+      "40058875",
+      "36321557",
+      "39283464",
+      "40513402"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [],
+    "text_mined": []
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42711869",
+  "title": "Overcoming Artificial Structures in Resolution-Enhanced Hi-C Data by Signal Decomposition and Multi-Scale Attention.",
+  "authors": "Li, Qinyao; Li, Kelly Yichen; Nicoletti, Chiara; Tsui, Stephen Kwok-Wing; Puri, Pier Lorenzo; Cao, Qin; Yip, Kevin Y",
+  "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+  "published_date": "2026-09-09",
+  "window": {
+    "start": "2026-08-29",
+    "end": "2026-09-11"
+  },
+  "score": 8,
+  "one_liner_zh": "提出SHARP方法，通过信号分解与多尺度注意力机制提升Hi-C数据分辨率，避免人工结构，直接服务于染色质三维构象的精确重建。",
+  "abstract": "Computational enhancement is an important strategy for inferring high-resolution features from genome-wide chromosome conformation capture (Hi-C) data, which typically have limited resolution. Deep learning has been highly successful in this task but we show that it creates prevalent artificial structures in the enhanced data due to the need to divide the large contact matrix into small patches. In addition, previous deep learning methods largely focus on local patterns, which cannot fully capture the complexity of Hi-C data. Here we propose Smooth, High-resolution, and Accurate Reconstruction of Patterns (SHARP) for enhancing Hi-C data. It uses the novel approach of decomposing the data into three types of signals, due to one-dimensional proximity, contiguous domains, and other fine structures, respectively, and applies deep learning only to the third type of signals, such that enhancement of the first two is unaffected by the patches. For the deep learning part, SHARP uses both local and global attention mechanisms to capture multi-scale contextual information. We compare SHARP with state-of-the-art methods extensively, including application to data from new samples and another species, and show that SHARP has superior performance in terms of resolution enhancement accuracy, avoiding creation of artificial structures, identifying significant interactions, and enrichment in chromatin states.",
+  "abstract_zh": "计算增强是从全基因组染色体构象捕获（Hi-C）数据中推断高分辨率特征的重要策略，而此类数据通常分辨率有限。深度学习在此任务中已取得高度成功，但我们表明，由于需要将大型接触矩阵划分为小块，它在增强数据中产生了普遍的人工结构。此外，以往的深度学习方法主要关注局部模式，无法完全捕捉Hi-C数据的复杂性。在此，我们提出平滑、高分辨率且准确的重建模式（SHARP）方法，用于增强Hi-C数据。它采用新颖的方法将数据分解为三种信号类型，分别对应一维邻近性、连续结构域及其他精细结构，并仅对第三种信号应用深度学习，从而使前两种信号的增强不受分块影响。对于深度学习部分，SHARP利用局部和全局注意力机制来捕捉多尺度上下文信息。我们广泛地将SHARP与最先进的方法进行比较，包括应用于新样本和另一物种的数据，结果表明SHARP在分辨率增强准确性、避免产生人工结构、识别显著相互作用以及染色质状态富集方面具有优越性能。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42711869/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42711869/",
+  "paper_page_path": "papers/pubmed/42711869/index.html"
+}

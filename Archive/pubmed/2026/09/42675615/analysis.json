@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42675615",
+  "title": "mmVelo: A deep generative model for estimating cell state-dependent dynamics across multiple modalities.",
+  "authors": "Nomura, Satoshi; Kojima, Yasuhiro; Minoura, Kodai; Hayashi, Shuto; Abe, Ko; Hirose, Haruka; Shimamura, Teppei",
+  "journal": "Bioinformatics (Oxford, England)",
+  "published_date": "2026-09-01",
+  "window": {
+    "start": "2026-08-29",
+    "end": "2026-09-11"
+  },
+  "score": 5,
+  "one_liner_zh": "该文提出深度生成模型mmVelo，利用多组学数据推断染色质可及性动态（染色质速度），虽涉及染色质调控但未聚焦三维空间架构建模，方法可迁移至染色质动态预测。",
+  "abstract": "MOTIVATION: Single-cell multiomics reveals regulatory relationships across biological layers but captures only static snapshots, obscuring the dynamics coordinated across modalities. RNA velocity predicts transcriptome dynamics, yet cannot be extended to other layers such as the regulome, leaving chromatin accessibility dynamics unresolved. RESULTS: We developed mmVelo, a deep generative model that infers cell state dynamics from spliced and unspliced mRNA and projects them onto other modalities, yielding chromatin velocity at single-peak resolution. In developing mouse brain, mmVelo accurately recovered accessibility dynamics; in mouse skin, it identified transcription factors regulating accessibility. Decomposing posterior velocity variability into manifold-aligned and off-manifold components revealed modality-specific uncertainty structure, with chromatin fluctuation elevated near lineage branching. Using multiomics data as a bridge, mmVelo inferred the dynamics of missing modalities from single-modal human brain data. AVAILABILITY AND IMPLEMENTATION: Source code is freely available under the MIT license at https://github.com/nomuhyooon/mmVelo; the version and test data used here are archived at https://doi.org/10.5281/zenodo.20103609. SUPPLEMENTARY INFORMATION: Supplementary data are available at Bioinformatics online.",
+  "abstract_zh": "动机：单细胞多组学技术揭示了跨生物学层次的调控关系，但仅捕获静态快照，掩盖了跨模态协调的动态过程。RNA速度预测转录组动态，但无法扩展到其他层次（如调控组），导致染色质可及性动态仍未解决。结果：我们开发了mmVelo，一种深度生成模型，从剪接和未剪接mRNA推断细胞状态动态，并将其投射到其他模态，实现单峰分辨率的染色质速度。在小鼠发育大脑中，mmVelo准确恢复了可及性动态；在小鼠皮肤中，它识别了调控可及性的转录因子。将后验速度变异性分解为流形对齐和流形外成分，揭示了模态特异性不确定性结构，其中染色质波动在谱系分支附近升高。利用多组学数据作为桥梁，mmVelo从单模态人类大脑数据推断缺失模态的动态。可用性和实现：源代码在MIT许可下免费提供，网址为https://github.com/nomuhyooon/mmVelo；本文使用的版本和测试数据存档于https://doi.org/10.5281/zenodo.20103609。补充信息：补充数据可在Bioinformatics在线获取。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42675615/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42675615/",
+  "paper_page_path": "papers/pubmed/42675615/index.html"
+}

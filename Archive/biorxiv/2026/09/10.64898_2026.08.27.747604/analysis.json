@@ -1,0 +1,24 @@
+{
+  "source": "biorxiv",
+  "id": "10.64898/2026.08.27.747604",
+  "title": "Dynamical Regimes in Rejuvenation",
+  "authors": "Ciarchi M; Rulands S",
+  "journal": "bioRxiv",
+  "published_date": "2026-09-01",
+  "window": {
+    "start": "2026-08-29",
+    "end": "2026-09-11"
+  },
+  "score": 9,
+  "one_liner_zh": "该文通过场论和分子动力学模拟研究表观遗传修饰与染色质三维构象的耦合动力学，揭示重编程中染色质组织介导的表观遗传可逆重塑机制，直接契合染色质空间架构的计算建模与调控机理。",
+  "abstract": "Biological aging is accompanied by systematic changes in epigenetic modifications and chromatin organization. The reversal of the effects of aging, rejuvenation, is experimentally achieved by the transient induction of factors that modify these marks in cells and organisms. Here, we show that key features of rejuvenation experiments emerge from the biophysical interplay between dynamic epigenetic marks and the three-dimensional conformation of chromatin. Using a minimal field theory and molecular dynamics simulations, we show that the system responds in three distinct temporal regimes. The intermediary regime fulfills necessary conditions for successful rejuvenation. In this regime, the system spends time near a separatrix, allowing for high epigenetic plasticity, while memory retained in the chromatin conformation enables restoration of the original epigenetic correlations. Analysis of sequencing data further supports the predicted coupling between chromatin compaction and epigenetic correlations. Our results provide a physical explanation for how rejuvenation may remodel age-associated epigenetic states without irreversibly erasing cellular identity. We identify a general mechanism by which memory stored in a slow structural variable permits reversible remodeling of a faster internal state.",
+  "abstract_zh": "生物衰老伴随着表观遗传修饰和染色质组织的系统性变化。通过短暂诱导细胞和生物体中修饰这些标记的因子，可在实验上实现衰老效应的逆转，即年轻化（rejuvenation）。在此，我们展示年轻化实验的关键特征源于动态表观遗传标记与染色质三维构象之间的生物物理相互作用。利用最小场论（minimal field theory）和分子动力学（molecular dynamics）模拟，我们证明系统在三个不同的时间尺度上响应。中间尺度满足成功年轻化的必要条件。在此尺度下，系统在分界线（separatrix）附近停留，从而实现高表观遗传可塑性，同时染色质构象中保留的记忆能够恢复原始表观遗传相关性。测序数据的分析进一步支持了所预测的染色质压缩与表观遗传相关性之间的耦合。我们的结果为年轻化如何重塑与衰老相关的表观遗传状态而不不可逆地抹除细胞身份提供了物理解释。我们识别出一种通用机制，即存储在慢速结构变量中的记忆允许对较快内部状态进行可逆重塑。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://www.biorxiv.org/content/10.64898/2026.08.27.747604",
+  "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.27.747604",
+  "paper_page_path": "papers/biorxiv/10.64898_2026.08.27.747604/index.html"
+}

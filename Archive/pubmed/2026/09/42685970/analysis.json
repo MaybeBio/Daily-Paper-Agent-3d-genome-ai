@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42685970",
+  "title": "LLM-guided prediction of riboswitch-ligand binding affinity under data-limited conditions.",
+  "authors": "An, Sunggi; Mun, Sofia; Jung, Yousung; Kim, Hyun Uk",
+  "journal": "New biotechnology",
+  "published_date": "2026-09-03",
+  "window": {
+    "start": "2026-08-29",
+    "end": "2026-09-11"
+  },
+  "score": 3,
+  "one_liner_zh": "该文用LLM嵌入和领域规则预测核糖开关-配体结合亲和力，对象为RNA调控元件而非染色质三维组织，且无空间架构建模或可迁移的染色质方法，仅与基因组调控间接相关。",
+  "abstract": "Riboswitches are RNA regulatory elements that sense small molecules and regulate gene expression through ligand-induced conformational changes in an aptamer domain. They enable synthetic biology applications such as biosensing and gene circuit design. Accurate prediction of riboswitch-ligand binding affinity, quantified by the dissociation constant (K(d)), is essential for rational riboswitch engineering. We present a neuro-symbolic framework in which LLM-derived embeddings encode riboswitch sequences, secondary structures, and ligand representations into a unified representation that captures riboswitch-ligand interaction context, while domain-informed rules encode explicit biochemical priors. Despite limited labeled data, this framework achieves strong predictive performance and improved data efficiency. It predicts min-max log-scaled pK(d) values and supports binary classification of binding strength, particularly by mitigating systematic overestimation of affinity. More broadly, the results suggest that LLM-based neuro-symbolic representations provide an effective route for modeling riboswitch-ligand interactions under data-limited conditions.",
+  "abstract_zh": "核糖开关（riboswitch）是RNA调控元件，通过适配体结构域中的配体诱导构象变化来感知小分子并调节基因表达。它们支持合成生物学应用，如生物传感和基因电路设计。准确预测核糖开关-配体结合亲和力，以解离常数（K(d)）量化，对于理性核糖开关工程至关重要。我们提出了一种神经符号框架，其中LLM衍生的嵌入将核糖开关序列、二级结构和配体表示编码为统一表示，以捕获核糖开关-配体相互作用上下文，而领域信息规则则编码明确的生化先验。尽管标记数据有限，该框架仍实现了强大的预测性能和更高的数据效率。它预测最小-最大对数标度的pK(d)值，并支持结合强度的二元分类，特别是通过缓解亲和力的系统性高估。更广泛地，结果表明，基于LLM的神经符号表示为在数据受限条件下建模核糖开关-配体相互作用提供了有效途径。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42685970/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42685970/",
+  "paper_page_path": "papers/pubmed/42685970/index.html"
+}

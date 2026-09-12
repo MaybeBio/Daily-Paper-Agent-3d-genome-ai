@@ -1,0 +1,350 @@
+{
+  "identity": {
+    "pmid": "42713011",
+    "doi": "10.1093/nargab/lqag103",
+    "title": "LAMBDA: a prophage detection benchmark for genomic language models."
+  },
+  "content": {
+    "abstract": "Transformer-based genomic sequence models represent an emerging frontier in computational biology. Yet, their embeddings have not yet shown the same level of predictive power as natural and protein language models, highlighting a gap between current implementations and theoretical promise. Existing benchmarks for DNA language models primarily focus on classifying regulatory elements in eukaryotic genomes, leaving open the fundamental question of whether these models learn sequence-level features across whole genomes. We introduce LAMBDA, a benchmark designed to rigorously evaluate genome language model embeddings through phage-bacteria sequence discrimination across four categories of increasing complexity: probing tasks, fine-tuning assessments, diagnostic tests, and genome-wide prophage detection. Our comprehensive analysis of current genomic language models provides insight into the importance of training data selection relative to model size, the need for domain-specific training, and the capabilities and limitations of genomic language models for detecting prophage sequences. This benchmark represents a challenging genomic annotation task in the bacterial domain and addresses a key computational problem with direct relevance to microbiology and medicine.",
+    "keywords": [],
+    "mesh_terms": [
+      "*Prophages/genetics",
+      "*Genomics/methods",
+      "Large Language Models",
+      "*Models, Genetic",
+      "*Bacteriophage lambda/genetics",
+      "Benchmarking",
+      "Computational Biology/methods",
+      "Genome, Bacterial"
+    ],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Lindsey, LeAnn M",
+        "Pershing, Nicole L",
+        "Dufault-Thompson, Keith",
+        "Gwak, Ho-Jin",
+        "Habib, Anisa",
+        "Schindler, Aaron",
+        "Rakheja, Arjun",
+        "Round, June L",
+        "Stephens, W Zac",
+        "Blaschke, Anne J",
+        "Sundar, Hari",
+        "Jiang, Xiaofang"
+      ],
+      "short_names": [
+        "Lindsey LM",
+        "Pershing NL",
+        "Dufault-Thompson K",
+        "Gwak HJ",
+        "Habib A",
+        "Schindler A",
+        "Rakheja A",
+        "Round JL",
+        "Stephens WZ",
+        "Blaschke AJ",
+        "Sundar H",
+        "Jiang X"
+      ],
+      "auids": [
+        "ORCID: 0000-0002-5399-5668",
+        "ORCID: 0000-0002-0991-2255",
+        "ORCID: 0000-0001-7765-0827",
+        "ORCID: 0000-0002-8072-9023",
+        "ORCID: 0000-0002-0955-8284"
+      ],
+      "affiliations": [
+        "National Library of Medicine, National Institutes of Health, Bethesda, MD, 20892, United States.",
+        "Department of Pediatrics, School of Medicine, University of Utah, Salt Lake City, UT, 84132, United States.",
+        "National Library of Medicine, National Institutes of Health, Bethesda, MD, 20892, United States.",
+        "National Library of Medicine, National Institutes of Health, Bethesda, MD, 20892, United States.",
+        "Department of Computer Science, Kahlert School of Computing, University of Utah, Salt Lake City, UT, 84112, United States.",
+        "Department of Computer Science, Kahlert School of Computing, University of Utah, Salt Lake City, UT, 84112, United States.",
+        "National Library of Medicine, National Institutes of Health, Bethesda, MD, 20892, United States.",
+        "Department of Pathology, School of Medicine, University of Utah, Salt Lake City, UT, 84132, United States.",
+        "Department of Pathology, School of Medicine, University of Utah, Salt Lake City, UT, 84132, United States.",
+        "Department of Pediatrics, School of Medicine, University of Utah, Salt Lake City, UT, 84132, United States.",
+        "Department of Computer Science, Tufts University, Medford, MA, 02155, United States.",
+        "National Library of Medicine, National Institutes of Health, Bethesda, MD, 20892, United States."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Lindsey, LeAnn M",
+        "short_name": "Lindsey LM",
+        "identifiers": [],
+        "affiliations": [
+          "National Library of Medicine, National Institutes of Health, Bethesda, MD, 20892, United States."
+        ]
+      },
+      {
+        "full_name": "Pershing, Nicole L",
+        "short_name": "Pershing NL",
+        "identifiers": [
+          "0000-0002-5399-5668"
+        ],
+        "affiliations": [
+          "Department of Pediatrics, School of Medicine, University of Utah, Salt Lake City, UT, 84132, United States."
+        ]
+      },
+      {
+        "full_name": "Dufault-Thompson, Keith",
+        "short_name": "Dufault-Thompson K",
+        "identifiers": [
+          "0000-0002-0991-2255"
+        ],
+        "affiliations": [
+          "National Library of Medicine, National Institutes of Health, Bethesda, MD, 20892, United States."
+        ]
+      },
+      {
+        "full_name": "Gwak, Ho-Jin",
+        "short_name": "Gwak HJ",
+        "identifiers": [
+          "0000-0001-7765-0827"
+        ],
+        "affiliations": [
+          "National Library of Medicine, National Institutes of Health, Bethesda, MD, 20892, United States."
+        ]
+      },
+      {
+        "full_name": "Habib, Anisa",
+        "short_name": "Habib A",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Computer Science, Kahlert School of Computing, University of Utah, Salt Lake City, UT, 84112, United States."
+        ]
+      },
+      {
+        "full_name": "Schindler, Aaron",
+        "short_name": "Schindler A",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Computer Science, Kahlert School of Computing, University of Utah, Salt Lake City, UT, 84112, United States."
+        ]
+      },
+      {
+        "full_name": "Rakheja, Arjun",
+        "short_name": "Rakheja A",
+        "identifiers": [],
+        "affiliations": [
+          "National Library of Medicine, National Institutes of Health, Bethesda, MD, 20892, United States."
+        ]
+      },
+      {
+        "full_name": "Round, June L",
+        "short_name": "Round JL",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Pathology, School of Medicine, University of Utah, Salt Lake City, UT, 84132, United States."
+        ]
+      },
+      {
+        "full_name": "Stephens, W Zac",
+        "short_name": "Stephens WZ",
+        "identifiers": [
+          "0000-0002-8072-9023"
+        ],
+        "affiliations": [
+          "Department of Pathology, School of Medicine, University of Utah, Salt Lake City, UT, 84132, United States."
+        ]
+      },
+      {
+        "full_name": "Blaschke, Anne J",
+        "short_name": "Blaschke AJ",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Pediatrics, School of Medicine, University of Utah, Salt Lake City, UT, 84132, United States."
+        ]
+      },
+      {
+        "full_name": "Sundar, Hari",
+        "short_name": "Sundar H",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Computer Science, Tufts University, Medford, MA, 02155, United States."
+        ]
+      },
+      {
+        "full_name": "Jiang, Xiaofang",
+        "short_name": "Jiang X",
+        "identifiers": [
+          "0000-0002-0955-8284"
+        ],
+        "affiliations": [
+          "National Library of Medicine, National Institutes of Health, Bethesda, MD, 20892, United States."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "NAR genomics and bioinformatics"
+    ],
+    "journal_abbrev": [
+      "NAR Genom Bioinform"
+    ],
+    "pub_date": "2026 Sep",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/09 11:38",
+    "fetched_at": "2026-09-12 11:08:09"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42713011",
+      "41929157",
+      "42492189",
+      "42475469",
+      "39272021",
+      "38824509",
+      "14733619",
+      "42342250",
+      "41537311",
+      "41555097",
+      "40605274",
+      "40745106",
+      "40984701",
+      "12794192",
+      "40660356",
+      "31577829",
+      "42480065",
+      "41082689",
+      "40836306",
+      "33001599",
+      "40799805",
+      "40381369",
+      "41354659",
+      "42008616",
+      "41300810",
+      "41315262",
+      "39388235",
+      "28105923",
+      "38775729",
+      "40751178",
+      "41648502",
+      "39204211",
+      "41090943",
+      "17615066",
+      "38464101",
+      "39037262",
+      "29150513",
+      "35451479",
+      "39609566",
+      "39541441",
+      "33119236",
+      "40205851",
+      "29100906",
+      "42434330",
+      "42412845",
+      "30782635",
+      "40160857",
+      "41528854",
+      "31917358",
+      "40824067",
+      "31527115",
+      "17062630",
+      "16773396",
+      "39132840",
+      "42177353",
+      "40084898",
+      "27912729",
+      "23912807",
+      "40265190",
+      "41632593",
+      "39745426",
+      "24756024",
+      "10860721",
+      "41325597",
+      "39786555",
+      "35448946",
+      "18030328",
+      "31996747",
+      "40627556",
+      "42323878",
+      "39753409",
+      "21672955",
+      "28672885",
+      "16922685",
+      "36932119",
+      "42368259",
+      "41652748",
+      "27388014",
+      "36851634",
+      "38447502",
+      "42056696",
+      "41162646",
+      "41426306",
+      "26497500",
+      "41158510",
+      "27861551",
+      "42166792",
+      "37843655",
+      "42260904",
+      "37904945",
+      "19144133",
+      "32456612",
+      "41122975",
+      "38775467",
+      "39713364",
+      "31722990",
+      "42581210",
+      "40950025",
+      "41612176",
+      "41781614"
+    ],
+    "review": [
+      "42713011",
+      "42492189",
+      "41537311",
+      "41555097",
+      "12794192",
+      "29100906",
+      "16773396",
+      "40265190",
+      "41325597",
+      "42323878",
+      "39753409",
+      "41158510"
+    ],
+    "pmc": [
+      "13551034"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/pmid/42713011/",
+        "provider": "PubMed Central",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://assays.cancer.gov/CPTAC-1548",
+        "provider": "NCI CPTAC Assay Portal",
+        "category": "Miscellaneous",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://academic.oup.com/nargab/article-lookup/doi/10.1093/nargab/lqag103",
+        "provider": "Silverchair Information Systems",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

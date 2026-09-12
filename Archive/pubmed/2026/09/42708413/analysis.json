@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42708413",
+  "title": "Loss of SUMOylation drives aberrant PRC1 clustering and 3D genome rewiring independent of H3K27me3.",
+  "authors": "Akilli, Nazli; Puel, Paul-Swann; Stefano, Marco Di; Muzzopappa, Fernando; Fritsch, Lauriane; Erdel, Fabian; Jost, Daniel; Cheutin, Thierry; Cavalli, Giacomo",
+  "journal": "Nucleic acids research",
+  "published_date": "2026-09-08",
+  "window": {
+    "start": "2026-08-29",
+    "end": "2026-09-11"
+  },
+  "score": 8,
+  "one_liner_zh": "该文通过实验与生物物理建模揭示SUMO化修饰调控PRC1凝聚体特性并重塑TAD互作网络，直接关联染色质三维组织与转录调控，方法上结合了凝聚体建模与Hi-C分析，对理解染色质空间架构的调控机制有重要启发。",
+  "abstract": "Polycomb repressive complex 1 (PRC1) forms nuclear condensates that organize target chromatin domains. SUMOylation modulates PRC1 clustering, but its impact on condensate properties and 3D genome architecture remains unclear. Here, we show that depletion of small ubiquitin-like modifier (SUMO) in Drosophila wing imaginal discs transforms PRC1 condensates into large structures with reduced molecular dynamics. Biophysical modeling suggests that the changes in PRC1 self-interactions are responsible for the formation of large PRC1 condensates when SUMO is depleted. Interestingly, this biophysical reorganization occurs without global loss of the H3K27me3 mark. Instead, Hi-C reveals widespread rewiring of topologically associating domain (TAD) interactions. PRC1-bound TADs lose specific long-range contacts with each other while gaining ectopic interactions with active chromatin. These topological shifts correlate with gene misregulation independently of changes in Polycomb histone modifications. Our results establish SUMOylation as a critical regulator of PRC1 condensates, demonstrating that post-translational control of biomolecular condensation modulates 3D genome architecture and transcriptional output through mechanisms separable from histone mark deposition.",
+  "abstract_zh": "Polycomb repressive complex 1 (PRC1) 形成核凝聚体，组织靶染色质结构域。SUMO化修饰调节PRC1聚集，但其对凝聚体性质和3D基因组结构的影响仍不清楚。在此，我们表明，在果蝇翅成虫盘中，小泛素样修饰因子 (SUMO) 的耗竭将PRC1凝聚体转变为具有降低分子动力学的大结构。生物物理建模表明，当SUMO被耗竭时，PRC1自相互作用的改变是形成大PRC1凝聚体的原因。有趣的是，这种生物物理重组发生在H3K27me3标记无全局丢失的情况下。相反，Hi-C揭示了拓扑关联结构域 (TAD) 相互作用的广泛重连。PRC1结合的TAD失去彼此间的特异性长程接触，同时获得与活性染色质的异位相互作用。这些拓扑变化与基因失调相关，且独立于Polycomb组蛋白修饰的变化。我们的结果确立了SUMO化作为PRC1凝聚体的关键调节因子，证明生物分子凝聚的翻译后控制通过可分离于组蛋白标记沉积的机制调节3D基因组结构和转录输出。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42708413/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42708413/",
+  "paper_page_path": "papers/pubmed/42708413/index.html"
+}

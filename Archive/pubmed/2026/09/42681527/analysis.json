@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42681527",
+  "title": "AI-Based 3D Heterogeneous Network Model for Functional Prediction of Epigenetics.",
+  "authors": "Mollah, Shamim Ara",
+  "journal": "Methods in molecular biology (Clifton, N.J.)",
+  "published_date": "2026-09-02",
+  "window": {
+    "start": "2026-08-29",
+    "end": "2026-09-11"
+  },
+  "score": 6,
+  "one_liner_zh": "该文提出基于AI的多模态数据整合三维异质网络模型用于表观遗传功能预测，虽涉及染色质结构调控但未聚焦三维基因组/染色质组织建模，方法上AI建模有启发但对象和结构/调控轴偏弱。",
+  "abstract": "Human biology and diseases are the result of constantly evolving processes within an intricately complex molecular network of interactions, such as epigenetic regulation. Epigenetics refers to heritable changes in gene expression that occur without alterations to the underlying DNA sequence. These changes, driven by mechanisms such as DNA methylation, histone modifications, and noncoding RNAs, play critical roles in regulating chromatin structure and gene activity. Epigenetic regulation offers valuable insights into biological systems, and when integrated with sophisticated analyses, it enables us to gain insights into gene regulation and cellular behavior. Here, we describe an artificial intelligence (AI)-based model that is capable of generating 3-dimensional (3D) heterogeneous network by integrating multimodal data for the functional prediction of epigenetic mechanisms, emphasizing its applications in medicine, developmental biology, and personalized therapeutics. Heterogeneous networks in biology are powerful tools for understanding the complex interactions and interdependencies within biological systems. Key advancements in AI and multiomics data integration have propelled this field, offering new insights into disease mechanisms, biomarker discovery, and therapeutic interventions.",
+  "abstract_zh": "人类生物学与疾病是复杂精密的分子相互作用网络（如表观遗传调控）中持续演化过程的结果。表观遗传学（Epigenetics）指不涉及DNA序列改变的可遗传基因表达变化。这些变化由DNA甲基化（DNA methylation）、组蛋白修饰（histone modifications）及非编码RNA（noncoding RNAs）等机制驱动，在调控染色质结构与基因活性中发挥关键作用。表观遗传调控为理解生物系统提供了重要视角，当与精密分析相结合时，能使我们深入理解基因调控与细胞行为。本文描述了一种基于人工智能（artificial intelligence, AI）的模型，该模型通过整合多模态数据生成三维（3-dimensional, 3D）异质网络（heterogeneous network），用于表观遗传机制的功能预测，重点阐述其在医学、发育生物学及个性化治疗中的应用。生物学中的异质网络是理解生物系统内复杂相互作用与相互依赖关系的强大工具。人工智能与多组学数据整合（multiomics data integration）的关键进展推动了该领域发展，为疾病机制、生物标志物发现及治疗干预提供了新见解。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42681527/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42681527/",
+  "paper_page_path": "papers/pubmed/42681527/index.html"
+}

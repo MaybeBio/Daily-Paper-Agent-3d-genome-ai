@@ -1,0 +1,79 @@
+## Review setup
+- **Input scope** Abstract only
+- **Assessment boundary** Claims and evidence as presented in the abstract; no access to methods, figures, tables, or supplementary materials
+- **Shared manuscript claim summary** The authors present DNABERT-Enhancer, a fine-tuned DNABERT model for predicting enhancers from human genomic sequence. They report benchmark performance (88.05% accuracy, MCC 76%), genome-wide predictions (1,684,595 enhancer regions, 26.65% of the genome), and integrative variant effect analyses identifying 2,681 loss-of-function and 1,917 gain-of-function enhancer variants, plus 4,057 candidate de novo enhancers from 5,464 gain-of-function variants.
+- **Visible evidence base** Abstract text only; no figures, tables, methods, or supplementary data provided
+- **Missing materials affecting confidence** Full methods, benchmark dataset construction details, model architecture and hyperparameters, independent dataset composition, variant effect analysis methodology, statistical thresholds, validation strategies, and all quantitative results beyond those stated in the abstract
+
+## Reviewer
+- **Overall assessment** The abstract describes a potentially useful application of a pre-trained genomic language model to enhancer prediction, with a substantial genome-wide annotation resource and variant effect predictions. However, the abstract alone provides insufficient detail to evaluate the validity of the core claims. Key methodological aspects, including dataset construction, model fine-tuning procedures, evaluation design, and the variant effect analysis framework, are not described. The reported performance metrics and genome-wide numbers cannot be independently assessed without access to the underlying methods and validation details. The work may be of interest to the functional genomics and regulatory genomics communities, but the case is not established from the abstract alone.
+- **Who would be interested in the results, and why** Researchers in regulatory genomics, enhancer biology, and genome interpretation would be interested in a new enhancer prediction tool and the associated genome-wide annotations. Clinically oriented genomics groups might find the variant effect predictions useful for interpreting non-coding variants in disease studies. The computational genomics community would be interested in the application of DNABERT to a regulatory prediction task, particularly the integration with transcription factor binding models.
+- **Major strengths** The work addresses a real problem in enhancer prediction, namely the need for sequence context modeling beyond nucleotide composition. The use of a pre-trained genomic language model is a reasonable and current approach. The reported scale of genome-wide annotation and variant effect prediction suggests a potentially valuable community resource. The availability of code, a web application, and archived models is commendable for reproducibility.
+- **Major Concerns**
+  - **Concern ID** R1-M1
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** The model achieved 88.05% accuracy and MCC of 76% on an independent dataset.
+  - **Evidence pointer** Abstract, Results section; location not provided
+  - **Concern** The abstract reports performance on an "independent dataset" but does not describe how this dataset was constructed, how it relates to the training and validation sets, or whether it is truly independent in terms of genomic regions, cell types, or sequence similarity. No information is provided on the negative set construction, which is critical for enhancer prediction tasks given the absence of consistent distinguishing signatures.
+  - **Why it matters** Without clarity on the independent test set and negative set design, the reported accuracy and MCC cannot be interpreted. If the test set shares sequence similarity with training regions or if the negative set is trivially distinguishable, the performance metrics would be inflated and not representative of generalizable enhancer prediction.
+  - **Resolution test** The full manuscript must describe the independent dataset construction, including source, filtering criteria, sequence similarity controls, and negative set definition. The authors should also report performance stratified by genomic context and demonstrate that the test set does not overlap with training regions at the sequence level.
+  - **Concern ID** R1-M2
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** Genome-wide application identified 1,684,595 enhancer regions covering 26.65% of the human genome.
+  - **Evidence pointer** Abstract, Results section; location not provided
+  - **Concern** The abstract states that 26.65% of the human genome is predicted as enhancer. This is a remarkably high fraction, given that current estimates of enhancer coverage in the human genome are typically much lower, even when including candidate elements. The abstract does not explain the threshold used for genome-wide prediction, the model's false positive rate at that threshold, or how this prediction relates to the ENCODE cCRE registry used for training.
+  - **Why it matters** A genome-wide prediction covering more than a quarter of the genome raises concerns about the model's specificity and the biological plausibility of the annotation. If the threshold is set too liberally, the resource may be of limited utility and could mislead downstream analyses. The fraction also suggests potential issues with the negative set or the model's calibration.
+  - **Resolution test** The manuscript must report the precision-recall trade-off, the chosen threshold and its justification, and a comparison with existing enhancer annotations. The authors should also provide an analysis of the genomic features of the predicted regions to assess biological plausibility.
+  - **Concern ID** R1-M3
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** Integrative analyses with DNABERT-based transcription factor models identified 2,681 loss-of-function and 1,917 gain-of-function enhancer variants, affecting 1,623 and 1,247 ENCODE-cCRE enhancers, respectively.
+  - **Evidence pointer** Abstract, Results section; location not provided
+  - **Concern** The abstract does not describe the methodology for variant effect prediction. It is unclear how the transcription factor models were integrated, what statistical framework was used to call loss-of-function and gain-of-function variants, what significance thresholds were applied, and how the effects on enhancer function were validated. The distinction between "enhancer variants" and "ENCODE-cCRE enhancers" is also not clarified.
+  - **Why it matters** Variant effect prediction is a high-stakes application with potential clinical implications. Without a clear description of the method, the statistical model, and any experimental or orthogonal validation, these numbers cannot be evaluated. The lack of detail makes it impossible to assess whether the reported counts are robust or an artifact of the chosen thresholds.
+  - **Resolution test** The full manuscript must describe the variant effect prediction pipeline, including the transcription factor models used, the scoring scheme, the statistical test, multiple testing correction, and any validation against known functional variants or experimental data.
+  - **Concern ID** R1-M4
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** The best fine-tuned model achieved 88.05% accuracy and MCC of 76% on an independent dataset.
+  - **Evidence pointer** Abstract, Results section; location not provided
+  - **Concern** The abstract does not report the number of models fine-tuned, the hyperparameter search space, the selection criteria for the "best" model, or the variance across models. It is unclear whether the reported performance is from a single model or an ensemble, and whether the selection was based on the independent test set or a validation set.
+  - **Why it matters** Reporting the best result without information on model selection and variance can lead to overfitting claims. The reader cannot assess the robustness of the approach or the expected performance on new data.
+  - **Resolution test** The manuscript should report the full fine-tuning procedure, including hyperparameter ranges, number of runs, selection criteria, and performance variance. Ideally, the authors should report performance on multiple independent test sets or cross-validation folds.
+- **Minor Comments**
+  - **Concern ID** R1-m1
+  - **Severity** Minor
+  - **Axis** Clarity
+  - **Affected element** Dataset description
+  - **Evidence pointer** Abstract, Results section; location not provided
+  - **Issue** The abstract states that the benchmark dataset consists of 21,926 enhancers of 201 bp and 46,159 enhancers of 350 bp, but does not explain why two different lengths were used or how they relate to the model input requirements.
+  - **Required correction** Clarify the rationale for the two sequence lengths and whether they correspond to different model input configurations or different enhancer definitions.
+  - **Concern ID** R1-m2
+  - **Severity** Minor
+  - **Axis** Reproducibility
+  - **Affected element** Resource availability
+  - **Evidence pointer** Abstract, Availability section; location not provided
+  - **Issue** The abstract mentions a web application and GitHub repository, but does not specify the license, the computational requirements for running the model, or whether the full training pipeline is included.
+  - **Required correction** Provide details on the software license, hardware requirements, and whether the training code and data preprocessing scripts are included in the repository.
+  - **Concern ID** R1-m3
+  - **Severity** Minor
+  - **Axis** Completeness
+  - **Affected element** Comparison with existing methods
+  - **Evidence pointer** Abstract, Results section; location not provided
+  - **Issue** The abstract does not mention any comparison with existing enhancer prediction methods, which would be important for establishing the added value of DNABERT-Enhancer.
+  - **Required correction** Include a comparison with at least one or two existing enhancer prediction tools on the same benchmark datasets.
+- **Technical failings that need to be addressed before the case is established** R1-M1, R1-M2, R1-M3, R1-M4
+- **Assessment against Nature-style criteria** Originality: The application of a pre-trained genomic language model to enhancer prediction is not entirely novel, as similar approaches have been explored for other regulatory elements, but the specific focus on enhancers and the integration with transcription factor models may offer some originality. Scientific importance: Enhancer prediction and variant effect interpretation are important problems in genomics, and a reliable tool would be valuable. However, the abstract does not demonstrate that the tool outperforms existing methods or provides new biological insights. Interdisciplinary readership: The work would primarily appeal to computational biologists and genomics researchers, with potential interest from clinical genomics groups. The abstract is written in a way that is accessible to a broad genomics audience. Technical soundness: Cannot be assessed from the abstract alone; the concerns above highlight significant gaps in the description of methods and validation. Readability for nonspecialists: The abstract is reasonably clear, though some terms (e.g., cCRE, MCC) may require familiarity with the field.
+- **Recommendation posture** Currently not established from the provided evidence. The abstract presents potentially interesting results, but the lack of methodological detail and the concerning genome-wide coverage fraction prevent a supportive recommendation. The authors should be invited to resubmit with full methods and validation details.
+
+## Risk / unsupported claims
+- The claim that DNABERT-Enhancer effectively models sequence context beyond nucleotide composition is not supported by any comparative analysis in the abstract.
+- The genome-wide prediction of 1,684,595 enhancers covering 26.65% of the human genome is not supported by any threshold justification or biological plausibility analysis.
+- The variant effect predictions (2,681 loss-of-function, 1,917 gain-of-function, 4,057 de novo enhancers) are not supported by any methodological description or validation.
+- The claim that these resources are "valuable for genome interpretation in functional and clinical genomics studies" is an assertion without supporting evidence in the abstract.

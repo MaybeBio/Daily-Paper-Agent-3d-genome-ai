@@ -1,0 +1,235 @@
+{
+  "identity": {
+    "pmid": "42670851",
+    "doi": "10.1021/acs.jcim.6c01054",
+    "title": "Unraveling the Molecular Basis of NSD3 Allosteric Activation Driven by Nucleosome Binding: A Multiscale MD and QM/MM Approach."
+  },
+  "content": {
+    "abstract": "Nuclear receptor-binding SET domain 3 (NSD3) is a methyltransferase responsible for mono- and di-methylation of histone H3 lysine 36, whose hyperactivation is linked to accelerated cancer cell proliferation. Isolated NSD3 is autoinhibited due to a conformation that prevents substrate binding, but nucleosome binding allosterically activates the enzyme. Using a cryo-EM structure of nucleosome-bound NSD3, we combined molecular dynamics (MD) simulations and QM/MM calculations to explore the activation mechanism at the molecular level. QM/MM models accurately reproduced experimental observations, showing that nucleosome binding decreases the reaction barrier for the first methylation from 19.1 +/- 4.4 kcal/mol (isolated enzyme) to 4.7 +/- 1.6 kcal/mol (nucleosome-bound), validating the models. Key catalytic site residues and conformational restrictions involved in activation were identified. The Activation Strain Model-Energy Decomposition Analysis (ASM-EDA) approach revealed the physical forces underlying energy barrier differences between active and isolated states. MD simulations highlighted structural stabilization into specific conformations, and dynamical network analysis mapped interaction pathways connecting the nucleosome interface to the catalytic machinery, elucidating the allosteric control mechanism. The second methylation showed similar mechanistic insights. These findings provide a molecular-level understanding of nucleosome-mediated allosteric regulation in NSD3 and related methyltransferases, offering potential targets for the structure-based design of allosteric inhibitors.",
+    "keywords": [],
+    "mesh_terms": [
+      "*Nucleosomes/metabolism",
+      "*Molecular Dynamics Simulation",
+      "*Histone-Lysine N-Methyltransferase/chemistry/metabolism",
+      "Allosteric Regulation",
+      "Protein Binding",
+      "*Quantum Theory",
+      "Protein Conformation",
+      "Humans",
+      "Methylation",
+      "Thermodynamics",
+      "Nuclear Proteins"
+    ],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Blanco-Esperguez, Kevin",
+        "Gutierrez-Sanchez, Nestor",
+        "Mendizabal, Fernando",
+        "Miranda-Rojas, Sebastian"
+      ],
+      "short_names": [
+        "Blanco-Esperguez K",
+        "Gutierrez-Sanchez N",
+        "Mendizabal F",
+        "Miranda-Rojas S"
+      ],
+      "auids": [
+        "ORCID: 0000-0002-6320-8525"
+      ],
+      "affiliations": [
+        "Departamento de Ciencias Quimicas, Facultad de Ciencias Exactas, Universidad Andres Bello, Republica 275, Santiago8370146, Chile.",
+        "Departamento de Ciencias Quimicas, Facultad de Ciencias Exactas, Universidad Andres Bello, Republica 275, Santiago8370146, Chile.",
+        "Departamento de Quimica, Facultad de Ciencias, Universidad de Chile, P.O. Box 653, Las Palmeras 3425, Nunoa, Santiagocasilla 653, Chile.",
+        "Departamento de Ciencias Quimicas, Facultad de Ciencias Exactas, Universidad Andres Bello, Republica 275, Santiago8370146, Chile."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Blanco-Esperguez, Kevin",
+        "short_name": "Blanco-Esperguez K",
+        "identifiers": [],
+        "affiliations": [
+          "Departamento de Ciencias Químicas, Facultad de Ciencias Exactas, Universidad Andrés Bello, República 275, Santiago8370146, Chile."
+        ]
+      },
+      {
+        "full_name": "Gutiérrez-Sánchez, Néstor",
+        "short_name": "Gutiérrez-Sánchez N",
+        "identifiers": [],
+        "affiliations": [
+          "Departamento de Ciencias Químicas, Facultad de Ciencias Exactas, Universidad Andrés Bello, República 275, Santiago8370146, Chile."
+        ]
+      },
+      {
+        "full_name": "Mendizábal, Fernando",
+        "short_name": "Mendizábal F",
+        "identifiers": [],
+        "affiliations": [
+          "Departamento de Química, Facultad de Ciencias, Universidad de Chile, P.O. Box 653, Las Palmeras 3425, Ñuñoa, Santiagocasilla 653, Chile."
+        ]
+      },
+      {
+        "full_name": "Miranda-Rojas, Sebastián",
+        "short_name": "Miranda-Rojas S",
+        "identifiers": [
+          "0000-0002-6320-8525"
+        ],
+        "affiliations": [
+          "Departamento de Ciencias Químicas, Facultad de Ciencias Exactas, Universidad Andrés Bello, República 275, Santiago8370146, Chile."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Journal of chemical information and modeling"
+    ],
+    "journal_abbrev": [
+      "J Chem Inf Model"
+    ],
+    "pub_date": "2026 Aug 24",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/08/31 19:42",
+    "fetched_at": "2026-09-12 11:08:09"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42670851",
+      "33361816",
+      "31485071",
+      "18512960",
+      "37527654",
+      "16433545",
+      "17429949",
+      "23269674",
+      "18311969",
+      "25494638",
+      "17676763",
+      "33574035",
+      "30923167",
+      "17517655",
+      "26267708",
+      "34928138",
+      "27183271",
+      "41895482",
+      "27085704",
+      "17388541",
+      "33769454",
+      "31804488",
+      "34281237",
+      "40885388",
+      "29758466",
+      "31922488",
+      "24595546",
+      "38449437",
+      "15292170",
+      "30047835",
+      "41873495",
+      "25443958",
+      "41498383",
+      "30765112",
+      "21196496",
+      "41270580",
+      "24594358",
+      "37570737",
+      "31255706",
+      "36128736",
+      "36520638",
+      "40432314",
+      "17013555",
+      "34390793",
+      "27797456",
+      "22438798",
+      "27482605",
+      "32083791",
+      "40856521",
+      "40671268",
+      "31816384",
+      "30826376",
+      "37051671",
+      "22624060",
+      "34615858",
+      "33211010",
+      "27447295",
+      "31329932",
+      "36907648",
+      "26035101",
+      "33972509",
+      "41162378",
+      "40143436",
+      "22007899",
+      "12628190",
+      "27861609",
+      "30981630",
+      "31165882",
+      "35172132",
+      "33667509",
+      "31081496",
+      "30301423",
+      "41875043",
+      "29072601",
+      "25762450",
+      "39795072",
+      "19767730",
+      "37331600",
+      "34782608",
+      "39879846",
+      "42307250",
+      "35240127",
+      "18449190",
+      "30508692",
+      "33164832",
+      "41471815",
+      "37290391",
+      "41108205",
+      "16603186",
+      "33536620",
+      "29339748",
+      "30949773",
+      "27833951",
+      "30759380",
+      "29024026",
+      "40553864",
+      "31793290",
+      "31451955",
+      "39666822",
+      "38732174"
+    ],
+    "review": [
+      "42670851",
+      "33769454",
+      "38449437",
+      "25443958",
+      "17013555",
+      "40671268",
+      "37051671",
+      "40143436",
+      "35240127",
+      "31793290"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://pubs.acs.org/jcisd8/article-lookup/doi/10.1021/acs.jcim.6c01054",
+        "provider": "Silverchair Information Systems",
+        "category": "Full Text Sources",
+        "attribute": "subscription/membership/fee required",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42708417",
+  "title": "Plant cis-regulatory grammar: Decoding the multidimensional code of transcriptional regulation for programmable crop engineering.",
+  "authors": "Zhang, Libin; Li, Maoteng",
+  "journal": "Journal of integrative plant biology",
+  "published_date": "2026-09-08",
+  "window": {
+    "start": "2026-08-29",
+    "end": "2026-09-11"
+  },
+  "score": 7,
+  "one_liner_zh": "该综述系统阐述了植物顺式调控元件的多维编码（包括染色质可及性、组蛋白修饰、三维基因组拓扑等），并强调AI平台从描述性发现向预测性工程转变，为作物基因表达编程提供路线图；虽为综述且非直接建模，但三维基因组拓扑与AI设计思路对本课题有启发。",
+  "abstract": "Cis-regulatory elements (CREs) orchestrate the spatiotemporal precision of gene expression that underlies plant development, adaptation, and domestication. Decoding the cis-regulatory grammar of plant genomes remains a central challenge in modern biology, with profound implications for programmable crop engineering. Here, recent conceptual and technological advances are synthesized to reshape our understanding of plant CREs. This review first argues that CRE function is not only an intrinsic property of DNA sequence alone but also emerges from a multidimensional context, including chromatin accessibility, histone modifications, three-dimensional genome topology, and cell type-specific regulatory landscapes. Furthermore, the convergence of single-cell epigenomics, high-throughput functional assays, and CRISPR-based dissection has begun to unravel this contextual grammar, revealing the computational principles governing transcriptional regulation. Critically, we propose that artificial intelligence (AI) platforms are catalyzing an ongoing transition from descriptive discovery to predictive engineering, wherein these platforms outperform natural evolution in designing synthetic CREs. Finally, a roadmap is outlined toward a plant regulatory grammar foundation model, which will enable truly predictive engineering of gene expression when fine-tuned for specific tasks. Collectively, the integration of single-cell resolution maps, precise genome editing, AI-driven design, and regulatory-compliant delivery systems promises to transform our ability to reprogram plant gene regulation for next-generation agriculture, bridging the gap between foundational regulatory biology and tangible crop improvement.",
+  "abstract_zh": "顺式调控元件（cis-regulatory elements, CREs）协调基因表达的时空精确性，这是植物发育、适应和驯化的基础。解码植物基因组的顺式调控语法仍是现代生物学的核心挑战，对可编程作物工程具有深远意义。本文综合了近期概念与技术进展，以重塑我们对植物CREs的理解。本综述首先论证，CRE功能不仅是DNA序列的内在属性，还源于多维背景，包括染色质可及性、组蛋白修饰、三维基因组拓扑结构以及细胞类型特异性调控景观。此外，单细胞表观基因组学、高通量功能检测和基于CRISPR的解析手段的融合，已开始揭示这一背景语法，并阐明了调控转录的计算原理。关键的是，我们提出人工智能（artificial intelligence, AI）平台正催化从描述性发现到预测性工程的持续转型，这些平台在设计合成CREs方面超越了自然进化。最后，我们勾勒出迈向植物调控语法基础模型的路线图，该模型在针对特定任务进行微调后，将实现真正可预测的基因表达工程。总体而言，单细胞分辨率图谱、精准基因组编辑、AI驱动设计以及符合监管要求的递送系统的整合，有望变革我们重编程植物基因调控的能力，以服务于下一代农业，弥合基础调控生物学与实质性作物改良之间的鸿沟。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42708417/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42708417/",
+  "paper_page_path": "papers/pubmed/42708417/index.html"
+}

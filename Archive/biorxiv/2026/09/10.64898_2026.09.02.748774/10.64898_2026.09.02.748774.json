@@ -1,0 +1,183 @@
+{
+  "source": "biorxiv",
+  "source_id": "10.64898/2026.09.02.748774",
+  "title": "PromptBio: An Agentic Platform for End-to-End Computational Biomedical Research",
+  "doi": "10.64898/2026.09.02.748774",
+  "abstract": "Modern biomedical research increasingly depends on complex computational analyses, yet translating a scientific question into a reliable workflow still requires substantial technical expertise and manual coordination. PromptBio is a multi-agent AI platform available through a web portal at https://promptbio.ai that addresses this challenge. Through natural-language interaction, its agent harness, PromptGenie, translates a research objective into an inspectable plan, executes the required research and analysis, and adapts subsequent steps as evidence and results emerge. PromptBio integrates reasoning with managed execution while preserving human oversight and a traceable record of the research process. It can apply validated methods, construct custom analyses, and incorporate external workflows, enabling researchers to move beyond fixed pipelines while supporting reproducibility. We evaluate the platform through benchmarks of end-to-end bioinformatics analysis and biomedical deep research, validation of representative omics and machine-learning skills, and a hypothesis-driven regulatory-genomics case study. PromptGenie achieved higher analytical accuracy and stronger evidence retrieval and synthesis than the comparison agents, while the evaluated domain skills produced results consistent with established methods. The case study further demonstrates how PromptBio can integrate human-specific genomic and epigenomic features to investigate cortical development. Together, these findings show that PromptBio can coordinate complex biomedical analyses under researcher oversight, offering an accessible approach for accelerating scientific iteration and transforming research questions into transparent, reusable computational workflows.",
+  "authors": [
+    "Zhang M",
+    "Gu W",
+    "Han B",
+    "Guo W",
+    "Chen J",
+    "Zhou X",
+    "Leng Y",
+    "Ma Y",
+    "Li K",
+    "Zheng J",
+    "Shishir H",
+    "Wang W",
+    "Huang A",
+    "Shashidhar K",
+    "Yang X"
+  ],
+  "published_date": "2026-09-06",
+  "updated_date": "",
+  "journal": "bioRxiv",
+  "category": "",
+  "landing_url": "https://www.biorxiv.org/content/10.64898/2026.09.02.748774",
+  "pdf_url": "https://www.biorxiv.org/content/10.64898/2026.09.02.748774.full.pdf",
+  "pdf_path": "",
+  "pdf_downloaded": false,
+  "query": "(\"3D genome\" OR \"three-dimensional genome\" OR \"genome organization\" OR \"genome architecture\" OR \"genome folding\" OR \"nuclear organization\" OR \"nuclear architecture\" OR \"chromatin organization\" OR \"chromatin architecture\" OR \"chromatin conformation\" OR \"chromatin topology\" OR \"chromatin structure\" OR \"chromatin loop\" OR \"chromatin interaction\" OR \"chromatin domain\" OR \"topologically associating domain\" OR \"A/B compartment\" OR \"chromosome conformation capture\" OR \"Hi-C\" OR HiChIP OR \"loop extrusion\" OR \"loop-extrusion\" OR CTCF OR cohesin OR \"cis-regulatory\" OR \"cis-regulatory element\" OR \"regulatory element\" OR \"regulatory genomics\" OR \"chromatin accessibility\" OR \"enhancer-promoter\" OR \"promoter-enhancer\") AND (\"deep learning\" OR \"machine learning\" OR \"neural network\" OR \"graph neural network\" OR \"convolutional neural network\" OR transformer OR \"language model\" OR \"foundation model\" OR \"diffusion model\" OR generative OR \"flow matching\" OR esmfold OR rosetta OR alphafold OR \"molecular dynamics\" OR simulation OR docking)",
+  "version": "",
+  "keywords": [],
+  "extra": {
+    "provider": "europepmc",
+    "epmc_id": "PPR1313956",
+    "raw_record": {
+      "id": "PPR1313956",
+      "source": "PPR",
+      "doi": "10.64898/2026.09.02.748774",
+      "title": "PromptBio: An Agentic Platform for End-to-End Computational Biomedical Research",
+      "authorString": "Zhang M, Gu W, Han B, Guo W, Chen J, Zhou X, Leng Y, Ma Y, Li K, Zheng J, Shishir H, Wang W, Huang A, Shashidhar K, Yang X.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Zhang M",
+            "firstName": "Minzhe",
+            "lastName": "Zhang",
+            "initials": "M"
+          },
+          {
+            "fullName": "Gu W",
+            "firstName": "Wenhao",
+            "lastName": "Gu",
+            "initials": "W"
+          },
+          {
+            "fullName": "Han B",
+            "firstName": "Bowei",
+            "lastName": "Han",
+            "initials": "B"
+          },
+          {
+            "fullName": "Guo W",
+            "firstName": "Wenbin",
+            "lastName": "Guo",
+            "initials": "W"
+          },
+          {
+            "fullName": "Chen J",
+            "firstName": "Jiayu",
+            "lastName": "Chen",
+            "initials": "J"
+          },
+          {
+            "fullName": "Zhou X",
+            "firstName": "Xiaoyuan",
+            "lastName": "Zhou",
+            "initials": "X"
+          },
+          {
+            "fullName": "Leng Y",
+            "firstName": "Yang",
+            "lastName": "Leng",
+            "initials": "Y"
+          },
+          {
+            "fullName": "Ma Y",
+            "firstName": "Youjia",
+            "lastName": "Ma",
+            "initials": "Y"
+          },
+          {
+            "fullName": "Li K",
+            "firstName": "Kai",
+            "lastName": "Li",
+            "initials": "K"
+          },
+          {
+            "fullName": "Zheng J",
+            "firstName": "Junbin",
+            "lastName": "Zheng",
+            "initials": "J"
+          },
+          {
+            "fullName": "Shishir H",
+            "firstName": "Hebbar",
+            "lastName": "Shishir",
+            "initials": "H"
+          },
+          {
+            "fullName": "Wang W",
+            "firstName": "Weiying",
+            "lastName": "Wang",
+            "initials": "W"
+          },
+          {
+            "fullName": "Huang A",
+            "firstName": "Aaron",
+            "lastName": "Huang",
+            "initials": "A"
+          },
+          {
+            "fullName": "Shashidhar K",
+            "firstName": "KC",
+            "lastName": "Shashidhar",
+            "initials": "K"
+          },
+          {
+            "fullName": "Yang X",
+            "firstName": "Xiao",
+            "lastName": "Yang",
+            "initials": "X"
+          }
+        ]
+      },
+      "pubYear": "2026",
+      "abstractText": "Modern biomedical research increasingly depends on complex computational analyses, yet translating a scientific question into a reliable workflow still requires substantial technical expertise and manual coordination. PromptBio is a multi-agent AI platform available through a web portal at  https://promptbio.ai that addresses this challenge. Through natural-language interaction, its agent harness, PromptGenie, translates a research objective into an inspectable plan, executes the required research and analysis, and adapts subsequent steps as evidence and results emerge. PromptBio integrates reasoning with managed execution while preserving human oversight and a traceable record of the research process. It can apply validated methods, construct custom analyses, and incorporate external workflows, enabling researchers to move beyond fixed pipelines while supporting reproducibility. We evaluate the platform through benchmarks of end-to-end bioinformatics analysis and biomedical deep research, validation of representative omics and machine-learning skills, and a hypothesis-driven regulatory-genomics case study. PromptGenie achieved higher analytical accuracy and stronger evidence retrieval and synthesis than the comparison agents, while the evaluated domain skills produced results consistent with established methods. The case study further demonstrates how PromptBio can integrate human-specific genomic and epigenomic features to investigate cortical development. Together, these findings show that PromptBio can coordinate complex biomedical analyses under researcher oversight, offering an accessible approach for accelerating scientific iteration and transforming research questions into transparent, reusable computational workflows.",
+      "pubTypeList": {
+        "pubType": [
+          "Preprint"
+        ]
+      },
+      "bookOrReportDetails": {
+        "publisher": "bioRxiv",
+        "yearOfPublication": 2026
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Free",
+            "availabilityCode": "F",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.64898/2026.09.02.748774"
+          }
+        ]
+      },
+      "isOpenAccess": "N",
+      "inEPMC": "N",
+      "inPMC": "N",
+      "hasPDF": "N",
+      "hasBook": "N",
+      "hasSuppl": "N",
+      "citedByCount": 0,
+      "hasData": "N",
+      "hasReferences": "N",
+      "hasTextMinedTerms": "Y",
+      "hasDbCrossReferences": "N",
+      "hasLabsLinks": "N",
+      "license": "cc by-nc-nd",
+      "hasEvaluations": "N",
+      "authMan": "N",
+      "epmcAuthMan": "N",
+      "nihAuthMan": "N",
+      "hasTMAccessionNumbers": "N",
+      "dateOfCreation": "2026-09-08",
+      "firstIndexDate": "2026-09-08",
+      "firstPublicationDate": "2026-09-06"
+    }
+  }
+}

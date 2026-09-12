@@ -1,0 +1,252 @@
+{
+  "identity": {
+    "pmid": "42680998",
+    "doi": "10.1007/978-1-0716-5408-8_13",
+    "title": "Distilling the Knowledge of Ensembles for Uncertainty-Aware Genomic Deep Learning."
+  },
+  "content": {
+    "abstract": "While deep neural networks have revolutionized predictive modeling in regulatory genomics, challenges persist in ensuring the reliability of their predictions and understanding model decision-making processes. This chapter introduces DEGU (Distilling Ensembles for Genomic Uncertainty-aware models), a model-training framework that integrates ensemble learning with knowledge distillation to enhance the robustness and explainability of genomic deep learning predictions. DEGU distills the distribution of predictions from an ensemble of models into a single student model, capturing both the ensemble's average predictions and the variability across models, which represents epistemic uncertainty. Additionally, DEGU can estimate aleatoric uncertainty by modeling variability across experimental replicates. Through applications across diverse functional genomic prediction tasks, we demonstrate that DEGU-trained models achieve ensemble-level performance in a single model, exhibit improved generalization to out-of-distribution sequences, provide more consistent mechanistic explanations through attribution analysis, and generate calibrated uncertainty estimates. These advances position DEGU as a practical framework for developing trustworthy and robust deep learning applications in genomics research.",
+    "keywords": [
+      "Aleatoric uncertainty",
+      "Attribution analysis",
+      "Deep learning",
+      "Ensemble learning",
+      "Epistemic uncertainty",
+      "Genomics",
+      "Knowledge distillation",
+      "Model interpretability",
+      "Regulatory genomics",
+      "Uncertainty quantification"
+    ],
+    "mesh_terms": [
+      "*Deep Learning",
+      "*Genomics/methods",
+      "Uncertainty",
+      "Ensemble Learning",
+      "*Computational Biology/methods",
+      "Humans",
+      "Neural Networks, Computer",
+      "Software"
+    ],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Zhou, Jessica",
+        "Rizzo, Kaeli",
+        "Christensen, Trevor",
+        "Tang, Ziqi",
+        "Koo, Peter K"
+      ],
+      "short_names": [
+        "Zhou J",
+        "Rizzo K",
+        "Christensen T",
+        "Tang Z",
+        "Koo PK"
+      ],
+      "auids": [],
+      "affiliations": [
+        "Simons Center for Quantitative Biology, Cold Spring Harbor Laboratory, Cold Spring Harbor, NY, USA.",
+        "Simons Center for Quantitative Biology, Cold Spring Harbor Laboratory, Cold Spring Harbor, NY, USA.",
+        "Simons Center for Quantitative Biology, Cold Spring Harbor Laboratory, Cold Spring Harbor, NY, USA.",
+        "Simons Center for Quantitative Biology, Cold Spring Harbor Laboratory, Cold Spring Harbor, NY, USA.",
+        "InstaDeep, Cambridge, MA, USA.",
+        "Simons Center for Quantitative Biology, Cold Spring Harbor Laboratory, Cold Spring Harbor, NY, USA. koo@cshl.edu."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Zhou, Jessica",
+        "short_name": "Zhou J",
+        "identifiers": [],
+        "affiliations": [
+          "Simons Center for Quantitative Biology, Cold Spring Harbor Laboratory, Cold Spring Harbor, NY, USA."
+        ]
+      },
+      {
+        "full_name": "Rizzo, Kaeli",
+        "short_name": "Rizzo K",
+        "identifiers": [],
+        "affiliations": [
+          "Simons Center for Quantitative Biology, Cold Spring Harbor Laboratory, Cold Spring Harbor, NY, USA."
+        ]
+      },
+      {
+        "full_name": "Christensen, Trevor",
+        "short_name": "Christensen T",
+        "identifiers": [],
+        "affiliations": [
+          "Simons Center for Quantitative Biology, Cold Spring Harbor Laboratory, Cold Spring Harbor, NY, USA."
+        ]
+      },
+      {
+        "full_name": "Tang, Ziqi",
+        "short_name": "Tang Z",
+        "identifiers": [],
+        "affiliations": [
+          "Simons Center for Quantitative Biology, Cold Spring Harbor Laboratory, Cold Spring Harbor, NY, USA.",
+          "InstaDeep, Cambridge, MA, USA."
+        ]
+      },
+      {
+        "full_name": "Koo, Peter K",
+        "short_name": "Koo PK",
+        "identifiers": [],
+        "affiliations": [
+          "Simons Center for Quantitative Biology, Cold Spring Harbor Laboratory, Cold Spring Harbor, NY, USA. koo@cshl.edu."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Methods in molecular biology (Clifton, N.J.)"
+    ],
+    "journal_abbrev": [
+      "Methods Mol Biol"
+    ],
+    "pub_date": "2026",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/02 05:36",
+    "fetched_at": "2026-09-12 11:08:09"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42680998",
+      "41523993",
+      "39605624",
+      "42475469",
+      "41650580",
+      "41518523",
+      "40553343",
+      "41310253",
+      "41348741",
+      "35751183",
+      "39317056",
+      "38282254",
+      "41619477",
+      "39993336",
+      "42304009",
+      "42146294",
+      "41555683",
+      "42222603",
+      "42242221",
+      "40969061",
+      "37102453",
+      "32243154",
+      "40784939",
+      "39787735",
+      "41345415",
+      "42645940",
+      "41084046",
+      "38293520",
+      "41212591",
+      "42005390",
+      "40163820",
+      "33284756",
+      "39997335",
+      "39441973",
+      "30336009",
+      "37647308",
+      "41206386",
+      "42115649",
+      "37327613",
+      "41319559",
+      "40729366",
+      "39779778",
+      "42023068",
+      "41365073",
+      "34884011",
+      "41381371",
+      "37724552",
+      "36110150",
+      "39293804",
+      "41025463",
+      "34471680",
+      "41576119",
+      "37143118",
+      "35486562",
+      "42163690",
+      "42145727",
+      "42169495",
+      "39284975",
+      "42204152",
+      "42335163",
+      "41875538",
+      "38048895",
+      "42490893",
+      "42003104",
+      "33983921",
+      "41635978",
+      "40183298",
+      "40238838",
+      "35985178",
+      "41371063",
+      "42412831",
+      "39275870",
+      "40460564",
+      "42218721",
+      "42333573",
+      "41291081",
+      "39707112",
+      "36590140",
+      "38728131",
+      "36981295",
+      "38693292",
+      "38484398",
+      "41267404",
+      "41743184",
+      "42549891",
+      "39051117",
+      "40053625",
+      "39571080",
+      "41604548",
+      "36865296",
+      "40962325",
+      "40891145",
+      "41485393",
+      "33626513",
+      "35692896",
+      "42492189",
+      "38941861",
+      "41922965",
+      "41800451",
+      "42392034"
+    ],
+    "review": [
+      "42680998",
+      "42645940",
+      "41365073",
+      "39293804",
+      "42490893",
+      "39275870",
+      "42333573",
+      "36590140",
+      "40962325",
+      "42492189"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://doi.org/10.1007/978-1-0716-5408-8_13",
+        "provider": "Springer",
+        "category": "Full Text Sources",
+        "attribute": "subscription/membership/fee required",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

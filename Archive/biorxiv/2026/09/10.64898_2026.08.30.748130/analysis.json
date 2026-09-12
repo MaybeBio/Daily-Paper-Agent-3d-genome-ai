@@ -1,0 +1,24 @@
+{
+  "source": "biorxiv",
+  "id": "10.64898/2026.08.30.748130",
+  "title": "HiC-LEGO: Biologically Guided High-Resolution 3D Genome Reconstruction Preserves Chromatin Organization at Kilobase Resolution",
+  "authors": "Abhishek Pandeya; Md Fahimul Kabir Chowdhury; Oluwatosin Oluwadare",
+  "journal": "bioRxiv",
+  "published_date": "2026-09-03",
+  "window": {
+    "start": "2026-08-29",
+    "end": "2026-09-11"
+  },
+  "score": 9,
+  "one_liner_zh": "提出HiC-LEGO，一种结合染色质结构域集成与图学习的分层框架，从Hi-C数据高分辨率重建三维基因组，保留TAD、增强子-启动子互作等染色质组织特征。",
+  "abstract": "Three-dimensional (3D) chromosome reconstruction from Hi-C contact maps remains challenging because genome organization is hierarchical and fine-resolution models must reconcile local structure with chromosome-scale constraints. Here we present HiC-LEGO, a domain-aware hierarchical framework integrating ensemble chromatin domains with graph-based structural learning and progressive chromosome assembly. By combining ensemble domain selection with hierarchical reconstruction, HiC-LEGO reduces dependence on individual domain definitions while maintaining local organization during chromosome-scale assembly. Across five human cell lines at 5-kb resolution, HiC-LEGO achieves higher reconstruction concordance than evaluated state-of-the-art methods while better preserving domain organization. At 1-kb resolution, HiC-LEGO reconstructs complete GM12878 chromosome 8 and recovers close spatial proximity between an epigenomically supported distal MYC enhancer and its promoter. Reconstructions from 5-kb Micro-C data show that 249 experimentally defined RCMC microcompartment interactions at the Ppm1g locus occupy compact 3D configurations. In the breast cancer dataset, HiC-LEGO reconstructs structures that maintain stable TAD organization across healthy breast, primary tumors, and liver metastases, while revealing greater inter-patient structural heterogeneity in malignant pleural effusion samples. Pore-C validation shows that experimentally observed multi-way contacts spanning 1–5 Mb are enriched in compact reconstructed configurations across all 23 chromosomes. Thus, HiC-LEGO preserves regulatory interactions, disease-associated chromatin organization and higher-order spatial relationships beyond pairwise contact-map concordance.",
+  "abstract_zh": "从Hi-C接触图谱进行三维（3D）染色体重建仍具挑战性，因为基因组组织具有层级性，且精细分辨率模型必须协调局部结构与染色体尺度约束。在此，我们提出HiC-LEGO，一种域感知的层级框架，整合了集成染色质域、基于图的结构学习和渐进式染色体组装。通过结合集成域选择与层级重建，HiC-LEGO减少了对单个域定义的依赖，同时在染色体尺度组装中保持局部组织。在五种人类细胞系中，以5-kb分辨率，HiC-LEGO实现了比评估的最先进方法更高的重建一致性，同时更好地保留了域组织。在1-kb分辨率下，HiC-LEGO重建了完整的GM12878染色体8，并恢复了表观基因组支持的远端MYC增强子与其启动子之间的紧密空间邻近性。来自5-kb Micro-C数据的重建显示，Ppm1g基因座上249个实验定义的RCMC微区室相互作用占据紧凑的3D构型。在乳腺癌数据集中，HiC-LEGO重建的结构在健康乳腺、原发肿瘤和肝转移中维持稳定的TAD组织，同时揭示恶性胸腔积液样本中更大的患者间结构异质性。Pore-C验证显示，实验观察到的跨越1–5 Mb的多向接触在所有23条染色体的紧凑重建构型中富集。因此，HiC-LEGO在成对接触图谱一致性之外，还保留了调控相互作用、疾病相关染色质组织和更高阶的空间关系。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://www.biorxiv.org/content/10.64898/2026.08.30.748130",
+  "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.30.748130",
+  "paper_page_path": "papers/biorxiv/10.64898_2026.08.30.748130/index.html"
+}

@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42694095",
+  "title": "Shared Treg dysregulation underlies psoriasis vulgaris and atopic dermatitis through the PHF19-PRC2 epigenetic axis.",
+  "authors": "Lin, Yiting; Su, Xiaolei; Jin, Mingzhu; Wang, Yuqi; Li, Yaoyao; Zong, Bingquan; Song, Haoran; Lv, Yajie; Liu, Zhenhua; Wang, Gang; Wu, Shengxi",
+  "journal": "Frontiers in immunology",
+  "published_date": "2026-09-04",
+  "window": {
+    "start": "2026-08-29",
+    "end": "2026-09-11"
+  },
+  "score": 0,
+  "one_liner_zh": "该文研究银屑病和特应性皮炎中Treg细胞亚群失调的共享机制，不涉及三维基因组、染色质组织或空间架构建模，且无AI/分子模拟方法。",
+  "abstract": "BACKGROUND: Psoriasis vulgaris (PV) and atopic dermatitis (AD) are chronic inflammatory skin diseases characterized by distinct dominant T cell subsets, yet emerging evidence suggests overlapping immune mechanisms. Whether a shared Treg abnormality underlies both diseases remains unclear. METHODS: Single-cell RNA sequencing data from lesional T cells of 8 PV, 7 AD, and 7 healthy controls were analyzed. Treg subset identification, trajectory, communication, and enrichment analyses were conducted. Differentially expressed genes from both diseases were intersected and subjected to Mendelian randomization to screen for shared causal genes, followed by interaction mapping, drug prediction, and molecular docking. Findings were validated in Foxp3-tdTomato reporter mouse models of imiquimod-induced psoriasis-like and MC903-induced AD-like dermatitis by flow cytometry and quantitative PCR. RESULTS: A shared Treg triad remodeling pattern was identified: central memory Treg (cmTreg) was almost completely depleted, cycling Treg (Treg-c) expanded, and effector Treg (eTreg) accumulated in both diseases. Pseudotemporal analysis revealed a differentiation coordination defect, with upstream Treg-c shifting prematurely while effector Treg failed terminal maturation. Cell communication analysis identified enhanced MIF-(CD74+CXCR4/CD44) signaling as a shared intercellular remodeling axis, with the network shifting from a cmTreg-centric topology to one jointly centered on Treg-c and eTreg. Mendelian randomization identified seven shared causal genes (PDCD5, PHF19, GNAQ, LRR1, DHX36, TMEM107, FAM200B), with PHF19 serving as a core accessory subunit of PRC2. Molecular docking and in vivo experiments demonstrated that resveratrol binds PHF19, is predicted to activate the PHF19-PRC2-H3K27me3 axis, restores Treg subset homeostasis, and ameliorates skin lesions in both models. CONCLUSIONS: Treg subset remodeling is a shared pathogenic feature, nominating PHF19-targeted activation as a tolerance-restoring therapeutic strategy.",
+  "abstract_zh": "背景：寻常型银屑病（psoriasis vulgaris, PV）和特应性皮炎（atopic dermatitis, AD）是以不同主导T细胞亚群为特征的慢性炎症性皮肤病，但新证据提示存在重叠的免疫机制。两者是否共享一种Treg异常机制尚不清楚。方法：分析了8例PV、7例AD和7例健康对照皮损T细胞的单细胞RNA测序数据。进行了Treg亚群鉴定、轨迹分析、细胞通讯分析和富集分析。将两种疾病的差异表达基因取交集，并通过孟德尔随机化筛选共享因果基因，随后进行相互作用图谱构建、药物预测和分子对接。在咪喹莫特诱导的银屑病样和MC903诱导的AD样皮炎Foxp3-tdTomato报告小鼠模型中，通过流式细胞术和定量PCR验证发现。结果：鉴定出一种共享的Treg三联体重塑模式：在两种疾病中，中央记忆Treg（cmTreg）几乎完全耗竭，循环Treg（Treg-c）扩增，效应Treg（eTreg）积累。伪时间分析显示分化协调缺陷，上游Treg-c过早转变，而效应Treg未能完成终末成熟。细胞通讯分析发现增强的MIF-(CD74+CXCR4/CD44)信号是共享的细胞间重塑轴，网络从以cmTreg为中心的拓扑结构转变为以Treg-c和eTreg共同为中心的结构。孟德尔随机化鉴定出七个共享因果基因（PDCD5、PHF19、GNAQ、LRR1、DHX36、TMEM107、FAM200B），其中PHF19是PRC2的核心辅助亚基。分子对接和体内实验表明，白藜芦醇与PHF19结合，预测可激活PHF19-PRC2-H3K27me3轴，恢复Treg亚群稳态，并改善两种模型的皮损。结论：Treg亚群重塑是共享的致病特征，提示靶向PHF19激活是一种恢复免疫耐受的治疗策略。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42694095/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42694095/",
+  "paper_page_path": "papers/pubmed/42694095/index.html"
+}

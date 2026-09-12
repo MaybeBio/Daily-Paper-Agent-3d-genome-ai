@@ -1,0 +1,268 @@
+{
+  "identity": {
+    "pmid": "42711533",
+    "doi": "10.1038/s41559-026-03164-5",
+    "title": "Flexible use of conserved motifs constrains genome access in cell type evolution."
+  },
+  "content": {
+    "abstract": "Cell types can be organized into related families, but the regulatory mechanisms that define and maintain these families across deep evolutionary time remain unknown. Here, combining single-nucleus multi-omic sequencing with deep learning to analyse the accessible genomes of two groups of vastly divergent animals including flatworms and vertebrates, we find that hundreds of accessibility-dictating sequence motifs partition into distinct yet conserved sets, or 'vocabularies', each associated with a specific cell type family. However, combinatorial relationships among these motifs preferred by individual cell types are largely species specific. Deep-learning models trained on one species accurately predict family-level chromatin accessibility in distantly related species, albeit frequently rely on different motifs from shared vocabularies to reach convergent predictions. By contrast, models trained on individual cell types within a family lose cross-species predictive power, indicating that the regulatory syntax governing cell type-level identity evolves rapidly. We propose a 'collective maintenance' model in which motif vocabularies defining cell type families are evolutionarily stable, while recombination of these motifs generates cell type-specific regulatory programmes. This suggests that family identity is maintained collectively by large, conserved pools of regulatory factors, analogous to the logic of developmental homology, where character identity persists through network-level conservation despite extensive rewiring.",
+    "keywords": [],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Chai, Chew",
+        "Gibson, Jesse",
+        "Li, Pengyang",
+        "McDonald, Brennan D",
+        "Pampari, Anusri",
+        "Patel, Aman",
+        "Kundaje, Anshul",
+        "Wang, Bo"
+      ],
+      "short_names": [
+        "Chai C",
+        "Gibson J",
+        "Li P",
+        "McDonald BD",
+        "Pampari A",
+        "Patel A",
+        "Kundaje A",
+        "Wang B"
+      ],
+      "auids": [
+        "ORCID: 0009-0007-2321-0149",
+        "ORCID: 0000-0003-3084-2287",
+        "ORCID: 0000-0001-8880-1432"
+      ],
+      "affiliations": [
+        "Department of Bioengineering, Stanford University, Stanford, CA, USA.",
+        "Department of Bioengineering, Stanford University, Stanford, CA, USA.",
+        "Department of Bioengineering, Stanford University, Stanford, CA, USA.",
+        "Department of Biology, Stanford University, Stanford, CA, USA.",
+        "Department of Computer Science, Stanford University, Stanford, CA, USA.",
+        "Department of Computer Science, Stanford University, Stanford, CA, USA.",
+        "Department of Computer Science, Stanford University, Stanford, CA, USA.",
+        "Department of Genetics, Stanford University School of Medicine, Stanford, CA, USA.",
+        "Department of Bioengineering, Stanford University, Stanford, CA, USA. wangbo@stanford.edu.",
+        "Department of Developmental Biology, Stanford University School of Medicine, Stanford, CA, USA. wangbo@stanford.edu."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Chai, Chew",
+        "short_name": "Chai C",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Bioengineering, Stanford University, Stanford, CA, USA."
+        ]
+      },
+      {
+        "full_name": "Gibson, Jesse",
+        "short_name": "Gibson J",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Bioengineering, Stanford University, Stanford, CA, USA."
+        ]
+      },
+      {
+        "full_name": "Li, Pengyang",
+        "short_name": "Li P",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Bioengineering, Stanford University, Stanford, CA, USA."
+        ]
+      },
+      {
+        "full_name": "McDonald, Brennan D",
+        "short_name": "McDonald BD",
+        "identifiers": [
+          "0009-0007-2321-0149"
+        ],
+        "affiliations": [
+          "Department of Biology, Stanford University, Stanford, CA, USA."
+        ]
+      },
+      {
+        "full_name": "Pampari, Anusri",
+        "short_name": "Pampari A",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Computer Science, Stanford University, Stanford, CA, USA."
+        ]
+      },
+      {
+        "full_name": "Patel, Aman",
+        "short_name": "Patel A",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Computer Science, Stanford University, Stanford, CA, USA."
+        ]
+      },
+      {
+        "full_name": "Kundaje, Anshul",
+        "short_name": "Kundaje A",
+        "identifiers": [
+          "0000-0003-3084-2287"
+        ],
+        "affiliations": [
+          "Department of Computer Science, Stanford University, Stanford, CA, USA.",
+          "Department of Genetics, Stanford University School of Medicine, Stanford, CA, USA."
+        ]
+      },
+      {
+        "full_name": "Wang, Bo",
+        "short_name": "Wang B",
+        "identifiers": [
+          "0000-0001-8880-1432"
+        ],
+        "affiliations": [
+          "Department of Bioengineering, Stanford University, Stanford, CA, USA. wangbo@stanford.edu.",
+          "Department of Developmental Biology, Stanford University School of Medicine, Stanford, CA, USA. wangbo@stanford.edu."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Nature ecology & evolution"
+    ],
+    "journal_abbrev": [
+      "Nat Ecol Evol"
+    ],
+    "pub_date": "2026 Sep 8",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/09 07:07",
+    "fetched_at": "2026-09-12 11:08:09"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42711533",
+      "39282369",
+      "42475469",
+      "35410163",
+      "41951735",
+      "40607808",
+      "39090688",
+      "42216449",
+      "39026761",
+      "41993329",
+      "38853896",
+      "37425760",
+      "22955984",
+      "17381291",
+      "41429956",
+      "22534400",
+      "33028202",
+      "30598689",
+      "32029221",
+      "30661644",
+      "41365331",
+      "10854408",
+      "38187729",
+      "31510916",
+      "26042329",
+      "39079538",
+      "41514301",
+      "22456606",
+      "23512712",
+      "30286077",
+      "17822543",
+      "41929166",
+      "38330939",
+      "38826276",
+      "30930727",
+      "37845780",
+      "36229673",
+      "42475638",
+      "41731605",
+      "39975126",
+      "26131856",
+      "19843335",
+      "32732264",
+      "41610256",
+      "35924336",
+      "36342464",
+      "41848077",
+      "41279701",
+      "23595227",
+      "20082698",
+      "36083267",
+      "39326643",
+      "24967590",
+      "33816929",
+      "40408265",
+      "25765714",
+      "29361190",
+      "27061590",
+      "40633538",
+      "41676636",
+      "42680730",
+      "42542664",
+      "38260561",
+      "24680932",
+      "41735542",
+      "38653489",
+      "17184543",
+      "17651493",
+      "33393903",
+      "37824643",
+      "18535663",
+      "40490756",
+      "36043696",
+      "29363433",
+      "41632074",
+      "33663371",
+      "42641603",
+      "31888461",
+      "41285795",
+      "25164757",
+      "34616061",
+      "29229750",
+      "32183702",
+      "41224121",
+      "33154111",
+      "36121513",
+      "39742806",
+      "33563842",
+      "29513366",
+      "32978299",
+      "41385645",
+      "20676380",
+      "38016465",
+      "40962852",
+      "38566111",
+      "42310879",
+      "42167226",
+      "34039279",
+      "38358392",
+      "20346147"
+    ],
+    "review": [
+      "42711533"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://doi.org/10.1038/s41559-026-03164-5",
+        "provider": "Nature Publishing Group",
+        "category": "Full Text Sources",
+        "attribute": "subscription/membership/fee required",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

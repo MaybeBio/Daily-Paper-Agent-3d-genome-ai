@@ -1,0 +1,301 @@
+{
+  "identity": {
+    "pmid": "42687624",
+    "doi": "10.1097/ICU.0000000000001251",
+    "title": "Artificial intelligence-guided engineering of precision ocular therapeutics."
+  },
+  "content": {
+    "abstract": "PURPOSE OF REVIEW: This review surveys recent advances in artificial intelligence-guided small molecule discovery and gene therapy, with a focus on generative and foundation models, and their translational applications to ophthalmic therapeutics. RECENT FINDINGS: A unifying theme across recent work is the shift from artificial intelligence as a screening tool to artificial intelligence as an engine for generative design. In small molecule discovery, reinforcement learning and diffusion-based generative models are producing structurally novel candidates for ophthalmic indications with demonstrated preclinical efficacy, while structure-based approaches leveraging AlphaFold and co-folding models are improving target identification and virtual screening. In gene therapy, artificial intelligence-guided AAV capsid engineering has yielded vectors with improved retinal transduction efficiency in nonhuman primates. Complementing this, deep learning models trained on chromatin accessibility data are enabling de novo design of compact, cell-type-specific regulatory elements, with direct implications for the specificity and payload capacity of ocular gene therapy vectors. Artificial intelligence-guided CRISPR guide RNA optimization is further expanding the precision of gene editing-based approaches. SUMMARY: Artificial intelligence tools may influence the landscape of ophthalmic drug discovery, from nominating small molecule candidates to co-designing next-generation gene therapy vectors. Rigorous experimental validation remains essential; artificial intelligence-nominated candidates and predictions must be tested empirically to confirm their safety, biological relevance, and therapeutic efficacy.",
+    "keywords": [
+      "artificial intelligence",
+      "drug discovery",
+      "gene therapy"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Sayana, Ruhi",
+        "Wang, Sean K",
+        "Ting, Daniel S W",
+        "Guo, Lucie Y"
+      ],
+      "short_names": [
+        "Sayana R",
+        "Wang SK",
+        "Ting DSW",
+        "Guo LY"
+      ],
+      "auids": [],
+      "affiliations": [
+        "F. M. Kirby Center, Scheie Eye Institute, University of Pennsylvania Perelman School of Medicine, Philadelphia, Pennsylvania.",
+        "Massachusetts Eye and Ear Infirmary, Harvard Medical School, Boston, Massachusetts, USA.",
+        "Singapore National Eye Center, Singapore Eye Research Institute, Singapore, Singapore.",
+        "F. M. Kirby Center, Scheie Eye Institute, University of Pennsylvania Perelman School of Medicine, Philadelphia, Pennsylvania."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Sayana, Ruhi",
+        "short_name": "Sayana R",
+        "identifiers": [],
+        "affiliations": [
+          "F. M. Kirby Center, Scheie Eye Institute, University of Pennsylvania Perelman School of Medicine, Philadelphia, Pennsylvania."
+        ]
+      },
+      {
+        "full_name": "Wang, Sean K",
+        "short_name": "Wang SK",
+        "identifiers": [],
+        "affiliations": [
+          "Massachusetts Eye and Ear Infirmary, Harvard Medical School, Boston, Massachusetts, USA."
+        ]
+      },
+      {
+        "full_name": "Ting, Daniel S W",
+        "short_name": "Ting DSW",
+        "identifiers": [],
+        "affiliations": [
+          "Singapore National Eye Center, Singapore Eye Research Institute, Singapore, Singapore."
+        ]
+      },
+      {
+        "full_name": "Guo, Lucie Y",
+        "short_name": "Guo LY",
+        "identifiers": [],
+        "affiliations": [
+          "F. M. Kirby Center, Scheie Eye Institute, University of Pennsylvania Perelman School of Medicine, Philadelphia, Pennsylvania."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Current opinion in ophthalmology"
+    ],
+    "journal_abbrev": [
+      "Curr Opin Ophthalmol"
+    ],
+    "pub_date": "2026 Sep 3",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/03 05:36",
+    "fetched_at": "2026-09-12 11:08:09"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42687624",
+      "42475469",
+      "38384298",
+      "40740484",
+      "42364829",
+      "41253282",
+      "41862973",
+      "33844136",
+      "42044246",
+      "41753681",
+      "41373598",
+      "42031452",
+      "41630488",
+      "42453397",
+      "37934070",
+      "42546051",
+      "42344774",
+      "40887563",
+      "42198231",
+      "41864943",
+      "42123604",
+      "38321848",
+      "42565648",
+      "39819404",
+      "41332459",
+      "40430848",
+      "40846079",
+      "41778634",
+      "41977325",
+      "42011244",
+      "41996874",
+      "33397265",
+      "42535626",
+      "42210494",
+      "39407556",
+      "40725243",
+      "42153319",
+      "42638493",
+      "39596300",
+      "41011141",
+      "41136797",
+      "40759950",
+      "41967399",
+      "40388244",
+      "42022690",
+      "42075869",
+      "36401282",
+      "42377676",
+      "40456205",
+      "42679971",
+      "42080108",
+      "40451590",
+      "40414522",
+      "41632854",
+      "41951835",
+      "42356429",
+      "41648586",
+      "41254174",
+      "41758998",
+      "42125061",
+      "41900351",
+      "41709935",
+      "39721292",
+      "39932449",
+      "42054758",
+      "34544293",
+      "40553337",
+      "35128926",
+      "42292041",
+      "42402276",
+      "34533311",
+      "41515342",
+      "37055908",
+      "34731478",
+      "41092810",
+      "42493009",
+      "42676384",
+      "39106790",
+      "42446537",
+      "34731479",
+      "42261595",
+      "41524971",
+      "38856172",
+      "39931986",
+      "41999049",
+      "42196328",
+      "41703061",
+      "39584325",
+      "41482571",
+      "41991475",
+      "41910880",
+      "40744834",
+      "41344283",
+      "31518513",
+      "42162204",
+      "40175041",
+      "41468959",
+      "42565866",
+      "34731474",
+      "42169233"
+    ],
+    "review": [
+      "42687624",
+      "38384298",
+      "40740484",
+      "42364829",
+      "41253282",
+      "41862973",
+      "33844136",
+      "41753681",
+      "41373598",
+      "42031452",
+      "41630488",
+      "42453397",
+      "37934070",
+      "42546051",
+      "42344774",
+      "40887563",
+      "42198231",
+      "41864943",
+      "42123604",
+      "38321848",
+      "42565648",
+      "39819404",
+      "41332459",
+      "40430848",
+      "40846079",
+      "41778634",
+      "41977325",
+      "42011244",
+      "41996874",
+      "33397265",
+      "42535626",
+      "42210494",
+      "39407556",
+      "40725243",
+      "42153319",
+      "42638493",
+      "39596300",
+      "41011141",
+      "41136797",
+      "40759950",
+      "40388244",
+      "42075869",
+      "36401282",
+      "42377676",
+      "40456205",
+      "42679971",
+      "42080108",
+      "40451590",
+      "40414522",
+      "41632854",
+      "41951835",
+      "42356429",
+      "41254174",
+      "41900351",
+      "41709935",
+      "39721292",
+      "39932449",
+      "42054758",
+      "34544293",
+      "40553337",
+      "35128926",
+      "42292041",
+      "42402276",
+      "34533311",
+      "41515342",
+      "37055908",
+      "34731478",
+      "41092810",
+      "42493009",
+      "42676384",
+      "39106790",
+      "42446537",
+      "34731479",
+      "42261595",
+      "38856172",
+      "39931986",
+      "41999049",
+      "42196328",
+      "39584325",
+      "41482571",
+      "41991475",
+      "41910880",
+      "40744834",
+      "41344283",
+      "31518513",
+      "40175041",
+      "42565866",
+      "34731474"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://www.ovid.com/10.1097/ICU.0000000000001251",
+        "provider": "Wolters Kluwer",
+        "category": "Full Text Sources",
+        "attribute": "subscription/membership/fee required",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

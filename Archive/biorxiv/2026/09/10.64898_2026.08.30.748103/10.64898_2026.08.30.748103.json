@@ -1,0 +1,99 @@
+{
+  "source": "biorxiv",
+  "source_id": "10.64898/2026.08.30.748103",
+  "title": "Hi-cGAN: Prediction of Hi-C interaction matrices with conditional generative adversarial networks",
+  "doi": "10.64898/2026.08.30.748103",
+  "abstract": "<h4>Background</h4> The three-dimensional organization of the genome is a fundamental aspect of its function and regulation. High-throughput chromosome conformation capture techniques, such as Hi-C, have revolutionized our understanding of spatial genome organization. However, 3C-based methods are resource-intensive and technically demanding. This has driven the development of computational approaches for predicting Hi-C interaction matrices. Hi-cGAN, a novel approach based on conditional generative adversarial networks, offers a computational alternative to extensive wet-lab work by predicting Hi-C interaction matrices. This computational approach contributes to a broader exploration and understanding of genome architecture. <h4>Findings</h4> The network pairs a convolutional generator with a convolutional discriminator, evaluated across bin sizes, inputs and cell types. It predicts a whole genome as a cool file at bin sizes from 2 to 25 kb, where Akita, C.Origami and Epiphany emit fixed windows of 1 Mb, 2 Mb and 990 kb. With the input chosen on a validation chromosome, agreement approaches Epiphany’s and stays below the sequence-based C.Origami and Akita: over Akita’s 411 held-out windows the mean correlation is 0.238 against 0.506. Boundary and loop calls agree less closely, placing the maps at the domain scale. <h4>Conclusions</h4> Chromatin factor occupancy determines a substantial part of contact structure, and two tracks capture most of it. The most informative track depends on the resolution: CTCF and the cohesin subunits at 5 to 10 kb, active histone marks at 25 kb. Transfer to an unseen cell type costs about 0.12 SCC, and which method leads depends on the measure. <h4>Key points</h4> Hi-cGAN predicts Hi-C interaction matrices with a conditional generative adversarial network from chromatin factor occupancy alone, without DNA sequence. The same architecture learns raw contact counts, genomic-distance z-scores and observed/ expected normalized data. On held-out data Hi-cGAN reaches matrix-level agreement slightly below Epiphany’s, when the input configuration is chosen on a validation chromosome rather than the chromosomes scored, and well below C.Origami’s and Akita’s, which read DNA sequence. Which method is better depends on the measure used, and boundary and loop recovery does not follow the matrix-level scores. A ridge regression on the same single track reaches 0.691 against Hi-cGAN’s 0.715 on HiCRep, while its predicted matrix shows stripes but no domains, so that measure alone does not establish what the network contributes. Bin sizes of 2 to 25 kb are evaluated and freely configurable, whole chromosomes are predicted, and the result is written as a cool file, whereas the sequence-based methods emit a single fixed window.",
+  "authors": [
+    "Krauth R",
+    "Kumar A",
+    "Wolff J"
+  ],
+  "published_date": "2026-09-03",
+  "updated_date": "",
+  "journal": "bioRxiv",
+  "category": "",
+  "landing_url": "https://www.biorxiv.org/content/10.64898/2026.08.30.748103",
+  "pdf_url": "https://www.biorxiv.org/content/10.64898/2026.08.30.748103.full.pdf",
+  "pdf_path": "",
+  "pdf_downloaded": false,
+  "query": "(\"3D genome\" OR \"three-dimensional genome\" OR \"genome organization\" OR \"genome architecture\" OR \"genome folding\" OR \"nuclear organization\" OR \"nuclear architecture\" OR \"chromatin organization\" OR \"chromatin architecture\" OR \"chromatin conformation\" OR \"chromatin topology\" OR \"chromatin structure\" OR \"chromatin loop\" OR \"chromatin interaction\" OR \"chromatin domain\" OR \"topologically associating domain\" OR \"A/B compartment\" OR \"chromosome conformation capture\" OR \"Hi-C\" OR HiChIP OR \"loop extrusion\" OR \"loop-extrusion\" OR CTCF OR cohesin OR \"cis-regulatory\" OR \"cis-regulatory element\" OR \"regulatory element\" OR \"regulatory genomics\" OR \"chromatin accessibility\" OR \"enhancer-promoter\" OR \"promoter-enhancer\") AND (\"deep learning\" OR \"machine learning\" OR \"neural network\" OR \"graph neural network\" OR \"convolutional neural network\" OR transformer OR \"language model\" OR \"foundation model\" OR \"diffusion model\" OR generative OR \"flow matching\" OR esmfold OR rosetta OR alphafold OR \"molecular dynamics\" OR simulation OR docking)",
+  "version": "",
+  "keywords": [],
+  "extra": {
+    "provider": "europepmc",
+    "epmc_id": "PPR1312801",
+    "raw_record": {
+      "id": "PPR1312801",
+      "source": "PPR",
+      "doi": "10.64898/2026.08.30.748103",
+      "title": "Hi-cGAN: Prediction of Hi-C interaction matrices with conditional generative adversarial networks",
+      "authorString": "Krauth R, Kumar A, Wolff J.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Krauth R",
+            "firstName": "Ralf",
+            "lastName": "Krauth",
+            "initials": "R"
+          },
+          {
+            "fullName": "Kumar A",
+            "firstName": "Anup",
+            "lastName": "Kumar",
+            "initials": "A"
+          },
+          {
+            "fullName": "Wolff J",
+            "firstName": "Joachim",
+            "lastName": "Wolff",
+            "initials": "J"
+          }
+        ]
+      },
+      "pubYear": "2026",
+      "abstractText": "<h4>Background</h4>  The three-dimensional organization of the genome is a fundamental aspect of its function and regulation. High-throughput chromosome conformation capture techniques, such as Hi-C, have revolutionized our understanding of spatial genome organization. However, 3C-based methods are resource-intensive and technically demanding. This has driven the development of computational approaches for predicting Hi-C interaction matrices. Hi-cGAN, a novel approach based on conditional generative adversarial networks, offers a computational alternative to extensive wet-lab work by predicting Hi-C interaction matrices. This computational approach contributes to a broader exploration and understanding of genome architecture. <h4>Findings</h4>  The network pairs a convolutional generator with a convolutional discriminator, evaluated across bin sizes, inputs and cell types. It predicts a whole genome as a cool file at bin sizes from 2 to 25 kb, where Akita, C.Origami and Epiphany emit fixed windows of 1 Mb, 2 Mb and 990 kb. With the input chosen on a validation chromosome, agreement approaches Epiphany’s and stays below the sequence-based C.Origami and Akita: over Akita’s 411 held-out windows the mean correlation is 0.238 against 0.506. Boundary and loop calls agree less closely, placing the maps at the domain scale. <h4>Conclusions</h4>  Chromatin factor occupancy determines a substantial part of contact structure, and two tracks capture most of it. The most informative track depends on the resolution: CTCF and the cohesin subunits at 5 to 10 kb, active histone marks at 25 kb. Transfer to an unseen cell type costs about 0.12 SCC, and which method leads depends on the measure. <h4>Key points</h4>  Hi-cGAN predicts Hi-C interaction matrices with a conditional generative adversarial network from chromatin factor occupancy alone, without DNA sequence. The same architecture learns raw contact counts, genomic-distance z-scores and observed/ expected normalized data. On held-out data Hi-cGAN reaches matrix-level agreement slightly below Epiphany’s, when the input configuration is chosen on a validation chromosome rather than the chromosomes scored, and well below C.Origami’s and Akita’s, which read DNA sequence. Which method is better depends on the measure used, and boundary and loop recovery does not follow the matrix-level scores. A ridge regression on the same single track reaches 0.691 against Hi-cGAN’s 0.715 on HiCRep, while its predicted matrix shows stripes but no domains, so that measure alone does not establish what the network contributes. Bin sizes of 2 to 25 kb are evaluated and freely configurable, whole chromosomes are predicted, and the result is written as a cool file, whereas the sequence-based methods emit a single fixed window.",
+      "pubTypeList": {
+        "pubType": [
+          "Preprint"
+        ]
+      },
+      "bookOrReportDetails": {
+        "publisher": "bioRxiv",
+        "yearOfPublication": 2026
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Free",
+            "availabilityCode": "F",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.64898/2026.08.30.748103"
+          }
+        ]
+      },
+      "isOpenAccess": "N",
+      "inEPMC": "N",
+      "inPMC": "N",
+      "hasPDF": "N",
+      "hasBook": "N",
+      "hasSuppl": "N",
+      "citedByCount": 0,
+      "hasData": "N",
+      "hasReferences": "N",
+      "hasTextMinedTerms": "Y",
+      "hasDbCrossReferences": "N",
+      "hasLabsLinks": "N",
+      "license": "cc by-nc",
+      "hasEvaluations": "N",
+      "authMan": "N",
+      "epmcAuthMan": "N",
+      "nihAuthMan": "N",
+      "hasTMAccessionNumbers": "N",
+      "dateOfCreation": "2026-09-05",
+      "firstIndexDate": "2026-09-05",
+      "firstPublicationDate": "2026-09-03"
+    }
+  }
+}

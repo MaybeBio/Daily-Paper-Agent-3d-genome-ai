@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42713681",
+  "title": "A Novel De Novo STAG1 Variant at the RAD21 Binding Interface Is Associated With Hypoglycemia, Recurrent Fever, Immunodeficiency and Features of Classical Cohesinopathies.",
+  "authors": "Hussain, Hafiz Muhammad Jafar; Zimmermann, Michael; Safgren, Stephanie L; Farris, Joseph D; Panwar, Deepak; Thurman, Sarah Allen; Muthusamy, Karthik; Urrutia, Raul; Wick, Myra J; E Vairo, Filippo Pinto; Klee, Eric W",
+  "journal": "Clinical genetics",
+  "published_date": "2026-09-09",
+  "window": {
+    "start": "2026-08-29",
+    "end": "2026-09-11"
+  },
+  "score": 4,
+  "one_liner_zh": "该文报道一个STAG1新发变异导致黏连蛋白病，虽用分子动力学模拟分析变异对RAD21结合界面的影响，但对象是黏连蛋白复合体而非染色质三维组织，且未涉及TAD、环挤出等三维基因组核心问题，方法贡献有限。",
+  "abstract": "The cohesin complex, composed of SMC1, SMC3, RAD21, and STAG1/STAG2, is essential for chromosome cohesion, DNA repair, and transcriptional regulation. Pathogenic variants in cohesin components cause cohesinopathies. The classical characteristics of cohesinopathies include developmental delay (DD), intellectual disability (ID), feeding difficulties, hypotonia, short stature, hearing loss, and dysmorphic features. Here, we present a 5-year-old boy with classical cohesinopathy features, including DD/ID and feeding difficulties, along with non-classical features such as hypoglycemia, recurrent fever, and immunodeficiency. Trio exome sequencing identified a novel de novo missense variant of uncertain significance (NM_005862.3:c.643G>A(p.Val215Ile)) in the STAG1 gene. The variant localizes to the RAD21 interaction interface, and molecular dynamics (MD) simulations revealed conformational changes comparable to other STAG1 variants reported as likely pathogenic in patients, supporting a deleterious effect which may disrupt the STAG1-RAD21 interaction interface. This case expands the phenotypic and molecular spectrum of STAG1-related cohesinopathy and advances our understanding of the disease mechanism.",
+  "abstract_zh": "由SMC1、SMC3、RAD21和STAG1/STAG2组成的cohesin复合物，对于染色体 cohesion、DNA修复和转录调控至关重要。cohesin组分的致病变异会导致cohesinopathies。cohesinopathies的经典特征包括发育迟缓（DD）、智力障碍（ID）、喂养困难、肌张力低下、身材矮小、听力损失和畸形特征。本文报告一名5岁男性患儿，具有经典cohesinopathy特征（包括DD/ID和喂养困难），同时伴有非经典特征如低血糖、反复发热和免疫缺陷。Trio全外显子组测序在STAG1基因中发现一个意义未明的新生错义变异（NM_005862.3:c.643G>A(p.Val215Ile)）。该变异定位于RAD21相互作用界面，分子动力学（MD）模拟显示其构象变化与患者中报告为可能致病性的其他STAG1变异相当，支持其可能破坏STAG1-RAD21相互作用界面的有害效应。本病例扩展了STAG1相关cohesinopathy的表型和分子谱系，并增进了对该疾病机制的理解。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42713681/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42713681/",
+  "paper_page_path": "papers/pubmed/42713681/index.html"
+}

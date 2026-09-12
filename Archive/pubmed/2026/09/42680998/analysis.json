@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42680998",
+  "title": "Distilling the Knowledge of Ensembles for Uncertainty-Aware Genomic Deep Learning.",
+  "authors": "Zhou, Jessica; Rizzo, Kaeli; Christensen, Trevor; Tang, Ziqi; Koo, Peter K",
+  "journal": "Methods in molecular biology (Clifton, N.J.)",
+  "published_date": "2026-09-02",
+  "window": {
+    "start": "2026-08-29",
+    "end": "2026-09-11"
+  },
+  "score": 4,
+  "one_liner_zh": "该文提出DEGU框架，通过集成学习和知识蒸馏提升基因组深度学习模型的鲁棒性与不确定性估计，但对象为通用调控基因组预测，未涉及染色质三维结构或空间组织建模，方法虽为AI但缺乏与三维基因组/染色质折叠的直接关联。",
+  "abstract": "While deep neural networks have revolutionized predictive modeling in regulatory genomics, challenges persist in ensuring the reliability of their predictions and understanding model decision-making processes. This chapter introduces DEGU (Distilling Ensembles for Genomic Uncertainty-aware models), a model-training framework that integrates ensemble learning with knowledge distillation to enhance the robustness and explainability of genomic deep learning predictions. DEGU distills the distribution of predictions from an ensemble of models into a single student model, capturing both the ensemble's average predictions and the variability across models, which represents epistemic uncertainty. Additionally, DEGU can estimate aleatoric uncertainty by modeling variability across experimental replicates. Through applications across diverse functional genomic prediction tasks, we demonstrate that DEGU-trained models achieve ensemble-level performance in a single model, exhibit improved generalization to out-of-distribution sequences, provide more consistent mechanistic explanations through attribution analysis, and generate calibrated uncertainty estimates. These advances position DEGU as a practical framework for developing trustworthy and robust deep learning applications in genomics research.",
+  "abstract_zh": "尽管深度神经网络在调控基因组学中的预测建模领域引发了革命性变革，但在确保预测可靠性及理解模型决策过程方面仍存在挑战。本章介绍DEGU（Distilling Ensembles for Genomic Uncertainty-aware models，面向基因组不确定性感知模型的集成蒸馏框架），该模型训练框架将集成学习与知识蒸馏相结合，以增强基因组深度学习预测的鲁棒性与可解释性。DEGU将集成模型集合的预测分布蒸馏至单一学生模型，同时捕获集成模型的平均预测值及模型间的变异性（即认知不确定性）。此外，DEGU可通过建模实验重复间的变异性来估计偶然不确定性。通过在不同功能基因组预测任务中的应用，我们证明经DEGU训练的模型能以单一模型实现集成级性能，对分布外序列展现出更优的泛化能力，通过归因分析提供更一致的机制解释，并生成经过校准的不确定性估计。这些进展使DEGU成为基因组学研究中开发可信赖且鲁棒深度学习应用的实用框架。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42680998/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42680998/",
+  "paper_page_path": "papers/pubmed/42680998/index.html"
+}

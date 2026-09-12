@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42687624",
+  "title": "Artificial intelligence-guided engineering of precision ocular therapeutics.",
+  "authors": "Sayana, Ruhi; Wang, Sean K; Ting, Daniel S W; Guo, Lucie Y",
+  "journal": "Current opinion in ophthalmology",
+  "published_date": "2026-09-03",
+  "window": {
+    "start": "2026-08-29",
+    "end": "2026-09-11"
+  },
+  "score": 5,
+  "one_liner_zh": "综述AI在眼科小分子与基因治疗设计中的应用，其中涉及基于染色质可及性数据设计细胞类型特异性调控元件，与染色质水平调控建模相关但非三维基因组空间架构建模。",
+  "abstract": "PURPOSE OF REVIEW: This review surveys recent advances in artificial intelligence-guided small molecule discovery and gene therapy, with a focus on generative and foundation models, and their translational applications to ophthalmic therapeutics. RECENT FINDINGS: A unifying theme across recent work is the shift from artificial intelligence as a screening tool to artificial intelligence as an engine for generative design. In small molecule discovery, reinforcement learning and diffusion-based generative models are producing structurally novel candidates for ophthalmic indications with demonstrated preclinical efficacy, while structure-based approaches leveraging AlphaFold and co-folding models are improving target identification and virtual screening. In gene therapy, artificial intelligence-guided AAV capsid engineering has yielded vectors with improved retinal transduction efficiency in nonhuman primates. Complementing this, deep learning models trained on chromatin accessibility data are enabling de novo design of compact, cell-type-specific regulatory elements, with direct implications for the specificity and payload capacity of ocular gene therapy vectors. Artificial intelligence-guided CRISPR guide RNA optimization is further expanding the precision of gene editing-based approaches. SUMMARY: Artificial intelligence tools may influence the landscape of ophthalmic drug discovery, from nominating small molecule candidates to co-designing next-generation gene therapy vectors. Rigorous experimental validation remains essential; artificial intelligence-nominated candidates and predictions must be tested empirically to confirm their safety, biological relevance, and therapeutic efficacy.",
+  "abstract_zh": "综述目的：本综述调查了人工智能引导的小分子发现和基因治疗的最新进展，重点关注生成模型和基础模型及其在眼科治疗中的转化应用。近期发现：近期工作的一个统一主题是人工智能从筛选工具向生成设计引擎的转变。在小分子发现中，强化学习和基于扩散的生成模型正在为眼科适应症产生结构新颖的候选分子，并已显示出临床前疗效，而利用AlphaFold和共折叠模型的结构导向方法正在改进靶点识别和虚拟筛选。在基因治疗中，人工智能引导的AAV衣壳工程已产生在非人灵长类动物中具有改善视网膜转导效率的载体。与此相辅相成的是，基于染色质可及性数据训练的深度学习模型能够从头设计紧凑的、细胞类型特异性的调控元件，这对眼科基因治疗载体的特异性和有效载荷能力具有直接影响。人工智能引导的CRISPR guide RNA优化进一步扩展了基于基因编辑方法的精确性。总结：人工智能工具可能影响眼科药物发现的格局，从提名小分子候选物到共同设计下一代基因治疗载体。严格的实验验证仍然至关重要；人工智能提名的候选物和预测必须通过经验测试来确认其安全性、生物学相关性和治疗功效。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42687624/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42687624/",
+  "paper_page_path": "papers/pubmed/42687624/index.html"
+}

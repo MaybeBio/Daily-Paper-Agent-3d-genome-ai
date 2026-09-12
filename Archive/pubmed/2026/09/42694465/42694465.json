@@ -1,0 +1,300 @@
+{
+  "identity": {
+    "pmid": "42694465",
+    "doi": "10.3389/fcell.2026.1922536",
+    "title": "Geometric mechanogenomics: engineering boundary conditions for deterministic cell fate control."
+  },
+  "content": {
+    "abstract": "In tissue development and regeneration, cellular behavior has traditionally been interpreted through biochemical signaling frameworks. However, cells exist within physically defined environments, where geometric boundary conditions - including confinement, curvature, anisotropy, and multicellular architecture - define the mechanical state space in which mechanical forces are generated, transmitted, and interpreted. Here, we introduce geometric mechanogenomics, a conceptual framework that positions geometry as an upstream spatial regulator linking tissue-scale boundary conditions to nuclear mechanics, chromatin organization, and genome regulation. We propose a boundary-to-nucleus axis through which geometric information is decoded by adhesion-mediated mechanotransduction, cytoskeletal force transmission, and nuclear mechanoregulation to regulate chromatin accessibility, epigenetic remodeling, and transcriptional programs. Rather than introducing new mechanotransduction pathways, this framework emphasizes that geometry spatially organizes conserved mechanotransductive machinery to generate context-dependent mechanogenomic outcomes. We further discuss how engineered geometries reduce morphogenetic stochasticity, coordinate multicellular organization, and establish mechanical memory that influences long-term cell fate. Finally, we highlight current challenges in establishing predictive geometry-to-genome relationships and discuss emerging opportunities enabled by spatial omics, artificial intelligence-assisted inverse design, and dynamic biomaterials for programmable mechanobiology, regenerative medicine, developmental biology, and disease modeling.",
+    "keywords": [
+      "genome organization",
+      "geometric mechanogenomics",
+      "mechanobiology",
+      "mechanogenomics",
+      "nuclear mechanics"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Taghizadeh, Mohsen",
+        "Taghizadeh, Ali",
+        "Kim, Hye Sung"
+      ],
+      "short_names": [
+        "Taghizadeh M",
+        "Taghizadeh A",
+        "Kim HS"
+      ],
+      "auids": [],
+      "affiliations": [
+        "Institute of Tissue Regeneration Engineering (ITREN), Dankook University, Cheonan, Republic of Korea.",
+        "Mechanobiology Dental Medicine Research Center, Dankook University, Cheonan, Republic of Korea.",
+        "Department of Nanobiomedical Science and BK21 NBM Global Research Center for Regenerative Medicine, Dankook University, Cheonan, Republic of Korea.",
+        "Institute of Tissue Regeneration Engineering (ITREN), Dankook University, Cheonan, Republic of Korea.",
+        "Mechanobiology Dental Medicine Research Center, Dankook University, Cheonan, Republic of Korea.",
+        "Department of Nanobiomedical Science and BK21 NBM Global Research Center for Regenerative Medicine, Dankook University, Cheonan, Republic of Korea.",
+        "Institute of Tissue Regeneration Engineering (ITREN), Dankook University, Cheonan, Republic of Korea.",
+        "Mechanobiology Dental Medicine Research Center, Dankook University, Cheonan, Republic of Korea.",
+        "Department of Nanobiomedical Science and BK21 NBM Global Research Center for Regenerative Medicine, Dankook University, Cheonan, Republic of Korea."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Taghizadeh, Mohsen",
+        "short_name": "Taghizadeh M",
+        "identifiers": [],
+        "affiliations": [
+          "Institute of Tissue Regeneration Engineering (ITREN), Dankook University, Cheonan, Republic of Korea.",
+          "Mechanobiology Dental Medicine Research Center, Dankook University, Cheonan, Republic of Korea.",
+          "Department of Nanobiomedical Science and BK21 NBM Global Research Center for Regenerative Medicine, Dankook University, Cheonan, Republic of Korea."
+        ]
+      },
+      {
+        "full_name": "Taghizadeh, Ali",
+        "short_name": "Taghizadeh A",
+        "identifiers": [],
+        "affiliations": [
+          "Institute of Tissue Regeneration Engineering (ITREN), Dankook University, Cheonan, Republic of Korea.",
+          "Mechanobiology Dental Medicine Research Center, Dankook University, Cheonan, Republic of Korea.",
+          "Department of Nanobiomedical Science and BK21 NBM Global Research Center for Regenerative Medicine, Dankook University, Cheonan, Republic of Korea."
+        ]
+      },
+      {
+        "full_name": "Kim, Hye Sung",
+        "short_name": "Kim HS",
+        "identifiers": [],
+        "affiliations": [
+          "Institute of Tissue Regeneration Engineering (ITREN), Dankook University, Cheonan, Republic of Korea.",
+          "Mechanobiology Dental Medicine Research Center, Dankook University, Cheonan, Republic of Korea.",
+          "Department of Nanobiomedical Science and BK21 NBM Global Research Center for Regenerative Medicine, Dankook University, Cheonan, Republic of Korea."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Frontiers in cell and developmental biology"
+    ],
+    "journal_abbrev": [
+      "Front Cell Dev Biol"
+    ],
+    "pub_date": "2026",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/04 11:39",
+    "fetched_at": "2026-09-12 11:08:09"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42694465",
+      "42475469",
+      "41585444",
+      "41836287",
+      "41905214",
+      "35038587",
+      "42361869",
+      "40059756",
+      "34187806",
+      "42411057",
+      "42625795",
+      "40848255",
+      "42273766",
+      "42370757",
+      "42692235",
+      "42454283",
+      "41406370",
+      "42073448",
+      "30916994",
+      "41953265",
+      "33557157",
+      "42468059",
+      "34455929",
+      "42035970",
+      "42448217",
+      "42402925",
+      "23912807",
+      "26699462",
+      "41977436",
+      "36328121",
+      "42368454",
+      "41057974",
+      "35513718",
+      "30784352",
+      "41342991",
+      "31962231",
+      "27298087",
+      "18535268",
+      "35562890",
+      "38889500",
+      "38978500",
+      "38533923",
+      "42493558",
+      "38345428",
+      "31209017",
+      "37330288",
+      "42677159",
+      "33040694",
+      "25818411",
+      "41615150",
+      "42439704",
+      "41586404",
+      "42428236",
+      "41155602",
+      "41140684",
+      "37678504",
+      "28163791",
+      "42675897",
+      "41660007",
+      "42095416",
+      "42121945",
+      "41596344",
+      "37530178",
+      "42121874",
+      "40337625",
+      "40653479",
+      "40149890",
+      "41892292",
+      "38340567",
+      "42665923",
+      "42575695",
+      "41051938",
+      "42374439",
+      "35252127",
+      "35367121",
+      "25871537",
+      "38299356",
+      "42224865",
+      "41892108",
+      "42526086",
+      "36076274",
+      "42030197",
+      "41975060",
+      "42656736",
+      "41301932",
+      "42606760",
+      "41732392",
+      "42146525",
+      "24439400",
+      "42666419",
+      "42502322",
+      "40563488",
+      "24183171",
+      "40544639",
+      "39856556",
+      "35978191",
+      "42163430",
+      "40507332",
+      "25081624",
+      "41418993"
+    ],
+    "review": [
+      "42694465",
+      "41585444",
+      "41836287",
+      "41905214",
+      "35038587",
+      "40059756",
+      "34187806",
+      "42411057",
+      "42625795",
+      "40848255",
+      "42273766",
+      "42370757",
+      "42454283",
+      "30916994",
+      "41953265",
+      "33557157",
+      "42468059",
+      "34455929",
+      "42448217",
+      "42402925",
+      "41977436",
+      "42368454",
+      "35513718",
+      "30784352",
+      "41342991",
+      "31962231",
+      "27298087",
+      "18535268",
+      "38889500",
+      "38533923",
+      "42493558",
+      "38345428",
+      "37330288",
+      "42677159",
+      "33040694",
+      "25818411",
+      "42439704",
+      "41586404",
+      "42428236",
+      "41155602",
+      "41140684",
+      "37678504",
+      "42675897",
+      "41660007",
+      "42095416",
+      "42121945",
+      "41596344",
+      "37530178",
+      "42121874",
+      "40337625",
+      "40653479",
+      "40149890",
+      "41892292",
+      "38340567",
+      "41051938",
+      "42374439",
+      "35367121",
+      "25871537",
+      "42224865",
+      "41892108",
+      "42526086",
+      "36076274",
+      "42030197",
+      "42656736",
+      "41301932",
+      "42606760",
+      "42666419",
+      "42502322",
+      "40563488",
+      "42163430",
+      "40507332",
+      "25081624",
+      "41418993"
+    ],
+    "pmc": [
+      "13538980"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/pmid/42694465/",
+        "provider": "PubMed Central",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://doi.org/10.3389/fcell.2026.1922536",
+        "provider": "Frontiers Media SA",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Overcoming Artificial Structures in Resolution-Enhanced Hi-C Data by Signal Decomposition and Multi-Scale Attention. · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-high">8</span>
+    <div>
+      <h1>Overcoming Artificial Structures in Resolution-Enhanced Hi-C Data by Signal Decomposition and Multi-Scale Attention.</h1>
+      <div class="meta">Li, Qinyao; Li, Kelly Yichen; Nicoletti, Chiara; Tsui, Stephen Kwok-Wing; Puri, Pier Lorenzo; Cao, Qin; Yip, Kevin Y</div>
+      <div class="meta muted">
+        
+        <span class="journal">Advanced science (Weinheim, Baden-Wurttemberg, Germany)</span>
+        · 2026-09-09
+         · 仅摘要
+         · <a href="https://pubmed.ncbi.nlm.nih.gov/42711869/">原文</a>
+      </div>
+      <p class="one-liner">提出SHARP方法，通过信号分解与多尺度注意力机制提升Hi-C数据分辨率，避免人工结构，直接服务于染色质三维构象的精确重建。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">Computational enhancement is an important strategy for inferring high-resolution features from genome-wide chromosome conformation capture (Hi-C) data, which typically have limited resolution. Deep learning has been highly successful in this task but we show that it creates prevalent artificial structures in the enhanced data due to the need to divide the large contact matrix into small patches. In addition, previous deep learning methods largely focus on local patterns, which cannot fully capture the complexity of Hi-C data. Here we propose Smooth, High-resolution, and Accurate Reconstruction of Patterns (SHARP) for enhancing Hi-C data. It uses the novel approach of decomposing the data into three types of signals, due to one-dimensional proximity, contiguous domains, and other fine structures, respectively, and applies deep learning only to the third type of signals, such that enhancement of the first two is unaffected by the patches. For the deep learning part, SHARP uses both local and global attention mechanisms to capture multi-scale contextual information. We compare SHARP with state-of-the-art methods extensively, including application to data from new samples and another species, and show that SHARP has superior performance in terms of resolution enhancement accuracy, avoiding creation of artificial structures, identifying significant interactions, and enrichment in chromatin states.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">计算增强是从全基因组染色体构象捕获（Hi-C）数据中推断高分辨率特征的重要策略，而此类数据通常分辨率有限。深度学习在此任务中已取得高度成功，但我们表明，由于需要将大型接触矩阵划分为小块，它在增强数据中产生了普遍的人工结构。此外，以往的深度学习方法主要关注局部模式，无法完全捕捉Hi-C数据的复杂性。在此，我们提出平滑、高分辨率且准确的重建模式（SHARP）方法，用于增强Hi-C数据。它采用新颖的方法将数据分解为三种信号类型，分别对应一维邻近性、连续结构域及其他精细结构，并仅对第三种信号应用深度学习，从而使前两种信号的增强不受分块影响。对于深度学习部分，SHARP利用局部和全局注意力机制来捕捉多尺度上下文信息。我们广泛地将SHARP与最先进的方法进行比较，包括应用于新样本和另一物种的数据，结果表明SHARP在分辨率增强准确性、避免产生人工结构、识别显著相互作用以及染色质状态富集方面具有优越性能。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：Overcoming Artificial Structures in Resolution-Enhanced Hi-C Data by Signal Decomposition and Multi-Scale Attention</li>
+<li><strong>作者与单位</strong>：Li, Qinyao; Li, Kelly Yichen; Nicoletti, Chiara; Tsui, Stephen Kwok-Wing; Puri, Pier Lorenzo; Cao, Qin; Yip, Kevin Y（单位未在摘要中提供）</li>
+<li><strong>期刊/预印本平台</strong>：Advanced Science (Weinheim, Baden-Wurttemberg, Germany)</li>
+<li><strong>年份</strong>：2026-09-09</li>
+<li><strong>论文类型</strong>：研究论文</li>
+<li><strong>领域</strong>：计算生物学、深度学习、Hi-C数据增强</li>
+<li><strong>关键词</strong>：Hi-C数据增强、深度学习、人工结构、信号分解、多尺度注意力</li>
+<li><strong>DOI/arXiv号</strong>：10.1002/advs.202524180</li>
+<li><strong>代码</strong>：未提供</li>
+<li><strong>数据</strong>：未提供</li>
+<li><strong>阅读日期</strong>：未提供</li>
+<li><strong>该文在「三维基因组/染色质组织 × AI 方法/物理模拟」方向中的位置</strong>：本文聚焦于Hi-C数据分辨率增强的深度学习方法，直接针对三维基因组数据（染色质构象捕获）的预处理和增强环节。它揭示了现有深度学习方法的普遍缺陷（产生人工结构），并提出了一种结合信号分解与多尺度注意力的新方法（SHARP），属于该方向中“AI方法”子类，特别是数据增强与伪影消除。</li>
+</ul>
+<h2>02 一句话总结</h2>
+<p>本文提出SHARP方法，通过将Hi-C接触矩阵分解为一维邻近性、连续结构域和精细结构三类信号，并仅对第三类信号应用结合局部与全局注意力的深度学习，从而在提升分辨率的同时避免产生人工结构。</p>
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：如何从低分辨率Hi-C数据中准确推断高分辨率染色质相互作用，同时避免深度学习增强方法普遍产生的人工结构（artificial structures）？</li>
+<li><strong>为什么重要</strong>：Hi-C数据分辨率有限，计算增强是获取高分辨率染色质构象的关键策略。人工结构会误导下游分析（如识别显著相互作用、染色质状态注释），影响对三维基因组组织的理解。</li>
+<li><strong>现有方法为何不足</strong>：现有深度学习方法将大接触矩阵分割成小patch处理，导致patch边界处产生人工结构；且主要关注局部模式，无法充分捕捉Hi-C数据的全局复杂性（如长程相互作用、结构域边界）。</li>
+<li><strong>精确的「Can ... ?」研究问题</strong>：Can a signal decomposition strategy, which separates Hi-C data into components with different spatial scales, combined with multi-scale attention, overcome the artificial structures introduced by patch-based deep learning in Hi-C resolution enhancement?</li>
+</ul>
+<h2>04 背景与发展脉络</h2>
+<ul>
+<li><strong>脉络来源</strong>：仅本文框架（基于摘要推断）</li>
+<li><strong>阶段一：传统计算增强方法</strong>（如ICED、HiCRep等）。优点：无深度学习伪影。局限：分辨率提升有限，依赖统计假设。</li>
+<li><strong>阶段二：基于深度学习的增强方法</strong>（如HiCPlus、DeepHiC、HiCNN等）。优点：显著提升分辨率。局限：产生人工结构（因patch分割），且主要关注局部模式，忽略全局上下文。</li>
+<li><strong>本文主张的位置</strong>：SHARP通过信号分解（将问题简化为仅增强精细结构）和多尺度注意力（同时捕捉局部和全局信息），在保持深度学习增强能力的同时，消除人工结构，并提升对全局模式的捕捉。</li>
+</ul>
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>人工结构</td>
+<td>增强后的Hi-C数据中出现不真实的、与patch边界相关的模式</td>
+<td>深度学习模型需要将大接触矩阵分割成小patch进行训练和推理，导致patch边界处的不连续性被模型放大或产生伪影</td>
+<td>作者“show that it creates prevalent artificial structures”（摘要）</td>
+</tr>
+<tr>
+<td>局部模式局限</td>
+<td>模型无法充分捕捉Hi-C数据的全局复杂性，如长程相互作用和结构域边界</td>
+<td>现有深度学习方法“largely focus on local patterns”（摘要）</td>
+<td>作者指出“cannot fully capture the complexity of Hi-C data”（摘要）</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<ul>
+<li><strong>表面方法</strong>：SHARP将Hi-C接触矩阵分解为三类信号：1) 一维邻近性信号（1D proximity）；2) 连续结构域信号（contiguous domains）；3) 其他精细结构信号（fine structures）。仅对第三类信号应用深度学习增强，该深度学习部分使用局部和全局注意力机制。</li>
+<li><strong>核心洞察</strong>：Hi-C数据中的大部分结构（一维邻近性和连续结构域）是平滑且大尺度的，对patch分割不敏感。人工结构主要源于深度学习对精细、局部化模式的过度拟合。通过将问题分解，只对最易受patch影响且最需要深度学习的精细结构进行增强，可以避免人工结构，同时保留其他信号的自然特性。</li>
+<li><strong>可能的普适教训</strong>：[Analysis] 在需要对大尺度、多尺度数据进行深度学习增强时，先进行信号分解，将问题简化为仅增强对patch敏感或需要复杂建模的组分，是一种有效的策略。这可以推广到其他基因组学数据（如ChIP-seq、RNA-seq的增强）或图像处理任务。</li>
+</ul>
+<h2>07 方法总览</h2>
+<ul>
+<li><strong>输入</strong>：低分辨率Hi-C接触矩阵。</li>
+<li><strong>输出</strong>：高分辨率Hi-C接触矩阵。</li>
+<li><strong>模块</strong>：<ol>
+<li><strong>信号分解模块</strong>：将输入矩阵分解为三类信号（一维邻近性、连续结构域、精细结构）。</li>
+<li><strong>深度学习增强模块</strong>：仅对精细结构信号应用。<ul>
+<li>包含局部注意力机制（捕捉局部模式）。</li>
+<li>包含全局注意力机制（捕捉多尺度上下文信息）。</li>
+</ul>
+</li>
+<li><strong>信号重组模块</strong>：将增强后的精细结构信号与未增强的一维邻近性、连续结构域信号重组，得到最终高分辨率矩阵。</li>
+</ol>
+</li>
+<li><strong>训练</strong>：未在摘要中提供具体训练细节（如损失函数、优化器、训练数据）。</li>
+<li><strong>工具</strong>：深度学习框架（未指定）。</li>
+<li><strong>反馈回路</strong>：未在摘要中提及。</li>
+<li><strong>假设</strong>：1) Hi-C数据可被有效分解为三类具有不同空间尺度的信号；2) 仅增强精细结构信号足以提升整体分辨率，且不会引入人工结构；3) 局部和全局注意力机制能有效捕捉精细结构的复杂模式。</li>
+<li><strong>文字流程</strong>：输入低分辨率Hi-C矩阵 → 信号分解模块将其分解为三类信号 → 仅将精细结构信号送入深度学习增强模块（使用局部+全局注意力） → 将增强后的精细结构信号与原始的一维邻近性、连续结构域信号重组 → 输出高分辨率Hi-C矩阵。</li>
+</ul>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>信号分解模块</td>
+<td>将Hi-C矩阵分解为三类信号（1D proximity, contiguous domains, fine structures）</td>
+<td>避免深度学习对前两类大尺度信号产生人工结构，将增强任务聚焦于最需要复杂建模的精细结构</td>
+<td>输入：低分辨率矩阵；输出：三个子矩阵</td>
+<td>作者声称该方法能“overcoming artificial structures”（标题）</td>
+<td>[预期] 移除后，深度学习将直接处理整个矩阵，可能重新引入人工结构，且模型需学习更复杂的映射，可能降低性能</td>
+</tr>
+<tr>
+<td>深度学习增强模块（局部+全局注意力）</td>
+<td>对精细结构信号进行分辨率增强，捕捉局部和全局上下文</td>
+<td>精细结构信号包含复杂的、多尺度的模式，需要同时关注局部细节和全局结构</td>
+<td>输入：精细结构子矩阵；输出：增强后的精细结构子矩阵</td>
+<td>作者声称“superior performance in terms of resolution enhancement accuracy”和“avoiding creation of artificial structures”（摘要）</td>
+<td>[预期] 移除局部注意力，模型可能丢失精细局部模式；移除全局注意力，模型可能无法捕捉长程相互作用和结构域边界</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式符号</h2>
+<p>不适用（摘要中未提供任何公式）。</p>
+<h2>10 实验设计与证据链</h2>
+<ul>
+<li><strong>数据集/群体</strong>：未在摘要中提供具体数据集名称或规模。</li>
+<li><strong>指标</strong>：分辨率增强准确性、避免人工结构、识别显著相互作用、染色质状态富集。</li>
+<li><strong>基线</strong>：state-of-the-art methods（未具体列出）。</li>
+<li><strong>评测协议</strong>：包括对新样本和另一物种数据的应用。</li>
+<li><strong>骨干/仪器</strong>：未提供。</li>
+<li><strong>oracle输入</strong>：未提供。</li>
+<li><strong>表格</strong>：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分辨率增强准确性比较</td>
+<td>SHARP在提升分辨率方面优于现有方法</td>
+<td>与state-of-the-art方法对比</td>
+<td>SHARP具有“superior performance in terms of resolution enhancement accuracy”</td>
+<td>SHARP能更准确地重建高分辨率Hi-C数据</td>
+<td>未提供具体数值或统计显著性，无法判断优势大小</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>人工结构避免比较</td>
+<td>SHARP能避免人工结构</td>
+<td>与现有深度学习方法对比</td>
+<td>SHARP在“avoiding creation of artificial structures”方面表现优越</td>
+<td>信号分解策略有效消除了patch引入的伪影</td>
+<td>未提供人工结构的定量度量或可视化证据</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>显著相互作用识别</td>
+<td>SHARP增强的数据能更好地识别显著相互作用</td>
+<td>与现有方法对比</td>
+<td>SHARP在“identifying significant interactions”方面表现优越</td>
+<td>SHARP增强的数据更可靠，可用于下游分析</td>
+<td>未定义“显著相互作用”的判定标准</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>染色质状态富集</td>
+<td>SHARP增强的数据与染色质状态注释更一致</td>
+<td>与现有方法对比</td>
+<td>SHARP在“enrichment in chromatin states”方面表现优越</td>
+<td>SHARP增强的数据具有更好的生物学一致性</td>
+<td>未提供具体染色质状态或富集方法</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>跨样本/跨物种泛化</td>
+<td>SHARP具有泛化能力</td>
+<td>应用于新样本和另一物种数据</td>
+<td>SHARP表现优越</td>
+<td>SHARP不是过拟合特定数据集，具有通用性</td>
+<td>未提供泛化性能的具体量化结果</td>
+<td>摘要</td>
+</tr>
+</tbody>
+</table>
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：本文结论仅限于Hi-C数据的分辨率增强任务，不直接涉及染色质三维结构预测或建模。</li>
+<li><strong>oracle/真值输入</strong>：未明确说明，但通常高分辨率Hi-C数据（如通过深度测序获得）作为真值。</li>
+<li><strong>端到端状态</strong>：SHARP是一个端到端的增强方法，但依赖于信号分解步骤。</li>
+<li><strong>算力成本</strong>：未提及。</li>
+<li><strong>历史数据依赖</strong>：依赖于训练数据（低分辨率-高分辨率对）的质量和分布。</li>
+<li><strong>模型依赖</strong>：结论依赖于SHARP的具体架构（信号分解+多尺度注意力）。</li>
+<li><strong>最难情形</strong>：未提及，但可能包括极低分辨率数据或具有复杂结构（如大量长程相互作用）的基因组区域。</li>
+<li><strong>群体/领域边界</strong>：结论基于与现有方法的比较，但未提供所有可能方法的全面比较。泛化性仅通过两个额外数据集（新样本、另一物种）验证。</li>
+<li><strong>有边界的复述</strong>：在测试的Hi-C数据集上，与所比较的现有方法相比，SHARP通过信号分解和多尺度注意力机制，在提升分辨率的同时减少了人工结构，并改善了与显著相互作用和染色质状态的一致性。</li>
+</ul>
+<h2>12 作者自认局限</h2>
+<p>在提供的材料中未发现作者明确承认的局限。</p>
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>信号分解的合理性未充分论证</td>
+<td>三类信号的分解是否唯一且生物学上有意义？是否存在其他分解方式？分解本身是否引入新的偏差？</td>
+<td>信号分解是SHARP的核心，其有效性直接影响最终结果。如果分解不合理，整个方法的基础可能不牢固。</td>
+<td>1) 进行消融实验，比较不同分解策略（如基于不同尺度的滤波器）的性能。2) 可视化分解后的三类信号，检查其是否与已知的生物学结构（如TAD边界、compartment）对应。</td>
+<td>摘要仅描述分解策略，未提供其生物学或数学依据。</td>
+</tr>
+<tr>
+<td>全局注意力的必要性未明确</td>
+<td>局部注意力可能已足够捕捉精细结构，全局注意力是否带来显著增益？其计算成本是否值得？</td>
+<td>全局注意力通常计算量大，如果其贡献有限，则SHARP可能不是最优方案。</td>
+<td>进行消融实验，比较“仅局部注意力”、“仅全局注意力”、“两者结合”的性能和计算时间。</td>
+<td>摘要仅提及使用“both local and global attention”，未提供消融证据。</td>
+</tr>
+<tr>
+<td>人工结构的定量度量缺失</td>
+<td>作者声称避免了人工结构，但未提供定量指标（如patch边界处的连续性度量、与原始低分辨率数据的一致性等）。</td>
+<td>缺乏定量度量使得“避免人工结构”的claim难以被严格验证和复现。</td>
+<td>定义人工结构的定量指标（如相邻patch边界处的均方误差、结构相似性指数等），并在多个数据集上比较SHARP与基线方法。</td>
+<td>摘要仅定性描述“avoiding creation of artificial structures”。</td>
+</tr>
+</tbody>
+</table>
+<h2>14 学到什么</h2>
+<p><strong>Agent 提炼的知识候选</strong>
+- <strong>可迁移概念：信号分解策略</strong>。将复杂数据分解为不同空间尺度或生物学意义的组分，并仅对最需要复杂建模的组分应用深度学习，可有效避免伪影并提升性能。<strong>可迁移到本课题</strong>：在预测染色质三维结构（如从序列预测Hi-C）时，可尝试将目标结构分解为“序列邻近性”、“结构域骨架”、“精细环/相互作用”等组分，分别建模。
+- <strong>可迁移方法：多尺度注意力机制</strong>。同时使用局部和全局注意力来捕捉Hi-C数据中的多尺度上下文信息。<strong>可迁移到本课题</strong>：在构建染色质结构预测模型（如从1D序列预测3D接触图）时，可引入类似机制，以同时捕捉短程（如核小体水平）和长程（如TAD、compartment水平）的相互作用模式。
+- <strong>可迁移实验设计：跨样本/跨物种验证</strong>。通过在新样本和另一物种数据上测试，验证方法的泛化能力。<strong>可迁移到本课题</strong>：在开发新的三维基因组预测或建模方法时，应强制进行跨细胞类型、跨物种的验证，以确保方法不是过拟合特定数据集的统计模式。</p>
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>相似方法</strong>：本文的信号分解思想与图像处理中的“多尺度分解”（如拉普拉斯金字塔、小波变换）类似，但针对Hi-C数据进行了定制。与HiCPlus、DeepHiC等纯深度学习方法相比，SHARP引入了显式的先验知识（信号分解）。</li>
+<li><strong>组合方向</strong>：SHARP的信号分解策略可与基于物理模拟的方法（如聚合物模型）结合。例如，用物理模型生成一维邻近性和连续结构域信号，再用深度学习增强精细结构，可能产生更生物学合理的增强结果。</li>
+<li><strong>冲突点</strong>：本文指出现有深度学习方法普遍产生人工结构，这与许多声称成功增强Hi-C数据的论文（如HiCPlus、DeepHiC）形成对比。需要进一步验证这些方法是否在特定条件下（如特定分辨率、特定基因组区域）也产生伪影。</li>
+<li><strong>可迁移领域</strong>：该信号分解+多尺度注意力的框架可迁移到其他基因组学数据增强任务，如ChIP-seq峰图增强、RNA-seq表达谱插值等，这些数据同样具有多尺度结构和patch处理带来的伪影问题。</li>
+</ul>
+<h2>16 研究想法</h2>
+<p><strong>Agent 生成的研究候选</strong></p>
+<ol>
+<li>
+<p><strong>候选名称</strong>：基于信号分解的染色质结构域边界预测增强</p>
+<ul>
+<li><strong>来源局限/观察</strong>：SHARP仅用于Hi-C数据增强，但其信号分解思想（分离大尺度结构域和精细结构）可直接用于结构域边界预测。现有边界预测方法常受噪声和分辨率影响。</li>
+<li><strong>核心假设</strong>：将Hi-C数据分解为连续结构域信号和精细结构信号后，结构域边界在连续结构域信号中更清晰，而在精细结构信号中表现为不连续点。结合两者可提高边界预测的准确性。</li>
+<li><strong>相对本文的增量</strong>：将SHARP的分解策略从数据增强任务迁移到下游分析任务（边界预测），并设计新的融合策略。</li>
+<li><strong>初步方法</strong>：1) 对Hi-C矩阵应用SHARP的信号分解。2) 在连续结构域信号上应用基于方向性指数（DI）或insulation score的边界检测。3) 在精细结构信号上应用边缘检测或变化点检测。4) 融合两个信号源的边界信号，得到最终预测。</li>
+<li><strong>验证方式</strong>：使用已知的TAD边界（如来自Hi-C验证实验或ChIP-seq数据）作为金标准，比较SHARP增强的边界预测与原始数据、其他增强方法（如HiCPlus）的边界预测的F1-score、召回率等。</li>
+<li><strong>可能的失败模式</strong>：信号分解可能不完美，导致边界信息在分解过程中丢失或扭曲。融合策略可能过于简单，无法有效利用两种信号的优势。</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul>
+</li>
+<li>
+<p><strong>候选名称</strong>：多尺度注意力驱动的染色质3D结构预测模型</p>
+<ul>
+<li><strong>来源局限/观察</strong>：SHARP使用多尺度注意力增强2D Hi-C数据。但三维基因组研究的最终目标是预测3D结构。现有从1D序列或2D接触图预测3D结构的方法（如积分模型、基于图神经网络的方法）通常缺乏对多尺度相互作用的显式建模。</li>
+<li><strong>核心假设</strong>：在从Hi-C数据重建3D结构时，引入类似SHARP的局部和全局注意力机制，可以同时优化短程（核小体串珠）和长程（TAD、compartment）的折叠，生成更准确的3D结构。</li>
+<li><strong>相对本文的增量</strong>：将SHARP的注意力机制从2D数据增强扩展到3D结构重建任务，并设计适用于3D坐标的注意力变体。</li>
+<li><strong>初步方法</strong>：1) 使用SHARP增强的Hi-C数据作为输入。2) 构建一个基于图神经网络的3D结构预测模型，其中节点为基因组位点，边为Hi-C相互作用。3) 在图的边上应用局部注意力（关注邻近位点）和全局注意力（关注远距离但强相互作用的位点）。4) 模型输出每个位点的3D坐标。</li>
+<li><strong>验证方式</strong>：使用FISH成像数据或已知的染色质结构（如来自Cryo-ET）作为金标准，比较预测结构与真实结构的均方根偏差（RMSD）或TAD结构相似性。</li>
+<li><strong>可能的失败模式</strong>：3D结构预测本身是一个病态问题，多尺度注意力可能无法解决固有的歧义性。计算成本可能过高，难以处理全基因组规模的数据。</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul>
+</li>
+</ol></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Full manuscript (as provided in the query)</li>
+<li><strong>Assessment boundary</strong> The provided text is a structured abstract/summary, not the full manuscript. Assessment is based solely on this summary.</li>
+<li><strong>Shared manuscript claim summary</strong> The authors claim that existing deep learning methods for Hi-C resolution enhancement create artificial structures due to patch-based processing, and that their proposed method, SHARP, overcomes this by decomposing the contact matrix into three signal types and applying deep learning only to the fine-structure component, using multi-scale attention.</li>
+<li><strong>Visible evidence base</strong> Abstract/summary text only. No figures, tables, methods, or supplementary materials are provided.</li>
+<li><strong>Missing materials affecting confidence</strong> Full manuscript, including Methods, Results, Figures, Tables, Supplementary Information, and code/data availability statements. The absence of these materials severely limits the ability to assess the technical validity and reproducibility of the claims.</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li><strong>Overall assessment</strong> The abstract presents a conceptually interesting and potentially important solution to a recognized problem in computational genomics. The core idea of signal decomposition to avoid patch-induced artifacts is novel and well-motivated. However, the provided summary lacks the technical detail necessary to evaluate the method’s validity, performance, and generalizability. The claims are plausible but currently unsubstantiated by the evidence provided.</li>
+<li><strong>Who would be interested in the results, and why</strong> Researchers in computational biology, genomics, and bioinformatics, particularly those working on 3D genome organization, Hi-C data analysis, and deep learning for biological data. The work addresses a critical limitation of current methods and could improve the reliability of downstream analyses such as chromatin loop detection and compartment identification.</li>
+<li><strong>Major strengths</strong><ul>
+<li>The problem of artificial structures in deep learning-enhanced Hi-C data is clearly identified and well-motivated.</li>
+<li>The proposed solution—signal decomposition to isolate patch-sensitive components—is conceptually elegant and addresses a fundamental limitation of existing approaches.</li>
+<li>The use of both local and global attention mechanisms is a sensible strategy for capturing multi-scale patterns in Hi-C data.</li>
+</ul>
+</li>
+<li>
+<p><strong>Major Concerns</strong></p>
+<ul>
+<li><strong>Concern ID</strong> R1-M1</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Technical validity and reproducibility</li>
+<li><strong>Claim pointer</strong> "SHARP has superior performance in terms of resolution enhancement accuracy, avoiding creation of artificial structures, identifying significant interactions, and enrichment in chromatin states."</li>
+<li><strong>Evidence pointer</strong> Abstract only; no figures, tables, or quantitative results provided.</li>
+<li><strong>Concern</strong> The abstract makes strong claims of superior performance across multiple metrics but provides no quantitative data, statistical tests, or comparisons. The reader cannot assess the magnitude of improvement, the statistical significance, or the robustness of the results.</li>
+<li><strong>Why it matters</strong> Without quantitative evidence, the core claims of the paper are unverifiable. The field requires rigorous benchmarking to establish a new method as state-of-the-art.</li>
+<li>
+<p><strong>Resolution test</strong> Provide a table or figure in the full manuscript showing quantitative comparisons (e.g., Pearson/Spearman correlation, SSIM, PSNR, F1 score for loop detection) against at least two state-of-the-art methods (e.g., HiCPlus, HiCNN, DeepHiC) on multiple datasets, with error bars or confidence intervals.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M2</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Methodological clarity</li>
+<li><strong>Claim pointer</strong> "It uses the novel approach of decomposing the data into three types of signals, due to one-dimensional proximity, contiguous domains, and other fine structures, respectively, and applies deep learning only to the third type of signals."</li>
+<li><strong>Evidence pointer</strong> Abstract only; no methods section provided.</li>
+<li><strong>Concern</strong> The signal decomposition procedure is described only at a high level. It is unclear how the three signal types are defined, separated, and recombined. The mathematical formulation, algorithmic steps, and any assumptions are missing.</li>
+<li><strong>Why it matters</strong> The decomposition is the central innovation of the method. Without a clear description, the work cannot be reproduced, and the validity of the approach cannot be assessed.</li>
+<li>
+<p><strong>Resolution test</strong> Provide a detailed Methods section describing the decomposition algorithm, including equations, pseudocode, or a clear schematic. Specify how the "one-dimensional proximity" and "contiguous domains" signals are modeled and separated from the "fine structures."</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M3</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Generalizability and validation</li>
+<li><strong>Claim pointer</strong> "We compare SHARP with state-of-the-art methods extensively, including application to data from new samples and another species."</li>
+<li><strong>Evidence pointer</strong> Abstract only; no results or data provided.</li>
+<li><strong>Concern</strong> The abstract mentions cross-species and cross-sample validation but provides no details on the species, sample types, or the results of these comparisons. The claim of "extensive" comparison is unsubstantiated.</li>
+<li><strong>Why it matters</strong> Generalizability is a key requirement for a method to be widely adopted. The lack of detail prevents assessment of whether SHARP works robustly across different biological contexts.</li>
+<li><strong>Resolution test</strong> In the full manuscript, present results from at least one non-human species (e.g., mouse, Drosophila) and from a new cell type or condition not used in training. Show that performance metrics are comparable to or better than those on the training data.</li>
+</ul>
+</li>
+<li>
+<p><strong>Minor Comments</strong></p>
+<ul>
+<li><strong>Concern ID</strong> R1-m1</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Readability and terminology</li>
+<li><strong>Affected element</strong> Abstract</li>
+<li><strong>Evidence pointer</strong> Abstract</li>
+<li><strong>Issue</strong> The phrase "due to one-dimensional proximity, contiguous domains, and other fine structures" is somewhat vague. The biological or mathematical meaning of "one-dimensional proximity" in the context of Hi-C is not immediately clear.</li>
+<li>
+<p><strong>Required correction</strong> Clarify the terminology. For example, "one-dimensional proximity" could be rephrased as "distance-dependent decay of contact probability" or "genomic distance effect."</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m2</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Completeness of reporting</li>
+<li><strong>Affected element</strong> Abstract</li>
+<li><strong>Evidence pointer</strong> Abstract</li>
+<li><strong>Issue</strong> The abstract does not mention the training data, model architecture (e.g., number of layers, parameters), or computational cost (training/inference time, GPU memory).</li>
+<li><strong>Required correction</strong> Include a brief statement in the abstract or a dedicated section in the full manuscript about the model's computational requirements and the datasets used for training and evaluation.</li>
+</ul>
+</li>
+<li>
+<p><strong>Technical failings that need to be addressed before the case is established</strong> R1-M1, R1-M2, R1-M3. The core claims of superior performance, methodological novelty, and generalizability are currently unsupported by the provided evidence.</p>
+</li>
+<li><strong>Assessment against Nature-style criteria</strong><ul>
+<li><strong>Originality:</strong> High. The signal decomposition approach to avoid patch-induced artifacts is a novel and creative solution to a recognized problem.</li>
+<li><strong>Scientific importance:</strong> Potentially high. If validated, SHARP could significantly improve the reliability of Hi-C data analysis and downstream biological discoveries.</li>
+<li><strong>Interdisciplinary readership:</strong> Moderate. The work is primarily of interest to computational biologists and bioinformaticians. The biological implications (e.g., chromatin state enrichment) could broaden the audience.</li>
+<li><strong>Technical soundness:</strong> Currently unassessable. The abstract lacks the necessary methodological and quantitative detail to evaluate technical soundness.</li>
+<li><strong>Readability for nonspecialists:</strong> The abstract is reasonably clear for a specialist audience but uses jargon (e.g., "one-dimensional proximity") that would be opaque to a general scientific reader.</li>
+</ul>
+</li>
+<li><strong>Recommendation posture</strong> Currently not established from the provided evidence. The conceptual advance is promising, but the manuscript requires a full review of the methods, results, and data to determine if the claims are substantiated. A supportive posture is contingent on the full manuscript addressing the major concerns.</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>"SHARP has superior performance in terms of resolution enhancement accuracy, avoiding creation of artificial structures, identifying significant interactions, and enrichment in chromatin states." (Unsupported: no quantitative data provided.)</li>
+<li>"We compare SHARP with state-of-the-art methods extensively, including application to data from new samples and another species." (Unsupported: no results or details provided.)</li>
+<li>"It uses the novel approach of decomposing the data into three types of signals..." (Unsupported: the decomposition method is not described in sufficient detail to be evaluated or reproduced.)</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

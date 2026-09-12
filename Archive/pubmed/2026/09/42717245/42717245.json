@@ -1,0 +1,345 @@
+{
+  "identity": {
+    "pmid": "42717245",
+    "doi": "10.1038/s41556-026-02040-5",
+    "title": "The periphery of nuclear speckles defines a spatially and temporally regulated compartment of long-lived intron-retained RNAs that resolves during mitosis."
+  },
+  "content": {
+    "abstract": "RNA localization adds a fundamental layer to gene expression by determining when and where translation-ready mRNAs become available, yet how this timing is coordinated with nuclear architecture and cell-cycle progression remains unclear. Here we identify a subnuclear RNA niche at the nuclear speckle periphery that couples intron retention to cell-cycle-timed RNA release. Using compartment-resolved transcriptional inhibition, sequence-based deep learning and single-molecule and super-resolution RNA imaging in human pluripotent stem cells, we define a class of nuclear RNAs with long-lived retained introns that persist for hours and are enriched in transcripts encoding regulators of genome maintenance and mitosis, including centromere and kinetochore assembly, DNA repair and telomere maintenance. Long-lived retained introns exhibit elevated GC content, predicted structural stability and enrichment for nuclear speckle-associated RNA-binding proteins. In interphase, these RNAs localize to a distinct nuclear speckle-peripheral RNA niche in a spatial arrangement conserved across cell types. During mitotic remodelling, they undergo coordinated, kinase-dependent splicing and are released into the cytoplasm of early G1 daughter cells. Together, these findings link cis-encoded intronic features, subnuclear organization and mitotic remodelling to temporal control of RNA fate.",
+    "keywords": [],
+    "mesh_terms": [
+      "*Mitosis/genetics",
+      "Humans",
+      "*Introns/genetics",
+      "*Cell Nucleus/metabolism/genetics",
+      "RNA Splicing",
+      "RNA-Binding Proteins/metabolism/genetics",
+      "*RNA/genetics/metabolism"
+    ],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Biayna, Josep",
+        "Baranovskii, Artem",
+        "Chaudhuri, Anusha",
+        "Paladin, Marta",
+        "Erdem, Berkay",
+        "Keller, Luise-Elektra",
+        "Barutcu, A Rasim",
+        "Dimmeler, Stefanie",
+        "Marsico, Annalisa",
+        "Dumbovic, Gabrijela"
+      ],
+      "short_names": [
+        "Biayna J",
+        "Baranovskii A",
+        "Chaudhuri A",
+        "Paladin M",
+        "Erdem B",
+        "Keller LE",
+        "Barutcu AR",
+        "Dimmeler S",
+        "Marsico A",
+        "Dumbovic G"
+      ],
+      "auids": [
+        "ORCID: 0000-0002-0842-7530",
+        "ORCID: 0000-0002-7263-9204",
+        "ORCID: 0009-0003-5657-2729",
+        "ORCID: 0000-0002-1045-2436",
+        "ORCID: 0000-0002-1278-0273"
+      ],
+      "affiliations": [
+        "Goethe University Frankfurt, Center for Molecular Medicine, Institute of Cardiovascular Regeneration, Frankfurt, Germany.",
+        "Cluster of Excellence Cardio-Pulmonary Institute, Goethe University Frankfurt, Frankfurt, Germany.",
+        "German Center of Cardiovascular Research (DZHK), partner site Rhein/Main, Frankfurt, Germany.",
+        "Computational Health Center, Helmholtz Center Munich, Munich, Germany.",
+        "Berlin Institute for Medical Systems Biology, Max Delbruck Center for Molecular Medicine, Berlin, Germany.",
+        "Goethe University Frankfurt, Center for Molecular Medicine, Institute of Cardiovascular Regeneration, Frankfurt, Germany.",
+        "Cluster of Excellence Cardio-Pulmonary Institute, Goethe University Frankfurt, Frankfurt, Germany.",
+        "German Center of Cardiovascular Research (DZHK), partner site Rhein/Main, Frankfurt, Germany.",
+        "Goethe University Frankfurt, Center for Molecular Medicine, Institute of Cardiovascular Regeneration, Frankfurt, Germany.",
+        "Cluster of Excellence Cardio-Pulmonary Institute, Goethe University Frankfurt, Frankfurt, Germany.",
+        "German Center of Cardiovascular Research (DZHK), partner site Rhein/Main, Frankfurt, Germany.",
+        "Goethe University Frankfurt, Center for Molecular Medicine, Institute of Cardiovascular Regeneration, Frankfurt, Germany.",
+        "Cluster of Excellence Cardio-Pulmonary Institute, Goethe University Frankfurt, Frankfurt, Germany.",
+        "German Center of Cardiovascular Research (DZHK), partner site Rhein/Main, Frankfurt, Germany.",
+        "Goethe University Frankfurt, Center for Molecular Medicine, Institute of Cardiovascular Regeneration, Frankfurt, Germany.",
+        "Cluster of Excellence Cardio-Pulmonary Institute, Goethe University Frankfurt, Frankfurt, Germany.",
+        "German Center of Cardiovascular Research (DZHK), partner site Rhein/Main, Frankfurt, Germany.",
+        "ScitoVation LLC, Durham, NC, USA.",
+        "Goethe University Frankfurt, Center for Molecular Medicine, Institute of Cardiovascular Regeneration, Frankfurt, Germany.",
+        "Cluster of Excellence Cardio-Pulmonary Institute, Goethe University Frankfurt, Frankfurt, Germany.",
+        "German Center of Cardiovascular Research (DZHK), partner site Rhein/Main, Frankfurt, Germany.",
+        "Computational Health Center, Helmholtz Center Munich, Munich, Germany.",
+        "Goethe University Frankfurt, Center for Molecular Medicine, Institute of Cardiovascular Regeneration, Frankfurt, Germany. dumbovic@med.uni-frankfurt.de.",
+        "Cluster of Excellence Cardio-Pulmonary Institute, Goethe University Frankfurt, Frankfurt, Germany. dumbovic@med.uni-frankfurt.de.",
+        "German Center of Cardiovascular Research (DZHK), partner site Rhein/Main, Frankfurt, Germany. dumbovic@med.uni-frankfurt.de.",
+        "Cluster of Excellence SubCellular Architecture of Life, Goethe University Frankfurt, Frankfurt, Germany. dumbovic@med.uni-frankfurt.de."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Biayna, Josep",
+        "short_name": "Biayna J",
+        "identifiers": [
+          "0000-0002-0842-7530"
+        ],
+        "affiliations": [
+          "Goethe University Frankfurt, Center for Molecular Medicine, Institute of Cardiovascular Regeneration, Frankfurt, Germany.",
+          "Cluster of Excellence Cardio-Pulmonary Institute, Goethe University Frankfurt, Frankfurt, Germany.",
+          "German Center of Cardiovascular Research (DZHK), partner site Rhein/Main, Frankfurt, Germany."
+        ]
+      },
+      {
+        "full_name": "Baranovskii, Artem",
+        "short_name": "Baranovskii A",
+        "identifiers": [],
+        "affiliations": [
+          "Computational Health Center, Helmholtz Center Munich, Munich, Germany.",
+          "Berlin Institute for Medical Systems Biology, Max Delbrück Center for Molecular Medicine, Berlin, Germany."
+        ]
+      },
+      {
+        "full_name": "Chaudhuri, Anusha",
+        "short_name": "Chaudhuri A",
+        "identifiers": [
+          "0000-0002-7263-9204"
+        ],
+        "affiliations": [
+          "Goethe University Frankfurt, Center for Molecular Medicine, Institute of Cardiovascular Regeneration, Frankfurt, Germany.",
+          "Cluster of Excellence Cardio-Pulmonary Institute, Goethe University Frankfurt, Frankfurt, Germany.",
+          "German Center of Cardiovascular Research (DZHK), partner site Rhein/Main, Frankfurt, Germany."
+        ]
+      },
+      {
+        "full_name": "Paladin, Marta",
+        "short_name": "Paladin M",
+        "identifiers": [
+          "0009-0003-5657-2729"
+        ],
+        "affiliations": [
+          "Goethe University Frankfurt, Center for Molecular Medicine, Institute of Cardiovascular Regeneration, Frankfurt, Germany.",
+          "Cluster of Excellence Cardio-Pulmonary Institute, Goethe University Frankfurt, Frankfurt, Germany.",
+          "German Center of Cardiovascular Research (DZHK), partner site Rhein/Main, Frankfurt, Germany."
+        ]
+      },
+      {
+        "full_name": "Erdem, Berkay",
+        "short_name": "Erdem B",
+        "identifiers": [],
+        "affiliations": [
+          "Goethe University Frankfurt, Center for Molecular Medicine, Institute of Cardiovascular Regeneration, Frankfurt, Germany.",
+          "Cluster of Excellence Cardio-Pulmonary Institute, Goethe University Frankfurt, Frankfurt, Germany.",
+          "German Center of Cardiovascular Research (DZHK), partner site Rhein/Main, Frankfurt, Germany."
+        ]
+      },
+      {
+        "full_name": "Keller, Luise-Elektra",
+        "short_name": "Keller LE",
+        "identifiers": [],
+        "affiliations": [
+          "Goethe University Frankfurt, Center for Molecular Medicine, Institute of Cardiovascular Regeneration, Frankfurt, Germany.",
+          "Cluster of Excellence Cardio-Pulmonary Institute, Goethe University Frankfurt, Frankfurt, Germany.",
+          "German Center of Cardiovascular Research (DZHK), partner site Rhein/Main, Frankfurt, Germany."
+        ]
+      },
+      {
+        "full_name": "Barutcu, A Rasim",
+        "short_name": "Barutcu AR",
+        "identifiers": [],
+        "affiliations": [
+          "ScitoVation LLC, Durham, NC, USA."
+        ]
+      },
+      {
+        "full_name": "Dimmeler, Stefanie",
+        "short_name": "Dimmeler S",
+        "identifiers": [
+          "0000-0002-1045-2436"
+        ],
+        "affiliations": [
+          "Goethe University Frankfurt, Center for Molecular Medicine, Institute of Cardiovascular Regeneration, Frankfurt, Germany.",
+          "Cluster of Excellence Cardio-Pulmonary Institute, Goethe University Frankfurt, Frankfurt, Germany.",
+          "German Center of Cardiovascular Research (DZHK), partner site Rhein/Main, Frankfurt, Germany."
+        ]
+      },
+      {
+        "full_name": "Marsico, Annalisa",
+        "short_name": "Marsico A",
+        "identifiers": [],
+        "affiliations": [
+          "Computational Health Center, Helmholtz Center Munich, Munich, Germany."
+        ]
+      },
+      {
+        "full_name": "Dumbović, Gabrijela",
+        "short_name": "Dumbović G",
+        "identifiers": [
+          "0000-0002-1278-0273"
+        ],
+        "affiliations": [
+          "Goethe University Frankfurt, Center for Molecular Medicine, Institute of Cardiovascular Regeneration, Frankfurt, Germany. dumbovic@med.uni-frankfurt.de.",
+          "Cluster of Excellence Cardio-Pulmonary Institute, Goethe University Frankfurt, Frankfurt, Germany. dumbovic@med.uni-frankfurt.de.",
+          "German Center of Cardiovascular Research (DZHK), partner site Rhein/Main, Frankfurt, Germany. dumbovic@med.uni-frankfurt.de.",
+          "Cluster of Excellence SubCellular Architecture of Life, Goethe University Frankfurt, Frankfurt, Germany. dumbovic@med.uni-frankfurt.de."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Nature cell biology"
+    ],
+    "journal_abbrev": [
+      "Nat Cell Biol"
+    ],
+    "pub_date": "2026 Sep",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/10 05:36",
+    "fetched_at": "2026-09-12 11:08:09"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42717245",
+      "35182477",
+      "39413186",
+      "34083519",
+      "29133588",
+      "22855529",
+      "41787512",
+      "33291060",
+      "11161712",
+      "41747727",
+      "32720312",
+      "28977534",
+      "38464148",
+      "17270048",
+      "35741072",
+      "30538148",
+      "38768219",
+      "42019496",
+      "17825047",
+      "16971948",
+      "35513423",
+      "10444064",
+      "33468685",
+      "36754576",
+      "10679009",
+      "25963658",
+      "11030346",
+      "10518602",
+      "35182478",
+      "8858159",
+      "33832989",
+      "32854341",
+      "24722636",
+      "17507654",
+      "34389711",
+      "21327085",
+      "30864659",
+      "8395012",
+      "24098440",
+      "39325823",
+      "8027171",
+      "42012149",
+      "31375061",
+      "26496460",
+      "42258538",
+      "41861815",
+      "11784857",
+      "17894886",
+      "10825302",
+      "20053686",
+      "38964322",
+      "30745363",
+      "42448566",
+      "42450221",
+      "34681934",
+      "38599210",
+      "39626965",
+      "42475178",
+      "36725757",
+      "20603381",
+      "32156816",
+      "19303045",
+      "20841358",
+      "31501331",
+      "20568006",
+      "11278282",
+      "24478440",
+      "12011111",
+      "35704758",
+      "42250985",
+      "41105785",
+      "29563249",
+      "15598799",
+      "38720076",
+      "33823140",
+      "8006060",
+      "16738408",
+      "24391881",
+      "10984439",
+      "33095160",
+      "9512520",
+      "16537900",
+      "31611386",
+      "24569078",
+      "10869340",
+      "32259767",
+      "29991507",
+      "15811368",
+      "39461342",
+      "27490541",
+      "37661812",
+      "32708427",
+      "26484760",
+      "26392272",
+      "31447263",
+      "30810475",
+      "22871813",
+      "36867563",
+      "20797886",
+      "16611884"
+    ],
+    "review": [
+      "42717245",
+      "33291060",
+      "42450221",
+      "34681934",
+      "36725757",
+      "20603381",
+      "42250985"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://doi.org/10.1038/s41556-026-02040-5",
+        "provider": "Nature Publishing Group",
+        "category": "Full Text Sources",
+        "attribute": "subscription/membership/fee required",
+        "linkname": ""
+      },
+      {
+        "url": "https://assays.cancer.gov/non-CPTAC-3321",
+        "provider": "NCI CPTAC Assay Portal",
+        "category": "Miscellaneous",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

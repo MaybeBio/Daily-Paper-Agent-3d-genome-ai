@@ -1,0 +1,295 @@
+{
+  "identity": {
+    "pmid": "42690471",
+    "doi": "10.1007/s11274-026-05249-6",
+    "title": "From metabolites to membrane vesicles: Unifying gut microbial signals in obesity, t2dm, and MASLD."
+  },
+  "content": {
+    "abstract": "Obesity, Type 2 diabetes mellitus (T2DM) and metabolic dysfunction-associated steatotic liver disease (MASLD) represent interconnected global health problems that can be caused by dietary factors, life-style changes and alterations in the gut microbiota composition. While numerous reports highlight the connections between microbial taxa and the host diseases, the underlying molecular mechanisms behind the impact of metabolites on the disease development remain poorly defined. In this review, the connection between four interrelated pathways through which metabolites from the gut microbiota affect metabolic disease are highlighted. They include (i) reprogramming of host metabolism through histone deacetylase (HDAC) inhibition and remodeling of the chromatin structure; (ii) mitochondrial dysfunction and disturbance in redox balance; (iii) hijacking of receptors and pathway biased crosstalk (FFAR2/3, GPR109A, FXR, TGR5, AhR, TLR4) and (iv) disruption of intestinal barrier and induction of metabolic endotoxemia. Such axes form a feedback network through which the inflammation and insulin resistance spread over the entire gut-adipose-liver-pancreas-muscle axis. The effect of the metabolites is very context-dependent since it relies on the concentration threshold, receptor bias, disease state and interaction between the host genotype and enterotype. The translational applications include composite metabolite biomarkers, enterotype-based therapeutic approaches, bacterial extracellular vesicles and machine learning approaches to develop multi-omics data analysis resulting in generation of a digital twin model.",
+    "keywords": [
+      "Bacterial extracellular vesicles",
+      "Gut microbiota",
+      "Metabolic diseases",
+      "Metabolic dysfunction-associated steatotic liver disease (MASLD)",
+      "Microbial metabolites",
+      "Obesity",
+      "Precision medicine",
+      "Type 2 diabetes mellitus"
+    ],
+    "mesh_terms": [
+      "Humans",
+      "*Diabetes Mellitus, Type 2/metabolism/microbiology",
+      "*Obesity/metabolism/microbiology",
+      "*Gastrointestinal Microbiome/physiology",
+      "Animals",
+      "*Fatty Liver/metabolism/microbiology",
+      "Signal Transduction"
+    ],
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Muttiah, Barathan",
+        "Venkatraman, Gopinath",
+        "Abdul-Rahman, Puteri Shafinaz"
+      ],
+      "short_names": [
+        "Muttiah B",
+        "Venkatraman G",
+        "Abdul-Rahman PS"
+      ],
+      "auids": [],
+      "affiliations": [
+        "Institute of Biological Sciences, Faculty of Science, Universiti Malaya, Kuala Lumpur, 50603, Malaysia. barathanmuttiah@um.edu.my.",
+        "Institute of Biological Sciences, Faculty of Science, Universiti Malaya, Kuala Lumpur, 50603, Malaysia. gopinath87@um.edu.my.",
+        "Department of Biochemistry, Saveetha Dental College, Saveetha Institute of Medical @ Technical Sciences, Saveetha University, Chennai, 600 077, India. gopinath87@um.edu.my.",
+        "Department of Molecular Medicine, Faculty of Medicine, Universiti Malaya, Kuala Lumpur, 50603, Malaysia. terisar@um.edu.my.",
+        "Universiti Malaya Centre for Proteomics Research (UMCPR), Universiti Malaya, Kuala Lumpur, 50603, Malaysia. terisar@um.edu.my."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Muttiah, Barathan",
+        "short_name": "Muttiah B",
+        "identifiers": [],
+        "affiliations": [
+          "Institute of Biological Sciences, Faculty of Science, Universiti Malaya, Kuala Lumpur, 50603, Malaysia. barathanmuttiah@um.edu.my."
+        ]
+      },
+      {
+        "full_name": "Venkatraman, Gopinath",
+        "short_name": "Venkatraman G",
+        "identifiers": [],
+        "affiliations": [
+          "Institute of Biological Sciences, Faculty of Science, Universiti Malaya, Kuala Lumpur, 50603, Malaysia. gopinath87@um.edu.my.",
+          "Department of Biochemistry, Saveetha Dental College, Saveetha Institute of Medical @ Technical Sciences, Saveetha University, Chennai, 600 077, India. gopinath87@um.edu.my."
+        ]
+      },
+      {
+        "full_name": "Abdul-Rahman, Puteri Shafinaz",
+        "short_name": "Abdul-Rahman PS",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Molecular Medicine, Faculty of Medicine, Universiti Malaya, Kuala Lumpur, 50603, Malaysia. terisar@um.edu.my.",
+          "Universiti Malaya Centre for Proteomics Research (UMCPR), Universiti Malaya, Kuala Lumpur, 50603, Malaysia. terisar@um.edu.my."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "World journal of microbiology & biotechnology"
+    ],
+    "journal_abbrev": [
+      "World J Microbiol Biotechnol"
+    ],
+    "pub_date": "2026 Sep 3",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/03 17:36",
+    "fetched_at": "2026-09-12 11:08:09"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42690471",
+      "42034935",
+      "40871736",
+      "42015346",
+      "41334445",
+      "41964817",
+      "41723574",
+      "42654332",
+      "40305160",
+      "42315051",
+      "41274019",
+      "41114583",
+      "42684538",
+      "39746606",
+      "23886976",
+      "42086084",
+      "39805044",
+      "41683364",
+      "40929881",
+      "42634304",
+      "42242027",
+      "41001122",
+      "41877243",
+      "38861011",
+      "41896654",
+      "42662708",
+      "40380373",
+      "30670819",
+      "39604327",
+      "41146521",
+      "37802720",
+      "39720247",
+      "40084870",
+      "38967596",
+      "41843212",
+      "41299593",
+      "42511461",
+      "40624229",
+      "42158204",
+      "38235661",
+      "41220583",
+      "40208464",
+      "39683591",
+      "31175629",
+      "40582207",
+      "41962267",
+      "35739571",
+      "40394806",
+      "27890642",
+      "42654248",
+      "42639094",
+      "40425014",
+      "42320750",
+      "41165343",
+      "41937581",
+      "39832564",
+      "42588196",
+      "41779349",
+      "40336226",
+      "39796579",
+      "42375324",
+      "28013341",
+      "40235664",
+      "39343617",
+      "41820829",
+      "42700342",
+      "38946874",
+      "42495627",
+      "40911047",
+      "42630879",
+      "41824007",
+      "41471280",
+      "42539514",
+      "40920467",
+      "41917764",
+      "42149643",
+      "33178196",
+      "42712928",
+      "40899744",
+      "42572438",
+      "42273381",
+      "40633857",
+      "41497693",
+      "39233138",
+      "41850461",
+      "42429613",
+      "42056921",
+      "39339660",
+      "41974372",
+      "40507175",
+      "38950910",
+      "38889641",
+      "42503322",
+      "42422424",
+      "38673972",
+      "41802647",
+      "41110769",
+      "41763136",
+      "40507022",
+      "42392672"
+    ],
+    "review": [
+      "42690471",
+      "42034935",
+      "40871736",
+      "42015346",
+      "41334445",
+      "41964817",
+      "42654332",
+      "40305160",
+      "42684538",
+      "23886976",
+      "42086084",
+      "39805044",
+      "41683364",
+      "41001122",
+      "38861011",
+      "42662708",
+      "30670819",
+      "39604327",
+      "37802720",
+      "39720247",
+      "38967596",
+      "41843212",
+      "42511461",
+      "40624229",
+      "42158204",
+      "41220583",
+      "40208464",
+      "31175629",
+      "40394806",
+      "42654248",
+      "42639094",
+      "40425014",
+      "42320750",
+      "41937581",
+      "39832564",
+      "41779349",
+      "40336226",
+      "39796579",
+      "42375324",
+      "40235664",
+      "39343617",
+      "42700342",
+      "38946874",
+      "42495627",
+      "40911047",
+      "42630879",
+      "41824007",
+      "41471280",
+      "42539514",
+      "40920467",
+      "41917764",
+      "42149643",
+      "33178196",
+      "42712928",
+      "40899744",
+      "42572438",
+      "42273381",
+      "41497693",
+      "39233138",
+      "41850461",
+      "42429613",
+      "39339660",
+      "41974372",
+      "40507175",
+      "38950910",
+      "40507022",
+      "42392672"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://medlineplus.gov/obesity.html",
+        "provider": "MedlinePlus Health Information",
+        "category": "Medical",
+        "attribute": "free resource",
+        "linkname": "Obesity"
+      },
+      {
+        "url": "https://dx.doi.org/10.1007/s11274-026-05249-6",
+        "provider": "Springer",
+        "category": "Full Text Sources",
+        "attribute": "subscription/membership/fee required",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

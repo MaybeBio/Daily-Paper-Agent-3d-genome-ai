@@ -1,0 +1,274 @@
+{
+  "identity": {
+    "pmid": "42669660",
+    "doi": "10.1038/s41467-026-75571-y",
+    "title": "Ribo-ITP enables identification of translons from limited input samples."
+  },
+  "content": {
+    "abstract": "In the last decade, an unexpectedly large number of translated regions (translons) have been discovered using ribosome profiling and proteomics. Translons can act as regulatory elements or encode functional micropeptides. However, identification of translons has been limited to cell lines or large organs due to high input requirements for conventional ribosome profiling and mass spectrometry. Here, we address this input limitation using Ribo-ITP on difficult-to-collect samples such as microdissected hippocampal tissues and single preimplantation embryos to identify thousands of translons. To test the translational capacity of the identified translons, we engineer a translon-dependent GFP reporter system and detect expression of translons initiating at ATG and near-cognate start codons in mouse embryonic stem cells (mESCs). We identify distinct expression patterns of translons using a comparative analysis of more than a thousand ribosome profiling datasets across a wide range of cell types. Further, using a machine learning model, we predict that specific upstream translons in synaptically enriched mRNAs regulate translation efficiency of the annotated coding region. Taken together, we present a proof-of-concept study to identify non-canonical translation events from low input samples which can be applied to cell and tissue types inaccessible to conventional methods.",
+    "keywords": [],
+    "mesh_terms": [
+      "Animals",
+      "Ribosome Profiling",
+      "Mice",
+      "Mouse Embryonic Stem Cells/metabolism",
+      "*Protein Biosynthesis",
+      "*Ribosomes/metabolism/genetics",
+      "RNA, Messenger/genetics/metabolism",
+      "Hippocampus/metabolism",
+      "Green Fluorescent Proteins/genetics/metabolism",
+      "Blastocyst/metabolism",
+      "Machine Learning",
+      "Proteomics"
+    ],
+    "pub_types": [
+      "Journal Article",
+      "Research Support, N.I.H., Extramural"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Ghatpande, Vighnesh",
+        "Paul, Uma",
+        "Persyn, Logan",
+        "Tian, Yifan",
+        "Howard, MacKenzie A",
+        "Cenik, Can"
+      ],
+      "short_names": [
+        "Ghatpande V",
+        "Paul U",
+        "Persyn L",
+        "Tian Y",
+        "Howard MA",
+        "Cenik C"
+      ],
+      "auids": [
+        "ORCID: 0000-0001-6848-2075",
+        "ORCID: 0009-0004-2286-7657",
+        "ORCID: 0000-0003-2832-6873",
+        "ORCID: 0000-0001-6370-0889"
+      ],
+      "affiliations": [
+        "Department of Molecular Biosciences, University of Texas at Austin, Austin, TX, USA.",
+        "Department of Molecular Biosciences, University of Texas at Austin, Austin, TX, USA.",
+        "Department of Molecular Biosciences, University of Texas at Austin, Austin, TX, USA.",
+        "Department of Molecular Biosciences, University of Texas at Austin, Austin, TX, USA.",
+        "Departments of Neurology and Neuroscience, Center for Learning and Memory, Dell Medical School, University of Texas at Austin, Austin, TX, USA.",
+        "Department of Molecular Biosciences, University of Texas at Austin, Austin, TX, USA. ccenik@austin.utexas.edu."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Ghatpande, Vighnesh",
+        "short_name": "Ghatpande V",
+        "identifiers": [
+          "0000-0001-6848-2075"
+        ],
+        "affiliations": [
+          "Department of Molecular Biosciences, University of Texas at Austin, Austin, TX, USA."
+        ]
+      },
+      {
+        "full_name": "Paul, Uma",
+        "short_name": "Paul U",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Molecular Biosciences, University of Texas at Austin, Austin, TX, USA."
+        ]
+      },
+      {
+        "full_name": "Persyn, Logan",
+        "short_name": "Persyn L",
+        "identifiers": [
+          "0009-0004-2286-7657"
+        ],
+        "affiliations": [
+          "Department of Molecular Biosciences, University of Texas at Austin, Austin, TX, USA."
+        ]
+      },
+      {
+        "full_name": "Tian, Yifan",
+        "short_name": "Tian Y",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Molecular Biosciences, University of Texas at Austin, Austin, TX, USA."
+        ]
+      },
+      {
+        "full_name": "Howard, MacKenzie A",
+        "short_name": "Howard MA",
+        "identifiers": [
+          "0000-0003-2832-6873"
+        ],
+        "affiliations": [
+          "Departments of Neurology and Neuroscience, Center for Learning and Memory, Dell Medical School, University of Texas at Austin, Austin, TX, USA."
+        ]
+      },
+      {
+        "full_name": "Cenik, Can",
+        "short_name": "Cenik C",
+        "identifiers": [
+          "0000-0001-6370-0889"
+        ],
+        "affiliations": [
+          "Department of Molecular Biosciences, University of Texas at Austin, Austin, TX, USA. ccenik@austin.utexas.edu."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Nature communications"
+    ],
+    "journal_abbrev": [
+      "Nat Commun"
+    ],
+    "pub_date": "2026 Jul 31",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article",
+      "Research Support, N.I.H., Extramural"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/08/31 19:42",
+    "fetched_at": "2026-09-12 11:08:09"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42669660",
+      "40799548",
+      "40418451",
+      "37344592",
+      "33594971",
+      "25147239",
+      "41397878",
+      "31284834",
+      "41499213",
+      "34662240",
+      "41269562",
+      "40501025",
+      "23429522",
+      "38719470",
+      "33539640",
+      "38093195",
+      "42173100",
+      "25156699",
+      "42324055",
+      "28625553",
+      "38047591",
+      "23696005",
+      "42412910",
+      "26764022",
+      "25122893",
+      "37624698",
+      "39122697",
+      "41540115",
+      "25903347",
+      "36440758",
+      "32048998",
+      "34480152",
+      "42412804",
+      "37987904",
+      "41708856",
+      "26919232",
+      "35841888",
+      "37246712",
+      "29087317",
+      "29677493",
+      "25510491",
+      "39402662",
+      "26297486",
+      "29357872",
+      "33211868",
+      "28917040",
+      "42167236",
+      "42511706",
+      "33765913",
+      "42048039",
+      "37572790",
+      "28558053",
+      "41556339",
+      "26486724",
+      "22806127",
+      "25736862",
+      "30590705",
+      "38940559",
+      "40450690",
+      "35436375",
+      "33765283",
+      "39187487",
+      "32385111",
+      "32459844",
+      "36199246",
+      "37292611",
+      "40790224",
+      "29140531",
+      "25550424",
+      "27768687",
+      "25413677",
+      "34159322",
+      "32427338",
+      "40272563",
+      "40985772",
+      "42481489",
+      "42011786",
+      "41749359",
+      "34076576",
+      "22056041",
+      "27122318",
+      "30241496",
+      "41526193",
+      "36227586",
+      "33765275",
+      "33770074",
+      "32471506",
+      "34939924",
+      "26657557",
+      "40715456",
+      "38451091",
+      "42147130",
+      "28648677",
+      "27699651",
+      "21731509",
+      "33765282",
+      "41330640",
+      "30328800",
+      "30904393",
+      "22022532"
+    ],
+    "review": [
+      "42669660",
+      "41397878",
+      "23696005",
+      "41540115",
+      "42511706",
+      "41526193"
+    ],
+    "pmc": [
+      "13526858"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://doi.org/10.1038/s41467-026-75571-y",
+        "provider": "Nature Publishing Group",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/pmid/42669660/",
+        "provider": "PubMed Central",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

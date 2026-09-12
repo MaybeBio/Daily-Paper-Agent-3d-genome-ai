@@ -1,0 +1,328 @@
+{
+  "source": "medrxiv",
+  "source_id": "10.64898/2026.08.30.26361746",
+  "title": "Dose-finding, experimental medicine evaluation of sodium valproate for the prevention of post-cardiac surgery myocardial injury",
+  "doi": "10.64898/2026.08.30.26361746",
+  "abstract": "<h4>Background</h4> A dose-finding trial evaluated safety and adherence for pre-cardiac surgery administration of sodium valproate. Integrated multi-omics analyses of myocardium were used to characterise mechanisms underlying treatment effects. <h4>Methods</h4> Adults undergoing cardiac surgery were randomised 1:1:1:1 with concealed allocation to no treatment (Controls), sodium valproate 15mg/kg/day for 1-2 weeks, 15mg/kg/day for 4-6 weeks, or 25mg/kg/day for 4-6 weeks pre-surgery. The primary analysis evaluated adherence and toxicity. Myocardial injury was defined by high sensitivity serum troponin at 24 hours post-surgery. Single-nucleus Assay for Transposase-Accessible Chromatin with sequencing (snATACseq) and single nuclei RNA sequencing (snRNAseq) of myocardial biopsies collected at surgery assessed treatment effects on chromatin accessibility and gene expression. Candidate mechanisms were validated in in vitro . <h4>Results</h4> The analysis cohort included 42 participants enrolled between January 2020 and August 2024. Sodium valproate 15mg/kg/day for 1-2 weeks had the highest levels of complete treatment adherence (70%), with 20% experiencing moderate/severe drug related adverse effects. Non-compliance was increased with longer and higher dosing. An as-treated analyses demonstrated reductions in troponin release in participants receiving Valproate≤14 days where myocardial biopsies demonstrated activation of hormetic p53 and Akt-GSK-3β ferroptosis protection pathways versus controls. Silencing of these pathways attenuated the protective effect of valproate in vitro . Treatment effects were not attributable to chromatin accessibility. Treatment >14 days resulted in a heart failure phenotype, suppression of ferroptosis protection pathways, and increased myocardial injury. <h4>Conclusions</h4> Valproate 15mg/kg/day for ≤14 days pre-surgery is well tolerated in adults awaiting cardiac surgery and is associated with upregulation of ferroptosis protection pathways and reductions in myocardial injury.",
+  "authors": [
+    "Roman M",
+    "Beasley N",
+    "Ladak S",
+    "Solomon C",
+    "Laio W",
+    "Lai FY",
+    "Joel-David L",
+    "Aujla H",
+    "Condorelli G",
+    "Woźniak MJ",
+    "Codd V",
+    "Webb T",
+    "Brookes C",
+    "Mulla H",
+    "McCann GP",
+    "Murphy GJ"
+  ],
+  "published_date": "2026-09-02",
+  "updated_date": "",
+  "journal": "medRxiv",
+  "category": "",
+  "landing_url": "https://www.medrxiv.org/content/10.64898/2026.08.30.26361746",
+  "pdf_url": "https://www.medrxiv.org/content/10.64898/2026.08.30.26361746.full.pdf",
+  "pdf_path": "",
+  "pdf_downloaded": false,
+  "query": "(\"3D genome\" OR \"three-dimensional genome\" OR \"genome organization\" OR \"genome architecture\" OR \"genome folding\" OR \"nuclear organization\" OR \"nuclear architecture\" OR \"chromatin organization\" OR \"chromatin architecture\" OR \"chromatin conformation\" OR \"chromatin topology\" OR \"chromatin structure\" OR \"chromatin loop\" OR \"chromatin interaction\" OR \"chromatin domain\" OR \"topologically associating domain\" OR \"A/B compartment\" OR \"chromosome conformation capture\" OR \"Hi-C\" OR HiChIP OR \"loop extrusion\" OR \"loop-extrusion\" OR CTCF OR cohesin OR \"cis-regulatory\" OR \"cis-regulatory element\" OR \"regulatory element\" OR \"regulatory genomics\" OR \"chromatin accessibility\" OR \"enhancer-promoter\" OR \"promoter-enhancer\") AND (\"deep learning\" OR \"machine learning\" OR \"neural network\" OR \"graph neural network\" OR \"convolutional neural network\" OR transformer OR \"language model\" OR \"foundation model\" OR \"diffusion model\" OR generative OR \"flow matching\" OR alphafold OR esmfold OR rosetta OR \"molecular dynamics\" OR simulation OR docking)",
+  "version": "",
+  "keywords": [],
+  "extra": {
+    "provider": "europepmc",
+    "epmc_id": "PPR1311030",
+    "raw_record": {
+      "id": "PPR1311030",
+      "source": "PPR",
+      "fullTextIdList": {
+        "fullTextId": [
+          "PPR1311030"
+        ]
+      },
+      "doi": "10.64898/2026.08.30.26361746",
+      "title": "Dose-finding, experimental medicine evaluation of sodium valproate for the prevention of post-cardiac surgery myocardial injury",
+      "authorString": "Roman M, Beasley N, Ladak S, Solomon C, Laio W, Lai FY, Joel-David L, Aujla H, Condorelli G, Woźniak MJ, Codd V, Webb T, Brookes C, Mulla H, McCann GP, Murphy GJ.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Roman M",
+            "firstName": "Marius",
+            "lastName": "Roman",
+            "initials": "M",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Cardiovascular Sciences and NIHR Cardiovascular Biomedical Research Centre, , , , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Beasley N",
+            "firstName": "Natasha",
+            "lastName": "Beasley",
+            "initials": "N",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Cardiovascular Sciences and NIHR Cardiovascular Biomedical Research Centre, , , , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Ladak S",
+            "firstName": "Shameem",
+            "lastName": "Ladak",
+            "initials": "S",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Cardiovascular Sciences and NIHR Cardiovascular Biomedical Research Centre, , , , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Solomon C",
+            "firstName": "Charles",
+            "lastName": "Solomon",
+            "initials": "C",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Cardiovascular Sciences and NIHR Cardiovascular Biomedical Research Centre, , , , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Laio W",
+            "firstName": "Weiqi",
+            "lastName": "Laio",
+            "initials": "W",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Cardiovascular Sciences and NIHR Cardiovascular Biomedical Research Centre, , , , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Lai FY",
+            "firstName": "Florence",
+            "lastName": "Lai",
+            "initials": "FY",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Cardiovascular Sciences and NIHR Cardiovascular Biomedical Research Centre, , , , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Joel-David L",
+            "firstName": "Lathishia",
+            "lastName": "Joel-David",
+            "initials": "L",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Cardiovascular Sciences and NIHR Cardiovascular Biomedical Research Centre, , , , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Aujla H",
+            "firstName": "Hardeep",
+            "lastName": "Aujla",
+            "initials": "H",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Cardiovascular Sciences and NIHR Cardiovascular Biomedical Research Centre, , , , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Condorelli G",
+            "firstName": "Gianluigi",
+            "lastName": "Condorelli",
+            "initials": "G",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0003-0481-6843"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Cardiovascular Medicine, Humanitas Research Hospital, Milan"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Woźniak MJ",
+            "firstName": "Marcin",
+            "lastName": "Woźniak",
+            "initials": "MJ",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Cardiovascular Sciences and NIHR Cardiovascular Biomedical Research Centre, , , , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Codd V",
+            "firstName": "Veryan",
+            "lastName": "Codd",
+            "initials": "V",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Cardiovascular Sciences and NIHR Cardiovascular Biomedical Research Centre, , , , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Webb T",
+            "firstName": "Tom",
+            "lastName": "Webb",
+            "initials": "T",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Cardiovascular Sciences and NIHR Cardiovascular Biomedical Research Centre, , , , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Brookes C",
+            "firstName": "Cassey",
+            "lastName": "Brookes",
+            "initials": "C",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Leicester Clinical Trials Unit, Maurice Shock Building, , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Mulla H",
+            "firstName": "Hussein",
+            "lastName": "Mulla",
+            "initials": "H",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": ", , , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "McCann GP",
+            "firstName": "Gerry",
+            "lastName": "McCann",
+            "initials": "GP",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Cardiovascular Sciences and NIHR Cardiovascular Biomedical Research Centre, , , , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Murphy GJ",
+            "firstName": "Gavin",
+            "lastName": "Murphy",
+            "initials": "GJ",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Cardiovascular Sciences and NIHR Cardiovascular Biomedical Research Centre, , , , ,"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "authorIdList": {
+        "authorId": [
+          {
+            "type": "ORCID",
+            "value": "0000-0003-0481-6843"
+          }
+        ]
+      },
+      "pubYear": "2026",
+      "abstractText": "<h4>Background</h4>  A dose-finding trial evaluated safety and adherence for pre-cardiac surgery administration of sodium valproate. Integrated multi-omics analyses of myocardium were used to characterise mechanisms underlying treatment effects. <h4>Methods</h4>  Adults undergoing cardiac surgery were randomised 1:1:1:1 with concealed allocation to no treatment (Controls), sodium valproate 15mg/kg/day for 1-2 weeks, 15mg/kg/day for 4-6 weeks, or 25mg/kg/day for 4-6 weeks pre-surgery. The primary analysis evaluated adherence and toxicity. Myocardial injury was defined by high sensitivity serum troponin at 24 hours post-surgery. Single-nucleus Assay for Transposase-Accessible Chromatin with sequencing (snATACseq) and single nuclei RNA sequencing (snRNAseq) of myocardial biopsies collected at surgery assessed treatment effects on chromatin accessibility and gene expression. Candidate mechanisms were validated in  in vitro .  <h4>Results</h4>  The analysis cohort included 42 participants enrolled between January 2020 and August 2024. Sodium valproate 15mg/kg/day for 1-2 weeks had the highest levels of complete treatment adherence (70%), with 20% experiencing moderate/severe drug related adverse effects. Non-compliance was increased with longer and higher dosing. An as-treated analyses demonstrated reductions in troponin release in participants receiving Valproate≤14 days where myocardial biopsies demonstrated activation of hormetic p53 and Akt-GSK-3β ferroptosis protection pathways versus controls. Silencing of these pathways attenuated the protective effect of valproate  in vitro . Treatment effects were not attributable to chromatin accessibility.  Treatment >14 days resulted in a heart failure phenotype, suppression of ferroptosis protection pathways, and increased myocardial injury. <h4>Conclusions</h4>  Valproate 15mg/kg/day for ≤14 days pre-surgery is well tolerated in adults awaiting cardiac surgery and is associated with upregulation of ferroptosis protection pathways and reductions in myocardial injury.",
+      "pubTypeList": {
+        "pubType": [
+          "Preprint"
+        ]
+      },
+      "bookOrReportDetails": {
+        "publisher": "medRxiv",
+        "yearOfPublication": 2026
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Free",
+            "availabilityCode": "F",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.64898/2026.08.30.26361746"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "html",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/article/PPR/PPR1311030"
+          }
+        ]
+      },
+      "isOpenAccess": "Y",
+      "inEPMC": "N",
+      "inPMC": "N",
+      "hasPDF": "N",
+      "hasBook": "N",
+      "hasSuppl": "Y",
+      "citedByCount": 0,
+      "hasData": "Y",
+      "hasReferences": "Y",
+      "hasTextMinedTerms": "Y",
+      "hasDbCrossReferences": "N",
+      "hasLabsLinks": "N",
+      "license": "cc by",
+      "hasEvaluations": "N",
+      "authMan": "N",
+      "epmcAuthMan": "Y",
+      "nihAuthMan": "N",
+      "manuscriptId": "EMS218145",
+      "hasTMAccessionNumbers": "N",
+      "dateOfCreation": "2026-09-03",
+      "firstIndexDate": "2026-09-03",
+      "fullTextReceivedDate": "2026-09-08",
+      "firstPublicationDate": "2026-09-02"
+    }
+  }
+}

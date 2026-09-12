@@ -1,0 +1,77 @@
+## Review setup
+- **Input scope** Abstract only
+- **Assessment boundary** Claims and evidence as presented in the abstract; no figures, methods, or supplementary materials were provided
+- **Shared manuscript claim summary** The authors report a 3D epigenomic atlas of four glial cell types (vRG, oRG, oligodendrocyte precursor cells, microglia) from mid-gestational human cortex, integrating gene expression, chromatin accessibility, DNA methylation, and 3D chromatin interactions. They identify cell-type-specific candidate cis-regulatory elements (cCREs), validate regulatory function in transgenic mice, prioritize schizophrenia risk variants within glia cCREs using machine learning, confirm a predicted vRG enhancer disruption by rs4449074 in vivo, and report enrichment of human accelerated regions (HARs) in oRG cCREs with activity differences from chimpanzee orthologues.
+- **Visible evidence base** Abstract text only; no figures, tables, methods, or supplementary data provided
+- **Missing materials affecting confidence** All primary data, methods details, statistical analyses, figure panels, and supplementary information are absent. The abstract references prior work (ref 3) but provides no quantitative results, effect sizes, or validation metrics.
+
+## Reviewer
+- **Overall assessment** The abstract describes a potentially valuable resource for understanding glial cell-type-specific gene regulation during human cortical development. The integration of multiple epigenomic modalities across four glial populations is ambitious and timely. However, the abstract alone provides insufficient evidence to evaluate the technical rigor, statistical robustness, or biological significance of the findings. Several claims are stated without quantitative support, and the functional validation and evolutionary analyses are described only at a summary level. The work is likely of interest to developmental neuroscientists and neurogeneticists, but the case for broad significance is not fully established from the supplied material.
+- **Who would be interested in the results, and why** Developmental neurobiologists studying cortical development and gliogenesis; human geneticists investigating non-coding variants in neuropsychiatric disorders; evolutionary genomicists interested in human-specific regulatory changes; and researchers using 3D epigenomic approaches to link chromatin architecture to cell-type-specific gene regulation.
+- **Major strengths** The study addresses an important gap by focusing on glial cell types, which are often understudied relative to neurons in cortical development. The multi-modal integration of gene expression, chromatin accessibility, DNA methylation, and 3D interactions is a comprehensive approach. The inclusion of functional validation in transgenic mice and in vivo confirmation of a risk variant effect adds credibility. The connection to schizophrenia risk variants and HARs provides translational and evolutionary relevance.
+- **Major Concerns**
+  - **Concern ID** R1-M1
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Evidence sufficiency
+  - **Claim pointer** The abstract claims identification of cell-type-specific cCREs and validation of their regulatory function using transgenic mouse embryos.
+  - **Evidence pointer** Abstract text; location not provided
+  - **Concern** No quantitative data are presented to support the identification or validation of cCREs. The number of cCREs identified, the criteria for cell-type specificity, the number of validated elements, and the assay outcomes are all absent.
+  - **Why it matters** Without these details, the reader cannot assess whether the cCRE calls are robust, whether the validation rate is convincing, or whether the functional evidence is consistent with the predicted regulatory roles.
+  - **Resolution test** Provide the number of cCREs per cell type, the specificity metrics, the number of elements tested in transgenic assays, and the proportion showing reproducible enhancer activity.
+  - **Concern ID** R1-M2
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Statistical rigor
+  - **Claim pointer** The abstract claims machine learning prioritization of 112 schizophrenia risk variants within glia cCREs and in vivo confirmation of rs4449074 enhancer disruption.
+  - **Evidence pointer** Abstract text; location not provided
+  - **Concern** The machine learning approach, feature set, training data, cross-validation strategy, and significance thresholds are not described. The in vivo confirmation of rs4449074 is stated without any quantitative readout or statistical comparison.
+  - **Why it matters** The prioritization of risk variants is a central translational claim. Without details on model performance and validation metrics, the reliability of the 112 prioritized variants and the specific claim about rs4449074 cannot be evaluated.
+  - **Resolution test** Describe the model architecture, training and test sets, performance metrics (e.g., AUROC, precision-recall), and provide quantitative data for the rs4449074 in vivo assay including effect size and statistical significance.
+  - **Concern ID** R1-M3
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Interpretability of evolutionary analysis
+  - **Claim pointer** The abstract claims oRG cCREs are enriched for HARs and that a subset of HARs show activity differences from chimpanzee orthologues interacting with neuronal development genes.
+  - **Evidence pointer** Abstract text; location not provided
+  - **Concern** The enrichment analysis is not described in terms of statistical method, background model, or significance. The activity differences between human and chimpanzee orthologues are stated without specifying the assay, the number of HARs tested, the magnitude of differences, or the identity of the interacting genes.
+  - **Why it matters** The evolutionary claims are among the most novel aspects of the study. Without statistical and experimental detail, the reader cannot determine whether the HAR enrichment is robust or whether the activity differences are functionally meaningful.
+  - **Resolution test** Provide enrichment statistics with appropriate background correction, describe the comparative assay (e.g., enhancer-reporter in vivo or in vitro), report the number of HARs with significant activity differences, and list the interacting genes.
+- **Minor Comments**
+  - **Concern ID** R1-m1
+  - **Severity** Minor
+  - **Axis** Clarity
+  - **Affected element** Abstract scope statement
+  - **Evidence pointer** Abstract text; location not provided
+  - **Issue** The abstract states "four main glial populations" but does not clarify whether these represent all glial types in the developing cortex or a selected subset.
+  - **Required correction** Specify the rationale for selecting these four populations and note any excluded glial types.
+  - **Concern ID** R1-m2
+  - **Severity** Minor
+  - **Axis** Reproducibility
+  - **Affected element** Data availability
+  - **Evidence pointer** Abstract text; location not provided
+  - **Issue** No mention of data deposition or availability for the epigenomic datasets.
+  - **Required correction** State where the raw and processed data will be deposited (e.g., GEO, ENCODE portal) to enable community access.
+  - **Concern ID** R1-m3
+  - **Severity** Minor
+  - **Axis** Contextual framing
+  - **Affected element** Prior work reference
+  - **Evidence pointer** Abstract text; reference 3
+  - **Issue** The abstract references a prior study but does not clearly delineate what is new in this work versus what extends the previous findings.
+  - **Required correction** Explicitly state the novel contributions of this study relative to the prior publication.
+- **Technical failings that need to be addressed before the case is established** R1-M1, R1-M2, R1-M3. The abstract lacks the quantitative and methodological detail required to assess the validity of the central claims regarding cCRE identification, variant prioritization, and HAR activity differences.
+- **Assessment against Nature-style criteria** 
+  - Originality: The focus on glial 3D epigenomics in developing human cortex is a relatively underexplored area, and the integration of HARs with glial cCREs is novel. However, the abstract does not provide enough detail to judge the degree of conceptual advance over prior work.
+  - Scientific importance: The potential link between glial regulatory elements and schizophrenia risk variants is clinically relevant, and the evolutionary analysis could inform human-specific brain development. The importance is plausible but not fully demonstrated from the abstract alone.
+  - Interdisciplinary readership: The topic bridges developmental neuroscience, genomics, and psychiatric genetics, which should appeal to a broad readership. The abstract is written accessibly, though some terms (e.g., cCREs, HARs) assume familiarity.
+  - Technical soundness: Cannot be assessed from the abstract. The absence of methods details and quantitative results precludes evaluation of the technical quality.
+  - Readability for nonspecialists: The abstract is concise and generally clear, but the density of specialized terms and the lack of context for the evolutionary and variant analyses may limit accessibility for nonspecialists.
+- **Recommendation posture** Currently not established from the provided evidence. The abstract describes a potentially significant study, but the absence of quantitative results, methods details, and validation metrics means the core claims cannot be evaluated. A full manuscript with figures and methods would be required to assess whether the technical concerns are resolved.
+
+## Risk / unsupported claims
+- The claim of identifying cell-type-specific cCREs is unsupported without quantitative criteria or validation data.
+- The claim of machine learning prioritization of 112 schizophrenia risk variants is unsupported without model details and performance metrics.
+- The claim of in vivo confirmation of rs4449074 enhancer disruption is unsupported without assay details and statistical results.
+- The claim of HAR enrichment in oRG cCREs is unsupported without enrichment statistics and background model description.
+- The claim of activity differences between human and chimpanzee HAR orthologues is unsupported without assay description and quantitative comparisons.
+- The overall statement that findings "advance the understanding of human-specific gene regulation" is a reasonable interpretation but is not directly evidenced in the abstract.

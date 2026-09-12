@@ -1,0 +1,229 @@
+{
+  "identity": {
+    "pmid": "42685970",
+    "doi": "10.1016/j.nbt.2026.08.008",
+    "title": "LLM-guided prediction of riboswitch-ligand binding affinity under data-limited conditions."
+  },
+  "content": {
+    "abstract": "Riboswitches are RNA regulatory elements that sense small molecules and regulate gene expression through ligand-induced conformational changes in an aptamer domain. They enable synthetic biology applications such as biosensing and gene circuit design. Accurate prediction of riboswitch-ligand binding affinity, quantified by the dissociation constant (K(d)), is essential for rational riboswitch engineering. We present a neuro-symbolic framework in which LLM-derived embeddings encode riboswitch sequences, secondary structures, and ligand representations into a unified representation that captures riboswitch-ligand interaction context, while domain-informed rules encode explicit biochemical priors. Despite limited labeled data, this framework achieves strong predictive performance and improved data efficiency. It predicts min-max log-scaled pK(d) values and supports binary classification of binding strength, particularly by mitigating systematic overestimation of affinity. More broadly, the results suggest that LLM-based neuro-symbolic representations provide an effective route for modeling riboswitch-ligand interactions under data-limited conditions.",
+    "keywords": [
+      "binding affinity prediction",
+      "large language models",
+      "neuro-symbolic modeling",
+      "retrospective active learning",
+      "riboswitches"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "An, Sunggi",
+        "Mun, Sofia",
+        "Jung, Yousung",
+        "Kim, Hyun Uk"
+      ],
+      "short_names": [
+        "An S",
+        "Mun S",
+        "Jung Y",
+        "Kim HU"
+      ],
+      "auids": [],
+      "affiliations": [
+        "Department of Chemical and Biomolecular Engineering, Korea Advanced Institute of Science and Technology (KAIST), Daejeon 34141, Republic of Korea.",
+        "Department of Chemical and Biomolecular Engineering, Korea Advanced Institute of Science and Technology (KAIST), Daejeon 34141, Republic of Korea.",
+        "School of Chemical and Biological Engineering, Seoul National University, Seoul 08826, Republic of Korea; Institute of Engineering Research, Seoul National University, Seoul 08826, Republic of Korea. Electronic address: yousung.jung@snu.ac.kr.",
+        "Department of Chemical and Biomolecular Engineering, Korea Advanced Institute of Science and Technology (KAIST), Daejeon 34141, Republic of Korea; Graduate School of Engineering Biology and BioProcess Engineering Research Center, KAIST, Daejeon 34141, Republic of Korea. Electronic address: ehukim@kaist.ac.kr."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "An, Sunggi",
+        "short_name": "An S",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Chemical and Biomolecular Engineering, Korea Advanced Institute of Science and Technology (KAIST), Daejeon 34141, Republic of Korea."
+        ]
+      },
+      {
+        "full_name": "Mun, Sofia",
+        "short_name": "Mun S",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Chemical and Biomolecular Engineering, Korea Advanced Institute of Science and Technology (KAIST), Daejeon 34141, Republic of Korea."
+        ]
+      },
+      {
+        "full_name": "Jung, Yousung",
+        "short_name": "Jung Y",
+        "identifiers": [],
+        "affiliations": [
+          "School of Chemical and Biological Engineering, Seoul National University, Seoul 08826, Republic of Korea; Institute of Engineering Research, Seoul National University, Seoul 08826, Republic of Korea. Electronic address: yousung.jung@snu.ac.kr."
+        ]
+      },
+      {
+        "full_name": "Kim, Hyun Uk",
+        "short_name": "Kim HU",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Chemical and Biomolecular Engineering, Korea Advanced Institute of Science and Technology (KAIST), Daejeon 34141, Republic of Korea; Graduate School of Engineering Biology and BioProcess Engineering Research Center, KAIST, Daejeon 34141, Republic of Korea. Electronic address: ehukim@kaist.ac.kr."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "New biotechnology"
+    ],
+    "journal_abbrev": [
+      "N Biotechnol"
+    ],
+    "pub_date": "2026 Sep 2",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/03 01:19",
+    "fetched_at": "2026-09-12 11:08:09"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42685970",
+      "42475469",
+      "21678902",
+      "35348734",
+      "41057267",
+      "37459466",
+      "25470002",
+      "37855663",
+      "22336759",
+      "17175531",
+      "26361734",
+      "19814811",
+      "32168940",
+      "38336293",
+      "31239056",
+      "21615107",
+      "25676052",
+      "33259551",
+      "25325398",
+      "39289353",
+      "26621913",
+      "23275562",
+      "35427633",
+      "21831681",
+      "28375743",
+      "39902969",
+      "34609872",
+      "19925806",
+      "42024942",
+      "17156726",
+      "33772594",
+      "38903087",
+      "25826571",
+      "25092436",
+      "16650860",
+      "23704854",
+      "19515936",
+      "16201765",
+      "32220073",
+      "24782524",
+      "33818089",
+      "20458165",
+      "20961447",
+      "30940810",
+      "35595164",
+      "30818079",
+      "41489620",
+      "21592962",
+      "37425860",
+      "33170270",
+      "39408823",
+      "32209653",
+      "39409011",
+      "37522343",
+      "29019403",
+      "25928324",
+      "31315914",
+      "40593631",
+      "24921630",
+      "37640152",
+      "25726466",
+      "36566430",
+      "26370077",
+      "28345904",
+      "25726464",
+      "41973925",
+      "22543867",
+      "32771533",
+      "31574664",
+      "28541183",
+      "35993747",
+      "27841871",
+      "21957061",
+      "36044800",
+      "37314020",
+      "23343213",
+      "22219369",
+      "17960911",
+      "40966503",
+      "24051105",
+      "32882151",
+      "36227564",
+      "29663603",
+      "31860665",
+      "34013733",
+      "21532599",
+      "40143108",
+      "40310613",
+      "36688639",
+      "26106162",
+      "22577823",
+      "30517682",
+      "21653559",
+      "22139931",
+      "30957848",
+      "27060146",
+      "33545607",
+      "37094176",
+      "19625387",
+      "35666649"
+    ],
+    "review": [
+      "42685970",
+      "37459466",
+      "26361734",
+      "38336293",
+      "21615107",
+      "25676052",
+      "35427633",
+      "28375743",
+      "17156726",
+      "20458165",
+      "35595164",
+      "39408823",
+      "39409011",
+      "21957061"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://linkinghub.elsevier.com/retrieve/pii/S1871-6784(26)00105-6",
+        "provider": "Elsevier Science",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

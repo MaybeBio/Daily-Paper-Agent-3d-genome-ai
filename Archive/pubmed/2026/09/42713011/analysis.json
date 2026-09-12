@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42713011",
+  "title": "LAMBDA: a prophage detection benchmark for genomic language models.",
+  "authors": "Lindsey, LeAnn M; Pershing, Nicole L; Dufault-Thompson, Keith; Gwak, Ho-Jin; Habib, Anisa; Schindler, Aaron; Rakheja, Arjun; Round, June L; Stephens, W Zac; Blaschke, Anne J; Sundar, Hari; Jiang, Xiaofang",
+  "journal": "NAR genomics and bioinformatics",
+  "published_date": "2026-09-09",
+  "window": {
+    "start": "2026-08-29",
+    "end": "2026-09-11"
+  },
+  "score": 2,
+  "one_liner_zh": "该文提出一个用于评估基因组语言模型的原噬菌体检测基准，不涉及三维基因组或染色质组织，且无AI/分子模拟方法贡献，与本课题无关。",
+  "abstract": "Transformer-based genomic sequence models represent an emerging frontier in computational biology. Yet, their embeddings have not yet shown the same level of predictive power as natural and protein language models, highlighting a gap between current implementations and theoretical promise. Existing benchmarks for DNA language models primarily focus on classifying regulatory elements in eukaryotic genomes, leaving open the fundamental question of whether these models learn sequence-level features across whole genomes. We introduce LAMBDA, a benchmark designed to rigorously evaluate genome language model embeddings through phage-bacteria sequence discrimination across four categories of increasing complexity: probing tasks, fine-tuning assessments, diagnostic tests, and genome-wide prophage detection. Our comprehensive analysis of current genomic language models provides insight into the importance of training data selection relative to model size, the need for domain-specific training, and the capabilities and limitations of genomic language models for detecting prophage sequences. This benchmark represents a challenging genomic annotation task in the bacterial domain and addresses a key computational problem with direct relevance to microbiology and medicine.",
+  "abstract_zh": "基于Transformer的基因组序列模型代表了计算生物学的一个新兴前沿。然而，它们的嵌入尚未展现出与自然语言和蛋白质语言模型同等的预测能力，这凸显了当前实现与理论潜力之间的差距。现有的DNA语言模型基准主要侧重于真核生物基因组中调控元件的分类，而一个基本问题仍未得到解答：这些模型是否能在全基因组范围内学习序列级特征。我们提出了LAMBDA，这是一个基准测试，旨在通过噬菌体-细菌序列判别来严格评估基因组语言模型的嵌入，该判别涵盖四个复杂度递增的类别：探测任务 (probing tasks)、微调评估 (fine-tuning assessments)、诊断测试 (diagnostic tests) 和全基因组前噬菌体检测 (genome-wide prophage detection)。我们对当前基因组语言模型的全面分析揭示了训练数据选择相对于模型大小的重要性、领域特异性训练的必要性，以及基因组语言模型在检测前噬菌体序列方面的能力与局限性。该基准代表了细菌域中一项具有挑战性的基因组注释任务，并解决了一个与微生物学和医学直接相关的关键计算问题。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42713011/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42713011/",
+  "paper_page_path": "papers/pubmed/42713011/index.html"
+}

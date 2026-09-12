@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42694465",
+  "title": "Geometric mechanogenomics: engineering boundary conditions for deterministic cell fate control.",
+  "authors": "Taghizadeh, Mohsen; Taghizadeh, Ali; Kim, Hye Sung",
+  "journal": "Frontiers in cell and developmental biology",
+  "published_date": "2026-09-04",
+  "window": {
+    "start": "2026-08-29",
+    "end": "2026-09-11"
+  },
+  "score": 6,
+  "one_liner_zh": "该文提出几何力学基因组学框架，探讨几何边界条件通过力学传导调控染色质组织和基因组调控，虽涉及染色质组织但为概念性综述，缺乏具体AI或分子模拟建模方法。",
+  "abstract": "In tissue development and regeneration, cellular behavior has traditionally been interpreted through biochemical signaling frameworks. However, cells exist within physically defined environments, where geometric boundary conditions - including confinement, curvature, anisotropy, and multicellular architecture - define the mechanical state space in which mechanical forces are generated, transmitted, and interpreted. Here, we introduce geometric mechanogenomics, a conceptual framework that positions geometry as an upstream spatial regulator linking tissue-scale boundary conditions to nuclear mechanics, chromatin organization, and genome regulation. We propose a boundary-to-nucleus axis through which geometric information is decoded by adhesion-mediated mechanotransduction, cytoskeletal force transmission, and nuclear mechanoregulation to regulate chromatin accessibility, epigenetic remodeling, and transcriptional programs. Rather than introducing new mechanotransduction pathways, this framework emphasizes that geometry spatially organizes conserved mechanotransductive machinery to generate context-dependent mechanogenomic outcomes. We further discuss how engineered geometries reduce morphogenetic stochasticity, coordinate multicellular organization, and establish mechanical memory that influences long-term cell fate. Finally, we highlight current challenges in establishing predictive geometry-to-genome relationships and discuss emerging opportunities enabled by spatial omics, artificial intelligence-assisted inverse design, and dynamic biomaterials for programmable mechanobiology, regenerative medicine, developmental biology, and disease modeling.",
+  "abstract_zh": "在组织发育与再生过程中，细胞行为传统上通过生化信号框架进行解读。然而，细胞存在于物理定义的环境中，其中几何边界条件——包括限制（confinement）、曲率（curvature）、各向异性（anisotropy）以及多细胞结构（multicellular architecture）——定义了机械力产生、传递和解读的力学状态空间。在此，我们提出几何力学生物组学（geometric mechanogenomics），这是一个概念框架，将几何定位为上游空间调控因子，连接组织尺度的边界条件与细胞核力学、染色质组织及基因组调控。我们提出一个从边界到细胞核的轴（boundary-to-nucleus axis），通过该轴，几何信息由黏附介导的力转导（adhesion-mediated mechanotransduction）、细胞骨架力传递（cytoskeletal force transmission）和细胞核力学调控（nuclear mechanoregulation）进行解码，以调控染色质可及性、表观遗传重塑及转录程序。该框架并非引入新的力转导通路，而是强调几何在空间上组织保守的力转导机制，以产生依赖于上下文的力学生物组学结果。我们进一步讨论了工程化几何如何减少形态发生随机性、协调多细胞组织，并建立影响长期细胞命运的机械记忆。最后，我们强调了在建立可预测的几何-基因组关系方面当前面临的挑战，并探讨了由空间组学（spatial omics）、人工智能辅助逆向设计（artificial intelligence-assisted inverse design）以及动态生物材料（dynamic biomaterials）所带来的新兴机遇，这些技术可用于可编程力学生物学（programmable mechanobiology）、再生医学（regenerative medicine）、发育生物学（developmental biology）及疾病建模（disease modeling）。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42694465/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42694465/",
+  "paper_page_path": "papers/pubmed/42694465/index.html"
+}

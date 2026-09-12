@@ -1,0 +1,249 @@
+{
+  "identity": {
+    "pmid": "42711322",
+    "doi": "10.1038/s41467-026-76520-5",
+    "title": "In vitro reconstitution of chromatin replication recapitulates symmetric histone recycling."
+  },
+  "content": {
+    "abstract": "Symmetric histone recycling is vital for maintaining epigenetic inheritance upon eukaryotic DNA replication. Recent genome-wide studies have uncovered key determinants of this process, but how these factors collectively support parental histone transfer remains incompletely understood. Here, we successfully reconstitute histone recycling with 24 purified proteins and analyze the products digested by Micrococcal nuclease with Repli-pore-seq, the newly developed pipeline combining nanopore sequencing and deep-learning-based classification. As a result, we identify histones symmetrically recycled as tetrasomes or hexasomes on nucleosome-favorable sequences. We also observe the discordance of the recycled position between lagging and leading strands on the GC-rich DNA sequences. Moreover, removal of Pol delta, Pol32, Dpb3/4, Ctf4, Csm3/Tof1, or Mrc1 disrupts the balance of histone recycling between the two daughter strands, whereas removal of Ctf4, Csm3/Tof1, or Mrc1 additionally alters the positions at which histones were recycled. Furthermore, addition of the lagging-strand maturation factors Fen1 and Cdc9 enhances histone recycling to the lagging strand. These findings provide critical insights into the molecular players and mechanisms underlying symmetric histone recycling.",
+    "keywords": [],
+    "mesh_terms": [
+      "*Histones/metabolism/genetics",
+      "*DNA Replication",
+      "Saccharomyces cerevisiae Proteins/metabolism/genetics",
+      "*Chromatin/metabolism/genetics",
+      "*Saccharomyces cerevisiae/metabolism/genetics",
+      "Nucleosomes/metabolism"
+    ],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Nagae, Fritz",
+        "Endo, Shizuko",
+        "Murayama, Yasuto",
+        "Terakawa, Tsuyoshi"
+      ],
+      "short_names": [
+        "Nagae F",
+        "Endo S",
+        "Murayama Y",
+        "Terakawa T"
+      ],
+      "auids": [
+        "ORCID: 0009-0009-4752-4534",
+        "ORCID: 0000-0002-6866-0748",
+        "ORCID: 0000-0002-0151-1123"
+      ],
+      "affiliations": [
+        "Department of Biophysics, Graduate School of Science, Kyoto University, Kyoto, Japan.",
+        "Department of Bioscience, Technical University of Munich, Garching, Germany.",
+        "Department of Chromosome Science, National Institute of Genetics, Shizuoka, Japan.",
+        "Department of Chromosome Science, National Institute of Genetics, Shizuoka, Japan.",
+        "Department of Genetics, Graduate University for Advanced Studies (SOKENDAI), Shizuoka, Japan.",
+        "Department of Biophysics, Graduate School of Science, Kyoto University, Kyoto, Japan. terakawa@biophys.kyoto-u.ac.jp."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Nagae, Fritz",
+        "short_name": "Nagae F",
+        "identifiers": [
+          "0009-0009-4752-4534"
+        ],
+        "affiliations": [
+          "Department of Biophysics, Graduate School of Science, Kyoto University, Kyoto, Japan.",
+          "Department of Bioscience, Technical University of Munich, Garching, Germany."
+        ]
+      },
+      {
+        "full_name": "Endo, Shizuko",
+        "short_name": "Endo S",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Chromosome Science, National Institute of Genetics, Shizuoka, Japan."
+        ]
+      },
+      {
+        "full_name": "Murayama, Yasuto",
+        "short_name": "Murayama Y",
+        "identifiers": [
+          "0000-0002-6866-0748"
+        ],
+        "affiliations": [
+          "Department of Chromosome Science, National Institute of Genetics, Shizuoka, Japan.",
+          "Department of Genetics, Graduate University for Advanced Studies (SOKENDAI), Shizuoka, Japan."
+        ]
+      },
+      {
+        "full_name": "Terakawa, Tsuyoshi",
+        "short_name": "Terakawa T",
+        "identifiers": [
+          "0000-0002-0151-1123"
+        ],
+        "affiliations": [
+          "Department of Biophysics, Graduate School of Science, Kyoto University, Kyoto, Japan. terakawa@biophys.kyoto-u.ac.jp."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Nature communications"
+    ],
+    "journal_abbrev": [
+      "Nat Commun"
+    ],
+    "pub_date": "2026 Aug 11",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/09 07:07",
+    "fetched_at": "2026-09-12 11:08:09"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42711322",
+      "38713623",
+      "36914923",
+      "42581759",
+      "38554108",
+      "39488545",
+      "30244834",
+      "39121223",
+      "38448592",
+      "38838138",
+      "41271725",
+      "41594555",
+      "37850662",
+      "39094570",
+      "27989437",
+      "25271716",
+      "39094566",
+      "39094569",
+      "42680176",
+      "35115379",
+      "39824166",
+      "39746969",
+      "21220302",
+      "36942484",
+      "40257562",
+      "37166686",
+      "39970210",
+      "29292063",
+      "32948589",
+      "20886052",
+      "27989438",
+      "38479839",
+      "30115745",
+      "39103894",
+      "28025045",
+      "27903656",
+      "24573675",
+      "23833181",
+      "18662540",
+      "31511420",
+      "32379761",
+      "40339328",
+      "17347438",
+      "37493599",
+      "22737086",
+      "32923642",
+      "40380884",
+      "36750094",
+      "40861011",
+      "36724233",
+      "38081658",
+      "29091772",
+      "39241742",
+      "30206225",
+      "15964809",
+      "29357065",
+      "21625001",
+      "23925126",
+      "30104407",
+      "30146316",
+      "25463393",
+      "27759916",
+      "36711718",
+      "25338502",
+      "40958614",
+      "26116819",
+      "16219777",
+      "26297725",
+      "25778913",
+      "36862554",
+      "17679090",
+      "17996059",
+      "26804921",
+      "19410542",
+      "41303375",
+      "28923950",
+      "25365782",
+      "9372928",
+      "39753536",
+      "24727477",
+      "20824081",
+      "16568950",
+      "41083907",
+      "39631395",
+      "31365865",
+      "14585955",
+      "28108585",
+      "28315523",
+      "31830524",
+      "16292314",
+      "21508315",
+      "32970141",
+      "30217558",
+      "11743005",
+      "23499444",
+      "22102830",
+      "17574019",
+      "27989442",
+      "18799740",
+      "28067915"
+    ],
+    "review": [
+      "42711322",
+      "41594555",
+      "25271716",
+      "42680176",
+      "39824166",
+      "29292063",
+      "27903656",
+      "40339328",
+      "40380884",
+      "40861011",
+      "29357065",
+      "25365782"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://doi.org/10.1038/s41467-026-76520-5",
+        "provider": "Nature Publishing Group",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://assays.cancer.gov/CPTAC-700",
+        "provider": "NCI CPTAC Assay Portal",
+        "category": "Miscellaneous",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

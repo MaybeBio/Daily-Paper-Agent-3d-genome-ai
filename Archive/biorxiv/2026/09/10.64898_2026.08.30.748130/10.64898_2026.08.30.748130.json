@@ -1,0 +1,506 @@
+{
+  "source": "biorxiv",
+  "source_id": "10.64898/2026.08.30.748130",
+  "title": "HiC-LEGO: Biologically Guided High-Resolution 3D Genome Reconstruction Preserves Chromatin Organization at Kilobase Resolution",
+  "doi": "10.64898/2026.08.30.748130",
+  "abstract": "Three-dimensional (3D) chromosome reconstruction from Hi-C contact maps remains challenging because genome organization is hierarchical and fine-resolution models must reconcile local structure with chromosome-scale constraints. Here we present HiC-LEGO, a domain-aware hierarchical framework integrating ensemble chromatin domains with graph-based structural learning and progressive chromosome assembly. By combining ensemble domain selection with hierarchical reconstruction, HiC-LEGO reduces dependence on individual domain definitions while maintaining local organization during chromosome-scale assembly. Across five human cell lines at 5-kb resolution, HiC-LEGO achieves higher reconstruction concordance than evaluated state-of-the-art methods while better preserving domain organization. At 1-kb resolution, HiC-LEGO reconstructs complete GM12878 chromosome 8 and recovers close spatial proximity between an epigenomically supported distal MYC enhancer and its promoter. Reconstructions from 5-kb Micro-C data show that 249 experimentally defined RCMC microcompartment interactions at the Ppm1g locus occupy compact 3D configurations. In the breast cancer dataset, HiC-LEGO reconstructs structures that maintain stable TAD organization across healthy breast, primary tumors, and liver metastases, while revealing greater inter-patient structural heterogeneity in malignant pleural effusion samples. Pore-C validation shows that experimentally observed multi-way contacts spanning 1–5 Mb are enriched in compact reconstructed configurations across all 23 chromosomes. Thus, HiC-LEGO preserves regulatory interactions, disease-associated chromatin organization and higher-order spatial relationships beyond pairwise contact-map concordance.",
+  "authors": [
+    "Abhishek Pandeya",
+    "Md Fahimul Kabir Chowdhury",
+    "Oluwatosin Oluwadare"
+  ],
+  "published_date": "2026-09-03",
+  "updated_date": "2026-09-04T05:35:24Z",
+  "journal": "bioRxiv",
+  "category": "Bioinformatics",
+  "landing_url": "https://www.biorxiv.org/content/10.64898/2026.08.30.748130",
+  "pdf_url": "https://www.biorxiv.org/content/10.64898/2026.08.30.748130.full.pdf",
+  "pdf_path": "",
+  "pdf_downloaded": false,
+  "query": "(\"3D genome\" OR \"three-dimensional genome\" OR \"genome organization\" OR \"genome architecture\" OR \"genome folding\" OR \"nuclear organization\" OR \"nuclear architecture\" OR \"chromatin organization\" OR \"chromatin architecture\" OR \"chromatin conformation\" OR \"chromatin topology\" OR \"chromatin structure\" OR \"chromatin loop\" OR \"chromatin interaction\" OR \"chromatin domain\" OR \"topologically associating domain\" OR \"A/B compartment\" OR \"chromosome conformation capture\" OR \"Hi-C\" OR HiChIP OR \"loop extrusion\" OR \"loop-extrusion\" OR CTCF OR cohesin OR \"cis-regulatory\" OR \"cis-regulatory element\" OR \"regulatory element\" OR \"regulatory genomics\" OR \"chromatin accessibility\" OR \"enhancer-promoter\" OR \"promoter-enhancer\") AND (\"deep learning\" OR \"machine learning\" OR \"neural network\" OR \"graph neural network\" OR \"convolutional neural network\" OR transformer OR \"language model\" OR \"foundation model\" OR \"diffusion model\" OR generative OR \"flow matching\" OR esmfold OR rosetta OR alphafold OR \"molecular dynamics\" OR simulation OR docking)",
+  "version": "",
+  "keywords": [
+    "Bioinformatics"
+  ],
+  "extra": {
+    "publisher": "openRxiv",
+    "prefix": "10.64898",
+    "type": "posted-content",
+    "group_title": "Bioinformatics",
+    "raw_record": {
+      "institution": [
+        {
+          "name": "bioRxiv"
+        }
+      ],
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            8
+          ]
+        ],
+        "date-time": "2026-09-08T05:10:53Z",
+        "timestamp": 1788844253685,
+        "version": "build-2803163510"
+      },
+      "posted": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            3
+          ]
+        ]
+      },
+      "group-title": "Bioinformatics",
+      "reference-count": 47,
+      "publisher": "openRxiv",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                9,
+                3
+              ]
+            ],
+            "date-time": "2026-09-03T00:00:00Z",
+            "timestamp": 1788393600000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "funder": [
+        {
+          "DOI": "10.13039/100000057",
+          "name": "National Institutes of General Medical Sciences",
+          "doi-asserted-by": "crossref",
+          "award": [
+            "R35GM150402"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "R35GM150402"
+              ]
+            }
+          ],
+          "id": [
+            {
+              "id": "10.13039/100000057",
+              "id-type": "DOI",
+              "asserted-by": "crossref"
+            }
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "accepted": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            3
+          ]
+        ]
+      },
+      "abstract": "<jats:title>Abstract</jats:title>\n                <jats:p>Three-dimensional (3D) chromosome reconstruction from Hi-C contact maps remains challenging because genome organization is hierarchical and fine-resolution models must reconcile local structure with chromosome-scale constraints. Here we present HiC-LEGO, a domain-aware hierarchical framework integrating ensemble chromatin domains with graph-based structural learning and progressive chromosome assembly. By combining ensemble domain selection with hierarchical reconstruction, HiC-LEGO reduces dependence on individual domain definitions while maintaining local organization during chromosome-scale assembly. Across five human cell lines at 5-kb resolution, HiC-LEGO achieves higher reconstruction concordance than evaluated state-of-the-art methods while better preserving domain organization. At 1-kb resolution, HiC-LEGO reconstructs complete GM12878 chromosome 8 and recovers close spatial proximity between an epigenomically supported distal MYC enhancer and its promoter. Reconstructions from 5-kb Micro-C data show that 249 experimentally defined RCMC microcompartment interactions at the Ppm1g locus occupy compact 3D configurations. In the breast cancer dataset, HiC-LEGO reconstructs structures that maintain stable TAD organization across healthy breast, primary tumors, and liver metastases, while revealing greater inter-patient structural heterogeneity in malignant pleural effusion samples. Pore-C validation shows that experimentally observed multi-way contacts spanning 1–5 Mb are enriched in compact reconstructed configurations across all 23 chromosomes. Thus, HiC-LEGO preserves regulatory interactions, disease-associated chromatin organization and higher-order spatial relationships beyond pairwise contact-map concordance.</jats:p>",
+      "DOI": "10.64898/2026.08.30.748130",
+      "type": "posted-content",
+      "created": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            4
+          ]
+        ],
+        "date-time": "2026-09-04T05:35:24Z",
+        "timestamp": 1788500124000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": [
+        "HiC-LEGO: Biologically Guided High-Resolution 3D Genome Reconstruction Preserves Chromatin Organization at Kilobase Resolution"
+      ],
+      "prefix": "10.64898",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0008-7759-9361",
+          "authenticated-orcid": false,
+          "given": "Abhishek",
+          "family": "Pandeya",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Computer Science and Engineering, University of North Texas, 3940 N Elm St, Denton, 76207, TX, USA"
+            },
+            {
+              "name": "Center for Computational Life Sciences, University of North Texas, 3940 N Elm St, Denton, 76207, TX, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0003-8034-5235",
+          "authenticated-orcid": false,
+          "given": "Md Fahimul Kabir",
+          "family": "Chowdhury",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Computer Science and Engineering, University of North Texas, 3940 N Elm St, Denton, 76207, TX, USA"
+            },
+            {
+              "name": "Center for Computational Life Sciences, University of North Texas, 3940 N Elm St, Denton, 76207, TX, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5264-2342",
+          "authenticated-orcid": false,
+          "given": "Oluwatosin",
+          "family": "Oluwadare",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Computer Science and Engineering, University of North Texas, 3940 N Elm St, Denton, 76207, TX, USA"
+            },
+            {
+              "name": "Center for Computational Life Sciences, University of North Texas, 3940 N Elm St, Denton, 76207, TX, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "54368",
+      "reference": [
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.cell.2014.11.021"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.2",
+          "unstructured": "JR, D., S, S., F, Y., A, K., Y, L., Y, S., M, H., JS, L., B, R.: Topological domains in mammalian genomes identified by analysis of chromatin interactions. Nature (2012)"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.3",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1126/science.1181369"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.4",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Li, Z. , Portillo-Ledesma, S. , Schlick, T. : Techniques for and challenges in reconstructing 3d genome structures from 2d chromosome conformation capture data. Current Opinion in Cell Biology (2023)",
+          "DOI": "10.1016/j.ceb.2023.102209"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.5",
+          "doi-asserted-by": "crossref",
+          "unstructured": "MacKay, K. , Kusalik, A. : Computational methods for predicting 3d genomic organization from high-resolution chromosome conformation capture data. Briefings in Functional Genomics (2020)",
+          "DOI": "10.1093/bfgp/elaa004"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.6",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Oluwadare, O. , Highsmith, M. , Cheng, J. : An overview of methods for reconstructing 3-d chromosome and genome structures from hi-c data. Biological Procedures Online (2019)",
+          "DOI": "10.1186/s12575-019-0094-0"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.7",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Trieu, T. , Cheng, J. : 3d genome structure modeling by lorentzian objective function. Nucleic Acids Research (2017)",
+          "DOI": "10.1145/3107411.3107455"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.8",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Oluwadare, O. , Zhang, Y. , Cheng, J. : A maximum likelihood algorithm for reconstructing 3d structures of human chromosomes from chromosomal contact data. BMC Genomics (2018)",
+          "DOI": "10.1186/s12864-018-4546-8"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.9",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1089/cmb.2013.0076"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.10",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1186/s12859-020-03612-4"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.11",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Trieu, T. , Cheng, J. : Mogen: a tool for reconstructing 3d models of genomes from chromosomal conformation capturing data. Bioinformatics (2016)",
+          "DOI": "10.1093/bioinformatics/btv754"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.12",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Nowotny, J. , Ahmed, S. , Xu, L. , Oluwadare, O. , Chen, H. , Hensley, N. , Trieu, T. , Cao, R. , Cheng, J. : Iterative reconstruction of three-dimensional models of human chromosomes from chromosomal contact data. BMC Bioinformatics (2015)",
+          "DOI": "10.1186/s12859-015-0772-0"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.13",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Varoquaux, N. , Ay, F. , Noble, W.S. , Vert, J.-P. : A statistical approach for inferring the 3d structure of the genome. Bioinformatics (2014)",
+          "DOI": "10.1093/bioinformatics/btu268"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.14",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1371/journal.pcbi.1002893"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.15",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1093/bfgp/elaa004"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.16",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/s41467-019-10005-6"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.17",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1093/nar/gkad1121"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.18",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Trieu, T. , Oluwadare, O. , Cheng, J. : Hierarchical reconstruction of high-resolution 3d models of large chromosomes. Scientific Reports (2019)",
+          "DOI": "10.1101/415810"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.19",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Wang, H. , Yang, J. , Zhang, Y. , Qian, J. , Wang, J. : Reconstruct high-resolution 3d genome structures for diverse cell-types using flamingo. Nature Communications (2022)",
+          "DOI": "10.1038/s41467-022-30270-2"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.20",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Dali, R. , Blanchette, M. : A critical assessment of topologically associating domain prediction tools. Nucleic Acids Research (2017)",
+          "DOI": "10.1093/nar/gkx145"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.21",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Zufferey, M. , Tavernari, D. , Oricchio, E. , Ciriello, G. : Comparison of computational methods for the identification of topologically associating domains. Genome Biology (2018)",
+          "DOI": "10.1186/s13059-018-1596-9"
+        },
+        {
+          "issue": "1",
+          "key": "2026090721300945000_2026.08.30.748130v1.22",
+          "doi-asserted-by": "crossref",
+          "first-page": "4376",
+          "DOI": "10.1038/s41467-024-48593-7",
+          "article-title": "A comprehensive benchmarking with interpretation and operational guidance for the hierarchy of topologically associating domains",
+          "volume": "15",
+          "year": "2024",
+          "journal-title": "Nature Communications"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.23",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Zufferey, M. , Tavernari, D. , Oricchio, E. , Ciriello, G. : Comparison of computational methods for the identification of topologically associating domains. Genome Biology (2018)",
+          "DOI": "10.1186/s13059-018-1596-9"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.24",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1002/jcc.20084"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.25",
+          "unstructured": "Schrödinger, LLC: The PyMOL Molecular Graphics System. Version 3.1.6.1. Schrödinger, LLC"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.26",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1371/journal.pcbi.1012067"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.27",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Rao, S.S.P. , Huntley, M.H. , Durand, N.C. , Stamenova, E.K. , Bochkov, I.D. , Robinson, J.T. , Sanborn, A.L. , Machol, I. , Omer, A.D. , Lander, E.S. , Aiden, E.L. : A 3d map of the human genome at kilobase resolution reveals principles of chromatin looping. Cell 159 (2014)",
+          "DOI": "10.1016/j.cell.2014.11.021"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.28",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1073/pnas.1518552112"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.29",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.3389/fgene.2020.00158"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.30",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/nmeth.1906"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.31",
+          "unstructured": "Broad Institute ENCODE group, Bernstein, B.E. : H3K27ac ChIP-seq peaks in GM12878 cells. GEO: GSM733771; ENCODE DCC: wgEncodeEH000030; UCSC hg19 track: wgEncodeBroadHis-toneGm12878H3k27acStdPk.broadPeak.gz. Antibody: ab4729; ENCODE Jan 2011 freeze (2011). http://hgdownload.soe.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeBroadHistone/"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.32",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.molcel.2020.03.002"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.33",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.cell.2017.09.043"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.34",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/s41588-023-01391-1"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.35",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.isci.2025.113268"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.36",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1101/833590"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.37",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/s41587-022-01289-z"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.38",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Shin, H. , Shi, Y. , Dai, C. , Tjong, H. , Gong, K. , Alber, F. , Zhou, X.J. : Topdom: an efficient and deterministic method for identifying topological domains in genomes. Nucleic Acids Research 44 (2016)",
+          "DOI": "10.1093/nar/gkv1505"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.39",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Cresswell, K.G. , Stansfield, J.C. , Dozmorov, M.G. : Spectraltad: an r package for defining a hierarchy of topologically associated domains using spectral clustering. BMC Bioinformatics (2020)",
+          "DOI": "10.1101/549170"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.40",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Xing, H. , Wu, Y. , Zhang, M.Q. , Chen, Y. : Deciphering hierarchical organization of topologically associated domains through change-point testing. BMC Bioinformatics (2021)",
+          "DOI": "10.1186/s12859-021-04113-8"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.41",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1093/imanum/drs019"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.42",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.cels.2016.07.002"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.43",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Tang, J. , Qu, M. , Wang, M. , Zhang, M. , Yan, J. , Mei, Q. : Line: Large-scale information network embedding. Proceedings of the 24th International Conference on World Wide Web (2015)",
+          "DOI": "10.1145/2736277.2741093"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.44",
+          "unstructured": "Kingma, D.P. , Ba, J. : Adam: A method for stochastic optimization. In: International Conference on Learning Representations (ICLR) (2015)"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.45",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1007/BF02289451"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.46",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1214/aoms/1177703732"
+        },
+        {
+          "key": "2026090721300945000_2026.08.30.748130v1.47",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1137/0916069"
+        }
+      ],
+      "link": [
+        {
+          "URL": "https://syndication.highwire.org/content/doi/10.64898/2026.08.30.748130",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            8
+          ]
+        ],
+        "date-time": "2026-09-08T04:30:31Z",
+        "timestamp": 1788841831000
+      },
+      "score": 144.90233,
+      "resource": {
+        "primary": {
+          "URL": "http://biorxiv.org/lookup/doi/10.64898/2026.08.30.748130"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            3
+          ]
+        ]
+      },
+      "references-count": 47,
+      "URL": "https://doi.org/10.64898/2026.08.30.748130",
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            3
+          ]
+        ]
+      },
+      "subtype": "preprint"
+    }
+  }
+}

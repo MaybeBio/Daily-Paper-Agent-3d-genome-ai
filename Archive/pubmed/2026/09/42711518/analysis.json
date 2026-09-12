@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42711518",
+  "title": "Mechanisms underlying disease-causing variants in promoters and enhancers.",
+  "authors": "Long, Hannah K; Wu, Kun; Barkham, Ryan S; Bickmore, Wendy A",
+  "journal": "Nature genetics",
+  "published_date": "2026-09-09",
+  "window": {
+    "start": "2026-08-29",
+    "end": "2026-09-11"
+  },
+  "score": 3,
+  "one_liner_zh": "该文综述非编码单基因疾病变异在启动子和增强子中的致病机制，虽涉及顺式调控元件但未聚焦染色质三维空间组织建模，且无AI/分子模拟方法贡献，与课题核心方向关联较弱。",
+  "abstract": "The study of human monogenic disorders has been a powerful tool for generating a deep understanding of protein function/dysfunction and for uncovering underlying biological mechanisms. Here we explore the insights that an expanding catalog of noncoding monogenic disease variants can provide into the functions of the noncoding genome. We focus on small genetic alterations (one to a few tens of base pairs) in cis-regulatory elements-promoters, enhancers and silencers-and their potential mechanisms of action, such as loss or gain of function. We discuss the challenges in determining pathogenicity for variants in the noncoding genome, discuss why there might be so few concrete examples and highlight the opportunities for advancing this area of human genetics by using experimental and machine-learning tools.",
+  "abstract_zh": "对人类单基因疾病的研究是深入理解蛋白质功能/功能障碍以及揭示潜在生物学机制的强大工具。在此，我们探讨不断扩增的非编码单基因疾病变异目录如何为非编码基因组的功能提供见解。我们聚焦于顺式调控元件（启动子、增强子和沉默子）中的小规模遗传改变（一至几十个碱基对）及其潜在作用机制，例如功能获得或丧失。我们讨论了确定非编码基因组变异致病性所面临的挑战，分析了为何具体实例如此稀少，并强调了利用实验和机器学习工具推动人类遗传学这一领域发展的机遇。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42711518/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42711518/",
+  "paper_page_path": "papers/pubmed/42711518/index.html"
+}

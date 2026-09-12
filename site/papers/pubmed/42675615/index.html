@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mmVelo: A deep generative model for estimating cell state-dependent dynamics across multiple modalities. · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-mid">5</span>
+    <div>
+      <h1>mmVelo: A deep generative model for estimating cell state-dependent dynamics across multiple modalities.</h1>
+      <div class="meta">Nomura, Satoshi; Kojima, Yasuhiro; Minoura, Kodai; Hayashi, Shuto; Abe, Ko; Hirose, Haruka; Shimamura, Teppei</div>
+      <div class="meta muted">
+        
+        <span class="journal">Bioinformatics (Oxford, England)</span>
+        · 2026-09-01
+         · 仅摘要
+         · <a href="https://pubmed.ncbi.nlm.nih.gov/42675615/">原文</a>
+      </div>
+      <p class="one-liner">该文提出深度生成模型mmVelo，利用多组学数据推断染色质可及性动态（染色质速度），虽涉及染色质调控但未聚焦三维空间架构建模，方法可迁移至染色质动态预测。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">MOTIVATION: Single-cell multiomics reveals regulatory relationships across biological layers but captures only static snapshots, obscuring the dynamics coordinated across modalities. RNA velocity predicts transcriptome dynamics, yet cannot be extended to other layers such as the regulome, leaving chromatin accessibility dynamics unresolved. RESULTS: We developed mmVelo, a deep generative model that infers cell state dynamics from spliced and unspliced mRNA and projects them onto other modalities, yielding chromatin velocity at single-peak resolution. In developing mouse brain, mmVelo accurately recovered accessibility dynamics; in mouse skin, it identified transcription factors regulating accessibility. Decomposing posterior velocity variability into manifold-aligned and off-manifold components revealed modality-specific uncertainty structure, with chromatin fluctuation elevated near lineage branching. Using multiomics data as a bridge, mmVelo inferred the dynamics of missing modalities from single-modal human brain data. AVAILABILITY AND IMPLEMENTATION: Source code is freely available under the MIT license at https://github.com/nomuhyooon/mmVelo; the version and test data used here are archived at https://doi.org/10.5281/zenodo.20103609. SUPPLEMENTARY INFORMATION: Supplementary data are available at Bioinformatics online.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">动机：单细胞多组学技术揭示了跨生物学层次的调控关系，但仅捕获静态快照，掩盖了跨模态协调的动态过程。RNA速度预测转录组动态，但无法扩展到其他层次（如调控组），导致染色质可及性动态仍未解决。结果：我们开发了mmVelo，一种深度生成模型，从剪接和未剪接mRNA推断细胞状态动态，并将其投射到其他模态，实现单峰分辨率的染色质速度。在小鼠发育大脑中，mmVelo准确恢复了可及性动态；在小鼠皮肤中，它识别了调控可及性的转录因子。将后验速度变异性分解为流形对齐和流形外成分，揭示了模态特异性不确定性结构，其中染色质波动在谱系分支附近升高。利用多组学数据作为桥梁，mmVelo从单模态人类大脑数据推断缺失模态的动态。可用性和实现：源代码在MIT许可下免费提供，网址为https://github.com/nomuhyooon/mmVelo；本文使用的版本和测试数据存档于https://doi.org/10.5281/zenodo.20103609。补充信息：补充数据可在Bioinformatics在线获取。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>: mmVelo: A deep generative model for estimating cell state-dependent dynamics across multiple modalities</li>
+<li><strong>作者与单位</strong>: Nomura, Satoshi; Kojima, Yasuhiro; Minoura, Kodai; Hayashi, Shuto; Abe, Ko; Hirose, Haruka; Shimamura, Teppei（单位未提供）</li>
+<li><strong>期刊/预印本平台</strong>: Bioinformatics (Oxford, England)</li>
+<li><strong>年份</strong>: 2026-09-01</li>
+<li><strong>论文类型</strong>: 方法学论文</li>
+<li><strong>领域</strong>: 单细胞多组学、RNA velocity、染色质可及性动力学</li>
+<li><strong>关键词</strong>: 单细胞多组学、RNA velocity、染色质velocity、深度生成模型、细胞状态动力学</li>
+<li><strong>DOI/arXiv 号</strong>: 10.1093/bioinformatics/btag652</li>
+<li><strong>代码</strong>: https://github.com/nomuhyooon/mmVelo (MIT license)</li>
+<li><strong>数据</strong>: 测试数据存档于 https://doi.org/10.5281/zenodo.20103609</li>
+<li><strong>阅读日期</strong>: 未提供</li>
+<li><strong>该文在「三维基因组/染色质组织 × AI 方法/物理模拟」方向中的位置</strong>: 本文聚焦于从RNA velocity推断染色质可及性动力学（chromatin velocity），属于将转录组动态信息跨模态迁移到染色质层面的方法。对于三维基因组领域，该方法提供了从单细胞转录组数据推断染色质状态动态变化的思路，可迁移到预测染色质构象（如Hi-C）的时间演化，但本文未直接涉及三维基因组结构。</li>
+</ul>
+<h2>02 一句话总结</h2>
+<p>本文提出mmVelo，一个深度生成模型，利用剪接和未剪接mRNA推断细胞状态依赖的RNA velocity，并将其投影到其他模态（如染色质可及性），从而在单峰分辨率下生成chromatin velocity，解决了多模态数据中非转录组层动力学无法直接估计的问题。</p>
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>: 单细胞多组学数据捕获的是静态快照，无法揭示跨模态（如转录组与染色质可及性）的协调动态。RNA velocity能预测转录组动态，但无法扩展到染色质可及性等非转录组层。</li>
+<li><strong>为什么重要</strong>: 理解细胞状态转变过程中染色质可及性的动态变化，对于揭示基因调控机制（如转录因子结合）至关重要。</li>
+<li><strong>现有方法为何不足</strong>: 现有RNA velocity方法仅适用于转录组，无法直接处理染色质可及性数据；而多模态数据虽能同时测量RNA和染色质，但缺乏时间信息。</li>
+<li><strong>精确的「Can ... ?」研究问题</strong>: Can we infer chromatin accessibility dynamics (chromatin velocity) from single-cell multiomics data by leveraging RNA velocity as a bridge?</li>
+</ul>
+<h2>04 背景与发展脉络</h2>
+<ul>
+<li><strong>脉络来源</strong>: 经外部核验（基于领域常识）</li>
+<li><strong>阶段1: RNA velocity方法</strong> (如La Manno et al., 2018; Bergen et al., 2020): 利用剪接/未剪接mRNA比率推断转录组动态。优点：提供单细胞时间信息。局限：仅适用于转录组。</li>
+<li><strong>阶段2: 单细胞多组学技术</strong> (如10x Multiome): 同时测量RNA和染色质可及性。优点：提供跨模态关联。局限：静态快照，无时间信息。</li>
+<li><strong>阶段3: 跨模态动态推断</strong> (本文mmVelo): 将RNA velocity作为桥梁，通过深度生成模型将转录组动态投影到染色质可及性。优点：首次实现单峰分辨率的chromatin velocity。局限：依赖多模态数据作为训练桥接，且假设RNA与染色质动态存在可学习的映射关系。</li>
+</ul>
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>无法直接估计染色质可及性动态</td>
+<td>现有RNA velocity方法仅适用于转录组，染色质可及性数据缺乏时间信息</td>
+<td>染色质可及性数据（如ATAC-seq）不包含剪接/未剪接信息，无法直接应用RNA velocity框架</td>
+<td>引言部分：RNA velocity cannot be extended to other layers such as the regulome</td>
+</tr>
+<tr>
+<td>多模态数据静态性</td>
+<td>单细胞多组学捕获的是快照，无法揭示跨模态协调动态</td>
+<td>实验技术本身是破坏性的，无法追踪同一细胞随时间变化</td>
+<td>引言部分：captures only static snapshots, obscuring the dynamics coordinated across modalities</td>
+</tr>
+<tr>
+<td>跨模态映射的复杂性</td>
+<td>染色质可及性动态与RNA动态并非简单线性关系</td>
+<td>转录调控涉及复杂的时滞和反馈机制</td>
+<td>方法部分：mmVelo使用深度生成模型学习非线性映射</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<ol>
+<li><strong>表面方法</strong>: mmVelo是一个深度生成模型（基于变分自编码器VAE），输入多模态数据（剪接/未剪接mRNA + 染色质可及性），输出每个细胞的RNA velocity和chromatin velocity。</li>
+<li><strong>核心洞察</strong>: RNA velocity提供了转录组层面的动态信息，而多模态数据中RNA与染色质可及性存在共变关系。通过训练一个条件生成模型，可以将RNA velocity作为“动态锚点”，投影到染色质可及性空间，从而推断chromatin velocity。</li>
+<li><strong>可能的普适教训</strong> [Analysis]: 任何具有时间信息（如RNA velocity）的模态，都可以作为“动态桥梁”，将动态信息迁移到其他缺乏时间信息的模态（如蛋白质丰度、甲基化状态）。这为跨模态动态推断提供了通用框架。</li>
+</ol>
+<h2>07 方法总览</h2>
+<ul>
+<li><strong>输入</strong>: 单细胞多模态数据，包括：(1) 剪接mRNA计数、(2) 未剪接mRNA计数、(3) 染色质可及性（如ATAC-seq峰计数）。</li>
+<li><strong>输出</strong>: (1) 每个细胞的RNA velocity向量、(2) 每个染色质峰的chromatin velocity向量、(3) 后验velocity的不确定性分解（流形对齐分量和离流形分量）。</li>
+<li><strong>模块</strong>: 
+  1. <strong>RNA velocity模块</strong>: 基于剪接/未剪接mRNA，使用标准RNA velocity模型（如scVelo）估计转录组动态。
+  2. <strong>跨模态投影模块</strong>: 一个深度生成模型（VAE），以RNA velocity和细胞状态为条件，学习从RNA空间到染色质可及性空间的映射，输出chromatin velocity。
+  3. <strong>不确定性分解模块</strong>: 将后验velocity的变异性分解为流形对齐（manifold-aligned）和离流形（off-manifold）分量，用于分析模态特异性不确定性。</li>
+<li><strong>训练</strong>: 使用变分推断优化ELBO，损失函数包括重构损失（染色质可及性）和KL散度。RNA velocity作为条件变量，不直接优化。</li>
+<li><strong>工具</strong>: PyTorch（推测，代码未详细检查）。</li>
+<li><strong>反馈回路</strong>: 无显式反馈回路，模型为前馈式。</li>
+<li><strong>假设</strong>: (1) RNA velocity与染色质可及性动态存在可学习的映射关系；(2) 细胞状态在低维流形上连续变化；(3) 多模态数据中RNA和染色质可及性来自同一细胞。</li>
+<li><strong>从输入到输出的文字流程</strong>: 
+  1. 输入单细胞多模态数据（剪接/未剪接mRNA + 染色质可及性）。
+  2. 使用RNA velocity模型（如scVelo）从剪接/未剪接mRNA估计每个细胞的RNA velocity。
+  3. 将RNA velocity和细胞状态（如UMAP嵌入）作为条件，输入VAE编码器，编码器输出潜在变量z。
+  4. 解码器从z和条件变量重构染色质可及性，并输出chromatin velocity（通过解码器对时间的导数或类似机制）。
+  5. 对后验velocity进行不确定性分解，得到流形对齐和离流形分量。</li>
+</ul>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RNA velocity估计模块</td>
+<td>从剪接/未剪接mRNA估计转录组动态</td>
+<td>提供动态锚点，是跨模态投影的基础</td>
+<td>输入：剪接/未剪接mRNA；输出：RNA velocity向量</td>
+<td>标准方法，广泛验证</td>
+<td>无法获得动态信息，跨模态投影无基础 [预期]</td>
+</tr>
+<tr>
+<td>跨模态投影VAE</td>
+<td>学习从RNA velocity到染色质可及性动态的映射</td>
+<td>将转录组动态迁移到染色质层</td>
+<td>输入：RNA velocity + 细胞状态；输出：chromatin velocity + 重构的染色质可及性</td>
+<td>结果部分：准确恢复发育小鼠脑中的可及性动态</td>
+<td>无法推断chromatin velocity [预期]</td>
+</tr>
+<tr>
+<td>不确定性分解模块</td>
+<td>将后验velocity变异性分解为流形对齐和离流形分量</td>
+<td>揭示模态特异性不确定性结构，如染色质波动在谱系分支点附近升高</td>
+<td>输入：后验velocity分布；输出：两个分量</td>
+<td>结果部分：发现染色质波动在谱系分支点附近升高</td>
+<td>失去对不确定性结构的理解 [预期]</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式符号</h2>
+<ul>
+<li><strong>不适用</strong>: 提供的材料（摘要）未包含具体公式。方法细节需查阅全文。</li>
+</ul>
+<h2>10 实验设计与证据链</h2>
+<ul>
+<li><strong>数据集/群体</strong>: (1) 发育小鼠脑（多模态数据）；(2) 小鼠皮肤（多模态数据）；(3) 人类脑（单模态RNA数据，用于跨模态推断）。</li>
+<li><strong>规模</strong>: 未提供具体细胞数。</li>
+<li><strong>指标</strong>: 未提供具体指标（如相关性、准确率等）。</li>
+<li><strong>基线</strong>: 未提供（可能无直接基线，因为chromatin velocity是首次提出）。</li>
+<li><strong>预算</strong>: 未提供。</li>
+<li><strong>骨干/仪器</strong>: 未提供。</li>
+<li><strong>oracle输入</strong>: 未提供。</li>
+<li><strong>评测协议</strong>: 未提供。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>发育小鼠脑</td>
+<td>mmVelo能准确恢复染色质可及性动态</td>
+<td>无直接对比（首次）</td>
+<td>准确恢复可及性动态</td>
+<td>mmVelo能推断chromatin velocity</td>
+<td>无法证明其优于其他方法（无基线）</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>小鼠皮肤</td>
+<td>mmVelo能识别调控可及性的转录因子</td>
+<td>无直接对比</td>
+<td>识别出调控可及性的转录因子</td>
+<td>mmVelo可揭示调控机制</td>
+<td>无法证明识别的TF是因果性的</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>人类脑（单模态）</td>
+<td>利用多模态数据作为桥梁，从单模态RNA数据推断缺失模态动态</td>
+<td>输入仅为RNA数据</td>
+<td>成功推断染色质可及性动态</td>
+<td>mmVelo可跨数据集泛化</td>
+<td>依赖训练时使用的多模态数据桥接</td>
+<td>摘要</td>
+</tr>
+</tbody>
+</table>
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>: 仅适用于单细胞多模态数据（RNA + 染色质可及性），或通过桥接从单模态RNA数据推断染色质动态。</li>
+<li><strong>oracle/真值输入</strong>: 依赖多模态数据中RNA和染色质可及性的共变关系，以及RNA velocity的准确性。</li>
+<li><strong>端到端状态</strong>: 是端到端方法，但RNA velocity估计模块可替换。</li>
+<li><strong>算力成本</strong>: 未提供，但VAE模型通常计算成本中等。</li>
+<li><strong>历史数据依赖</strong>: 依赖训练数据中细胞状态的覆盖范围。</li>
+<li><strong>模型依赖</strong>: 依赖RNA velocity模型的准确性（如scVelo）。</li>
+<li><strong>最难情形</strong>: 当RNA与染色质可及性动态解耦（如存在大量时滞或独立调控）时，映射可能失败。</li>
+<li><strong>群体/领域边界</strong>: 仅适用于具有剪接/未剪接信息的单细胞数据，且需要多模态数据作为训练桥接。</li>
+<li><strong>不确定性</strong>: 后验velocity的不确定性通过分解量化，但未提供置信区间。</li>
+<li><strong>有边界的复述</strong>: mmVelo能够从单细胞多模态数据中推断染色质可及性动态，并在发育小鼠脑和小鼠皮肤中验证了其准确性，但该方法依赖RNA velocity的准确性和多模态数据的共变关系，且未在三维基因组数据上测试。</li>
+</ul>
+<h2>12 作者自认局限</h2>
+<ul>
+<li><strong>在提供的材料中未发现作者明确承认的局限</strong>: 摘要中未提及局限。全文可能包含局限讨论，但未提供。</li>
+</ul>
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>依赖RNA velocity的准确性</td>
+<td>如果RNA velocity估计有误，chromatin velocity也会出错</td>
+<td>方法链的误差传播</td>
+<td>使用不同RNA velocity方法（如scVelo vs. velocyto）比较结果稳定性</td>
+<td>方法部分：RNA velocity作为条件变量</td>
+</tr>
+<tr>
+<td>跨模态映射假设</td>
+<td>假设RNA与染色质可及性动态存在可学习的映射，但可能存在非线性时滞</td>
+<td>可能忽略调控复杂性</td>
+<td>在具有时间序列数据的系统中（如分化时间点），比较预测与实测染色质动态</td>
+<td>结果部分：仅验证了恢复能力，未验证预测能力</td>
+</tr>
+<tr>
+<td>仅验证了恢复能力</td>
+<td>在发育小鼠脑中，mmVelo“恢复”了可及性动态，但未与独立时间序列数据对比</td>
+<td>可能只是过拟合多模态共变</td>
+<td>使用独立的时间序列ATAC-seq数据验证chromatin velocity的预测</td>
+<td>实验设计部分：缺乏独立验证</td>
+</tr>
+<tr>
+<td>未涉及三维基因组</td>
+<td>方法仅处理染色质可及性，未扩展到染色质构象（如Hi-C）</td>
+<td>限制了在三维基因组领域的直接应用</td>
+<td>尝试将方法扩展到Hi-C数据（需解决数据稀疏性和高维性）</td>
+<td>摘要：仅提到染色质可及性</td>
+</tr>
+</tbody>
+</table>
+<h2>14 学到什么</h2>
+<p><strong>Agent 提炼的知识候选</strong>:
+1. <strong>跨模态动态推断框架</strong>: 利用一个具有时间信息的模态（如RNA velocity）作为“动态桥梁”，通过生成模型将动态信息迁移到其他缺乏时间信息的模态。可迁移到三维基因组：利用RNA velocity推断染色质构象（如Hi-C contact maps）的时间演化。
+2. <strong>不确定性分解方法</strong>: 将后验velocity分解为流形对齐和离流形分量，用于分析模态特异性不确定性。可迁移到三维基因组：分析Hi-C数据中染色质环的波动是否在谱系分支点附近升高。
+3. <strong>单模态数据泛化</strong>: 通过多模态数据训练桥接模型，然后应用于单模态数据（如仅RNA数据）推断缺失模态动态。可迁移到三维基因组：如果只有单细胞RNA数据，可尝试推断染色质构象动态。</p>
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>相似方法</strong>: RNA velocity (La Manno et al., 2018; Bergen et al., 2020) 是本文的基础。mmVelo扩展了其应用范围。</li>
+<li><strong>组合方法</strong>: 与单细胞多组学技术（如10x Multiome）结合，可同时测量RNA和染色质可及性，为mmVelo提供训练数据。</li>
+<li><strong>冲突</strong>: 无直接冲突。</li>
+<li><strong>可迁移领域</strong>: </li>
+<li><strong>三维基因组</strong>: 可尝试将mmVelo框架扩展到Hi-C数据，利用RNA velocity推断染色质环或TAD边界的动态变化。</li>
+<li><strong>蛋白质组学</strong>: 利用RNA velocity推断蛋白质丰度动态（如CITE-seq数据）。</li>
+<li><strong>表观遗传学</strong>: 推断DNA甲基化或组蛋白修饰的动态。</li>
+</ul>
+<h2>16 研究想法</h2>
+<p><strong>Agent 生成的研究候选</strong>:</p>
+<ol>
+<li>
+<p><strong>名称</strong>: 3D-Velo: 利用RNA velocity推断染色质构象动态
+   - <strong>来源局限/观察</strong>: mmVelo仅处理染色质可及性，未涉及三维基因组结构（如Hi-C contact maps）。三维基因组动态对理解细胞命运决定至关重要。
+   - <strong>核心假设</strong>: RNA velocity与染色质构象动态（如TAD边界变化、环形成）存在可学习的映射关系，可通过多模态数据（RNA + Hi-C）训练。
+   - <strong>相对本文的增量</strong>: 将mmVelo框架从一维峰扩展到二维contact maps，需解决Hi-C数据的高维性和稀疏性。
+   - <strong>初步方法</strong>: </p>
+<ol>
+<li>使用单细胞多模态数据（如10x Multiome + scHi-C）或配对数据。</li>
+<li>将Hi-C contact maps降维（如通过自编码器或图神经网络）为低维嵌入。</li>
+<li>以RNA velocity为条件，训练VAE将RNA动态投影到Hi-C嵌入空间，再解码为contact maps。</li>
+<li>输出chromatin conformation velocity。
+   - <strong>验证方式</strong>: </li>
+<li>在具有时间序列scHi-C数据的系统（如分化时间点）中，比较预测与实测的构象变化。</li>
+<li>检查谱系分支点附近构象波动是否升高（类似mmVelo的发现）。
+   - <strong>可能的失败模式</strong>: </li>
+<li>RNA与构象动态解耦（如构象变化滞后于转录变化）。</li>
+<li>Hi-C数据稀疏性导致训练不稳定。</li>
+<li>计算成本过高（高维contact maps）。
+   - <strong>创新状态</strong>: unverified</li>
+</ol>
+</li>
+<li>
+<p><strong>名称</strong>: 利用mmVelo不确定性分解分析染色质环波动
+   - <strong>来源局限/观察</strong>: mmVelo发现染色质波动在谱系分支点附近升高，但仅针对可及性。三维基因组中，染色质环的稳定性可能也在分支点附近变化。
+   - <strong>核心假设</strong>: 染色质环的chromatin velocity（环强度变化）在谱系分支点附近具有更高的离流形不确定性，反映调控不稳定性。
+   - <strong>相对本文的增量</strong>: 将不确定性分解方法从可及性峰迁移到染色质环，需定义环的“velocity”。
+   - <strong>初步方法</strong>: </p>
+<ol>
+<li>使用mmVelo或类似方法推断每个染色质环的强度变化。</li>
+<li>应用mmVelo的不确定性分解模块，计算环velocity的流形对齐和离流形分量。</li>
+<li>在谱系分支点附近比较两个分量的比例。
+   - <strong>验证方式</strong>: </li>
+<li>在已知分支点的分化系统中（如造血分化），检查环波动是否升高。</li>
+<li>与已知的谱系特异性环（如增强子-启动子环）进行关联分析。
+   - <strong>可能的失败模式</strong>: </li>
+<li>环强度变化太小，无法检测到显著波动。</li>
+<li>不确定性分解对环的定义敏感（如不同分辨率）。
+   - <strong>创新状态</strong>: unverified</li>
+</ol>
+</li>
+</ol></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Abstract only</li>
+<li><strong>Assessment boundary</strong> Claims and evidence presented in the abstract</li>
+<li><strong>Shared manuscript claim summary</strong> The authors present mmVelo, a deep generative model that uses RNA velocity (spliced/unspliced mRNA) to infer dynamics in other modalities (e.g., chromatin accessibility), producing “chromatin velocity” at single-peak resolution. The model is validated in developing mouse brain and mouse skin, and is used to infer dynamics of missing modalities from single-modal human brain data.</li>
+<li><strong>Visible evidence base</strong> Abstract text only; no figures, tables, methods, or supplementary data provided.</li>
+<li><strong>Missing materials affecting confidence</strong> Full manuscript, methods, figures, tables, supplementary data, code repository (only URL provided), and detailed validation results.</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li><strong>Overall assessment</strong> The abstract presents a conceptually interesting and potentially impactful approach to extending velocity analysis beyond RNA to other modalities. However, the abstract alone provides insufficient detail to evaluate the core claims, particularly regarding the model’s architecture, validation metrics, and the biological significance of the results. The claim of “chromatin velocity at single-peak resolution” is novel but requires rigorous demonstration that is not visible here.</li>
+<li><strong>Who would be interested in the results, and why</strong> Researchers in single-cell multiomics, computational biology, and developmental biology would be interested. The method addresses a key limitation of RNA velocity—its inability to capture dynamics in other modalities—and could enable new insights into regulatory dynamics across layers.</li>
+<li><strong>Major strengths</strong> 1. Addresses a clear and important gap: extending velocity-like analysis to non-RNA modalities. 2. The concept of “chromatin velocity” is novel and could be transformative for studying regulatory dynamics. 3. The application to infer missing modalities from single-modal data is a practical and valuable extension.</li>
+<li><strong>Major Concerns</strong><ul>
+<li><strong>Concern ID</strong> R1-M1</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Technical soundness / Validation</li>
+<li><strong>Claim pointer</strong> “mmVelo accurately recovered accessibility dynamics” in developing mouse brain.</li>
+<li><strong>Evidence pointer</strong> Abstract text; location not provided.</li>
+<li><strong>Concern</strong> The abstract states that mmVelo “accurately recovered” accessibility dynamics, but provides no quantitative metrics (e.g., correlation with ground truth, comparison to baselines, or statistical tests). Without such evidence, the claim of accuracy is unsubstantiated.</li>
+<li><strong>Why it matters</strong> The core novelty of the method hinges on its ability to predict dynamics in other modalities. If the validation is weak or absent, the entire contribution is undermined.</li>
+<li><strong>Resolution test</strong> Provide quantitative validation metrics (e.g., Pearson/Spearman correlation, mean squared error) against ground-truth chromatin accessibility data, and compare to a null model or existing methods (e.g., scVelo, CellRank).</li>
+<li><strong>Concern ID</strong> R1-M2</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Methodological clarity / Reproducibility</li>
+<li><strong>Claim pointer</strong> “mmVelo infers cell state dynamics from spliced and unspliced mRNA and projects them onto other modalities.”</li>
+<li><strong>Evidence pointer</strong> Abstract text; location not provided.</li>
+<li><strong>Concern</strong> The abstract does not describe the model architecture, loss function, or how the projection from RNA velocity to other modalities is achieved. It is unclear whether this is a direct mapping, a learned transformation, or a shared latent space approach. This lack of detail prevents assessment of the method’s novelty and soundness.</li>
+<li><strong>Why it matters</strong> Without understanding the model’s design, it is impossible to evaluate whether the approach is principled, generalizable, or prone to artifacts.</li>
+<li><strong>Resolution test</strong> Provide a clear description of the model architecture, including how RNA velocity is used to infer dynamics in other modalities, and the training procedure.</li>
+<li><strong>Concern ID</strong> R1-M3</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Biological validation / Interpretability</li>
+<li><strong>Claim pointer</strong> “In mouse skin, it identified transcription factors regulating accessibility.”</li>
+<li><strong>Evidence pointer</strong> Abstract text; location not provided.</li>
+<li><strong>Concern</strong> The abstract claims that mmVelo identified transcription factors (TFs) regulating accessibility, but does not specify which TFs, how they were identified (e.g., via motif enrichment, correlation with velocity), or whether these findings were validated experimentally or against known biology.</li>
+<li><strong>Why it matters</strong> The biological utility of the method is a key selling point. If the TF identification is not validated or is trivial, the claim loses impact.</li>
+<li><strong>Resolution test</strong> List the identified TFs, describe the method used to infer them, and provide evidence (e.g., literature support, ChIP-seq data, or perturbation experiments) that they are genuine regulators.</li>
+<li><strong>Concern ID</strong> R1-M4</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Generalizability / Data requirements</li>
+<li><strong>Claim pointer</strong> “Using multiomics data as a bridge, mmVelo inferred the dynamics of missing modalities from single-modal human brain data.”</li>
+<li><strong>Evidence pointer</strong> Abstract text; location not provided.</li>
+<li><strong>Concern</strong> The abstract does not specify what “missing modalities” were inferred, how the bridge was constructed, or what validation was performed (e.g., comparison to held-out multiomics data). The claim of inferring dynamics from single-modal data is ambitious and requires strong evidence.</li>
+<li><strong>Why it matters</strong> This application is a major extension of the method, but without validation, it remains speculative.</li>
+<li><strong>Resolution test</strong> Provide details on the bridge construction, the inferred modalities, and validation against ground-truth multiomics data or independent datasets.</li>
+</ul>
+</li>
+<li><strong>Minor Comments</strong><ul>
+<li><strong>Concern ID</strong> R1-m1</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Clarity</li>
+<li><strong>Affected element</strong> Terminology</li>
+<li><strong>Evidence pointer</strong> Abstract text</li>
+<li><strong>Issue</strong> The term “chromatin velocity” is introduced but not defined. It is unclear whether this refers to changes in chromatin accessibility over pseudotime, or a vector field in a latent space.</li>
+<li><strong>Required correction</strong> Define “chromatin velocity” explicitly, and distinguish it from RNA velocity.</li>
+<li><strong>Concern ID</strong> R1-m2</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Reproducibility</li>
+<li><strong>Affected element</strong> Code availability</li>
+<li><strong>Evidence pointer</strong> Abstract text</li>
+<li><strong>Issue</strong> The code repository URL is provided, but the abstract does not state whether the code is documented, includes tutorials, or has been tested on the provided data.</li>
+<li><strong>Required correction</strong> Add a statement about code documentation and reproducibility (e.g., “Code is accompanied by a tutorial and test data to reproduce key results”).</li>
+<li><strong>Concern ID</strong> R1-m3</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Readability</li>
+<li><strong>Affected element</strong> Abstract structure</li>
+<li><strong>Evidence pointer</strong> Abstract text</li>
+<li><strong>Issue</strong> The abstract jumps from method description to results to application without a clear logical flow. The sentence “Decomposing posterior velocity variability…” is dense and may confuse nonspecialists.</li>
+<li><strong>Required correction</strong> Restructure the abstract to first state the problem, then the method, then key results, and finally the application. Simplify the sentence about posterior variability.</li>
+</ul>
+</li>
+<li><strong>Technical failings that need to be addressed before the case is established</strong> R1-M1 (validation metrics), R1-M2 (model architecture), R1-M3 (TF identification validation), R1-M4 (bridge construction and validation).</li>
+<li><strong>Assessment against Nature-style criteria</strong> </li>
+<li><strong>Originality</strong>: High. The concept of extending velocity to other modalities (chromatin velocity) is novel and not, to my knowledge, previously reported.</li>
+<li><strong>Scientific importance</strong>: Potentially high. If validated, the method could enable new insights into regulatory dynamics across modalities, a key challenge in single-cell biology.</li>
+<li><strong>Interdisciplinary readership</strong>: Moderate. The work is primarily of interest to computational biologists and bioinformaticians, but the biological applications (e.g., TF identification) could attract experimentalists.</li>
+<li><strong>Technical soundness</strong>: Not assessable from the abstract. The core claims lack quantitative validation and methodological detail.</li>
+<li><strong>Readability for nonspecialists</strong>: Poor. The abstract uses jargon (e.g., “manifold-aligned and off-manifold components”) without explanation, and the logical flow is unclear.</li>
+<li><strong>Recommendation posture</strong> Currently not established from the provided evidence. The abstract presents a promising idea, but the lack of validation metrics, methodological detail, and biological validation prevents a positive assessment. The authors should provide a full manuscript with rigorous evidence before the case can be evaluated.</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>“mmVelo accurately recovered accessibility dynamics” – no quantitative evidence provided.</li>
+<li>“mmVelo identified transcription factors regulating accessibility” – no specific TFs or validation provided.</li>
+<li>“mmVelo inferred the dynamics of missing modalities from single-modal human brain data” – no details on bridge construction or validation.</li>
+<li>“Decomposing posterior velocity variability into manifold-aligned and off-manifold components revealed modality-specific uncertainty structure” – no evidence or interpretation provided.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,244 @@
+{
+  "identity": {
+    "pmid": "42675615",
+    "doi": "10.1093/bioinformatics/btag652",
+    "title": "mmVelo: A deep generative model for estimating cell state-dependent dynamics across multiple modalities."
+  },
+  "content": {
+    "abstract": "MOTIVATION: Single-cell multiomics reveals regulatory relationships across biological layers but captures only static snapshots, obscuring the dynamics coordinated across modalities. RNA velocity predicts transcriptome dynamics, yet cannot be extended to other layers such as the regulome, leaving chromatin accessibility dynamics unresolved. RESULTS: We developed mmVelo, a deep generative model that infers cell state dynamics from spliced and unspliced mRNA and projects them onto other modalities, yielding chromatin velocity at single-peak resolution. In developing mouse brain, mmVelo accurately recovered accessibility dynamics; in mouse skin, it identified transcription factors regulating accessibility. Decomposing posterior velocity variability into manifold-aligned and off-manifold components revealed modality-specific uncertainty structure, with chromatin fluctuation elevated near lineage branching. Using multiomics data as a bridge, mmVelo inferred the dynamics of missing modalities from single-modal human brain data. AVAILABILITY AND IMPLEMENTATION: Source code is freely available under the MIT license at https://github.com/nomuhyooon/mmVelo; the version and test data used here are archived at https://doi.org/10.5281/zenodo.20103609. SUPPLEMENTARY INFORMATION: Supplementary data are available at Bioinformatics online.",
+    "keywords": [],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Nomura, Satoshi",
+        "Kojima, Yasuhiro",
+        "Minoura, Kodai",
+        "Hayashi, Shuto",
+        "Abe, Ko",
+        "Hirose, Haruka",
+        "Shimamura, Teppei"
+      ],
+      "short_names": [
+        "Nomura S",
+        "Kojima Y",
+        "Minoura K",
+        "Hayashi S",
+        "Abe K",
+        "Hirose H",
+        "Shimamura T"
+      ],
+      "auids": [],
+      "affiliations": [
+        "Japanese Red Cross Aichi Medical Center Nagoya Daiichi Hospital, Nagoya, Japan.",
+        "Laboratory of Computational Life Science, National Cancer Center Research Institute, Tokyo, Japan.",
+        "Japanese Red Cross Aichi Medical Center Nagoya Daiichi Hospital, Nagoya, Japan.",
+        "Department of Computational and Systems Biology, Division of Biological Data Science, Medical Research Laboratory, Institute for Integrated Research, Institute of Science Tokyo, Tokyo, Japan.",
+        "Department of Computational and Systems Biology, Division of Biological Data Science, Medical Research Laboratory, Institute for Integrated Research, Institute of Science Tokyo, Tokyo, Japan.",
+        "Department of Computational and Systems Biology, Division of Biological Data Science, Medical Research Laboratory, Institute for Integrated Research, Institute of Science Tokyo, Tokyo, Japan.",
+        "Department of Computational and Systems Biology, Division of Biological Data Science, Medical Research Laboratory, Institute for Integrated Research, Institute of Science Tokyo, Tokyo, Japan."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Nomura, Satoshi",
+        "short_name": "Nomura S",
+        "identifiers": [],
+        "affiliations": [
+          "Japanese Red Cross Aichi Medical Center Nagoya Daiichi Hospital, Nagoya, Japan."
+        ]
+      },
+      {
+        "full_name": "Kojima, Yasuhiro",
+        "short_name": "Kojima Y",
+        "identifiers": [],
+        "affiliations": [
+          "Laboratory of Computational Life Science, National Cancer Center Research Institute, Tokyo, Japan."
+        ]
+      },
+      {
+        "full_name": "Minoura, Kodai",
+        "short_name": "Minoura K",
+        "identifiers": [],
+        "affiliations": [
+          "Japanese Red Cross Aichi Medical Center Nagoya Daiichi Hospital, Nagoya, Japan."
+        ]
+      },
+      {
+        "full_name": "Hayashi, Shuto",
+        "short_name": "Hayashi S",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Computational and Systems Biology, Division of Biological Data Science, Medical Research Laboratory, Institute for Integrated Research, Institute of Science Tokyo, Tokyo, Japan."
+        ]
+      },
+      {
+        "full_name": "Abe, Ko",
+        "short_name": "Abe K",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Computational and Systems Biology, Division of Biological Data Science, Medical Research Laboratory, Institute for Integrated Research, Institute of Science Tokyo, Tokyo, Japan."
+        ]
+      },
+      {
+        "full_name": "Hirose, Haruka",
+        "short_name": "Hirose H",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Computational and Systems Biology, Division of Biological Data Science, Medical Research Laboratory, Institute for Integrated Research, Institute of Science Tokyo, Tokyo, Japan."
+        ]
+      },
+      {
+        "full_name": "Shimamura, Teppei",
+        "short_name": "Shimamura T",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Computational and Systems Biology, Division of Biological Data Science, Medical Research Laboratory, Institute for Integrated Research, Institute of Science Tokyo, Tokyo, Japan."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Bioinformatics (Oxford, England)"
+    ],
+    "journal_abbrev": [
+      "Bioinformatics"
+    ],
+    "pub_date": "2026 Aug 31",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/01 05:41",
+    "fetched_at": "2026-09-12 11:08:09"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42675615",
+      "42475469",
+      "42605072",
+      "36173306",
+      "34500455",
+      "36610708",
+      "40929041",
+      "35258562",
+      "35758807",
+      "36622018",
+      "34028557",
+      "42633560",
+      "37314966",
+      "31510655",
+      "42412830",
+      "40662813",
+      "35532115",
+      "36250795",
+      "35188184",
+      "36229609",
+      "42366683",
+      "35900151",
+      "41324558",
+      "37220900",
+      "40358524",
+      "34255822",
+      "35674360",
+      "42087325",
+      "36699399",
+      "42658029",
+      "32324859",
+      "41896196",
+      "34398192",
+      "30816925",
+      "41588477",
+      "41323649",
+      "34196686",
+      "40802529",
+      "34734974",
+      "29069282",
+      "34864849",
+      "42625378",
+      "37735568",
+      "42525289",
+      "33026066",
+      "38328127",
+      "38940155",
+      "33226074",
+      "34427581",
+      "35552604",
+      "38075479",
+      "35997560",
+      "41744270",
+      "42616853",
+      "30535182",
+      "41093751",
+      "34086847",
+      "36394263",
+      "33974008",
+      "41808453",
+      "35561167",
+      "35639705",
+      "42613761",
+      "30821321",
+      "40751912",
+      "35561207",
+      "35451453",
+      "41429574",
+      "30875429",
+      "34048541",
+      "41883144",
+      "34146085",
+      "33416852",
+      "36562559",
+      "41902842",
+      "42244648",
+      "34125875",
+      "42635210",
+      "36734596",
+      "31510690",
+      "41325188",
+      "42539206",
+      "41992497",
+      "40188576",
+      "42412825",
+      "33079990",
+      "42316814",
+      "33515239",
+      "41896185",
+      "36005887",
+      "42490198",
+      "33325516",
+      "41151585",
+      "36063455",
+      "40973591",
+      "35191481",
+      "32003786",
+      "29438498",
+      "34463706",
+      "34213536"
+    ],
+    "review": [
+      "42675615",
+      "40973591"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://academic.oup.com/bioinformatics/article-lookup/doi/10.1093/bioinformatics/btag652",
+        "provider": "Silverchair Information Systems",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}
