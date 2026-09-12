@@ -8,7 +8,7 @@ topic: 3d-genome-ai
 title: 三维基因组 × AI
 
 # 抓取时间窗口（天），每周自动跑默认 7；手动跑可改 1
-window_days: 14
+window_days: 7
 
 # GitHub Pages 站点根地址，用于 Issue「链接」列的绝对跳转（解析页）
 site_base_url: https://MaybeBio.github.io/Daily-Paper-Agent-3d-genome-ai
