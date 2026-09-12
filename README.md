@@ -28,5 +28,5 @@
 
 对象含两组词：
 
-3D 基因组/染色质组织 — Hi-C / HiChIP / chromosome conformation capture、3D genome、genome organization/architecture/folding、TAD、chromatin loop / interaction / domain / structure、A/B compartment、loop extrusion、CTCF、cohesin、nuclear organization/architecture 等；
-调控基因组特征（染色质水平） — cis-regulatory (element)、regulatory element、regulatory genomics、chromatin accessibility、enhancer-promoter / promoter-enhancer 等。
+- 3D 基因组/染色质组织 — Hi-C / HiChIP / chromosome conformation capture、3D genome、genome organization/architecture/folding、TAD、chromatin loop / interaction / domain / structure、A/B compartment、loop extrusion、CTCF、cohesin、nuclear organization/architecture 等；
+- 调控基因组特征（染色质水平） — cis-regulatory (element)、regulatory element、regulatory genomics、chromatin accessibility、enhancer-promoter / promoter-enhancer 等。
