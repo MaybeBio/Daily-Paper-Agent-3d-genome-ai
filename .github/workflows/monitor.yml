@@ -2,7 +2,8 @@ name: literature-monitor
 
 on:
   schedule:
-    - cron: "23 9 * * 1"
+    - cron: "0 12 * * 0"
+      timezone: "Asia/Shanghai"
   workflow_dispatch: {}
 
 # Serialize runs (don't cancel an in-flight run): a queued run waits instead of
