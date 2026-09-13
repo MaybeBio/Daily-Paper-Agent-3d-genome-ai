@@ -41,7 +41,7 @@
   
   <section>
     <h2>摘要翻译</h2>
-    <div class="md">Polycomb repressive complex 1 (PRC1) 形成核凝聚体，组织靶染色质结构域。SUMO化修饰调节PRC1聚集，但其对凝聚体性质和3D基因组结构的影响仍不清楚。在此，我们表明，在果蝇翅成虫盘中，小泛素样修饰因子 (SUMO) 的耗竭将PRC1凝聚体转变为具有降低分子动力学的大结构。生物物理建模表明，当SUMO被耗竭时，PRC1自相互作用的改变是形成大PRC1凝聚体的原因。有趣的是，这种生物物理重组发生在H3K27me3标记无全局丢失的情况下。相反，Hi-C揭示了拓扑关联结构域 (TAD) 相互作用的广泛重连。PRC1结合的TAD失去彼此间的特异性长程接触，同时获得与活性染色质的异位相互作用。这些拓扑变化与基因失调相关，且独立于Polycomb组蛋白修饰的变化。我们的结果确立了SUMO化作为PRC1凝聚体的关键调节因子，证明生物分子凝聚的翻译后控制通过可分离于组蛋白标记沉积的机制调节3D基因组结构和转录输出。</div>
+    <div class="md">Polycomb repressive complex 1 (PRC1) 形成核凝聚体，组织靶染色质结构域。SUMOylation 调节 PRC1 的聚集，但其对凝聚体性质和 3D 基因组结构的影响仍不清楚。在此，我们展示在果蝇翅成虫盘中去除 small ubiquitin-like modifier (SUMO) 会将 PRC1 凝聚体转变为具有降低分子动力学的大结构。生物物理模型表明，当 SUMO 被去除时，PRC1 自相互作用的改变是形成大 PRC1 凝聚体的原因。有趣的是，这种生物物理重组发生在没有全局性丢失 H3K27me3 标记的情况下。相反，Hi-C 揭示了拓扑关联结构域 (TAD) 相互作用的广泛重连。PRC1 结合的 TAD 彼此失去特定的长程接触，同时获得与活跃染色质的异位相互作用。这些拓扑变化与基因失调相关，且独立于 Polycomb 组蛋白修饰的变化。我们的结果确立了 SUMOylation 作为 PRC1 凝聚体的关键调节因子，证明通过可分离于组蛋白标记沉积的机制，生物分子凝聚的翻译后控制调节 3D 基因组结构和转录输出。</div>
   </section>
   
   
@@ -54,293 +54,300 @@
 <li><strong>期刊/预印本平台</strong>: Nucleic Acids Research</li>
 <li><strong>年份</strong>: 2026-09-08</li>
 <li><strong>论文类型</strong>: 研究论文</li>
-<li><strong>领域</strong>: 三维基因组 / 染色质组织 × 生物物理 / 表观遗传学</li>
-<li><strong>关键词</strong>: SUMOylation, PRC1, condensates, phase separation, 3D genome, TAD, H3K27me3, Drosophila</li>
+<li><strong>领域</strong>: 三维基因组学、染色质组织、表观遗传学、相分离</li>
+<li><strong>关键词</strong>: SUMOylation, PRC1, condensates, 3D genome, TAD, H3K27me3, Drosophila</li>
 <li><strong>DOI/arXiv 号</strong>: 10.1093/nar/gkag851</li>
-<li><strong>代码</strong>: 未提供（但提及使用scHiC2、misha、shaman、cooler、cooltools等公开工具）</li>
+<li><strong>代码</strong>: 未提供</li>
 <li><strong>数据</strong>: GEO accession GSE320399; Zenodo: https://doi.org/10.5281/zenodo.21446525</li>
 <li><strong>阅读日期</strong>: 2025-04-08</li>
-<li><strong>该文在「三维基因组/染色质组织 × AI 方法/物理模拟」方向中的位置</strong>: 本文通过实验（Hi-C、CUT&amp;RUN、FRAP）与粗粒化聚合物模拟相结合，揭示了SUMO化修饰调控PRC1凝聚体的材料性质（从液态到凝胶态转变），进而重塑3D基因组拓扑结构（TAD间互作重连）和基因表达。该工作为理解翻译后修饰如何通过调控相分离来影响染色质高级结构提供了新范式，属于实验与物理模拟交叉的前沿研究。</li>
+<li><strong>该文在「三维基因组/染色质组织 × AI 方法/物理模拟」方向中的位置</strong>: 本文通过实验（Hi-C、CUT&amp;RUN、FRAP）和物理模拟（粗粒化聚合物模型）相结合，揭示了SUMO化修饰调控PRC1凝聚体的材料特性，进而影响3D基因组结构和基因表达。该工作属于“染色质组织 × 物理模拟”方向，为理解翻译后修饰如何通过相分离调控染色质高级结构提供了新机制。</li>
 </ul>
 <h2>02 一句话总结</h2>
-<p>通过果蝇翅原基中SUMO的RNAi敲低，发现SUMO化缺失导致PRC1凝聚体从液态转变为凝胶态、体积增大、动力学降低，进而引起PcG TAD间长程互作重连（强互作减弱、弱互作增强）和异位活性染色质接触，最终导致基因表达失调，而这一过程不依赖于H3K27me3水平的变化。</p>
+<p>本文通过果蝇翅原基实验和粗粒化聚合物模拟，发现SUMO化缺失导致PRC1凝聚体从液态转变为类凝胶态，并驱动PcG TAD间长程接触重连和异位活性染色质接触，而这一过程不依赖于H3K27me3水平变化。</p>
 <h2>03 研究问题</h2>
 <ul>
-<li><strong>具体问题</strong>: SUMO化修饰如何调控PRC1凝聚体的相行为（材料性质、大小、动力学），以及这种调控如何影响3D基因组结构和基因表达？</li>
-<li><strong>为什么重要</strong>: PRC1凝聚体是Polycomb介导的染色质沉默和3D组织的关键结构单元。SUMO化是一种可逆的翻译后修饰，可能作为分子开关动态调节PRC1的凝聚和功能，但其在体内对凝聚体性质和染色质拓扑的影响尚不清楚。</li>
-<li><strong>现有方法为何不足</strong>: 先前研究多关注PRC1亚基的IDR或与染色质的结合，对翻译后修饰（如SUMO化）如何直接调控凝聚体材料状态和3D基因组知之甚少。全局SUMO敲低虽非特异性，但能揭示其核心作用。</li>
-<li><strong>精确的「Can ... ?」研究问题</strong>: Can SUMOylation modulate the material state of PRC1 condensates and thereby control 3D genome architecture and gene expression independently of H3K27me3?</li>
+<li><strong>具体问题</strong>: SUMO化修饰如何调控PRC1凝聚体的相行为，以及这种调控如何影响3D基因组结构和基因表达？</li>
+<li><strong>为什么重要</strong>: PRC1凝聚体是染色质高级结构的关键组织者，但其相行为如何被翻译后修饰调控尚不清楚。SUMO化是一种可逆修饰，可能提供动态调控机制。</li>
+<li><strong>现有方法为何不足</strong>: 先前研究多关注PRC1亚基间的相互作用或竞争复合物（如SWI/SNF）对凝聚体形成的影响，但SUMO化对凝聚体材料特性和3D基因组的具体贡献未被系统研究。</li>
+<li><strong>精确的「Can ... ?」研究问题</strong>: Can SUMOylation modulate PRC1 condensate material properties and thereby control 3D genome architecture and gene expression independently of H3K27me3?</li>
 </ul>
 <h2>04 背景与发展脉络</h2>
 <ul>
-<li><strong>脉络来源</strong>: 经外部核验（基于引言和参考文献）</li>
-<li><strong>阶段1: PRC1作为染色质凝聚和长程互作的组织者</strong>。代表性方法：ChIP-seq、Hi-C、免疫荧光。优点：建立了PRC1与H3K27me3域、TAD cliques的联系。局限：对PRC1凝聚体的物理性质和动态调控理解有限。</li>
-<li><strong>阶段2: PRC1相分离与凝聚体形成</strong>。代表性方法：体外相分离实验、活细胞成像、FRAP。优点：揭示了PRC1通过IDR（如Psc/CBX2）形成液-液相分离凝聚体。局限：体内证据有限，且对翻译后修饰如何调控相行为知之甚少。</li>
-<li><strong>阶段3: 翻译后修饰（SUMO化）调控PRC1</strong>。代表性方法：SUMO突变体、免疫共沉淀。优点：发现Pc和Scm被SUMO化，且SUMO缺失导致Pc foci增大。局限：未系统研究SUMO化对凝聚体材料性质、3D基因组和转录输出的影响。</li>
-<li><strong>本文主张的位置</strong>: 本文整合了阶段1-3，通过实验（Hi-C、FRAP、CUT&amp;RUN）和物理模拟，首次证明SUMO化是PRC1凝聚体材料状态（液态→凝胶态）的关键调节因子，并揭示其通过调控凝聚体性质来重塑TAD间互作和基因表达，且独立于H3K27me3。</li>
+<li><strong>脉络来源</strong>: 经外部核验（基于引言和讨论）</li>
+<li><strong>阶段1: PRC1作为染色质结构蛋白</strong>: 发现PRC1介导染色质压缩和长程相互作用，形成抑制性染色质区室（如TAD cliques）。<strong>代表方法</strong>: ChIP-seq, Hi-C。<strong>优点</strong>: 建立了PRC1与3D基因组的关系。<strong>局限</strong>: 未解释PRC1如何动态组织。</li>
+<li><strong>阶段2: PRC1相分离</strong>: 发现PRC1可通过内在无序区形成核内凝聚体（相分离），影响基因组拓扑和转录记忆。<strong>代表方法</strong>: 体外相分离实验、活细胞成像。<strong>优点</strong>: 提供了凝聚体形成的物理机制。<strong>局限</strong>: 翻译后修饰（如SUMO化）对相行为的影响未知。</li>
+<li><strong>阶段3: 翻译后修饰调控凝聚体</strong>: 发现SUMO化、糖基化等修饰可调节无膜细胞器的动力学。<strong>代表方法</strong>: 突变体分析、FRAP。<strong>优点</strong>: 揭示了修饰对凝聚体动态的调控。<strong>局限</strong>: 对3D基因组和转录输出的具体影响不明确。</li>
+<li><strong>本文主张的位置</strong>: 本文整合了阶段2和3，证明SUMO化是PRC1凝聚体材料特性的关键调控因子，其缺失导致凝聚体从液态向类凝胶态转变，进而重连TAD相互作用并改变基因表达，且这一过程独立于H3K27me3。</li>
 </ul>
 <h2>05 核心痛点</h2>
 <table>
 <thead>
 <tr>
-<th>痛点</th>
-<th>表现</th>
-<th>成因或作者解释</th>
-<th>文中证据</th>
+<th style="text-align: left;">痛点</th>
+<th style="text-align: left;">表现</th>
+<th style="text-align: left;">成因或作者解释</th>
+<th style="text-align: left;">文中证据</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>PRC1凝聚体大小和数量异常</td>
-<td>SUMO敲低后，PRC1 foci从多个小点变为少数巨大（常为单个）的聚集体</td>
-<td>SUMO化缺失导致PRC1-PRC1同型相互作用增强（EP-P增加），而非PRC1浓度增加</td>
-<td>图1a-c: AiryScan成像显示SUMO-KD形成巨大foci；图1b: 游离Pc-GFP减少；图2b-c: 模拟显示增加EP-P可重现此现象</td>
+<td style="text-align: left;">PRC1凝聚体材料特性调控机制不明</td>
+<td style="text-align: left;">已知PRC1形成凝聚体，但翻译后修饰如何影响其相行为不清楚</td>
+<td style="text-align: left;">SUMO化可能通过改变PRC1亚基间的相互作用强度来调节凝聚体动态</td>
+<td style="text-align: left;">引言指出“the contribution of such modifications to PRC1 phase behavior remains poorly understood”</td>
 </tr>
 <tr>
-<td>PRC1凝聚体动力学降低</td>
-<td>FRAP显示移动分数仅~30%，缺乏液态凝聚体的特征性“凹陷”</td>
-<td>SUMO缺失使凝聚体从液态转变为凝胶态/固态，内部交换受限</td>
-<td>图1e: half-FRAP实验显示无界面屏障，移动分数低</td>
+<td style="text-align: left;">SUMO化缺失导致PRC1异常聚集的机制</td>
+<td style="text-align: left;">SUMO敲低后PRC1形成巨大、稀疏的凝聚体，而非均匀增大</td>
+<td style="text-align: left;">作者假设SUMO化作为“溶解度因子”缓冲PRC1-PRC1相互作用，其去除增强同型互作</td>
+<td style="text-align: left;">图1a-c显示SUMO-KD形成大而少的凝聚体；图2b模拟显示增加EP-P可重现此现象</td>
 </tr>
 <tr>
-<td>TAD间互作重连</td>
-<td>PcG TAD间强互作减弱、弱互作增强；PcG TAD与活性TAD异位接触增加</td>
-<td>异常PRC1凝聚体作为拓扑枢纽，重新拉近或分离不同染色质区域</td>
-<td>图4f-h: 全基因组互作分析；图5a: PcG-PcG接触按基线强度分层变化；图6a: PcG-Active接触增加</td>
+<td style="text-align: left;">3D基因组重连与组蛋白修饰的因果关系</td>
+<td style="text-align: left;">基因表达变化与H3K27me3水平不相关</td>
+<td style="text-align: left;">作者认为3D结构变化（而非组蛋白修饰）是基因表达改变的主要驱动力</td>
+<td style="text-align: left;">图3c-g显示H3K27me3稳定；图4-6显示TAD接触重连与表达变化相关</td>
 </tr>
 <tr>
-<td>基因表达失调</td>
-<td>700个DEGs，包括已知PcG靶基因，但H3K27me3和H2Aub118基本不变</td>
-<td>3D基因组重连（尤其是PcG-PcG接触变化）而非组蛋白修饰变化驱动表达改变</td>
-<td>图3a-g: RNA-seq和CUT&amp;RUN显示H3K27me3稳定；图5c: PcG-PcG接触丢失与基因上调相关；图6e: PcG-PcG接触变化与表达方向一致</td>
+<td style="text-align: left;">PcG TAD间接触的双向变化</td>
+<td style="text-align: left;">强接触减弱，弱接触增强</td>
+<td style="text-align: left;">SUMO缺失导致PRC1凝聚体过度聚集，形成异常“拓扑枢纽”，重新分配TAD间接触</td>
+<td style="text-align: left;">图5a显示Q4接触减弱，Q1接触增强</td>
 </tr>
 </tbody>
 </table>
 <h2>06 核心思想</h2>
 <ol>
-<li><strong>表面方法</strong>: 在果蝇翅原基中通过RNAi全局敲低SUMO（smt3），结合AiryScan超分辨成像、half-FRAP、Hi-C、CUT&amp;RUN、RNA-seq和粗粒化聚合物模拟，系统研究SUMO化缺失对PRC1凝聚体、3D基因组和转录的影响。</li>
-<li><strong>核心洞察</strong>: SUMO化作为PRC1凝聚体的“溶解度因子”，通过调节PRC1-PRC1同型相互作用强度来控制凝聚体的材料状态（液态 vs. 凝胶态）和大小。SUMO缺失导致PRC1过度自聚集，形成巨大、凝胶态的凝聚体，这些凝聚体作为异常拓扑枢纽，重排PcG TAD间的互作网络（强互作断开、弱互作增强），并引入与活性染色质的异位接触，最终导致基因表达失调，而这一过程独立于H3K27me3的维持。</li>
-<li><strong>可能的普适教训 [Analysis]</strong>: 翻译后修饰（如SUMO化）可以作为可逆的“分子开关”，精细调控核内无膜凝聚体的材料性质（而非仅调控其形成与否），从而影响染色质拓扑和基因表达。这提示在三维基因组研究中，需关注凝聚体的物理状态（液态、凝胶态、固态）而非仅其存在与否，并考虑翻译后修饰作为动态调控手段。</li>
+<li><strong>表面方法</strong>: 通过RNAi敲低果蝇SUMO（smt3），结合AiryScan成像、FRAP、Hi-C、CUT&amp;RUN和粗粒化聚合物模拟，系统研究SUMO化缺失对PRC1凝聚体、3D基因组和转录的影响。</li>
+<li><strong>核心洞察</strong>: SUMO化通过调节PRC1-PRC1同型相互作用强度，控制PRC1凝聚体的材料特性（从液态到类凝胶态）。SUMO缺失导致PRC1过度聚集，形成异常凝聚体，这些凝聚体作为“拓扑枢纽”重连PcG TAD间的接触网络（强接触丢失、弱接触获得），并产生异位活性染色质接触，最终导致基因表达失调，而这一过程独立于H3K27me3。</li>
+<li><strong>可能的普适教训 [Analysis]</strong>: 翻译后修饰（如SUMO化）可作为“分子开关”，通过调节凝聚体的材料特性（而非仅通过改变蛋白浓度或组蛋白修饰）来动态控制3D基因组结构。这提示其他修饰（如磷酸化、乙酰化）也可能通过类似机制调控染色质组织。</li>
 </ol>
 <h2>07 方法总览</h2>
 <ul>
-<li><strong>输入</strong>: 果蝇翅原基组织（对照 vs. SUMO RNAi）</li>
-<li><strong>输出</strong>: PRC1凝聚体形态/动力学、3D基因组互作图、组蛋白修饰/蛋白结合谱、基因表达谱</li>
+<li><strong>输入</strong>: 果蝇wing imaginal discs（对照和SUMO RNAi）</li>
+<li><strong>输出</strong>: PRC1凝聚体形态/动力学、3D基因组接触图谱、基因表达谱、组蛋白修饰图谱</li>
 <li><strong>模块</strong>:<ol>
 <li><strong>实验模块</strong>:<ul>
-<li><strong>成像</strong>: AiryScan超分辨显微镜（Pc-GFP foci形态）、half-FRAP（MOCHA-FRAP，动力学）</li>
-<li><strong>组学</strong>: Hi-C（3D基因组）、CUT&amp;RUN（Pc, H3K27me3, H2Aub118, H3K27ac）、RNA-seq（转录组）</li>
+<li><strong>成像</strong>: AiryScan超分辨率显微镜（观察Pc-GFP/Ph foci形态）；half-FRAP（测量凝聚体动力学）</li>
+<li><strong>组学</strong>: Hi-C（3D基因组）；CUT&amp;RUN（Pc, H3K27me3, H2Aub118, H3K27ac）；RNA-seq（基因表达）</li>
 </ul>
 </li>
-<li><strong>计算/模拟模块</strong>:<ul>
-<li><strong>Hi-C分析</strong>: scHiC2/misha/shaman（接触分数）、cooler/cooltools（ICE归一化）、TopDom（TAD calling）、ChromHMM（染色质状态注释）</li>
-<li><strong>CUT&amp;RUN分析</strong>: Bowtie2比对、macs3 peak calling、DiffBind差异分析</li>
-<li><strong>RNA-seq分析</strong>: STAR比对、featureCounts定量、DESeq2差异表达</li>
-<li><strong>聚合物模拟</strong>: 粗粒化晶格模型（PRC1为自吸引粒子，染色质为半柔性聚合物链），Monte Carlo模拟</li>
+<li><strong>计算模块</strong>:<ul>
+<li><strong>Hi-C分析</strong>: scHiC2 pipeline, misha/shaman R包（计算Hi-C scores）, TopDom（TAD calling）, ChromHMM（染色质状态注释）</li>
+<li><strong>CUT&amp;RUN分析</strong>: Bowtie2比对, MACS3 peak calling, DiffBind差异分析</li>
+<li><strong>RNA-seq分析</strong>: STAR比对, DESeq2差异表达</li>
+</ul>
+</li>
+<li><strong>物理模拟模块</strong>:<ul>
+<li><strong>模型</strong>: 粗粒化晶格聚合物模型，包含PRC1粒子（自吸引）和染色质单体（含H3K27me3标记区域）</li>
+<li><strong>模拟</strong>: 动力学蒙特卡洛（kMC）模拟，系统扫描参数（EP-P, EP-H, RP/H）</li>
 </ul>
 </li>
 </ol>
 </li>
-<li><strong>训练</strong>: 不适用（无监督学习或模拟参数扫描）</li>
-<li><strong>工具</strong>: Imaris（图像分析）、R/Bioconductor、Python、GAL4/UAS系统（遗传操作）</li>
-<li><strong>反馈回路</strong>: 模拟结果（如EP-P增加导致foci变大）与实验观察（SUMO-KD导致foci变大）相互验证，指导参数选择。</li>
-<li><strong>假设</strong>: 1) PRC1凝聚体形成涉及相分离；2) SUMO化通过调节PRC1-PRC1相互作用影响凝聚；3) 粗粒化模型能捕捉关键物理机制。</li>
-<li><strong>文字流程</strong>: 首先，通过遗传操作（GAL4/UAS）在果蝇翅原基中敲低SUMO（smt3）或过表达Pc-GFP。然后，利用AiryScan成像和half-FRAP表征PRC1凝聚体的形态和动力学。同时，进行Hi-C、CUT&amp;RUN和RNA-seq实验，分别获取3D基因组、表观基因组和转录组数据。最后，通过粗粒化聚合物模拟，测试不同相互作用参数（EP-P, EP-H）对PRC1凝聚和染色质组织的影响，并与实验数据对比，解释SUMO缺失的机制。</li>
+<li><strong>训练</strong>: 不适用（无监督学习或参数扫描）</li>
+<li><strong>工具</strong>: Imaris（图像分析）, STAR, Bowtie2, MACS3, DESeq2, TopDom, ChromHMM, cooler, cooltools, 自定义kMC代码</li>
+<li><strong>反馈回路</strong>: 模拟结果（如foci大小、数量）与实验观察（成像）进行定性比较，以验证模型假设</li>
+<li><strong>假设</strong>: PRC1凝聚体形成依赖于PRC1-PRC1同型相互作用（EP-P）和PRC1-H3K27me3异型相互作用（EP-H）；SUMO缺失主要通过增加EP-P来影响凝聚体。</li>
+<li><strong>从输入到输出的文字流程</strong>: 从果蝇wing disc组织出发，进行SUMO RNAi处理。一部分组织用于成像（观察PRC1 foci形态和动力学）。另一部分进行Hi-C、CUT&amp;RUN和RNA-seq实验，分别获得3D基因组接触图谱、组蛋白修饰/蛋白结合图谱和基因表达谱。同时，基于已知的染色质状态和PRC1浓度，构建粗粒化聚合物模型，通过kMC模拟系统扫描参数，预测不同条件下PRC1凝聚体和染色质结构的变化，并与实验观察进行对比验证。</li>
 </ul>
 <h2>08 核心模块拆解</h2>
 <table>
 <thead>
 <tr>
-<th>模块</th>
-<th>功能</th>
-<th>为何需要</th>
-<th>输入输出</th>
-<th>支撑证据</th>
-<th>移除后的已知或预期影响</th>
+<th style="text-align: left;">模块</th>
+<th style="text-align: left;">功能</th>
+<th style="text-align: left;">为何需要</th>
+<th style="text-align: left;">输入输出</th>
+<th style="text-align: left;">支撑证据</th>
+<th style="text-align: left;">移除后的已知或预期影响</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>SUMO RNAi (遗传扰动)</strong></td>
-<td>全局降低SUMO水平</td>
-<td>研究SUMO化缺失对PRC1和3D基因组的影响</td>
-<td>输入：nub-GAL4 &gt; UAS-smt3 RNAi果蝇；输出：SUMO敲低翅原基</td>
-<td>图1a-c: 形成巨大Pc foci</td>
-<td>无法研究SUMO化的特异性作用（但作者承认此局限）</td>
+<td style="text-align: left;"><strong>PRC1凝聚体成像与FRAP</strong></td>
+<td style="text-align: left;">观察PRC1 foci形态、大小、数量和分子动力学</td>
+<td style="text-align: left;">直接表征SUMO缺失对PRC1凝聚体材料特性的影响</td>
+<td style="text-align: left;">输入：Pc-GFP/Ph免疫荧光样本；输出：foci 3D图像、FRAP恢复曲线</td>
+<td style="text-align: left;">图1a-e显示SUMO-KD导致大而少的foci，且FRAP显示低移动性（~30%），无液态特征</td>
+<td style="text-align: left;">无法区分SUMO缺失是影响凝聚体形成还是仅影响蛋白稳定性</td>
 </tr>
 <tr>
-<td><strong>AiryScan成像</strong></td>
-<td>超分辨观察PRC1 foci形态</td>
-<td>定量foci大小、数量、强度分布</td>
-<td>输入：Pc-GFP/免疫荧光染色翅原基；输出：3D图像及foci参数</td>
-<td>图1a-c: 显示SUMO-KD形成巨大foci</td>
-<td>无法获得动力学信息</td>
+<td style="text-align: left;"><strong>Hi-C</strong></td>
+<td style="text-align: left;">获取全基因组染色质接触图谱</td>
+<td style="text-align: left;">揭示SUMO缺失对3D基因组结构（TAD、长程接触）的影响</td>
+<td style="text-align: left;">输入：交联染色质；输出：ICE归一化接触矩阵、Hi-C scores、TAD边界</td>
+<td style="text-align: left;">图4a-h显示TAD结构稳定但PcG-PcG和PcG-Active接触重连</td>
+<td style="text-align: left;">无法将结构变化与基因表达直接关联</td>
 </tr>
 <tr>
-<td><strong>half-FRAP (MOCHA-FRAP)</strong></td>
-<td>测量凝聚体内部动力学和界面性质</td>
-<td>区分液态、凝胶态等不同材料状态</td>
-<td>输入：Pc-GFP翅原基；输出：荧光恢复曲线、移动分数</td>
-<td>图1e: 显示无界面屏障，移动分数~30%</td>
-<td>无法在对照小foci上执行，仅能分析SUMO-KD的大foci</td>
+<td style="text-align: left;"><strong>CUT&amp;RUN</strong></td>
+<td style="text-align: left;">检测Pc、H3K27me3、H2Aub118、H3K27ac的基因组分布</td>
+<td style="text-align: left;">评估SUMO缺失对PRC1结合和组蛋白修饰的影响</td>
+<td style="text-align: left;">输入：抗体-染色质复合物；输出：RPKM归一化信号、peak regions</td>
+<td style="text-align: left;">图3c-g显示H3K27me3稳定，Pc轻微减少，H3K27ac在上调基因处增加</td>
+<td style="text-align: left;">无法排除组蛋白修饰变化是基因表达改变的原因</td>
 </tr>
 <tr>
-<td><strong>Hi-C</strong></td>
-<td>全基因组染色质构象捕获</td>
-<td>定量TAD结构和TAD间互作变化</td>
-<td>输入：翅原基细胞；输出：接触矩阵、TAD边界、互作分数</td>
-<td>图4-6: 显示TAD结构稳定但互作重连</td>
-<td>无法获得单细胞或等位基因特异性信息</td>
+<td style="text-align: left;"><strong>粗粒化聚合物模拟</strong></td>
+<td style="text-align: left;">模拟PRC1和染色质的相互作用，预测凝聚体和结构变化</td>
+<td style="text-align: left;">验证SUMO缺失通过增加PRC1-PRC1互作（EP-P）导致异常聚集的假设</td>
+<td style="text-align: left;">输入：染色体3R序列、H3K27me3域位置、PRC1浓度、互作参数；输出：foci大小/数量分布、染色质接触概率</td>
+<td style="text-align: left;">图2b-c显示增加EP-P可重现SUMO-KD的foci表型，而改变EP-H或浓度不能</td>
+<td style="text-align: left;">无法直接证明体内SUMO缺失确实增加了EP-P，仅提供间接证据</td>
 </tr>
 <tr>
-<td><strong>CUT&amp;RUN</strong></td>
-<td>高分辨率蛋白-DNA结合/组蛋白修饰图谱</td>
-<td>检测Pc结合、H3K27me3、H2Aub118、H3K27ac变化</td>
-<td>输入：翅原基细胞；输出：基因组结合/修饰峰图</td>
-<td>图3c-g: 显示H3K27me3稳定，Pc轻微减少</td>
-<td>无法直接测量蛋白-蛋白相互作用</td>
-</tr>
-<tr>
-<td><strong>粗粒化聚合物模拟</strong></td>
-<td>测试PRC1-PRC1和PRC1-染色质相互作用对凝聚和拓扑的影响</td>
-<td>解释实验现象背后的物理机制</td>
-<td>输入：染色体3R序列、H3K27me3域位置、PRC1浓度和相互作用参数；输出：foci大小/数量、染色质接触图</td>
-<td>图2b-c: 增加EP-P重现SUMO-KD表型</td>
-<td>模型简化（晶格、忽略其他因子），无法定量预测具体基因表达</td>
+<td style="text-align: left;"><strong>RNA-seq</strong></td>
+<td style="text-align: left;">检测全基因组基因表达变化</td>
+<td style="text-align: left;">评估SUMO缺失对转录的影响，并与结构变化关联</td>
+<td style="text-align: left;">输入：总RNA；输出：差异表达基因列表、GSEA富集结果</td>
+<td style="text-align: left;">图3a-b显示700个DEGs，包括PcG靶基因，GSEA显示发育重编程</td>
+<td style="text-align: left;">无法区分直接和间接的转录效应</td>
 </tr>
 </tbody>
 </table>
 <h2>09 关键公式符号</h2>
 <ul>
-<li><strong>Hamiltonian of the polymer model</strong>: ( H = H_{\text{bend}} + H_{P-P} + H_{P-H} + H_{SH} )<ul>
-<li><strong>符号含义</strong>: ( H ) 是系统总能量；( H_{\text{bend}} ) 是染色质弯曲能；( H_{P-P} ) 是PRC1-PRC1同型吸引能；( H_{P-H} ) 是PRC1与H3K27me3标记单体间的异型吸引能；( H_{SH} ) 是PRC1与任何单体间的空间位阻能。</li>
-<li><strong>用途</strong>: 定义Monte Carlo模拟中系统演化的能量函数，通过调节各项系数（如 ( E_{P-P} )）来模拟不同条件（如SUMO缺失）。</li>
-<li><strong>直觉</strong>: 该公式将复杂的生物物理过程（PRC1凝聚、染色质折叠）简化为几种关键相互作用的能量之和。增加 ( E_{P-P} ) 会促进PRC1自聚集，增加 ( E_{P-H} ) 会促进PRC1结合到H3K27me3区域。</li>
-<li><strong>来源指针</strong>: Methods - Polymer model 节。</li>
+<li><strong>公式</strong>: H = H_bend + H_P-P + H_P-H + H_SH</li>
+<li><strong>符号含义</strong>:<ul>
+<li>H: 系统总哈密顿量</li>
+<li>H_bend: 染色质弯曲能，H_bend = Σ κ (1 - cosθ_i)</li>
+<li>H_P-P: PRC1-PRC1自吸引能，H_P-P = - (E_P-P/2) Σ Σ σ_l</li>
+<li>H_P-H: PRC1-H3K27me3异型吸引能，H_P-H = - E_P-H Σ Σ κ_l</li>
+<li>H_SH: 空间位阻能，H_SH = + E_SH Σ σ_i π_i</li>
 </ul>
 </li>
+<li><strong>用途</strong>: 定义粗粒化聚合物模型的能量函数，用于动力学蒙特卡洛模拟。</li>
+<li><strong>直觉</strong>: 系统总能量由染色质刚性、PRC1间吸引、PRC1与标记染色质吸引以及空间排斥四项组成。通过调整参数（如E_P-P），可以模拟不同条件下PRC1的聚集行为。</li>
+<li><strong>来源指针</strong>: Methods - Polymer model</li>
 </ul>
 <h2>10 实验设计与证据链</h2>
 <ul>
-<li><strong>数据集/群体</strong>: 果蝇（Drosophila melanogaster）翅原基（wing imaginal discs），使用nub-GAL4驱动子进行组织特异性RNAi。</li>
-<li><strong>规模</strong>: 每个实验使用20-60个翅原基（Hi-C用60个），生物学重复2次（CUT&amp;RUN, Hi-C）。</li>
-<li><strong>指标</strong>: foci大小/数量/强度、FRAP移动分数/恢复曲线、Hi-C接触分数/绝缘分数、CUT&amp;RUN peak/信号强度、RNA-seq差异表达倍数/显著性。</li>
-<li><strong>基线</strong>: 对照翅原基（无RNAi或对照RNAi）。</li>
+<li><strong>数据集/群体</strong>: 果蝇（Drosophila melanogaster）wing imaginal discs，nub-GAL4驱动SUMO RNAi（smt3 RNAi）和Pc-GFP过表达。</li>
+<li><strong>规模</strong>: RNA-seq: 6GB/sample, 2 replicates; CUT&amp;RUN: 2 replicates; Hi-C: 2 replicates.</li>
+<li><strong>指标</strong>: foci大小/数量/强度、FRAP恢复曲线、Hi-C scores、TAD overlap、insulation score、差异表达基因、CUT&amp;RUN信号强度。</li>
+<li><strong>基线</strong>: 对照wing discs（无SUMO RNAi）。</li>
 <li><strong>预算</strong>: 未提供。</li>
 <li><strong>骨干/仪器</strong>: LSM980共聚焦显微镜（AiryScan）、Illumina测序仪。</li>
-<li><strong>Oracle 输入</strong>: 不适用。</li>
-<li><strong>评测协议</strong>: 标准生物信息学流程（STAR, Bowtie2, DESeq2, macs3, TopDom, ChromHMM等）。</li>
+<li><strong>Oracle 输入</strong>: 无。</li>
+<li><strong>评测协议</strong>: 标准生物信息学流程（STAR, Bowtie2, MACS3, DESeq2, TopDom, ChromHMM）。</li>
 </ul>
 <table>
 <thead>
 <tr>
-<th>实验</th>
-<th>检验的claim</th>
-<th>对比与条件</th>
-<th>结果</th>
-<th>支持的结论</th>
-<th>不支持更强的结论</th>
-<th>来源</th>
+<th style="text-align: left;">实验</th>
+<th style="text-align: left;">检验的claim</th>
+<th style="text-align: left;">对比与条件</th>
+<th style="text-align: left;">结果</th>
+<th style="text-align: left;">支持的结论</th>
+<th style="text-align: left;">不支持更强的结论</th>
+<th style="text-align: left;">来源</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>AiryScan成像 (Fig 1a-c)</td>
-<td>SUMO-KD导致PRC1 foci变大变少</td>
-<td>SUMO RNAi vs. Control vs. Pc-GFP OE</td>
-<td>SUMO-KD形成少数巨大foci，游离Pc减少；OE增加所有foci强度但不合并</td>
-<td>SUMO-KD改变凝聚性质而非增加浓度</td>
-<td>不能证明是相分离还是其他聚集机制</td>
-<td>Results 图1</td>
+<td style="text-align: left;"><strong>成像 (Fig 1a-c)</strong></td>
+<td style="text-align: left;">SUMO-KD导致PRC1形成大而少的凝聚体</td>
+<td style="text-align: left;">SUMO RNAi vs Control vs Pc-GFP OE</td>
+<td style="text-align: left;">SUMO-KD: 少数大而亮的foci，核质背景暗；OE: 所有foci均匀增大，核质背景亮</td>
+<td style="text-align: left;">SUMO-KD特异性地改变了PRC1的凝聚特性，而非简单增加浓度</td>
+<td style="text-align: left;">不能证明这些大foci是液态还是固态</td>
+<td style="text-align: left;">Results 图1a-c</td>
 </tr>
 <tr>
-<td>half-FRAP (Fig 1e)</td>
-<td>SUMO-KD的PRC1 foci是凝胶态</td>
-<td>SUMO RNAi foci的FRAP曲线</td>
-<td>无界面屏障“凹陷”，移动分数~30%</td>
-<td>凝聚体内部动力学受限，呈凝胶/固态</td>
-<td>不能排除少数foci仍有液态性质（~14%有凹陷）</td>
-<td>Results 图1e</td>
+<td style="text-align: left;"><strong>FRAP (Fig 1e)</strong></td>
+<td style="text-align: left;">SUMO-KD后PRC1凝聚体动力学降低</td>
+<td style="text-align: left;">SUMO RNAi条件下对大型foci进行half-FRAP</td>
+<td style="text-align: left;">多数foci无液态特征（无dip），移动分数~30%</td>
+<td style="text-align: left;">SUMO-KD后PRC1凝聚体转变为类凝胶态，内部交换受限</td>
+<td style="text-align: left;">不能排除少数foci仍具有液态性质（~14%有dip）</td>
+<td style="text-align: left;">Results 图1e</td>
 </tr>
 <tr>
-<td>聚合物模拟 (Fig 2)</td>
-<td>增加EP-P可重现SUMO-KD表型</td>
-<td>扫描EP-P, EP-H, RP/H参数</td>
-<td>增加EP-P导致foci变少变大，游离PRC1减少；增加RP/H导致foci均匀增大</td>
-<td>SUMO缺失可能通过增加PRC1-PRC1互作起作用</td>
-<td>模型简化，不能排除其他机制（如EP-H变化）</td>
-<td>Results 图2</td>
+<td style="text-align: left;"><strong>聚合物模拟 (Fig 2b-c)</strong></td>
+<td style="text-align: left;">增加PRC1-PRC1互作（E_P-P）可重现SUMO-KD表型</td>
+<td style="text-align: left;">扫描E_P-P, E_P-H, R_P/H参数</td>
+<td style="text-align: left;">增加E_P-P导致foci数量减少、体积增大、核质分数降低，与SUMO-KD一致</td>
+<td style="text-align: left;">SUMO缺失可能通过增加PRC1同型互作导致异常聚集</td>
+<td style="text-align: left;">模拟是间接证据，不能证明体内E_P-P确实增加</td>
+<td style="text-align: left;">Results 图2b-c</td>
 </tr>
 <tr>
-<td>CUT&amp;RUN (Fig 3c-g)</td>
-<td>基因表达变化不依赖H3K27me3</td>
-<td>SUMO RNAi vs. Control的H3K27me3, Pc, H2Aub118, H3K27ac</td>
-<td>H3K27me3稳定，Pc轻微减少，H3K27ac在上调基因增加</td>
-<td>转录失调与组蛋白修饰变化解耦</td>
-<td>不能排除H3K27ac变化有贡献</td>
-<td>Results 图3</td>
+<td style="text-align: left;"><strong>CUT&amp;RUN (Fig 3c-g)</strong></td>
+<td style="text-align: left;">SUMO-KD后H3K27me3稳定</td>
+<td style="text-align: left;">SUMO RNAi vs Control</td>
+<td style="text-align: left;">H3K27me3全基因组水平稳定，Pc轻微减少，H3K27ac在上调基因处增加</td>
+<td style="text-align: left;">基因表达变化不依赖于H3K27me3的全局改变</td>
+<td style="text-align: left;">不能排除局部H3K27me3变化或H2Aub118的作用</td>
+<td style="text-align: left;">Results 图3c-g</td>
 </tr>
 <tr>
-<td>Hi-C (Fig 4-6)</td>
-<td>SUMO-KD导致TAD互作重连</td>
-<td>SUMO RNAi vs. Control的接触矩阵</td>
-<td>TAD结构稳定，但PcG-PcG互作重连（强减弱、弱增强），PcG-Active互作增加</td>
-<td>3D基因组重连是表达失调的结构基础</td>
-<td>不能证明因果关系（互作变化导致表达变化）</td>
-<td>Results 图4-6</td>
+<td style="text-align: left;"><strong>Hi-C (Fig 4)</strong></td>
+<td style="text-align: left;">SUMO-KD导致TAD间接触重连</td>
+<td style="text-align: left;">SUMO RNAi vs Control</td>
+<td style="text-align: left;">TAD结构稳定，但PcG-PcG接触重连（强减弱增），PcG-Active接触增加</td>
+<td style="text-align: left;">SUMO缺失重连了PcG TAD的相互作用网络</td>
+<td style="text-align: left;">不能证明接触重连是基因表达变化的直接原因</td>
+<td style="text-align: left;">Results 图4a-h</td>
 </tr>
 <tr>
-<td>互作-表达关联分析 (Fig 5c, 6d-e)</td>
-<td>PcG-PcG互作变化与表达相关</td>
-<td>按PcG-PcG接触变化分层，比较基因表达变化</td>
-<td>Q4（强互作丢失）基因上调最多；PcG-PcG变化与表达方向一致，PcG-Active变化无独立关联</td>
-<td>PcG-PcG网络是抑制功能的关键结构特征</td>
-<td>相关性不等于因果性</td>
-<td>Results 图5-6</td>
+<td style="text-align: left;"><strong>Hi-C + RNA-seq (Fig 5-6)</strong></td>
+<td style="text-align: left;">PcG-PcG接触变化与基因表达相关</td>
+<td style="text-align: left;">按接触强度分Q1-Q4，关联表达变化</td>
+<td style="text-align: left;">Q4（强接触丢失）的基因上调，Q1（弱接触获得）的基因下调；PcG-Active接触变化与表达无独立关联</td>
+<td style="text-align: left;">PcG-PcG接触网络是PcG介导抑制的结构基础</td>
+<td style="text-align: left;">相关性不等于因果性</td>
+<td style="text-align: left;">Results 图5-6</td>
 </tr>
 </tbody>
 </table>
 <h2>11 结论正确解读</h2>
 <ul>
-<li><strong>任务范围</strong>: 本研究在果蝇翅原基这一特定组织中进行，使用全局SUMO RNAi，结论主要适用于该系统和扰动条件。</li>
-<li><strong>Oracle/真值输入</strong>: 不适用。</li>
-<li><strong>端到端状态</strong>: 实验和模拟相互支持，但未建立从SUMO缺失到基因表达变化的完整因果链（如通过PRC1特异性SUMO突变体验证）。</li>
-<li><strong>算力成本</strong>: 未提供，但聚合物模拟需要计算资源。</li>
-<li><strong>历史数据依赖</strong>: 依赖于果蝇参考基因组（dm6）和已有的ChIP-seq数据（如H3K9me3）。</li>
-<li><strong>模型依赖</strong>: 聚合物模型是粗粒化的，忽略了分子细节（如具体SUMO位点、其他蛋白）。</li>
-<li><strong>最难情形</strong>: 证明PRC1凝聚体变化是3D基因组重连的直接原因，而非其他SUMO靶标的间接效应。</li>
-<li><strong>群体/领域边界</strong>: 结论可能限于果蝇，但机制（SUMO调控相分离）可能保守。</li>
-<li><strong>不确定性</strong>: 作者承认全局SUMO RNAi的非特异性，且Pc-3KR突变体表型较弱，提示其他SUMO靶标或PRC1亚基的SUMO化可能补偿。</li>
-<li><strong>有边界的复述</strong>: 在果蝇翅原基中，全局SUMO敲低导致PRC1凝聚体从液态转变为凝胶态，并伴随PcG TAD间互作的重连和基因表达失调，而H3K27me3水平基本不变。这表明SUMO化是调控PRC1凝聚体材料性质和3D基因组拓扑的关键因子，且其作用机制部分独立于组蛋白修饰。</li>
+<li><strong>任务范围</strong>: 本文在果蝇wing imaginal discs中，通过全局SUMO敲低（非PRC1特异性突变）研究SUMO化对PRC1凝聚体、3D基因组和转录的影响。</li>
+<li><strong>Oracle/真值输入</strong>: 无。</li>
+<li><strong>端到端状态</strong>: 实验和模拟相结合，但模拟仅用于验证假设，未进行定量预测。</li>
+<li><strong>算力成本</strong>: 未提供。</li>
+<li><strong>历史数据依赖</strong>: 依赖于已知的H3K27me3域位置（来自ChIP-seq）来构建模拟模型。</li>
+<li><strong>模型依赖</strong>: 粗粒化聚合物模型是简化的，忽略了分子细节（如IDR结构、其他蛋白）。</li>
+<li><strong>最难情形</strong>: 区分SUMO缺失的直接效应（通过PRC1）和间接效应（通过其他SUMO化蛋白）。</li>
+<li><strong>群体/领域边界</strong>: 结论仅限于果蝇wing disc组织，是否适用于其他组织或物种未知。</li>
+<li><strong>不确定性</strong>: 作者承认全局SUMO敲低的影响广泛，PRC1特异性SUMO突变体（Pc-3KR）未重现强表型，提示可能存在补偿机制。</li>
+<li><strong>有边界的复述</strong>: 在果蝇wing disc中，全局SUMO敲低导致PRC1凝聚体从液态转变为类凝胶态，并重连PcG TAD间的长程接触网络（强接触减弱，弱接触增强），同时增加与活性染色质的异位接触。这些结构变化与基因表达失调相关，且不依赖于H3K27me3的全局变化。然而，由于使用全局敲低，不能排除其他SUMO化蛋白的贡献，且PRC1特异性SUMO位点突变未产生相同表型，表明机制可能更复杂。</li>
 </ul>
 <h2>12 作者自认局限</h2>
 <table>
 <thead>
 <tr>
-<th>局限</th>
-<th>具体表现</th>
-<th>作者提出的未来方向</th>
-<th>来源</th>
+<th style="text-align: left;">局限</th>
+<th style="text-align: left;">具体表现</th>
+<th style="text-align: left;">作者提出的未来方向</th>
+<th style="text-align: left;">来源</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>全局SUMO敲低的非特异性</td>
-<td>影响数百个SUMO化蛋白，不能直接归因于PRC1</td>
-<td>使用PRC1特异性SUMO突变体（如Pc-3KR）进行更精细的遗传学分析</td>
-<td>Discussion - Limitations and future directions</td>
+<td style="text-align: left;">全局SUMO敲低而非PRC1特异性突变</td>
+<td style="text-align: left;">影响数百个SUMO化蛋白，不能完全归因于PRC1</td>
+<td style="text-align: left;">使用PRC1特异性SUMO突变体（如Pc-3KR）进行更精细的遗传学分析</td>
+<td style="text-align: left;">Discussion - Limitations and future directions</td>
 </tr>
 <tr>
-<td>Pc-3KR突变体表型弱</td>
-<td>用CRISPR替换内源Pc为3KR突变体后，未观察到与SUMO RNAi同等强度的表型</td>
-<td>探索Pc上其他SUMO位点或其他PRC1亚基（如Scm）的SUMO化补偿作用</td>
-<td>Discussion - Limitations and future directions</td>
+<td style="text-align: left;">Pc-3KR突变体未重现强表型</td>
+<td style="text-align: left;">用CRISPR替换内源Pc为3KR突变体后，未观察到与SUMO RNAi同等强度的表型</td>
+<td style="text-align: left;">探索Pc上其他SUMO化位点或其他PRC1亚基的SUMO化是否补偿</td>
+<td style="text-align: left;">Discussion - Limitations and future directions</td>
 </tr>
 <tr>
-<td>未直接证明因果关系</td>
-<td>观察到凝聚体变化、3D重连和表达失调的相关性，但未建立从SUMO到表达的完整因果链</td>
-<td>未来需通过更特异的扰动和功能实验验证</td>
-<td>Discussion (隐含)</td>
+<td style="text-align: left;">SUMO化动态调控未探索</td>
+<td style="text-align: left;">未研究细胞周期或应激条件下SUMO化水平变化对PRC1凝聚体的影响</td>
+<td style="text-align: left;">研究发育、细胞周期和应激过程中SUMO水平波动如何动态调控核凝聚体</td>
+<td style="text-align: left;">Discussion - Limitations and future directions</td>
+</tr>
+<tr>
+<td style="text-align: left;">PRC1互作组未分析</td>
+<td style="text-align: left;">未在SUMO缺失条件下进行PRC1互作组学分析</td>
+<td style="text-align: left;">未来在SUMO缺失条件下进行PRC1互作组学分析，揭示翻译后修饰如何重塑凝聚体组成和功能</td>
+<td style="text-align: left;">Discussion - Limitations and future directions</td>
 </tr>
 </tbody>
 </table>
@@ -348,128 +355,95 @@
 <table>
 <thead>
 <tr>
-<th>[Analysis] 观察</th>
-<th>潜在问题或替代解释</th>
-<th>为何重要</th>
-<th>如何检验</th>
-<th>依据</th>
+<th style="text-align: left;">[Analysis] 观察</th>
+<th style="text-align: left;">潜在问题或替代解释</th>
+<th style="text-align: left;">为何重要</th>
+<th style="text-align: left;">如何检验</th>
+<th style="text-align: left;">依据</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>全局SUMO RNAi导致数百个蛋白去SUMO化，但作者将表型主要归因于PRC1</td>
-<td>其他SUMO靶标（如转录因子、染色质重塑因子）的变化可能直接导致基因表达变化和3D基因组重连</td>
-<td>削弱了PRC1凝聚体作为核心中介的结论</td>
-<td>1) 使用PRC1特异性SUMO突变体（如Pc-3KR, Scm-3KR）重复关键实验（Hi-C, FRAP）。2) 在PRC1突变体背景下过表达去SUMO化酶（SENP）以模拟局部去SUMO化。</td>
-<td>Discussion - Limitations</td>
+<td style="text-align: left;">模拟中增加E_P-P可重现SUMO-KD表型，但未直接测量体内E_P-P</td>
+<td style="text-align: left;">SUMO缺失可能通过其他机制（如改变PRC1浓度、招募其他蛋白）间接影响凝聚体，而非直接增加PRC1-PRC1亲和力</td>
+<td style="text-align: left;">核心机制假设（SUMO作为溶解度因子）缺乏直接生化证据</td>
+<td style="text-align: left;">进行体外相分离实验，比较野生型和SUMO缺陷型PRC1的相图；或使用FRET测量体内PRC1-PRC1相互作用强度</td>
+<td style="text-align: left;">Results 图2</td>
 </tr>
 <tr>
-<td>half-FRAP实验仅在SUMO-KD的大foci上进行，无法与对照比较</td>
-<td>对照foci太小无法进行half-FRAP，因此无法确定正常PRC1凝聚体的材料状态</td>
-<td>无法证明SUMO-KD导致从液态到凝胶态的“转变”，可能正常状态下就是凝胶态</td>
-<td>在对照细胞中，通过其他方法（如光激活、荧光相关光谱FCS）测量PRC1的动力学和扩散系数</td>
-<td>Results 图1e</td>
+<td style="text-align: left;">Pc-3KR突变体未重现SUMO RNAi表型</td>
+<td style="text-align: left;">全局SUMO敲低的表型可能主要由其他SUMO化蛋白（如Scm或其他转录因子）介导，而非PRC1</td>
+<td style="text-align: left;">削弱了“SUMO化通过PRC1调控3D基因组”这一核心结论的因果性</td>
+<td style="text-align: left;">构建PRC1其他亚基（如Psc, Ph）的SUMO位点突变体，或构建PRC1特异性SUMO连接酶/去SUMO化酶敲除</td>
+<td style="text-align: left;">Discussion - Limitations and future directions</td>
 </tr>
 <tr>
-<td>聚合物模拟中，增加EP-P可重现SUMO-KD表型，但未测试其他参数组合</td>
-<td>可能存在其他参数变化（如EP-H降低、PRC1浓度增加）的组合也能产生类似表型</td>
-<td>模拟结论的独特性存疑，SUMO缺失可能通过多种途径影响系统</td>
-<td>进行更系统的参数扫描，并利用贝叶斯推断等方法，基于实验数据（如foci大小分布、游离PRC1比例）反推最可能的参数变化</td>
-<td>Results 图2</td>
+<td style="text-align: left;">基因表达变化与PcG-PcG接触变化的相关性较弱（Spearman ρ = -0.21）</td>
+<td style="text-align: left;">虽然统计显著，但相关性很弱，表明PcG-PcG接触变化只能解释一小部分基因表达变异，其他因素（如转录因子、其他结构蛋白）可能更重要</td>
+<td style="text-align: left;">高估了3D结构变化对转录的直接调控作用</td>
+<td style="text-align: left;">进行更精细的因果分析，如使用CRISPR干扰特定TAD接触，观察基因表达变化</td>
+<td style="text-align: left;">Results 图S8a</td>
 </tr>
 <tr>
-<td>作者声称PcG-PcG互作变化与表达相关，但相关性较弱（Spearman ρ = -0.21）</td>
-<td>虽然统计显著，但效应量小，表明PcG-PcG互作变化只能解释基因表达变化的一小部分</td>
-<td>高估了3D基因组重连对表达的直接贡献，其他因素（如转录因子活性）可能更重要</td>
-<td>1) 报告效应量（如R²）。2) 进行中介分析（mediation analysis），检验PcG-PcG互作变化在SUMO缺失与表达变化之间的中介效应大小。</td>
-<td>Results 图S8a</td>
+<td style="text-align: left;">Hi-C分析中TAD分类基于Control条件</td>
+<td style="text-align: left;">SUMO缺失可能改变染色质状态，导致TAD分类不准确，从而影响后续接触分析</td>
+<td style="text-align: left;">可能导致对PcG-Active接触变化的错误解读</td>
+<td style="text-align: left;">在SUMO RNAi条件下也进行ChromHMM分析，并基于新状态重新分类TAD</td>
+<td style="text-align: left;">Methods - Hi-C analysis methods</td>
 </tr>
 </tbody>
 </table>
 <h2>14 学到什么</h2>
-<p><strong>Agent 提炼的知识候选</strong></p>
-<ol>
-<li>
-<p><strong>可迁移概念: 翻译后修饰作为凝聚体材料状态的“分子开关”</strong></p>
-<ul>
-<li><strong>内容</strong>: SUMO化通过调节PRC1-PRC1同型相互作用强度，控制凝聚体从液态到凝胶态的转变，而非仅仅调控其形成与否。</li>
-<li><strong>可迁移方向</strong>: 在研究其他染色质相关凝聚体（如异染色质HP1、转录凝聚体Mediator）时，应关注其翻译后修饰（如磷酸化、乙酰化、SUMO化）如何动态调节其材料性质（流动性、粘弹性），而不仅是其定位或丰度。这为理解细胞如何快速响应环境变化（如应激、细胞周期）调控染色质状态提供了新思路。</li>
-</ul>
-</li>
-<li>
-<p><strong>可迁移方法: 粗粒化聚合物模拟与实验表型的定量对比</strong></p>
-<ul>
-<li><strong>内容</strong>: 通过构建包含关键相互作用（PRC1-PRC1, PRC1-染色质）的粗粒化模型，系统扫描参数，并将模拟输出的宏观表型（foci大小分布、游离蛋白比例）与实验数据（AiryScan成像）进行定量比较，从而推断出最可能的分子机制（EP-P增加）。</li>
-<li><strong>可迁移方向</strong>: 在三维基因组研究中，当实验扰动（如敲除某个蛋白）导致复杂的染色质构象变化时，可以构建类似的物理模型，通过拟合Hi-C数据（如接触概率衰减、TAD强度）来反推哪些分子间相互作用（如 cohesin 的环挤压、CTCF的边界阻挡、相分离的吸引）发生了改变。</li>
-</ul>
-</li>
-<li>
-<p><strong>可迁移实验设计: 分层分析揭示隐藏的互作重连</strong></p>
-<ul>
-<li><strong>内容</strong>: 作者没有简单地比较PcG-PcG互作的整体变化（无显著差异），而是根据基线互作强度将TAD对分为四分位数（Q1-Q4），从而发现了“强互作减弱、弱互作增强”的隐藏重连模式。</li>
-<li><strong>可迁移方向</strong>: 在分析Hi-C或Micro-C等互作数据时，对于看似“无变化”的互作类别（如PcG-PcG），应进行基于基线强度的分层分析，以揭示可能存在的双向重连（bidirectional rewiring），这比简单的均值比较能提供更丰富的生物学信息。</li>
-</ul>
-</li>
-</ol>
+<p><strong>Agent 提炼的知识候选</strong>
+1.  <strong>可迁移概念: 翻译后修饰作为凝聚体材料特性的“分子开关”</strong>
+    - <strong>描述</strong>: SUMO化通过调节PRC1-PRC1相互作用强度，控制凝聚体从液态到类凝胶态的转变，进而影响3D基因组。
+    - <strong>如何迁移到本课题</strong>: 在研究其他染色质组织蛋白（如CTCF、 cohesin、HP1）的凝聚体时，应考虑其翻译后修饰（如磷酸化、乙酰化、甲基化）如何调节其相行为，并探索这种调节对3D基因组结构的影响。例如，CTCF的磷酸化是否影响其与cohesin的共凝聚，进而改变TAD边界强度？
+2.  <strong>可迁移方法: 粗粒化聚合物模型与实验表型的定性比较</strong>
+    - <strong>描述</strong>: 通过构建简化的物理模型，系统扫描关键参数（如相互作用强度），并将模拟结果（如foci大小分布）与实验观察（如成像）进行定性比较，以验证核心假设。
+    - <strong>如何迁移到本课题</strong>: 在研究其他蛋白（如YY1、Mediator）介导的染色质环时，可以构建类似的聚合物模型，将蛋白-蛋白、蛋白-DNA相互作用参数化，模拟不同条件下（如蛋白浓度变化、突变）的环形成效率，并与Hi-C数据比较。
+3.  <strong>可迁移实验设计: 结合Hi-C、CUT&amp;RUN和RNA-seq的多组学关联分析</strong>
+    - <strong>描述</strong>: 通过整合3D基因组、表观基因组和转录组数据，并采用分层分析（如按接触强度分Q1-Q4），揭示结构变化与功能输出之间的关联。
+    - <strong>如何迁移到本课题</strong>: 在研究任何染色质结构扰动（如敲除CTCF、 cohesin）时，都应采用类似的多组学整合策略，并尝试将结构变化（如TAD融合、环丢失）与基因表达变化进行定量关联，以区分直接和间接效应。</p>
 <h2>15 与已有知识连接</h2>
 <ul>
-<li><strong>相似连接</strong>:<ul>
-<li><strong>Plys, A. J., et al. (2018). Phase separation of Polycomb-repressive complex 1 is governed by a charged disordered region.</strong> 该文体外证明PRC1的IDR（Psc）驱动相分离。本文在体内证实了PRC1相分离，并增加了SUMO化调控的维度。</li>
-<li><strong>Tatavosian, R., et al. (2019). Nuclear condensates of the Polycomb protein chromobox 2 (CBX2) assemble through phase separation.</strong> 该文研究哺乳动物PRC1的相分离。本文在果蝇中提供了互补证据，并揭示了SUMO化的调控作用。</li>
-<li><strong>Gonzalez, I., et al. (2014). SUMOylation of Polycomb group proteins is involved in the regulation of target gene expression.</strong> 该文首次发现Pc和Scm被SUMO化，且SUMO缺失导致Pc foci增大。本文在此基础上，深入研究了凝聚体材料性质和3D基因组后果。</li>
-</ul>
-</li>
-<li><strong>组合连接</strong>:<ul>
-<li>本文的发现可与 <strong>环挤压模型 (Loop Extrusion)</strong> 结合。SUMO缺失导致的PRC1过度凝聚可能阻碍cohesin的环挤压，从而影响TAD边界和长程互作。未来可研究SUMO化与cohesin/CTCF的互作。</li>
-</ul>
-</li>
-<li><strong>冲突连接</strong>:<ul>
-<li>本文强调PcG-PcG互作变化与表达相关，而PcG-Active互作变化无独立关联。这与一些认为“活性-抑制性染色质接触增加导致基因激活”的模型部分冲突，提示PcG-PcG网络的完整性可能比与活性染色质的隔离更重要。</li>
-</ul>
-</li>
-<li><strong>可迁移领域</strong>:<ul>
-<li><strong>相分离与神经退行性疾病</strong>: SUMO化也调控TDP-43、FUS等蛋白的相分离和聚集。本文的“SUMO作为溶解度因子”概念可迁移到理解病理性蛋白聚集的机制。</li>
-<li><strong>合成生物学</strong>: 通过设计可被SUMO化修饰调控的凝聚体，可以构建可逆的、响应性的基因表达调控元件或人工细胞器。</li>
-</ul>
-</li>
+<li><strong>相似工作</strong>: 本文与Plys et al. (2019) <em>Nature</em> 和 Tatavosian et al. (2019) <em>Molecular Cell</em> 等关于PRC1相分离的工作一脉相承，但首次将SUMO化修饰与PRC1凝聚体的材料特性和3D基因组重连联系起来。</li>
+<li><strong>组合工作</strong>: 本文的发现可与Kang et al. (2020) <em>Cell</em> 关于SUMO化调控HP1凝聚体的工作组合，表明SUMO化可能是调控异染色质和Polycomb两种主要抑制性染色质区室凝聚体的通用机制。</li>
+<li><strong>冲突工作</strong>: 本文发现SUMO缺失导致PRC1凝聚体变为类凝胶态，而一些研究认为PRC1凝聚体是液态的。这可能表明PRC1凝聚体的材料状态是动态可调的，而非固定不变。</li>
+<li><strong>可迁移领域</strong>: 本文的“翻译后修饰调控凝聚体材料特性”这一概念可迁移到其他核体（如核仁、Cajal body、speckle）的研究中，探索磷酸化、乙酰化等修饰如何调节这些无膜细胞器的功能和动力学。</li>
 </ul>
 <h2>16 研究想法</h2>
-<p><strong>Agent 生成的研究候选</strong></p>
-<ol>
+<p><strong>Agent 生成的研究候选</strong>
+1.  <strong>名称</strong>: 基于深度学习的PRC1凝聚体材料特性预测模型
+    - <strong>来源局限/观察</strong>: 本文的粗粒化模型是简化的，无法捕捉PRC1亚基IDR的序列细节和SUMO化位点的具体影响。
+    - <strong>核心假设</strong>: PRC1亚基（如Psc, Ph）的IDR序列特征和SUMO化位点状态可以预测其相分离行为（如临界浓度、凝聚体粘度）。
+    - <strong>相对本文的增量</strong>: 从定性物理模拟转向定量、序列特异性的预测模型。
+    - <strong>初步方法</strong>: 收集已知PRC1亚基IDR序列及其相分离实验数据（如LLPS临界浓度、FRAP恢复时间）。使用图神经网络或Transformer模型，以序列和SUMO化位点信息为输入，预测相分离参数。在果蝇或人类细胞中验证预测。
+    - <strong>验证方式</strong>: 将模型预测的突变体（如SUMO位点突变）相行为与体外相分离实验和活细胞成像结果比较。
+    - <strong>可能的失败模式</strong>: 相分离行为受多种因素（如RNA、其他蛋白）影响，仅靠序列预测可能精度不足。
+    - <strong>创新状态</strong>: unverified</p>
+<ol start="2">
 <li>
-<p><strong>候选名称</strong>: 基于深度学习的PRC1凝聚体材料状态预测模型</p>
+<p><strong>名称</strong>: 利用CRISPR干扰验证PcG TAD接触重连与基因表达的因果关系</p>
 <ul>
-<li><strong>来源局限/观察</strong>: 本文通过实验和模拟揭示了SUMO化调控PRC1凝聚体材料状态，但实验通量低，模拟参数空间有限。无法高通量预测不同突变或修饰对凝聚体性质的影响。</li>
-<li><strong>核心假设</strong>: PRC1亚基（如Psc, Ph, Pc）的序列特征（IDR长度、电荷分布、SUMO位点）和翻译后修饰状态可以预测其形成的凝聚体的材料状态（如表面张力、粘度、扩散系数）。</li>
-<li><strong>相对本文的增量</strong>: 从“解释机制”到“预测性质”。构建一个AI模型，输入PRC1亚基的序列和修饰信息，输出凝聚体的物理参数。</li>
-<li><strong>初步方法</strong>: 1) 收集文献中PRC1及其突变体的相分离实验数据（FRAP, 液滴融合等）。2) 使用图神经网络或Transformer模型，以PRC1亚基的序列（含IDR）和已知SUMO位点为特征，以凝聚体材料性质为标签进行训练。3) 利用本文的聚合物模拟结果作为补充训练数据或验证集。</li>
-<li><strong>验证方式</strong>: 1) 预测本文中Pc-3KR突变体的凝聚体性质，并与实验（如能进行FRAP）对比。2) 预测其他PRC1亚基（如Scm）SUMO位点突变的影响。3) 预测不同物种PRC1的相分离能力。</li>
-<li><strong>可能的失败模式</strong>: 1) 凝聚体性质由多种因素（如浓度、其他蛋白、RNA）决定，仅靠序列和修饰预测不准。2) 训练数据不足，模型泛化能力差。</li>
+<li><strong>来源局限/观察</strong>: 本文仅观察到PcG-PcG接触变化与基因表达相关（ρ = -0.21），但缺乏因果证据。</li>
+<li><strong>核心假设</strong>: 特定PcG TAD间的长程接触是维持其内基因抑制所必需的，破坏这些接触将导致基因去抑制。</li>
+<li><strong>相对本文的增量</strong>: 从相关性分析推进到因果性验证。</li>
+<li><strong>初步方法</strong>: 选择SUMO缺失后接触显著减弱的PcG TAD对（Q4）。使用CRISPR-dCas9系统，将dCas9与CTCF或cohesin亚基融合，在TAD边界或内部插入新的绝缘子，特异性破坏该TAD对的长程接触。通过Hi-C验证接触破坏，通过RNA-seq检测靶基因表达。</li>
+<li><strong>验证方式</strong>: 如果接触破坏导致靶基因上调，则支持因果性。</li>
+<li><strong>可能的失败模式</strong>: 单个TAD对接触的破坏可能不足以引起基因表达变化，因为可能存在冗余的接触网络。</li>
 <li><strong>创新状态</strong>: unverified</li>
 </ul>
 </li>
 <li>
-<p><strong>候选名称</strong>: 利用Hi-C数据推断凝聚体材料状态的物理模型</p>
+<p><strong>名称</strong>: 探索SUMO化调控PRC1凝聚体的分子机制：IDR与SUMO-SIM相互作用</p>
 <ul>
-<li><strong>来源局限/观察</strong>: 本文通过FRAP直接测量凝聚体动力学，但FRAP通量低，且无法在正常小foci上执行。Hi-C数据虽能反映染色质拓扑，但无法直接读出凝聚体的材料状态。</li>
-<li><strong>核心假设</strong>: 凝聚体的材料状态（如粘弹性）会影响其与染色质的相互作用动力学，从而在Hi-C接触矩阵中留下可检测的“指纹”（如接触概率随距离的衰减速率、TAD内部接触的均匀性）。</li>
-<li><strong>相对本文的增量</strong>: 提供一种从现有Hi-C数据中“读取”凝聚体材料状态的计算方法，无需额外实验。</li>
-<li><strong>初步方法</strong>: 1) 扩展本文的聚合物模拟，系统改变PRC1凝聚体的材料状态（如通过改变EP-P或引入动力学参数），生成不同状态下的模拟Hi-C数据。2) 提取模拟Hi-C中的特征（如接触概率P(s)曲线斜率、TAD内接触的异质性、loop强度）。3) 训练一个分类器或回归模型，将Hi-C特征映射到凝聚体材料状态参数。4) 将该模型应用于本文的对照和SUMO-KD Hi-C数据，验证其能否正确区分两种状态。</li>
-<li><strong>验证方式</strong>: 1) 将模型预测的SUMO-KD凝聚体状态与FRAP实验结果对比。2) 应用于其他已知改变凝聚体状态的扰动（如药物处理、其他蛋白敲低）的公开Hi-C数据。</li>
-<li><strong>可能的失败模式</strong>: 1) Hi-C信号对凝聚体材料状态不敏感，主要反映染色质折叠而非蛋白动力学。2) 模型过于依赖模拟假设，在真实数据上泛化失败。</li>
+<li><strong>来源局限/观察</strong>: 本文未揭示SUMO化如何具体改变PRC1-PRC1相互作用强度（E_P-P）的分子机制。</li>
+<li><strong>核心假设</strong>: SUMO化通过直接修饰PRC1亚基的IDR，或通过招募含SUMO相互作用基序（SIM）的蛋白，来调节IDR介导的弱多价相互作用，从而控制凝聚体材料特性。</li>
+<li><strong>相对本文的增量</strong>: 从表型描述深入到分子机制。</li>
+<li><strong>初步方法</strong>: 使用AlphaFold2或AF2-multimer预测SUMO化修饰对PRC1亚基（如Psc）IDR构象和相互作用的影响。进行体外相分离实验，比较野生型IDR、SUMO模拟突变体（如融合SUMO）和SUMO缺陷突变体的相图。通过质谱鉴定SUMO缺失后PRC1凝聚体中富集或丢失的SIM蛋白。</li>
+<li><strong>验证方式</strong>: 如果SUMO模拟突变体降低相分离临界浓度或增加凝聚体粘度，则支持假设。</li>
+<li><strong>可能的失败模式</strong>: SUMO化可能通过改变IDR的电荷分布而非招募SIM蛋白来发挥作用，或两者兼有。</li>
 <li><strong>创新状态</strong>: unverified</li>
-</ul>
-</li>
-<li>
-<p><strong>候选名称</strong>: 探究PcG TAD互作重连的因果性：CRISPRi介导的局部凝聚体扰动</p>
-<ul>
-<li><strong>来源局限/观察</strong>: 本文的全局SUMO RNAi导致广泛的3D基因组重连，但无法确定特定PcG TAD间互作的变化是基因表达变化的“因”还是“果”。</li>
-<li><strong>核心假设</strong>: 通过局部破坏或增强特定PcG TAD间的互作，可以因果性地改变该区域内基因的表达。</li>
-<li><strong>相对本文的增量</strong>: 从相关性到因果性。提供直接的功能验证。</li>
-<li><strong>初步方法</strong>: 1) 选择本文中互作变化显著的PcG TAD对（如Q4中互作减弱的对）。2) 利用CRISPRi/dCas9-KRAB系统，在其中一个TAD的边界或内部招募PRC1（如融合Pc的IDR），以局部增强该TAD的凝聚和互作能力。3) 或者，利用CRISPRa/dCas9-VP64招募去SUMO化酶（SENP），局部降低PRC1的SUMO化水平，模拟局部SUMO缺失。4) 通过Hi-C（或4C-seq）和RNA-seq检测局部互作和基因表达的变化。</li>
-<li><strong>验证方式</strong>: 1) 局部增强PRC1凝聚是否能恢复SUMO-KD下丢失的PcG-PcG互作，并抑制基因上调？2) 局部去SUMO化是否能重现SUMO-KD下的互作重连和表达变化？</li>
-<li><strong>可能的失败模式</strong>: 1) 局部扰动不足以改变全局拓扑，或效应被其他机制缓冲。2) CRISPR工具在果蝇翅原基中效率低或脱靶。</li>
-<li><strong>创新状态</strong>: partially checked (类似策略在哺乳动物细胞中已有应用，但在果蝇中结合SUMO化研究是新的)</li>
 </ul>
 </li>
 </ol></div>
@@ -480,109 +454,149 @@
     <h2>审稿人评审</h2>
     <div class="md"><h2>Review setup</h2>
 <ul>
-<li><strong>Input scope</strong> Full manuscript (including Abstract, Introduction, Materials and Methods, Results, Discussion, References, and Supplementary Material reference)</li>
-<li><strong>Assessment boundary</strong> The manuscript as provided; no supplementary data files, figures, or tables were supplied for independent inspection</li>
-<li><strong>Shared manuscript claim summary</strong> The authors claim that global depletion of SUMO in Drosophila wing imaginal discs transforms PRC1 condensates into large, gel-like structures with reduced molecular dynamics, and that this reorganization rewires 3D genome architecture (specifically inter-TAD contacts) and alters gene expression, all without major changes in H3K27me3 or H2Aub118 levels. They propose that SUMOylation acts as a critical regulator of PRC1 condensate material properties, separable from histone mark deposition.</li>
-<li><strong>Visible evidence base</strong> Text descriptions of results from AiryScan microscopy, half-FRAP, RNA-seq, CUT&amp;RUN (H3K27me3, H2Aub118, H3K27ac, Pc), Hi-C, and polymer simulations. No figures, tables, or supplementary data were provided.</li>
-<li><strong>Missing materials affecting confidence</strong> All figures, tables, supplementary data, and the Zenodo code repository are absent. This precludes independent verification of the quantitative results, statistical analyses, and the quality of the imaging and sequencing data.</li>
+<li><strong>Input scope</strong> Full manuscript (Abstract, Introduction, Materials and Methods, Results, Discussion, References, Supplementary Material reference)</li>
+<li><strong>Assessment boundary</strong> Scientific content, experimental design, data analysis, interpretation, and conclusions as presented in the manuscript</li>
+<li><strong>Shared manuscript claim summary</strong> The manuscript claims that loss of SUMOylation in Drosophila wing imaginal discs transforms PRC1 condensates into large, gel-like structures with reduced dynamics, rewires 3D genome architecture (specifically inter-TAD contacts) independently of H3K27me3 changes, and that these topological shifts correlate with gene misregulation.</li>
+<li><strong>Visible evidence base</strong> Abstract, Introduction, Materials and Methods, Results (including Figures 1-6 and Supplementary Figures S1-S8), Discussion, Data availability statement</li>
+<li><strong>Missing materials affecting confidence</strong> Raw sequencing data (GSE320399) and processed data files (e.g., Hi-C contact matrices, CUT&amp;RUN peak files) are not provided for independent verification. The Zenodo link (https://doi.org/10.5281/zenodo.21446525) is referenced but not accessible in this review. Supplementary figures are referenced but not provided. Code for the polymer model and Hi-C analysis is not provided.</li>
 </ul>
 <h2>Reviewer</h2>
 <ul>
-<li><strong>Overall assessment</strong> This manuscript addresses an important and timely question: how post-translational modifications, specifically SUMOylation, regulate the material properties of PRC1 condensates and, in turn, 3D genome organization and gene expression. The combination of in vivo imaging, biophysical modeling, and multi-omics (RNA-seq, CUT&amp;RUN, Hi-C) is ambitious and potentially powerful. The central claim that SUMO loss drives aberrant PRC1 clustering and genome rewiring independently of H3K27me3 is provocative and, if substantiated, would represent a significant conceptual advance. However, the manuscript as provided suffers from a critical lack of supporting data (no figures, tables, or supplementary materials), making it impossible to evaluate the validity, robustness, or reproducibility of the core findings. The text is well-written and the logic is coherent, but the evidence base is entirely absent. The manuscript cannot be assessed for technical soundness or the strength of its conclusions without the data.</li>
-<li><strong>Who would be interested in the results, and why</strong> Researchers in chromatin biology, 3D genome organization, phase separation/condensates, and Polycomb biology would be interested. The work links post-translational regulation of condensate properties to genome topology and transcription, which is a frontier area. The potential uncoupling of PRC1 clustering from H3K27me3 is of broad interest.</li>
-<li><strong>Major strengths</strong> 1. The question is novel and mechanistically important. 2. The multi-pronged experimental approach (imaging, modeling, genomics) is well-conceived. 3. The attempt to dissect the relationship between condensate material state, 3D genome contacts, and histone marks is sophisticated. 4. The biophysical modeling provides a testable framework.</li>
-<li><strong>Major Concerns</strong><ul>
+<li><strong>Overall assessment</strong> This manuscript presents a compelling and well-integrated study combining in vivo imaging, biophysical modeling, and multi-omics (RNA-seq, CUT&amp;RUN, Hi-C) to investigate the role of SUMOylation in regulating PRC1 condensate properties and 3D genome organization. The central finding that SUMO depletion drives aberrant PRC1 clustering and rewires inter-TAD contacts without major changes in H3K27me3 is novel and significant. The study is technically ambitious and the data generally support the main conclusions. However, several major concerns regarding the specificity of the SUMO depletion phenotype, the robustness of the biophysical model parameterization, and the causal link between contact rewiring and gene expression need to be addressed before the case is fully established.</li>
+<li><strong>Who would be interested in the results, and why</strong> Researchers in chromatin biology, 3D genome organization, phase separation, Polycomb group biology, and post-translational modifications. The work provides a mechanistic link between a specific PTM (SUMOylation), the material state of a key chromatin regulator (PRC1), and higher-order genome architecture, which is of broad interest to the fields of gene regulation and nuclear organization.</li>
+<li><strong>Major strengths</strong> 1. The combination of in vivo imaging (AiryScan, half-FRAP) with a biophysical polymer model to explain the observed changes in PRC1 condensate morphology is a powerful and elegant approach. 2. The demonstration that 3D genome rewiring (specifically PcG-PcG and PcG-Active TAD contact changes) occurs independently of global H3K27me3 changes is a significant and novel finding, challenging the view that histone marks are the sole drivers of Polycomb-mediated genome organization. 3. The quartile-based analysis of inter-TAD contacts (Figures 5, 6) is a sophisticated and informative way to dissect the bidirectional nature of contact rewiring, revealing that both strong and weak contacts are differentially affected.</li>
+<li>
+<p><strong>Major Concerns</strong></p>
+<ul>
 <li><strong>Concern ID</strong> R1-M1</li>
 <li><strong>Severity</strong> Major</li>
 <li><strong>Blocking</strong> Yes</li>
-<li><strong>Axis</strong> Data availability / Reproducibility</li>
-<li><strong>Claim pointer</strong> All claims in the manuscript, including those about PRC1 condensate morphology, dynamics, gene expression changes, histone mark stability, and 3D genome rewiring.</li>
-<li><strong>Evidence pointer</strong> All figures, tables, and supplementary data (location not provided)</li>
-<li><strong>Concern</strong> The manuscript is submitted without any figures, tables, or supplementary data files. The entire evidentiary basis for the claims is absent. The text describes results (e.g., "Fig. 1a", "Fig. 3c", "Supplementary Fig. S2", "Supplementary Table 1") but none of these are available for review. This is a fundamental and insurmountable barrier to evaluation.</li>
-<li><strong>Why it matters</strong> Without the data, it is impossible to assess the quality of the experiments, the validity of the statistical analyses, the robustness of the conclusions, or whether the data support the authors' interpretations. The manuscript is essentially an unverifiable narrative.</li>
-<li><strong>Resolution test</strong> The authors must provide all figures, tables, and supplementary data files in a format that allows independent review. The data must be of sufficient quality and detail to support the claims made in the text.</li>
-<li><strong>Concern ID</strong> R1-M2</li>
+<li><strong>Axis</strong> Specificity of perturbation</li>
+<li><strong>Claim pointer</strong> The manuscript claims that the observed effects on PRC1 condensates and 3D genome organization are a direct consequence of reduced PRC1 SUMOylation.</li>
+<li><strong>Evidence pointer</strong> Results (Figures 1-6), Discussion (Limitations and future directions)</li>
+<li><strong>Concern</strong> The study uses global SUMO depletion (smt3 RNAi), which affects hundreds of SUMOylated proteins. The authors acknowledge this limitation and mention that a Pc-3KR mutant did not phenocopy the strong SUMO RNAi effects. This is a critical weakness. The observed changes in PRC1 clustering, 3D genome rewiring, and gene expression could be indirect consequences of SUMO depletion on other pathways (e.g., transcription factors, other chromatin regulators, stress responses) rather than a direct effect on PRC1 condensate properties. The claim that SUMOylation is a "critical regulator of PRC1 condensates" is not fully supported by the data, as the perturbation is not specific to PRC1.</li>
+<li><strong>Why it matters</strong> The central mechanistic model of the paper hinges on the idea that SUMOylation directly modulates PRC1 self-interactions. Without a PRC1-specific perturbation (e.g., a SUMOylation-deficient PRC1 mutant that phenocopies the key effects), the possibility of indirect effects cannot be ruled out, significantly weakening the core conclusion.</li>
+<li>
+<p><strong>Resolution test</strong> The authors should either (a) provide evidence that a PRC1-specific SUMOylation mutant (e.g., a more comprehensive mutant targeting multiple SUMO sites on Pc, Ph, or Sce) recapitulates the key phenotypes (large foci, reduced dynamics, TAD rewiring, gene misregulation), or (b) perform a rescue experiment by expressing a SUMO-PRC1 fusion protein in the SUMO RNAi background. If this is not feasible, the claims must be substantially tempered to reflect that the study identifies a correlation between global SUMO loss and PRC1-related phenotypes, not a direct regulatory mechanism.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M2</p>
+</li>
 <li><strong>Severity</strong> Major</li>
 <li><strong>Blocking</strong> Yes</li>
-<li><strong>Axis</strong> Technical soundness / Statistical rigor</li>
-<li><strong>Claim pointer</strong> The claim that PRC1 condensates become "gel-like" upon SUMO loss, based on half-FRAP data (Fig. 1e).</li>
-<li><strong>Evidence pointer</strong> Results section "Loss of SUMOylation transforms PRC1 condensate morphology and dynamics" (location not provided)</li>
-<li><strong>Concern</strong> The half-FRAP analysis is central to the claim that condensate material state changes. The text states that the "large majority" of foci lacked a characteristic dip, and that the mobile fraction was ~30%. However, the sample size (number of foci, number of nuclei, number of biological replicates) is not stated. The criteria for classifying a focus as "liquid-like" vs. "gel-like" are not defined. The text also notes that ~14% of foci did show a dip, which is a non-trivial minority. The statistical comparison between conditions is impossible to evaluate without the data. Furthermore, the authors state that control foci were too small to be half-bleached, meaning there is no direct comparison of dynamics in the control condition. The claim of "lower internal dynamics than controls" is therefore based on a qualitative comparison to a previous study [18], not on a direct, controlled experiment.</li>
-<li><strong>Why it matters</strong> The material state of the condensate is a core mechanistic claim. If the FRAP data are not robustly quantified, with appropriate controls and statistics, the conclusion that SUMO loss drives a transition to a gel-like state is unsupported. The lack of a direct control comparison is a major weakness.</li>
-<li><strong>Resolution test</strong> The authors must provide: (1) the raw FRAP recovery curves for all foci analyzed, (2) the number of foci, nuclei, and biological replicates, (3) a clear, quantitative definition of the "dip" criterion, (4) a statistical comparison of the mobile fraction and recovery kinetics between SUMO RNAi and a suitable control (e.g., using a different, smaller condensate marker or a technical control for bleaching), and (5) a justification for the lack of a direct control comparison.</li>
-<li><strong>Concern ID</strong> R1-M3</li>
-<li><strong>Severity</strong> Major
-<strong>Blocking</strong> Yes</li>
-<li><strong>Axis</strong> Technical soundness / Data interpretation</li>
-<li><strong>Claim pointer</strong> The claim that the biophysical model supports an increase in PRC1-PRC1 self-attraction (EP-P) as the driver of aberrant clustering upon SUMO loss (Fig. 2).</li>
-<li><strong>Evidence pointer</strong> Results section "Changes in PRC1 self-interactions can explain the aberrant clustering behavior of PRC1 upon SUMO RNAi" (location not provided)</li>
-<li><strong>Concern</strong> The model is used to argue that an increase in EP-P, but not a change in EP-H, can explain the experimental observations. However, the model is a coarse-grained lattice gas with many free parameters (EP-P, EP-H, ESH, RP/H). The authors state that the results are "not qualitatively dependent on this choice" of a specific parameter set, but this is not demonstrated. A systematic exploration of parameter space is described, but the results are only shown for a few combinations. The model's ability to distinguish between changes in EP-P and EP-H relies on the assumption that the observed changes in foci number, size, and nucleoplasmic fraction are uniquely diagnostic. The text acknowledges that decreasing EP-H can also produce fewer, larger foci (Supplementary Fig. S2), but claims this is accompanied by an <em>increase</em> in the free nucleoplasmic fraction, which is not observed. This is a key point, but the quantitative comparison between the model predictions and the experimental data is not shown. The model is used to infer a mechanism, but the inference is only as strong as the model's assumptions and the quality of the fit to the data.</li>
-<li><strong>Why it matters</strong> The model is used to support the central mechanistic conclusion that SUMOylation acts as a "solubility factor" by modulating PRC1-PRC1 interactions. If the model is not rigorously validated against the experimental data, or if alternative parameter sets can equally well explain the observations, this conclusion is weakened.</li>
-<li><strong>Resolution test</strong> The authors must provide: (1) a quantitative comparison of the model's output (e.g., foci size distribution, number of foci, nucleoplasmic fraction) to the experimental data (e.g., from Fig. 1), (2) a more thorough exploration of parameter space, showing that the observed experimental phenotype is uniquely explained by an increase in EP-P, and (3) a discussion of the model's limitations and the assumptions that could affect the interpretation.</li>
-<li><strong>Concern ID</strong> R1-M4</li>
+<li><strong>Axis</strong> Causal link between contact rewiring and gene expression</li>
+<li><strong>Claim pointer</strong> The manuscript claims that the rewiring of PcG-PcG contacts "correlates with" and is "most directly tied to" gene misregulation, implying a causal or instructive role.</li>
+<li><strong>Evidence pointer</strong> Results (Figures 5, 6, Supplementary Figure S8)</li>
+<li><strong>Concern</strong> The correlation between PcG-PcG contact changes and gene expression changes is weak (Spearman ρ = -0.21, P = .003). While statistically significant, this correlation explains only a small fraction of the variance in gene expression. The analysis is also correlative and does not establish causality. The observed changes in gene expression could be a consequence of altered transcription factor activity, changes in other chromatin features (e.g., H3K27ac, which is also altered), or the direct effect of SUMO depletion on transcription machinery, rather than a direct result of the 3D contact rewiring. The claim that PcG-PcG contacts are the "structural feature most directly tied to PcG-mediated repression" is an overstatement based on the presented correlative evidence.</li>
+<li><strong>Why it matters</strong> The paper's narrative positions the 3D genome rewiring as a key mechanism for gene misregulation. If the link is merely correlative and weak, the functional significance of the observed topological changes is diminished. The paper would benefit from a more cautious interpretation.</li>
+<li>
+<p><strong>Resolution test</strong> The authors should perform an experiment to test causality. For example, they could use an engineered system to force or disrupt specific PcG-PcG contacts (e.g., using dCas9-based tools or synthetic TAD boundaries) in the presence or absence of SUMO and measure the effect on gene expression. Alternatively, they could use a time-course experiment to see if contact changes precede or follow expression changes. A more conservative interpretation of the correlative data is also required.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M3</p>
+</li>
 <li><strong>Severity</strong> Major</li>
-<li><strong>Blocking</strong> Yes</li>
-<li><strong>Axis</strong> Technical soundness / Statistical rigor</li>
-<li><strong>Claim pointer</strong> The claim that H3K27me3 is stable upon SUMO loss (Fig. 3c, d, f).</li>
-<li><strong>Evidence pointer</strong> Results section "Loss of SUMOylation leads to changes in gene expression independent of H3K27me3" (location not provided)</li>
-<li><strong>Concern</strong> The CUT&amp;RUN data are described as showing "stable" H3K27me3 levels. The text mentions "only three novel sites appearing" and that changes "did not show a significant correlation with the expression changes." However, the statistical power to detect changes is not discussed. The analysis is based on biological duplicates, which is a minimal replication. The methods for differential binding analysis (DiffBind) are described, but the results (e.g., number of differential peaks, effect sizes, p-values) are not provided. The claim of "stability" is a negative result, which requires a demonstration that the experiment had sufficient power to detect biologically meaningful changes. The text also notes a "slight reduction" in Pc binding, which is not quantified.</li>
-<li><strong>Why it matters</strong> The claim that the observed effects are "independent of H3K27me3" is a central and novel aspect of the paper. If the CUT&amp;RUN data are underpowered or the analysis is not rigorous, this claim is not supported. A failure to detect a change is not evidence of no change.</li>
-<li><strong>Resolution test</strong> The authors must provide: (1) the full results of the differential binding analysis (e.g., a table of all differential peaks with p-values and fold-changes), (2) a power analysis or justification that the experiment could detect relevant changes in H3K27me3, (3) a quantitative comparison of H3K27me3 levels at PcG target genes and across domains, with appropriate statistical tests, and (4) the raw data and quality metrics for the CUT&amp;RUN experiments.</li>
-<li><strong>Concern ID</strong> R1-M5</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Biophysical model parameterization and validation</li>
+<li><strong>Claim pointer</strong> The manuscript claims that the biophysical model shows that an increase in PRC1 self-attraction (EP-P) is sufficient to explain the SUMO RNAi phenotype, and that this provides "indirect evidence that chromatin-mediated phase-separation of PRC1 occurs in vivo."</li>
+<li><strong>Evidence pointer</strong> Results (Figure 2, Supplementary Figure S2), Materials and Methods (Polymer model, Monte Carlo simulation)</li>
+<li><strong>Concern</strong> The model is parameterized with a specific set of values (e.g., EP-P = 1 kBT for wild-type) that are described as "representative." The authors state that results are "not qualitatively dependent on this choice," but this is not rigorously demonstrated. The model explores a range of EP-P, EP-H, and RP/H values, but the parameter space is large and the choice of the "wild-type" set is somewhat arbitrary. Furthermore, the model's prediction that an increase in EP-P alone (and not a change in EP-H) explains the SUMO RNAi phenotype is based on a qualitative comparison of simulated and experimental foci properties (number, size, nucleoplasmic fraction). A more quantitative validation, such as directly fitting the model to the experimental data (e.g., foci size distributions, FRAP recovery curves), would significantly strengthen the claim. The model is also a coarse-grained representation and may not capture all relevant biophysical details.</li>
+<li><strong>Why it matters</strong> The model is a central piece of evidence supporting the claim that SUMOylation directly modulates PRC1 self-interactions. If the model's parameterization is not robustly justified or validated, the conclusions drawn from it are weakened. The claim of "indirect evidence" for phase separation is also a strong statement that requires more rigorous support.</li>
+<li>
+<p><strong>Resolution test</strong> The authors should (a) perform a sensitivity analysis to show that the qualitative conclusions hold across a wider, biologically plausible range of parameters, (b) attempt to quantitatively fit the model to the experimental data (e.g., using Bayesian inference or approximate Bayesian computation), and (c) provide a more direct experimental test of the model's prediction, for example by measuring PRC1-PRC1 interaction strength (e.g., via FRET or crosslinking) in control and SUMO RNAi conditions.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M4</p>
+</li>
 <li><strong>Severity</strong> Major</li>
-<li><strong>Blocking</strong> Yes</li>
-<li><strong>Axis</strong> Technical soundness / Data interpretation</li>
-<li><strong>Claim pointer</strong> The claim that PcG-PcG contact rewiring (specifically, loss of strong contacts and gain of weak contacts) correlates with gene expression changes (Fig. 5).</li>
-<li><strong>Evidence pointer</strong> Results section "SUMO KD leads to bidirectional reorganization of PcG-PcG contacts that correlates with PcG target gene expression" (location not provided)</li>
-<li><strong>Concern</strong> The analysis of Hi-C data is complex and relies on several processing steps (TopDom TAD calling, ChromHMM classification, quartile-based analysis of inter-TAD contacts). The text reports p-values for the quartile comparisons, but the effect sizes are not clear. The correlation between contact change and expression change is reported as Spearman ρ = -0.21 (P = .003), which is a weak correlation. The biological significance of such a weak correlation is questionable. The analysis is also circular in part: TADs are classified by their contact strength in the control condition, and then the change in contact strength is compared to expression change. This can introduce a regression-to-the-mean artifact. The authors do not discuss this possibility.</li>
-<li><strong>Why it matters</strong> The link between 3D genome rewiring and gene expression is a key conclusion. If the correlation is weak and the analysis is potentially confounded, the claim that PcG-PcG contact changes are "most directly tied to PcG-mediated repression" is overstated.</li>
-<li><strong>Resolution test</strong> The authors must provide: (1) the full Hi-C contact matrices and differential maps for the key regions, (2) a clear demonstration that the quartile-based analysis is not an artifact of regression to the mean, (3) a more detailed presentation of the correlation between contact change and expression change, including a scatter plot and a discussion of the effect size, and (4) an analysis that controls for potential confounding factors (e.g., genomic distance, chromatin state).</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Half-FRAP interpretation and controls</li>
+<li><strong>Claim pointer</strong> The manuscript claims that half-FRAP analysis reveals that PRC1 foci in SUMO RNAi are "gel-like or solid-like" with "restricted internal dynamics" and "absence of the surface tension that would be expected from a phase-separated liquid structure."</li>
+<li><strong>Evidence pointer</strong> Results (Figure 1e)</li>
+<li><strong>Concern</strong> The half-FRAP experiments were only performed on SUMO RNAi wing discs because control foci were too small. This is a significant limitation. The claim that the foci are "gel-like" is based on the absence of a characteristic dip in the unbleached half curve and a low mobile fraction (~30%). However, without a control (e.g., a known liquid-like condensate in the same tissue, or a control with smaller foci that can be bleached), it is difficult to interpret these results. The low mobile fraction could also be due to the large size of the foci, which might limit diffusion, or to the fact that the foci are chromatin-associated and thus inherently less dynamic. The observation that ~14% of foci show a small dip suggests heterogeneity, which is not fully explained.</li>
+<li><strong>Why it matters</strong> The material state of the condensates is a key part of the paper's narrative. The claim that they are "gel-like" is a strong biophysical statement that is not adequately supported by the data, given the lack of a proper control and the potential for alternative interpretations.</li>
+<li><strong>Resolution test</strong> The authors should (a) perform half-FRAP on a known liquid-like condensate in the same tissue (e.g., a nuclear speckle marker) as a positive control, (b) attempt to perform half-FRAP on the largest control foci, or use a different technique (e.g., FRAP on smaller regions within the large foci) to assess internal dynamics, and (c) discuss alternative interpretations for the observed FRAP behavior (e.g., size-dependent diffusion, chromatin tethering).</li>
 </ul>
 </li>
-<li><strong>Minor Comments</strong><ul>
+<li>
+<p><strong>Minor Comments</strong></p>
+<ul>
 <li><strong>Concern ID</strong> R1-m1</li>
 <li><strong>Severity</strong> Minor</li>
-<li><strong>Axis</strong> Clarity / Completeness</li>
-<li><strong>Affected element</strong> Methods</li>
-<li><strong>Evidence pointer</strong> Materials and methods section "Fly lines and husbandry" (location not provided)</li>
-<li><strong>Issue</strong> The genotypes of the fly lines used are not listed in the provided text. The text states "The following genotypes were used in this study:" but the list is missing.</li>
-<li><strong>Required correction</strong> Provide the full genotypes of all fly lines used.</li>
-<li><strong>Concern ID</strong> R1-m2</li>
+<li><strong>Axis</strong> Data presentation</li>
+<li><strong>Affected element</strong> Figure 1e</li>
+<li><strong>Evidence pointer</strong> Results (Figure 1e)</li>
+<li><strong>Issue</strong> The half-FRAP data is presented as a single representative curve and a pie chart. The number of foci analyzed (n) is not stated in the figure legend or main text. The variability between foci is not shown.</li>
+<li>
+<p><strong>Required correction</strong> Provide the number of foci analyzed (n) and show the variability (e.g., individual traces or a shaded area representing the standard deviation/error) in the FRAP recovery curve.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m2</p>
+</li>
 <li><strong>Severity</strong> Minor</li>
-<li><strong>Axis</strong> Clarity / Completeness</li>
-<li><strong>Affected element</strong> Methods</li>
-<li><strong>Evidence pointer</strong> Materials and methods section "Hi-C analysis methods" (location not provided)</li>
-<li><strong>Issue</strong> The description of the Hi-C analysis is very detailed but lacks information on the number of biological replicates and the sequencing depth for each replicate.</li>
-<li><strong>Required correction</strong> State the number of biological replicates and the total number of valid read pairs per replicate for the Hi-C experiments.</li>
-<li><strong>Concern ID</strong> R1-m3</li>
+<li><strong>Axis</strong> Statistical reporting</li>
+<li><strong>Affected element</strong> Results (Figures 3, 4, 5, 6)</li>
+<li><strong>Evidence pointer</strong> Results (Figures 3, 4, 5, 6)</li>
+<li><strong>Issue</strong> Many statistical comparisons are reported with P-values, but the specific statistical test used is not always stated in the figure legend or main text (e.g., for comparisons in Figures 4, 5, 6). The use of "P = .077" (Figure 4c) without specifying the test is insufficient.</li>
+<li>
+<p><strong>Required correction</strong> Clearly state the statistical test used for each comparison (e.g., Wilcoxon rank-sum test, t-test, Kruskal-Wallis test) in the figure legends or methods.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m3</p>
+</li>
 <li><strong>Severity</strong> Minor</li>
-<li><strong>Axis</strong> Clarity / Completeness</li>
-<li><strong>Affected element</strong> Results</li>
-<li><strong>Evidence pointer</strong> Results section "Loss of SUMOylation leads to changes in gene expression independent of H3K27me3" (location not provided)</li>
-<li><strong>Issue</strong> The text states that 700 (15%) DEGs were identified, but the criteria for calling a gene differentially expressed (e.g., adjusted p-value threshold, log2 fold-change cutoff) are not stated in the main text. They are implied in the methods but should be explicit.</li>
-<li><strong>Required correction</strong> State the thresholds used for calling DEGs (e.g., padj &lt; 0.05, |log2FC| &gt; 1) in the Results section.</li>
-<li><strong>Concern ID</strong> R1-m4</li>
+<li><strong>Axis</strong> Data availability</li>
+<li><strong>Affected element</strong> Data availability statement</li>
+<li><strong>Evidence pointer</strong> Data availability</li>
+<li><strong>Issue</strong> The Zenodo link (https://doi.org/10.5281/zenodo.21446525) is provided for computational analysis descriptions, but the code for the polymer model and Hi-C analysis is not explicitly mentioned as being available.</li>
+<li>
+<p><strong>Required correction</strong> Provide a clear statement about the availability of all custom code (e.g., for the polymer model, Hi-C analysis scripts) in a public repository (e.g., GitHub, Zenodo).</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m4</p>
+</li>
 <li><strong>Severity</strong> Minor</li>
-<li><strong>Axis</strong> Clarity / Completeness</li>
+<li><strong>Axis</strong> Clarity</li>
+<li><strong>Affected element</strong> Results (Figure 4a)</li>
+<li><strong>Evidence pointer</strong> Results (Figure 4a)</li>
+<li><strong>Issue</strong> The Z-score differential map in Figure 4a is described as showing "some regions... that loose contacts in SUMO RNAi." The color scale and interpretation of positive/negative Z-scores are described in the methods, but it would be helpful to explicitly state in the figure legend what the positive and negative Z-scores represent (e.g., "Red: more contacts in SUMO RNAi; Blue: more contacts in Control").</li>
+<li>
+<p><strong>Required correction</strong> Add a clear description of the Z-score color scale in the Figure 4a legend.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m5</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Interpretation</li>
 <li><strong>Affected element</strong> Discussion</li>
-<li><strong>Evidence pointer</strong> Discussion section "Limitations and future directions" (location not provided)</li>
-<li><strong>Issue</strong> The authors mention a Pc-3KR mutant experiment that "failed to detect phenotypic effects." This is a potentially important negative control, but the data are not shown. The statement is vague.</li>
-<li><strong>Required correction</strong> Either provide the data for this experiment (e.g., in a supplementary figure) or remove the statement, as it is currently unsubstantiated.</li>
+<li><strong>Evidence pointer</strong> Discussion</li>
+<li><strong>Issue</strong> The discussion states that the findings "reveal a broader paradigm in which reversible post-translational modifications fine-tune the material state and regulatory capacity of nuclear condensates." While this is a plausible and interesting idea, the study only examines one PTM (SUMOylation) on one condensate (PRC1). The claim of a "broader paradigm" is an overgeneralization.</li>
+<li><strong>Required correction</strong> Temper this claim to reflect that the study provides a specific example of this paradigm, and that future work is needed to test its generality.</li>
 </ul>
+</li>
+<li>
+<p><strong>Technical failings that need to be addressed before the case is established</strong> R1-M1 (Specificity of perturbation), R1-M2 (Causal link between contact rewiring and gene expression)</p>
+</li>
+<li>
+<p><strong>Assessment against Nature-style criteria</strong> </p>
+<ul>
+<li><strong>Originality</strong>: High. The concept that a specific PTM (SUMOylation) can regulate the material state of a chromatin regulator (PRC1) and thereby control 3D genome architecture independently of histone marks is novel and not previously demonstrated.</li>
+<li><strong>Scientific importance</strong>: High. The findings have significant implications for understanding how post-translational modifications can dynamically control genome organization and gene expression, a fundamental question in cell and developmental biology.</li>
+<li><strong>Interdisciplinary readership</strong>: Broad. The work will be of interest to researchers in chromatin biology, 3D genomics, phase separation, epigenetics, and gene regulation.</li>
+<li><strong>Technical soundness</strong>: Moderate. The study uses a sophisticated and appropriate set of techniques. However, the major concerns regarding the specificity of the perturbation (R1-M1) and the causal link between contact rewiring and expression (R1-M2) are significant weaknesses that need to be addressed. The biophysical model, while elegant, requires more rigorous validation (R1-M3).</li>
+<li><strong>Readability for nonspecialists</strong>: Good. The manuscript is generally well-written and the narrative is clear. The figures are informative. Some of the more technical details (e.g., the polymer model Hamiltonian) are well-explained in the methods.</li>
+</ul>
+</li>
+<li>
+<p><strong>Recommendation posture</strong> Supportive if technical concerns are resolved. The core findings are novel and potentially important, but the major concerns regarding the specificity of the perturbation and the causal link between contact rewiring and gene expression must be addressed. The authors should provide additional evidence (e.g., PRC1-specific mutants, causal experiments) or substantially temper their claims. The biophysical model also requires more rigorous validation.</p>
 </li>
 </ul>
 <h2>Risk / unsupported claims</h2>
 <ul>
-<li>All claims in the manuscript are currently unsupported due to the complete absence of figures, tables, and supplementary data. The following specific claims are particularly at risk without the data:<ul>
-<li>The claim that PRC1 condensates become gel-like upon SUMO loss (R1-M2).</li>
-<li>The claim that the biophysical model uniquely supports an increase in PRC1-PRC1 self-attraction (R1-M3).</li>
-<li>The claim that H3K27me3 is stable (R1-M4).</li>
-<li>The claim that PcG-PcG contact rewiring correlates with gene expression (R1-M5).</li>
-<li>The claim that the observed effects are "independent of H3K27me3" (R1-M4).</li>
-<li>The claim that TAD boundaries are largely preserved (Fig. 4b, c).</li>
-<li>The claim that PcG-Active contact changes have minimal effect on gene expression (Fig. 6).</li>
-</ul>
-</li>
+<li>The claim that SUMOylation is a "critical regulator of PRC1 condensates" is not fully supported, as the perturbation is global (smt3 RNAi) and not specific to PRC1.</li>
+<li>The claim that PcG-PcG contact rewiring is "most directly tied to" gene misregulation is an overstatement based on a weak correlative analysis (Spearman ρ = -0.21).</li>
+<li>The claim that the half-FRAP data demonstrates a "gel-like" state is not adequately supported due to the lack of a proper control.</li>
+<li>The claim that the findings reveal a "broader paradigm" for PTM regulation of condensates is an overgeneralization.</li>
 </ul></div>
   </section>
   

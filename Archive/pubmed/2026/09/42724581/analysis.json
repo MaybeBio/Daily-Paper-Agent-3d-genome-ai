@@ -6,15 +6,15 @@
   "journal": "Frontiers in oncology",
   "published_date": "2026-09-11",
   "window": {
-    "start": "2026-08-29",
-    "end": "2026-09-11"
+    "start": "2026-09-06",
+    "end": "2026-09-12"
   },
-  "score": 3,
-  "one_liner_zh": "该文综述循环游离DNA甲基化表观遗传谱在肺癌早期检测和微小残留病监测中的应用，虽提及染色质组织与机器学习，但核心是临床生物标志物而非染色质三维架构建模，与本课题关系较弱。",
+  "score": 2,
+  "one_liner_zh": "该文综述cfDNA甲基化在肺癌早诊和MRD监测中的应用，虽提及染色质组织但非核心，无三维基因组建模或AI/分子模拟方法，与本课题关系微弱。",
   "abstract": "Lung Cancer (LC) continues to be the biggest cause of cancer-related deaths around the world, mostly because of delayed diagnosis. Even if tissue biopsies and circulating tumor DNA (ctDNA) tests have revolutionized clinical management of LC patients, their effectiveness is restricted in settings with lower tumor burden, molecular heterogeneity, and bias in sampling approaches. In this scenario, the epigenetic profiling of cell-free DNA (cfDNA) stands out as a promising, less invasive approach, accurately detect cancer traces. Evidence from stage I-II disease and CT-detected pulmonary nodules supports the diagnostic potential of cfDNA methylation, although further validation in prospective screening cohorts remains necessary. Beyond genomic alterations, cfDNA epigenetic changes, including DNA methylation, chromatin organization, nucleosome positioning, and fragmentation patterns, reflect multi-dimensional complexity of tumor biology. These properties convey both the functional status and the origin of the circulating DNA fragments, accelerating for tumor integrating genomic analysis. Within this group, DNA methylation is the biologically robust and clinically well-established epigenetic marker, as alterations in methylation linked to cancer often occur in the early stages of tumorigenesis and are commonly found across different cancer cell types. Here, we explored the biological and clinical relevance of the epigenetic landscape of cfDNA in LC patients, particularly focusing on DNA methylation-based biomarkers and their evolving applications towards early diagnosis and post-surgical monitoring of minimal residual disease (MRD). We aimed to comprehensively overview analytical approaches for cfDNA methylation analysis, including targeted and genome-wide profiling strategies, and discuss their integration with machine learning (ML) and multi-omics frameworks in order to improve diagnostic performance and clinical applicability in LC management.",
-  "abstract_zh": "肺癌（Lung Cancer, LC）仍是全球癌症相关死亡的首要原因，主要归因于诊断延迟。尽管组织活检和循环肿瘤DNA（circulating tumor DNA, ctDNA）检测已彻底改变了LC患者的临床管理，但在肿瘤负荷较低、存在分子异质性以及采样方法存在偏倚的情况下，其有效性受到限制。在此背景下，游离DNA（cell-free DNA, cfDNA）的表观遗传学分析作为一种有前景、低侵入性的方法脱颖而出，能够准确检测癌症痕迹。来自I-II期疾病和CT检测肺结节的研究证据支持cfDNA甲基化的诊断潜力，尽管仍需在前瞻性筛查队列中进一步验证。除基因组改变外，cfDNA的表观遗传学变化，包括DNA甲基化、染色质组织、核小体定位和片段化模式，反映了肿瘤生物学的多维度复杂性。这些特性既传达了循环DNA片段的功能状态，也揭示了其组织来源，从而加速了肿瘤整合基因组分析。在这一类别中，DNA甲基化是生物学上稳健且临床验证充分的表观遗传学标志物，因为与癌症相关的甲基化改变通常发生在肿瘤发生的早期阶段，并且常见于不同癌细胞类型中。在此，我们探讨了LC患者cfDNA表观遗传学景观的生物学和临床相关性，特别关注基于DNA甲基化的生物标志物及其在早期诊断和微小残留病（minimal residual disease, MRD）术后监测中的演变应用。我们旨在全面概述cfDNA甲基化分析的分析方法，包括靶向和全基因组分析策略，并讨论其与机器学习（machine learning, ML）和多组学框架的整合，以提升LC管理中的诊断性能和临床适用性。",
-  "has_fulltext": false,
-  "fulltext_source": "abstract",
+  "abstract_zh": "肺癌（Lung Cancer, LC）仍是全球癌症相关死亡的首要原因，主要归因于诊断延迟。尽管组织活检和循环肿瘤DNA（circulating tumor DNA, ctDNA）检测已彻底改变了LC患者的临床管理，但在肿瘤负荷较低、存在分子异质性以及采样方法存在偏倚的情况下，其有效性受到限制。在此背景下，游离DNA（cell-free DNA, cfDNA）的表观遗传学分析作为一种有前景、低侵入性的方法脱颖而出，能够准确检测癌症痕迹。来自I-II期疾病和CT检测到的肺结节的证据支持cfDNA甲基化的诊断潜力，尽管仍需在前瞻性筛查队列中进一步验证。除基因组改变外，cfDNA的表观遗传学变化，包括DNA甲基化、染色质组织、核小体定位和片段化模式，反映了肿瘤生物学的多维度复杂性。这些特性既传达了循环DNA片段的功能状态，也揭示了其组织来源，从而加速了肿瘤整合基因组分析。在这一类别中，DNA甲基化是生物学上稳健且临床验证充分的表观遗传学标志物，因为与癌症相关的甲基化改变通常发生在肿瘤发生的早期阶段，并且常见于不同癌细胞类型中。在此，我们探讨了LC患者cfDNA表观遗传学景观的生物学和临床相关性，特别关注基于DNA甲基化的生物标志物及其在早期诊断和微小残留病（minimal residual disease, MRD）术后监测中的演变应用。我们旨在全面概述cfDNA甲基化分析的分析方法，包括靶向和全基因组分析策略，并讨论其与机器学习（machine learning, ML）和多组学框架的整合，以提升LC管理中的诊断性能和临床适用性。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
   "fulltext_path": "fulltext.md",
   "paper_card_path": "",
   "review_path": "",

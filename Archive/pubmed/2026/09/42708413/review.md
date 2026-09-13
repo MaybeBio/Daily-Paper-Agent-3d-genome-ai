@@ -1,96 +1,109 @@
 ## Review setup
-- **Input scope** Full manuscript (including Abstract, Introduction, Materials and Methods, Results, Discussion, References, and Supplementary Material reference)
-- **Assessment boundary** The manuscript as provided; no supplementary data files, figures, or tables were supplied for independent inspection
-- **Shared manuscript claim summary** The authors claim that global depletion of SUMO in Drosophila wing imaginal discs transforms PRC1 condensates into large, gel-like structures with reduced molecular dynamics, and that this reorganization rewires 3D genome architecture (specifically inter-TAD contacts) and alters gene expression, all without major changes in H3K27me3 or H2Aub118 levels. They propose that SUMOylation acts as a critical regulator of PRC1 condensate material properties, separable from histone mark deposition.
-- **Visible evidence base** Text descriptions of results from AiryScan microscopy, half-FRAP, RNA-seq, CUT&RUN (H3K27me3, H2Aub118, H3K27ac, Pc), Hi-C, and polymer simulations. No figures, tables, or supplementary data were provided.
-- **Missing materials affecting confidence** All figures, tables, supplementary data, and the Zenodo code repository are absent. This precludes independent verification of the quantitative results, statistical analyses, and the quality of the imaging and sequencing data.
+- **Input scope** Full manuscript (Abstract, Introduction, Materials and Methods, Results, Discussion, References, Supplementary Material reference)
+- **Assessment boundary** Scientific content, experimental design, data analysis, interpretation, and conclusions as presented in the manuscript
+- **Shared manuscript claim summary** The manuscript claims that loss of SUMOylation in Drosophila wing imaginal discs transforms PRC1 condensates into large, gel-like structures with reduced dynamics, rewires 3D genome architecture (specifically inter-TAD contacts) independently of H3K27me3 changes, and that these topological shifts correlate with gene misregulation.
+- **Visible evidence base** Abstract, Introduction, Materials and Methods, Results (including Figures 1-6 and Supplementary Figures S1-S8), Discussion, Data availability statement
+- **Missing materials affecting confidence** Raw sequencing data (GSE320399) and processed data files (e.g., Hi-C contact matrices, CUT&RUN peak files) are not provided for independent verification. The Zenodo link (https://doi.org/10.5281/zenodo.21446525) is referenced but not accessible in this review. Supplementary figures are referenced but not provided. Code for the polymer model and Hi-C analysis is not provided.
 
 ## Reviewer
-- **Overall assessment** This manuscript addresses an important and timely question: how post-translational modifications, specifically SUMOylation, regulate the material properties of PRC1 condensates and, in turn, 3D genome organization and gene expression. The combination of in vivo imaging, biophysical modeling, and multi-omics (RNA-seq, CUT&RUN, Hi-C) is ambitious and potentially powerful. The central claim that SUMO loss drives aberrant PRC1 clustering and genome rewiring independently of H3K27me3 is provocative and, if substantiated, would represent a significant conceptual advance. However, the manuscript as provided suffers from a critical lack of supporting data (no figures, tables, or supplementary materials), making it impossible to evaluate the validity, robustness, or reproducibility of the core findings. The text is well-written and the logic is coherent, but the evidence base is entirely absent. The manuscript cannot be assessed for technical soundness or the strength of its conclusions without the data.
-- **Who would be interested in the results, and why** Researchers in chromatin biology, 3D genome organization, phase separation/condensates, and Polycomb biology would be interested. The work links post-translational regulation of condensate properties to genome topology and transcription, which is a frontier area. The potential uncoupling of PRC1 clustering from H3K27me3 is of broad interest.
-- **Major strengths** 1. The question is novel and mechanistically important. 2. The multi-pronged experimental approach (imaging, modeling, genomics) is well-conceived. 3. The attempt to dissect the relationship between condensate material state, 3D genome contacts, and histone marks is sophisticated. 4. The biophysical modeling provides a testable framework.
+- **Overall assessment** This manuscript presents a compelling and well-integrated study combining in vivo imaging, biophysical modeling, and multi-omics (RNA-seq, CUT&RUN, Hi-C) to investigate the role of SUMOylation in regulating PRC1 condensate properties and 3D genome organization. The central finding that SUMO depletion drives aberrant PRC1 clustering and rewires inter-TAD contacts without major changes in H3K27me3 is novel and significant. The study is technically ambitious and the data generally support the main conclusions. However, several major concerns regarding the specificity of the SUMO depletion phenotype, the robustness of the biophysical model parameterization, and the causal link between contact rewiring and gene expression need to be addressed before the case is fully established.
+- **Who would be interested in the results, and why** Researchers in chromatin biology, 3D genome organization, phase separation, Polycomb group biology, and post-translational modifications. The work provides a mechanistic link between a specific PTM (SUMOylation), the material state of a key chromatin regulator (PRC1), and higher-order genome architecture, which is of broad interest to the fields of gene regulation and nuclear organization.
+- **Major strengths** 1. The combination of in vivo imaging (AiryScan, half-FRAP) with a biophysical polymer model to explain the observed changes in PRC1 condensate morphology is a powerful and elegant approach. 2. The demonstration that 3D genome rewiring (specifically PcG-PcG and PcG-Active TAD contact changes) occurs independently of global H3K27me3 changes is a significant and novel finding, challenging the view that histone marks are the sole drivers of Polycomb-mediated genome organization. 3. The quartile-based analysis of inter-TAD contacts (Figures 5, 6) is a sophisticated and informative way to dissect the bidirectional nature of contact rewiring, revealing that both strong and weak contacts are differentially affected.
 - **Major Concerns**
     - **Concern ID** R1-M1
     - **Severity** Major
     - **Blocking** Yes
-    - **Axis** Data availability / Reproducibility
-    - **Claim pointer** All claims in the manuscript, including those about PRC1 condensate morphology, dynamics, gene expression changes, histone mark stability, and 3D genome rewiring.
-    - **Evidence pointer** All figures, tables, and supplementary data (location not provided)
-    - **Concern** The manuscript is submitted without any figures, tables, or supplementary data files. The entire evidentiary basis for the claims is absent. The text describes results (e.g., "Fig. 1a", "Fig. 3c", "Supplementary Fig. S2", "Supplementary Table 1") but none of these are available for review. This is a fundamental and insurmountable barrier to evaluation.
-    - **Why it matters** Without the data, it is impossible to assess the quality of the experiments, the validity of the statistical analyses, the robustness of the conclusions, or whether the data support the authors' interpretations. The manuscript is essentially an unverifiable narrative.
-    - **Resolution test** The authors must provide all figures, tables, and supplementary data files in a format that allows independent review. The data must be of sufficient quality and detail to support the claims made in the text.
+    - **Axis** Specificity of perturbation
+    - **Claim pointer** The manuscript claims that the observed effects on PRC1 condensates and 3D genome organization are a direct consequence of reduced PRC1 SUMOylation.
+    - **Evidence pointer** Results (Figures 1-6), Discussion (Limitations and future directions)
+    - **Concern** The study uses global SUMO depletion (smt3 RNAi), which affects hundreds of SUMOylated proteins. The authors acknowledge this limitation and mention that a Pc-3KR mutant did not phenocopy the strong SUMO RNAi effects. This is a critical weakness. The observed changes in PRC1 clustering, 3D genome rewiring, and gene expression could be indirect consequences of SUMO depletion on other pathways (e.g., transcription factors, other chromatin regulators, stress responses) rather than a direct effect on PRC1 condensate properties. The claim that SUMOylation is a "critical regulator of PRC1 condensates" is not fully supported by the data, as the perturbation is not specific to PRC1.
+    - **Why it matters** The central mechanistic model of the paper hinges on the idea that SUMOylation directly modulates PRC1 self-interactions. Without a PRC1-specific perturbation (e.g., a SUMOylation-deficient PRC1 mutant that phenocopies the key effects), the possibility of indirect effects cannot be ruled out, significantly weakening the core conclusion.
+    - **Resolution test** The authors should either (a) provide evidence that a PRC1-specific SUMOylation mutant (e.g., a more comprehensive mutant targeting multiple SUMO sites on Pc, Ph, or Sce) recapitulates the key phenotypes (large foci, reduced dynamics, TAD rewiring, gene misregulation), or (b) perform a rescue experiment by expressing a SUMO-PRC1 fusion protein in the SUMO RNAi background. If this is not feasible, the claims must be substantially tempered to reflect that the study identifies a correlation between global SUMO loss and PRC1-related phenotypes, not a direct regulatory mechanism.
+
     - **Concern ID** R1-M2
     - **Severity** Major
     - **Blocking** Yes
-    - **Axis** Technical soundness / Statistical rigor
-    - **Claim pointer** The claim that PRC1 condensates become "gel-like" upon SUMO loss, based on half-FRAP data (Fig. 1e).
-    - **Evidence pointer** Results section "Loss of SUMOylation transforms PRC1 condensate morphology and dynamics" (location not provided)
-    - **Concern** The half-FRAP analysis is central to the claim that condensate material state changes. The text states that the "large majority" of foci lacked a characteristic dip, and that the mobile fraction was ~30%. However, the sample size (number of foci, number of nuclei, number of biological replicates) is not stated. The criteria for classifying a focus as "liquid-like" vs. "gel-like" are not defined. The text also notes that ~14% of foci did show a dip, which is a non-trivial minority. The statistical comparison between conditions is impossible to evaluate without the data. Furthermore, the authors state that control foci were too small to be half-bleached, meaning there is no direct comparison of dynamics in the control condition. The claim of "lower internal dynamics than controls" is therefore based on a qualitative comparison to a previous study [18], not on a direct, controlled experiment.
-    - **Why it matters** The material state of the condensate is a core mechanistic claim. If the FRAP data are not robustly quantified, with appropriate controls and statistics, the conclusion that SUMO loss drives a transition to a gel-like state is unsupported. The lack of a direct control comparison is a major weakness.
-    - **Resolution test** The authors must provide: (1) the raw FRAP recovery curves for all foci analyzed, (2) the number of foci, nuclei, and biological replicates, (3) a clear, quantitative definition of the "dip" criterion, (4) a statistical comparison of the mobile fraction and recovery kinetics between SUMO RNAi and a suitable control (e.g., using a different, smaller condensate marker or a technical control for bleaching), and (5) a justification for the lack of a direct control comparison.
+    - **Axis** Causal link between contact rewiring and gene expression
+    - **Claim pointer** The manuscript claims that the rewiring of PcG-PcG contacts "correlates with" and is "most directly tied to" gene misregulation, implying a causal or instructive role.
+    - **Evidence pointer** Results (Figures 5, 6, Supplementary Figure S8)
+    - **Concern** The correlation between PcG-PcG contact changes and gene expression changes is weak (Spearman ρ = -0.21, P = .003). While statistically significant, this correlation explains only a small fraction of the variance in gene expression. The analysis is also correlative and does not establish causality. The observed changes in gene expression could be a consequence of altered transcription factor activity, changes in other chromatin features (e.g., H3K27ac, which is also altered), or the direct effect of SUMO depletion on transcription machinery, rather than a direct result of the 3D contact rewiring. The claim that PcG-PcG contacts are the "structural feature most directly tied to PcG-mediated repression" is an overstatement based on the presented correlative evidence.
+    - **Why it matters** The paper's narrative positions the 3D genome rewiring as a key mechanism for gene misregulation. If the link is merely correlative and weak, the functional significance of the observed topological changes is diminished. The paper would benefit from a more cautious interpretation.
+    - **Resolution test** The authors should perform an experiment to test causality. For example, they could use an engineered system to force or disrupt specific PcG-PcG contacts (e.g., using dCas9-based tools or synthetic TAD boundaries) in the presence or absence of SUMO and measure the effect on gene expression. Alternatively, they could use a time-course experiment to see if contact changes precede or follow expression changes. A more conservative interpretation of the correlative data is also required.
+
     - **Concern ID** R1-M3
     - **Severity** Major
-    **Blocking** Yes
-    - **Axis** Technical soundness / Data interpretation
-    - **Claim pointer** The claim that the biophysical model supports an increase in PRC1-PRC1 self-attraction (EP-P) as the driver of aberrant clustering upon SUMO loss (Fig. 2).
-    - **Evidence pointer** Results section "Changes in PRC1 self-interactions can explain the aberrant clustering behavior of PRC1 upon SUMO RNAi" (location not provided)
-    - **Concern** The model is used to argue that an increase in EP-P, but not a change in EP-H, can explain the experimental observations. However, the model is a coarse-grained lattice gas with many free parameters (EP-P, EP-H, ESH, RP/H). The authors state that the results are "not qualitatively dependent on this choice" of a specific parameter set, but this is not demonstrated. A systematic exploration of parameter space is described, but the results are only shown for a few combinations. The model's ability to distinguish between changes in EP-P and EP-H relies on the assumption that the observed changes in foci number, size, and nucleoplasmic fraction are uniquely diagnostic. The text acknowledges that decreasing EP-H can also produce fewer, larger foci (Supplementary Fig. S2), but claims this is accompanied by an *increase* in the free nucleoplasmic fraction, which is not observed. This is a key point, but the quantitative comparison between the model predictions and the experimental data is not shown. The model is used to infer a mechanism, but the inference is only as strong as the model's assumptions and the quality of the fit to the data.
-    - **Why it matters** The model is used to support the central mechanistic conclusion that SUMOylation acts as a "solubility factor" by modulating PRC1-PRC1 interactions. If the model is not rigorously validated against the experimental data, or if alternative parameter sets can equally well explain the observations, this conclusion is weakened.
-    - **Resolution test** The authors must provide: (1) a quantitative comparison of the model's output (e.g., foci size distribution, number of foci, nucleoplasmic fraction) to the experimental data (e.g., from Fig. 1), (2) a more thorough exploration of parameter space, showing that the observed experimental phenotype is uniquely explained by an increase in EP-P, and (3) a discussion of the model's limitations and the assumptions that could affect the interpretation.
+    - **Blocking** No
+    - **Axis** Biophysical model parameterization and validation
+    - **Claim pointer** The manuscript claims that the biophysical model shows that an increase in PRC1 self-attraction (EP-P) is sufficient to explain the SUMO RNAi phenotype, and that this provides "indirect evidence that chromatin-mediated phase-separation of PRC1 occurs in vivo."
+    - **Evidence pointer** Results (Figure 2, Supplementary Figure S2), Materials and Methods (Polymer model, Monte Carlo simulation)
+    - **Concern** The model is parameterized with a specific set of values (e.g., EP-P = 1 kBT for wild-type) that are described as "representative." The authors state that results are "not qualitatively dependent on this choice," but this is not rigorously demonstrated. The model explores a range of EP-P, EP-H, and RP/H values, but the parameter space is large and the choice of the "wild-type" set is somewhat arbitrary. Furthermore, the model's prediction that an increase in EP-P alone (and not a change in EP-H) explains the SUMO RNAi phenotype is based on a qualitative comparison of simulated and experimental foci properties (number, size, nucleoplasmic fraction). A more quantitative validation, such as directly fitting the model to the experimental data (e.g., foci size distributions, FRAP recovery curves), would significantly strengthen the claim. The model is also a coarse-grained representation and may not capture all relevant biophysical details.
+    - **Why it matters** The model is a central piece of evidence supporting the claim that SUMOylation directly modulates PRC1 self-interactions. If the model's parameterization is not robustly justified or validated, the conclusions drawn from it are weakened. The claim of "indirect evidence" for phase separation is also a strong statement that requires more rigorous support.
+    - **Resolution test** The authors should (a) perform a sensitivity analysis to show that the qualitative conclusions hold across a wider, biologically plausible range of parameters, (b) attempt to quantitatively fit the model to the experimental data (e.g., using Bayesian inference or approximate Bayesian computation), and (c) provide a more direct experimental test of the model's prediction, for example by measuring PRC1-PRC1 interaction strength (e.g., via FRET or crosslinking) in control and SUMO RNAi conditions.
+
     - **Concern ID** R1-M4
     - **Severity** Major
-    - **Blocking** Yes
-    - **Axis** Technical soundness / Statistical rigor
-    - **Claim pointer** The claim that H3K27me3 is stable upon SUMO loss (Fig. 3c, d, f).
-    - **Evidence pointer** Results section "Loss of SUMOylation leads to changes in gene expression independent of H3K27me3" (location not provided)
-    - **Concern** The CUT&RUN data are described as showing "stable" H3K27me3 levels. The text mentions "only three novel sites appearing" and that changes "did not show a significant correlation with the expression changes." However, the statistical power to detect changes is not discussed. The analysis is based on biological duplicates, which is a minimal replication. The methods for differential binding analysis (DiffBind) are described, but the results (e.g., number of differential peaks, effect sizes, p-values) are not provided. The claim of "stability" is a negative result, which requires a demonstration that the experiment had sufficient power to detect biologically meaningful changes. The text also notes a "slight reduction" in Pc binding, which is not quantified.
-    - **Why it matters** The claim that the observed effects are "independent of H3K27me3" is a central and novel aspect of the paper. If the CUT&RUN data are underpowered or the analysis is not rigorous, this claim is not supported. A failure to detect a change is not evidence of no change.
-    - **Resolution test** The authors must provide: (1) the full results of the differential binding analysis (e.g., a table of all differential peaks with p-values and fold-changes), (2) a power analysis or justification that the experiment could detect relevant changes in H3K27me3, (3) a quantitative comparison of H3K27me3 levels at PcG target genes and across domains, with appropriate statistical tests, and (4) the raw data and quality metrics for the CUT&RUN experiments.
-    - **Concern ID** R1-M5
-    - **Severity** Major
-    - **Blocking** Yes
-    - **Axis** Technical soundness / Data interpretation
-    - **Claim pointer** The claim that PcG-PcG contact rewiring (specifically, loss of strong contacts and gain of weak contacts) correlates with gene expression changes (Fig. 5).
-    - **Evidence pointer** Results section "SUMO KD leads to bidirectional reorganization of PcG-PcG contacts that correlates with PcG target gene expression" (location not provided)
-    - **Concern** The analysis of Hi-C data is complex and relies on several processing steps (TopDom TAD calling, ChromHMM classification, quartile-based analysis of inter-TAD contacts). The text reports p-values for the quartile comparisons, but the effect sizes are not clear. The correlation between contact change and expression change is reported as Spearman ρ = -0.21 (P = .003), which is a weak correlation. The biological significance of such a weak correlation is questionable. The analysis is also circular in part: TADs are classified by their contact strength in the control condition, and then the change in contact strength is compared to expression change. This can introduce a regression-to-the-mean artifact. The authors do not discuss this possibility.
-    - **Why it matters** The link between 3D genome rewiring and gene expression is a key conclusion. If the correlation is weak and the analysis is potentially confounded, the claim that PcG-PcG contact changes are "most directly tied to PcG-mediated repression" is overstated.
-    - **Resolution test** The authors must provide: (1) the full Hi-C contact matrices and differential maps for the key regions, (2) a clear demonstration that the quartile-based analysis is not an artifact of regression to the mean, (3) a more detailed presentation of the correlation between contact change and expression change, including a scatter plot and a discussion of the effect size, and (4) an analysis that controls for potential confounding factors (e.g., genomic distance, chromatin state).
+    - **Blocking** No
+    - **Axis** Half-FRAP interpretation and controls
+    - **Claim pointer** The manuscript claims that half-FRAP analysis reveals that PRC1 foci in SUMO RNAi are "gel-like or solid-like" with "restricted internal dynamics" and "absence of the surface tension that would be expected from a phase-separated liquid structure."
+    - **Evidence pointer** Results (Figure 1e)
+    - **Concern** The half-FRAP experiments were only performed on SUMO RNAi wing discs because control foci were too small. This is a significant limitation. The claim that the foci are "gel-like" is based on the absence of a characteristic dip in the unbleached half curve and a low mobile fraction (~30%). However, without a control (e.g., a known liquid-like condensate in the same tissue, or a control with smaller foci that can be bleached), it is difficult to interpret these results. The low mobile fraction could also be due to the large size of the foci, which might limit diffusion, or to the fact that the foci are chromatin-associated and thus inherently less dynamic. The observation that ~14% of foci show a small dip suggests heterogeneity, which is not fully explained.
+    - **Why it matters** The material state of the condensates is a key part of the paper's narrative. The claim that they are "gel-like" is a strong biophysical statement that is not adequately supported by the data, given the lack of a proper control and the potential for alternative interpretations.
+    - **Resolution test** The authors should (a) perform half-FRAP on a known liquid-like condensate in the same tissue (e.g., a nuclear speckle marker) as a positive control, (b) attempt to perform half-FRAP on the largest control foci, or use a different technique (e.g., FRAP on smaller regions within the large foci) to assess internal dynamics, and (c) discuss alternative interpretations for the observed FRAP behavior (e.g., size-dependent diffusion, chromatin tethering).
+
 - **Minor Comments**
     - **Concern ID** R1-m1
     - **Severity** Minor
-    - **Axis** Clarity / Completeness
-    - **Affected element** Methods
-    - **Evidence pointer** Materials and methods section "Fly lines and husbandry" (location not provided)
-    - **Issue** The genotypes of the fly lines used are not listed in the provided text. The text states "The following genotypes were used in this study:" but the list is missing.
-    - **Required correction** Provide the full genotypes of all fly lines used.
+    - **Axis** Data presentation
+    - **Affected element** Figure 1e
+    - **Evidence pointer** Results (Figure 1e)
+    - **Issue** The half-FRAP data is presented as a single representative curve and a pie chart. The number of foci analyzed (n) is not stated in the figure legend or main text. The variability between foci is not shown.
+    - **Required correction** Provide the number of foci analyzed (n) and show the variability (e.g., individual traces or a shaded area representing the standard deviation/error) in the FRAP recovery curve.
+
     - **Concern ID** R1-m2
     - **Severity** Minor
-    - **Axis** Clarity / Completeness
-    - **Affected element** Methods
-    - **Evidence pointer** Materials and methods section "Hi-C analysis methods" (location not provided)
-    - **Issue** The description of the Hi-C analysis is very detailed but lacks information on the number of biological replicates and the sequencing depth for each replicate.
-    - **Required correction** State the number of biological replicates and the total number of valid read pairs per replicate for the Hi-C experiments.
+    - **Axis** Statistical reporting
+    - **Affected element** Results (Figures 3, 4, 5, 6)
+    - **Evidence pointer** Results (Figures 3, 4, 5, 6)
+    - **Issue** Many statistical comparisons are reported with P-values, but the specific statistical test used is not always stated in the figure legend or main text (e.g., for comparisons in Figures 4, 5, 6). The use of "P = .077" (Figure 4c) without specifying the test is insufficient.
+    - **Required correction** Clearly state the statistical test used for each comparison (e.g., Wilcoxon rank-sum test, t-test, Kruskal-Wallis test) in the figure legends or methods.
+
     - **Concern ID** R1-m3
     - **Severity** Minor
-    - **Axis** Clarity / Completeness
-    - **Affected element** Results
-    - **Evidence pointer** Results section "Loss of SUMOylation leads to changes in gene expression independent of H3K27me3" (location not provided)
-    - **Issue** The text states that 700 (15%) DEGs were identified, but the criteria for calling a gene differentially expressed (e.g., adjusted p-value threshold, log2 fold-change cutoff) are not stated in the main text. They are implied in the methods but should be explicit.
-    - **Required correction** State the thresholds used for calling DEGs (e.g., padj < 0.05, |log2FC| > 1) in the Results section.
+    - **Axis** Data availability
+    - **Affected element** Data availability statement
+    - **Evidence pointer** Data availability
+    - **Issue** The Zenodo link (https://doi.org/10.5281/zenodo.21446525) is provided for computational analysis descriptions, but the code for the polymer model and Hi-C analysis is not explicitly mentioned as being available.
+    - **Required correction** Provide a clear statement about the availability of all custom code (e.g., for the polymer model, Hi-C analysis scripts) in a public repository (e.g., GitHub, Zenodo).
+
     - **Concern ID** R1-m4
     - **Severity** Minor
-    - **Axis** Clarity / Completeness
+    - **Axis** Clarity
+    - **Affected element** Results (Figure 4a)
+    - **Evidence pointer** Results (Figure 4a)
+    - **Issue** The Z-score differential map in Figure 4a is described as showing "some regions... that loose contacts in SUMO RNAi." The color scale and interpretation of positive/negative Z-scores are described in the methods, but it would be helpful to explicitly state in the figure legend what the positive and negative Z-scores represent (e.g., "Red: more contacts in SUMO RNAi; Blue: more contacts in Control").
+    - **Required correction** Add a clear description of the Z-score color scale in the Figure 4a legend.
+
+    - **Concern ID** R1-m5
+    - **Severity** Minor
+    - **Axis** Interpretation
     - **Affected element** Discussion
-    - **Evidence pointer** Discussion section "Limitations and future directions" (location not provided)
-    - **Issue** The authors mention a Pc-3KR mutant experiment that "failed to detect phenotypic effects." This is a potentially important negative control, but the data are not shown. The statement is vague.
-    - **Required correction** Either provide the data for this experiment (e.g., in a supplementary figure) or remove the statement, as it is currently unsubstantiated.
+    - **Evidence pointer** Discussion
+    - **Issue** The discussion states that the findings "reveal a broader paradigm in which reversible post-translational modifications fine-tune the material state and regulatory capacity of nuclear condensates." While this is a plausible and interesting idea, the study only examines one PTM (SUMOylation) on one condensate (PRC1). The claim of a "broader paradigm" is an overgeneralization.
+    - **Required correction** Temper this claim to reflect that the study provides a specific example of this paradigm, and that future work is needed to test its generality.
+
+- **Technical failings that need to be addressed before the case is established** R1-M1 (Specificity of perturbation), R1-M2 (Causal link between contact rewiring and gene expression)
+
+- **Assessment against Nature-style criteria** 
+    - **Originality**: High. The concept that a specific PTM (SUMOylation) can regulate the material state of a chromatin regulator (PRC1) and thereby control 3D genome architecture independently of histone marks is novel and not previously demonstrated.
+    - **Scientific importance**: High. The findings have significant implications for understanding how post-translational modifications can dynamically control genome organization and gene expression, a fundamental question in cell and developmental biology.
+    - **Interdisciplinary readership**: Broad. The work will be of interest to researchers in chromatin biology, 3D genomics, phase separation, epigenetics, and gene regulation.
+    - **Technical soundness**: Moderate. The study uses a sophisticated and appropriate set of techniques. However, the major concerns regarding the specificity of the perturbation (R1-M1) and the causal link between contact rewiring and expression (R1-M2) are significant weaknesses that need to be addressed. The biophysical model, while elegant, requires more rigorous validation (R1-M3).
+    - **Readability for nonspecialists**: Good. The manuscript is generally well-written and the narrative is clear. The figures are informative. Some of the more technical details (e.g., the polymer model Hamiltonian) are well-explained in the methods.
+
+- **Recommendation posture** Supportive if technical concerns are resolved. The core findings are novel and potentially important, but the major concerns regarding the specificity of the perturbation and the causal link between contact rewiring and gene expression must be addressed. The authors should provide additional evidence (e.g., PRC1-specific mutants, causal experiments) or substantially temper their claims. The biophysical model also requires more rigorous validation.
 
 ## Risk / unsupported claims
-- All claims in the manuscript are currently unsupported due to the complete absence of figures, tables, and supplementary data. The following specific claims are particularly at risk without the data:
-    - The claim that PRC1 condensates become gel-like upon SUMO loss (R1-M2).
-    - The claim that the biophysical model uniquely supports an increase in PRC1-PRC1 self-attraction (R1-M3).
-    - The claim that H3K27me3 is stable (R1-M4).
-    - The claim that PcG-PcG contact rewiring correlates with gene expression (R1-M5).
-    - The claim that the observed effects are "independent of H3K27me3" (R1-M4).
-    - The claim that TAD boundaries are largely preserved (Fig. 4b, c).
-    - The claim that PcG-Active contact changes have minimal effect on gene expression (Fig. 6).
+- The claim that SUMOylation is a "critical regulator of PRC1 condensates" is not fully supported, as the perturbation is global (smt3 RNAi) and not specific to PRC1.
+- The claim that PcG-PcG contact rewiring is "most directly tied to" gene misregulation is an overstatement based on a weak correlative analysis (Spearman ρ = -0.21).
+- The claim that the half-FRAP data demonstrates a "gel-like" state is not adequately supported due to the lack of a proper control.
+- The claim that the findings reveal a "broader paradigm" for PTM regulation of condensates is an overgeneralization.

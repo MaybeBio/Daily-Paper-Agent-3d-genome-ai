@@ -6,13 +6,13 @@
   "journal": "Nature communications",
   "published_date": "2026-09-10",
   "window": {
-    "start": "2026-08-29",
-    "end": "2026-09-11"
+    "start": "2026-09-06",
+    "end": "2026-09-12"
   },
   "score": 4,
-  "one_liner_zh": "该文通过大规模遗传筛选和深度学习模型DeepDC优化非编码基因组扰动工具，虽涉及顺式调控元件但核心是实验工具比较与设计，未聚焦染色质三维结构建模或空间组织预测。",
+  "one_liner_zh": "该文系统比较非编码基因组功能扰动工具并开发DeepDC深度学习模型优化双SpCas9设计，虽涉及顺式调控元件和深度学习，但核心是功能筛选而非染色质三维空间架构建模，与本课题关联较弱。",
   "abstract": "Deciphering the functionality of the noncoding genome, which includes important cis-regulatory elements (CREs) and transcribed noncoding RNA genes, remains technically challenging. Here, using massively parallel genetic screening, we systematically benchmark the performance of five representative loss-of-function perturbation tools, including single-guide RNA (gRNA) mediated SpCas9 cleavage or CRISPR interference, and paired gRNA (pgRNA) involved dual-SpCas9, Big Papi (paired SpCas9 and SaCas9) or dual-enAsCas12a fragment deletion methods, in decoding the roles of the noncoding genome. For targeting CREs such as enhancers, dual-SpCas9 outperforms other methods with superior efficiency in destroying functional genomic regions. For perturbing noncoding RNA genes, in addition to dual-SpCas9, other RNA-targeting methods such as RNA interference are recommended to discriminate transcript-dependent or -independent roles. A deep learning model, DeepDC, with an associated web server, is built to facilitate optimal dual-SpCas9 pgRNA design for efficiently deleting a genomic fragment. Together, our work provides practical guidance on selecting appropriate loss-of-function tools to resolve the functional complexity of the noncoding genome.",
-  "abstract_zh": "破译非编码基因组的功能（包括重要的顺式调控元件（CREs）和转录的非编码RNA基因）在技术上仍具挑战性。在此，我们利用大规模并行遗传筛选，系统评估了五种代表性功能缺失扰动工具的性能，包括单导向RNA（gRNA）介导的SpCas9切割或CRISPR干扰，以及配对gRNA（pgRNA）参与的双SpCas9、Big Papi（配对SpCas9和SaCas9）或双enAsCas12a片段删除方法，以解码非编码基因组的作用。在靶向增强子等CREs时，双SpCas9在破坏功能性基因组区域方面效率更优，优于其他方法。在扰动非编码RNA基因时，除双SpCas9外，建议使用RNA干扰等其他RNA靶向方法，以区分转录依赖性或非依赖性作用。我们构建了一个深度学习模型DeepDC及其相关网络服务器，以优化双SpCas9 pgRNA设计，实现高效删除基因组片段。综上，我们的工作为选择合适的功能缺失工具以解析非编码基因组的复杂功能提供了实用指导。",
+  "abstract_zh": "破译非编码基因组的功能（包括重要的顺式调控元件（CREs）和转录的非编码RNA基因）在技术上仍具挑战性。在此，我们利用大规模并行遗传筛选，系统评估了五种代表性功能缺失扰动工具的性能，包括单导向RNA（gRNA）介导的SpCas9切割或CRISPR干扰，以及配对gRNA（pgRNA）参与的双SpCas9、Big Papi（配对SpCas9和SaCas9）或双enAsCas12a片段删除方法，以解码非编码基因组的作用。在靶向增强子等CREs时，双SpCas9在破坏功能性基因组区域方面效率更优，优于其他方法。在扰动非编码RNA基因时，除双SpCas9外，还推荐使用RNA干扰等其他RNA靶向方法，以区分转录依赖性或非依赖性作用。我们构建了一个深度学习模型DeepDC及其相关网络服务器，以优化双SpCas9 pgRNA设计，高效删除基因组片段。综上，我们的工作为选择合适的功能缺失工具以解析非编码基因组的复杂功能提供了实用指导。",
   "has_fulltext": false,
   "fulltext_source": "abstract",
   "fulltext_path": "fulltext.md",

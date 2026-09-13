@@ -1,75 +1,74 @@
 ## Review setup
-- **Input scope** Full manuscript (as provided in the query)
-- **Assessment boundary** The provided text is a structured abstract/summary, not the full manuscript. Assessment is based solely on this summary.
-- **Shared manuscript claim summary** The authors claim that existing deep learning methods for Hi-C resolution enhancement create artificial structures due to patch-based processing, and that their proposed method, SHARP, overcomes this by decomposing the contact matrix into three signal types and applying deep learning only to the fine-structure component, using multi-scale attention.
-- **Visible evidence base** Abstract/summary text only. No figures, tables, methods, or supplementary materials are provided.
-- **Missing materials affecting confidence** Full manuscript, including Methods, Results, Figures, Tables, Supplementary Information, and code/data availability statements. The absence of these materials severely limits the ability to assess the technical validity and reproducibility of the claims.
+- **Input scope** Full manuscript (abstract and main text provided)
+- **Assessment boundary** Methodological soundness, validation, and claims as presented in the provided text
+- **Shared manuscript claim summary** The authors propose SHARP, a deep learning method for Hi-C data resolution enhancement that avoids artificial structures by decomposing the contact matrix into three signal types and applying deep learning only to the fine-structure component, using multi-scale attention.
+- **Visible evidence base** Abstract and main text (sections on method, results, comparisons)
+- **Missing materials affecting confidence** Figures, tables, supplementary materials, code, and data availability details are not provided; specific numerical results and statistical tests are absent.
 
 ## Reviewer
-- **Overall assessment** The abstract presents a conceptually interesting and potentially important solution to a recognized problem in computational genomics. The core idea of signal decomposition to avoid patch-induced artifacts is novel and well-motivated. However, the provided summary lacks the technical detail necessary to evaluate the method’s validity, performance, and generalizability. The claims are plausible but currently unsubstantiated by the evidence provided.
-- **Who would be interested in the results, and why** Researchers in computational biology, genomics, and bioinformatics, particularly those working on 3D genome organization, Hi-C data analysis, and deep learning for biological data. The work addresses a critical limitation of current methods and could improve the reliability of downstream analyses such as chromatin loop detection and compartment identification.
-- **Major strengths**
-    - The problem of artificial structures in deep learning-enhanced Hi-C data is clearly identified and well-motivated.
-    - The proposed solution—signal decomposition to isolate patch-sensitive components—is conceptually elegant and addresses a fundamental limitation of existing approaches.
-    - The use of both local and global attention mechanisms is a sensible strategy for capturing multi-scale patterns in Hi-C data.
+- **Overall assessment** The manuscript addresses a critical and recognized problem in computational Hi-C enhancement—the introduction of artificial structures by patch-based deep learning methods. The proposed decomposition strategy is conceptually novel and well-motivated. However, the provided text lacks the detailed evidence (figures, tables, quantitative comparisons) necessary to fully evaluate the claims of superior performance and the absence of artifacts. The assessment is therefore preliminary and supportive in principle, but the case is not yet established from the supplied material.
+- **Who would be interested in the results, and why** Researchers in computational genomics, chromatin biology, and 3D genome organization would be interested. The method directly addresses a key limitation of existing deep learning approaches, offering a potential improvement for downstream analyses such as loop calling, compartment identification, and chromatin state enrichment.
+- **Major strengths** 1. The problem of artificial structures in patch-based deep learning enhancement is clearly identified and well-articulated. 2. The signal decomposition approach (1D proximity, contiguous domains, fine structures) is a novel and principled solution. 3. The use of both local and global attention mechanisms is appropriate for capturing multi-scale Hi-C patterns. 4. The evaluation includes cross-species and cross-sample validation, which strengthens generalizability claims.
 - **Major Concerns**
     - **Concern ID** R1-M1
     - **Severity** Major
     - **Blocking** Yes
-    - **Axis** Technical validity and reproducibility
+    - **Axis** Evidence sufficiency
     - **Claim pointer** "SHARP has superior performance in terms of resolution enhancement accuracy, avoiding creation of artificial structures, identifying significant interactions, and enrichment in chromatin states."
-    - **Evidence pointer** Abstract only; no figures, tables, or quantitative results provided.
-    - **Concern** The abstract makes strong claims of superior performance across multiple metrics but provides no quantitative data, statistical tests, or comparisons. The reader cannot assess the magnitude of improvement, the statistical significance, or the robustness of the results.
-    - **Why it matters** Without quantitative evidence, the core claims of the paper are unverifiable. The field requires rigorous benchmarking to establish a new method as state-of-the-art.
-    - **Resolution test** Provide a table or figure in the full manuscript showing quantitative comparisons (e.g., Pearson/Spearman correlation, SSIM, PSNR, F1 score for loop detection) against at least two state-of-the-art methods (e.g., HiCPlus, HiCNN, DeepHiC) on multiple datasets, with error bars or confidence intervals.
-
+    - **Evidence pointer** Not provided (figures/tables absent)
+    - **Concern** The manuscript claims superior performance across multiple metrics, but no figures, tables, or quantitative results are included in the provided text. The reader cannot verify the magnitude of improvement, the statistical significance of differences, or the specific comparisons against state-of-the-art methods.
+    - **Why it matters** Without quantitative evidence, the central claims of the paper are unsubstantiated. The field requires clear benchmarks (e.g., peak signal-to-noise ratio, structural similarity index, recall/precision for loops) to assess whether SHARP genuinely outperforms existing methods.
+    - **Resolution test** Provide figures and tables showing quantitative comparisons (e.g., bar plots, box plots, or tables with mean ± standard deviation) for all claimed metrics, with statistical tests (e.g., paired t-test or Wilcoxon) against at least two state-of-the-art methods (e.g., HiCPlus, HiCNN, DeepHiC).
     - **Concern ID** R1-M2
     - **Severity** Major
     - **Blocking** Yes
     - **Axis** Methodological clarity
     - **Claim pointer** "It uses the novel approach of decomposing the data into three types of signals, due to one-dimensional proximity, contiguous domains, and other fine structures, respectively, and applies deep learning only to the third type of signals."
-    - **Evidence pointer** Abstract only; no methods section provided.
-    - **Concern** The signal decomposition procedure is described only at a high level. It is unclear how the three signal types are defined, separated, and recombined. The mathematical formulation, algorithmic steps, and any assumptions are missing.
-    - **Why it matters** The decomposition is the central innovation of the method. Without a clear description, the work cannot be reproduced, and the validity of the approach cannot be assessed.
-    - **Resolution test** Provide a detailed Methods section describing the decomposition algorithm, including equations, pseudocode, or a clear schematic. Specify how the "one-dimensional proximity" and "contiguous domains" signals are modeled and separated from the "fine structures."
-
+    - **Evidence pointer** Section: method description (location not provided)
+    - **Concern** The decomposition strategy is described only at a high level. It is unclear how the three signal types are mathematically defined, separated, and recombined. For example, how is "one-dimensional proximity" distinguished from "contiguous domains"? What is the algorithmic basis for this decomposition (e.g., matrix factorization, wavelet transform, or learned embeddings)?
+    - **Why it matters** Reproducibility and understanding of the method's novelty depend on a precise description of the decomposition. Without this, the approach cannot be evaluated or implemented by other researchers.
+    - **Resolution test** Provide a detailed algorithmic description of the decomposition step, including equations, pseudocode, or a clear schematic. Specify the criteria for separating the three signal types and how the deep learning component is applied only to the third type.
     - **Concern ID** R1-M3
     - **Severity** Major
-    - **Blocking** Yes
-    - **Axis** Generalizability and validation
+    - **Blocking** No
+    - **Axis** Validation scope
     - **Claim pointer** "We compare SHARP with state-of-the-art methods extensively, including application to data from new samples and another species."
-    - **Evidence pointer** Abstract only; no results or data provided.
-    - **Concern** The abstract mentions cross-species and cross-sample validation but provides no details on the species, sample types, or the results of these comparisons. The claim of "extensive" comparison is unsubstantiated.
-    - **Why it matters** Generalizability is a key requirement for a method to be widely adopted. The lack of detail prevents assessment of whether SHARP works robustly across different biological contexts.
-    - **Resolution test** In the full manuscript, present results from at least one non-human species (e.g., mouse, Drosophila) and from a new cell type or condition not used in training. Show that performance metrics are comparable to or better than those on the training data.
-
+    - **Evidence pointer** Not provided (location not provided)
+    - **Concern** The text mentions cross-species and cross-sample validation but does not specify which species, samples, or data types were used. The extent of "extensive" comparison is unclear.
+    - **Why it matters** Generalizability claims require explicit description of the test datasets (e.g., human, mouse, Drosophila), the number of replicates, and the range of sequencing depths. Without this, the robustness of the method cannot be assessed.
+    - **Resolution test** List all datasets used for training and testing, including species, cell types, sequencing depth, and number of replicates. Provide a table summarizing these details.
 - **Minor Comments**
     - **Concern ID** R1-m1
     - **Severity** Minor
-    - **Axis** Readability and terminology
+    - **Axis** Readability
     - **Affected element** Abstract
-    - **Evidence pointer** Abstract
-    - **Issue** The phrase "due to one-dimensional proximity, contiguous domains, and other fine structures" is somewhat vague. The biological or mathematical meaning of "one-dimensional proximity" in the context of Hi-C is not immediately clear.
-    - **Required correction** Clarify the terminology. For example, "one-dimensional proximity" could be rephrased as "distance-dependent decay of contact probability" or "genomic distance effect."
-
+    - **Evidence pointer** Abstract (location not provided)
+    - **Issue** The abstract uses the phrase "due to the need to divide the large contact matrix into small patches" without explaining why this is necessary. A brief clarification would improve accessibility for nonspecialists.
+    - **Required correction** Add a short phrase such as "due to memory constraints in deep learning models" to clarify the rationale.
     - **Concern ID** R1-m2
     - **Severity** Minor
-    - **Axis** Completeness of reporting
-    - **Affected element** Abstract
-    - **Evidence pointer** Abstract
-    - **Issue** The abstract does not mention the training data, model architecture (e.g., number of layers, parameters), or computational cost (training/inference time, GPU memory).
-    - **Required correction** Include a brief statement in the abstract or a dedicated section in the full manuscript about the model's computational requirements and the datasets used for training and evaluation.
-
-- **Technical failings that need to be addressed before the case is established** R1-M1, R1-M2, R1-M3. The core claims of superior performance, methodological novelty, and generalizability are currently unsupported by the provided evidence.
-- **Assessment against Nature-style criteria**
-    - **Originality:** High. The signal decomposition approach to avoid patch-induced artifacts is a novel and creative solution to a recognized problem.
-    - **Scientific importance:** Potentially high. If validated, SHARP could significantly improve the reliability of Hi-C data analysis and downstream biological discoveries.
-    - **Interdisciplinary readership:** Moderate. The work is primarily of interest to computational biologists and bioinformaticians. The biological implications (e.g., chromatin state enrichment) could broaden the audience.
-    - **Technical soundness:** Currently unassessable. The abstract lacks the necessary methodological and quantitative detail to evaluate technical soundness.
-    - **Readability for nonspecialists:** The abstract is reasonably clear for a specialist audience but uses jargon (e.g., "one-dimensional proximity") that would be opaque to a general scientific reader.
-- **Recommendation posture** Currently not established from the provided evidence. The conceptual advance is promising, but the manuscript requires a full review of the methods, results, and data to determine if the claims are substantiated. A supportive posture is contingent on the full manuscript addressing the major concerns.
+    - **Axis** Terminology
+    - **Affected element** Method description
+    - **Evidence pointer** Section: method description (location not provided)
+    - **Issue** The term "one-dimensional proximity" is ambiguous. In Hi-C, proximity is inherently two-dimensional (interactions between two genomic loci). Clarify whether this refers to distance decay or a specific 1D signal.
+    - **Required correction** Define "one-dimensional proximity" explicitly, e.g., "the expected contact frequency as a function of genomic distance (distance decay)."
+    - **Concern ID** R1-m3
+    - **Severity** Minor
+    - **Axis** Completeness
+    - **Affected element** Results section
+    - **Evidence pointer** Not provided (location not provided)
+    - **Issue** The text mentions "enrichment in chromatin states" but does not specify which chromatin states (e.g., active promoters, enhancers, repressed regions) or how enrichment was measured.
+    - **Required correction** List the chromatin states tested and the metric used (e.g., fold enrichment, odds ratio) in the results section.
+- **Technical failings that need to be addressed before the case is established** R1-M1 (lack of quantitative evidence), R1-M2 (insufficient methodological detail), R1-M3 (incomplete validation description)
+- **Assessment against Nature-style criteria** 
+    - **Originality**: High. The signal decomposition approach is a novel and creative solution to a known problem in the field.
+    - **Scientific importance**: High. If validated, the method could significantly improve the reliability of Hi-C data enhancement, impacting many downstream analyses.
+    - **Interdisciplinary readership**: Moderate. The work is primarily of interest to computational biologists and chromatin researchers; broader appeal would require demonstration of biological insights enabled by SHARP.
+    - **Technical soundness**: Not assessable from the provided text. The method is conceptually sound, but the lack of figures, tables, and algorithmic details prevents evaluation of implementation and validation.
+    - **Readability for nonspecialists**: Good. The abstract and main text are clearly written, though some terms (e.g., "one-dimensional proximity") need clarification.
+- **Recommendation posture** Supportive if technical concerns are resolved. The core idea is promising, but the manuscript currently lacks the quantitative evidence and methodological detail required to establish the claims. A revised version with full figures, tables, and algorithmic descriptions would be needed for a definitive assessment.
 
 ## Risk / unsupported claims
-- "SHARP has superior performance in terms of resolution enhancement accuracy, avoiding creation of artificial structures, identifying significant interactions, and enrichment in chromatin states." (Unsupported: no quantitative data provided.)
-- "We compare SHARP with state-of-the-art methods extensively, including application to data from new samples and another species." (Unsupported: no results or details provided.)
-- "It uses the novel approach of decomposing the data into three types of signals..." (Unsupported: the decomposition method is not described in sufficient detail to be evaluated or reproduced.)
+- "SHARP has superior performance in terms of resolution enhancement accuracy, avoiding creation of artificial structures, identifying significant interactions, and enrichment in chromatin states." (Unsupported: no quantitative evidence provided)
+- "It uses the novel approach of decomposing the data into three types of signals..." (Unsupported: algorithmic details not provided)
+- "We compare SHARP with state-of-the-art methods extensively, including application to data from new samples and another species." (Unsupported: datasets not specified)
