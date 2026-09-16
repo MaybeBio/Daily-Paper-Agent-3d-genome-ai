@@ -105,7 +105,7 @@
   },
   "metadata": {
     "entrez_date": "2026/09/09 07:07",
-    "fetched_at": "2026-09-13 08:43:46"
+    "fetched_at": "2026-09-16 10:48:05"
   },
   "links": {
     "cites": [],
@@ -137,9 +137,9 @@
       "36942484",
       "40257562",
       "37166686",
-      "39970210",
-      "29292063",
       "32948589",
+      "29292063",
+      "39970210",
       "20886052",
       "27989438",
       "38479839",
@@ -226,12 +226,21 @@
       "29357065",
       "25365782"
     ],
-    "pmc": [],
+    "pmc": [
+      "13554108"
+    ],
     "entrez": {},
     "external": [
       {
         "url": "https://doi.org/10.1038/s41467-026-76520-5",
         "provider": "Nature Publishing Group",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/pmid/42711322/",
+        "provider": "PubMed Central",
         "category": "Full Text Sources",
         "attribute": "free resource",
         "linkname": ""

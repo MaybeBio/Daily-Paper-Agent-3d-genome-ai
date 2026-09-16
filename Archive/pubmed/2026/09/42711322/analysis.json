@@ -6,15 +6,15 @@
   "journal": "Nature communications",
   "published_date": "2026-09-09",
   "window": {
-    "start": "2026-09-06",
-    "end": "2026-09-12"
+    "start": "2026-09-09",
+    "end": "2026-09-15"
   },
-  "score": 3,
-  "one_liner_zh": "该文通过体外重建实验研究DNA复制中组蛋白对称回收的分子机制，虽涉及染色质结构但聚焦于组蛋白回收而非三维基因组空间架构建模，且方法以实验和测序为主，无AI或分子模拟方法贡献。",
+  "score": 4,
+  "one_liner_zh": "该文体外重构DNA复制中的组蛋白对称回收机制，虽涉及染色质组装和深度学习分类，但核心是组蛋白回收而非三维基因组空间架构建模，与课题关联较弱。",
   "abstract": "Symmetric histone recycling is vital for maintaining epigenetic inheritance upon eukaryotic DNA replication. Recent genome-wide studies have uncovered key determinants of this process, but how these factors collectively support parental histone transfer remains incompletely understood. Here, we successfully reconstitute histone recycling with 24 purified proteins and analyze the products digested by Micrococcal nuclease with Repli-pore-seq, the newly developed pipeline combining nanopore sequencing and deep-learning-based classification. As a result, we identify histones symmetrically recycled as tetrasomes or hexasomes on nucleosome-favorable sequences. We also observe the discordance of the recycled position between lagging and leading strands on the GC-rich DNA sequences. Moreover, removal of Pol delta, Pol32, Dpb3/4, Ctf4, Csm3/Tof1, or Mrc1 disrupts the balance of histone recycling between the two daughter strands, whereas removal of Ctf4, Csm3/Tof1, or Mrc1 additionally alters the positions at which histones were recycled. Furthermore, addition of the lagging-strand maturation factors Fen1 and Cdc9 enhances histone recycling to the lagging strand. These findings provide critical insights into the molecular players and mechanisms underlying symmetric histone recycling.",
-  "abstract_zh": "对称性组蛋白回收对于真核生物DNA复制时维持表观遗传继承至关重要。近期的全基因组研究揭示了这一过程的关键决定因素，但这些因子如何协同支持亲本组蛋白转移仍未完全明了。在此，我们成功利用24种纯化蛋白重构了组蛋白回收过程，并通过新开发的结合纳米孔测序与深度学习分类的Repli-pore-seq流程，分析了经微球菌核酸酶消化的产物。结果，我们在核小体偏好序列上识别出以四聚体或六聚体形式对称回收的组蛋白。我们还观察到在富含GC的DNA序列上，后随链与前导链之间回收位置的不一致性。此外，去除Pol delta、Pol32、Dpb3/4、Ctf4、Csm3/Tof1或Mrc1会破坏两条子链间组蛋白回收的平衡，而去除Ctf4、Csm3/Tof1或Mrc1还会改变组蛋白回收的位置。进一步地，添加后随链成熟因子Fen1和Cdc9可增强组蛋白向后随链的回收。这些发现为对称性组蛋白回收的分子参与者及其机制提供了关键见解。",
-  "has_fulltext": false,
-  "fulltext_source": "abstract",
+  "abstract_zh": "对称性组蛋白回收对于真核生物DNA复制时维持表观遗传继承至关重要。近期的全基因组研究揭示了这一过程的关键决定因素，但这些因子如何协同支持亲代组蛋白转移仍未完全明了。在此，我们成功利用24种纯化蛋白重构了组蛋白回收过程，并通过新开发的结合纳米孔测序与深度学习分类的Repli-pore-seq流程，分析了经微球菌核酸酶消化的产物。结果，我们在核小体偏好序列上识别出以四聚体或六聚体形式对称回收的组蛋白。我们还观察到在富含GC的DNA序列上，后随链与前导链之间回收位置的不一致性。此外，去除Pol delta、Pol32、Dpb3/4、Ctf4、Csm3/Tof1或Mrc1会破坏两条子链间组蛋白回收的平衡，而去除Ctf4、Csm3/Tof1或Mrc1还会改变组蛋白被回收的位置。进一步地，添加后随链成熟因子Fen1和Cdc9增强了组蛋白向后随链的回收。这些发现为对称性组蛋白回收的分子参与者及其机制提供了关键见解。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
   "fulltext_path": "fulltext.md",
   "paper_card_path": "",
   "review_path": "",

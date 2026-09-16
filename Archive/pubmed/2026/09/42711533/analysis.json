@@ -6,13 +6,13 @@
   "journal": "Nature ecology & evolution",
   "published_date": "2026-09-09",
   "window": {
-    "start": "2026-09-06",
-    "end": "2026-09-12"
+    "start": "2026-09-09",
+    "end": "2026-09-15"
   },
   "score": 6,
-  "one_liner_zh": "该文结合单细胞多组学与深度学习，研究跨物种细胞类型中染色质可及性的保守基序词汇与调控语法，虽聚焦染色质可及性而非三维结构，但其深度学习方法对理解染色质调控的进化约束有启发。",
+  "one_liner_zh": "该文结合单核多组学与深度学习预测跨物种染色质可及性，揭示细胞类型家族保守的调控基序词汇，虽涉及染色质可及性调控但未聚焦三维空间架构建模，方法可迁移但对象偏调控序列层面。",
   "abstract": "Cell types can be organized into related families, but the regulatory mechanisms that define and maintain these families across deep evolutionary time remain unknown. Here, combining single-nucleus multi-omic sequencing with deep learning to analyse the accessible genomes of two groups of vastly divergent animals including flatworms and vertebrates, we find that hundreds of accessibility-dictating sequence motifs partition into distinct yet conserved sets, or 'vocabularies', each associated with a specific cell type family. However, combinatorial relationships among these motifs preferred by individual cell types are largely species specific. Deep-learning models trained on one species accurately predict family-level chromatin accessibility in distantly related species, albeit frequently rely on different motifs from shared vocabularies to reach convergent predictions. By contrast, models trained on individual cell types within a family lose cross-species predictive power, indicating that the regulatory syntax governing cell type-level identity evolves rapidly. We propose a 'collective maintenance' model in which motif vocabularies defining cell type families are evolutionarily stable, while recombination of these motifs generates cell type-specific regulatory programmes. This suggests that family identity is maintained collectively by large, conserved pools of regulatory factors, analogous to the logic of developmental homology, where character identity persists through network-level conservation despite extensive rewiring.",
-  "abstract_zh": "细胞类型可被组织为相关的家族，但定义并维持这些家族在深层进化时间尺度上的调控机制仍属未知。在此，我们结合单核多组学测序与深度学习，分析了两组高度分化的动物——包括扁虫和脊椎动物——的可及基因组，发现数百个决定可及性的序列基序分化为不同但保守的集合，或称为“词汇表”，每个词汇表与特定的细胞类型家族相关联。然而，单个细胞类型偏好的这些基序之间的组合关系在很大程度上是物种特异性的。在一种物种上训练的深度学习模型能准确预测远缘物种中的家族水平染色质可及性，尽管这些模型常常依赖共享词汇表中的不同基序来达成趋同预测。相比之下，在家族内单个细胞类型上训练的模型则丧失跨物种预测能力，表明调控细胞类型水平身份的调控语法进化迅速。我们提出一个“集体维持”模型，其中定义细胞类型家族的基序词汇表在进化上稳定，而这些基序的重组则生成细胞类型特异的调控程序。这表明家族身份由大型、保守的调控因子池集体维持，类似于发育同源性的逻辑，即特征身份通过网络级保守性持续存在，尽管存在广泛的重新布线。",
+  "abstract_zh": "细胞类型可被组织为相关家族，但定义并维持这些家族在深层进化时间尺度上的调控机制仍属未知。在此，我们结合单核多组学测序与深度学习，分析了两组差异极大的动物——包括扁虫和脊椎动物——的可及基因组，发现数百个决定可及性的序列基序分化为不同但保守的集合，或称为“词汇表”，每个词汇表与特定细胞类型家族相关联。然而，单个细胞类型偏好的这些基序之间的组合关系在很大程度上是物种特异性的。在一种物种上训练的深度学习模型能准确预测远缘物种中的家族水平染色质可及性，尽管这些模型常常依赖共享词汇表中的不同基序来达成趋同预测。相比之下，在家族内单个细胞类型上训练的模型则丧失跨物种预测能力，表明调控细胞类型水平身份的调控语法进化迅速。我们提出一种“集体维持”模型，其中定义细胞类型家族的基序词汇表在进化上稳定，而这些基序的重组则生成细胞类型特异的调控程序。这表明家族身份由大型、保守的调控因子池集体维持，类似于发育同源性的逻辑，即尽管存在广泛重连，特征身份仍通过网络级保守性得以持续。",
   "has_fulltext": false,
   "fulltext_source": "abstract",
   "fulltext_path": "fulltext.md",

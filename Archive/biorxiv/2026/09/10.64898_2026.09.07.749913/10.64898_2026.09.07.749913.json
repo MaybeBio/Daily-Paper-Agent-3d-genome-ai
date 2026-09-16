@@ -1,0 +1,91 @@
+{
+  "source": "biorxiv",
+  "source_id": "10.64898/2026.09.07.749913",
+  "title": "TransBind2: Improving Transcription Factor-DNA Binding Prediction with Multimodal Data and Bidirectional Cross Attention",
+  "doi": "10.64898/2026.09.07.749913",
+  "abstract": "Accurate genome-wide prediction of transcription factor (TF)-DNA binding remains challenging because many models focus mainly on DNA sequence and overlook chromatin context and TF structure. We previously developed TransBind, a protein-aware model that combines TF and DNA representations through cross-attention. Here, we introduce TransBind2, which improves on TransBind in several ways. It incorporates DNase-seq accessibility and genome mappability tracks as additional input, uses a biomodal protein language model (ProstT5) to capture both TF sequence and structure, and applies bidirectional cross-attention so DNA and protein features can refine each other. We also frame prediction as binary classification of individual <DNA bin, TF, cell type> triplets, allowing the model to generalize to new TFs and cell types. Across 690 human ChIP-seq experiments covering 161 TFs and 91 cell types, TransBind2 achieves a macro AUROC of 0.9648 and AUPR of 0.4215, outperforming TransBind and other baselines, with a ≥12.67% relative AUPR gain. The model trained on human data also performs well in cross-species zero-shot prediction on mouse data. Saliency analysis shows that it can identify TF-binding peaks with a median error of 12-38 base pairs (bps) despite being trained on window-level labels. Ablation studies further show that TF structure, chromatin accessibility, and bidirectional attention each improve performance. Overall, these results show that combining TF structure with chromatin context leads to more accurate and generalizable TF-DNA binding predictions.",
+  "authors": [
+    "Basnet S",
+    "Cheng J"
+  ],
+  "published_date": "2026-09-14",
+  "updated_date": "",
+  "journal": "bioRxiv",
+  "category": "",
+  "landing_url": "https://www.biorxiv.org/content/10.64898/2026.09.07.749913",
+  "pdf_url": "https://www.biorxiv.org/content/10.64898/2026.09.07.749913.full.pdf",
+  "pdf_path": "",
+  "pdf_downloaded": false,
+  "query": "(\"3D genome\" OR \"three-dimensional genome\" OR \"genome organization\" OR \"genome architecture\" OR \"genome folding\" OR \"nuclear organization\" OR \"nuclear architecture\" OR \"chromatin organization\" OR \"chromatin architecture\" OR \"chromatin conformation\" OR \"chromatin topology\" OR \"chromatin structure\" OR \"chromatin loop\" OR \"chromatin interaction\" OR \"chromatin domain\" OR \"topologically associating domain\" OR \"A/B compartment\" OR \"chromosome conformation capture\" OR \"Hi-C\" OR HiChIP OR \"loop extrusion\" OR \"loop-extrusion\" OR CTCF OR cohesin OR \"cis-regulatory\" OR \"cis-regulatory element\" OR \"regulatory element\" OR \"regulatory genomics\" OR \"chromatin accessibility\" OR \"enhancer-promoter\" OR \"promoter-enhancer\") AND (\"deep learning\" OR \"machine learning\" OR \"neural network\" OR \"graph neural network\" OR \"convolutional neural network\" OR transformer OR \"language model\" OR \"foundation model\" OR \"diffusion model\" OR generative OR \"flow matching\" OR esmfold OR rosetta OR alphafold OR \"molecular dynamics\" OR simulation OR docking)",
+  "version": "",
+  "keywords": [],
+  "extra": {
+    "provider": "europepmc",
+    "epmc_id": "PPR1319159",
+    "raw_record": {
+      "id": "PPR1319159",
+      "source": "PPR",
+      "doi": "10.64898/2026.09.07.749913",
+      "title": "TransBind2: Improving Transcription Factor-DNA Binding Prediction with Multimodal Data and Bidirectional Cross Attention",
+      "authorString": "Basnet S, Cheng J.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Basnet S",
+            "firstName": "Shreya",
+            "lastName": "Basnet",
+            "initials": "S"
+          },
+          {
+            "fullName": "Cheng J",
+            "firstName": "Jianlin",
+            "lastName": "Cheng",
+            "initials": "J"
+          }
+        ]
+      },
+      "pubYear": "2026",
+      "abstractText": "Accurate genome-wide prediction of transcription factor (TF)-DNA binding remains challenging because many models focus mainly on DNA sequence and overlook chromatin context and TF structure. We previously developed TransBind, a protein-aware model that combines TF and DNA representations through cross-attention. Here, we introduce TransBind2, which improves on TransBind in several ways. It incorporates DNase-seq accessibility and genome mappability tracks as additional input, uses a biomodal protein language model (ProstT5) to capture both TF sequence and structure, and applies bidirectional cross-attention so DNA and protein features can refine each other. We also frame prediction as binary classification of individual <DNA bin, TF, cell type> triplets, allowing the model to generalize to new TFs and cell types. Across 690 human ChIP-seq experiments covering 161 TFs and 91 cell types, TransBind2 achieves a macro AUROC of 0.9648 and AUPR of 0.4215, outperforming TransBind and other baselines, with a ≥12.67% relative AUPR gain. The model trained on human data also performs well in cross-species zero-shot prediction on mouse data. Saliency analysis shows that it can identify TF-binding peaks with a median error of 12-38 base pairs (bps) despite being trained on window-level labels. Ablation studies further show that TF structure, chromatin accessibility, and bidirectional attention each improve performance. Overall, these results show that combining TF structure with chromatin context leads to more accurate and generalizable TF-DNA binding predictions.",
+      "pubTypeList": {
+        "pubType": [
+          "Preprint"
+        ]
+      },
+      "bookOrReportDetails": {
+        "publisher": "bioRxiv",
+        "yearOfPublication": 2026
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Free",
+            "availabilityCode": "F",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.64898/2026.09.07.749913"
+          }
+        ]
+      },
+      "isOpenAccess": "N",
+      "inEPMC": "N",
+      "inPMC": "N",
+      "hasPDF": "N",
+      "hasBook": "N",
+      "hasSuppl": "N",
+      "citedByCount": 0,
+      "hasData": "N",
+      "hasReferences": "N",
+      "hasTextMinedTerms": "N",
+      "hasDbCrossReferences": "N",
+      "hasLabsLinks": "N",
+      "hasEvaluations": "N",
+      "authMan": "N",
+      "epmcAuthMan": "N",
+      "nihAuthMan": "N",
+      "hasTMAccessionNumbers": "N",
+      "dateOfCreation": "2026-09-15",
+      "firstIndexDate": "2026-09-15",
+      "firstPublicationDate": "2026-09-14"
+    }
+  }
+}

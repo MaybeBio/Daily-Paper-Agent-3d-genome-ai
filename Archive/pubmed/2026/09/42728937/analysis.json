@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42728937",
+  "title": "Dataset of multi-focus (Z-stack) images derived from liquid-based cervical cancer cytology specimens.",
+  "authors": "Onishi, Takafumi; Miyamoto, Tomoyuki; Osawa, Yukihiko; Shibahara, Kazuki; Nishimori, Makoto; Yakushiji, Hiromasa; Ohno, Setsuyo; Ohno, Eiji",
+  "journal": "F1000Research",
+  "published_date": "2026-09-13",
+  "window": {
+    "start": "2026-09-09",
+    "end": "2026-09-15"
+  },
+  "score": 2,
+  "one_liner_zh": "该文构建宫颈癌液基细胞学多焦点Z-stack图像数据集，用于细胞核形态和染色质结构的3D分析，但对象是临床细胞学而非三维基因组/染色质组织，且无AI/分子模拟建模方法，仅提供数据基准，与本课题关联微弱。",
+  "abstract": "BACKGROUND: In cervical cancer screening, cytotechnologists and cytopathologists integrate three-dimensional information by continuously adjusting the microscope's focus to evaluate chromatin structure and nuclear morphology. However, most existing public datasets consist of single-focus 2D images, which do not fully reflect this clinical diagnostic workflow. This study presents the Cervical Cancer Cell Image Database: Multi-focus Cytology Dataset (CCCID) to bridge this gap. METHODS: Cervical specimens were processed using the BD SurePath LBC technique and Papanicolaou staining. Digitization was performed using a NanoZoomer-XR scanner. For 639 unique fields of view (FOVs), a Z-stack consisting of 11 focal planes was captured at 1.0 mum intervals, resulting in 7,029 images (384 x 384 pixels). Ground-truth labels were established only when six board-certified expert cytotechnologists reached 100% consensus. CONCLUSIONS: The CCCID provides a high-reliability benchmark for developing machine-learning models that utilize axial (Z-axis) information. It is highly valuable for advancing three-dimensional nuclear morphology analysis, cell segmentation in overlapping clusters, and the evaluation of focus-fusion algorithms in digital cytopathology.",
+  "abstract_zh": "背景：在宫颈癌筛查中，细胞技术员和细胞病理学家通过持续调整显微镜焦距来整合三维信息，以评估染色质结构和核形态。然而，现有的大多数公共数据集由单焦点二维图像组成，未能完全反映这一临床诊断工作流程。本研究提出了宫颈癌细胞图像数据库：多焦点细胞学数据集（CCCID），以弥合这一差距。方法：宫颈标本采用BD SurePath液基细胞学（LBC）技术和巴氏染色处理。数字化使用NanoZoomer-XR扫描仪进行。对于639个独特视野（FOVs），以1.0微米间隔捕获包含11个焦平面的Z轴堆栈，共产生7,029张图像（384 x 384像素）。仅在六名经认证的专家细胞技术员达成100%共识时，才建立金标准标签。结论：CCCID为利用轴向（Z轴）信息的机器学习模型开发提供了高可靠性基准。它在推进三维核形态分析、重叠簇中的细胞分割以及数字细胞病理学中焦点融合算法评估方面具有高度价值。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42728937/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42728937/",
+  "paper_page_path": "papers/pubmed/42728937/index.html"
+}

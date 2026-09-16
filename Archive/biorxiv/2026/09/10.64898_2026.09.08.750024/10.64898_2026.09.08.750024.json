@@ -1,0 +1,154 @@
+{
+  "source": "biorxiv",
+  "source_id": "10.64898/2026.09.08.750024",
+  "title": "LucaCell: a sequence-centric foundation model for cross-species single-cell analysis",
+  "doi": "10.64898/2026.09.08.750024",
+  "abstract": "Single-cell foundation models have transformed transcriptomic analysis, yet most rely on fixed gene identifiers that limit transfer across species and data types. Here we present LucaCell, a sequence-centric foundation model that represents genes through pre-trained mRNA sequence embeddings rather than static gene annotations. Gene expression is discretized into bins and modeled with a Transformer encoder, enabling sequence-informed cell representation without a fixed gene-ID vocabulary. Pre-training on 85 million human and mouse single cells, LucaCell is evaluated on human, mouse and lemur gene expression profiles, human chromatin accessibility data, unaligned reads from more than 50 prokaryotic taxa, and five influenza A virus genomes. LucaCell enables manual-mapping-free cross-species cell type annotation and an alignment-free microbial embedding framework that simultaneously distinguishes bacterial species identity and intra-species physiological states. It also improves gene expression reconstruction by incorporating donor-specific exonic SNP information into mRNA sequence embeddings, and predicts cellular viral load across influenza A virus strains while highlighting infection-like transcriptional states in mock-infected cells. These results show that sequence-informed gene representation can improve the generalization of single-cell foundation models across species, data types, and predictive tasks.",
+  "authors": [
+    "Sun Y",
+    "He Y",
+    "Ren M",
+    "Wang Y",
+    "Xu P",
+    "Hou Y",
+    "Kang Y",
+    "Hou T",
+    "Ye J",
+    "Yang H",
+    "Wang Z"
+  ],
+  "published_date": "2026-09-14",
+  "updated_date": "",
+  "journal": "bioRxiv",
+  "category": "",
+  "landing_url": "https://www.biorxiv.org/content/10.64898/2026.09.08.750024",
+  "pdf_url": "https://www.biorxiv.org/content/10.64898/2026.09.08.750024.full.pdf",
+  "pdf_path": "",
+  "pdf_downloaded": false,
+  "query": "(\"3D genome\" OR \"three-dimensional genome\" OR \"genome organization\" OR \"genome architecture\" OR \"genome folding\" OR \"nuclear organization\" OR \"nuclear architecture\" OR \"chromatin organization\" OR \"chromatin architecture\" OR \"chromatin conformation\" OR \"chromatin topology\" OR \"chromatin structure\" OR \"chromatin loop\" OR \"chromatin interaction\" OR \"chromatin domain\" OR \"topologically associating domain\" OR \"A/B compartment\" OR \"chromosome conformation capture\" OR \"Hi-C\" OR HiChIP OR \"loop extrusion\" OR \"loop-extrusion\" OR CTCF OR cohesin OR \"cis-regulatory\" OR \"cis-regulatory element\" OR \"regulatory element\" OR \"regulatory genomics\" OR \"chromatin accessibility\" OR \"enhancer-promoter\" OR \"promoter-enhancer\") AND (\"deep learning\" OR \"machine learning\" OR \"neural network\" OR \"graph neural network\" OR \"convolutional neural network\" OR transformer OR \"language model\" OR \"foundation model\" OR \"diffusion model\" OR generative OR \"flow matching\" OR esmfold OR rosetta OR alphafold OR \"molecular dynamics\" OR simulation OR docking)",
+  "version": "",
+  "keywords": [],
+  "extra": {
+    "provider": "europepmc",
+    "epmc_id": "PPR1320096",
+    "raw_record": {
+      "id": "PPR1320096",
+      "source": "PPR",
+      "doi": "10.64898/2026.09.08.750024",
+      "title": "LucaCell: a sequence-centric foundation model for cross-species single-cell analysis",
+      "authorString": "Sun Y, He Y, Ren M, Wang Y, Xu P, Hou Y, Kang Y, Hou T, Ye J, Yang H, Wang Z.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Sun Y",
+            "firstName": "Yan",
+            "lastName": "Sun",
+            "initials": "Y"
+          },
+          {
+            "fullName": "He Y",
+            "firstName": "Yong",
+            "lastName": "He",
+            "initials": "Y"
+          },
+          {
+            "fullName": "Ren M",
+            "firstName": "Minsi",
+            "lastName": "Ren",
+            "initials": "M"
+          },
+          {
+            "fullName": "Wang Y",
+            "firstName": "Yanhui",
+            "lastName": "Wang",
+            "initials": "Y"
+          },
+          {
+            "fullName": "Xu P",
+            "firstName": "Penghao",
+            "lastName": "Xu",
+            "initials": "P"
+          },
+          {
+            "fullName": "Hou Y",
+            "firstName": "Yong",
+            "lastName": "Hou",
+            "initials": "Y"
+          },
+          {
+            "fullName": "Kang Y",
+            "firstName": "Yu",
+            "lastName": "Kang",
+            "initials": "Y"
+          },
+          {
+            "fullName": "Hou T",
+            "firstName": "Tingjun",
+            "lastName": "Hou",
+            "initials": "T"
+          },
+          {
+            "fullName": "Ye J",
+            "firstName": "Jieping",
+            "lastName": "Ye",
+            "initials": "J"
+          },
+          {
+            "fullName": "Yang H",
+            "firstName": "Huanming",
+            "lastName": "Yang",
+            "initials": "H"
+          },
+          {
+            "fullName": "Wang Z",
+            "firstName": "Zheng",
+            "lastName": "Wang",
+            "initials": "Z"
+          }
+        ]
+      },
+      "pubYear": "2026",
+      "abstractText": "Single-cell foundation models have transformed transcriptomic analysis, yet most rely on fixed gene identifiers that limit transfer across species and data types. Here we present LucaCell, a sequence-centric foundation model that represents genes through pre-trained mRNA sequence embeddings rather than static gene annotations. Gene expression is discretized into bins and modeled with a Transformer encoder, enabling sequence-informed cell representation without a fixed gene-ID vocabulary. Pre-training on 85 million human and mouse single cells, LucaCell is evaluated on human, mouse and lemur gene expression profiles, human chromatin accessibility data, unaligned reads from more than 50 prokaryotic taxa, and five influenza A virus genomes. LucaCell enables manual-mapping-free cross-species cell type annotation and an alignment-free microbial embedding framework that simultaneously distinguishes bacterial species identity and intra-species physiological states. It also improves gene expression reconstruction by incorporating donor-specific exonic SNP information into mRNA sequence embeddings, and predicts cellular viral load across influenza A virus strains while highlighting infection-like transcriptional states in mock-infected cells. These results show that sequence-informed gene representation can improve the generalization of single-cell foundation models across species, data types, and predictive tasks.",
+      "pubTypeList": {
+        "pubType": [
+          "Preprint"
+        ]
+      },
+      "bookOrReportDetails": {
+        "publisher": "bioRxiv",
+        "yearOfPublication": 2026
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Free",
+            "availabilityCode": "F",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.64898/2026.09.08.750024"
+          }
+        ]
+      },
+      "isOpenAccess": "N",
+      "inEPMC": "N",
+      "inPMC": "N",
+      "hasPDF": "N",
+      "hasBook": "N",
+      "hasSuppl": "N",
+      "citedByCount": 0,
+      "hasData": "N",
+      "hasReferences": "N",
+      "hasTextMinedTerms": "N",
+      "hasDbCrossReferences": "N",
+      "hasLabsLinks": "N",
+      "hasEvaluations": "N",
+      "authMan": "N",
+      "epmcAuthMan": "N",
+      "nihAuthMan": "N",
+      "hasTMAccessionNumbers": "N",
+      "dateOfCreation": "2026-09-16",
+      "firstIndexDate": "2026-09-16",
+      "firstPublicationDate": "2026-09-14"
+    }
+  }
+}

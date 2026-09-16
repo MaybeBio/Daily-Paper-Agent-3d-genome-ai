@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42729063",
+  "title": "Sperm DNA fragmentation and its impact on pregnancy outcomes: a narrative review focusing on threshold definition and clinical strategies.",
+  "authors": "Cheng, Sinhang; Yuan, Yuan; Wang, Zihan; Xie, Zhuoheng; Chen, Qianxi; Liu, Zhen; Chen, Yan; Song, Tiangang; Yan, Mengqing; Zheng, Zhongjie; Lin, Haocheng",
+  "journal": "Translational andrology and urology",
+  "published_date": "2026-09-13",
+  "window": {
+    "start": "2026-09-09",
+    "end": "2026-09-15"
+  },
+  "score": 1,
+  "one_liner_zh": "该文综述精子DNA碎片化对妊娠结局的影响及临床阈值，属于生殖医学临床综述，不涉及三维基因组、染色质组织或空间架构建模，且无AI/分子模拟方法，与本课题无关。",
+  "abstract": "BACKGROUND AND OBJECTIVE: Sperm DNA fragmentation (SDF) is a key functional indicator for evaluating male fertility and the integrity of genetic material. However, a unified intervention threshold for SDF remains lacking, primarily due to variations in detection methodologies and significant heterogeneity across studies. This narrative review aims to summarize the association between SDF and pregnancy outcomes, with a focus on threshold definition and the influence of different detection methods and clinical scenarios. METHODS: A comprehensive literature search was conducted in PubMed and Scopus databases from January 1990 to December 2023. Search terms included \"sperm DNA fragmentation\", \"DFI\", \"SDF\", \"male infertility\", \"assisted reproductive technology\", \"pregnancy outcome\", and \"recurrent pregnancy loss\". Studies evaluating the association between SDF and reproductive outcomes, as well as those reporting on diagnostic or prognostic thresholds, were considered for inclusion. KEY CONTENT AND FINDINGS: High SDF is significantly associated with lower fertilization rates and fewer high-quality embryos in assisted reproductive technology (ART), as well as an increased risk of recurrent pregnancy loss (RPL). Its clinical impact varies by mode of conception: it negatively affects natural pregnancy and intrauterine insemination (IUI), whereas in in vitro fertilization/intracytoplasmic sperm injection (IVF/ICSI), its effect on fertilization rate is less pronounced, but it may impair subsequent embryo development, reducing blastocyst formation rate and increasing miscarriage rate. The use of testicular sperm for ICSI in men with elevated SDF has been reported in observational studies, with some showing improved pregnancy and live birth rates. A 30% DNA fragmentation index (DFI) [sperm chromatin structure assay (SCSA)/terminal deoxynucleotidyl transferase dUTP nick end labelling (TUNEL)] is the most frequently referenced threshold, but reported cut offs vary from 10% to 36% depending on assay and outcome. Regarding detection technology, the SCSA is frequently described as the most extensively validated method, while the integration of novel technologies such as artificial intelligence offers the potential for more precise and efficient assessment in the future. CONCLUSIONS: SDF should be considered an important supplement to conventional semen analysis, especially in cases of unexplained infertility, ART failure, and RPL. This review emphasizes the necessity of establishing a unified clinical threshold, and current evidence highlights the need to standardize testing protocols, establish evidence-based SDF thresholds, and develop individualized management strategies.",
+  "abstract_zh": "背景与目的：精子DNA碎片化（SDF）是评估男性生育能力和遗传物质完整性的关键功能指标。然而，目前尚缺乏统一的SDF干预阈值，主要原因是检测方法差异及研究间存在显著异质性。本叙述性综述旨在总结SDF与妊娠结局之间的关联，重点关注阈值定义以及不同检测方法和临床情境的影响。方法：在PubMed和Scopus数据库中进行了全面的文献检索，时间范围为1990年1月至2023年12月。检索词包括“精子DNA碎片化”、“DFI”、“SDF”、“男性不育”、“辅助生殖技术”、“妊娠结局”和“复发性流产”。纳入评估SDF与生殖结局关联的研究，以及报告诊断或预后阈值的研究。关键内容与发现：高SDF与辅助生殖技术（ART）中较低的受精率和较少的高质量胚胎显著相关，同时增加复发性流产（RPL）的风险。其临床影响因受孕方式而异：对自然妊娠和宫腔内人工授精（IUI）产生负面影响，而在体外受精/卵胞浆内单精子注射（IVF/ICSI）中，其对受精率的影响不太明显，但可能损害后续胚胎发育，降低囊胚形成率并增加流产率。在观察性研究中，有报道称对于SDF升高的男性，使用睾丸精子进行ICSI可改善妊娠和活产率。30%的DNA碎片化指数（DFI）[精子染色质结构分析（SCSA）/末端脱氧核苷酸转移酶dUTP标记（TUNEL）]是最常引用的阈值，但报告的截断值因检测方法和结局不同而介于10%至36%之间。在检测技术方面，SCSA常被描述为验证最广泛的方法，而人工智能等新技术的整合有望在未来实现更精确、高效的评估。结论：SDF应被视为常规精液分析的重要补充，尤其是在不明原因不育、ART失败和RPL病例中。本综述强调建立统一临床阈值的必要性，当前证据表明需要标准化检测方案、建立循证SDF阈值，并制定个体化管理策略。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42729063/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42729063/",
+  "paper_page_path": "papers/pubmed/42729063/index.html"
+}

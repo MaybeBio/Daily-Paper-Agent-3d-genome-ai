@@ -1,89 +1,85 @@
 ## Review setup
 - **Input scope** Abstract only
-- **Assessment boundary** Claims and evidence presented in the abstract
-- **Shared manuscript claim summary** The authors propose that cell type families across distantly related animals (flatworms and vertebrates) are defined by evolutionarily stable sets of sequence motifs ("vocabularies"), while cell type-specific regulatory syntax evolves rapidly through combinatorial recombination of these motifs.
-- **Visible evidence base** Abstract text only; no figures, tables, methods, or supplementary materials provided
-- **Missing materials affecting confidence** Full manuscript, including methods, figures, tables, supplementary data, and detailed results; no access to the deep learning model architecture, training data, or validation procedures
+- **Assessment boundary** Claims and evidence as presented in the abstract; no methods, figures, or supplementary materials provided
+- **Shared manuscript claim summary** The authors propose that cell type families are defined by conserved sets of accessibility-dictating sequence motifs ("vocabularies") that are evolutionarily stable, while the combinatorial syntax among these motifs is largely species specific and evolves rapidly. They support this with cross-species deep-learning predictions of chromatin accessibility and introduce a "collective maintenance" model analogous to developmental homology.
+- **Visible evidence base** Single-nucleus multi-omic sequencing and deep-learning analyses across flatworms and vertebrates, as described in the abstract; no quantitative results, model performance metrics, or methodological details are available
+- **Missing materials affecting confidence** Full methods, all figures and tables, model architecture and training details, species and cell type lists, statistical analyses, and any validation or control experiments
 
 ## Reviewer
-- **Overall assessment** The abstract presents a conceptually interesting and potentially important model for the evolution of cell type regulatory programs. The central idea—that motif vocabularies are conserved at the family level while their combinatorial syntax evolves rapidly—is novel and could have broad implications for evolutionary developmental biology and regulatory genomics. However, the abstract alone provides insufficient evidence to evaluate the robustness of the key claims. Critical details about the experimental design, computational methods, statistical validation, and the nature of the "collective maintenance" model are absent. The claims are intriguing but currently not established from the provided evidence.
-
-- **Who would be interested in the results, and why** Evolutionary biologists, developmental biologists, and computational genomicists interested in the evolution of gene regulation, cell type identity, and the mechanisms underlying phenotypic diversity. The proposed "collective maintenance" model offers a potential framework for understanding how cell type families are conserved across deep evolutionary time, which is a fundamental question in evolutionary biology.
-
-- **Major strengths** 
-  1. The central hypothesis—that motif vocabularies are conserved at the family level while syntax evolves rapidly—is conceptually elegant and addresses a long-standing question in evolutionary regulatory biology.
-  2. The use of cross-species deep learning predictions to distinguish between family-level and cell type-level regulatory conservation is a clever and potentially powerful approach.
-  3. The analogy to developmental homology and network-level conservation provides a compelling theoretical framework that connects the findings to broader biological principles.
-
+- **Overall assessment** The abstract presents a conceptually appealing and potentially significant framework for understanding cell type family evolution through conserved motif vocabularies and flexible combinatorial syntax. The central claim that family-level regulatory logic is conserved while cell type-level syntax diverges is well motivated and aligns with broader themes in evolutionary developmental biology. However, the abstract provides insufficient quantitative evidence to evaluate the robustness of the deep-learning predictions, the statistical significance of the vocabulary partitioning, or the generality of the proposed model across the two animal groups. The conceptual analogy to developmental homology is thought provoking but requires explicit mechanistic support. The work is likely to interest evolutionary biologists and computational regulatory genomics researchers, but the current evidence base is too limited to establish the case.
+- **Who would be interested in the results, and why** Evolutionary biologists studying cell type evolution and homology, computational biologists developing cross-species regulatory prediction models, and researchers in regulatory genomics interested in the evolutionary constraints on cis-regulatory elements. The proposed "collective maintenance" model offers a testable framework that could influence how cell type families are defined and compared across deep evolutionary distances.
+- **Major strengths** The study addresses a fundamental and underexplored question about the regulatory basis of cell type family identity across deep evolutionary time. The combination of single-nucleus multi-omic data with deep learning is methodologically ambitious and appropriate for the question. The distinction between conserved motif vocabularies and species-specific combinatorial syntax is a clear and potentially transformative conceptual contribution. The cross-species prediction experiments, as described, provide a direct test of conservation at different regulatory levels.
 - **Major Concerns**
   - **Concern ID** R1-M1
   - **Severity** Major
   - **Blocking** Yes
   - **Axis** Evidence sufficiency
-  - **Claim pointer** "hundreds of accessibility-dictating sequence motifs partition into distinct yet conserved sets, or 'vocabularies', each associated with a specific cell type family"
+  - **Claim pointer** The claim that "hundreds of accessibility-dictating sequence motifs partition into distinct yet conserved sets, or 'vocabularies', each associated with a specific cell type family" is central to the paper.
   - **Evidence pointer** Abstract; location not provided
-  - **Concern** The abstract states that motifs partition into conserved vocabularies associated with cell type families, but provides no quantitative evidence for this claim. It is unclear how the vocabularies were defined, how conservation was assessed across flatworms and vertebrates, and what statistical criteria were used to establish the association with cell type families. Without details on the number of species, the number of cell types, the method for motif discovery and clustering, and the conservation metrics, this central claim cannot be evaluated.
-  - **Why it matters** The existence of conserved motif vocabularies is the foundational claim of the paper. If this claim is not robustly supported, the entire "collective maintenance" model collapses.
-  - **Resolution test** Provide a clear description of the method used to define motif vocabularies, including the number of motifs, the clustering algorithm, the conservation metric (e.g., sequence identity, position weight matrix similarity), and the statistical test for association with cell type families. Show that the vocabularies are significantly enriched in specific cell type families across multiple species.
-
+  - **Concern** The abstract states that motifs partition into conserved vocabularies but provides no quantitative support, such as the number of motifs, the statistical method used to define partitions, the degree of conservation across species, or the strength of association with cell type families. Without these details, it is impossible to assess whether the partitioning is robust or biologically meaningful.
+  - **Why it matters** The entire conceptual framework rests on the existence and stability of these motif vocabularies. If the partitioning is weak, non-reproducible, or confounded by sequence composition, the central claim collapses.
+  - **Resolution test** Provide the number of motifs per vocabulary, the conservation metric across species, and a statistical test demonstrating that the vocabulary-cell type family association is significantly stronger than expected by chance. Include cross-validation or permutation analyses.
   - **Concern ID** R1-M2
   - **Severity** Major
   - **Blocking** Yes
   - **Axis** Evidence sufficiency
-  - **Claim pointer** "Deep-learning models trained on one species accurately predict family-level chromatin accessibility in distantly related species, albeit frequently rely on different motifs from shared vocabularies to reach convergent predictions."
+  - **Claim pointer** The claim that "deep-learning models trained on one species accurately predict family-level chromatin accessibility in distantly related species" is used to support conservation of family-level regulatory logic.
   - **Evidence pointer** Abstract; location not provided
-  - **Concern** The abstract claims that deep learning models achieve accurate cross-species predictions, but provides no quantitative performance metrics (e.g., AUC, correlation coefficients, precision-recall). The phrase "frequently rely on different motifs" is vague and lacks a formal definition or statistical test. It is also unclear how the models' reliance on specific motifs was determined (e.g., via attribution methods like saliency maps or SHAP values) and how "convergent predictions" were defined.
-  - **Why it matters** The cross-species predictive power of the models is the key experimental evidence for the conservation of motif vocabularies. Without quantitative metrics and a rigorous analysis of motif usage, the claim is unsubstantiated.
-  - **Resolution test** Report the prediction accuracy (e.g., area under the ROC curve) for cross-species predictions, along with appropriate baselines (e.g., shuffled controls, models trained on random data). Describe the method used to identify motifs that drive predictions (e.g., in silico mutagenesis, integrated gradients) and provide a statistical test for the claim that different motifs from the same vocabulary are used.
-
+  - **Concern** No quantitative performance metrics are reported, such as area under the receiver operating characteristic curve, correlation coefficients, or enrichment scores. The term "accurately" is undefined. Moreover, the abstract does not specify how many species pairs were tested, how cell type family labels were assigned across species, or what baseline or null models were used for comparison.
+  - **Why it matters** Cross-species prediction is the key experimental evidence for conservation. Without defined accuracy thresholds and appropriate controls, the claim of accurate prediction is not falsifiable and could reflect trivial sequence similarity rather than conserved regulatory logic.
+  - **Resolution test** Report prediction performance with confidence intervals, compare against shuffled motif or sequence controls, and demonstrate that performance exceeds a species-matched null model. Specify the number of species pairs and cell type families tested.
   - **Concern ID** R1-M3
   - **Severity** Major
   - **Blocking** Yes
   - **Axis** Evidence sufficiency
-  - **Claim pointer** "models trained on individual cell types within a family lose cross-species predictive power, indicating that the regulatory syntax governing cell type-level identity evolves rapidly."
+  - **Claim pointer** The claim that "models trained on individual cell types within a family lose cross-species predictive power" is used to argue that cell type-level regulatory syntax evolves rapidly.
   - **Evidence pointer** Abstract; location not provided
-  - **Concern** The abstract contrasts family-level and cell type-level model performance, but does not specify how "individual cell types within a family" were defined or how the models were trained. It is unclear whether the loss of predictive power is due to rapid evolution of syntax, or to other factors such as reduced training data, overfitting, or differences in cell type homology across species. The claim that syntax evolves rapidly is an inference that requires direct evidence of motif combinatorial changes.
-  - **Why it matters** This contrast is central to the paper's main conclusion that syntax evolves rapidly while vocabularies are stable. If the loss of predictive power has alternative explanations, the conclusion is weakened.
-  - **Resolution test** Show that the loss of predictive power is not due to technical artifacts (e.g., by controlling for training set size, cell type purity, and species-specific biases). Provide direct evidence of motif combinatorial changes (e.g., changes in motif spacing, orientation, or co-occurrence patterns) between homologous cell types in different species.
-
+  - **Concern** The abstract does not describe how cell type-level models were trained, how many cell types were tested, or what constitutes "losing" predictive power. It is unclear whether the loss is statistically significant, whether it is consistent across all cell types, or whether it could be explained by technical factors such as cell type annotation differences across species.
+  - **Why it matters** This negative result is critical for distinguishing family-level conservation from cell type-level divergence. If the loss is not robust or is confounded, the proposed dichotomy between stable vocabularies and rapidly evolving syntax is not supported.
+  - **Resolution test** Provide quantitative comparison of family-level versus cell type-level model performance, with statistical tests for the difference. Include analyses controlling for annotation consistency and sequencing depth.
+  - **Concern ID** R1-M4
+  - **Severity** Major
+  - **Blocking** No
+  - **Axis** Conceptual clarity
+  - **Claim pointer** The "collective maintenance" model is proposed as an explanatory framework.
+  - **Evidence pointer** Abstract; location not provided
+  - **Concern** The model is described only in analogy to developmental homology. The abstract does not specify what "collective maintenance" means mechanistically, how it differs from alternative models, or what specific predictions it makes beyond the observed pattern.
+  - **Why it matters** A model that merely restates the observed pattern without generating new testable predictions has limited scientific value. The analogy to developmental homology is evocative but does not constitute a mechanistic explanation.
+  - **Resolution test** Formalize the model with explicit assumptions and derive at least one novel prediction that can be tested with existing or new data. For example, predict which types of regulatory perturbations would disrupt family identity versus cell type identity.
 - **Minor Comments**
   - **Concern ID** R1-m1
   - **Severity** Minor
   - **Axis** Clarity
   - **Affected element** Terminology
-  - **Evidence pointer** Abstract
-  - **Issue** The term "vocabularies" is used to describe conserved motif sets, but the abstract does not define what constitutes a "vocabulary" (e.g., a set of motifs that co-occur in a cell type family, or a set of motifs that are bound by a common set of transcription factors). This ambiguity could lead to confusion.
-  - **Required correction** Provide a clear operational definition of "motif vocabulary" in the abstract or main text, including the criteria for membership and the method for delineating vocabularies.
-
+  - **Evidence pointer** Abstract; location not provided
+  - **Issue** The term "vocabularies" is used without a precise operational definition. It is unclear whether this refers to a fixed set of motifs, a probabilistic model, or a clustering result.
+  - **Required correction** Define "vocabulary" explicitly in the methods or a glossary, including how motifs are assigned to vocabularies and how conservation is quantified.
   - **Concern ID** R1-m2
   - **Severity** Minor
-  - **Axis** Completeness
-  - **Affected element** Model description
-  - **Evidence pointer** Abstract
-  - **Issue** The abstract mentions "deep learning" but does not specify the model architecture (e.g., convolutional neural network, transformer) or the input features (e.g., DNA sequence, chromatin accessibility peaks). This lack of detail makes it difficult to assess the appropriateness of the method.
-  - **Required correction** Briefly describe the model architecture and input features in the abstract or main text.
-
+  - **Axis** Scope
+  - **Affected element** Species coverage
+  - **Evidence pointer** Abstract; location not provided
+  - **Issue** The abstract mentions "flatworms and vertebrates" as two groups but does not specify the number of species or the phylogenetic breadth within each group. This limits the generalizability claim.
+  - **Required correction** State the number of species and their phylogenetic distribution, and discuss whether the results are consistent within each group.
   - **Concern ID** R1-m3
   - **Severity** Minor
-  - **Axis** Scope
-  - **Affected element** Generalizability
-  - **Evidence pointer** Abstract
-  - **Issue** The study compares flatworms and vertebrates, which are vastly divergent, but it is unclear whether the findings are generalizable to other animal groups (e.g., arthropods, mollusks). The abstract does not discuss the potential limitations of the two-group comparison.
-  - **Required correction** Acknowledge the limited taxonomic scope and discuss the potential for broader generalizability in the main text.
-
-- **Technical failings that need to be addressed before the case is established** R1-M1, R1-M2, R1-M3. The core claims of conserved motif vocabularies, accurate cross-species predictions, and rapid syntax evolution are all unsupported by the abstract alone. Quantitative evidence, methodological details, and rigorous statistical tests are required.
-
-- **Assessment against Nature-style criteria**
-  - **Originality**: High. The "collective maintenance" model is a novel conceptual framework that integrates motif conservation with combinatorial syntax evolution.
-  - **Scientific importance**: Potentially high. If validated, the model could provide a unifying principle for understanding cell type evolution and regulatory conservation across deep time.
-  - **Interdisciplinary readership**: Moderate to high. The topic bridges evolutionary biology, genomics, and computational biology, and the conceptual model is accessible to a broad audience.
-  - **Technical soundness**: Cannot be assessed from the abstract alone. The claims rely on complex computational analyses that require rigorous validation.
-  - **Readability for nonspecialists**: The abstract is well-written and the central analogy to developmental homology is helpful. However, terms like "motif vocabularies" and "regulatory syntax" could be better defined for a general audience.
-
-- **Recommendation posture** Currently not established from the provided evidence. The abstract presents a compelling hypothesis, but the key claims are unsupported by quantitative data or methodological details. A full manuscript with rigorous evidence is required to evaluate the validity of the model. The recommendation is supportive if the technical concerns are resolved in the full manuscript.
+  - **Axis** Reproducibility
+  - **Affected element** Model details
+  - **Evidence pointer** Abstract; location not provided
+  - **Issue** The deep-learning models are described only generically. No information is given on architecture, training data, or hyperparameters.
+  - **Required correction** Provide model architecture and training details in the methods, and make code and trained models available.
+  - **Concern ID** R1-m4
+  - **Severity** Minor
+  - **Axis** Interpretation
+  - **Affected element** Analogy to developmental homology
+  - **Evidence pointer** Abstract; location not provided
+  - **Issue** The analogy to developmental homology is introduced without explaining how the two concepts are formally related or where the analogy breaks down.
+  - **Required correction** Clarify the intended scope of the analogy and specify which aspects of developmental homology logic apply to the proposed model.
 
 ## Risk / unsupported claims
-- The existence of conserved motif vocabularies associated with cell type families (R1-M1).
-- The claim that deep learning models trained on one species accurately predict family-level chromatin accessibility in distantly related species (R1-M2).
-- The claim that models trained on individual cell types lose cross-species predictive power due to rapid evolution of regulatory syntax (R1-M3).
-- The "collective maintenance" model as a whole, as it is an inference from the above unsupported claims.
+- The existence of "hundreds" of motifs partitioning into conserved vocabularies is unsupported without quantitative data.
+- The claim of "accurate" cross-species prediction is unsupported without performance metrics and controls.
+- The claim that cell type-level models "lose" predictive power is unsupported without statistical comparison.
+- The "collective maintenance" model is presented as a conclusion but is not formally derived or tested.
+- The generalizability to "vastly divergent animals" is not assessable from the abstract alone, given the limited species description.
+- The analogy to developmental homology is asserted but not mechanistically linked to the data.

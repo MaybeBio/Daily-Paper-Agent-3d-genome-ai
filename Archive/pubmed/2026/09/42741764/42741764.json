@@ -1,0 +1,254 @@
+{
+  "identity": {
+    "pmid": "42741764",
+    "doi": "10.1002/ggn2.70044",
+    "title": "The Rise of Plant Pan-Genomes: From Genome Variation to Predictive Breeding."
+  },
+  "content": {
+    "abstract": "Plant pan-genomics is entering a new phase beyond genome variation discovery, requiring a shift from cataloguing genomic diversity toward understanding how variation generates biological function and breeding value. Here, we propose that the future of plant pan-genomics will be shaped by three conceptual transitions. First, structural variation (SV), presence-absence variation (PAV), and haplotype diversity should be interpreted not merely as genomic differences, but as regulatory components that influence gene networks, chromatin organization, and complex traits. Second, the expansion from species-level pan-genomes to genus-level super pan-genomes provides an evolutionary framework for uncovering adaptive genetic modules preserved in wild relatives and overlooked during domestication. Third, integrating pan-genomes with pan-omics, three-dimensional genome analyses, and artificial intelligence will enable the transformation of genomic variation into predictive models for crop improvement. We further propose that the ultimate value of pan-genomes lies not in generating increasingly complete genome collections, but in establishing a mechanistic bridge between genome diversity, biological function, and breeding decisions. This transition will move crop improvement from empirical selection toward rational genome design, where evolutionary diversity can be systematically interpreted, predicted, and engineered.",
+    "keywords": [],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Peng, Dan",
+        "Liao, Xuezhu",
+        "Tang, Liang",
+        "Wu, Zhiqiang"
+      ],
+      "short_names": [
+        "Peng D",
+        "Liao X",
+        "Tang L",
+        "Wu Z"
+      ],
+      "auids": [
+        "ORCID: 0009-0007-6164-4132",
+        "ORCID: 0000-0003-4599-5809",
+        "ORCID: 0000-0002-4238-7317"
+      ],
+      "affiliations": [
+        "State Key Laboratory of Tropical Crop Breeding Shenzhen Branch, Guangdong Laboratory of Lingnan Modern Agriculture Key Laboratory of Synthetic Biology Ministry of Agriculture and Rural Affairs Agricultural Genomics Institute at Shenzhen Chinese Academy of Agricultural Sciences Shenzhen China.",
+        "School of Ecology Hainan University Haikou China.",
+        "State Key Laboratory of Tropical Crop Breeding Shenzhen Branch, Guangdong Laboratory of Lingnan Modern Agriculture Key Laboratory of Synthetic Biology Ministry of Agriculture and Rural Affairs Agricultural Genomics Institute at Shenzhen Chinese Academy of Agricultural Sciences Shenzhen China.",
+        "School of Ecology Hainan University Haikou China.",
+        "International Joint Center For Terrestrial Biodiversity Around South China Sea of Hainan Province School of Ecology Hainan University Haikou China.",
+        "State Key Laboratory of Tropical Crop Breeding Shenzhen Branch, Guangdong Laboratory of Lingnan Modern Agriculture Key Laboratory of Synthetic Biology Ministry of Agriculture and Rural Affairs Agricultural Genomics Institute at Shenzhen Chinese Academy of Agricultural Sciences Shenzhen China."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Peng, Dan",
+        "short_name": "Peng D",
+        "identifiers": [
+          "0009-0007-6164-4132"
+        ],
+        "affiliations": [
+          "State Key Laboratory of Tropical Crop Breeding Shenzhen Branch, Guangdong Laboratory of Lingnan Modern Agriculture Key Laboratory of Synthetic Biology Ministry of Agriculture and Rural Affairs Agricultural Genomics Institute at Shenzhen Chinese Academy of Agricultural Sciences Shenzhen China.",
+          "School of Ecology Hainan University Haikou China."
+        ]
+      },
+      {
+        "full_name": "Liao, Xuezhu",
+        "short_name": "Liao X",
+        "identifiers": [
+          "0000-0003-4599-5809"
+        ],
+        "affiliations": [
+          "State Key Laboratory of Tropical Crop Breeding Shenzhen Branch, Guangdong Laboratory of Lingnan Modern Agriculture Key Laboratory of Synthetic Biology Ministry of Agriculture and Rural Affairs Agricultural Genomics Institute at Shenzhen Chinese Academy of Agricultural Sciences Shenzhen China."
+        ]
+      },
+      {
+        "full_name": "Tang, Liang",
+        "short_name": "Tang L",
+        "identifiers": [],
+        "affiliations": [
+          "School of Ecology Hainan University Haikou China.",
+          "International Joint Center For Terrestrial Biodiversity Around South China Sea of Hainan Province School of Ecology Hainan University Haikou China."
+        ]
+      },
+      {
+        "full_name": "Wu, Zhiqiang",
+        "short_name": "Wu Z",
+        "identifiers": [
+          "0000-0002-4238-7317"
+        ],
+        "affiliations": [
+          "State Key Laboratory of Tropical Crop Breeding Shenzhen Branch, Guangdong Laboratory of Lingnan Modern Agriculture Key Laboratory of Synthetic Biology Ministry of Agriculture and Rural Affairs Agricultural Genomics Institute at Shenzhen Chinese Academy of Agricultural Sciences Shenzhen China."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Advanced genetics (Hoboken, N.J.)"
+    ],
+    "journal_abbrev": [
+      "Adv Genet (Hoboken)"
+    ],
+    "pub_date": "2026 Sep",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/15 11:37",
+    "fetched_at": "2026-09-16 10:48:05"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42741764",
+      "42475469",
+      "42643124",
+      "42654900",
+      "42350953",
+      "41910071",
+      "35750315",
+      "42496596",
+      "38632097",
+      "33892774",
+      "37759803",
+      "39894347",
+      "42439591",
+      "40258447",
+      "41988419",
+      "37322453",
+      "40943284",
+      "39510377",
+      "38001525",
+      "39367490",
+      "35999561",
+      "41201653",
+      "34017083",
+      "42210061",
+      "35821092",
+      "40219973",
+      "40517404",
+      "41826708",
+      "39476558",
+      "42008180",
+      "30594655",
+      "33484244",
+      "39095952",
+      "37291196",
+      "32690893",
+      "36474047",
+      "36255144",
+      "41588321",
+      "39107305",
+      "35115520",
+      "40240877",
+      "42464962",
+      "34759320",
+      "34051138",
+      "37024581",
+      "41064766",
+      "42700247",
+      "36853054",
+      "42549057",
+      "34815206",
+      "35529944",
+      "29335547",
+      "38111050",
+      "42184640",
+      "42333035",
+      "39849617",
+      "34031989",
+      "40613890",
+      "42726296",
+      "34329477",
+      "33119236",
+      "39472552",
+      "31787539",
+      "40162720",
+      "42394671",
+      "33119230",
+      "36353749",
+      "40098156",
+      "22948437",
+      "41691473",
+      "42226345",
+      "34140962",
+      "31937246",
+      "35230132",
+      "41421017",
+      "33679880",
+      "26311018",
+      "40297728",
+      "34226565",
+      "41898831",
+      "34384905",
+      "35988902",
+      "42211476",
+      "34065368",
+      "36153338",
+      "34416864",
+      "37246787",
+      "41402760",
+      "39506826",
+      "41248615",
+      "40598134",
+      "42629596",
+      "39844464",
+      "42616232",
+      "42192282",
+      "36523157",
+      "35974327",
+      "30315621",
+      "36998696",
+      "42343203"
+    ],
+    "review": [
+      "42741764",
+      "42643124",
+      "42654900",
+      "41910071",
+      "35750315",
+      "38632097",
+      "37759803",
+      "39894347",
+      "41988419",
+      "41826708",
+      "39476558",
+      "30594655",
+      "33484244",
+      "32690893",
+      "36255144",
+      "42464962",
+      "41064766",
+      "34815206",
+      "35529944",
+      "42184640",
+      "34031989",
+      "40613890",
+      "42726296",
+      "31787539",
+      "42394671",
+      "22948437",
+      "41421017",
+      "33679880",
+      "26311018",
+      "41898831",
+      "42211476",
+      "34065368",
+      "39506826",
+      "41248615",
+      "42629596",
+      "39844464",
+      "42616232",
+      "42192282",
+      "36523157"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [],
+    "text_mined": []
+  }
+}

@@ -1,0 +1,335 @@
+{
+  "identity": {
+    "pmid": "42728937",
+    "doi": "10.12688/f1000research.179164.1",
+    "title": "Dataset of multi-focus (Z-stack) images derived from liquid-based cervical cancer cytology specimens."
+  },
+  "content": {
+    "abstract": "BACKGROUND: In cervical cancer screening, cytotechnologists and cytopathologists integrate three-dimensional information by continuously adjusting the microscope's focus to evaluate chromatin structure and nuclear morphology. However, most existing public datasets consist of single-focus 2D images, which do not fully reflect this clinical diagnostic workflow. This study presents the Cervical Cancer Cell Image Database: Multi-focus Cytology Dataset (CCCID) to bridge this gap. METHODS: Cervical specimens were processed using the BD SurePath LBC technique and Papanicolaou staining. Digitization was performed using a NanoZoomer-XR scanner. For 639 unique fields of view (FOVs), a Z-stack consisting of 11 focal planes was captured at 1.0 mum intervals, resulting in 7,029 images (384 x 384 pixels). Ground-truth labels were established only when six board-certified expert cytotechnologists reached 100% consensus. CONCLUSIONS: The CCCID provides a high-reliability benchmark for developing machine-learning models that utilize axial (Z-axis) information. It is highly valuable for advancing three-dimensional nuclear morphology analysis, cell segmentation in overlapping clusters, and the evaluation of focus-fusion algorithms in digital cytopathology.",
+    "keywords": [
+      "Multi-focus imaging; Z-stack; Cervical cancer; Liquid-based cytology; Deep",
+      "learning; Pap smear; cytology; cytopathology."
+    ],
+    "mesh_terms": [
+      "Humans",
+      "Female",
+      "*Uterine Cervical Neoplasms/pathology/diagnostic imaging",
+      "Papanicolaou Test",
+      "*Image Processing, Computer-Assisted/methods",
+      "*Cytodiagnosis/methods"
+    ],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Onishi, Takafumi",
+        "Miyamoto, Tomoyuki",
+        "Osawa, Yukihiko",
+        "Shibahara, Kazuki",
+        "Nishimori, Makoto",
+        "Yakushiji, Hiromasa",
+        "Ohno, Setsuyo",
+        "Ohno, Eiji"
+      ],
+      "short_names": [
+        "Onishi T",
+        "Miyamoto T",
+        "Osawa Y",
+        "Shibahara K",
+        "Nishimori M",
+        "Yakushiji H",
+        "Ohno S",
+        "Ohno E"
+      ],
+      "auids": [
+        "ORCID: 0000-0002-2494-1265",
+        "ORCID: 0009-0003-7060-5857",
+        "ORCID: 0000-0003-1674-1359"
+      ],
+      "affiliations": [
+        "Department of Medical Technology and Sciences, Faculty of Health Sciences, Kyoto Tachibana University, Kyoto, Kyoto, Japan.",
+        "Research Center for Life and Health Sciences, KyotoTachibana University, Kyoto, Kyoto, Japan.",
+        "Department of Medical Life Sciences, School of Medical Life Sciences, Kyushu University of Medical Science, Nobeoka, Miyazaki, Japan.",
+        "Cancer Cell Institute, Kyushu University of Medical Science, Nobeoka, Miyazaki, Japan.",
+        "Department of Medical Technology and Sciences, Faculty of Health Sciences, Kyoto Tachibana University, Kyoto, Kyoto, Japan.",
+        "Research Center for Life and Health Sciences, KyotoTachibana University, Kyoto, Kyoto, Japan.",
+        "Department of Medical Life Sciences, School of Medical Life Sciences, Kyushu University of Medical Science, Nobeoka, Miyazaki, Japan.",
+        "Cancer Cell Institute, Kyushu University of Medical Science, Nobeoka, Miyazaki, Japan.",
+        "Department of Medical Life Sciences, School of Medical Life Sciences, Kyushu University of Medical Science, Nobeoka, Miyazaki, Japan.",
+        "Cancer Cell Institute, Kyushu University of Medical Science, Nobeoka, Miyazaki, Japan.",
+        "Department of Medical Life Sciences, School of Medical Life Sciences, Kyushu University of Medical Science, Nobeoka, Miyazaki, Japan.",
+        "Cancer Cell Institute, Kyushu University of Medical Science, Nobeoka, Miyazaki, Japan.",
+        "Research Center for Life and Health Sciences, KyotoTachibana University, Kyoto, Kyoto, Japan.",
+        "Research Center for Life and Health Sciences, KyotoTachibana University, Kyoto, Kyoto, Japan."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Onishi, Takafumi",
+        "short_name": "Onishi T",
+        "identifiers": [
+          "0000-0002-2494-1265"
+        ],
+        "affiliations": [
+          "Department of Medical Technology and Sciences, Faculty of Health Sciences, Kyoto Tachibana University, Kyoto, Kyoto, Japan.",
+          "Research Center for Life and Health Sciences, KyotoTachibana University, Kyoto, Kyoto, Japan."
+        ]
+      },
+      {
+        "full_name": "Miyamoto, Tomoyuki",
+        "short_name": "Miyamoto T",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Medical Life Sciences, School of Medical Life Sciences, Kyushu University of Medical Science, Nobeoka, Miyazaki, Japan.",
+          "Cancer Cell Institute, Kyushu University of Medical Science, Nobeoka, Miyazaki, Japan."
+        ]
+      },
+      {
+        "full_name": "Osawa, Yukihiko",
+        "short_name": "Osawa Y",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Medical Technology and Sciences, Faculty of Health Sciences, Kyoto Tachibana University, Kyoto, Kyoto, Japan.",
+          "Research Center for Life and Health Sciences, KyotoTachibana University, Kyoto, Kyoto, Japan."
+        ]
+      },
+      {
+        "full_name": "Shibahara, Kazuki",
+        "short_name": "Shibahara K",
+        "identifiers": [
+          "0009-0003-7060-5857"
+        ],
+        "affiliations": [
+          "Department of Medical Life Sciences, School of Medical Life Sciences, Kyushu University of Medical Science, Nobeoka, Miyazaki, Japan.",
+          "Cancer Cell Institute, Kyushu University of Medical Science, Nobeoka, Miyazaki, Japan."
+        ]
+      },
+      {
+        "full_name": "Nishimori, Makoto",
+        "short_name": "Nishimori M",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Medical Life Sciences, School of Medical Life Sciences, Kyushu University of Medical Science, Nobeoka, Miyazaki, Japan.",
+          "Cancer Cell Institute, Kyushu University of Medical Science, Nobeoka, Miyazaki, Japan."
+        ]
+      },
+      {
+        "full_name": "Yakushiji, Hiromasa",
+        "short_name": "Yakushiji H",
+        "identifiers": [
+          "0000-0003-1674-1359"
+        ],
+        "affiliations": [
+          "Department of Medical Life Sciences, School of Medical Life Sciences, Kyushu University of Medical Science, Nobeoka, Miyazaki, Japan.",
+          "Cancer Cell Institute, Kyushu University of Medical Science, Nobeoka, Miyazaki, Japan."
+        ]
+      },
+      {
+        "full_name": "Ohno, Setsuyo",
+        "short_name": "Ohno S",
+        "identifiers": [],
+        "affiliations": [
+          "Research Center for Life and Health Sciences, KyotoTachibana University, Kyoto, Kyoto, Japan."
+        ]
+      },
+      {
+        "full_name": "Ohno, Eiji",
+        "short_name": "Ohno E",
+        "identifiers": [],
+        "affiliations": [
+          "Research Center for Life and Health Sciences, KyotoTachibana University, Kyoto, Kyoto, Japan."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "F1000Research"
+    ],
+    "journal_abbrev": [
+      "F1000Res"
+    ],
+    "pub_date": "2026",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/13 00:50",
+    "fetched_at": "2026-09-16 10:48:05"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42728937",
+      "23139174",
+      "35139795",
+      "30195423",
+      "41660918",
+      "28558124",
+      "39377445",
+      "30147099",
+      "36744768",
+      "35730264",
+      "40880435",
+      "40387263",
+      "30755214",
+      "32308878",
+      "42363782",
+      "38728830",
+      "39391891",
+      "38648759",
+      "41365892",
+      "32746984",
+      "37451230",
+      "9479321",
+      "40990204",
+      "42268916",
+      "33509110",
+      "31759371",
+      "40615498",
+      "39732723",
+      "42369005",
+      "40302490",
+      "41369778",
+      "39890842",
+      "38516853",
+      "38923481",
+      "21534360",
+      "23331613",
+      "22059147",
+      "39083516",
+      "32828445",
+      "31712961",
+      "34841722",
+      "19780303",
+      "39111154",
+      "42510103",
+      "38320537",
+      "38113684",
+      "33520497",
+      "26800556",
+      "28541229",
+      "40112688",
+      "41830124",
+      "30763802",
+      "35584402",
+      "17724676",
+      "41352861",
+      "11770273",
+      "34801245",
+      "40517814",
+      "35579303",
+      "35870877",
+      "26655168",
+      "3678975",
+      "37962777",
+      "41808272",
+      "22970841",
+      "12713984",
+      "27298758",
+      "39662319",
+      "17549362",
+      "38971865",
+      "19256741",
+      "34267261",
+      "33176300",
+      "39984572",
+      "39051067",
+      "40024239",
+      "41899820",
+      "32535593",
+      "37859287",
+      "29923515",
+      "42046894",
+      "32669565",
+      "23585899",
+      "31005797",
+      "24376056",
+      "40554494",
+      "41317151",
+      "30629194",
+      "26477005",
+      "41410328",
+      "42529519",
+      "12400979",
+      "34979436",
+      "18439084",
+      "39118299",
+      "26174002",
+      "38712698",
+      "38522415",
+      "15147611",
+      "40803957"
+    ],
+    "review": [
+      "42728937",
+      "30195423",
+      "9479321",
+      "19780303",
+      "42046894",
+      "15147611"
+    ],
+    "pmc": [
+      "13560679"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://screening.iarc.fr/viavili.php",
+        "provider": "International Agency for Research on Cancer - Screening Group",
+        "category": "Medical",
+        "attribute": "free resource",
+        "linkname": "A practical manual on visual screening for cervical neoplasia"
+      },
+      {
+        "url": "https://medlineplus.gov/cervicalcancer.html",
+        "provider": "MedlinePlus Health Information",
+        "category": "Medical",
+        "attribute": "free resource",
+        "linkname": "Cervical Cancer"
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/pmid/42728937/",
+        "provider": "PubMed Central",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://antibodies.cancer.gov/detail/CPTC-ASAP1-1",
+        "provider": "NCI CPTC Antibody Characterization Program",
+        "category": "Research Materials",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://assays.cancer.gov/CPTAC-1548",
+        "provider": "NCI CPTAC Assay Portal",
+        "category": "Miscellaneous",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://f1000research.com/articles/10.12688/f1000research.179164.1/doi",
+        "provider": "F1000 Research Ltd",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://medlineplus.gov/cervicalcancer.html",
+        "provider": "MedlinePlus Consumer Health Information",
+        "category": "Medical",
+        "attribute": "free resource",
+        "linkname": "Cervical Cancer"
+      }
+    ],
+    "text_mined": []
+  }
+}

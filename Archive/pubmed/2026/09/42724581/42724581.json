@@ -242,7 +242,7 @@
   },
   "metadata": {
     "entrez_date": "2026/09/11 11:38",
-    "fetched_at": "2026-09-13 08:43:46"
+    "fetched_at": "2026-09-16 10:48:05"
   },
   "links": {
     "cites": [],
@@ -417,7 +417,22 @@
       "13559918"
     ],
     "entrez": {},
-    "external": [],
+    "external": [
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/pmid/42724581/",
+        "provider": "PubMed Central",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://doi.org/10.3389/fonc.2026.1919279",
+        "provider": "Frontiers Media SA",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
     "text_mined": []
   }
 }

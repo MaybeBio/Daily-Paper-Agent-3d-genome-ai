@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TransBind2: Improving Transcription Factor-DNA Binding Prediction with Multimodal Data and Bidirectional Cross Attention · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-mid">6</span>
+    <div>
+      <h1>TransBind2: Improving Transcription Factor-DNA Binding Prediction with Multimodal Data and Bidirectional Cross Attention</h1>
+      <div class="meta">Basnet S; Cheng J</div>
+      <div class="meta muted">
+        
+        <span class="journal">bioRxiv</span> <span class="preprint-badge">预印本</span>
+        · 2026-09-14
+         · 仅摘要
+         · <a href="https://www.biorxiv.org/content/10.64898/2026.09.07.749913">原文</a>
+      </div>
+      <p class="one-liner">该文提出融合DNA序列、染色质可及性与TF结构的双向交叉注意力模型TransBind2，用于预测转录因子-DNA结合，虽非直接建模染色质三维架构，但其整合染色质上下文与蛋白结构的思路对染色质水平调控建模有方法学启发。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">Accurate genome-wide prediction of transcription factor (TF)-DNA binding remains challenging because many models focus mainly on DNA sequence and overlook chromatin context and TF structure. We previously developed TransBind, a protein-aware model that combines TF and DNA representations through cross-attention. Here, we introduce TransBind2, which improves on TransBind in several ways. It incorporates DNase-seq accessibility and genome mappability tracks as additional input, uses a biomodal protein language model (ProstT5) to capture both TF sequence and structure, and applies bidirectional cross-attention so DNA and protein features can refine each other. We also frame prediction as binary classification of individual &lt;DNA bin, TF, cell type&gt; triplets, allowing the model to generalize to new TFs and cell types. Across 690 human ChIP-seq experiments covering 161 TFs and 91 cell types, TransBind2 achieves a macro AUROC of 0.9648 and AUPR of 0.4215, outperforming TransBind and other baselines, with a ≥12.67% relative AUPR gain. The model trained on human data also performs well in cross-species zero-shot prediction on mouse data. Saliency analysis shows that it can identify TF-binding peaks with a median error of 12-38 base pairs (bps) despite being trained on window-level labels. Ablation studies further show that TF structure, chromatin accessibility, and bidirectional attention each improve performance. Overall, these results show that combining TF structure with chromatin context leads to more accurate and generalizable TF-DNA binding predictions.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">准确的基因组范围转录因子（TF）-DNA结合预测仍然具有挑战性，因为许多模型主要关注DNA序列，而忽视了染色质环境和TF结构。我们先前开发了TransBind，一种通过交叉注意力结合TF和DNA表征的蛋白质感知模型。在此，我们介绍TransBind2，它在多个方面对TransBind进行了改进。它整合了DNase-seq可及性和基因组可映射性轨道作为额外输入，使用双峰蛋白质语言模型（ProstT5）来捕获TF序列和结构，并应用双向交叉注意力，使DNA和蛋白质特征能够相互优化。我们还将预测框架化为对单个&lt;DNA片段，TF，细胞类型&gt;三元组的二元分类，使模型能够泛化到新的TF和细胞类型。在覆盖161种TF和91种细胞类型的690个人类ChIP-seq实验中，TransBind2实现了宏AUROC为0.9648和AUPR为0.4215，优于TransBind和其他基线模型，相对AUPR增益≥12.67%。在人类数据上训练的模型在小鼠数据的跨物种零样本预测中也表现良好。显著性分析显示，尽管仅在窗口级标签上训练，它仍能以12-38个碱基对（bps）的中位误差识别TF结合峰。消融研究进一步表明，TF结构、染色质可及性和双向注意力各自都能提升性能。总体而言，这些结果表明，将TF结构与染色质环境相结合，能够实现更准确且更具泛化性的TF-DNA结合预测。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：TransBind2: Improving Transcription Factor-DNA Binding Prediction with Multimodal Data and Bidirectional Cross Attention</li>
+<li><strong>作者与单位</strong>：Basnet S; Cheng J（单位未提供）</li>
+<li><strong>期刊/预印本平台</strong>：bioRxiv</li>
+<li><strong>年份</strong>：2026-09-14</li>
+<li><strong>论文类型</strong>：预印本（方法学改进型）</li>
+<li><strong>领域</strong>：转录因子-DNA结合预测；多模态深度学习；染色质可及性；蛋白质语言模型</li>
+<li><strong>关键词</strong>：TF-DNA binding, cross-attention, DNase-seq, mappability, ProstT5, zero-shot, ChIP-seq</li>
+<li><strong>DOI/arXiv 号</strong>：10.64898/2026.09.07.749913</li>
+<li><strong>代码</strong>：未提供</li>
+<li><strong>数据</strong>：690 个人类 ChIP-seq 实验（161 TFs，91 细胞类型）；小鼠跨物种零样本数据</li>
+<li><strong>阅读日期</strong>：未提供</li>
+<li><strong>该文在「三维基因组/染色质组织 × AI 方法/物理模拟」方向中的位置</strong>：该文属于「序列+染色质上下文 → 结合预测」的监督学习方法，不涉及三维基因组结构或物理模拟。但其将染色质可及性（DNase-seq）与基因组 mappability 作为多模态输入、以及跨细胞类型泛化的思路，对三维基因组中「序列-结构-功能」联合建模具有方法迁移价值。</li>
+</ul>
+<hr />
+<h2>02 一句话总结</h2>
+<p>该文提出 TransBind2，通过引入 DNase-seq 可及性、基因组 mappability 和 ProstT5 蛋白质语言模型（同时编码 TF 序列与结构），并采用双向交叉注意力机制，在 690 个人类 ChIP-seq 实验上将 TF-DNA 结合预测的宏 AUPR 提升至 0.4215（相对 TransBind 提升 ≥12.67%），且可零样本迁移至小鼠数据。</p>
+<hr />
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：如何利用多模态数据（DNA 序列、染色质可及性、mappability、TF 序列与结构）提高 TF-DNA 结合预测的准确性和泛化能力？</li>
+<li><strong>为什么重要</strong>：TF-DNA 结合是基因调控的核心环节；仅用 DNA 序列的模型忽略了染色质上下文和 TF 结构信息，导致预测精度有限且难以泛化到新 TF 或细胞类型。</li>
+<li><strong>现有方法为何不足</strong>：多数模型仅以 DNA 序列为输入，未利用染色质可及性（反映开放染色质区域）和 TF 蛋白结构；部分蛋白感知模型（如 TransBind）仅用单向交叉注意力，未让 DNA 与蛋白特征互相精炼。</li>
+<li><strong>精确研究问题</strong>：Can incorporating chromatin accessibility, genome mappability, and TF structure via bidirectional cross-attention improve TF-DNA binding prediction accuracy and cross-species generalization?</li>
+</ul>
+<hr />
+<h2>04 背景与发展脉络</h2>
+<blockquote>
+<p>注：此脉络基于本文框架，未经外部核验。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>代表性方法</th>
+<th>优点</th>
+<th>局限</th>
+<th>本文位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>序列-only 模型</td>
+<td>DeepSEA, DanQ, BPNet</td>
+<td>可端到端学习 motif</td>
+<td>忽略染色质上下文与 TF 结构</td>
+<td>超越对象</td>
+</tr>
+<tr>
+<td>蛋白感知模型</td>
+<td>TransBind（前作）</td>
+<td>引入 TF 蛋白表示，通过交叉注意力融合</td>
+<td>单向注意力；未用染色质可及性；蛋白表示未含结构</td>
+<td>直接前身</td>
+</tr>
+<tr>
+<td>多模态+双向注意力</td>
+<td>TransBind2（本文）</td>
+<td>同时利用 DNA 序列、DNase-seq、mappability、TF 序列+结构；双向交叉注意力</td>
+<td>依赖 ChIP-seq 标签；未涉及三维结构</td>
+<td>本文主张位置</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>序列-only 模型忽略染色质上下文</td>
+<td>预测精度有限，尤其在不同细胞类型间泛化差</td>
+<td>开放染色质区域决定 TF 可及性，序列模型无法感知</td>
+<td>摘要：many models focus mainly on DNA sequence and overlook chromatin context</td>
+</tr>
+<tr>
+<td>蛋白表示缺乏结构信息</td>
+<td>TF 结构影响 DNA 结合特异性，序列-only 蛋白编码丢失该信息</td>
+<td>传统蛋白序列编码不含折叠结构</td>
+<td>摘要：uses a biomodal protein language model (ProstT5) to capture both TF sequence and structure</td>
+</tr>
+<tr>
+<td>单向注意力限制特征交互</td>
+<td>DNA 与蛋白特征无法互相精炼</td>
+<td>仅一个方向的信息流</td>
+<td>摘要：applies bidirectional cross-attention so DNA and protein features can refine each other</td>
+</tr>
+<tr>
+<td>窗口级标签导致定位粗糙</td>
+<td>模型难以精确定位结合峰</td>
+<td>训练标签为窗口级而非碱基级</td>
+<td>摘要：identify TF-binding peaks with a median error of 12-38 bps despite being trained on window-level labels</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>06 核心思想</h2>
+<ol>
+<li>
+<p><strong>表面方法</strong>：将 TF-DNA 结合预测建模为 <code>&lt;DNA bin, TF, cell type&gt;</code> 三元组的二分类问题；输入包括 DNA 序列、DNase-seq 可及性、mappability、TF 序列（经 ProstT5 编码为序列+结构表示）；通过双向交叉注意力融合 DNA 与蛋白特征。</p>
+</li>
+<li>
+<p><strong>核心洞察</strong>：TF 结合不仅由 DNA 序列决定，还受染色质可及性（DNase-seq）和基因组 mappability 影响；TF 蛋白结构（而非仅序列）对结合特异性有贡献；双向注意力使 DNA 与蛋白特征互相精炼，优于单向信息流。</p>
+</li>
+<li>
+<p><strong>可能的普适教训 [Analysis]</strong>：在多模态生物序列预测中，将「上下文信号」（如可及性）与「对象结构」（如蛋白折叠）同时纳入，并允许模态间双向交互，可显著提升泛化能力。此思路可迁移至三维基因组中「序列-结构-功能」联合建模。</p>
+</li>
+</ol>
+<hr />
+<h2>07 方法总览</h2>
+<ul>
+<li><strong>输入</strong>：DNA 序列（bin）、DNase-seq 可及性 track、基因组 mappability track、TF 蛋白序列</li>
+<li><strong>输出</strong>：<code>&lt;DNA bin, TF, cell type&gt;</code> 三元组的结合概率（二分类）</li>
+<li><strong>模块</strong>：
+  1. DNA 编码器（序列 + 可及性 + mappability）
+  2. 蛋白编码器（ProstT5，编码 TF 序列与结构）
+  3. 双向交叉注意力模块（DNA↔蛋白特征互相精炼）
+  4. 分类头（二分类）</li>
+<li><strong>训练</strong>：690 个人类 ChIP-seq 实验，监督学习；窗口级标签</li>
+<li><strong>工具</strong>：ProstT5（蛋白语言模型）；未提供其他工具</li>
+<li><strong>假设</strong>：DNase-seq 可及性反映开放染色质；mappability 反映序列可比对性；ProstT5 能编码 TF 结构信息</li>
+<li><strong>流程</strong>：DNA 序列与辅助 track 编码 → 蛋白序列经 ProstT5 编码 → 双向交叉注意力融合 → 分类头输出结合概率</li>
+</ul>
+<hr />
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DNase-seq 可及性输入</td>
+<td>提供染色质开放状态</td>
+<td>开放染色质决定 TF 可及性</td>
+<td>输入：DNase-seq track；输出：DNA 编码特征</td>
+<td>摘要：incorporates DNase-seq accessibility；消融显示其提升性能</td>
+<td>预期性能下降（消融实验支持）</td>
+</tr>
+<tr>
+<td>mappability track</td>
+<td>提供序列可比对性</td>
+<td>避免多比对区域假阳性</td>
+<td>输入：mappability track；输出：DNA 编码特征</td>
+<td>摘要：incorporates ... genome mappability tracks</td>
+<td>预期性能下降</td>
+</tr>
+<tr>
+<td>ProstT5 蛋白编码</td>
+<td>同时编码 TF 序列与结构</td>
+<td>结构影响结合特异性</td>
+<td>输入：TF 序列；输出：蛋白嵌入</td>
+<td>摘要：capture both TF sequence and structure；消融显示结构信息提升性能</td>
+<td>预期性能下降（消融实验支持）</td>
+</tr>
+<tr>
+<td>双向交叉注意力</td>
+<td>DNA 与蛋白特征互相精炼</td>
+<td>单向注意力信息流不足</td>
+<td>输入：DNA 与蛋白特征；输出：融合特征</td>
+<td>摘要：bidirectional cross-attention；消融显示其提升性能</td>
+<td>预期性能下降（消融实验支持）</td>
+</tr>
+<tr>
+<td>分类头</td>
+<td>输出结合概率</td>
+<td>二分类任务需要</td>
+<td>输入：融合特征；输出：概率</td>
+<td>摘要：binary classification</td>
+<td>不适用</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>09 关键公式符号</h2>
+<p>不适用。提供的材料中未包含具体公式。</p>
+<hr />
+<h2>10 实验设计与证据链</h2>
+<ul>
+<li><strong>数据集</strong>：690 个人类 ChIP-seq 实验，覆盖 161 个 TF、91 个细胞类型；小鼠数据用于跨物种零样本测试</li>
+<li><strong>规模</strong>：690 实验（训练/评估）；未提供具体样本数</li>
+<li><strong>指标</strong>：宏 AUROC、宏 AUPR</li>
+<li><strong>基线</strong>：TransBind（前作）及其他基线（未具体列出）</li>
+<li><strong>评测协议</strong>：窗口级二分类；跨物种零样本（人类训练 → 小鼠测试）</li>
+<li><strong>骨干/仪器</strong>：未提供</li>
+<li><strong>oracle 输入</strong>：未提供</li>
+<li><strong>消融</strong>：TF 结构、染色质可及性、双向注意力分别被消融</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的 claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>主实验（690 ChIP-seq）</td>
+<td>TransBind2 优于 TransBind 和基线</td>
+<td>同数据集、同指标</td>
+<td>宏 AUROC 0.9648，AUPR 0.4215，相对 AUPR 提升 ≥12.67%</td>
+<td>多模态+双向注意力提升预测精度</td>
+<td>未证明在更大规模或更复杂场景下最优</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>跨物种零样本</td>
+<td>人类训练可迁移至小鼠</td>
+<td>人类训练 → 小鼠测试</td>
+<td>表现良好（未给具体数值）</td>
+<td>模型具有跨物种泛化能力</td>
+<td>未提供具体指标，无法量化</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>定位精度分析</td>
+<td>窗口级训练仍可精确定位</td>
+<td>Saliency 分析</td>
+<td>中位误差 12-38 bp</td>
+<td>模型学到碱基级信号</td>
+<td>未与专门定位模型对比</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>消融实验</td>
+<td>各模块均有贡献</td>
+<td>移除 TF 结构/可及性/双向注意力</td>
+<td>各模块移除后性能下降</td>
+<td>三个模块均重要</td>
+<td>未提供各消融的具体数值</td>
+<td>摘要</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：TF-DNA 结合预测，限定于 ChIP-seq 标签定义的结合事件；不涉及三维基因组结构或物理模拟。</li>
+<li><strong>oracle/真值输入</strong>：使用 ChIP-seq 实验标签作为真值；DNase-seq 和 mappability 作为输入特征，非 oracle。</li>
+<li><strong>端到端状态</strong>：端到端监督学习，从序列+track+蛋白序列到结合概率。</li>
+<li><strong>算力成本</strong>：未提供。</li>
+<li><strong>历史数据依赖</strong>：依赖 ChIP-seq 标签质量；DNase-seq 和 mappability 来自参考基因组。</li>
+<li><strong>模型依赖</strong>：依赖 ProstT5 的蛋白表示质量；未与其他蛋白编码器对比。</li>
+<li><strong>最难情形</strong>：跨物种零样本（人类→小鼠）表现未量化；新 TF 或未见细胞类型的泛化程度未单独评估。</li>
+<li><strong>群体/领域边界</strong>：仅人类和小鼠；未涉及其他物种或疾病相关变异。</li>
+<li><strong>不确定性</strong>：AUPR 0.4215 表明正类预测仍有大量假阳性；定位误差 12-38 bp 为碱基级但非单碱基精度。</li>
+</ul>
+<p><strong>有边界复述</strong>：TransBind2 在 690 个人类 ChIP-seq 实验上，通过引入染色质可及性、mappability 和 TF 结构信息，将宏 AUPR 提升至 0.4215（相对提升 ≥12.67%），并能在小鼠上零样本预测；但其精度仍有限，且未涉及三维基因组结构。</p>
+<hr />
+<h2>12 作者自认局限</h2>
+<p>在提供的材料中未发现作者明确承认的局限。</p>
+<p><strong>作者提及的相关约束</strong>（非正式局限）：
+- 模型依赖 ChIP-seq 标签，可能受标签噪声影响（推断自任务性质，非作者明确表述）。
+- 跨物种零样本仅在小鼠上验证，未涉及更远物种（推断自摘要范围）。</p>
+<hr />
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AUPR 0.4215 仍较低</td>
+<td>正类（结合位点）在基因组中高度稀疏，AUPR 低可能反映类别不平衡而非模型不足</td>
+<td>影响对模型实际可用性的判断</td>
+<td>对比随机基线的 AUPR；报告 PR 曲线</td>
+<td>摘要数值</td>
+</tr>
+<tr>
+<td>跨物种零样本未给具体指标</td>
+<td>「表现良好」缺乏量化，可能掩盖性能下降</td>
+<td>无法评估真实泛化能力</td>
+<td>要求提供小鼠 AUROC/AUPR 数值</td>
+<td>摘要表述</td>
+</tr>
+<tr>
+<td>消融实验未给具体数值</td>
+<td>无法判断各模块贡献的相对大小</td>
+<td>影响对模块必要性的判断</td>
+<td>要求提供各消融配置的完整指标</td>
+<td>摘要表述</td>
+</tr>
+<tr>
+<td>未与三维基因组方法对比</td>
+<td>该文方法可能被三维结构模型超越或互补</td>
+<td>影响该文在领域中的定位</td>
+<td>与 3D 结构感知模型对比</td>
+<td>摘要范围</td>
+</tr>
+<tr>
+<td>窗口级标签训练但碱基级定位</td>
+<td>Saliency 分析可能受模型内部表示影响，非真实因果</td>
+<td>定位精度结论可能过强</td>
+<td>用扰动实验验证 saliency 可靠性</td>
+<td>摘要表述</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>14 学到什么</h2>
+<p><strong>Agent 提炼的知识候选</strong></p>
+<ol>
+<li><strong>多模态上下文输入</strong>：将 DNase-seq 可及性和 mappability 作为辅助输入，可显著提升结合预测精度。→ 可迁移至三维基因组：将 Hi-C 接触频率、CTCF/cohesin 结合等作为辅助输入，预测增强子-启动子互作或 TAD 边界。</li>
+<li><strong>蛋白质语言模型编码结构</strong>：ProstT5 同时编码 TF 序列与结构，优于纯序列编码。→ 可迁移至三维基因组：用结构感知的蛋白表示预测染色质相关蛋白（如 CTCF、cohesin）的 DNA 结合特异性。</li>
+<li><strong>双向交叉注意力</strong>：DNA 与蛋白特征互相精炼优于单向信息流。→ 可迁移至三维基因组：在「序列-结构-功能」联合建模中，允许序列特征与结构特征双向交互。</li>
+<li><strong>三元组分类框架</strong>：将预测建模为 <code>&lt;DNA bin, TF, cell type&gt;</code> 分类，支持新 TF/细胞类型泛化。→ 可迁移至三维基因组：建模 <code>&lt;enhancer, promoter, cell type&gt;</code> 或 <code>&lt;locus, protein, cell type&gt;</code> 三元组。</li>
+<li><strong>窗口级标签+saliency 定位</strong>：即使训练标签粗糙，saliency 分析仍可提供碱基级定位。→ 可迁移至三维基因组：用 Hi-C 窗口级标签训练，saliency 分析定位关键接触位点。</li>
+</ol>
+<hr />
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>TransBind（前作）</strong>：本文直接改进对象，引入多模态输入和双向注意力。可对比两者架构差异。</li>
+<li><strong>ProstT5</strong>：蛋白质语言模型，可编码序列与结构；与 ESM-2、ProtTrans 等蛋白 LM 可对比。</li>
+<li><strong>DeepSEA / DanQ / BPNet</strong>：序列-only 的 TF 结合预测模型，本文超越对象。</li>
+<li><strong>ENCODE 项目</strong>：DNase-seq 和 ChIP-seq 数据来源，690 个实验可能来自 ENCODE。</li>
+<li><strong>三维基因组方向</strong>：本文未涉及 Hi-C、TAD、CTCF loop 等，但其「多模态+双向注意力」框架可迁移至 3D 基因组预测任务（如 enhancer-promoter interaction prediction）。</li>
+<li><strong>候选方向 [Analysis]</strong>：将本文框架与「Hi-C 接触频率 + 序列 + TF 结构」结合，可能提升 3D 基因组功能预测精度。</li>
+</ul>
+<hr />
+<h2>16 研究想法</h2>
+<p><strong>Agent 生成的研究候选</strong></p>
+<ol>
+<li>
+<p><strong>名称</strong>：TransBind-3D：将 Hi-C 接触频率纳入多模态 TF 结合预测
+   - <strong>来源局限/观察</strong>：本文仅用 DNase-seq 和 mappability，未利用 3D 基因组信息；TF 结合与 3D 结构（如 loop、TAD）密切相关。
+   - <strong>核心假设</strong>：将 Hi-C 接触频率作为额外输入，可进一步提升 TF 结合预测精度，尤其在 loop 锚点区域。
+   - <strong>初步方法</strong>：在 TransBind2 基础上增加 Hi-C track 输入，或在 DNA 编码器中加入接触频率 embedding。
+   - <strong>验证方式</strong>：在 ENCODE 数据集上对比有无 Hi-C 输入的 AUROC/AUPR；分析 loop 锚点区域的预测增益。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>名称</strong>：双向交叉注意力用于增强子-启动子互作预测
+   - <strong>来源局限/观察</strong>：本文的双向注意力机制可迁移至「增强子-启动子」互作预测，其中增强子与启动子特征需互相精炼。
+   - <strong>核心假设</strong>：双向交叉注意力优于单向注意力或简单拼接，用于 EPI 预测。
+   - <strong>初步方法</strong>：将增强子序列与启动子序列分别编码，通过双向交叉注意力融合，预测互作概率。
+   - <strong>验证方式</strong>：在 ENCODE/GeneHancer 数据集上对比双向注意力与基线。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>名称</strong>：结构感知的 CTCF 结合预测
+   - <strong>来源局限/观察</strong>：本文用 ProstT5 编码 TF 结构，但未针对 CTCF（3D 基因组关键蛋白）专门评估。
+   - <strong>核心假设</strong>：CTCF 的 DNA 结合结构域结构信息可提升其结合位点预测精度，进而改善 TAD 边界预测。
+   - <strong>初步方法</strong>：用 TransBind2 预测 CTCF 结合，结合 Hi-C 数据验证 TAD 边界一致性。
+   - <strong>验证方式</strong>：对比有/无结构编码的 CTCF 结合预测；检查预测位点是否富集于 TAD 边界。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>名称</strong>：跨细胞类型零样本 3D 基因组功能预测
+   - <strong>来源局限/观察</strong>：本文支持跨细胞类型泛化，但未涉及 3D 基因组功能（如 cell-type-specific loops）。
+   - <strong>核心假设</strong>：三元组分类框架可迁移至 <code>&lt;locus, protein, cell type&gt;</code> 预测 cell-type-specific 3D 互作。
+   - <strong>初步方法</strong>：将 TransBind2 框架改造为预测 cell-type-specific loop/contact。
+   - <strong>验证方式</strong>：在 GM12878、K562 等细胞类型的 Hi-C 数据上评估零样本迁移。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+</ol></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Abstract only</li>
+<li><strong>Assessment boundary</strong> Claims and evidence presented in the abstract; no methods, figures, tables, or supplementary materials were provided</li>
+<li><strong>Shared manuscript claim summary</strong> The authors present TransBind2, a deep learning model for transcription factor (TF)-DNA binding prediction that integrates DNA sequence, DNase-seq accessibility, genome mappability, and TF sequence and structure via a protein language model (ProstT5) and bidirectional cross-attention. The model is framed as binary classification of <DNA bin, TF, cell type> triplets. Reported performance includes macro AUROC of 0.9648 and AUPR of 0.4215 across 690 human ChIP-seq experiments (161 TFs, 91 cell types), a ≥12.67% relative AUPR improvement over baselines, cross-species zero-shot transfer to mouse, saliency-based peak identification with median error of 12-38 bp, and ablation support for each added component.</li>
+<li><strong>Visible evidence base</strong> Abstract text only; no quantitative breakdowns, baseline definitions, dataset splits, or statistical significance measures are provided</li>
+<li><strong>Missing materials affecting confidence</strong> Full manuscript, methods section, all figures and tables, supplementary information, baseline model specifications, dataset construction details, hyperparameter settings, and code availability</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li><strong>Overall assessment</strong> The abstract describes a technically plausible and potentially valuable extension of a prior model, with a clear motivation rooted in the limitations of sequence-only approaches. The reported performance gains are substantial, and the inclusion of chromatin context and TF structure is well aligned with current directions in regulatory genomics. However, the abstract alone does not permit verification of the core claims. Critical details regarding data partitioning, baseline fairness, class imbalance handling, and statistical robustness are absent. The cross-species and saliency claims are intriguing but cannot be evaluated without methodological transparency. The work is likely of interest to the computational genomics community, but the evidence base provided is insufficient to establish the case at the level expected for a high-impact venue.</li>
+<li><strong>Who would be interested in the results, and why</strong> Computational biologists and machine learning researchers working on regulatory genomics, TF binding site prediction, and multimodal integration. The cross-species generalization claim would also interest researchers studying model transfer across organisms. The saliency-based peak identification result may appeal to those focused on interpretability in genomic deep learning.</li>
+<li><strong>Major strengths</strong> The model design is well motivated and integrates multiple biologically relevant data modalities. The framing as triplet classification is a sensible approach to enable generalization to unseen TFs and cell types. The reported performance improvements over prior work are meaningful, particularly the AUPR gain. The inclusion of cross-species zero-shot evaluation and saliency-based localization adds breadth to the evaluation.</li>
+<li><strong>Major Concerns</strong></li>
+<li><strong>Concern ID</strong> R1-M1</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Technical soundness</li>
+<li><strong>Claim pointer</strong> "TransBind2 achieves a macro AUROC of 0.9648 and AUPR of 0.4215, outperforming TransBind and other baselines, with a ≥12.67% relative AUPR gain"</li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided</li>
+<li><strong>Concern</strong> The abstract reports aggregate performance metrics but provides no information on how the 690 ChIP-seq experiments were split into training, validation, and test sets. If the test set includes experiments from TFs or cell types seen during training, the generalization claim is weakened. Conversely, if held-out TFs or cell types are used, the evaluation protocol must be described to assess whether the comparison to baselines is fair.</li>
+<li><strong>Why it matters</strong> Without a clear data partitioning strategy, the reported AUROC and AUPR cannot be interpreted. The central claim of generalization to new TFs and cell types depends entirely on the evaluation protocol. If the split is not held-out at the TF or cell type level, the model may simply be memorizing known combinations.</li>
+<li><strong>Resolution test</strong> Provide a detailed description of the train/validation/test split, including whether held-out TFs, cell types, or both were used. Report performance separately for seen and unseen TFs and cell types. If cross-validation was used, specify the fold structure and variance across folds.</li>
+<li><strong>Concern ID</strong> R1-M2</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Technical soundness</li>
+<li><strong>Claim pointer</strong> "outperforming TransBind and other baselines, with a ≥12.67% relative AUPR gain"</li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided</li>
+<li><strong>Concern</strong> The baselines are not named, and the conditions under which they were compared are not described. It is unclear whether all models were trained and evaluated under identical data splits, input features, and hyperparameter tuning budgets. The ≥12.67% relative AUPR gain is presented without confidence intervals or statistical significance testing.</li>
+<li><strong>Why it matters</strong> A performance gain is only meaningful if the comparison is controlled. Without named baselines and a description of the comparison protocol, the reader cannot assess whether the improvement is due to the model architecture or to differences in training setup, feature engineering, or evaluation criteria.</li>
+<li><strong>Resolution test</strong> List all baseline models, describe their input features and training protocols, and confirm that identical data splits and evaluation metrics were used. Report confidence intervals or significance tests for the AUPR differences.</li>
+<li><strong>Concern ID</strong> R1-M3</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Technical soundness</li>
+<li><strong>Claim pointer</strong> "The model trained on human data also performs well in cross-species zero-shot prediction on mouse data"</li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided</li>
+<li><strong>Concern</strong> The abstract does not specify which mouse data were used, how many experiments or TFs were included, or what metric defines "performs well." Zero-shot transfer across species is a strong claim that requires careful evaluation, particularly because TF binding motifs are often conserved but chromatin context differs substantially.</li>
+<li><strong>Why it matters</strong> Cross-species generalization is a key selling point of the model. Without quantitative results and a description of the mouse dataset, the claim is unverifiable. If the mouse evaluation used only a small number of TFs or cell types, the result may not be robust.</li>
+<li><strong>Resolution test</strong> Provide the number of mouse experiments, TFs, and cell types used, along with the specific AUROC and AUPR values. Describe how the human-trained model was applied to mouse data, including any preprocessing steps or feature adaptations.</li>
+<li><strong>Concern ID</strong> R1-M4</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Technical soundness</li>
+<li><strong>Claim pointer</strong> "Saliency analysis shows that it can identify TF-binding peaks with a median error of 12-38 base pairs (bps) despite being trained on window-level labels"</li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided</li>
+<li><strong>Concern</strong> The saliency analysis is described in a single sentence without details on how peaks were called from saliency scores, how the error was computed, or what the baseline for comparison is. The range of 12-38 bp is wide, and it is unclear whether this reflects variation across TFs, cell types, or experimental conditions.</li>
+<li><strong>Why it matters</strong> The claim that the model can localize binding events at near-base-pair resolution is notable and would be of interest to the field. However, without a clear description of the peak-calling procedure and error metric, the result cannot be reproduced or compared to existing methods.</li>
+<li><strong>Resolution test</strong> Describe the saliency-based peak identification algorithm, the definition of error (e.g., distance between predicted and ChIP-seq peak summit), and the number of peaks evaluated. Compare the localization accuracy to a simple baseline such as the center of the input window.</li>
+<li><strong>Minor Comments</strong></li>
+<li><strong>Concern ID</strong> R1-m1</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Readability for nonspecialists</li>
+<li><strong>Affected element</strong> Abstract text</li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided</li>
+<li><strong>Issue</strong> The term "biomodal protein language model" appears to be a typo for "bimodal." This is a minor but noticeable error in a high-visibility text.</li>
+<li><strong>Required correction</strong> Change "biomodal" to "bimodal."</li>
+<li><strong>Concern ID</strong> R1-m2</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Scientific importance</li>
+<li><strong>Affected element</strong> Abstract text</li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided</li>
+<li><strong>Issue</strong> The abstract states that "many models focus mainly on DNA sequence and overlook chromatin context and TF structure," but does not cite or name any such models. This makes it difficult to situate the contribution relative to the field.</li>
+<li><strong>Required correction</strong> Add brief references to representative sequence-only models and, if space permits, to prior work that has incorporated chromatin or structure features.</li>
+<li><strong>Concern ID</strong> R1-m3</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Technical soundness</li>
+<li><strong>Affected element</strong> Ablation claims</li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided</li>
+<li><strong>Issue</strong> The ablation study is summarized as showing that "TF structure, chromatin accessibility, and bidirectional attention each improve performance," but the magnitude of each improvement is not reported.</li>
+<li><strong>Required correction</strong> Provide the incremental AUROC and AUPR changes for each ablated component, or state that full details are in the main text.</li>
+<li><strong>Technical failings that need to be addressed before the case is established</strong> R1-M1 (data split and generalization protocol), R1-M2 (baseline comparison and statistical rigor), R1-M3 (cross-species evaluation details), R1-M4 (saliency-based localization methodology)</li>
+<li><strong>Assessment against Nature-style criteria</strong> Originality: The combination of bidirectional cross-attention with chromatin accessibility and TF structure is a reasonable incremental advance over the authors' prior work, but the abstract does not establish a fundamentally new conceptual framework. Scientific importance: TF binding prediction is a well-studied problem, and the reported gains are meaningful, but the importance depends on the robustness of the evaluation, which cannot be assessed from the abstract. Interdisciplinary readership: The work bridges machine learning and genomics and would appeal to both communities, though the abstract is written in a way that is accessible to computational readers. Technical soundness: Cannot be established from the abstract alone; the missing evaluation details are critical. Readability for nonspecialists: The abstract is generally clear, but the typo and lack of context for prior models slightly reduce accessibility.</li>
+<li><strong>Recommendation posture</strong> Currently not established from the provided evidence. The abstract presents a plausible and potentially valuable model, but the absence of methodological detail and the lack of verifiable evaluation protocols prevent a supportive recommendation. The authors should provide the full manuscript with detailed methods, data splits, baseline descriptions, and statistical analyses before the claims can be assessed.</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>The claim of "generaliz[ing] to new TFs and cell types" is unsupported without a description of the held-out evaluation protocol.</li>
+<li>The "≥12.67% relative AUPR gain" is unsupported without named baselines and statistical significance testing.</li>
+<li>The cross-species zero-shot claim is unsupported without quantitative results on mouse data.</li>
+<li>The saliency-based peak localization claim is unsupported without a description of the peak-calling method and error metric.</li>
+<li>The ablation claims are unsupported without quantitative incremental performance values.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

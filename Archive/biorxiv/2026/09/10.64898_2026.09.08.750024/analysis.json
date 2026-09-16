@@ -1,0 +1,24 @@
+{
+  "source": "biorxiv",
+  "id": "10.64898/2026.09.08.750024",
+  "title": "LucaCell: a sequence-centric foundation model for cross-species single-cell analysis",
+  "authors": "Sun Y; He Y; Ren M; Wang Y; Xu P; Hou Y; Kang Y; Hou T; Ye J; Yang H; Wang Z",
+  "journal": "bioRxiv",
+  "published_date": "2026-09-14",
+  "window": {
+    "start": "2026-09-09",
+    "end": "2026-09-15"
+  },
+  "score": 3,
+  "one_liner_zh": "该文提出基于mRNA序列嵌入的跨物种单细胞基础模型LucaCell，虽涉及染色质可及性数据，但核心是转录组分析而非染色质三维组织或空间架构建模，且无AI/分子模拟方法用于染色质结构预测，与本课题关联较弱。",
+  "abstract": "Single-cell foundation models have transformed transcriptomic analysis, yet most rely on fixed gene identifiers that limit transfer across species and data types. Here we present LucaCell, a sequence-centric foundation model that represents genes through pre-trained mRNA sequence embeddings rather than static gene annotations. Gene expression is discretized into bins and modeled with a Transformer encoder, enabling sequence-informed cell representation without a fixed gene-ID vocabulary. Pre-training on 85 million human and mouse single cells, LucaCell is evaluated on human, mouse and lemur gene expression profiles, human chromatin accessibility data, unaligned reads from more than 50 prokaryotic taxa, and five influenza A virus genomes. LucaCell enables manual-mapping-free cross-species cell type annotation and an alignment-free microbial embedding framework that simultaneously distinguishes bacterial species identity and intra-species physiological states. It also improves gene expression reconstruction by incorporating donor-specific exonic SNP information into mRNA sequence embeddings, and predicts cellular viral load across influenza A virus strains while highlighting infection-like transcriptional states in mock-infected cells. These results show that sequence-informed gene representation can improve the generalization of single-cell foundation models across species, data types, and predictive tasks.",
+  "abstract_zh": "单细胞基础模型已经改变了转录组分析，但大多数模型依赖固定的基因标识符，这限制了其跨物种和数据类型的迁移能力。在此，我们提出LucaCell，一种以序列为中心的基础模型，通过预训练的mRNA序列嵌入而非静态基因注释来表示基因。基因表达被离散化为分箱，并使用Transformer编码器进行建模，从而在没有固定基因ID词汇表的情况下实现序列信息引导的细胞表示。在8500万个人类和小鼠单细胞上进行预训练后，LucaCell在人类、小鼠和狐猴的基因表达谱、人类染色质可及性数据、来自50多个原核生物分类群的未比对读段，以及五种甲型流感病毒基因组上进行了评估。LucaCell实现了无需手动映射的跨物种细胞类型注释，以及一种无需比对的微生物嵌入框架，该框架能同时区分细菌物种身份和物种内生理状态。它还通过将供体特异性外显子SNP信息整合到mRNA序列嵌入中，改善了基因表达重建，并预测了甲型流感病毒株间的细胞病毒载量，同时突出了模拟感染细胞中类似感染的转录状态。这些结果表明，序列信息引导的基因表示可以提高单细胞基础模型在物种、数据类型和预测任务上的泛化能力。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://www.biorxiv.org/content/10.64898/2026.09.08.750024",
+  "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.08.750024",
+  "paper_page_path": "papers/biorxiv/10.64898_2026.09.08.750024/index.html"
+}

@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42729240",
+  "title": "DBP-CanPred: a machine learning model for predicting cancer-causing mutations in DNA-binding proteins.",
+  "authors": "Phogat, Amit; Krishnan, Sowmya Ramaswamy; Pandey, Medha; Gromiha, M Michael",
+  "journal": "Frontiers in bioinformatics",
+  "published_date": "2026-09-13",
+  "window": {
+    "start": "2026-09-09",
+    "end": "2026-09-15"
+  },
+  "score": 4,
+  "one_liner_zh": "该文用机器学习预测DNA结合蛋白中的致癌突变，虽涉及染色质组织相关蛋白，但核心是突变致病性分类而非染色质三维架构建模，方法为传统ML特征而非AI/分子模拟，与本课题关联较弱。",
+  "abstract": "INTRODUCTION: The fundamental cellular processes, including transcriptional regulation, chromatin organization, and genome maintenance, are regulated by DNA-binding proteins (DBPs). Mutations in DBPs can alter protein-DNA interactions, leading to tumor development. However, identifying such driver mutations remains a major challenge due to limitations of experimental approaches. METHODS: We have trained a machine learning model, DBP-CanPred, to identify driver mutations in DBPs. We used the sequence-derived evolutionary features, as well as structure-based features such as mutation-perturbed structural descriptors. RESULTS: We evaluated DBP-CanPred using a curated test set, achieving an AU-ROC of 0.86 and a balanced accuracy of 0.79. Further analysis based on substitution-type showed consistent performance across different categories, especially higher performance on charged residues. In addition, we applied the model on an independent dataset and identified potential driver mutations with high confidence scores. DISCUSSION: The study contributes to understanding mutation patterns in DNA-binding proteins and supports variant interpretation in cancer research.",
+  "abstract_zh": "引言：包括转录调控、染色质组织和基因组维护在内的基本细胞过程，由DNA结合蛋白（DBPs）调控。DBPs中的突变可改变蛋白质-DNA相互作用，导致肿瘤发展。然而，由于实验方法的局限性，识别此类驱动突变仍是一项重大挑战。方法：我们训练了一个机器学习模型DBP-CanPred，用于识别DBPs中的驱动突变。我们使用了序列衍生的进化特征，以及基于结构的特征，如突变扰动的结构描述符。结果：我们使用一个精选测试集评估了DBP-CanPred，实现了0.86的AU-ROC和0.79的平衡准确率。基于替换类型的进一步分析显示，在不同类别中性能一致，尤其是在带电残基上表现更高。此外，我们将该模型应用于一个独立数据集，并识别出具有高置信度得分的潜在驱动突变。讨论：本研究有助于理解DNA结合蛋白中的突变模式，并支持癌症研究中的变异解读。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42729240/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42729240/",
+  "paper_page_path": "papers/pubmed/42729240/index.html"
+}

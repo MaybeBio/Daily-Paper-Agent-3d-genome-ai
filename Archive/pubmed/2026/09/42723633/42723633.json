@@ -88,7 +88,7 @@
   },
   "metadata": {
     "entrez_date": "2026/09/11 11:38",
-    "fetched_at": "2026-09-13 08:43:46"
+    "fetched_at": "2026-09-16 10:48:05"
   },
   "links": {
     "cites": [],
@@ -178,14 +178,14 @@
       "40778316",
       "24714811",
       "29335803",
-      "42487110",
       "33802922",
+      "42487110",
       "32732264",
       "27662874",
       "34913122",
       "33478249",
-      "42158023",
       "28605501",
+      "42158023",
       "17130149",
       "38187673",
       "29028988",
@@ -201,7 +201,15 @@
     ],
     "pmc": [],
     "entrez": {},
-    "external": [],
+    "external": [
+      {
+        "url": "https://academic.oup.com/bioinformatics/article-lookup/doi/10.1093/bioinformatics/btag456",
+        "provider": "Silverchair Information Systems",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
     "text_mined": []
   }
 }

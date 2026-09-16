@@ -1,0 +1,360 @@
+{
+  "identity": {
+    "pmid": "42729063",
+    "doi": "10.21037/tau-2026-0544",
+    "title": "Sperm DNA fragmentation and its impact on pregnancy outcomes: a narrative review focusing on threshold definition and clinical strategies."
+  },
+  "content": {
+    "abstract": "BACKGROUND AND OBJECTIVE: Sperm DNA fragmentation (SDF) is a key functional indicator for evaluating male fertility and the integrity of genetic material. However, a unified intervention threshold for SDF remains lacking, primarily due to variations in detection methodologies and significant heterogeneity across studies. This narrative review aims to summarize the association between SDF and pregnancy outcomes, with a focus on threshold definition and the influence of different detection methods and clinical scenarios. METHODS: A comprehensive literature search was conducted in PubMed and Scopus databases from January 1990 to December 2023. Search terms included \"sperm DNA fragmentation\", \"DFI\", \"SDF\", \"male infertility\", \"assisted reproductive technology\", \"pregnancy outcome\", and \"recurrent pregnancy loss\". Studies evaluating the association between SDF and reproductive outcomes, as well as those reporting on diagnostic or prognostic thresholds, were considered for inclusion. KEY CONTENT AND FINDINGS: High SDF is significantly associated with lower fertilization rates and fewer high-quality embryos in assisted reproductive technology (ART), as well as an increased risk of recurrent pregnancy loss (RPL). Its clinical impact varies by mode of conception: it negatively affects natural pregnancy and intrauterine insemination (IUI), whereas in in vitro fertilization/intracytoplasmic sperm injection (IVF/ICSI), its effect on fertilization rate is less pronounced, but it may impair subsequent embryo development, reducing blastocyst formation rate and increasing miscarriage rate. The use of testicular sperm for ICSI in men with elevated SDF has been reported in observational studies, with some showing improved pregnancy and live birth rates. A 30% DNA fragmentation index (DFI) [sperm chromatin structure assay (SCSA)/terminal deoxynucleotidyl transferase dUTP nick end labelling (TUNEL)] is the most frequently referenced threshold, but reported cut offs vary from 10% to 36% depending on assay and outcome. Regarding detection technology, the SCSA is frequently described as the most extensively validated method, while the integration of novel technologies such as artificial intelligence offers the potential for more precise and efficient assessment in the future. CONCLUSIONS: SDF should be considered an important supplement to conventional semen analysis, especially in cases of unexplained infertility, ART failure, and RPL. This review emphasizes the necessity of establishing a unified clinical threshold, and current evidence highlights the need to standardize testing protocols, establish evidence-based SDF thresholds, and develop individualized management strategies.",
+    "keywords": [
+      "DNA fragmentation index",
+      "Sperm DNA fragmentation (SDF)",
+      "assisted reproductive technologies",
+      "clinical threshold",
+      "male infertility"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Cheng, Sinhang",
+        "Yuan, Yuan",
+        "Wang, Zihan",
+        "Xie, Zhuoheng",
+        "Chen, Qianxi",
+        "Liu, Zhen",
+        "Chen, Yan",
+        "Song, Tiangang",
+        "Yan, Mengqing",
+        "Zheng, Zhongjie",
+        "Lin, Haocheng"
+      ],
+      "short_names": [
+        "Cheng S",
+        "Yuan Y",
+        "Wang Z",
+        "Xie Z",
+        "Chen Q",
+        "Liu Z",
+        "Chen Y",
+        "Song T",
+        "Yan M",
+        "Zheng Z",
+        "Lin H"
+      ],
+      "auids": [],
+      "affiliations": [
+        "Department of Urology, Peking University Third Hospital, Peking University, Beijing, China.",
+        "Department of Obstetrics and Gynecology, Center for Reproductive Medicine, Peking University Third Hospital, Beijing, China.",
+        "Department of Urology, Peking University Third Hospital, Peking University, Beijing, China.",
+        "Department of Obstetrics and Gynecology, Center for Reproductive Medicine, Peking University Third Hospital, Beijing, China.",
+        "Department of Urology, Peking University Third Hospital, Peking University, Beijing, China.",
+        "Department of Obstetrics and Gynecology, Center for Reproductive Medicine, Peking University Third Hospital, Beijing, China.",
+        "Department of Urology, Peking University Third Hospital, Peking University, Beijing, China.",
+        "Department of Obstetrics and Gynecology, Center for Reproductive Medicine, Peking University Third Hospital, Beijing, China.",
+        "Department of Urology, Peking University Third Hospital, Peking University, Beijing, China.",
+        "Department of Obstetrics and Gynecology, Center for Reproductive Medicine, Peking University Third Hospital, Beijing, China.",
+        "Department of Urology, Peking University Third Hospital, Peking University, Beijing, China.",
+        "Department of Obstetrics and Gynecology, Center for Reproductive Medicine, Peking University Third Hospital, Beijing, China.",
+        "Department of Urology, Peking University Third Hospital, Peking University, Beijing, China.",
+        "Department of Obstetrics and Gynecology, Center for Reproductive Medicine, Peking University Third Hospital, Beijing, China.",
+        "Department of Urology, Peking University Third Hospital, Peking University, Beijing, China.",
+        "Department of Obstetrics and Gynecology, Center for Reproductive Medicine, Peking University Third Hospital, Beijing, China.",
+        "Department of Urology, Peking University Third Hospital, Peking University, Beijing, China.",
+        "Department of Obstetrics and Gynecology, Center for Reproductive Medicine, Peking University Third Hospital, Beijing, China.",
+        "Department of Urology, Peking University Third Hospital, Peking University, Beijing, China.",
+        "Department of Obstetrics and Gynecology, Center for Reproductive Medicine, Peking University Third Hospital, Beijing, China.",
+        "Department of Urology, Peking University Third Hospital, Peking University, Beijing, China.",
+        "Department of Obstetrics and Gynecology, Center for Reproductive Medicine, Peking University Third Hospital, Beijing, China."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Cheng, Sinhang",
+        "short_name": "Cheng S",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Urology, Peking University Third Hospital, Peking University, Beijing, China.",
+          "Department of Obstetrics and Gynecology, Center for Reproductive Medicine, Peking University Third Hospital, Beijing, China."
+        ]
+      },
+      {
+        "full_name": "Yuan, Yuan",
+        "short_name": "Yuan Y",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Urology, Peking University Third Hospital, Peking University, Beijing, China.",
+          "Department of Obstetrics and Gynecology, Center for Reproductive Medicine, Peking University Third Hospital, Beijing, China."
+        ]
+      },
+      {
+        "full_name": "Wang, Zihan",
+        "short_name": "Wang Z",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Urology, Peking University Third Hospital, Peking University, Beijing, China.",
+          "Department of Obstetrics and Gynecology, Center for Reproductive Medicine, Peking University Third Hospital, Beijing, China."
+        ]
+      },
+      {
+        "full_name": "Xie, Zhuoheng",
+        "short_name": "Xie Z",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Urology, Peking University Third Hospital, Peking University, Beijing, China.",
+          "Department of Obstetrics and Gynecology, Center for Reproductive Medicine, Peking University Third Hospital, Beijing, China."
+        ]
+      },
+      {
+        "full_name": "Chen, Qianxi",
+        "short_name": "Chen Q",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Urology, Peking University Third Hospital, Peking University, Beijing, China.",
+          "Department of Obstetrics and Gynecology, Center for Reproductive Medicine, Peking University Third Hospital, Beijing, China."
+        ]
+      },
+      {
+        "full_name": "Liu, Zhen",
+        "short_name": "Liu Z",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Urology, Peking University Third Hospital, Peking University, Beijing, China.",
+          "Department of Obstetrics and Gynecology, Center for Reproductive Medicine, Peking University Third Hospital, Beijing, China."
+        ]
+      },
+      {
+        "full_name": "Chen, Yan",
+        "short_name": "Chen Y",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Urology, Peking University Third Hospital, Peking University, Beijing, China.",
+          "Department of Obstetrics and Gynecology, Center for Reproductive Medicine, Peking University Third Hospital, Beijing, China."
+        ]
+      },
+      {
+        "full_name": "Song, Tiangang",
+        "short_name": "Song T",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Urology, Peking University Third Hospital, Peking University, Beijing, China.",
+          "Department of Obstetrics and Gynecology, Center for Reproductive Medicine, Peking University Third Hospital, Beijing, China."
+        ]
+      },
+      {
+        "full_name": "Yan, Mengqing",
+        "short_name": "Yan M",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Urology, Peking University Third Hospital, Peking University, Beijing, China.",
+          "Department of Obstetrics and Gynecology, Center for Reproductive Medicine, Peking University Third Hospital, Beijing, China."
+        ]
+      },
+      {
+        "full_name": "Zheng, Zhongjie",
+        "short_name": "Zheng Z",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Urology, Peking University Third Hospital, Peking University, Beijing, China.",
+          "Department of Obstetrics and Gynecology, Center for Reproductive Medicine, Peking University Third Hospital, Beijing, China."
+        ]
+      },
+      {
+        "full_name": "Lin, Haocheng",
+        "short_name": "Lin H",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Urology, Peking University Third Hospital, Peking University, Beijing, China.",
+          "Department of Obstetrics and Gynecology, Center for Reproductive Medicine, Peking University Third Hospital, Beijing, China."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Translational andrology and urology"
+    ],
+    "journal_abbrev": [
+      "Transl Androl Urol"
+    ],
+    "pub_date": "2026 Aug 31",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/13 00:50",
+    "fetched_at": "2026-09-16 10:48:05"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42729063",
+      "42104690",
+      "23074488",
+      "29713537",
+      "29713533",
+      "41254767",
+      "37709593",
+      "38450853",
+      "31555559",
+      "41501955",
+      "27231097",
+      "35400579",
+      "39132969",
+      "29082205",
+      "39545580",
+      "30056595",
+      "35973556",
+      "31576075",
+      "17904130",
+      "35958895",
+      "42036606",
+      "33589137",
+      "42036608",
+      "41897440",
+      "25504418",
+      "31692293",
+      "33644978",
+      "39096059",
+      "28865546",
+      "32851881",
+      "17074327",
+      "31755002",
+      "42590050",
+      "37915974",
+      "40001898",
+      "35411424",
+      "16543258",
+      "37194246",
+      "40869243",
+      "35618526",
+      "15136092",
+      "24444289",
+      "35545364",
+      "35931982",
+      "31571640",
+      "25190048",
+      "40715666",
+      "38700621",
+      "40511120",
+      "36792684",
+      "14556809",
+      "38602121",
+      "24619433",
+      "16084876",
+      "32319429",
+      "30979611",
+      "31200969",
+      "41724962",
+      "38172506",
+      "36321557",
+      "42522249",
+      "26428305",
+      "24733108",
+      "42172631",
+      "37341853",
+      "41693253",
+      "41684663",
+      "39704318",
+      "28322098",
+      "38196694",
+      "26363389",
+      "42464323",
+      "25747135",
+      "27832085",
+      "40478191",
+      "37511693",
+      "40078584",
+      "42227305",
+      "42049202",
+      "37812976",
+      "29082206",
+      "40359305",
+      "30122567",
+      "41809803",
+      "36598012",
+      "38990348",
+      "35459947",
+      "42583810",
+      "34034847",
+      "42652247",
+      "39863907",
+      "25392073",
+      "42522245",
+      "29082207",
+      "24124136",
+      "38030992",
+      "31393936",
+      "36055912",
+      "28440264",
+      "32653083"
+    ],
+    "review": [
+      "42729063",
+      "42104690",
+      "41254767",
+      "37709593",
+      "38450853",
+      "39132969",
+      "17904130",
+      "35958895",
+      "42036606",
+      "42036608",
+      "41897440",
+      "25504418",
+      "31692293",
+      "33644978",
+      "28865546",
+      "37915974",
+      "40001898",
+      "37194246",
+      "24444289",
+      "25190048",
+      "32319429",
+      "30979611",
+      "36321557",
+      "42172631",
+      "41693253",
+      "39704318",
+      "27832085",
+      "42227305",
+      "42049202",
+      "29082206",
+      "41809803",
+      "38990348",
+      "42583810",
+      "42652247",
+      "25392073"
+    ],
+    "pmc": [
+      "13561705"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/pmid/42729063/",
+        "provider": "PubMed Central",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://doi.org/10.21037/tau-2026-0544",
+        "provider": "AME Publishing Company",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}
