@@ -1,76 +1,42 @@
 ## Review setup
-- **Input scope** Abstract only
-- **Assessment boundary** Claims and conclusions as presented in the abstract; full text, figures, tables, and supplementary materials were not provided
-- **Shared manuscript claim summary** The review surveys deep learning architectures (convolutional, Transformer-based, graph) applied to plant cis-regulatory sequence analysis, covering transcription-factor binding, chromatin accessibility, gene expression, non-coding variant prioritisation, and regulatory-sequence design. It argues that current evidence supports distinctions between prediction and causality, computational attribution and biological function, and long-range sequence dependency and physical contact, while noting limitations in generalisation and validation.
-- **Visible evidence base** Abstract text only; no figures, tables, references, or methodological details were supplied
-- **Missing materials affecting confidence** Full manuscript text, all figures and tables, reference list, details of the reviewed studies, benchmark descriptions, and any quantitative performance summaries
+- **Input scope** Full manuscript text (review article)
+- **Assessment boundary** Scientific content, structure, claims, and evidence as presented in the provided text
+- **Shared manuscript claim summary** The review argues that deep learning models applied to plant genomic sequences can predict components of the cis-regulatory code, including transcription-factor binding, chromatin accessibility, gene expression, and variant effects, but that prediction must be distinguished from causality, and that generalisation across species and contexts remains limited. The authors survey architectures (CNN, Transformer, graph), applications, and evaluation practices, and call for better benchmarks and experimental validation.
+- **Visible evidence base** The manuscript text includes descriptions of published studies, model names (e.g., CharPlant, PlantDeepSEA, Predmoter, AgroNT, PlantCaduceus, PlantCAD2, DeepWheat, DeepCBA, GenomicLinks, LOGOWheat, TargetGAN), and references to figures and tables. No actual data, figures, or tables are provided in the submitted material.
+- **Missing materials affecting confidence** Figures 1–4, Tables 1–2, reference list, and any supplementary information are not included. This limits verification of specific claims about model performance, benchmark design, and resource provenance.
 
 ## Reviewer
-- **Overall assessment** The abstract presents a coherent and appropriately cautious framing of a rapidly evolving field. The stated scope is broad but the authors signal awareness of key conceptual pitfalls, particularly the prediction-causality distinction and the gap between computational attribution and biological function. However, the abstract alone provides insufficient detail to evaluate the depth, accuracy, or completeness of the literature coverage, the criteria for study selection, or the basis for the comparative claims about architecture families. The concluding emphasis on experimentally testable predictions is sensible and aligns with current best practice in the field.
-- **Who would be interested in the results, and why** Plant molecular biologists and crop geneticists interested in regulatory genomics and non-coding variant interpretation; computational biologists developing or applying deep learning models to genomic sequences; researchers working on cis-regulatory element annotation, promoter design, and pangenome-aware analyses. The review could serve as an entry point for experimental groups seeking to adopt deep learning tools for regulatory sequence analysis.
-- **Major strengths** The abstract clearly articulates important conceptual distinctions that are often conflated in the literature, particularly prediction versus causality and computational attribution versus biological function. The scope covers both architectural families and application areas, providing a structured overview. The authors appropriately acknowledge limitations in generalisation and validation, avoiding overclaiming the maturity of generative design approaches.
-- **Major Concerns** 
-  - **Concern ID** R1-M1
-  - **Severity** Major
-  - **Blocking** Yes
-  - **Axis** Evidence sufficiency
-  - **Claim pointer** The review "compares convolutional, Transformer-based and graph architectures" and "assesses their applications" across multiple tasks
-  - **Evidence pointer** Abstract only; location not provided
-  - **Concern** The abstract asserts that the review compares and assesses multiple architecture families and applications, but no information is provided about the number of studies reviewed, the selection criteria, the comparative metrics used, or the basis for concluding relative strengths or weaknesses of each architecture family.
-  - **Why it matters** Without transparency on study selection and comparison methodology, the comparative claims cannot be evaluated for bias or completeness. A review that compares architectures must specify how performance was measured across heterogeneous studies with different datasets, preprocessing pipelines, and evaluation protocols.
-  - **Resolution test** The full manuscript must include a methods section describing literature search strategy, inclusion and exclusion criteria, and a structured framework for comparing studies across architectures and tasks. Quantitative summaries or at least representative performance ranges should be provided.
-  - **Concern ID** R1-M2
-  - **Severity** Major
-  - **Blocking** Yes
-  - **Axis** Claim substantiation
-  - **Claim pointer** "The evidence supports a clear distinction between prediction and causality, computational attribution and biological function, and long-range sequence dependency and physical contact"
-  - **Evidence pointer** Abstract only; location not provided
-  - **Concern** This is a strong epistemic claim about what the surveyed evidence supports. The abstract provides no examples, no specific studies, and no reasoning chain showing how the reviewed literature leads to these distinctions. The claim that the evidence "supports" these distinctions requires demonstration, not assertion.
-  - **Why it matters** These distinctions are conceptually important and, if well argued, would be a valuable contribution. However, the abstract does not show how the reviewed studies collectively establish these distinctions, nor does it address potential counterexamples where prediction models have been used to generate testable causal hypotheses.
-  - **Resolution test** The full manuscript must dedicate explicit sections to each distinction, citing specific studies that illustrate the gap between predictive performance and causal inference, between attribution scores and validated regulatory function, and between sequence-level dependency and physical chromatin contact. The reasoning must engage with studies that bridge these gaps.
-  - **Concern ID** R1-M3
-  - **Severity** Major
-  - **Blocking** No
-  - **Axis** Scope completeness
-  - **Claim pointer** "Generalisation is constrained by uneven species and genotype sampling, sparse single-cell data, transposable-element mapping and reference bias, and polyploidy"
-  - **Evidence pointer** Abstract only; location not provided
-  - **Concern** The abstract lists several factors constraining generalisation but does not indicate the depth of treatment in the full manuscript. Transposable-element mapping and reference bias are technically distinct challenges, and polyploidy introduces additional complexity that may interact with the other factors. The abstract does not clarify whether these are treated as separate issues or as interacting constraints.
-  - **Why it matters** The scientific value of the review depends on how deeply these constraints are analysed. A superficial listing without technical detail or concrete examples would not distinguish this review from existing literature.
-  - **Resolution test** The full manuscript should provide specific examples of how each constraint manifests in practice, including case studies from plant species where these issues have been documented, and should discuss potential mitigation strategies.
-- **Minor Comments** 
-  - **Concern ID** R1-m1
-  - **Severity** Minor
-  - **Axis** Clarity
-  - **Affected element** Scope statement
-  - **Evidence pointer** Abstract, first sentence
-  - **Issue** The phrase "much of the regulatory information that shapes plant gene expression lies outside protein-coding regions" is vague regarding the proportion and the types of regulatory information intended.
-  - **Required correction** Specify the scope more precisely, for example by referring to promoters, enhancers, and other cis-regulatory elements, and avoid implying a quantitative claim without citation.
-  - **Concern ID** R1-m2
-  - **Severity** Minor
-  - **Axis** Terminology
-  - **Affected element** "long-range sequence dependency and physical contact"
-  - **Evidence pointer** Abstract, distinction claim
-  - **Issue** The distinction between long-range sequence dependency and physical contact is not self-explanatory. Sequence dependency could refer to statistical associations in sequence, while physical contact refers to chromatin conformation data. The relationship between these concepts needs clarification.
-  - **Required correction** Define both terms in the abstract or restructure the sentence to make the intended contrast explicit.
-  - **Concern ID** R1-m3
-  - **Severity** Minor
-  - **Axis** Precision
-  - **Affected element** "Plant studies report predictive performance on author-defined test sets"
-  - **Evidence pointer** Abstract, applications paragraph
-  - **Issue** The phrase "author-defined test sets" implies a criticism of non-standardised evaluation, but the abstract does not state whether the review systematically assessed the variability in evaluation practices across studies.
-  - **Required correction** Clarify whether the review quantifies or characterises the heterogeneity in evaluation practices, or whether this is an observation without systematic analysis.
-- **Technical failings that need to be addressed before the case is established** R1-M1 and R1-M2 are blocking. The comparative claims and the epistemic distinctions require full manuscript evidence. Without a transparent methodology for study selection and comparison, and without explicit demonstration of how the literature supports the stated distinctions, the review's central contributions cannot be assessed.
-- **Assessment against Nature-style criteria** 
-  - Originality: The conceptual distinctions emphasised in the abstract are not novel in themselves, but a systematic review organised around them could offer a fresh synthesis. The abstract does not yet demonstrate originality beyond common framing in the field.
-  - Scientific importance: The topic is important for plant genomics and for the broader application of deep learning to regulatory genomics. The emphasis on experimental validation and pangenome-aware representations addresses current bottlenecks.
-  - Interdisciplinary readership: The abstract is accessible to both computational and experimental plant biologists, though some terms (e.g., "pangenome-aware representations") may require definition for a broader audience.
-  - Technical soundness: Cannot be evaluated from the abstract alone. The absence of methodological detail for the review process is a significant gap.
-  - Readability for nonspecialists: The abstract is clearly written and avoids unnecessary jargon, but the distinction between "long-range sequence dependency and physical contact" would benefit from explicit definition.
-- **Recommendation posture** Currently not established from the provided evidence. The abstract signals a potentially valuable review, but the blocking concerns regarding comparison methodology and claim substantiation must be resolved in the full manuscript. A revised assessment would be supportive if the full text provides transparent study selection criteria, structured comparisons, and explicit evidence chains for the stated distinctions.
+- **Overall assessment** This is a well-organised and thoughtful review that addresses an important and timely topic. The authors make a consistent and commendable effort to distinguish statistical prediction from biological causality, and they are appropriately cautious about overinterpreting model outputs. The structure around three regulatory axes (sequence, chromatin, 3D organisation) is logical and useful. However, the review is largely descriptive and lacks critical depth in several areas: the comparison of architectures is superficial, the discussion of evaluation practices is repetitive, and the treatment of specific models is uneven. The absence of quantitative comparisons or a critical synthesis of reported performance weakens the manuscript's value. The claims about the state of the field are generally supported by the text, but the lack of access to figures, tables, and references prevents full verification.
+- **Who would be interested in the results, and why** Researchers in plant genomics, computational biology, and regulatory genomics would find this review useful as an entry point to the literature. It may also interest breeders and geneticists seeking to understand the potential and limitations of deep learning for variant prioritisation and sequence design. The explicit discussion of evaluation pitfalls and the distinction between prediction and causality is valuable for practitioners.
+- **Major strengths**
+  - Clear conceptual framework separating sequence, chromatin, and 3D organisation.
+  - Consistent and appropriate emphasis on the distinction between prediction, contact, and causality.
+  - Honest assessment of the limitations of current benchmarks and the lack of independent evaluation.
+  - Good coverage of plant-specific challenges (polyploidy, transposable elements, lack of CTCF ortholog).
+  - The call for leakage-resistant benchmarks and separate reporting of holdout types is well-founded.
+- **Major Concerns**
+  - **R1-M1** (Severity: Major, Blocking: No, Axis: Technical soundness) The comparison of deep learning architectures (Section 4) is largely superficial. The authors describe general properties of CNNs, Transformers, and GNNs but do not provide a critical analysis of how these architectures have been adapted to plant regulatory problems, what specific inductive biases matter, or where they have failed. The section reads more like a textbook summary than a review of the state of the art. This weakens the manuscript's contribution to the methodological literature.
+  - **R1-M2** (Severity: Major, Blocking: No, Axis: Scientific importance) The review does not provide a quantitative synthesis of reported performance across models. For example, the authors mention that PlantDeepSEA, LOGOWheat, and DeepWheat report variant-effect scores, but they do not compare the magnitude of effects, the consistency across studies, or the practical implications for prioritisation. Without such synthesis, the reader cannot assess whether deep learning is actually delivering on its promise in plant regulatory genomics.
+  - **R1-M3** (Severity: Major, Blocking: No, Axis: Interdisciplinary readership) The discussion of evaluation practices (Section 4.5) is repetitive and could be condensed. The same points about holdouts, leakage, and the distinction between internal and external evaluation are made multiple times across Sections 2, 4, and 6. This reduces readability and may alienate nonspecialist readers who do not need this level of repetition.
+  - **R1-M4** (Severity: Major, Blocking: No, Axis: Technical soundness) The treatment of transposable elements (TEs) is inconsistent. In Section 2.3, TEs are discussed as a source of regulatory diversity and mapping ambiguity, but in Section 3.1, the encoding section does not address how TEs or repeat content are handled in sequence encoding. This is a missed opportunity to discuss a plant-specific technical challenge in depth.
+- **Minor Comments**
+  - **R1-m1** (Severity: Minor, Axis: Readability for nonspecialists) The abstract is dense and could benefit from a clearer statement of the review's main conclusion. The final sentence of the abstract is vague ("Plant-specific benchmarks and pangenome-aware representations will be most informative when they yield predictions that can be tested experimentally") and could be more specific about what the authors recommend.
+  - **R1-m2** (Severity: Minor, Axis: Technical soundness) In Section 2.1, the discussion of ARF binding preferences is interesting but underdeveloped. The authors mention repeat orientation and spacing but do not explain how this relates to model design or prediction. A brief example would strengthen the point.
+  - **R1-m3** (Severity: Minor, Axis: Interdisciplinary readership) The use of terms like "long-range model outputs" (Section 2.3) is introduced without a clear definition. The authors should define this term earlier or use more standard terminology.
+  - **R1-m4** (Severity: Minor, Axis: Readability for nonspecialists) The manuscript would benefit from a summary table of the models discussed, including their input, output, training data, and evaluation design. Table 2 is mentioned but not provided, so the reader cannot use it.
+  - **R1-m5** (Severity: Minor, Axis: Technical soundness) The discussion of single-cell ATAC-seq (Section 2.2) mentions scOpen but does not explain why it is relevant to deep learning or how it compares to other imputation methods. This is a missed opportunity to connect a specific tool to the broader methodological discussion.
+- **Technical failings that need to be addressed before the case is established** The manuscript's central claim that deep learning can "decipher" the plant cis-regulatory code is not fully supported by the evidence presented. The authors themselves acknowledge that most performance is on author-defined test sets and that experimental validation is limited. However, the review does not go far enough in critically assessing whether the field has made genuine progress or whether the reported results are inflated by evaluation artefacts. A more critical synthesis of reported performance, including failures and negative results, is needed.
+- **Assessment against Nature-style criteria**
+  - Originality: The review is not highly original in its conceptual framework, as similar distinctions between prediction and causality have been made elsewhere. However, its focus on plant-specific challenges and its organisation around three regulatory axes provide some novelty.
+  - Scientific importance: The topic is important, and the review addresses a growing area of research. However, the lack of quantitative synthesis and critical depth limits its impact.
+  - Interdisciplinary readership: The manuscript is likely to appeal to a specialised audience of plant genomicists and computational biologists. It may be less accessible to a broader readership due to the density of the text and the repetition of evaluation concepts.
+  - Technical soundness: The technical content is generally accurate, but the architecture comparison is superficial, and the treatment of TEs is inconsistent.
+  - Readability for nonspecialists: The text is well-written but dense. The repetition of evaluation points and the lack of a summary table reduce readability.
+- **Recommendation posture** Supportive if technical concerns are resolved. The manuscript has merit as a review of the field, but it needs to be more critical and synthetic. The authors should strengthen the architecture comparison, provide a quantitative synthesis of reported performance, and condense the discussion of evaluation practices. The missing figures and tables should be provided for verification.
 
 ## Risk / unsupported claims
-- The claim that the evidence "supports a clear distinction" between the three paired concepts is unsupported in the abstract and requires full manuscript demonstration.
-- The comparative assessment of convolutional, Transformer-based, and graph architectures is unverifiable without details on the studies compared and the metrics used.
-- The statement that "pretrained models have aided candidate cis-regulatory element annotation and prioritisation in several species" is plausible but unverifiable without specific citations and examples.
-- The claim that "generative promoter and enhancer design remains at an early stage" is a qualitative judgement that requires supporting evidence from the surveyed literature.
-- The list of generalisation constraints is presented as a finding but the depth of analysis and supporting examples cannot be evaluated from the abstract.
+- The claim that "deep learning models use DNA sequences and multi-omics data to examine components of this cis-regulatory information" is supported by the text, but the extent to which this has been successful is not quantified.
+- The claim that "pretrained models have aided candidate cis-regulatory element annotation and prioritisation in several species" is supported by the text, but the evidence is not critically assessed.
+- The claim that "selected promoters have also been designed and tested experimentally" is supported by the text, but the outcomes of these tests are not described in detail.
+- The claim that "generalisation is constrained by uneven species and genotype sampling, sparse single-cell data, transposable-element mapping and reference bias, and polyploidy" is plausible but not systematically evidenced in the text.
+- The claim that "plant-specific benchmarks and pangenome-aware representations will be most informative when they yield predictions that can be tested experimentally" is a reasonable recommendation but is not supported by specific examples or data.

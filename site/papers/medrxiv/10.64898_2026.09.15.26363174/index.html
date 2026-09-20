@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Genomic foundation model-derived disruption profiling links somatic mutations to cancer biology and clinical outcomes · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-mid">5</span>
+    <div>
+      <h1>Genomic foundation model-derived disruption profiling links somatic mutations to cancer biology and clinical outcomes</h1>
+      <div class="meta">Nayak A; Lee T; Agarwal V; Georgakopoulos-Soares I</div>
+      <div class="meta muted">
+        
+        <span class="journal">medRxiv</span> <span class="preprint-badge">预印本</span>
+        · 2026-09-16
+         · 全文(europepmc)
+         · <a href="https://www.medrxiv.org/content/10.64898/2026.09.15.26363174">原文</a>
+      </div>
+      <p class="one-liner">该文用基因组基础模型量化体细胞突变对染色质可及性等调控功能的破坏，虽涉及染色质水平调控特征建模，但对象是癌症突变而非三维基因组/染色质空间架构，方法为序列功能预测而非AI/分子模拟的构象建模，故属相关但非核心。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">Cancer genomics has concentrated on individual mutations, overlooking whether somatic mutations can accumulate to produce partial, gene-level disruption with biological and clinical consequences. Sequence-to-function models can quantify these effects directly from DNA sequence. Here, we use AlphaGenome and AlphaMissense to quantify the disruption imposed by somatic mutations across 8,800 patients and 33 cancer types from The Cancer Genome Atlas. At the individual-variant level, recurrent hotspot mutations showed substantially larger predicted protein-level effects, whereas non-hotspot mutations exhibited larger regulatory effects across most cancer types. We then aggregated the variant-level predictions to construct patient-gene disruption profiles capturing transcriptional activity, chromatin accessibility, transcription factor binding, and splicing. These profiles were gene- and modality-specific, and reflected tissue of origin, cancer type, and microsatellite-instability status while retaining information beyond tumor mutational burden. Among patients lacking recurrent hotspot mutations in a given cancer gene, higher predicted disruption was associated with overall survival, with the strongest and most consistent signal observed for chromatin accessibility. In an independent treatment-annotated cohort, gene-level disruption was also associated with survival within treatment-defined subgroups. Together, these findings show that recurrent hotspots are enriched for strong predicted protein-level effects, whereas regulatory consequences are distributed more broadly across other variants, supporting a continuous, multidimensional view of cancer-gene perturbation beyond discrete drivers.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">癌症基因组学一直聚焦于个体突变，忽视了体细胞突变能否累积产生部分性、基因层面的破坏，并带来生物学和临床后果。序列到功能模型可以直接从DNA序列量化这些效应。在此，我们使用AlphaGenome和AlphaMissense量化了来自癌症基因组图谱（The Cancer Genome Atlas）的8,800名患者和33种癌症类型中体细胞突变所施加的破坏。在个体变异层面，复发性热点突变显示出显著更大的预测蛋白质水平效应，而大多数癌症类型中，非热点突变则表现出更大的调控效应。随后，我们聚合了变异层面的预测，构建了患者-基因破坏谱，涵盖转录活性、染色质可及性、转录因子结合和剪接。这些谱具有基因和模态特异性，并反映了组织来源、癌症类型和微卫星不稳定性状态，同时保留了超越肿瘤突变负荷的信息。在缺乏特定癌症基因复发性热点突变的患者中，较高的预测破坏与总生存期相关，其中染色质可及性观察到的信号最强且最一致。在一个独立的治疗注释队列中，基因层面的破坏也与治疗定义亚组内的生存期相关。综合来看，这些发现表明复发性热点富集于强预测蛋白质水平效应，而调控后果则更广泛地分布在其他变异中，支持了超越离散驱动因子的癌症基因扰动的连续、多维视角。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：Genomic foundation model-derived disruption profiling links somatic mutations to cancer biology and clinical outcomes</li>
+<li><strong>作者</strong>：Nayak A; Lee T; Agarwal V; Georgakopoulos-Soares I</li>
+<li><strong>单位</strong>：未提供（medRxiv 预印本未列出完整单位信息）</li>
+<li><strong>期刊/平台</strong>：medRxiv（预印本）</li>
+<li><strong>年份</strong>：2026-09-16</li>
+<li><strong>论文类型</strong>：预印本（preprint），计算生物学/癌症基因组学研究</li>
+<li><strong>领域</strong>：癌症基因组学、基因组基础模型（genomic foundation models）、突变功能预测</li>
+<li><strong>关键词</strong>：AlphaGenome、AlphaMissense、体细胞突变、基因破坏谱（disruption profiling）、TCGA、生存分析</li>
+<li><strong>DOI/arXiv</strong>：10.64898/2026.09.15.26363174</li>
+<li><strong>代码</strong>：未提供</li>
+<li><strong>数据</strong>：TCGA（dbGaP phs000178.v11.p8）、TCGA-CDR、IntOGen、POG570、Cancer Hotspots v2</li>
+<li><strong>阅读日期</strong>：未提供</li>
+<li><strong>在课题方向中的位置</strong>：本文属于「序列-功能模型（sequence-to-function models）× 癌症基因组学」交叉方向，使用基因组基础模型（AlphaGenome、AlphaMissense）对体细胞突变进行功能影响量化，并构建患者-基因层面的破坏谱。与三维基因组/染色质组织的关联在于：破坏谱包含染色质可及性（chromatin accessibility）和转录因子结合（TF binding）模态，这些模态直接涉及染色质状态，但其方法框架（基础模型预测 + 聚合分析）可迁移至三维基因组突变效应预测。</li>
+</ul>
+<hr />
+<h2>02 一句话总结</h2>
+<p>本文使用 AlphaGenome 和 AlphaMissense 两个基因组基础模型，对 TCGA 33 种癌症类型 8,800 名患者的体细胞突变进行蛋白层面和调控层面的功能破坏量化，构建患者-基因破坏谱，发现染色质可及性破坏与总生存期显著相关，支持癌症基因扰动的连续多维视图。</p>
+<hr />
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：体细胞突变是否能在单个基因水平上累积产生部分破坏（partial, gene-level disruption），这种破坏是否具有生物学和临床后果？</li>
+<li><strong>为什么重要</strong>：传统癌症基因组学聚焦于单个驱动突变或热点突变，忽略了非热点突变可能通过调控效应累积产生基因级功能破坏。如果这种破坏可量化且与临床结局相关，将扩展对癌症基因扰动的理解。</li>
+<li><strong>现有方法不足</strong>：传统方法依赖离散的驱动基因/乘客突变二分法，无法捕捉突变的连续效应谱；仅关注蛋白编码效应，忽略调控区域（染色质、TF 结合、剪接）的影响。</li>
+<li><strong>精确研究问题</strong>：Can genomic foundation models quantify gene-level disruption from somatic mutations, and does this disruption associate with cancer biology and clinical outcomes beyond discrete driver mutations?</li>
+</ul>
+<hr />
+<h2>04 背景与发展脉络</h2>
+<blockquote>
+<p>注：以下脉络基于本文框架整理，标注「仅本文框架」；未经外部核验的部分单独标注。</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>阶段一：单突变驱动分析</strong>（传统方法）
+   - 代表性方法：driver gene 鉴定（如 IntOGen）、热点突变分析（Cancer Hotspots）
+   - 优点：计算简单、生物学解释清晰
+   - 局限：离散分类，忽略效应连续性和调控区域</p>
+</li>
+<li>
+<p><strong>阶段二：序列-功能预测模型</strong>（近期）
+   - 代表性方法：AlphaMissense（蛋白效应）、Enformer/AlphaGenome（调控效应）
+   - 优点：直接从 DNA 序列预测功能影响，覆盖编码和非编码区域
+   - 局限：单变异层面预测，缺乏基因级聚合框架</p>
+</li>
+<li>
+<p><strong>阶段三：本文的破坏谱框架</strong>（本文主张的位置）
+   - 将变异级预测聚合为患者-基因破坏谱，覆盖转录活性、染色质可及性、TF 结合、剪接四个模态
+   - 与临床结局（总生存期）关联，验证临床相关性</p>
+</li>
+</ol>
+<blockquote>
+<p>该脉络中阶段一和阶段二为「经外部核验」的既有领域；阶段三为「仅本文框架」的作者主张。</p>
+</blockquote>
+<hr />
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>突变效应被离散化</td>
+<td>驱动/乘客二分法忽略效应连续性</td>
+<td>传统方法聚焦单个驱动突变，未考虑突变累积的基因级效应</td>
+<td>Abstract: "Cancer genomics has concentrated on individual mutations"</td>
+</tr>
+<tr>
+<td>调控区域突变被忽视</td>
+<td>非热点突变的调控效应未被系统量化</td>
+<td>蛋白效应模型无法覆盖调控区域；缺乏多模态功能预测</td>
+<td>Abstract: "non-hotspot mutations exhibited larger regulatory effects"</td>
+</tr>
+<tr>
+<td>缺乏基因级聚合框架</td>
+<td>变异级预测难以直接关联临床结局</td>
+<td>需要将变异级预测聚合为患者-基因层面的可解释特征</td>
+<td>Abstract: "aggregated the variant-level predictions to construct patient-gene disruption profiles"</td>
+</tr>
+<tr>
+<td>临床相关性未验证</td>
+<td>功能预测与生存等临床结局的关联不明确</td>
+<td>缺乏大规模、多癌种、带治疗注释的验证队列</td>
+<td>Abstract: "In an independent treatment-annotated cohort, gene-level disruption was also associated with survival"</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>06 核心思想</h2>
+<p><strong>1) 表面方法</strong>：
+使用两个基因组基础模型（AlphaGenome 和 AlphaMissense）对 TCGA 8,800 名患者、33 种癌症类型的体细胞突变进行功能破坏评分；将变异级评分按基因聚合，构建覆盖四个模态（转录活性、染色质可及性、TF 结合、剪接）的患者-基因破坏谱；将破坏谱与临床结局（总生存期）关联分析。</p>
+<p><strong>2) 核心洞察</strong>：
+- 热点突变富集于强蛋白效应，而非热点突变的调控效应更大——两种突变类型的功能后果在模态上存在系统性差异。
+- 基因破坏谱是基因和模态特异性的，反映组织来源、癌症类型和微卫星不稳定状态，且携带超越 TMB 的独立信息。
+- 在缺乏热点突变的患者中，染色质可及性破坏与总生存期关联最强且最一致——提示调控破坏是独立于经典驱动突变的临床相关维度。</p>
+<p><strong>3) 可能的普适教训 [Analysis]</strong>：
+- 基础模型的多模态输出（蛋白 + 调控）可以互补覆盖突变效应的不同维度，单一模态会遗漏重要信号。
+- 将变异级预测聚合到基因级特征，是连接功能基因组预测与临床表型的有效中间表示。
+- 对三维基因组/染色质组织研究：染色质可及性和 TF 结合作为可预测模态，提示三维基因组特征（如 TAD、loop）也可能通过类似基础模型框架进行突变效应量化。</p>
+<hr />
+<h2>07 方法总览</h2>
+<ul>
+<li><strong>输入</strong>：TCGA 体细胞突变数据（8,800 患者，33 癌种）、参考基因组序列</li>
+<li><strong>输出</strong>：患者-基因破坏谱（四个模态：转录活性、染色质可及性、TF 结合、剪接）；与总生存期的关联统计</li>
+<li><strong>模块</strong>：
+  1. 变异级功能预测：AlphaGenome（调控效应：染色质、TF 结合、剪接）+ AlphaMissense（蛋白效应）
+  2. 基因级聚合：将同一基因内的变异级预测聚合为基因破坏分数
+  3. 破坏谱构建：按患者 × 基因 × 模态构建矩阵
+  4. 关联分析：与临床结局（总生存期）的生存分析</li>
+<li><strong>训练</strong>：基础模型为预训练模型（AlphaGenome、AlphaMissense），本文未进行微调（据摘要推断）</li>
+<li><strong>工具</strong>：AlphaGenome、AlphaMissense、TCGA 数据资源、TCGA-CDR 生存数据、IntOGen 驱动基因、Cancer Hotspots v2</li>
+<li><strong>反馈回路</strong>：未提及</li>
+<li><strong>假设</strong>：基础模型的预测分数可反映突变的真实功能破坏程度；基因级聚合保留变异级信息的生物学相关性</li>
+</ul>
+<p><strong>文字流程</strong>：
+体细胞突变数据 → 分别输入 AlphaGenome（调控模态）和 AlphaMissense（蛋白模态）→ 获得变异级破坏分数 → 按基因聚合 → 构建患者-基因破坏谱 → 与临床/分子特征（组织来源、癌种、MSI 状态、TMB）比较 → 生存分析（总人群 + 无热点突变亚组 + 治疗亚组）</p>
+<hr />
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AlphaGenome 调控预测</td>
+<td>量化突变对染色质可及性、TF 结合、剪接的调控效应</td>
+<td>覆盖非编码/调控区域突变效应，传统蛋白模型无法覆盖</td>
+<td>输入：DNA 序列 + 突变；输出：调控破坏分数</td>
+<td>Abstract: "non-hotspot mutations exhibited larger regulatory effects"</td>
+<td>预期影响：丢失调控维度信号，染色质可及性相关的生存关联将无法检测 [Analysis]</td>
+</tr>
+<tr>
+<td>AlphaMissense 蛋白预测</td>
+<td>量化突变对蛋白功能的破坏</td>
+<td>捕捉编码区突变的蛋白效应，与调控效应互补</td>
+<td>输入：蛋白序列/错义突变；输出：蛋白破坏分数</td>
+<td>Abstract: "recurrent hotspot mutations showed substantially larger predicted protein-level effects"</td>
+<td>预期影响：丢失热点突变的蛋白效应信号 [Analysis]</td>
+</tr>
+<tr>
+<td>基因级聚合</td>
+<td>将变异级分数聚合为基因破坏分数</td>
+<td>连接变异级预测与基因级生物学/临床表型</td>
+<td>输入：变异级分数；输出：患者-基因破坏谱</td>
+<td>Abstract: "aggregated the variant-level predictions to construct patient-gene disruption profiles"</td>
+<td>预期影响：无法进行基因级生存关联分析 [Analysis]</td>
+</tr>
+<tr>
+<td>生存分析</td>
+<td>检验破坏谱与总生存期的关联</td>
+<td>验证临床相关性，超越纯计算预测</td>
+<td>输入：破坏谱 + 生存数据；输出：关联统计量</td>
+<td>Abstract: "higher predicted disruption was associated with overall survival"</td>
+<td>预期影响：无法建立临床结局关联 [Analysis]</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：以上「预期影响」均为 [Analysis] 推断，原文未提供消融实验。</p>
+</blockquote>
+<hr />
+<h2>09 关键公式符号</h2>
+<p>不适用。本文为预印本摘要，未提供具体公式。方法部分（如破坏分数聚合方式、生存分析模型）在提供的材料中不可得。</p>
+<hr />
+<h2>10 实验设计与证据链</h2>
+<p><strong>数据集/群体</strong>：
+- TCGA：8,800 患者，33 种癌症类型（体细胞突变 + 临床数据）
+- TCGA-CDR：生存数据
+- IntOGen：驱动基因列表
+- Cancer Hotspots v2：热点突变
+- POG570：独立验证队列（治疗注释）</p>
+<p><strong>规模</strong>：8,800 患者（TCGA 主分析）；POG570 为独立验证队列（具体规模未提供）</p>
+<p><strong>指标</strong>：总生存期（overall survival）关联；破坏谱与分子特征（组织来源、癌种、MSI 状态、TMB）的区分度</p>
+<p><strong>基线</strong>：未明确提及（推测为 TMB 或驱动基因状态作为基线比较，但摘要未提供细节）</p>
+<p><strong>骨干/仪器</strong>：AlphaGenome、AlphaMissense（均为预训练基因组基础模型）</p>
+<p><strong>oracle 输入</strong>：不适用（无人工标注的真值输入；模型预测本身作为功能评分）</p>
+<p><strong>评测协议</strong>：未提供详细协议（预印本摘要）</p>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的 claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>热点 vs 非热点突变效应比较</td>
+<td>热点突变蛋白效应更大，非热点突变调控效应更大</td>
+<td>按热点状态分层，比较 AlphaMissense 和 AlphaGenome 分数</td>
+<td>热点突变蛋白效应显著更大；非热点突变调控效应在多数癌种中更大</td>
+<td>突变类型与功能模态存在系统性关联</td>
+<td>未提供效应量、统计显著性数值</td>
+<td>Abstract</td>
+</tr>
+<tr>
+<td>破坏谱与分子特征关联</td>
+<td>破坏谱反映组织来源、癌种、MSI 状态</td>
+<td>破坏谱聚类/分类 vs 已知分子特征</td>
+<td>破坏谱是基因和模态特异性的，反映上述特征</td>
+<td>破坏谱携带生物学信息</td>
+<td>未提供分类准确率或关联强度</td>
+<td>Abstract</td>
+</tr>
+<tr>
+<td>超越 TMB 的信息量</td>
+<td>破坏谱携带 TMB 之外的信息</td>
+<td>破坏谱 vs TMB 的独立预测能力</td>
+<td>破坏谱保留 TMB 之外的信息</td>
+<td>破坏谱非 TMB 的简单替代</td>
+<td>未提供增量指标（如 C-index 变化）</td>
+<td>Abstract</td>
+</tr>
+<tr>
+<td>无热点突变患者的生存分析</td>
+<td>破坏谱与总生存期相关</td>
+<td>无热点突变亚组中，高 vs 低破坏评分</td>
+<td>高破坏与较差总生存相关；染色质可及性信号最强</td>
+<td>调控破坏是独立于驱动突变的临床相关维度</td>
+<td>未提供 HR、置信区间、p 值</td>
+<td>Abstract</td>
+</tr>
+<tr>
+<td>POG570 治疗亚组验证</td>
+<td>破坏谱在独立队列中与治疗亚组生存相关</td>
+<td>治疗定义的亚组内生存分析</td>
+<td>基因级破坏与治疗亚组内生存相关</td>
+<td>破坏谱具有独立队列可重复性</td>
+<td>未提供具体治疗类型、亚组数、效应量</td>
+<td>Abstract</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：本文仅覆盖体细胞突变的功能破坏量化，不涉及种系突变、结构变异、拷贝数变异或表观遗传修饰的直接测量。</li>
+<li><strong>oracle/真值输入</strong>：无实验验证的功能破坏真值；模型预测本身作为代理指标，未经湿实验验证。</li>
+<li><strong>端到端状态</strong>：从突变到临床结局的完整 pipeline 已实现，但各环节的误差累积未评估。</li>
+<li><strong>算力成本</strong>：未提供（使用预训练基础模型进行推理，成本可能较高但未量化）。</li>
+<li><strong>历史数据依赖</strong>：依赖 TCGA 的历史队列，治疗背景可能过时；POG570 为独立验证但规模有限。</li>
+<li><strong>模型依赖</strong>：结论完全依赖 AlphaGenome 和 AlphaMissense 的预测质量；模型偏差会直接传导至破坏谱和生存关联。</li>
+<li><strong>最难情形</strong>：非编码区域突变的功能解释、低频突变的聚合信噪比、多突变基因的叠加效应模型。</li>
+<li><strong>不确定性</strong>：未提供置信区间、效应量、多重检验校正信息；预印本未经同行评审。</li>
+<li><strong>群体/领域边界</strong>：仅覆盖 TCGA 的 33 种癌症类型；不涵盖儿童癌症、罕见癌症、非 TCGA 队列（除 POG570）。</li>
+</ul>
+<p><strong>有边界的复述</strong>：在 TCGA 33 种癌症类型中，使用 AlphaGenome 和 AlphaMissense 的预测分数，体细胞突变可被聚合为基因级破坏谱，该谱在无热点突变患者中与总生存期相关，其中染色质可及性模态信号最强；该关联在 POG570 治疗注释队列的治疗亚组中得到初步验证。</p>
+<hr />
+<h2>12 作者自认局限</h2>
+<p>在提供的材料（摘要及声明）中未发现作者明确承认的局限。</p>
+<p><strong>作者提及的相关约束</strong>（非正式局限）：
+- 数据可用性声明表明 TCGA 数据受控访问（dbGaP），可能限制可重复性。
+- 作者声明无利益冲突，但未提供方法学局限讨论。</p>
+<hr />
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>破坏谱完全依赖基础模型预测，无实验验证</td>
+<td>模型预测可能与真实功能效应有偏差；AlphaGenome/AlphaMissense 的训练数据可能偏向已知功能区域</td>
+<td>如果模型有系统性偏差，生存关联可能是模型伪影而非真实生物学</td>
+<td>用 CRISPR 筛选、QTL 或 reporter assay 数据子集验证预测分数</td>
+<td>Abstract 未提及任何实验验证</td>
+</tr>
+<tr>
+<td>基因级聚合方法未描述</td>
+<td>不同聚合策略（最大值、求和、加权）可能产生不同结果；聚合方式的选择可能影响结论稳健性</td>
+<td>聚合是连接变异与基因功能的关键步骤，方法选择直接影响可重复性</td>
+<td>进行聚合策略敏感性分析</td>
+<td>摘要仅提及 "aggregated"，无方法细节</td>
+</tr>
+<tr>
+<td>生存分析未提供效应量和统计细节</td>
+<td>未报告 HR、置信区间、p 值、多重检验校正；"strongest and most consistent" 缺乏量化标准</td>
+<td>无法评估临床关联的实际强度和稳健性</td>
+<td>查看全文方法部分和补充材料</td>
+<td>Abstract 仅有定性描述</td>
+</tr>
+<tr>
+<td>热点 vs 非热点比较可能受突变频率混淆</td>
+<td>热点突变频率高，统计功效更强；非热点突变数量多但单个效应弱，聚合后可能产生虚假信号</td>
+<td>频率与效应的混淆可能影响结论</td>
+<td>控制突变频率后重新分析</td>
+<td>Abstract 未提及频率匹配</td>
+</tr>
+<tr>
+<td>治疗亚组分析未说明治疗类型</td>
+<td>不同治疗方案的生存关联可能方向不同；"treatment-defined subgroups" 过于笼统</td>
+<td>治疗异质性可能掩盖或夸大关联</td>
+<td>按治疗类型分层报告</td>
+<td>Abstract 仅提及 "treatment-defined subgroups"</td>
+</tr>
+<tr>
+<td>与 TMB 的比较未量化</td>
+<td>"retaining information beyond tumor mutational burden" 缺乏增量指标</td>
+<td>如果增量很小，临床实用性有限</td>
+<td>报告 ΔC-index 或似然比检验</td>
+<td>Abstract 无量化比较</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>14 Agent 提炼的知识候选</h2>
+<p><strong>可迁移概念</strong>：</p>
+<ol>
+<li>
+<p><strong>多模态突变破坏量化框架</strong>：使用基础模型同时覆盖蛋白效应（AlphaMissense）和调控效应（AlphaGenome），构建多维破坏谱。可迁移至三维基因组：使用类似框架量化突变对 TAD 边界、CTCF loop、compartment 等三维特征的破坏效应。</p>
+</li>
+<li>
+<p><strong>变异级到基因级的聚合策略</strong>：将单变异预测聚合为基因级特征，作为连接分子预测与临床表型的中间表示。可迁移至三维基因组：将影响同一 TAD/loop 的多个变异聚合为「结构单元破坏分数」。</p>
+</li>
+<li>
+<p><strong>无热点突变亚组分析</strong>：在排除已知驱动事件的亚组中检验新特征的独立预测价值。可迁移至三维基因组：在无已知 3D 基因组结构变异的患者中检验三维破坏分数的独立预后价值。</p>
+</li>
+<li>
+<p><strong>染色质可及性作为临床相关模态</strong>：本文发现染色质可及性破坏与生存关联最强。对三维基因组研究：染色质可及性与 3D 组织密切相关，提示 3D 结构破坏可能具有类似或更强的临床关联。</p>
+</li>
+</ol>
+<p><strong>可迁移方法</strong>：</p>
+<ol start="5">
+<li>
+<p><strong>基础模型推理 + 临床关联的 pipeline</strong>：预训练模型推理 → 聚合 → 生存分析。可直接复用于三维基因组基础模型（如 Enformer 的 3D 相关输出、Orca、Nucleotide Transformer 等）。</p>
+</li>
+<li>
+<p><strong>模态特异性分析</strong>：分别检验不同功能模态的独立贡献，而非合并为单一分数。可迁移至 3D 基因组：分别检验 TAD、loop、compartment 破坏的独立预后价值。</p>
+</li>
+</ol>
+<hr />
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>AlphaMissense</strong>（Cheng et al., 2023, Science）：蛋白错义突变效应预测，本文将其用于体细胞突变蛋白效应量化。该模型已在人类遗传学中广泛验证。</li>
+<li><strong>Enformer / AlphaGenome 系列</strong>（Avsec et al., 2021, Nature Methods）：序列-功能调控预测模型，可预测染色质状态、TF 结合、剪接等。本文的调控模态预测基于此类模型。</li>
+<li><strong>TCGA PanCanAtlas</strong>（Hoadley et al., 2018, Cell；Weinstein et al., 2013, Nature Genetics）：多癌种基因组数据资源，本文的主要数据来源。</li>
+<li><strong>驱动基因与热点突变</strong>（IntOGen：Gonzalez-Perez et al., 2013; Cancer Hotspots：Chang et al., 2018）：传统癌症基因组学的离散驱动事件框架，本文试图超越该框架。</li>
+<li><strong>肿瘤突变负荷（TMB）</strong>：已建立的免疫治疗预测生物标志物，本文声称破坏谱携带 TMB 之外的信息。</li>
+<li><strong>与三维基因组方向的连接 [Analysis]</strong>：本文的「染色质可及性破坏」模态与三维基因组直接相关——染色质可及性受 3D 组织调控，CTCF/cohesin 介导的 loop 结构影响可及性。本文框架可扩展至 3D 基因组特征（TAD、loop、compartment）的突变破坏量化，但目前未涉及 3D 结构预测模型（如 DeepTAD、Orca、C.Origami 等）。</li>
+</ul>
+<hr />
+<h2>16 Agent 生成的研究候选</h2>
+<p><strong>候选 1：3D 基因组破坏谱（3D-Disruption Profiling）</strong>
+- <strong>名称</strong>：3D-Genome Disruption Score (3DDS)
+- <strong>来源局限/观察</strong>：本文仅覆盖染色质可及性和 TF 结合等线性/一维调控特征，未涉及 TAD、loop、compartment 等三维结构特征的突变破坏量化 [Analysis]
+- <strong>核心假设</strong>：影响 CTCF 结合位点、cohesin loading 位点或 TAD 边界的体细胞突变可被基础模型量化，聚合为 3D 结构破坏分数，且与癌症预后相关
+- <strong>初步方法</strong>：使用 3D 基因组预测模型（如 Orca、C.Origami、DeepTAD）对 TCGA 体细胞突变进行结构效应预测；按 TAD/loop 单元聚合；与生存分析关联；与本文的染色质可及性破坏谱比较增量价值
+- <strong>验证方式</strong>：TCGA 多癌种生存分析；与已知 3D 结构变异（如 TAD 边界破坏）的已知案例进行一致性验证；独立队列（POG570、ICGC）复现
+- <strong>创新状态</strong>：unverified（需验证 3D 预测模型对体细胞突变的敏感性是否足够）</p>
+<p><strong>候选 2：多模态破坏谱的整合预后模型</strong>
+- <strong>名称</strong>：Multi-modal Disruption Prognostic Index (MDPI)
+- <strong>来源局限/观察</strong>：本文分别检验各模态与生存的关联，但未构建整合多模态的预后模型 [Analysis]
+- <strong>核心假设</strong>：蛋白破坏 + 调控破坏 + 3D 结构破坏的整合分数优于任一单模态或 TMB
+- <strong>初步方法</strong>：将 AlphaMissense 蛋白分数、AlphaGenome 调控分数、3D 结构破坏分数（候选 1）作为特征，用 Cox 模型或机器学习整合，评估 C-index 增量
+- <strong>验证方式</strong>：TCGA 训练/验证划分；POG570 外部验证；与 TMB、MSI 状态等已知标志物比较
+- <strong>创新状态</strong>：unverified</p>
+<p><strong>候选 3：非热点突变调控破坏的机制解析</strong>
+- <strong>名称</strong>：Regulatory Disruption Mechanism Atlas
+- <strong>来源局限/观察</strong>：本文发现非热点突变调控效应更大，但未解析具体调控元件类型（增强子、启动子、绝缘子）的贡献 [Analysis]
+- <strong>核心假设</strong>：不同调控元件类型的破坏对癌症类型和预后的影响不同；绝缘子/边界元件的破坏与 3D 结构改变相关
+- <strong>初步方法</strong>：将 AlphaGenome 预测的调控破坏按注释元件类型分层；与 3D 基因组注释（如 CTCF loop anchors、TAD boundaries）交叉；检验元件类型特异性的生存关联
+- <strong>验证方式</strong>：TCGA 分层分析；ENCODE/GENCODE 注释交叉；已知调控突变的文献验证
+- <strong>创新状态</strong>：unverified</p>
+<p><strong>候选 4：基础模型预测的 3D 结构效应实验验证</strong>
+- <strong>名称</strong>：3D-Disruption Experimental Validation
+- <strong>来源局限/观察</strong>：本文及候选 1 均依赖基础模型预测，缺乏实验验证 [Analysis]
+- <strong>核心假设</strong>：基础模型预测的高破坏 3D 结构突变在实验系统中确实改变染色质构象
+- <strong>初步方法</strong>：选择预测高破坏的 CTCF 位点突变，使用 Hi-C、Micro-C 或 3C 实验验证 TAD/loop 改变；CRISPR 编辑引入突变后检测 3D 结构变化
+- <strong>验证方式</strong>：实验数据与模型预测的一致性；与 ENCODE 3D 结构数据的交叉验证
+- <strong>创新状态</strong>：unverified（需湿实验资源）</p></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Abstract only</li>
+<li><strong>Assessment boundary</strong> Claims and evidence presented in the abstract, with reference to the stated study design and data sources</li>
+<li><strong>Shared manuscript claim summary</strong> The authors use two sequence-to-function models, AlphaGenome and AlphaMissense, to quantify the predicted disruption of somatic mutations across 8,800 TCGA patients and 33 cancer types. They report that recurrent hotspot mutations show larger predicted protein-level effects while non-hotspot mutations show larger regulatory effects. They aggregate variant-level predictions into patient-gene disruption profiles across four modalities and report associations with tissue of origin, cancer type, microsatellite-instability status, and overall survival, including in a treatment-annotated independent cohort. They conclude that cancer-gene perturbation is continuous and multidimensional rather than discrete.</li>
+<li><strong>Visible evidence base</strong> Abstract text only. No figures, tables, methods, or supplementary materials were provided.</li>
+<li><strong>Missing materials affecting confidence</strong> Full manuscript, all figures and tables, methods description, statistical analysis details, cohort composition, model validation procedures, and the treatment-annotated cohort description are not available. The abstract reports quantitative findings without any numerical values, effect sizes, confidence intervals, or p-values.</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li><strong>Overall assessment</strong> The abstract presents a potentially interesting application of genomic foundation models to cancer genomics, with a conceptual shift from discrete driver mutations to continuous, multidimensional gene disruption profiles. The framing is timely given the rapid adoption of sequence-to-function models. However, the abstract alone provides insufficient evidence to evaluate the validity of the core claims. Key statistical details, validation approaches, and the nature of the survival associations are not reported. The claim that disruption profiles retain information beyond tumor mutational burden is central but cannot be assessed without the underlying analysis. The clinical relevance claim rests on an independent cohort that is not described in sufficient detail. The work is potentially significant if the technical execution matches the ambition of the framing, but the current evidence base does not allow verification.</li>
+<li><strong>Who would be interested in the results, and why</strong> Cancer genomics researchers interested in moving beyond driver gene paradigms, computational biologists working on sequence-to-function models, clinical oncologists interested in prognostic biomarkers, and researchers studying regulatory genomics in cancer. The integration of foundation model predictions with clinical outcomes would appeal to those working on precision oncology and biomarker discovery.</li>
+<li><strong>Major strengths</strong> The conceptual framing is clear and potentially impactful, shifting from discrete driver mutations to continuous disruption profiles. The use of two complementary model types, one for protein-level effects and one for regulatory effects, is sensible. The aggregation across four functional modalities is comprehensive. The inclusion of an independent treatment-annotated cohort for validation is a strength if the analysis is rigorous. The authors explicitly acknowledge the limitation of hotspot-centric views and propose a more nuanced framework.</li>
+<li><strong>Major Concerns</strong> </li>
+<li><strong>Concern ID</strong> R1-M1</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Statistical validity</li>
+<li><strong>Claim pointer</strong> The abstract claims that higher predicted disruption is associated with overall survival among patients lacking recurrent hotspot mutations, with the strongest signal for chromatin accessibility.</li>
+<li><strong>Evidence pointer</strong> Abstract, survival analysis section. Location not provided.</li>
+<li><strong>Concern</strong> No effect sizes, hazard ratios, confidence intervals, p-values, or multiple-testing correction details are reported. The abstract states associations exist but provides no quantitative support. The strength of the chromatin accessibility signal is asserted without any comparative metric.</li>
+<li><strong>Why it matters</strong> Survival associations in cancer genomics are highly susceptible to confounding, overfitting, and multiple testing. Without effect sizes and adjustment details, the reader cannot judge whether these associations are clinically meaningful or statistically robust. The claim that chromatin accessibility shows the strongest signal requires comparison across modalities with appropriate statistical testing.</li>
+<li><strong>Resolution test</strong> Report hazard ratios with confidence intervals for each modality, specify the statistical model, list covariates, describe multiple-testing correction, and provide the number of events and patients in each analysis.</li>
+<li><strong>Concern ID</strong> R1-M2</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Validation and generalizability</li>
+<li><strong>Claim pointer</strong> The abstract claims that in an independent treatment-annotated cohort, gene-level disruption is associated with survival within treatment-defined subgroups.</li>
+<li><strong>Evidence pointer</strong> Abstract, independent cohort section. Location not provided.</li>
+<li><strong>Concern</strong> The independent cohort is not described. Its size, cancer types, treatment modalities, and whether the analysis was pre-specified or exploratory are unknown. The phrase "treatment-defined subgroups" raises questions about how many subgroups were tested and whether any correction for multiple comparisons was applied.</li>
+<li><strong>Why it matters</strong> Independent validation is the cornerstone of the clinical relevance claim. Without knowing the cohort composition and the number of subgroups tested, the finding could reflect chance or selective reporting. Treatment subgroup analyses are particularly prone to false positives.</li>
+<li><strong>Resolution test</strong> Describe the cohort in detail, state the number of subgroups tested, report whether the analysis was pre-registered or pre-specified, and provide the statistical significance threshold used.</li>
+<li><strong>Concern ID</strong> R1-M3</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Technical soundness of model application</li>
+<li><strong>Claim pointer</strong> The abstract claims that AlphaGenome and AlphaMissense quantify disruption imposed by somatic mutations and that these predictions can be aggregated into meaningful patient-gene disruption profiles.</li>
+<li><strong>Evidence pointer</strong> Abstract, methods description. Location not provided.</li>
+<li><strong>Concern</strong> No information is provided on how the models were applied, whether they were fine-tuned or used as-is, how variant-level predictions were aggregated to gene level, how the four modalities were integrated, or whether the models were validated for this specific use case. The choice of thresholds for defining "disruption" is not described.</li>
+<li><strong>Why it matters</strong> Foundation models are powerful but their outputs depend heavily on input representation, aggregation strategies, and interpretation. If the aggregation method is arbitrary or the models are applied outside their validated domain, the resulting profiles may not reflect true biological disruption. The entire downstream analysis depends on the validity of these profiles.</li>
+<li><strong>Resolution test</strong> Provide a detailed methods section describing model inputs, aggregation functions, normalization procedures, and any calibration or validation of model outputs against experimental data.</li>
+<li><strong>Concern ID</strong> R1-M4</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Independence from tumor mutational burden</li>
+<li><strong>Claim pointer</strong> The abstract claims that disruption profiles retain information beyond tumor mutational burden.</li>
+<li><strong>Evidence pointer</strong> Abstract, characterization of disruption profiles. Location not provided.</li>
+<li><strong>Concern</strong> This is a critical claim for the novelty of the work, but no analysis is shown. It is unclear how the comparison was performed, whether TMB was included as a covariate, or whether the incremental value was quantified.</li>
+<li><strong>Why it matters</strong> If disruption profiles are simply a proxy for TMB, the clinical and biological claims are substantially weakened. The claim of added value beyond TMB is central to the paper's contribution and must be rigorously demonstrated.</li>
+<li><strong>Resolution test</strong> Show a direct comparison of model performance with and without TMB adjustment, report the incremental predictive value, and specify the statistical approach used to establish independence.</li>
+<li><strong>Minor Comments</strong> </li>
+<li><strong>Concern ID</strong> R1-m1</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Clarity of terminology</li>
+<li><strong>Affected element</strong> "Disruption profiling" and "disruption profiles"</li>
+<li><strong>Evidence pointer</strong> Abstract, title and throughout. Location not provided.</li>
+<li><strong>Issue</strong> The term "disruption" is used throughout but never formally defined. It is unclear whether this refers to a specific computational output or a conceptual construct.</li>
+<li><strong>Required correction</strong> Provide a formal definition of "disruption" in the context of each model and each modality, and clarify how the term relates to established concepts such as loss-of-function or gain-of-function.</li>
+<li><strong>Concern ID</strong> R1-m2</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Quantitative reporting</li>
+<li><strong>Affected element</strong> All reported findings</li>
+<li><strong>Evidence pointer</strong> Abstract, results sections. Location not provided.</li>
+<li><strong>Issue</strong> The abstract contains no numerical results. All findings are described qualitatively, which prevents any assessment of effect magnitude.</li>
+<li><strong>Required correction</strong> Include key quantitative results in the abstract, such as hazard ratios, correlation coefficients, or classification performance metrics, with confidence intervals where appropriate.</li>
+<li><strong>Concern ID</strong> R1-m3</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Cohort description</li>
+<li><strong>Affected element</strong> TCGA cohort</li>
+<li><strong>Evidence pointer</strong> Abstract, first sentence. Location not provided.</li>
+<li><strong>Issue</strong> The abstract states 8,800 patients and 33 cancer types but does not specify whether this is the full TCGA pan-cancer cohort or a subset with specific data availability requirements.</li>
+<li><strong>Required correction</strong> Clarify the inclusion criteria and whether any patients were excluded due to missing data or model input requirements.</li>
+<li><strong>Concern ID</strong> R1-m4</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Reproducibility</li>
+<li><strong>Affected element</strong> Model availability</li>
+<li><strong>Evidence pointer</strong> Abstract, methods. Location not provided.</li>
+<li><strong>Issue</strong> The models AlphaGenome and AlphaMissense are named but their versions, access routes, and any relevant licenses are not stated.</li>
+<li><strong>Required correction</strong> Provide model version information and access details in the methods or data availability section.</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>The claim that recurrent hotspot mutations show substantially larger protein-level effects while non-hotspot mutations show larger regulatory effects is unsupported in the abstract, as no quantitative comparison is provided.</li>
+<li>The claim that disruption profiles reflect tissue of origin, cancer type, and microsatellite-instability status is unsupported without showing the relevant analyses or performance metrics.</li>
+<li>The claim that disruption profiles retain information beyond tumor mutational burden is unsupported and is a central assertion that requires direct evidence.</li>
+<li>The claim that higher predicted disruption is associated with overall survival is unsupported without effect sizes, p-values, or model details.</li>
+<li>The claim that gene-level disruption is associated with survival in treatment-defined subgroups in an independent cohort is unsupported without any description of that cohort or the analysis.</li>
+<li>The overall conclusion of a "continuous, multidimensional view of cancer-gene perturbation" is a reasonable interpretation of the framing but is not established by the evidence presented in the abstract.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

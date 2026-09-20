@@ -1,0 +1,24 @@
+{
+  "source": "biorxiv",
+  "id": "10.64898/2026.09.16.752217",
+  "title": "Machine learning reveals sequence and genomic context features underlying Alu -specific effects on genome folding",
+  "authors": "Zhang S; Pollard KS",
+  "journal": "bioRxiv",
+  "published_date": "2026-09-18",
+  "window": {
+    "start": "2026-09-13",
+    "end": "2026-09-19"
+  },
+  "score": 9,
+  "one_liner_zh": "该文用深度学习对约110万个Alu元件进行全基因组模拟删除筛选，预测其对局部染色质折叠的影响，并揭示Alu序列特征与基因组背景如何调控TAD边界、染色质环等三维基因组结构，直接契合本课题的染色质空间架构建模与AI方法。",
+  "abstract": "The Alu transposable element is among the most abundant classes of mobile DNA in the human genome, and has been linked to gene regulation and chromatin organization. Yet how individual Alu insertions influence nearby chromatin interactions remains poorly understood. To investigate this, we used deep learning to perform a genome-wide in silico deletion screen of ~1.1 million Alus , predicting each element's importance to local genome folding. We identified a subset of high-scoring Alus that span multiple Alu subfamilies and are enriched in loci that are fast-evolving and gene-dense, especially loci encoding genes that are actively transcribed and/or related to Alu biology. We further found that polymorphic Alus preferentially occur in regions tolerant of sequence variation but predicted to be resistant to changes in chromatin structure. Targeted in silico mutagenesis showed that the importance of individual Alus to local chromatin interactions depends on both intrinsic Alu sequence properties and genomic context. Finally, we identified Alu sequences predicted to alter CTCF-mediated boundary strength and, in some cases, to promote the formation of new loops and boundaries. Together, these results position Alus as key modulators of genome architecture, while underscoring that the fate of a new Alu depends on where it inserts and how it interacts with other determinants of chromatin state and structure.",
+  "abstract_zh": "Alu转座元件是人类基因组中最丰富的移动DNA类别之一，与基因调控和染色质组织相关联。然而，单个Alu插入如何影响邻近染色质相互作用仍知之甚少。为探究此问题，我们利用深度学习对约110万个Alu进行了全基因组范围内的计算机模拟删除筛选，预测每个元件对局部基因组折叠的重要性。我们识别出一组高评分的Alu，这些Alu跨越多个Alu亚家族，并在快速进化和基因密集的位点中富集，尤其是编码活跃转录和/或与Alu生物学相关基因的位点。我们进一步发现，多态性Alu优先出现在对序列变异耐受但预测对染色质结构变化具有抵抗性的区域。靶向计算机模拟诱变显示，单个Alu对局部染色质相互作用的重要性既取决于Alu内在序列特性，也取决于基因组背景。最后，我们识别出预测能改变CTCF介导边界强度，并在某些情况下促进新环和边界形成的Alu序列。综合来看，这些结果将Alu定位为基因组架构的关键调节因子，同时强调新Alu的命运取决于其插入位置及其与其他染色质状态和结构决定因素的相互作用方式。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://www.biorxiv.org/content/10.64898/2026.09.16.752217",
+  "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.16.752217",
+  "paper_page_path": "papers/biorxiv/10.64898_2026.09.16.752217/index.html"
+}

@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42754317",
+  "title": "How advances in chromosome conformation capture (3C) methods are reshaping our understanding of gene regulation in hematopoiesis.",
+  "authors": "Li, Hangpeng; Denny, Nicholas; Davies, James",
+  "journal": "Current topics in developmental biology",
+  "published_date": "2026-09-17",
+  "window": {
+    "start": "2026-09-13",
+    "end": "2026-09-19"
+  },
+  "score": 6,
+  "one_liner_zh": "该综述回顾3C技术进展及其在造血分化中揭示染色质三维组织与基因调控的作用，并提及分子动力学模拟支持染色质折叠模型，但以综述为主、缺乏具体建模方法贡献。",
+  "abstract": "The three-dimensional organization of the DNA within the nucleus plays a key role in regulating gene expression. Over the past two decades, advances in chromosome conformation capture (3C) technologies, in tandem with other methods, have shown that the genome forms a complex structure at multiple scales. Early studies identified large-scale structures such as chromosome territories, compartments and topologically associating domains (TADs). As the resolution of 3C techniques has improved, it has become possible to identify contacts between regulatory elements in detail and more recently, it has become possible to define intricate structures within cis-regulatory elements. In this chapter, we review the development of 3C-based methodologies and discuss the strengths and limitations of the different approaches. We examine how these technologies have refined our understanding of genome organization and gene regulation. Recent high-resolution studies reveal that chromatin architecture extends beyond classical domain structures to include nanoscale organization. Integration of 3C data with super-resolution imaging and molecular dynamics simulations supports a model in which genome folding is governed by the biophysical properties of chromatin.",
+  "abstract_zh": "细胞核内DNA的三维组织在调控基因表达中扮演关键角色。过去二十年中，染色体构象捕获（3C）技术与其他方法相结合的发展表明，基因组在多个尺度上形成复杂结构。早期研究识别了诸如染色体领地、区室和拓扑关联结构域（TADs）等大规模结构。随着3C技术分辨率的提高，已能详细识别调控元件之间的接触，而最近，更能在顺式调控元件内定义精细结构。本章回顾了基于3C的方法学发展，并讨论了不同方法的优势与局限性。我们考察了这些技术如何深化我们对基因组组织和基因调控的理解。近期高分辨率研究显示，染色质结构超越经典结构域，延伸至纳米尺度组织。将3C数据与超分辨成像和分子动力学模拟相结合，支持了一个模型，即基因组折叠受染色质生物物理特性所支配。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42754317/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42754317/",
+  "paper_page_path": "papers/pubmed/42754317/index.html"
+}

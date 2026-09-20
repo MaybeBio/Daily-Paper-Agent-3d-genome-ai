@@ -1,0 +1,205 @@
+{
+  "identity": {
+    "pmid": "42746522",
+    "doi": "10.1016/j.patter.2026.101616",
+    "title": "What-if effects: A tale of entangled covariates."
+  },
+  "content": {
+    "abstract": "Single-cell epigenomic studies promise to reveal how disease states, donor traits, environmental exposures, and technical factors shape cellular regulatory programs, yet these variables are often highly collinear and difficult to disentangle, particularly in human cohorts. The recent study by Moller and Madsen in Patterns introduces DeepDive, a probabilistic deep-learning framework that disentangles known covariate effects and residual variations in single-nucleus ATAC-seq data, enabling counterfactual \"what-if\" analyses of chromatin accessibility.",
+    "keywords": [],
+    "mesh_terms": [],
+    "pub_types": [
+      "News"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Yu, Zhaowei",
+        "Zhang, Yong"
+      ],
+      "short_names": [
+        "Yu Z",
+        "Zhang Y"
+      ],
+      "auids": [],
+      "affiliations": [
+        "State Key Laboratory of Cardiovascular Diseases and Medical Innovation Center, Institute for Regenerative Medicine, Department of Neurosurgery, Shanghai East Hospital, Shanghai Key Laboratory of Signaling and Disease Research, Frontier Science Center for Stem Cell Research, School of Life Sciences and Technology, Tongji University, Shanghai, 200092, China.",
+        "State Key Laboratory of Cardiovascular Diseases and Medical Innovation Center, Institute for Regenerative Medicine, Department of Neurosurgery, Shanghai East Hospital, Shanghai Key Laboratory of Signaling and Disease Research, Frontier Science Center for Stem Cell Research, School of Life Sciences and Technology, Tongji University, Shanghai, 200092, China."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Yu, Zhaowei",
+        "short_name": "Yu Z",
+        "identifiers": [],
+        "affiliations": [
+          "State Key Laboratory of Cardiovascular Diseases and Medical Innovation Center, Institute for Regenerative Medicine, Department of Neurosurgery, Shanghai East Hospital, Shanghai Key Laboratory of Signaling and Disease Research, Frontier Science Center for Stem Cell Research, School of Life Sciences and Technology, Tongji University, Shanghai, 200092, China."
+        ]
+      },
+      {
+        "full_name": "Zhang, Yong",
+        "short_name": "Zhang Y",
+        "identifiers": [],
+        "affiliations": [
+          "State Key Laboratory of Cardiovascular Diseases and Medical Innovation Center, Institute for Regenerative Medicine, Department of Neurosurgery, Shanghai East Hospital, Shanghai Key Laboratory of Signaling and Disease Research, Frontier Science Center for Stem Cell Research, School of Life Sciences and Technology, Tongji University, Shanghai, 200092, China."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Patterns (New York, N.Y.)"
+    ],
+    "journal_abbrev": [
+      "Patterns (N Y)"
+    ],
+    "pub_date": "2026 Sep 11",
+    "pub_year": "2026",
+    "pub_types": [
+      "News"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/16 11:41",
+    "fetched_at": "2026-09-20 08:59:56"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42746522",
+      "42746519",
+      "42475469",
+      "36902216",
+      "32029221",
+      "41731605",
+      "34898596",
+      "33191916",
+      "39987573",
+      "35475224",
+      "32637041",
+      "41310253",
+      "41831316",
+      "36106702",
+      "41000913",
+      "39041910",
+      "42218722",
+      "39326643",
+      "39901471",
+      "33422696",
+      "36719906",
+      "39881144",
+      "42094458",
+      "37114830",
+      "29659240",
+      "41632074",
+      "37016052",
+      "38194039",
+      "37425926",
+      "42560939",
+      "33775205",
+      "41157948",
+      "34815310",
+      "40725473",
+      "39211123",
+      "35858748",
+      "34774128",
+      "34686316",
+      "39500613",
+      "36482454",
+      "35695574",
+      "37776856",
+      "37289818",
+      "26977395",
+      "35584295",
+      "41257571",
+      "37100469",
+      "30580963",
+      "38519979",
+      "35450295",
+      "36313930",
+      "40831503",
+      "33516170",
+      "34386808",
+      "38589969",
+      "41862973",
+      "37137383",
+      "29181276",
+      "35263594",
+      "35976093",
+      "41663439",
+      "36873935",
+      "42420449",
+      "41439990",
+      "30078704",
+      "33888511",
+      "36807077",
+      "40655014",
+      "41721429",
+      "41924246",
+      "32321567",
+      "41279855",
+      "42282723",
+      "36807070",
+      "32967096",
+      "41465249",
+      "29982337",
+      "37546906",
+      "35604124",
+      "39975126",
+      "37118773",
+      "42688241",
+      "31428792",
+      "41040405",
+      "40593253",
+      "35990589",
+      "35605196",
+      "38168419",
+      "37824643",
+      "39127768",
+      "34390932",
+      "37577623",
+      "42358989",
+      "37440917",
+      "37682469",
+      "40141276",
+      "41923161",
+      "33371906",
+      "41506613",
+      "31594952"
+    ],
+    "review": [
+      "42746522",
+      "32637041",
+      "36106702",
+      "39901471",
+      "39500613",
+      "36313930",
+      "41862973",
+      "41465249",
+      "40593253"
+    ],
+    "pmc": [
+      "13576651"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://linkinghub.elsevier.com/retrieve/pii/S2666-3899(26)00125-X",
+        "provider": "Elsevier Science",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/pmid/42746522/",
+        "provider": "PubMed Central",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

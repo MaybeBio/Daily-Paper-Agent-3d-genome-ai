@@ -1,0 +1,85 @@
+## Review setup
+- **Input scope** Abstract only
+- **Assessment boundary** Claims and evidence as presented in the abstract; no methods, figures, tables, or supplementary materials were provided
+- **Shared manuscript claim summary** The authors use deep learning to perform a genome-wide in silico deletion screen of approximately 1.1 million Alu elements, predicting each element's importance to local genome folding. They report that high-scoring Alus are enriched in fast-evolving, gene-dense, actively transcribed loci and loci related to Alu biology. They further report that polymorphic Alus occur in regions tolerant of sequence variation but predicted resistant to chromatin structure changes. Targeted in silico mutagenesis indicates that Alu effects depend on intrinsic sequence properties and genomic context. Finally, they identify Alu sequences predicted to alter CTCF-mediated boundary strength and, in some cases, promote new loops and boundaries.
+- **Visible evidence base** Abstract text only; no figures, tables, methods, or supplementary information
+- **Missing materials affecting confidence** Full manuscript, methods description, model architecture and training details, validation metrics, definition of "high-scoring" Alus, statistical tests, enrichment analyses, mutagenesis protocol, and any comparison to experimental data
+
+## Reviewer
+- **Overall assessment** The abstract presents a potentially interesting computational framework for assessing Alu contributions to genome folding, and the claim that Alu effects depend on both sequence and context is plausible. However, the abstract alone provides insufficient detail to evaluate the validity of the deep learning approach, the robustness of the predictions, or the biological significance of the findings. The central claims are not established from the supplied material.
+- **Who would be interested in the results, and why** Researchers studying transposable element biology, chromatin architecture, and gene regulation would be interested. The work could also appeal to computational biologists developing interpretable deep learning models for genomic phenotypes. The potential link between Alu insertions and CTCF boundary function may interest those studying genome evolution and three-dimensional genome organization.
+- **Major strengths** The study addresses a genome-wide scale that is ambitious and potentially impactful. The focus on both intrinsic sequence features and genomic context is conceptually sound. The inclusion of polymorphic Alus as a natural experiment is a thoughtful angle. The abstract is clearly written and accessible to a broad readership.
+- **Major Concerns** 
+  - **Concern ID** R1-M1
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** The deep learning model predicts each Alu's importance to local genome folding across approximately 1.1 million elements.
+  - **Evidence pointer** Methods not provided
+  - **Concern** The abstract provides no information on the model architecture, training data, input features, or validation strategy. Without these details, it is impossible to assess whether the predictions are reliable or whether the model has learned biologically meaningful patterns rather than artifacts.
+  - **Why it matters** The entire study rests on the validity of the in silico deletion screen. If the model is poorly calibrated or overfitted, all downstream claims about Alu importance, enrichment, and boundary effects are unsupported.
+  - **Resolution test** Provide a detailed methods section including model architecture, training and test splits, performance metrics (e.g., correlation with held-out Hi-C data), and ablation analyses demonstrating that predictions are not driven by trivial sequence features.
+  - **Concern ID** R1-M2
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Evidence quality
+  - **Claim pointer** High-scoring Alus are enriched in fast-evolving, gene-dense, actively transcribed loci and loci related to Alu biology.
+  - **Evidence pointer** Location not provided
+  - **Concern** The abstract reports enrichments but provides no statistical framework, effect sizes, or control analyses. It is unclear what "high-scoring" means, how significance was determined, and whether the enrichments are robust to confounders such as GC content, replication timing, or proximity to other regulatory elements.
+  - **Why it matters** Enrichment claims are central to the biological interpretation. Without proper statistical controls, the reported associations could reflect known genomic covariates rather than a specific Alu effect.
+  - **Resolution test** Report enrichment statistics with appropriate background models, include effect sizes and confidence intervals, and demonstrate that results hold after controlling for major genomic covariates.
+  - **Concern ID** R1-M3
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** Targeted in silico mutagenesis showed that the importance of individual Alus depends on both intrinsic Alu sequence properties and genomic context.
+  - **Evidence pointer** Location not provided
+  - **Concern** The abstract does not describe the mutagenesis strategy, the number of mutations tested, the range of sequence and context perturbations, or how "importance" was quantified before and after mutation. Without this information, the claim that both factors matter is not testable.
+  - **Why it matters** This is the key mechanistic claim of the study. If the mutagenesis design is limited or the readout is not sensitive, the conclusion may be premature or overstated.
+  - **Resolution test** Provide a clear description of the mutagenesis protocol, including the number and type of mutations, the range of contexts sampled, and the statistical approach used to attribute changes in importance to sequence versus context.
+  - **Concern ID** R1-M4
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Evidence quality
+  - **Claim pointer** Alu sequences are predicted to alter CTCF-mediated boundary strength and, in some cases, promote the formation of new loops and boundaries.
+  - **Evidence pointer** Location not provided
+  - **Concern** The abstract states these predictions without any indication of how boundary strength or loop formation was defined in the model, whether these predictions were validated against experimental data (e.g., CTCF ChIP-seq, Hi-C), or what fraction of Alus show such effects.
+  - **Why it matters** This claim has the most direct biological consequence. If the model predicts structural changes that are not corroborated by independent data, the significance of the finding is unclear.
+  - **Resolution test** Provide validation against experimental chromatin interaction or CTCF binding data, and report the proportion of Alus predicted to affect boundaries or loops along with confidence measures.
+- **Minor Comments** 
+  - **Concern ID** R1-m1
+  - **Severity** Minor
+  - **Axis** Readability
+  - **Affected element** Abstract wording
+  - **Evidence pointer** Abstract, sentence on polymorphic Alus
+  - **Issue** The phrase "tolerant of sequence variation but predicted to be resistant to changes in chromatin structure" is ambiguous. It is unclear whether "tolerant" refers to evolutionary tolerance, functional tolerance, or model-based tolerance.
+  - **Required correction** Clarify the meaning of "tolerant" and specify the source of this inference (e.g., population genetics data, model predictions, or both).
+  - **Concern ID** R1-m2
+  - **Severity** Minor
+  - **Axis** Completeness
+  - **Affected element** Abstract
+  - **Evidence pointer** Abstract, final sentence
+  - **Issue** The abstract does not state the performance of the deep learning model or any benchmark against experimental data, which would help readers gauge the reliability of the predictions.
+  - **Required correction** Add a brief statement on model validation, such as correlation with observed Hi-C changes or accuracy on a held-out set.
+  - **Concern ID** R1-m3
+  - **Severity** Minor
+  - **Axis** Reproducibility
+  - **Affected element** Abstract
+  - **Evidence pointer** Abstract, first sentence
+  - **Issue** The number of Alus analyzed (approximately 1.1 million) is stated, but the reference genome build and Alu annotation source are not mentioned.
+  - **Required correction** Specify the genome build and the Alu annotation database used.
+- **Technical failings that need to be addressed before the case is established** R1-M1, R1-M2, R1-M3, R1-M4
+- **Assessment against Nature-style criteria** 
+  - Originality: The idea of using a deep learning deletion screen to assess Alu effects on genome folding is novel and potentially original. However, the abstract does not demonstrate how this approach differs from existing computational methods for predicting chromatin effects of genetic variants.
+  - Scientific importance: If the claims are validated, the work could be important for understanding how a major class of transposable elements shapes genome architecture. The potential link to CTCF boundaries is of broad interest.
+  - Interdisciplinary readership: The topic bridges genomics, computational biology, and chromatin biology, which could attract a broad audience. However, the abstract is written at a level that is accessible to nonspecialists, which is a strength.
+  - Technical soundness: Not assessable from the abstract. The lack of methodological detail is a major limitation.
+  - Readability for nonspecialists: The abstract is clear and well structured, with minimal jargon. The main concepts are explained sufficiently for a general scientific audience.
+- **Recommendation posture** Currently not established from the provided evidence. The abstract presents a plausible and potentially interesting framework, but the absence of methodological detail and validation means the core claims cannot be evaluated. I would be supportive if the full manuscript provides rigorous model validation, statistical controls, and experimental corroboration of the key predictions.
+
+## Risk / unsupported claims
+- The claim that high-scoring Alus are enriched in specific genomic features is unsupported without statistical details.
+- The claim that polymorphic Alus occur in regions resistant to chromatin changes is unsupported without a definition of "resistant" and supporting data.
+- The claim that Alu importance depends on both sequence and context is unsupported without a description of the mutagenesis protocol.
+- The claim that Alus can alter CTCF-mediated boundary strength and promote new loops is unsupported without validation against experimental data.
+- The overall predictive accuracy of the deep learning model is not assessable from the abstract.

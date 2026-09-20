@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42757766",
+  "title": "A tree-based kernel for densities and its applications in clustering DNase-seq profiles.",
+  "authors": "Xu, Yuliang; Luo, Kaixuan; Ma, Li",
+  "journal": "Biometrics",
+  "published_date": "2026-09-18",
+  "window": {
+    "start": "2026-09-13",
+    "end": "2026-09-19"
+  },
+  "score": 4,
+  "one_liner_zh": "该文提出基于树的密度核用于DNase-seq染色质可及性谱聚类以检测转录因子结合，虽涉及染色质水平调控特征，但无三维空间结构建模且方法为贝叶斯统计而非AI/分子模拟，与三维基因组架构建模关联较弱。",
+  "abstract": "Modeling multiple sampling densities within a hierarchical framework enables borrowing of information across samples. These \"density random effects\" can act as kernels in latent variable models to represent exchangeable subgroups or clusters. A key feature of these kernels is the (functional) covariance they induce, which determines how densities are grouped in mixture models. Our motivating problem is clustering chromatin accessibility profiles from high-throughput DNase-seq experiments to detect transcription factor (TF) binding. TF binding typically produces footprint profiles with spatial patterns, creating long-range dependency across genomic locations. Existing nonparametric hierarchical models impose restrictive covariance assumptions and cannot accommodate such dependencies, often leading to biologically uninformative clusters. We propose a nonparametric density kernel that is flexible enough to capture diverse covariance structures and adapts to various spatial patterns of TF footprints. The kernel specifies dyadic tree splitting probabilities via a multivariate logit-normal model with a sparse precision matrix. Bayesian inference for latent variable models using this kernel is implemented through Gibbs sampling with Polya-Gamma augmentation. Extensive simulations show that our kernel substantially improves clustering accuracy. We apply the proposed mixture model to DNase-seq data from the Encyclopedia of DNA Elements project, which results in biologically meaningful clusters corresponding to binding events of two common TFs.",
+  "abstract_zh": "在分层框架内对多个采样密度进行建模，能够实现跨样本的信息借用。这些“密度随机效应”可作为潜变量模型中的核，用以表示可交换的子组或聚类。这些核的一个关键特征是其诱导的（函数性）协方差，该协方差决定了在混合模型中密度如何被分组。我们的动机问题是对来自高通量DNase-seq实验的染色质可及性图谱进行聚类，以检测转录因子（TF）结合。TF结合通常产生具有空间模式的足迹图谱，从而在基因组位置间形成长程依赖性。现有的非参数分层模型施加了限制性的协方差假设，无法适应此类依赖性，往往导致生物学上无信息的聚类。我们提出一种非参数密度核，其足够灵活以捕捉多样的协方差结构，并适应TF足迹的各种空间模式。该核通过具有稀疏精度矩阵的多元logit-normal模型指定二元树分裂概率。使用此核的潜变量模型的贝叶斯推断通过Polya-Gamma增广的吉布斯采样实现。广泛模拟表明，我们的核显著提高了聚类准确性。我们将所提出的混合模型应用于DNA元素百科全书项目的DNase-seq数据，结果产生了对应于两种常见TF结合事件的生物学上有意义的聚类。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42757766/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42757766/",
+  "paper_page_path": "papers/pubmed/42757766/index.html"
+}

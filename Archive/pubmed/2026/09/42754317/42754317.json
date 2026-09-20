@@ -1,0 +1,276 @@
+{
+  "identity": {
+    "pmid": "42754317",
+    "doi": "10.1016/bs.ctdb.2026.06.007",
+    "title": "How advances in chromosome conformation capture (3C) methods are reshaping our understanding of gene regulation in hematopoiesis."
+  },
+  "content": {
+    "abstract": "The three-dimensional organization of the DNA within the nucleus plays a key role in regulating gene expression. Over the past two decades, advances in chromosome conformation capture (3C) technologies, in tandem with other methods, have shown that the genome forms a complex structure at multiple scales. Early studies identified large-scale structures such as chromosome territories, compartments and topologically associating domains (TADs). As the resolution of 3C techniques has improved, it has become possible to identify contacts between regulatory elements in detail and more recently, it has become possible to define intricate structures within cis-regulatory elements. In this chapter, we review the development of 3C-based methodologies and discuss the strengths and limitations of the different approaches. We examine how these technologies have refined our understanding of genome organization and gene regulation. Recent high-resolution studies reveal that chromatin architecture extends beyond classical domain structures to include nanoscale organization. Integration of 3C data with super-resolution imaging and molecular dynamics simulations supports a model in which genome folding is governed by the biophysical properties of chromatin.",
+    "keywords": [
+      "Chromatin structure",
+      "Chromosome conformation capture",
+      "Cis-regulatory elements",
+      "Enhancer-promoter interactions",
+      "Gene regulation",
+      "Micro Capture-C",
+      "Molecular dynamics simulations",
+      "Nuclear organization"
+    ],
+    "mesh_terms": [
+      "Animals",
+      "Humans",
+      "*Hematopoiesis/genetics",
+      "*Chromatin/chemistry/genetics",
+      "*Chromosomes/chemistry",
+      "*Gene Expression Regulation",
+      "Nucleic Acid Conformation"
+    ],
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Li, Hangpeng",
+        "Denny, Nicholas",
+        "Davies, James"
+      ],
+      "short_names": [
+        "Li H",
+        "Denny N",
+        "Davies J"
+      ],
+      "auids": [],
+      "affiliations": [
+        "MRC Molecular Haematology Unit, MRC Weatherall Institute of Molecular Medicine, Radcliffe Department of Medicine, University of Oxford, Oxford, United Kingdom.",
+        "MRC Molecular Haematology Unit, MRC Weatherall Institute of Molecular Medicine, Radcliffe Department of Medicine, University of Oxford, Oxford, United Kingdom.",
+        "Oxford National Institute of Health Research Biomedical Research Centre, University of Oxford, Oxford, United Kingdom. Electronic address: james.davies@imm.ox.ac.uk."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Li, Hangpeng",
+        "short_name": "Li H",
+        "identifiers": [],
+        "affiliations": [
+          "MRC Molecular Haematology Unit, MRC Weatherall Institute of Molecular Medicine, Radcliffe Department of Medicine, University of Oxford, Oxford, United Kingdom."
+        ]
+      },
+      {
+        "full_name": "Denny, Nicholas",
+        "short_name": "Denny N",
+        "identifiers": [],
+        "affiliations": [
+          "MRC Molecular Haematology Unit, MRC Weatherall Institute of Molecular Medicine, Radcliffe Department of Medicine, University of Oxford, Oxford, United Kingdom."
+        ]
+      },
+      {
+        "full_name": "Davies, James",
+        "short_name": "Davies J",
+        "identifiers": [],
+        "affiliations": [
+          "Oxford National Institute of Health Research Biomedical Research Centre, University of Oxford, Oxford, United Kingdom. Electronic address: james.davies@imm.ox.ac.uk."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Current topics in developmental biology"
+    ],
+    "journal_abbrev": [
+      "Curr Top Dev Biol"
+    ],
+    "pub_date": "2026",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/17 23:34",
+    "fetched_at": "2026-09-20 08:59:56"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42754317",
+      "32987449",
+      "41197626",
+      "34957106",
+      "40513402",
+      "29052195",
+      "26328275",
+      "23832846",
+      "27662870",
+      "27259200",
+      "29541161",
+      "24434548",
+      "35456393",
+      "34486654",
+      "26769147",
+      "24370013",
+      "34415531",
+      "31848476",
+      "27130552",
+      "31609405",
+      "30618540",
+      "29382556",
+      "35867248",
+      "24813616",
+      "41986002",
+      "27770354",
+      "32820401",
+      "29767704",
+      "27659987",
+      "37922325",
+      "30213728",
+      "41258946",
+      "39028499",
+      "41151055",
+      "37537310",
+      "34099014",
+      "36008657",
+      "32007290",
+      "31181064",
+      "26348399",
+      "27659988",
+      "18951182",
+      "20827597",
+      "28783961",
+      "42475469",
+      "31146487",
+      "30795893",
+      "40058875",
+      "27659989",
+      "29772275",
+      "31689436",
+      "29550705",
+      "37457299",
+      "34382189",
+      "25708464",
+      "33483495",
+      "32483172",
+      "19588094",
+      "32820396",
+      "30125668",
+      "27340173",
+      "32213323",
+      "34805161",
+      "32639553",
+      "22215806",
+      "26370411",
+      "33160979",
+      "33073863",
+      "29498513",
+      "41257569",
+      "33169569",
+      "25409831",
+      "25855284",
+      "24067610",
+      "27445307",
+      "37246873",
+      "28153411",
+      "37467757",
+      "33953379",
+      "17033623",
+      "35113722",
+      "37386239",
+      "18265398",
+      "24051548",
+      "28108933",
+      "27008015",
+      "30541598",
+      "29149895",
+      "30634466",
+      "25555574",
+      "32238933",
+      "35440598",
+      "33630271",
+      "24141950",
+      "36991220",
+      "20461051",
+      "25218583",
+      "37346038",
+      "34286910",
+      "30009946"
+    ],
+    "review": [
+      "42754317",
+      "32987449",
+      "34957106",
+      "40513402",
+      "29052195",
+      "26328275",
+      "27259200",
+      "29541161",
+      "24434548",
+      "35456393",
+      "34486654",
+      "26769147",
+      "24370013",
+      "31848476",
+      "27130552",
+      "31609405",
+      "30618540",
+      "41986002",
+      "29767704",
+      "30213728",
+      "41258946",
+      "39028499",
+      "41151055",
+      "37537310",
+      "32007290",
+      "26348399",
+      "28783961",
+      "31146487",
+      "40058875",
+      "31689436",
+      "29550705",
+      "37457299",
+      "25708464",
+      "19588094",
+      "30125668",
+      "27340173",
+      "34805161",
+      "22215806",
+      "26370411",
+      "33073863",
+      "33169569",
+      "25855284",
+      "28153411",
+      "37467757",
+      "33953379",
+      "37386239",
+      "24051548",
+      "29149895",
+      "33630271",
+      "36991220",
+      "25218583",
+      "37346038"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://linkinghub.elsevier.com/retrieve/pii/S0070-2153(26)00080-3",
+        "provider": "Elsevier Science",
+        "category": "Full Text Sources",
+        "attribute": "subscription/membership/fee required",
+        "linkname": ""
+      },
+      {
+        "url": "https://assays.cancer.gov/CPTAC-68",
+        "provider": "NCI CPTAC Assay Portal",
+        "category": "Miscellaneous",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

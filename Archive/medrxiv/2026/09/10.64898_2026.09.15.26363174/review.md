@@ -1,0 +1,88 @@
+## Review setup
+
+- **Input scope** Abstract only
+- **Assessment boundary** Claims and evidence presented in the abstract, with reference to the stated study design and data sources
+- **Shared manuscript claim summary** The authors use two sequence-to-function models, AlphaGenome and AlphaMissense, to quantify the predicted disruption of somatic mutations across 8,800 TCGA patients and 33 cancer types. They report that recurrent hotspot mutations show larger predicted protein-level effects while non-hotspot mutations show larger regulatory effects. They aggregate variant-level predictions into patient-gene disruption profiles across four modalities and report associations with tissue of origin, cancer type, microsatellite-instability status, and overall survival, including in a treatment-annotated independent cohort. They conclude that cancer-gene perturbation is continuous and multidimensional rather than discrete.
+- **Visible evidence base** Abstract text only. No figures, tables, methods, or supplementary materials were provided.
+- **Missing materials affecting confidence** Full manuscript, all figures and tables, methods description, statistical analysis details, cohort composition, model validation procedures, and the treatment-annotated cohort description are not available. The abstract reports quantitative findings without any numerical values, effect sizes, confidence intervals, or p-values.
+
+## Reviewer
+
+- **Overall assessment** The abstract presents a potentially interesting application of genomic foundation models to cancer genomics, with a conceptual shift from discrete driver mutations to continuous, multidimensional gene disruption profiles. The framing is timely given the rapid adoption of sequence-to-function models. However, the abstract alone provides insufficient evidence to evaluate the validity of the core claims. Key statistical details, validation approaches, and the nature of the survival associations are not reported. The claim that disruption profiles retain information beyond tumor mutational burden is central but cannot be assessed without the underlying analysis. The clinical relevance claim rests on an independent cohort that is not described in sufficient detail. The work is potentially significant if the technical execution matches the ambition of the framing, but the current evidence base does not allow verification.
+- **Who would be interested in the results, and why** Cancer genomics researchers interested in moving beyond driver gene paradigms, computational biologists working on sequence-to-function models, clinical oncologists interested in prognostic biomarkers, and researchers studying regulatory genomics in cancer. The integration of foundation model predictions with clinical outcomes would appeal to those working on precision oncology and biomarker discovery.
+- **Major strengths** The conceptual framing is clear and potentially impactful, shifting from discrete driver mutations to continuous disruption profiles. The use of two complementary model types, one for protein-level effects and one for regulatory effects, is sensible. The aggregation across four functional modalities is comprehensive. The inclusion of an independent treatment-annotated cohort for validation is a strength if the analysis is rigorous. The authors explicitly acknowledge the limitation of hotspot-centric views and propose a more nuanced framework.
+- **Major Concerns** 
+  - **Concern ID** R1-M1
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Statistical validity
+  - **Claim pointer** The abstract claims that higher predicted disruption is associated with overall survival among patients lacking recurrent hotspot mutations, with the strongest signal for chromatin accessibility.
+  - **Evidence pointer** Abstract, survival analysis section. Location not provided.
+  - **Concern** No effect sizes, hazard ratios, confidence intervals, p-values, or multiple-testing correction details are reported. The abstract states associations exist but provides no quantitative support. The strength of the chromatin accessibility signal is asserted without any comparative metric.
+  - **Why it matters** Survival associations in cancer genomics are highly susceptible to confounding, overfitting, and multiple testing. Without effect sizes and adjustment details, the reader cannot judge whether these associations are clinically meaningful or statistically robust. The claim that chromatin accessibility shows the strongest signal requires comparison across modalities with appropriate statistical testing.
+  - **Resolution test** Report hazard ratios with confidence intervals for each modality, specify the statistical model, list covariates, describe multiple-testing correction, and provide the number of events and patients in each analysis.
+  - **Concern ID** R1-M2
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Validation and generalizability
+  - **Claim pointer** The abstract claims that in an independent treatment-annotated cohort, gene-level disruption is associated with survival within treatment-defined subgroups.
+  - **Evidence pointer** Abstract, independent cohort section. Location not provided.
+  - **Concern** The independent cohort is not described. Its size, cancer types, treatment modalities, and whether the analysis was pre-specified or exploratory are unknown. The phrase "treatment-defined subgroups" raises questions about how many subgroups were tested and whether any correction for multiple comparisons was applied.
+  - **Why it matters** Independent validation is the cornerstone of the clinical relevance claim. Without knowing the cohort composition and the number of subgroups tested, the finding could reflect chance or selective reporting. Treatment subgroup analyses are particularly prone to false positives.
+  - **Resolution test** Describe the cohort in detail, state the number of subgroups tested, report whether the analysis was pre-registered or pre-specified, and provide the statistical significance threshold used.
+  - **Concern ID** R1-M3
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness of model application
+  - **Claim pointer** The abstract claims that AlphaGenome and AlphaMissense quantify disruption imposed by somatic mutations and that these predictions can be aggregated into meaningful patient-gene disruption profiles.
+  - **Evidence pointer** Abstract, methods description. Location not provided.
+  - **Concern** No information is provided on how the models were applied, whether they were fine-tuned or used as-is, how variant-level predictions were aggregated to gene level, how the four modalities were integrated, or whether the models were validated for this specific use case. The choice of thresholds for defining "disruption" is not described.
+  - **Why it matters** Foundation models are powerful but their outputs depend heavily on input representation, aggregation strategies, and interpretation. If the aggregation method is arbitrary or the models are applied outside their validated domain, the resulting profiles may not reflect true biological disruption. The entire downstream analysis depends on the validity of these profiles.
+  - **Resolution test** Provide a detailed methods section describing model inputs, aggregation functions, normalization procedures, and any calibration or validation of model outputs against experimental data.
+  - **Concern ID** R1-M4
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Independence from tumor mutational burden
+  - **Claim pointer** The abstract claims that disruption profiles retain information beyond tumor mutational burden.
+  - **Evidence pointer** Abstract, characterization of disruption profiles. Location not provided.
+  - **Concern** This is a critical claim for the novelty of the work, but no analysis is shown. It is unclear how the comparison was performed, whether TMB was included as a covariate, or whether the incremental value was quantified.
+  - **Why it matters** If disruption profiles are simply a proxy for TMB, the clinical and biological claims are substantially weakened. The claim of added value beyond TMB is central to the paper's contribution and must be rigorously demonstrated.
+  - **Resolution test** Show a direct comparison of model performance with and without TMB adjustment, report the incremental predictive value, and specify the statistical approach used to establish independence.
+- **Minor Comments** 
+  - **Concern ID** R1-m1
+  - **Severity** Minor
+  - **Axis** Clarity of terminology
+  - **Affected element** "Disruption profiling" and "disruption profiles"
+  - **Evidence pointer** Abstract, title and throughout. Location not provided.
+  - **Issue** The term "disruption" is used throughout but never formally defined. It is unclear whether this refers to a specific computational output or a conceptual construct.
+  - **Required correction** Provide a formal definition of "disruption" in the context of each model and each modality, and clarify how the term relates to established concepts such as loss-of-function or gain-of-function.
+  - **Concern ID** R1-m2
+  - **Severity** Minor
+  - **Axis** Quantitative reporting
+  - **Affected element** All reported findings
+  - **Evidence pointer** Abstract, results sections. Location not provided.
+  - **Issue** The abstract contains no numerical results. All findings are described qualitatively, which prevents any assessment of effect magnitude.
+  - **Required correction** Include key quantitative results in the abstract, such as hazard ratios, correlation coefficients, or classification performance metrics, with confidence intervals where appropriate.
+  - **Concern ID** R1-m3
+  - **Severity** Minor
+  - **Axis** Cohort description
+  - **Affected element** TCGA cohort
+  - **Evidence pointer** Abstract, first sentence. Location not provided.
+  - **Issue** The abstract states 8,800 patients and 33 cancer types but does not specify whether this is the full TCGA pan-cancer cohort or a subset with specific data availability requirements.
+  - **Required correction** Clarify the inclusion criteria and whether any patients were excluded due to missing data or model input requirements.
+  - **Concern ID** R1-m4
+  - **Severity** Minor
+  - **Axis** Reproducibility
+  - **Affected element** Model availability
+  - **Evidence pointer** Abstract, methods. Location not provided.
+  - **Issue** The models AlphaGenome and AlphaMissense are named but their versions, access routes, and any relevant licenses are not stated.
+  - **Required correction** Provide model version information and access details in the methods or data availability section.
+
+## Risk / unsupported claims
+
+- The claim that recurrent hotspot mutations show substantially larger protein-level effects while non-hotspot mutations show larger regulatory effects is unsupported in the abstract, as no quantitative comparison is provided.
+- The claim that disruption profiles reflect tissue of origin, cancer type, and microsatellite-instability status is unsupported without showing the relevant analyses or performance metrics.
+- The claim that disruption profiles retain information beyond tumor mutational burden is unsupported and is a central assertion that requires direct evidence.
+- The claim that higher predicted disruption is associated with overall survival is unsupported without effect sizes, p-values, or model details.
+- The claim that gene-level disruption is associated with survival in treatment-defined subgroups in an independent cohort is unsupported without any description of that cohort or the analysis.
+- The overall conclusion of a "continuous, multidimensional view of cancer-gene perturbation" is a reasonable interpretation of the framing but is not established by the evidence presented in the abstract.

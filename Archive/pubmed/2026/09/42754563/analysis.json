@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42754563",
+  "title": "CoxFormer enables spatial omics inference with multimodal generative modeling.",
+  "authors": "Yang, Yiyang; Liao, Xu; Zhang, Haoyu; Wu, Yida; Jiao, Yuling; Sun, Xiaobo; Wang, Yao; Yu, Tianshu; Liu, Jin",
+  "journal": "Nature communications",
+  "published_date": "2026-09-18",
+  "window": {
+    "start": "2026-09-13",
+    "end": "2026-09-19"
+  },
+  "score": 3,
+  "one_liner_zh": "该文用多模态生成模型推断空间组学中未测基因表达，虽涉及染色质可及性预测，但核心是基因表达推断而非染色质三维组织建模，且无AI/分子模拟方法用于染色质空间架构，与本课题关联较弱。",
+  "abstract": "Gene co-expression maps transcriptome-wide gene-gene relationships, yet high-quality estimates cover less than half the genome. Meanwhile, spatial omics either profiles restricted in situ panels or lacks cellular resolution. Extending co-expression transcriptome-wide could overcome these limitations by inferring unassayed gene expression at subcellular resolution. Here we show that CoxFormer integrates literature-derived gene knowledge with co-expression networks from bulk tissues and large-scale single-cell atlases to learn 512-dimensional representations for 32,016 human genes. These embeddings capture functional gene relationships and serve as a generative prior for spatial inference across platforms and modalities. Without requiring a matched single-cell RNA-sequencing reference, CoxFormer supports four applications beyond measured genes: histology-based expression imputation, gene activity prediction from chromatin accessibility, subcellular super-resolution inference, and pathological region detection. Together, CoxFormer extends gene embedding from gene- and cell-level tasks to whole-transcriptome spatial inference, providing a unified framework for biological analysis beyond the limited gene coverage of current spatial omics technologies.",
+  "abstract_zh": "基因共表达描绘了全转录组范围内的基因-基因关系，然而高质量的估计仅覆盖了不到一半的基因组。与此同时，空间组学要么局限于检测受限的原位基因面板，要么缺乏细胞分辨率。将共表达扩展到全转录组范围，可以通过在亚细胞分辨率下推断未检测基因的表达来克服这些限制。在此，我们展示了CoxFormer整合了文献来源的基因知识与来自批量组织和大型单细胞图谱的共表达网络，为32,016个人类基因学习512维表示。这些嵌入捕获了功能性基因关系，并作为跨平台和模态的空间推断的生成性先验。无需匹配的单细胞RNA测序参考，CoxFormer支持超出已测量基因的四种应用：基于组织学的表达插补、从染色质可及性预测基因活性、亚细胞超分辨率推断以及病理区域检测。综上，CoxFormer将基因嵌入从基因和细胞层面的任务扩展到全转录组空间推断，为超越当前空间组学技术有限基因覆盖范围的生物学分析提供了一个统一框架。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42754563/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42754563/",
+  "paper_page_path": "papers/pubmed/42754563/index.html"
+}

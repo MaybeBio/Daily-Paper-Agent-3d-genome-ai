@@ -1,0 +1,85 @@
+## Review setup
+- **Input scope** Abstract only
+- **Assessment boundary** Claims and evidence as presented in the abstract; no full text, figures, tables, or supplementary materials were provided
+- **Shared manuscript claim summary** The authors present scHPGT, a transformer-based method for integrating unpaired single-cell RNA and ATAC sequencing data. The method uses modality-specific encoders, a regulatory-prior-guided cross-modal attention mechanism, and a domain-adversarial objective. The authors claim improved clustering agreement, label transfer, and biological structure preservation across four benchmarks, robust behavior in partial-overlap and condition-shift settings, and the ability to recover regulatory relationships and transcription factor programs from attention-derived links.
+- **Visible evidence base** Abstract text only; benchmark names (PBMC3k, mouse spleen, CITE-seq/ASAP-seq PBMC, PBMC10k) and qualitative performance statements; no quantitative metrics, no figures, no tables, no supplementary information
+- **Missing materials affecting confidence** Full manuscript, all figures and tables, quantitative performance comparisons, baseline methods, dataset preprocessing details, hyperparameter settings, ablation studies, statistical significance testing, code repository contents, and supplementary information
+
+## Reviewer
+- **Overall assessment** The abstract describes a method that addresses a relevant and technically challenging problem in single-cell multi-omics integration. The proposed architecture is plausible and the use of regulatory priors to constrain cross-modal attention is a reasonable design choice. However, the abstract provides only qualitative claims of performance with no quantitative evidence. The core claims regarding improved integration quality, biological structure preservation, and regulatory link recovery cannot be evaluated from the supplied material. The method's novelty relative to existing transformer-based integration approaches is not clearly established. The abstract is well written and accessible, but the evidence base is insufficient to assess technical soundness or to support the stated conclusions.
+- **Who would be interested in the results, and why** Computational biologists and bioinformaticians working on single-cell multi-omics integration, particularly those developing or applying deep learning methods for joint analysis of RNA and chromatin accessibility data. Researchers interested in regulatory genomics and transcription factor program inference from single-cell data may also find the attention-derived regulatory link recovery aspect relevant.
+- **Major strengths** The problem addressed is timely and important. The proposed architecture is clearly described at a conceptual level. The use of regulatory priors to guide cross-modal attention is a sensible and potentially impactful design choice. The abstract mentions evaluation across multiple benchmarks and in challenging settings (partial overlap, condition shift), which suggests attention to practical applicability.
+- **Major Concerns** 
+  - **Concern ID** R1-M1
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Evidence sufficiency
+  - **Claim pointer** The abstract claims that scHPGT "improves clustering agreement, label transfer and biological structure preservation while maintaining effective modality alignment" across four benchmarks.
+  - **Evidence pointer** Results section, abstract; no quantitative data provided
+  - **Concern** The performance claims are made without any numerical results, baseline comparisons, or statistical measures. No metrics such as adjusted Rand index, normalized mutual information, label transfer accuracy, or batch entropy are reported. No comparison to existing methods is shown.
+  - **Why it matters** Without quantitative evidence and baseline comparisons, the claimed improvements cannot be verified. The reader cannot assess whether the improvements are meaningful, marginal, or potentially within noise. This is the central claim of the paper and is currently unsupported.
+  - **Resolution test** Provide quantitative results for all four benchmarks, including comparison to at least two or three established integration methods, with appropriate metrics and statistical significance testing.
+  - **Concern ID** R1-M2
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Evidence sufficiency
+  - **Claim pointer** The abstract claims that in partial-overlap and condition-shift settings, scHPGT "aligns shared populations without forcing unmatched or condition-specific states into inappropriate correspondence."
+  - **Evidence pointer** Results section, abstract; no details provided
+  - **Concern** This is a nuanced and important claim, but no details are given about how these settings were constructed, what metrics were used to evaluate appropriate versus inappropriate correspondence, or how this behavior compares to other methods.
+  - **Why it matters** Over-alignment is a known failure mode in integration methods. The claim that scHPGT avoids this is potentially valuable, but without a clear evaluation protocol and quantitative evidence, it remains an assertion.
+  - **Resolution test** Describe the experimental setup for partial-overlap and condition-shift scenarios, define the evaluation metrics, and show quantitative comparisons demonstrating that scHPGT preserves unmatched or condition-specific states while aligning shared populations.
+  - **Concern ID** R1-M3
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Evidence sufficiency
+  - **Claim pointer** The abstract claims that attention-derived links "recover regulatory relationships, highlight marker-gene regulatory regions, recover transcription factor programs and produce regulatory activity profiles consistent with cell-type-specific transcriptional programs."
+  - **Evidence pointer** Results section, abstract; no examples or validation shown
+  - **Concern** These are strong biological claims. No evidence is presented to support them, such as comparison to known regulatory databases, enrichment analyses, or experimental validation. The term "recover" implies ground truth comparison, but no such comparison is described.
+  - **Why it matters** If the attention mechanism can indeed recover meaningful regulatory links, this would be a significant contribution beyond integration quality. However, without validation, these claims are speculative.
+  - **Resolution test** Provide validation of attention-derived links against known regulatory interactions, show specific examples of marker-gene regulatory regions, and demonstrate that recovered transcription factor programs are statistically enriched and consistent with known biology.
+  - **Concern ID** R1-M4
+  - **Severity** Major
+  - **Blocking** No
+  - **Axis** Novelty and positioning
+  - **Claim pointer** The abstract positions scHPGT as a "regulatory-prior-guided" integration method but does not clearly distinguish it from existing transformer-based or prior-based integration approaches.
+  - **Evidence pointer** Motivation section, abstract; no related work discussion provided
+  - **Concern** The abstract does not describe what existing methods do and how scHPGT differs from them. The novelty of the regulatory-prior-guided attention mechanism relative to other attention-based integration methods is not established.
+  - **Why it matters** For a methods paper, clear positioning relative to prior work is essential. Without this, the reader cannot assess the contribution's significance.
+  - **Resolution test** In the full manuscript, provide a clear comparison to existing transformer-based integration methods and prior-based approaches, and explicitly state the novel contributions.
+- **Minor Comments** 
+  - **Concern ID** R1-m1
+  - **Severity** Minor
+  - **Axis** Clarity
+  - **Affected element** Method description
+  - **Evidence pointer** Methods section, abstract
+  - **Issue** The abstract states that scHPGT uses a "domain-adversarial objective" but does not explain how this interacts with the regulatory-prior-guided attention mechanism. It is unclear whether the adversarial component could potentially override the prior constraints.
+  - **Required correction** Clarify the relationship between the adversarial objective and the prior-guided attention, and discuss any potential tension between modality alignment and prior preservation.
+  - **Concern ID** R1-m2
+  - **Severity** Minor
+  - **Axis** Reproducibility
+  - **Affected element** Availability statement
+  - **Evidence pointer** Availability section, abstract
+  - **Issue** The abstract states that code and datasets are released at a GitHub URL, but the repository contents are not described. It is unclear whether the code is documented, whether preprocessing scripts are included, and whether the datasets are publicly accessible or require separate download.
+  - **Required Correction** In the full manuscript, describe the repository structure, include usage instructions, and specify data access details.
+  - **Concern ID** R1-m3
+  - **Severity** Minor
+  - **Axis** Scope of evaluation
+  - **Affected element** Benchmark selection
+  - **Evidence pointer** Results section, abstract
+  - **Issue** The four benchmarks listed are all relatively small or standard datasets. It is unclear whether the method scales to larger datasets or handles more complex tissue types.
+  - **Required Correction** In the full manuscript, include runtime and memory benchmarks, and discuss scalability considerations.
+- **Technical failings that need to be addressed before the case is established** R1-M1, R1-M2, and R1-M3 are blocking. The central performance claims, the behavior in partial-overlap settings, and the biological interpretability claims are all unsupported by quantitative evidence in the supplied material. Without these, the case for scHPGT as a useful method is not established.
+- **Assessment against Nature-style criteria** 
+  - Originality: The use of regulatory priors to guide cross-modal attention in single-cell integration appears to be a reasonable design choice, but the abstract does not provide enough context to assess whether this is a novel contribution relative to existing attention-based integration methods. The originality claim is currently not established.
+  - Scientific importance: The problem of integrating unpaired single-cell RNA and ATAC data is important and actively researched. If the method delivers the claimed improvements, it would be of interest to the single-cell genomics community. However, the importance of the specific contribution cannot be assessed without quantitative evidence.
+  - Interdisciplinary readership: The work sits at the intersection of computational biology, machine learning, and regulatory genomics. The abstract is written in a way that is accessible to a broad computational biology audience, but the lack of quantitative results limits its appeal to readers outside the immediate integration methods community.
+  - Technical soundness: The architecture is described at a conceptual level and appears plausible. However, technical soundness cannot be assessed without details on implementation, training, hyperparameters, and evaluation protocols. The absence of quantitative results is a major limitation.
+  - Readability for nonspecialists: The abstract is clearly written and the key concepts are explained in accessible terms. The motivation is well stated. However, the lack of results makes it difficult for a nonspecialist to gauge the method's value.
+- **Recommendation posture** Currently not established from the provided evidence. The abstract describes a plausible method and addresses an important problem, but the absence of quantitative results, baseline comparisons, and validation of biological claims means that the core conclusions cannot be evaluated. The manuscript may become publishable if the full text provides the missing evidence and addresses the blocking concerns.
+
+## Risk / unsupported claims
+- The claim that scHPGT "improves clustering agreement, label transfer and biological structure preservation" across four benchmarks is unsupported without quantitative metrics and baseline comparisons.
+- The claim that scHPGT "aligns shared populations without forcing unmatched or condition-specific states into inappropriate correspondence" is unsupported without a described evaluation protocol and quantitative results.
+- The claim that attention-derived links "recover regulatory relationships, highlight marker-gene regulatory regions, recover transcription factor programs and produce regulatory activity profiles consistent with cell-type-specific transcriptional programs" is unsupported without validation against known biology or ground truth data.
+- The claim that scHPGT "maintains effective modality alignment" is unsupported without quantitative alignment metrics.
+- The overall performance of scHPGT relative to existing methods is not assessable from the supplied material.

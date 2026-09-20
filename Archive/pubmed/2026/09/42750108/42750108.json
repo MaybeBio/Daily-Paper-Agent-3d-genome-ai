@@ -1,0 +1,280 @@
+{
+  "identity": {
+    "pmid": "42750108",
+    "doi": "10.1002/advs.77719",
+    "title": "Molecular Bases and Genetic Design of Rice Disease Resistance for Optimized Yield and Sustainable Agriculture."
+  },
+  "content": {
+    "abstract": "Rice diseases continue to undermine yield stability and threaten the sustainability of rice production. The central challenge is therefore not simply to maximize immune activation, but to identify genetic interventions that remain effective across diverse pathogen races and environmental conditions without imposing excessive penalties on growth or yield. Here, we synthesize the molecular basis of rice immunity from a design-oriented perspective. We first examine cell-surface pattern-recognition receptors and intracellular nucleotide-binding leucine-rich repeat receptors, and then assess the shared signaling hubs and defence outputs that connect pathogen perception to antimicrobial responses. Rather than treating these components as equivalent breeding targets, we compare their translational potential according to resistance spectrum, anticipated durability, tunability, pleiotropic risk, and the strength of field evidence. We further discuss breeding strategies based on receptor engineering, editing of susceptibility genes and cis-regulatory elements, post-translational motif engineering, pathogen-inducible and upstream open reading frame-mediated regulation, resistance-gene stacking and artificial intelligence-assisted prediction. We argue that rational resistance design in rice should move beyond constitutive immune activation toward allele-specific, quantitative, spatially restricted and infection-responsive regulation. Integrating mechanistic insights with precision genome editing, accelerated breeding and responsible deployment offers a practical route to durable, yield-compatible disease resistance while reducing dependence on chemical control.",
+    "keywords": [
+      "breeding strategy",
+      "disease resistance",
+      "genetic improvement",
+      "high yield",
+      "immune mechanism",
+      "rice"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Hou, Xinyue",
+        "Cui, Yuanjiang",
+        "Ding, Chaoqing",
+        "Qian, Qian",
+        "Ren, Deyong"
+      ],
+      "short_names": [
+        "Hou X",
+        "Cui Y",
+        "Ding C",
+        "Qian Q",
+        "Ren D"
+      ],
+      "auids": [
+        "ORCID: 0000-0002-0349-4937",
+        "ORCID: 0000-0003-1140-3633"
+      ],
+      "affiliations": [
+        "State Key Laboratory of Rice Biology and Breeding, China National Rice Research Institute, Hangzhou, China.",
+        "State Key Laboratory of Rice Biology and Breeding, China National Rice Research Institute, Hangzhou, China.",
+        "State Key Laboratory of Rice Biology and Breeding, China National Rice Research Institute, Hangzhou, China.",
+        "State Key Laboratory of Rice Biology and Breeding, China National Rice Research Institute, Hangzhou, China.",
+        "State Key Laboratory of Rice Biology and Breeding, China National Rice Research Institute, Hangzhou, China."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Hou, Xinyue",
+        "short_name": "Hou X",
+        "identifiers": [],
+        "affiliations": [
+          "State Key Laboratory of Rice Biology and Breeding, China National Rice Research Institute, Hangzhou, China."
+        ]
+      },
+      {
+        "full_name": "Cui, Yuanjiang",
+        "short_name": "Cui Y",
+        "identifiers": [],
+        "affiliations": [
+          "State Key Laboratory of Rice Biology and Breeding, China National Rice Research Institute, Hangzhou, China."
+        ]
+      },
+      {
+        "full_name": "Ding, Chaoqing",
+        "short_name": "Ding C",
+        "identifiers": [],
+        "affiliations": [
+          "State Key Laboratory of Rice Biology and Breeding, China National Rice Research Institute, Hangzhou, China."
+        ]
+      },
+      {
+        "full_name": "Qian, Qian",
+        "short_name": "Qian Q",
+        "identifiers": [
+          "0000-0002-0349-4937"
+        ],
+        "affiliations": [
+          "State Key Laboratory of Rice Biology and Breeding, China National Rice Research Institute, Hangzhou, China."
+        ]
+      },
+      {
+        "full_name": "Ren, Deyong",
+        "short_name": "Ren D",
+        "identifiers": [
+          "0000-0003-1140-3633"
+        ],
+        "affiliations": [
+          "State Key Laboratory of Rice Biology and Breeding, China National Rice Research Institute, Hangzhou, China."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Advanced science (Weinheim, Baden-Wurttemberg, Germany)"
+    ],
+    "journal_abbrev": [
+      "Adv Sci (Weinh)"
+    ],
+    "pub_date": "2026 Sep 16",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/17 05:35",
+    "fetched_at": "2026-09-20 08:59:56"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42750108",
+      "42475469",
+      "42464962",
+      "27499678",
+      "41064763",
+      "42737980",
+      "37851522",
+      "35850632",
+      "36145787",
+      "16245793",
+      "41146286",
+      "41232877",
+      "41981716",
+      "39940724",
+      "41829717",
+      "42567930",
+      "41130309",
+      "32197052",
+      "42175697",
+      "39769161",
+      "42033623",
+      "42117889",
+      "36321557",
+      "41751881",
+      "40941863",
+      "37569437",
+      "40070798",
+      "29642631",
+      "39568207",
+      "37486356",
+      "40617992",
+      "40733348",
+      "40508369",
+      "34372692",
+      "39961261",
+      "29226970",
+      "42711984",
+      "36969097",
+      "41304643",
+      "35891620",
+      "28514448",
+      "42194979",
+      "42141261",
+      "41524271",
+      "36010612",
+      "39861570",
+      "24942051",
+      "32979566",
+      "34494175",
+      "26635817",
+      "27888533",
+      "30733489",
+      "38376569",
+      "33845181",
+      "41598917",
+      "42706462",
+      "42201463",
+      "35668808",
+      "28154240",
+      "32849710",
+      "30967012",
+      "42714646",
+      "42462469",
+      "39944814",
+      "34615543",
+      "41300773",
+      "42332560",
+      "38988891",
+      "35290527",
+      "39460780",
+      "40470369",
+      "42503342",
+      "34769087",
+      "31686256",
+      "40434651",
+      "36646829",
+      "41598965",
+      "41578696",
+      "41951741",
+      "28191641",
+      "20707904",
+      "41187089",
+      "38743906",
+      "42280680",
+      "33488650",
+      "38100249",
+      "35728759",
+      "41487365",
+      "25869921",
+      "41437324",
+      "40916382",
+      "40094775",
+      "40245288",
+      "25198435",
+      "24280417",
+      "39995605",
+      "41074938",
+      "42739485",
+      "40439895",
+      "34702740"
+    ],
+    "review": [
+      "42750108",
+      "42464962",
+      "41064763",
+      "42737980",
+      "35850632",
+      "36145787",
+      "41232877",
+      "41981716",
+      "39940724",
+      "41829717",
+      "42567930",
+      "41130309",
+      "39769161",
+      "42033623",
+      "42117889",
+      "36321557",
+      "41751881",
+      "40941863",
+      "37569437",
+      "40070798",
+      "29642631",
+      "39568207",
+      "40617992",
+      "40508369",
+      "39961261",
+      "42711984",
+      "36969097",
+      "41304643",
+      "42194979",
+      "42141261",
+      "41524271",
+      "32979566",
+      "26635817",
+      "41598917",
+      "42706462",
+      "32849710",
+      "42714646",
+      "38988891",
+      "39460780",
+      "40470369",
+      "42503342",
+      "34769087",
+      "40434651",
+      "41598965",
+      "38743906",
+      "42280680",
+      "33488650",
+      "35728759",
+      "40094775",
+      "25198435",
+      "39995605",
+      "42739485"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [],
+    "text_mined": []
+  }
+}

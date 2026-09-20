@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42758136",
+  "title": "Regulatory-prior-guided attention preserves biological structure during unpaired single-cell RNA-ATAC integration.",
+  "authors": "Cheng, Zhenglong; Zhang, Jiao; Zhang, Shixiong",
+  "journal": "Bioinformatics (Oxford, England)",
+  "published_date": "2026-09-18",
+  "window": {
+    "start": "2026-09-13",
+    "end": "2026-09-19"
+  },
+  "score": 5,
+  "one_liner_zh": "该文提出基于调控先验引导的Transformer模型scHPGT，整合单细胞RNA与ATAC数据以保留生物结构，虽涉及染色质可及性调控，但聚焦单细胞多组学整合而非三维基因组空间架构建模，方法可迁移性有限。",
+  "abstract": "MOTIVATION: Single-cell RNA sequencing and single-cell ATAC sequencing provide complementary views of transcriptional output and chromatin regulatory potential, but integrating unpaired profiles remains challenging because the modalities differ in feature space, sparsity and noise. Existing approaches often frame integration as distribution matching, which can over-align biologically distinct, condition-specific or modality-specific cell states. We present scHPGT, a single-cell Heterogeneous Prior-Guided Transformer for regulatory-prior-guided integration of unpaired RNA and chromatin accessibility profiles. scHPGT uses modality-specific encoders to model RNA and ATAC signals, a prior-guided cross-modal Transformer to constrain gene-peak attention using regulatory links, and a domain-adversarial objective to reduce modality-specific discrepancies in a shared latent space. RESULTS: Across PBMC3k, mouse spleen, CITE-seq/ASAP-seq PBMC and PBMC10k benchmarks, scHPGT improves clustering agreement, label transfer and biological structure preservation while maintaining effective modality alignment. In partial-overlap and condition-shift settings, scHPGT aligns shared populations without forcing unmatched or condition-specific states into inappropriate correspondence. Attention-derived links recover regulatory relationships, highlight marker-gene regulatory regions, recover transcription factor programs and produce regulatory activity profiles consistent with cell-type-specific transcriptional programs. AVAILABILITY AND IMPLEMENTATION: Code and datasets are released at https://github.com/zlCreator/scHPGT. SUPPLEMENTARY INFORMATION: Supplementary data are available at Bioinformatics online.",
+  "abstract_zh": "动机：单细胞RNA测序和单细胞ATAC测序提供了转录输出和染色质调控潜力的互补视角，但整合未配对图谱仍具挑战性，因为模态在特征空间、稀疏性和噪声方面存在差异。现有方法通常将整合视为分布匹配，这可能过度对齐生物学上不同、条件特异性或模态特异性的细胞状态。我们提出scHPGT，一种单细胞异质性先验引导的Transformer，用于调控先验引导的未配对RNA和染色质可及性图谱整合。scHPGT使用模态特异性编码器建模RNA和ATAC信号，一个先验引导的跨模态Transformer利用调控链接约束基因-峰注意力，以及一个域对抗目标以减少共享潜在空间中的模态特异性差异。结果：在PBMC3k、小鼠脾脏、CITE-seq/ASAP-seq PBMC和PBMC10k基准测试中，scHPGT在保持有效模态对齐的同时，提高了聚类一致性、标签转移和生物学结构保留。在部分重叠和条件偏移设置中，scHPGT对齐共享群体，而不强制不匹配或条件特异性状态进入不适当的对应关系。注意力衍生的链接恢复调控关系，突出标记基因调控区域，恢复转录因子程序，并产生与细胞类型特异性转录程序一致的调控活性谱。可用性和实现：代码和数据集发布在https://github.com/zlCreator/scHPGT。补充信息：补充数据可在Bioinformatics在线获取。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42758136/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42758136/",
+  "paper_page_path": "papers/pubmed/42758136/index.html"
+}

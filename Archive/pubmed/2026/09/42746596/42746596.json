@@ -1,0 +1,400 @@
+{
+  "identity": {
+    "pmid": "42746596",
+    "doi": "10.1155/ijog/2966459",
+    "title": "Mechanistic Perspectives From Genomics and Pangenomics of Medicinal and Aromatic Plants: Linking Genome Architecture to Phytochemical Diversity."
+  },
+  "content": {
+    "abstract": "Medicinal and aromatic plants (MAPs) produce a remarkable diversity of specialized metabolites with significant pharmaceutical, nutraceutical, and industrial value. Although advances in long-read sequencing, chromosome-scale genome assembly, and pangenomics have greatly expanded genomic resources, the mechanistic links between genome architecture and phytochemical diversity remain incompletely understood. The present review synthesizes current evidence describing how structural genomic variation may contribute to phytochemical diversity, while acknowledging that many proposed genome-to-metabolite relationships require further experimental validation. Examples illustrate how genome architecture is associated with specialized-metabolite biosynthesis through multiple regulatory processes. However, the strength of supporting evidence varies considerably among MAP species. Moreover, relatively few genome-to-metabolite relationships have been confirmed through direct functional validation. We further discuss how pangenomics, multiomics integration, genome editing, synthetic biology, and artificial intelligence support the discovery, validation, and engineering of specialized metabolic pathways. Casual conclusions are evaluated according to the strength of available evidence, highlighting where causal relationships have been experimentally established and where conclusions remain primarily association-based. Overall, this review provides an integrated conceptual and evidence-based perspective summarizing proposed relationships between genome architecture and phytochemical diversity and outlines future priorities for functional genomics, precision breeding, metabolic engineering, and sustainable utilization of MAPs.",
+    "keywords": [
+      "artificial intelligence",
+      "biosynthetic gene clusters",
+      "mechanistic genomics",
+      "metabolic engineering",
+      "multiomics integration",
+      "pangenomics"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Saini, Himanshu",
+        "Yadav, Jyoti",
+        "Johar, Vishal",
+        "Vyas, Shalu",
+        "Jaryan, Vikrant",
+        "Kumar, Atin",
+        "Nanda, Deepak",
+        "Kumar, Anand",
+        "Kaushik, Jeevan Jyoti",
+        "Shamkuwar, Sahil",
+        "Singh, Shubham"
+      ],
+      "short_names": [
+        "Saini H",
+        "Yadav J",
+        "Johar V",
+        "Vyas S",
+        "Jaryan V",
+        "Kumar A",
+        "Nanda D",
+        "Kumar A",
+        "Kaushik JJ",
+        "Shamkuwar S",
+        "Singh S"
+      ],
+      "auids": [
+        "ORCID: 0009-0000-7852-6262",
+        "ORCID: 0000-0002-5639-1771",
+        "ORCID: 0000-0003-0409-8642",
+        "ORCID: 0000-0002-1653-2146",
+        "ORCID: 0000-0003-2672-1562",
+        "ORCID: 0000-0002-2467-6326",
+        "ORCID: 0000-0003-4561-157X",
+        "ORCID: 0009-0002-7494-9967",
+        "ORCID: 0009-0007-6446-9843"
+      ],
+      "affiliations": [
+        "School of Applied Natural Science, Adama Science and Technology University, Adama, Ethiopia, astu.edu.et.",
+        "School of Agricultural Sciences, Shri Guru Ram Rai University, Dehradun, Uttarakhand, India.",
+        "School of Agriculture, Galgotias University, Greater Noida, India, galgotiasuniversity.edu.in.",
+        "School of Agriculture, Lovely Professional University, Phagwara, Punjab, India, lpu.in.",
+        "University Institute of Agriculture, Sant Baba Bhag Singh University, Jalandhar, Punjab, India, sbbsuniversity.in.",
+        "University Institute of Agriculture, Sant Baba Bhag Singh University, Jalandhar, Punjab, India, sbbsuniversity.in.",
+        "School of Agriculture, Uttaranchal University, Dehradun, Uttarakhand, India, uttaranchaluniversity.ac.in.",
+        "Tula's Institute of Pharmacy, Dehradun, Uttarakhand, India.",
+        "Faculty of Agricultural Sciences, GLA University, Mathura, Uttar Pradesh, India, gla.ac.in.",
+        "School of Basic & Applied Sciences, Shri Guru Ram Rai University, Dehradun, Uttarakhand, India.",
+        "Department of Genetics and Plant Breeding, Institute of Agricultural Sciences, Banaras Hindu University, Varanasi, Uttar Pradesh, India, bhu.ac.in.",
+        "Plant Breeding Graduate Program, University of Florida, Gainesville, Florida, USA, ufl.edu."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Saini, Himanshu",
+        "short_name": "Saini H",
+        "identifiers": [
+          "0009-0000-7852-6262"
+        ],
+        "affiliations": [
+          "School of Applied Natural Science, Adama Science and Technology University, Adama, Ethiopia, astu.edu.et.",
+          "School of Agricultural Sciences, Shri Guru Ram Rai University, Dehradun, Uttarakhand, India."
+        ]
+      },
+      {
+        "full_name": "Yadav, Jyoti",
+        "short_name": "Yadav J",
+        "identifiers": [],
+        "affiliations": [
+          "School of Agriculture, Galgotias University, Greater Noida, India, galgotiasuniversity.edu.in."
+        ]
+      },
+      {
+        "full_name": "Johar, Vishal",
+        "short_name": "Johar V",
+        "identifiers": [
+          "0000-0002-5639-1771"
+        ],
+        "affiliations": [
+          "School of Agriculture, Lovely Professional University, Phagwara, Punjab, India, lpu.in."
+        ]
+      },
+      {
+        "full_name": "Vyas, Shalu",
+        "short_name": "Vyas S",
+        "identifiers": [],
+        "affiliations": [
+          "University Institute of Agriculture, Sant Baba Bhag Singh University, Jalandhar, Punjab, India, sbbsuniversity.in."
+        ]
+      },
+      {
+        "full_name": "Jaryan, Vikrant",
+        "short_name": "Jaryan V",
+        "identifiers": [
+          "0000-0003-0409-8642"
+        ],
+        "affiliations": [
+          "University Institute of Agriculture, Sant Baba Bhag Singh University, Jalandhar, Punjab, India, sbbsuniversity.in."
+        ]
+      },
+      {
+        "full_name": "Kumar, Atin",
+        "short_name": "Kumar A",
+        "identifiers": [
+          "0000-0002-1653-2146"
+        ],
+        "affiliations": [
+          "School of Agriculture, Uttaranchal University, Dehradun, Uttarakhand, India, uttaranchaluniversity.ac.in."
+        ]
+      },
+      {
+        "full_name": "Nanda, Deepak",
+        "short_name": "Nanda D",
+        "identifiers": [
+          "0000-0003-2672-1562"
+        ],
+        "affiliations": [
+          "Tula's Institute of Pharmacy, Dehradun, Uttarakhand, India."
+        ]
+      },
+      {
+        "full_name": "Kumar, Anand",
+        "short_name": "Kumar A",
+        "identifiers": [
+          "0000-0002-2467-6326"
+        ],
+        "affiliations": [
+          "Faculty of Agricultural Sciences, GLA University, Mathura, Uttar Pradesh, India, gla.ac.in."
+        ]
+      },
+      {
+        "full_name": "Kaushik, Jeevan Jyoti",
+        "short_name": "Kaushik JJ",
+        "identifiers": [
+          "0000-0003-4561-157X"
+        ],
+        "affiliations": [
+          "School of Basic & Applied Sciences, Shri Guru Ram Rai University, Dehradun, Uttarakhand, India."
+        ]
+      },
+      {
+        "full_name": "Shamkuwar, Sahil",
+        "short_name": "Shamkuwar S",
+        "identifiers": [
+          "0009-0002-7494-9967"
+        ],
+        "affiliations": [
+          "Department of Genetics and Plant Breeding, Institute of Agricultural Sciences, Banaras Hindu University, Varanasi, Uttar Pradesh, India, bhu.ac.in."
+        ]
+      },
+      {
+        "full_name": "Singh, Shubham",
+        "short_name": "Singh S",
+        "identifiers": [
+          "0009-0007-6446-9843"
+        ],
+        "affiliations": [
+          "Plant Breeding Graduate Program, University of Florida, Gainesville, Florida, USA, ufl.edu."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "International journal of genomics"
+    ],
+    "journal_abbrev": [
+      "Int J Genomics"
+    ],
+    "pub_date": "2026",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/16 11:41",
+    "fetched_at": "2026-09-20 08:59:56"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42746596",
+      "42196225",
+      "41248615",
+      "39777086",
+      "42726296",
+      "42475469",
+      "41704600",
+      "42439591",
+      "42464962",
+      "42192282",
+      "33119236",
+      "41527336",
+      "35529944",
+      "39962419",
+      "33001599",
+      "42452284",
+      "42634520",
+      "36555572",
+      "41095166",
+      "41703933",
+      "26269925",
+      "32199314",
+      "28219347",
+      "42700532",
+      "41313478",
+      "34890733",
+      "26461812",
+      "42496566",
+      "42481850",
+      "33119230",
+      "27499678",
+      "40407329",
+      "42690503",
+      "41845915",
+      "42108611",
+      "35616333",
+      "42184640",
+      "42274483",
+      "28109168",
+      "30715560",
+      "29311454",
+      "42180555",
+      "41421305",
+      "37517136",
+      "41981716",
+      "41287010",
+      "27480682",
+      "42654900",
+      "42382401",
+      "41663015",
+      "41421017",
+      "33484244",
+      "39496976",
+      "32976930",
+      "42629966",
+      "30853630",
+      "29846928",
+      "42353793",
+      "41546796",
+      "42187150",
+      "32765832",
+      "39160127",
+      "36209159",
+      "42693463",
+      "32995549",
+      "42301476",
+      "42390748",
+      "40396729",
+      "27002972",
+      "36416120",
+      "41628813",
+      "36200896",
+      "42573514",
+      "42525349",
+      "42004501",
+      "41919942",
+      "29563859",
+      "42394671",
+      "42653410",
+      "36535891",
+      "42724934",
+      "40648038",
+      "40317920",
+      "33285226",
+      "28324311",
+      "38890562",
+      "41274490",
+      "33949309",
+      "30500991",
+      "42402314",
+      "41826708",
+      "42352077",
+      "42531458",
+      "40316932",
+      "40526281",
+      "41457591",
+      "42373997",
+      "40142492",
+      "42211476",
+      "42621859"
+    ],
+    "review": [
+      "42746596",
+      "42196225",
+      "41248615",
+      "39777086",
+      "42726296",
+      "41704600",
+      "42464962",
+      "42192282",
+      "41527336",
+      "35529944",
+      "39962419",
+      "42452284",
+      "36555572",
+      "41095166",
+      "32199314",
+      "28219347",
+      "42700532",
+      "41313478",
+      "34890733",
+      "26461812",
+      "42496566",
+      "42481850",
+      "42690503",
+      "41845915",
+      "42108611",
+      "42184640",
+      "42274483",
+      "30715560",
+      "29311454",
+      "42180555",
+      "41421305",
+      "37517136",
+      "41981716",
+      "41287010",
+      "42654900",
+      "41663015",
+      "41421017",
+      "33484244",
+      "39496976",
+      "32976930",
+      "42629966",
+      "30853630",
+      "42353793",
+      "41546796",
+      "42187150",
+      "32765832",
+      "39160127",
+      "32995549",
+      "27002972",
+      "41628813",
+      "42573514",
+      "42525349",
+      "42394671",
+      "42653410",
+      "40648038",
+      "40317920",
+      "33285226",
+      "28324311",
+      "41274490",
+      "30500991",
+      "41826708",
+      "42352077",
+      "40526281",
+      "41457591",
+      "40142492",
+      "42211476"
+    ],
+    "pmc": [
+      "13577190"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/pmid/42746596/",
+        "provider": "PubMed Central",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://onlinelibrary.wiley.com/doi/10.1155/ijog/2966459",
+        "provider": "Wiley",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

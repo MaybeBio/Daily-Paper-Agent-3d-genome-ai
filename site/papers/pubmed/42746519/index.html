@@ -1,0 +1,737 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Disentangling covariate effects on single-cell-resolved epigenomes with DeepDive. · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-mid">5</span>
+    <div>
+      <h1>Disentangling covariate effects on single-cell-resolved epigenomes with DeepDive.</h1>
+      <div class="meta">Moller, Andreas Fonss; Madsen, Jesper Grud Skat</div>
+      <div class="meta muted">
+        
+        <span class="journal">Patterns (New York, N.Y.)</span>
+        · 2026-09-16
+         · 全文(pmc)
+         · <a href="https://pubmed.ncbi.nlm.nih.gov/42746519/">原文</a>
+      </div>
+      <p class="one-liner">该文提出深度学习框架DeepDive，用于从单细胞ATAC-seq数据中解耦协变量效应并重建染色质可及性，虽涉及染色质水平调控特征建模，但未聚焦三维基因组空间架构，方法可迁移性有限。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">Understanding the effects of individual biological factors from single-cell-resolved epigenomic data is hindered by multicollinearity, particularly in human cohorts. We introduce DeepDive, a deep-learning framework designed to systematically disentangle known and unknown sources of variation in single-nucleus ATAC-seq data. DeepDive accurately reconstructs chromatin accessibility, outperforms state-of-the-art methods with incomplete covariate information, and robustly recovers true biological signals from even highly entangled covariates, unlocking counterfactual, &#34;what-if,&#34; analyses. Applying DeepDive to pancreatic islet cells, we perform counterfactual analyses to prioritize covariates associated with a type 2 diabetes-linked beta-cell subtype and nominate transcription regulators. DeepDive offers a powerful and unbiased tool for mechanistic discovery in complex human disease cohorts.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">从单细胞分辨率的表观基因组数据中理解个体生物学因素的影响，受到多重共线性的阻碍，尤其是在人类队列中。我们引入了DeepDive，这是一个深度学习框架，旨在系统性地解开单核ATAC-seq数据中已知和未知的变异来源。DeepDive能够准确重建染色质可及性，在协变量信息不完整的情况下优于最先进的方法，并且即使面对高度纠缠的协变量也能稳健地恢复真实的生物学信号，从而解锁反事实的“假设”分析。将DeepDive应用于胰岛细胞，我们进行反事实分析，以优先考虑与2型糖尿病相关的β细胞亚型相关的协变量，并提名转录调控因子。DeepDive为复杂人类疾病队列中的机制发现提供了一个强大且无偏的工具。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：Disentangling covariate effects on single-cell-resolved epigenomes with DeepDive</li>
+<li><strong>作者</strong>：Moller, Andreas Fonss; Madsen, Jesper Grud Skat</li>
+<li><strong>单位</strong>：未提供（通讯作者所属为丹麦南丹麦大学，依据邮箱域名 bmb.sdu.dk 推断，但原文未明确列出单位列表）</li>
+<li><strong>期刊/平台</strong>：Patterns (New York, N.Y.)</li>
+<li><strong>年份</strong>：2026-09-16（在线日期）</li>
+<li><strong>论文类型</strong>：方法学论文（含应用示范）</li>
+<li><strong>领域</strong>：单细胞表观基因组学 × 深度生成模型 × 因果/反事实推断</li>
+<li><strong>关键词</strong>：snATAC-seq、协变量解缠（covariate disentanglement）、反事实预测、变分自编码器、对抗学习、染色质可及性</li>
+<li><strong>DOI/arXiv</strong>：10.1016/j.patter.2026.101589</li>
+<li><strong>代码</strong>：https://github.com/madsen-lab/DeepDive（Python 包）；https://github.com/madsen-lab/DeepDive_reproducibility（复现脚本）；Zenodo: https://zenodo.org/records/19690489</li>
+<li><strong>数据</strong>：公开数据集（NeuroIPS17 GSE194122、Kidney GSE151302、GCC GSE162170、sciATAC-seq GSE149683、Pancreas GSE169453）</li>
+<li><strong>阅读日期</strong>：未提供</li>
+<li><strong>在课题方向中的位置</strong>：本文属于「三维基因组/染色质组织 × AI 方法」中的<strong>单细胞染色质可及性建模</strong>分支。与三维基因组直接关联有限，但其核心问题——<strong>从高度共线的协变量中分离因果效应</strong>——与三维基因组中解析「CTCF/ cohesin/转录因子/序列特征对染色质结构的独立贡献」问题高度同构。其反事实预测框架（在 latent space 中操纵协变量嵌入）可迁移至三维基因组的结构预测与机理推断。</li>
+</ul>
+<hr />
+<h2>02 一句话总结</h2>
+<p>DeepDive 是一个双网络深度生成框架（对抗解缠已知协变量 + 条件变分自编码器建模残差），用于从 snATAC-seq 数据中解缠共线协变量的效应，实现染色质可及性的准确重建、差异可及性检验和反事实预测，并在人类胰岛数据中优先排序了与 T2D 相关 beta 细胞亚型关联的转录调控因子。</p>
+<hr />
+<h2>03 研究问题</h2>
+<p><strong>具体问题</strong>：在单细胞分辨率的表观基因组数据（snATAC-seq）中，如何从高度共线（multicollinear）的生物学和技术协变量中分离出每个协变量对染色质可及性的独立效应？</p>
+<p><strong>为什么重要</strong>：人类队列研究中，协变量天然共线（如 T2D 与 BMI、年龄、HbA1c 高度相关）。传统统计方法（如 Signac、ArchR 中实现的）在共线下产生不稳定、有偏的效应估计，导致生物学信号被遮蔽或错误归因。准确解缠协变量效应是理解疾病机制、识别因果调控因子的前提。</p>
+<p><strong>现有方法为何不足</strong>：
+1. Signac/ArchR 等广泛使用的工具采用线性模型或简单回归，无法建模非线性交互；
+2. 现有深度学习方法（Biolord、DrVI）要么针对 scRNA-seq 设计，要么只解缠 latent factors 而非显式协变量，要么无法有效处理共线协变量；
+3. 缺乏对未知变异来源的显式建模和量化。</p>
+<p><strong>精确研究问题（Can...?）</strong>：Can a deep generative framework with adversarial disentanglement and multi-decoder uncertainty quantification accurately estimate covariate-specific effects on single-cell chromatin accessibility, even when covariates are highly multicollinear and partially unobserved?</p>
+<hr />
+<h2>04 背景与发展脉络</h2>
+<blockquote>
+<p>注：此脉络基于本文引用与论述重建，标注为「仅本文框架」，未经外部系统核验。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>代表方法</th>
+<th>优点</th>
+<th>局限</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>批量差异分析</td>
+<td>Wilcoxon rank-sum、t-test（scanpy 实现）</td>
+<td>简单、计算快</td>
+<td>无法同时建模多个协变量；共线下效应泄漏严重</td>
+</tr>
+<tr>
+<td>线性回归框架</td>
+<td>Signac、ArchR 中的回归/线性模型</td>
+<td>可纳入多个协变量</td>
+<td>假设线性可加；共线下估计不稳定；无法建模非线性交互</td>
+</tr>
+<tr>
+<td>深度生成模型（scRNA-seq 导向）</td>
+<td>Biolord、DrVI</td>
+<td>可学习非线性表示；可解缠 latent factors</td>
+<td>非为 ATAC-seq 设计；对显式协变量的解缠能力有限；共线场景下表现不佳</td>
+</tr>
+<tr>
+<td>深度生成模型（表观基因组导向）</td>
+<td><strong>DeepDive（本文）</strong></td>
+<td>显式解缠已知协变量 + 建模未知变异；多解码器不确定性量化；反事实预测</td>
+<td>假设协变量在 latent space 线性可加；需要协变量部分独立；计算成本随解码器数量线性增长</td>
+</tr>
+</tbody>
+</table>
+<p><strong>本文主张的位置</strong>：DeepDive 填补了「单细胞表观基因组 × 协变量解缠 × 反事实推断」的空白，是首个在该场景下系统处理共线协变量并提供不确定性量化的深度框架。</p>
+<hr />
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>协变量共线性导致效应泄漏</td>
+<td>一个协变量的信号被错误归因到另一个协变量；效应估计不稳定</td>
+<td>生物学因素天然相关（如 T2D↔BMI↔年龄）；传统方法无法在 latent space 中分离</td>
+<td>Results 图 1C：模拟显示随共线性增强，信号泄漏加剧</td>
+</tr>
+<tr>
+<td>传统方法在共线下 recall 低</td>
+<td>Wilcoxon rank-sum 在共线模拟中 recall 仅 36%（vs DeepDive 88%）</td>
+<td>线性/非参数方法无法建模非线性交互；未建模未知变异</td>
+<td>Results 图 1D、S4C、S4D</td>
+</tr>
+<tr>
+<td>协变量信息不完整</td>
+<td>真实队列中大量协变量缺失（如 HLCA 中 sex 缺失 47.5%、age 缺失 96.1%）</td>
+<td>数据收集不完整、伦理限制、技术限制</td>
+<td>Results 引言段（HLCA/HRCA 缺失率数据）</td>
+</tr>
+<tr>
+<td>未知变异来源被忽略</td>
+<td>仅建模已知协变量导致残差被错误归因</td>
+<td>现有方法缺乏对未知变异的显式建模</td>
+<td>Results 图 1A：双网络架构设计动机</td>
+</tr>
+<tr>
+<td>效应估计缺乏不确定性量化</td>
+<td>无法区分真实效应与噪声</td>
+<td>单解码器架构无法提供分布信息</td>
+<td>Methods：多解码器框架（引用文献 5）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>06 核心思想</h2>
+<p><strong>1) 表面方法</strong>：
+DeepDive 是一个双网络深度生成模型：(a) 已知协变量网络——通过对抗学习将每个已知协变量的效应编码为独立的 latent embedding；(b) 未知变异网络——条件变分自编码器（CVAE）建模无法由已知协变量解释的残差变异。两个网络的输出在 logit 层面相加，通过多解码器（默认 20 个）集成估计不确定性。</p>
+<p><strong>2) 核心洞察</strong>：
+- <strong>分离而非回归</strong>：传统方法试图在观测空间直接回归协变量效应，而 DeepDive 在 latent space 中为每个协变量学习独立的嵌入，通过对抗训练强制这些嵌入相互独立，从而在表示层面切断共线性的影响。
+- <strong>显式建模未知</strong>：将「未知变异」作为一等公民建模（而非当作噪声丢弃），使得已知协变量的效应估计不受未观测混杂的污染。
+- <strong>反事实即推理</strong>：通过在 latent space 中操纵协变量嵌入（如将 T2D 患者的 diabetes 嵌入替换为 ND 嵌入），DeepDive 可以直接生成反事实染色质可及性谱，将「关联」转化为「可检验的假设」。</p>
+<p><strong>3) 可能的普适教训 [Analysis]</strong>：
+- 在高度共线的观测数据中，<strong>在表示空间（representation space）而非观测空间进行解缠</strong>是更有效的策略——这一原则可直接迁移到三维基因组中解析序列特征、CTCF、cohesin、转录因子对染色质结构的独立贡献。
+- <strong>显式建模未知变异</strong>是避免虚假归因的关键——三维基因组预测中，未观测的细胞状态、复制时序、相分离等都可能作为混杂因素，DeepDive 的双网络策略提供了一种可借鉴的框架。
+- 多解码器集成作为不确定性量化的手段，比单次预测的置信区间更稳健，且计算开销可控（训练时间随解码器数线性增长，但可并行）。</p>
+<hr />
+<h2>07 方法总览</h2>
+<p><strong>输入</strong>：
+- 细胞 × 特征（peak）的原始计数矩阵（snATAC-seq 片段计数）
+- 协变量注释：细胞水平（如 cell type）和样本水平（如 donor 的 BMI、T2D 状态、性别、年龄等），可为分类或连续变量，允许缺失</p>
+<p><strong>输出</strong>：
+- 重建的染色质可及性谱（条件于给定协变量组合）
+- 每个协变量的效应大小估计及统计检验（p 值，FDR 校正）
+- 反事实预测（任意协变量组合下的可及性谱）
+- 未知变异的 latent representation（可用于下游分析，如识别新的细胞状态）</p>
+<p><strong>模块</strong>：
+1. <strong>已知协变量网络</strong>：每个协变量通过独立的 embedding 层编码，对抗训练确保嵌入间独立
+2. <strong>未知变异网络</strong>：CVAE，编码残差变异
+3. <strong>多解码器集成</strong>：20 个解码器，输出分布用于不确定性量化
+4. <strong>统计检验模块</strong>：基于解码器间变异计算 Z 分数和 p 值，Fisher 或 Cauchy 方法合并</p>
+<p><strong>训练</strong>：
+- 三阶段训练：阶段 1 仅优化已知网络；阶段 2 冻结已知网络、优化未知网络；阶段 3 冻结未知网络、微调已知网络
+- 优化器：AdamW（autoencoder 学习率 0.0001，weight decay 0.001；adversary 学习率 0.0003，weight decay 0.0000004）
+- 300 epochs/decoder，均匀分配至三阶段</p>
+<p><strong>工具</strong>：Python 包（GitHub 发布）；scanpy 用于预处理和 Wilcoxon 基线；pyChromVAR 用于 motif 活性分析；scIB 用于集成基准测试</p>
+<p><strong>文字流程</strong>：
+原始计数矩阵 → 预处理（质量过滤、peak 量化、可选特征选择）→ 输入 DeepDive 双网络 → 已知协变量经对抗解缠编码 + 未知变异经 CVAE 编码 → 两分支在 logit 层相加 → 多解码器重建可及性谱 → 下游：效应大小估计（解码器间差异）、统计检验（Z 分数 → p 值 → FDR）、反事实预测（操纵协变量嵌入）、未知变异 latent 分析</p>
+<hr />
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>已知协变量网络（对抗解缠）</td>
+<td>学习每个已知协变量的独立 latent embedding</td>
+<td>在表示空间切断共线性，使每个协变量的效应可分离</td>
+<td>输入：协变量向量；输出：协变量专属 embedding</td>
+<td>Results 图 1C：共线下信号泄漏显著低于基线；图 1E：随共线性增强，DeepDive 保持高 precision</td>
+<td>[预期] 移除后退化为普通条件 VAE，共线下效应估计将出现严重泄漏（类似 Biolord 表现）</td>
+</tr>
+<tr>
+<td>未知变异网络（CVAE）</td>
+<td>建模无法由已知协变量解释的残差变异</td>
+<td>防止未观测混杂污染已知协变量的效应估计；捕获真实生物学异质性</td>
+<td>输入：计数矩阵（条件于已知协变量嵌入）；输出：残差 latent z</td>
+<td>Results 图 1B：重建谱与观测高度相关；图 S2A-B：无 cell type 标签时仍能分离细胞类型</td>
+<td>[预期] 移除后已知协变量效应将被高估（未观测变异被错误归因）</td>
+</tr>
+<tr>
+<td>多解码器集成</td>
+<td>量化模型不确定性</td>
+<td>提供效应估计的分布信息，支持统计检验</td>
+<td>输入：合并 latent（已知+未知）；输出：20 个可及性预测</td>
+<td>Results 图 1D：DeepDive 的 precision-recall 优于单点估计基线；Methods：p 值合并（Fisher/Cauchy）</td>
+<td>[实测] 性能在 20 个解码器时饱和（图 S5B-C）；[预期] 减少解码器将降低统计检验效力</td>
+</tr>
+<tr>
+<td>三阶段训练策略</td>
+<td>先最大化已知协变量信息，再建模残差，最后微调</td>
+<td>防止已知/未知网络相互干扰；确保已知协变量信息被充分利用</td>
+<td>输入：训练数据；输出：训练好的双网络</td>
+<td>Methods 节：三阶段设计 rationale</td>
+<td>[预期] 移除后两网络可能竞争同一信息，导致解缠不彻底</td>
+</tr>
+<tr>
+<td>统计检验模块</td>
+<td>从解码器间变异计算效应显著性和置信区间</td>
+<td>将模型输出转化为可操作的生物学结论</td>
+<td>输入：多解码器重建差异；输出：Z 分数、p 值、FDR</td>
+<td>Results 图 1D：与 Wilcoxon 对比；图 S3：null 下校准良好</td>
+<td>[预期] 移除后无法区分真实效应与噪声</td>
+</tr>
+<tr>
+<td>反事实预测</td>
+<td>在 latent space 中操纵协变量嵌入，生成假设场景下的可及性谱</td>
+<td>实现「what-if」分析，将关联转化为可检验假设</td>
+<td>输入：目标协变量组合；输出：反事实可及性谱</td>
+<td>Results 图 1H：反事实预测与 ground truth 高度相关；图 2C-D：T2D→ND 反事实揭示 beta 亚型转变</td>
+<td>[预期] 移除后丧失核心差异化能力</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>09 关键公式符号</h2>
+<p><strong>1. 数据生成模型</strong>（Methods 节，DeepDive 描述）：</p>
+<p>$$X_{ij} \sim \text{Poisson}(\lambda_{ij})$$</p>
+<ul>
+<li>$X_{ij}$：细胞 $i$ 中 peak $j$ 的片段计数</li>
+<li>$\lambda_{ij}$：期望可及性</li>
+</ul>
+<p><strong>2. 模拟框架中的均值结构</strong>（Methods 节，Simulating count data）：</p>
+<p>$$\lambda_{ij} = \mu_j \prod_c \alpha_j^{(c, g_{ic})}$$</p>
+<ul>
+<li>$\mu_j$：peak $j$ 的基线可及性，$\mu_j \sim \text{Uniform}(0.5, 2.0)$</li>
+<li>$\alpha_j^{(c, g_{ic})}$：协变量 $c$ 的组 $g$ 对 peak $j$ 的乘性效应</li>
+<li>$\alpha_j^{(c,g)} \sim \text{ScaledNormal}(1, \sigma^2;\, 1-\delta_c, 1+\delta_c)$，其中 $\delta_c$ 为最大效应量</li>
+<li>$g_{ic}$：细胞 $i$ 在协变量 $c$ 上的组别</li>
+</ul>
+<p><strong>3. 共线性控制</strong>（Methods 节）：</p>
+<p>$$P(\eta) = (1-\eta)U + \eta \tilde{I}$$</p>
+<ul>
+<li>$P(\eta) \in \mathbb{R}^{r \times c}$：两个协变量的联合分布</li>
+<li>$\eta \in [0,1]$：纠缠分数（0 = 独立，1 = 完全依赖）</li>
+<li>$U$：均匀联合分布，$U_{ij} = 1/(rc)$</li>
+<li>$\tilde{I} = \frac{1}{\min(r,c)} \text{pad}(I_{\min(r,c)})$：对角矩阵的填充版本</li>
+</ul>
+<p><strong>4. 多解码器 p 值合并</strong>（Methods 节，Effect-size estimation）：</p>
+<p>$$\chi^2 = -2 \sum_{d=1}^{D} \ln(p_d)$$</p>
+<ul>
+<li>$D$：解码器数量（默认 20）</li>
+<li>$p_d$：第 $d$ 个解码器的 p 值</li>
+<li>Fisher 方法合并；可选 Cauchy 方法</li>
+</ul>
+<p><strong>5. 效应量估计</strong>（Methods 节）：</p>
+<ul>
+<li>离散协变量：组间重建差异的标准化 Z 分数</li>
+<li>连续协变量：嵌入值变化对应的重建变化</li>
+</ul>
+<hr />
+<h2>10 实验设计与证据链</h2>
+<p><strong>数据集</strong>：
+1. <strong>NeuroIPS17</strong>（GSE194122）：规模未明确给出，协变量包括 cell type、batch、site、DonorID、血型、种族、民族、性别、吸烟、年龄、BMI
+2. <strong>Kidney</strong>（GSE151302）：协变量包括 cell type、sample、年龄、性别、种族、eGFR
+3. <strong>GCC</strong>（GSE162170）：协变量包括 cluster、sample、年龄、tissue、batch
+4. <strong>sciATAC-seq</strong>（GSE149683）：协变量包括 cell type、donor、性别、batch、tissue、孕天数
+5. <strong>Pancreas</strong>（GSE169453）：人类胰岛 snATAC-seq，协变量包括 cell type、T2D 状态、BMI、HbA1c、年龄、性别、种族及技术协变量（center、storage、purity、mapped reads 比例）</p>
+<p><strong>模拟数据</strong>：可控共线性的计数数据，已知 ground truth 效应</p>
+<p><strong>基线方法</strong>：Wilcoxon rank-sum（scanpy 实现）、log fold change、Biolord、DESeq2、标准 LSI、Harmony、PoissonVI、ArchR 集成 LSI</p>
+<p><strong>评测指标</strong>：
+- 重建准确度：预测与观测可及性的相关性
+- 效应估计：precision-recall、average precision
+- 集成质量：scIB 指标（生物学保守 + 批次混合）
+- 反事实预测：Pearson R²（hold-out 组合）</p>
+<p><strong>关键实验</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的 claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>模拟共线性下的效应估计</td>
+<td>DeepDive 在共线下优于传统方法</td>
+<td>模拟数据，Cramer's V 0-1，DeepDive vs Wilcoxon vs DESeq2</td>
+<td>中等共线下 DeepDive recall 88% vs Wilcoxon 36%；DeepDive 与 DESeq2 相当</td>
+<td>DeepDive 能有效解缠共线协变量</td>
+<td>未证明在完全共线（V=1）下仍无偏</td>
+<td>Results 图 1D-E、S4</td>
+</tr>
+<tr>
+<td>缺失协变量下的重建</td>
+<td>DeepDive 在无 cell type 标签时仍能准确重建</td>
+<td>有/无 cell type 标签训练，比较重建相关性</td>
+<td>DeepDive 显著优于 Biolord（图 S2A-B）</td>
+<td>DeepDive 的未知变异网络能捕获细胞类型结构</td>
+<td>未证明能捕获所有未知变异类型</td>
+<td>Results 图 S2</td>
+</tr>
+<tr>
+<td>集成基准</td>
+<td>DeepDive 集成性能与专用方法相当</td>
+<td>5 个数据集，scIB 指标，7 种方法</td>
+<td>DeepDive 与 PoissonVI 相当，优于 Biolord 和基线</td>
+<td>DeepDive 可兼作集成工具</td>
+<td>非最优集成方法</td>
+<td>Results 图 1F、S5H</td>
+</tr>
+<tr>
+<td>反事实预测</td>
+<td>DeepDive 能准确预测未见过的协变量组合</td>
+<td>模拟数据 hold-out 组合，Pearson R²</td>
+<td>高 R²，显著优于基线</td>
+<td>DeepDive 的加法 latent 结构支持有效反事实推断</td>
+<td>未在真实数据上系统验证</td>
+<td>Results 图 1H</td>
+</tr>
+<tr>
+<td>胰岛数据协变量解缠</td>
+<td>T2D 和 BMI 的效应可分离</td>
+<td>真实胰岛数据，DeepDive 效应估计 vs 传统方法</td>
+<td>两组 peak 正交（Jaccard = 0.1）；BMI peak 富集肥胖 GWAS，T2D peak 富集 T2D GWAS</td>
+<td>DeepDive 在真实数据上实现生物学有效的解缠</td>
+<td>未与所有现有方法全面对比</td>
+<td>Results 图 2B、S6B-C</td>
+</tr>
+<tr>
+<td>反事实 motif 分析</td>
+<td>T2D→ND 反事实揭示 beta 亚型转变的调控因子</td>
+<td>反事实谱 + chromVAR，与遗传/GWAS 数据交叉验证</td>
+<td>188/226 motif 被反事实支持；支持因子富集 T2D 遗传证据和 GSIS 相关</td>
+<td>DeepDive 能提名高置信调控因子</td>
+<td>未做湿实验验证</td>
+<td>Results 图 2D-F、S6G</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>11 结论正确解读</h2>
+<p><strong>任务范围</strong>：本文解决的是<strong>单细胞染色质可及性</strong>（snATAC-seq）中协变量效应的解缠与反事实预测，而非三维基因组结构预测或 Hi-C 数据分析。</p>
+<p><strong>输入限制</strong>：
+- 需要预先定义并注释协变量（已知部分）；未知变异由 CVAE 隐式建模
+- 假设协变量效应在 latent space 中线性可加（加法架构）
+- 假设协变量间在非线性空间可分离（对抗训练的前提）</p>
+<p><strong>真值/oracle 输入</strong>：模拟实验使用已知 ground truth；真实数据使用 GWAS/eQTL 共定位和 GSIS 功能数据作为间接验证，而非直接实验验证。</p>
+<p><strong>端到端状态</strong>：DeepDive 是端到端可训练的完整框架，但下游分析（motif、GWAS 富集）需要额外工具链。</p>
+<p><strong>算力成本</strong>：原文未提供具体训练时间/硬件需求，仅提及「在 MacBook M1 或更好配置上可训练」（轻量级），但未给出具体数据。</p>
+<p><strong>历史数据依赖</strong>：模型依赖训练数据的协变量分布；外推到新人群或新实验条件需重新训练或微调。</p>
+<p><strong>最难情形</strong>：
+- 完全共线的协变量（V 接近 1）——原文未测试极限情况
+- 协变量间存在非线性交互——加法架构可能无法捕获
+- 未知变异与已知协变量高度相关——对抗训练可能无法完全分离</p>
+<p><strong>群体/领域边界</strong>：验证限于人类胰岛、肾脏、肺、视网膜等组织；未在非人类物种或疾病模型上验证。</p>
+<p><strong>有边界的复述</strong>：DeepDive 在模拟和真实 snATAC-seq 数据上，能够比 Wilcoxon rank-sum 和 Biolord 更准确地估计共线协变量的独立效应，并支持反事实预测；其提名 T2D 相关 beta 细胞调控因子的能力得到遗传和功能数据的间接支持，但未经湿实验验证。</p>
+<hr />
+<h2>12 作者自认局限</h2>
+<table>
+<thead>
+<tr>
+<th>局限</th>
+<th>具体表现</th>
+<th>作者提出的未来方向</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>协变量独立性假设</td>
+<td>模型假设所有协变量携带信号、部分独立、在非线性空间可分离、在 latent space 线性可加；层次或嵌套协变量可能违反这些假设</td>
+<td>使用乘法而非加法融合，允许非线性交互</td>
+<td>Discussion（DeepDive has limitations 段）</td>
+</tr>
+<tr>
+<td>完全共线协变量</td>
+<td>高度共线或冗余协变量可能导致表示不干净分离</td>
+<td>未明确提及</td>
+<td>同上</td>
+</tr>
+<tr>
+<td>协变量选择依赖</td>
+<td>模型效果依赖用户预先选择的协变量集合</td>
+<td>未明确提及</td>
+<td>同上</td>
+</tr>
+<tr>
+<td>未来工作方向</td>
+<td>未提供具体路线图</td>
+<td>乘法融合、放宽独立性假设</td>
+<td>同上</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：作者在正文中仅有一段集中讨论局限性，未提供详细的失败模式分析或系统性鲁棒性测试。</p>
+</blockquote>
+<hr />
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>模拟框架的生成过程与模型假设同构</td>
+<td>模拟数据使用与 DeepDive 相同的加法生成过程（$\lambda_{ij} = \mu_j \prod_c \alpha_j$），可能高估真实场景下的表现</td>
+<td>模拟基准的有效性取决于生成过程与真实生物过程的匹配度</td>
+<td>使用真实数据中的经验协变量结构生成模拟；或使用完全不同的生成模型（如非线性、层次结构）交叉验证</td>
+<td>Methods 节 Simulating count data</td>
+</tr>
+<tr>
+<td>与 DESeq2 的比较仅在特定条件下</td>
+<td>中等共线下 DeepDive 与 DESeq2 相当，但 DESeq2 是 bulk 工具，直接比较可能不完全公平</td>
+<td>需要明确 DeepDive 相对于已有工具的增量价值</td>
+<td>在更多真实数据集上系统比较，包括不同共线水平、样本量、peak 数</td>
+<td>Results 图 1D</td>
+</tr>
+<tr>
+<td>反事实验证依赖间接证据</td>
+<td>T2D→ND 反事实的「正确性」通过 GWAS 富集和 GSIS 相关性间接验证，缺乏直接实验验证</td>
+<td>反事实预测的核心假设（latent 操作有意义）需要更强的验证</td>
+<td>设计湿实验验证 DeepDive 预测的 peak 或调控因子扰动效应</td>
+<td>Results 图 2D-F</td>
+</tr>
+<tr>
+<td>多解码器数量选择未系统优化</td>
+<td>20 个解码器是经验选择，未提供敏感性分析</td>
+<td>解码器数量影响计算成本与不确定性估计质量</td>
+<td>在多个数据集上扫描解码器数量，绘制性能-成本曲线</td>
+<td>Methods 节；图 S5B-C 仅显示饱和点</td>
+</tr>
+<tr>
+<td>与三维基因组/染色质结构的连接缺失</td>
+<td>本文仅处理一维可及性，未涉及三维结构或 long-range 交互</td>
+<td>对于三维基因组课题，需要评估该方法能否扩展到 Hi-C/3D 数据</td>
+<td>探索将 DeepDive 架构应用于 Hi-C 或 Micro-C 数据的可行性</td>
+<td>全文未提及 3D 基因组</td>
+</tr>
+<tr>
+<td>协变量缺失机制未建模</td>
+<td>模型处理协变量缺失（如 HLCA 中 sex 缺失 47.5%），但未说明缺失机制（MCAR/MAR/MNAR）及对结果的影响</td>
+<td>缺失机制可能引入选择偏差</td>
+<td>模拟不同缺失机制，评估对效应估计的影响</td>
+<td>Results 引言段提及缺失率，但 Methods 未详述处理方式</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>14 学到什么</h2>
+<p><strong>Agent 提炼的知识候选</strong>：</p>
+<ol>
+<li>
+<p><strong>表示空间解缠优于观测空间回归</strong>：DeepDive 的核心洞见——在 latent space 中为每个协变量学习独立嵌入，而非在观测空间做多元回归——可直接迁移到三维基因组中解析 CTCF、cohesin、转录因子、序列特征对染色质结构的独立贡献。三维基因组数据中协变量共线问题同样严重（如 CTCF 与 cohesin 共定位、活性增强子与启动子共可及）。</p>
+</li>
+<li>
+<p><strong>「未知变异」作为一等公民</strong>：将未观测变异显式建模（而非丢弃）是避免虚假归因的关键。三维基因组预测中，细胞周期阶段、复制时序、相分离状态等未观测因素都可能混杂结构预测，DeepDive 的双网络策略提供了可借鉴的框架。</p>
+</li>
+<li>
+<p><strong>反事实作为机理推断工具</strong>：通过在 latent space 中操纵协变量嵌入（如「如果这个细胞不是 T2D 会怎样」），DeepDive 将关联分析转化为可检验的假设。这一范式可迁移到三维基因组：如「如果敲除 CTCF 结合，TAD 边界会如何变化」的反事实模拟。</p>
+</li>
+<li>
+<p><strong>多解码器集成作为不确定性量化</strong>：用多个解码器的分布而非单点估计来支撑统计检验，比传统 bootstrap 更高效。三维基因组结构预测中，结构异质性（同一序列可能折叠为多种构象）的量化是开放问题，此方法有借鉴价值。</p>
+</li>
+<li>
+<p><strong>模拟框架的设计原则</strong>：可控的纠缠分数 $\eta$ 插值独立与完全依赖，为系统评估解缠方法提供了基准设计思路。三维基因组领域缺乏类似的、具有已知 ground truth 的模拟框架。</p>
+</li>
+<li>
+<p><strong>协变量选择与假设检验</strong>：DeepDive 的协变量独立性假设（可分离、线性可加）需要在应用前明确检验。三维基因组中，层次结构（如 TAD 嵌套于 compartments）可能违反这些假设，需要扩展为层次化或乘法模型。</p>
+</li>
+</ol>
+<hr />
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>Biolord</strong>（文献 3）：DeepDive 的直接前身，但 Biolord 针对 scRNA-seq 且解缠能力有限。DeepDive 在 ATAC-seq 上扩展并改进了共线处理。</li>
+<li><strong>DrVI</strong>（文献 4）：另一深度生成模型，但主要针对批次效应而非协变量解缠。</li>
+<li><strong>scVI/PoissonVI</strong>（文献 15）：DeepDive 的生成框架与 scVI 家族一脉相承，但增加了对抗解缠和多解码器结构。</li>
+<li><strong>Signac/ArchR</strong>（文献 1、2）：传统 ATAC-seq 分析工具，DeepDive 的对比基线，代表线性/统计方法。</li>
+<li><strong>Harmony</strong>（文献 14）：批次集成方法，DeepDive 在集成基准中与其对比。</li>
+<li><strong>chromVAR</strong>（文献 11）：DeepDive 下游 motif 活性分析的依赖工具。</li>
+<li><strong>S-LDSC</strong>（文献 19）：DeepDive 用于 peak 遗传富集分析的工具。</li>
+<li><strong>多解码器框架</strong>（文献 5）：DeepDive 不确定性量化的方法学基础。</li>
+</ul>
+<p><strong>与三维基因组课题的潜在连接</strong>：
+- DeepDive 的协变量解缠框架可适配于 <strong>Hi-C 数据</strong>中解析序列、CTCF、cohesin、转录因子对 contact map 的独立贡献。
+- 反事实预测范式可应用于 <strong>TAD 边界扰动模拟</strong>、<strong>增强子-启动子交互的因果推断</strong>。
+- 多解码器不确定性量化可迁移至 <strong>3D 结构预测中的构象异质性建模</strong>。
+- 模拟框架设计（可控纠缠）可借鉴于构建 <strong>具有已知 ground truth 的 3D 基因组模拟数据</strong>。</p>
+<hr />
+<h2>16 研究想法</h2>
+<p><strong>Agent 生成的研究候选</strong>：</p>
+<ol>
+<li>
+<p><strong>DeepDive-3D：将协变量解缠扩展到 Hi-C 染色质结构数据</strong>
+   - 来源局限/观察：DeepDive 仅处理一维可及性，未涉及三维结构；三维基因组中协变量共线问题同样严重
+   - 核心假设：Hi-C contact map 可分解为「已知协变量（CTCF、cohesin、序列特征）的独立贡献 + 未知结构变异」
+   - 初步方法：将 DeepDive 的对抗解缠 + 多解码器框架适配到 contact map 预测，输入为协变量（如 ChIP-seq 峰、motif 密度），输出为期望 contact 矩阵
+   - 验证方式：模拟数据（已知 ground truth 的 contact 生成模型）+ 真实数据（如 GM12878 的 Hi-C 与 CTCF/cohesin ChIP-seq）
+   - 创新状态：unverified</p>
+</li>
+<li>
+<p><strong>反事实 TAD 边界扰动模拟</strong>
+   - 来源局限/观察：DeepDive 的反事实预测在表观基因组上有效，但未涉及结构域边界
+   - 核心假设：通过操纵 latent 中「CTCF 结合」嵌入，可以预测 TAD 边界消失/出现后的 contact 变化
+   - 初步方法：在 DeepDive-3D 框架中，对 CTCF 协变量嵌入进行反事实操作，比较预测的 TAD 边界与 ChIA-PET/HiChIP 实验数据
+   - 验证方式：与 CRISPR 介导的 CTCF 位点敲除实验数据对比
+   - 创新状态：unverified</p>
+</li>
+<li>
+<p><strong>三维基因组模拟基准：可控纠缠的 contact map 生成器</strong>
+   - 来源局限/观察：DeepDive 的模拟框架（纠缠分数 $\eta$）设计精良，但三维基因组领域缺乏类似基准
+   - 核心假设：通过控制协变量间的纠缠程度，可以系统评估不同方法在 3D 结构解缠中的表现
+   - 初步方法：扩展 DeepDive 的模拟框架，生成具有已知 ground truth 的 contact map 数据，包含可控共线的协变量（如 CTCF 密度与 cohesin 密度）
+   - 验证方式：在生成数据上基准测试现有方法（如 HiC-Reg、DeepHiC）与 DeepDive-3D
+   - 创新状态：unverified</p>
+</li>
+<li>
+<p><strong>多解码器不确定性在结构异质性建模中的应用</strong>
+   - 来源局限/观察：DeepDive 用多解码器量化预测不确定性，但未用于结构异质性
+   - 核心假设：多解码器输出的分布可以反映同一序列的多种可能 3D 构象
+   - 初步方法：将多解码器框架应用于单细胞 Hi-C 数据，分析解码器间变异是否对应已知的构象异质性（如 A/B compartment 转换）
+   - 验证方式：与单细胞 Hi-C 实验数据对比，检查解码器间变异是否与细胞周期阶段相关
+   - 创新状态：unverified</p>
+</li>
+<li>
+<p><strong>协变量缺失机制对解缠效果的影响</strong>
+   - 来源局限/观察：DeepDive 处理了协变量缺失（如 HLCA 中 sex 缺失 47.5%），但未系统分析缺失机制的影响
+   - 核心假设：MNAR（非随机缺失）协变量会引入选择偏差，导致解缠不彻底
+   - 初步方法：在 DeepDive 模拟框架中引入不同缺失机制（MCAR/MAR/MNAR），系统评估对效应估计的影响
+   - 验证方式：模拟实验 + 真实数据（如 UK Biobank 中已知缺失模式的表型）
+   - 创新状态：unverified</p>
+</li>
+</ol></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Full manuscript text including summary, introduction, results and discussion, methods, and supplemental information descriptions</li>
+<li><strong>Assessment boundary</strong> Methodological soundness, validation rigor, biological claims, and reproducibility of the DeepDive framework as presented</li>
+<li><strong>Shared manuscript claim summary</strong> The authors present DeepDive, a deep-learning framework for disentangling known and unknown sources of variation in single-nucleus ATAC-seq data, with capabilities for counterfactual prediction and covariate effect estimation, validated on simulated and real datasets including a pancreatic islet application nominating transcription factors linked to type 2 diabetes</li>
+<li><strong>Visible evidence base</strong> Main text figures 1 and 2, methods section, simulation framework description, benchmarking details, and supplemental figure/table descriptions</li>
+<li><strong>Missing materials affecting confidence</strong> Supplemental figures S1–S6, Note S1, Tables S1–S3, and the full code repository were not provided for review; detailed model architecture specifics are deferred to Note S1</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li><strong>Overall assessment</strong> The manuscript presents a timely and potentially valuable framework for addressing multicollinearity in single-cell epigenomic data, a problem of growing importance as cohort-scale atlases become common. The dual-network architecture combining adversarial learning with a conditional variational autoencoder is conceptually sound, and the application to pancreatic islet cells demonstrates practical utility. However, the provided evidence base is incomplete, with key validation details and architectural specifics relegated to supplemental materials that were not available for review. The claims of superiority over existing methods require closer scrutiny given the limited comparative analysis presented, and the biological conclusions, while plausible, rest on assumptions about disentanglement quality that are not fully established from the visible evidence.</li>
+<li><strong>Who would be interested in the results, and why</strong> Computational biologists developing methods for single-cell epigenomic analysis, researchers working on cohort-scale atlases (e.g., human cell atlas projects) who face multicollinearity challenges, and investigators studying pancreatic islet biology and type 2 diabetes mechanisms. The counterfactual prediction capability would also interest methodologists working on causal inference in genomics.</li>
+<li><strong>Major strengths</strong> The problem addressed is well-motivated and practically important. The dual-network architecture is a thoughtful design choice that explicitly separates known and unknown variation. The multi-decoder framework for uncertainty quantification is a useful innovation. The application to pancreatic islets provides a concrete demonstration of biological utility, and the integration with human genetics and functional data (GSIS, eQTL colocalization) strengthens the biological claims. The framework is designed to be user-friendly with accessible documentation.</li>
+<li><strong>Major Concerns</strong> See detailed items below.</li>
+<li><strong>Minor Comments</strong> See detailed items below.</li>
+<li><strong>Technical failings that need to be addressed before the case is established</strong> R1-M1 (incomplete validation evidence), R1-M2 (insufficient comparative analysis), R1-M3 (unclear biological validation logic), R1-M4 (limited real-data disentanglement validation)</li>
+<li><strong>Assessment against Nature-style criteria</strong> <strong>Originality</strong>: The approach of combining adversarial learning with conditional VAEs for covariate disentanglement in single-cell epigenomics is a novel contribution, though it builds on established concepts from representation learning. The counterfactual prediction capability for epigenomic data is a distinctive feature. <strong>Scientific importance</strong>: The problem of multicollinearity in cohort-scale single-cell studies is significant and growing, making this a potentially important methodological contribution. The pancreatic islet application addresses questions of direct relevance to diabetes research. <strong>Interdisciplinary readership</strong>: The work bridges computational methodology, epigenomics, and diabetes biology, with potential appeal across these communities. However, the presentation assumes substantial familiarity with deep learning concepts and single-cell analysis, which may limit accessibility. <strong>Technical soundness</strong>: The core architecture is reasonable, but the visible evidence is insufficient to fully assess technical soundness. Key details are deferred to supplemental materials, and the comparative analysis is limited. The simulation framework is described but its validation properties are not fully demonstrated. <strong>Readability for nonspecialists</strong>: The main text is generally clear, but the methods section is dense and assumes significant background knowledge. The biological application section is more accessible than the methodological sections.</li>
+<li><strong>Recommendation posture</strong> Supportive if technical concerns are resolved. The framework addresses an important problem with a plausible approach, but the current evidence base is insufficient to fully establish the claims. The authors should provide the complete supplemental materials, strengthen the comparative analysis, and clarify the biological validation logic.</li>
+</ul>
+<h3>Major Concerns</h3>
+<ul>
+<li><strong>Concern ID</strong> R1-M1</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Evidence completeness</li>
+<li><strong>Claim pointer</strong> The manuscript claims DeepDive "accurately reconstructs chromatin accessibility, outperforms state-of-the-art methods with incomplete covariate information, and robustly recovers true biological signals from even highly entangled covariates"</li>
+<li><strong>Evidence pointer</strong> Figures 1B–1H, S1–S5; location not provided for supplemental figures</li>
+<li><strong>Concern</strong> The central performance claims are supported primarily by supplemental figures and tables that were not included in the review materials. Figure 1B shows reconstruction quality on one dataset, but the quantitative comparisons, ablation studies, and robustness analyses are all in the supplemental materials. The claim of outperforming state-of-the-art methods is only partially visible in the main text, with the full benchmarking results deferred to Table S1 and Figures S4–S5.</li>
+<li><strong>Why it matters</strong> The core contribution of the manuscript is the claimed performance advantage of DeepDive. Without access to the full validation evidence, it is impossible to assess whether these claims are justified. The review process requires transparency in the evidence base.</li>
+<li>
+<p><strong>Resolution test</strong> Provide the complete supplemental materials including all figures and tables for review. The authors should ensure that all performance claims in the main text are directly supported by visible evidence or clearly referenced to accessible supplemental content.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M2</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Comparative analysis</li>
+<li><strong>Claim pointer</strong> The manuscript claims DeepDive "outperforms state-of-the-art methods with incomplete covariate information"</li>
+<li><strong>Evidence pointer</strong> Figures 1D–1E, S4–S5; location not provided for supplemental figures</li>
+<li><strong>Concern</strong> The comparative analysis against existing methods is limited in the visible text. The benchmarking appears to focus primarily on differential accessibility detection (Figure 1D) and average precision under multicollinearity (Figure 1E), but the comparison set is not clearly enumerated in the main text. The integration benchmarking (Figure 1F) compares against several methods, but the results are only summarized as an average metric. The claim of superiority requires a more comprehensive and transparent comparison.</li>
+<li><strong>Why it matters</strong> The field has multiple established methods for single-cell epigenomic analysis, and the claim of superiority is a key selling point. A limited or unclear comparison undermines confidence in this claim and does not provide the community with sufficient information to choose between methods.</li>
+<li>
+<p><strong>Resolution test</strong> Clearly enumerate all methods compared, provide full benchmarking results in the main text or accessible supplemental materials, and discuss the criteria for method selection. The authors should also address potential confounders in the comparison, such as differences in preprocessing or hyperparameter tuning.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M3</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Biological validation logic</li>
+<li><strong>Claim pointer</strong> The manuscript claims that counterfactual prediction "nominates high-confidence transcriptional regulators" and that supported regulators are "more enriched among proteins linked to type 2 diabetes through genetic evidence" and "correlated with glucose-stimulated insulin secretion"</li>
+<li><strong>Evidence pointer</strong> Figures 2D–2F, S6G; location not provided for supplemental figures</li>
+<li><strong>Concern</strong> The logic of the "supported" versus "unsupported" classification for transcription factors is unclear. The manuscript states that motifs reversing the beta-subtype effect in T2D-to-ND counterfactuals are "supported," but the biological rationale for this classification is not fully explained. Specifically, it is not clear why a transcription factor whose activity difference between beta subtypes is reversed in the counterfactual should be considered "supported" rather than simply reflecting the expected direction of the diabetes effect. The enrichment analyses in Figures 2E–2F compare supported versus unsupported factors, but the baseline expectation is not clearly defined.</li>
+<li><strong>Why it matters</strong> The biological conclusions are a major component of the manuscript's significance. If the validation logic is circular or the classification scheme is arbitrary, the biological claims are weakened. The enrichment results could reflect the classification scheme rather than genuine biological signal.</li>
+<li>
+<p><strong>Resolution test</strong> Provide a clear biological rationale for the supported/unsupported classification, ideally with a pre-specified hypothesis. The authors should also present the enrichment analyses with appropriate statistical controls and discuss what the results would mean under alternative classification schemes.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M4</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Real-data disentanglement validation</li>
+<li><strong>Claim pointer</strong> The manuscript claims DeepDive "robustly recovers true biological signals from even highly entangled covariates" and demonstrates this in the pancreatic islet application</li>
+<li><strong>Evidence pointer</strong> Figures 2B–2C, S6B; location not provided for supplemental figures</li>
+<li><strong>Concern</strong> The validation of disentanglement in real data is indirect. The manuscript shows that DeepDive identifies beta cells as most affected by BMI and diabetes status, and that BMI-associated and diabetes-associated peaks are orthogonal (Jaccard index = 0.1). However, there is no ground truth for disentanglement in real data, and the orthogonality result could reflect the model's architecture rather than true biological separation. The simulation studies provide ground truth, but their realism is unclear.</li>
+<li><strong>Why it matters</strong> The claim of robust disentanglement in real data is central to the manuscript's utility. If the model simply imposes orthogonality through its architecture, the biological interpretation of the separated effects could be misleading.</li>
+<li><strong>Resolution test</strong> Provide additional validation of disentanglement in real data, such as comparison with independent biological knowledge, replication in independent datasets, or sensitivity analyses that vary the strength of the adversarial component. The authors should also discuss the limitations of validating disentanglement without ground truth.</li>
+</ul>
+<h3>Minor Comments</h3>
+<ul>
+<li><strong>Concern ID</strong> R1-m1</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Clarity of model description</li>
+<li><strong>Affected element</strong> Methods section, DeepDive model description</li>
+<li><strong>Evidence pointer</strong> Methods, "DeepDive" section</li>
+<li><strong>Issue</strong> The model description is high-level and defers critical details to Note S1. The description of the adversarial component is particularly brief, and the training procedure, while outlined in three phases, lacks specific details on loss functions, hyperparameter selection, and convergence criteria.</li>
+<li>
+<p><strong>Required correction</strong> Provide a more complete description of the model architecture and training procedure in the main text or ensure Note S1 contains all necessary details for reproduction.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m2</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Statistical methodology</li>
+<li><strong>Affected element</strong> Differential analysis and effect size estimation</li>
+<li><strong>Evidence pointer</strong> Methods, "Effect size estimation and differential analysis" section</li>
+<li><strong>Issue</strong> The use of Fisher's method for combining p-values across decoders assumes independence, which may not hold given that decoders are trained on the same data. The manuscript mentions Cauchy's method as an alternative but does not discuss the implications of p-value dependence.</li>
+<li>
+<p><strong>Required correction</strong> Discuss the potential for p-value dependence across decoders and justify the choice of Fisher's method, or provide sensitivity analyses using alternative combination methods.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m3</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Simulation realism</li>
+<li><strong>Affected element</strong> Simulation framework</li>
+<li><strong>Evidence pointer</strong> Methods, "Simulating count data with controllable covariate dependence" section</li>
+<li><strong>Issue</strong> The simulation framework assumes independent effects of covariates on features, which may not reflect the complex interactions seen in real biological data. The realism of the simulation is critical for validating the disentanglement claims.</li>
+<li>
+<p><strong>Required correction</strong> Discuss the limitations of the simulation framework and consider additional simulations that incorporate interaction effects or more complex dependency structures.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m4</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Computational cost</li>
+<li><strong>Affected element</strong> Model training and resource requirements</li>
+<li><strong>Evidence pointer</strong> Methods, "Model architecture and training procedure" section</li>
+<li><strong>Issue</strong> The manuscript notes that training time increases linearly with the number of decoders and that performance saturates at 20 decoders, but does not provide concrete runtime or resource requirements for typical datasets.</li>
+<li>
+<p><strong>Required correction</strong> Provide benchmark runtime and resource information for representative dataset sizes to help users assess feasibility.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m5</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Code availability</li>
+<li><strong>Affected element</strong> Reproducibility</li>
+<li><strong>Evidence pointer</strong> Data and code availability section</li>
+<li><strong>Issue</strong> The code is available on GitHub and Zenodo, but the manuscript does not specify the software dependencies, versioning, or whether the code has been tested across different computing environments.</li>
+<li>
+<p><strong>Required correction</strong> Provide a detailed software environment specification and testing information to ensure reproducibility.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m6</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Terminology</li>
+<li><strong>Affected element</strong> "Counterfactual" terminology</li>
+<li><strong>Evidence pointer</strong> Throughout the manuscript</li>
+<li><strong>Issue</strong> The use of "counterfactual" prediction is appropriate but could be clarified. In the context of this model, counterfactual prediction involves manipulating covariate embeddings while holding others fixed, which is a form of intervention in the latent space. The manuscript could benefit from a brief explanation of how this relates to causal inference concepts.</li>
+<li><strong>Required correction</strong> Add a brief clarification of the counterfactual prediction concept in the context of the model's architecture.</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>The claim that DeepDive "outperforms state-of-the-art methods" is not fully supported by the visible evidence, as the complete benchmarking results are in supplemental materials not provided for review.</li>
+<li>The claim that counterfactual prediction "nominates high-confidence transcriptional regulators" is based on a validation logic that is not fully explained and may be circular.</li>
+<li>The claim that DeepDive "robustly recovers true biological signals from even highly entangled covariates" is supported by simulations, but the realism of the simulations and the generalizability to real data are not fully established.</li>
+<li>The biological conclusions regarding specific transcription factors (e.g., HNF1A, NKX6.1, PAX6) are presented as validation but are based on known biology, which could introduce confirmation bias.</li>
+<li>The performance comparison with Biolord in the counterfactual prediction task (Figure 1G) is presented without discussion of potential differences in model complexity or training requirements.</li>
+<li>The claim that DeepDive "offers a powerful and unbiased tool" is not fully supported, as the potential biases in the disentanglement procedure are not thoroughly discussed.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

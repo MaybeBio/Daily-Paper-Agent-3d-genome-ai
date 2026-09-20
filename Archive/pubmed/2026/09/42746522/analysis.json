@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42746522",
+  "title": "What-if effects: A tale of entangled covariates.",
+  "authors": "Yu, Zhaowei; Zhang, Yong",
+  "journal": "Patterns (New York, N.Y.)",
+  "published_date": "2026-09-16",
+  "window": {
+    "start": "2026-09-13",
+    "end": "2026-09-19"
+  },
+  "score": 4,
+  "one_liner_zh": "该文介绍DeepDive框架，用概率深度学习解耦单细胞ATAC-seq中的协变量效应并做反事实分析，虽涉及染色质可及性调控，但聚焦统计解耦而非三维空间结构建模，方法可迁移性有限。",
+  "abstract": "Single-cell epigenomic studies promise to reveal how disease states, donor traits, environmental exposures, and technical factors shape cellular regulatory programs, yet these variables are often highly collinear and difficult to disentangle, particularly in human cohorts. The recent study by Moller and Madsen in Patterns introduces DeepDive, a probabilistic deep-learning framework that disentangles known covariate effects and residual variations in single-nucleus ATAC-seq data, enabling counterfactual \"what-if\" analyses of chromatin accessibility.",
+  "abstract_zh": "单细胞表观基因组研究有望揭示疾病状态、供体特征、环境暴露及技术因素如何塑造细胞调控程序，然而这些变量往往高度共线性且难以区分，尤其是在人类队列中。Moller和Madsen近期在《Patterns》杂志上的研究引入了DeepDive，这是一种概率深度学习框架，用于在单核ATAC-seq数据中分离已知协变量效应和残余变异，从而实现对染色质可及性的反事实“假设”分析。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42746522/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42746522/",
+  "paper_page_path": "papers/pubmed/42746522/index.html"
+}

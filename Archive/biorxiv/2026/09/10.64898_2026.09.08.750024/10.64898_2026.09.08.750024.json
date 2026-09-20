@@ -41,68 +41,68 @@
         "author": [
           {
             "fullName": "Sun Y",
-            "firstName": "Yan",
             "lastName": "Sun",
+            "firstName": "Yan",
             "initials": "Y"
           },
           {
             "fullName": "He Y",
-            "firstName": "Yong",
             "lastName": "He",
+            "firstName": "Yong",
             "initials": "Y"
           },
           {
             "fullName": "Ren M",
-            "firstName": "Minsi",
             "lastName": "Ren",
+            "firstName": "Minsi",
             "initials": "M"
           },
           {
             "fullName": "Wang Y",
-            "firstName": "Yanhui",
             "lastName": "Wang",
+            "firstName": "Yanhui",
             "initials": "Y"
           },
           {
             "fullName": "Xu P",
-            "firstName": "Penghao",
             "lastName": "Xu",
+            "firstName": "Penghao",
             "initials": "P"
           },
           {
             "fullName": "Hou Y",
-            "firstName": "Yong",
             "lastName": "Hou",
+            "firstName": "Yong",
             "initials": "Y"
           },
           {
             "fullName": "Kang Y",
-            "firstName": "Yu",
             "lastName": "Kang",
+            "firstName": "Yu",
             "initials": "Y"
           },
           {
             "fullName": "Hou T",
-            "firstName": "Tingjun",
             "lastName": "Hou",
+            "firstName": "Tingjun",
             "initials": "T"
           },
           {
             "fullName": "Ye J",
-            "firstName": "Jieping",
             "lastName": "Ye",
+            "firstName": "Jieping",
             "initials": "J"
           },
           {
             "fullName": "Yang H",
-            "firstName": "Huanming",
             "lastName": "Yang",
+            "firstName": "Huanming",
             "initials": "H"
           },
           {
             "fullName": "Wang Z",
-            "firstName": "Zheng",
             "lastName": "Wang",
+            "firstName": "Zheng",
             "initials": "Z"
           }
         ]
@@ -132,23 +132,23 @@
       "isOpenAccess": "N",
       "inEPMC": "N",
       "inPMC": "N",
+      "citedByCount": 0,
+      "hasReferences": "N",
+      "hasTextMinedTerms": "Y",
+      "hasDbCrossReferences": "N",
       "hasPDF": "N",
       "hasBook": "N",
       "hasSuppl": "N",
-      "citedByCount": 0,
-      "hasData": "N",
-      "hasReferences": "N",
-      "hasTextMinedTerms": "N",
-      "hasDbCrossReferences": "N",
       "hasLabsLinks": "N",
-      "hasEvaluations": "N",
+      "hasData": "N",
       "authMan": "N",
       "epmcAuthMan": "N",
       "nihAuthMan": "N",
       "hasTMAccessionNumbers": "N",
       "dateOfCreation": "2026-09-16",
+      "firstPublicationDate": "2026-09-14",
       "firstIndexDate": "2026-09-16",
-      "firstPublicationDate": "2026-09-14"
+      "hasEvaluations": "N"
     }
   }
 }

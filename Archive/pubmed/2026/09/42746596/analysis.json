@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42746596",
+  "title": "Mechanistic Perspectives From Genomics and Pangenomics of Medicinal and Aromatic Plants: Linking Genome Architecture to Phytochemical Diversity.",
+  "authors": "Saini, Himanshu; Yadav, Jyoti; Johar, Vishal; Vyas, Shalu; Jaryan, Vikrant; Kumar, Atin; Nanda, Deepak; Kumar, Anand; Kaushik, Jeevan Jyoti; Shamkuwar, Sahil; Singh, Shubham",
+  "journal": "International journal of genomics",
+  "published_date": "2026-09-16",
+  "window": {
+    "start": "2026-09-13",
+    "end": "2026-09-19"
+  },
+  "score": 2,
+  "one_liner_zh": "该综述探讨药用植物基因组结构与植物化学多样性的关联，虽涉及基因组架构但非染色质三维组织，且无AI或分子模拟建模方法，与本课题关系微弱。",
+  "abstract": "Medicinal and aromatic plants (MAPs) produce a remarkable diversity of specialized metabolites with significant pharmaceutical, nutraceutical, and industrial value. Although advances in long-read sequencing, chromosome-scale genome assembly, and pangenomics have greatly expanded genomic resources, the mechanistic links between genome architecture and phytochemical diversity remain incompletely understood. The present review synthesizes current evidence describing how structural genomic variation may contribute to phytochemical diversity, while acknowledging that many proposed genome-to-metabolite relationships require further experimental validation. Examples illustrate how genome architecture is associated with specialized-metabolite biosynthesis through multiple regulatory processes. However, the strength of supporting evidence varies considerably among MAP species. Moreover, relatively few genome-to-metabolite relationships have been confirmed through direct functional validation. We further discuss how pangenomics, multiomics integration, genome editing, synthetic biology, and artificial intelligence support the discovery, validation, and engineering of specialized metabolic pathways. Casual conclusions are evaluated according to the strength of available evidence, highlighting where causal relationships have been experimentally established and where conclusions remain primarily association-based. Overall, this review provides an integrated conceptual and evidence-based perspective summarizing proposed relationships between genome architecture and phytochemical diversity and outlines future priorities for functional genomics, precision breeding, metabolic engineering, and sustainable utilization of MAPs.",
+  "abstract_zh": "药用和芳香植物（MAPs）产生种类繁多的特化代谢物，具有显著的制药、营养保健品和工业价值。尽管长读长测序、染色体规模基因组组装和泛基因组学方面的进展极大地扩展了基因组资源，但基因组结构与植物化学多样性之间的机制联系仍未完全阐明。本综述综合了现有证据，描述结构基因组变异如何可能促进植物化学多样性，同时承认许多提出的基因组到代谢物关系需要进一步的实验验证。实例说明了基因组结构如何通过多种调控过程与特化代谢物生物合成相关联。然而，支持证据的强度在MAP物种间差异显著。此外，相对较少的基因组到代谢物关系已通过直接功能验证得到确认。我们进一步讨论了泛基因组学、多组学整合、基因组编辑、合成生物学和人工智能如何支持特化代谢途径的发现、验证和工程化。根据现有证据的强度评估因果性结论，突出哪些因果关系已通过实验确立，哪些结论仍主要基于关联性。总体而言，本综述提供了一个整合的概念性和基于证据的视角，总结了基因组结构与植物化学多样性之间提出的关系，并概述了功能基因组学、精准育种、代谢工程和MAPs可持续利用的未来优先事项。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42746596/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42746596/",
+  "paper_page_path": "papers/pubmed/42746596/index.html"
+}

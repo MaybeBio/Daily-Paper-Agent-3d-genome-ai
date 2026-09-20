@@ -9,9 +9,9 @@
     "keywords": [
       "CHO",
       "Codon optimization",
-      "Transformer Model",
-      "mRNA stability",
-      "recombinant protein production"
+      "MRNA stability",
+      "Recombinant protein production",
+      "Transformer model"
     ],
     "mesh_terms": [],
     "pub_types": [
@@ -36,7 +36,7 @@
       ],
       "auids": [],
       "affiliations": [
-        "Bayer AG, Leverkusen, Germany.",
+        "Bayer AG, Leverkusen, Germany. Electronic address: sebastian.schneckener@bayer.com.",
         "Bayer AG, Leverkusen, Germany.",
         "Bayer AG, Leverkusen, Germany.",
         "Bayer AG, Leverkusen, Germany.",
@@ -49,7 +49,7 @@
         "short_name": "Schneckener S",
         "identifiers": [],
         "affiliations": [
-          "Bayer AG, Leverkusen, Germany."
+          "Bayer AG, Leverkusen, Germany. Electronic address: sebastian.schneckener@bayer.com."
         ]
       },
       {
@@ -101,7 +101,7 @@
   },
   "metadata": {
     "entrez_date": "2026/09/15 05:06",
-    "fetched_at": "2026-09-16 10:48:05"
+    "fetched_at": "2026-09-20 08:59:56"
   },
   "links": {
     "cites": [],
@@ -150,15 +150,15 @@
       "26800878",
       "22896849",
       "22467228",
-      "41962906",
       "20564614",
+      "41962906",
       "24249214",
       "42405277",
       "15969104",
       "27544513",
       "19544304",
-      "41662350",
       "41055974",
+      "41662350",
       "36829202",
       "21104043",
       "37985175",
@@ -193,20 +193,20 @@
       "26657798",
       "40011400",
       "33007349",
-      "31930722",
       "17172660",
+      "31930722",
       "34953085",
       "41548093",
       "25158835",
-      "41459189",
       "30802343",
+      "41459189",
       "26850284",
       "27742176",
       "37130545",
       "33673701",
       "20589672",
       "17086290",
-      "25857574"
+      "29188404"
     ],
     "review": [
       "42735877",
@@ -215,7 +215,15 @@
     ],
     "pmc": [],
     "entrez": {},
-    "external": [],
+    "external": [
+      {
+        "url": "https://linkinghub.elsevier.com/retrieve/pii/S1871-6784(26)00109-3",
+        "provider": "Elsevier Science",
+        "category": "Full Text Sources",
+        "attribute": "subscription/membership/fee required",
+        "linkname": ""
+      }
+    ],
     "text_mined": []
   }
 }

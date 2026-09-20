@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42752674",
+  "title": "Computational screening of oncogenic genetic variations in tumor suppressor proteins driving gastric cancer pathogenesis.",
+  "authors": "Mim, Faria Ferdouse; Sumiya, Taslima Akter; Khanam, Roksana; Akter, Jannati; Arzu, Farhana; Haque, Samia; Miah, Md Roman; Islam, K M Tanjida; Mahmud, Shahin",
+  "journal": "PloS one",
+  "published_date": "2026-09-17",
+  "window": {
+    "start": "2026-09-13",
+    "end": "2026-09-19"
+  },
+  "score": 3,
+  "one_liner_zh": "该文用图神经网络筛选胃癌肿瘤抑制基因及其致病突变，聚焦基因表达与突变而非染色质三维结构建模，方法虽含AI但对象与结构/调控轴均不涉及三维基因组，故仅边缘相关。",
+  "abstract": "Gastric cancer (GC) is currently the fifth most common cancer globally, often driven by dysregulation of tumor suppressor pathways. While individual studies on genetic variations of proteins are common, a comprehensive systems-level analysis of proteins regulating GC pathways showing both expression dysregulation and high mutation frequency remains unexplored. Therefore, our study aimed to identify critical genes and their pathogenic variations disrupting the tumor-suppressive capacity of the GC pathway. We employed a deep learning-based graph neural network model to identify genes exhibiting both dysregulated expression and high mutation propensity in GC. Key tumor suppressor proteins (TP53, CDH1, and APC), their genetic variants, and molecular components were subjected to in-depth computational analyses, including evolutionary conservation profiling, biophysical energetics assessment, and unsupervised machine learning for conformational change detection. Variants were validated from the cBioPortal database and patient survival data. Our deep learning model demonstrated exceptional performance (MSE: 0.00482 +/- 0.00023 to 0.07108 +/- 0.00437; R(2): 0.85098 +/- 0.01903 to 0.85899 +/- 0.01987; AUC-ROC: 0.93095 +/- 0.01758 to 0.93309 +/- 0.00725) and identified 1,886 genes exhibiting both differential expression and mutation propensity. Graph neural network analysis revealed TP53 as the most prominent hub gene (47.6% mutation frequency), followed by ERBB2 (8.8%), CDH1 (8.2%), and APC (6.8%). Variants validation from cBioPortal confirmed the association of GC with 36 missense SNPs that critically affect post-translational modification (methylation and phosphorylation) sites and 60 nonsense SNPs. Furthermore, TP53, CDH1, and APC were significantly upregulated in GC tissues and associated with altered patient survival (p < 0.05). The transcription factor EZH2 and miRNA miR-129-5p were identified as key regulatory elements affecting all three tumor suppressors. Additionally, mutations trigger dysregulation of multiple common oncogenes, including CCNE1/2 and FGFR2. This systems-level analysis provides a molecular framework demonstrating how pathogenic variants fundamentally compromise tumor suppressor proteins in GC pathways, leading to the identification of potential biomarkers and precise therapeutic decisions for GC intervention.",
+  "abstract_zh": "胃癌（GC）目前是全球第五大常见癌症，通常由肿瘤抑制通路失调驱动。虽然关于蛋白质遗传变异的个体研究很常见，但对调控GC通路的蛋白质进行系统级综合分析，同时显示表达失调和高突变频率的研究仍属空白。因此，本研究旨在识别关键基因及其致病性变异，这些变异破坏GC通路的肿瘤抑制能力。我们采用基于深度学习的图神经网络模型来识别在GC中同时表现出失调表达和高突变倾向的基因。关键肿瘤抑制蛋白（TP53、CDH1和APC）、其遗传变异及分子组分接受了深入的计算分析，包括进化保守性分析、生物物理能量学评估以及用于构象变化检测的无监督机器学习。变异从cBioPortal数据库和患者生存数据中得到验证。我们的深度学习模型表现出卓越性能（MSE：0.00482 ± 0.00023至0.07108 ± 0.00437；R²：0.85098 ± 0.01903至0.85899 ± 0.01987；AUC-ROC：0.93095 ± 0.01758至0.93309 ± 0.00725），并识别出1,886个同时表现出差异表达和突变倾向的基因。图神经网络分析揭示TP53是最显著的中心基因（突变频率47.6%），其次是ERBB2（8.8%）、CDH1（8.2%）和APC（6.8%）。来自cBioPortal的变异验证确认了GC与36个错义SNP和60个无义SNP的关联，这些SNP关键影响翻译后修饰（甲基化和磷酸化）位点。此外，TP53、CDH1和APC在GC组织中显著上调，并与患者生存期改变相关（p < 0.05）。转录因子EZH2和miRNA miR-129-5p被识别为影响所有三种肿瘤抑制因子的关键调控元件。此外，突变触发多个常见癌基因的失调，包括CCNE1/2和FGFR2。这项系统级分析提供了一个分子框架，展示了致病性变异如何从根本上损害GC通路中的肿瘤抑制蛋白，从而识别潜在生物标志物并为GC干预提供精准治疗决策。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42752674/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42752674/",
+  "paper_page_path": "papers/pubmed/42752674/index.html"
+}

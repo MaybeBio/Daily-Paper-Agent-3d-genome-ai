@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42758369",
+  "title": "Using Brain Organoids to Explore Human Neurobiology.",
+  "authors": "Marei, Hany E; Hasan, Anwarul",
+  "journal": "Cellular and molecular neurobiology",
+  "published_date": "2026-09-18",
+  "window": {
+    "start": "2026-09-13",
+    "end": "2026-09-19"
+  },
+  "score": 2,
+  "one_liner_zh": "该文综述脑类器官在神经发育与疾病研究中的应用，虽提及3D模型和AI，但对象非染色质/三维基因组，且无染色质空间架构建模或可迁移的分子模拟方法，与本课题关系微弱。",
+  "abstract": "One of the major challenges in neuroscience is understanding how the human brain develops into a highly organized and functionally integrated organ, because many developmental processes cannot be investigated directly in humans and are not fully recapitulated in animal models. Brain organoids derived from human pluripotent stem cells have emerged as powerful three-dimensional (3D) experimental models that recapitulate key features of human neurodevelopment, including regional patterning, cellular diversification, and neural circuit assembly. Recent advances in long-term organoid culture, organoid bioengineering, vascularization, assembloid technology, transplantation, multi-omics, and artificial intelligence have substantially expanded the applications of brain organoids to investigate human neurodevelopment, model neurological disorders, support drug discovery, and advance therapeutic development. Integration of single-cell and spatial multi-omics with computational approaches has enabled robust molecular benchmarking, assessment of developmental fidelity, and evaluation of organoid reproducibility, facilitating direct comparison with primary human fetal brain tissue. However, current organoid systems remain limited owing to incomplete cellular and tissue complexity, inter-organoid variability, limited vascularization, limited functional maturation, and incomplete physiological integration. Continued advances in tissue engineering, computational biology, and standardized differentiation protocols are expected to enhance the biological fidelity and translational utility of brain organoids for basic and translational neuroscience, as well as mechanistic and translational research.",
+  "abstract_zh": "神经科学中的主要挑战之一是理解人类大脑如何发育成为一个高度组织化且功能整合的器官，因为许多发育过程无法直接在人类中研究，并且在动物模型中不能完全重现。源自人类多能干细胞的大脑类器官已成为强大的三维（3D）实验模型，能够重现人类神经发育的关键特征，包括区域 patterning、细胞多样化和神经回路组装。长期类器官培养、类器官生物工程、血管化、assembloid 技术、移植、多组学和人工智能的最新进展，大幅扩展了大脑类器官在研究人类神经发育、模拟神经系统疾病、支持药物发现和推进治疗开发中的应用。单细胞和空间多组学与计算方法的整合，已实现稳健的分子基准测试、发育保真度评估和类器官可重复性评价，促进与原发性人类胎儿脑组织的直接比较。然而，当前类器官系统仍受限于细胞和组织复杂性不完整、类器官间变异性、血管化有限、功能成熟度不足以及生理整合不完善。组织工程、计算生物学和标准化分化方案的持续进步，预计将增强大脑类器官在基础与转化神经科学以及机制性和转化研究中的生物学保真度和转化实用性。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42758369/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42758369/",
+  "paper_page_path": "papers/pubmed/42758369/index.html"
+}

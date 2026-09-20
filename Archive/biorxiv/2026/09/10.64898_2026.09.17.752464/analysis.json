@@ -1,0 +1,24 @@
+{
+  "source": "biorxiv",
+  "id": "10.64898/2026.09.17.752464",
+  "title": "Endogenous Nuclear Desmin Associates with the Nuclear Envelope in Human Skeletal Muscle Cells",
+  "authors": "Duz N; Avci A; Sahin S; Kastelic M; Ozcan S; Dincer P",
+  "journal": "bioRxiv",
+  "published_date": "2026-09-18",
+  "window": {
+    "start": "2026-09-13",
+    "end": "2026-09-19"
+  },
+  "score": 4,
+  "one_liner_zh": "该文研究肌肉细胞中核内desmin与核纤层蛋白的互作及核架构组织，虽涉及核架构和计算结构建模，但对象非染色质/三维基因组，且方法为蛋白对接而非染色质建模，启发有限。",
+  "abstract": "Desmin is the major intermediate filament protein of muscle, yet its potential nuclear functions remain poorly understood. Here, we investigated the nuclear localization and organization of endogenous desmin in human skeletal muscle cells using quantitative confocal microscopy, biochemical fractionation, targeted MRM/SRM proteomics, and computational structural modeling. Desmin localized to the nuclear compartment and exhibited significantly stronger colocalization with emerin and lamin A/C than with lamin B1. Nuclear fractionation and targeted proteomics independently confirmed endogenous nuclear desmin, while protein-protein docking predicted structurally plausible interactions with all three nuclear envelope proteins, supporting a context-dependent nuclear interaction network. Together, these findings identify the nuclear envelope as a functional platform for desmin and suggest that nuclear desmin contributes to nucleo-cytoskeletal communication and the organization of mechanically responsive nuclear architecture during myogenesis. This work expands the current understanding of desmin biology and provides a framework for investigating its role in desmin-related muscle disease.",
+  "abstract_zh": "Desmin是肌肉中主要的中间丝蛋白，但其潜在的核功能仍知之甚少。在此，我们利用定量共聚焦显微镜、生化分级分离、靶向MRM/SRM蛋白质组学和计算结构建模，研究了人骨骼肌细胞内源性desmin的核定位和组织。Desmin定位于核区室，并与emerin和lamin A/C的共定位显著强于与lamin B1的共定位。核分级分离和靶向蛋白质组学独立确认了内源性核desmin的存在，而蛋白质-蛋白质对接预测了其与所有三种核膜蛋白的结构上合理的相互作用，支持一种情境依赖的核相互作用网络。综合来看，这些发现将核膜确定为desmin的功能平台，并提示核desmin在肌生成过程中有助于核-细胞骨架通信和机械响应性核架构的组织。这项工作扩展了当前对desmin生物学的理解，并为研究其在desmin相关肌肉疾病中的作用提供了框架。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://www.biorxiv.org/content/10.64898/2026.09.17.752464",
+  "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.17.752464",
+  "paper_page_path": "papers/biorxiv/10.64898_2026.09.17.752464/index.html"
+}

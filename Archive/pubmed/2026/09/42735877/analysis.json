@@ -6,13 +6,13 @@
   "journal": "New biotechnology",
   "published_date": "2026-09-15",
   "window": {
-    "start": "2026-09-09",
-    "end": "2026-09-15"
+    "start": "2026-09-13",
+    "end": "2026-09-19"
   },
   "score": 2,
-  "one_liner_zh": "该研究利用机器学习优化CHO细胞中抗体编码序列的mRNA稳定性以提高蛋白产量，对象为序列优化而非染色质三维组织，且无空间架构建模或AI/分子模拟方法，与本课题关联微弱。",
+  "one_liner_zh": "该研究用机器学习优化CHO细胞中抗体mRNA稳定性与密码子序列，对象为蛋白表达而非染色质三维组织，且无空间架构建模，仅序列优化方法对三维基因组建模启发有限。",
   "abstract": "This study presents a DNA sequence optimization approach that integrates mRNA stability as a tunable design parameter to enhance monoclonal antibody expression in Chinese hamster ovary (CHO) cells. A comprehensive combinatorial library of synonymous coding-sequence variants of an IgG1 light chain was integrated as single copies at a defined genomic locus in CHO cells with identical regulatory elements. Steady-state mRNA abundance, quantified by deep sequencing of gDNA and mRNA, served as a proxy for mRNA stability. These data were used to train a machine learning model that predicts mRNA abundance from coding sequence using embeddings from a pre-trained nucleotide transformer. This abundance predictor, together with established translational metrics, was incorporated into a genetic algorithm for multi-objective codon optimization. As proof-of-concept, we optimized sequences encoding Trastuzumab to either maximize or minimize the abundance criterion and obtained benchmark sequences from two commercial providers. Using targeted integration, we generated CHO cell lines and measured protein titer and cell-specific productivity. Sequences optimized for high abundance significantly increased intracellular mRNA levels (+41%), protein titer (+59%), and cell-specific productivity (+85%) relative to low-abundance designs, while viable cell densities remained comparable. Compared to commercial benchmarks, high-abundance sequences achieved significantly higher titer (+70%) and cell-specific productivity (+98%). These findings establish mRNA stability as a practical and complementary design parameter for codon optimization in monoclonal antibody production, with potential applicability to other proteins and expression systems.",
-  "abstract_zh": "本研究提出了一种DNA序列优化方法，将mRNA稳定性作为可调设计参数，以增强中国仓鼠卵巢（CHO）细胞中单克隆抗体的表达。我们将IgG1轻链的同义编码序列变体组合文库，以单拷贝形式整合到CHO细胞中一个具有相同调控元件的特定基因组位点。通过gDNA和mRNA的深度测序定量稳态mRNA丰度，并将其作为mRNA稳定性的代理指标。这些数据用于训练一个机器学习模型，该模型利用预训练核苷酸转换器的嵌入，从编码序列预测mRNA丰度。此丰度预测器与已建立的翻译指标相结合，被纳入一种用于多目标密码子优化的遗传算法中。作为概念验证，我们优化了编码曲妥珠单抗的序列，以最大化或最小化丰度标准，并从两家商业供应商处获得了基准序列。通过靶向整合，我们生成了CHO细胞系，并测量了蛋白质滴度和细胞特异性生产力。与低丰度设计相比，针对高丰度优化的序列显著提高了细胞内mRNA水平（+41%）、蛋白质滴度（+59%）和细胞特异性生产力（+85%），而活细胞密度保持相当。与商业基准相比，高丰度序列实现了显著更高的滴度（+70%）和细胞特异性生产力（+98%）。这些发现确立了mRNA稳定性作为单克隆抗体生产中密码子优化的实用且互补的设计参数，并可能适用于其他蛋白质和表达系统。",
+  "abstract_zh": "本研究提出了一种DNA序列优化方法，将mRNA稳定性作为可调设计参数，以增强中国仓鼠卵巢（CHO）细胞中单克隆抗体的表达。我们将IgG1轻链的同义编码序列变体组合文库，以单拷贝形式整合到CHO细胞中一个具有相同调控元件的特定基因组位点。通过gDNA和mRNA的深度测序定量得到的稳态mRNA丰度，作为mRNA稳定性的代理指标。这些数据用于训练一个机器学习模型，该模型利用预训练核苷酸转换器的嵌入，从编码序列预测mRNA丰度。此丰度预测器与已建立的翻译指标一起，被纳入多目标密码子优化的遗传算法中。作为概念验证，我们优化了编码曲妥珠单抗的序列，以最大化或最小化丰度标准，并从两家商业供应商处获得基准序列。通过靶向整合，我们生成了CHO细胞系，并测量了蛋白质滴度和细胞特异性生产力。与低丰度设计相比，针对高丰度优化的序列显著增加了细胞内mRNA水平（+41%）、蛋白质滴度（+59%）和细胞特异性生产力（+85%），而活细胞密度保持相当。与商业基准相比，高丰度序列实现了显著更高的滴度（+70%）和细胞特异性生产力（+98%）。这些发现确立了mRNA稳定性作为单克隆抗体生产中密码子优化的实用且互补的设计参数，并可能适用于其他蛋白质和表达系统。",
   "has_fulltext": false,
   "fulltext_source": "abstract",
   "fulltext_path": "fulltext.md",

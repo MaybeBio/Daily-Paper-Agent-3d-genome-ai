@@ -1,0 +1,24 @@
+{
+  "source": "medrxiv",
+  "id": "10.64898/2026.09.15.26363174",
+  "title": "Genomic foundation model-derived disruption profiling links somatic mutations to cancer biology and clinical outcomes",
+  "authors": "Nayak A; Lee T; Agarwal V; Georgakopoulos-Soares I",
+  "journal": "medRxiv",
+  "published_date": "2026-09-16",
+  "window": {
+    "start": "2026-09-13",
+    "end": "2026-09-19"
+  },
+  "score": 5,
+  "one_liner_zh": "该文用基因组基础模型量化体细胞突变对染色质可及性等调控功能的破坏，虽涉及染色质水平调控特征建模，但对象是癌症突变而非三维基因组/染色质空间架构，方法为序列功能预测而非AI/分子模拟的构象建模，故属相关但非核心。",
+  "abstract": "Cancer genomics has concentrated on individual mutations, overlooking whether somatic mutations can accumulate to produce partial, gene-level disruption with biological and clinical consequences. Sequence-to-function models can quantify these effects directly from DNA sequence. Here, we use AlphaGenome and AlphaMissense to quantify the disruption imposed by somatic mutations across 8,800 patients and 33 cancer types from The Cancer Genome Atlas. At the individual-variant level, recurrent hotspot mutations showed substantially larger predicted protein-level effects, whereas non-hotspot mutations exhibited larger regulatory effects across most cancer types. We then aggregated the variant-level predictions to construct patient-gene disruption profiles capturing transcriptional activity, chromatin accessibility, transcription factor binding, and splicing. These profiles were gene- and modality-specific, and reflected tissue of origin, cancer type, and microsatellite-instability status while retaining information beyond tumor mutational burden. Among patients lacking recurrent hotspot mutations in a given cancer gene, higher predicted disruption was associated with overall survival, with the strongest and most consistent signal observed for chromatin accessibility. In an independent treatment-annotated cohort, gene-level disruption was also associated with survival within treatment-defined subgroups. Together, these findings show that recurrent hotspots are enriched for strong predicted protein-level effects, whereas regulatory consequences are distributed more broadly across other variants, supporting a continuous, multidimensional view of cancer-gene perturbation beyond discrete drivers.",
+  "abstract_zh": "癌症基因组学一直聚焦于个体突变，忽视了体细胞突变能否累积产生部分性、基因层面的破坏，并带来生物学和临床后果。序列到功能模型可以直接从DNA序列量化这些效应。在此，我们使用AlphaGenome和AlphaMissense量化了来自癌症基因组图谱（The Cancer Genome Atlas）的8,800名患者和33种癌症类型中体细胞突变所施加的破坏。在个体变异层面，复发性热点突变显示出显著更大的预测蛋白质水平效应，而大多数癌症类型中，非热点突变则表现出更大的调控效应。随后，我们聚合了变异层面的预测，构建了患者-基因破坏谱，涵盖转录活性、染色质可及性、转录因子结合和剪接。这些谱具有基因和模态特异性，并反映了组织来源、癌症类型和微卫星不稳定性状态，同时保留了超越肿瘤突变负荷的信息。在缺乏特定癌症基因复发性热点突变的患者中，较高的预测破坏与总生存期相关，其中染色质可及性观察到的信号最强且最一致。在一个独立的治疗注释队列中，基因层面的破坏也与治疗定义亚组内的生存期相关。综合来看，这些发现表明复发性热点富集于强预测蛋白质水平效应，而调控后果则更广泛地分布在其他变异中，支持了超越离散驱动因子的癌症基因扰动的连续、多维视角。",
+  "has_fulltext": true,
+  "fulltext_source": "europepmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://www.medrxiv.org/content/10.64898/2026.09.15.26363174",
+  "source_url": "https://www.medrxiv.org/content/10.64898/2026.09.15.26363174",
+  "paper_page_path": "papers/medrxiv/10.64898_2026.09.15.26363174/index.html"
+}

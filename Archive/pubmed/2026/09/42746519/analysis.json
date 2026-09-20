@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42746519",
+  "title": "Disentangling covariate effects on single-cell-resolved epigenomes with DeepDive.",
+  "authors": "Moller, Andreas Fonss; Madsen, Jesper Grud Skat",
+  "journal": "Patterns (New York, N.Y.)",
+  "published_date": "2026-09-16",
+  "window": {
+    "start": "2026-09-13",
+    "end": "2026-09-19"
+  },
+  "score": 5,
+  "one_liner_zh": "该文提出深度学习框架DeepDive，用于从单细胞ATAC-seq数据中解耦协变量效应并重建染色质可及性，虽涉及染色质水平调控特征建模，但未聚焦三维基因组空间架构，方法可迁移性有限。",
+  "abstract": "Understanding the effects of individual biological factors from single-cell-resolved epigenomic data is hindered by multicollinearity, particularly in human cohorts. We introduce DeepDive, a deep-learning framework designed to systematically disentangle known and unknown sources of variation in single-nucleus ATAC-seq data. DeepDive accurately reconstructs chromatin accessibility, outperforms state-of-the-art methods with incomplete covariate information, and robustly recovers true biological signals from even highly entangled covariates, unlocking counterfactual, \"what-if,\" analyses. Applying DeepDive to pancreatic islet cells, we perform counterfactual analyses to prioritize covariates associated with a type 2 diabetes-linked beta-cell subtype and nominate transcription regulators. DeepDive offers a powerful and unbiased tool for mechanistic discovery in complex human disease cohorts.",
+  "abstract_zh": "从单细胞分辨率的表观基因组数据中理解个体生物学因素的影响，受到多重共线性的阻碍，尤其是在人类队列中。我们引入了DeepDive，这是一个深度学习框架，旨在系统性地解开单核ATAC-seq数据中已知和未知的变异来源。DeepDive能够准确重建染色质可及性，在协变量信息不完整的情况下优于最先进的方法，并且即使面对高度纠缠的协变量也能稳健地恢复真实的生物学信号，从而解锁反事实的“假设”分析。将DeepDive应用于胰岛细胞，我们进行反事实分析，以优先考虑与2型糖尿病相关的β细胞亚型相关的协变量，并提名转录调控因子。DeepDive为复杂人类疾病队列中的机制发现提供了一个强大且无偏的工具。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42746519/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42746519/",
+  "paper_page_path": "papers/pubmed/42746519/index.html"
+}

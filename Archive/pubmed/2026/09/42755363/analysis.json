@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42755363",
+  "title": "GenoME: a MoE-based generative model for individualized, multimodal prediction and perturbation of genomic profiles.",
+  "authors": "Wei, Jiachen; Xue, Yue; Chai, Hao; Gao, Yi Qin",
+  "journal": "Nucleic acids research",
+  "published_date": "2026-09-18",
+  "window": {
+    "start": "2026-09-13",
+    "end": "2026-09-19"
+  },
+  "score": 8,
+  "one_liner_zh": "GenoME 是基于MoE的生成模型，整合DNA序列与ATAC-seq预测表观、转录及染色质三维构象等多模态基因组谱，并支持扰动模拟与增强子-启动子互作识别，与三维基因组调控建模高度相关。",
+  "abstract": "The non-coding genome operates through a complex, multiscale regulatory system where regulated gene expressions are closely associated with cell-type-specific histone modifications, transcription factor binding, and 3D conformation. Developing computational models that can integrate these patterns to predict and interpret the regulatory system remains challenging. Here, we present GenoME, a Mixture of Experts (MoE)-based generative model that uses DNA sequence and cell-type-specific ATAC-seq signals to predict a unified genomic profiles encompassing epigenomics, transcriptomics, and chromatin architecture at base-pair to kilobase resolutions. GenoME enables multiscale predictions for held-out genomic regions and, critically, generalizes to predict the full regulatory landscape of unseen or individualized cell types from a single ATAC-seq input. We equip GenoME with an in silico perturbation framework that accurately forecasts the multimodal consequences of genetic perturbations and identifies functional enhancer-promoter connections, outperforming specialized models like Activity-by-Contact. These predictions can also be used to decipher the transcription factor grammar of cell-type-specific enhancers. GenoME thus provides a versatile, all-in-one platform for generative modeling, cross-cell-type generalization, and causal mechanistic investigation of the multiscale regulatory genome.",
+  "abstract_zh": "非编码基因组通过一个复杂的、多尺度的调控系统运作，其中受调控的基因表达与细胞类型特异性的组蛋白修饰、转录因子结合及三维构象密切相关。开发能够整合这些模式以预测和解释调控系统的计算模型仍然具有挑战性。在此，我们提出GenoME，一种基于混合专家（Mixture of Experts, MoE）的生成模型，利用DNA序列和细胞类型特异性的ATAC-seq信号，预测涵盖表观基因组学、转录组学及染色质构象的统一基因组图谱，分辨率从碱基对到千碱基。GenoME能够对未观测的基因组区域进行多尺度预测，并且关键的是，它能从单一的ATAC-seq输入泛化到预测未见或个体化细胞类型的完整调控景观。我们为GenoME配备了一个计算机模拟扰动框架，该框架能准确预测遗传扰动的多模态后果，并识别功能性增强子-启动子连接，优于如Activity-by-Contact等专门模型。这些预测还可用于解读细胞类型特异性增强子的转录因子语法。因此，GenoME为多尺度调控基因组的生成建模、跨细胞类型泛化及因果机制研究提供了一个多功能的一体化平台。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42755363/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42755363/",
+  "paper_page_path": "papers/pubmed/42755363/index.html"
+}

@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GenoME: a MoE-based generative model for individualized, multimodal prediction and perturbation of genomic profiles. · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-high">8</span>
+    <div>
+      <h1>GenoME: a MoE-based generative model for individualized, multimodal prediction and perturbation of genomic profiles.</h1>
+      <div class="meta">Wei, Jiachen; Xue, Yue; Chai, Hao; Gao, Yi Qin</div>
+      <div class="meta muted">
+        
+        <span class="journal">Nucleic acids research</span>
+        · 2026-09-18
+         · 仅摘要
+         · <a href="https://pubmed.ncbi.nlm.nih.gov/42755363/">原文</a>
+      </div>
+      <p class="one-liner">GenoME 是基于MoE的生成模型，整合DNA序列与ATAC-seq预测表观、转录及染色质三维构象等多模态基因组谱，并支持扰动模拟与增强子-启动子互作识别，与三维基因组调控建模高度相关。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">The non-coding genome operates through a complex, multiscale regulatory system where regulated gene expressions are closely associated with cell-type-specific histone modifications, transcription factor binding, and 3D conformation. Developing computational models that can integrate these patterns to predict and interpret the regulatory system remains challenging. Here, we present GenoME, a Mixture of Experts (MoE)-based generative model that uses DNA sequence and cell-type-specific ATAC-seq signals to predict a unified genomic profiles encompassing epigenomics, transcriptomics, and chromatin architecture at base-pair to kilobase resolutions. GenoME enables multiscale predictions for held-out genomic regions and, critically, generalizes to predict the full regulatory landscape of unseen or individualized cell types from a single ATAC-seq input. We equip GenoME with an in silico perturbation framework that accurately forecasts the multimodal consequences of genetic perturbations and identifies functional enhancer-promoter connections, outperforming specialized models like Activity-by-Contact. These predictions can also be used to decipher the transcription factor grammar of cell-type-specific enhancers. GenoME thus provides a versatile, all-in-one platform for generative modeling, cross-cell-type generalization, and causal mechanistic investigation of the multiscale regulatory genome.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">非编码基因组通过一个复杂的、多尺度的调控系统运作，其中受调控的基因表达与细胞类型特异性的组蛋白修饰、转录因子结合及三维构象密切相关。开发能够整合这些模式以预测和解释调控系统的计算模型仍然具有挑战性。在此，我们提出GenoME，一种基于混合专家（Mixture of Experts, MoE）的生成模型，利用DNA序列和细胞类型特异性的ATAC-seq信号，预测涵盖表观基因组学、转录组学及染色质构象的统一基因组图谱，分辨率从碱基对到千碱基。GenoME能够对未观测的基因组区域进行多尺度预测，并且关键的是，它能从单一的ATAC-seq输入泛化到预测未见或个体化细胞类型的完整调控景观。我们为GenoME配备了一个计算机模拟扰动框架，该框架能准确预测遗传扰动的多模态后果，并识别功能性增强子-启动子连接，优于如Activity-by-Contact等专门模型。这些预测还可用于解读细胞类型特异性增强子的转录因子语法。因此，GenoME为多尺度调控基因组的生成建模、跨细胞类型泛化及因果机制研究提供了一个多功能的一体化平台。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：GenoME: a MoE-based generative model for individualized, multimodal prediction and perturbation of genomic profiles</li>
+<li><strong>作者与单位</strong>：Wei, Jiachen; Xue, Yue; Chai, Hao; Gao, Yi Qin（单位未提供）</li>
+<li><strong>期刊/预印本平台</strong>：Nucleic Acids Research</li>
+<li><strong>年份</strong>：2026（在线日期 2026-09-18）</li>
+<li><strong>论文类型</strong>：方法学/工具类研究</li>
+<li><strong>领域</strong>：基因组学 × 深度学习（生成模型、Mixture of Experts）</li>
+<li><strong>关键词</strong>：非编码基因组、多模态预测、ATAC-seq、染色质架构、in silico perturbation、Mixture of Experts</li>
+<li><strong>DOI/arXiv 号</strong>：10.1093/nar/gkag902</li>
+<li><strong>代码</strong>：未提供</li>
+<li><strong>数据</strong>：未提供（文中提及使用 DNA 序列与 cell-type-specific ATAC-seq 信号）</li>
+<li><strong>阅读日期</strong>：未提供</li>
+<li><strong>该文在「三维基因组/染色质组织 × AI 方法/物理模拟」方向中的位置</strong>：该文属于「AI 方法预测染色质组织」类别，但并非以 3D 结构为唯一输出，而是将染色质架构（chromatin architecture）作为多模态预测的一部分，与表观基因组、转录组并列。其核心创新在于 MoE 架构的生成模型 + 跨细胞类型泛化 + in silico perturbation，对三维基因组方向的借鉴点在于：将 3D 特征纳入统一生成框架，以及用 perturbation 框架识别 enhancer-promoter 功能连接。</li>
+</ul>
+<hr />
+<h2>02 一句话总结</h2>
+<p>GenoME 用 Mixture of Experts 生成模型，以 DNA 序列和细胞类型特异 ATAC-seq 为输入，统一预测表观基因组、转录组和染色质架构等多模态基因组特征，并支持跨细胞类型泛化与 in silico perturbation，从而预测遗传扰动的多模态后果并识别功能性 enhancer-promoter 连接。</p>
+<hr />
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：非编码基因组通过多尺度调控系统运作，基因表达与细胞类型特异的组蛋白修饰、转录因子结合和 3D 构象密切相关。如何构建一个计算模型，整合这些模式以预测和解释调控系统？</li>
+<li><strong>为什么重要</strong>：非编码区占基因组绝大部分，其调控机制复杂且细胞类型特异；理解这些机制对疾病变异解释、细胞命运调控和精准医学至关重要。</li>
+<li><strong>现有方法为何不足</strong>：现有模型通常只针对单一模态（如只预测表观基因组或只预测 3D 结构），缺乏统一框架；跨细胞类型泛化能力有限；多数模型不具备因果扰动预测能力。</li>
+<li><strong>精确研究问题</strong>：Can a single generative model, trained on DNA sequence and ATAC-seq, predict multimodal genomic profiles (epigenomics, transcriptomics, chromatin architecture) for unseen cell types and accurately forecast the consequences of genetic perturbations?</li>
+</ul>
+<hr />
+<h2>04 背景与发展脉络</h2>
+<blockquote>
+<p>注：此脉络基于本文框架，未经外部系统核验。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>代表性方法</th>
+<th>优点</th>
+<th>局限</th>
+<th>本文位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>单模态预测</td>
+<td>Enformer、Basenji 等（序列→表达/表观）</td>
+<td>单任务精度高</td>
+<td>不覆盖多模态；跨细胞类型泛化弱</td>
+<td>本文扩展为多模态</td>
+</tr>
+<tr>
+<td>3D 结构预测</td>
+<td>HiC-Reg、DeepC、Orca 等</td>
+<td>可预测染色质接触</td>
+<td>通常只输出单一模态；不整合表观/转录</td>
+<td>本文将 3D 特征纳入统一生成框架</td>
+</tr>
+<tr>
+<td>多模态整合</td>
+<td>多任务学习模型</td>
+<td>共享表示</td>
+<td>缺乏生成能力；扰动预测弱</td>
+<td>本文用 MoE 实现生成式多模态</td>
+</tr>
+<tr>
+<td>扰动预测</td>
+<td>Activity-by-Contact (ABC) 等</td>
+<td>可预测 enhancer-promoter 功能</td>
+<td>依赖特定特征组合；不覆盖多模态</td>
+<td>本文的 perturbation 框架优于 ABC</td>
+</tr>
+</tbody>
+</table>
+<p><strong>本文主张的位置</strong>：GenoME 是首个将 MoE 生成模型用于多模态基因组预测、跨细胞类型泛化和因果扰动预测的统一平台。</p>
+<hr />
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>多模态整合困难</td>
+<td>现有模型通常只预测单一模态（表观/转录/3D 之一）</td>
+<td>不同模态数据异质、分辨率不同、调控机制复杂</td>
+<td>摘要：现有模型难以整合这些模式</td>
+</tr>
+<tr>
+<td>跨细胞类型泛化不足</td>
+<td>模型在训练过的细胞类型上表现好，但对未见细胞类型预测差</td>
+<td>细胞类型特异的调控模式难以从有限训练数据中学习</td>
+<td>摘要：GenoME 从单一 ATAC-seq 泛化到未见细胞类型</td>
+</tr>
+<tr>
+<td>扰动预测缺乏</td>
+<td>多数模型只能预测静态状态，无法预测遗传扰动的后果</td>
+<td>缺乏因果建模能力；扰动数据稀缺</td>
+<td>摘要：GenoME 配备 in silico perturbation 框架</td>
+</tr>
+<tr>
+<td>功能连接识别有限</td>
+<td>现有方法（如 ABC）在识别 enhancer-promoter 连接上精度有限</td>
+<td>依赖特定特征组合，未充分利用多模态信息</td>
+<td>摘要：GenoME 优于 Activity-by-Contact</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>06 核心思想</h2>
+<p><strong>1) 表面方法</strong>：
+- 用 Mixture of Experts (MoE) 架构构建生成模型
+- 输入：DNA 序列 + cell-type-specific ATAC-seq 信号
+- 输出：统一的多模态基因组特征（表观基因组、转录组、染色质架构），分辨率从碱基对到千碱基
+- 配备 in silico perturbation 框架</p>
+<p><strong>2) 核心洞察</strong>：
+- 不同模态的基因组特征共享底层调控逻辑，但各自有特异的模式；MoE 架构允许不同 expert 捕捉不同模态/不同调控模式，同时共享序列编码器
+- ATAC-seq 作为细胞类型特异的「调控状态指纹」，可以作为跨细胞类型泛化的桥梁——只需一个 ATAC-seq 输入即可预测该细胞类型的完整调控景观
+- 生成式框架天然支持 perturbation：通过修改输入（如引入突变），可以预测系统性的多模态响应</p>
+<p><strong>3) 可能的普适教训 [Analysis]</strong>：
+- 多模态预测中，与其用单一网络强行拟合所有输出，不如用 MoE 让不同 expert 专门化，同时保持共享表示
+- 一个「便宜」的细胞类型特异输入（如 ATAC-seq）可以作为跨条件泛化的锚点，避免为每个条件训练独立模型
+- 生成式框架 + perturbation 是连接「预测」与「因果机制」的桥梁，适用于三维基因组等复杂系统</p>
+<hr />
+<h2>07 方法总览</h2>
+<ul>
+<li><strong>输入</strong>：DNA 序列（参考基因组）+ cell-type-specific ATAC-seq 信号</li>
+<li><strong>输出</strong>：统一的多模态基因组特征，包括：</li>
+<li>表观基因组（如组蛋白修饰）</li>
+<li>转录组（基因表达）</li>
+<li>染色质架构（3D 构象相关特征）</li>
+<li>分辨率：碱基对（bp）到千碱基（kb）</li>
+<li><strong>核心模块</strong>：
+  1. 序列编码器：处理 DNA 序列
+  2. ATAC-seq 编码器：处理细胞类型特异信号
+  3. Mixture of Experts 层：多 expert 并行，门控机制选择/组合
+  4. 多模态解码头：分别输出表观、转录、3D 特征
+  5. In silico perturbation 框架：修改输入序列，预测多模态响应</li>
+<li><strong>训练</strong>：多模态联合训练（具体损失函数、优化器、数据规模未提供）</li>
+<li><strong>假设</strong>：</li>
+<li>ATAC-seq 信号足以编码细胞类型特异的调控状态</li>
+<li>多模态特征共享底层调控逻辑，可通过共享表示学习</li>
+<li>序列层面的扰动可以映射到多模态响应</li>
+</ul>
+<p><strong>文字流程</strong>：
+DNA 序列 + ATAC-seq → 序列编码器 + ATAC 编码器 → 融合表示 → MoE 层（门控选择 expert）→ 多模态解码头 → 表观/转录/3D 预测 →（可选）perturbation 模块修改输入 → 预测扰动后的多模态变化</p>
+<hr />
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>序列编码器</td>
+<td>提取 DNA 序列的调控特征</td>
+<td>序列是调控信息的载体</td>
+<td>输入：DNA 序列；输出：序列嵌入</td>
+<td>摘要：使用 DNA 序列作为输入</td>
+<td>预期：无法进行序列层面的扰动预测 [预期效应]</td>
+</tr>
+<tr>
+<td>ATAC-seq 编码器</td>
+<td>编码细胞类型特异的染色质可及性状态</td>
+<td>提供细胞类型特异信息，实现跨细胞类型泛化</td>
+<td>输入：ATAC-seq 信号；输出：细胞类型嵌入</td>
+<td>摘要：从单一 ATAC-seq 泛化到未见细胞类型</td>
+<td>预期：失去跨细胞类型泛化能力 [预期效应]</td>
+</tr>
+<tr>
+<td>MoE 层</td>
+<td>多 expert 并行，门控选择</td>
+<td>不同模态/调控模式需要专门化处理</td>
+<td>输入：融合表示；输出：加权组合的 expert 输出</td>
+<td>摘要：MoE-based generative model</td>
+<td>预期：多模态预测精度下降，模态间干扰 [预期效应]</td>
+</tr>
+<tr>
+<td>多模态解码头</td>
+<td>分别输出表观/转录/3D 预测</td>
+<td>不同模态有不同输出格式和分辨率</td>
+<td>输入：MoE 输出；输出：各模态预测</td>
+<td>摘要：预测统一的多模态基因组特征</td>
+<td>预期：无法同时预测多模态 [预期效应]</td>
+</tr>
+<tr>
+<td>In silico perturbation 框架</td>
+<td>修改输入序列，预测多模态响应</td>
+<td>实现因果扰动预测和 enhancer-promoter 识别</td>
+<td>输入：原始序列 + 扰动；输出：扰动后的多模态变化</td>
+<td>摘要：准确预测遗传扰动的多模态后果</td>
+<td>预期：失去因果机制研究能力 [预期效应]</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：所有消融效应均为预期效应，文中未提供实测消融实验数据。</p>
+</blockquote>
+<hr />
+<h2>09 关键公式符号</h2>
+<p>不适用。提供的材料（摘要）中未包含具体公式或符号定义。</p>
+<hr />
+<h2>10 实验设计与证据链</h2>
+<p><strong>数据集/群体</strong>：未提供（摘要未说明训练/测试数据规模与来源）
+<strong>规模</strong>：未提供
+<strong>指标</strong>：未提供（摘要提及「准确预测」但未给出具体指标）
+<strong>基线</strong>：Activity-by-Contact (ABC) 作为 perturbation 识别的对比基线
+<strong>预算</strong>：未提供
+<strong>骨干/仪器</strong>：未提供
+<strong>Oracle 输入</strong>：未提供
+<strong>评测协议</strong>：未提供</p>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的 claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>多模态预测</td>
+<td>GenoME 能预测表观/转录/3D 多模态特征</td>
+<td>未提供对比基线</td>
+<td>未提供具体数值</td>
+<td>能进行多模态预测</td>
+<td>无法评估与现有单模态模型的相对精度</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>跨细胞类型泛化</td>
+<td>从单一 ATAC-seq 预测未见细胞类型的完整调控景观</td>
+<td>未提供对比基线</td>
+<td>未提供具体数值</td>
+<td>具备跨细胞类型泛化能力</td>
+<td>无法评估泛化边界（哪些细胞类型、多少训练数据）</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>In silico perturbation</td>
+<td>准确预测遗传扰动的多模态后果</td>
+<td>未提供对比基线</td>
+<td>未提供具体数值</td>
+<td>具备扰动预测能力</td>
+<td>无法评估扰动类型覆盖范围</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>Enhancer-promoter 识别</td>
+<td>优于 Activity-by-Contact</td>
+<td>对比 ABC</td>
+<td>未提供具体数值</td>
+<td>优于 ABC</td>
+<td>无法评估优势幅度与适用条件</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>TF 语法解析</td>
+<td>可解析细胞类型特异增强子的 TF 语法</td>
+<td>未提供对比基线</td>
+<td>未提供具体数值</td>
+<td>具备 TF 语法解析能力</td>
+<td>无法评估解析深度与准确性</td>
+<td>摘要</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：GenoME 覆盖多模态基因组特征预测（表观、转录、3D），跨细胞类型泛化，以及 in silico perturbation 和 enhancer-promoter 识别。</li>
+<li><strong>Oracle/真值输入</strong>：使用 ATAC-seq 作为细胞类型特异的输入信号，这意味着预测质量依赖于 ATAC-seq 数据的质量与可获取性。</li>
+<li><strong>端到端状态</strong>：从序列 + ATAC-seq 到多模态预测是端到端的，但 perturbation 框架的具体实现方式（是否端到端可微）未提供。</li>
+<li><strong>算力成本</strong>：未提供。</li>
+<li><strong>历史数据依赖</strong>：训练数据依赖未提供；跨细胞类型泛化能力可能受训练数据中细胞类型多样性影响。</li>
+<li><strong>模型依赖</strong>：MoE 架构的具体设计（expert 数量、门控机制）未提供。</li>
+<li><strong>最难情形</strong>：未提供；推测可能包括：极端细胞类型、罕见变异、长程调控相互作用等 [Analysis]。</li>
+<li><strong>不确定性</strong>：摘要未提供置信区间、误差分析或失败模式讨论。</li>
+<li><strong>有边界的复述</strong>：GenoME 在提供的证据范围内，能够以 DNA 序列和 ATAC-seq 为输入，统一预测多模态基因组特征，并在 perturbation 场景下优于 ABC；但其具体性能边界、数据需求、计算成本及失败模式在摘要中未量化。</li>
+</ul>
+<hr />
+<h2>12 作者自认局限</h2>
+<p>在提供的材料（摘要）中未发现作者明确承认的局限。</p>
+<blockquote>
+<p><strong>作者提及的相关约束</strong>（非正式局限）：
+- 输入依赖 ATAC-seq 信号，意味着需要实验数据作为输入（摘要中提及「from a single ATAC-seq input」）
+- 预测分辨率覆盖 bp 到 kb，但未说明各模态的具体分辨率上限</p>
+</blockquote>
+<hr />
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>摘要未提供定量结果</td>
+<td>可能性能优势有限，或结果复杂难以简洁呈现</td>
+<td>无法评估实际增益</td>
+<td>查阅全文中的具体指标与对比</td>
+<td>摘要仅定性描述</td>
+</tr>
+<tr>
+<td>跨细胞类型泛化的边界未定义</td>
+<td>「unseen cell types」的范围可能有限（如仅限相近谱系）</td>
+<td>泛化能力是核心卖点，边界决定实用性</td>
+<td>检查测试细胞类型与训练细胞类型的相似性</td>
+<td>摘要未提供细胞类型列表</td>
+</tr>
+<tr>
+<td>MoE 架构的必要性未验证</td>
+<td>可能简单多任务模型也能达到类似效果</td>
+<td>MoE 增加复杂度，需证明其必要性</td>
+<td>对比 MoE vs. 非 MoE 同参数量模型</td>
+<td>摘要未提供消融</td>
+</tr>
+<tr>
+<td>Perturbation 框架的机制未说明</td>
+<td>可能是启发式修改而非真正的因果推断</td>
+<td>影响对「因果」claim 的解读</td>
+<td>查阅方法部分的具体实现</td>
+<td>摘要仅提及「in silico perturbation framework」</td>
+</tr>
+<tr>
+<td>3D 特征的预测粒度不明确</td>
+<td>「chromatin architecture」可能只覆盖接触矩阵的粗粒度特征</td>
+<td>对三维基因组方向的可迁移性取决于具体预测目标</td>
+<td>查阅 3D 特征的具体定义与评估</td>
+<td>摘要仅提及「chromatin architecture」</td>
+</tr>
+<tr>
+<td>ABC 对比的公平性未知</td>
+<td>ABC 可能未在相同输入条件下测试</td>
+<td>影响「优于 ABC」claim 的可信度</td>
+<td>检查对比实验的设置是否公平</td>
+<td>摘要未提供对比细节</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>14 学到什么</h2>
+<p><strong>Agent 提炼的知识候选</strong></p>
+<ol>
+<li>
+<p><strong>MoE 用于多模态基因组预测</strong>：不同模态（表观/转录/3D）可能有不同的调控模式，MoE 允许 expert 专门化，同时共享序列编码器。可迁移到三维基因组：不同染色体区域/不同尺度的 3D 特征可能需要不同的 expert 处理。</p>
+</li>
+<li>
+<p><strong>ATAC-seq 作为跨细胞类型泛化的锚点</strong>：用一个「便宜」的细胞类型特异实验信号作为条件输入，实现从训练细胞类型到未见细胞类型的泛化。可迁移到三维基因组：Hi-C 数据昂贵且稀疏，若能用 ATAC-seq 或类似信号预测未见细胞类型的 3D 结构，将大幅提升实用性。</p>
+</li>
+<li>
+<p><strong>生成式框架 + perturbation 连接预测与因果</strong>：通过修改输入序列预测多模态响应，实现 in silico 扰动实验。可迁移到三维基因组：预测 CTCF 位点突变、enhancer 删除等扰动对 3D 结构的影响，识别功能性调控元件。</p>
+</li>
+<li>
+<p><strong>统一多模态框架优于单模态专用模型</strong>：将表观、转录、3D 纳入同一框架，可能捕捉模态间的协同调控。可迁移到三维基因组：3D 结构预测不应孤立进行，而应与表观基因组、表达预测联合建模。</p>
+</li>
+<li>
+<p><strong>Enhancer-promoter 连接识别的 perturbation 方法</strong>：通过扰动预测识别功能性连接，优于静态特征方法（如 ABC）。可迁移到三维基因组：用 perturbation 预测识别功能性的 3D 互作，而非仅依赖接触频率。</p>
+</li>
+</ol>
+<hr />
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>Enformer / Basenji</strong>：序列→表达/表观的单模态预测模型，GenoME 扩展为多模态 + 跨细胞类型 + 生成式。三维基因组方向可借鉴其扩展思路。</li>
+<li><strong>Activity-by-Contact (ABC)</strong>：enhancer-promoter 连接的功能性评分方法，GenoME 声称优于 ABC。三维基因组方向可关注其对比实验的具体设置。</li>
+<li><strong>HiC-Reg / DeepC / Orca</strong>：3D 结构预测模型，GenoME 将 3D 特征纳入多模态框架。可对比其 3D 预测粒度与精度。</li>
+<li><strong>Mixture of Experts (MoE)</strong>：来自 NLP 的架构（如 Switch Transformer），GenoME 将其引入基因组学。三维基因组方向可考虑 MoE 处理不同尺度的染色质特征。</li>
+<li><strong>Chromatin architecture 预测</strong>：与 3D-Genome 方向的 Hi-C 预测、contact map 预测相关，但 GenoME 的「chromatin architecture」具体指什么特征（contact map？compartment？TAD？）在摘要中未明确，需查阅全文。</li>
+<li><strong>TF grammar</strong>：转录因子语法解析与 cis-regulatory code 相关，与三维基因组中 TF 对 3D 结构的影响可连接。</li>
+</ul>
+<hr />
+<h2>16 研究想法</h2>
+<p><strong>Agent 生成的研究候选</strong></p>
+<h3>候选 1：MoE 架构用于多尺度 3D 基因组特征预测</h3>
+<ul>
+<li><strong>名称</strong>：MoE-3DGenome</li>
+<li><strong>来源局限/观察</strong>：GenoME 用 MoE 统一预测多模态，但 3D 特征只是其中一部分；三维基因组方向缺乏类似的多尺度 MoE 框架</li>
+<li><strong>核心假设</strong>：不同尺度的 3D 特征（TAD、compartment、loop）需要不同的 expert 专门化，MoE 可提升预测精度</li>
+<li><strong>相对本文的增量</strong>：将 MoE 专门用于 3D 结构的多尺度预测，而非多模态</li>
+<li><strong>初步方法</strong>：以序列 + ATAC-seq 为输入，MoE 层分别输出 TAD 边界、compartment、contact map 等不同尺度的 3D 特征</li>
+<li><strong>验证方式</strong>：与现有 3D 预测模型（HiC-Reg、DeepC）对比；消融 MoE vs. 非 MoE</li>
+<li><strong>可能的失败模式</strong>：3D 特征可能高度相关，不需要专门化 expert；数据量不足</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul>
+<h3>候选 2：ATAC-seq 作为跨细胞类型 3D 结构预测的锚点</h3>
+<ul>
+<li><strong>名称</strong>：ATAC-to-3D</li>
+<li><strong>来源局限/观察</strong>：GenoME 用 ATAC-seq 实现跨细胞类型泛化；3D 结构数据（Hi-C）比 ATAC-seq 更稀缺，跨细胞类型预测 3D 结构的需求更迫切</li>
+<li><strong>核心假设</strong>：ATAC-seq 信号编码了足够的染色质状态信息，可预测未见细胞类型的 3D 结构</li>
+<li><strong>相对本文的增量</strong>：将跨细胞类型泛化策略专门应用于 3D 结构预测</li>
+<li><strong>初步方法</strong>：训练序列 + ATAC-seq → Hi-C 的模型，在未见细胞类型上测试</li>
+<li><strong>验证方式</strong>：与仅用序列的 3D 预测模型对比；在不同细胞类型间交叉验证</li>
+<li><strong>可能的失败模式</strong>：3D 结构可能依赖 ATAC-seq 未捕获的信息（如 CTCF 结合、拓扑结构）</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul>
+<h3>候选 3：Perturbation 框架用于 3D 结构扰动的因果预测</h3>
+<ul>
+<li><strong>名称</strong>：3D-Perturb</li>
+<li><strong>来源局限/观察</strong>：GenoME 的 perturbation 框架预测遗传扰动的多模态后果，但未专门聚焦 3D 结构变化；三维基因组方向缺乏系统的 in silico 3D perturbation 工具</li>
+<li><strong>核心假设</strong>：序列层面的扰动（如 CTCF 位点突变、enhancer 删除）可通过生成模型预测 3D 结构变化，并识别功能性 3D 互作</li>
+<li><strong>相对本文的增量</strong>：将 perturbation 框架专门化到 3D 结构，并验证与实验（Hi-C、Micro-C）的一致性</li>
+<li><strong>初步方法</strong>：在 GenoME 类框架上增加 3D 结构输出头，对已知 3D 相关变异进行 perturbation 预测</li>
+<li><strong>验证方式</strong>：与 CRISPR 扰动 + Hi-C 实验数据对比；与 ABC 等方法的 3D 相关预测对比</li>
+<li><strong>可能的失败模式</strong>：3D 结构变化可能非线性、非局域，难以从序列扰动准确预测</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul>
+<h3>候选 4：多模态生成框架用于 3D 结构-功能协同预测</h3>
+<ul>
+<li><strong>名称</strong>：3D-MultiModalGen</li>
+<li><strong>来源局限/观察</strong>：GenoME 将 3D 特征与表观/转录统一预测，但未深入探讨 3D 结构与其他模态的因果/协同关系</li>
+<li><strong>核心假设</strong>：3D 结构、表观基因组、表达之间存在可学习的协同模式，统一生成框架可捕捉这些模式并提升各模态预测精度</li>
+<li><strong>相对本文的增量</strong>：专门研究 3D 结构与其他模态的协同预测增益</li>
+<li><strong>初步方法</strong>：在 GenoME 框架上，对比「有 3D 输出 vs. 无 3D 输出」时其他模态的预测精度</li>
+<li><strong>验证方式</strong>：消融实验；检查 3D 特征是否提升表观/表达预测</li>
+<li><strong>可能的失败模式</strong>：3D 特征可能只是表观/表达的副产物，无额外信息增益</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul>
+<h3>候选 5：TF 语法与 3D 结构生成的联合建模</h3>
+<ul>
+<li><strong>名称</strong>：TF-3D-Grammar</li>
+<li><strong>来源局限/观察</strong>：GenoME 声称可解析细胞类型特异增强子的 TF 语法，但未与 3D 结构预测联合；TF 结合与 3D 结构（如 loop、TAD）密切相关</li>
+<li><strong>核心假设</strong>：TF 语法规则可指导 3D 结构预测，反之 3D 结构约束可提升 TF 语法解析精度</li>
+<li><strong>相对本文的增量</strong>：将 TF 语法解析与 3D 结构预测联合建模</li>
+<li><strong>初步方法</strong>：在 GenoME 框架上增加 TF 语法输出头，与 3D 结构输出联合训练</li>
+<li><strong>验证方式</strong>：TF 语法解析精度 vs. 单独解析；3D 结构预测精度 vs. 单独预测</li>
+<li><strong>可能的失败模式</strong>：TF 语法与 3D 结构的关系可能过于复杂，联合建模难以收敛</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Abstract only</li>
+<li><strong>Assessment boundary</strong> Claims and evidence as presented in the abstract; no methods, figures, tables, or supplementary materials were provided</li>
+<li><strong>Shared manuscript claim summary</strong> The authors present GenoME, a Mixture of Experts based generative model that integrates DNA sequence and cell-type-specific ATAC-seq signals to predict unified genomic profiles including epigenomics, transcriptomics, and chromatin architecture. The model is claimed to generalize to unseen or individualized cell types from a single ATAC-seq input, support in silico perturbation for forecasting multimodal consequences of genetic perturbations, identify functional enhancer-promoter connections with performance exceeding Activity-by-Contact, and enable deciphering of transcription factor grammar in cell-type-specific enhancers.</li>
+<li><strong>Visible evidence base</strong> Abstract text only; no quantitative results, benchmark details, model architecture descriptions, or validation procedures are available</li>
+<li><strong>Missing materials affecting confidence</strong> Full manuscript, methods section, all figures and tables, supplementary information, benchmark definitions, statistical analyses, and code or data availability statements</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li><strong>Overall assessment</strong> The abstract describes an ambitious and potentially valuable framework for integrative modeling of the regulatory genome. The scope of outputs, from epigenomics to chromatin architecture, and the claimed cross-cell-type generalization are scientifically compelling. However, the abstract provides no quantitative evidence, no comparison details, and no methodological specifics. The core claims, particularly those of outperforming specialized models and achieving accurate perturbation forecasting, cannot be evaluated from the supplied material. The work may be of interest to computational genomics and regulatory biology communities, but the current evidence base is insufficient to establish the case.</li>
+<li><strong>Who would be interested in the results, and why</strong> Computational biologists developing generative models for genomics, researchers studying gene regulation and chromatin architecture, and experimentalists seeking in silico tools for perturbation prioritization and enhancer-promoter mapping would find this work relevant. The promise of predicting full regulatory landscapes from a single ATAC-seq experiment could appeal to those working on rare or difficult-to-profile cell types.</li>
+<li><strong>Major strengths</strong> The proposed framework addresses a recognized gap in integrative modeling of multiscale regulatory outputs. The emphasis on cross-cell-type generalization from a single input modality is a practical and forward-looking design goal. The inclusion of an in silico perturbation component with causal interpretation potential adds translational relevance.</li>
+<li><strong>Major Concerns</strong>  </li>
+<li>R1-M1  </li>
+<li>R1-M2  </li>
+<li>R1-M3  </li>
+<li>R1-M4</li>
+<li><strong>Minor Comments</strong>  </li>
+<li>R1-m1  </li>
+<li>R1-m2  </li>
+<li>R1-m3</li>
+<li><strong>Technical failings that need to be addressed before the case is established</strong> R1-M1, R1-M2, R1-M3, R1-M4</li>
+<li><strong>Assessment against Nature-style criteria</strong> Originality is potentially high given the integration of multiple output modalities within a single generative framework, but this cannot be confirmed without methodological details. Scientific importance is plausible for regulatory genomics, yet the abstract does not demonstrate impact through quantitative outcomes. Interdisciplinary readership is likely, spanning machine learning and molecular biology, but the abstract lacks sufficient technical transparency for either audience to assess rigor. Technical soundness is not assessable from the abstract alone. Readability for nonspecialists is adequate in terms of prose clarity, though the density of domain terms may limit accessibility.</li>
+<li><strong>Recommendation posture</strong> Currently not established from the provided evidence. The claims are scientifically interesting but require full manuscript review with quantitative results and methodological detail before a supportive posture can be considered.</li>
+</ul>
+<h3>Major Concerns</h3>
+<ul>
+<li><strong>Concern ID</strong> R1-M1  </li>
+<li><strong>Severity</strong> Major  </li>
+<li><strong>Blocking</strong> Yes  </li>
+<li><strong>Axis</strong> Evidence sufficiency  </li>
+<li><strong>Claim pointer</strong> GenoME predicts a unified genomic profile encompassing epigenomics, transcriptomics, and chromatin architecture at base-pair to kilobase resolutions.  </li>
+<li><strong>Evidence pointer</strong> Abstract only; location not provided  </li>
+<li><strong>Concern</strong> The abstract asserts multiscale predictive capability across three distinct data modalities but provides no performance metrics, no resolution benchmarks, and no comparison to existing integrative models.  </li>
+<li><strong>Why it matters</strong> Without quantitative evidence of prediction accuracy across each modality and resolution scale, the central capability claim is unverifiable.  </li>
+<li>
+<p><strong>Resolution test</strong> Provide in the full manuscript prediction accuracy metrics, such as correlation or AUROC, for each modality against held-out experimental data, with resolution-specific breakdowns.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M2  </p>
+</li>
+<li><strong>Severity</strong> Major  </li>
+<li><strong>Blocking</strong> Yes  </li>
+<li><strong>Axis</strong> Generalization validity  </li>
+<li><strong>Claim pointer</strong> GenoME generalizes to predict the full regulatory landscape of unseen or individualized cell types from a single ATAC-seq input.  </li>
+<li><strong>Evidence pointer</strong> Abstract only; location not provided  </li>
+<li><strong>Concern</strong> The claim of cross-cell-type generalization is central to the work, but the abstract does not specify how unseen cell types are defined, what training and test splits were used, or how performance on unseen cell types compares to seen cell types.  </li>
+<li><strong>Why it matters</strong> Generalization to unseen cell types is a strong claim that requires careful evaluation to rule out trivial solutions, such as reliance on sequence-only features or leakage from similar cell types in training.  </li>
+<li>
+<p><strong>Resolution test</strong> Describe the cell-type split strategy, report performance on held-out cell types, and include ablation analyses that isolate the contribution of ATAC-seq signals versus sequence features.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M3  </p>
+</li>
+<li><strong>Severity</strong> Major  </li>
+<li><strong>Blocking</strong> Yes  </li>
+<li><strong>Axis</strong> Comparative rigor  </li>
+<li><strong>Claim pointer</strong> GenoME outperforms specialized models like Activity-by-Contact in identifying functional enhancer-promoter connections.  </li>
+<li><strong>Evidence pointer</strong> Abstract only; location not provided  </li>
+<li><strong>Concern</strong> The abstract states superiority over Activity-by-Contact without presenting any comparative metrics, statistical tests, or dataset descriptions.  </li>
+<li><strong>Why it matters</strong> Outperformance claims require rigorous benchmarking on standardized datasets with appropriate significance testing to be credible.  </li>
+<li>
+<p><strong>Resolution test</strong> Provide benchmark datasets, evaluation metrics, and statistical significance results for comparisons against Activity-by-Contact and other relevant baselines.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M4  </p>
+</li>
+<li><strong>Severity</strong> Major  </li>
+<li><strong>Blocking</strong> Yes  </li>
+<li><strong>Axis</strong> Perturbation validity  </li>
+<li><strong>Claim pointer</strong> GenoME accurately forecasts the multimodal consequences of genetic perturbations.  </li>
+<li><strong>Evidence pointer</strong> Abstract only; location not provided  </li>
+<li><strong>Concern</strong> The perturbation forecasting claim implies causal predictive ability, but the abstract provides no details on how perturbations are simulated, what validation against experimental perturbation data was performed, or what accuracy was achieved.  </li>
+<li><strong>Why it matters</strong> Causal claims in silico require validation against independent experimental perturbation datasets to establish reliability.  </li>
+<li><strong>Resolution test</strong> Describe the perturbation framework, validate against published perturbation experiments, and report concordance metrics such as correlation or enrichment of predicted versus observed changes.</li>
+</ul>
+<h3>Minor Comments</h3>
+<ul>
+<li><strong>Concern ID</strong> R1-m1  </li>
+<li><strong>Severity</strong> Minor  </li>
+<li><strong>Axis</strong> Clarity  </li>
+<li><strong>Affected element</strong> Model input description  </li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided  </li>
+<li><strong>Issue</strong> The abstract states the model uses DNA sequence and ATAC-seq signals but does not clarify whether ATAC-seq is used as a continuous signal or as peak calls, nor how sequence context is encoded.  </li>
+<li>
+<p><strong>Required correction</strong> Specify input representations in the methods section.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m2  </p>
+</li>
+<li><strong>Severity</strong> Minor  </li>
+<li><strong>Axis</strong> Interpretability  </li>
+<li><strong>Affected element</strong> Transcription factor grammar claim  </li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided  </li>
+<li><strong>Issue</strong> The claim of deciphering transcription factor grammar is vague and lacks definition of what grammar means in this context.  </li>
+<li>
+<p><strong>Required correction</strong> Define the specific grammar features extracted and how they are validated.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m3  </p>
+</li>
+<li><strong>Severity</strong> Minor  </li>
+<li><strong>Axis</strong> Reproducibility  </li>
+<li><strong>Affected element</strong> Resource availability  </li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided  </li>
+<li><strong>Issue</strong> No mention of code or data availability, which is essential for reproducibility.  </li>
+<li><strong>Required correction</strong> Include a data and code availability statement in the full manuscript.</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>The claim of outperforming Activity-by-Contact is unsupported by any comparative data in the abstract.</li>
+<li>The claim of accurate perturbation forecasting is unsupported by any validation evidence in the abstract.</li>
+<li>The claim of cross-cell-type generalization to unseen cell types is unsupported by any evaluation details in the abstract.</li>
+<li>The claim of predicting unified genomic profiles at base-pair to kilobase resolutions is unsupported by any resolution-specific performance metrics in the abstract.</li>
+<li>The claim of deciphering transcription factor grammar is unsupported by any methodological or validation details in the abstract.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

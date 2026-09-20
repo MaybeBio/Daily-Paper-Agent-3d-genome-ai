@@ -6,15 +6,15 @@
   "journal": "Advanced genetics (Hoboken, N.J.)",
   "published_date": "2026-09-15",
   "window": {
-    "start": "2026-09-09",
-    "end": "2026-09-15"
+    "start": "2026-09-13",
+    "end": "2026-09-19"
   },
   "score": 5,
-  "one_liner_zh": "该文展望植物泛基因组学未来，提出将结构变异与染色质组织、三维基因组及AI整合以建立预测育种模型，虽涉及三维基因组和AI但仅为概念性展望，缺乏具体建模方法。",
+  "one_liner_zh": "该文是植物泛基因组学展望综述，提出将结构变异与染色质组织、三维基因组和AI整合以建立预测育种模型，虽涉及三维基因组和AI但仅为概念性展望，无具体建模方法。",
   "abstract": "Plant pan-genomics is entering a new phase beyond genome variation discovery, requiring a shift from cataloguing genomic diversity toward understanding how variation generates biological function and breeding value. Here, we propose that the future of plant pan-genomics will be shaped by three conceptual transitions. First, structural variation (SV), presence-absence variation (PAV), and haplotype diversity should be interpreted not merely as genomic differences, but as regulatory components that influence gene networks, chromatin organization, and complex traits. Second, the expansion from species-level pan-genomes to genus-level super pan-genomes provides an evolutionary framework for uncovering adaptive genetic modules preserved in wild relatives and overlooked during domestication. Third, integrating pan-genomes with pan-omics, three-dimensional genome analyses, and artificial intelligence will enable the transformation of genomic variation into predictive models for crop improvement. We further propose that the ultimate value of pan-genomes lies not in generating increasingly complete genome collections, but in establishing a mechanistic bridge between genome diversity, biological function, and breeding decisions. This transition will move crop improvement from empirical selection toward rational genome design, where evolutionary diversity can be systematically interpreted, predicted, and engineered.",
-  "abstract_zh": "植物泛基因组学正进入一个超越基因组变异发现的新阶段，要求从编目基因组多样性转向理解变异如何产生生物学功能和育种价值。在此，我们提出植物泛基因组学的未来将由三个概念性转变所塑造。首先，结构变异（structural variation, SV）、存在/缺失变异（presence-absence variation, PAV）和单倍型多样性不应仅被解释为基因组差异，而应视为影响基因网络、染色质组织和复杂性状的调控组件。其次，从物种水平泛基因组扩展到属水平超级泛基因组，为揭示野生近缘种中保存的、在驯化过程中被忽视的适应性遗传模块提供了进化框架。第三，将泛基因组与泛组学、三维基因组分析和人工智能相结合，将使基因组变异转化为作物改良的预测模型成为可能。我们进一步提出，泛基因组的最终价值不在于生成日益完整的基因组集合，而在于建立基因组多样性、生物学功能与育种决策之间的机制桥梁。这一转变将使作物改良从经验选择走向理性基因组设计，在此过程中，进化多样性可以被系统性地解释、预测和工程化。",
-  "has_fulltext": false,
-  "fulltext_source": "abstract",
+  "abstract_zh": "植物泛基因组学正进入一个超越基因组变异发现的新阶段，要求从编目基因组多样性转向理解变异如何产生生物学功能和育种价值。在此，我们提出植物泛基因组学的未来将由三个概念性转变所塑造。首先，结构变异 (structural variation, SV)、存在/缺失变异 (presence-absence variation, PAV) 和单倍型多样性不应仅被解释为基因组差异，而应视为影响基因网络、染色质组织和复杂性状的调控组件。其次，从物种水平泛基因组扩展到属水平超级泛基因组，为揭示野生近缘种中保存的、在驯化过程中被忽视的适应性遗传模块提供了进化框架。第三，将泛基因组与泛组学、三维基因组分析和人工智能相结合，将使基因组变异转化为作物改良的预测模型成为可能。我们进一步提出，泛基因组的最终价值不在于生成日益完整的基因组集合，而在于建立基因组多样性、生物学功能与育种决策之间的机制桥梁。这一转变将使作物改良从经验选择走向理性基因组设计，在此过程中，进化多样性可以被系统性地解释、预测和工程化。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
   "fulltext_path": "fulltext.md",
   "paper_card_path": "paper-card.md",
   "review_path": "review.md",

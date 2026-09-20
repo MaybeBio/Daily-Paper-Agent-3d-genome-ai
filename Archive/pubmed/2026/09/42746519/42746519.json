@@ -1,0 +1,210 @@
+{
+  "identity": {
+    "pmid": "42746519",
+    "doi": "10.1016/j.patter.2026.101589",
+    "title": "Disentangling covariate effects on single-cell-resolved epigenomes with DeepDive."
+  },
+  "content": {
+    "abstract": "Understanding the effects of individual biological factors from single-cell-resolved epigenomic data is hindered by multicollinearity, particularly in human cohorts. We introduce DeepDive, a deep-learning framework designed to systematically disentangle known and unknown sources of variation in single-nucleus ATAC-seq data. DeepDive accurately reconstructs chromatin accessibility, outperforms state-of-the-art methods with incomplete covariate information, and robustly recovers true biological signals from even highly entangled covariates, unlocking counterfactual, \"what-if,\" analyses. Applying DeepDive to pancreatic islet cells, we perform counterfactual analyses to prioritize covariates associated with a type 2 diabetes-linked beta-cell subtype and nominate transcription regulators. DeepDive offers a powerful and unbiased tool for mechanistic discovery in complex human disease cohorts.",
+    "keywords": [
+      "disentanglement",
+      "representation learning",
+      "single-cell epigenomics",
+      "single-nucleus ATAC-seq",
+      "type 2 diabetes"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Moller, Andreas Fonss",
+        "Madsen, Jesper Grud Skat"
+      ],
+      "short_names": [
+        "Moller AF",
+        "Madsen JGS"
+      ],
+      "auids": [],
+      "affiliations": [
+        "Department of Biochemistry and Molecular Biology, University of Southern Denmark, 5230 Odense M, Denmark.",
+        "The Novo Nordisk Foundation Center for Genomic Mechanisms of Disease, Broad Institute of MIT and Harvard, Cambridge, MA 02142, USA.",
+        "Department of Biochemistry and Molecular Biology, University of Southern Denmark, 5230 Odense M, Denmark.",
+        "The Novo Nordisk Foundation Center for Genomic Mechanisms of Disease, Broad Institute of MIT and Harvard, Cambridge, MA 02142, USA."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Møller, Andreas Fønss",
+        "short_name": "Møller AF",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Biochemistry and Molecular Biology, University of Southern Denmark, 5230 Odense M, Denmark.",
+          "The Novo Nordisk Foundation Center for Genomic Mechanisms of Disease, Broad Institute of MIT and Harvard, Cambridge, MA 02142, USA."
+        ]
+      },
+      {
+        "full_name": "Madsen, Jesper Grud Skat",
+        "short_name": "Madsen JGS",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Biochemistry and Molecular Biology, University of Southern Denmark, 5230 Odense M, Denmark.",
+          "The Novo Nordisk Foundation Center for Genomic Mechanisms of Disease, Broad Institute of MIT and Harvard, Cambridge, MA 02142, USA."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Patterns (New York, N.Y.)"
+    ],
+    "journal_abbrev": [
+      "Patterns (N Y)"
+    ],
+    "pub_date": "2026 Sep 11",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/16 11:41",
+    "fetched_at": "2026-09-20 08:59:56"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42746519",
+      "42746522",
+      "32029221",
+      "41731605",
+      "26977395",
+      "34815310",
+      "37433791",
+      "33795864",
+      "41956095",
+      "42475469",
+      "33191916",
+      "34898596",
+      "39326643",
+      "38194039",
+      "40737125",
+      "30580963",
+      "42378398",
+      "41744270",
+      "42218722",
+      "26282110",
+      "42665446",
+      "30967126",
+      "42125447",
+      "35605196",
+      "36902216",
+      "42271487",
+      "32143622",
+      "26083756",
+      "29686426",
+      "34252968",
+      "39881144",
+      "37886586",
+      "33637727",
+      "29970004",
+      "41257571",
+      "40982369",
+      "36719906",
+      "41157948",
+      "31123324",
+      "37289818",
+      "42094425",
+      "42688241",
+      "38493346",
+      "42716912",
+      "37127706",
+      "34433064",
+      "42229582",
+      "33422696",
+      "35475224",
+      "42114116",
+      "37114830",
+      "40713495",
+      "41106176",
+      "41284927",
+      "37047200",
+      "32637041",
+      "36321557",
+      "33775205",
+      "35195064",
+      "34686316",
+      "41618152",
+      "38967666",
+      "40240358",
+      "41278629",
+      "30375457",
+      "37875977",
+      "33827925",
+      "41632825",
+      "40701997",
+      "39975126",
+      "40385425",
+      "41530870",
+      "39041910",
+      "40037709",
+      "41932342",
+      "42560939",
+      "39800872",
+      "31853478",
+      "37012226",
+      "27895806",
+      "40471991",
+      "41408042",
+      "41937210",
+      "42184831",
+      "39987573",
+      "34875002",
+      "36873935",
+      "37231096",
+      "30078704",
+      "38589969",
+      "34031415",
+      "42328733",
+      "39700048",
+      "37137383",
+      "37069576",
+      "34471111",
+      "37016052",
+      "37118773",
+      "37669939",
+      "39928726"
+    ],
+    "review": [
+      "42746519",
+      "42716912",
+      "32637041",
+      "36321557"
+    ],
+    "pmc": [
+      "13576652"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://linkinghub.elsevier.com/retrieve/pii/S2666-3899(26)00098-X",
+        "provider": "Elsevier Science",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/pmid/42746519/",
+        "provider": "PubMed Central",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

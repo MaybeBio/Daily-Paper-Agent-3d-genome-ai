@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42747189",
+  "title": "Biological Parts in Yeast Synthetic Biology: From Regulatory Elements to Predictive Design Platforms.",
+  "authors": "Hong, Sujin; Kang, Ho Bum; Seong, Min-Jun; Jeon, Eunha; Seo, Sumin; Woo, Seung-Gyun; Oh, Eun Joong; Park, Young-Kyoung; Lee, Youngjoon; Lee, Dae-Hee",
+  "journal": "FEMS yeast research",
+  "published_date": "2026-09-16",
+  "window": {
+    "start": "2026-09-13",
+    "end": "2026-09-19"
+  },
+  "score": 4,
+  "one_liner_zh": "该综述聚焦酵母合成生物学的调控元件与预测设计平台，虽涉及染色质状态对元件性能的影响，但核心是基因表达调控与工程框架，而非染色质三维空间组织建模，且无AI/分子模拟方法实质贡献。",
+  "abstract": "Yeasts, particularly Saccharomyces cerevisiae, are important eukaryotic chassis for synthetic biology because of their tractable genetics, versatile toolkits, and broad utility in metabolic engineering and functional genomics. Progress in this field has been driven by biological parts that enable programmable control of gene expression and cellular behavior. Early efforts focused mainly on promoters, terminators, and other regulatory elements for tuning individual genes. However, as engineering expanded to multigene pathways, genetic circuits, and dynamic regulatory systems, the limits of part-centric design became clear. Part performance is often shaped by genomic context, chromatin state, host physiology, and interactions with other components, which restricts modularity and predictability. In response, yeast synthetic biology is shifting toward integrated design frameworks combining multilayer regulation, standardized assembly, automated experimentation, and computational modeling. This review provides an integrated perspective on the evolution of biological parts across DNA-, RNA-, and protein-level regulation, connecting these advances with assembly frameworks, biofoundries, and machine learning to trace the trajectory from part-centric engineering toward predictive, system-level design in yeast synthetic biology.",
+  "abstract_zh": "酵母，尤其是酿酒酵母（Saccharomyces cerevisiae），因其遗传易操作性、多功能工具包以及在代谢工程和功能基因组学中的广泛用途，成为合成生物学中重要的真核底盘。该领域的进展由能够实现基因表达和细胞行为可编程控制的生物部件驱动。早期工作主要集中于启动子、终止子及其他调控元件，以微调单个基因。然而，随着工程扩展到多基因途径、遗传电路和动态调控系统，以部件为中心的设计局限性变得明显。部件性能常受基因组背景、染色质状态、宿主生理状态及与其他组分相互作用的影响，这限制了模块性和可预测性。为此，酵母合成生物学正转向整合设计框架，结合多层调控、标准化组装、自动化实验和计算建模。本综述提供了跨DNA、RNA和蛋白质水平调控的生物部件演化的整合视角，将这些进展与组装框架、生物铸造厂和机器学习相连接，追踪从以部件为中心的工程向酵母合成生物学中预测性、系统级设计的轨迹。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42747189/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42747189/",
+  "paper_page_path": "papers/pubmed/42747189/index.html"
+}

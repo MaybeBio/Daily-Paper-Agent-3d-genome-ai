@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Molecular simulations of chromatin-associated biomolecular condensates. · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-mid">7</span>
+    <div>
+      <h1>Molecular simulations of chromatin-associated biomolecular condensates.</h1>
+      <div class="meta">Maristany, M Julia; Russell, Kieran; Perez Lopez, Ignacio; Huertas, Jan; Collepardo-Guevara, Rosana</div>
+      <div class="meta muted">
+        
+        <span class="journal">Current opinion in structural biology</span>
+        · 2026-09-18
+         · 仅摘要
+         · <a href="https://pubmed.ncbi.nlm.nih.gov/42759328/">原文</a>
+      </div>
+      <p class="one-liner">该文综述了分子模拟在染色质相关生物分子凝聚体研究中的应用，强调粗粒化模型需纳入染色质架构等核内因素，虽为综述且非直接建模，但对染色质三维组织与相分离耦合的模拟方法有启发。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">Biomolecular condensates are central to nuclear organisation, and molecular simulations have most advanced our understanding of the molecular interactions that drive their formation and phase behaviour. Coarse-grained, physicochemically specific models are now able to reproduce phase diagrams, material properties, and sequence-phase space relationships with quantitative accuracy for intrinsically disordered proteins, but capturing condensates as they exist in the nucleus demands additional ingredients: explicit ionic environments, post-translational modification grammars, chromatin architecture as an explicit component, and nonequilibrium dynamics driven by active processes.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">生物分子凝聚体（biomolecular condensates）是细胞核组织的核心，而分子模拟（molecular simulations）极大地推进了我们对驱动其形成及相行为（phase behavior）的分子相互作用的理解。粗粒化、物理化学特异性的模型现已能够以定量精度再现 intrinsically disordered proteins（内在无序蛋白）的相图（phase diagrams）、材料性质及序列-相空间关系，但捕捉细胞核中实际存在的凝聚体需要额外要素：显式离子环境、翻译后修饰语法（post-translational modification grammars）、作为显式组分的染色质结构（chromatin architecture），以及由活性过程驱动的非平衡动力学（nonequilibrium dynamics）。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：Molecular simulations of chromatin-associated biomolecular condensates</li>
+<li><strong>作者</strong>：Maristany, M Julia; Russell, Kieran; Perez Lopez, Ignacio; Huertas, Jan; Collepardo-Guevara, Rosana</li>
+<li><strong>单位</strong>：未提供（根据作者领域推断与 Collepardo-Guevara 课题组相关，具体单位未在摘要中给出）</li>
+<li><strong>期刊/平台</strong>：Current Opinion in Structural Biology</li>
+<li><strong>年份</strong>：2026-09-18（在线日期）</li>
+<li><strong>论文类型</strong>：综述（Opinion/Review）</li>
+<li><strong>领域</strong>：计算生物物理 / 染色质组织 / 生物分子凝聚体 / 分子模拟</li>
+<li><strong>关键词</strong>：biomolecular condensates, chromatin, coarse-grained simulations, phase behaviour, nonequilibrium dynamics</li>
+<li><strong>DOI/arXiv</strong>：10.1016/j.sbi.2026.103378</li>
+<li><strong>代码</strong>：未提供</li>
+<li><strong>数据</strong>：未提供</li>
+<li><strong>阅读日期</strong>：未提供</li>
+<li><strong>在该方向中的位置</strong>：本文是面向「染色质相关生物分子凝聚体」的分子模拟方法综述，处于三维基因组 × 物理模拟交叉点。它总结了粗粒化模型从 IDP 单链体系向核内多组分、含染色质、非平衡体系扩展的现状与挑战，属于方法学综述而非新方法论文。</li>
+</ul>
+<hr />
+<h2>02 一句话总结</h2>
+<p>本文综述了粗粒化、物理化学特异的分子模拟方法在预测 intrinsically disordered proteins（IDPs）相分离的相图、材料性质与序列-相行为关系方面已达定量精度，并指出将这些方法推广到核内染色质相关凝聚体时，必须显式纳入离子环境、翻译后修饰语法、染色质架构与非平衡主动动力学四个关键要素。</p>
+<hr />
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：当前分子模拟方法在多大程度上能够准确描述染色质相关的生物分子凝聚体（chromatin-associated condensates）的形成与相行为？现有方法在从体外 IDP 体系转向核内真实环境时缺少哪些关键物理化学要素？</li>
+<li><strong>为什么重要</strong>：染色质相关凝聚体（如异染色质、转录凝聚体）是三维基因组组织的重要机制之一。理解其分子驱动因素对于解释基因调控、染色质区室化以及疾病中的异常相分离至关重要。</li>
+<li><strong>现有方法为何不足</strong>：现有粗粒化模型在 IDP 单链或单组分体系中已能定量复现相图与材料性质，但核内凝聚体涉及多组分、高浓度离子环境、翻译后修饰（PTM）调控、染色质作为支架/底物的参与，以及由主动过程（如转录、ATP 依赖的染色质重塑）驱动的非平衡动力学——这些在大多数现有模型中未被显式处理。</li>
+<li><strong>精确研究问题</strong>：Can coarse-grained, physicochemically specific simulations quantitatively capture the phase behaviour of chromatin-associated condensates when ionic environment, PTM grammars, chromatin architecture, and nonequilibrium active dynamics are explicitly included?</li>
+</ul>
+<hr />
+<h2>04 背景与发展脉络</h2>
+<blockquote>
+<p>注：本脉络基于本文摘要与作者论述框架整理，标注为「仅本文框架」，未经外部文献系统核验。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>代表性方法</th>
+<th>优点</th>
+<th>局限</th>
+<th>本文主张的位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>早期：通用粗粒化模型</td>
+<td>基于疏水/静电的通用 CG 模型</td>
+<td>计算高效，可捕捉基本相分离趋势</td>
+<td>缺乏序列特异性，定量精度不足</td>
+<td>被超越</td>
+</tr>
+<tr>
+<td>中期：物理化学特异 CG 模型</td>
+<td>如 HPS、CALVADOS 等（作者未逐一列出，但属此类）</td>
+<td>可定量复现 IDP 相图、材料性质、序列-相行为关系</td>
+<td>主要适用于体外单组分/双组分 IDP 体系</td>
+<td>当前最先进水平，但仅限 IDP</td>
+</tr>
+<tr>
+<td>当前前沿：核内多组分体系</td>
+<td>含离子、PTM、染色质、主动动力学的扩展模型</td>
+<td>更接近核内真实条件</td>
+<td>尚处于发展阶段，计算成本高，参数化复杂</td>
+<td>本文呼吁的方向</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>离子环境缺失</td>
+<td>多数 CG 模型未显式模拟离子，或仅用隐式静电处理</td>
+<td>核内离子浓度高且影响 IDP 电荷-电荷相互作用与相分离</td>
+<td>摘要明确列出 "explicit ionic environments" 为必需要素</td>
+</tr>
+<tr>
+<td>PTM 语法缺失</td>
+<td>翻译后修饰（如磷酸化、甲基化）对相分离的调控未被系统编码</td>
+<td>PTM 改变 IDP 电荷分布与相互作用模式，需在模型中编码</td>
+<td>摘要列出 "post-translational modification grammars"</td>
+</tr>
+<tr>
+<td>染色质架构缺失</td>
+<td>凝聚体模拟中染色质通常被忽略或仅作背景</td>
+<td>染色质是凝聚体的支架/底物，其拓扑与密度影响凝聚体成核与定位</td>
+<td>摘要列出 "chromatin architecture as an explicit component"</td>
+</tr>
+<tr>
+<td>非平衡动力学缺失</td>
+<td>多数模型假设平衡态或近平衡态</td>
+<td>核内主动过程（转录、重塑）驱动非平衡动力学，影响凝聚体性质</td>
+<td>摘要列出 "nonequilibrium dynamics driven by active processes"</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>06 核心思想</h2>
+<ol>
+<li>
+<p><strong>表面方法</strong>：本文是一篇综述，系统梳理了粗粒化分子模拟在生物分子凝聚体研究中的进展，并指出向染色质相关体系扩展所需的关键物理化学要素。</p>
+</li>
+<li>
+<p><strong>核心洞察</strong>：现有 CG 模型在 IDP 体系已达定量精度，但「从 IDP 到核内染色质凝聚体」不是简单的参数扩展，而是需要引入四个正交的物理化学维度——离子、PTM、染色质架构、非平衡动力学。这四个维度相互耦合，缺一不可。</p>
+</li>
+<li>
+<p><strong>可能的普适教训</strong> [Analysis]：对于三维基因组 × AI/模拟交叉领域，一个可迁移的教训是：模型的「定量成功」是有边界条件的——在简化体系中验证的精度，不能直接外推到复杂核内环境。任何声称能预测染色质凝聚体的模型，都必须明确声明其覆盖的物理化学自由度范围。</p>
+</li>
+</ol>
+<hr />
+<h2>07 方法总览</h2>
+<p>本文为综述，无新方法。但按作者框架，染色质相关凝聚体的模拟方法应包含：</p>
+<ul>
+<li><strong>输入</strong>：IDP/染色质相关蛋白的氨基酸序列、PTM 状态、染色质纤维结构（如 10 nm 纤维或更高阶折叠）、离子种类与浓度、主动过程参数（如酶活性、ATP 浓度）</li>
+<li><strong>输出</strong>：相图（binodal/spinodal）、凝聚体材料性质（粘度、表面张力、扩散系数）、序列-相行为关系、凝聚体-染色质空间关联</li>
+<li><strong>模块</strong>：
+  1. 物理化学特异 CG 力场（编码氨基酸特异性相互作用）
+  2. 离子显式/隐式处理模块
+  3. PTM 语法编码模块（将 PTM 映射为电荷/相互作用参数变化）
+  4. 染色质纤维模型（作为凝聚体底物/支架）
+  5. 非平衡驱动模块（主动力、能量输入）</li>
+<li><strong>训练</strong>：参数化通常基于实验数据（如散射、NMR、相图测量）或全原子模拟</li>
+<li><strong>工具</strong>：未提供具体软件名</li>
+<li><strong>反馈回路</strong>：模拟预测 → 实验验证 → 参数修正</li>
+<li><strong>假设</strong>：粗粒化保留物理化学特异性足以捕捉相行为；核内凝聚体可用近平衡或受控非平衡框架描述</li>
+</ul>
+<p><strong>文字流程</strong>：氨基酸序列 + PTM 状态 → 映射为 CG 珠子与相互作用参数 → 加入离子环境与染色质纤维 → 运行 CG 模拟（平衡或非平衡）→ 分析相图/材料性质/空间关联 → 与实验对比 → 迭代修正。</p>
+<hr />
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>物理化学特异 CG 力场</td>
+<td>编码氨基酸特异性相互作用，驱动相分离</td>
+<td>通用模型无法定量复现序列-相行为关系</td>
+<td>输入：序列；输出：相互作用参数</td>
+<td>摘要称其已能 "reproduce phase diagrams, material properties, and sequence-phase space relationships with quantitative accuracy"</td>
+<td>预期：失去定量精度 [预期效应]</td>
+</tr>
+<tr>
+<td>离子环境模块</td>
+<td>显式模拟离子对 IDP 电荷相互作用的影响</td>
+<td>核内离子浓度高，影响相分离</td>
+<td>输入：离子种类/浓度；输出：静电相互作用修正</td>
+<td>摘要列为必需要素</td>
+<td>预期：相图偏移、临界浓度改变 [预期效应]</td>
+</tr>
+<tr>
+<td>PTM 语法模块</td>
+<td>将翻译后修饰编码为相互作用参数变化</td>
+<td>PTM 是核内凝聚体调控的核心机制</td>
+<td>输入：PTM 位点与类型；输出：修饰后相互作用参数</td>
+<td>摘要列为必需要素</td>
+<td>预期：无法捕捉 PTM 调控的相分离变化 [预期效应]</td>
+</tr>
+<tr>
+<td>染色质架构模块</td>
+<td>将染色质作为凝聚体的显式底物/支架</td>
+<td>染色质拓扑影响凝聚体成核、定位与性质</td>
+<td>输入：染色质纤维构象；输出：凝聚体-染色质耦合</td>
+<td>摘要列为必需要素</td>
+<td>预期：无法解释凝聚体的染色质定位与区室化 [预期效应]</td>
+</tr>
+<tr>
+<td>非平衡动力学模块</td>
+<td>引入主动过程驱动的能量输入</td>
+<td>核内凝聚体处于非平衡态</td>
+<td>输入：主动力/能量参数；输出：非平衡动力学轨迹</td>
+<td>摘要列为必需要素</td>
+<td>预期：无法捕捉凝聚体的动态行为与稳态性质 [预期效应]</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：以上「移除后影响」均为 [预期效应]，因本文为综述，未提供消融实验数据。</p>
+</blockquote>
+<hr />
+<h2>09 关键公式符号</h2>
+<p>不适用。本文为综述，摘要中未包含具体公式。作者未在提供的材料中给出任何数学模型或方程。</p>
+<hr />
+<h2>10 实验设计与证据链</h2>
+<p>本文为综述，不包含原始实验。摘要中未提供数据集、基线、评测协议等细节。</p>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>不适用（综述）</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>作者在摘要中主张的「CG 模型已能定量复现 IDP 相图」等结论，是基于其引用的原始文献，但具体引用文献与数据在提供的摘要中未列出。</p>
+<hr />
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：本文结论仅覆盖「粗粒化分子模拟在 IDP 凝聚体中的定量能力」以及「向染色质相关体系扩展所需要素」两个层面。不涉及全原子模拟、不涉及具体染色质凝聚体的定量预测。</li>
+<li><strong>oracle/真值输入</strong>：作者所述「定量精度」的判定标准（与何种实验数据对比、误差范围）在摘要中未给出。</li>
+<li><strong>端到端状态</strong>：作者明确指出，从 IDP 到核内染色质凝聚体的模拟仍处于「demands additional ingredients」的阶段，即尚未端到端实现。</li>
+<li><strong>算力成本</strong>：未提供。</li>
+<li><strong>历史数据依赖</strong>：未提供。</li>
+<li><strong>模型依赖</strong>：结论基于粗粒化、物理化学特异模型框架，不适用于通用 CG 或隐式溶剂模型。</li>
+<li><strong>最难情形</strong>：核内多组分、非平衡、含染色质拓扑的凝聚体体系。</li>
+<li><strong>不确定性</strong>：作者未给出定量不确定性估计。</li>
+<li><strong>有边界的复述</strong>：在 IDP 单组分/双组分体外体系中，物理化学特异的粗粒化模型已能定量复现相图、材料性质与序列-相行为关系；但将这些方法推广到核内染色质相关凝聚体，仍需显式纳入离子环境、PTM 语法、染色质架构与非平衡主动动力学，且这一推广目前尚未完成。</li>
+</ul>
+<hr />
+<h2>12 作者自认局限</h2>
+<p>在提供的摘要材料中，作者未以「limitation」形式明确列出局限。但作者通过「demands additional ingredients」的表述，隐含承认了现有方法在以下方面的不足：</p>
+<table>
+<thead>
+<tr>
+<th>局限</th>
+<th>具体表现</th>
+<th>作者提出的未来方向</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>现有 CG 模型缺乏离子环境</td>
+<td>未显式模拟核内离子</td>
+<td>纳入 explicit ionic environments</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>现有 CG 模型缺乏 PTM 编码</td>
+<td>未系统处理翻译后修饰</td>
+<td>建立 post-translational modification grammars</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>现有 CG 模型缺乏染色质架构</td>
+<td>未将染色质作为显式组分</td>
+<td>纳入 chromatin architecture as an explicit component</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>现有 CG 模型缺乏非平衡动力学</td>
+<td>多假设平衡态</td>
+<td>引入 nonequilibrium dynamics driven by active processes</td>
+<td>摘要</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：以上为作者通过「demands」表述间接承认的约束，非正式「limitations」声明。</p>
+</blockquote>
+<hr />
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>作者主张 CG 模型「定量准确」但未给出误差范围</td>
+<td>可能仅对特定序列/条件成立，泛化性未知</td>
+<td>定量精度的边界决定方法适用范围</td>
+<td>检查作者引用的原始文献中误差指标与测试集范围</td>
+<td>摘要中无具体数值</td>
+</tr>
+<tr>
+<td>「四个必需要素」的清单可能不完整</td>
+<td>可能遗漏其他关键因素（如分子拥挤、RNA 参与、相分离-染色质拓扑互反馈）</td>
+<td>遗漏要素会导致模型系统性偏差</td>
+<td>对比其他综述或近期文献中的要素清单</td>
+<td>[Analysis] 基于领域常识</td>
+</tr>
+<tr>
+<td>非平衡动力学与平衡相分离框架的兼容性未讨论</td>
+<td>非平衡稳态可能无法用经典相图描述</td>
+<td>若框架不兼容，则「相图」概念本身需重新定义</td>
+<td>查阅非平衡相分离理论文献</td>
+<td>[Analysis]</td>
+</tr>
+<tr>
+<td>综述未提及 AI/机器学习方法在参数化或预测中的作用</td>
+<td>可能低估了数据驱动方法对 CG 模型的加速作用</td>
+<td>三维基因组 × AI 方向可能提供互补路径</td>
+<td>检索近期 ML 辅助 CG 参数化文献</td>
+<td>[Analysis] 基于摘要未提及</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>14 学到什么</h2>
+<p><strong>Agent 提炼的知识候选</strong></p>
+<ol>
+<li>
+<p><strong>物理化学特异 CG 模型的「定量成功」边界</strong>：在 IDP 体系中已验证的定量精度，不能直接外推到核内多组分体系。迁移到三维基因组 × AI 方向：任何声称预测染色质凝聚体的模型，必须明确声明其覆盖的物理化学自由度范围。</p>
+</li>
+<li>
+<p><strong>四个必需要素清单</strong>：离子环境、PTM 语法、染色质架构、非平衡动力学。这为三维基因组模拟/AI 预测提供了一个「检查清单」——一个模型若缺少其中任一要素，其预测的核内凝聚体行为可能系统性偏差。</p>
+</li>
+<li>
+<p><strong>PTM 语法概念</strong>：将翻译后修饰编码为「语法」（即组合规则），而非独立参数。这一思想可迁移到 AI 特征工程：PTM 位点组合模式可能比单个 PTM 位点更具预测力。</p>
+</li>
+<li>
+<p><strong>染色质作为显式组分的建模思路</strong>：凝聚体模拟中染色质不应仅作背景，而应作为具有拓扑与密度的显式组分。迁移到三维基因组：Hi-C 数据中的区室化可能与凝聚体-染色质耦合直接相关。</p>
+</li>
+<li>
+<p><strong>非平衡动力学的必要性</strong>：核内凝聚体受主动过程驱动，平衡态模拟可能无法捕捉其稳态性质。迁移到 AI 预测：静态 Hi-C 快照可能不足以推断凝聚体动态，需结合时间序列数据。</p>
+</li>
+</ol>
+<hr />
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>与 IDP 相分离模拟文献的连接</strong>：本文所述「物理化学特异 CG 模型」与 HPS（Honeycutt-Serescu）、CALVADOS、MPI 等模型家族一致。这些模型在 IDP 相图预测中的成功已有大量文献支持（如 Dignon et al. 2018; Tesei et al. 2021 等，但本文摘要未逐一引用）。</li>
+<li><strong>与三维基因组组织的连接</strong>：染色质相关凝聚体（如 HP1 介导的异染色质凝聚）已被认为是 TAD/区室形成的机制之一。本文的「染色质架构作为显式组分」主张与这一方向直接相关。</li>
+<li><strong>与 AI/ML 方法的连接</strong> [Analysis]：本文未提及 ML 方法，但 ML 辅助 CG 参数化（如基于实验数据训练相互作用参数）是当前活跃方向，与本文所述「定量精度」目标互补。</li>
+<li><strong>与相分离疾病文献的连接</strong>：PTM 语法与突变导致的相分离异常（如神经退行性疾病）相关，本文的 PTM 编码主张可迁移到疾病机制研究。</li>
+</ul>
+<hr />
+<h2>16 研究想法</h2>
+<p><strong>Agent 生成的研究候选</strong></p>
+<h3>候选 1：ML 辅助的 PTM 语法参数化</h3>
+<ul>
+<li><strong>名称</strong>：PTM-GrammarNet：基于深度学习的翻译后修饰语法到 CG 相互作用参数的映射</li>
+<li><strong>来源局限/观察</strong>：本文指出 PTM 语法是核内凝聚体模拟的必需要素，但未给出具体编码方案</li>
+<li><strong>核心假设</strong>：PTM 组合模式（语法）对相分离的影响可通过图神经网络从实验相图数据中学习</li>
+<li><strong>相对本文的增量</strong>：将本文提出的「PTM 语法」概念操作化为可训练的 ML 模型</li>
+<li><strong>初步方法</strong>：构建 PTM-序列-相行为数据集，用 GNN 编码 PTM 位点组合，输出 CG 相互作用参数修正</li>
+<li><strong>验证方式</strong>：在已知 PTM 调控相分离的蛋白（如 FUS、HP1）上测试预测 vs 实验相图</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul>
+<h3>候选 2：染色质拓扑感知的凝聚体 CG 模型</h3>
+<ul>
+<li><strong>名称</strong>：ChromCondensate：将染色质纤维拓扑作为显式约束的凝聚体粗粒化模拟框架</li>
+<li><strong>来源局限/观察</strong>：本文强调染色质架构必须作为显式组分，但未给出具体实现</li>
+<li><strong>核心假设</strong>：染色质纤维的拓扑约束（环、TAD）显著改变凝聚体的成核位置与稳态形态</li>
+<li><strong>相对本文的增量</strong>：将「染色质架构」从定性主张转化为可计算的模型组件</li>
+<li><strong>初步方法</strong>：在现有 CG 模型（如 HPS）中加入染色质纤维的拓扑约束势，模拟凝聚体-染色质共组装</li>
+<li><strong>验证方式</strong>：与 Hi-C 数据中的区室边界对比，检验凝聚体定位预测</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul>
+<h3>候选 3：非平衡凝聚体的稳态相图表征</h3>
+<ul>
+<li><strong>名称</strong>：ActivePhase：主动过程驱动的凝聚体非平衡稳态相图计算框架</li>
+<li><strong>来源局限/观察</strong>：本文指出非平衡动力学是核内凝聚体的关键特征，但未讨论如何定义非平衡「相图」</li>
+<li><strong>核心假设</strong>：在主动驱动下，凝聚体可呈现平衡相图中不存在的稳态（如振荡、多稳态）</li>
+<li><strong>相对本文的增量</strong>：将「非平衡动力学」从定性需求转化为可计算的相图框架</li>
+<li><strong>初步方法</strong>：在 CG 模拟中引入主动力（如 ATP 依赖的酶活性），扫描参数空间，表征稳态相行为</li>
+<li><strong>验证方式</strong>：与活细胞成像数据中的凝聚体动态对比</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul>
+<h3>候选 4：离子环境对染色质-凝聚体耦合的系统性扫描</h3>
+<ul>
+<li><strong>名称</strong>：IonScan-3D：离子浓度与种类对染色质相关凝聚体相行为影响的系统模拟研究</li>
+<li><strong>来源局限/观察</strong>：本文列出离子环境为首要必需要素，但未给出具体影响机制</li>
+<li><strong>核心假设</strong>：核内离子浓度的生理波动足以显著改变凝聚体-染色质相互作用模式</li>
+<li><strong>相对本文的增量</strong>：将「离子环境」从定性需求转化为定量参数扫描</li>
+<li><strong>初步方法</strong>：在 CG 模拟中系统变化离子浓度/种类，测量相图与凝聚体-染色质空间关联的变化</li>
+<li><strong>验证方式</strong>：与体外重构实验（不同离子条件下的相分离测定）对比</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Abstract only</li>
+<li><strong>Assessment boundary</strong> Claims and conclusions as stated in the provided abstract text</li>
+<li><strong>Shared manuscript claim summary</strong> The abstract argues that molecular simulations have advanced understanding of biomolecular condensates in nuclear organisation, that coarse-grained physicochemically specific models can quantitatively reproduce phase diagrams, material properties, and sequence-phase space relationships for intrinsically disordered proteins, and that capturing nuclear condensates requires additional ingredients including explicit ionic environments, post-translational modification grammars, chromatin architecture, and nonequilibrium dynamics.</li>
+<li><strong>Visible evidence base</strong> Abstract text only. No figures, tables, methods, or results sections were provided.</li>
+<li><strong>Missing materials affecting confidence</strong> Full manuscript text, all figures and tables, methods descriptions, simulation details, quantitative comparisons, and any supporting data. The review can only assess the abstract's internal logic and claims as stated.</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li><strong>Overall assessment</strong> The abstract presents a concise and reasonable perspective on the state of molecular simulations for chromatin-associated biomolecular condensates. The claims are broadly consistent with current trends in the field, but the abstract lacks specific evidence or quantitative examples to substantiate the assertion of "quantitative accuracy." The framing of required additional ingredients is sensible, though the abstract does not indicate how these challenges are addressed in the manuscript. As an abstract, it serves as an adequate summary, but the strength of the underlying claims cannot be evaluated without the full text.</li>
+<li><strong>Who would be interested in the results, and why</strong> Researchers in computational biophysics, chromatin biology, and phase separation. Those developing coarse-grained models for intrinsically disordered proteins and nuclear organisation would find the perspective relevant. Experimentalists studying nuclear condensates may also be interested in the simulation capabilities and limitations described.</li>
+<li><strong>Major strengths</strong> The abstract clearly identifies key gaps between current simulation capabilities and the requirements for modelling nuclear condensates. The list of additional ingredients is well chosen and reflects current challenges in the field. The writing is concise and accessible to a broad readership.</li>
+<li><strong>Major Concerns</strong> None identified from the supplied material, given the abstract-only scope. However, the claim of "quantitative accuracy" is stated without supporting evidence, which is a limitation of the abstract format rather than necessarily a flaw in the manuscript.</li>
+<li><strong>Minor Comments</strong> None identified from the supplied material.</li>
+<li><strong>Technical failings that need to be addressed before the case is established</strong> The abstract does not provide enough detail to assess technical soundness. The claim of quantitative reproduction of phase diagrams, material properties, and sequence-phase space relationships would need to be supported by specific examples, error metrics, or comparisons to experimental data in the full manuscript.</li>
+<li><strong>Assessment against Nature-style criteria</strong> Originality: The abstract does not clearly indicate novel contributions beyond a review-style summary. Scientific importance: The topic is of high importance to nuclear biology and biophysics. Interdisciplinary readership: The abstract is written in a way that should be accessible to both computational and experimental researchers. Technical soundness: Cannot be assessed from the abstract alone. Readability for nonspecialists: The abstract is clear, though terms such as "post-translational modification grammars" may require some background knowledge.</li>
+<li><strong>Recommendation posture</strong> Supportive if the full manuscript provides adequate evidence for the quantitative claims and clearly situates the work relative to existing literature. Currently not established from the provided evidence, as the abstract alone does not permit a full assessment.</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>The claim that coarse-grained models "reproduce phase diagrams, material properties, and sequence-phase space relationships with quantitative accuracy" is unsupported in the abstract. No specific systems, metrics, or comparisons are provided.</li>
+<li>The assertion that capturing nuclear condensates "demands" the listed additional ingredients is presented as a definitive statement without supporting argumentation in the abstract.</li>
+<li>The overall framing as a review or perspective is not explicitly stated, so the intended contribution type is unclear from the abstract alone.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Regulatory-prior-guided attention preserves biological structure during unpaired single-cell RNA-ATAC integration. · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-mid">5</span>
+    <div>
+      <h1>Regulatory-prior-guided attention preserves biological structure during unpaired single-cell RNA-ATAC integration.</h1>
+      <div class="meta">Cheng, Zhenglong; Zhang, Jiao; Zhang, Shixiong</div>
+      <div class="meta muted">
+        
+        <span class="journal">Bioinformatics (Oxford, England)</span>
+        · 2026-09-18
+         · 仅摘要
+         · <a href="https://pubmed.ncbi.nlm.nih.gov/42758136/">原文</a>
+      </div>
+      <p class="one-liner">该文提出基于调控先验引导的Transformer模型scHPGT，整合单细胞RNA与ATAC数据以保留生物结构，虽涉及染色质可及性调控，但聚焦单细胞多组学整合而非三维基因组空间架构建模，方法可迁移性有限。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">MOTIVATION: Single-cell RNA sequencing and single-cell ATAC sequencing provide complementary views of transcriptional output and chromatin regulatory potential, but integrating unpaired profiles remains challenging because the modalities differ in feature space, sparsity and noise. Existing approaches often frame integration as distribution matching, which can over-align biologically distinct, condition-specific or modality-specific cell states. We present scHPGT, a single-cell Heterogeneous Prior-Guided Transformer for regulatory-prior-guided integration of unpaired RNA and chromatin accessibility profiles. scHPGT uses modality-specific encoders to model RNA and ATAC signals, a prior-guided cross-modal Transformer to constrain gene-peak attention using regulatory links, and a domain-adversarial objective to reduce modality-specific discrepancies in a shared latent space. RESULTS: Across PBMC3k, mouse spleen, CITE-seq/ASAP-seq PBMC and PBMC10k benchmarks, scHPGT improves clustering agreement, label transfer and biological structure preservation while maintaining effective modality alignment. In partial-overlap and condition-shift settings, scHPGT aligns shared populations without forcing unmatched or condition-specific states into inappropriate correspondence. Attention-derived links recover regulatory relationships, highlight marker-gene regulatory regions, recover transcription factor programs and produce regulatory activity profiles consistent with cell-type-specific transcriptional programs. AVAILABILITY AND IMPLEMENTATION: Code and datasets are released at https://github.com/zlCreator/scHPGT. SUPPLEMENTARY INFORMATION: Supplementary data are available at Bioinformatics online.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">动机：单细胞RNA测序和单细胞ATAC测序提供了转录输出和染色质调控潜力的互补视角，但整合未配对图谱仍具挑战性，因为模态在特征空间、稀疏性和噪声方面存在差异。现有方法通常将整合视为分布匹配，这可能过度对齐生物学上不同、条件特异性或模态特异性的细胞状态。我们提出scHPGT，一种单细胞异质性先验引导的Transformer，用于调控先验引导的未配对RNA和染色质可及性图谱整合。scHPGT使用模态特异性编码器建模RNA和ATAC信号，一个先验引导的跨模态Transformer利用调控链接约束基因-峰注意力，以及一个域对抗目标以减少共享潜在空间中的模态特异性差异。结果：在PBMC3k、小鼠脾脏、CITE-seq/ASAP-seq PBMC和PBMC10k基准测试中，scHPGT在保持有效模态对齐的同时，提高了聚类一致性、标签转移和生物学结构保留。在部分重叠和条件偏移设置中，scHPGT对齐共享群体，而不强制不匹配或条件特异性状态进入不适当的对应关系。注意力衍生的链接恢复调控关系，突出标记基因调控区域，恢复转录因子程序，并产生与细胞类型特异性转录程序一致的调控活性谱。可用性和实现：代码和数据集发布在https://github.com/zlCreator/scHPGT。补充信息：补充数据可在Bioinformatics在线获取。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：Regulatory-prior-guided attention preserves biological structure during unpaired single-cell RNA-ATAC integration</li>
+<li><strong>作者</strong>：Cheng, Zhenglong; Zhang, Jiao; Zhang, Shixiong</li>
+<li><strong>单位</strong>：未提供</li>
+<li><strong>期刊/平台</strong>：Bioinformatics (Oxford, England)</li>
+<li><strong>年份</strong>：2026（在线日期 2026-09-18）</li>
+<li><strong>论文类型</strong>：方法学论文（含基准评测）</li>
+<li><strong>领域</strong>：单细胞多组学整合；调控基因组学；深度学习</li>
+<li><strong>关键词</strong>：未提供（标题含 regulatory prior、attention、single-cell RNA-ATAC integration）</li>
+<li><strong>DOI/arXiv</strong>：10.1093/bioinformatics/btag696</li>
+<li><strong>代码</strong>：https://github.com/zlCreator/scHPGT</li>
+<li><strong>数据</strong>：PBMC3k、mouse spleen、CITE-seq/ASAP-seq PBMC、PBMC10k（文中提及，具体获取方式未提供）</li>
+<li><strong>阅读日期</strong>：未提供</li>
+<li><strong>在该方向中的位置</strong>：本文属于「三维基因组/染色质组织 × AI」课题中的<strong>调控基因组学与单细胞多组学整合</strong>分支。其核心对象是染色质可及性（ATAC）与转录输出（RNA）的联合建模，与三维基因组中「调控元件-基因互作」的预测与建模直接相关。本文的 regulatory prior（基因-峰连接）可视为三维基因组中增强子-启动子互作（EPI）的一种线性近似，其 prior-guided attention 机制对三维基因组中基于 Hi-C/EPI 先验引导的染色质结构建模具有直接可迁移性。</li>
+</ul>
+<hr />
+<h2>02 一句话总结</h2>
+<p>本文提出 scHPGT，一种用调控先验（基因-峰连接）引导跨模态注意力、并辅以域对抗目标的 Transformer 模型，在无配对单细胞 RNA-ATAC 整合中同时实现模态对齐与生物结构保持，且注意力衍生的调控连接可恢复转录因子程序与细胞类型特异的调控活性。</p>
+<hr />
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：如何在无配对（unpaired）的单细胞 RNA-seq 与 ATAC-seq 数据之间进行整合，使得共享的细胞状态被正确对齐，同时不丢失或过度融合条件特异、模态特异的生物学差异？</li>
+<li><strong>为什么重要</strong>：RNA 与 ATAC 分别反映转录输出与染色质调控潜能，二者互补；但无配对数据在特征空间、稀疏性、噪声上差异大，整合质量直接影响下游细胞类型注释、调控推断与发育轨迹分析。</li>
+<li><strong>现有方法为何不足</strong>：现有方法多将整合视为分布匹配（distribution matching），容易将生物学上不同的、条件特异的或模态特异的细胞状态过度对齐（over-align），导致生物学结构被破坏。</li>
+<li><strong>精确研究问题</strong>：Can a regulatory-prior-guided cross-modal attention mechanism, combined with domain-adversarial training, integrate unpaired single-cell RNA and ATAC profiles while preserving condition-specific and modality-specific biological structure?</li>
+</ul>
+<hr />
+<h2>04 背景与发展脉络</h2>
+<blockquote>
+<p>注：以下脉络基于本文引言与相关工作描述，标注为「仅本文框架」，未经外部系统核验。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>代表性方法</th>
+<th>优点</th>
+<th>局限</th>
+<th>本文位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>早期批次校正</td>
+<td>Seurat CCA、Harmony</td>
+<td>快速、广泛使用</td>
+<td>主要针对同模态批次效应，不适用于跨模态特征空间差异</td>
+<td>背景</td>
+</tr>
+<tr>
+<td>跨模态映射</td>
+<td>scVI、scArches、totalVI</td>
+<td>深度生成模型，可处理高维稀疏数据</td>
+<td>多为配对或半配对设定；无配对时依赖分布匹配，易过度对齐</td>
+<td>背景</td>
+</tr>
+<tr>
+<td>无配对整合</td>
+<td>Seurat v4（锚点）、LIGER、scALIGN</td>
+<td>可处理无配对数据</td>
+<td>依赖共享基因/峰空间或强分布匹配假设，条件特异状态易被错误融合</td>
+<td>背景</td>
+</tr>
+<tr>
+<td>调控先验引导</td>
+<td>本文 scHPGT</td>
+<td>用基因-峰调控连接约束注意力，域对抗减少模态差异</td>
+<td>依赖调控先验质量；先验为线性近似，未含三维结构信息</td>
+<td><strong>本文主张的位置</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>模态特征空间不一致</td>
+<td>RNA 与 ATAC 特征维度、语义不同，无法直接比较</td>
+<td>两种模态测量不同生物学层面（转录输出 vs 染色质可及性）</td>
+<td>MOTIVATION 段</td>
+</tr>
+<tr>
+<td>稀疏性与噪声差异</td>
+<td>ATAC 数据高度稀疏，RNA 也存在 dropout</td>
+<td>单细胞测序技术固有局限</td>
+<td>MOTIVATION 段</td>
+</tr>
+<tr>
+<td>分布匹配导致过度对齐</td>
+<td>条件特异或模态特异的细胞状态被错误融合</td>
+<td>现有方法将整合视为纯分布匹配，未引入生物学约束</td>
+<td>MOTIVATION 段；Results 中 partial-overlap 与 condition-shift 实验</td>
+</tr>
+<tr>
+<td>无配对设定下缺乏对应关系</td>
+<td>无法直接利用配对细胞作为监督信号</td>
+<td>实验设计限制（unpaired profiling）</td>
+<td>MOTIVATION 段</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>06 核心思想</h2>
+<ol>
+<li>
+<p><strong>表面方法</strong>：scHPGT 是一个 Heterogeneous Prior-Guided Transformer，包含模态特异编码器（RNA 编码器与 ATAC 编码器）、一个由调控先验引导的跨模态注意力模块（prior-guided cross-modal Transformer），以及一个域对抗目标（domain-adversarial objective），在共享隐空间中对齐两种模态。</p>
+</li>
+<li>
+<p><strong>核心洞察</strong>：跨模态注意力中的「基因-峰」注意力权重不应自由学习，而应由已知的调控连接（regulatory links，即基因-峰对应关系）作为先验引导。这样既约束了注意力的生物学合理性，又使注意力本身成为可解释的调控关系推断工具——即注意力权重本身可被解读为调控连接的强度。</p>
+</li>
+<li>
+<p><strong>可能的普适教训 [Analysis]</strong>：在跨模态或跨尺度的生物学数据整合中，<strong>用生物学先验约束注意力机制</strong>比纯数据驱动的分布匹配更有利于保持生物学结构；且<strong>注意力权重本身可以作为可解释的生物学关系输出</strong>，而非仅作为黑盒中间表示。这一思路可迁移到三维基因组中：用 Hi-C/EPI 先验引导染色质结构模型的注意力，同时从注意力中提取结构关系。</p>
+</li>
+</ol>
+<hr />
+<h2>07 方法总览</h2>
+<ul>
+<li><strong>输入</strong>：无配对的单细胞 RNA-seq 表达矩阵与单细胞 ATAC-seq 可及性矩阵（同一组织/样本来源，但细胞未配对）。</li>
+<li><strong>输出</strong>：共享隐空间中的细胞嵌入（可用于聚类、标签迁移、可视化）；注意力衍生的基因-峰调控连接权重。</li>
+<li><strong>模块</strong>：
+  1. 模态特异编码器（RNA encoder、ATAC encoder）——将各模态原始特征映射到共享维度；
+  2. Prior-guided cross-modal Transformer——在共享隐空间中对基因与峰进行跨模态注意力计算，注意力权重受调控先验约束；
+  3. 域对抗判别器——区分嵌入来自 RNA 还是 ATAC 模态，促使隐空间模态无关；
+  4. 解码/下游头——用于重构或下游任务（文中未详述，具体架构见原文 Methods）。</li>
+<li><strong>训练</strong>：联合优化重构/对齐损失 + 域对抗损失 + 先验约束损失（具体损失函数构成见原文 Methods，摘要未展开）。</li>
+<li><strong>工具</strong>：PyTorch 等深度学习框架（推断，原文未明示）；代码公开于 GitHub。</li>
+<li><strong>假设</strong>：</li>
+<li>调控先验（基因-峰连接）在数据集中大体正确且可覆盖主要调控关系；</li>
+<li>共享细胞状态在两种模态中存在可对齐的隐空间表示；</li>
+<li>条件特异/模态特异的细胞状态不应被强制对齐。</li>
+<li><strong>流程</strong>：RNA 与 ATAC 分别经各自编码器 → 映射到共享隐空间 → prior-guided cross-modal attention 计算基因-峰注意力 → 域对抗判别器促使模态无关 → 输出细胞嵌入与注意力权重 → 下游聚类/标签迁移/调控推断。</li>
+</ul>
+<hr />
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>模态特异编码器</td>
+<td>将 RNA/ATAC 原始特征映射到共享维度</td>
+<td>两种模态特征空间不同，需分别编码</td>
+<td>输入：RNA 表达矩阵 / ATAC 可及性矩阵；输出：共享维度嵌入</td>
+<td>摘要「modality-specific encoders」</td>
+<td>预期：无法统一特征空间，整合失败（未提供消融实验）</td>
+</tr>
+<tr>
+<td>Prior-guided cross-modal attention</td>
+<td>计算基因-峰注意力，受调控先验约束</td>
+<td>使跨模态关系具有生物学合理性，避免自由注意力产生无意义对齐</td>
+<td>输入：共享嵌入 + 调控先验；输出：注意力权重</td>
+<td>摘要「prior-guided cross-modal Transformer」；Results 中注意力恢复调控关系</td>
+<td>预期：注意力失去生物学约束，可能过度对齐或产生虚假连接（未提供消融实验）</td>
+</tr>
+<tr>
+<td>域对抗判别器</td>
+<td>判别嵌入来源模态，促使隐空间模态无关</td>
+<td>减少模态特异差异，实现共享隐空间</td>
+<td>输入：共享嵌入；输出：模态判别概率</td>
+<td>摘要「domain-adversarial objective」</td>
+<td>预期：模态差异无法消除，对齐质量下降（未提供消融实验）</td>
+</tr>
+<tr>
+<td>调控先验约束</td>
+<td>约束注意力权重与已知基因-峰连接一致</td>
+<td>将生物学知识注入模型</td>
+<td>输入：注意力权重 + 先验连接；输出：约束损失</td>
+<td>摘要「regulatory-prior-guided」</td>
+<td>预期：注意力偏离生物学真实，调控推断不可靠（未提供消融实验）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：以上「移除后影响」均为 [Analysis] 预期，文中未提供消融实验数据。</p>
+</blockquote>
+<hr />
+<h2>09 关键公式符号</h2>
+<blockquote>
+<p>摘要未提供具体公式。以下为基于方法描述的推断性说明，标注 [Analysis]，非原文公式。</p>
+</blockquote>
+<ul>
+<li>
+<p><strong>域对抗损失</strong>（推断）：<br />
+  ( \mathcal{L}<em>{adv} = \mathbb{E}</em>{x \sim RNA}[\log D(E_{RNA}(x))] + \mathbb{E}<em>{y \sim ATAC}[\log(1 - D(E</em>{ATAC}(y)))] )<br />
+  其中 ( D ) 为域判别器，( E_{RNA}, E_{ATAC} ) 为模态特异编码器。用途：促使隐空间模态无关。直觉：判别器无法区分嵌入来源时，隐空间对齐成功。来源：摘要「domain-adversarial objective」的常规实现形式 [Analysis]。</p>
+</li>
+<li>
+<p><strong>先验约束损失</strong>（推断）：<br />
+  ( \mathcal{L}_{prior} = | A \odot (1 - P) |_F^2 ) 或类似形式，其中 ( A ) 为注意力矩阵，( P ) 为先验连接矩阵（0/1 或权重），( \odot ) 为逐元素乘。用途：惩罚先验中不存在的基因-峰注意力。直觉：注意力不应分配给无调控关系的基因-峰对。来源：摘要「prior-guided」的常规实现形式 [Analysis]。</p>
+</li>
+</ul>
+<blockquote>
+<p>原文具体公式未在摘要中提供，需查阅 Methods 节确认。</p>
+</blockquote>
+<hr />
+<h2>10 实验设计与证据链</h2>
+<p><strong>数据集/群体</strong>：
+- PBMC3k（外周血单核细胞，约 3k 细胞）
+- mouse spleen（小鼠脾脏）
+- CITE-seq/ASAP-seq PBMC（配对蛋白+RNA / 蛋白+ATAC 数据）
+- PBMC10k（约 10k 细胞）</p>
+<p><strong>规模</strong>：未提供具体细胞数/基因数/峰数。</p>
+<p><strong>指标</strong>：
+- 聚类一致性（clustering agreement）
+- 标签迁移准确率（label transfer）
+- 生物学结构保持（biological structure preservation）
+- 模态对齐质量（modality alignment effectiveness）
+- 注意力衍生的调控连接与已知调控关系的吻合度</p>
+<p><strong>基线</strong>：未在摘要中列出具体对比方法（原文 Results 应有，摘要未提供）。</p>
+<p><strong>评测协议</strong>：在 partial-overlap（部分细胞类型重叠）与 condition-shift（条件偏移）设定下评测；注意力衍生的调控连接与已知调控关系对比。</p>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的 claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>标准整合基准（PBMC3k、mouse spleen、PBMC10k）</td>
+<td>scHPGT 在标准无配对整合中优于基线</td>
+<td>与现有整合方法对比</td>
+<td>聚类一致性、标签迁移、结构保持均提升</td>
+<td>scHPGT 在标准设定下有效</td>
+<td>未提供具体数值与统计显著性</td>
+<td>摘要 Results 段</td>
+</tr>
+<tr>
+<td>多组学基准（CITE-seq/ASAP-seq PBMC）</td>
+<td>在配对多组学数据上同样有效</td>
+<td>与现有方法对比</td>
+<td>指标提升</td>
+<td>方法可泛化至多组学设定</td>
+<td>未提供具体数值</td>
+<td>摘要 Results 段</td>
+</tr>
+<tr>
+<td>Partial-overlap 设定</td>
+<td>不强制对齐不共享的细胞类型</td>
+<td>部分细胞类型仅存在于一种模态</td>
+<td>共享群体被正确对齐，非共享群体未被强制融合</td>
+<td>避免过度对齐</td>
+<td>未提供定量指标</td>
+<td>摘要 Results 段</td>
+</tr>
+<tr>
+<td>Condition-shift 设定</td>
+<td>条件特异状态不被错误融合</td>
+<td>同一细胞类型在不同条件下</td>
+<td>条件特异状态保持分离</td>
+<td>保持生物学结构</td>
+<td>未提供定量指标</td>
+<td>摘要 Results 段</td>
+</tr>
+<tr>
+<td>注意力衍生的调控连接</td>
+<td>注意力权重可恢复真实调控关系</td>
+<td>与已知调控关系/转录因子程序对比</td>
+<td>恢复调控关系、标记基因调控区域、转录因子程序</td>
+<td>注意力具有可解释性与生物学有效性</td>
+<td>未提供定量指标（如 AUROC）</td>
+<td>摘要 Results 段</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：本文解决的是<strong>无配对单细胞 RNA-ATAC 整合</strong>，而非配对整合、批次校正或三维基因组结构预测。结论仅适用于该任务设定。</li>
+<li><strong>Oracle/真值输入</strong>：调控先验（基因-峰连接）作为外部知识注入，其质量直接影响模型表现。若先验不完整或错误，模型性能可能下降。</li>
+<li><strong>端到端状态</strong>：模型端到端可训练，但依赖外部调控先验数据库（具体来源未在摘要中说明）。</li>
+<li><strong>算力成本</strong>：未提供训练时间、GPU 需求等信息。</li>
+<li><strong>历史数据依赖</strong>：调控先验来自历史实验数据，可能不覆盖新发现的调控关系。</li>
+<li><strong>模型依赖</strong>：Transformer 架构 + 域对抗训练的组合；注意力机制受先验约束，因此先验的覆盖范围决定注意力可探索的空间。</li>
+<li><strong>最难情形</strong>：条件特异或模态特异的细胞状态——本文声称在这些情形下优于纯分布匹配方法，但未提供定量证据。</li>
+<li><strong>不确定性</strong>：摘要未报告方差、置信区间或统计检验；所有结论为定性描述。</li>
+<li><strong>群体/领域边界</strong>：评测数据为 PBMC 与小鼠脾脏，结论可能不直接推广至其他组织、物种或疾病状态。</li>
+</ul>
+<p><strong>有边界的复述</strong>：scHPGT 在 PBMC3k、小鼠脾脏、CITE-seq/ASAP-seq PBMC 和 PBMC10k 四个数据集的评测中，相比现有方法在聚类一致性、标签迁移和生物学结构保持方面表现更好，并在部分重叠与条件偏移设定下避免过度对齐；其注意力衍生的调控连接与已知调控关系一致。这些结论限于上述数据集与评测协议，未提供定量统计证据。</p>
+<hr />
+<h2>12 作者自认局限</h2>
+<blockquote>
+<p>在提供的摘要材料中，未发现作者明确承认的局限。摘要未包含 Limitations 段落。</p>
+</blockquote>
+<p><strong>作者提及的相关约束</strong>（非正式局限，[Analysis] 推断）：
+- 调控先验的质量与覆盖范围直接影响模型表现——先验不完整时注意力可能无法探索新的调控关系。
+- 评测数据集有限（PBMC、脾脏），未覆盖更多组织/物种。
+- 未提供与三维基因组结构（如 Hi-C）的直接结合，调控先验为线性基因-峰连接，未含空间邻近性信息。</p>
+<hr />
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>摘要未提供定量结果</td>
+<td>所有性能声明为定性描述，无具体数值、置信区间或统计检验</td>
+<td>无法评估效果大小与可靠性</td>
+<td>查阅原文 Results 表格与图</td>
+<td>摘要 Results 段</td>
+</tr>
+<tr>
+<td>调控先验来源未说明</td>
+<td>先验数据库的选择可能影响结果；不同先验可能导致不同结论</td>
+<td>可复现性与先验依赖性问题</td>
+<td>查阅 Methods 节先验来源与预处理</td>
+<td>摘要未提及</td>
+</tr>
+<tr>
+<td>未报告消融实验</td>
+<td>无法判断各模块（prior guidance、adversarial、attention）的独立贡献</td>
+<td>方法设计的必要性未验证</td>
+<td>查阅原文是否有消融实验</td>
+<td>摘要未提及</td>
+</tr>
+<tr>
+<td>注意力可解释性声明需谨慎</td>
+<td>注意力权重与因果调控关系之间无必然联系；高注意力≠功能重要性</td>
+<td>避免过度解读注意力为因果证据</td>
+<td>与功能实验（如 CRISPR 扰动）对比</td>
+<td>[Analysis] 一般性关切</td>
+</tr>
+<tr>
+<td>与三维基因组的关系未展开</td>
+<td>基因-峰连接是 EPI 的线性近似，未含三维空间信息</td>
+<td>对三维基因组课题的迁移需额外验证</td>
+<td>在 Hi-C 数据上测试 prior-guided attention 是否可恢复结构</td>
+<td>[Analysis] 基于课题方向的关切</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>14 Agent 提炼的知识候选</h2>
+<blockquote>
+<p>面向「三维基因组/染色质组织 × AI/分子模拟」课题的可迁移知识：</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>调控先验引导注意力的范式</strong>：用已知调控连接（基因-峰）约束跨模态注意力，使注意力既保持生物学合理性又成为可解释输出。可迁移至三维基因组：用 Hi-C 接触频率或 EPI 先验约束 Transformer 的注意力，使结构预测模型在训练初期即有生物学锚点，同时从注意力中提取结构关系。</p>
+</li>
+<li>
+<p><strong>域对抗对齐的适用边界</strong>：域对抗目标可有效消除模态差异，但需配合生物学先验防止过度对齐。在三维基因组中，不同细胞类型/条件的 Hi-C 数据可视为不同「域」，域对抗可用于整合跨条件结构数据，但需防止条件特异的结构特征被错误融合。</p>
+</li>
+<li>
+<p><strong>注意力权重作为调控关系推断工具</strong>：本文展示了注意力权重可恢复转录因子程序与调控活性。在三维基因组中，注意力权重可类比为「接触概率」或「调控强度」的软估计，可用于从模型中提取可解释的调控网络。</p>
+</li>
+<li>
+<p><strong>部分重叠与条件偏移的评测设计</strong>：本文专门设计了 partial-overlap 与 condition-shift 评测，检验模型是否过度对齐。三维基因组整合模型（如跨细胞类型 Hi-C 预测）应同样设计此类评测，验证模型是否保留条件特异的结构特征。</p>
+</li>
+<li>
+<p><strong>生物学先验注入的时机</strong>：先验在注意力计算中直接约束，而非仅作为损失项。这种「结构注入」比「后验惩罚」更有效——对三维基因组模型，将 Hi-C 先验直接嵌入注意力计算（而非仅作为辅助损失）可能更利于结构保持。</p>
+</li>
+</ol>
+<hr />
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>相似方法</strong>：scVI / scArches（深度生成模型整合单细胞多组学）、Seurat v4 锚点整合、LIGER、totalVI。本文与这些方法的区别在于引入调控先验引导注意力，而非纯分布匹配。</li>
+<li><strong>可组合方向</strong>：与三维基因组工具（如 HiC-Reg、Orca、DeepC）组合——将 scHPGT 的 prior-guided attention 机制迁移至 Hi-C 数据上的增强子-启动子互作预测。</li>
+<li><strong>概念连接</strong>：调控先验（基因-峰连接）与三维基因组中的「增强子-启动子互作（EPI）」概念高度相关；ATAC-seq 峰可视为开放染色质区域，与 Hi-C 中的 A/B compartment 和 TAD 边界存在关联。</li>
+<li><strong>潜在冲突</strong>：本文的调控先验为线性连接，未含三维空间邻近性；若直接迁移至三维基因组，需考虑先验的维度扩展（从 1D 线性连接到 2D 接触矩阵）。</li>
+<li><strong>外部可验证资源</strong>：PBMC3k、PBMC10k 为 10x Genomics 公开数据；CITE-seq/ASAP-seq PBMC 为公开多组学数据；小鼠脾脏数据来源需查阅原文。</li>
+</ul>
+<hr />
+<h2>16 Agent 生成的研究候选</h2>
+<ol>
+<li>
+<p><strong>名称</strong>：HiC-Prior-Guided Attention for Cross-Cell-Type Chromatin Structure Integration
+   - <strong>来源局限/观察</strong>：scHPGT 用线性基因-峰先验引导注意力，但三维基因组中调控关系具有空间邻近性，线性先验不足以刻画。
+   - <strong>核心假设</strong>：用 Hi-C 接触矩阵作为先验引导 Transformer 注意力，可提升跨细胞类型 Hi-C 数据整合时的结构保持。
+   - <strong>相对本文的增量</strong>：将先验从 1D 线性连接扩展至 2D 接触矩阵；将域对抗从模态对抗扩展至细胞类型/条件对抗。
+   - <strong>初步方法</strong>：在 scHPGT 框架基础上，将基因-峰注意力替换为「位点-位点」注意力，先验为 Hi-C 归一化接触频率；域对抗判别器区分细胞类型来源。
+   - <strong>验证方式</strong>：在公开 Hi-C 数据集（如 GM12878、K562、HFFc6）上评测整合后的结构保持（TAD 边界、A/B compartment 一致性）与下游调控推断准确性。
+   - <strong>可能的失败模式</strong>：Hi-C 先验噪声大、覆盖不全，可能引入错误约束；跨细胞类型 Hi-C 差异大，域对抗可能过度平滑条件特异结构。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>名称</strong>：Attention-Derived Regulatory Networks as Interpretable Outputs in 3D Genome Models
+   - <strong>来源局限/观察</strong>：scHPGT 展示了注意力权重可恢复调控关系，但未系统评估注意力权重的定量准确性。
+   - <strong>核心假设</strong>：在三维基因组结构预测模型中，注意力权重可被校准为接触概率或调控强度的定量估计。
+   - <strong>相对本文的增量</strong>：将「注意力作为可解释输出」从定性展示提升为定量校准。
+   - <strong>初步方法</strong>：在 Hi-C 预测模型中，将注意力权重与 Hi-C 接触频率做回归校准，评估 AUROC/相关性。
+   - <strong>验证方式</strong>：在多个细胞类型的 Hi-C 数据上，比较注意力权重与实验接触频率、ChIA-PET/PLAC-seq 环状互作的一致性。
+   - <strong>可能的失败模式</strong>：注意力权重与接触频率的分布差异大，校准可能不稳定；注意力可能捕捉序列特征而非结构特征。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>名称</strong>：Partial-Overlap and Condition-Shift Benchmarks for 3D Genome Integration Models
+   - <strong>来源局限/观察</strong>：scHPGT 设计了 partial-overlap 与 condition-shift 评测，但三维基因组整合领域缺乏此类标准评测。
+   - <strong>核心假设</strong>：三维基因组整合模型在 partial-overlap 与 condition-shift 设定下同样存在过度对齐问题。
+   - <strong>相对本文的增量</strong>：将评测范式从单细胞多组学迁移至三维基因组。
+   - <strong>初步方法</strong>：设计跨细胞类型 Hi-C 整合的 partial-overlap（部分细胞类型仅存在于一个条件）与 condition-shift（同一细胞类型在不同条件下）评测协议。
+   - <strong>验证方式</strong>：在多个公开 Hi-C 数据集上评测现有整合方法，建立基准。
+   - <strong>可能的失败模式</strong>：Hi-C 数据噪声大、样本量小，评测可能不稳定；条件特异结构特征难以定义。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+</ol></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Abstract only</li>
+<li><strong>Assessment boundary</strong> Claims and evidence as presented in the abstract; no full text, figures, tables, or supplementary materials were provided</li>
+<li><strong>Shared manuscript claim summary</strong> The authors present scHPGT, a transformer-based method for integrating unpaired single-cell RNA and ATAC sequencing data. The method uses modality-specific encoders, a regulatory-prior-guided cross-modal attention mechanism, and a domain-adversarial objective. The authors claim improved clustering agreement, label transfer, and biological structure preservation across four benchmarks, robust behavior in partial-overlap and condition-shift settings, and the ability to recover regulatory relationships and transcription factor programs from attention-derived links.</li>
+<li><strong>Visible evidence base</strong> Abstract text only; benchmark names (PBMC3k, mouse spleen, CITE-seq/ASAP-seq PBMC, PBMC10k) and qualitative performance statements; no quantitative metrics, no figures, no tables, no supplementary information</li>
+<li><strong>Missing materials affecting confidence</strong> Full manuscript, all figures and tables, quantitative performance comparisons, baseline methods, dataset preprocessing details, hyperparameter settings, ablation studies, statistical significance testing, code repository contents, and supplementary information</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li><strong>Overall assessment</strong> The abstract describes a method that addresses a relevant and technically challenging problem in single-cell multi-omics integration. The proposed architecture is plausible and the use of regulatory priors to constrain cross-modal attention is a reasonable design choice. However, the abstract provides only qualitative claims of performance with no quantitative evidence. The core claims regarding improved integration quality, biological structure preservation, and regulatory link recovery cannot be evaluated from the supplied material. The method's novelty relative to existing transformer-based integration approaches is not clearly established. The abstract is well written and accessible, but the evidence base is insufficient to assess technical soundness or to support the stated conclusions.</li>
+<li><strong>Who would be interested in the results, and why</strong> Computational biologists and bioinformaticians working on single-cell multi-omics integration, particularly those developing or applying deep learning methods for joint analysis of RNA and chromatin accessibility data. Researchers interested in regulatory genomics and transcription factor program inference from single-cell data may also find the attention-derived regulatory link recovery aspect relevant.</li>
+<li><strong>Major strengths</strong> The problem addressed is timely and important. The proposed architecture is clearly described at a conceptual level. The use of regulatory priors to guide cross-modal attention is a sensible and potentially impactful design choice. The abstract mentions evaluation across multiple benchmarks and in challenging settings (partial overlap, condition shift), which suggests attention to practical applicability.</li>
+<li><strong>Major Concerns</strong> </li>
+<li><strong>Concern ID</strong> R1-M1</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Evidence sufficiency</li>
+<li><strong>Claim pointer</strong> The abstract claims that scHPGT "improves clustering agreement, label transfer and biological structure preservation while maintaining effective modality alignment" across four benchmarks.</li>
+<li><strong>Evidence pointer</strong> Results section, abstract; no quantitative data provided</li>
+<li><strong>Concern</strong> The performance claims are made without any numerical results, baseline comparisons, or statistical measures. No metrics such as adjusted Rand index, normalized mutual information, label transfer accuracy, or batch entropy are reported. No comparison to existing methods is shown.</li>
+<li><strong>Why it matters</strong> Without quantitative evidence and baseline comparisons, the claimed improvements cannot be verified. The reader cannot assess whether the improvements are meaningful, marginal, or potentially within noise. This is the central claim of the paper and is currently unsupported.</li>
+<li><strong>Resolution test</strong> Provide quantitative results for all four benchmarks, including comparison to at least two or three established integration methods, with appropriate metrics and statistical significance testing.</li>
+<li><strong>Concern ID</strong> R1-M2</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Evidence sufficiency</li>
+<li><strong>Claim pointer</strong> The abstract claims that in partial-overlap and condition-shift settings, scHPGT "aligns shared populations without forcing unmatched or condition-specific states into inappropriate correspondence."</li>
+<li><strong>Evidence pointer</strong> Results section, abstract; no details provided</li>
+<li><strong>Concern</strong> This is a nuanced and important claim, but no details are given about how these settings were constructed, what metrics were used to evaluate appropriate versus inappropriate correspondence, or how this behavior compares to other methods.</li>
+<li><strong>Why it matters</strong> Over-alignment is a known failure mode in integration methods. The claim that scHPGT avoids this is potentially valuable, but without a clear evaluation protocol and quantitative evidence, it remains an assertion.</li>
+<li><strong>Resolution test</strong> Describe the experimental setup for partial-overlap and condition-shift scenarios, define the evaluation metrics, and show quantitative comparisons demonstrating that scHPGT preserves unmatched or condition-specific states while aligning shared populations.</li>
+<li><strong>Concern ID</strong> R1-M3</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Evidence sufficiency</li>
+<li><strong>Claim pointer</strong> The abstract claims that attention-derived links "recover regulatory relationships, highlight marker-gene regulatory regions, recover transcription factor programs and produce regulatory activity profiles consistent with cell-type-specific transcriptional programs."</li>
+<li><strong>Evidence pointer</strong> Results section, abstract; no examples or validation shown</li>
+<li><strong>Concern</strong> These are strong biological claims. No evidence is presented to support them, such as comparison to known regulatory databases, enrichment analyses, or experimental validation. The term "recover" implies ground truth comparison, but no such comparison is described.</li>
+<li><strong>Why it matters</strong> If the attention mechanism can indeed recover meaningful regulatory links, this would be a significant contribution beyond integration quality. However, without validation, these claims are speculative.</li>
+<li><strong>Resolution test</strong> Provide validation of attention-derived links against known regulatory interactions, show specific examples of marker-gene regulatory regions, and demonstrate that recovered transcription factor programs are statistically enriched and consistent with known biology.</li>
+<li><strong>Concern ID</strong> R1-M4</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Novelty and positioning</li>
+<li><strong>Claim pointer</strong> The abstract positions scHPGT as a "regulatory-prior-guided" integration method but does not clearly distinguish it from existing transformer-based or prior-based integration approaches.</li>
+<li><strong>Evidence pointer</strong> Motivation section, abstract; no related work discussion provided</li>
+<li><strong>Concern</strong> The abstract does not describe what existing methods do and how scHPGT differs from them. The novelty of the regulatory-prior-guided attention mechanism relative to other attention-based integration methods is not established.</li>
+<li><strong>Why it matters</strong> For a methods paper, clear positioning relative to prior work is essential. Without this, the reader cannot assess the contribution's significance.</li>
+<li><strong>Resolution test</strong> In the full manuscript, provide a clear comparison to existing transformer-based integration methods and prior-based approaches, and explicitly state the novel contributions.</li>
+<li><strong>Minor Comments</strong> </li>
+<li><strong>Concern ID</strong> R1-m1</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Clarity</li>
+<li><strong>Affected element</strong> Method description</li>
+<li><strong>Evidence pointer</strong> Methods section, abstract</li>
+<li><strong>Issue</strong> The abstract states that scHPGT uses a "domain-adversarial objective" but does not explain how this interacts with the regulatory-prior-guided attention mechanism. It is unclear whether the adversarial component could potentially override the prior constraints.</li>
+<li><strong>Required correction</strong> Clarify the relationship between the adversarial objective and the prior-guided attention, and discuss any potential tension between modality alignment and prior preservation.</li>
+<li><strong>Concern ID</strong> R1-m2</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Reproducibility</li>
+<li><strong>Affected element</strong> Availability statement</li>
+<li><strong>Evidence pointer</strong> Availability section, abstract</li>
+<li><strong>Issue</strong> The abstract states that code and datasets are released at a GitHub URL, but the repository contents are not described. It is unclear whether the code is documented, whether preprocessing scripts are included, and whether the datasets are publicly accessible or require separate download.</li>
+<li><strong>Required Correction</strong> In the full manuscript, describe the repository structure, include usage instructions, and specify data access details.</li>
+<li><strong>Concern ID</strong> R1-m3</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Scope of evaluation</li>
+<li><strong>Affected element</strong> Benchmark selection</li>
+<li><strong>Evidence pointer</strong> Results section, abstract</li>
+<li><strong>Issue</strong> The four benchmarks listed are all relatively small or standard datasets. It is unclear whether the method scales to larger datasets or handles more complex tissue types.</li>
+<li><strong>Required Correction</strong> In the full manuscript, include runtime and memory benchmarks, and discuss scalability considerations.</li>
+<li><strong>Technical failings that need to be addressed before the case is established</strong> R1-M1, R1-M2, and R1-M3 are blocking. The central performance claims, the behavior in partial-overlap settings, and the biological interpretability claims are all unsupported by quantitative evidence in the supplied material. Without these, the case for scHPGT as a useful method is not established.</li>
+<li><strong>Assessment against Nature-style criteria</strong> </li>
+<li>Originality: The use of regulatory priors to guide cross-modal attention in single-cell integration appears to be a reasonable design choice, but the abstract does not provide enough context to assess whether this is a novel contribution relative to existing attention-based integration methods. The originality claim is currently not established.</li>
+<li>Scientific importance: The problem of integrating unpaired single-cell RNA and ATAC data is important and actively researched. If the method delivers the claimed improvements, it would be of interest to the single-cell genomics community. However, the importance of the specific contribution cannot be assessed without quantitative evidence.</li>
+<li>Interdisciplinary readership: The work sits at the intersection of computational biology, machine learning, and regulatory genomics. The abstract is written in a way that is accessible to a broad computational biology audience, but the lack of quantitative results limits its appeal to readers outside the immediate integration methods community.</li>
+<li>Technical soundness: The architecture is described at a conceptual level and appears plausible. However, technical soundness cannot be assessed without details on implementation, training, hyperparameters, and evaluation protocols. The absence of quantitative results is a major limitation.</li>
+<li>Readability for nonspecialists: The abstract is clearly written and the key concepts are explained in accessible terms. The motivation is well stated. However, the lack of results makes it difficult for a nonspecialist to gauge the method's value.</li>
+<li><strong>Recommendation posture</strong> Currently not established from the provided evidence. The abstract describes a plausible method and addresses an important problem, but the absence of quantitative results, baseline comparisons, and validation of biological claims means that the core conclusions cannot be evaluated. The manuscript may become publishable if the full text provides the missing evidence and addresses the blocking concerns.</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>The claim that scHPGT "improves clustering agreement, label transfer and biological structure preservation" across four benchmarks is unsupported without quantitative metrics and baseline comparisons.</li>
+<li>The claim that scHPGT "aligns shared populations without forcing unmatched or condition-specific states into inappropriate correspondence" is unsupported without a described evaluation protocol and quantitative results.</li>
+<li>The claim that attention-derived links "recover regulatory relationships, highlight marker-gene regulatory regions, recover transcription factor programs and produce regulatory activity profiles consistent with cell-type-specific transcriptional programs" is unsupported without validation against known biology or ground truth data.</li>
+<li>The claim that scHPGT "maintains effective modality alignment" is unsupported without quantitative alignment metrics.</li>
+<li>The overall performance of scHPGT relative to existing methods is not assessable from the supplied material.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

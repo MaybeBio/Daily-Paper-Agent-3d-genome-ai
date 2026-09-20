@@ -1,92 +1,84 @@
 ## Review setup
-- **Input scope** Abstract only
-- **Assessment boundary** Conceptual claims and proposed framework; no experimental data or methods are presented
-- **Shared manuscript claim summary** The authors argue that plant pan-genomics is transitioning from descriptive genome variation discovery toward a predictive, mechanism-driven discipline. They propose three conceptual transitions: (1) interpreting structural variation, presence-absence variation, and haplotype diversity as regulatory components affecting gene networks and chromatin; (2) expanding from species-level to genus-level super pan-genomes to uncover adaptive genetic modules; and (3) integrating pan-genomes with pan-omics, 3D genome analyses, and AI to enable predictive breeding. They conclude that the ultimate value of pan-genomes lies in establishing a mechanistic bridge between genome diversity, biological function, and breeding decisions.
-- **Visible evidence base** Abstract text only; no figures, tables, methods, or references are provided
-- **Missing materials affecting confidence** Full manuscript, figures, data, methods, literature context, and any case studies or examples supporting the proposed transitions
+- **Input scope** Full manuscript text (abstract, main text, references cited within text, funding, data availability statement)
+- **Assessment boundary** Conceptual and technical claims presented in the manuscript; no independent verification of cited literature or supplementary materials was possible
+- **Shared manuscript claim summary** The authors argue that plant pan-genomics is transitioning from a descriptive phase of genome variation discovery toward a predictive and functional phase. They propose three conceptual shifts: (1) interpreting structural variation (SV), presence-absence variation (PAV), and haplotype diversity as regulatory components affecting gene networks and complex traits; (2) expanding from species-level pan-genomes to genus-level super-pan-genomes to recover adaptive diversity from wild relatives; and (3) integrating pan-genomes with pan-omics, three-dimensional genome analyses, and artificial intelligence to enable predictive breeding. The authors further claim that the ultimate value of pan-genomes lies in establishing a mechanistic bridge between genome diversity, biological function, and breeding decisions, moving crop improvement from empirical selection toward rational genome design.
+- **Visible evidence base** Main text narrative; references cited in text; one figure mentioned (Figure 1, Figure 2); Supporting Information Table S1 referenced but not provided; no original data, analyses, or experimental results presented
+- **Missing materials affecting confidence** Supporting Information Table S1 (systematic review basis); all cited primary studies; figure contents; no methodological details for the systematic review; no quantitative synthesis or meta-analytic data
 
 ## Reviewer
-- **Overall assessment** This abstract presents a forward-looking perspective on plant pan-genomics, articulating a clear vision for moving from descriptive variation cataloguing toward mechanistic and predictive applications. The three proposed transitions are logically structured and reflect current trends in the field. However, as an abstract, it offers no empirical evidence, case studies, or critical evaluation of existing approaches. The claims are largely programmatic and would benefit from concrete examples or a framework for how these transitions might be operationalized. The writing is clear and accessible, but the scientific case is not yet established from the supplied material.
-- **Who would be interested in the results, and why** Plant geneticists, crop breeders, computational biologists, and researchers working on genome architecture and evolutionary genomics would find this perspective relevant. It speaks directly to those developing pan-genome resources and seeking to translate genomic variation into breeding outcomes. The emphasis on AI integration and predictive modeling may also appeal to researchers at the interface of genomics and machine learning.
-- **Major strengths** The abstract identifies a timely and important conceptual shift in the field. The three transitions are well organized and capture key emerging directions. The framing of pan-genomes as a mechanistic bridge rather than an end in themselves is a valuable reframing. The writing is concise and accessible to a broad readership.
-- **Major Concerns** 
-  - R1-M1
-  - R1-M2
-  - R1-M3
-- **Minor Comments** 
-  - R1-m1
-  - R1-m2
-  - R1-m3
-- **Technical failings that need to be addressed before the case is established** No experimental or analytical evidence is presented. The abstract does not include any demonstration of how the proposed transitions would be implemented, nor does it cite or discuss existing work that supports or challenges these ideas. The case for the proposed framework is therefore not established from the provided material.
-- **Assessment against Nature-style criteria** 
-  - Originality: The perspective is original in its synthesis of existing trends into a coherent framework, though individual components are not new.
-  - Scientific importance: The topic is of high importance to plant genomics and breeding, but the abstract does not provide evidence of impact.
-  - Interdisciplinary readership: The abstract bridges genomics, computational biology, and breeding, which could attract a broad audience.
-  - Technical soundness: Not assessable from the abstract alone; no methods or data are presented.
-  - Readability for nonspecialists: The abstract is well written and accessible, though some terms (e.g., pan-omics, super pan-genomes) may require definition for a general audience.
-- **Recommendation posture** Currently not established from the provided evidence. The perspective is promising and could be supportive if the full manuscript provides concrete examples, a critical assessment of current limitations, and a clear roadmap for implementation.
-
-### Major Concerns
-
-- **Concern ID** R1-M1
-- **Severity** Major
-- **Blocking** Yes
-- **Axis** Evidence sufficiency
-- **Claim pointer** The abstract claims that the future of plant pan-genomics will be shaped by three conceptual transitions, implying these are necessary and sufficient directions.
-- **Evidence pointer** Abstract text; location not provided
-- **Concern** The abstract presents the three transitions as a definitive framework without providing any supporting evidence, case studies, or comparative analysis of alternative approaches. It is unclear whether these transitions are based on observed trends in the literature, preliminary data, or purely speculative reasoning.
-- **Why it matters** For a perspective article, the strength of the argument depends on the depth of supporting evidence and the critical evaluation of existing work. Without this, the claims risk being perceived as opinion rather than informed synthesis.
-- **Resolution test** The full manuscript should include specific examples of how each transition is already occurring or could be implemented, with citations to relevant studies and a discussion of limitations and counterarguments.
-
-- **Concern ID** R1-M2
-- **Severity** Major
-- **Blocking** Yes
-- **Axis** Conceptual clarity
-- **Claim pointer** The abstract proposes that structural variation, PAV, and haplotype diversity should be interpreted as regulatory components influencing gene networks, chromatin organization, and complex traits.
-- **Evidence pointer** Abstract text; location not provided
-- **Concern** The mechanistic link between these genomic features and their proposed regulatory roles is asserted but not explained. It is unclear how SV, PAV, and haplotypes would be integrated into gene network or chromatin models, and what specific evidence supports this interpretation.
-- **Why it matters** The central thesis of the abstract depends on this mechanistic bridge. Without a clear articulation of how variation translates into function, the proposed framework remains abstract and difficult to evaluate or apply.
-- **Resolution test** The full manuscript should provide a conceptual or empirical framework showing how these variation types can be linked to regulatory mechanisms, with examples from existing studies or preliminary analyses.
-
-- **Concern ID** R1-M3
-- **Severity** Major
-- **Blocking** Yes
-- **Axis** Operationalization
-- **Claim pointer** The abstract states that integrating pan-genomes with pan-omics, 3D genome analyses, and AI will enable predictive breeding.
-- **Evidence pointer** Abstract text; location not provided
-- **Concern** The abstract does not specify how this integration would be achieved, what data types or methods are envisioned, or what the expected outcomes would be. The claim is aspirational but lacks a concrete roadmap or demonstration of feasibility.
-- **Why it matters** Predictive breeding is a tangible goal, but the path from pan-genome data to predictive models is nontrivial. Without a clear description of the analytical pipeline or validation strategy, the claim cannot be assessed for credibility.
-- **Resolution test** The full manuscript should outline a specific framework or workflow for integrating these data types, including potential challenges and how they might be addressed, ideally with a proof-of-concept example.
-
-### Minor Comments
-
-- **Concern ID** R1-m1
-- **Severity** Minor
-- **Axis** Terminology
-- **Affected element** "pan-omics" and "super pan-genomes"
-- **Evidence pointer** Abstract text; location not provided
-- **Issue** These terms are used without definition, which may confuse readers unfamiliar with recent pan-genomics literature.
-- **Required correction** Provide brief definitions or contextual explanations when these terms are first introduced.
-
-- **Concern ID** R1-m2
-- **Severity** Minor
-- **Axis** Scope justification
-- **Affected element** The claim that the ultimate value of pan-genomes lies in a mechanistic bridge
-- **Evidence pointer** Abstract text; location not provided
-- **Issue** The abstract asserts this as the ultimate value without discussing alternative perspectives or potential counterarguments in the field.
-- **Required correction** Acknowledge other viewpoints or debates in the field to strengthen the argument's credibility.
-
-- **Concern ID** R1-m3
-- **Severity** Minor
-- **Axis** Readability
-- **Affected element** The phrase "rational genome design"
-- **Evidence pointer** Abstract text; location not provided
-- **Issue** This term is used without elaboration, and its meaning may vary across disciplines.
-- **Required correction** Clarify what is meant by rational genome design in this context, perhaps with a brief example or reference.
+- **Overall assessment** This manuscript is a perspective or review article that synthesizes recent developments in plant pan-genomics and proposes a forward-looking framework for integrating genomic variation with predictive breeding. The authors demonstrate broad familiarity with the field and cite a substantial body of recent literature. The three proposed conceptual transitions are reasonable and align with ongoing discussions in the community. However, the manuscript is largely narrative and programmatic, with no original data or systematic analytical framework presented. The claim of a "systematic review of nearly one hundred highly cited and representative studies" cannot be evaluated because the supporting table is not provided. The scientific value lies primarily in synthesis and agenda-setting rather than in new empirical or methodological contributions. The writing is generally clear but at times relies on aspirational language that outpaces the evidence presented. The manuscript would benefit from a more rigorous treatment of the limitations of current pan-genome approaches and a clearer articulation of testable predictions arising from the proposed framework.
+- **Who would be interested in the results, and why** Plant geneticists, crop scientists, breeders, and computational biologists working on genome assembly, structural variation, and genomic prediction would find this manuscript useful as a synthesis of current trends and a roadmap for future research. Researchers interested in the application of artificial intelligence to genomics and in the integration of multi-omics data may also find the forward-looking sections relevant. The manuscript could serve as a teaching resource or as a framing document for grant proposals and research prioritization discussions.
+- **Major strengths** The manuscript provides a timely and well-structured synthesis of a rapidly evolving field. The three proposed conceptual transitions are clearly articulated and provide a useful organizing framework. The authors correctly identify key limitations of current approaches, including the reliance on linear reference genomes for multi-omics data mapping and the lack of standardized variant representation in graph-based pan-genomes. The discussion of super-pan-genomes and their potential for recovering adaptive diversity from wild relatives is well contextualized. The manuscript is readable and accessible to a broad audience, with appropriate use of examples from recent studies.
+- **Major Concerns**
+  - **Concern ID** R1-M1
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Evidence sufficiency
+  - **Claim pointer** The authors state, "Based on a systematic review of nearly one hundred highly cited and representative studies published between 2020 and 2026, we summarize the developmental trajectory of plant pan-genome, highlight the key breakthroughs it has enabled in understanding genomic diversity and functional variation, and discuss its far-reaching implications for future crop improvement (Supporting Information Table S1)."
+  - **Evidence pointer** Supporting Information Table S1 (not provided); Introduction section
+  - **Concern** The central evidence base for the manuscript's synthesis is a systematic review of nearly one hundred studies, but the supporting table listing these studies is not available in the provided materials. Without this table, the reader cannot assess the selection criteria, the representativeness of the cited studies, the time frame coverage, or the basis for the authors' conclusions. The claim of systematicity cannot be verified.
+  - **Why it matters** The manuscript's authority rests on the claim that its synthesis is grounded in a systematic and representative review of the literature. If the selection criteria are not transparent or the table is incomplete, the conclusions may reflect author bias rather than a comprehensive assessment of the field. This undermines the reliability of the manuscript as a reference document.
+  - **Resolution test** Provide Supporting Information Table S1 with a clear description of the search strategy, inclusion and exclusion criteria, the list of studies, and the basis for their classification as "highly cited and representative." The table should be referenced explicitly in the text with sufficient detail for a reader to reproduce the selection process.
+  - **Concern ID** R1-M2
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Claim-evidence alignment
+  - **Claim pointer** The authors propose that "integrating pan-genomes with pan-omics, three-dimensional genome analyses, and artificial intelligence will enable the transformation of genomic variation into predictive models for crop improvement" and that this will move breeding "from empirical selection toward rational genome design."
+  - **Evidence pointer** Sections "From Genetic Diversity to Breeding Innovation" and "Looking Ahead to Crop Science in the Pan-Genome Era"; no quantitative or empirical evidence provided
+  - **Concern** The manuscript makes strong forward-looking claims about the predictive power of integrating pan-genomic data with AI and multi-omics approaches, but no empirical evidence is presented to demonstrate that such integration currently improves prediction accuracy beyond existing methods. The single example of improved prediction accuracy in grape is mentioned without details on effect size, cross-validation, or comparison to baseline models. The claim that AI models "have the potential to learn the mechanisms through which genetic variation shapes phenotypic traits" is speculative and not supported by demonstrated results in the manuscript.
+  - **Why it matters** The central thesis of the manuscript is that pan-genomics will enable predictive breeding. If the evidence for this claim is limited to anecdotal examples and aspirational statements, the manuscript overstates the current state of the field. Readers may be misled about the readiness of these approaches for practical application in breeding programs.
+  - **Resolution test** Provide quantitative evidence from published studies demonstrating that pan-genome-informed models outperform SNP-only models in prediction accuracy for relevant traits. Include effect sizes, trait types, and validation procedures. Alternatively, temper the claims to reflect the current evidence level and clearly distinguish between demonstrated results and proposed future directions.
+  - **Concern ID** R1-M3
+  - **Severity** Major
+  - **Blocking** No
+  - **Axis** Conceptual clarity
+  - **Claim pointer** The authors state, "We further propose that the ultimate value of pan-genomes lies not in generating increasingly complete genome collections, but in establishing a mechanistic bridge between genome diversity, biological function, and breeding decisions."
+  - **Evidence pointer** Abstract; Conclusion section
+  - **Concern** The concept of a "mechanistic bridge" is not defined with sufficient precision. The manuscript does not specify what constitutes a mechanistic understanding in this context, how such understanding would be validated, or what specific mechanisms are currently known versus unknown. The term is used programmatically but lacks operational definition.
+  - **Why it matters** The manuscript's central proposal depends on this concept. Without a clear definition, the reader cannot evaluate whether the proposed framework is achievable or what specific scientific questions need to be answered to establish such a bridge. This weakens the manuscript's contribution as a conceptual framework.
+  - **Resolution test** Define what is meant by "mechanistic bridge" with specific examples. For instance, specify whether this refers to causal relationships between specific structural variants and gene regulatory changes, or to quantitative models that link genotype to phenotype through intermediate molecular phenotypes. Provide criteria for what would constitute evidence for such a bridge.
+- **Minor Comments**
+  - **Concern ID** R1-m1
+  - **Severity** Minor
+  - **Axis** Clarity of figures
+  - **Affected element** Figure 1 and Figure 2
+  - **Evidence pointer** Figures referenced in text but not provided in the manuscript
+  - **Issue** The figures are mentioned in the text but their content is not described in sufficient detail. The reader cannot assess what information the figures convey or how they support the narrative.
+  - **Required correction** Provide figure legends that describe the content of each figure in detail, including the type of data displayed, the species or studies included, and the key takeaway messages.
+  - **Concern ID** R1-m2
+  - **Severity** Minor
+  - **Axis** Terminology consistency
+  - **Affected element** Use of "pan-genome" versus "pangenome"
+  - **Evidence pointer** Throughout the manuscript
+  - **Issue** The manuscript uses both "pan-genome" and "pangenome" interchangeably. This inconsistency may confuse readers and should be standardized.
+  - **Required correction** Choose one spelling and use it consistently throughout the manuscript, including in the title, abstract, and main text.
+  - **Concern ID** R1-m3
+  - **Severity** Minor
+  - **Axis** Reference completeness
+  - **Affected element** Reference list
+  - **Evidence pointer** References cited in text; full reference list not provided
+  - **Issue** The manuscript cites numerous studies but the full reference list is not included in the provided materials. This prevents verification of the cited literature and the accuracy of the claims attributed to specific studies.
+  - **Required correction** Ensure the complete reference list is included in the final version, with all citations properly formatted and verified.
+  - **Concern ID** R1-m4
+  - **Severity** Minor
+  - **Axis** Language precision
+  - **Affected element** Use of "digital twin breeding"
+  - **Evidence pointer** Section "From Genetic Diversity to Breeding Innovation"
+  - **Issue** The term "digital twin breeding" is introduced without definition or context. It is unclear whether this is an established concept in the field or a novel term proposed by the authors.
+  - **Required correction** Define the term when first used and provide a reference if it is an established concept, or clearly indicate that it is a proposed concept.
+  - **Concern ID** R1-m5
+  - **Severity** Minor
+  - **Axis** Scope of challenges section
+  - **Affected element** Section "Challenges Ahead for Plant Pan-Genome Research"
+  - **Evidence pointer** Section text
+  - **Issue** The challenges section focuses primarily on sampling strategies and technical limitations but does not address other important challenges such as data sharing standards, computational infrastructure, or the integration of pan-genomic information into existing breeding pipelines and databases.
+  - **Required correction** Consider expanding the challenges section to include a broader range of practical and logistical issues that may impede the adoption of pan-genomic approaches in breeding.
 
 ## Risk / unsupported claims
-- The claim that the three conceptual transitions will shape the future of plant pan-genomics is unsupported by evidence in the abstract.
-- The assertion that SV, PAV, and haplotype diversity act as regulatory components is not substantiated with examples or citations.
-- The claim that integrating pan-genomes with pan-omics, 3D genome analyses, and AI will enable predictive breeding is aspirational and not demonstrated.
-- The statement that the ultimate value of pan-genomes lies in a mechanistic bridge is presented as fact without supporting argumentation.
-- The feasibility of moving from empirical selection to rational genome design is asserted without discussion of technical or biological limitations.
+- The claim of a "systematic review of nearly one hundred highly cited and representative studies" is unverifiable without Supporting Information Table S1.
+- The assertion that incorporating SVs into genomic selection models "significantly improved prediction accuracy in grape" is presented without quantitative details or a specific citation.
+- The claim that AI models "have the potential to learn the mechanisms through which genetic variation shapes phenotypic traits" is speculative and not supported by demonstrated results in the manuscript.
+- The statement that pan-genomes will enable "rational genome design" and "digital twin breeding" is aspirational and not supported by current evidence presented in the manuscript.
+- The claim that "the ultimate value of pan-genomes lies not in generating increasingly complete genome collections, but in establishing a mechanistic bridge" is a programmatic statement that cannot be evaluated without a defined operational framework.
+- The assertion that "excessive inclusion of redundant genomes can dramatically increase computational burdens" is plausible but not quantified or referenced in the provided text.
+- The statement that "a recent rose super-pan-genome study uncovered extensive introgression events" and the oat super-pan-genome study findings are cited without sufficient detail to evaluate the strength of the evidence.

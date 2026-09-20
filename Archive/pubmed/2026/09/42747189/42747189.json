@@ -1,0 +1,360 @@
+{
+  "identity": {
+    "pmid": "42747189",
+    "doi": "10.1093/femsyr/foag048",
+    "title": "Biological Parts in Yeast Synthetic Biology: From Regulatory Elements to Predictive Design Platforms."
+  },
+  "content": {
+    "abstract": "Yeasts, particularly Saccharomyces cerevisiae, are important eukaryotic chassis for synthetic biology because of their tractable genetics, versatile toolkits, and broad utility in metabolic engineering and functional genomics. Progress in this field has been driven by biological parts that enable programmable control of gene expression and cellular behavior. Early efforts focused mainly on promoters, terminators, and other regulatory elements for tuning individual genes. However, as engineering expanded to multigene pathways, genetic circuits, and dynamic regulatory systems, the limits of part-centric design became clear. Part performance is often shaped by genomic context, chromatin state, host physiology, and interactions with other components, which restricts modularity and predictability. In response, yeast synthetic biology is shifting toward integrated design frameworks combining multilayer regulation, standardized assembly, automated experimentation, and computational modeling. This review provides an integrated perspective on the evolution of biological parts across DNA-, RNA-, and protein-level regulation, connecting these advances with assembly frameworks, biofoundries, and machine learning to trace the trajectory from part-centric engineering toward predictive, system-level design in yeast synthetic biology.",
+    "keywords": [
+      "Biofoundry",
+      "Biological parts",
+      "Machine learning",
+      "Yeast synthetic biology"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Hong, Sujin",
+        "Kang, Ho Bum",
+        "Seong, Min-Jun",
+        "Jeon, Eunha",
+        "Seo, Sumin",
+        "Woo, Seung-Gyun",
+        "Oh, Eun Joong",
+        "Park, Young-Kyoung",
+        "Lee, Youngjoon",
+        "Lee, Dae-Hee"
+      ],
+      "short_names": [
+        "Hong S",
+        "Kang HB",
+        "Seong MJ",
+        "Jeon E",
+        "Seo S",
+        "Woo SG",
+        "Oh EJ",
+        "Park YK",
+        "Lee Y",
+        "Lee DH"
+      ],
+      "auids": [
+        "ORCID: 0000-0002-0423-9057"
+      ],
+      "affiliations": [
+        "Synthetic Biology Research Center, Korea Research Institute of Bioscience and Biotechnology (KRIBB), Daejeon 34141, Republic of Korea.",
+        "Synthetic Biology Research Center, Korea Research Institute of Bioscience and Biotechnology (KRIBB), Daejeon 34141, Republic of Korea.",
+        "Department of Biosystems and Bioengineering, KRIBB School of Biotechnology, University of Science and Technology (UST), Daejeon 34113, Republic of Korea.",
+        "Synthetic Biology Research Center, Korea Research Institute of Bioscience and Biotechnology (KRIBB), Daejeon 34141, Republic of Korea.",
+        "Department of Biosystems and Bioengineering, KRIBB School of Biotechnology, University of Science and Technology (UST), Daejeon 34113, Republic of Korea.",
+        "Synthetic Biology Research Center, Korea Research Institute of Bioscience and Biotechnology (KRIBB), Daejeon 34141, Republic of Korea.",
+        "Graduate School of Engineering Biology, Korea Advanced Institute of Science and Technology (KAIST), Daejeon 34141, Republic of Korea.",
+        "Synthetic Biology Research Center, Korea Research Institute of Bioscience and Biotechnology (KRIBB), Daejeon 34141, Republic of Korea.",
+        "Department of Biological Science and Biotechnology, Hannam University, Daejeon 34054, Republic of Korea.",
+        "Department of Food Science, Purdue University, West Lafayette, IN 47907, USA.",
+        "Universite Paris-Saclay, INRAE, AgroParisTech, Micalis Institute, Jouy-en-Josas 73852, France.",
+        "Korea Biofoundry, Korea Research Institute of Bioscience and Biotechnology (KRIBB), Daejeon 34141, Republic of Korea.",
+        "Synthetic Biology Research Center, Korea Research Institute of Bioscience and Biotechnology (KRIBB), Daejeon 34141, Republic of Korea.",
+        "Department of Biosystems and Bioengineering, KRIBB School of Biotechnology, University of Science and Technology (UST), Daejeon 34113, Republic of Korea.",
+        "Graduate School of Engineering Biology, Korea Advanced Institute of Science and Technology (KAIST), Daejeon 34141, Republic of Korea.",
+        "Korea Biofoundry, Korea Research Institute of Bioscience and Biotechnology (KRIBB), Daejeon 34141, Republic of Korea.",
+        "Department of Integrative Biotechnology, College of Biotechnology and Bioengineering, Sungkyunkwan University, Suwon 16419, Republic of Korea."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Hong, Sujin",
+        "short_name": "Hong S",
+        "identifiers": [],
+        "affiliations": [
+          "Synthetic Biology Research Center, Korea Research Institute of Bioscience and Biotechnology (KRIBB), Daejeon 34141, Republic of Korea."
+        ]
+      },
+      {
+        "full_name": "Kang, Ho Bum",
+        "short_name": "Kang HB",
+        "identifiers": [],
+        "affiliations": [
+          "Synthetic Biology Research Center, Korea Research Institute of Bioscience and Biotechnology (KRIBB), Daejeon 34141, Republic of Korea.",
+          "Department of Biosystems and Bioengineering, KRIBB School of Biotechnology, University of Science and Technology (UST), Daejeon 34113, Republic of Korea."
+        ]
+      },
+      {
+        "full_name": "Seong, Min-Jun",
+        "short_name": "Seong MJ",
+        "identifiers": [],
+        "affiliations": [
+          "Synthetic Biology Research Center, Korea Research Institute of Bioscience and Biotechnology (KRIBB), Daejeon 34141, Republic of Korea.",
+          "Department of Biosystems and Bioengineering, KRIBB School of Biotechnology, University of Science and Technology (UST), Daejeon 34113, Republic of Korea."
+        ]
+      },
+      {
+        "full_name": "Jeon, Eunha",
+        "short_name": "Jeon E",
+        "identifiers": [],
+        "affiliations": [
+          "Synthetic Biology Research Center, Korea Research Institute of Bioscience and Biotechnology (KRIBB), Daejeon 34141, Republic of Korea.",
+          "Graduate School of Engineering Biology, Korea Advanced Institute of Science and Technology (KAIST), Daejeon 34141, Republic of Korea."
+        ]
+      },
+      {
+        "full_name": "Seo, Sumin",
+        "short_name": "Seo S",
+        "identifiers": [],
+        "affiliations": [
+          "Synthetic Biology Research Center, Korea Research Institute of Bioscience and Biotechnology (KRIBB), Daejeon 34141, Republic of Korea."
+        ]
+      },
+      {
+        "full_name": "Woo, Seung-Gyun",
+        "short_name": "Woo SG",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Biological Science and Biotechnology, Hannam University, Daejeon 34054, Republic of Korea."
+        ]
+      },
+      {
+        "full_name": "Oh, Eun Joong",
+        "short_name": "Oh EJ",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Food Science, Purdue University, West Lafayette, IN 47907, USA."
+        ]
+      },
+      {
+        "full_name": "Park, Young-Kyoung",
+        "short_name": "Park YK",
+        "identifiers": [],
+        "affiliations": [
+          "Université Paris-Saclay, INRAE, AgroParisTech, Micalis Institute, Jouy-en-Josas 73852, France."
+        ]
+      },
+      {
+        "full_name": "Lee, Youngjoon",
+        "short_name": "Lee Y",
+        "identifiers": [],
+        "affiliations": [
+          "Korea Biofoundry, Korea Research Institute of Bioscience and Biotechnology (KRIBB), Daejeon 34141, Republic of Korea."
+        ]
+      },
+      {
+        "full_name": "Lee, Dae-Hee",
+        "short_name": "Lee DH",
+        "identifiers": [
+          "0000-0002-0423-9057"
+        ],
+        "affiliations": [
+          "Synthetic Biology Research Center, Korea Research Institute of Bioscience and Biotechnology (KRIBB), Daejeon 34141, Republic of Korea.",
+          "Department of Biosystems and Bioengineering, KRIBB School of Biotechnology, University of Science and Technology (UST), Daejeon 34113, Republic of Korea.",
+          "Graduate School of Engineering Biology, Korea Advanced Institute of Science and Technology (KAIST), Daejeon 34141, Republic of Korea.",
+          "Korea Biofoundry, Korea Research Institute of Bioscience and Biotechnology (KRIBB), Daejeon 34141, Republic of Korea.",
+          "Department of Integrative Biotechnology, College of Biotechnology and Bioengineering, Sungkyunkwan University, Suwon 16419, Republic of Korea."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "FEMS yeast research"
+    ],
+    "journal_abbrev": [
+      "FEMS Yeast Res"
+    ],
+    "pub_date": "2026 Sep 16",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/16 11:41",
+    "fetched_at": "2026-09-20 08:59:56"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42747189",
+      "42475469",
+      "42392239",
+      "33301873",
+      "42152749",
+      "39166875",
+      "40170311",
+      "23912807",
+      "40967915",
+      "30031049",
+      "42140530",
+      "41334807",
+      "41591451",
+      "25047958",
+      "39731599",
+      "27973777",
+      "27529501",
+      "21328545",
+      "27535766",
+      "41768065",
+      "35939789",
+      "27277391",
+      "24862902",
+      "42127490",
+      "33465474",
+      "40964802",
+      "29221460",
+      "30618248",
+      "30173765",
+      "42178028",
+      "41177134",
+      "41713401",
+      "42545751",
+      "25238571",
+      "21364573",
+      "30421239",
+      "24078086",
+      "40802971",
+      "41862973",
+      "42616280",
+      "41457591",
+      "25871405",
+      "42522963",
+      "42681189",
+      "23134565",
+      "26701310",
+      "42131688",
+      "32775697",
+      "31000590",
+      "39874719",
+      "28941341",
+      "32781665",
+      "31603503",
+      "42199149",
+      "34213900",
+      "39245291",
+      "40195837",
+      "42301185",
+      "41675245",
+      "23705868",
+      "41136350",
+      "39811667",
+      "35224233",
+      "41875746",
+      "42436509",
+      "40748243",
+      "26463592",
+      "33123175",
+      "22188344",
+      "21918511",
+      "23856240",
+      "41205316",
+      "36531560",
+      "39660479",
+      "40195839",
+      "42297013",
+      "40052500",
+      "41581077",
+      "27903818",
+      "32651601",
+      "35588683",
+      "29170962",
+      "33784178",
+      "26912179",
+      "25161694",
+      "40902856",
+      "26476430",
+      "42474033",
+      "41457589",
+      "42272755",
+      "40279643",
+      "30927496",
+      "42035967",
+      "41921585",
+      "26342588",
+      "42055549",
+      "42564453",
+      "42420730",
+      "25022769",
+      "34204069"
+    ],
+    "review": [
+      "42747189",
+      "42392239",
+      "33301873",
+      "42152749",
+      "40170311",
+      "40967915",
+      "30031049",
+      "42140530",
+      "41334807",
+      "41591451",
+      "25047958",
+      "21328545",
+      "27535766",
+      "41768065",
+      "35939789",
+      "27277391",
+      "42127490",
+      "33465474",
+      "40964802",
+      "42178028",
+      "41177134",
+      "41713401",
+      "42545751",
+      "40802971",
+      "41862973",
+      "42616280",
+      "41457591",
+      "42522963",
+      "26701310",
+      "42131688",
+      "39874719",
+      "28941341",
+      "32781665",
+      "31603503",
+      "39245291",
+      "40195837",
+      "42301185",
+      "41675245",
+      "40748243",
+      "26463592",
+      "33123175",
+      "22188344",
+      "41205316",
+      "40195839",
+      "42297013",
+      "40052500",
+      "27903818",
+      "32651601",
+      "35588683",
+      "33784178",
+      "25161694",
+      "40902856",
+      "26476430",
+      "42474033",
+      "41457589",
+      "42272755",
+      "40279643",
+      "30927496",
+      "42035967",
+      "41921585",
+      "26342588",
+      "25022769"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://academic.oup.com/femsyr/article-lookup/doi/10.1093/femsyr/foag048",
+        "provider": "Silverchair Information Systems",
+        "category": "Full Text Sources",
+        "attribute": "subscription/membership/fee required",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

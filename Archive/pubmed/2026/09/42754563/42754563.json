@@ -1,0 +1,309 @@
+{
+  "identity": {
+    "pmid": "42754563",
+    "doi": "10.1038/s41467-026-76404-8",
+    "title": "CoxFormer enables spatial omics inference with multimodal generative modeling."
+  },
+  "content": {
+    "abstract": "Gene co-expression maps transcriptome-wide gene-gene relationships, yet high-quality estimates cover less than half the genome. Meanwhile, spatial omics either profiles restricted in situ panels or lacks cellular resolution. Extending co-expression transcriptome-wide could overcome these limitations by inferring unassayed gene expression at subcellular resolution. Here we show that CoxFormer integrates literature-derived gene knowledge with co-expression networks from bulk tissues and large-scale single-cell atlases to learn 512-dimensional representations for 32,016 human genes. These embeddings capture functional gene relationships and serve as a generative prior for spatial inference across platforms and modalities. Without requiring a matched single-cell RNA-sequencing reference, CoxFormer supports four applications beyond measured genes: histology-based expression imputation, gene activity prediction from chromatin accessibility, subcellular super-resolution inference, and pathological region detection. Together, CoxFormer extends gene embedding from gene- and cell-level tasks to whole-transcriptome spatial inference, providing a unified framework for biological analysis beyond the limited gene coverage of current spatial omics technologies.",
+    "keywords": [],
+    "mesh_terms": [
+      "Humans",
+      "*Transcriptome/genetics",
+      "Gene Expression Profiling/methods",
+      "Spatial Transcriptomics",
+      "Gene Regulatory Networks",
+      "Genomics/methods",
+      "Multiomics",
+      "Single-Cell Gene Expression Analysis"
+    ],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Yang, Yiyang",
+        "Liao, Xu",
+        "Zhang, Haoyu",
+        "Wu, Yida",
+        "Jiao, Yuling",
+        "Sun, Xiaobo",
+        "Wang, Yao",
+        "Yu, Tianshu",
+        "Liu, Jin"
+      ],
+      "short_names": [
+        "Yang Y",
+        "Liao X",
+        "Zhang H",
+        "Wu Y",
+        "Jiao Y",
+        "Sun X",
+        "Wang Y",
+        "Yu T",
+        "Liu J"
+      ],
+      "auids": [
+        "ORCID: 0009-0009-9746-9529",
+        "ORCID: 0000-0002-8570-5792",
+        "ORCID: 0000-0003-2762-0421",
+        "ORCID: 0000-0003-4207-5273",
+        "ORCID: 0000-0002-6537-1924",
+        "ORCID: 0000-0002-5707-2078"
+      ],
+      "affiliations": [
+        "School of Data Science, The Chinese University of Hong Kong, Shenzhen, Shenzhen, China.",
+        "School of Management, Xi'an Jiaotong University, Xi'an, China.",
+        "School of Data Science, The Chinese University of Hong Kong, Shenzhen, Shenzhen, China.",
+        "School of Data Science, The Chinese University of Hong Kong, Shenzhen, Shenzhen, China.",
+        "School of Data Science, The Chinese University of Hong Kong, Shenzhen, Shenzhen, China.",
+        "School of Artificial Intelligence, Wuhan University, Wuhan, China.",
+        "Department of Human Genetics, Emory University School of Medicine, Atlanta, GA, USA.",
+        "School of Management, Xi'an Jiaotong University, Xi'an, China. yao.s.wang@gmail.com.",
+        "School of Data Science, The Chinese University of Hong Kong, Shenzhen, Shenzhen, China. yutianshu@cuhk.edu.cn.",
+        "School of Data Science, The Chinese University of Hong Kong, Shenzhen, Shenzhen, China. liujinlab@cuhk.edu.cn.",
+        "Shenzhen Loop Area Institute, Shenzhen, China. liujinlab@cuhk.edu.cn."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Yang, Yiyang",
+        "short_name": "Yang Y",
+        "identifiers": [
+          "0009-0009-9746-9529"
+        ],
+        "affiliations": [
+          "School of Data Science, The Chinese University of Hong Kong, Shenzhen, Shenzhen, China.",
+          "School of Management, Xi'an Jiaotong University, Xi'an, China."
+        ]
+      },
+      {
+        "full_name": "Liao, Xu",
+        "short_name": "Liao X",
+        "identifiers": [],
+        "affiliations": [
+          "School of Data Science, The Chinese University of Hong Kong, Shenzhen, Shenzhen, China."
+        ]
+      },
+      {
+        "full_name": "Zhang, Haoyu",
+        "short_name": "Zhang H",
+        "identifiers": [
+          "0000-0002-8570-5792"
+        ],
+        "affiliations": [
+          "School of Data Science, The Chinese University of Hong Kong, Shenzhen, Shenzhen, China."
+        ]
+      },
+      {
+        "full_name": "Wu, Yida",
+        "short_name": "Wu Y",
+        "identifiers": [],
+        "affiliations": [
+          "School of Data Science, The Chinese University of Hong Kong, Shenzhen, Shenzhen, China."
+        ]
+      },
+      {
+        "full_name": "Jiao, Yuling",
+        "short_name": "Jiao Y",
+        "identifiers": [
+          "0000-0003-2762-0421"
+        ],
+        "affiliations": [
+          "School of Artificial Intelligence, Wuhan University, Wuhan, China."
+        ]
+      },
+      {
+        "full_name": "Sun, Xiaobo",
+        "short_name": "Sun X",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Human Genetics, Emory University School of Medicine, Atlanta, GA, USA."
+        ]
+      },
+      {
+        "full_name": "Wang, Yao",
+        "short_name": "Wang Y",
+        "identifiers": [
+          "0000-0003-4207-5273"
+        ],
+        "affiliations": [
+          "School of Management, Xi'an Jiaotong University, Xi'an, China. yao.s.wang@gmail.com."
+        ]
+      },
+      {
+        "full_name": "Yu, Tianshu",
+        "short_name": "Yu T",
+        "identifiers": [
+          "0000-0002-6537-1924"
+        ],
+        "affiliations": [
+          "School of Data Science, The Chinese University of Hong Kong, Shenzhen, Shenzhen, China. yutianshu@cuhk.edu.cn."
+        ]
+      },
+      {
+        "full_name": "Liu, Jin",
+        "short_name": "Liu J",
+        "identifiers": [
+          "0000-0002-5707-2078"
+        ],
+        "affiliations": [
+          "School of Data Science, The Chinese University of Hong Kong, Shenzhen, Shenzhen, China. liujinlab@cuhk.edu.cn.",
+          "Shenzhen Loop Area Institute, Shenzhen, China. liujinlab@cuhk.edu.cn."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Nature communications"
+    ],
+    "journal_abbrev": [
+      "Nat Commun"
+    ],
+    "pub_date": "2026 Aug 20",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/18 05:36",
+    "fetched_at": "2026-09-20 08:59:56"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42754563",
+      "42243114",
+      "41596454",
+      "37365273",
+      "36147664",
+      "41978384",
+      "39095360",
+      "42308421",
+      "41888598",
+      "42328843",
+      "42510785",
+      "41465249",
+      "41507434",
+      "41353326",
+      "39893194",
+      "41719583",
+      "42745838",
+      "42726466",
+      "41249066",
+      "42653123",
+      "39207727",
+      "41540123",
+      "42377616",
+      "41875024",
+      "42412818",
+      "41162996",
+      "42391613",
+      "41996577",
+      "39656774",
+      "41684036",
+      "32431014",
+      "41421360",
+      "41385391",
+      "42074532",
+      "41125796",
+      "41601671",
+      "40633682",
+      "40442129",
+      "39369061",
+      "41667720",
+      "41763376",
+      "42531062",
+      "42341466",
+      "40306096",
+      "39706866",
+      "42696754",
+      "42328842",
+      "40461389",
+      "41136370",
+      "41372421",
+      "42650039",
+      "39567490",
+      "42151140",
+      "41639087",
+      "41093852",
+      "40839715",
+      "41206950",
+      "42706255",
+      "41238784",
+      "42378449",
+      "40856525",
+      "41632825",
+      "42366683",
+      "42225598",
+      "42680995",
+      "41370198",
+      "41467452",
+      "41526977",
+      "37426759",
+      "39042942",
+      "42546049",
+      "42425050",
+      "39800876",
+      "41038164",
+      "41486374",
+      "41452988",
+      "40540299",
+      "42140182",
+      "38168986",
+      "41193888",
+      "32976679",
+      "38950180",
+      "42681526",
+      "41939867",
+      "41495261",
+      "37323566",
+      "42131894",
+      "41248160",
+      "41611568",
+      "41977508",
+      "41896336",
+      "42579872",
+      "42723233",
+      "39303095",
+      "42065925",
+      "40827204",
+      "42458112",
+      "42469985",
+      "41219206",
+      "40161724"
+    ],
+    "review": [
+      "42754563",
+      "41596454",
+      "37365273",
+      "36147664",
+      "41978384",
+      "42510785",
+      "41465249",
+      "41353326",
+      "42726466",
+      "42653123",
+      "39207727",
+      "42377616",
+      "42391613",
+      "41385391",
+      "42074532",
+      "40461389",
+      "39042942",
+      "39800876",
+      "42681526",
+      "41611568",
+      "41977508"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [],
+    "text_mined": []
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42759328",
+  "title": "Molecular simulations of chromatin-associated biomolecular condensates.",
+  "authors": "Maristany, M Julia; Russell, Kieran; Perez Lopez, Ignacio; Huertas, Jan; Collepardo-Guevara, Rosana",
+  "journal": "Current opinion in structural biology",
+  "published_date": "2026-09-18",
+  "window": {
+    "start": "2026-09-13",
+    "end": "2026-09-19"
+  },
+  "score": 7,
+  "one_liner_zh": "该文综述了分子模拟在染色质相关生物分子凝聚体研究中的应用，强调粗粒化模型需纳入染色质架构等核内因素，虽为综述且非直接建模，但对染色质三维组织与相分离耦合的模拟方法有启发。",
+  "abstract": "Biomolecular condensates are central to nuclear organisation, and molecular simulations have most advanced our understanding of the molecular interactions that drive their formation and phase behaviour. Coarse-grained, physicochemically specific models are now able to reproduce phase diagrams, material properties, and sequence-phase space relationships with quantitative accuracy for intrinsically disordered proteins, but capturing condensates as they exist in the nucleus demands additional ingredients: explicit ionic environments, post-translational modification grammars, chromatin architecture as an explicit component, and nonequilibrium dynamics driven by active processes.",
+  "abstract_zh": "生物分子凝聚体（biomolecular condensates）是细胞核组织的核心，而分子模拟（molecular simulations）极大地推进了我们对驱动其形成及相行为（phase behavior）的分子相互作用的理解。粗粒化、物理化学特异性的模型现已能够以定量精度再现 intrinsically disordered proteins（内在无序蛋白）的相图（phase diagrams）、材料性质及序列-相空间关系，但捕捉细胞核中实际存在的凝聚体需要额外要素：显式离子环境、翻译后修饰语法（post-translational modification grammars）、作为显式组分的染色质结构（chromatin architecture），以及由活性过程驱动的非平衡动力学（nonequilibrium dynamics）。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42759328/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42759328/",
+  "paper_page_path": "papers/pubmed/42759328/index.html"
+}
