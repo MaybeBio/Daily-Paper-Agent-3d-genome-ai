@@ -1,0 +1,91 @@
+{
+  "source": "biorxiv",
+  "source_id": "10.64898/2026.09.14.751505",
+  "title": "Prediction of pH-sensing histidine residues in human cells",
+  "doi": "10.64898/2026.09.14.751505",
+  "abstract": "Changes in pH play an important role in human physiology and cell behaviours, evidenced by studies of tissues and gene expression, and the biophysics of individual systems. Bridging between these scales to establish pH-sensing networks has only been partially explored. Here, amino acid conservation and structural context, and benchmarking with known pH-sensors, were used to predict histidine residues within the human proteome that could modulate pH-dependence. Proteins containing these histidines are enriched in many categories, most notably nucleic acid-binding and transcriptional regulation. DNA phosphate backbone interactions are proposed to play a major role in modulating some pH-sensors. Transcription factors with potential pH-sensors and the largest number of documented target genes are highlighted, including those involved in circadian and developmental processes. Certain CDK-cyclin pairs also feature, along with components of SWI/SNF and cohesin complexes. Focussing on histidines, including those that are solvent accessible in AlphaFold protomer models, this study generates benchmarked predictions for possible pH-sensors in the human proteome.",
+  "authors": [
+    "Sallah S",
+    "Warwicker J"
+  ],
+  "published_date": "2026-09-20",
+  "updated_date": "",
+  "journal": "bioRxiv",
+  "category": "",
+  "landing_url": "https://www.biorxiv.org/content/10.64898/2026.09.14.751505",
+  "pdf_url": "https://www.biorxiv.org/content/10.64898/2026.09.14.751505.full.pdf",
+  "pdf_path": "",
+  "pdf_downloaded": false,
+  "query": "(\"3D genome\" OR \"three-dimensional genome\" OR \"genome organization\" OR \"genome architecture\" OR \"genome folding\" OR \"nuclear organization\" OR \"nuclear architecture\" OR \"chromatin organization\" OR \"chromatin architecture\" OR \"chromatin conformation\" OR \"chromatin topology\" OR \"chromatin structure\" OR \"chromatin loop\" OR \"chromatin interaction\" OR \"chromatin domain\" OR \"topologically associating domain\" OR \"A/B compartment\" OR \"chromosome conformation capture\" OR \"Hi-C\" OR HiChIP OR \"loop extrusion\" OR \"loop-extrusion\" OR CTCF OR cohesin OR \"cis-regulatory\" OR \"cis-regulatory element\" OR \"regulatory element\" OR \"regulatory genomics\" OR \"chromatin accessibility\" OR \"enhancer-promoter\" OR \"promoter-enhancer\") AND (\"deep learning\" OR \"machine learning\" OR \"neural network\" OR \"graph neural network\" OR \"convolutional neural network\" OR transformer OR \"language model\" OR \"foundation model\" OR \"diffusion model\" OR generative OR \"flow matching\" OR esmfold OR rosetta OR alphafold OR \"molecular dynamics\" OR simulation OR docking)",
+  "version": "",
+  "keywords": [],
+  "extra": {
+    "provider": "europepmc",
+    "epmc_id": "PPR1324309",
+    "raw_record": {
+      "id": "PPR1324309",
+      "source": "PPR",
+      "doi": "10.64898/2026.09.14.751505",
+      "title": "Prediction of pH-sensing histidine residues in human cells",
+      "authorString": "Sallah S, Warwicker J.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Sallah S",
+            "lastName": "Sallah",
+            "firstName": "Shalaw",
+            "initials": "S"
+          },
+          {
+            "fullName": "Warwicker J",
+            "lastName": "Warwicker",
+            "firstName": "Jim",
+            "initials": "J"
+          }
+        ]
+      },
+      "pubYear": "2026",
+      "abstractText": "Changes in pH play an important role in human physiology and cell behaviours, evidenced by studies of tissues and gene expression, and the biophysics of individual systems. Bridging between these scales to establish pH-sensing networks has only been partially explored. Here, amino acid conservation and structural context, and benchmarking with known pH-sensors, were used to predict histidine residues within the human proteome that could modulate pH-dependence. Proteins containing these histidines are enriched in many categories, most notably nucleic acid-binding and transcriptional regulation. DNA phosphate backbone interactions are proposed to play a major role in modulating some pH-sensors. Transcription factors with potential pH-sensors and the largest number of documented target genes are highlighted, including those involved in circadian and developmental processes. Certain CDK-cyclin pairs also feature, along with components of SWI/SNF and cohesin complexes. Focussing on histidines, including those that are solvent accessible in AlphaFold protomer models, this study generates benchmarked predictions for possible pH-sensors in the human proteome.",
+      "pubTypeList": {
+        "pubType": [
+          "Preprint"
+        ]
+      },
+      "bookOrReportDetails": {
+        "publisher": "bioRxiv",
+        "yearOfPublication": 2026
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Free",
+            "availabilityCode": "F",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.64898/2026.09.14.751505"
+          }
+        ]
+      },
+      "isOpenAccess": "N",
+      "inEPMC": "N",
+      "inPMC": "N",
+      "citedByCount": 0,
+      "hasReferences": "N",
+      "hasTextMinedTerms": "N",
+      "hasDbCrossReferences": "N",
+      "hasPDF": "N",
+      "hasBook": "N",
+      "hasSuppl": "N",
+      "hasLabsLinks": "N",
+      "hasData": "N",
+      "authMan": "N",
+      "epmcAuthMan": "N",
+      "nihAuthMan": "N",
+      "hasTMAccessionNumbers": "N",
+      "dateOfCreation": "2026-09-22",
+      "firstPublicationDate": "2026-09-20",
+      "firstIndexDate": "2026-09-22",
+      "hasEvaluations": "N"
+    }
+  }
+}

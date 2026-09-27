@@ -1,0 +1,24 @@
+{
+  "source": "medrxiv",
+  "id": "10.64898/2026.09.16.26363200",
+  "title": "Transcriptomic and Machine-Learning Prioritization of OCEL1 in Low Bone Mineral Density With Multivariable cis-MR",
+  "authors": "Yao J; Zhong Q",
+  "journal": "medRxiv",
+  "published_date": "2026-09-20",
+  "window": {
+    "start": "2026-09-20",
+    "end": "2026-09-26"
+  },
+  "score": 0,
+  "one_liner_zh": "该文利用转录组和机器学习优先筛选低骨密度相关基因OCEL1并结合顺式孟德尔随机化分析，对象为骨密度而非染色质三维组织，且无染色质空间架构建模或AI/分子模拟方法，与本课题无关。",
+  "abstract": "<h4>Introduction</h4> Low bone mineral density (BMD) is associated with altered bone remodeling and osteoimmune regulation. We aimed to prioritize transcript-level signals supported across human expression cohorts and evaluate their attribution within local cis-regulatory architecture. <h4>Materials and Methods</h4> Nominal differential-expression signals from GSE56815 were restricted with a predefined 25-term MSigDB thematic library. Features measurable in GSE56815 and GSE2208 underwent linear SVM ranking, LASSO, and XGBoost selection, followed by cross-cohort transcriptomic assessment. OCEL1 was examined in a four-exposure locus-aware CisMRBEEX model with NR2F6, MRPL34, BABAM1, eQTLGen cis-eQTLs, heel eBMD GWAS statistics, and UKBB337K LD. <h4>Results</h4> The expression screen identified 2,568 genes at nominal P<0.05; thematic restriction retained 190 candidates and 107 common features entered machine learning. Linear SVM, LASSO, and XGBoost retained 24, 18, and 9 genes and converged on CPNE1, EZR, and OCEL1. Only OCEL1 showed concordant expression direction with P<0.05 in both cohorts. In the primary 268-variant four-exposure model, OCEL1 was positively associated with heel eBMD (β=0.010293, SE=0.004107, 95% CI 0.002244-0.018342, P=0.01220, PIP=0.4001; conditional coefficient on the standardized analysis scale); BABAM1 retained an oppositely directed component. The no-palindromic reconstruction remained positive with wider uncertainty (β=0.007652, P=0.06739). <h4>Conclusion</h4> Convergent transcriptomic evidence prioritized OCEL1, whose conditional genetic-expression component was positively associated with heel eBMD after local shared cis regulation was modeled.",
+  "abstract_zh": "<h4>引言</h4> 低骨密度（BMD）与骨重塑和骨免疫调节的改变相关。我们旨在优先考虑跨人类表达队列支持的转录本水平信号，并评估其在局部顺式调控架构中的归因。<h4>材料与方法</h4> 来自GSE56815的名义差异表达信号通过预定义的25项MSigDB主题库进行限制。在GSE56815和GSE2208中可测量的特征经过线性SVM排序、LASSO和XGBoost选择，随后进行跨队列转录组评估。OCEL1在四暴露位点感知CisMRBEEX模型中检验，该模型包含NR2F6、MRPL34、BABAM1、eQTLGen顺式eQTL、跟骨eBMD GWAS统计数据和UKBB337K LD。<h4>结果</h4> 表达筛选在名义P<0.05下识别出2,568个基因；主题限制保留了190个候选基因，107个共同特征进入机器学习。线性SVM、LASSO和XGBoost分别保留了24、18和9个基因，并收敛于CPNE1、EZR和OCEL1。仅OCEL1在两个队列中显示一致的表达方向且P<0.05。在主要的268变异四暴露模型中，OCEL1与跟骨eBMD正相关（β=0.010293，SE=0.004107，95% CI 0.002244-0.018342，P=0.01220，PIP=0.4001；标准化分析尺度上的条件系数）；BABAM1保留了方向相反的成分。无回文重建仍为正相关，但不确定性更大（β=0.007652，P=0.06739）。<h4>结论</h4> 收敛的转录组证据优先考虑OCEL1，其条件遗传表达成分在局部共享顺式调控建模后与跟骨eBMD正相关。",
+  "has_fulltext": true,
+  "fulltext_source": "europepmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://www.medrxiv.org/content/10.64898/2026.09.16.26363200",
+  "source_url": "https://www.medrxiv.org/content/10.64898/2026.09.16.26363200",
+  "paper_page_path": "papers/medrxiv/10.64898_2026.09.16.26363200/index.html"
+}

@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42772476",
+  "title": "Designing gene expression with MPRA and AI: A new paradigm for synthetic and therapeutic regulation.",
+  "authors": "Zhang, Xue; Huang, Xiao-Yan; Wang, Hui-Yu; Bai, Feng-Wu; Li, Kai; Hu, Shen S",
+  "journal": "Biotechnology advances",
+  "published_date": "2026-09-22",
+  "window": {
+    "start": "2026-09-20",
+    "end": "2026-09-26"
+  },
+  "score": 5,
+  "one_liner_zh": "该综述聚焦MPRA与AI驱动的顺式调控元件设计，虽涉及染色质水平调控元件，但未建模三维基因组/染色质空间组织，方法上以深度学习预测为主，与课题部分相关。",
+  "abstract": "Precise and scalable control of gene expression across biological contexts remains a fundamental challenge in synthetic biology and therapeutic development, and massively parallel reporter assays (MPRAs) have emerged as a transformative platform for systematically interrogating cis-regulatory elements (CREs) and enabling high-throughput and quantitative dissection of sequence-dependent transcriptional activity to address this challenge. Beyond their original role in empirical characterization, the convergence of barcoded MPRA technologies with deep learning-based modeling has substantially expanded their impact, facilitating predictive inference and the de novo design of synthetic regulatory elements with programmable behavior. In this review, we synthesize recent advances in barcoded MPRA platforms and AI-driven modeling frameworks for the rational engineering of CREs with tunable transcriptional strength and specificity. We further highlight cutting-edge applications in microbial synthetic biology, mRNA therapeutics, and cell-specific gene regulation, emphasizing the role of barcoded MPRA in supporting data-efficient and cross-context generalizable design. Finally, we discuss current technical and conceptual limitations and future directions toward safe, programmable, and clinically relevant regulatory control systems, outlining a roadmap for next-generation cis-regulatory engineering and gene therapies.",
+  "abstract_zh": "在不同生物学背景下实现基因表达的精确且可扩展控制，仍是合成生物学与治疗开发中的根本性挑战，而大规模平行报告分析（MPRAs）已成为系统性探究顺式调控元件（CREs）并实现序列依赖性转录活性的高通量、定量解析的变革性平台，以应对这一挑战。超越其最初在经验表征中的角色，条形码化MPRA技术与基于深度学习的建模的融合显著扩展了其影响力，促进了预测性推断及具有可编程行为的合成调控元件的从头设计。在本综述中，我们综合了条形码化MPRA平台和AI驱动建模框架在合理工程化具有可调转录强度与特异性的CREs方面的最新进展。我们进一步强调了在微生物合成生物学、mRNA疗法及细胞特异性基因调控中的前沿应用，着重指出条形码化MPRA在支持数据高效且跨情境可泛化设计中的作用。最后，我们讨论了当前技术与概念上的局限性，以及面向安全、可编程且临床相关的调控控制系统的未来方向，为下一代顺式调控工程与基因治疗勾勒出路线图。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42772476/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42772476/",
+  "paper_page_path": "papers/pubmed/42772476/index.html"
+}

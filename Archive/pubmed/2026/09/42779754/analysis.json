@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42779754",
+  "title": "ssJSD: A Fusion of Sparsity and Spatial Information for HiC Single-Cell Clustering.",
+  "authors": "Lee, Sang Wan; Lin, Shili",
+  "journal": "bioRxiv : the preprint server for biology",
+  "published_date": "2026-09-24",
+  "window": {
+    "start": "2026-09-20",
+    "end": "2026-09-26"
+  },
+  "score": 6,
+  "one_liner_zh": "该文提出融合稀疏性与空间信息的ssJSD框架用于scHiC单细胞聚类，虽以三维基因组为对象并涉及空间互作模式，但核心是聚类方法而非染色质三维架构建模，且未采用AI或分子模拟方法。",
+  "abstract": "Single-cell high-throughput chromatin conformation capture (scHiC) enables profiling three-dimensional genome architecture at cellular resolution, providing insights into cell-to-cell variability and cellular functions. Recent frameworks utilize spatial interaction patterns to derive dissimilarity measures for downstream tasks such as cell clustering. However, the inherent sparsity and ultra-high dimensionality of scHiC contact matrices pose significant challenges. A central hurdle is that existing measures typically treat all zeros without distinction, failing to differentiate biologically meaningful structural zeros (SZs) from technical dropouts. Here, we introduce ssJSD (spatial and sparsity informed Jensen-Shannon Divergence), a computational framework designed to explicitly account for scHiC-specific sparsity patterns. By integrating band-wise contact frequency profiles with SZ-induced sparsity matrices, ssJSD leverages both spatial interaction patterns and biological absence of contacts. We adopted two complementary integration strategies: an early fusion approach that concatenates information into a single representation, and a late fusion approach that integrates JSD-based dissimilarities through diverse averaging methods. Through simulations and applications to human cell lines and prefrontal cortex data, we demonstrate that ssJSD improves clustering accuracy and effectively distinguishes cell types. Our study indicates that integrating SZ patterns is important for accurately quantifying cell-to-cell variability in 3D genomics.",
+  "abstract_zh": "单细胞高通量染色质构象捕获（scHiC）技术能够在细胞分辨率下分析三维基因组结构，为揭示细胞间变异及细胞功能提供见解。近期框架利用空间相互作用模式来推导相异性度量，用于细胞聚类等下游任务。然而，scHiC接触矩阵固有的稀疏性和超高维性带来了显著挑战。一个核心障碍在于，现有度量通常不加区分地处理所有零值，未能区分具有生物学意义的结构零（SZs）与技术性缺失。在此，我们引入ssJSD（空间及稀疏性感知的Jensen-Shannon散度），这是一个计算框架，旨在明确考虑scHiC特有的稀疏模式。通过将带状接触频率谱与SZ诱导的稀疏矩阵相结合，ssJSD同时利用空间相互作用模式和生物学上的接触缺失。我们采用了两种互补的整合策略：一种早期融合方法，将信息拼接为单一表示；以及一种晚期融合方法，通过多种平均方式整合基于JSD的相异性度量。通过模拟实验及对人类细胞系和前额叶皮层数据的应用，我们证明ssJSD提高了聚类准确性，并能有效区分细胞类型。我们的研究表明，整合SZ模式对于准确量化3D基因组学中的细胞间变异至关重要。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42779754/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42779754/",
+  "paper_page_path": "papers/pubmed/42779754/index.html"
+}

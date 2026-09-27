@@ -1,0 +1,71 @@
+## Review setup
+- **Input scope** Abstract only
+- **Assessment boundary** Claims and conclusions as stated in the abstract; no methods, figures, or quantitative results were available for evaluation
+- **Shared manuscript claim summary** The authors use Brownian dynamics simulations of minimal models combining Lennard-Jones particles with fixed fibrous substrates to study how the multiscale architecture of chromatin influences liquid-liquid phase separation (LLPS). They report that protein-fiber interactions affect droplet positioning analogously to wetting transitions, that local geometry and global network organization alter droplet size, morphology, and multiplicity, and that large-scale fiber asymmetries can induce robust spatial localization of the dense phase.
+- **Visible evidence base** Abstract text only; no figures, tables, methods section, or supplementary materials were provided
+- **Missing materials affecting confidence** Full manuscript text, all figures and tables, simulation methodology details, parameter choices, quantitative results, and any statistical analyses
+
+## Reviewer
+- **Overall assessment** The abstract presents a conceptually interesting and timely question about how the fibrous nuclear environment modulates biomolecular condensate formation. The minimal model approach is reasonable for a first exploration, and the analogy to wetting transitions is potentially insightful. However, the abstract alone provides insufficient detail to evaluate the technical soundness of the simulations, the robustness of the conclusions, or the quantitative support for the claims. The claims are plausible but currently not verifiable from the supplied material.
+- **Who would be interested in the results, and why** Researchers in biophysics, soft matter physics, and cell biology studying phase separation, chromatin organization, and nuclear architecture. The wetting analogy may also appeal to the soft matter community interested in interfacial phenomena in complex environments. The potential link to DNA repair condensates could attract molecular biologists working on genome stability.
+- **Major strengths** The question addresses a genuine gap in the LLPS literature, which often neglects the heterogeneous fibrous environment of the nucleus. The multiscale perspective, from local fiber geometry to global network organization, is a useful framing. The wetting analogy provides a physically intuitive lens for interpreting droplet-substrate interactions. The minimal model approach is appropriate for isolating key physical mechanisms.
+- **Major Concerns**
+  - **Concern ID** R1-M1
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** The claim that protein-fiber interactions influence droplet positioning in a manner analogous to wetting transitions
+  - **Evidence pointer** Abstract only; location not provided
+  - **Concern** The abstract states that droplet positioning relative to the substrate is analogous to wetting transitions, but no quantitative measures are provided. It is unclear how wetting was characterized, whether contact angles were computed, or how the analogy was established beyond qualitative observation.
+  - **Why it matters** The wetting analogy is a central conceptual contribution of the work. Without quantitative support, such as contact angle measurements or free energy calculations, the analogy remains speculative and cannot be distinguished from trivial adsorption effects.
+  - **Resolution test** Provide quantitative characterization of droplet-substrate interactions, such as contact angle distributions or interfacial free energy estimates, and compare these to known wetting behavior in soft matter systems.
+  - **Concern ID** R1-M2
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** The claim that local geometric constraints and global network organization markedly affect droplet size, morphology, and multiplicity
+  - **Evidence pointer** Abstract only; location not provided
+  - **Concern** The abstract reports qualitative effects on droplet size, morphology, and multiplicity but provides no quantitative data. It is unclear how these properties were measured, over what parameter ranges the effects were observed, or whether the effects are statistically significant given the stochastic nature of Brownian dynamics.
+  - **Why it matters** The central thesis of the paper is that multiscale chromatin architecture regulates condensate properties. Without quantitative evidence, including error bars or statistical tests, the claim that the effects are "marked" cannot be assessed.
+  - **Resolution test** Provide quantitative distributions of droplet size, morphology metrics, and multiplicity across different fiber geometries and network organizations, with appropriate statistical comparisons.
+  - **Concern ID** R1-M3
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** The claim that large-scale asymmetries in fiber organization can induce robust spatial localization of the dense phase
+  - **Evidence pointer** Abstract only; location not provided
+  - **Concern** The term "robust" implies stability across conditions, but no information is given about the range of asymmetries tested, the persistence of localization over time, or the sensitivity to simulation parameters such as particle density, interaction strengths, or system size.
+  - **Why it matters** Robustness is a strong claim that requires demonstration of insensitivity to reasonable parameter variations. Without this, the finding may be an artifact of specific simulation conditions.
+  - **Resolution test** Show that spatial localization persists across a range of asymmetry magnitudes, interaction parameters, and system sizes, and provide time-averaged density profiles to demonstrate stability.
+- **Minor Comments**
+  - **Concern ID** R1-m1
+  - **Severity** Minor
+  - **Axis** Readability for nonspecialists
+  - **Affected element** Abstract wording
+  - **Evidence pointer** Abstract, first sentence
+  - **Issue** The abstract opens with a general statement about biomolecular condensates but does not define LLPS for readers unfamiliar with the term.
+  - **Required correction** Briefly define liquid-liquid phase separation or provide a one-sentence context for nonspecialist readers.
+  - **Concern ID** R1-m2
+  - **Severity** Minor
+  - **Axis** Scientific importance
+  - **Affected element** Abstract framing
+  - **Evidence pointer** Abstract, final sentence
+  - **Issue** The concluding statement that results "highlight how multiscale structural heterogeneity can regulate condensates" is broad and does not specify which of the findings are most novel or impactful relative to existing literature.
+  - **Required correction** Specify the most significant new insight and how it advances beyond prior simulation or experimental studies of LLPS in confined or heterogeneous environments.
+  - **Concern ID** R1-m3
+  - **Severity** Minor
+  - **Axis** Technical soundness
+  - **Affected element** Model description
+  - **Evidence pointer** Abstract, methods sentence
+  - **Issue** The abstract mentions "minimal models combining Lennard-Jones particles with fixed fibrous substrates" but does not state whether the fibers are static or dynamic, which could affect the interpretation of the results.
+  - **Required correction** Clarify in the abstract or methods whether fibers are immobile and whether this assumption is justified for the biological context.
+- **Technical failings that need to be addressed before the case is established** R1-M1, R1-M2, R1-M3. The abstract provides no quantitative evidence for any of the three main claims. Without access to the full manuscript, the technical soundness of the simulations cannot be verified.
+- **Assessment against Nature-style criteria** Originality is moderate to high, as the question of how fibrous chromatin architecture modulates LLPS is relatively underexplored. Scientific importance is potentially significant for understanding nuclear condensate biology, but the abstract does not establish the magnitude or generality of the effects. Interdisciplinary readership is plausible, given the intersection of soft matter physics and cell biology, but the abstract assumes familiarity with both fields. Technical soundness cannot be assessed from the abstract alone. Readability for nonspecialists is adequate but could be improved with brief definitions and more specific framing of the findings.
+- **Recommendation posture** Currently not established from the provided evidence. The conceptual framing is promising, and the work may be publishable if the full manuscript provides quantitative support for the claims. A revised assessment would require access to the complete manuscript, figures, and methods.
+
+## Risk / unsupported claims
+- The wetting analogy is unsupported without quantitative interfacial measurements.
+- The claim that local and global fiber organization "markedly" affect droplet properties is unsupported without quantitative data.
+- The claim of "robust" spatial localization is unsupported without parameter sensitivity analysis.
+- The relevance to DNA repair condensates, mentioned in the introduction of the abstract, is not connected to any reported result and is therefore unsubstantiated.
+- The general statement that multiscale heterogeneity "can regulate" condensate emergence is a reasonable inference but is not quantitatively demonstrated in the abstract.

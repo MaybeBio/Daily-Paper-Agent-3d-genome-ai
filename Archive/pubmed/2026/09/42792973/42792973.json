@@ -1,0 +1,234 @@
+{
+  "identity": {
+    "pmid": "42792973",
+    "doi": "10.3390/genes17091079",
+    "title": "Deep Learning-Guided Identification and In Vivo Validation of Compact Cis-Regulatory Elements for the Zebrafish Habenula."
+  },
+  "content": {
+    "abstract": "BACKGROUND/OBJECTIVES: Precise genetic access to the zebrafish habenula remains limited by a scarcity of compact, sequence-defined cis-regulatory elements (CREs). Here, we integrated developmental expression mapping, deep-learning predictions on long-range sequences, and in vivo reporter assays to identify compact regulatory sequences driving habenular expression. METHODS: Using a transgenic zebrafish line enriched for habenular reporter expression, we isolated GFP-positive cells from larval brains and profiled their transcriptomes via microarray. A subset of candidate genes enriched in this dataset was validated using whole-mount in situ hybridization across two developmental stages. This analysis identified genes with highly reproducible habenular expression, leading to the selection of the gng8 and ano2 loci for subsequent CRE characterization. We developed ZEN-former (Zebrafish EN-former), an Enformer-based sequence-to-function model trained on neuronal subclass chromatin accessibility profiles from the adult mouse brain. RESULTS: The model demonstrated strong correlation between predicted and experimentally measured signals across held-out genomic regions. To prioritize regulatory candidates, we integrated ZEN-former predictions with available zebrafish ATAC-seq data, RepeatMasker annotations, and gene models, identifying two ~600 bp intervals at each gene locus. These selected intervals were combined to generate ~1.2 kb reporter constructs for gng8 and ano2 loci, which were then evaluated using Tol2 transposon mediated transgenesis assays in zebrafish. In transiently injected larvae, both constructs successfully drove reporter expression in the habenular region. Furthermore, the resulting stable transgenic lines displayed highly specific and reproducible habenular expression. Quantitative confocal analysis showed mean habenular labeling completeness values of 84.5% and 96.2% for the gng8- and ano2-derived lines, respectively. CONCLUSIONS: Together, these findings provide a proof of concept that sequence features learned from mammalian chromatin accessibility datasets can effectively guide the prioritization of functional regulatory elements across species in zebrafish. The compact regulatory constructs and stable transgenic lines generated here offer robust genetic tools for investigating habenular circuitry.",
+    "keywords": [
+      "cis-regulatory element",
+      "deep learning model",
+      "habenula",
+      "neural subclass",
+      "zebrafish"
+    ],
+    "mesh_terms": [
+      "Animals",
+      "*Zebrafish/genetics",
+      "*Habenula/metabolism/growth & development",
+      "*Regulatory Sequences, Nucleic Acid/genetics",
+      "Animals, Genetically Modified/genetics",
+      "*Deep Learning",
+      "Gene Expression Regulation, Developmental",
+      "Zebrafish Proteins/genetics",
+      "Transcriptome/genetics"
+    ],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Li, Zeran",
+        "Liu, Shanshan",
+        "Zhang, Quan",
+        "Zhang, Cuizhen",
+        "Peng, Gang"
+      ],
+      "short_names": [
+        "Li Z",
+        "Liu S",
+        "Zhang Q",
+        "Zhang C",
+        "Peng G"
+      ],
+      "auids": [
+        "ORCID: 0000-0001-6625-5426"
+      ],
+      "affiliations": [
+        "State Key Laboratory of Brain Function and Disorders, MOE Frontiers Center for Brain Science, Institutes of Brain Science, Fudan University, Shanghai 200032, China.",
+        "State Key Laboratory of Brain Function and Disorders, MOE Frontiers Center for Brain Science, Institutes of Brain Science, Fudan University, Shanghai 200032, China.",
+        "State Key Laboratory of Brain Function and Disorders, MOE Frontiers Center for Brain Science, Institutes of Brain Science, Fudan University, Shanghai 200032, China.",
+        "State Key Laboratory of Brain Function and Disorders, MOE Frontiers Center for Brain Science, Institutes of Brain Science, Fudan University, Shanghai 200032, China.",
+        "State Key Laboratory of Brain Function and Disorders, MOE Frontiers Center for Brain Science, Institutes of Brain Science, Fudan University, Shanghai 200032, China."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Li, Zeran",
+        "short_name": "Li Z",
+        "identifiers": [],
+        "affiliations": [
+          "State Key Laboratory of Brain Function and Disorders, MOE Frontiers Center for Brain Science, Institutes of Brain Science, Fudan University, Shanghai 200032, China."
+        ]
+      },
+      {
+        "full_name": "Liu, Shanshan",
+        "short_name": "Liu S",
+        "identifiers": [],
+        "affiliations": [
+          "State Key Laboratory of Brain Function and Disorders, MOE Frontiers Center for Brain Science, Institutes of Brain Science, Fudan University, Shanghai 200032, China."
+        ]
+      },
+      {
+        "full_name": "Zhang, Quan",
+        "short_name": "Zhang Q",
+        "identifiers": [],
+        "affiliations": [
+          "State Key Laboratory of Brain Function and Disorders, MOE Frontiers Center for Brain Science, Institutes of Brain Science, Fudan University, Shanghai 200032, China."
+        ]
+      },
+      {
+        "full_name": "Zhang, Cuizhen",
+        "short_name": "Zhang C",
+        "identifiers": [],
+        "affiliations": [
+          "State Key Laboratory of Brain Function and Disorders, MOE Frontiers Center for Brain Science, Institutes of Brain Science, Fudan University, Shanghai 200032, China."
+        ]
+      },
+      {
+        "full_name": "Peng, Gang",
+        "short_name": "Peng G",
+        "identifiers": [
+          "0000-0001-6625-5426"
+        ],
+        "affiliations": [
+          "State Key Laboratory of Brain Function and Disorders, MOE Frontiers Center for Brain Science, Institutes of Brain Science, Fudan University, Shanghai 200032, China."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Genes"
+    ],
+    "journal_abbrev": [
+      "Genes (Basel)"
+    ],
+    "pub_date": "2026 Sep 7",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/26 05:35",
+    "fetched_at": "2026-09-27 09:45:59"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42792973",
+      "42475469",
+      "19755139",
+      "24753112",
+      "19235732",
+      "20950494",
+      "21723274",
+      "29576475",
+      "24440152",
+      "21435340",
+      "31194899",
+      "21723936",
+      "19895802",
+      "17708765",
+      "24449846",
+      "41965817",
+      "15366023",
+      "20144609",
+      "18773071",
+      "25300581",
+      "19128492",
+      "42216449",
+      "24067090",
+      "23867016",
+      "11381108",
+      "18485195",
+      "23942840",
+      "41057362",
+      "28701772",
+      "21261954",
+      "27503354",
+      "22011226",
+      "35179181",
+      "14718378",
+      "40421528",
+      "26721460",
+      "21248200",
+      "30940554",
+      "17897967",
+      "29577695",
+      "17199897",
+      "22595513",
+      "20107084",
+      "26537431",
+      "27256877",
+      "39443793",
+      "40205616",
+      "16806968",
+      "17048253",
+      "34898596",
+      "16729214",
+      "38760655",
+      "37154340",
+      "28891223",
+      "34666684",
+      "12701095",
+      "25921963",
+      "12064604",
+      "12950077",
+      "22181660",
+      "9885211",
+      "19666820",
+      "18202183",
+      "34895465",
+      "15505032",
+      "42792956",
+      "18282108",
+      "33239788",
+      "12070097",
+      "33044128",
+      "11738553",
+      "25442502",
+      "35789323",
+      "23542551",
+      "29855387",
+      "16179648",
+      "29996889",
+      "31786786",
+      "41261532",
+      "24204288",
+      "21731768",
+      "17968670",
+      "23874664",
+      "24528677",
+      "31188878",
+      "15496438",
+      "34811400",
+      "9636087",
+      "19504063",
+      "26377945",
+      "14753740",
+      "32665240",
+      "23792917",
+      "30080860",
+      "40974062",
+      "40382355",
+      "22135404",
+      "33501917",
+      "23253453",
+      "26147098"
+    ],
+    "review": [
+      "42792973",
+      "27503354"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [],
+    "text_mined": []
+  }
+}

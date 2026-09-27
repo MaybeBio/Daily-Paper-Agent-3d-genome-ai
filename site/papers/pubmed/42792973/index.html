@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deep Learning-Guided Identification and In Vivo Validation of Compact Cis-Regulatory Elements for the Zebrafish Habenula. · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-mid">5</span>
+    <div>
+      <h1>Deep Learning-Guided Identification and In Vivo Validation of Compact Cis-Regulatory Elements for the Zebrafish Habenula.</h1>
+      <div class="meta">Li, Zeran; Liu, Shanshan; Zhang, Quan; Zhang, Cuizhen; Peng, Gang</div>
+      <div class="meta muted">
+        
+        <span class="journal">Genes</span>
+        · 2026-09-26
+         · 仅摘要
+         · <a href="https://pubmed.ncbi.nlm.nih.gov/42792973/">原文</a>
+      </div>
+      <p class="one-liner">该文用深度学习模型（Enformer变体）跨物种预测并验证斑马鱼缰核的紧凑顺式调控元件，虽涉及染色质可及性建模，但核心是调控元件鉴定而非三维基因组/染色质空间架构建模，方法可迁移性有限。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">BACKGROUND/OBJECTIVES: Precise genetic access to the zebrafish habenula remains limited by a scarcity of compact, sequence-defined cis-regulatory elements (CREs). Here, we integrated developmental expression mapping, deep-learning predictions on long-range sequences, and in vivo reporter assays to identify compact regulatory sequences driving habenular expression. METHODS: Using a transgenic zebrafish line enriched for habenular reporter expression, we isolated GFP-positive cells from larval brains and profiled their transcriptomes via microarray. A subset of candidate genes enriched in this dataset was validated using whole-mount in situ hybridization across two developmental stages. This analysis identified genes with highly reproducible habenular expression, leading to the selection of the gng8 and ano2 loci for subsequent CRE characterization. We developed ZEN-former (Zebrafish EN-former), an Enformer-based sequence-to-function model trained on neuronal subclass chromatin accessibility profiles from the adult mouse brain. RESULTS: The model demonstrated strong correlation between predicted and experimentally measured signals across held-out genomic regions. To prioritize regulatory candidates, we integrated ZEN-former predictions with available zebrafish ATAC-seq data, RepeatMasker annotations, and gene models, identifying two ~600 bp intervals at each gene locus. These selected intervals were combined to generate ~1.2 kb reporter constructs for gng8 and ano2 loci, which were then evaluated using Tol2 transposon mediated transgenesis assays in zebrafish. In transiently injected larvae, both constructs successfully drove reporter expression in the habenular region. Furthermore, the resulting stable transgenic lines displayed highly specific and reproducible habenular expression. Quantitative confocal analysis showed mean habenular labeling completeness values of 84.5% and 96.2% for the gng8- and ano2-derived lines, respectively. CONCLUSIONS: Together, these findings provide a proof of concept that sequence features learned from mammalian chromatin accessibility datasets can effectively guide the prioritization of functional regulatory elements across species in zebrafish. The compact regulatory constructs and stable transgenic lines generated here offer robust genetic tools for investigating habenular circuitry.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">背景/目标：对斑马鱼缰核的精准遗传操作仍受限于缺乏紧凑、序列定义的顺式调控元件（cis-regulatory elements, CREs）。在此，我们整合了发育表达图谱、长程序列的深度学习预测以及体内报告基因检测，以识别驱动缰核表达的紧凑调控序列。方法：利用富含缰核报告基因表达的转基因斑马鱼品系，我们从幼鱼脑中分离出GFP阳性细胞，并通过微阵列分析其转录组。该数据集中富集的一部分候选基因通过两个发育阶段的整封原位杂交进行了验证。此分析识别出具有高度可重复缰核表达的基因，从而选择gng8和ano2位点进行后续CRE表征。我们开发了ZEN-former（Zebrafish EN-former），一种基于Enformer的序列-功能模型，该模型在成年小鼠大脑的神经元亚类染色质可及性谱上进行了训练。结果：该模型在保留的基因组区域中，预测信号与实验测量信号之间表现出强相关性。为优先筛选调控候选元件，我们将ZEN-former预测与可用的斑马鱼ATAC-seq数据、RepeatMasker注释和基因模型相结合，在每个基因位点识别出两个约600 bp的区间。这些选定的区间被组合生成约1.2 kb的报告基因构建体，用于gng8和ano2位点，随后通过Tol2转座子介导的转基因检测在斑马鱼中进行了评估。在瞬时注射的幼鱼中，两种构建体均成功驱动了缰核区域的报告基因表达。此外，所得稳定转基因品系表现出高度特异且可重复的缰核表达。定量共聚焦分析显示，gng8和ano2衍生品系的平均缰核标记完整度分别为84.5%和96.2%。结论：综合来看，这些发现提供了概念验证，表明从哺乳动物染色质可及性数据集中学习到的序列特征可有效指导跨物种斑马鱼中功能性调控元件的优先筛选。此处生成的紧凑调控构建体和稳定转基因品系为研究缰核回路提供了稳健的遗传工具。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：Deep Learning-Guided Identification and In Vivo Validation of Compact Cis-Regulatory Elements for the Zebrafish Habenula</li>
+<li><strong>作者</strong>：Li, Zeran; Liu, Shanshan; Zhang, Quan; Zhang, Cuizhen; Peng, Gang</li>
+<li><strong>单位</strong>：未提供</li>
+<li><strong>期刊/平台</strong>：Genes</li>
+<li><strong>年份</strong>：2026</li>
+<li><strong>论文类型</strong>：研究论文（含方法开发与实验验证）</li>
+<li><strong>领域</strong>：调控基因组学 / 深度学习 / 斑马鱼神经发育</li>
+<li><strong>关键词</strong>：cis-regulatory elements; deep learning; Enformer; zebrafish; habenula; transgenesis</li>
+<li><strong>DOI/arXiv</strong>：10.3390/genes17091079</li>
+<li><strong>代码</strong>：未提供</li>
+<li><strong>数据</strong>：未提供（提及microarray、ATAC-seq、ZEN-former预测数据，但未给出存取号）</li>
+<li><strong>阅读日期</strong>：未提供</li>
+<li><strong>在课题方向中的位置</strong>：本文属于「三维基因组/染色质组织 × AI」方向中的<strong>跨物种调控元件预测</strong>分支——利用哺乳动物染色质可及性数据训练的深度学习模型（Enformer架构）跨物种预测斑马鱼功能性cis-regulatory elements，并通过体内报告实验验证。与三维基因组直接关联较弱，但其「序列→功能」建模思路与染色质状态整合策略可迁移至三维基因组调控元件注释任务。</li>
+</ul>
+<hr />
+<h2>02 一句话总结</h2>
+<p>本文利用基于Enformer架构的ZEN-former模型（在成年小鼠脑神经亚类染色质可及性数据上训练），跨物种预测斑马鱼缰核（habenula）的紧凑cis-regulatory elements，并通过Tol2转基因报告实验验证了gng8和ano2位点各~1.2 kb的调控构建体能够驱动特异且可重复的缰核表达（标记完整性84.5%和96.2%）。</p>
+<hr />
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：斑马鱼缰核缺乏紧凑、序列定义的cis-regulatory elements（CREs），限制了对该脑区的遗传学操作。</li>
+<li><strong>为什么重要</strong>：缰核是保守的进化古老脑区，参与奖赏、厌恶、成瘾等行为调控；精确的遗传工具是解析其环路功能的前提。</li>
+<li><strong>现有方法为何不足</strong>：传统增强子发现依赖大规模随机转基因筛选或保守性分析，效率低、周期长；且斑马鱼中已知的缰核CREs数量稀少，缺乏系统性的序列特征注释。</li>
+<li><strong>精确研究问题</strong>：Can sequence features learned from mammalian chromatin accessibility data (via Enformer) generalize across species to prioritize functional cis-regulatory elements in zebrafish?</li>
+</ul>
+<hr />
+<h2>04 背景与发展脉络</h2>
+<blockquote>
+<p>注：此脉络为「仅本文框架」——基于本文引言与方法的叙述，未经外部系统核验。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>代表性方法</th>
+<th>优点</th>
+<th>局限</th>
+<th>本文位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>传统增强子发现</td>
+<td>随机转基因筛选（enhancer trap）、报告基因</td>
+<td>直接验证功能</td>
+<td>通量低、周期长、难以系统覆盖</td>
+<td>本文试图超越</td>
+</tr>
+<tr>
+<td>保守性分析</td>
+<td>跨物种序列比对（如VISTA）</td>
+<td>识别进化保守调控序列</td>
+<td>漏掉物种特异或快速进化元件</td>
+<td>本文不依赖保守性</td>
+</tr>
+<tr>
+<td>染色质状态注释</td>
+<td>ATAC-seq / ChIP-seq 峰注释</td>
+<td>提供开放染色质证据</td>
+<td>峰本身不区分增强子/启动子/绝缘子，且需对应物种数据</td>
+<td>本文整合斑马鱼ATAC-seq作为辅助</td>
+</tr>
+<tr>
+<td>深度学习序列模型</td>
+<td>Enformer（人类/小鼠）</td>
+<td>长序列（~200 kb）端到端预测表达/染色质信号</td>
+<td>训练数据限于哺乳动物，跨物种泛化未验证</td>
+<td>本文核心创新：跨物种迁移</td>
+</tr>
+<tr>
+<td>跨物种调控预测</td>
+<td>本文ZEN-former</td>
+<td>利用哺乳动物数据预测斑马鱼CREs</td>
+<td>依赖跨物种序列特征保守性假设</td>
+<td>本文即此</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>缰核CREs稀缺</td>
+<td>缺乏紧凑、序列定义的调控元件</td>
+<td>传统筛选方法效率低，且缰核特异性调控逻辑复杂</td>
+<td>引言：precise genetic access ... remains limited by a scarcity of compact, sequence-defined CREs</td>
+</tr>
+<tr>
+<td>跨物种预测未验证</td>
+<td>深度学习模型在哺乳动物数据上训练，能否用于斑马鱼未知</td>
+<td>序列-功能关系可能物种特异</td>
+<td>本文核心假设，通过实验验证</td>
+</tr>
+<tr>
+<td>候选区域筛选困难</td>
+<td>长基因座内难以定位紧凑调控区间</td>
+<td>调控元件可能分散、冗余</td>
+<td>作者整合ZEN-former预测+ATAC-seq+RepeatMasker+基因模型来缩小范围</td>
+</tr>
+<tr>
+<td>体内验证周期长</td>
+<td>稳定转基因系建立耗时</td>
+<td>Tol2转座子介导的转基因需要多代筛选</td>
+<td>本文同时使用瞬时注射与稳定系，平衡速度与可靠性</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>06 核心思想</h2>
+<ol>
+<li>
+<p><strong>表面方法</strong>：训练一个Enformer架构的模型（ZEN-former）在成年小鼠脑神经亚类染色质可及性数据上，然后直接应用于斑马鱼基因组序列，预测候选CREs；结合斑马鱼ATAC-seq、RepeatMasker和基因模型进行候选区间筛选；最后用Tol2转基因报告实验验证。</p>
+</li>
+<li>
+<p><strong>核心洞察</strong>：染色质可及性的序列决定因素在哺乳动物与鱼类之间可能高度保守——即「序列语法」（sequence grammar）的进化保守性足以支撑跨物种预测。作者通过实验证明这一假设在缰核CREs上成立。</p>
+</li>
+<li>
+<p><strong>可能的普适教训</strong> [Analysis]：深度学习模型学到的序列特征可能比我们预期的更跨物种保守；「训练于一个物种、应用于另一个物种」的迁移策略，在调控元件发现中可能比「同物种从头训练」更高效——因为高质量染色质数据在模式生物（小鼠）中远丰富于非模式生物（斑马鱼）。</p>
+</li>
+</ol>
+<hr />
+<h2>07 方法总览</h2>
+<ul>
+<li><strong>输入</strong>：斑马鱼基因组序列（候选基因座区域）；小鼠脑神经亚类染色质可及性数据（训练用）</li>
+<li><strong>输出</strong>：预测的染色质可及性信号谱；优先化的候选CRE区间（~600 bp）</li>
+<li><strong>模块</strong>：
+  1. 表达谱筛选：转基因缰核富集报告系 → FACS分离GFP+细胞 → microarray转录组
+  2. 原位杂交验证：两个发育阶段，确认候选基因的缰核表达
+  3. ZEN-former训练：Enformer架构，小鼠脑神经亚类ATAC数据
+  4. 候选区间整合：ZEN-former预测 + 斑马鱼ATAC-seq + RepeatMasker + 基因模型
+  5. 报告构建体：~1.2 kb（两个~600 bp区间合并）→ Tol2转基因
+  6. 验证：瞬时注射 + 稳定系；共聚焦定量标记完整性</li>
+<li><strong>训练</strong>：ZEN-former在成年小鼠脑神经亚类染色质可及性谱上训练（具体训练细节未提供）</li>
+<li><strong>假设</strong>：跨物种序列-功能关系保守；斑马鱼ATAC-seq峰与ZEN-former预测的叠加可富集功能性CREs</li>
+<li><strong>文字流程</strong>：缰核富集转基因系 → FACS+microarray → 候选基因列表 → 原位杂交确认 → 选择gng8和ano2 → ZEN-former预测+ATAC-seq整合 → 各选两个~600 bp区间 → 合并为~1.2 kb构建体 → Tol2转基因 → 瞬时+稳定系验证 → 共聚焦定量</li>
+</ul>
+<hr />
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>表达谱筛选（FACS+microarray）</td>
+<td>从缰核富集转基因系中鉴定候选基因</td>
+<td>缩小候选基因列表，聚焦缰核表达基因</td>
+<td>输入：GFP+细胞；输出：差异表达基因列表</td>
+<td>Methods：isolated GFP-positive cells ... profiled transcriptomes</td>
+<td>预期影响：失去缰核表达先验，候选基因选择将盲目</td>
+</tr>
+<tr>
+<td>原位杂交验证</td>
+<td>确认候选基因在缰核的表达</td>
+<td>排除FACS/microarray假阳性</td>
+<td>输入：候选基因探针；输出：两个发育阶段的表达模式</td>
+<td>Methods：validated using whole-mount in situ hybridization across two developmental stages</td>
+<td>预期影响：假阳性候选将浪费后续CRE筛选资源</td>
+</tr>
+<tr>
+<td>ZEN-former训练与预测</td>
+<td>从序列预测染色质可及性</td>
+<td>提供跨物种的序列-功能映射</td>
+<td>输入：斑马鱼基因组序列；输出：预测可及性谱</td>
+<td>Results：strong correlation between predicted and experimentally measured signals</td>
+<td>预期影响：失去跨物种预测能力，需依赖斑马鱼自身数据（稀缺）</td>
+</tr>
+<tr>
+<td>候选区间整合</td>
+<td>结合多源数据缩小CRE候选</td>
+<td>单模型预测噪声大，需多证据交叉</td>
+<td>输入：ZEN-former预测+ATAC-seq+RepeatMasker+基因模型；输出：~600 bp区间×2/位点</td>
+<td>Methods：integrated ZEN-former predictions with available zebrafish ATAC-seq data</td>
+<td>预期影响：候选区间将过大或假阳性增多</td>
+</tr>
+<tr>
+<td>Tol2转基因报告</td>
+<td>体内验证CRE功能</td>
+<td>最终功能证据</td>
+<td>输入：~1.2 kb构建体；输出：报告表达模式</td>
+<td>Results：both constructs drove reporter expression in habenular region</td>
+<td>预期影响：无功能验证，预测停留在计算层面</td>
+</tr>
+<tr>
+<td>共聚焦定量</td>
+<td>量化标记完整性</td>
+<td>评估CRE驱动表达的覆盖度</td>
+<td>输入：稳定系脑片；输出：标记完整性百分比</td>
+<td>Results：84.5% and 96.2%</td>
+<td>预期影响：无法评估CRE的实际效力和特异性</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>09 关键公式符号</h2>
+<p>不适用。本文未提供形式化数学模型或公式；ZEN-former基于Enformer架构，其内部为深度学习变换器，但文中未给出具体损失函数、注意力公式或评分函数。</p>
+<hr />
+<h2>10 实验设计与证据链</h2>
+<ul>
+<li><strong>数据集/群体</strong>：斑马鱼（品系未提供）；成年小鼠脑神经亚类染色质可及性数据（训练ZEN-former）；斑马鱼幼虫脑（FACS+原位杂交+转基因）</li>
+<li><strong>规模</strong>：未提供具体基因数量、细胞数量、训练数据规模</li>
+<li><strong>指标</strong>：预测与实验信号的相关性（具体数值未提供）；标记完整性百分比（84.5%、96.2%）</li>
+<li><strong>基线</strong>：未提供（无对比模型或随机区间对照的明确描述）</li>
+<li><strong>预算/骨干/仪器</strong>：未提供</li>
+<li><strong>oracle输入</strong>：无（本文为预测+验证，无oracle）</li>
+<li><strong>评测协议</strong>：瞬时注射（快速初筛）+ 稳定转基因系（最终验证）；共聚焦定量</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FACS+microarray</td>
+<td>缰核富集转基因系中可鉴定候选基因</td>
+<td>无对照描述</td>
+<td>获得候选基因列表</td>
+<td>候选基因与缰核表达相关</td>
+<td>未证明这些基因的调控区即CREs</td>
+<td>Methods</td>
+</tr>
+<tr>
+<td>原位杂交（两阶段）</td>
+<td>候选基因在缰核表达</td>
+<td>两个发育阶段</td>
+<td>确认gng8和ano2表达</td>
+<td>这两个基因适合后续CRE分析</td>
+<td>未排除其他候选基因</td>
+<td>Methods</td>
+</tr>
+<tr>
+<td>ZEN-former预测 vs 实验信号</td>
+<td>模型可跨物种预测染色质可及性</td>
+<td>held-out基因组区域</td>
+<td>强相关（数值未提供）</td>
+<td>跨物种预测可行</td>
+<td>未证明预测峰即功能性增强子</td>
+<td>Results</td>
+</tr>
+<tr>
+<td>Tol2瞬时注射</td>
+<td>构建体可驱动缰核表达</td>
+<td>无阴性对照描述</td>
+<td>两个构建体均驱动缰核表达</td>
+<td>候选区间含功能性CREs</td>
+<td>未量化效率或特异性</td>
+<td>Results</td>
+</tr>
+<tr>
+<td>稳定系+共聚焦定量</td>
+<td>构建体在稳定系中维持特异表达</td>
+<td>无对照系描述</td>
+<td>标记完整性84.5%（gng8）、96.2%（ano2）</td>
+<td>构建体可作为遗传工具</td>
+<td>未评估脱靶表达或嵌合性</td>
+<td>Results</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：本文仅针对斑马鱼缰核的两个基因座（gng8、ano2），不声称覆盖全基因组或所有脑区。</li>
+<li><strong>oracle/真值输入</strong>：无oracle；真值为转基因报告表达。</li>
+<li><strong>端到端状态</strong>：从序列预测到体内验证的完整流程已跑通，但仅验证了2个位点，样本量极小。</li>
+<li><strong>算力成本</strong>：未提供训练ZEN-former的计算资源信息。</li>
+<li><strong>历史数据依赖</strong>：ZEN-former依赖小鼠脑神经亚类ATAC数据；斑马鱼ATAC-seq为辅助筛选。</li>
+<li><strong>模型依赖</strong>：依赖Enformer架构的跨物种泛化能力；若序列语法在更远物种间不保守，此策略可能失效。</li>
+<li><strong>最难情形</strong>：未测试非缰核脑区或非神经组织；未测试更紧凑（&lt;600 bp）的区间。</li>
+<li><strong>群体/领域边界</strong>：结论限于斑马鱼缰核；跨物种外推需谨慎。</li>
+<li><strong>不确定性</strong>：标记完整性数值来自稳定系，但未报告生物学重复数、变异范围或统计检验。</li>
+<li><strong>有边界的复述</strong>：在斑马鱼gng8和ano2位点，ZEN-former预测结合ATAC-seq筛选出的~1.2 kb区间能够驱动缰核特异报告表达；此结果支持「哺乳动物训练的序列模型可跨物种优先化鱼类CREs」这一假设，但证据强度受限于位点数量和缺乏阴性对照。</li>
+</ul>
+<hr />
+<h2>12 作者自认局限</h2>
+<p>在提供的材料（摘要）中未发现作者明确承认的局限。</p>
+<p><strong>作者提及的相关约束</strong>（非正式局限）：
+- 仅验证了两个基因座（gng8、ano2），样本量有限。
+- 模型训练数据来自小鼠而非斑马鱼，跨物种迁移本身即隐含假设。
+- 未提供阴性对照构建体或随机区间对照的描述。</p>
+<hr />
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>仅验证2个位点</td>
+<td>阳性结果可能受选择偏差影响（先有表达证据再选位点）</td>
+<td>无法排除「模型预测能力被高估」</td>
+<td>增加随机选择的位点数量，包含阴性预测区间</td>
+<td>摘要：selected the gng8 and ano2 loci</td>
+</tr>
+<tr>
+<td>无阴性对照描述</td>
+<td>构建体可能驱动广泛表达，缰核信号只是其中一部分</td>
+<td>特异性claim未被严格检验</td>
+<td>报告全脑表达模式，量化缰核/全脑信号比</td>
+<td>Results：highly specific and reproducible</td>
+</tr>
+<tr>
+<td>ZEN-former预测与实验信号的相关性数值未提供</td>
+<td>无法评估模型性能的绝对水平</td>
+<td>跨物种泛化程度未知</td>
+<td>提供具体相关系数、基线对比</td>
+<td>Results：strong correlation（无数值）</td>
+</tr>
+<tr>
+<td>未报告生物学重复和统计检验</td>
+<td>84.5%和96.2%的差异可能无统计意义</td>
+<td>定量结论不可靠</td>
+<td>提供n、SD、统计检验方法</td>
+<td>Results：mean values only</td>
+</tr>
+<tr>
+<td>训练数据为成年小鼠，应用对象为斑马鱼幼虫</td>
+<td>发育阶段和物种双重不匹配</td>
+<td>序列-功能保守性假设可能过于简化</td>
+<td>对比斑马鱼自身ATAC训练的模型性能</td>
+<td>Methods：trained on adult mouse brain</td>
+</tr>
+<tr>
+<td>未讨论三维基因组/染色质构象</td>
+<td>增强子-启动子互作可能依赖三维结构，序列模型无法捕捉</td>
+<td>对三维基因组课题读者而言，方法边界需明确</td>
+<td>结合Hi-C/3C数据验证预测CREs的染色质互作</td>
+<td>全文未提及</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>14 Agent 提炼的知识候选</h2>
+<ol>
+<li><strong>跨物种迁移的序列-功能建模</strong>：ZEN-former展示了「在数据丰富的物种（小鼠）上训练、在数据稀缺物种（斑马鱼）上应用」的策略。可迁移至三维基因组：在人类/小鼠Hi-C数据上训练的模型，可能预测斑马鱼或其他物种的TAD边界/CTCF loop锚点。</li>
+<li><strong>多源数据整合的候选筛选流程</strong>：深度学习预测 + 同物种ATAC-seq + 重复序列注释 + 基因模型的叠加策略，可迁移至三维基因组调控元件注释——例如将预测的增强子与Hi-C loop锚点、eQTL共定位。</li>
+<li><strong>紧凑构建体的设计原则</strong>：~600 bp区间合并为~1.2 kb构建体，提示「最小调控单元」可能比传统大片段报告构建更精准。对三维基因组课题，可探索「紧凑调控单元」与「三维互作域」的对应关系。</li>
+<li><strong>瞬时+稳定系的两级验证协议</strong>：先瞬时注射快速筛选，再稳定系精细验证，可迁移至三维基因组编辑验证（如CRISPR删除候选loop锚点后的表型验证）。</li>
+<li><strong>缰核作为跨物种保守脑区的调控逻辑</strong>：缰核在进化中保守，其CREs可能也保守——这提示三维基因组中「保守拓扑关联域（TAD）」与「保守调控元件」可能共进化。</li>
+</ol>
+<hr />
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>Enformer（Avsec et al., 2021, Nature Methods）</strong>：本文ZEN-former直接基于Enformer架构，但将训练数据从人类/小鼠的表达与染色质数据替换为小鼠脑神经亚类ATAC谱。可连接：Enformer原始论文证明长序列（~200 kb）预测能力，本文将其压缩至斑马鱼基因座级应用。</li>
+<li><strong>跨物种调控元件保守性（VISTA Enhancer Browser）</strong>：传统保守性分析依赖序列比对，本文则依赖「学习到的序列语法」的保守性，两者互补。</li>
+<li><strong>斑马鱼缰核遗传工具（如Tg(habenula:GFP)系）</strong>：本文的转基因系和报告构建体可与此类工具整合，用于环路追踪。</li>
+<li><strong>三维基因组方向</strong>：本文未涉及Hi-C/3C，但其「序列→功能」预测逻辑与「序列→三维结构」预测（如Orca、DeepC）同源。可连接：DeepC（序列预测Hi-C接触图）与本文ZEN-former在架构上同属Enformer类模型，但目标不同。</li>
+<li><strong>候选方向</strong>：将ZEN-former的跨物种迁移策略应用于三维基因组——在人类Hi-C上训练的模型预测斑马鱼TAD边界，可能为进化保守的拓扑结构提供新注释。</li>
+</ul>
+<hr />
+<h2>16 Agent 生成的研究候选</h2>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>来源局限/观察</th>
+<th>核心假设</th>
+<th>相对本文的增量</th>
+<th>初步方法</th>
+<th>验证方式</th>
+<th>可能的失败模式</th>
+<th>创新状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>跨物种TAD边界预测</strong></td>
+<td>本文证明序列模型可跨物种预测CREs；三维基因组中TAD边界同样有序列特征（CTCF motif等）</td>
+<td>在人类Hi-C上训练的Enformer类模型可预测斑马鱼TAD边界</td>
+<td>将跨物种迁移从「调控元件」扩展到「拓扑结构域」</td>
+<td>用人类Hi-C训练模型，在斑马鱼基因组上预测TAD边界，与斑马鱼Hi-C实验数据对比</td>
+<td>与斑马鱼Hi-C TAD边界重叠率、边界强度预测准确性</td>
+<td>物种间TAD边界序列语法差异过大，预测准确率低</td>
+<td>unverified</td>
+</tr>
+<tr>
+<td><strong>紧凑调控单元与TAD嵌套关系</strong></td>
+<td>本文~1.2 kb构建体足以驱动缰核表达；三维基因组中增强子-启动子互作常跨越TAD</td>
+<td>紧凑CREs可能富集在TAD边界附近的「调控热点」</td>
+<td>将CRE预测与三维结构注释结合</td>
+<td>对斑马鱼基因组，将ZEN-former预测CREs与Hi-C TAD/loop注释叠加，统计富集</td>
+<td>富集显著性、与已知loop锚点重叠率</td>
+<td>CREs与TAD无显著空间关联</td>
+<td>unverified</td>
+</tr>
+<tr>
+<td><strong>多物种序列-功能模型泛化基准</strong></td>
+<td>本文仅验证2个位点，缺乏系统评估</td>
+<td>跨物种预测能力可通过多物种基准测试量化</td>
+<td>建立跨物种调控预测的系统评估框架</td>
+<td>收集斑马鱼、河豚、青鳉等物种已验证CREs，测试ZEN-former类模型</td>
+<td>各物种AUPRC/AUROC，与同物种模型对比</td>
+<td>模型在远缘物种上失效，需物种微调</td>
+<td>unverified</td>
+</tr>
+<tr>
+<td><strong>三维基因组引导的CRE优先级排序</strong></td>
+<td>本文整合ATAC-seq但未用三维数据；三维互作信息可能提升CRE预测精度</td>
+<td>与活性增强子有三维接触的序列更可能是功能性CREs</td>
+<td>将三维基因组数据作为CRE预测的附加特征</td>
+<td>在ZEN-former预测基础上，加入Hi-C contact频率作为排序特征</td>
+<td>与转基因验证结果对比，比较有无三维特征的AUC</td>
+<td>三维数据噪声大，特征增益不显著</td>
+<td>unverified</td>
+</tr>
+<tr>
+<td><strong>缰核CREs的进化保守性分析</strong></td>
+<td>本文证明小鼠训练的模型可预测斑马鱼CREs；缰核本身进化保守</td>
+<td>缰核CREs在脊椎动物中序列保守，且与保守TAD结构共定位</td>
+<td>将CRE保守性与三维结构保守性联合分析</td>
+<td>跨物种（人、小鼠、斑马鱼）比对缰核CREs序列与TAD边界</td>
+<td>保守CREs与保守TAD边界的共定位显著性</td>
+<td>缰核CREs快速进化，保守性低</td>
+<td>unverified</td>
+</tr>
+</tbody>
+</table></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Abstract only</li>
+<li><strong>Assessment boundary</strong> Claims and evidence as presented in the abstract; no full text, figures, tables, or supplementary materials were provided</li>
+<li><strong>Shared manuscript claim summary</strong> The authors report a pipeline integrating transcriptomic profiling, deep learning (ZEN-former), and in vivo reporter assays to identify compact cis-regulatory elements driving zebrafish habenular expression, with two ~1.2 kb constructs validated in transgenic lines showing high labeling completeness.</li>
+<li><strong>Visible evidence base</strong> Abstract text only; no numerical data, statistical details, or methodological specifics beyond those summarized</li>
+<li><strong>Missing materials affecting confidence</strong> Full manuscript, all figures and tables, supplementary data, model architecture details, training and validation metrics, ATAC-seq processing details, transgenic line characterization protocols, and quantitative imaging methods</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li><strong>Overall assessment</strong> The abstract presents a conceptually interesting cross-species transfer of deep learning predictions from mammalian chromatin accessibility to zebrafish regulatory element discovery. The reported outcomes, particularly the high labeling completeness values, are potentially valuable for the habenula research community. However, the abstract alone provides insufficient detail to evaluate the robustness of the computational pipeline, the rigor of the experimental validations, or the statistical support for the quantitative claims. Several key methodological steps are described only superficially, and the evidence base is too thin to establish the case as presented.</li>
+<li><strong>Who would be interested in the results, and why</strong> Researchers studying zebrafish neurogenetics, habenular circuitry, and cis-regulatory element biology would find these tools and transgenic lines useful. Additionally, computational biologists working on cross-species transfer of deep learning models for genomics may be interested in the ZEN-former approach as a proof of concept.</li>
+<li><strong>Major strengths</strong> The study addresses a real gap in genetic tools for the zebrafish habenula. The integration of multiple data types (transcriptomics, chromatin accessibility, repeat annotations, gene models) for candidate prioritization is methodologically sensible. The cross-species transfer of deep learning features is an innovative angle with potential broader applicability. The reported stable transgenic lines with high labeling completeness suggest practical utility.</li>
+<li><strong>Major Concerns</strong> </li>
+<li>R1-M1</li>
+<li>R1-M2</li>
+<li>R1-M3</li>
+<li>R1-M4</li>
+<li><strong>Minor Comments</strong> </li>
+<li>R1-m1</li>
+<li>R1-m2</li>
+<li>R1-m3</li>
+<li>R1-m4</li>
+<li>R1-m5</li>
+<li><strong>Technical failings that need to be addressed before the case is established</strong> R1-M1 (model validation), R1-M2 (candidate selection rationale), R1-M3 (transient versus stable data), R1-M4 (quantitative imaging methodology)</li>
+<li><strong>Assessment against Nature-style criteria</strong> Originality is moderate to high given the cross-species deep learning application, though the concept of using mammalian data for zebrafish element discovery is not entirely unprecedented. Scientific importance is solid for the zebrafish and habenula communities but may be narrower for a general readership. Interdisciplinary readership is plausible given the intersection of genomics, deep learning, and neurobiology. Technical soundness cannot be adequately assessed from the abstract alone, particularly for the computational and quantitative imaging components. Readability for nonspecialists is acceptable, though some terms (e.g., ZEN-former, Tol2 transposon) are used without explanation.</li>
+<li><strong>Recommendation posture</strong> Currently not established from the provided evidence. The abstract suggests a promising approach and useful resources, but the lack of methodological detail and quantitative support prevents a definitive assessment. A revised submission with full methodological transparency and robust validation data could change this posture.</li>
+</ul>
+<h3>Major Concerns</h3>
+<ul>
+<li><strong>Concern ID</strong> R1-M1</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Technical soundness</li>
+<li><strong>Claim pointer</strong> "The model demonstrated strong correlation between predicted and experimentally measured signals across held-out genomic regions."</li>
+<li><strong>Evidence pointer</strong> Abstract, Results section (location not provided)</li>
+<li><strong>Concern</strong> The abstract claims strong correlation but provides no correlation coefficients, no definition of "strong," no description of the held-out regions, and no comparison to baseline or alternative models. The training data are from adult mouse brain neuronal subclasses, yet the validation appears to be on genomic regions that are not clearly specified as mouse or zebrafish.</li>
+<li><strong>Why it matters</strong> Without quantitative metrics and clear validation design, the predictive performance of ZEN-former cannot be evaluated. The cross-species transfer claim depends entirely on this validation being robust and appropriately designed.</li>
+<li>
+<p><strong>Resolution test</strong> Provide specific correlation values (e.g., Pearson or Spearman rho) with confidence intervals, describe the held-out region selection process, and clarify whether validation was performed on mouse or zebrafish data. Include comparison to a null model or existing tools.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M2</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Reproducibility and rigor</li>
+<li><strong>Claim pointer</strong> "To prioritize regulatory candidates, we integrated ZEN-former predictions with available zebrafish ATAC-seq data, RepeatMasker annotations, and gene models, identifying two ~600 bp intervals at each gene locus."</li>
+<li><strong>Evidence pointer</strong> Abstract, Methods section (location not provided)</li>
+<li><strong>Concern</strong> The integration process is described in a single sentence. No criteria are given for how ZEN-former scores were weighted against ATAC-seq peaks, how repeat masking influenced interval selection, or why ~600 bp was chosen as the interval size. The selection of gng8 and ano2 from the in situ hybridization screen is also not justified beyond "highly reproducible expression."</li>
+<li><strong>Why it matters</strong> The reproducibility of the candidate selection pipeline is central to the study's utility. If the integration rules are not specified, other researchers cannot apply or adapt the method, and the specificity of the chosen intervals cannot be assessed.</li>
+<li>
+<p><strong>Resolution test</strong> Provide a detailed step-by-step description of the prioritization algorithm, including thresholds, scoring functions, and decision rules. Justify the interval size and the choice of gng8 and ano2 relative to other candidates.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M3</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Evidence sufficiency</li>
+<li><strong>Claim pointer</strong> "In transiently injected larvae, both constructs successfully drove reporter expression in the habenular region. Furthermore, the resulting stable transgenic lines displayed highly specific and reproducible habenular expression."</li>
+<li><strong>Evidence pointer</strong> Abstract, Results section (location not provided)</li>
+<li><strong>Concern</strong> The abstract reports transient and stable transgenic outcomes but provides no images, no quantification of specificity (e.g., ectopic expression rates), and no reproducibility metrics across independent injection batches or generations. The transition from transient to stable lines is mentioned without describing how many lines were generated, how many were characterized, or how stability was confirmed.</li>
+<li><strong>Why it matters</strong> The core claim of the study is that these constructs are functional and specific. Without visual or quantitative evidence of expression patterns, including off-target expression, the specificity claim is unsupported. Reproducibility across animals and generations is essential for a genetic tool.</li>
+<li>
+<p><strong>Resolution test</strong> Include representative images of reporter expression in transient and stable lines, quantify the proportion of larvae or fish showing the expected pattern, report ectopic expression rates, and describe the number of independent transgenic lines and generations examined.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M4</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Technical soundness</li>
+<li><strong>Claim pointer</strong> "Quantitative confocal analysis showed mean habenular labeling completeness values of 84.5% and 96.2% for the gng8- and ano2-derived lines, respectively."</li>
+<li><strong>Evidence pointer</strong> Abstract, Results section (location not provided)</li>
+<li><strong>Concern</strong> The labeling completeness metric is not defined. It is unclear whether this refers to the proportion of habenular neurons labeled, the proportion of the habenular volume covered, or another measure. No sample sizes, variance estimates, or statistical comparisons are provided. The method for defining the habenular region in the analysis is also not described.</li>
+<li><strong>Why it matters</strong> These quantitative values are the primary quantitative outcome of the study. Without a clear definition and statistical context, the numbers cannot be interpreted or compared to other tools. The claim of "high" completeness depends on the metric and the reference standard.</li>
+<li><strong>Resolution test</strong> Define labeling completeness precisely, state the number of animals and sections analyzed, provide standard deviations or confidence intervals, describe the segmentation method for the habenula, and include a statistical comparison between the two lines or against a reference marker.</li>
+</ul>
+<h3>Minor Comments</h3>
+<ul>
+<li><strong>Concern ID</strong> R1-m1</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Clarity</li>
+<li><strong>Affected element</strong> Methods, transcriptomic profiling</li>
+<li><strong>Evidence pointer</strong> Abstract, Methods section (location not provided)</li>
+<li><strong>Issue</strong> The abstract states that GFP-positive cells were isolated and profiled via microarray, but the number of biological replicates, the sorting strategy, and the analysis pipeline are not described.</li>
+<li>
+<p><strong>Required correction</strong> Provide details on the number of larvae pooled, the FACS gating strategy, and the microarray analysis methods, including normalization and differential expression criteria.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m2</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Reproducibility</li>
+<li><strong>Affected element</strong> Methods, in situ hybridization</li>
+<li><strong>Evidence pointer</strong> Abstract, Methods section (location not provided)</li>
+<li><strong>Issue</strong> The validation of candidate genes by whole-mount in situ hybridization is mentioned for two developmental stages, but the stages are not specified and the number of genes validated is not stated.</li>
+<li>
+<p><strong>Required correction</strong> Specify the developmental stages (e.g., hours post-fertilization) and the number of candidate genes tested, along with the criteria for "highly reproducible expression."</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m3</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Clarity</li>
+<li><strong>Affected element</strong> Methods, ZEN-former architecture</li>
+<li><strong>Evidence pointer</strong> Abstract, Methods section (location not provided)</li>
+<li><strong>Issue</strong> The term "Enformer-based" is used without explaining what modifications were made for zebrafish or how the model handles sequence length differences between mouse and zebrafish.</li>
+<li>
+<p><strong>Required correction</strong> Describe the model architecture, input sequence length, training details, and any species-specific adaptations.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m4</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Completeness</li>
+<li><strong>Affected element</strong> Results, stable transgenic lines</li>
+<li><strong>Evidence pointer</strong> Abstract, Results section (location not provided)</li>
+<li><strong>Issue</strong> The abstract does not state whether the stable lines are germline-transmitted or whether expression is maintained in adult fish.</li>
+<li>
+<p><strong>Required correction</strong> Clarify the generation of stable lines (F0 founders versus F1 or later generations) and report expression persistence in adults if assessed.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m5</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Accessibility</li>
+<li><strong>Affected element</strong> Terminology</li>
+<li><strong>Evidence pointer</strong> Abstract, throughout (location not provided)</li>
+<li><strong>Issue</strong> Terms such as "ZEN-former," "Tol2 transposon mediated transgenesis," and "labeling completeness" are used without definition, which may hinder nonspecialist readers.</li>
+<li><strong>Required correction</strong> Add brief definitions or explanatory phrases at first use in the full manuscript.</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>The claim of "strong correlation" for ZEN-former validation is unsupported without quantitative metrics.</li>
+<li>The claim of "highly specific and reproducible" expression in stable lines is unsupported without images or quantitative specificity data.</li>
+<li>The labeling completeness values (84.5% and 96.2%) are uninterpretable without a defined metric and statistical context.</li>
+<li>The cross-species transfer conclusion ("sequence features learned from mammalian chromatin accessibility datasets can effectively guide the prioritization of functional regulatory elements across species") is a broad generalization from two loci and cannot be established from the abstract alone.</li>
+<li>The statement that the selected intervals are "compact" is not quantified relative to other known habenula enhancers or regulatory elements.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

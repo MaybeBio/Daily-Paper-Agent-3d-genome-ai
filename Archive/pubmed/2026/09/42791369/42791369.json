@@ -1,0 +1,216 @@
+{
+  "identity": {
+    "pmid": "42791369",
+    "doi": "10.1038/s41588-026-02775-9",
+    "title": "Euchromatin forms condensed domains with short active regions on the surface."
+  },
+  "content": {
+    "abstract": "The three-dimensional organization of enhancers and promoters at nucleosome resolution remains poorly resolved, limiting our understanding of the structural basis of transcriptional regulation. Here, we developed a simulation framework that leverages region-capture micro-C contact maps to infer conformational ensembles of megabase-scale regions at nucleosome resolution. A key component of this framework is a micro-C balancing strategy that identifies variation in contact density. The simulations reproduce pairwise distance distributions measured by chromatin tracing and contain packing domains and nucleosome clutches, as observed in imaging studies. The inferred structures reveal a striking departure from the classical view of euchromatin as uniformly open. Instead, euchromatin generally forms condensed domains with comparable densities but smaller sizes than heterochromatin domains. Kilobase-scale regions at promoters and enhancers often protrude from these condensed domains and become highly accessible. This arrangement effectively compartmentalizes regulatory elements from the surrounding chromatin, facilitating protein binding and enhancer-promoter communication.",
+    "keywords": [],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Paggi, Joseph M",
+        "Long, Lawrence Y",
+        "Zhang, Bin"
+      ],
+      "short_names": [
+        "Paggi JM",
+        "Long LY",
+        "Zhang B"
+      ],
+      "auids": [
+        "ORCID: 0000-0003-0588-6595",
+        "ORCID: 0009-0003-8923-5518",
+        "ORCID: 0000-0002-3685-7503"
+      ],
+      "affiliations": [
+        "Department of Chemistry, Massachusetts Institute of Technology, Cambridge, MA, USA.",
+        "Department of Chemistry, Massachusetts Institute of Technology, Cambridge, MA, USA.",
+        "Department of Chemistry, Massachusetts Institute of Technology, Cambridge, MA, USA. binz@mit.edu."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Paggi, Joseph M",
+        "short_name": "Paggi JM",
+        "identifiers": [
+          "0000-0003-0588-6595"
+        ],
+        "affiliations": [
+          "Department of Chemistry, Massachusetts Institute of Technology, Cambridge, MA, USA."
+        ]
+      },
+      {
+        "full_name": "Long, Lawrence Y",
+        "short_name": "Long LY",
+        "identifiers": [
+          "0009-0003-8923-5518"
+        ],
+        "affiliations": [
+          "Department of Chemistry, Massachusetts Institute of Technology, Cambridge, MA, USA."
+        ]
+      },
+      {
+        "full_name": "Zhang, Bin",
+        "short_name": "Zhang B",
+        "identifiers": [
+          "0000-0002-3685-7503"
+        ],
+        "affiliations": [
+          "Department of Chemistry, Massachusetts Institute of Technology, Cambridge, MA, USA. binz@mit.edu."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Nature genetics"
+    ],
+    "journal_abbrev": [
+      "Nat Genet"
+    ],
+    "pub_date": "2026 Sep 25",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/26 05:34",
+    "fetched_at": "2026-09-27 09:45:59"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42791369",
+      "36544209",
+      "37385880",
+      "42711428",
+      "29615710",
+      "41867868",
+      "42475469",
+      "40344741",
+      "40482957",
+      "38881841",
+      "36854665",
+      "38167349",
+      "34108683",
+      "30258225",
+      "41197626",
+      "39461009",
+      "41889853",
+      "42143406",
+      "42754317",
+      "32611439",
+      "36458689",
+      "40379692",
+      "41642679",
+      "42228877",
+      "23912807",
+      "22358970",
+      "35834552",
+      "42487124",
+      "34653387",
+      "38743310",
+      "42074600",
+      "26760202",
+      "29605855",
+      "33951053",
+      "26590168",
+      "18441229",
+      "38502563",
+      "31391082",
+      "32249388",
+      "25563930",
+      "41036778",
+      "26404156",
+      "30374068",
+      "24213634",
+      "27053337",
+      "39803586",
+      "42463462",
+      "18617529",
+      "21070966",
+      "25679813",
+      "28356342",
+      "34382185",
+      "22270183",
+      "36830746",
+      "33448065",
+      "35244156",
+      "15339661",
+      "41000727",
+      "20634313",
+      "23617842",
+      "27046080",
+      "37982508",
+      "31493975",
+      "30248133",
+      "32213323",
+      "30496478",
+      "37770717",
+      "31053165",
+      "22275876",
+      "32987449",
+      "33872375",
+      "34099014",
+      "29089515",
+      "31177910",
+      "6383477",
+      "26709929",
+      "34805161",
+      "26633995",
+      "35517868",
+      "35150617",
+      "37430091",
+      "42443443",
+      "35440119",
+      "33509077",
+      "40749051",
+      "42461771",
+      "39741350",
+      "30157915",
+      "37018405",
+      "16909129",
+      "23973299",
+      "38769058",
+      "39727280",
+      "30555922",
+      "25563431",
+      "36674677",
+      "37157000",
+      "38509385",
+      "25340767",
+      "24109593"
+    ],
+    "review": [
+      "42791369",
+      "37385880",
+      "40344741",
+      "40482957",
+      "42754317",
+      "42228877",
+      "26590168",
+      "36830746",
+      "20634313",
+      "32987449",
+      "6383477",
+      "26709929",
+      "34805161",
+      "42443443",
+      "30157915",
+      "16909129"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [],
+    "text_mined": []
+  }
+}

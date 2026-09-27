@@ -2,6 +2,231 @@
   "version": 1,
   "documents": [
     {
+      "id": "pubmed:42791369",
+      "title": "Euchromatin forms condensed domains with short active regions on the surface.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42791369/index.html",
+      "meta": [
+        "Paggi, Joseph M; Long, Lawrence Y; Zhang, Bin",
+        "Nature genetics",
+        "2026-09-26"
+      ],
+      "tags": [],
+      "summary": "该文开发了基于micro-C接触图的模拟框架，在核小体分辨率下推断常染色质构象系综，揭示常染色质形成致密结构域且活性调控区突出于表面，直接涉及染色质三维组织与增强子-启动子空间互作的建模，与本课题高度契合。",
+      "abstract": "The three-dimensional organization of enhancers and promoters at nucleosome resolution remains poorly resolved, limiting our understanding of the structural basis of transcriptional regulation. Here, we developed a simulation framework that leverages region-capture micro-C contact maps to infer conformational ensembles of megabase-scale regions at nucleosome resolution. A key component of this framework is a micro-C balancing strategy that identifies variation in contact density. The simulations reproduce pairwise distance distributions measured by chromatin tracing and contain packing domains and nucleosome clutches, as observed in imaging studies. The inferred structures reveal a striking departure from the classical view of euchromatin as uniformly open. Instead, euchromatin generally forms condensed domains with comparable densities but smaller sizes than heterochromatin domains. Kilobase-scale regions at promoters and enhancers often protrude from these condensed domains and become highly accessible. This arrangement effectively compartmentalizes regulatory elements from the surrounding chromatin, facilitating protein binding and enhancer-promoter communication. 增强子和启动子在核小体分辨率下的三维组织仍未被充分解析，限制了我们对转录调控结构基础的理解。在此，我们开发了一个模拟框架，利用区域捕获微C接触图谱来推断兆碱基规模区域在核小体分辨率下的构象集合。该框架的一个关键组成部分是微C平衡策略，用于识别接触密度的变异。模拟重现了通过染色质追踪测量的成对距离分布，并包含成像研究中观察到的堆积域和核小体簇。推断的结构揭示了真染色质经典视图（即均匀开放）的显著偏离。相反，真染色质通常形成致密域，其密度与异染色质域相当，但尺寸更小。启动子和增强子处的千碱基规模区域常从这些致密域中突出，变得高度可及。这种排列有效地将调控元件与周围染色质分隔开来，促进蛋白质结合及增强子-启动子通信。",
+      "date": "2026-09-26"
+    },
+    {
+      "id": "pubmed:42791384",
+      "title": "Machine learning and statistical methods for molecular quantitative trait loci.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42791384/index.html",
+      "meta": [
+        "Engelhardt, Barbara E; Weinstock, Joshua S; Nyquist, Sarah K; Battle, Alexis",
+        "Nature reviews. Genetics",
+        "2026-09-26"
+      ],
+      "tags": [],
+      "summary": "该文综述用于分子数量性状位点（molQTL）定位的机器学习与统计方法，涉及染色质可及性等分子表型，但核心是遗传变异-表型关联而非染色质三维空间架构建模，与课题关联有限。",
+      "abstract": "An important goal of biology is to understand how genetic variation translates into molecular and then broader phenotypic variation. Quantitative trait locus (QTL) mapping studies are designed to statistically test the relationship between genetic and phenotypic variation, with molecular QTLs (molQTLs) capturing genetic effects on molecular traits, such as gene expression or chromatin accessibility, as the variable phenotypes of interest. Technological advances have provided molQTL mapping methods with increased molecular phenotypes to test, as well as larger cohorts, the latter of which provides greater statistical power to associate genetic variants with these phenotypes. With these advances, statistical models - and, increasingly, machine learning methods - are being developed to improve standard molQTL mapping approaches, downstream analyses and other aspects of molQTL studies to gain additional insights into the mechanisms connecting genetic and phenotypic variation, especially in a gene regulatory context. 生物学的一个重要目标是理解遗传变异如何转化为分子变异，进而转化为更广泛的表型变异。数量性状位点（QTL）定位研究旨在统计检验遗传变异与表型变异之间的关系，其中分子QTL（molQTL）捕捉遗传效应对分子性状（如基因表达或染色质可及性）的影响，将这些作为关注的变量表型。技术进步为molQTL定位方法提供了更多可检验的分子表型，以及更大的队列，后者提供了更强的统计功效，以将遗传变异与这些表型关联起来。随着这些进展，统计模型——以及日益增多的机器学习方法——正在被开发，以改进标准的molQTL定位方法、下游分析及molQTL研究的其他方面，从而更深入地理解连接遗传变异与表型变异的机制，尤其是在基因调控背景下。",
+      "date": "2026-09-26"
+    },
+    {
+      "id": "pubmed:42792146",
+      "title": "Comprehensive Characterization of Cytochrome P450s Reveals Candidate Enzymes Involved in the Metabolic Fate of Absorbed Volatile Organic Compounds in Potato.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42792146/index.html",
+      "meta": [
+        "Bogdanovic, Milica D; Devrnja, Nina; Cukovic Janicijevic, Katarina B; Stupar, Sofija; Todorovic, Sladana I; Savic, Jelena",
+        "Antioxidants (Basel, Switzerland)",
+        "2026-09-26"
+      ],
+      "tags": [],
+      "summary": "该文研究马铃薯细胞色素P450酶对挥发性有机物的代谢，虽含机器学习与分子对接，但对象非染色质/三维基因组，且无空间架构建模，仅边缘相关。",
+      "abstract": "Plants are continuously exposed to volatile organic compounds (VOCs) emitted by neighbors. Although the mechanisms governing VOC uptake and metabolism remain unclear, cytochrome P450 monooxygenases (CYP450s) are thought to participate in the detoxification and metabolic conversion of absorbed VOCs. Data from previously conducted cDNA microarray transcriptomic profiling in potato exposed to French marigold essential oil (FM-EO) was here used to filter differentially expressed sequences, and identified 54 unique CYP450 transcripts. Among the 10 most highly expressed sequences, two CYP81D1-like (81D1-1 and 81D1-2) and one CYP81D11-like (81D11-1) transcripts were found. RT-qPCR confirmed their strong induction within 8 h of volatile exposure. Comprehensive bioinformatics identified the most highly induced 81D1-1 gene as a CYP450 containing a predicted N-terminal hydrophobic signal or membrane-anchor region, the conserved heme-binding signature motif, and regulatory elements associated with oxidative stress responses. The other 81D11-1 gene, exhibiting a comparable expression level, was annotated only as a heme-binding protein but possessed seven distinct cis-regulatory elements, suggesting high transcriptional plasticity. Machine learning predictions assigned the highest interaction probability to (Z)-beta-ocimene, whereas structure-based docking yielded the most favorable mean score for piperitone. This study provides the first characterization of the potato CYP450 superfamily in the context of volatile-mediated plant-plant interactions and identifies two CYP81D members as strong candidates for the oxidative metabolism of absorbed VOCs. The results support a proposed detoxification pathway in which CYP81-mediated oxidation precedes glutathione conjugation and intracellular sequestration of VOCs. These candidate genes provide a valuable foundation for future functional studies and may facilitate the development of sustainable crop protection strategies based on volatile-mediated plant defense. 植物持续暴露于邻近植物释放的挥发性有机化合物（VOCs）。尽管调控VOC吸收和代谢的机制尚不明确，但细胞色素P450单加氧酶（CYP450s）被认为参与吸收VOCs的解毒和代谢转化。本研究利用先前在马铃薯暴露于法国万寿菊精油（FM-EO）时进行的cDNA微阵列转录组谱分析数据，筛选差异表达序列，并鉴定出54个独特的CYP450转录本。在10个最高表达序列中，发现两个CYP81D1类似（81D1-1和81D1-2）转录本和一个CYP81D11类似（81D11-1）转录本。RT-qPCR证实它们在挥发性暴露8小时内被强烈诱导。综合生物信息学分析将诱导最强的81D1-1基因鉴定为一个CYP450，其包含预测的N端疏水信号或膜锚定区域、保守的血红素结合特征基序以及与氧化应激反应相关的调控元件。另一个表达水平相当的81D11-1基因仅被注释为血红素结合蛋白，但具有七个不同的顺式调控元件，表明其具有较高的转录可塑性。机器学习预测将最高相互作用概率分配给（Z）-β-罗勒烯，而基于结构的对接对胡椒酮给出了最有利的平均得分。本研究首次在挥发性介导的植物间相互作用背景下表征了马铃薯CYP450超家族，并鉴定出两个CYP81D成员作为吸收VOCs氧化代谢的强候选基因。结果支持一个提出的解毒途径，其中CYP81介导的氧化先于谷胱甘肽结合和VOCs的细胞内隔离。这些候选基因为未来的功能研究提供了宝贵基础，并可能促进基于挥发性介导植物防御的可持续作物保护策略的开发。",
+      "date": "2026-09-26"
+    },
+    {
+      "id": "pubmed:42792548",
+      "title": "Deep Learning-Assisted Prioritization of Candidate Drug Targets in Tumors Using Spatial Multi-Omics.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42792548/index.html",
+      "meta": [
+        "Liu, Yuxian; Zhou, Xueyan; Zhang, Junyuan; Liu, Guochao; Cao, Yanni",
+        "Biology",
+        "2026-09-26"
+      ],
+      "tags": [],
+      "summary": "该综述聚焦空间多组学与深度学习在肿瘤药物靶点优先排序中的应用，虽涉及染色质可及性等表观信息，但核心是肿瘤靶点发现而非染色质三维组织建模，且无AI/分子模拟方法贡献。",
+      "abstract": "BACKGROUND/OBJECTIVES: Tumor heterogeneity is reflected in cell composition, molecular states, spatial distribution, and microenvironment interactions. Spatial transcriptomics can map in situ expression and cell states but cannot fully explain upstream regulation, while spatial epigenomics provides complementary evidence such as chromatin accessibility, histone modifications, and deoxyribonucleic acid (DNA) methylation. This review summarizes the applications of spatial multi-omics and deep learning in prioritizing candidate drug targets in tumors. METHODS: We reviewed spatial transcriptomics, spatial epigenomics, and combined sequencing technologies, with a focus on how deep learning supports the analysis and integration of spatial multi-omics data for candidate-target prioritization. RESULTS: Deep learning facilitates the detection of abnormal regions, deciphering of cell origins, integration across samples, inference of cell-cell communication, and combination of imaging with omics data. Spatial multi-omics studies provide therapeutic insights into malignant cells, immunosuppression, stromal and vascular remodeling, and invasion and metastasis niches. Based on these applications, candidate targets can be evaluated in a layered manner according to spatial specificity, cell origin, regulatory consistency, reproducibility across patients, functional dependency, disease relevance, and druggability. CONCLUSIONS: Spatial multi-omics and deep learning can enhance the systematic and interpretable selection of candidate targets. However, computational associations cannot replace functional validation. Candidate targets still require verification through gene perturbation, drug sensitivity assays, organoids, animal models, and clinical cohorts to confirm their therapeutic potential. 背景/目的：肿瘤异质性体现在细胞组成、分子状态、空间分布及微环境相互作用中。空间转录组学（spatial transcriptomics）能够绘制原位表达和细胞状态，但无法完全解释上游调控，而空间表观基因组学（spatial epigenomics）提供了补充证据，如染色质可及性、组蛋白修饰和脱氧核糖核酸（DNA）甲基化。本综述总结了空间多组学和深度学习在肿瘤候选药物靶点优先排序中的应用。方法：我们综述了空间转录组学、空间表观基因组学及联合测序技术，重点关注深度学习如何支持空间多组学数据的分析和整合，以用于候选靶点的优先排序。结果：深度学习有助于检测异常区域、解析细胞起源、跨样本整合、推断细胞间通讯，以及将影像与组学数据结合。空间多组学研究为恶性细胞、免疫抑制、基质和血管重塑、侵袭及转移微环境提供了治疗见解。基于这些应用，候选靶点可根据空间特异性、细胞起源、调控一致性、跨患者可重复性、功能依赖性、疾病相关性和可成药性进行分层评估。结论：空间多组学和深度学习能够增强候选靶点选择的系统性和可解释性。然而，计算关联不能替代功能验证。候选靶点仍需通过基因扰动、药物敏感性测定、类器官、动物模型和临床队列进行验证，以确认其治疗潜力。",
+      "date": "2026-09-26"
+    },
+    {
+      "id": "pubmed:42792956",
+      "title": "Cross-Model Uncertainty-Aware Minimal Editing of Cis-Regulatory Elements for Cell-Type-Selective Design.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42792956/index.html",
+      "meta": [
+        "Xia, Angran; Wang, Changwei; Xia, Yemao",
+        "Genes",
+        "2026-09-26"
+      ],
+      "tags": [],
+      "summary": "该文用AI序列-活性模型与不确定性感知的编辑策略设计顺式调控元件（CRE）变体库，虽涉及染色质水平调控元件设计，但聚焦序列编辑而非三维空间架构建模，方法可迁移性中等。",
+      "abstract": "Background/Objectives: Cis-regulatory elements (CREs) help mediate cell-type-selective gene expression, yet sequence-to-activity models are rarely converted into compact, experimentally tractable variant panels that retain natural regulatory scaffolds. We developed SafeEdit-CRE to select minimal edits that preserve cross-model specificity while reducing predictive uncertainty, yielding an auditable CRE variant library for reporter-screening prioritization. Methods: SafeEdit-CRE combines the published Malinois sequence-activity predictor with an architecture-distinct reviewer ensemble, validation-calibrated uncertainty, sequence-domain controls, and constrained beam search. Natural 200 nt CREs were edited under fixed substitution budgets of 1, 5, 10, or 20 nucleotides and evaluated by a separately trained multi-kernel ensemble kept entirely separate from candidate generation. Results: Across 600 held-out CRE parents in K562, HepG2, and SK-N-SH cells, SafeEdit-CRE achieved a mean cross-model specificity-margin gain of 0.877 versus 0.822 for greedy editing (paired difference 0.055; 95% CI 0.040-0.071). Relative to a compute-matched primary-model beam, SafeEdit-CRE yielded a similar cross-model specificity-margin gain (difference -0.004; 95% CI -0.011-0.004) with lower ensemble uncertainty (0.314 vs. 0.335). In a locked 90-parent benchmark, 60.6% of designs passed all nine prespecified sequence and model-agreement checks, compared with 38.8% for greedy and 13.1% for random substitution (paired difference 21.8 percentage points; 95% CI 18.3-25.3). Conclusions: SafeEdit-CRE reduced 3240 designs to 74 Tier A computational candidates prioritized for reporter screening across three cell types and four edit budgets. By separating search from cross-model audit and enforcing explicit edit budgets and sequence-domain safeguards, the framework provides a reproducible and auditable approach to computational CRE prioritization, regulatory-grammar studies, and synthetic regulatory-element design. 背景/目标：顺式调控元件（cis-regulatory elements, CREs）有助于介导细胞类型选择性基因表达，然而序列到活性模型很少被转化为紧凑且实验上可操作的变异面板，同时保留天然调控支架。我们开发了SafeEdit-CRE，用于选择最小编辑，在降低预测不确定性的同时保持跨模型特异性，从而生成一个可审计的CRE变异文库，用于报告基因筛选优先级排序。方法：SafeEdit-CRE结合了已发表的Malinois序列活性预测器与架构不同的评审集成、验证校准的不确定性、序列域控制以及约束束搜索。在固定的1、5、10或20个核苷酸替换预算下，对天然的200 nt CRE进行编辑，并由一个单独训练的多核集成进行评估，该集成与候选生成完全分离。结果：在K562、HepG2和SK-N-SH细胞中的600个保留CRE亲本中，SafeEdit-CRE实现了平均跨模型特异性边际增益0.877，而贪婪编辑为0.822（配对差异0.055；95% CI 0.040-0.071）。相对于计算匹配的主模型束，SafeEdit-CRE产生了相似的跨模型特异性边际增益（差异-0.004；95% CI -0.011-0.004），且集成不确定性更低（0.314对0.335）。在一个锁定的90亲本基准中，60.6%的设计通过了所有九项预设序列和模型一致性检查，而贪婪编辑为38.8%，随机替换为13.1%（配对差异21.8个百分点；95% CI 18.3-25.3）。结论：SafeEdit-CRE将3240个设计缩减为74个Tier A计算候选，优先用于三种细胞类型和四种编辑预算下的报告基因筛选。通过将搜索与跨模型审计分离，并强制执行明确的编辑预算和序列域保障措施，该框架为计算CRE优先级排序、调控语法研究和合成调控元件设计提供了一种可重复且可审计的方法。",
+      "date": "2026-09-26"
+    },
+    {
+      "id": "pubmed:42792973",
+      "title": "Deep Learning-Guided Identification and In Vivo Validation of Compact Cis-Regulatory Elements for the Zebrafish Habenula.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42792973/index.html",
+      "meta": [
+        "Li, Zeran; Liu, Shanshan; Zhang, Quan; Zhang, Cuizhen; Peng, Gang",
+        "Genes",
+        "2026-09-26"
+      ],
+      "tags": [],
+      "summary": "该文用深度学习模型（Enformer变体）跨物种预测并验证斑马鱼缰核的紧凑顺式调控元件，虽涉及染色质可及性建模，但核心是调控元件鉴定而非三维基因组/染色质空间架构建模，方法可迁移性有限。",
+      "abstract": "BACKGROUND/OBJECTIVES: Precise genetic access to the zebrafish habenula remains limited by a scarcity of compact, sequence-defined cis-regulatory elements (CREs). Here, we integrated developmental expression mapping, deep-learning predictions on long-range sequences, and in vivo reporter assays to identify compact regulatory sequences driving habenular expression. METHODS: Using a transgenic zebrafish line enriched for habenular reporter expression, we isolated GFP-positive cells from larval brains and profiled their transcriptomes via microarray. A subset of candidate genes enriched in this dataset was validated using whole-mount in situ hybridization across two developmental stages. This analysis identified genes with highly reproducible habenular expression, leading to the selection of the gng8 and ano2 loci for subsequent CRE characterization. We developed ZEN-former (Zebrafish EN-former), an Enformer-based sequence-to-function model trained on neuronal subclass chromatin accessibility profiles from the adult mouse brain. RESULTS: The model demonstrated strong correlation between predicted and experimentally measured signals across held-out genomic regions. To prioritize regulatory candidates, we integrated ZEN-former predictions with available zebrafish ATAC-seq data, RepeatMasker annotations, and gene models, identifying two ~600 bp intervals at each gene locus. These selected intervals were combined to generate ~1.2 kb reporter constructs for gng8 and ano2 loci, which were then evaluated using Tol2 transposon mediated transgenesis assays in zebrafish. In transiently injected larvae, both constructs successfully drove reporter expression in the habenular region. Furthermore, the resulting stable transgenic lines displayed highly specific and reproducible habenular expression. Quantitative confocal analysis showed mean habenular labeling completeness values of 84.5% and 96.2% for the gng8- and ano2-derived lines, respectively. CONCLUSIONS: Together, these findings provide a proof of concept that sequence features learned from mammalian chromatin accessibility datasets can effectively guide the prioritization of functional regulatory elements across species in zebrafish. The compact regulatory constructs and stable transgenic lines generated here offer robust genetic tools for investigating habenular circuitry. 背景/目标：对斑马鱼缰核的精准遗传操作仍受限于缺乏紧凑、序列定义的顺式调控元件（cis-regulatory elements, CREs）。在此，我们整合了发育表达图谱、长程序列的深度学习预测以及体内报告基因检测，以识别驱动缰核表达的紧凑调控序列。方法：利用富含缰核报告基因表达的转基因斑马鱼品系，我们从幼鱼脑中分离出GFP阳性细胞，并通过微阵列分析其转录组。该数据集中富集的一部分候选基因通过两个发育阶段的整封原位杂交进行了验证。此分析识别出具有高度可重复缰核表达的基因，从而选择gng8和ano2位点进行后续CRE表征。我们开发了ZEN-former（Zebrafish EN-former），一种基于Enformer的序列-功能模型，该模型在成年小鼠大脑的神经元亚类染色质可及性谱上进行了训练。结果：该模型在保留的基因组区域中，预测信号与实验测量信号之间表现出强相关性。为优先筛选调控候选元件，我们将ZEN-former预测与可用的斑马鱼ATAC-seq数据、RepeatMasker注释和基因模型相结合，在每个基因位点识别出两个约600 bp的区间。这些选定的区间被组合生成约1.2 kb的报告基因构建体，用于gng8和ano2位点，随后通过Tol2转座子介导的转基因检测在斑马鱼中进行了评估。在瞬时注射的幼鱼中，两种构建体均成功驱动了缰核区域的报告基因表达。此外，所得稳定转基因品系表现出高度特异且可重复的缰核表达。定量共聚焦分析显示，gng8和ano2衍生品系的平均缰核标记完整度分别为84.5%和96.2%。结论：综合来看，这些发现提供了概念验证，表明从哺乳动物染色质可及性数据集中学习到的序列特征可有效指导跨物种斑马鱼中功能性调控元件的优先筛选。此处生成的紧凑调控构建体和稳定转基因品系为研究缰核回路提供了稳健的遗传工具。",
+      "date": "2026-09-26"
+    },
+    {
+      "id": "pubmed:42787872",
+      "title": "Bridging BET bromodomain and immune checkpoint inhibitors through generative bioorganic frameworks for next-generation cancer immunotherapy.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42787872/index.html",
+      "meta": [
+        "Diab, Mohamed K; Yassen, Asmaa S A; Fahmy, Sherif Ashraf; Ashour, Heba F; Nafie, Mohamed S",
+        "RSC medicinal chemistry",
+        "2026-09-25"
+      ],
+      "tags": [],
+      "summary": "该综述聚焦BET溴结构域抑制剂与免疫检查点抑制剂联合的癌症免疫治疗，虽涉及染色质表观调控和生成式AI分子设计，但核心对象是药物组合而非三维基因组/染色质组织建模，且无染色质空间架构或互作的计算建模，仅边缘相关。",
+      "abstract": "Bromodomain and extraterminal domain (BET) proteins are epigenetic readers that couple chromatin acetylation to oncogenic and immune-regulatory gene transcription, making them attractive targets for combination with immune checkpoint inhibitors (ICIs) in precision oncology. This review synthesizes current mechanistic, medicinal-chemistry, and translational evidence on BET-ICI combination strategies. We describe how BET blockade reshapes tumor chromatin architecture, suppresses PD-L1 expression, and enhances antigen presentation, thereby increasing tumor susceptibility to immune-mediated attack. We further summarize preclinical efficacy data for BET-ICI combinations, including systems-biology and agent-based computational models that predict substantially greater tumor-volume reduction with combination regimens relative to monotherapy in selected preclinical settings; however, early-phase clinical experience with these combinations remains limited and has not yet reproduced this magnitude of benefit. Beyond the mechanism, we review the medicinal chemistry underlying BET inhibitor design and the emerging landscape of BET-ICI hybrid and conjugate therapeutics, distinguishing combinations with direct experimental support from conceptual pairings that remain hypothesis-generating. Finally, we discuss how systems biology and generative, AI-guided molecular design may inform resistance-mechanism prediction, toxicity mitigation, and biomarker-guided, patient-specific compound selection. Collectively, this review outlines a framework for how the convergence of epigenetic reprogramming, immune modulation, and generative bioorganic chemistry could inform the rational design of next-generation BET-ICI combination therapeutics. 溴结构域和末端外结构域（BET）蛋白是表观遗传阅读器，将染色质乙酰化与致癌及免疫调节基因转录耦合，使其成为精准肿瘤学中与免疫检查点抑制剂（ICIs）联合使用的有吸引力的靶点。本综述综合了关于BET-ICI联合策略的当前机制、药物化学和转化证据。我们描述了BET阻断如何重塑肿瘤染色质结构、抑制PD-L1表达并增强抗原呈递，从而增加肿瘤对免疫介导攻击的敏感性。我们进一步总结了BET-ICI联合治疗的临床前疗效数据，包括系统生物学和基于代理的计算模型，这些模型预测在选定的临床前环境中，联合方案相比单一疗法可实现显著更大的肿瘤体积缩减；然而，这些联合治疗的早期临床经验仍然有限，尚未重现这种程度的获益。在机制之外，我们回顾了BET抑制剂设计背后的药物化学以及BET-ICI杂交和偶联治疗的新兴格局，区分了具有直接实验支持的组合与仍处于假设生成阶段的概念性配对。最后，我们讨论了系统生物学和生成式、AI引导的分子设计如何为耐药机制预测、毒性缓解以及生物标志物引导的、患者特异性化合物选择提供信息。总体而言，本综述概述了一个框架，说明表观遗传重编程、免疫调节和生成式生物有机化学的融合如何为下一代BET-ICI联合治疗药物的合理设计提供信息。",
+      "date": "2026-09-25"
+    },
+    {
+      "id": "pubmed:42789225",
+      "title": "A Brownian dynamics study of liquid-liquid phase separation in multiscale chromatin networks.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42789225/index.html",
+      "meta": [
+        "Beaules, Lea; Mine-Hattab, Judith; Illien, Pierre; Dahirel, Vincent",
+        "The European physical journal. E, Soft matter",
+        "2026-09-25"
+      ],
+      "tags": [],
+      "summary": "该文用布朗动力学模拟研究染色质纤维多尺度网络如何调控液-液相分离凝聚体的形态与空间组织，直接涉及染色质空间架构与凝聚体形成的计算建模，对三维基因组架构与核内调控的机理研究有重要启发。",
+      "abstract": "In living cells, proteins involved in specialized biochemical functions are often spatially organized within biomolecular condensates. Increasing evidence suggests that some of these condensates, including DNA repair condensates, emerge through liquid-liquid phase separation (LLPS). In the nucleus, however, condensates form within a highly heterogeneous environment composed of chromatin fibers, RNA, and additional protein scaffolds such as PAR chains, all of which may interact with phase-separating proteins. Moreover, condensate formation is frequently associated with specific chromatin conformations; for instance, loop extrusion has been proposed as a mechanism promoting DNA repair condensates. Here, we investigate how the surrounding fibrous environment controls the morphology and spatial organization of phase-separated condensates. Using Brownian dynamics simulations of minimal models combining Lennard-Jones particles with fixed fibrous substrates, we examine the respective roles of local fiber geometry and large-scale network organization, reflecting the multiscale architecture of chromatin. We show that protein-fiber interactions strongly influence droplet positioning relative to the substrate, in a manner analogous to wetting transitions in soft condensed matter systems. Both local geometric constraints and global network organization markedly affect droplet size, morphology, and multiplicity. In addition, large-scale asymmetries in fiber organization can induce robust spatial localization of the dense phase. Our results thus highlight how multiscale structural heterogeneity of the nuclear environment can regulate the emergence and organization of biomolecular condensates. 在活细胞中，参与特定生化功能的蛋白质通常会在生物分子凝聚体（biomolecular condensates）内进行空间组织。越来越多的证据表明，其中一些凝聚体，包括DNA修复凝聚体，是通过液-液相分离（liquid-liquid phase separation, LLPS）形成的。然而，在细胞核中，凝聚体是在由染色质纤维、RNA以及诸如PAR链等额外蛋白质支架组成的高度异质环境中形成的，所有这些都可能与相分离蛋白相互作用。此外，凝聚体的形成通常与特定的染色质构象相关；例如，环挤压（loop extrusion）已被提出作为促进DNA修复凝聚体形成的机制。在此，我们研究了周围纤维环境如何控制相分离凝聚体的形态和空间组织。通过结合Lennard-Jones粒子与固定纤维底物的最小模型的布朗动力学模拟，我们考察了局部纤维几何结构和大规模网络组织的各自作用，这反映了染色质的多尺度架构。我们表明，蛋白质-纤维相互作用强烈影响液滴相对于底物的定位，其方式类似于软凝聚态物质系统中的润湿转变。局部几何约束和全局网络组织均显著影响液滴的大小、形态和多重性。此外，纤维组织中的大规模不对称性可诱导致密相的稳健空间定位。因此，我们的结果突显了核环境的多尺度结构异质性如何调节生物分子凝聚体的形成和组织。",
+      "date": "2026-09-25"
+    },
+    {
+      "id": "pubmed:42779754",
+      "title": "ssJSD: A Fusion of Sparsity and Spatial Information for HiC Single-Cell Clustering.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42779754/index.html",
+      "meta": [
+        "Lee, Sang Wan; Lin, Shili",
+        "bioRxiv : the preprint server for biology",
+        "2026-09-24"
+      ],
+      "tags": [],
+      "summary": "该文提出融合稀疏性与空间信息的ssJSD框架用于scHiC单细胞聚类，虽以三维基因组为对象并涉及空间互作模式，但核心是聚类方法而非染色质三维架构建模，且未采用AI或分子模拟方法。",
+      "abstract": "Single-cell high-throughput chromatin conformation capture (scHiC) enables profiling three-dimensional genome architecture at cellular resolution, providing insights into cell-to-cell variability and cellular functions. Recent frameworks utilize spatial interaction patterns to derive dissimilarity measures for downstream tasks such as cell clustering. However, the inherent sparsity and ultra-high dimensionality of scHiC contact matrices pose significant challenges. A central hurdle is that existing measures typically treat all zeros without distinction, failing to differentiate biologically meaningful structural zeros (SZs) from technical dropouts. Here, we introduce ssJSD (spatial and sparsity informed Jensen-Shannon Divergence), a computational framework designed to explicitly account for scHiC-specific sparsity patterns. By integrating band-wise contact frequency profiles with SZ-induced sparsity matrices, ssJSD leverages both spatial interaction patterns and biological absence of contacts. We adopted two complementary integration strategies: an early fusion approach that concatenates information into a single representation, and a late fusion approach that integrates JSD-based dissimilarities through diverse averaging methods. Through simulations and applications to human cell lines and prefrontal cortex data, we demonstrate that ssJSD improves clustering accuracy and effectively distinguishes cell types. Our study indicates that integrating SZ patterns is important for accurately quantifying cell-to-cell variability in 3D genomics. 单细胞高通量染色质构象捕获（scHiC）技术能够在细胞分辨率下分析三维基因组结构，为揭示细胞间变异及细胞功能提供见解。近期框架利用空间相互作用模式来推导相异性度量，用于细胞聚类等下游任务。然而，scHiC接触矩阵固有的稀疏性和超高维性带来了显著挑战。一个核心障碍在于，现有度量通常不加区分地处理所有零值，未能区分具有生物学意义的结构零（SZs）与技术性缺失。在此，我们引入ssJSD（空间及稀疏性感知的Jensen-Shannon散度），这是一个计算框架，旨在明确考虑scHiC特有的稀疏模式。通过将带状接触频率谱与SZ诱导的稀疏矩阵相结合，ssJSD同时利用空间相互作用模式和生物学上的接触缺失。我们采用了两种互补的整合策略：一种早期融合方法，将信息拼接为单一表示；以及一种晚期融合方法，通过多种平均方式整合基于JSD的相异性度量。通过模拟实验及对人类细胞系和前额叶皮层数据的应用，我们证明ssJSD提高了聚类准确性，并能有效区分细胞类型。我们的研究表明，整合SZ模式对于准确量化3D基因组学中的细胞间变异至关重要。",
+      "date": "2026-09-24"
+    },
+    {
+      "id": "pubmed:42779769",
+      "title": "Temporal regulation of a spatial patterning factor in Drosophila neurogenesis.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42779769/index.html",
+      "meta": [
+        "Coyne, Rose; Kamulegeya, Fahad; Lake, Cathleen; Rajesh, Raghuvanshi; Treese, McKenzie; Chen, Yen-Chung; Troutwine, Benjamin; Zeitlinger, Julia; Ozel, Mehmet Neset",
+        "bioRxiv : the preprint server for biology",
+        "2026-09-24"
+      ],
+      "tags": [],
+      "summary": "该文研究果蝇视叶神经发生中空间与时间模式因子如何通过模块化增强子调控同一选择因子，虽涉及染色质可及性深度学习模型，但核心是神经发育调控而非三维基因组/染色质组织建模，方法可迁移性有限。",
+      "abstract": "A central question in neurobiology is how the transient programs that pattern neural progenitors are translated into the enormous, stable diversity of neuronal types. Spatial and temporal cues act only briefly, yet each neuron's identity is defined and maintained for life by terminal selector transcription factors (TFs). How a neuron's developmental origin is read out into a particular selector code remains poorly understood. Some current models propose that spatial and temporal origins are inherited independently through separate selectors. We show instead that, in the Drosophila optic lobe, the same selector can be activated by different patterning axes through physically distinct enhancers, even within the same lineage. Visual system homeobox (Vsx1) spatially patterns a central neuroepithelial domain and later acts as a terminal selector in dozens of neuronal types, most originating exclusively from that domain. However, in Dm2 neurons that are produced from every domain, it is regulated not by neuroepithelial Vsx1 but by the neuroblast temporal TF BarH1, through an enhancer distinct from its domain-specific ones. Combining in vivo reporters with sequence-to-accessibility deep-learning models, we identify and disrupt the key binding sites in this enhancer, impairing its Dm2-specific activity. Reciprocally, the temporal TF Homeobrain (Hbn) acts as a terminal selector in the related neuron Mi21 independently of its neuroblast temporal window: its expression in these late-born neurons is instead placed under dorsoventral spatial control. Patterning inputs therefore need not be partitioned across separate selectors but converge combinatorially on the modular enhancers of shared ones, revealing a cis-regulatory logic that re-encodes this limited set of inputs into vast neuronal diversity. 神经生物学中的一个核心问题是，塑造神经祖细胞的瞬时程序如何被转化为神经元类型的巨大而稳定的多样性。空间和时间线索仅短暂作用，然而每个神经元的身份却由末端选择器转录因子（TFs）定义并终生维持。神经元的发育起源如何被解读为特定的选择器编码，仍知之甚少。一些当前模型提出，空间和时间起源通过独立的选择器分别继承。我们反而表明，在果蝇视叶中，同一选择器可以通过物理上不同的增强子被不同模式轴激活，即使在同一谱系内也是如此。视觉系统同源盒（Vsx1）在空间上模式化一个中央神经上皮域，并随后在数十种神经元类型中作为末端选择器发挥作用，其中大多数仅起源于该域。然而，在从每个域产生的Dm2神经元中，它并非由神经上皮Vsx1调控，而是由神经母细胞时间转录因子BarH1通过一个与其域特异性增强子不同的增强子调控。结合体内报告基因与序列到可及性深度学习模型，我们识别并破坏了该增强子中的关键结合位点，损害了其Dm2特异性活性。相反，时间转录因子Homeobrain（Hbn）在相关神经元Mi21中作为末端选择器发挥作用，独立于其神经母细胞时间窗口：其在这些晚期出生神经元中的表达反而被置于背腹空间控制之下。因此，模式化输入不必在独立选择器之间分配，而是组合性地汇聚在共享选择器的模块化增强子上，揭示了一种顺式调控逻辑，将这一有限输入集重新编码为巨大的神经元多样性。",
+      "date": "2026-09-24"
+    },
+    {
+      "id": "pubmed:42779822",
+      "title": "Machine learning reveals sequence and genomic context features underlying Alu -specific effects on genome folding.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42779822/index.html",
+      "meta": [
+        "Zhang, Shu; Pollard, Katherine S",
+        "bioRxiv : the preprint server for biology",
+        "2026-09-24"
+      ],
+      "tags": [],
+      "summary": "该文用深度学习对约110万个Alu元件进行全基因组模拟删除筛选，预测其对局部染色质折叠的影响，并揭示Alu序列特征与基因组背景如何调控TAD边界、CTCF介导的染色质环和区室结构，直接聚焦三维基因组架构的AI建模，与课题高度契合。",
+      "abstract": "The Alu transposable element is among the most abundant classes of mobile DNA in the human genome, and has been linked to gene regulation and chromatin organization. Yet how individual Alu insertions influence nearby chromatin interactions remains poorly understood. To investigate this, we used deep learning to perform a genome-wide in silico deletion screen of ~1.1 million Alus , predicting each element's importance to local genome folding. We identified a subset of high-scoring Alus that span multiple Alu subfamilies and are enriched in loci that are fast-evolving and gene-dense, especially loci encoding genes that are actively transcribed and/or related to Alu biology. We further found that polymorphic Alus preferentially occur in regions tolerant of sequence variation but predicted to be resistant to changes in chromatin structure. Targeted in silico mutagenesis showed that the importance of individual Alus to local chromatin interactions depends on both intrinsic Alu sequence properties and genomic context. Finally, we identified Alu sequences predicted to alter CTCF-mediated boundary strength and, in some cases, to promote the formation of new loops and boundaries. Together, these results position Alus as key modulators of genome architecture, while underscoring that the fate of a new Alu depends on where it inserts and how it interacts with other determinants of chromatin state and structure. Alu转座元件是人类基因组中最丰富的移动DNA类别之一，并与基因调控和染色质组织相关联。然而，单个Alu插入如何影响邻近染色质相互作用仍知之甚少。为探究此问题，我们利用深度学习对约110万个Alu进行了全基因组范围内的计算机模拟删除筛选，预测每个元件对局部基因组折叠的重要性。我们识别出一组高评分的Alu，这些Alu跨越多个Alu亚家族，并在快速进化和基因密集的位点中富集，尤其是编码活跃转录和/或与Alu生物学相关基因的位点。我们进一步发现，多态性Alu优先出现在对序列变异耐受但预测对染色质结构变化具有抵抗性的区域。靶向计算机模拟诱变显示，单个Alu对局部染色质相互作用的重要性既取决于Alu内在序列特性，也取决于基因组背景。最后，我们识别出预测能改变CTCF介导边界强度，并在某些情况下促进新环和边界形成的Alu序列。综合来看，这些结果将Alu定位为基因组架构的关键调节因子，同时强调新Alu的命运取决于其插入位置及其与其他染色质状态和结构决定因素的相互作用方式。",
+      "date": "2026-09-24"
+    },
+    {
+      "id": "pubmed:42772476",
+      "title": "Designing gene expression with MPRA and AI: A new paradigm for synthetic and therapeutic regulation.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42772476/index.html",
+      "meta": [
+        "Zhang, Xue; Huang, Xiao-Yan; Wang, Hui-Yu; Bai, Feng-Wu; Li, Kai; Hu, Shen S",
+        "Biotechnology advances",
+        "2026-09-22"
+      ],
+      "tags": [],
+      "summary": "该综述聚焦MPRA与AI驱动的顺式调控元件设计，虽涉及染色质水平调控元件，但未建模三维基因组/染色质空间组织，方法上以深度学习预测为主，与课题部分相关。",
+      "abstract": "Precise and scalable control of gene expression across biological contexts remains a fundamental challenge in synthetic biology and therapeutic development, and massively parallel reporter assays (MPRAs) have emerged as a transformative platform for systematically interrogating cis-regulatory elements (CREs) and enabling high-throughput and quantitative dissection of sequence-dependent transcriptional activity to address this challenge. Beyond their original role in empirical characterization, the convergence of barcoded MPRA technologies with deep learning-based modeling has substantially expanded their impact, facilitating predictive inference and the de novo design of synthetic regulatory elements with programmable behavior. In this review, we synthesize recent advances in barcoded MPRA platforms and AI-driven modeling frameworks for the rational engineering of CREs with tunable transcriptional strength and specificity. We further highlight cutting-edge applications in microbial synthetic biology, mRNA therapeutics, and cell-specific gene regulation, emphasizing the role of barcoded MPRA in supporting data-efficient and cross-context generalizable design. Finally, we discuss current technical and conceptual limitations and future directions toward safe, programmable, and clinically relevant regulatory control systems, outlining a roadmap for next-generation cis-regulatory engineering and gene therapies. 在不同生物学背景下实现基因表达的精确且可扩展控制，仍是合成生物学与治疗开发中的根本性挑战，而大规模平行报告分析（MPRAs）已成为系统性探究顺式调控元件（CREs）并实现序列依赖性转录活性的高通量、定量解析的变革性平台，以应对这一挑战。超越其最初在经验表征中的角色，条形码化MPRA技术与基于深度学习的建模的融合显著扩展了其影响力，促进了预测性推断及具有可编程行为的合成调控元件的从头设计。在本综述中，我们综合了条形码化MPRA平台和AI驱动建模框架在合理工程化具有可调转录强度与特异性的CREs方面的最新进展。我们进一步强调了在微生物合成生物学、mRNA疗法及细胞特异性基因调控中的前沿应用，着重指出条形码化MPRA在支持数据高效且跨情境可泛化设计中的作用。最后，我们讨论了当前技术与概念上的局限性，以及面向安全、可编程且临床相关的调控控制系统的未来方向，为下一代顺式调控工程与基因治疗勾勒出路线图。",
+      "date": "2026-09-22"
+    },
+    {
+      "id": "pubmed:42767805",
+      "title": "Deep genomic models of allele-specific measurements.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42767805/index.html",
+      "meta": [
+        "Tu, Xinming; Sasse, Alexander; Chowdhary, Kaitavjeet; Spiro, Anna; Yang, Liang; Chikina, Maria; Benoist, Christophe; Mostafavi, Sara",
+        "Genome research",
+        "2026-09-21"
+      ],
+      "tags": [],
+      "summary": "该文提出DeepAllele深度学习模型，利用等位基因特异性测序数据预测顺式调控差异，虽涉及染色质水平调控但未直接建模三维基因组空间架构，方法可迁移至染色质调控特征建模。",
+      "abstract": "Allele-specific quantification of sequencing data allows for a systematic investigation of how DNA sequence variations influence cis gene regulation. Current methods for analyzing allele-specific measurements for causal analysis rely on statistical associations between genetic variation across individuals and allelic imbalance. Instead, we propose DeepAllele, a novel deep learning sequence-to-function model using paired allele-specific input, designed to learn sequence features that predict subtle changes in gene regulation between alleles. Our approach is suited for datasets with unambiguous phasing, such as F1 hybrids and other controlled genetic crosses, or long-read sequencing technologies used in Fiber-seq, in which reads can be assigned to complete allele sequences. We apply our framework to allele-specific measurements in immune cells from F1 hybrid mice, and show that the model's additionally learned cis-regulatory grammar aligns with known biological mechanisms across a significantly larger number of genomic regions compared to baseline models. In summary, our work presents a computational framework to leverage genetic variation to uncover functionally-relevant regulatory motifs, enhancing discovery in genomics. 对测序数据进行等位基因特异性定量分析，能够系统探究DNA序列变异如何影响顺式基因调控。当前用于因果分析的等位基因特异性测量方法，依赖于个体间遗传变异与等位基因不平衡之间的统计关联。相反，我们提出DeepAllele，一种新颖的深度学习序列到功能模型，采用配对等位基因特异性输入，旨在学习预测等位基因间基因调控细微变化的序列特征。我们的方法适用于具有明确单倍型分型的数据集，如F1杂交及其他受控遗传杂交，或Fiber-seq中使用的长读长测序技术，其中读段可分配给完整的等位基因序列。我们将此框架应用于F1杂交小鼠免疫细胞的等位基因特异性测量，并展示该模型额外学习的顺式调控语法，在显著更多的基因组区域上与已知生物学机制对齐，优于基线模型。总之，我们的工作提供了一个计算框架，利用遗传变异揭示功能相关的调控基序，增强基因组学中的发现能力。",
+      "date": "2026-09-21"
+    },
+    {
+      "id": "biorxiv:10.64898/2026.09.14.751505",
+      "title": "Prediction of pH-sensing histidine residues in human cells",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/biorxiv/10.64898_2026.09.14.751505/index.html",
+      "meta": [
+        "Sallah S; Warwicker J",
+        "bioRxiv",
+        "2026-09-20"
+      ],
+      "tags": [],
+      "summary": "该文预测人类蛋白质组中pH感应组氨酸残基，虽涉及转录调控和染色质相关复合物（如cohesin），但核心是氨基酸序列与结构分析，无三维基因组/染色质组织建模，也无AI或分子模拟方法，与本课题关联微弱。",
+      "abstract": "Changes in pH play an important role in human physiology and cell behaviours, evidenced by studies of tissues and gene expression, and the biophysics of individual systems. Bridging between these scales to establish pH-sensing networks has only been partially explored. Here, amino acid conservation and structural context, and benchmarking with known pH-sensors, were used to predict histidine residues within the human proteome that could modulate pH-dependence. Proteins containing these histidines are enriched in many categories, most notably nucleic acid-binding and transcriptional regulation. DNA phosphate backbone interactions are proposed to play a major role in modulating some pH-sensors. Transcription factors with potential pH-sensors and the largest number of documented target genes are highlighted, including those involved in circadian and developmental processes. Certain CDK-cyclin pairs also feature, along with components of SWI/SNF and cohesin complexes. Focussing on histidines, including those that are solvent accessible in AlphaFold protomer models, this study generates benchmarked predictions for possible pH-sensors in the human proteome. pH变化在人体生理和细胞行为中扮演重要角色，这一点已通过组织和基因表达研究以及单个系统的生物物理学得到证实。然而，在这些尺度之间建立pH感应网络的桥梁仅被部分探索。本研究利用氨基酸保守性和结构背景，并与已知pH传感器进行基准测试，预测人类蛋白质组中可能调节pH依赖性的组氨酸残基。含有这些组氨酸的蛋白质在多个类别中富集，尤其是核酸结合和转录调控。DNA磷酸骨架相互作用被认为在调节某些pH传感器中发挥重要作用。具有潜在pH传感器且记录靶基因数量最多的转录因子被突出显示，包括参与昼夜节律和发育过程的那些。某些CDK-周期蛋白对也出现在其中，以及SWI/SNF和黏连蛋白复合物的组分。聚焦于组氨酸，包括AlphaFold原聚体模型中溶剂可及的组氨酸，本研究为人类蛋白质组中可能的pH传感器生成了基准预测。",
+      "date": "2026-09-20"
+    },
+    {
+      "id": "medrxiv:10.64898/2026.09.16.26363200",
+      "title": "Transcriptomic and Machine-Learning Prioritization of OCEL1 in Low Bone Mineral Density With Multivariable cis-MR",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/medrxiv/10.64898_2026.09.16.26363200/index.html",
+      "meta": [
+        "Yao J; Zhong Q",
+        "medRxiv",
+        "2026-09-20"
+      ],
+      "tags": [],
+      "summary": "该文利用转录组和机器学习优先筛选低骨密度相关基因OCEL1并结合顺式孟德尔随机化分析，对象为骨密度而非染色质三维组织，且无染色质空间架构建模或AI/分子模拟方法，与本课题无关。",
+      "abstract": "<h4>Introduction</h4> Low bone mineral density (BMD) is associated with altered bone remodeling and osteoimmune regulation. We aimed to prioritize transcript-level signals supported across human expression cohorts and evaluate their attribution within local cis-regulatory architecture. <h4>Materials and Methods</h4> Nominal differential-expression signals from GSE56815 were restricted with a predefined 25-term MSigDB thematic library. Features measurable in GSE56815 and GSE2208 underwent linear SVM ranking, LASSO, and XGBoost selection, followed by cross-cohort transcriptomic assessment. OCEL1 was examined in a four-exposure locus-aware CisMRBEEX model with NR2F6, MRPL34, BABAM1, eQTLGen cis-eQTLs, heel eBMD GWAS statistics, and UKBB337K LD. <h4>Results</h4> The expression screen identified 2,568 genes at nominal P<0.05; thematic restriction retained 190 candidates and 107 common features entered machine learning. Linear SVM, LASSO, and XGBoost retained 24, 18, and 9 genes and converged on CPNE1, EZR, and OCEL1. Only OCEL1 showed concordant expression direction with P<0.05 in both cohorts. In the primary 268-variant four-exposure model, OCEL1 was positively associated with heel eBMD (β=0.010293, SE=0.004107, 95% CI 0.002244-0.018342, P=0.01220, PIP=0.4001; conditional coefficient on the standardized analysis scale); BABAM1 retained an oppositely directed component. The no-palindromic reconstruction remained positive with wider uncertainty (β=0.007652, P=0.06739). <h4>Conclusion</h4> Convergent transcriptomic evidence prioritized OCEL1, whose conditional genetic-expression component was positively associated with heel eBMD after local shared cis regulation was modeled. <h4>引言</h4> 低骨密度（BMD）与骨重塑和骨免疫调节的改变相关。我们旨在优先考虑跨人类表达队列支持的转录本水平信号，并评估其在局部顺式调控架构中的归因。<h4>材料与方法</h4> 来自GSE56815的名义差异表达信号通过预定义的25项MSigDB主题库进行限制。在GSE56815和GSE2208中可测量的特征经过线性SVM排序、LASSO和XGBoost选择，随后进行跨队列转录组评估。OCEL1在四暴露位点感知CisMRBEEX模型中检验，该模型包含NR2F6、MRPL34、BABAM1、eQTLGen顺式eQTL、跟骨eBMD GWAS统计数据和UKBB337K LD。<h4>结果</h4> 表达筛选在名义P<0.05下识别出2,568个基因；主题限制保留了190个候选基因，107个共同特征进入机器学习。线性SVM、LASSO和XGBoost分别保留了24、18和9个基因，并收敛于CPNE1、EZR和OCEL1。仅OCEL1在两个队列中显示一致的表达方向且P<0.05。在主要的268变异四暴露模型中，OCEL1与跟骨eBMD正相关（β=0.010293，SE=0.004107，95% CI 0.002244-0.018342，P=0.01220，PIP=0.4001；标准化分析尺度上的条件系数）；BABAM1保留了方向相反的成分。无回文重建仍为正相关，但不确定性更大（β=0.007652，P=0.06739）。<h4>结论</h4> 收敛的转录组证据优先考虑OCEL1，其条件遗传表达成分在局部共享顺式调控建模后与跟骨eBMD正相关。",
+      "date": "2026-09-20"
+    },
+    {
       "id": "biorxiv:10.64898/2026.09.16.752217",
       "title": "Machine learning reveals sequence and genomic context features underlying Alu -specific effects on genome folding",
       "subtitle": "",

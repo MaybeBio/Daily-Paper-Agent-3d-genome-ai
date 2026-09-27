@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42767805",
+  "title": "Deep genomic models of allele-specific measurements.",
+  "authors": "Tu, Xinming; Sasse, Alexander; Chowdhary, Kaitavjeet; Spiro, Anna; Yang, Liang; Chikina, Maria; Benoist, Christophe; Mostafavi, Sara",
+  "journal": "Genome research",
+  "published_date": "2026-09-21",
+  "window": {
+    "start": "2026-09-20",
+    "end": "2026-09-26"
+  },
+  "score": 6,
+  "one_liner_zh": "该文提出DeepAllele深度学习模型，利用等位基因特异性测序数据预测顺式调控差异，虽涉及染色质水平调控但未直接建模三维基因组空间架构，方法可迁移至染色质调控特征建模。",
+  "abstract": "Allele-specific quantification of sequencing data allows for a systematic investigation of how DNA sequence variations influence cis gene regulation. Current methods for analyzing allele-specific measurements for causal analysis rely on statistical associations between genetic variation across individuals and allelic imbalance. Instead, we propose DeepAllele, a novel deep learning sequence-to-function model using paired allele-specific input, designed to learn sequence features that predict subtle changes in gene regulation between alleles. Our approach is suited for datasets with unambiguous phasing, such as F1 hybrids and other controlled genetic crosses, or long-read sequencing technologies used in Fiber-seq, in which reads can be assigned to complete allele sequences. We apply our framework to allele-specific measurements in immune cells from F1 hybrid mice, and show that the model's additionally learned cis-regulatory grammar aligns with known biological mechanisms across a significantly larger number of genomic regions compared to baseline models. In summary, our work presents a computational framework to leverage genetic variation to uncover functionally-relevant regulatory motifs, enhancing discovery in genomics.",
+  "abstract_zh": "对测序数据进行等位基因特异性定量分析，能够系统探究DNA序列变异如何影响顺式基因调控。当前用于因果分析的等位基因特异性测量方法，依赖于个体间遗传变异与等位基因不平衡之间的统计关联。相反，我们提出DeepAllele，一种新颖的深度学习序列到功能模型，采用配对等位基因特异性输入，旨在学习预测等位基因间基因调控细微变化的序列特征。我们的方法适用于具有明确单倍型分型的数据集，如F1杂交及其他受控遗传杂交，或Fiber-seq中使用的长读长测序技术，其中读段可分配给完整的等位基因序列。我们将此框架应用于F1杂交小鼠免疫细胞的等位基因特异性测量，并展示该模型额外学习的顺式调控语法，在显著更多的基因组区域上与已知生物学机制对齐，优于基线模型。总之，我们的工作提供了一个计算框架，利用遗传变异揭示功能相关的调控基序，增强基因组学中的发现能力。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42767805/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42767805/",
+  "paper_page_path": "papers/pubmed/42767805/index.html"
+}

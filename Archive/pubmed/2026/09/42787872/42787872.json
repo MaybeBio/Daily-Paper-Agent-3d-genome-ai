@@ -1,0 +1,326 @@
+{
+  "identity": {
+    "pmid": "42787872",
+    "doi": "10.1039/d6md00450d",
+    "title": "Bridging BET bromodomain and immune checkpoint inhibitors through generative bioorganic frameworks for next-generation cancer immunotherapy."
+  },
+  "content": {
+    "abstract": "Bromodomain and extraterminal domain (BET) proteins are epigenetic readers that couple chromatin acetylation to oncogenic and immune-regulatory gene transcription, making them attractive targets for combination with immune checkpoint inhibitors (ICIs) in precision oncology. This review synthesizes current mechanistic, medicinal-chemistry, and translational evidence on BET-ICI combination strategies. We describe how BET blockade reshapes tumor chromatin architecture, suppresses PD-L1 expression, and enhances antigen presentation, thereby increasing tumor susceptibility to immune-mediated attack. We further summarize preclinical efficacy data for BET-ICI combinations, including systems-biology and agent-based computational models that predict substantially greater tumor-volume reduction with combination regimens relative to monotherapy in selected preclinical settings; however, early-phase clinical experience with these combinations remains limited and has not yet reproduced this magnitude of benefit. Beyond the mechanism, we review the medicinal chemistry underlying BET inhibitor design and the emerging landscape of BET-ICI hybrid and conjugate therapeutics, distinguishing combinations with direct experimental support from conceptual pairings that remain hypothesis-generating. Finally, we discuss how systems biology and generative, AI-guided molecular design may inform resistance-mechanism prediction, toxicity mitigation, and biomarker-guided, patient-specific compound selection. Collectively, this review outlines a framework for how the convergence of epigenetic reprogramming, immune modulation, and generative bioorganic chemistry could inform the rational design of next-generation BET-ICI combination therapeutics.",
+    "keywords": [],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Diab, Mohamed K",
+        "Yassen, Asmaa S A",
+        "Fahmy, Sherif Ashraf",
+        "Ashour, Heba F",
+        "Nafie, Mohamed S"
+      ],
+      "short_names": [
+        "Diab MK",
+        "Yassen ASA",
+        "Fahmy SA",
+        "Ashour HF",
+        "Nafie MS"
+      ],
+      "auids": [
+        "ORCID: 0000-0001-7879-1357",
+        "ORCID: 0000-0002-7956-9739",
+        "ORCID: 0000-0003-3056-8281",
+        "ORCID: 0000-0001-8940-1131",
+        "ORCID: 0000-0003-4454-6390"
+      ],
+      "affiliations": [
+        "Pest Physiology Department, Plant Protection Research Institute, Agricultural Research Center Giza 12311 Egypt.",
+        "Department of Medicinal Chemistry, Faculty of Pharmacy, Galala University New Galala 43713 Egypt.",
+        "Pharmaceutical Organic Chemistry Department, Faculty of Pharmacy, Suez Canal University Ismailia 41522 Egypt.",
+        "Department of Pharmacy, Institute of Pharmaceutics and Biopharmaceutics, Marburg University Marburg Germany sherif.fahmy@pharmazie.uni-marburg.de.",
+        "Department of Medicinal Chemistry, Faculty of Pharmacy, Galala University New Galala 43713 Egypt.",
+        "Department of Chemistry, College of Sciences, University of Sharjah P.O 27272 United Arab Emirates mohamed.elsayed@sharjah.ac.ae.",
+        "Bioinformatics and Functional Genomics Research Group, Research Institute of Sciences and Engineering (RISE), University of Sharjah Sharjah United Arab Emirates.",
+        "Department of Chemistry, Faculty of Science, Suez Canal University Ismailia 41522 Egypt mohamed_nafie@science.suez.edu.eg."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Diab, Mohamed K",
+        "short_name": "Diab MK",
+        "identifiers": [
+          "0000-0001-7879-1357"
+        ],
+        "affiliations": [
+          "Pest Physiology Department, Plant Protection Research Institute, Agricultural Research Center Giza 12311 Egypt."
+        ]
+      },
+      {
+        "full_name": "Yassen, Asmaa S A",
+        "short_name": "Yassen ASA",
+        "identifiers": [
+          "0000-0002-7956-9739"
+        ],
+        "affiliations": [
+          "Department of Medicinal Chemistry, Faculty of Pharmacy, Galala University New Galala 43713 Egypt.",
+          "Pharmaceutical Organic Chemistry Department, Faculty of Pharmacy, Suez Canal University Ismailia 41522 Egypt."
+        ]
+      },
+      {
+        "full_name": "Fahmy, Sherif Ashraf",
+        "short_name": "Fahmy SA",
+        "identifiers": [
+          "0000-0003-3056-8281"
+        ],
+        "affiliations": [
+          "Department of Pharmacy, Institute of Pharmaceutics and Biopharmaceutics, Marburg University Marburg Germany sherif.fahmy@pharmazie.uni-marburg.de."
+        ]
+      },
+      {
+        "full_name": "Ashour, Heba F",
+        "short_name": "Ashour HF",
+        "identifiers": [
+          "0000-0001-8940-1131"
+        ],
+        "affiliations": [
+          "Department of Medicinal Chemistry, Faculty of Pharmacy, Galala University New Galala 43713 Egypt."
+        ]
+      },
+      {
+        "full_name": "Nafie, Mohamed S",
+        "short_name": "Nafie MS",
+        "identifiers": [
+          "0000-0003-4454-6390"
+        ],
+        "affiliations": [
+          "Department of Chemistry, College of Sciences, University of Sharjah P.O 27272 United Arab Emirates mohamed.elsayed@sharjah.ac.ae.",
+          "Bioinformatics and Functional Genomics Research Group, Research Institute of Sciences and Engineering (RISE), University of Sharjah Sharjah United Arab Emirates.",
+          "Department of Chemistry, Faculty of Science, Suez Canal University Ismailia 41522 Egypt mohamed_nafie@science.suez.edu.eg."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "RSC medicinal chemistry"
+    ],
+    "journal_abbrev": [
+      "RSC Med Chem"
+    ],
+    "pub_date": "2026 Sep 24",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/25 11:45",
+    "fetched_at": "2026-09-27 09:45:59"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42787872",
+      "42627602",
+      "41583469",
+      "41811823",
+      "41851770",
+      "42406187",
+      "42654087",
+      "42459676",
+      "42278449",
+      "41772324",
+      "42612932",
+      "41176077",
+      "42769195",
+      "33930176",
+      "42475469",
+      "33316104",
+      "42738248",
+      "35064087",
+      "40102759",
+      "41707758",
+      "42445193",
+      "42723590",
+      "42723882",
+      "42732787",
+      "42122154",
+      "41581575",
+      "31653272",
+      "41723543",
+      "36857796",
+      "41357215",
+      "41241304",
+      "42088496",
+      "34280171",
+      "42183274",
+      "42649907",
+      "41727661",
+      "38524135",
+      "41112253",
+      "40950404",
+      "41415542",
+      "42626083",
+      "40547025",
+      "41020848",
+      "42724286",
+      "41335282",
+      "33601323",
+      "42719683",
+      "39214650",
+      "42509843",
+      "41977474",
+      "42304441",
+      "42196366",
+      "42267455",
+      "25823918",
+      "41808840",
+      "34633088",
+      "42315813",
+      "42366864",
+      "41855716",
+      "41858526",
+      "41769787",
+      "42495623",
+      "42566079",
+      "41842954",
+      "34681760",
+      "26137204",
+      "41832248",
+      "42288297",
+      "41777263",
+      "41724338",
+      "30819829",
+      "40777041",
+      "42550393",
+      "42669994",
+      "42401937",
+      "42196460",
+      "41349248",
+      "42112394",
+      "37676980",
+      "27528027",
+      "40786594",
+      "42585834",
+      "41162275",
+      "42500665",
+      "37683545",
+      "41634728",
+      "33243663",
+      "42040767",
+      "41579169",
+      "41056820",
+      "41667914",
+      "42245711",
+      "42245677",
+      "37596898",
+      "42154304",
+      "39649017",
+      "37302543",
+      "42724148",
+      "42794937",
+      "39938804"
+    ],
+    "review": [
+      "42787872",
+      "42627602",
+      "41583469",
+      "41811823",
+      "41851770",
+      "42406187",
+      "42654087",
+      "42459676",
+      "42278449",
+      "41772324",
+      "42612932",
+      "41176077",
+      "42769195",
+      "33930176",
+      "33316104",
+      "42738248",
+      "41707758",
+      "42445193",
+      "42723590",
+      "42723882",
+      "42732787",
+      "42122154",
+      "41581575",
+      "41723543",
+      "36857796",
+      "41357215",
+      "41241304",
+      "42088496",
+      "34280171",
+      "42183274",
+      "42649907",
+      "41727661",
+      "38524135",
+      "41112253",
+      "40950404",
+      "41415542",
+      "42626083",
+      "40547025",
+      "41020848",
+      "42724286",
+      "41335282",
+      "33601323",
+      "42719683",
+      "42509843",
+      "41977474",
+      "42304441",
+      "42196366",
+      "25823918",
+      "41808840",
+      "34633088",
+      "42315813",
+      "42366864",
+      "41855716",
+      "41858526",
+      "41769787",
+      "42495623",
+      "42566079",
+      "41842954",
+      "34681760",
+      "26137204",
+      "41832248",
+      "42288297",
+      "41777263",
+      "41724338",
+      "30819829",
+      "42550393",
+      "42401937",
+      "42196460",
+      "41349248",
+      "42112394",
+      "42585834",
+      "41162275",
+      "42500665",
+      "37683545",
+      "41634728",
+      "33243663",
+      "42040767",
+      "41579169",
+      "41056820",
+      "41667914",
+      "42245711",
+      "42245677",
+      "37596898",
+      "42154304",
+      "39649017",
+      "37302543",
+      "42724148",
+      "42794937"
+    ],
+    "pmc": [
+      "13611828"
+    ],
+    "entrez": {},
+    "external": [],
+    "text_mined": []
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42779769",
+  "title": "Temporal regulation of a spatial patterning factor in Drosophila neurogenesis.",
+  "authors": "Coyne, Rose; Kamulegeya, Fahad; Lake, Cathleen; Rajesh, Raghuvanshi; Treese, McKenzie; Chen, Yen-Chung; Troutwine, Benjamin; Zeitlinger, Julia; Ozel, Mehmet Neset",
+  "journal": "bioRxiv : the preprint server for biology",
+  "published_date": "2026-09-24",
+  "window": {
+    "start": "2026-09-20",
+    "end": "2026-09-26"
+  },
+  "score": 5,
+  "one_liner_zh": "该文研究果蝇视叶神经发生中空间与时间模式因子如何通过模块化增强子调控同一选择因子，虽涉及染色质可及性深度学习模型，但核心是神经发育调控而非三维基因组/染色质组织建模，方法可迁移性有限。",
+  "abstract": "A central question in neurobiology is how the transient programs that pattern neural progenitors are translated into the enormous, stable diversity of neuronal types. Spatial and temporal cues act only briefly, yet each neuron's identity is defined and maintained for life by terminal selector transcription factors (TFs). How a neuron's developmental origin is read out into a particular selector code remains poorly understood. Some current models propose that spatial and temporal origins are inherited independently through separate selectors. We show instead that, in the Drosophila optic lobe, the same selector can be activated by different patterning axes through physically distinct enhancers, even within the same lineage. Visual system homeobox (Vsx1) spatially patterns a central neuroepithelial domain and later acts as a terminal selector in dozens of neuronal types, most originating exclusively from that domain. However, in Dm2 neurons that are produced from every domain, it is regulated not by neuroepithelial Vsx1 but by the neuroblast temporal TF BarH1, through an enhancer distinct from its domain-specific ones. Combining in vivo reporters with sequence-to-accessibility deep-learning models, we identify and disrupt the key binding sites in this enhancer, impairing its Dm2-specific activity. Reciprocally, the temporal TF Homeobrain (Hbn) acts as a terminal selector in the related neuron Mi21 independently of its neuroblast temporal window: its expression in these late-born neurons is instead placed under dorsoventral spatial control. Patterning inputs therefore need not be partitioned across separate selectors but converge combinatorially on the modular enhancers of shared ones, revealing a cis-regulatory logic that re-encodes this limited set of inputs into vast neuronal diversity.",
+  "abstract_zh": "神经生物学中的一个核心问题是，塑造神经祖细胞的瞬时程序如何被转化为神经元类型的巨大而稳定的多样性。空间和时间线索仅短暂作用，然而每个神经元的身份却由末端选择器转录因子（TFs）定义并终生维持。神经元的发育起源如何被解读为特定的选择器编码，仍知之甚少。一些当前模型提出，空间和时间起源通过独立的选择器分别继承。我们反而表明，在果蝇视叶中，同一选择器可以通过物理上不同的增强子被不同模式轴激活，即使在同一谱系内也是如此。视觉系统同源盒（Vsx1）在空间上模式化一个中央神经上皮域，并随后在数十种神经元类型中作为末端选择器发挥作用，其中大多数仅起源于该域。然而，在从每个域产生的Dm2神经元中，它并非由神经上皮Vsx1调控，而是由神经母细胞时间转录因子BarH1通过一个与其域特异性增强子不同的增强子调控。结合体内报告基因与序列到可及性深度学习模型，我们识别并破坏了该增强子中的关键结合位点，损害了其Dm2特异性活性。相反，时间转录因子Homeobrain（Hbn）在相关神经元Mi21中作为末端选择器发挥作用，独立于其神经母细胞时间窗口：其在这些晚期出生神经元中的表达反而被置于背腹空间控制之下。因此，模式化输入不必在独立选择器之间分配，而是组合性地汇聚在共享选择器的模块化增强子上，揭示了一种顺式调控逻辑，将这一有限输入集重新编码为巨大的神经元多样性。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42779769/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42779769/",
+  "paper_page_path": "papers/pubmed/42779769/index.html"
+}

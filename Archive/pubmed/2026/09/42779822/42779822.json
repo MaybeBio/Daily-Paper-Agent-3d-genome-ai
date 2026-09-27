@@ -1,0 +1,196 @@
+{
+  "identity": {
+    "pmid": "42779822",
+    "doi": "10.64898/2026.09.16.752217",
+    "title": "Machine learning reveals sequence and genomic context features underlying Alu -specific effects on genome folding."
+  },
+  "content": {
+    "abstract": "The Alu transposable element is among the most abundant classes of mobile DNA in the human genome, and has been linked to gene regulation and chromatin organization. Yet how individual Alu insertions influence nearby chromatin interactions remains poorly understood. To investigate this, we used deep learning to perform a genome-wide in silico deletion screen of ~1.1 million Alus , predicting each element's importance to local genome folding. We identified a subset of high-scoring Alus that span multiple Alu subfamilies and are enriched in loci that are fast-evolving and gene-dense, especially loci encoding genes that are actively transcribed and/or related to Alu biology. We further found that polymorphic Alus preferentially occur in regions tolerant of sequence variation but predicted to be resistant to changes in chromatin structure. Targeted in silico mutagenesis showed that the importance of individual Alus to local chromatin interactions depends on both intrinsic Alu sequence properties and genomic context. Finally, we identified Alu sequences predicted to alter CTCF-mediated boundary strength and, in some cases, to promote the formation of new loops and boundaries. Together, these results position Alus as key modulators of genome architecture, while underscoring that the fate of a new Alu depends on where it inserts and how it interacts with other determinants of chromatin state and structure.",
+    "keywords": [],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article",
+      "Preprint"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Zhang, Shu",
+        "Pollard, Katherine S"
+      ],
+      "short_names": [
+        "Zhang S",
+        "Pollard KS"
+      ],
+      "auids": [
+        "ORCID: 0009-0005-6592-118X",
+        "ORCID: 0000-0002-9870-6196"
+      ],
+      "affiliations": []
+    },
+    "xml": [
+      {
+        "full_name": "Zhang, Shu",
+        "short_name": "Zhang S",
+        "identifiers": [
+          "0009-0005-6592-118X"
+        ],
+        "affiliations": []
+      },
+      {
+        "full_name": "Pollard, Katherine S",
+        "short_name": "Pollard KS",
+        "identifiers": [
+          "0000-0002-9870-6196"
+        ],
+        "affiliations": []
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "bioRxiv : the preprint server for biology"
+    ],
+    "journal_abbrev": [
+      "bioRxiv"
+    ],
+    "pub_date": "2026 Sep 18",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article",
+      "Preprint"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/24 13:06",
+    "fetched_at": "2026-09-27 09:45:59"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42779822",
+      "25447892",
+      "42475469",
+      "11156612",
+      "29335803",
+      "26827622",
+      "28450901",
+      "26319576",
+      "37868032",
+      "29907612",
+      "22716230",
+      "23361327",
+      "28251877",
+      "11145422",
+      "28357596",
+      "40161837",
+      "15461819",
+      "22087792",
+      "40188359",
+      "21208455",
+      "18836035",
+      "15725352",
+      "25997618",
+      "12777511",
+      "30975199",
+      "37961712",
+      "14751968",
+      "40243368",
+      "22495107",
+      "19439515",
+      "15588477",
+      "41883293",
+      "23750218",
+      "18818740",
+      "26861146",
+      "11095687",
+      "26503250",
+      "8621451",
+      "32067044",
+      "18241332",
+      "27729835",
+      "25065914",
+      "21429208",
+      "39075082",
+      "31360240",
+      "33232622",
+      "8336699",
+      "15871047",
+      "42464115",
+      "24216009",
+      "28209295",
+      "11469855",
+      "41923117",
+      "17376900",
+      "14505274",
+      "23663499",
+      "11884141",
+      "15008405",
+      "28355180",
+      "22912586",
+      "16376498",
+      "7558040",
+      "24637839",
+      "25701601",
+      "12911029",
+      "12213770",
+      "28033411",
+      "19917129",
+      "40826469",
+      "29199022",
+      "15545716",
+      "42630757",
+      "34799402",
+      "7991620",
+      "31076573",
+      "11591470",
+      "41096905",
+      "35832620",
+      "26159513",
+      "31362752",
+      "39314493",
+      "40051556",
+      "37961120",
+      "42308744",
+      "19273617",
+      "23755193",
+      "24485196",
+      "25550429",
+      "16740159",
+      "18084025",
+      "17498924",
+      "38260329",
+      "35997258",
+      "39457371",
+      "41595463",
+      "27914481",
+      "32690705",
+      "38643244",
+      "21041622",
+      "15313610"
+    ],
+    "review": [
+      "42779822",
+      "11145422",
+      "27729835",
+      "28209295",
+      "24637839"
+    ],
+    "pmc": [
+      "13596462"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://doi.org/10.64898/2026.09.16.752217",
+        "provider": "Cold Spring Harbor Laboratory",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

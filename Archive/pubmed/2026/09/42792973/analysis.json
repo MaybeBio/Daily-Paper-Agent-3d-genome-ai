@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42792973",
+  "title": "Deep Learning-Guided Identification and In Vivo Validation of Compact Cis-Regulatory Elements for the Zebrafish Habenula.",
+  "authors": "Li, Zeran; Liu, Shanshan; Zhang, Quan; Zhang, Cuizhen; Peng, Gang",
+  "journal": "Genes",
+  "published_date": "2026-09-26",
+  "window": {
+    "start": "2026-09-20",
+    "end": "2026-09-26"
+  },
+  "score": 5,
+  "one_liner_zh": "该文用深度学习模型（Enformer变体）跨物种预测并验证斑马鱼缰核的紧凑顺式调控元件，虽涉及染色质可及性建模，但核心是调控元件鉴定而非三维基因组/染色质空间架构建模，方法可迁移性有限。",
+  "abstract": "BACKGROUND/OBJECTIVES: Precise genetic access to the zebrafish habenula remains limited by a scarcity of compact, sequence-defined cis-regulatory elements (CREs). Here, we integrated developmental expression mapping, deep-learning predictions on long-range sequences, and in vivo reporter assays to identify compact regulatory sequences driving habenular expression. METHODS: Using a transgenic zebrafish line enriched for habenular reporter expression, we isolated GFP-positive cells from larval brains and profiled their transcriptomes via microarray. A subset of candidate genes enriched in this dataset was validated using whole-mount in situ hybridization across two developmental stages. This analysis identified genes with highly reproducible habenular expression, leading to the selection of the gng8 and ano2 loci for subsequent CRE characterization. We developed ZEN-former (Zebrafish EN-former), an Enformer-based sequence-to-function model trained on neuronal subclass chromatin accessibility profiles from the adult mouse brain. RESULTS: The model demonstrated strong correlation between predicted and experimentally measured signals across held-out genomic regions. To prioritize regulatory candidates, we integrated ZEN-former predictions with available zebrafish ATAC-seq data, RepeatMasker annotations, and gene models, identifying two ~600 bp intervals at each gene locus. These selected intervals were combined to generate ~1.2 kb reporter constructs for gng8 and ano2 loci, which were then evaluated using Tol2 transposon mediated transgenesis assays in zebrafish. In transiently injected larvae, both constructs successfully drove reporter expression in the habenular region. Furthermore, the resulting stable transgenic lines displayed highly specific and reproducible habenular expression. Quantitative confocal analysis showed mean habenular labeling completeness values of 84.5% and 96.2% for the gng8- and ano2-derived lines, respectively. CONCLUSIONS: Together, these findings provide a proof of concept that sequence features learned from mammalian chromatin accessibility datasets can effectively guide the prioritization of functional regulatory elements across species in zebrafish. The compact regulatory constructs and stable transgenic lines generated here offer robust genetic tools for investigating habenular circuitry.",
+  "abstract_zh": "背景/目标：对斑马鱼缰核的精准遗传操作仍受限于缺乏紧凑、序列定义的顺式调控元件（cis-regulatory elements, CREs）。在此，我们整合了发育表达图谱、长程序列的深度学习预测以及体内报告基因检测，以识别驱动缰核表达的紧凑调控序列。方法：利用富含缰核报告基因表达的转基因斑马鱼品系，我们从幼鱼脑中分离出GFP阳性细胞，并通过微阵列分析其转录组。该数据集中富集的一部分候选基因通过两个发育阶段的整封原位杂交进行了验证。此分析识别出具有高度可重复缰核表达的基因，从而选择gng8和ano2位点进行后续CRE表征。我们开发了ZEN-former（Zebrafish EN-former），一种基于Enformer的序列-功能模型，该模型在成年小鼠大脑的神经元亚类染色质可及性谱上进行了训练。结果：该模型在保留的基因组区域中，预测信号与实验测量信号之间表现出强相关性。为优先筛选调控候选元件，我们将ZEN-former预测与可用的斑马鱼ATAC-seq数据、RepeatMasker注释和基因模型相结合，在每个基因位点识别出两个约600 bp的区间。这些选定的区间被组合生成约1.2 kb的报告基因构建体，用于gng8和ano2位点，随后通过Tol2转座子介导的转基因检测在斑马鱼中进行了评估。在瞬时注射的幼鱼中，两种构建体均成功驱动了缰核区域的报告基因表达。此外，所得稳定转基因品系表现出高度特异且可重复的缰核表达。定量共聚焦分析显示，gng8和ano2衍生品系的平均缰核标记完整度分别为84.5%和96.2%。结论：综合来看，这些发现提供了概念验证，表明从哺乳动物染色质可及性数据集中学习到的序列特征可有效指导跨物种斑马鱼中功能性调控元件的优先筛选。此处生成的紧凑调控构建体和稳定转基因品系为研究缰核回路提供了稳健的遗传工具。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42792973/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42792973/",
+  "paper_page_path": "papers/pubmed/42792973/index.html"
+}

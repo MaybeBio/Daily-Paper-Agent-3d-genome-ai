@@ -1,0 +1,283 @@
+{
+  "identity": {
+    "pmid": "42772476",
+    "doi": "10.1016/j.biotechadv.2026.109049",
+    "title": "Designing gene expression with MPRA and AI: A new paradigm for synthetic and therapeutic regulation."
+  },
+  "content": {
+    "abstract": "Precise and scalable control of gene expression across biological contexts remains a fundamental challenge in synthetic biology and therapeutic development, and massively parallel reporter assays (MPRAs) have emerged as a transformative platform for systematically interrogating cis-regulatory elements (CREs) and enabling high-throughput and quantitative dissection of sequence-dependent transcriptional activity to address this challenge. Beyond their original role in empirical characterization, the convergence of barcoded MPRA technologies with deep learning-based modeling has substantially expanded their impact, facilitating predictive inference and the de novo design of synthetic regulatory elements with programmable behavior. In this review, we synthesize recent advances in barcoded MPRA platforms and AI-driven modeling frameworks for the rational engineering of CREs with tunable transcriptional strength and specificity. We further highlight cutting-edge applications in microbial synthetic biology, mRNA therapeutics, and cell-specific gene regulation, emphasizing the role of barcoded MPRA in supporting data-efficient and cross-context generalizable design. Finally, we discuss current technical and conceptual limitations and future directions toward safe, programmable, and clinically relevant regulatory control systems, outlining a roadmap for next-generation cis-regulatory engineering and gene therapies.",
+    "keywords": [
+      "Cell-type-specific gene expression",
+      "Cis-regulatory elements (CREs)",
+      "Machine learning in gene regulation",
+      "Massively parallel reporter assay (MPRA)",
+      "Synthetic biology",
+      "Synthetic promoter design"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Zhang, Xue",
+        "Huang, Xiao-Yan",
+        "Wang, Hui-Yu",
+        "Bai, Feng-Wu",
+        "Li, Kai",
+        "Hu, Shen S"
+      ],
+      "short_names": [
+        "Zhang X",
+        "Huang XY",
+        "Wang HY",
+        "Bai FW",
+        "Li K",
+        "Hu SS"
+      ],
+      "auids": [],
+      "affiliations": [
+        "Zhejiang Key Laboratory of Multiomics and Molecular Enzymology, Yangtze Delta Region Institute of Tsinghua University, Zhejiang 314006, China; Department of Biotechnology and Biomedicine, Yangtze Delta Region Institute of Tsinghua University, Zhejiang 314006, China; State Key Laboratory of Microbial Metabolism, Joint International Research Laboratory of Metabolic & Developmental Sciences, School of Life Sciences and Biotechnology, Shanghai Jiao Tong University, Shanghai 200240, China.",
+        "State Key Laboratory of Microbial Metabolism, Joint International Research Laboratory of Metabolic & Developmental Sciences, School of Life Sciences and Biotechnology, Shanghai Jiao Tong University, Shanghai 200240, China.",
+        "Zhejiang Key Laboratory of Multiomics and Molecular Enzymology, Yangtze Delta Region Institute of Tsinghua University, Zhejiang 314006, China; Department of Biotechnology and Biomedicine, Yangtze Delta Region Institute of Tsinghua University, Zhejiang 314006, China; State Key Laboratory of Microbial Metabolism, Joint International Research Laboratory of Metabolic & Developmental Sciences, School of Life Sciences and Biotechnology, Shanghai Jiao Tong University, Shanghai 200240, China.",
+        "State Key Laboratory of Microbial Metabolism, Joint International Research Laboratory of Metabolic & Developmental Sciences, School of Life Sciences and Biotechnology, Shanghai Jiao Tong University, Shanghai 200240, China.",
+        "State Key Laboratory of Microbial Metabolism, Joint International Research Laboratory of Metabolic & Developmental Sciences, School of Life Sciences and Biotechnology, Shanghai Jiao Tong University, Shanghai 200240, China. Electronic address: likai.sjtu@sjtu.edu.cn.",
+        "Zhejiang Key Laboratory of Multiomics and Molecular Enzymology, Yangtze Delta Region Institute of Tsinghua University, Zhejiang 314006, China; Department of Biotechnology and Biomedicine, Yangtze Delta Region Institute of Tsinghua University, Zhejiang 314006, China. Electronic address: hushen@tsinghua-zj.edu.cn."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Zhang, Xue",
+        "short_name": "Zhang X",
+        "identifiers": [],
+        "affiliations": [
+          "Zhejiang Key Laboratory of Multiomics and Molecular Enzymology, Yangtze Delta Region Institute of Tsinghua University, Zhejiang 314006, China; Department of Biotechnology and Biomedicine, Yangtze Delta Region Institute of Tsinghua University, Zhejiang 314006, China; State Key Laboratory of Microbial Metabolism, Joint International Research Laboratory of Metabolic & Developmental Sciences, School of Life Sciences and Biotechnology, Shanghai Jiao Tong University, Shanghai 200240, China."
+        ]
+      },
+      {
+        "full_name": "Huang, Xiao-Yan",
+        "short_name": "Huang XY",
+        "identifiers": [],
+        "affiliations": [
+          "State Key Laboratory of Microbial Metabolism, Joint International Research Laboratory of Metabolic & Developmental Sciences, School of Life Sciences and Biotechnology, Shanghai Jiao Tong University, Shanghai 200240, China."
+        ]
+      },
+      {
+        "full_name": "Wang, Hui-Yu",
+        "short_name": "Wang HY",
+        "identifiers": [],
+        "affiliations": [
+          "Zhejiang Key Laboratory of Multiomics and Molecular Enzymology, Yangtze Delta Region Institute of Tsinghua University, Zhejiang 314006, China; Department of Biotechnology and Biomedicine, Yangtze Delta Region Institute of Tsinghua University, Zhejiang 314006, China; State Key Laboratory of Microbial Metabolism, Joint International Research Laboratory of Metabolic & Developmental Sciences, School of Life Sciences and Biotechnology, Shanghai Jiao Tong University, Shanghai 200240, China."
+        ]
+      },
+      {
+        "full_name": "Bai, Feng-Wu",
+        "short_name": "Bai FW",
+        "identifiers": [],
+        "affiliations": [
+          "State Key Laboratory of Microbial Metabolism, Joint International Research Laboratory of Metabolic & Developmental Sciences, School of Life Sciences and Biotechnology, Shanghai Jiao Tong University, Shanghai 200240, China."
+        ]
+      },
+      {
+        "full_name": "Li, Kai",
+        "short_name": "Li K",
+        "identifiers": [],
+        "affiliations": [
+          "State Key Laboratory of Microbial Metabolism, Joint International Research Laboratory of Metabolic & Developmental Sciences, School of Life Sciences and Biotechnology, Shanghai Jiao Tong University, Shanghai 200240, China. Electronic address: likai.sjtu@sjtu.edu.cn."
+        ]
+      },
+      {
+        "full_name": "Hu, Shen S",
+        "short_name": "Hu SS",
+        "identifiers": [],
+        "affiliations": [
+          "Zhejiang Key Laboratory of Multiomics and Molecular Enzymology, Yangtze Delta Region Institute of Tsinghua University, Zhejiang 314006, China; Department of Biotechnology and Biomedicine, Yangtze Delta Region Institute of Tsinghua University, Zhejiang 314006, China. Electronic address: hushen@tsinghua-zj.edu.cn."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Biotechnology advances"
+    ],
+    "journal_abbrev": [
+      "Biotechnol Adv"
+    ],
+    "pub_date": "2026 Sep 22",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/22 23:33",
+    "fetched_at": "2026-09-27 09:45:59"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42772476",
+      "42475469",
+      "42708417",
+      "37103023",
+      "42392239",
+      "41952336",
+      "41738738",
+      "39362779",
+      "32603702",
+      "41862973",
+      "37872110",
+      "37609287",
+      "34285053",
+      "28204611",
+      "41768065",
+      "39199333",
+      "42234579",
+      "31131957",
+      "40463195",
+      "37873175",
+      "39443793",
+      "41554183",
+      "42681526",
+      "29028988",
+      "42455625",
+      "41279721",
+      "37403796",
+      "32043966",
+      "26576614",
+      "40967915",
+      "41713401",
+      "41030057",
+      "42039511",
+      "41279449",
+      "42449439",
+      "30052913",
+      "40262894",
+      "36227538",
+      "31884638",
+      "40543151",
+      "42079203",
+      "42225537",
+      "42747189",
+      "41419171",
+      "26072432",
+      "42588840",
+      "41590268",
+      "39938795",
+      "41920894",
+      "38045264",
+      "37889080",
+      "40902006",
+      "42055250",
+      "36350674",
+      "42581006",
+      "41635682",
+      "42616280",
+      "42199149",
+      "36085003",
+      "41437153",
+      "31206543",
+      "41889171",
+      "41256401",
+      "41959502",
+      "33879525",
+      "42198231",
+      "42681189",
+      "41639451",
+      "40397077",
+      "41921585",
+      "41280279",
+      "41278953",
+      "40902856",
+      "42127490",
+      "40279643",
+      "41635917",
+      "33046894",
+      "41283681",
+      "41971552",
+      "42272755",
+      "40613715",
+      "40966655",
+      "38352499",
+      "36423637",
+      "23512712",
+      "41024337",
+      "38365907",
+      "40631122",
+      "39407556",
+      "41340272",
+      "40205616",
+      "42187150",
+      "22371084",
+      "29855997",
+      "37950299",
+      "34756012",
+      "42140530",
+      "40999683",
+      "41309366",
+      "41136274"
+    ],
+    "review": [
+      "42772476",
+      "42708417",
+      "37103023",
+      "42392239",
+      "39362779",
+      "41862973",
+      "37872110",
+      "41768065",
+      "39199333",
+      "31131957",
+      "41554183",
+      "42681526",
+      "40967915",
+      "41713401",
+      "31884638",
+      "40543151",
+      "42225537",
+      "41419171",
+      "26072432",
+      "42588840",
+      "41590268",
+      "42055250",
+      "41635682",
+      "42616280",
+      "36085003",
+      "41889171",
+      "42198231",
+      "41921585",
+      "41280279",
+      "40902856",
+      "42127490",
+      "40279643",
+      "41635917",
+      "41971552",
+      "42272755",
+      "40966655",
+      "39407556",
+      "42187150",
+      "29855997",
+      "42140530",
+      "40999683",
+      "41309366",
+      "41136274"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://linkinghub.elsevier.com/retrieve/pii/S0734-9750(26)00255-7",
+        "provider": "Elsevier Science",
+        "category": "Full Text Sources",
+        "attribute": "subscription/membership/fee required",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

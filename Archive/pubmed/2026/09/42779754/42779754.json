@@ -1,0 +1,208 @@
+{
+  "identity": {
+    "pmid": "42779754",
+    "doi": "10.64898/2026.09.14.751457",
+    "title": "ssJSD: A Fusion of Sparsity and Spatial Information for HiC Single-Cell Clustering."
+  },
+  "content": {
+    "abstract": "Single-cell high-throughput chromatin conformation capture (scHiC) enables profiling three-dimensional genome architecture at cellular resolution, providing insights into cell-to-cell variability and cellular functions. Recent frameworks utilize spatial interaction patterns to derive dissimilarity measures for downstream tasks such as cell clustering. However, the inherent sparsity and ultra-high dimensionality of scHiC contact matrices pose significant challenges. A central hurdle is that existing measures typically treat all zeros without distinction, failing to differentiate biologically meaningful structural zeros (SZs) from technical dropouts. Here, we introduce ssJSD (spatial and sparsity informed Jensen-Shannon Divergence), a computational framework designed to explicitly account for scHiC-specific sparsity patterns. By integrating band-wise contact frequency profiles with SZ-induced sparsity matrices, ssJSD leverages both spatial interaction patterns and biological absence of contacts. We adopted two complementary integration strategies: an early fusion approach that concatenates information into a single representation, and a late fusion approach that integrates JSD-based dissimilarities through diverse averaging methods. Through simulations and applications to human cell lines and prefrontal cortex data, we demonstrate that ssJSD improves clustering accuracy and effectively distinguishes cell types. Our study indicates that integrating SZ patterns is important for accurately quantifying cell-to-cell variability in 3D genomics.",
+    "keywords": [
+      "Cell clustering",
+      "Data fusion",
+      "Jensen-Shannon divergence",
+      "Single-cell HiC",
+      "Structural zeros"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article",
+      "Preprint"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Lee, Sang Wan",
+        "Lin, Shili"
+      ],
+      "short_names": [
+        "Lee SW",
+        "Lin S"
+      ],
+      "auids": [
+        "ORCID: 0000-0003-2467-4491"
+      ],
+      "affiliations": [
+        "Department of Statistics, The Ohio State University, Columbus, OH 43210.",
+        "Department of Statistics, The Ohio State University, Columbus, OH 43210."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Lee, Sang Wan",
+        "short_name": "Lee SW",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Statistics, The Ohio State University, Columbus, OH 43210."
+        ]
+      },
+      {
+        "full_name": "Lin, Shili",
+        "short_name": "Lin S",
+        "identifiers": [
+          "0000-0003-2467-4491"
+        ],
+        "affiliations": [
+          "Department of Statistics, The Ohio State University, Columbus, OH 43210."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "bioRxiv : the preprint server for biology"
+    ],
+    "journal_abbrev": [
+      "bioRxiv"
+    ],
+    "pub_date": "2026 Sep 18",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article",
+      "Preprint"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/24 13:06",
+    "fetched_at": "2026-09-27 09:45:59"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42779754",
+      "40777255",
+      "42475469",
+      "42026057",
+      "40637236",
+      "40399810",
+      "41852496",
+      "40986587",
+      "35696429",
+      "42184191",
+      "42635216",
+      "40690004",
+      "40713495",
+      "40425750",
+      "41507775",
+      "41917934",
+      "41942438",
+      "40826008",
+      "39610904",
+      "42328842",
+      "41659516",
+      "41325188",
+      "39957720",
+      "41805524",
+      "40791469",
+      "40246224",
+      "41279430",
+      "41588648",
+      "41701097",
+      "42491860",
+      "33160308",
+      "26269925",
+      "40727355",
+      "41955402",
+      "42464099",
+      "40160860",
+      "42687963",
+      "39402696",
+      "41843533",
+      "36321557",
+      "40306096",
+      "41588477",
+      "41052277",
+      "42619824",
+      "41896196",
+      "40672304",
+      "38827413",
+      "41845241",
+      "42041160",
+      "42056283",
+      "42247447",
+      "41791270",
+      "41806153",
+      "40291751",
+      "41534143",
+      "42399758",
+      "38798592",
+      "41406299",
+      "38870559",
+      "37208992",
+      "42308421",
+      "42395478",
+      "41786602",
+      "32403260",
+      "23536826",
+      "40897868",
+      "41686408",
+      "40599815",
+      "41587323",
+      "41462067",
+      "41210922",
+      "31068142",
+      "31235599",
+      "41248160",
+      "39816913",
+      "41947710",
+      "26553003",
+      "42384513",
+      "42529646",
+      "36458445",
+      "40131310",
+      "42262653",
+      "38513390",
+      "41931510",
+      "37751336",
+      "41162996",
+      "40505018",
+      "41951435",
+      "23912807",
+      "37948464",
+      "42743021",
+      "34481921",
+      "41564956",
+      "40404817",
+      "40210623",
+      "39963420",
+      "41409156",
+      "36631401",
+      "41831316",
+      "42470130"
+    ],
+    "review": [
+      "42779754",
+      "39610904",
+      "36321557",
+      "41052277",
+      "41587323",
+      "39816913",
+      "41564956"
+    ],
+    "pmc": [
+      "13596373"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://doi.org/10.64898/2026.09.14.751457",
+        "provider": "Cold Spring Harbor Laboratory",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

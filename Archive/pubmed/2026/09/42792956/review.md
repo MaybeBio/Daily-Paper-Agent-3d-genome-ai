@@ -1,0 +1,92 @@
+## Review setup
+- **Input scope** Abstract only
+- **Assessment boundary** Claims and evidence as presented in the abstract; no full-text methods, figures, tables, or supplementary materials were available for inspection
+- **Shared manuscript claim summary** The authors present SafeEdit-CRE, a computational framework that combines the Malinois sequence-activity predictor with an architecture-distinct reviewer ensemble, validation-calibrated uncertainty, sequence-domain controls, and constrained beam search to select minimal edits in cis-regulatory elements (CREs) that preserve cross-model cell-type specificity while reducing predictive uncertainty. The framework is evaluated on 600 held-out CRE parents across three cell types and four edit budgets, with a locked 90-parent benchmark for prespecified quality checks. The authors report improved cross-model specificity-margin gains over greedy editing, comparable performance to a compute-matched primary-model beam with lower ensemble uncertainty, and a higher pass rate on prespecified sequence and model-agreement checks. The output is a prioritized Tier A computational candidate list for reporter screening.
+- **Visible evidence base** Abstract text only; includes reported numerical results (mean cross-model specificity-margin gains, 95% CIs, pass rates, candidate counts) but no underlying data, statistical methods, model architecture details, or validation protocols
+- **Missing materials affecting confidence** Full methods, model architecture specifications, training and validation data descriptions, uncertainty calibration details, beam search implementation, sequence-domain control definitions, the nine prespecified checks, the 90-parent benchmark composition, and all figures and tables
+
+## Reviewer
+- **Overall assessment** The abstract describes a methodologically interesting approach to a relevant problem in regulatory genomics, namely converting sequence-to-activity models into experimentally tractable variant panels. The core idea of separating candidate generation from cross-model audit, and using uncertainty to guide minimal edits, is sensible and potentially valuable. However, the abstract alone provides insufficient detail to assess the technical soundness of the approach, the validity of the statistical comparisons, or the generalizability of the findings. Several claims are presented with numerical precision but without the methodological context needed to evaluate their credibility. The work may be of interest to researchers in regulatory genomics and synthetic biology, but the case is not fully established from the supplied material.
+- **Who would be interested in the results, and why** Researchers working on cis-regulatory element function, sequence-to-activity modeling, and synthetic promoter design would be the primary audience. The framework addresses a practical gap between predictive models and experimental validation, which is relevant to those designing reporter assays or engineering cell-type-selective expression. Computational biologists developing uncertainty-aware design tools and experimentalists prioritizing variant panels for screening would both find the approach relevant.
+- **Major strengths** The problem addressed is well-defined and practically important. The design principle of separating search from cross-model audit is conceptually sound and addresses a known limitation in model-guided design, namely overfitting to a single predictor. The use of explicit edit budgets and sequence-domain safeguards is a practical strength that aligns with experimental constraints. The reported evaluation across multiple cell types and edit budgets suggests an attempt at generalizability. The inclusion of a locked benchmark with prespecified checks is a commendable practice for reducing analysis flexibility.
+- **Major Concerns** 
+  - **Concern ID** R1-M1
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** The claim that SafeEdit-CRE achieves a mean cross-model specificity-margin gain of 0.877 versus 0.822 for greedy editing (paired difference 0.055; 95% CI 0.040-0.071) across 600 held-out CRE parents
+  - **Evidence pointer** Abstract Results section; location not provided
+  - **Concern** The abstract reports a paired difference with a 95% confidence interval but provides no information on the statistical test used, the distribution of the differences, whether multiple testing was accounted for across the three cell types and four edit budgets, or whether the 600 CRE parents are independent. The magnitude of the effect (0.055 on a margin scale) is reported with precision that cannot be evaluated without knowing the scale and variance of the underlying metric.
+  - **Why it matters** Without clarity on the statistical methodology and the independence assumptions, the reader cannot determine whether the reported improvement is robust or an artifact of the specific test or data partitioning. The claim is central to the paper's contribution, so this uncertainty undermines confidence in the primary result.
+  - **Resolution test** Provide the full statistical methods, including the test used, the handling of multiple comparisons, the distribution of paired differences, and a justification for the independence assumption across CRE parents. Report effect sizes with appropriate measures of dispersion and, ideally, a permutation-based or bootstrap-based confidence interval that does not rely on normality assumptions.
+  - **Concern ID** R1-M2
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** The claim that in a locked 90-parent benchmark, 60.6% of designs passed all nine prespecified sequence and model-agreement checks, compared with 38.8% for greedy and 13.1% for random substitution
+  - **Evidence pointer** Abstract Results section; location not provided
+  - **Concern** The nine prespecified checks are not described. The reader cannot assess whether these checks are meaningful, whether they are independent, whether they were truly prespecified (e.g., registered or time-stamped), or whether they are trivially easy or difficult to pass. The comparison across methods (SafeEdit-CRE, greedy, random) is presented as a percentage-point difference, but the denominator and the composition of the 90-parent benchmark are not specified.
+  - **Why it matters** The pass rate on prespecified checks is a key claim of methodological rigor. If the checks are not described, the claim cannot be independently evaluated. The prespecification claim is particularly important because it distinguishes this work from post hoc analysis, but the abstract provides no evidence that the checks were indeed fixed before seeing results.
+  - **Resolution test** List the nine checks explicitly, describe how they were defined and when they were fixed, specify the composition of the 90-parent benchmark (e.g., how parents were selected, whether they overlap with the 600-parent set), and report the pass rates with confidence intervals or a test of the difference between methods.
+  - **Concern ID** R1-M3
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Reproducibility
+  - **Claim pointer** The claim that SafeEdit-CME combines the published Malinois sequence-activity predictor with an architecture-distinct reviewer ensemble, validation-calibrated uncertainty, sequence-domain controls, and constrained beam search
+  - **Evidence pointer** Abstract Methods section; location not provided
+  - **Concern** The abstract names components but provides no detail on how they are integrated. Specifically, the architecture-distinct reviewer ensemble is not described in terms of model count, architecture types, or training data. The validation-calibrated uncertainty is mentioned but the calibration procedure is not specified. The constrained beam search is not defined in terms of constraints or search space. The sequence-domain controls are not enumerated.
+  - **Why it matters** Reproducibility is a stated goal of the framework, but the abstract provides insufficient information for another group to implement or evaluate the method. The novelty claim depends on the specific design choices, which are not visible.
+  - **Resolution test** Provide a full methods section that specifies the reviewer ensemble architecture and training, the uncertainty calibration procedure, the beam search constraints, and the sequence-domain controls. Ideally, make the code and model weights available.
+  - **Concern ID** R1-M4
+  - **Severity** Major
+  - **Blocking** No
+  - **Axis** Generalizability
+  - **Claim pointer** The claim that the framework provides a reproducible and auditable approach to computational CRE prioritization, regulatory-grammar studies, and synthetic regulatory-element design
+  - **Evidence pointer** Abstract Conclusions section; location not provided
+  - **Concern** The evaluation is limited to three cell types (K562, HepG2, SK-N-SH) and CREs of 200 nt length. The abstract does not discuss whether the approach generalizes to other cell types, other CRE lengths, or other sequence-to-activity models beyond Malinois. The claim of broad applicability is therefore not supported by the presented evidence.
+  - **Why it matters** The conclusions extend beyond the evaluated scope. If the framework is model- or cell-type-specific, the stated generality would be misleading.
+  - **Resolution test** Either temper the conclusions to the evaluated scope or provide additional experiments demonstrating generalizability across cell types, CRE lengths, and alternative base predictors.
+- **Minor Comments** 
+  - **Concern ID** R1-m1
+  - **Severity** Minor
+  - **Axis** Clarity
+  - **Affected element** Abstract Background/Objectives
+  - **Evidence pointer** Abstract first paragraph; location not provided
+  - **Issue** The phrase "yielding an auditable CRE variant library for reporter-screening prioritization" is vague. It is unclear what "auditable" means operationally in this context.
+  - **Required correction** Define "auditable" in terms of specific properties, such as traceability of each edit to a model prediction, or availability of a complete decision log.
+  - **Concern ID** R1-m2
+  - **Severity** Minor
+  - **Axis** Reporting
+  - **Affected element** Abstract Results
+  - **Evidence pointer** Abstract Results section; location not provided
+  - **Issue** The reduction from 3240 designs to 74 Tier A candidates is reported without context on how Tier A is defined or what fraction of the original design space this represents.
+  - **Required correction** Specify the Tier A criteria and report the reduction as a proportion of the total design space, not just an absolute count.
+  - **Concern ID** R1-m3
+  - **Severity** Minor
+  - **Axis** Terminology
+  - **Affected element** Abstract Methods
+  - **Evidence pointer** Abstract Methods section; location not provided
+  - **Issue** The term "cross-model specificity-margin gain" is used without a formal definition. The reader cannot interpret the reported values without knowing how this metric is computed.
+  - **Required correction** Define the metric explicitly, including the formula and the models involved in the cross-model comparison.
+  - **Concern ID** R1-m4
+  - **Severity** Minor
+  - **Axis** Completeness
+  - **Affected element** Abstract Results
+  - **Evidence pointer** Abstract Results section; location not provided
+  - **Issue** The abstract reports a comparison to "compute-matched primary-model beam" but does not describe what this baseline is or how compute-matching was achieved.
+  - **Required correction** Describe the baseline and the compute-matching procedure, or remove the comparison if it cannot be adequately described in the abstract.
+- **Technical failings that need to be addressed before the case is established** R1-M1 (statistical methodology for the primary comparison), R1-M2 (undefined prespecified checks and benchmark composition), R1-M3 (insufficient methodological detail for reproducibility)
+- **Assessment against Nature-style criteria** 
+  - Originality: The idea of using uncertainty-aware minimal editing with a separate reviewer ensemble is a reasonable contribution, but the abstract does not demonstrate that this is conceptually distinct from existing model-guided design approaches. The originality claim is plausible but not fully established.
+  - Scientific importance: The problem of converting predictive models into experimentally tractable variant panels is important for regulatory genomics. However, the abstract does not show that the approach solves a problem that other methods cannot, or that it enables experiments that were previously infeasible.
+  - Interdisciplinary readership: The work sits at the intersection of computational biology and experimental genomics. The abstract is written in a way that is accessible to both communities, but the lack of methodological detail limits its usefulness to either.
+  - Technical soundness: The technical soundness cannot be assessed from the abstract alone. The statistical comparisons and the prespecified checks are described without sufficient detail to evaluate their validity.
+  - Readability for nonspecialists: The abstract is generally readable, but terms such as "cross-model specificity-margin gain" and "validation-calibrated uncertainty" are used without definition, which would hinder a nonspecialist reader.
+- **Recommendation posture** Currently not established from the provided evidence. The approach is potentially interesting, but the abstract does not provide enough methodological or statistical detail to support the claims. A full manuscript with complete methods, statistical analysis, and benchmark descriptions would be needed to evaluate whether the case is made.
+
+## Risk / unsupported claims
+- The claim that SafeEdit-CRE "reduced 3240 designs to 74 Tier A computational candidates" is reported without defining Tier A criteria or the selection process, making it unverifiable from the abstract.
+- The claim that the framework is "reproducible and auditable" is not supported by the abstract, as no implementation details, code availability, or audit trail description is provided.
+- The claim of "lower ensemble uncertainty (0.314 vs. 0.335)" is reported without context on the uncertainty scale or its calibration, making the practical significance unclear.
+- The generalizability claim in the Conclusions extends beyond the evaluated scope (three cell types, 200 nt CREs, Malinois as base predictor) and is therefore unsupported.
+- The prespecified nature of the nine checks in the locked benchmark is asserted but not evidenced; without a description of the checks or a demonstration of prespecification, this claim cannot be evaluated.

@@ -1,0 +1,269 @@
+{
+  "identity": {
+    "pmid": "42767805",
+    "doi": "10.1101/gr.282189.126",
+    "title": "Deep genomic models of allele-specific measurements."
+  },
+  "content": {
+    "abstract": "Allele-specific quantification of sequencing data allows for a systematic investigation of how DNA sequence variations influence cis gene regulation. Current methods for analyzing allele-specific measurements for causal analysis rely on statistical associations between genetic variation across individuals and allelic imbalance. Instead, we propose DeepAllele, a novel deep learning sequence-to-function model using paired allele-specific input, designed to learn sequence features that predict subtle changes in gene regulation between alleles. Our approach is suited for datasets with unambiguous phasing, such as F1 hybrids and other controlled genetic crosses, or long-read sequencing technologies used in Fiber-seq, in which reads can be assigned to complete allele sequences. We apply our framework to allele-specific measurements in immune cells from F1 hybrid mice, and show that the model's additionally learned cis-regulatory grammar aligns with known biological mechanisms across a significantly larger number of genomic regions compared to baseline models. In summary, our work presents a computational framework to leverage genetic variation to uncover functionally-relevant regulatory motifs, enhancing discovery in genomics.",
+    "keywords": [],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Tu, Xinming",
+        "Sasse, Alexander",
+        "Chowdhary, Kaitavjeet",
+        "Spiro, Anna",
+        "Yang, Liang",
+        "Chikina, Maria",
+        "Benoist, Christophe",
+        "Mostafavi, Sara"
+      ],
+      "short_names": [
+        "Tu X",
+        "Sasse A",
+        "Chowdhary K",
+        "Spiro A",
+        "Yang L",
+        "Chikina M",
+        "Benoist C",
+        "Mostafavi S"
+      ],
+      "auids": [
+        "ORCID: 0000-0001-7031-8848",
+        "ORCID: 0000-0002-3465-4606",
+        "ORCID: 0000-0003-2550-5403",
+        "ORCID: 0000-0003-4698-1177"
+      ],
+      "affiliations": [
+        "University of Washington.",
+        "University of Washington, Universitat Heidelberg.",
+        "Harvard Medical School.",
+        "University of Washington.",
+        "Harvard Medical School.",
+        "University of Pittsburgh.",
+        "Harvard Medical School.",
+        "University of Washington, Canadian Institute for Advanced Research saramos@cs.washington.edu."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Tu, Xinming",
+        "short_name": "Tu X",
+        "identifiers": [],
+        "affiliations": [
+          "University of Washington."
+        ]
+      },
+      {
+        "full_name": "Sasse, Alexander",
+        "short_name": "Sasse A",
+        "identifiers": [
+          "0000-0001-7031-8848"
+        ],
+        "affiliations": [
+          "University of Washington, Universitat Heidelberg."
+        ]
+      },
+      {
+        "full_name": "Chowdhary, Kaitavjeet",
+        "short_name": "Chowdhary K",
+        "identifiers": [],
+        "affiliations": [
+          "Harvard Medical School."
+        ]
+      },
+      {
+        "full_name": "Spiro, Anna",
+        "short_name": "Spiro A",
+        "identifiers": [
+          "0000-0002-3465-4606"
+        ],
+        "affiliations": [
+          "University of Washington."
+        ]
+      },
+      {
+        "full_name": "Yang, Liang",
+        "short_name": "Yang L",
+        "identifiers": [],
+        "affiliations": [
+          "Harvard Medical School."
+        ]
+      },
+      {
+        "full_name": "Chikina, Maria",
+        "short_name": "Chikina M",
+        "identifiers": [
+          "0000-0003-2550-5403"
+        ],
+        "affiliations": [
+          "University of Pittsburgh."
+        ]
+      },
+      {
+        "full_name": "Benoist, Christophe",
+        "short_name": "Benoist C",
+        "identifiers": [],
+        "affiliations": [
+          "Harvard Medical School."
+        ]
+      },
+      {
+        "full_name": "Mostafavi, Sara",
+        "short_name": "Mostafavi S",
+        "identifiers": [
+          "0000-0003-4698-1177"
+        ],
+        "affiliations": [
+          "University of Washington, Canadian Institute for Advanced Research saramos@cs.washington.edu."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Genome research"
+    ],
+    "journal_abbrev": [
+      "Genome Res"
+    ],
+    "pub_date": "2026 Sep 21",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/21 23:33",
+    "fetched_at": "2026-09-27 09:45:59"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42767805",
+      "41096905",
+      "42475469",
+      "24561482",
+      "39966391",
+      "36043696",
+      "29444201",
+      "30337930",
+      "36321557",
+      "39482734",
+      "29907088",
+      "42395488",
+      "42482259",
+      "41118577",
+      "42477877",
+      "41219345",
+      "34327321",
+      "42146353",
+      "39047729",
+      "30918970",
+      "26231172",
+      "21121034",
+      "22685595",
+      "41773350",
+      "39388235",
+      "41947412",
+      "19687144",
+      "39127549",
+      "29028988",
+      "32850739",
+      "33738679",
+      "23194258",
+      "42282607",
+      "24358981",
+      "32106453",
+      "31660858",
+      "23201534",
+      "28235418",
+      "38168434",
+      "41310253",
+      "41168720",
+      "41561440",
+      "34968422",
+      "31608110",
+      "33832990",
+      "41915226",
+      "23164068",
+      "26438392",
+      "25541944",
+      "16885241",
+      "26202974",
+      "27380029",
+      "37158941",
+      "19825846",
+      "39699583",
+      "19506001",
+      "25340786",
+      "15194819",
+      "25251678",
+      "39090688",
+      "27499678",
+      "25858912",
+      "31830260",
+      "19116668",
+      "27632220",
+      "34465174",
+      "30223769",
+      "36625546",
+      "39185246",
+      "23891706",
+      "42056104",
+      "19808877",
+      "29729187",
+      "23968248",
+      "33137083",
+      "30375057",
+      "32043966",
+      "18950538",
+      "40633538",
+      "40069157",
+      "37256104",
+      "36475543",
+      "31350542",
+      "40461640",
+      "38397134",
+      "39135093",
+      "39386487",
+      "24845654",
+      "27875998",
+      "27453446",
+      "26908256",
+      "42487110",
+      "39433438",
+      "41162494",
+      "29855387",
+      "41308074",
+      "40923439",
+      "38639992",
+      "41958984",
+      "32103259"
+    ],
+    "review": [
+      "42767805",
+      "36321557",
+      "39127549"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [
+      {
+        "url": "http://genome.cshlp.org/lookup/pmidlookup?view=long&pmid=42767805",
+        "provider": "HighWire",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

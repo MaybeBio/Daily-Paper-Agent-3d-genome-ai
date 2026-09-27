@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cross-Model Uncertainty-Aware Minimal Editing of Cis-Regulatory Elements for Cell-Type-Selective Design. · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-mid">5</span>
+    <div>
+      <h1>Cross-Model Uncertainty-Aware Minimal Editing of Cis-Regulatory Elements for Cell-Type-Selective Design.</h1>
+      <div class="meta">Xia, Angran; Wang, Changwei; Xia, Yemao</div>
+      <div class="meta muted">
+        
+        <span class="journal">Genes</span>
+        · 2026-09-26
+         · 仅摘要
+         · <a href="https://pubmed.ncbi.nlm.nih.gov/42792956/">原文</a>
+      </div>
+      <p class="one-liner">该文用AI序列-活性模型与不确定性感知的编辑策略设计顺式调控元件（CRE）变体库，虽涉及染色质水平调控元件设计，但聚焦序列编辑而非三维空间架构建模，方法可迁移性中等。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">Background/Objectives: Cis-regulatory elements (CREs) help mediate cell-type-selective gene expression, yet sequence-to-activity models are rarely converted into compact, experimentally tractable variant panels that retain natural regulatory scaffolds. We developed SafeEdit-CRE to select minimal edits that preserve cross-model specificity while reducing predictive uncertainty, yielding an auditable CRE variant library for reporter-screening prioritization. Methods: SafeEdit-CRE combines the published Malinois sequence-activity predictor with an architecture-distinct reviewer ensemble, validation-calibrated uncertainty, sequence-domain controls, and constrained beam search. Natural 200 nt CREs were edited under fixed substitution budgets of 1, 5, 10, or 20 nucleotides and evaluated by a separately trained multi-kernel ensemble kept entirely separate from candidate generation. Results: Across 600 held-out CRE parents in K562, HepG2, and SK-N-SH cells, SafeEdit-CRE achieved a mean cross-model specificity-margin gain of 0.877 versus 0.822 for greedy editing (paired difference 0.055; 95% CI 0.040-0.071). Relative to a compute-matched primary-model beam, SafeEdit-CRE yielded a similar cross-model specificity-margin gain (difference -0.004; 95% CI -0.011-0.004) with lower ensemble uncertainty (0.314 vs. 0.335). In a locked 90-parent benchmark, 60.6% of designs passed all nine prespecified sequence and model-agreement checks, compared with 38.8% for greedy and 13.1% for random substitution (paired difference 21.8 percentage points; 95% CI 18.3-25.3). Conclusions: SafeEdit-CRE reduced 3240 designs to 74 Tier A computational candidates prioritized for reporter screening across three cell types and four edit budgets. By separating search from cross-model audit and enforcing explicit edit budgets and sequence-domain safeguards, the framework provides a reproducible and auditable approach to computational CRE prioritization, regulatory-grammar studies, and synthetic regulatory-element design.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">背景/目标：顺式调控元件（cis-regulatory elements, CREs）有助于介导细胞类型选择性基因表达，然而序列到活性模型很少被转化为紧凑且实验上可操作的变异面板，同时保留天然调控支架。我们开发了SafeEdit-CRE，用于选择最小编辑，在降低预测不确定性的同时保持跨模型特异性，从而生成一个可审计的CRE变异文库，用于报告基因筛选优先级排序。方法：SafeEdit-CRE结合了已发表的Malinois序列活性预测器与架构不同的评审集成、验证校准的不确定性、序列域控制以及约束束搜索。在固定的1、5、10或20个核苷酸替换预算下，对天然的200 nt CRE进行编辑，并由一个单独训练的多核集成进行评估，该集成与候选生成完全分离。结果：在K562、HepG2和SK-N-SH细胞中的600个保留CRE亲本中，SafeEdit-CRE实现了平均跨模型特异性边际增益0.877，而贪婪编辑为0.822（配对差异0.055；95% CI 0.040-0.071）。相对于计算匹配的主模型束，SafeEdit-CRE产生了相似的跨模型特异性边际增益（差异-0.004；95% CI -0.011-0.004），且集成不确定性更低（0.314对0.335）。在一个锁定的90亲本基准中，60.6%的设计通过了所有九项预设序列和模型一致性检查，而贪婪编辑为38.8%，随机替换为13.1%（配对差异21.8个百分点；95% CI 18.3-25.3）。结论：SafeEdit-CRE将3240个设计缩减为74个Tier A计算候选，优先用于三种细胞类型和四种编辑预算下的报告基因筛选。通过将搜索与跨模型审计分离，并强制执行明确的编辑预算和序列域保障措施，该框架为计算CRE优先级排序、调控语法研究和合成调控元件设计提供了一种可重复且可审计的方法。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：Cross-Model Uncertainty-Aware Minimal Editing of Cis-Regulatory Elements for Cell-Type-Selective Design</li>
+<li><strong>作者</strong>：Xia, Angran; Wang, Changwei; Xia, Yemao</li>
+<li><strong>单位</strong>：未提供</li>
+<li><strong>期刊/平台</strong>：Genes</li>
+<li><strong>年份</strong>：2026-09-26</li>
+<li><strong>论文类型</strong>：方法学/计算框架研究</li>
+<li><strong>领域</strong>：顺式调控元件（CRE）设计、序列-活性预测、不确定性量化、细胞类型选择性表达</li>
+<li><strong>关键词</strong>：cis-regulatory elements; sequence-activity models; uncertainty; minimal editing; cell-type selectivity; reporter screening</li>
+<li><strong>DOI/arXiv</strong>：10.3390/genes17091062</li>
+<li><strong>代码</strong>：未提供</li>
+<li><strong>数据</strong>：未提供（提及 600 个 held-out CRE parents 与 90-parent locked benchmark，但未给出数据获取方式）</li>
+<li><strong>阅读日期</strong>：未提供</li>
+<li><strong>在该课题方向中的位置</strong>：本文属于「三维基因组/染色质组织 × AI」方向中<strong>调控元件序列设计</strong>子领域。其核心对象是 CRE（顺式调控元件）的序列编辑，而非三维染色质结构本身；但对本课题的可迁移价值在于：<strong>跨模型不确定性校准 + 约束搜索 + 独立审计</strong>的框架，可直接迁移到染色质构象预测模型的编辑/扰动设计（如 CTCF motif 编辑对 TAD 边界的影响预测），以及将序列-活性模型输出与结构模型输出做交叉验证。</li>
+</ul>
+<hr />
+<h2>02 一句话总结</h2>
+<p>本文提出 SafeEdit-CRE 框架，在固定替换预算（1/5/10/20 nt）下对 200 nt 天然 CRE 进行最小编辑，通过主模型（Malinois）与架构不同的评审模型集成、验证集校准的不确定性、序列域控制及约束束搜索，在保持跨模型特异性裕度增益的同时降低预测不确定性，最终将 3240 个设计缩减为 74 个 Tier A 候选用于报告基因筛选。</p>
+<hr />
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：如何将序列-活性预测模型转化为<strong>紧凑、可实验验证、保留天然调控骨架</strong>的 CRE 变异面板，使得编辑后的 CRE 在目标细胞类型中具有选择性活性，同时跨模型预测一致？</li>
+<li><strong>为什么重要</strong>：CRE 介导细胞类型选择性基因表达，是合成调控元件设计与疾病变异解读的核心。现有模型预测结果很少被转化为可直接实验的有限变异集，且单模型预测存在系统性偏差。</li>
+<li><strong>现有方法不足</strong>：贪心编辑（greedy editing）只优化主模型输出，忽略跨模型一致性；随机替换缺乏导向；纯主模型束搜索（primary-model beam）虽计算匹配但不确定性更高，且缺乏序列域约束（如 motif 破坏、GC 含量漂移等）。</li>
+<li><strong>精确研究问题</strong>：Can a cross-model uncertainty-aware minimal editing framework produce CRE variants that (a) achieve comparable or better cross-model specificity-margin gain than greedy/beam baselines, (b) reduce predictive uncertainty, and (c) pass prespecified sequence and model-agreement checks at a higher rate than baselines?</li>
+</ul>
+<hr />
+<h2>04 背景与发展脉络</h2>
+<blockquote>
+<p>注：以下脉络基于本文框架整理，未经外部核验，标注为「仅本文框架」。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>代表性方法</th>
+<th>优点</th>
+<th>局限</th>
+<th>本文位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>序列-活性预测</td>
+<td>Enformer、Borzoi、Malinois 等</td>
+<td>高精度预测调控活性</td>
+<td>单模型偏差、不可解释、不直接产出编辑方案</td>
+<td>本文使用 Malinois 作为主模型</td>
+</tr>
+<tr>
+<td>单模型编辑/设计</td>
+<td>贪心替换、beam search</td>
+<td>计算高效、直接优化目标</td>
+<td>忽略跨模型一致性、不确定性高、可能破坏序列域约束</td>
+<td>本文基线（greedy、primary-model beam）</td>
+</tr>
+<tr>
+<td>集成/不确定性量化</td>
+<td>Deep ensemble、MC dropout</td>
+<td>提供不确定性估计</td>
+<td>集成成员同质化、校准不足</td>
+<td>本文使用架构不同的评审集成 + 验证集校准</td>
+</tr>
+<tr>
+<td>约束编辑/设计</td>
+<td>遗传算法、强化学习</td>
+<td>可加约束</td>
+<td>计算昂贵、约束定义主观</td>
+<td>本文使用固定编辑预算 + 序列域控制 + 约束束搜索</td>
+</tr>
+<tr>
+<td>跨模型审计</td>
+<td>独立评审模型</td>
+<td>减少单模型偏差</td>
+<td>评审模型与生成模型可能耦合</td>
+<td>本文核心创新：生成与审计完全分离</td>
+</tr>
+</tbody>
+</table>
+<p><strong>本文主张的位置</strong>：在「序列-活性模型 → 可实验变异面板」的转化链中，首次将<strong>跨模型审计</strong>与<strong>不确定性校准</strong>嵌入约束编辑流程，使输出既保留天然 CRE 骨架，又具备跨模型可重复性。</p>
+<hr />
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>单模型预测偏差</td>
+<td>同一编辑在不同模型下活性预测差异大</td>
+<td>不同架构模型对序列特征的敏感度不同</td>
+<td>作者使用架构不同的评审集成来缓解（Methods 节）</td>
+</tr>
+<tr>
+<td>预测不确定性未校准</td>
+<td>模型置信度与真实误差不匹配</td>
+<td>缺乏验证集校准步骤</td>
+<td>作者引入 validation-calibrated uncertainty（Methods 节）</td>
+</tr>
+<tr>
+<td>编辑方案不可实验</td>
+<td>模型输出为连续活性分数，非离散变异集</td>
+<td>缺乏从预测到有限变异面板的转化机制</td>
+<td>作者提出固定替换预算 + Tier A 候选缩减（Results 节）</td>
+</tr>
+<tr>
+<td>序列域约束缺失</td>
+<td>编辑可能破坏 motif、改变 GC 含量</td>
+<td>纯序列-活性优化不考虑调控语法</td>
+<td>作者加入 sequence-domain controls（Methods 节）</td>
+</tr>
+<tr>
+<td>生成与审计耦合</td>
+<td>生成模型与评估模型同源，评估有偏</td>
+<td>若用同一模型生成并评估，则无法发现系统性错误</td>
+<td>作者将评审集成与生成完全分离（Methods 节）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>06 核心思想</h2>
+<p><strong>1) 表面方法</strong>：SafeEdit-CRE 是一个四阶段流水线——(a) 用 Malinois 作为主序列-活性预测器；(b) 用架构不同的评审模型集成对候选进行交叉验证；(c) 在验证集上校准不确定性；(d) 在固定替换预算下用约束束搜索生成编辑方案，最后通过预设的序列与模型一致性检查筛选 Tier A 候选。</p>
+<p><strong>2) 核心洞察</strong>：<strong>生成与审计的分离</strong>是本文最关键的设计决策。主模型负责探索编辑空间（生成），而架构不同的评审集成负责验证（审计）。这种「生成器-审计器」解耦使得候选必须同时通过主模型与评审模型的共识，从而过滤掉单模型特有的虚假高活性预测。不确定性校准则进一步确保「低不确定性」确实意味着「跨模型一致」，而非仅仅是模型自身的过度自信。</p>
+<p><strong>3) 可能的普适教训 [Analysis]</strong>：在 AI 驱动的生物序列设计中，<strong>单一模型的优化目标往往与实验可验证性脱节</strong>。本文的「跨模型共识 + 不确定性校准 + 显式约束」三件套，可视为一种通用的「可审计设计」范式——不仅适用于 CRE 编辑，也适用于染色质结构扰动设计（如预测 TAD 边界位移时，用不同架构的结构模型交叉验证）、sgRNA 设计、增强子-启动子互作编辑等场景。其核心原则是：<strong>当模型预测将被用于高成本实验时，设计流程必须内置独立于生成过程的验证机制</strong>。</p>
+<hr />
+<h2>07 方法总览</h2>
+<ul>
+<li><strong>输入</strong>：200 nt 天然 CRE 序列（来自 K562、HepG2、SK-N-SH 三种细胞类型的 600 个 held-out parents）</li>
+<li><strong>输出</strong>：74 个 Tier A 计算候选（跨 3 种细胞类型 × 4 种编辑预算），每个候选为带编辑位置与替换碱基的变异 CRE</li>
+<li><strong>模块</strong>：
+  1. <strong>主预测器</strong>：Malinois 序列-活性模型
+  2. <strong>评审集成</strong>：架构不同的多核集成（multi-kernel ensemble），独立于生成过程训练
+  3. <strong>不确定性校准</strong>：在验证集上校准集成预测的不确定性
+  4. <strong>约束束搜索</strong>：在固定替换预算（1/5/10/20 nt）下搜索编辑方案
+  5. <strong>序列域控制</strong>：motif 保护、GC 含量约束等
+  6. <strong>审计检查</strong>：9 项预设的序列与模型一致性检查</li>
+<li><strong>训练</strong>：评审集成单独训练，与生成过程完全分离（作者强调 "kept entirely separate from candidate generation"）</li>
+<li><strong>工具</strong>：未提供具体软件/代码</li>
+<li><strong>假设</strong>：(a) 跨模型一致性可作为预测可靠性的代理；(b) 固定编辑预算可保留天然调控骨架；(c) 验证集校准的不确定性可泛化到 held-out CRE</li>
+<li><strong>流程</strong>：600 个 CRE parents → 在 4 种预算下生成候选 → 评审集成评估 → 不确定性校准 → 9 项检查 → 74 个 Tier A 候选</li>
+</ul>
+<hr />
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Malinois 主预测器</td>
+<td>提供序列-活性基础预测</td>
+<td>高精度单模型作为生成起点</td>
+<td>输入：200 nt 序列；输出：细胞类型特异性活性分数</td>
+<td>作者引用为已发表模型（Background 节）</td>
+<td>无主模型则无法生成初始候选</td>
+</tr>
+<tr>
+<td>架构不同评审集成</td>
+<td>跨模型交叉验证候选</td>
+<td>减少单模型偏差，提供独立审计</td>
+<td>输入：候选序列；输出：活性预测 + 不确定性</td>
+<td>核心结果：跨模型裕度增益 0.877 vs 0.822（Results 节）</td>
+<td>移除后退化为单模型设计，跨模型一致性无法保证</td>
+</tr>
+<tr>
+<td>验证集校准不确定性</td>
+<td>将不确定性分数映射到真实误差</td>
+<td>原始不确定性可能过度自信或保守</td>
+<td>输入：验证集预测；输出：校准后的不确定性</td>
+<td>结果：SafeEdit-CRE 不确定性 0.314 vs 0.335（Results 节）</td>
+<td>移除后低不确定性可能不代表真实可靠性</td>
+</tr>
+<tr>
+<td>约束束搜索</td>
+<td>在固定预算下搜索编辑方案</td>
+<td>控制编辑规模，保留天然骨架</td>
+<td>输入：CRE 序列 + 预算；输出：候选编辑集</td>
+<td>4 种预算（1/5/10/20 nt）均产生候选（Results 节）</td>
+<td>移除后编辑规模不可控，可能破坏调控语法</td>
+</tr>
+<tr>
+<td>序列域控制</td>
+<td>保护 motif、约束 GC 等</td>
+<td>避免编辑破坏关键调控特征</td>
+<td>输入：候选序列；输出：过滤后的候选</td>
+<td>9 项检查中的序列相关项（Results 节）</td>
+<td>移除后可能产生序列上不合理但模型高分的候选</td>
+</tr>
+<tr>
+<td>9 项审计检查</td>
+<td>最终筛选 Tier A 候选</td>
+<td>确保候选同时满足序列与模型一致性</td>
+<td>输入：所有候选；输出：Tier A 子集</td>
+<td>60.6% 通过率 vs 38.8%（greedy）vs 13.1%（random）（Results 节）</td>
+<td>移除后候选质量不可控，实验失败率上升</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：作者未提供逐模块消融实验，因此「移除后影响」多为 [Analysis] 预期效应，而非实测消融结果。</p>
+</blockquote>
+<hr />
+<h2>09 关键公式符号</h2>
+<p>本文为方法学论文，但提供的材料中未给出具体数学公式。以下为可推断的框架性描述：</p>
+<ul>
+<li><strong>跨模型特异性裕度（cross-model specificity-margin）</strong>：定义为目标细胞类型活性分数与非目标细胞类型活性分数之差，跨主模型与评审集成取平均。符号未给出，但概念上可表示为：
+  [
+  \text{margin} = \frac{1}{M} \sum_{m=1}^{M} (s_m^{\text{target}} - s_m^{\text{non-target}})
+  ]
+  其中 ( M ) 为模型数量，( s_m ) 为模型 ( m ) 的活性预测。</li>
+<li><strong>不确定性</strong>：基于评审集成预测的方差或熵，经验证集校准。具体形式未提供。</li>
+<li><strong>约束束搜索</strong>：在替换预算 ( B \in {1, 5, 10, 20} ) 下，搜索使 margin 最大且不确定性最小的编辑集。</li>
+</ul>
+<blockquote>
+<p>注：以上公式为 [Analysis] 基于文本描述的合理重构，原文未给出符号定义。</p>
+</blockquote>
+<hr />
+<h2>10 实验设计与证据链</h2>
+<p><strong>数据集/群体</strong>：
+- 600 个 held-out CRE parents（K562、HepG2、SK-N-SH 三种细胞类型）
+- 90-parent locked benchmark（用于最终审计检查）
+- 每种 CRE 长度为 200 nt</p>
+<p><strong>规模</strong>：3240 个设计（600 parents × 4 预算 × ？，具体组合方式未提供）→ 缩减至 74 个 Tier A 候选</p>
+<p><strong>指标</strong>：
+- 跨模型特异性裕度增益（cross-model specificity-margin gain）
+- 集成不确定性（ensemble uncertainty）
+- 9 项预设检查的通过率</p>
+<p><strong>基线</strong>：
+- 贪心编辑（greedy editing）
+- 随机替换（random substitution）
+- 计算匹配的主模型束搜索（compute-matched primary-model beam）</p>
+<p><strong>评测协议</strong>：评审集成与生成完全分离；locked benchmark 用于最终验证</p>
+<p><strong>骨干/仪器</strong>：未提供（计算资源未说明）</p>
+<p><strong>oracle 输入</strong>：未提供（未提及使用实验验证作为 oracle）</p>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的 claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>跨模型裕度增益（600 parents）</td>
+<td>SafeEdit-CRE 优于贪心编辑</td>
+<td>SafeEdit-CRE vs greedy</td>
+<td>0.877 vs 0.822（差 0.055；95% CI 0.040-0.071）</td>
+<td>SafeEdit-CRE 在跨模型裕度上显著优于贪心</td>
+<td>未证明优于所有可能基线；未提供效应量解释</td>
+<td>Results 节</td>
+</tr>
+<tr>
+<td>与主模型束对比</td>
+<td>SafeEdit-CRE 与计算匹配束搜索裕度相当</td>
+<td>SafeEdit-CRE vs primary-model beam</td>
+<td>差 -0.004（95% CI -0.011-0.004）</td>
+<td>裕度增益与束搜索相当（非劣）</td>
+<td>未证明优于束搜索；差异在 CI 内可能无实际意义</td>
+<td>Results 节</td>
+</tr>
+<tr>
+<td>不确定性对比</td>
+<td>SafeEdit-CRE 降低不确定性</td>
+<td>SafeEdit-CRE vs primary-model beam</td>
+<td>0.314 vs 0.335</td>
+<td>不确定性显著更低</td>
+<td>未提供不确定性降低的效应量或实际影响</td>
+<td>Results 节</td>
+</tr>
+<tr>
+<td>9 项检查通过率（90 parents）</td>
+<td>SafeEdit-CRE 通过率高于基线</td>
+<td>SafeEdit-CRE vs greedy vs random</td>
+<td>60.6% vs 38.8% vs 13.1%（差 21.8 pp；95% CI 18.3-25.3）</td>
+<td>SafeEdit-CRE 候选质量显著更高</td>
+<td>未提供未通过项的具体分布</td>
+<td>Results 节</td>
+</tr>
+<tr>
+<td>Tier A 缩减</td>
+<td>3240 设计可缩减至可实验规模</td>
+<td>全设计 vs Tier A</td>
+<td>3240 → 74</td>
+<td>框架可产出实验可处理的候选集</td>
+<td>未提供 74 个候选的实验验证结果</td>
+<td>Conclusions 节</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：本文解决的是 CRE 序列的<strong>计算编辑与筛选</strong>，不涉及 wet-lab 验证。结论边界为「计算候选的优先级排序」，而非「已验证的调控元件」。</li>
+<li><strong>oracle/真值输入</strong>：无实验 oracle。所有评估基于模型预测与跨模型一致性，未与真实实验数据对照。</li>
+<li><strong>端到端状态</strong>：框架为计算端到端，但实验端（报告基因筛选）未执行。74 个 Tier A 候选的「正确性」尚未经实验确认。</li>
+<li><strong>算力成本</strong>：未提供计算资源或运行时间信息。</li>
+<li><strong>历史数据依赖</strong>：依赖 Malinois 的预训练权重及评审集成的训练数据，但具体训练数据来源未提供。</li>
+<li><strong>模型依赖</strong>：结果高度依赖 Malinois 的预测质量；若 Malinois 在特定细胞类型或 CRE 类别上存在系统性偏差，评审集成可能无法完全纠正。</li>
+<li><strong>最难情形</strong>：未讨论编辑预算为 1 nt 时的极限情形，也未分析低复杂度序列或重复序列区域的编辑表现。</li>
+<li><strong>群体/领域边界</strong>：仅在 3 种细胞类型（K562、HepG2、SK-N-SH）上验证，未覆盖原代细胞、类器官或体内环境。</li>
+<li><strong>不确定性</strong>：95% CI 已提供，但未提供效应量（如 Cohen's d）或实际生物学意义的量化。</li>
+<li><strong>有边界的复述</strong>：SafeEdit-CRE 在计算层面证明，通过跨模型审计 + 不确定性校准 + 约束搜索，可以在保持跨模型裕度增益的同时降低不确定性，并将候选缩减至实验可处理的规模；但其生物学有效性（即这些候选是否真的在目标细胞类型中驱动选择性表达）尚未经实验验证。</li>
+</ul>
+<hr />
+<h2>12 作者自认局限</h2>
+<p>在提供的材料中未发现作者明确承认的局限。</p>
+<p><strong>作者提及的相关约束</strong>（非正式局限）：
+- 评审集成与生成完全分离，但未说明评审集成的训练数据是否与 Malinois 重叠（若重叠则独立性存疑）。
+- 9 项检查的具体内容未在摘要中展开，其严格性与合理性无法从摘要评估。
+- 未提供 74 个 Tier A 候选的序列特征或编辑位置分布。</p>
+<hr />
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>评审集成与生成分离的「独立性」</td>
+<td>若评审集成与 Malinois 共享训练数据或特征工程，则「跨模型」可能只是「同源模型的不同初始化」</td>
+<td>独立性是本文核心卖点，若打折扣则结论弱化</td>
+<td>检查评审集成的训练数据来源与 Malinois 的重叠度；比较评审集成与 Malimov 在 held-out 集上的预测相关性</td>
+<td>Methods 节 "kept entirely separate" 的表述</td>
+</tr>
+<tr>
+<td>跨模型裕度增益 0.877 vs 0.822</td>
+<td>差异 0.055 虽统计显著，但生物学意义未量化</td>
+<td>0.055 的裕度增益是否足以驱动实验可检测的表达差异？</td>
+<td>将裕度增益映射到报告基因实验的预期 fold-change</td>
+<td>Results 节数值</td>
+</tr>
+<tr>
+<td>不确定性 0.314 vs 0.335</td>
+<td>差异仅 0.021，可能无实际意义</td>
+<td>若不确定性降低幅度过小，则「不确定性感知」的实际价值存疑</td>
+<td>计算效应量；检查不确定性降低是否集中在特定编辑预算或序列类别</td>
+<td>Results 节数值</td>
+</tr>
+<tr>
+<td>9 项检查通过率 60.6%</td>
+<td>仍有 39.4% 候选未通过，未分析失败原因</td>
+<td>失败模式可能揭示框架的系统性盲区</td>
+<td>对未通过候选进行错误分析，分类失败原因</td>
+<td>Results 节通过率</td>
+</tr>
+<tr>
+<td>74 个 Tier A 候选</td>
+<td>未提供这些候选的序列特征、编辑位置分布或与已知调控 motif 的重叠</td>
+<td>无法评估候选的生物学合理性</td>
+<td>对 Tier A 候选进行 motif 富集分析、与已知 eQTL/variant 数据库比对</td>
+<td>Conclusions 节</td>
+</tr>
+<tr>
+<td>未提供消融实验</td>
+<td>无法判断哪个模块（评审集成 vs 不确定性校准 vs 约束搜索）贡献最大</td>
+<td>模块贡献不明则无法优化框架</td>
+<td>逐一移除模块并测量裕度/不确定性/通过率变化</td>
+<td>全文未提及消融</td>
+</tr>
+<tr>
+<td>细胞类型仅 3 种</td>
+<td>K562/HepG2/SK-N-SH 均为细胞系，未覆盖原代或体内环境</td>
+<td>细胞系中的调控逻辑可能不同于体内</td>
+<td>在类器官或原代细胞中复现实验</td>
+<td>数据集描述</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>14 Agent 提炼的知识候选</h2>
+<p><strong>可迁移到「三维基因组/染色质组织 × AI/分子模拟」方向的知识</strong>：</p>
+<ol>
+<li>
+<p><strong>生成器-审计器解耦范式</strong>：在染色质结构预测中，可类比设计——用主模型（如基于 Hi-C 的 TAD 预测器）生成候选扰动（如 CTCF motif 编辑、loop 删除），用架构不同的结构模型（如 polymer 模拟器或不同架构的深度学习模型）进行独立审计。这比单模型优化更能过滤虚假预测。</p>
+</li>
+<li>
+<p><strong>不确定性校准作为设计约束</strong>：在三维基因组编辑设计中，不仅优化预测的结构变化（如 TAD 边界位移幅度），还应将跨模型不确定性作为约束条件——低不确定性的预测才值得进入实验验证队列。本文的 validation-calibrated uncertainty 方法可直接迁移。</p>
+</li>
+<li>
+<p><strong>固定编辑预算 + 序列域控制</strong>：在染色质结构扰动设计中，可设定「最小编辑原则」——在不超过 N 个碱基替换的预算下，寻找能产生目标结构变化的编辑方案，同时保护已知结构 motif（如 CTCF binding site、cohesin loading site）。本文的约束束搜索框架可适配。</p>
+</li>
+<li>
+<p><strong>9 项审计检查的「预设检查」思想</strong>：在三维基因组设计中，可预设结构层面的检查项（如 TAD 边界位移方向、loop 稳定性、compartment 转换概率），作为候选的硬性过滤条件，而非仅依赖模型分数。</p>
+</li>
+<li>
+<p><strong>Tier 分级缩减策略</strong>：从大规模计算候选（3240）缩减到实验可处理规模（74）的分级策略，可迁移到三维基因组扰动库的设计——先计算筛选，再实验验证，避免盲目 wet-lab 筛选。</p>
+</li>
+</ol>
+<hr />
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>Malinois 模型</strong>：本文使用 Malinois 作为主预测器。Malinois 是 Borzoi 的改进版本，属于基于 CNN 的序列-活性预测模型家族（与 Enformer 同源）。在本课题中，这类模型可扩展用于预测染色质结构相关特征（如 CTCF 结合、loop 形成概率）。</li>
+<li><strong>跨模型集成/不确定性</strong>：与深度集成（Deep Ensembles, Lakshminarayanan et al. 2017）和 MC Dropout（Gal &amp; Ghahramani 2016）的思想一致，但本文强调「架构不同」的集成，而非同架构多初始化，这与模型多样性研究（Fort et al. 2019）相关。</li>
+<li><strong>约束序列设计</strong>：与「最小编辑距离」设计思路相关，类似 CRISPR 脱靶最小化设计（Hsu et al. 2013）和蛋白工程中的保守位点编辑。</li>
+<li><strong>三维基因组设计</strong>：本文的 CRE 编辑框架可类比于三维基因组中的「结构变异设计」——如 CTCF motif 编辑对 TAD 结构的影响预测（已有研究如 Guo et al. 2015 的 CTCF 敲除实验，但缺乏计算设计框架）。本文的「跨模型审计 + 不确定性」思路可填补这一空白。</li>
+<li><strong>候选筛选分级</strong>：类似药物发现中的虚拟筛选 → 实验验证流程，以及基因组编辑中的 guide RNA 优先级排序。</li>
+</ul>
+<hr />
+<h2>16 Agent 生成的研究候选</h2>
+<p><strong>候选 1：Cross-Model Uncertainty-Aware TAD Boundary Editing（CU-TAD）</strong>
+- <strong>名称</strong>：CU-TAD
+- <strong>来源局限/观察</strong>：本文的 CRE 编辑框架仅针对序列-活性，未涉及三维结构。三维基因组中，TAD 边界编辑（如 CTCF motif 突变）的预测通常依赖单一结构模型，缺乏跨模型审计。
+- <strong>核心假设</strong>：将 SafeEdit-CRE 的「生成器-审计器 + 不确定性校准」框架迁移到 TAD 边界编辑，可产生比单模型优化更可靠的边界位移预测。
+- <strong>增量</strong>：将序列-活性目标替换为结构目标（TAD 边界位移、insulation score 变化），并引入 polymer 模拟器作为审计器。
+- <strong>初步方法</strong>：主模型用基于 Hi-C 训练的边界预测器（如 CTCF-MP），审计器用 polymer 模拟（如 OpenChrom）或不同架构的深度学习模型；在固定编辑预算下搜索 CTCF motif 编辑方案。
+- <strong>验证方式</strong>：在已有 CTCF 敲除/编辑实验数据（如 Guo et al. 2015, Rao et al. 2017）上回测，比较预测边界位移与实际 Hi-C 变化。
+- <strong>创新状态</strong>：unverified</p>
+<p><strong>候选 2：Uncertainty-Calibrated Loop Domain Perturbation Library</strong>
+- <strong>名称</strong>：UC-LoopLib
+- <strong>来源局限/观察</strong>：本文的 9 项审计检查思想可迁移到 loop 结构域扰动设计，但需定义结构层面的「检查项」。
+- <strong>核心假设</strong>：预设结构检查项（loop 稳定性、方向性、compartment 归属）可显著提高候选扰动的实验成功率。
+- <strong>增量</strong>：将本文的「序列域控制」扩展为「结构域控制」——在编辑搜索中同时约束序列 motif 和预测的结构特征。
+- <strong>初步方法</strong>：在 Hi-C 数据上训练 loop 预测器，定义 9 项结构检查（如 loop 强度变化方向、TAD 边界完整性、compartment 转换概率），用约束束搜索生成编辑方案。
+- <strong>验证方式</strong>：在已有 loop 扰动实验（如 CRISPR 介导的 CTCF 位点编辑）上回测。
+- <strong>创新状态</strong>：unverified</p>
+<p><strong>候选 3：Minimal-Editing Principle for 3D-Genome Variant Prioritization</strong>
+- <strong>名称</strong>：ME-3D
+- <strong>来源局限/观察</strong>：本文的「固定编辑预算」思想可迁移到三维基因组变异解读——GWAS/疾病变异中，哪些最小编辑组合能产生最大的结构变化？
+- <strong>核心假设</strong>：在三维基因组中，少量关键碱基编辑（如 CTCF motif 内的 SNP）即可产生显著的结构变化，且跨模型一致性可预测这种变化的可靠性。
+- <strong>增量</strong>：将本文的「跨模型裕度」概念从细胞类型选择性扩展到结构变化幅度。
+- <strong>初步方法</strong>：收集已知影响 TAD/loop 的 SNP，训练结构预测模型，用 SafeEdit-CRE 框架评估 SNP 的跨模型一致性，构建优先级排序。
+- <strong>验证方式</strong>：与已有 3D-Genome GWAS 数据库（如 3DIV、GWAS3D）比对。
+- <strong>创新状态</strong>：unverified</p>
+<p><strong>候选 4：Auditable Design Framework for Synthetic Insulators</strong>
+- <strong>名称</strong>：SynthInsulator-Audit
+- <strong>来源局限/观察</strong>：本文的「auditable」设计理念可迁移到合成绝缘子设计——合成生物学中需要设计可预测的绝缘子元件，但缺乏跨模型验证。
+- <strong>核心假设</strong>：将 SafeEdit-CRE 的审计框架应用于绝缘子设计，可产生比单模型优化更可靠的合成元件。
+- <strong>增量</strong>：将「细胞类型选择性」目标替换为「绝缘功能强度」，并引入结构模型作为审计器。
+- <strong>初步方法</strong>：用序列-活性模型生成绝缘子候选，用 Hi-C 预测模型审计其绝缘功能，通过 9 项检查筛选。
+- <strong>验证方式</strong>：在合成绝缘子实验数据（如 STARR-seq 或 insulator reporter assay）上验证。
+- <strong>创新状态</strong>：unverified</p></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Abstract only</li>
+<li><strong>Assessment boundary</strong> Claims and evidence as presented in the abstract; no full-text methods, figures, tables, or supplementary materials were available for inspection</li>
+<li><strong>Shared manuscript claim summary</strong> The authors present SafeEdit-CRE, a computational framework that combines the Malinois sequence-activity predictor with an architecture-distinct reviewer ensemble, validation-calibrated uncertainty, sequence-domain controls, and constrained beam search to select minimal edits in cis-regulatory elements (CREs) that preserve cross-model cell-type specificity while reducing predictive uncertainty. The framework is evaluated on 600 held-out CRE parents across three cell types and four edit budgets, with a locked 90-parent benchmark for prespecified quality checks. The authors report improved cross-model specificity-margin gains over greedy editing, comparable performance to a compute-matched primary-model beam with lower ensemble uncertainty, and a higher pass rate on prespecified sequence and model-agreement checks. The output is a prioritized Tier A computational candidate list for reporter screening.</li>
+<li><strong>Visible evidence base</strong> Abstract text only; includes reported numerical results (mean cross-model specificity-margin gains, 95% CIs, pass rates, candidate counts) but no underlying data, statistical methods, model architecture details, or validation protocols</li>
+<li><strong>Missing materials affecting confidence</strong> Full methods, model architecture specifications, training and validation data descriptions, uncertainty calibration details, beam search implementation, sequence-domain control definitions, the nine prespecified checks, the 90-parent benchmark composition, and all figures and tables</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li><strong>Overall assessment</strong> The abstract describes a methodologically interesting approach to a relevant problem in regulatory genomics, namely converting sequence-to-activity models into experimentally tractable variant panels. The core idea of separating candidate generation from cross-model audit, and using uncertainty to guide minimal edits, is sensible and potentially valuable. However, the abstract alone provides insufficient detail to assess the technical soundness of the approach, the validity of the statistical comparisons, or the generalizability of the findings. Several claims are presented with numerical precision but without the methodological context needed to evaluate their credibility. The work may be of interest to researchers in regulatory genomics and synthetic biology, but the case is not fully established from the supplied material.</li>
+<li><strong>Who would be interested in the results, and why</strong> Researchers working on cis-regulatory element function, sequence-to-activity modeling, and synthetic promoter design would be the primary audience. The framework addresses a practical gap between predictive models and experimental validation, which is relevant to those designing reporter assays or engineering cell-type-selective expression. Computational biologists developing uncertainty-aware design tools and experimentalists prioritizing variant panels for screening would both find the approach relevant.</li>
+<li><strong>Major strengths</strong> The problem addressed is well-defined and practically important. The design principle of separating search from cross-model audit is conceptually sound and addresses a known limitation in model-guided design, namely overfitting to a single predictor. The use of explicit edit budgets and sequence-domain safeguards is a practical strength that aligns with experimental constraints. The reported evaluation across multiple cell types and edit budgets suggests an attempt at generalizability. The inclusion of a locked benchmark with prespecified checks is a commendable practice for reducing analysis flexibility.</li>
+<li><strong>Major Concerns</strong> </li>
+<li><strong>Concern ID</strong> R1-M1</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Technical soundness</li>
+<li><strong>Claim pointer</strong> The claim that SafeEdit-CRE achieves a mean cross-model specificity-margin gain of 0.877 versus 0.822 for greedy editing (paired difference 0.055; 95% CI 0.040-0.071) across 600 held-out CRE parents</li>
+<li><strong>Evidence pointer</strong> Abstract Results section; location not provided</li>
+<li><strong>Concern</strong> The abstract reports a paired difference with a 95% confidence interval but provides no information on the statistical test used, the distribution of the differences, whether multiple testing was accounted for across the three cell types and four edit budgets, or whether the 600 CRE parents are independent. The magnitude of the effect (0.055 on a margin scale) is reported with precision that cannot be evaluated without knowing the scale and variance of the underlying metric.</li>
+<li><strong>Why it matters</strong> Without clarity on the statistical methodology and the independence assumptions, the reader cannot determine whether the reported improvement is robust or an artifact of the specific test or data partitioning. The claim is central to the paper's contribution, so this uncertainty undermines confidence in the primary result.</li>
+<li><strong>Resolution test</strong> Provide the full statistical methods, including the test used, the handling of multiple comparisons, the distribution of paired differences, and a justification for the independence assumption across CRE parents. Report effect sizes with appropriate measures of dispersion and, ideally, a permutation-based or bootstrap-based confidence interval that does not rely on normality assumptions.</li>
+<li><strong>Concern ID</strong> R1-M2</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Technical soundness</li>
+<li><strong>Claim pointer</strong> The claim that in a locked 90-parent benchmark, 60.6% of designs passed all nine prespecified sequence and model-agreement checks, compared with 38.8% for greedy and 13.1% for random substitution</li>
+<li><strong>Evidence pointer</strong> Abstract Results section; location not provided</li>
+<li><strong>Concern</strong> The nine prespecified checks are not described. The reader cannot assess whether these checks are meaningful, whether they are independent, whether they were truly prespecified (e.g., registered or time-stamped), or whether they are trivially easy or difficult to pass. The comparison across methods (SafeEdit-CRE, greedy, random) is presented as a percentage-point difference, but the denominator and the composition of the 90-parent benchmark are not specified.</li>
+<li><strong>Why it matters</strong> The pass rate on prespecified checks is a key claim of methodological rigor. If the checks are not described, the claim cannot be independently evaluated. The prespecification claim is particularly important because it distinguishes this work from post hoc analysis, but the abstract provides no evidence that the checks were indeed fixed before seeing results.</li>
+<li><strong>Resolution test</strong> List the nine checks explicitly, describe how they were defined and when they were fixed, specify the composition of the 90-parent benchmark (e.g., how parents were selected, whether they overlap with the 600-parent set), and report the pass rates with confidence intervals or a test of the difference between methods.</li>
+<li><strong>Concern ID</strong> R1-M3</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Reproducibility</li>
+<li><strong>Claim pointer</strong> The claim that SafeEdit-CME combines the published Malinois sequence-activity predictor with an architecture-distinct reviewer ensemble, validation-calibrated uncertainty, sequence-domain controls, and constrained beam search</li>
+<li><strong>Evidence pointer</strong> Abstract Methods section; location not provided</li>
+<li><strong>Concern</strong> The abstract names components but provides no detail on how they are integrated. Specifically, the architecture-distinct reviewer ensemble is not described in terms of model count, architecture types, or training data. The validation-calibrated uncertainty is mentioned but the calibration procedure is not specified. The constrained beam search is not defined in terms of constraints or search space. The sequence-domain controls are not enumerated.</li>
+<li><strong>Why it matters</strong> Reproducibility is a stated goal of the framework, but the abstract provides insufficient information for another group to implement or evaluate the method. The novelty claim depends on the specific design choices, which are not visible.</li>
+<li><strong>Resolution test</strong> Provide a full methods section that specifies the reviewer ensemble architecture and training, the uncertainty calibration procedure, the beam search constraints, and the sequence-domain controls. Ideally, make the code and model weights available.</li>
+<li><strong>Concern ID</strong> R1-M4</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Generalizability</li>
+<li><strong>Claim pointer</strong> The claim that the framework provides a reproducible and auditable approach to computational CRE prioritization, regulatory-grammar studies, and synthetic regulatory-element design</li>
+<li><strong>Evidence pointer</strong> Abstract Conclusions section; location not provided</li>
+<li><strong>Concern</strong> The evaluation is limited to three cell types (K562, HepG2, SK-N-SH) and CREs of 200 nt length. The abstract does not discuss whether the approach generalizes to other cell types, other CRE lengths, or other sequence-to-activity models beyond Malinois. The claim of broad applicability is therefore not supported by the presented evidence.</li>
+<li><strong>Why it matters</strong> The conclusions extend beyond the evaluated scope. If the framework is model- or cell-type-specific, the stated generality would be misleading.</li>
+<li><strong>Resolution test</strong> Either temper the conclusions to the evaluated scope or provide additional experiments demonstrating generalizability across cell types, CRE lengths, and alternative base predictors.</li>
+<li><strong>Minor Comments</strong> </li>
+<li><strong>Concern ID</strong> R1-m1</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Clarity</li>
+<li><strong>Affected element</strong> Abstract Background/Objectives</li>
+<li><strong>Evidence pointer</strong> Abstract first paragraph; location not provided</li>
+<li><strong>Issue</strong> The phrase "yielding an auditable CRE variant library for reporter-screening prioritization" is vague. It is unclear what "auditable" means operationally in this context.</li>
+<li><strong>Required correction</strong> Define "auditable" in terms of specific properties, such as traceability of each edit to a model prediction, or availability of a complete decision log.</li>
+<li><strong>Concern ID</strong> R1-m2</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Reporting</li>
+<li><strong>Affected element</strong> Abstract Results</li>
+<li><strong>Evidence pointer</strong> Abstract Results section; location not provided</li>
+<li><strong>Issue</strong> The reduction from 3240 designs to 74 Tier A candidates is reported without context on how Tier A is defined or what fraction of the original design space this represents.</li>
+<li><strong>Required correction</strong> Specify the Tier A criteria and report the reduction as a proportion of the total design space, not just an absolute count.</li>
+<li><strong>Concern ID</strong> R1-m3</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Terminology</li>
+<li><strong>Affected element</strong> Abstract Methods</li>
+<li><strong>Evidence pointer</strong> Abstract Methods section; location not provided</li>
+<li><strong>Issue</strong> The term "cross-model specificity-margin gain" is used without a formal definition. The reader cannot interpret the reported values without knowing how this metric is computed.</li>
+<li><strong>Required correction</strong> Define the metric explicitly, including the formula and the models involved in the cross-model comparison.</li>
+<li><strong>Concern ID</strong> R1-m4</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Completeness</li>
+<li><strong>Affected element</strong> Abstract Results</li>
+<li><strong>Evidence pointer</strong> Abstract Results section; location not provided</li>
+<li><strong>Issue</strong> The abstract reports a comparison to "compute-matched primary-model beam" but does not describe what this baseline is or how compute-matching was achieved.</li>
+<li><strong>Required correction</strong> Describe the baseline and the compute-matching procedure, or remove the comparison if it cannot be adequately described in the abstract.</li>
+<li><strong>Technical failings that need to be addressed before the case is established</strong> R1-M1 (statistical methodology for the primary comparison), R1-M2 (undefined prespecified checks and benchmark composition), R1-M3 (insufficient methodological detail for reproducibility)</li>
+<li><strong>Assessment against Nature-style criteria</strong> </li>
+<li>Originality: The idea of using uncertainty-aware minimal editing with a separate reviewer ensemble is a reasonable contribution, but the abstract does not demonstrate that this is conceptually distinct from existing model-guided design approaches. The originality claim is plausible but not fully established.</li>
+<li>Scientific importance: The problem of converting predictive models into experimentally tractable variant panels is important for regulatory genomics. However, the abstract does not show that the approach solves a problem that other methods cannot, or that it enables experiments that were previously infeasible.</li>
+<li>Interdisciplinary readership: The work sits at the intersection of computational biology and experimental genomics. The abstract is written in a way that is accessible to both communities, but the lack of methodological detail limits its usefulness to either.</li>
+<li>Technical soundness: The technical soundness cannot be assessed from the abstract alone. The statistical comparisons and the prespecified checks are described without sufficient detail to evaluate their validity.</li>
+<li>Readability for nonspecialists: The abstract is generally readable, but terms such as "cross-model specificity-margin gain" and "validation-calibrated uncertainty" are used without definition, which would hinder a nonspecialist reader.</li>
+<li><strong>Recommendation posture</strong> Currently not established from the provided evidence. The approach is potentially interesting, but the abstract does not provide enough methodological or statistical detail to support the claims. A full manuscript with complete methods, statistical analysis, and benchmark descriptions would be needed to evaluate whether the case is made.</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>The claim that SafeEdit-CRE "reduced 3240 designs to 74 Tier A computational candidates" is reported without defining Tier A criteria or the selection process, making it unverifiable from the abstract.</li>
+<li>The claim that the framework is "reproducible and auditable" is not supported by the abstract, as no implementation details, code availability, or audit trail description is provided.</li>
+<li>The claim of "lower ensemble uncertainty (0.314 vs. 0.335)" is reported without context on the uncertainty scale or its calibration, making the practical significance unclear.</li>
+<li>The generalizability claim in the Conclusions extends beyond the evaluated scope (three cell types, 200 nt CREs, Malinois as base predictor) and is therefore unsupported.</li>
+<li>The prespecified nature of the nine checks in the locked benchmark is asserted but not evidenced; without a description of the checks or a demonstration of prespecification, this claim cannot be evaluated.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

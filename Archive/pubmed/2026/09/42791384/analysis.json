@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42791384",
+  "title": "Machine learning and statistical methods for molecular quantitative trait loci.",
+  "authors": "Engelhardt, Barbara E; Weinstock, Joshua S; Nyquist, Sarah K; Battle, Alexis",
+  "journal": "Nature reviews. Genetics",
+  "published_date": "2026-09-26",
+  "window": {
+    "start": "2026-09-20",
+    "end": "2026-09-26"
+  },
+  "score": 4,
+  "one_liner_zh": "该文综述用于分子数量性状位点（molQTL）定位的机器学习与统计方法，涉及染色质可及性等分子表型，但核心是遗传变异-表型关联而非染色质三维空间架构建模，与课题关联有限。",
+  "abstract": "An important goal of biology is to understand how genetic variation translates into molecular and then broader phenotypic variation. Quantitative trait locus (QTL) mapping studies are designed to statistically test the relationship between genetic and phenotypic variation, with molecular QTLs (molQTLs) capturing genetic effects on molecular traits, such as gene expression or chromatin accessibility, as the variable phenotypes of interest. Technological advances have provided molQTL mapping methods with increased molecular phenotypes to test, as well as larger cohorts, the latter of which provides greater statistical power to associate genetic variants with these phenotypes. With these advances, statistical models - and, increasingly, machine learning methods - are being developed to improve standard molQTL mapping approaches, downstream analyses and other aspects of molQTL studies to gain additional insights into the mechanisms connecting genetic and phenotypic variation, especially in a gene regulatory context.",
+  "abstract_zh": "生物学的一个重要目标是理解遗传变异如何转化为分子变异，进而转化为更广泛的表型变异。数量性状位点（QTL）定位研究旨在统计检验遗传变异与表型变异之间的关系，其中分子QTL（molQTL）捕捉遗传效应对分子性状（如基因表达或染色质可及性）的影响，将这些作为关注的变量表型。技术进步为molQTL定位方法提供了更多可检验的分子表型，以及更大的队列，后者提供了更强的统计功效，以将遗传变异与这些表型关联起来。随着这些进展，统计模型——以及日益增多的机器学习方法——正在被开发，以改进标准的molQTL定位方法、下游分析及molQTL研究的其他方面，从而更深入地理解连接遗传变异与表型变异的机制，尤其是在基因调控背景下。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42791384/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42791384/",
+  "paper_page_path": "papers/pubmed/42791384/index.html"
+}

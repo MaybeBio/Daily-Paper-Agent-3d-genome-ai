@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42791369",
+  "title": "Euchromatin forms condensed domains with short active regions on the surface.",
+  "authors": "Paggi, Joseph M; Long, Lawrence Y; Zhang, Bin",
+  "journal": "Nature genetics",
+  "published_date": "2026-09-26",
+  "window": {
+    "start": "2026-09-20",
+    "end": "2026-09-26"
+  },
+  "score": 9,
+  "one_liner_zh": "该文开发了基于micro-C接触图的模拟框架，在核小体分辨率下推断常染色质构象系综，揭示常染色质形成致密结构域且活性调控区突出于表面，直接涉及染色质三维组织与增强子-启动子空间互作的建模，与本课题高度契合。",
+  "abstract": "The three-dimensional organization of enhancers and promoters at nucleosome resolution remains poorly resolved, limiting our understanding of the structural basis of transcriptional regulation. Here, we developed a simulation framework that leverages region-capture micro-C contact maps to infer conformational ensembles of megabase-scale regions at nucleosome resolution. A key component of this framework is a micro-C balancing strategy that identifies variation in contact density. The simulations reproduce pairwise distance distributions measured by chromatin tracing and contain packing domains and nucleosome clutches, as observed in imaging studies. The inferred structures reveal a striking departure from the classical view of euchromatin as uniformly open. Instead, euchromatin generally forms condensed domains with comparable densities but smaller sizes than heterochromatin domains. Kilobase-scale regions at promoters and enhancers often protrude from these condensed domains and become highly accessible. This arrangement effectively compartmentalizes regulatory elements from the surrounding chromatin, facilitating protein binding and enhancer-promoter communication.",
+  "abstract_zh": "增强子和启动子在核小体分辨率下的三维组织仍未被充分解析，限制了我们对转录调控结构基础的理解。在此，我们开发了一个模拟框架，利用区域捕获微C接触图谱来推断兆碱基规模区域在核小体分辨率下的构象集合。该框架的一个关键组成部分是微C平衡策略，用于识别接触密度的变异。模拟重现了通过染色质追踪测量的成对距离分布，并包含成像研究中观察到的堆积域和核小体簇。推断的结构揭示了真染色质经典视图（即均匀开放）的显著偏离。相反，真染色质通常形成致密域，其密度与异染色质域相当，但尺寸更小。启动子和增强子处的千碱基规模区域常从这些致密域中突出，变得高度可及。这种排列有效地将调控元件与周围染色质分隔开来，促进蛋白质结合及增强子-启动子通信。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42791369/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42791369/",
+  "paper_page_path": "papers/pubmed/42791369/index.html"
+}

@@ -1,0 +1,269 @@
+{
+  "identity": {
+    "pmid": "42792548",
+    "doi": "10.3390/biology15181601",
+    "title": "Deep Learning-Assisted Prioritization of Candidate Drug Targets in Tumors Using Spatial Multi-Omics."
+  },
+  "content": {
+    "abstract": "BACKGROUND/OBJECTIVES: Tumor heterogeneity is reflected in cell composition, molecular states, spatial distribution, and microenvironment interactions. Spatial transcriptomics can map in situ expression and cell states but cannot fully explain upstream regulation, while spatial epigenomics provides complementary evidence such as chromatin accessibility, histone modifications, and deoxyribonucleic acid (DNA) methylation. This review summarizes the applications of spatial multi-omics and deep learning in prioritizing candidate drug targets in tumors. METHODS: We reviewed spatial transcriptomics, spatial epigenomics, and combined sequencing technologies, with a focus on how deep learning supports the analysis and integration of spatial multi-omics data for candidate-target prioritization. RESULTS: Deep learning facilitates the detection of abnormal regions, deciphering of cell origins, integration across samples, inference of cell-cell communication, and combination of imaging with omics data. Spatial multi-omics studies provide therapeutic insights into malignant cells, immunosuppression, stromal and vascular remodeling, and invasion and metastasis niches. Based on these applications, candidate targets can be evaluated in a layered manner according to spatial specificity, cell origin, regulatory consistency, reproducibility across patients, functional dependency, disease relevance, and druggability. CONCLUSIONS: Spatial multi-omics and deep learning can enhance the systematic and interpretable selection of candidate targets. However, computational associations cannot replace functional validation. Candidate targets still require verification through gene perturbation, drug sensitivity assays, organoids, animal models, and clinical cohorts to confirm their therapeutic potential.",
+    "keywords": [
+      "candidate-target prioritization",
+      "deep learning",
+      "spatial epigenomics",
+      "spatial transcriptomics",
+      "therapy-related spatial neighborhoods",
+      "tumor spatial microenvironment"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Liu, Yuxian",
+        "Zhou, Xueyan",
+        "Zhang, Junyuan",
+        "Liu, Guochao",
+        "Cao, Yanni"
+      ],
+      "short_names": [
+        "Liu Y",
+        "Zhou X",
+        "Zhang J",
+        "Liu G",
+        "Cao Y"
+      ],
+      "auids": [
+        "ORCID: 0000-0003-1458-9648",
+        "ORCID: 0000-0003-1508-4131"
+      ],
+      "affiliations": [
+        "School of Artificial Intelligence, Anhui University of Science & Technology, Huainan 232001, China.",
+        "State Key Laboratory of Digital Intelligent Technology for Unmanned Coal Mining, Anhui University of Science & Technology, Huainan 232001, China.",
+        "School of Artificial Intelligence, Anhui University of Science & Technology, Huainan 232001, China.",
+        "School of Artificial Intelligence, Anhui University of Science & Technology, Huainan 232001, China.",
+        "School of Artificial Intelligence, Anhui University of Science & Technology, Huainan 232001, China.",
+        "School of Artificial Intelligence, Anhui University of Science & Technology, Huainan 232001, China.",
+        "State Key Laboratory of Digital Intelligent Technology for Unmanned Coal Mining, Anhui University of Science & Technology, Huainan 232001, China."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Liu, Yuxian",
+        "short_name": "Liu Y",
+        "identifiers": [
+          "0000-0003-1458-9648"
+        ],
+        "affiliations": [
+          "School of Artificial Intelligence, Anhui University of Science & Technology, Huainan 232001, China.",
+          "State Key Laboratory of Digital Intelligent Technology for Unmanned Coal Mining, Anhui University of Science & Technology, Huainan 232001, China."
+        ]
+      },
+      {
+        "full_name": "Zhou, Xueyan",
+        "short_name": "Zhou X",
+        "identifiers": [],
+        "affiliations": [
+          "School of Artificial Intelligence, Anhui University of Science & Technology, Huainan 232001, China."
+        ]
+      },
+      {
+        "full_name": "Zhang, Junyuan",
+        "short_name": "Zhang J",
+        "identifiers": [],
+        "affiliations": [
+          "School of Artificial Intelligence, Anhui University of Science & Technology, Huainan 232001, China."
+        ]
+      },
+      {
+        "full_name": "Liu, Guochao",
+        "short_name": "Liu G",
+        "identifiers": [],
+        "affiliations": [
+          "School of Artificial Intelligence, Anhui University of Science & Technology, Huainan 232001, China."
+        ]
+      },
+      {
+        "full_name": "Cao, Yanni",
+        "short_name": "Cao Y",
+        "identifiers": [
+          "0000-0003-1508-4131"
+        ],
+        "affiliations": [
+          "School of Artificial Intelligence, Anhui University of Science & Technology, Huainan 232001, China.",
+          "State Key Laboratory of Digital Intelligent Technology for Unmanned Coal Mining, Anhui University of Science & Technology, Huainan 232001, China."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Biology"
+    ],
+    "journal_abbrev": [
+      "Biology (Basel)"
+    ],
+    "pub_date": "2026 Sep 11",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/26 05:35",
+    "fetched_at": "2026-09-27 09:45:59"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42792548",
+      "41699549",
+      "41246350",
+      "41716413",
+      "39977580",
+      "42653123",
+      "41099090",
+      "41736104",
+      "42486346",
+      "42740387",
+      "42769440",
+      "42652104",
+      "42475469",
+      "41939867",
+      "41684520",
+      "41504052",
+      "42608748",
+      "41656832",
+      "41942920",
+      "40362187",
+      "42366266",
+      "41423668",
+      "42594562",
+      "42205755",
+      "42631563",
+      "42435052",
+      "37564726",
+      "42140356",
+      "42675339",
+      "40317014",
+      "42459691",
+      "41715092",
+      "42136650",
+      "41588477",
+      "41366455",
+      "42379504",
+      "41794160",
+      "41371106",
+      "42164390",
+      "42457640",
+      "42150704",
+      "36147664",
+      "42558886",
+      "40616092",
+      "41508037",
+      "42495647",
+      "41650976",
+      "41902503",
+      "42074514",
+      "41943684",
+      "41475690",
+      "42458112",
+      "42794830",
+      "40474806",
+      "42278287",
+      "41485251",
+      "42592136",
+      "42558367",
+      "41609946",
+      "41611834",
+      "42450609",
+      "41643671",
+      "36868394",
+      "40887856",
+      "41208840",
+      "39703515",
+      "42645756",
+      "41973972",
+      "39800876",
+      "41520911",
+      "42136962",
+      "42589301",
+      "41342434",
+      "41350704",
+      "39386736",
+      "41823837",
+      "40771479",
+      "42209957",
+      "42443980",
+      "42271438",
+      "42134646",
+      "42718887",
+      "42374231",
+      "41668742",
+      "42367786",
+      "41785324",
+      "42074532",
+      "42162504",
+      "42647202",
+      "41862916",
+      "40826382",
+      "42317389",
+      "41827905",
+      "42630541",
+      "42603286",
+      "42123604",
+      "42588699",
+      "41922965",
+      "42792911",
+      "41422660"
+    ],
+    "review": [
+      "42792548",
+      "39977580",
+      "42653123",
+      "42652104",
+      "41942920",
+      "40362187",
+      "42366266",
+      "42594562",
+      "37564726",
+      "42675339",
+      "42136650",
+      "42379504",
+      "41794160",
+      "36147664",
+      "41902503",
+      "41943684",
+      "41475690",
+      "42794830",
+      "42592136",
+      "42450609",
+      "36868394",
+      "41973972",
+      "39800876",
+      "41520911",
+      "41823837",
+      "40771479",
+      "42209957",
+      "42443980",
+      "42271438",
+      "41668742",
+      "42367786",
+      "42074532",
+      "42162504",
+      "42647202",
+      "42317389",
+      "41827905",
+      "42123604"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [],
+    "text_mined": []
+  }
+}

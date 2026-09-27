@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42789225",
+  "title": "A Brownian dynamics study of liquid-liquid phase separation in multiscale chromatin networks.",
+  "authors": "Beaules, Lea; Mine-Hattab, Judith; Illien, Pierre; Dahirel, Vincent",
+  "journal": "The European physical journal. E, Soft matter",
+  "published_date": "2026-09-25",
+  "window": {
+    "start": "2026-09-20",
+    "end": "2026-09-26"
+  },
+  "score": 8,
+  "one_liner_zh": "该文用布朗动力学模拟研究染色质纤维多尺度网络如何调控液-液相分离凝聚体的形态与空间组织，直接涉及染色质空间架构与凝聚体形成的计算建模，对三维基因组架构与核内调控的机理研究有重要启发。",
+  "abstract": "In living cells, proteins involved in specialized biochemical functions are often spatially organized within biomolecular condensates. Increasing evidence suggests that some of these condensates, including DNA repair condensates, emerge through liquid-liquid phase separation (LLPS). In the nucleus, however, condensates form within a highly heterogeneous environment composed of chromatin fibers, RNA, and additional protein scaffolds such as PAR chains, all of which may interact with phase-separating proteins. Moreover, condensate formation is frequently associated with specific chromatin conformations; for instance, loop extrusion has been proposed as a mechanism promoting DNA repair condensates. Here, we investigate how the surrounding fibrous environment controls the morphology and spatial organization of phase-separated condensates. Using Brownian dynamics simulations of minimal models combining Lennard-Jones particles with fixed fibrous substrates, we examine the respective roles of local fiber geometry and large-scale network organization, reflecting the multiscale architecture of chromatin. We show that protein-fiber interactions strongly influence droplet positioning relative to the substrate, in a manner analogous to wetting transitions in soft condensed matter systems. Both local geometric constraints and global network organization markedly affect droplet size, morphology, and multiplicity. In addition, large-scale asymmetries in fiber organization can induce robust spatial localization of the dense phase. Our results thus highlight how multiscale structural heterogeneity of the nuclear environment can regulate the emergence and organization of biomolecular condensates.",
+  "abstract_zh": "在活细胞中，参与特定生化功能的蛋白质通常会在生物分子凝聚体（biomolecular condensates）内进行空间组织。越来越多的证据表明，其中一些凝聚体，包括DNA修复凝聚体，是通过液-液相分离（liquid-liquid phase separation, LLPS）形成的。然而，在细胞核中，凝聚体是在由染色质纤维、RNA以及诸如PAR链等额外蛋白质支架组成的高度异质环境中形成的，所有这些都可能与相分离蛋白相互作用。此外，凝聚体的形成通常与特定的染色质构象相关；例如，环挤压（loop extrusion）已被提出作为促进DNA修复凝聚体形成的机制。在此，我们研究了周围纤维环境如何控制相分离凝聚体的形态和空间组织。通过结合Lennard-Jones粒子与固定纤维底物的最小模型的布朗动力学模拟，我们考察了局部纤维几何结构和大规模网络组织的各自作用，这反映了染色质的多尺度架构。我们表明，蛋白质-纤维相互作用强烈影响液滴相对于底物的定位，其方式类似于软凝聚态物质系统中的润湿转变。局部几何约束和全局网络组织均显著影响液滴的大小、形态和多重性。此外，纤维组织中的大规模不对称性可诱导致密相的稳健空间定位。因此，我们的结果突显了核环境的多尺度结构异质性如何调节生物分子凝聚体的形成和组织。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42789225/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42789225/",
+  "paper_page_path": "papers/pubmed/42789225/index.html"
+}

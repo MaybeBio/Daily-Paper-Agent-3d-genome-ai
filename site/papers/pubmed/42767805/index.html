@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deep genomic models of allele-specific measurements. · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-mid">6</span>
+    <div>
+      <h1>Deep genomic models of allele-specific measurements.</h1>
+      <div class="meta">Tu, Xinming; Sasse, Alexander; Chowdhary, Kaitavjeet; Spiro, Anna; Yang, Liang; Chikina, Maria; Benoist, Christophe; Mostafavi, Sara</div>
+      <div class="meta muted">
+        
+        <span class="journal">Genome research</span>
+        · 2026-09-21
+         · 仅摘要
+         · <a href="https://pubmed.ncbi.nlm.nih.gov/42767805/">原文</a>
+      </div>
+      <p class="one-liner">该文提出DeepAllele深度学习模型，利用等位基因特异性测序数据预测顺式调控差异，虽涉及染色质水平调控但未直接建模三维基因组空间架构，方法可迁移至染色质调控特征建模。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">Allele-specific quantification of sequencing data allows for a systematic investigation of how DNA sequence variations influence cis gene regulation. Current methods for analyzing allele-specific measurements for causal analysis rely on statistical associations between genetic variation across individuals and allelic imbalance. Instead, we propose DeepAllele, a novel deep learning sequence-to-function model using paired allele-specific input, designed to learn sequence features that predict subtle changes in gene regulation between alleles. Our approach is suited for datasets with unambiguous phasing, such as F1 hybrids and other controlled genetic crosses, or long-read sequencing technologies used in Fiber-seq, in which reads can be assigned to complete allele sequences. We apply our framework to allele-specific measurements in immune cells from F1 hybrid mice, and show that the model&#39;s additionally learned cis-regulatory grammar aligns with known biological mechanisms across a significantly larger number of genomic regions compared to baseline models. In summary, our work presents a computational framework to leverage genetic variation to uncover functionally-relevant regulatory motifs, enhancing discovery in genomics.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">对测序数据进行等位基因特异性定量分析，能够系统探究DNA序列变异如何影响顺式基因调控。当前用于因果分析的等位基因特异性测量方法，依赖于个体间遗传变异与等位基因不平衡之间的统计关联。相反，我们提出DeepAllele，一种新颖的深度学习序列到功能模型，采用配对等位基因特异性输入，旨在学习预测等位基因间基因调控细微变化的序列特征。我们的方法适用于具有明确单倍型分型的数据集，如F1杂交及其他受控遗传杂交，或Fiber-seq中使用的长读长测序技术，其中读段可分配给完整的等位基因序列。我们将此框架应用于F1杂交小鼠免疫细胞的等位基因特异性测量，并展示该模型额外学习的顺式调控语法，在显著更多的基因组区域上与已知生物学机制对齐，优于基线模型。总之，我们的工作提供了一个计算框架，利用遗传变异揭示功能相关的调控基序，增强基因组学中的发现能力。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：Deep genomic models of allele-specific measurements</li>
+<li><strong>作者与单位</strong>：Tu, Xinming; Sasse, Alexander; Chowdhary, Kaitavjeet; Spiro, Anna; Yang, Liang; Chikina, Maria; Benoist, Christophe; Mostafavi, Sara（单位未提供，Mostafavi 与 Benoist 为资深通讯作者，分属计算与免疫学方向）</li>
+<li><strong>期刊/预印本平台</strong>：Genome Research</li>
+<li><strong>年份</strong>：2026-09-21（在线发表）</li>
+<li><strong>论文类型</strong>：方法学/计算生物学研究</li>
+<li><strong>领域</strong>：基因组学、调控基因组学、深度学习</li>
+<li><strong>关键词</strong>：allele-specific expression, cis-regulation, deep learning, sequence-to-function, F1 hybrid</li>
+<li><strong>DOI/arXiv 号</strong>：10.1101/gr.282189.126</li>
+<li><strong>代码</strong>：未提供</li>
+<li><strong>数据</strong>：F1 杂交小鼠免疫细胞的 allele-specific 数据（具体数据集标识未提供）</li>
+<li><strong>阅读日期</strong>：未提供</li>
+<li><strong>该文在「三维基因组/染色质组织 × AI 方法/物理模拟」方向中的位置</strong>：本文不直接研究三维基因组或染色质高级结构，而是聚焦于 <strong>cis-regulatory sequence grammar</strong> 的深度学习建模。其核心方法——<strong>paired allele-specific input 的 sequence-to-function 模型</strong>——可迁移至三维基因组领域，用于建模等位基因特异的染色质构象（如 allele-specific Hi-C）或 CTCF/cohesin 结合位点的序列决定因素。该文属于「序列 → 调控功能」的 AI 映射方法，与三维基因组预测模型（如 DeepC、Orca）在方法论上同源，但输入设计（等位基因配对）具有独特创新性。</li>
+</ul>
+<hr />
+<h2>02 一句话总结</h2>
+<p>本文提出 DeepAllele，一种使用配对等位基因序列输入的深度学习 sequence-to-function 模型，通过直接学习同一基因座上两个等位基因间的序列差异如何导致调控输出差异，在 F1 杂交小鼠免疫细胞数据上识别出比基线模型显著更多的、与已知生物学机制一致的 cis-regulatory grammar。</p>
+<hr />
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：如何利用 allele-specific 测序数据（如等位基因特异的表达或染色质可及性）来系统性地发现 DNA 序列变异如何影响 cis 基因调控，并学习可泛化的序列特征（regulatory grammar）？</li>
+<li><strong>为什么重要</strong>：Allele-specific 测量提供了同一细胞核内两个等位基因在相同反式环境下的天然对照，是研究 cis-regulatory 变异的黄金标准。若能从中学习序列决定因素，可大幅提升对非编码变异功能影响的预测能力。</li>
+<li><strong>现有方法为何不足</strong>：现有方法主要依赖<strong>统计关联</strong>——将个体间的遗传变异与等位基因不平衡（allelic imbalance）做关联分析。这类方法需要大样本量、难以捕捉非线性序列特征，且无法直接学习可迁移的序列语法。</li>
+<li><strong>精确研究问题</strong>：Can a deep learning model with paired allele-specific sequence input learn cis-regulatory sequence features that predict subtle allelic differences in gene regulation, and does the learned grammar align with known biological mechanisms?</li>
+</ul>
+<hr />
+<h2>04 背景与发展脉络</h2>
+<blockquote>
+<p>注：以下脉络基于本文框架，未经外部系统核验，标注为「仅本文框架」。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>代表性方法</th>
+<th>优点</th>
+<th>局限</th>
+<th>本文位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. 统计关联时代</td>
+<td>QTL mapping、allelic imbalance 关联检验</td>
+<td>无需先验序列特征；直接利用自然变异</td>
+<td>需大样本；线性假设；无法外推到新序列</td>
+<td>本文的出发点：指出其依赖统计关联的局限</td>
+</tr>
+<tr>
+<td>2. 单序列深度学习</td>
+<td>Basenji、Enformer、DeepSEA 等 sequence-to-function 模型</td>
+<td>学习复杂序列语法；可泛化到新序列</td>
+<td>输入为参考基因组单序列，无法直接建模等位基因间差异；对 subtle allelic effects 不敏感</td>
+<td>本文的基线：DeepAllele 与之对比</td>
+</tr>
+<tr>
+<td>3. 配对等位基因输入</td>
+<td><strong>DeepAllele（本文）</strong></td>
+<td>直接学习两个等位基因间的差异；天然控制反式环境；适合 F1 杂交等明确分相数据</td>
+<td>需要明确分相（phasing）的数据；目前仅验证于小鼠免疫细胞</td>
+<td>本文主张的位置：填补「统计关联」与「单序列深度学习」之间的空白</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>统计关联方法无法学习序列特征</td>
+<td>只能报告「某变异与不平衡相关」，无法解释为何该变异有功能</td>
+<td>关联分析本质是线性统计检验，不建模序列上下文</td>
+<td>摘要：「Current methods ... rely on statistical associations between genetic variation across individuals and allelic imbalance」</td>
+</tr>
+<tr>
+<td>单序列深度学习对等位基因间细微差异不敏感</td>
+<td>参考序列模型预测的是平均效应，难以捕捉两个等位基因间的微小调控差异</td>
+<td>模型输入为单一序列，缺乏等位基因配对的对照信息</td>
+<td>摘要：「designed to learn sequence features that predict subtle changes in gene regulation between alleles」</td>
+</tr>
+<tr>
+<td>数据分相要求高</td>
+<td>需要 F1 杂交或长读长测序（如 Fiber-seq）才能将读段分配到完整等位基因序列</td>
+<td>等位基因特异性分析的前提是明确知道每个读段来自哪个等位基因</td>
+<td>摘要：「suited for datasets with unambiguous phasing, such as F1 hybrids ... or long-read sequencing technologies used in Fiber-seq」</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>06 核心思想</h2>
+<ol>
+<li>
+<p><strong>表面方法</strong>：构建一个深度学习 sequence-to-function 模型，输入为<strong>配对的两个等位基因序列</strong>（同一基因座的父本与母本序列），输出为等位基因特异的调控活性预测（如染色质可及性、表达水平），并通过比较两个输出的差异来学习等位基因间调控差异的序列决定因素。</p>
+</li>
+<li>
+<p><strong>核心洞察</strong>：将「等位基因间差异」作为监督信号，而不是将「绝对活性」作为监督信号。通过配对输入设计，模型被迫关注两个序列之间的<strong>差异特征</strong>（如单个 SNP 或 indel 导致的转录因子结合位点变化），而非学习序列的整体统计规律。这天然控制了反式环境（同一细胞核内），使模型学到的 cis-regulatory grammar 更具因果解释力。</p>
+</li>
+<li>
+<p><strong>可能的普适教训</strong> [Analysis]：在序列-功能建模中，<strong>差分学习（differential learning）</strong> 比绝对预测更能揭示因果序列特征。这一思路可迁移到三维基因组领域：例如，用配对等位基因的 Hi-C 数据训练模型，直接学习「序列变异如何导致染色质构象差异」，而非仅预测绝对接触频率。</p>
+</li>
+</ol>
+<hr />
+<h2>07 方法总览</h2>
+<ul>
+<li><strong>输入</strong>：配对的两个等位基因序列（同一基因座，来自 F1 杂交小鼠的父本与母本单倍型），长度与格式未在摘要中详述。</li>
+<li><strong>输出</strong>：等位基因特异的调控活性预测（具体任务类型——如 ATAC-seq 信号、表达水平——未在摘要中明确，推测为多任务输出）。</li>
+<li><strong>核心模块</strong>：
+  1. 序列编码器（深度学习骨干网络，具体架构未提供，推测为 CNN 或 Transformer 类）
+  2. 配对比较模块（比较两个等位基因的输出，计算差异）
+  3. 训练目标：最小化预测的等位基因差异与实测差异之间的损失</li>
+<li><strong>训练</strong>：使用 F1 杂交小鼠免疫细胞的 allele-specific 测量数据（具体细胞类型与实验类型未提供）</li>
+<li><strong>工具</strong>：未提供</li>
+<li><strong>反馈回路</strong>：模型通过等位基因差异的监督信号反向传播，学习序列特征与调控差异的映射</li>
+<li><strong>假设</strong>：
+  1. 等位基因间的调控差异主要由 cis 序列差异决定（反式环境相同）
+  2. 深度学习模型能够从序列中提取与等位基因差异相关的特征</li>
+<li><strong>文字流程</strong>：输入两个等位基因序列 → 分别通过共享权重的编码器提取特征 → 比较两个特征/输出 → 计算等位基因差异预测 → 与实测差异计算损失 → 反向传播更新权重 → 学到的序列特征即为 cis-regulatory grammar</li>
+</ul>
+<hr />
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>配对序列输入</td>
+<td>同时输入两个等位基因序列</td>
+<td>使模型能直接比较等位基因间差异，而非仅预测绝对活性</td>
+<td>输入：两个同源序列；输出：两个特征向量</td>
+<td>摘要：「paired allele-specific input」</td>
+<td>预期影响：若改为单序列输入，模型退化为普通 sequence-to-function 模型，无法捕捉 subtle allelic effects（[Analysis] 预期效应，非实测）</td>
+</tr>
+<tr>
+<td>共享权重编码器</td>
+<td>从序列中提取调控相关特征</td>
+<td>保证两个等位基因使用相同的特征提取器，差异仅来自序列本身</td>
+<td>输入：等位基因序列；输出：隐层特征</td>
+<td>未在摘要中明确，但为深度学习标准设计（[Analysis] 推断）</td>
+<td>预期影响：若使用非共享权重，模型可能学习到等位基因身份相关的伪特征（[Analysis] 预期效应）</td>
+</tr>
+<tr>
+<td>差异比较与损失</td>
+<td>计算两个等位基因预测输出的差异，与实测差异对齐</td>
+<td>将监督信号从「绝对活性」转为「等位基因差异」，增强对细微变异的敏感性</td>
+<td>输入：两个预测值；输出：差异损失</td>
+<td>摘要：「learn sequence features that predict subtle changes in gene regulation between alleles」</td>
+<td>预期影响：若改为绝对活性损失，模型可能忽略等位基因间的小差异（[Analysis] 预期效应）</td>
+</tr>
+<tr>
+<td>下游 grammar 分析</td>
+<td>从训练好的模型中提取 cis-regulatory grammar</td>
+<td>将模型学到的特征与已知生物学机制对齐，验证模型的可解释性</td>
+<td>输入：模型权重/注意力；输出：motif/regulatory grammar</td>
+<td>摘要：「model's additionally learned cis-regulatory grammar aligns with known biological mechanisms」</td>
+<td>未提供消融实验</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>09 关键公式符号</h2>
+<p>不适用。摘要中未提供任何数学公式或符号定义。</p>
+<hr />
+<h2>10 实验设计与证据链</h2>
+<ul>
+<li><strong>数据集</strong>：F1 杂交小鼠免疫细胞的 allele-specific 测量数据（具体细胞类型、实验类型（RNA-seq/ATAC-seq 等）、样本量未提供）</li>
+<li><strong>规模</strong>：未提供</li>
+<li><strong>指标</strong>：未提供（推测为等位基因差异预测的准确率或相关性）</li>
+<li><strong>基线模型</strong>：摘要提及「baseline models」，但未具体说明是哪些模型（推测为单序列 sequence-to-function 模型或统计关联方法）</li>
+<li><strong>预算/骨干/仪器</strong>：未提供</li>
+<li><strong>Oracle 输入</strong>：等位基因的真实分相（phasing）信息，来自 F1 杂交设计或 Fiber-seq 长读长数据</li>
+<li><strong>评测协议</strong>：未提供</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的 claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DeepAllele vs. baseline 模型的 grammar 对齐</td>
+<td>DeepAllele 学到的 cis-regulatory grammar 与已知生物学机制更一致</td>
+<td>对比 DeepAllele 与 baseline 模型在相同数据上的 grammar 提取结果</td>
+<td>DeepAllele 在显著更多的基因组区域上与已知机制对齐</td>
+<td>DeepAllele 能更有效地学习等位基因特异的调控序列特征</td>
+<td>未证明 DeepAllele 在预测准确性上优于 baseline（摘要未报告预测性能指标）</td>
+<td>摘要：「show that the model's additionally learned cis-regulatory grammar aligns with known biological mechanisms across a significantly larger number of genomic regions compared to baseline models」</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：本文的任务是<strong>从等位基因特异的调控测量中学习 cis-regulatory sequence grammar</strong>，而非预测绝对调控活性。结论边界为「在 F1 杂交小鼠免疫细胞数据上」。</li>
+<li><strong>Oracle/真值输入</strong>：模型依赖明确分相的等位基因序列（F1 杂交或 Fiber-seq），这是其适用前提。对于无法明确分相的数据（如普通短读长 RNA-seq），方法不适用。</li>
+<li><strong>端到端状态</strong>：模型是端到端训练的 sequence-to-function 模型，但下游 grammar 分析是独立的解释步骤。</li>
+<li><strong>算力成本</strong>：未提供。</li>
+<li><strong>历史数据依赖</strong>：训练数据来自 F1 杂交小鼠，模型学到的 grammar 可能具有物种或细胞类型特异性。</li>
+<li><strong>模型依赖</strong>：具体架构未披露，无法评估其对结果的影响。</li>
+<li><strong>最难情形</strong>：等位基因间序列差异极小（如单个 SNP）且调控效应微弱时，模型能否稳定捕捉差异尚不明确。</li>
+<li><strong>不确定性</strong>：摘要未报告预测性能的量化指标（如 AUC、相关性），无法评估模型的绝对预测能力。</li>
+<li><strong>群体/领域边界</strong>：结论仅适用于有明确分相的数据集；对人类复杂疾病中常见的不完全分相数据，适用性未知。</li>
+<li><strong>有边界的复述</strong>：DeepAllele 在 F1 杂交小鼠免疫细胞数据上，通过配对等位基因输入设计，学习到的 cis-regulatory grammar 与已知生物学机制的对齐程度显著高于 baseline 模型；该结论不涉及绝对预测性能，且仅适用于可明确分相的数据类型。</li>
+</ul>
+<hr />
+<h2>12 作者自认局限</h2>
+<p>在提供的材料（摘要）中未发现作者明确承认的局限。</p>
+<p><strong>作者提及的相关约束</strong>（非正式局限）：
+- 方法「suited for datasets with unambiguous phasing」——即对分相要求高，这是作者明确指出的适用条件约束，但未作为「局限」表述。</p>
+<hr />
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>摘要仅报告 grammar 对齐结果，未报告预测性能指标</td>
+<td>模型可能在等位基因差异预测任务上表现平平，grammar 对齐的显著性可能来自分析流程而非模型本身</td>
+<td>若预测性能不佳，则 grammar 对齐的生物学意义存疑</td>
+<td>要求作者提供等位基因差异预测的量化指标（如 Pearson r、AUC），并与 baseline 对比</td>
+<td>摘要：「aligns with known biological mechanisms」未提及预测准确性</td>
+</tr>
+<tr>
+<td>「significantly larger number of genomic regions」的统计检验方式未披露</td>
+<td>可能使用了宽松的显著性阈值或多次检验未校正</td>
+<td>影响结论的稳健性</td>
+<td>核查多重检验校正方法及效应量</td>
+<td>摘要：「significantly larger number」无细节</td>
+</tr>
+<tr>
+<td>未披露模型架构与训练细节</td>
+<td>无法评估方法的可复现性与泛化能力</td>
+<td>深度学习方法的架构选择对结果影响巨大</td>
+<td>要求补充架构图、超参数、训练集/验证集划分</td>
+<td>摘要未提供方法细节</td>
+</tr>
+<tr>
+<td>仅验证于小鼠免疫细胞</td>
+<td>人类基因组更复杂（重复元件、结构变异），方法迁移性未知</td>
+<td>若目标是人类调控变异解读，需跨物种验证</td>
+<td>在人类 F1 样数据（如亲本来源明确的细胞系）上重复实验</td>
+<td>摘要：「F1 hybrid mice」</td>
+</tr>
+<tr>
+<td>配对输入设计可能引入位置偏差</td>
+<td>两个等位基因序列的对齐方式（如是否以变异位点为中心）可能影响模型学习</td>
+<td>若对齐方式不当，模型可能学到伪特征</td>
+<td>进行对齐方式敏感性分析</td>
+<td>[Analysis] 基于序列建模常识推断</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>14 Agent 提炼的知识候选</h2>
+<p><strong>Agent 提炼的知识候选</strong>（面向三维基因组/染色质组织 × AI/物理模拟方向）：</p>
+<ol>
+<li>
+<p><strong>差分学习范式（Differential Learning Paradigm）</strong>：DeepAllele 的核心创新——用配对等位基因输入学习「差异」而非「绝对量」——可直接迁移到三维基因组领域。例如：
+   - 训练模型输入两个等位基因的序列，输出预测的 allele-specific Hi-C 接触矩阵差异，直接学习「序列变异 → 染色质构象差异」的映射。
+   - 这比当前主流方法（如 DeepC、Orca 预测绝对接触频率）更直接地服务于变异解读。</p>
+</li>
+<li>
+<p><strong>天然反式对照设计</strong>：F1 杂交设计提供了同一细胞核内两个等位基因的天然对照，消除了反式环境混杂。三维基因组领域可借鉴此设计，利用 allele-specific Hi-C 数据（已有文献支持 CTCF 结合等位基因特异影响 TAD 结构）训练更干净的因果模型。</p>
+</li>
+<li>
+<p><strong>Grammar 对齐验证策略</strong>：本文用「学到的 regulatory grammar 与已知生物学机制对齐」作为模型有效性的验证方式。三维基因组领域可类似地用「学到的 motif 是否富集于已知的 CTCF/cohesin 结合位点」或「预测的 TAD 边界是否与 ChIA-PET 数据一致」来验证模型的可解释性。</p>
+</li>
+<li>
+<p><strong>数据适用性边界意识</strong>：本文明确限定于「unambiguous phasing」数据。三维基因组领域的 allele-specific 分析同样面临分相难题（Hi-C 读段短、phasing 困难），可借鉴本文对数据前提的清晰界定，避免方法误用。</p>
+</li>
+</ol>
+<hr />
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>相似方法</strong>：DeepAllele 与 <strong>Basenji/Enformer</strong> 同属 sequence-to-function 深度学习模型，但输入设计不同（配对 vs. 单序列）。可对比：Enformer 预测绝对调控活性，DeepAllele 预测等位基因差异。三维基因组领域的 <strong>DeepC</strong>（预测 Hi-C 接触）和 <strong>Orca</strong>（预测染色质构象）也可归入此类，但均未采用配对输入。</li>
+<li><strong>组合方向</strong>：DeepAllele 的配对输入设计 + 三维基因组预测模型（如 DeepC 的架构）→ 可构建「allele-specific 3D genome predictor」，直接预测序列变异对 TAD/loop 结构的影响。</li>
+<li><strong>冲突/张力</strong>：本文强调「统计关联方法不足」，但三维基因组领域仍有大量工作依赖 QTL 类关联分析（如 Hi-C QTL）。DeepAllele 的差分学习范式可能对这类方法构成替代或补充。</li>
+<li><strong>可迁移领域</strong>：Fiber-seq 长读长技术（本文提及）在三维基因组中也有应用（如 Fiber-seq 可同时读取核小体占位与 DNA 甲基化），本文对 Fiber-seq 数据的适配思路可迁移至三维基因组 Fiber-seq 分析。</li>
+<li><strong>外部核验</strong>：F1 杂交小鼠免疫细胞 allele-specific 调控分析已有大量文献（如 Benoist 实验室相关工作），本文是该方向的深度学习延伸。三维基因组中 allele-specific Hi-C 已有报道（如 Rao et al. 2014 的 GM12878 数据），可作为迁移验证的数据基础。</li>
+</ul>
+<hr />
+<h2>16 Agent 生成的研究候选</h2>
+<p><strong>候选 1：Allele-specific 3D genome predictor（AS-3D）</strong>
+- <strong>名称</strong>：AS-3D：配对等位基因输入的染色质构象差异预测模型
+- <strong>来源局限/观察</strong>：DeepAllele 证明了配对输入在调控活性预测中的有效性，但未涉及三维基因组；现有 3D 基因组预测模型（DeepC、Orca）均为单序列输入，无法直接建模等位基因特异的构象差异。
+- <strong>核心假设</strong>：序列变异通过改变 CTCF/cohesin 结合影响 TAD 边界和 loop 结构，且这种影响可通过配对等位基因输入的深度学习模型直接学习。
+- <strong>初步方法</strong>：采用 DeepAllele 的配对输入设计，替换骨干网络为 3D 基因组预测架构（如 DeepC 的 multi-scale CNN），训练目标为预测 allele-specific Hi-C 接触矩阵差异。数据可用 GM12878 的 allele-specific Hi-C 或 F1 杂交小鼠 Hi-C。
+- <strong>验证方式</strong>：与已知 allele-specific TAD 边界/loop 变化比对；用 CRISPR 扰动验证预测的边界位移。
+- <strong>创新状态</strong>：unverified（未见类似工作发表，但需进行 prior-art search 确认）</p>
+<p><strong>候选 2：Differential grammar 分析框架用于 3D 基因组 motif 发现</strong>
+- <strong>名称</strong>：3D-DiffGrammar：从等位基因特异的构象差异中提取染色质组织 motif
+- <strong>来源局限/观察</strong>：DeepAllele 的 grammar 对齐验证策略可迁移至 3D 基因组，但现有 3D 基因组模型的可解释性分析多聚焦于绝对接触预测，未利用等位基因差异作为监督信号。
+- <strong>核心假设</strong>：等位基因特异的 TAD/loop 差异富集于特定序列 motif（如 CTCF 变体、ZNF 结合位点），且这些 motif 可通过差分学习自动发现。
+- <strong>初步方法</strong>：训练 AS-3D 模型后，用注意力权重或梯度归因提取与构象差异最相关的序列特征，与已知 3D 基因组相关 motif 数据库比对。
+- <strong>验证方式</strong>：motif 富集分析；在独立数据集上验证 motif 的预测能力。
+- <strong>创新状态</strong>：unverified</p>
+<p><strong>候选 3：跨物种 allele-specific 3D 基因组迁移学习</strong>
+- <strong>名称</strong>：Cross-species AS-3D transfer
+- <strong>来源局限/观察</strong>：DeepAllele 仅验证于小鼠；人类与小鼠的 3D 基因组组织有保守性也有差异，跨物种迁移可提升模型泛化性。
+- <strong>核心假设</strong>：等位基因特异的构象差异的序列决定因素在哺乳动物中部分保守，迁移学习可提升数据稀缺物种的预测能力。
+- <strong>初步方法</strong>：用小鼠 F1 杂交 Hi-C 数据预训练 AS-3D，再用人类 allele-specific Hi-C 数据微调。
+- <strong>验证方式</strong>：比较迁移学习与从头训练在人类数据上的表现。
+- <strong>创新状态</strong>：unverified</p>
+<p><strong>候选 4：DeepAllele 框架扩展到 Fiber-seq 3D 基因组数据</strong>
+- <strong>名称</strong>：Fiber-3D：基于 Fiber-seq 的等位基因特异染色质状态与构象联合建模
+- <strong>来源局限/观察</strong>：本文明确提到 Fiber-seq 作为适配数据源；Fiber-seq 可同时提供核小体占位、甲基化和（潜在）构象信息，但目前缺乏联合建模框架。
+- <strong>核心假设</strong>：Fiber-seq 的等位基因特异信号可同时预测染色质状态与构象差异，且联合建模优于独立建模。
+- <strong>初步方法</strong>：扩展 DeepAllele 为多任务模型，同时预测等位基因特异的核小体占位、甲基化和 Hi-C 类接触信号。
+- <strong>验证方式</strong>：与独立任务模型对比；用已知调控变异验证。
+- <strong>创新状态</strong>：unverified</p></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Abstract only</li>
+<li><strong>Assessment boundary</strong> Claims and evidence presented in the abstract; no methods, figures, tables, or supplementary materials were provided</li>
+<li><strong>Shared manuscript claim summary</strong> The authors propose DeepAllele, a deep learning sequence-to-function model with paired allele-specific input, to predict cis-regulatory differences between alleles. The model is intended for datasets with unambiguous phasing, such as F1 hybrids, controlled crosses, or long-read sequencing (e.g., Fiber-seq). Applied to allele-specific immune cell data from F1 hybrid mice, the model reportedly learns cis-regulatory grammar aligned with known biological mechanisms across more genomic regions than baseline models.</li>
+<li><strong>Visible evidence base</strong> Abstract text only; no quantitative results, model architecture details, dataset descriptions, or comparison metrics are provided</li>
+<li><strong>Missing materials affecting confidence</strong> Full manuscript, methods section, figures, tables, supplementary data, baseline model specifications, and any statistical or performance metrics</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li><strong>Overall assessment</strong> The abstract presents a conceptually interesting idea, namely using paired allele-specific sequences as input to a deep learning model to learn cis-regulatory determinants of allelic imbalance. This is a plausible extension of existing sequence-to-function models and could be of value to the genomics community. However, the abstract provides no quantitative evidence, no clear description of model architecture or training strategy, and no explicit comparison to existing methods beyond a vague statement about "baseline models." The central claims of biological alignment and improved discovery are therefore not assessable from the supplied material. The work may have merit, but the case is not established from the abstract alone.</li>
+<li><strong>Who would be interested in the results, and why</strong> Researchers in regulatory genomics, computational biology, and functional genetics would be interested, particularly those working on allele-specific expression, cis-regulatory element discovery, and deep learning applications to genomic sequence. The approach could also appeal to groups studying F1 hybrids or using long-read sequencing for phased genomes.</li>
+<li><strong>Major strengths</strong> The idea of using paired allele-specific input is a conceptually novel twist on standard sequence-to-function models. The stated focus on unambiguously phased datasets is a sensible design choice that avoids phasing errors. The potential to learn regulatory grammar from natural genetic variation is scientifically appealing.</li>
+<li><strong>Major Concerns</strong>  </li>
+<li>R1-M1  </li>
+<li>R1-M2  </li>
+<li>R1-M3</li>
+<li><strong>Minor Comments</strong>  </li>
+<li>R1-m1  </li>
+<li>R1-m2  </li>
+<li>R1-m3</li>
+<li><strong>Technical failings that need to be addressed before the case is established</strong> R1-M1, R1-M2, R1-M3</li>
+<li><strong>Assessment against Nature-style criteria</strong>  </li>
+<li>Originality: The paired allele-specific input design appears original, but the abstract does not clarify how this differs functionally from existing approaches beyond input formatting.  </li>
+<li>Scientific importance: Potentially high, if the model truly improves regulatory motif discovery, but this is not demonstrated.  </li>
+<li>Interdisciplinary readership: The topic bridges machine learning and genomics, which could attract a broad audience, but the abstract is too thin to engage nonspecialists.  </li>
+<li>Technical soundness: Not assessable from the abstract; no architecture, training, or validation details are given.  </li>
+<li>Readability for nonspecialists: The abstract is understandable at a high level, but key terms such as "paired allele-specific input" and "cis-regulatory grammar" are not explained sufficiently for a general reader.</li>
+<li><strong>Recommendation posture</strong> Currently not established from the provided evidence. The idea is promising, but the abstract alone does not support the claims made. A full manuscript with quantitative results and methodological detail is required for a fair assessment.</li>
+</ul>
+<h3>Major Concerns</h3>
+<ul>
+<li><strong>Concern ID</strong> R1-M1  </li>
+<li><strong>Severity</strong> Major  </li>
+<li><strong>Blocking</strong> Yes  </li>
+<li><strong>Axis</strong> Evidence sufficiency  </li>
+<li><strong>Claim pointer</strong> The model "learns cis-regulatory grammar aligned with known biological mechanisms across a significantly larger number of genomic regions compared to baseline models."  </li>
+<li><strong>Evidence pointer</strong> Abstract only; location not provided  </li>
+<li><strong>Concern</strong> No quantitative results are presented. The claim of "significantly larger number" is unsupported by any numbers, statistical tests, or effect sizes.  </li>
+<li><strong>Why it matters</strong> Without quantitative evidence, the central performance claim cannot be evaluated or reproduced.  </li>
+<li>
+<p><strong>Resolution test</strong> Provide specific metrics, such as number of regions identified, enrichment scores, or precision-recall comparisons, with confidence intervals and statistical significance.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M2  </p>
+</li>
+<li><strong>Severity</strong> Major  </li>
+<li><strong>Blocking</strong> Yes  </li>
+<li><strong>Axis</strong> Methodological clarity  </li>
+<li><strong>Claim pointer</strong> "DeepAllele, a novel deep learning sequence-to-function model using paired allele-specific input."  </li>
+<li><strong>Evidence pointer</strong> Abstract only; location not provided  </li>
+<li><strong>Concern</strong> The abstract does not describe the model architecture, input representation, training data, or how "paired allele-specific input" is encoded.  </li>
+<li><strong>Why it matters</strong> Reproducibility and assessment of novelty require a clear description of the method.  </li>
+<li>
+<p><strong>Resolution test</strong> Include a methods section or supplementary material detailing the architecture, training procedure, and input encoding.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M3  </p>
+</li>
+<li><strong>Severity</strong> Major  </li>
+<li><strong>Blocking</strong> Yes  </li>
+<li><strong>Axis</strong> Comparison validity  </li>
+<li><strong>Claim pointer</strong> "Compared to baseline models."  </li>
+<li><strong>Evidence pointer</strong> Abstract only; location not provided  </li>
+<li><strong>Concern</strong> The baseline models are not named or described, and the comparison criteria are unclear.  </li>
+<li><strong>Why it matters</strong> Without a defined baseline, the claimed improvement is meaningless.  </li>
+<li><strong>Resolution test</strong> Specify the baseline models, their configurations, and the evaluation protocol used for comparison.</li>
+</ul>
+<h3>Minor Comments</h3>
+<ul>
+<li><strong>Concern ID</strong> R1-m1  </li>
+<li><strong>Severity</strong> Minor  </li>
+<li><strong>Axis</strong> Clarity  </li>
+<li><strong>Affected element</strong> Terminology  </li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided  </li>
+<li><strong>Issue</strong> The term "cis-regulatory grammar" is used without definition.  </li>
+<li>
+<p><strong>Required correction</strong> Define what is meant by "grammar" in this context, such as specific motif combinations or positional constraints.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m2  </p>
+</li>
+<li><strong>Severity</strong> Minor  </li>
+<li><strong>Axis</strong> Scope justification  </li>
+<li><strong>Affected element</strong> Applicability statement  </li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided  </li>
+<li><strong>Issue</strong> The abstract states the approach is suited for F1 hybrids and Fiber-seq but does not explain why it would not apply to other phased datasets.  </li>
+<li>
+<p><strong>Required correction</strong> Clarify the limitations or assumptions that restrict applicability.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m3  </p>
+</li>
+<li><strong>Severity</strong> Minor  </li>
+<li><strong>Axis</strong> Readability  </li>
+<li><strong>Affected element</strong> Abstract structure  </li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided  </li>
+<li><strong>Issue</strong> The abstract jumps from method description to application without a clear statement of the biological question or hypothesis.  </li>
+<li><strong>Required correction</strong> Add a sentence framing the biological problem the model addresses.</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>The claim of "significantly larger number of genomic regions" is unsupported by any data.</li>
+<li>The novelty of the model relative to existing deep learning approaches is not established.</li>
+<li>The alignment of learned features with "known biological mechanisms" is asserted without evidence.</li>
+<li>The generalizability of the approach beyond the specific F1 hybrid mouse dataset is not assessable.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

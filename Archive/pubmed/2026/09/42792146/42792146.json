@@ -1,0 +1,254 @@
+{
+  "identity": {
+    "pmid": "42792146",
+    "doi": "10.3390/antiox15091107",
+    "title": "Comprehensive Characterization of Cytochrome P450s Reveals Candidate Enzymes Involved in the Metabolic Fate of Absorbed Volatile Organic Compounds in Potato."
+  },
+  "content": {
+    "abstract": "Plants are continuously exposed to volatile organic compounds (VOCs) emitted by neighbors. Although the mechanisms governing VOC uptake and metabolism remain unclear, cytochrome P450 monooxygenases (CYP450s) are thought to participate in the detoxification and metabolic conversion of absorbed VOCs. Data from previously conducted cDNA microarray transcriptomic profiling in potato exposed to French marigold essential oil (FM-EO) was here used to filter differentially expressed sequences, and identified 54 unique CYP450 transcripts. Among the 10 most highly expressed sequences, two CYP81D1-like (81D1-1 and 81D1-2) and one CYP81D11-like (81D11-1) transcripts were found. RT-qPCR confirmed their strong induction within 8 h of volatile exposure. Comprehensive bioinformatics identified the most highly induced 81D1-1 gene as a CYP450 containing a predicted N-terminal hydrophobic signal or membrane-anchor region, the conserved heme-binding signature motif, and regulatory elements associated with oxidative stress responses. The other 81D11-1 gene, exhibiting a comparable expression level, was annotated only as a heme-binding protein but possessed seven distinct cis-regulatory elements, suggesting high transcriptional plasticity. Machine learning predictions assigned the highest interaction probability to (Z)-beta-ocimene, whereas structure-based docking yielded the most favorable mean score for piperitone. This study provides the first characterization of the potato CYP450 superfamily in the context of volatile-mediated plant-plant interactions and identifies two CYP81D members as strong candidates for the oxidative metabolism of absorbed VOCs. The results support a proposed detoxification pathway in which CYP81-mediated oxidation precedes glutathione conjugation and intracellular sequestration of VOCs. These candidate genes provide a valuable foundation for future functional studies and may facilitate the development of sustainable crop protection strategies based on volatile-mediated plant defense.",
+    "keywords": [
+      "CYP81D genes",
+      "French marigold (Tagetes patula L.)",
+      "essential oil",
+      "genome-wide bioinformatics characterization",
+      "oxidative detoxification",
+      "plant-plant interactions",
+      "potato (Solanum tuberosum L.)",
+      "terpene metabolism"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Bogdanovic, Milica D",
+        "Devrnja, Nina",
+        "Cukovic Janicijevic, Katarina B",
+        "Stupar, Sofija",
+        "Todorovic, Sladana I",
+        "Savic, Jelena"
+      ],
+      "short_names": [
+        "Bogdanovic MD",
+        "Devrnja N",
+        "Cukovic Janicijevic KB",
+        "Stupar S",
+        "Todorovic SI",
+        "Savic J"
+      ],
+      "auids": [
+        "ORCID: 0000-0001-8034-2606",
+        "ORCID: 0000-0003-2981-3606",
+        "ORCID: 0000-0001-5697-6457",
+        "ORCID: 0000-0002-7754-2970",
+        "ORCID: 0000-0002-8233-9037",
+        "ORCID: 0000-0002-8385-7549"
+      ],
+      "affiliations": [
+        "Department for Plant Physiology, Institute for Biological Research \"Sinisa Stankovic\"-National Institute of the Republic of Serbia, University of Belgrade, 11108 Belgrade, Serbia.",
+        "Department for Plant Physiology, Institute for Biological Research \"Sinisa Stankovic\"-National Institute of the Republic of Serbia, University of Belgrade, 11108 Belgrade, Serbia.",
+        "Department for Plant Physiology, Institute for Biological Research \"Sinisa Stankovic\"-National Institute of the Republic of Serbia, University of Belgrade, 11108 Belgrade, Serbia.",
+        "Department for Plant Physiology, Institute for Biological Research \"Sinisa Stankovic\"-National Institute of the Republic of Serbia, University of Belgrade, 11108 Belgrade, Serbia.",
+        "Department for Plant Physiology, Institute for Biological Research \"Sinisa Stankovic\"-National Institute of the Republic of Serbia, University of Belgrade, 11108 Belgrade, Serbia.",
+        "Department for Plant Physiology, Institute for Biological Research \"Sinisa Stankovic\"-National Institute of the Republic of Serbia, University of Belgrade, 11108 Belgrade, Serbia."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Bogdanović, Milica D",
+        "short_name": "Bogdanović MD",
+        "identifiers": [
+          "0000-0001-8034-2606"
+        ],
+        "affiliations": [
+          "Department for Plant Physiology, Institute for Biological Research \"Siniša Stanković\"-National Institute of the Republic of Serbia, University of Belgrade, 11108 Belgrade, Serbia."
+        ]
+      },
+      {
+        "full_name": "Devrnja, Nina",
+        "short_name": "Devrnja N",
+        "identifiers": [
+          "0000-0003-2981-3606"
+        ],
+        "affiliations": [
+          "Department for Plant Physiology, Institute for Biological Research \"Siniša Stanković\"-National Institute of the Republic of Serbia, University of Belgrade, 11108 Belgrade, Serbia."
+        ]
+      },
+      {
+        "full_name": "Ćuković Janićijević, Katarina B",
+        "short_name": "Ćuković Janićijević KB",
+        "identifiers": [
+          "0000-0001-5697-6457"
+        ],
+        "affiliations": [
+          "Department for Plant Physiology, Institute for Biological Research \"Siniša Stanković\"-National Institute of the Republic of Serbia, University of Belgrade, 11108 Belgrade, Serbia."
+        ]
+      },
+      {
+        "full_name": "Stupar, Sofija",
+        "short_name": "Stupar S",
+        "identifiers": [
+          "0000-0002-7754-2970"
+        ],
+        "affiliations": [
+          "Department for Plant Physiology, Institute for Biological Research \"Siniša Stanković\"-National Institute of the Republic of Serbia, University of Belgrade, 11108 Belgrade, Serbia."
+        ]
+      },
+      {
+        "full_name": "Todorović, Slađana I",
+        "short_name": "Todorović SI",
+        "identifiers": [
+          "0000-0002-8233-9037"
+        ],
+        "affiliations": [
+          "Department for Plant Physiology, Institute for Biological Research \"Siniša Stanković\"-National Institute of the Republic of Serbia, University of Belgrade, 11108 Belgrade, Serbia."
+        ]
+      },
+      {
+        "full_name": "Savić, Jelena",
+        "short_name": "Savić J",
+        "identifiers": [
+          "0000-0002-8385-7549"
+        ],
+        "affiliations": [
+          "Department for Plant Physiology, Institute for Biological Research \"Siniša Stanković\"-National Institute of the Republic of Serbia, University of Belgrade, 11108 Belgrade, Serbia."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Antioxidants (Basel, Switzerland)"
+    ],
+    "journal_abbrev": [
+      "Antioxidants (Basel)"
+    ],
+    "pub_date": "2026 Sep 2",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/26 05:34",
+    "fetched_at": "2026-09-27 09:45:59"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42792146",
+      "33477577",
+      "42475469",
+      "31872748",
+      "40975764",
+      "38218763",
+      "21062474",
+      "40691758",
+      "42010513",
+      "42345213",
+      "27931186",
+      "28988961",
+      "36207676",
+      "39765893",
+      "36271979",
+      "32122306",
+      "20546591",
+      "40375135",
+      "36513136",
+      "39456766",
+      "30732561",
+      "38928374",
+      "40652200",
+      "28056783",
+      "42174430",
+      "38970011",
+      "42792988",
+      "38279341",
+      "39902205",
+      "42259055",
+      "30793051",
+      "34904892",
+      "24397411",
+      "31782074",
+      "41923208",
+      "41261436",
+      "39511492",
+      "28878800",
+      "41277857",
+      "28506210",
+      "42572400",
+      "31569557",
+      "41662251",
+      "41514918",
+      "40211138",
+      "34961068",
+      "27473680",
+      "40281415",
+      "32018005",
+      "19462193",
+      "24885633",
+      "26284309",
+      "32023817",
+      "42646334",
+      "28924501",
+      "36127062",
+      "39428455",
+      "41846112",
+      "30646545",
+      "41840307",
+      "42322845",
+      "23807432",
+      "33808968",
+      "39055260",
+      "41299245",
+      "18034876",
+      "30497020",
+      "29743927",
+      "41200496",
+      "36507398",
+      "38892181",
+      "41764430",
+      "27281633",
+      "39695388",
+      "34772358",
+      "37534988",
+      "41445463",
+      "38444770",
+      "39096688",
+      "42473451",
+      "39623364",
+      "34925431",
+      "38397175",
+      "35108080",
+      "30593507",
+      "33194376",
+      "27771448",
+      "26350963",
+      "39186738",
+      "40753368",
+      "34371574",
+      "37446233",
+      "39150724",
+      "41495651",
+      "41680305",
+      "31318935",
+      "38396758",
+      "35366758",
+      "37061992",
+      "41462443"
+    ],
+    "review": [
+      "42792146",
+      "42345213",
+      "27281633"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [],
+    "text_mined": []
+  }
+}

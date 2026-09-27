@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42792956",
+  "title": "Cross-Model Uncertainty-Aware Minimal Editing of Cis-Regulatory Elements for Cell-Type-Selective Design.",
+  "authors": "Xia, Angran; Wang, Changwei; Xia, Yemao",
+  "journal": "Genes",
+  "published_date": "2026-09-26",
+  "window": {
+    "start": "2026-09-20",
+    "end": "2026-09-26"
+  },
+  "score": 5,
+  "one_liner_zh": "该文用AI序列-活性模型与不确定性感知的编辑策略设计顺式调控元件（CRE）变体库，虽涉及染色质水平调控元件设计，但聚焦序列编辑而非三维空间架构建模，方法可迁移性中等。",
+  "abstract": "Background/Objectives: Cis-regulatory elements (CREs) help mediate cell-type-selective gene expression, yet sequence-to-activity models are rarely converted into compact, experimentally tractable variant panels that retain natural regulatory scaffolds. We developed SafeEdit-CRE to select minimal edits that preserve cross-model specificity while reducing predictive uncertainty, yielding an auditable CRE variant library for reporter-screening prioritization. Methods: SafeEdit-CRE combines the published Malinois sequence-activity predictor with an architecture-distinct reviewer ensemble, validation-calibrated uncertainty, sequence-domain controls, and constrained beam search. Natural 200 nt CREs were edited under fixed substitution budgets of 1, 5, 10, or 20 nucleotides and evaluated by a separately trained multi-kernel ensemble kept entirely separate from candidate generation. Results: Across 600 held-out CRE parents in K562, HepG2, and SK-N-SH cells, SafeEdit-CRE achieved a mean cross-model specificity-margin gain of 0.877 versus 0.822 for greedy editing (paired difference 0.055; 95% CI 0.040-0.071). Relative to a compute-matched primary-model beam, SafeEdit-CRE yielded a similar cross-model specificity-margin gain (difference -0.004; 95% CI -0.011-0.004) with lower ensemble uncertainty (0.314 vs. 0.335). In a locked 90-parent benchmark, 60.6% of designs passed all nine prespecified sequence and model-agreement checks, compared with 38.8% for greedy and 13.1% for random substitution (paired difference 21.8 percentage points; 95% CI 18.3-25.3). Conclusions: SafeEdit-CRE reduced 3240 designs to 74 Tier A computational candidates prioritized for reporter screening across three cell types and four edit budgets. By separating search from cross-model audit and enforcing explicit edit budgets and sequence-domain safeguards, the framework provides a reproducible and auditable approach to computational CRE prioritization, regulatory-grammar studies, and synthetic regulatory-element design.",
+  "abstract_zh": "背景/目标：顺式调控元件（cis-regulatory elements, CREs）有助于介导细胞类型选择性基因表达，然而序列到活性模型很少被转化为紧凑且实验上可操作的变异面板，同时保留天然调控支架。我们开发了SafeEdit-CRE，用于选择最小编辑，在降低预测不确定性的同时保持跨模型特异性，从而生成一个可审计的CRE变异文库，用于报告基因筛选优先级排序。方法：SafeEdit-CRE结合了已发表的Malinois序列活性预测器与架构不同的评审集成、验证校准的不确定性、序列域控制以及约束束搜索。在固定的1、5、10或20个核苷酸替换预算下，对天然的200 nt CRE进行编辑，并由一个单独训练的多核集成进行评估，该集成与候选生成完全分离。结果：在K562、HepG2和SK-N-SH细胞中的600个保留CRE亲本中，SafeEdit-CRE实现了平均跨模型特异性边际增益0.877，而贪婪编辑为0.822（配对差异0.055；95% CI 0.040-0.071）。相对于计算匹配的主模型束，SafeEdit-CRE产生了相似的跨模型特异性边际增益（差异-0.004；95% CI -0.011-0.004），且集成不确定性更低（0.314对0.335）。在一个锁定的90亲本基准中，60.6%的设计通过了所有九项预设序列和模型一致性检查，而贪婪编辑为38.8%，随机替换为13.1%（配对差异21.8个百分点；95% CI 18.3-25.3）。结论：SafeEdit-CRE将3240个设计缩减为74个Tier A计算候选，优先用于三种细胞类型和四种编辑预算下的报告基因筛选。通过将搜索与跨模型审计分离，并强制执行明确的编辑预算和序列域保障措施，该框架为计算CRE优先级排序、调控语法研究和合成调控元件设计提供了一种可重复且可审计的方法。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42792956/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42792956/",
+  "paper_page_path": "papers/pubmed/42792956/index.html"
+}

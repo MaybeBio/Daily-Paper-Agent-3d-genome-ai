@@ -1,0 +1,229 @@
+{
+  "identity": {
+    "pmid": "42791384",
+    "doi": "10.1038/s41576-026-00990-y",
+    "title": "Machine learning and statistical methods for molecular quantitative trait loci."
+  },
+  "content": {
+    "abstract": "An important goal of biology is to understand how genetic variation translates into molecular and then broader phenotypic variation. Quantitative trait locus (QTL) mapping studies are designed to statistically test the relationship between genetic and phenotypic variation, with molecular QTLs (molQTLs) capturing genetic effects on molecular traits, such as gene expression or chromatin accessibility, as the variable phenotypes of interest. Technological advances have provided molQTL mapping methods with increased molecular phenotypes to test, as well as larger cohorts, the latter of which provides greater statistical power to associate genetic variants with these phenotypes. With these advances, statistical models - and, increasingly, machine learning methods - are being developed to improve standard molQTL mapping approaches, downstream analyses and other aspects of molQTL studies to gain additional insights into the mechanisms connecting genetic and phenotypic variation, especially in a gene regulatory context.",
+    "keywords": [],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Engelhardt, Barbara E",
+        "Weinstock, Joshua S",
+        "Nyquist, Sarah K",
+        "Battle, Alexis"
+      ],
+      "short_names": [
+        "Engelhardt BE",
+        "Weinstock JS",
+        "Nyquist SK",
+        "Battle A"
+      ],
+      "auids": [
+        "ORCID: 0000-0002-6139-7334",
+        "ORCID: 0000-0001-7013-1899"
+      ],
+      "affiliations": [
+        "Gladstone Institutes, San Francisco, CA, USA. bengelhardt@stanford.edu.",
+        "Department of Biomedical Data Science, Stanford University, Stanford, CA, USA. bengelhardt@stanford.edu.",
+        "Department of Human Genetics, Emory University, Atlanta, GA, USA. josh.weinstock@emory.edu.",
+        "Gladstone Institutes, San Francisco, CA, USA. sarah.nyquist@gladstone.ucsf.edu.",
+        "Departments of Biomedical Engineering and Computer Science, Johns Hopkins University, Baltimore, MD, USA. ajbattle@jhu.edu."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Engelhardt, Barbara E",
+        "short_name": "Engelhardt BE",
+        "identifiers": [
+          "0000-0002-6139-7334"
+        ],
+        "affiliations": [
+          "Gladstone Institutes, San Francisco, CA, USA. bengelhardt@stanford.edu.",
+          "Department of Biomedical Data Science, Stanford University, Stanford, CA, USA. bengelhardt@stanford.edu."
+        ]
+      },
+      {
+        "full_name": "Weinstock, Joshua S",
+        "short_name": "Weinstock JS",
+        "identifiers": [
+          "0000-0001-7013-1899"
+        ],
+        "affiliations": [
+          "Department of Human Genetics, Emory University, Atlanta, GA, USA. josh.weinstock@emory.edu."
+        ]
+      },
+      {
+        "full_name": "Nyquist, Sarah K",
+        "short_name": "Nyquist SK",
+        "identifiers": [],
+        "affiliations": [
+          "Gladstone Institutes, San Francisco, CA, USA. sarah.nyquist@gladstone.ucsf.edu."
+        ]
+      },
+      {
+        "full_name": "Battle, Alexis",
+        "short_name": "Battle A",
+        "identifiers": [],
+        "affiliations": [
+          "Departments of Biomedical Engineering and Computer Science, Johns Hopkins University, Baltimore, MD, USA. ajbattle@jhu.edu."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Nature reviews. Genetics"
+    ],
+    "journal_abbrev": [
+      "Nat Rev Genet"
+    ],
+    "pub_date": "2026 Sep 25",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/26 05:34",
+    "fetched_at": "2026-09-27 09:45:59"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42791384",
+      "42475469",
+      "41266971",
+      "37851522",
+      "41680153",
+      "41650936",
+      "37755483",
+      "42343218",
+      "29194587",
+      "32908402",
+      "42658885",
+      "27534618",
+      "40691406",
+      "28064191",
+      "33095769",
+      "18245851",
+      "22396460",
+      "3596228",
+      "26499329",
+      "27380139",
+      "28052431",
+      "19076019",
+      "17474878",
+      "18001473",
+      "10601985",
+      "31718940",
+      "31419284",
+      "23104859",
+      "25445269",
+      "22004994",
+      "16542225",
+      "29218884",
+      "31771502",
+      "38699369",
+      "22565843",
+      "36829244",
+      "26076140",
+      "14755178",
+      "37254169",
+      "40203278",
+      "31240383",
+      "41646693",
+      "31278680",
+      "41001483",
+      "39447874",
+      "16371421",
+      "40330097",
+      "41932315",
+      "38659802",
+      "14962979",
+      "33926512",
+      "31849010",
+      "31849007",
+      "39986281",
+      "40827640",
+      "17668380",
+      "32513244",
+      "19925428",
+      "41467485",
+      "30860467",
+      "28765293",
+      "26276383",
+      "28172852",
+      "32004450",
+      "14739693",
+      "18515501",
+      "41396161",
+      "20234386",
+      "21085640",
+      "23570689",
+      "19196544",
+      "42288869",
+      "28516912",
+      "11700286",
+      "25805315",
+      "35147078",
+      "40827700",
+      "17546094",
+      "36714694",
+      "27994127",
+      "21044042",
+      "34441085",
+      "35235158",
+      "38645112",
+      "31849018",
+      "22348858",
+      "41338218",
+      "31598699",
+      "39383205",
+      "22150948",
+      "32245399",
+      "18452626",
+      "31481029",
+      "17138551",
+      "12145552",
+      "17725637",
+      "29577481",
+      "14638317",
+      "33601062",
+      "41168720"
+    ],
+    "review": [
+      "42791384",
+      "37755483",
+      "29194587",
+      "32908402",
+      "22396460",
+      "19076019",
+      "10601985",
+      "31718940",
+      "39447874",
+      "14962979",
+      "19925428",
+      "41467485",
+      "19196544",
+      "11700286",
+      "27994127",
+      "22348858",
+      "22150948"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [],
+    "text_mined": []
+  }
+}

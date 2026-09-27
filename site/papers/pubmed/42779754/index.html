@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ssJSD: A Fusion of Sparsity and Spatial Information for HiC Single-Cell Clustering. · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-mid">6</span>
+    <div>
+      <h1>ssJSD: A Fusion of Sparsity and Spatial Information for HiC Single-Cell Clustering.</h1>
+      <div class="meta">Lee, Sang Wan; Lin, Shili</div>
+      <div class="meta muted">
+        
+        <span class="journal">bioRxiv : the preprint server for biology</span>
+        · 2026-09-24
+         · 全文(pmc)
+         · <a href="https://pubmed.ncbi.nlm.nih.gov/42779754/">原文</a>
+      </div>
+      <p class="one-liner">该文提出融合稀疏性与空间信息的ssJSD框架用于scHiC单细胞聚类，虽以三维基因组为对象并涉及空间互作模式，但核心是聚类方法而非染色质三维架构建模，且未采用AI或分子模拟方法。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">Single-cell high-throughput chromatin conformation capture (scHiC) enables profiling three-dimensional genome architecture at cellular resolution, providing insights into cell-to-cell variability and cellular functions. Recent frameworks utilize spatial interaction patterns to derive dissimilarity measures for downstream tasks such as cell clustering. However, the inherent sparsity and ultra-high dimensionality of scHiC contact matrices pose significant challenges. A central hurdle is that existing measures typically treat all zeros without distinction, failing to differentiate biologically meaningful structural zeros (SZs) from technical dropouts. Here, we introduce ssJSD (spatial and sparsity informed Jensen-Shannon Divergence), a computational framework designed to explicitly account for scHiC-specific sparsity patterns. By integrating band-wise contact frequency profiles with SZ-induced sparsity matrices, ssJSD leverages both spatial interaction patterns and biological absence of contacts. We adopted two complementary integration strategies: an early fusion approach that concatenates information into a single representation, and a late fusion approach that integrates JSD-based dissimilarities through diverse averaging methods. Through simulations and applications to human cell lines and prefrontal cortex data, we demonstrate that ssJSD improves clustering accuracy and effectively distinguishes cell types. Our study indicates that integrating SZ patterns is important for accurately quantifying cell-to-cell variability in 3D genomics.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">单细胞高通量染色质构象捕获（scHiC）技术能够在细胞分辨率下分析三维基因组结构，为揭示细胞间变异及细胞功能提供见解。近期框架利用空间相互作用模式来推导相异性度量，用于细胞聚类等下游任务。然而，scHiC接触矩阵固有的稀疏性和超高维性带来了显著挑战。一个核心障碍在于，现有度量通常不加区分地处理所有零值，未能区分具有生物学意义的结构零（SZs）与技术性缺失。在此，我们引入ssJSD（空间及稀疏性感知的Jensen-Shannon散度），这是一个计算框架，旨在明确考虑scHiC特有的稀疏模式。通过将带状接触频率谱与SZ诱导的稀疏矩阵相结合，ssJSD同时利用空间相互作用模式和生物学上的接触缺失。我们采用了两种互补的整合策略：一种早期融合方法，将信息拼接为单一表示；以及一种晚期融合方法，通过多种平均方式整合基于JSD的相异性度量。通过模拟实验及对人类细胞系和前额叶皮层数据的应用，我们证明ssJSD提高了聚类准确性，并能有效区分细胞类型。我们的研究表明，整合SZ模式对于准确量化3D基因组学中的细胞间变异至关重要。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：ssJSD: A Fusion of Sparsity and Spatial Information for HiC Single-Cell Clustering</li>
+<li><strong>作者</strong>：Lee, Sang Wan; Lin, Shili</li>
+<li><strong>单位</strong>：未提供（推测为俄亥俄州立大学，基于 GitHub 组织名 osu-stat-gen）</li>
+<li><strong>期刊/预印本平台</strong>：bioRxiv : the preprint server for biology</li>
+<li><strong>年份</strong>：2026</li>
+<li><strong>论文类型</strong>：方法学预印本（含模拟与实证应用）</li>
+<li><strong>领域</strong>：单细胞三维基因组（scHiC）数据分析；聚类方法</li>
+<li><strong>关键词</strong>：scHiC、结构零（structural zero）、Jensen-Shannon Divergence、聚类、稀疏性、空间信息</li>
+<li><strong>DOI/arXiv 号</strong>：10.64898/2026.09.14.751457</li>
+<li><strong>代码</strong>：https://github.com/osu-stat-gen/ssJSD（R 包）</li>
+<li><strong>数据</strong>：5 个人类细胞系（4D Nucleome 数据门户）；人类前额叶皮层（GSE130711）</li>
+<li><strong>阅读日期</strong>：未提供</li>
+<li><strong>在课题方向中的位置</strong>：本文属于「三维基因组 × AI/统计方法」中单细胞 HiC 数据的下游分析环节——基于结构零与接触频率的细胞间不相似性度量与聚类。与课题中染色质高级结构预测/建模不同，本文聚焦于利用结构零（SZ）这一生物学先验信息改进细胞聚类，属于三维基因组数据解析方法，而非结构预测或物理模拟。</li>
+</ul>
+<h2>02 一句话总结</h2>
+<p>本文提出 ssJSD 框架，将 scHiC 接触矩阵按基因组距离带状聚合为概率向量，并显式整合结构零（SZ）稀疏性信息，通过早期融合（拼接）或晚期融合（多种均值）计算 Jensen-Shannon 散度作为细胞间不相似性，在模拟与真实数据上证明其聚类性能优于仅用接触频率的 JSD 方法。</p>
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：scHiC 接触矩阵中超过 90% 的条目为零，但并非所有零等价——部分代表真实生物学上无互作（结构零，SZ），部分源于技术性丢失（dropout，DO）。现有不相似性度量（如 JSD、HiCRep）将所有零一视同仁，未利用 SZ 信息，导致聚类精度受限。</li>
+<li><strong>为什么重要</strong>：准确识别细胞亚群是理解三维基因组异质性与细胞功能的基础；SZ 携带谱系/细胞类型特异的生物学信息，忽略它将丢失关键信号。</li>
+<li><strong>现有方法不足</strong>：szKendall 虽利用 SZ 信息且性能优异，但计算复杂度为 O(K²L²)（K 为细胞数，L 为位点对数），难以扩展至大规模数据；平滑/嵌入类方法（SCL、GenomeDISCO、scHiCluster、Higashi）不区分零的类型。</li>
+<li><strong>精确研究问题</strong>：能否设计一种计算高效（O(KL + K²B)，B ≪ L）的度量，在保留空间距离带状结构的同时显式整合 SZ 信息，从而在稀疏 scHiC 数据上实现优于现有方法的细胞聚类？</li>
+</ul>
+<h2>04 背景与发展脉络</h2>
+<blockquote>
+<p>注：以下脉络基于本文引言与参考文献，经外部核验程度有限，标注为「部分经外部核验」。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>代表性方法</th>
+<th>优点</th>
+<th>局限</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>距离带状聚合</td>
+<td>HiCRep [11]、JSD [12]</td>
+<td>利用接触频率随 1D 距离衰减的规律，降维且保留空间信息</td>
+<td>忽略零的类型差异</td>
+</tr>
+<tr>
+<td>平滑/嵌入</td>
+<td>SCL [18]、GenomeDISCO [19]、scHiCluster [13]、Higashi [20]</td>
+<td>缓解稀疏性，鲁棒嵌入</td>
+<td>不区分 SZ 与 DO</td>
+</tr>
+<tr>
+<td>概率建模零类型</td>
+<td>HiCImpute [21]、scHiCSRS [22]</td>
+<td>显式区分 SZ/DO</td>
+<td>主要用于插补，未直接用于不相似性度量</td>
+</tr>
+<tr>
+<td>SZ 感知的度量</td>
+<td>szKendall [23]</td>
+<td>利用 SZ 信息，聚类性能大幅提升</td>
+<td>O(K²L²) 计算复杂度过高</td>
+</tr>
+<tr>
+<td><strong>本文位置</strong></td>
+<td><strong>ssJSD</strong></td>
+<td><strong>带状聚合 + SZ 显式整合，O(KL + K²B) 复杂度</strong></td>
+<td>依赖 SZ 推断工具准确性；B 的选择需调优</td>
+</tr>
+</tbody>
+</table>
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>零的异质性被忽略</td>
+<td>现有度量将所有零视为等价，聚类无法区分仅稀疏性模式不同的细胞亚型</td>
+<td>技术性 dropout 与生物学结构零成因不同，携带不同信息</td>
+<td>Introduction 第 3 段；Results 中 Design 1 模拟（仅稀疏性差异）下 JSD 无法分离亚型</td>
+</tr>
+<tr>
+<td>计算复杂度瓶颈</td>
+<td>szKendall 的 O(K²L²) 复杂度使其难以扩展至数千细胞规模</td>
+<td>逐位点对比较而非带状聚合</td>
+<td>Discussion 末段；Supplementary Figure S33 展示复杂度对比</td>
+</tr>
+<tr>
+<td>简单将零全视为 SZ 无效</td>
+<td>将全部 OZ 当作 SZ（V1 数据）仅带来微小改进</td>
+<td>dropout 比例高（约半数），噪声淹没信号</td>
+<td>Results 第 5 节；Figure 5a 与 5b 对比</td>
+</tr>
+<tr>
+<td>稀疏性随测序深度变化</td>
+<td>低深度下 dropout 比例升高，仅靠接触频率的度量失效</td>
+<td>接触频率估计方差增大，信号被噪声主导</td>
+<td>Results 第 3 节；Sim3/5/6（低深度）下 JSD 基线性能骤降</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<ol>
+<li>
+<p><strong>表面方法</strong>：将每个细胞的 HiC 接触矩阵按基因组距离带状聚合为两个概率向量——PCF（接触频率）与 PSZ（结构零频率），然后通过早期融合（拼接为一个 2B 维向量）或晚期融合（分别计算 JSD 后以 GM/HM/AM/WM 合并）得到细胞间不相似性矩阵，最后用 PAM 或 K-means 聚类。</p>
+</li>
+<li>
+<p><strong>核心洞察</strong>：结构零不是「无信息」的缺失，而是携带生物学约束的「有信息」信号——特定基因组位点对在特定细胞类型中因拓扑结构或表观约束而从不互作。将这种「生物学缺席」显式编码为特征，等价于为每个细胞增加了一个独立的、与接触频率互补的视图。带状聚合则同时解决了稀疏性和计算复杂度两个问题。</p>
+</li>
+<li>
+<p><strong>可能的普适教训</strong> [Analysis]：在高度稀疏的高维生物数据中，「零」的语义分化（真实零 vs 技术零）往往是未被利用的信息金矿。任何处理稀疏计数矩阵的方法（如单细胞 RNA-seq、ATAC-seq）都可借鉴「将零类型作为独立特征通道」的思路，而非仅做插补或二值化。此外，「早期融合 vs 晚期融合」的对比提示：当两个数据视图的噪声结构不同时，晚期融合（分别度量后合并）可能比早期融合（拼接后统一度量）更稳健。</p>
+</li>
+</ol>
+<h2>07 方法总览</h2>
+<ul>
+<li><strong>输入</strong>：K 个细胞的 scHiC 接触矩阵（每个为 C 条染色体的 2D 矩阵，bin 大小为 1 Mb）；每个细胞的 SZ 指示矩阵（可由 HiCImpute 等工具推断）</li>
+<li><strong>输出</strong>：K×K 细胞间不相似性矩阵；聚类标签</li>
+<li><strong>模块</strong>：
+  1. <strong>带状聚合</strong>：对每条染色体，按距主对角线的距离 s=1,…,B 聚合接触频率与 SZ 计数，得到 PCF(k) 与 PSZ(k)（长度 B 的向量）
+  2. <strong>归一化</strong>：PCF 与 PSZ 各归一化使其和等于 1/2（早期融合）或 1（晚期融合）
+  3. <strong>不相似性计算</strong>：早期融合——拼接为 2B 维向量后计算 JSD；晚期融合——分别计算 JSD 后以 GM/HM/AM/WM 合并
+  4. <strong>聚类</strong>：PAM（直接作用于不相似性矩阵）或 K-means（作用于 2D 投影：UMAP/t-SNE/MDS）</li>
+<li><strong>训练</strong>：无监督，无训练过程；SZ 推断依赖外部工具（HiCImpute）</li>
+<li><strong>工具</strong>：R 包（GitHub 提供）</li>
+<li><strong>流程</strong>：原始接触矩阵 → 带状聚合 → 概率向量 → JSD 不相似性 → 聚类 → 评估（ARI/WSS/ASW/MIS）</li>
+</ul>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>带状聚合（PCF）</td>
+<td>将 2D 接触矩阵压缩为 B 维距离谱向量</td>
+<td>保留空间距离衰减信息，同时降维缓解稀疏性</td>
+<td>输入：接触矩阵；输出：PCF(k) ∈ R^B</td>
+<td>Methods 第 1 节；引用 HiCRep/JSD 框架</td>
+<td>预期：失去空间信息，聚类精度下降 [Analysis]</td>
+</tr>
+<tr>
+<td>SZ 带状聚合（PSZ）</td>
+<td>将 SZ 指示矩阵压缩为 B 维稀疏谱向量</td>
+<td>显式编码「生物学缺席」信号</td>
+<td>输入：SZ 指示矩阵；输出：PSZ(k) ∈ R^B</td>
+<td>Methods 第 1 节；Results 中 Design 1 模拟</td>
+<td>实测：仅用 PCF 的 JSD 无法分离仅稀疏性差异的亚型（Figure 3 顶部）</td>
+</tr>
+<tr>
+<td>早期融合（EF）</td>
+<td>拼接 PCF 与 PSZ 为 2B 维向量后计算 JSD</td>
+<td>统一视图下的联合度量</td>
+<td>输入：PCF, PSZ；输出：D^EF</td>
+<td>Results 第 2 节；Figure 1c</td>
+<td>实测：在 SZ 误设时性能下降快于晚期融合（Figure 4）</td>
+</tr>
+<tr>
+<td>晚期融合（GM/HM/AM/WM）</td>
+<td>分别计算 JSD 后合并</td>
+<td>两个视图独立度量，避免尺度/噪声干扰</td>
+<td>输入：D^CF, D^SZ；输出：D^late</td>
+<td>Results 第 2 节；Figure 1d</td>
+<td>实测：整体优于 EF；WM 在理想 SZ 标注下最佳（Discussion）</td>
+</tr>
+<tr>
+<td>归一化策略</td>
+<td>各向量和归一化至 1/2 或 1</td>
+<td>使 JSD 计算有概率解释</td>
+<td>输入：PCF, PSZ；输出：归一化向量</td>
+<td>Methods 第 2 节</td>
+<td>预期：不归一化会导致尺度偏差 [Analysis]</td>
+</tr>
+<tr>
+<td>聚类（PAM/K-means）</td>
+<td>从不相似性矩阵或投影获得细胞分组</td>
+<td>下游任务核心</td>
+<td>输入：D 或 2D 投影；输出：标签</td>
+<td>Results 第 3 节</td>
+<td>不适用（标准模块）</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式符号</h2>
+<p><strong>1. 带状聚合（接触频率）</strong>：
+P_CF^(k)(s) = Σ_c Σ_{i=1}^{B_c - s} Y_{i, i+s, k}^{(c)}
+- P_CF^(k)(s)：细胞 k 在距离带 s 上的总接触频率
+- Y_{i,j,k}^{(c)}：细胞 k 中染色体 c 上位点 i 与 j 的观测接触数
+- B_c：染色体 c 的 bin 数；s = 1, …, B，B = max_c B_c - 1</p>
+<p><strong>2. SZ 指示聚合</strong>：
+P_SZ^(k)(s) = Σ_c Σ_{i=1}^{B_c - s} Z_{i, i+s, k}^{(c)}
+- Z_{i,j,k}^{(c)} ∈ {0,1}：位点对 (i,j) 在细胞 k 中是否为结构零</p>
+<p><strong>3. 早期融合归一化</strong>：
+P_C^(k)(s) = P_CF^(k)(s) / (2 Σ_{s'=1}^B P_CF^(k)(s'))，对 s ≤ B
+P_C^(k)(s) = P_SZ^(k)(s-B) / (2 Σ_{s'=1}^B P_SZ^(k)(s'))，对 s &gt; B</p>
+<p><strong>4. JSD（两分布 P, Q）</strong>：
+JSD(P‖Q) = ½ D_KL(P‖M) + ½ D_KL(Q‖M)，M = (P+Q)/2
+- 用于早期融合（P = P_C^(k), Q = P_C^(k')）与晚期融合（分别对 P_CF 和 P_SZ 计算）</p>
+<p><strong>5. 晚期融合合并</strong>：
+- GM: D = √(D^CF · D^SZ)
+- HM: D = 2 / (1/D^CF + 1/D^SZ)
+- AM: D = (D^CF + D^SZ)/2
+- WM: D = (w₁D^CF + w₂D^SZ) / (w₁ + w₂)，其中 w₁ = 匹配正计数对数，w₂ = 匹配 SZ 对数</p>
+<p><strong>6. 模拟数据生成（接触期望）</strong>：
+log λ_ij = α₀ + α₁ log d_ij + β_l log(x_l,i x_l,j) + β_g log(x_g,i x_g,j) + β_m log(x_m,i x_m,j)
+- λ_ij：位点对 (i,j) 的期望接触数；d_ij：3D 欧氏距离
+- x_l, x_g, x_m：片段长度、GC 含量、可作图性协变量</p>
+<h2>10 实验设计与证据链</h2>
+<p><strong>数据集与规模</strong>：
+- 模拟：12 种设置（Design 1/2 × Sim1–6），每种 100 个数据集，每个数据集 150 个细胞（3 亚型 × 50）
+- 真实数据 1：5 个人类细胞系（H1Esc, HAP1, GM12878, HFF, IMR90），各 100 个细胞（按测序深度筛选），1 Mb bin
+- 真实数据 2：人类前额叶皮层，4238 个细胞，14 种细胞类型，5 个批次，1 Mb bin</p>
+<p><strong>指标</strong>：ARI（外部）、WSS%、ASW、MIS（内部）</p>
+<p><strong>基线</strong>：JSD 应用于原始/平滑（GK、RW）接触矩阵；ssJSD 变体（EF、AM、GM、HM、WM）；V1–V4 数据版本</p>
+<p><strong>评测协议</strong>：PAM 直接聚类；K-means 用于 UMAP/t-SNE/MDS 投影后聚类</p>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的 claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Design 1 模拟（仅稀疏性差异）</td>
+<td>SZ 信息可分离仅稀疏模式不同的亚型</td>
+<td>ssJSD vs JSD 各版本</td>
+<td>JSD 无法分离；ssJSD 全部成功分离</td>
+<td>SZ 是必要信号</td>
+<td>未提供量化 ARI 数值</td>
+<td>Results 第 2 节；Fig 3 顶部</td>
+</tr>
+<tr>
+<td>Design 2 模拟（稀疏+结构差异）</td>
+<td>ssJSD 在双重差异下仍优</td>
+<td>同上</td>
+<td>ssJSD 各变体 ARI 高于 JSD</td>
+<td>SZ 信息提升聚类</td>
+<td>未提供具体数值</td>
+<td>Results 第 2 节；Fig 3 底部</td>
+</tr>
+<tr>
+<td>低测序深度（Sim3/5/6）</td>
+<td>ssJSD 在稀疏极端下稳健</td>
+<td>JSD 基线性能骤降</td>
+<td>ssJSD 保持高 ARI</td>
+<td>SZ 信息对低深度鲁棒</td>
+<td>未提供数值</td>
+<td>Results 第 3 节</td>
+</tr>
+<tr>
+<td>SZ 误设鲁棒性</td>
+<td>ssJSD 在 SZ 推断不完美时仍优于基线</td>
+<td>42 种 sensitivity/specificity 组合</td>
+<td>ARI 随误设下降但极少低于 JSD 基线</td>
+<td>ssJSD 对 SZ 误设稳健</td>
+<td>低 sensitivity+specificity 时优势缩小</td>
+<td>Results 第 4 节；Fig 4</td>
+</tr>
+<tr>
+<td>5 细胞系真实数据</td>
+<td>ssJSD 分离已知细胞类型</td>
+<td>V1–V4 数据版本</td>
+<td>V2–V4 近完美分离；V1 仅微改进</td>
+<td>SZ 推断质量关键</td>
+<td>未与 BandNorm/Higashi 等直接比较</td>
+<td>Results 第 5 节；Fig 5</td>
+</tr>
+<tr>
+<td>前额叶皮层 14 类型</td>
+<td>ssJSD 分离精细细胞类型</td>
+<td>JSD 各版本</td>
+<td>ssJSD-GM(V3) 分离全部 14 型，含 L2/3–L6</td>
+<td>SZ 信息对精细亚型必要</td>
+<td>未提供与 szKendall 的定量比较</td>
+<td>Results 第 6 节；Fig 6</td>
+</tr>
+</tbody>
+</table>
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：仅针对 scHiC 数据的细胞聚类（无监督），不涉及结构预测、3D 建模或增强子-启动子互作推断。</li>
+<li><strong>Oracle/真值输入</strong>：模拟中 SZ 真值已知；真实数据中 SZ 由 HiCImpute 推断（概率阈值取正观测位点 SZ 概率的 95 分位数），非实验验证的 ground truth。</li>
+<li><strong>端到端状态</strong>：方法依赖外部 SZ 推断工具（HiCImpute），非端到端；SZ 推断质量直接影响性能。</li>
+<li><strong>算力成本</strong>：带状聚合将维度从 O(L) 降至 O(B)，复杂度 O(KL + K²B)，远低于 szKendall 的 O(K²L²)；但 HiCImpute 本身计算开销大（作者在 Discussion 中承认）。</li>
+<li><strong>历史数据依赖</strong>：方法本身不依赖历史数据，但 SZ 推断工具的训练/校准可能隐含特定数据分布假设。</li>
+<li><strong>模型依赖</strong>：性能上限受限于 SZ 推断准确性；作者通过鲁棒性分析（42 种误设组合）刻画了这种依赖。</li>
+<li><strong>最难情形</strong>：低测序深度 + 高 SZ 误设率时，ssJSD 优势缩小但仍不低于基线。</li>
+<li><strong>不确定性</strong>：真实数据中 SZ 标签无实验验证；5 细胞系结果未与最新深度学习方法（如 Higashi）直接对比；前额叶皮层结果未报告与 szKendall 的定量比较。</li>
+<li><strong>边界化复述</strong>：在模拟与两个真实数据集上，当 SZ 推断质量合理（sensitivity/specificity ≥ 0.7）时，ssJSD 的聚类性能一致优于忽略 SZ 的 JSD 基线；但性能增益的上界受限于 SZ 推断工具的准确性，且未证明优于所有现有方法。</li>
+</ul>
+<h2>12 作者自认局限</h2>
+<table>
+<thead>
+<tr>
+<th>局限</th>
+<th>具体表现</th>
+<th>作者提出的未来方向</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>依赖 SZ 推断准确性</td>
+<td>方法性能受 HiCImpute 等工具推断质量限制；误设分析显示低 sensitivity/specificity 时优势缩小</td>
+<td>使用更先进的 SZ 推断算法；或直接使用推断概率而非阈值化</td>
+<td>Discussion 第 2 段</td>
+</tr>
+<tr>
+<td>计算瓶颈在 SZ 推断环节</td>
+<td>HiCImpute 计算开销大，限制大规模应用</td>
+<td>开发更高效的 SZ 推断方法</td>
+<td>Discussion 末段</td>
+</tr>
+<tr>
+<td>早期融合在 SZ 误设时不稳定</td>
+<td>ssJSD-EF 在 SZ 误设下性能下降快于晚期融合</td>
+<td>探索更自适应的融合策略（如动态加权）</td>
+<td>Discussion 第 3 段</td>
+</tr>
+<tr>
+<td>带数 B 的选择未系统研究</td>
+<td>未提供 B 的敏感性分析或最优选择准则</td>
+<td>未明确提及</td>
+<td>Discussion 末段（隐含）</td>
+</tr>
+<tr>
+<td>未与其他 SZ 感知方法全面对比</td>
+<td>仅与 JSD 基线对比，未与 szKendall 定量比较</td>
+<td>未明确提及</td>
+<td>Results 第 6 节（隐含）</td>
+</tr>
+</tbody>
+</table>
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>真实数据 SZ 标签无实验验证</td>
+<td>HiCImpute 推断的 SZ 可能含大量假阳性/假阴性；性能提升可能部分来自 HiCImpute 的插补效应而非 SZ 语义本身</td>
+<td>若性能提升主要来自插补，则「SZ 信息」的独特贡献被高估</td>
+<td>对比「仅用 HiCImpute 插补值 + JSD」与「SZ 矩阵 + JSD」</td>
+<td>Results 第 5 节 V3 vs V4 设计</td>
+</tr>
+<tr>
+<td>5 细胞系结果未与深度学习方法对比</td>
+<td>Higashi、scVI-3D 等可能已达到类似或更好性能</td>
+<td>无法判断 ssJSD 是否代表当前最优</td>
+<td>在相同 100 细胞子集上运行 Higashi 等并比较 ARI</td>
+<td>Results 第 5 节</td>
+</tr>
+<tr>
+<td>模拟中 SZ 生成机制可能过于简化</td>
+<td>真实 SZ 的生物学决定因素（CTCF、TAD 边界等）未建模；模拟 SZ 可能比真实更「干净」</td>
+<td>模拟结论可能高估真实数据上的增益</td>
+<td>使用真实 HiC 数据中经验验证的 SZ 集合进行模拟</td>
+<td>Methods 模拟步骤</td>
+</tr>
+<tr>
+<td>加权平均（WM）的权重定义依赖正计数匹配对数，可能对低深度细胞有偏</td>
+<td>低深度细胞正计数少，w₁ 小，可能过度依赖 SZ 通道</td>
+<td>影响低质量细胞的聚类鲁棒性</td>
+<td>按深度分层分析 WM 与 AM 的性能差异</td>
+<td>Methods 第 2 节</td>
+</tr>
+<tr>
+<td>未报告 B 的选择敏感性</td>
+<td>带数 B 影响分辨率与噪声平衡，不同数据集最优 B 可能不同</td>
+<td>方法可复现性受影响</td>
+<td>在模拟与真实数据上扫描 B 值并报告 ARI 变化</td>
+<td>未提供</td>
+</tr>
+</tbody>
+</table>
+<h2>14 学到什么</h2>
+<blockquote>
+<p>Agent 提炼的知识候选</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>「零的语义分化」是可迁移的核心概念</strong>：在 scHiC（以及 scRNA-seq、scATAC-seq 等稀疏单细胞数据）中，将零区分为「生物学真实零」与「技术丢失」并分别建模，可显著提升下游任务性能。迁移到三维基因组结构预测：可考虑将「结构零概率」作为辅助任务或输入特征，帮助模型区分「未观测」与「确实不互作」。</p>
+</li>
+<li>
+<p><strong>带状聚合是处理超高维稀疏矩阵的高效降维策略</strong>：将 2D 接触矩阵按基因组距离带聚合为 1D 谱向量，既保留空间距离衰减这一核心生物学规律，又将维度从 O(L) 降至 O(B)。此思路可迁移到任何基于 HiC 矩阵的深度学习模型输入设计——用距离带谱替代原始矩阵可大幅降低计算量。</p>
+</li>
+<li>
+<p><strong>早期融合 vs 晚期融合的权衡</strong>：当两个特征通道（接触频率 vs SZ 模式）的噪声结构不同时，晚期融合（分别度量后合并）比早期融合（拼接后统一度量）更稳健，尤其在 SZ 推断有误时。这提示多模态三维基因组数据整合（如 HiC + CTCF + 表观）时，应优先考虑「各模态独立度量后融合」而非「特征拼接」。</p>
+</li>
+<li>
+<p><strong>鲁棒性分析的设计范式</strong>：作者系统评估了 SZ 推断 sensitivity/specificity 的 42 种组合对性能的影响，明确了方法的「性能边界条件」。这种「对上游误差的敏感性分析」值得在依赖预测/推断模块的三维基因组方法中推广。</p>
+</li>
+<li>
+<p><strong>计算复杂度是方法落地的关键考量</strong>：szKendall 性能虽优但 O(K²L²) 不可扩展；ssJSD 通过带状聚合实现 O(KL + K²B)，使 SZ 信息利用变得可扩展。在三维基因组 × AI 方向，设计「信息丰富且计算高效」的表示是方法被广泛采用的关键。</p>
+</li>
+</ol>
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>HiCRep [11] 与 JSD [12]</strong>：本文直接继承其带状聚合框架，是该方法在单细胞场景下的扩展。可对比阅读以理解从 bulk HiC 到 scHiC 的适配挑战。</li>
+<li><strong>szKendall [23]</strong>：本文的直接前身与对照，首次将 SZ 信息用于 scHiC 不相似性度量，但计算复杂度过高。ssJSD 是其高效替代。</li>
+<li><strong>HiCImpute [21] / scHiCSRS [22]</strong>：SZ/DO 概率建模的代表方法，本文依赖其输出作为 SZ 来源。可迁移思路：将概率输出直接作为特征（而非阈值化）可能进一步提升性能。</li>
+<li><strong>scHiCluster [13] / Higashi [20]</strong>：基于图/深度学习的 scHiC 嵌入方法，本文未与其直接对比，但可作为「是否 SZ 信息也能提升深度嵌入方法」的后续研究方向。</li>
+<li><strong>4D Nucleome 数据门户</strong>：5 细胞系数据来源，是 scHiC 方法评估的标准基准之一。</li>
+<li><strong>与课题方向（3D-Genome-AI）的连接</strong>：本文不涉及结构预测，但其「结构零作为生物学先验」的思想可迁移至结构预测模型的损失函数设计（如对已知不互作位点对施加约束）或作为多模态输入特征。此外，距离带谱表示可作为轻量级输入特征用于基于 Transformer 的 3D 基因组模型。</li>
+</ul>
+<h2>16 研究想法</h2>
+<blockquote>
+<p>Agent 生成的研究候选</p>
+</blockquote>
+<p><strong>候选 1：结构零感知的 3D 基因组结构预测损失函数</strong>
+- <strong>来源局限/观察</strong>：本文证明 SZ 携带细胞类型特异的生物学信息，但结构预测模型（如基于 HiC 的 3D 结构重建）通常对所有零位点对一视同仁。
+- <strong>核心假设</strong>：在结构预测模型的训练损失中，对 SZ 位点对施加更强的「不接触」约束（如增大距离惩罚权重），可提升预测结构的细胞类型特异性与生物学准确性。
+- <strong>初步方法</strong>：使用 HiCImpute 或类似工具推断 SZ 概率，将其作为损失函数中位点对权重的先验；在模拟与真实 HiC 数据上对比加权与未加权模型的 3D 结构重建精度。
+- <strong>验证方式</strong>：使用 FISH 验证的 3D 距离作为 ground truth，比较加权模型的预测距离误差。
+- <strong>创新状态</strong>：unverified</p>
+<p><strong>候选 2：多模态距离带谱融合的 scHiC 表示学习</strong>
+- <strong>来源局限/观察</strong>：ssJSD 的晚期融合优于早期融合，提示不同模态（接触频率 vs SZ 模式）应独立编码后再融合。
+- <strong>核心假设</strong>：将接触频率谱与 SZ 谱分别编码为嵌入向量，再通过注意力机制动态融合，可学习到比固定加权（如 WM）更优的细胞表示。
+- <strong>初步方法</strong>：设计双通道编码器（接触谱 + SZ 谱），融合层使用门控注意力；在 5 细胞系与前额叶皮层数据上评估聚类 ARI。
+- <strong>验证方式</strong>：与 ssJSD 各变体、Higashi、BandNorm 对比；消融实验验证注意力融合的贡献。
+- <strong>创新状态</strong>：unverified</p>
+<p><strong>候选 3：SZ 概率的端到端可微估计器</strong>
+- <strong>来源局限/观察</strong>：ssJSD 依赖外部工具（HiCImpute）的 SZ 推断，且作者承认该环节是计算瓶颈；阈值化可能丢失概率信息。
+- <strong>核心假设</strong>：将 SZ 概率估计作为神经网络的一个可微分支，与聚类目标联合优化，可同时提升 SZ 推断质量和聚类性能，并消除对 HiCImpute 的依赖。
+- <strong>初步方法</strong>：设计多任务学习框架——共享编码器 + 两个头（SZ 概率预测头 + 聚类头）；损失函数为 SZ 预测（可基于模拟数据监督）与聚类（无监督）的加权和。
+- <strong>验证方式</strong>：在模拟数据上比较端到端模型与「HiCImpute + ssJSD」管线的 SZ 推断准确率与聚类 ARI；在真实数据上评估计算时间。
+- <strong>创新状态</strong>：unverified</p>
+<p><strong>候选 4：距离带数 B 的自适应选择策略</strong>
+- <strong>来源局限/观察</strong>：作者未系统研究带数 B 的选择，但 B 决定分辨率与噪声的平衡，且不同数据集最优 B 可能不同。
+- <strong>核心假设</strong>：基于数据自身特性（如接触衰减率、稀疏度）自适应选择 B，可稳定提升聚类性能。
+- <strong>初步方法</strong>：定义 B 的选择准则（如最小化带内方差、最大化带间分离度）；在模拟与真实数据上扫描 B 并验证准则的有效性。
+- <strong>验证方式</strong>：比较自适应 B 与固定 B 的聚类 ARI 分布。
+- <strong>创新状态</strong>：unverified</p></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Full manuscript text (abstract, introduction, results, discussion, methods, data availability)</li>
+<li><strong>Assessment boundary</strong> Scientific validity, methodological soundness, clarity of claims, and reproducibility based solely on the provided manuscript text</li>
+<li><strong>Shared manuscript claim summary</strong> The authors propose ssJSD, a dissimilarity measure for scHiC clustering that integrates band-wise contact frequency profiles with structural zero (SZ) information via early and late fusion strategies, and demonstrate improved clustering performance in simulations and two real datasets</li>
+<li><strong>Visible evidence base</strong> Simulation studies (12 settings), two real datasets (five human cell lines, prefrontal cortex), comparison against JSD variants, robustness analyses under SZ mis-specification</li>
+<li><strong>Missing materials affecting confidence</strong> Figures and supplementary figures referenced but not provided; exact parameter values in Table 1 not visible; code and data availability statement present but not independently verified; no comparison against szKendall or other state-of-the-art methods in the visible text</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li><strong>Overall assessment</strong> The manuscript addresses a relevant and timely problem in scHiC analysis: the distinction between structural zeros and technical dropouts for clustering. The proposed ssJSD framework is conceptually sound and the fusion strategies are clearly described. However, the evidence base is incomplete as presented, with key figures and supplementary materials not available for inspection. The claims of improved performance rest heavily on these unseen results, and several methodological details require clarification. The computational advantage over szKendall is a notable strength, but the lack of direct benchmarking against szKendall or other modern methods weakens the case for practical utility.</li>
+<li><strong>Who would be interested in the results, and why</strong> Computational biologists and bioinformaticians working on single-cell epigenomics, particularly those developing or applying clustering methods for scHiC data. The work may also interest methodologists studying sparse high-dimensional data and researchers studying 3D genome organization and cell-type heterogeneity.</li>
+<li><strong>Major strengths</strong> 1) The conceptual contribution of explicitly distinguishing structural zeros from dropouts in dissimilarity computation is well motivated and biologically meaningful. 2) The fusion strategies (early vs late) are clearly described and provide a flexible framework. 3) The computational complexity argument (OKL + K²B vs OK²L²) is a compelling practical advantage. 4) The robustness analysis under SZ mis-specification is a thoughtful addition that addresses a realistic limitation.</li>
+<li><strong>Major Concerns</strong></li>
+<li><strong>Concern ID</strong> R1-M1</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Evidence sufficiency</li>
+<li><strong>Claim pointer</strong> "ssJSD improves clustering accuracy and effectively distinguishes cell types" (Abstract); "ssJSD substantially improves clustering performance compared to traditional approaches" (Introduction)</li>
+<li><strong>Evidence pointer</strong> Figures 2, 3, 5, 6; Supplementary Figures S1-S33; location not provided</li>
+<li><strong>Concern</strong> The central claims of improved clustering performance cannot be evaluated because the key figures and supplementary figures are not included in the provided material. The text describes results qualitatively but without quantitative details (e.g., ARI values, confidence intervals, statistical tests). The reader cannot verify whether the improvements are substantial, consistent, or statistically significant.</li>
+<li><strong>Why it matters</strong> The manuscript's primary contribution is empirical: demonstrating that SZ-informed dissimilarity improves clustering. Without access to the actual results, the claims are unverifiable and the scientific case is not established.</li>
+<li><strong>Resolution test</strong> Provide all figures and supplementary figures with clear axis labels, legends, and quantitative annotations. Include statistical comparisons (e.g., mean ± SD across 100 simulations) and, where relevant, significance tests.</li>
+<li><strong>Concern ID</strong> R1-M2</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Methodological completeness</li>
+<li><strong>Claim pointer</strong> "ssJSD leverages probabilistic SZ predictions from imputation models" (Introduction); "HiCImpute [21] was applied to identify SZs" (Results)</li>
+<li><strong>Evidence pointer</strong> Methods section, "Building band-wise probability vectors"; location not provided</li>
+<li><strong>Concern</strong> The manuscript states that SZ information is obtained from imputation models (e.g., HiCImpute), but the exact procedure for converting probabilistic predictions into binary SZ annotations is not fully specified. The thresholding approach (95th percentile) is mentioned for the real data, but the sensitivity of results to this choice is not discussed. Furthermore, the simulation procedure generates SZ annotations directly, which may not reflect the error patterns of real imputation tools.</li>
+<li><strong>Why it matters</strong> The method's performance depends critically on the quality of SZ inference. If the thresholding or the imputation model is suboptimal, the advantages of ssJSD may diminish. The manuscript should clarify how users should obtain SZ annotations in practice and how robust the method is to different inference approaches.</li>
+<li><strong>Resolution test</strong> Provide a detailed description of the SZ inference pipeline, including the threshold selection rationale. Add a sensitivity analysis varying the threshold or using alternative imputation methods. Discuss how the simulation SZ generation relates to real imputation errors.</li>
+<li><strong>Concern ID</strong> R1-M3</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Comparative benchmarking</li>
+<li><strong>Claim pointer</strong> "ssJSD substantially improves clustering performance compared to traditional approaches" (Introduction); "The only SZ-informed method, szKendall [23], also achieves near-perfect separation" (Results)</li>
+<li><strong>Evidence pointer</strong> Results sections for simulations and real data; location not provided</li>
+<li><strong>Concern</strong> The manuscript compares ssJSD against JSD variants but does not include direct comparisons with szKendall or other state-of-the-art scHiC clustering methods (e.g., scHiCluster, Higashi, BandNorm) in the visible text. The claim that ssJSD achieves similar performance to szKendall with lower computational cost is mentioned but not demonstrated with quantitative results.</li>
+<li><strong>Why it matters</strong> For a new method to be adopted, it must be benchmarked against the current best-performing alternatives. Without such comparisons, the practical advantage of ssJSD over existing tools is unclear.</li>
+<li><strong>Resolution test</strong> Include benchmarking results against szKendall and at least one or two other modern scHiC clustering methods on the same datasets, reporting clustering metrics and computational runtime.</li>
+<li><strong>Concern ID</strong> R1-M4</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Statistical rigor</li>
+<li><strong>Claim pointer</strong> "ssJSD consistently achieves excellent performance under four evaluation criteria" (Results)</li>
+<li><strong>Evidence pointer</strong> Figure 3 and Supplementary Figures S12-S23; location not provided</li>
+<li><strong>Concern</strong> The evaluation uses 100 simulated datasets per setting, which is commendable, but the text does not report variability (e.g., standard deviations, interquartile ranges) or statistical comparisons between methods. The claim of "consistent" performance cannot be assessed without measures of dispersion.</li>
+<li><strong>Why it matters</strong> Without quantifying variability, the reader cannot determine whether observed differences between methods are meaningful or within the range of random fluctuation.</li>
+<li><strong>Resolution test</strong> Report mean and standard deviation (or equivalent) for all metrics across the 100 simulations. Consider formal statistical tests (e.g., paired Wilcoxon) comparing ssJSD against baselines.</li>
+<li><strong>Minor Comments</strong></li>
+<li><strong>Concern ID</strong> R1-m1</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Clarity</li>
+<li><strong>Affected element</strong> Methods, "Building band-wise probability vectors"</li>
+<li><strong>Evidence pointer</strong> Equation for PCF(k)(s); location not provided</li>
+<li><strong>Issue</strong> The notation B = max_c B_c - 1 is potentially confusing. If B_c is the number of bins in chromosome c, then the maximum number of bands is max_c (B_c - 1), not max_c B_c - 1. The current notation could be misread.</li>
+<li><strong>Required correction</strong> Clarify the definition, e.g., B = max_c (B_c - 1), and ensure consistency throughout.</li>
+<li><strong>Concern ID</strong> R1-m2</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Reproducibility</li>
+<li><strong>Affected element</strong> Methods, "Simulation procedure"</li>
+<li><strong>Evidence pointer</strong> Step 1, equation for log λ_ij; location not provided</li>
+<li><strong>Issue</strong> The simulation procedure does not specify how the 3D coordinates (and hence distances d_ij) are generated for the underlying structures. This is essential for reproducibility.</li>
+<li><strong>Required correction</strong> Provide details on the generation of 3D structures, including the number of loci, the spatial model used, and any random seed settings.</li>
+<li><strong>Concern ID</strong> R1-m3</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Presentation</li>
+<li><strong>Affected element</strong> Results, "ssJSD separates cell clusters by utilizing SZ information"</li>
+<li><strong>Evidence pointer</strong> Text describing Design 1 and Design 2; location not provided</li>
+<li><strong>Issue</strong> The text states that Design 1 uses a single K562 cell structure while Design 2 uses three different K562 cell structures, but it is unclear whether these structures are derived from the same cell line at different states or from different individuals. This could affect interpretation.</li>
+<li><strong>Required correction</strong> Clarify the source and nature of the underlying 3D structures used in the simulations.</li>
+<li><strong>Concern ID</strong> R1-m4</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Language</li>
+<li><strong>Affected element</strong> Results, "ssJSD delineates subtypes of neurons in the prefrontal cortex"</li>
+<li><strong>Evidence pointer</strong> "achieved" misspelled as "acieved"; location not provided</li>
+<li><strong>Issue</strong> Typographical error.</li>
+<li><strong>Required correction</strong> Correct the spelling.</li>
+<li><strong>Concern ID</strong> R1-m5</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Completeness</li>
+<li><strong>Affected element</strong> Data Availability</li>
+<li><strong>Evidence pointer</strong> GitHub link; location not provided</li>
+<li><strong>Issue</strong> The availability statement mentions an R package and prepared data, but there is no version number, license, or documentation reference. This limits reproducibility assessment.</li>
+<li><strong>Required correction</strong> Provide a versioned release, license information, and a brief usage example or link to documentation.</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>The claim that "ssJSD substantially improves clustering performance compared to traditional approaches" is unsupported in the provided text because the key results (figures, quantitative metrics) are not visible.</li>
+<li>The claim that "ssJSD achieves the same level of separation [as szKendall] with substantially reduced computational cost" is mentioned but not demonstrated with comparative runtime data.</li>
+<li>The assertion that "SZ information contributes critically to uncovering biologically meaningful structure" is plausible but not directly evidenced in the visible text without the real-data results.</li>
+<li>The robustness claim ("ssJSD remained stable with a reasonably good performing SZ-inference tool") is based on unseen simulation results and cannot be verified.</li>
+<li>The statement that "the weighted-mean method (ssJSD-WM) appears to be the best overall performer" is presented without quantitative support in the provided material.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

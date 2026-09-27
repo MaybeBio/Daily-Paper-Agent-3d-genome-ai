@@ -1,0 +1,91 @@
+## Review setup
+- **Input scope** Full manuscript text (abstract, introduction, results, discussion, methods, data availability)
+- **Assessment boundary** Scientific validity, methodological soundness, clarity of claims, and reproducibility based solely on the provided manuscript text
+- **Shared manuscript claim summary** The authors propose ssJSD, a dissimilarity measure for scHiC clustering that integrates band-wise contact frequency profiles with structural zero (SZ) information via early and late fusion strategies, and demonstrate improved clustering performance in simulations and two real datasets
+- **Visible evidence base** Simulation studies (12 settings), two real datasets (five human cell lines, prefrontal cortex), comparison against JSD variants, robustness analyses under SZ mis-specification
+- **Missing materials affecting confidence** Figures and supplementary figures referenced but not provided; exact parameter values in Table 1 not visible; code and data availability statement present but not independently verified; no comparison against szKendall or other state-of-the-art methods in the visible text
+
+## Reviewer
+- **Overall assessment** The manuscript addresses a relevant and timely problem in scHiC analysis: the distinction between structural zeros and technical dropouts for clustering. The proposed ssJSD framework is conceptually sound and the fusion strategies are clearly described. However, the evidence base is incomplete as presented, with key figures and supplementary materials not available for inspection. The claims of improved performance rest heavily on these unseen results, and several methodological details require clarification. The computational advantage over szKendall is a notable strength, but the lack of direct benchmarking against szKendall or other modern methods weakens the case for practical utility.
+- **Who would be interested in the results, and why** Computational biologists and bioinformaticians working on single-cell epigenomics, particularly those developing or applying clustering methods for scHiC data. The work may also interest methodologists studying sparse high-dimensional data and researchers studying 3D genome organization and cell-type heterogeneity.
+- **Major strengths** 1) The conceptual contribution of explicitly distinguishing structural zeros from dropouts in dissimilarity computation is well motivated and biologically meaningful. 2) The fusion strategies (early vs late) are clearly described and provide a flexible framework. 3) The computational complexity argument (OKL + K²B vs OK²L²) is a compelling practical advantage. 4) The robustness analysis under SZ mis-specification is a thoughtful addition that addresses a realistic limitation.
+- **Major Concerns**
+  - **Concern ID** R1-M1
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Evidence sufficiency
+  - **Claim pointer** "ssJSD improves clustering accuracy and effectively distinguishes cell types" (Abstract); "ssJSD substantially improves clustering performance compared to traditional approaches" (Introduction)
+  - **Evidence pointer** Figures 2, 3, 5, 6; Supplementary Figures S1-S33; location not provided
+  - **Concern** The central claims of improved clustering performance cannot be evaluated because the key figures and supplementary figures are not included in the provided material. The text describes results qualitatively but without quantitative details (e.g., ARI values, confidence intervals, statistical tests). The reader cannot verify whether the improvements are substantial, consistent, or statistically significant.
+  - **Why it matters** The manuscript's primary contribution is empirical: demonstrating that SZ-informed dissimilarity improves clustering. Without access to the actual results, the claims are unverifiable and the scientific case is not established.
+  - **Resolution test** Provide all figures and supplementary figures with clear axis labels, legends, and quantitative annotations. Include statistical comparisons (e.g., mean ± SD across 100 simulations) and, where relevant, significance tests.
+  - **Concern ID** R1-M2
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Methodological completeness
+  - **Claim pointer** "ssJSD leverages probabilistic SZ predictions from imputation models" (Introduction); "HiCImpute [21] was applied to identify SZs" (Results)
+  - **Evidence pointer** Methods section, "Building band-wise probability vectors"; location not provided
+  - **Concern** The manuscript states that SZ information is obtained from imputation models (e.g., HiCImpute), but the exact procedure for converting probabilistic predictions into binary SZ annotations is not fully specified. The thresholding approach (95th percentile) is mentioned for the real data, but the sensitivity of results to this choice is not discussed. Furthermore, the simulation procedure generates SZ annotations directly, which may not reflect the error patterns of real imputation tools.
+  - **Why it matters** The method's performance depends critically on the quality of SZ inference. If the thresholding or the imputation model is suboptimal, the advantages of ssJSD may diminish. The manuscript should clarify how users should obtain SZ annotations in practice and how robust the method is to different inference approaches.
+  - **Resolution test** Provide a detailed description of the SZ inference pipeline, including the threshold selection rationale. Add a sensitivity analysis varying the threshold or using alternative imputation methods. Discuss how the simulation SZ generation relates to real imputation errors.
+  - **Concern ID** R1-M3
+  - **Severity** Major
+  - **Blocking** No
+  - **Axis** Comparative benchmarking
+  - **Claim pointer** "ssJSD substantially improves clustering performance compared to traditional approaches" (Introduction); "The only SZ-informed method, szKendall [23], also achieves near-perfect separation" (Results)
+  - **Evidence pointer** Results sections for simulations and real data; location not provided
+  - **Concern** The manuscript compares ssJSD against JSD variants but does not include direct comparisons with szKendall or other state-of-the-art scHiC clustering methods (e.g., scHiCluster, Higashi, BandNorm) in the visible text. The claim that ssJSD achieves similar performance to szKendall with lower computational cost is mentioned but not demonstrated with quantitative results.
+  - **Why it matters** For a new method to be adopted, it must be benchmarked against the current best-performing alternatives. Without such comparisons, the practical advantage of ssJSD over existing tools is unclear.
+  - **Resolution test** Include benchmarking results against szKendall and at least one or two other modern scHiC clustering methods on the same datasets, reporting clustering metrics and computational runtime.
+  - **Concern ID** R1-M4
+  - **Severity** Major
+  - **Blocking** No
+  - **Axis** Statistical rigor
+  - **Claim pointer** "ssJSD consistently achieves excellent performance under four evaluation criteria" (Results)
+  - **Evidence pointer** Figure 3 and Supplementary Figures S12-S23; location not provided
+  - **Concern** The evaluation uses 100 simulated datasets per setting, which is commendable, but the text does not report variability (e.g., standard deviations, interquartile ranges) or statistical comparisons between methods. The claim of "consistent" performance cannot be assessed without measures of dispersion.
+  - **Why it matters** Without quantifying variability, the reader cannot determine whether observed differences between methods are meaningful or within the range of random fluctuation.
+  - **Resolution test** Report mean and standard deviation (or equivalent) for all metrics across the 100 simulations. Consider formal statistical tests (e.g., paired Wilcoxon) comparing ssJSD against baselines.
+- **Minor Comments**
+  - **Concern ID** R1-m1
+  - **Severity** Minor
+  - **Axis** Clarity
+  - **Affected element** Methods, "Building band-wise probability vectors"
+  - **Evidence pointer** Equation for PCF(k)(s); location not provided
+  - **Issue** The notation B = max_c B_c - 1 is potentially confusing. If B_c is the number of bins in chromosome c, then the maximum number of bands is max_c (B_c - 1), not max_c B_c - 1. The current notation could be misread.
+  - **Required correction** Clarify the definition, e.g., B = max_c (B_c - 1), and ensure consistency throughout.
+  - **Concern ID** R1-m2
+  - **Severity** Minor
+  - **Axis** Reproducibility
+  - **Affected element** Methods, "Simulation procedure"
+  - **Evidence pointer** Step 1, equation for log λ_ij; location not provided
+  - **Issue** The simulation procedure does not specify how the 3D coordinates (and hence distances d_ij) are generated for the underlying structures. This is essential for reproducibility.
+  - **Required correction** Provide details on the generation of 3D structures, including the number of loci, the spatial model used, and any random seed settings.
+  - **Concern ID** R1-m3
+  - **Severity** Minor
+  - **Axis** Presentation
+  - **Affected element** Results, "ssJSD separates cell clusters by utilizing SZ information"
+  - **Evidence pointer** Text describing Design 1 and Design 2; location not provided
+  - **Issue** The text states that Design 1 uses a single K562 cell structure while Design 2 uses three different K562 cell structures, but it is unclear whether these structures are derived from the same cell line at different states or from different individuals. This could affect interpretation.
+  - **Required correction** Clarify the source and nature of the underlying 3D structures used in the simulations.
+  - **Concern ID** R1-m4
+  - **Severity** Minor
+  - **Axis** Language
+  - **Affected element** Results, "ssJSD delineates subtypes of neurons in the prefrontal cortex"
+  - **Evidence pointer** "achieved" misspelled as "acieved"; location not provided
+  - **Issue** Typographical error.
+  - **Required correction** Correct the spelling.
+  - **Concern ID** R1-m5
+  - **Severity** Minor
+  - **Axis** Completeness
+  - **Affected element** Data Availability
+  - **Evidence pointer** GitHub link; location not provided
+  - **Issue** The availability statement mentions an R package and prepared data, but there is no version number, license, or documentation reference. This limits reproducibility assessment.
+  - **Required correction** Provide a versioned release, license information, and a brief usage example or link to documentation.
+
+## Risk / unsupported claims
+- The claim that "ssJSD substantially improves clustering performance compared to traditional approaches" is unsupported in the provided text because the key results (figures, quantitative metrics) are not visible.
+- The claim that "ssJSD achieves the same level of separation [as szKendall] with substantially reduced computational cost" is mentioned but not demonstrated with comparative runtime data.
+- The assertion that "SZ information contributes critically to uncovering biologically meaningful structure" is plausible but not directly evidenced in the visible text without the real-data results.
+- The robustness claim ("ssJSD remained stable with a reasonably good performing SZ-inference tool") is based on unseen simulation results and cannot be verified.
+- The statement that "the weighted-mean method (ssJSD-WM) appears to be the best overall performer" is presented without quantitative support in the provided material.
