@@ -1,0 +1,81 @@
+## Review setup
+- **Input scope** Abstract only
+- **Assessment boundary** Claims and evidence as presented in the abstract; no figures, tables, methods, or supplementary materials were provided
+- **Shared manuscript claim summary** The authors introduce EpiZoo, a 2.6 billion parameter mixture-of-experts transformer foundation model for cross-species single-cell epigenomics. The model converts single-cell epigenomic profiles into "cell sentences" integrating DNA sequence information, sequence-independent epigenomic context, and accessibility-based importance. It is pretrained on a manually curated multi-species corpus (Omni-scATAC) of approximately 20.9 million cells. The authors claim state-of-the-art performance on external datasets for feature extraction, cell type annotation, and data imputation; extension to evolutionarily diverse species; support for comparative analysis of regulatory conservation and divergence in primate evolution; context-aware prioritization of somatic mutations in cancer; and prediction of cell-type-specific chromatin accessibility from DNA sequences across genomic regions and species.
+- **Visible evidence base** Abstract text only; no figures, tables, methods, or supplementary materials
+- **Missing materials affecting confidence** Full manuscript, methods description, model architecture details, training and evaluation protocols, benchmark definitions, external dataset descriptions, statistical analyses, and all quantitative results
+
+## Reviewer
+- **Overall assessment** The abstract presents an ambitious and potentially impactful foundation model for cross-species single-cell epigenomics. The conceptual advance of incorporating DNA sequence information into a single-cell epigenomic foundation model is timely and addresses a recognized limitation of coordinate-based models. However, the abstract alone provides no quantitative evidence, no methodological detail, and no clear description of evaluation protocols. The breadth of claimed capabilities is substantial, and the current evidence base is insufficient to assess whether any of these claims are established. The work is likely to interest a broad readership if the technical claims hold, but the case is not currently established from the provided material.
+- **Who would be interested in the results, and why** Computational biologists and machine learning researchers working on single-cell genomics, epigenomics, and foundation models; experimental biologists studying chromatin regulation, cell type diversity, and gene regulation; cancer genomics researchers interested in variant prioritization; evolutionary biologists studying regulatory conservation and divergence. The cross-species scope and sequence-aware design could appeal to researchers seeking models that generalize beyond human or mouse.
+- **Major strengths** The conceptual framing is clear and addresses a real gap in the field, namely the species confinement of existing single-cell epigenomic foundation models. The proposed integration of DNA sequence information with epigenomic context is a sensible and potentially powerful design choice. The scale of the pretraining corpus (approximately 20.9 million cells) and model size (2.6 billion parameters) are substantial. The range of downstream applications, from basic analysis tasks to cancer variant prioritization and cross-species prediction, suggests broad utility if validated.
+- **Major Concerns**
+  - **Concern ID** R1-M1
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Evidence sufficiency
+  - **Claim pointer** "EpiZoo achieves state-of-the-art performance in fundamental single-cell analysis tasks, including feature extraction, cell type annotation and data imputation"
+  - **Evidence pointer** Abstract; location not provided
+  - **Concern** The abstract states state-of-the-art performance without reporting any quantitative results, baseline comparisons, or evaluation metrics. No information is given about which datasets were used for evaluation, which baselines were compared, or how statistical significance was assessed.
+  - **Why it matters** The central claim of the paper is that EpiZoo outperforms existing methods. Without quantitative evidence, this claim cannot be evaluated, and the reader cannot determine whether the improvement is meaningful or marginal.
+  - **Resolution test** Provide benchmark results with clear metrics, baseline comparisons, and statistical tests in the full manuscript, with key numbers summarized in the abstract.
+  - **Concern ID** R1-M2
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Methodological transparency
+  - **Claim pointer** "EpiZoo converts million-dimensional single-cell epigenomic profiles from diverse species into compact cell sentences that integrate DNA-encoded regulatory information, sequence-independent epigenomic context and accessibility-based importance"
+  - **Evidence pointer** Abstract; location not provided
+  - **Concern** The abstract describes the "cell sentence" representation and the integration of three information types but provides no detail on how these are computed, encoded, or combined. The mixture-of-experts transformer architecture is mentioned but not described in terms of routing, expert count, or training objective.
+  - **Why it matters** Reproducibility and technical assessment require understanding the model architecture and the input representation. Without this information, reviewers and readers cannot judge whether the design is sound or whether the claimed capabilities follow from the architecture.
+  - **Resolution test** Provide a detailed methods section describing the cell sentence construction, the transformer architecture, the pretraining objective, and the training procedure.
+  - **Concern ID** R1-M3
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Claim scope versus evidence
+  - **Claim pointer** "Its sequence-aware architecture enables extension to evolutionarily diverse species, and supports comparative analysis of regulatory conservation and divergence during primate evolution"
+  - **Evidence pointer** Abstract; location not provided
+  - **Concern** The abstract claims extension to evolutionarily diverse species and support for comparative analysis in primate evolution, but no results are presented. It is unclear whether these are demonstrated capabilities or anticipated applications.
+  - **Why it matters** The distinction between demonstrated results and potential applications is critical for assessing the maturity of the work. If these are only anticipated capabilities, the claim should be framed accordingly.
+  - **Resolution test** Clarify in the abstract and manuscript which capabilities are demonstrated with results and which are proposed as future directions. Provide supporting analyses for any demonstrated claims.
+  - **Concern ID** R1-M4
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Evidence sufficiency
+  - **Claim pointer** "EpiZoo enables context-aware prioritization of somatic mutations in cancer and prediction of cell-type-specific chromatin accessibility from DNA sequences across genomic regions and species"
+  - **Evidence pointer** Abstract; location not provided
+  - **Concern** Two additional application domains are claimed, cancer mutation prioritization and cross-species chromatin accessibility prediction, but no results, datasets, or evaluation details are provided.
+  - **Why it matters** These are substantial claims that extend beyond the core single-cell analysis tasks. Without evidence, the reader cannot assess whether these applications are validated or speculative.
+  - **Resolution test** Provide results for each application with appropriate benchmarks and comparisons in the full manuscript.
+- **Minor Comments**
+  - **Concern ID** R1-m1
+  - **Severity** Minor
+  - **Axis** Clarity
+  - **Affected element** Abstract terminology
+  - **Evidence pointer** Abstract; location not provided
+  - **Issue** The term "cell sentences" is introduced without definition or context. It is unclear whether this is a novel concept or a rephrasing of existing tokenization approaches.
+  - **Required correction** Define the term clearly in the abstract or use more standard terminology that conveys the same meaning.
+  - **Concern ID** R1-m2
+  - **Severity** Minor
+  - **Axis** Completeness
+  - **Affected element** Pretraining corpus description
+  - **Evidence pointer** Abstract; location not provided
+  - **Issue** The Omni-scATAC corpus is described as "manually curated" and containing approximately 20.9 million cells, but no information is given about species composition, tissue types, or data sources.
+  - **Required correction** Provide a brief description of the corpus composition in the abstract or refer to a table or supplementary figure.
+  - **Concern ID** R1-m3
+  - **Severity** Minor
+  - **Axis** Precision
+  - **Affected element** Performance claim
+  - **Evidence pointer** Abstract; location not provided
+  - **Issue** The phrase "state-of-the-art performance" is used without specifying the comparison set or the performance metric.
+  - **Required correction** Specify the baselines and metrics used, or rephrase to indicate the comparison is detailed in the manuscript.
+- **Technical failings that need to be addressed before the case is established** R1-M1, R1-M2, R1-M3, R1-M4. The abstract provides no quantitative results, no methodological detail, and no clear separation between demonstrated capabilities and anticipated applications. The case for the model's utility and novelty cannot be assessed without the full manuscript.
+- **Assessment against Nature-style criteria** Originality: the concept of a sequence-aware cross-species single-cell epigenomic foundation model appears novel and addresses a recognized limitation, but the abstract does not provide enough detail to assess the degree of conceptual advance over existing models. Scientific importance: the potential impact is high given the breadth of applications, but importance is contingent on the validity of the claims, which cannot be assessed. Interdisciplinary readership: the work is likely to appeal to computational and experimental biologists, but the abstract is written in a way that is accessible to a broad audience. Technical soundness: cannot be assessed from the abstract alone; no architecture details, training procedures, or evaluation protocols are provided. Readability for nonspecialists: the abstract is generally clear, though terms such as "cell sentences" and "mixture-of-experts transformer" may require additional context for a general audience.
+- **Recommendation posture** Currently not established from the provided evidence. The abstract presents an interesting and potentially important model, but the absence of quantitative results and methodological detail prevents any assessment of whether the claims are supported. A full manuscript with detailed methods and results is required before the case can be evaluated.
+
+## Risk / unsupported claims
+- State-of-the-art performance on feature extraction, cell type annotation, and data imputation is unsupported by any quantitative evidence in the abstract.
+- Extension to evolutionarily diverse species and support for comparative analysis in primate evolution are claimed without demonstrated results.
+- Context-aware prioritization of somatic mutations in cancer is claimed without any supporting results.
+- Prediction of cell-type-specific chromatin accessibility from DNA sequences across genomic regions and species is claimed without any supporting results.
+- The pretraining corpus of approximately 20.9 million cells is described but its composition and quality are not assessable from the abstract.
+- The model architecture and training procedure are not described in sufficient detail to assess technical soundness.

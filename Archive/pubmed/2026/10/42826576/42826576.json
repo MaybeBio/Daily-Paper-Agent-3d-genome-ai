@@ -1,0 +1,210 @@
+{
+  "identity": {
+    "pmid": "42826576",
+    "doi": "10.1016/j.compbiolchem.2026.109426",
+    "title": "EXPSO: A PSO-based ensemble gene expression classifier for plant species using histone and chromatin accessiblity data."
+  },
+  "content": {
+    "abstract": "Gene expression in plants is regulated by complex interactions among chromatin features, including histone modifications and chromatin accessibility. Accurate prediction of gene-expression states from epigenomic information can provide insights into transcriptional regulation and facilitate functional genomic studies. However, the nonlinear and high-dimensional nature of epigenomic data presents challenges for conventional statistical approaches. Here, we developed EXPSO, a PSO-assisted ensemble learning framework for classifying plant genes into high- and low-expression states using integrated histone modification and chromatin accessibility data. The framework uses Particle Swarm Optimization (PSO) to optimize Random Forest hyperparameters within an ensemble comprising Random Forest, Support Vector Machine, and XGBoost classifiers. The framework was developed and evaluated independently across five plant species, including Arabidopsis thaliana, Hordeum vulgare, Phaseolus vulgaris, Setaria viridis, and Sorghum bicolor. EXPSO achieved an AUROC of 0.904 for Arabidopsis thaliana and demonstrated competitive predictive performance across the independently evaluated species. Model benchmarking against DeepChrome, ShallowChrome, and PatternChrome was performed using stratified five-fold cross-validation, with performance reported as mean +/- standard deviation and 95% confidence intervals. Paired two-sided t-tests were used to assess fold-wise differences between EXPSO and the benchmark models. Comparative benchmarking included DeepChrome, ShallowChrome, and PatternChrome under the evaluation framework used in this study. Feature-attribution analyses using SHAP, LIME, and PDP consistently identified H3K36me3 and H3K56ac as important predictive features, consistent with their reported associations with transcription-associated chromatin states. To facilitate practical application, we developed the freely accessible EXPSO web server, which enables users to submit gene IDs together with histone modification and chromatin accessibility data as individual entries or CSV files and obtain gene-expression predictions with associated prediction probabilities and downloadable results. EXPSO provides an accessible and interpretable computational framework for plant gene-expression prediction from epigenomic features and a practical web-based implementation for supported plant datasets.",
+    "keywords": [
+      "Chromatin accessibility",
+      "Gene expression",
+      "Histone modification",
+      "Machine learning model",
+      "Particle Swarm Optimization"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Sowmya, H S",
+        "Murmu, Sneha",
+        "Mishra, Dwijesh Chandra",
+        "Archak, Sunil"
+      ],
+      "short_names": [
+        "Sowmya HS",
+        "Murmu S",
+        "Mishra DC",
+        "Archak S"
+      ],
+      "auids": [],
+      "affiliations": [
+        "Division of Agricultural Bioinformatics, ICAR-Indian Agricultural Statistics Research Institute (ICAR-IASRI), IARI, New Delhi, 110012, India.",
+        "Division of Agricultural Bioinformatics, ICAR-Indian Agricultural Statistics Research Institute (ICAR-IASRI), IARI, New Delhi, 110012, India.",
+        "Division of Agricultural Bioinformatics, ICAR-Indian Agricultural Statistics Research Institute (ICAR-IASRI), IARI, New Delhi, 110012, India.",
+        "Germplasm Exchange and Policy Unit, ICAR-National Bureau of Plant Genetic Resources (ICAR-NBPGR), IARI, New Delhi, 110012, India. Electronic address: sunil.archak@icar.org.in."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Sowmya, H S",
+        "short_name": "Sowmya HS",
+        "identifiers": [],
+        "affiliations": [
+          "Division of Agricultural Bioinformatics, ICAR-Indian Agricultural Statistics Research Institute (ICAR-IASRI), IARI, New Delhi, 110012, India."
+        ]
+      },
+      {
+        "full_name": "Murmu, Sneha",
+        "short_name": "Murmu S",
+        "identifiers": [],
+        "affiliations": [
+          "Division of Agricultural Bioinformatics, ICAR-Indian Agricultural Statistics Research Institute (ICAR-IASRI), IARI, New Delhi, 110012, India."
+        ]
+      },
+      {
+        "full_name": "Mishra, Dwijesh Chandra",
+        "short_name": "Mishra DC",
+        "identifiers": [],
+        "affiliations": [
+          "Division of Agricultural Bioinformatics, ICAR-Indian Agricultural Statistics Research Institute (ICAR-IASRI), IARI, New Delhi, 110012, India."
+        ]
+      },
+      {
+        "full_name": "Archak, Sunil",
+        "short_name": "Archak S",
+        "identifiers": [],
+        "affiliations": [
+          "Germplasm Exchange and Policy Unit, ICAR-National Bureau of Plant Genetic Resources (ICAR-NBPGR), IARI, New Delhi, 110012, India. Electronic address: sunil.archak@icar.org.in."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Computational biology and chemistry"
+    ],
+    "journal_abbrev": [
+      "Comput Biol Chem"
+    ],
+    "pub_date": "2026 Sep 21",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/02 23:30",
+    "fetched_at": "2026-10-04 10:22:40"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42826576",
+      "42475469",
+      "31038680",
+      "34523419",
+      "41419964",
+      "41514301",
+      "41310253",
+      "42120650",
+      "37294468",
+      "42324504",
+      "39878927",
+      "40522559",
+      "42380674",
+      "42639073",
+      "42344510",
+      "42818624",
+      "41901583",
+      "42358557",
+      "27587684",
+      "42411153",
+      "42261622",
+      "40830558",
+      "35473556",
+      "36321557",
+      "39708562",
+      "42315862",
+      "42021160",
+      "31393553",
+      "42399867",
+      "41575322",
+      "42044068",
+      "30967126",
+      "42234843",
+      "41561150",
+      "42050907",
+      "42410132",
+      "42568092",
+      "42682825",
+      "42286075",
+      "41154264",
+      "40418571",
+      "40564788",
+      "41554477",
+      "39538149",
+      "42741378",
+      "27490187",
+      "41687774",
+      "42257858",
+      "42645652",
+      "23304070",
+      "41606475",
+      "40282384",
+      "41597514",
+      "42079733",
+      "40863882",
+      "41460717",
+      "42449777",
+      "30598689",
+      "38439097",
+      "41957161",
+      "42260815",
+      "32847102",
+      "42048896",
+      "40121301",
+      "40106382",
+      "42702376",
+      "41450215",
+      "42362610",
+      "29720103",
+      "41969262",
+      "26167691",
+      "26818008",
+      "25861082",
+      "42158462",
+      "41875746",
+      "39870155",
+      "42369583",
+      "42245940",
+      "26538092",
+      "40098114",
+      "32910169",
+      "29594496",
+      "41931572",
+      "36259363",
+      "42224874",
+      "21487388",
+      "42270697",
+      "40617604",
+      "42266687",
+      "40612342",
+      "41216218",
+      "41814305",
+      "38605635",
+      "41642902",
+      "40378751",
+      "39833673",
+      "42406080",
+      "42105007",
+      "39857095",
+      "40753861"
+    ],
+    "review": [
+      "42826576",
+      "37294468",
+      "36321557"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [],
+    "text_mined": []
+  }
+}

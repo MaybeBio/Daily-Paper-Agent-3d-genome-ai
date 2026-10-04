@@ -1,0 +1,24 @@
+{
+  "source": "biorxiv",
+  "id": "10.64898/2026.09.24.754017",
+  "title": "EpiZoo: a DNA sequence-aware foundation model for cross-species single-cell epigenomics",
+  "authors": "Li K; Chen X; Jiang Q; Wang Z; Lv H; Jiang R",
+  "journal": "bioRxiv",
+  "published_date": "2026-09-29",
+  "window": {
+    "start": "2026-09-27",
+    "end": "2026-10-03"
+  },
+  "score": 5,
+  "one_liner_zh": "EpiZoo是一个跨物种单细胞表观基因组学的DNA序列感知基础模型，虽涉及染色质可及性调控，但主要聚焦单细胞分析任务而非三维染色质空间架构建模，方法上AI可迁移但对象和结构轴较弱。",
+  "abstract": "Large-scale single-cell epigenomic atlases characterize chromatin regulatory landscapes across diverse biological contexts, spanning cell types, tissues, individuals and species. Foundation models provide an opportunity to capture the full spectrum of cellular diversity in these atlases, yet current models remain largely confined to individual species by genomic coordinate dependence and overlook regulatory information encoded in DNA sequences. Here we introduce EpiZoo, a DNA sequence-aware foundation model for cross-species single-cell epigenomics. EpiZoo converts million-dimensional single-cell epigenomic profiles from diverse species into compact cell sentences that integrate DNA-encoded regulatory information, sequence-independent epigenomic context and accessibility-based importance. Built around a mixture-of-experts transformer and containing 2.6 billion parameters in total, EpiZoo is pretrained on our manually curated multi-species Omni-scATAC corpus of approximately 20.9 million cells to learn regulatory programs across species. On external datasets excluded from pretraining, EpiZoo achieves state-of-the-art performance in fundamental single-cell analysis tasks, including feature extraction, cell type annotation and data imputation. Its sequence-aware architecture enables extension to evolutionarily diverse species, and supports comparative analysis of regulatory conservation and divergence during primate evolution. Benefiting from this modeling design, EpiZoo enables context-aware prioritization of somatic mutations in cancer and prediction of cell-type-specific chromatin accessibility from DNA sequences across genomic regions and species.",
+  "abstract_zh": "大规模单细胞表观基因组图谱描绘了跨越细胞类型、组织、个体和物种等多种生物学背景下的染色质调控景观。基础模型为捕捉这些图谱中细胞多样性的全谱提供了机会，然而现有模型因基因组坐标依赖性而主要局限于单个物种，并忽视了DNA序列中编码的调控信息。在此，我们介绍了EpiZoo，一种面向跨物种单细胞表观基因组学的DNA序列感知基础模型。EpiZoo将来自不同物种的百万维单细胞表观基因组谱转化为紧凑的细胞句子，这些句子整合了DNA编码的调控信息、序列无关的表观基因组背景以及基于可及性的重要性。EpiZoo围绕混合专家变换器构建，总参数达26亿，在我们手动整理的多物种Omni-scATAC语料库（约2090万个细胞）上进行预训练，以学习跨物种的调控程序。在预训练未涉及的外部数据集上，EpiZoo在基础单细胞分析任务中达到了最先进性能，包括特征提取、细胞类型注释和数据插补。其序列感知架构使其能够扩展到进化上多样的物种，并支持灵长类进化过程中调控保守性和分歧的比较分析。得益于这种建模设计，EpiZoo能够实现癌症中体细胞突变的情境感知优先级排序，以及从DNA序列跨基因组区域和物种预测细胞类型特异性的染色质可及性。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://www.biorxiv.org/content/10.64898/2026.09.24.754017",
+  "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.24.754017",
+  "paper_page_path": "papers/biorxiv/10.64898_2026.09.24.754017/index.html"
+}

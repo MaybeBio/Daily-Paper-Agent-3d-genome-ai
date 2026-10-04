@@ -1,0 +1,816 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deep Learning Predicts Hematopoietic Stem Cell Aging From 3D Chromatin Images. · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-mid">7</span>
+    <div>
+      <h1>Deep Learning Predicts Hematopoietic Stem Cell Aging From 3D Chromatin Images.</h1>
+      <div class="meta">Picazo, Pablo Ianez; Mejia-Ramirez, Eva; Di Bari, Dario; Vitali, Elena; Florian, Maria Carolina; Petrone, Paula</div>
+      <div class="meta muted">
+        
+        <span class="journal">Aging cell</span>
+        · 2026-09-28
+         · 全文(pmc)
+         · <a href="https://pubmed.ncbi.nlm.nih.gov/42802377/">原文</a>
+      </div>
+      <p class="one-liner">该文用CNN从3D染色质图像预测造血干细胞衰老，虽对象为染色质组织且用深度学习方法，但聚焦衰老表型而非三维基因组结构（TAD/环等）建模，方法可迁移但结构/调控深度有限。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">The functional decline of the hematopoietic system during aging affects organismal function and contributes to reduced healthspan. Quantifying hematopoietic aging holds great scientific and clinical relevance. Alterations in chromatin architecture are a well-established hallmark of aging that encode rich and informative signatures of the aging process, yet they remain largely unexplored as quantitative markers. Here, we present an interpretable deep learning approach based on convolutional neural networks, ChromAgeNet, that learns changes in the spatial features of chromatin architecture upon aging of hematopoietic stem cells (HSCs). We trained our algorithm on 3D microscope images of DAPI-stained HSC nuclei to discriminate between young and aged murine HSCs, achieving an AUROC of 0.77 +/- 0.03. This approach outperforms classical machine learning models trained on handcrafted chromatin features from the same dataset. We then applied explainable artificial intelligence techniques, identifying chromatin entropy, peripheral heterochromatin, and chromatin condensates as predictive markers. As a proof of concept, we evaluated the potential of our model as a phenotypic screening tool for aged HSCs treated with epigenetic drugs to detect rejuvenation. Altogether, we demonstrate that changes in chromatin organization can be modeled via machine learning to predict age-associated chromatin states in the hematopoietic compartment. Our developed framework, ChromAgeNet, serves as an interpretable algorithm to unravel the intricate relationship between chromatin changes and stem cell aging, and advance high-throughput drug screening for rejuvenation therapies.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">衰老过程中造血系统的功能衰退会影响机体功能，并导致健康寿命缩短。量化造血系统衰老具有重要的科学和临床意义。染色质结构的改变是公认的衰老标志，编码了衰老过程中丰富且信息量大的特征，但作为定量标记仍鲜有探索。在此，我们提出一种基于卷积神经网络的可解释深度学习方法ChromAgeNet，用于学习造血干细胞（HSCs）衰老过程中染色质结构空间特征的变化。我们在DAPI染色的HSC细胞核三维显微镜图像上训练算法，以区分年轻和年老小鼠HSCs，实现了0.77 +/- 0.03的AUROC。该方法优于在同一数据集上基于手工染色质特征训练的经典机器学习模型。随后，我们应用可解释人工智能技术，识别出染色质熵、外周异染色质和染色质凝聚体作为预测标记。作为概念验证，我们评估了模型作为表型筛选工具的潜力，用于检测经表观遗传药物处理的年老HSCs的年轻化效果。总体而言，我们证明了染色质组织的变化可通过机器学习建模，以预测造血区室中与年龄相关的染色质状态。我们开发的框架ChromAgeNet作为一种可解释算法，有助于揭示染色质变化与干细胞衰老之间的复杂关系，并推进年轻化疗法的高通量药物筛选。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：Deep Learning Predicts Hematopoietic Stem Cell Aging From 3D Chromatin Images</li>
+<li><strong>作者</strong>：Picazo, Pablo Ianez; Mejia-Ramirez, Eva; Di Bari, Dario; Vitali, Elena; Florian, Maria Carolina; Petrone, Paula</li>
+<li><strong>单位</strong>：未提供（从致谢推断涉及 ISGlobal Biomedical Data Science 与 IDIBELL Stem Cell Aging lab）</li>
+<li><strong>期刊/预印本平台</strong>：Aging Cell</li>
+<li><strong>年份</strong>：2026-09-28</li>
+<li><strong>论文类型</strong>：研究论文（Research Article）</li>
+<li><strong>领域</strong>：三维基因组 / 染色质组织 × AI / 干细胞衰老</li>
+<li><strong>关键词</strong>：chromatin architecture, deep learning, CNN, hematopoietic stem cell aging, explainable AI, drug screening</li>
+<li><strong>DOI/arXiv 号</strong>：10.1111/acel.70656</li>
+<li><strong>代码</strong>：https://github.com/biomedical-data-science/chromagenet</li>
+<li><strong>数据</strong>：https://doi.org/10.34810/data2372（CORA 仓库）</li>
+<li><strong>阅读日期</strong>：未提供</li>
+<li><strong>在课题方向中的位置</strong>：本文属于「三维基因组/染色质组织 × AI 方法」方向中基于 3D 显微镜图像（而非 Hi-C/3C 数据）的染色质结构表型预测模型。其核心贡献在于：(1) 将 CNN 应用于 DAPI 染色的 3D 核图像进行衰老分类；(2) 通过 XAI 提取可解释的染色质空间特征；(3) 展示作为药物筛选表型读出的潜力。与 Hi-C 驱动的 3D 基因组预测模型互补，提供了一条基于成像的染色质组织量化路径。</li>
+</ul>
+<h2>02 一句话总结</h2>
+<p>本文构建了一个基于 CNN 的可解释深度学习框架 ChromAgeNet，以 DAPI 染色的 3D 共聚焦显微镜图像为输入，区分年轻与衰老小鼠造血干细胞（HSC），在核水平达到 AUROC 0.77 ± 0.03，优于基于手工染色质特征的经典机器学习模型，并通过 XAI 识别出染色质熵、外周异染色质和染色质凝聚体作为预测标志物。</p>
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：3D 染色质结构图像中是否编码了足以区分年轻与衰老 HSC 的信息？能否用深度学习自动提取这些信息并做出可靠预测？</li>
+<li><strong>为什么重要</strong>：造血系统衰老影响机体功能与健康寿命，HSC 功能衰退是核心驱动因素。目前缺乏能够量化单细胞水平年龄相关染色质状态的方法。若能从染色质图像预测生物学年龄，将有助于衰老机制研究、 rejuvenation 疗法评估和高通量药物筛选。</li>
+<li><strong>现有方法为何不足</strong>：(1) 基于 DNA 甲基化的表观遗传时钟需要分子生物学实验，成本高、通量低；(2) 手工提取的染色质特征（radiomics）需要预定义特征集，可能遗漏关键信息；(3) 此前尚无工作将深度学习直接应用于 3D 染色质图像预测 HSC 衰老。</li>
+<li><strong>精确研究问题</strong>：Can a CNN trained on 3D DAPI-stained chromatin images of HSC nuclei distinguish young from aged murine HSCs with higher accuracy than classical ML models trained on handcrafted chromatin features, and can XAI reveal interpretable chromatin patterns underlying the predictions?</li>
+</ul>
+<h2>04 背景与发展脉络</h2>
+<blockquote>
+<p>注：此脉络基于本文引言与讨论，结合外部知识标注，属于「经外部核验」的框架。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>代表性方法</th>
+<th>优点</th>
+<th>局限</th>
+<th>本文位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>表观遗传时钟（DNA 甲基化）</td>
+<td>Hannum 2013; Horvath 2013</td>
+<td>预测死亡风险、疾病风险；评估 rejuvenation 疗法</td>
+<td>需分子实验；非单细胞分辨率；不提供空间信息</td>
+<td>本文提出基于图像的替代方案</td>
+</tr>
+<tr>
+<td>其他衰老标志物时钟</td>
+<td>端粒长度、基因组不稳定性、细胞衰老</td>
+<td>多维度互补</td>
+<td>各有偏倚；非染色质结构直接读出</td>
+<td>本文聚焦染色质结构</td>
+</tr>
+<tr>
+<td>单细胞转录组时钟</td>
+<td>Palmer 2021; Zakar-Polyák 2024</td>
+<td>单细胞分辨率</td>
+<td>破坏性；丢失空间信息</td>
+<td>本文保留完整核结构</td>
+</tr>
+<tr>
+<td>核图像纹理分析（radiomics）</td>
+<td>IBSI 标准化特征（GLCM, GLRLM 等）</td>
+<td>可解释；标准化</td>
+<td>需预定义特征；性能有限</td>
+<td>本文作为基线对比</td>
+</tr>
+<tr>
+<td>CNN 核图像分类</td>
+<td>Belhadj 2023; Heckenbach 2022; Carnevali 2024</td>
+<td>自动特征学习；SOTA 性能</td>
+<td>黑箱；需大量数据</td>
+<td>本文采用 CNN + XAI 组合</td>
+</tr>
+<tr>
+<td><strong>本文（ChromAgeNet）</strong></td>
+<td>CNN + 3D 图像 + XAI + 药物筛选</td>
+<td>首次用于 HSC 衰老；可解释；高通量潜力</td>
+<td>2D 切片而非真 3D 卷积；需跨中心验证</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>缺乏单细胞水平衰老量化工具</td>
+<td>无法准确识别单个 HSC 的年龄相关染色质状态</td>
+<td>现有方法（甲基化时钟等）为群体水平或破坏性检测</td>
+<td>Background 第 1-2 段</td>
+</tr>
+<tr>
+<td>手工特征可能遗漏关键信息</td>
+<td>经典 ML 模型性能低于 CNN</td>
+<td>预定义特征集无法捕捉全部染色质空间模式</td>
+<td>Results 图 3b，Table S3-S5</td>
+</tr>
+<tr>
+<td>深度学习黑箱问题</td>
+<td>CNN 预测难以解释</td>
+<td>内部表征不可直接读取</td>
+<td>Discussion 第 3 段</td>
+</tr>
+<tr>
+<td>技术批次效应干扰</td>
+<td>不同显微镜、操作者引入变异</td>
+<td>图像采集参数、样本处理差异</td>
+<td>Discussion 第 4 段；Results 图 S8</td>
+</tr>
+<tr>
+<td>衰老异质性导致学习噪声</td>
+<td>同一生物学年龄的 HSC 表型差异大</td>
+<td>以时间年龄为标签，忽略个体异质性</td>
+<td>Discussion 第 4 段</td>
+</tr>
+<tr>
+<td>染色质衰老与细胞衰老信号重叠</td>
+<td>难以区分年龄相关与衰老特异性染色质变化</td>
+<td>生理衰老与细胞衰老的染色质特征高度重叠</td>
+<td>Background 第 3 段</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p><strong>1) 表面方法</strong>：
+- 采集 1229 张 3D 共聚焦 DAPI 染色 HSC 核图像（年轻 10-16 周 vs 衰老 &gt;80 周 C57BL/6 小鼠）
+- 从 3D 堆栈中提取 2D 切片，训练 CNN（ChromAgeNet，约 35 万参数，Xception 的简化版）
+- 通过 soft voting 聚合同一核的所有切片预测，得到核水平分类
+- 与基于 70 个手工染色质特征（IBSI 标准化）的经典 ML 模型对比
+- 使用 XAI（SHAP、激活最大化、遮挡敏感性）解释模型决策
+- 作为概念验证，测试药物处理后的衰老 HSC 是否被预测为更"年轻"</p>
+<p><strong>2) 核心洞察</strong>：
+- 3D 染色质结构图像中编码了年龄信息，且 CNN 能自动提取比手工特征更丰富的判别模式
+- 跨 Z 轴聚合（soft voting）比单切片预测更稳健，说明 3D 信息具有互补性
+- XAI 揭示的判别特征（染色质熵增加、外周异染色质改变、染色质凝聚体）与已知衰老相关染色质变化一致，说明模型学到了生物学相关的模式
+- 药物处理（尤其是 H3K9 甲基化抑制剂）能部分逆转衰老相关的染色质预测分数，提示该框架可作为表型筛选读出</p>
+<p><strong>3) 可能的普适教训 [Analysis]</strong>：
+- 2D 切片 + 聚合策略是 3D 数据深度学习的实用折中方案，在数据量有限时优于直接 3D 卷积
+- 将 XAI 与领域知识交叉验证，可以建立对模型预测的生物学信任，而不仅仅是统计性能
+- 染色质结构图像作为"表型读出"可能比分子标志物更直接地反映细胞功能状态，且成本更低、通量更高
+- 该方法论可迁移到其他细胞类型和物种，只需重新训练即可</p>
+<h2>07 方法总览</h2>
+<ul>
+<li><strong>输入</strong>：3D 共聚焦显微镜 DAPI 染色 HSC 核图像（1024×1024 像素 XY，Z 轴平均约 29 层），重采样至 0.05 μm 各向同性分辨率</li>
+<li><strong>输出</strong>：核水平的"youthful score"（0-1 概率），表示该核属于年轻 HSC 的可能性</li>
+<li><strong>模块</strong>：
+  1. 图像预处理：去噪（Chambolle 全变分）、重采样、背景裁剪、核分割（Otsu 阈值 + 滞后）
+  2. 2D 切片提取：仅保留核掩膜覆盖 &gt;50% 的 Z 切片
+  3. CNN 编码器：Xception 简化版，深度可分离卷积 + 残差连接，通道数 [32, 64, 64, 128, 256, 256]
+  4. 切片级分类头：sigmoid 输出
+  5. 核级聚合：soft voting（平均所有切片的概率）
+  6. 校准：Beta Calibration
+  7. 解释模块：SHAP、激活最大化、遮挡敏感性</li>
+<li><strong>训练</strong>：AdamW 优化器，学习率 0.0001，二元交叉熵损失，标签平滑 0.1，EMA 稳定训练，早停防过拟合</li>
+<li><strong>对比基线</strong>：LR、RF、XGBoost、Calibrated XGBoost，基于 70 个 IBSI 标准化特征</li>
+<li><strong>验证</strong>：五折交叉验证（核水平分割，防止同一核的切片泄漏）</li>
+<li><strong>工具</strong>：Python、PyTorch（推断）、scikit-learn、SHAP、Xplique、scikit-image、scipy</li>
+<li><strong>假设</strong>：时间年龄（小鼠周龄）作为标签的代理；DAPI 强度反映 DNA 密度和染色质压缩状态</li>
+</ul>
+<p><strong>文字流程</strong>：
+3D 图像采集 → 预处理（去噪、重采样、分割）→ 提取 2D 切片 → 数据增强（翻转、旋转、对比度微调）→ CNN 训练（切片级）→ soft voting 聚合 → Beta 校准 → 核级分类 → XAI 解释 → 药物处理样本评分</p>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3D 图像预处理与分割</td>
+<td>去噪、重采样、核掩膜生成</td>
+<td>消除采集噪声、统一分辨率、聚焦核区域</td>
+<td>输入：原始 3D 堆栈；输出：预处理后的核图像+掩膜</td>
+<td>Methods 节；图 S1a</td>
+<td>预期：噪声增加导致 CNN 学习伪影而非生物学特征</td>
+</tr>
+<tr>
+<td>2D 切片提取</td>
+<td>从 3D 堆栈提取有效 Z 切片</td>
+<td>CNN 在 2D 上操作，切片是基本输入单元</td>
+<td>输入：3D 核图像；输出：2D 切片集</td>
+<td>Methods 节；图 1b</td>
+<td>预期：丢失 Z 轴空间信息，性能下降</td>
+</tr>
+<tr>
+<td>CNN 编码器（Xception 简化版）</td>
+<td>从切片中提取层次化染色质纹理特征</td>
+<td>自动学习判别性空间模式</td>
+<td>输入：128×128×1 切片；输出：特征向量</td>
+<td>Methods 节；图 1a</td>
+<td>实测：CNN 优于手工特征 ML（0.77 vs 0.73 AUROC）</td>
+</tr>
+<tr>
+<td>Soft voting 聚合</td>
+<td>平均同一核所有切片的概率</td>
+<td>利用 3D 信息互补性，提高核水平鲁棒性</td>
+<td>输入：切片级概率；输出：核级概率</td>
+<td>Results 图 1c；Table S1-S2</td>
+<td>实测：核级 AUROC 从 0.72 提升至 0.77</td>
+</tr>
+<tr>
+<td>Beta 校准</td>
+<td>将原始分数映射为校准概率</td>
+<td>使输出反映真实似然，适用于药物筛选决策</td>
+<td>输入：未校准分数；输出：校准概率</td>
+<td>Methods 节；图 S1d</td>
+<td>预期：未校准分数在阈值选择上不可靠</td>
+</tr>
+<tr>
+<td>XAI 套件（SHAP/激活最大化/遮挡）</td>
+<td>解释模型关注的染色质区域和模式</td>
+<td>建立生物学可信度，发现新标志物</td>
+<td>输入：模型+图像；输出：注意力图/特征重要性</td>
+<td>Results 图 4；Table S8</td>
+<td>预期：无法解释模型决策，限制生物学洞察</td>
+</tr>
+<tr>
+<td>手工特征提取（IBSI）</td>
+<td>提取 70 个标准化 radiomics 特征</td>
+<td>作为基线对比，提供可解释特征</td>
+<td>输入：3D 核图像；输出：特征向量</td>
+<td>Methods 节；图 S2</td>
+<td>作为基线保留，用于对比 CNN 增益</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式符号</h2>
+<p><strong>1) Soft voting 聚合</strong>：
+[
+\hat{P}<em>{young} = \frac{1}{N} \sum</em>{i=1}^{N} p_i
+]
+- (\hat{P}_{young})：核水平的 youthful score（属于年轻 HSC 的概率）
+- (N)：该核的 2D 切片总数
+- (p_i)：第 (i) 个切片的模型输出概率</p>
+<p><strong>2) 期望校准误差（ECE）</strong>：
+[
+ECE = \sum_{m=1}^{M} \frac{|B_m|}{N} |acc(B_m) - conf(B_m)|
+]
+- (M)：分箱数
+- (B_m)：第 (m) 个箱中的样本集合
+- (|B_m|)：第 (m) 个箱的样本数
+- (N)：总样本数
+- (acc(B_m))：第 (m) 个箱的实际准确率
+- (conf(B_m))：第 (m) 个箱的平均预测置信度</p>
+<p><strong>3) Youden's J 统计量</strong>（用于确定最优分类阈值）：
+[
+J = TPR - FPR
+]
+- (TPR)：真阳性率（敏感度）
+- (FPR)：假阳性率（1 - 特异度）</p>
+<p><strong>4) 二元交叉熵损失</strong>（含标签平滑）：
+[
+L = -\frac{1}{N} \sum_{i=1}^{N} [y_i \log(p_i) + (1-y_i) \log(1-p_i)]
+]
+- (y_i)：真实标签（年轻=1，衰老=0）
+- (p_i)：模型预测概率
+- 标签平滑系数 0.1 用于防止过拟合</p>
+<h2>10 实验设计与证据链</h2>
+<p><strong>数据集</strong>：
+- 1229 张 3D 共聚焦图像（552 年轻 + 551 衰老 HSC 核，另有 126 个 DMSO 处理核）
+- 年轻：10-16 周龄 C57BL/6 小鼠；衰老：&gt;80 周龄
+- 图像采集：Zeiss LSM980 或 LSM880 共聚焦显微镜，63× 物镜 + 10× 数字变焦
+- 分辨率：重采样至 0.05 μm 各向同性（CNN 输入）和 0.1 μm（特征提取）
+- 数据划分：五折交叉验证，核水平分割</p>
+<p><strong>指标</strong>：AUROC（主要）、准确率、F1 分数、精确率、召回率、ECE、Brier Score</p>
+<p><strong>基线</strong>：LR、RF、XGBoost、Calibrated XGBoost（70 个 IBSI 特征）</p>
+<p><strong>评测协议</strong>：五折交叉验证，每折独立训练/验证；CNN 使用早停和 EMA；所有模型使用相同数据划分</p>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的 Claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CNN 分类年轻 vs 衰老 HSC</td>
+<td>3D 染色质图像编码年龄信息</td>
+<td>五折 CV，核水平分割</td>
+<td>AUROC 0.77 ± 0.03（核水平）；0.72 ± 0.02（切片水平）</td>
+<td>染色质结构可预测 HSC 年龄</td>
+<td>不能证明因果关系；不能推广到其他物种</td>
+<td>Results 图 2；Table S1-S2</td>
+</tr>
+<tr>
+<td>与经典 ML 对比</td>
+<td>CNN 优于手工特征</td>
+<td>相同数据划分，4 种 ML 模型 × 8 种特征选择</td>
+<td>CNN AUROC 0.77 vs 最佳 ML 0.73 ± 0.04</td>
+<td>CNN 自动学习更优特征</td>
+<td>差异可能随数据规模变化</td>
+<td>Results 图 3b；Table S3-S5</td>
+</tr>
+<tr>
+<td>特征重要性分析（SHAP）</td>
+<td>识别关键染色质特征</td>
+<td>最佳 ML 模型上的 SHAP 值</td>
+<td>纹理特征（size zone nonuniformity, sum entropy）和 Wavelet 特征排名靠前</td>
+<td>染色质熵和纹理异质性与衰老相关</td>
+<td>SHAP 反映模型相关性而非生物学因果</td>
+<td>Results 图 3c-f</td>
+</tr>
+<tr>
+<td>XAI 遮挡分析</td>
+<td>定位模型关注的核区域</td>
+<td>遮挡敏感性 vs SHAP 图像归因</td>
+<td>核膜和外周区域在年轻 HSC 中受关注；衰老 HSC 关注点更分散</td>
+<td>模型关注生物学相关区域</td>
+<td>注意力不等于因果</td>
+<td>Results 图 4</td>
+</tr>
+<tr>
+<td>药物处理实验</td>
+<td>检测 rejuvenation 表型</td>
+<td>4 种药物 vs DMSO 对照，衰老 HSC</td>
+<td>H3K9 甲基化抑制剂（UNC0646, IOX1）显著提高 youthful score；Rho 抑制剂效果较弱</td>
+<td>ChromAgeNet 可检测药物诱导的染色质年轻化</td>
+<td>无功能验证；样本量小（n=126）</td>
+<td>Results 图 5；Table S6</td>
+</tr>
+<tr>
+<td>技术混淆分析</td>
+<td>排除采集变量影响</td>
+<td>检查与操作者、通道数、噪声的关联</td>
+<td>无显著关联（R² ≤ 0.03）</td>
+<td>模型主要捕获生物学信号</td>
+<td>未测试所有可能的混淆因素</td>
+<td>Results 图 S8-S11</td>
+</tr>
+</tbody>
+</table>
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：本文仅证明 CNN 能从 DAPI 染色图像区分年轻与衰老小鼠 HSC。这不等于"预测生物学年龄"的通用工具，也不等于识别所有衰老相关染色质变化。</li>
+<li><strong>标签定义</strong>：以时间年龄（小鼠周龄）为标签，而非功能或分子定义的生物学年龄。衰老 HSC 的异质性意味着同一时间年龄的细胞可能有不同表观状态。</li>
+<li><strong>性能边界</strong>：AUROC 0.77 表明有判别力但非完美。混淆主要集中在分数 0.5 附近的核，反映衰老过程的渐进性和异质性。</li>
+<li><strong>XAI 解释的限度</strong>：SHAP 和遮挡分析揭示的是模型关注的区域，不等于生物学因果机制。染色质熵增加和外周异染色质变化与已知衰老文献一致，但需要独立验证。</li>
+<li><strong>药物实验的解读</strong>：药物处理使 youthful score 上升仅说明染色质图像特征向年轻方向偏移，不证明功能 rejuvenation。需要集落形成、移植等功能实验确认。</li>
+<li><strong>物种与细胞类型边界</strong>：模型在 C57BL/6 小鼠 HSC 上训练，不能直接推广到人类或其他细胞类型。作者明确讨论了跨物种/细胞类型迁移需要重新训练。</li>
+<li><strong>技术依赖</strong>：结果依赖于特定的图像采集协议（共聚焦、DAPI 染色、0.05 μm 重采样）。不同显微镜、染色方案可能影响模型性能。</li>
+</ul>
+<h2>12 作者自认局限</h2>
+<table>
+<thead>
+<tr>
+<th>局限</th>
+<th>具体表现</th>
+<th>作者提出的未来方向</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>时间年龄作为标签的局限</td>
+<td>衰老 HSC 异质性大，时间年龄不能完全代表生物学年龄</td>
+<td>整合功能测定或分子标志物作为更精确的标签</td>
+<td>Discussion 第 4 段</td>
+</tr>
+<tr>
+<td>技术批次效应</td>
+<td>不同显微镜、操作者可能引入变异</td>
+<td>标准化采集协议；更大规模多中心数据验证</td>
+<td>Discussion 第 4 段</td>
+</tr>
+<tr>
+<td>2D 切片而非真 3D 卷积</td>
+<td>CNN 在 2D 切片上操作，可能丢失 Z 轴空间信息</td>
+<td>采用 3D CNN 或视频 Transformer 架构</td>
+<td>Discussion 第 5 段</td>
+</tr>
+<tr>
+<td>缺乏独立外部验证</td>
+<td>仅在内部数据集上验证</td>
+<td>跨机构、跨物种验证</td>
+<td>Discussion 第 4 段</td>
+</tr>
+<tr>
+<td>DAPI 染色的局限性</td>
+<td>仅反映 DNA 密度，无法区分特定组蛋白修饰或蛋白结合</td>
+<td>多通道染色（H3K9me3, H3K27me3, Lamin B 等）</td>
+<td>Discussion 第 5 段</td>
+</tr>
+<tr>
+<td>药物实验为概念验证</td>
+<td>样本量小（n=126），无功能验证</td>
+<td>扩大样本量；结合功能实验</td>
+<td>Results 图 5；Discussion 第 6 段</td>
+</tr>
+<tr>
+<td>与衰老/衰老相关染色质变化重叠</td>
+<td>难以区分年龄相关与 senescence 特异性变化</td>
+<td>整合 senescence 标志物</td>
+<td>Background 第 3 段</td>
+</tr>
+</tbody>
+</table>
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>数据集规模相对较小（1229 核）</td>
+<td>CNN 可能过拟合；五折 CV 的方差可能被低估</td>
+<td>影响结论的稳健性和泛化性</td>
+<td>独立数据集验证；报告置信区间；增加数据量</td>
+<td>Results 图 2；Table S1-S2</td>
+</tr>
+<tr>
+<td>时间年龄作为标签的噪声</td>
+<td>同一时间年龄的 HSC 可能有不同表观状态，模型可能学习到非衰老相关特征</td>
+<td>影响"衰老预测"的生物学解释</td>
+<td>使用功能标签（移植竞争、集落形成）或分子时钟交叉验证</td>
+<td>Discussion 第 4 段</td>
+</tr>
+<tr>
+<td>遮挡分析中核膜关注可能反映分割伪影</td>
+<td>核膜区域在分割后可能具有系统性强度差异</td>
+<td>影响 XAI 解释的生物学有效性</td>
+<td>使用合成数据或扰动测试验证</td>
+<td>Results 图 4e</td>
+</tr>
+<tr>
+<td>药物实验缺乏剂量-反应和时程</td>
+<td>单一浓度、单一时间点可能错过最佳效应窗口</td>
+<td>影响药物筛选结论的可靠性</td>
+<td>多剂量、多时间点实验</td>
+<td>Results 图 5</td>
+</tr>
+<tr>
+<td>未报告切片级 vs 核级性能差异的统计检验</td>
+<td>soft voting 的增益可能不显著</td>
+<td>影响 3D 聚合策略的论证</td>
+<td>配对统计检验；报告效应量</td>
+<td>Table S1-S2</td>
+</tr>
+<tr>
+<td>未与更先进的 3D CNN 或 Transformer 对比</td>
+<td>2D+聚合策略可能不是最优</td>
+<td>影响架构选择的论证</td>
+<td>直接对比 3D CNN、Video Transformer 等</td>
+<td>Discussion 第 5 段</td>
+</tr>
+<tr>
+<td>未报告模型在不同衰老程度（如中年）的表现</td>
+<td>二分类（年轻 vs 衰老）可能掩盖渐进性</td>
+<td>影响作为"衰老时钟"的实用性</td>
+<td>增加中年组；回归任务设计</td>
+<td>未提供</td>
+</tr>
+</tbody>
+</table>
+<h2>14 学到什么</h2>
+<p><strong>Agent 提炼的知识候选</strong>：</p>
+<ol>
+<li>
+<p><strong>2D 切片 + soft voting 策略</strong>：在 3D 图像数据有限时，将 3D 堆栈分解为 2D 切片训练 CNN，再通过 soft voting 聚合，是平衡数据需求与 3D 信息利用的有效折中。可迁移到其他 3D 染色质图像分析任务（如 FISH、STORM 数据）。</p>
+</li>
+<li>
+<p><strong>XAI 与领域知识交叉验证</strong>：将 SHAP/遮挡分析结果与已知染色质生物学（如 LAD 侵蚀、异染色质丢失）对照，可以建立对模型预测的生物学信任。这种"解释-验证"循环应成为 3D 基因组 AI 模型的标准实践。</p>
+</li>
+<li>
+<p><strong>DAPI 作为低成本染色质状态读出</strong>：仅用 DAPI 染色（无需抗体或组蛋白标记）即可捕获足够的染色质结构信息用于衰老分类。这对高通量筛选和临床转化具有成本优势。</p>
+</li>
+<li>
+<p><strong>药物筛选的表型读出设计</strong>：以 youthful score 作为药物效果的定量读出，而非依赖单一分子标志物，可能更全面地反映染色质状态变化。但需功能验证。</p>
+</li>
+<li>
+<p><strong>特征重要性分析揭示生物学机制</strong>：纹理特征（熵、异质性）比形态特征（大小、形状）更具判别力，提示染色质内部组织紊乱是衰老的关键特征，而非仅核形态变化。</p>
+</li>
+<li>
+<p><strong>模型校准的重要性</strong>：在药物筛选场景中，校准的概率输出比原始分数更可靠。Beta 校准在小数据集上优于非参数方法。</p>
+</li>
+<li>
+<p><strong>批次效应验证</strong>：检查模型预测与采集变量（操作者、通道数、噪声）的关联，是建立图像 AI 模型可信度的必要步骤。</p>
+</li>
+</ol>
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>三维基因组衰老研究</strong>：本文与 Hi-C 研究（如衰老中 A/B 区室转换、TAD 结构变化）互补。DAPI 图像捕获的是染色质密度分布，而 Hi-C 提供接触频率信息。两者结合可能提供更全面的衰老相关染色质变化图景。</li>
+<li><strong>染色质熵概念</strong>：本文的"染色质熵"特征与 Liu et al. 2022 报道的衰老中 LAD 区域染色质熵增加一致，提供了独立成像证据。</li>
+<li><strong>核纤层-异染色质连接</strong>：本文发现的外周异染色质变化与 Lamin A/C 表达下降（Grigoryan et al. 2018）和 LAD 侵蚀（Liu et al. 2022）的衰老模型一致。</li>
+<li><strong>CNN 核图像分类</strong>：与 Belhadj et al. 2023（衰老相关核形态分类）、Heckenbach et al. 2022（核形态衰老时钟）等工作形成直接对比。本文的增量在于：(1) 聚焦染色质结构而非仅核形态；(2) 3D 数据；(3) 药物筛选应用。</li>
+<li><strong>表观遗传时钟</strong>：本文可作为 DNA 甲基化时钟（Horvath 2013; Hannum 2013）的成像替代或补充。未来可探索染色质图像特征与甲基化年龄的相关性。</li>
+<li><strong>药物筛选平台</strong>：与基于成像的高通量筛选（如 Cell Painting）方法学上有共通之处，但本文聚焦于衰老相关染色质状态。</li>
+<li><strong>可迁移方向</strong>：该方法论可迁移到：(1) 人类 HSC 或其他干细胞类型；(2) 其他衰老相关染色质疾病（如早衰症）；(3) 结合多通道染色（H3K9me3, H3K27me3）提高特异性；(4) 与单细胞多组学（scATAC-seq, scHi-C）整合。</li>
+</ul>
+<h2>16 研究想法</h2>
+<p><strong>Agent 生成的研究候选</strong>：</p>
+<ol>
+<li>
+<p><strong>多通道染色质成像衰老时钟</strong>
+   - 来源局限/观察：本文仅用 DAPI，无法区分特定组蛋白修饰或蛋白结合
+   - 核心假设：结合 H3K9me3、H3K27me3、Lamin B 等多通道染色可提高衰老预测精度并揭示机制
+   - 初步方法：扩展 ChromAgeNet 为多通道输入，比较单通道 vs 多通道性能
+   - 验证方式：独立数据集验证；与甲基化时钟交叉验证
+   - 创新状态：unverified</p>
+</li>
+<li>
+<p><strong>跨物种迁移学习</strong>
+   - 来源局限/观察：模型仅在 C57BL/6 小鼠上训练，作者承认跨物种需重新训练
+   - 核心假设：小鼠上学习的染色质衰老特征部分可迁移到人类 HSC
+   - 初步方法：预训练于小鼠数据，微调于人类 HSC 图像；评估迁移学习增益
+   - 验证方式：人类 HSC 数据集（需采集）；与已知人类衰老标志物对照
+   - 创新状态：unverified</p>
+</li>
+<li>
+<p><strong>3D CNN 与 2D+聚合策略的系统比较</strong>
+   - 来源局限/观察：作者使用 2D 切片 + soft voting，未与 3D CNN 直接对比
+   - 核心假设：3D CNN 能捕获 Z 轴空间关系，性能优于 2D+聚合
+   - 初步方法：实现 3D CNN（如 3D ResNet）和 2D+聚合，在相同数据上对比
+   - 验证方式：五折 CV 对比 AUROC、F1；统计检验
+   - 创新状态：unverified</p>
+</li>
+<li>
+<p><strong>染色质图像特征与 Hi-C 数据的整合预测</strong>
+   - 来源局限/观察：本文仅用成像数据，未与染色体构象捕获数据整合
+   - 核心假设：成像特征与 Hi-C 衍生的区室/TAD 特征互补，整合后预测衰老更准确
+   - 初步方法：对同一批 HSC 同时采集图像和 Hi-C；训练多模态模型
+   - 验证方式：多模态 vs 单模态性能对比；特征重要性分析
+   - 创新状态：unverified</p>
+</li>
+<li>
+<p><strong>衰老进程的连续预测（回归任务）</strong>
+   - 来源局限/观察：本文为二分类（年轻 vs 衰老），未覆盖中间年龄
+   - 核心假设：染色质结构变化是渐进的，可预测连续年龄
+   - 初步方法：采集多个年龄点（如 4, 8, 16, 30, 60, 80 周）；改为回归任务
+   - 验证方式：预测年龄与实际年龄的相关性；残差分析
+   - 创新状态：unverified</p>
+</li>
+<li>
+<p><strong>染色质衰老特征的功能验证</strong>
+   - 来源局限/观察：药物实验仅显示 youthful score 变化，无功能验证
+   - 核心假设：youthful score 的恢复与 HSC 功能恢复（集落形成、移植能力）相关
+   - 初步方法：对药物处理的衰老 HSC 进行集落形成和竞争移植实验；关联 youthful score 与功能指标
+   - 验证方式：相关性分析；ROC 预测功能恢复
+   - 创新状态：unverified</p>
+</li>
+<li>
+<p><strong>单细胞水平的衰老异质性分析</strong>
+   - 来源局限/观察：本文在核水平预测，未分析同一小鼠内 HSC 的异质性
+   - 核心假设：同一衰老小鼠的 HSC 中， youthful score 的分布可预测整体造血功能
+   - 初步方法：对单个 HSC 的 youthful score 进行分布分析；与小鼠整体造血参数关联
+   - 验证方式：分布统计（如双峰性）；与功能指标的相关性
+   - 创新状态：unverified</p>
+</li>
+</ol></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Full manuscript text, including abstract, results, discussion, methods, and supplementary figure references.</li>
+<li><strong>Assessment boundary</strong> Scientific validity, methodological rigor, reproducibility, and interpretation of the presented findings. No assessment of editorial fit or publication venue suitability.</li>
+<li><strong>Shared manuscript claim summary</strong> The authors present ChromAgeNet, a convolutional neural network trained on 3D DAPI-stained confocal images of murine hematopoietic stem cell (HSC) nuclei, to classify young versus aged cells. They report an AUROC of 0.77 ± 0.03 at the nucleus level, outperforming classical machine learning models trained on handcrafted chromatin features. They apply explainable AI techniques to identify chromatin entropy, peripheral heterochromatin, and chromatin condensates as predictive markers. As a proof of concept, they evaluate the model's ability to detect rejuvenation in aged HSCs treated with epigenetic drugs.</li>
+<li><strong>Visible evidence base</strong> Abstract, full results narrative, discussion, methods, and references to supplementary figures and tables. No actual figures, tables, or supplementary materials were provided for direct inspection.</li>
+<li><strong>Missing materials affecting confidence</strong> All figures, tables, and supplementary materials referenced in the text are absent. This includes Figure 1–5, Figure S1–S11, Table 1–2, Table S1–S9, and the associated data. Without these, quantitative claims cannot be independently verified.</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li>
+<p><strong>Overall assessment</strong> The manuscript addresses a relevant and timely question: whether 3D chromatin architecture imaged with a simple DNA stain can serve as a predictive biomarker of hematopoietic stem cell aging. The authors combine a well-established imaging modality (DAPI) with modern deep learning and explainability methods, which is a sensible and potentially impactful approach. The reported performance (AUROC 0.77) is modest but plausible for a biological classification task with inherent heterogeneity. However, the manuscript as presented has several critical gaps. The absence of all figures and tables makes it impossible to assess data quality, model behavior, or the validity of the interpretability analyses. The comparison with classical machine learning models is described but not shown. The drug treatment proof-of-concept is intriguing but lacks detail on experimental design, sample sizes, and statistical rigor. The discussion is thoughtful and appropriately cautious, but several claims go beyond what the visible evidence supports. The technical approach is sound in principle, but the manuscript requires substantial revision and the inclusion of all supporting materials before the case can be considered established.</p>
+</li>
+<li>
+<p><strong>Who would be interested in the results, and why</strong> Researchers in stem cell biology, aging research, and computational biology would find this work of interest. The idea that a simple, inexpensive stain combined with deep learning can extract age-related information from chromatin structure is attractive for translational applications, particularly in drug screening for rejuvenation therapies. The methodological framework, including the use of explainable AI, may also appeal to those developing image-based biomarkers in other cell types or tissues.</p>
+</li>
+<li>
+<p><strong>Major strengths</strong>
+  1. The research question is clinically and biologically relevant, addressing a gap in quantitative, image-based aging biomarkers.
+  2. The use of 3D chromatin architecture as a predictive feature is conceptually novel and underexplored.
+  3. The inclusion of explainable AI techniques is commendable and aligns with current best practices for interpretable deep learning in biology.
+  4. The authors acknowledge limitations, including batch effects and the need for external validation, which reflects scientific maturity.
+  5. The release of the dataset and code is a significant strength for reproducibility and community use.</p>
+</li>
+<li>
+<p><strong>Major Concerns</strong></p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M1</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Evidence completeness</li>
+<li><strong>Claim pointer</strong> The manuscript claims that ChromAgeNet achieves an AUROC of 0.77 ± 0.03 at the nucleus level and outperforms classical machine learning models.</li>
+<li><strong>Evidence pointer</strong> Results section, Figure 2, Figure 3, Table S1, Table S2, Table S3, Table S4, Table S5</li>
+<li><strong>Concern</strong> All figures and tables are missing from the provided material. The central quantitative claims of the paper, including the AUROC values, the comparison with classical models, and the calibration metrics, cannot be verified. The text describes these results but provides no visual or tabular evidence. This is a fundamental issue that prevents any meaningful assessment of the model's performance or the validity of the comparison.</li>
+<li><strong>Why it matters</strong> The core contribution of the paper is a quantitative claim about model performance. Without the actual data, figures, and tables, the reader cannot assess whether the reported AUROC is robust, whether the comparison with classical models is fair, or whether the calibration is adequate. This is a blocking issue for the scientific case.</li>
+<li>
+<p><strong>Resolution test</strong> Provide all figures and tables with clear captions. Include error bars, confidence intervals, and statistical tests for all performance comparisons. Show representative images of young and aged nuclei, example attention maps, and the distribution of scores.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M2</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Experimental design and confounding</li>
+<li><strong>Claim pointer</strong> The manuscript claims that ChromAgeNet captures biological aging signals rather than technical artifacts, supported by the absence of significant associations with technical parameters.</li>
+<li><strong>Evidence pointer</strong> Results section, Figure S8, Figure S11, Table S9</li>
+<li><strong>Concern</strong> The dataset comprises images acquired using two different microscopes and three independent operators. The authors state that they verified the absence of significant associations between model predictions and technical parameters, but the details are not provided. The supplementary figures and tables that would support this claim are missing. Moreover, the text does not describe how the potential confounding by acquisition batch was addressed during model training, beyond data augmentation. If batch effects are not explicitly modeled or controlled, the model may be learning technical rather than biological differences.</li>
+<li><strong>Why it matters</strong> Image-based deep learning models are highly susceptible to learning batch effects, especially when the number of biological replicates is limited. If the model is not robust to technical variation, its utility as a biological biomarker is severely compromised. The claim that the model captures biological aging requires rigorous demonstration that technical factors do not drive predictions.</li>
+<li>
+<p><strong>Resolution test</strong> Provide a detailed analysis of model performance stratified by acquisition batch, microscope, and operator. Show that the model generalizes across these technical variables. Consider including batch as a covariate in the analysis or demonstrating that the model's performance is consistent when trained and tested on data from different batches.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M3</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Validation and generalizability</li>
+<li><strong>Claim pointer</strong> The manuscript claims that ChromAgeNet can serve as a phenotypic screening tool for rejuvenation therapies, based on the drug treatment proof-of-concept.</li>
+<li><strong>Evidence pointer</strong> Results section, Figure 5, Table S6</li>
+<li><strong>Concern</strong> The drug treatment experiment is described as a proof of concept, but the details are sparse. The number of cells, number of biological replicates, drug concentrations, treatment duration, and statistical comparisons are not provided. The claim that UNC0646 and IOX1 restore youthful scores to levels matching young HSCs is striking but cannot be evaluated without the underlying data. Moreover, the manuscript does not discuss whether the observed shifts in youthful scores are specific to the drugs' effects on chromatin or could reflect general cytotoxicity or other nonspecific effects.</li>
+<li><strong>Why it matters</strong> The translational potential of ChromAgeNet as a drug screening tool is a major selling point of the paper. If the proof-of-concept is not rigorously designed and analyzed, the claim is not supported. The specificity of the response to chromatin-modifying drugs needs to be demonstrated with appropriate controls and statistical rigor.</li>
+<li>
+<p><strong>Resolution test</strong> Provide full experimental details for the drug treatment experiments, including sample sizes, concentrations, and statistical methods. Show dose-response relationships if available. Include appropriate controls, such as a drug with no known chromatin effects, to demonstrate specificity.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M4</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Interpretability and biological validity</li>
+<li><strong>Claim pointer</strong> The manuscript claims that explainable AI techniques identify chromatin entropy, peripheral heterochromatin, and chromatin condensates as predictive markers of aging.</li>
+<li><strong>Evidence pointer</strong> Results section, Figure 4, Figure S6, Table S8</li>
+<li><strong>Concern</strong> The interpretability analysis is described qualitatively. The text mentions that attention maps highlight the nuclear envelope in young cells and large DAPI blobs in aged cells, but no quantitative validation is provided. The claim that these features are "predictive markers" requires a more rigorous analysis, such as correlating attention values with measured chromatin features or demonstrating that these features are necessary and sufficient for the model's predictions. The choice of occlusion sensitivity over other methods is justified by fidelity scores, but the details of this comparison are not shown.</li>
+<li><strong>Why it matters</strong> The biological interpretability of the model is a key contribution. If the identified features are not robustly validated, the claim that the model learns biologically meaningful patterns is weakened. The field is increasingly demanding rigorous validation of explainability results, not just qualitative visual inspection.</li>
+<li>
+<p><strong>Resolution test</strong> Provide quantitative analysis of attention maps, such as the distribution of attention values across nuclear compartments, and correlate them with independent measurements of chromatin features. Validate the identified markers by perturbing them in the images and showing that model predictions change accordingly.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M5</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Statistical rigor and reporting</li>
+<li><strong>Claim pointer</strong> The manuscript reports performance metrics with standard deviations and confidence intervals across cross-validation folds.</li>
+<li><strong>Evidence pointer</strong> Results section, Tables S1, S2, S5</li>
+<li><strong>Concern</strong> The text reports mean ± standard deviation for several metrics, but the number of folds, the variance between folds, and the statistical significance of differences between models are not reported. The comparison between ChromAgeNet and classical models is described as "outperforming," but no statistical test is mentioned. The manuscript would benefit from a more rigorous statistical framework, including confidence intervals for the AUROC and tests for the significance of the difference between models.</li>
+<li><strong>Why it matters</strong> The claim that deep learning outperforms classical machine learning is a central finding. Without statistical tests, the reader cannot determine whether the observed difference is meaningful or within the range of random variation. This is particularly important given the modest absolute performance (AUROC 0.77).</li>
+<li>
+<p><strong>Resolution test</strong> Report the full distribution of performance metrics across folds. Use appropriate statistical tests (e.g., paired tests across folds) to compare models. Report confidence intervals for all key metrics.</p>
+</li>
+<li>
+<p><strong>Minor Comments</strong></p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m1</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Clarity of methods</li>
+<li><strong>Affected element</strong> Image preprocessing and resampling</li>
+<li><strong>Evidence pointer</strong> Methods, Image Preprocessing and Segmentation</li>
+<li><strong>Issue</strong> The text states that images were resized to 0.05 μm resolution in all dimensions, but the original acquisition resolution is not specified. The interpolation method used for Z-axis resampling is not described.</li>
+<li>
+<p><strong>Required correction</strong> Specify the original acquisition voxel size and the interpolation algorithm used. Justify the choice of 0.05 μm as the target resolution.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m2</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Data description</li>
+<li><strong>Affected element</strong> Dataset composition</li>
+<li><strong>Evidence pointer</strong> Results, Table 1, Table 2</li>
+<li><strong>Issue</strong> The text mentions 1,229 3D images, but later states 1,848 images after quality control. The relationship between these numbers is unclear. The number of mice per age group and the sex distribution are mentioned but not fully detailed.</li>
+<li>
+<p><strong>Required correction</strong> Clarify the number of images at each stage of the pipeline. Provide a complete breakdown of the dataset by age group, sex, and experimental batch.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m3</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Terminology</li>
+<li><strong>Affected element</strong> "Youthful score"</li>
+<li><strong>Evidence pointer</strong> Results, Figure 2</li>
+<li><strong>Issue</strong> The term "youthful score" is used throughout, but its exact definition and range are not explicitly stated. It is implied to be a calibrated probability, but this should be stated clearly.</li>
+<li>
+<p><strong>Required correction</strong> Define the youthful score explicitly as a calibrated probability and state its range.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m4</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Discussion of limitations</li>
+<li><strong>Affected element</strong> Generalizability to human cells</li>
+<li><strong>Evidence pointer</strong> Discussion</li>
+<li><strong>Issue</strong> The discussion mentions that translation to human samples will require model adaptation, but this point is not elaborated. Given the potential clinical relevance, a more detailed discussion of the challenges and possible strategies for human translation would be valuable.</li>
+<li>
+<p><strong>Required correction</strong> Expand the discussion on human translation, including anticipated differences in chromatin organization and imaging characteristics.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m5</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Reproducibility</li>
+<li><strong>Affected element</strong> Code and data availability</li>
+<li><strong>Evidence pointer</strong> Data Availability Statement</li>
+<li><strong>Issue</strong> The code repository and data are mentioned, but the manuscript does not specify the software environment, dependencies, or instructions for reproducing the results.</li>
+<li>
+<p><strong>Required correction</strong> Provide a detailed description of the software environment, including package versions, and clear instructions for running the code.</p>
+</li>
+<li>
+<p><strong>Technical failings that need to be addressed before the case is established</strong>
+  1. Missing all figures and tables, which are essential for verifying the central claims.
+  2. Insufficient detail on the drug treatment experiment, including sample sizes and statistical analysis.
+  3. Lack of explicit control for batch effects in the model training and evaluation.
+  4. No statistical tests for the comparison between ChromNet and classical models.
+  5. The interpretability analysis lacks quantitative validation.</p>
+</li>
+<li>
+<p><strong>Assessment against Nature-style criteria</strong></p>
+</li>
+<li><strong>Originality</strong>: The application of deep learning to 3D chromatin images for aging prediction is a novel contribution. While image-based deep learning is not new, the specific focus on HSC aging and the use of a simple DNA stain is a fresh angle. The work is original in its specific combination of methods and biological question.</li>
+<li><strong>Scientific importance</strong>: The question of quantifying biological aging is of high importance. If validated, this approach could provide a cost-effective and scalable biomarker for aging and rejuvenation studies. The potential for drug screening adds translational significance. However, the modest performance and lack of external validation temper the immediate impact.</li>
+<li><strong>Interdisciplinary readership</strong>: The work bridges stem cell biology, aging research, and computational biology. It would appeal to a broad audience interested in biomarkers, deep learning applications in biology, and the biology of aging. The use of explainable AI adds an element that could interest method developers.</li>
+<li><strong>Technical soundness</strong>: The technical approach is generally sound in principle. The use of cross-validation, calibration, and explainability methods is appropriate. However, the lack of visible data and the potential for batch effects are significant concerns. The statistical rigor needs improvement.</li>
+<li>
+<p><strong>Readability for nonspecialists</strong>: The manuscript is generally well-written and accessible. The abstract and introduction are clear. The methods section is technical but appropriate for the target audience. The discussion is readable and provides context. However, the absence of figures makes it difficult for any reader to follow the results.</p>
+</li>
+<li>
+<p><strong>Recommendation posture</strong> Supportive if technical concerns are resolved. The core idea is promising and the methodological framework is appropriate. However, the manuscript in its current form does not provide sufficient evidence to support the central claims. The missing figures and tables, the lack of statistical rigor, and the potential for batch effects are blocking issues. With substantial revision, including the full presentation of data, a more rigorous experimental design for the drug treatment study, and a thorough analysis of potential confounders, this work could make a valuable contribution.</p>
+</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>The claim that ChromAgeNet outperforms classical machine learning models is unsupported without the actual comparison data and statistical tests.</li>
+<li>The claim that the model captures biological aging rather than technical artifacts is not fully supported without a detailed analysis of batch effects.</li>
+<li>The claim that chromatin entropy, peripheral heterochromatin, and chromatin condensates are predictive markers is not quantitatively validated.</li>
+<li>The claim that the drug treatment proof-of-concept demonstrates the model's utility for rejuvenation screening is not supported without full experimental details and controls.</li>
+<li>The claim that the model is "interpretable" is only partially supported; the interpretability analysis is qualitative and lacks rigorous validation.</li>
+<li>The generalizability of the model to other datasets, laboratories, or species is not demonstrated and remains an open question.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

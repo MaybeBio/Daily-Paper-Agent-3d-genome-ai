@@ -1,0 +1,316 @@
+{
+  "identity": {
+    "pmid": "42801135",
+    "doi": "10.1016/j.pld.2026.07.015",
+    "title": "Advances in single-cell and spatial multi-omics for plant development and stress responses."
+  },
+  "content": {
+    "abstract": "Recent advances in single-cell and spatial multi-omics have enabled high-resolution profiling of plant cellular heterogeneity and tissue organization. Single-cell RNA sequencing (scRNA-seq) captures transcriptional variation across cell types and states, while single-nucleus ATAC sequencing (snATAC-seq) provides information on chromatin accessibility and regulatory elements. Spatial transcriptomics (ST) and spatial metabolomics preserve spatial context, enabling in situ mapping of molecular and metabolic features in plant tissues. This review summarizes experimental and computational approaches for these technologies in plants, with emphasis on their applicability and limitations under plant-specific constraints such as cell wall structure, tissue complexity, and genome organization. We further discuss computational integration strategies, including deconvolution, spatial mapping, and cross-modal representation learning, highlighting dependence on reference quality and challenges related to data sparsity and batch effects. We also consider current limitations in applying foundation models to plant data due to limited plant-specific training resources and differences in regulatory architecture across species. Finally, we highlight challenges in extending these approaches to non-model plants and emphasize the need for improved reference resources, standardized analytical frameworks, and robust validation strategies.",
+    "keywords": [
+      "Abiotic stress",
+      "Biotic stress",
+      "Plant development",
+      "Single-cell RNA sequencing",
+      "Single-nucleus ATAC sequencing",
+      "Spatial metabolomics",
+      "Spatial transcriptomics"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Xu, Ping",
+        "Wang, Baozheng",
+        "Hu, Yanting",
+        "Qiong, La",
+        "Zhang, Ticao"
+      ],
+      "short_names": [
+        "Xu P",
+        "Wang B",
+        "Hu Y",
+        "Qiong L",
+        "Zhang T"
+      ],
+      "auids": [],
+      "affiliations": [
+        "Key Laboratory of Biodiversity and Environment on the Qinghai-Tibetan Plateau, Ministry of Education, School of Ecology and Environment, Xizang University, Lhasa 850000, China.",
+        "Yunnan Key Laboratory of Plant Diversity and Biogeography, State Key Laboratory of Phytochemistry and Natural Medicines, Kunming Institute of Botany, Chinese Academy of Sciences, Kunming 650201, China.",
+        "Key Laboratory of Biodiversity and Environment on the Qinghai-Tibetan Plateau, Ministry of Education, School of Ecology and Environment, Xizang University, Lhasa 850000, China.",
+        "Yunnan Key Laboratory of Plant Diversity and Biogeography, State Key Laboratory of Phytochemistry and Natural Medicines, Kunming Institute of Botany, Chinese Academy of Sciences, Kunming 650201, China.",
+        "Yunnan Key Laboratory of Plant Diversity and Biogeography, State Key Laboratory of Phytochemistry and Natural Medicines, Kunming Institute of Botany, Chinese Academy of Sciences, Kunming 650201, China.",
+        "Key Laboratory of Biodiversity and Environment on the Qinghai-Tibetan Plateau, Ministry of Education, School of Ecology and Environment, Xizang University, Lhasa 850000, China.",
+        "Yunnan Key Laboratory of Plant Diversity and Biogeography, State Key Laboratory of Phytochemistry and Natural Medicines, Kunming Institute of Botany, Chinese Academy of Sciences, Kunming 650201, China."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Xu, Ping",
+        "short_name": "Xu P",
+        "identifiers": [],
+        "affiliations": [
+          "Key Laboratory of Biodiversity and Environment on the Qinghai-Tibetan Plateau, Ministry of Education, School of Ecology and Environment, Xizang University, Lhasa 850000, China.",
+          "Yunnan Key Laboratory of Plant Diversity and Biogeography, State Key Laboratory of Phytochemistry and Natural Medicines, Kunming Institute of Botany, Chinese Academy of Sciences, Kunming 650201, China."
+        ]
+      },
+      {
+        "full_name": "Wang, Baozheng",
+        "short_name": "Wang B",
+        "identifiers": [],
+        "affiliations": [
+          "Key Laboratory of Biodiversity and Environment on the Qinghai-Tibetan Plateau, Ministry of Education, School of Ecology and Environment, Xizang University, Lhasa 850000, China.",
+          "Yunnan Key Laboratory of Plant Diversity and Biogeography, State Key Laboratory of Phytochemistry and Natural Medicines, Kunming Institute of Botany, Chinese Academy of Sciences, Kunming 650201, China."
+        ]
+      },
+      {
+        "full_name": "Hu, Yanting",
+        "short_name": "Hu Y",
+        "identifiers": [],
+        "affiliations": [
+          "Yunnan Key Laboratory of Plant Diversity and Biogeography, State Key Laboratory of Phytochemistry and Natural Medicines, Kunming Institute of Botany, Chinese Academy of Sciences, Kunming 650201, China."
+        ]
+      },
+      {
+        "full_name": "Qiong, La",
+        "short_name": "Qiong L",
+        "identifiers": [],
+        "affiliations": [
+          "Key Laboratory of Biodiversity and Environment on the Qinghai-Tibetan Plateau, Ministry of Education, School of Ecology and Environment, Xizang University, Lhasa 850000, China."
+        ]
+      },
+      {
+        "full_name": "Zhang, Ticao",
+        "short_name": "Zhang T",
+        "identifiers": [],
+        "affiliations": [
+          "Yunnan Key Laboratory of Plant Diversity and Biogeography, State Key Laboratory of Phytochemistry and Natural Medicines, Kunming Institute of Botany, Chinese Academy of Sciences, Kunming 650201, China."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Plant diversity"
+    ],
+    "journal_abbrev": [
+      "Plant Divers"
+    ],
+    "pub_date": "2026 Sep",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/27 05:44",
+    "fetched_at": "2026-10-04 10:22:40"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42801135",
+      "42475469",
+      "41455555",
+      "36147664",
+      "42653123",
+      "41465249",
+      "42794830",
+      "40315636",
+      "42411279",
+      "42134646",
+      "41956877",
+      "42391613",
+      "42773353",
+      "42504126",
+      "42379504",
+      "42037106",
+      "42278532",
+      "39541907",
+      "40593253",
+      "42525561",
+      "41745955",
+      "37353907",
+      "40398874",
+      "39334490",
+      "42450655",
+      "41939867",
+      "38338756",
+      "41162237",
+      "42740657",
+      "40887856",
+      "40471991",
+      "41953641",
+      "42377616",
+      "42619824",
+      "41353326",
+      "41611568",
+      "39800876",
+      "40690004",
+      "40797190",
+      "42510785",
+      "42716373",
+      "41112263",
+      "33915520",
+      "42681469",
+      "41902503",
+      "42074532",
+      "41619215",
+      "41942920",
+      "42095467",
+      "42267182",
+      "40571903",
+      "41758996",
+      "42309184",
+      "41570605",
+      "37636094",
+      "27499678",
+      "41421360",
+      "41197291",
+      "41376168",
+      "42445318",
+      "42239079",
+      "42582974",
+      "42409600",
+      "41467558",
+      "42581543",
+      "41975483",
+      "36540021",
+      "42366266",
+      "40905378",
+      "39648853",
+      "42487511",
+      "42251185",
+      "41520911",
+      "41753667",
+      "42001472",
+      "42229080",
+      "42687963",
+      "41481687",
+      "35195064",
+      "42131894",
+      "39975319",
+      "39500613",
+      "41588477",
+      "40568028",
+      "42744123",
+      "42091739",
+      "41562697",
+      "42013055",
+      "41139384",
+      "35805979",
+      "42402308",
+      "38991926",
+      "42421047",
+      "41829877",
+      "41326763",
+      "41230160",
+      "35168703",
+      "40027773",
+      "42526910",
+      "41628769"
+    ],
+    "review": [
+      "42801135",
+      "41455555",
+      "36147664",
+      "42653123",
+      "41465249",
+      "42794830",
+      "40315636",
+      "41956877",
+      "42391613",
+      "42773353",
+      "42379504",
+      "42037106",
+      "42278532",
+      "40593253",
+      "42525561",
+      "41745955",
+      "37353907",
+      "40398874",
+      "39334490",
+      "42450655",
+      "38338756",
+      "41162237",
+      "41953641",
+      "42377616",
+      "41353326",
+      "41611568",
+      "39800876",
+      "42510785",
+      "42716373",
+      "41112263",
+      "33915520",
+      "41902503",
+      "42074532",
+      "41619215",
+      "41942920",
+      "42095467",
+      "42267182",
+      "41758996",
+      "42309184",
+      "41570605",
+      "37636094",
+      "41197291",
+      "41376168",
+      "42445318",
+      "42582974",
+      "42409600",
+      "41467558",
+      "42581543",
+      "36540021",
+      "42366266",
+      "40905378",
+      "39648853",
+      "42487511",
+      "41520911",
+      "41753667",
+      "42229080",
+      "41481687",
+      "39500613",
+      "40568028",
+      "42744123",
+      "42091739",
+      "41562697",
+      "42013055",
+      "41139384",
+      "35805979",
+      "42402308",
+      "38991926",
+      "42421047",
+      "41829877",
+      "41326763",
+      "35168703",
+      "42526910",
+      "41628769"
+    ],
+    "pmc": [
+      "13615780"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://linkinghub.elsevier.com/retrieve/pii/S2468-2659(26)00185-X",
+        "provider": "Elsevier Science",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/pmid/42801135/",
+        "provider": "PubMed Central",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

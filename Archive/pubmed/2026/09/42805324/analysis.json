@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42805324",
+  "title": "TAD boundary disruption in Xq27-q28 deletions rewires 3D chromatin architecture and may predispose to primary skewed X chromosome inactivation.",
+  "authors": "Katoh, Kimiko; Nishide, Hiroyo; Hamaguchi, Yu; Soga, Minami; Aiba, Kaori; Kato, Kagayaki; Tsutsumi, Motosuke; Sakamoto, Joe; Solovieva, Elena; Nemoto, Tomomi; Era, Takumi; Hamada, Michiaki; Uchiyama, Ikuo; Wakamatsu, Nobuaki; Asai, Masato",
+  "journal": "Journal of molecular biology",
+  "published_date": "2026-09-28",
+  "window": {
+    "start": "2026-09-27",
+    "end": "2026-10-03"
+  },
+  "score": 8,
+  "one_liner_zh": "该研究利用深度学习模型Orca预测Xq27-q28缺失导致的TAD边界破坏与neo-TAD形成，并结合Hi-C和3D DNA-FISH验证其对X染色体失活偏斜的影响，直接涉及染色质三维架构建模与调控功能关联。",
+  "abstract": "In placental females, X chromosome inactivation (XCI) establishes random monoallelic expression as XIST RNA spreads along a pre-existing three-dimensional (3D) chromatin contact network. How structural variants reshape this 3D landscape to influence XCI choice remains unclear. We previously reported two female individuals with overlapping Xq27-q28 deletions but discordant XCI, skewed in one and random in the other. By re-evaluating 17 reported cases, we found that skewing in a subset was not readily explained by classical routes of primary bias from the canonical XCI machinery or by secondary cell selection. Using the deep-learning model Orca, we predicted that the deletion in the skewed case would fuse disparate topologically associating domains (TADs) into a neo-TAD. Analysis of human preimplantation Hi-C data showed that the relevant TAD boundaries were already apparent by the 8-cell stage, before stable XCI. 3D DNA-FISH revealed reduced spatial distances between selected loci, consistent with the Orca-predicted neo-TAD architecture, in patient-derived naive iPSCs and lymphoblastoid cells. Orca-predicted neo-TAD formation was also identified in three of six random-XCI cases, indicating that it is insufficient on its own to bias XCI. We identified 86 candidate Polycomb-associated loci with chromatin features consistent with Polycomb seed sites on the human X chromosome. The skewed case showed the most extensive disruption of these candidate loci, although candidate-locus disruption was also observed in random-XCI cases. We therefore propose a working seed convergence model in which the convergence of predicted neo-TAD formation and extensive disruption of candidate Polycomb-associated loci may predispose to skewed XCI.",
+  "abstract_zh": "在胎盘雌性个体中，X染色体失活（XCI）通过XIST RNA沿预先存在的三维（3D）染色质接触网络传播，建立随机的单等位基因表达。结构变异如何重塑这一3D景观以影响XCI选择仍不清楚。我们此前报道了两名携带重叠Xq27-q28缺失但XCI不一致的女性个体，其中一例表现为偏斜，另一例为随机。通过重新评估17例已报道病例，我们发现部分病例中的偏斜现象无法轻易通过经典XCI机制的初级偏斜途径或继发性细胞选择来解释。使用深度学习模型Orca，我们预测偏斜病例中的缺失会将不相连的拓扑关联结构域（TADs）融合成一个新TAD（neo-TAD）。对人类植入前Hi-C数据的分析显示，相关TAD边界在8细胞阶段已明显存在，早于稳定XCI的发生。3D DNA-FISH显示，在患者来源的初始态iPSCs和淋巴母细胞中，选定基因座之间的空间距离减小，与Orca预测的新TAD结构一致。在六例随机XCI病例中，有三例也检测到Orca预测的新TAD形成，表明其本身不足以偏倚XCI。我们在人类X染色体上鉴定了86个候选Polycomb相关基因座，其染色质特征与Polycomb种子位点一致。偏斜病例显示出这些候选基因座最广泛的破坏，尽管在随机XCI病例中也观察到候选基因座破坏。因此，我们提出一个工作性的种子汇聚模型，其中预测的新TAD形成与候选Polycomb相关基因座的广泛破坏的汇聚可能易导致XCI偏斜。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42805324/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42805324/",
+  "paper_page_path": "papers/pubmed/42805324/index.html"
+}

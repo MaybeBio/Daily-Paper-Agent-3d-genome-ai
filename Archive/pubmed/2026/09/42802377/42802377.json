@@ -1,0 +1,333 @@
+{
+  "identity": {
+    "pmid": "42802377",
+    "doi": "10.1111/acel.70656",
+    "title": "Deep Learning Predicts Hematopoietic Stem Cell Aging From 3D Chromatin Images."
+  },
+  "content": {
+    "abstract": "The functional decline of the hematopoietic system during aging affects organismal function and contributes to reduced healthspan. Quantifying hematopoietic aging holds great scientific and clinical relevance. Alterations in chromatin architecture are a well-established hallmark of aging that encode rich and informative signatures of the aging process, yet they remain largely unexplored as quantitative markers. Here, we present an interpretable deep learning approach based on convolutional neural networks, ChromAgeNet, that learns changes in the spatial features of chromatin architecture upon aging of hematopoietic stem cells (HSCs). We trained our algorithm on 3D microscope images of DAPI-stained HSC nuclei to discriminate between young and aged murine HSCs, achieving an AUROC of 0.77 +/- 0.03. This approach outperforms classical machine learning models trained on handcrafted chromatin features from the same dataset. We then applied explainable artificial intelligence techniques, identifying chromatin entropy, peripheral heterochromatin, and chromatin condensates as predictive markers. As a proof of concept, we evaluated the potential of our model as a phenotypic screening tool for aged HSCs treated with epigenetic drugs to detect rejuvenation. Altogether, we demonstrate that changes in chromatin organization can be modeled via machine learning to predict age-associated chromatin states in the hematopoietic compartment. Our developed framework, ChromAgeNet, serves as an interpretable algorithm to unravel the intricate relationship between chromatin changes and stem cell aging, and advance high-throughput drug screening for rejuvenation therapies.",
+    "keywords": [
+      "age measurement",
+      "cellular aging",
+      "deep learning",
+      "hematopoietic stem cells",
+      "machine learning",
+      "nuclear architecture"
+    ],
+    "mesh_terms": [
+      "*Hematopoietic Stem Cells/metabolism/cytology",
+      "*Deep Learning",
+      "*Chromatin/metabolism",
+      "*Cellular Senescence",
+      "Animals",
+      "Mice",
+      "*Imaging, Three-Dimensional/methods"
+    ],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Picazo, Pablo Ianez",
+        "Mejia-Ramirez, Eva",
+        "Di Bari, Dario",
+        "Vitali, Elena",
+        "Florian, Maria Carolina",
+        "Petrone, Paula"
+      ],
+      "short_names": [
+        "Picazo PI",
+        "Mejia-Ramirez E",
+        "Di Bari D",
+        "Vitali E",
+        "Florian MC",
+        "Petrone P"
+      ],
+      "auids": [
+        "ORCID: 0000-0001-7174-3264",
+        "ORCID: 0000-0003-1251-5223",
+        "ORCID: 0009-0009-4625-8190",
+        "ORCID: 0009-0007-1997-1666",
+        "ORCID: 0000-0002-5791-1310",
+        "ORCID: 0000-0002-5030-1915"
+      ],
+      "affiliations": [
+        "Universitat Pompeu Fabra (UPF), Barcelona, Spain.",
+        "ISGlobal, Barcelona, Spain.",
+        "Regenerative Medicine Program, The Bellvitge Institute for Biomedical Research (IDIBELL), Barcelona, Spain.",
+        "Program for Advancing the Clinical Translation of Regenerative Medicine of Catalonia, P-CMR[C], Barcelona, Spain.",
+        "Center for Networked Biomedical Research on Bioengineering, Biomaterials and Nanomedicine (CIBER-BBN), Madrid, Spain.",
+        "Regenerative Medicine Program, The Bellvitge Institute for Biomedical Research (IDIBELL), Barcelona, Spain.",
+        "Program for Advancing the Clinical Translation of Regenerative Medicine of Catalonia, P-CMR[C], Barcelona, Spain.",
+        "Regenerative Medicine Program, The Bellvitge Institute for Biomedical Research (IDIBELL), Barcelona, Spain.",
+        "Program for Advancing the Clinical Translation of Regenerative Medicine of Catalonia, P-CMR[C], Barcelona, Spain.",
+        "Regenerative Medicine Program, The Bellvitge Institute for Biomedical Research (IDIBELL), Barcelona, Spain.",
+        "Program for Advancing the Clinical Translation of Regenerative Medicine of Catalonia, P-CMR[C], Barcelona, Spain.",
+        "Center for Networked Biomedical Research on Bioengineering, Biomaterials and Nanomedicine (CIBER-BBN), Madrid, Spain.",
+        "The Catalan Institution for Research and Advanced Studies (ICREA), Barcelona, Spain.",
+        "ISGlobal, Barcelona, Spain.",
+        "Barcelona Supercomputing Center (BSC), Barcelona, Spain."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Picazo, Pablo Iáñez",
+        "short_name": "Picazo PI",
+        "identifiers": [
+          "0000-0001-7174-3264"
+        ],
+        "affiliations": [
+          "Universitat Pompeu Fabra (UPF), Barcelona, Spain.",
+          "ISGlobal, Barcelona, Spain."
+        ]
+      },
+      {
+        "full_name": "Mejía-Ramírez, Eva",
+        "short_name": "Mejía-Ramírez E",
+        "identifiers": [
+          "0000-0003-1251-5223"
+        ],
+        "affiliations": [
+          "Regenerative Medicine Program, The Bellvitge Institute for Biomedical Research (IDIBELL), Barcelona, Spain.",
+          "Program for Advancing the Clinical Translation of Regenerative Medicine of Catalonia, P-CMR[C], Barcelona, Spain.",
+          "Center for Networked Biomedical Research on Bioengineering, Biomaterials and Nanomedicine (CIBER-BBN), Madrid, Spain."
+        ]
+      },
+      {
+        "full_name": "Di Bari, Dario",
+        "short_name": "Di Bari D",
+        "identifiers": [
+          "0009-0009-4625-8190"
+        ],
+        "affiliations": [
+          "Regenerative Medicine Program, The Bellvitge Institute for Biomedical Research (IDIBELL), Barcelona, Spain.",
+          "Program for Advancing the Clinical Translation of Regenerative Medicine of Catalonia, P-CMR[C], Barcelona, Spain."
+        ]
+      },
+      {
+        "full_name": "Vitali, Elena",
+        "short_name": "Vitali E",
+        "identifiers": [
+          "0009-0007-1997-1666"
+        ],
+        "affiliations": [
+          "Regenerative Medicine Program, The Bellvitge Institute for Biomedical Research (IDIBELL), Barcelona, Spain.",
+          "Program for Advancing the Clinical Translation of Regenerative Medicine of Catalonia, P-CMR[C], Barcelona, Spain."
+        ]
+      },
+      {
+        "full_name": "Florian, Maria Carolina",
+        "short_name": "Florian MC",
+        "identifiers": [
+          "0000-0002-5791-1310"
+        ],
+        "affiliations": [
+          "Regenerative Medicine Program, The Bellvitge Institute for Biomedical Research (IDIBELL), Barcelona, Spain.",
+          "Program for Advancing the Clinical Translation of Regenerative Medicine of Catalonia, P-CMR[C], Barcelona, Spain.",
+          "Center for Networked Biomedical Research on Bioengineering, Biomaterials and Nanomedicine (CIBER-BBN), Madrid, Spain.",
+          "The Catalan Institution for Research and Advanced Studies (ICREA), Barcelona, Spain."
+        ]
+      },
+      {
+        "full_name": "Petrone, Paula",
+        "short_name": "Petrone P",
+        "identifiers": [
+          "0000-0002-5030-1915"
+        ],
+        "affiliations": [
+          "ISGlobal, Barcelona, Spain.",
+          "Barcelona Supercomputing Center (BSC), Barcelona, Spain."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Aging cell"
+    ],
+    "journal_abbrev": [
+      "Aging Cell"
+    ],
+    "pub_date": "2026 Oct",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/28 05:33",
+    "fetched_at": "2026-10-04 10:22:40"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42802377",
+      "41473290",
+      "30404662",
+      "42047481",
+      "38475857",
+      "32252797",
+      "42557442",
+      "34858399",
+      "29891535",
+      "33798450",
+      "41993614",
+      "33876187",
+      "24428552",
+      "42573713",
+      "26489895",
+      "33231616",
+      "27402537",
+      "25261778",
+      "42216078",
+      "30897261",
+      "42463951",
+      "38598841",
+      "18413859",
+      "28088986",
+      "42314672",
+      "38640057",
+      "42618695",
+      "40975221",
+      "38704089",
+      "40132120",
+      "42475469",
+      "41851123",
+      "41286464",
+      "42778529",
+      "39754007",
+      "23476050",
+      "30235201",
+      "23415915",
+      "28538171",
+      "24494704",
+      "22560076",
+      "22110168",
+      "27380967",
+      "23615056",
+      "42300249",
+      "24792119",
+      "42374656",
+      "37118089",
+      "33165849",
+      "38014055",
+      "29625072",
+      "18008087",
+      "39788412",
+      "31679686",
+      "37748139",
+      "25082353",
+      "35401928",
+      "28088984",
+      "33296684",
+      "26430063",
+      "28088989",
+      "42295036",
+      "33228751",
+      "41226393",
+      "39859500",
+      "40615375",
+      "21385307",
+      "40920871",
+      "39592623",
+      "23739721",
+      "28224997",
+      "42596736",
+      "41266389",
+      "35216063",
+      "17676974",
+      "41921589",
+      "39725143",
+      "40220914",
+      "27500495",
+      "39236298",
+      "41474970",
+      "41301122",
+      "32991978",
+      "35941268",
+      "25388383",
+      "24675458",
+      "40643159",
+      "29736022",
+      "36982935",
+      "33087586",
+      "17404508",
+      "25068121",
+      "40019828",
+      "29035282",
+      "28943295",
+      "40875292",
+      "26813236",
+      "32798509",
+      "27221660",
+      "26208102"
+    ],
+    "review": [
+      "42802377",
+      "42047481",
+      "32252797",
+      "34858399",
+      "42573713",
+      "27402537",
+      "25261778",
+      "42216078",
+      "28088986",
+      "38640057",
+      "42618695",
+      "40975221",
+      "27380967",
+      "23615056",
+      "18008087",
+      "39788412",
+      "25082353",
+      "35401928",
+      "28088984",
+      "28088989",
+      "33228751",
+      "23739721",
+      "35216063",
+      "41921589",
+      "39725143",
+      "40220914",
+      "41301122",
+      "32991978",
+      "35941268",
+      "36982935",
+      "40019828",
+      "28943295",
+      "26813236",
+      "32798509"
+    ],
+    "pmc": [
+      "13617143"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://medlineplus.gov/stemcells.html",
+        "provider": "MedlinePlus Health Information",
+        "category": "Medical",
+        "attribute": "free resource",
+        "linkname": "Stem Cells"
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/pmid/42802377/",
+        "provider": "PubMed Central",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://onlinelibrary.wiley.com/doi/10.1111/acel.70656",
+        "provider": "Wiley",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

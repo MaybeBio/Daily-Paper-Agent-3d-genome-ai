@@ -1,0 +1,272 @@
+{
+  "identity": {
+    "pmid": "42827107",
+    "doi": "10.1038/s12276-026-01855-4",
+    "title": "Single-cell epigenomics of colorectal cancer."
+  },
+  "content": {
+    "abstract": "Colorectal cancer (CRC) exhibits remarkable phenotypic heterogeneity that cannot be fully explained by genetic alterations alone. Advances in single-nucleus assay for transposase-accessible chromatin sequencing have revealed chromatin accessibility as a central regulatory layer shaping tumor identity, cellular plasticity and therapeutic response. In this Review, we synthesize recent single-cell epigenomic studies to outline an emerging regulatory principle for CRC. From an epigenetic perspective, CRC can be conceptualized as two distinct epigenomic states, intrinsic consensus molecular subtype (iCMS)2 and iCMS3, defined by divergent cis-regulatory element activities across distal enhancer and promoter landscapes. Tumor progression is accompanied by stepwise regulatory rewiring, encompassing erosion of differentiation programs in adenomas, regulatory bifurcation during malignant transformation, oncofetal reprogramming associated with therapy resistance and organotropic adaptation during metastasis. We further discuss how stromal and immune compartments undergo dynamic epigenomic remodeling, converging toward a concept of iCMS-defined epigenomic ecosystems, and how genomic alterations engage in bidirectional crosstalk with chromatin states to generate intratumoral heterogeneity. Finally, we highlight translational applications including epigenetic-immune combination therapies, liquid biopsy-based monitoring, spatial epigenomics and artificial intelligence-driven modeling.",
+    "keywords": [],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Kang, Dain",
+        "Lee, Jun Ho",
+        "Jung, Inkyung"
+      ],
+      "short_names": [
+        "Kang D",
+        "Lee JH",
+        "Jung I"
+      ],
+      "auids": [
+        "ORCID: 0000-0002-5885-2754"
+      ],
+      "affiliations": [
+        "Department of Biological Sciences, Korea Advanced Institute of Science and Technology, Daejeon, Republic of Korea.",
+        "Department of Biological Sciences, Korea Advanced Institute of Science and Technology, Daejeon, Republic of Korea.",
+        "Graduate School of Stem Cell and Regenerative Biology, Korea Advanced Institute of Science and Technology, Daejeon, Republic of Korea.",
+        "Department of Biological Sciences, Korea Advanced Institute of Science and Technology, Daejeon, Republic of Korea. ijung@kaist.ac.kr.",
+        "KAIST InnoCORE AI-CRED Institute, Korea Advanced Institute of Science and Technology, Daejeon, Republic of Korea. ijung@kaist.ac.kr.",
+        "Department of AX, College of AI, Korea Advanced Institute of Science and Technology, Daejeon, Republic of Korea. ijung@kaist.ac.kr."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Kang, Dain",
+        "short_name": "Kang D",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Biological Sciences, Korea Advanced Institute of Science and Technology, Daejeon, Republic of Korea."
+        ]
+      },
+      {
+        "full_name": "Lee, Jun Ho",
+        "short_name": "Lee JH",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Biological Sciences, Korea Advanced Institute of Science and Technology, Daejeon, Republic of Korea.",
+          "Graduate School of Stem Cell and Regenerative Biology, Korea Advanced Institute of Science and Technology, Daejeon, Republic of Korea."
+        ]
+      },
+      {
+        "full_name": "Jung, Inkyung",
+        "short_name": "Jung I",
+        "identifiers": [
+          "0000-0002-5885-2754"
+        ],
+        "affiliations": [
+          "Department of Biological Sciences, Korea Advanced Institute of Science and Technology, Daejeon, Republic of Korea. ijung@kaist.ac.kr.",
+          "KAIST InnoCORE AI-CRED Institute, Korea Advanced Institute of Science and Technology, Daejeon, Republic of Korea. ijung@kaist.ac.kr.",
+          "Department of AX, College of AI, Korea Advanced Institute of Science and Technology, Daejeon, Republic of Korea. ijung@kaist.ac.kr."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Experimental & molecular medicine"
+    ],
+    "journal_abbrev": [
+      "Exp Mol Med"
+    ],
+    "pub_date": "2026 Oct 2",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/03 05:33",
+    "fetched_at": "2026-10-04 10:22:40"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42827107",
+      "42047907",
+      "41747370",
+      "42475469",
+      "41958668",
+      "42624180",
+      "41673764",
+      "42297231",
+      "42688835",
+      "42747576",
+      "41137871",
+      "39853587",
+      "41299571",
+      "42378815",
+      "42546852",
+      "41346579",
+      "41777263",
+      "42639369",
+      "37555319",
+      "41846160",
+      "41992363",
+      "41862973",
+      "41309932",
+      "41897442",
+      "42793029",
+      "40225268",
+      "42053742",
+      "41436831",
+      "41942920",
+      "41527290",
+      "40611889",
+      "42382771",
+      "42193312",
+      "34509499",
+      "42603101",
+      "42372903",
+      "42420449",
+      "41782022",
+      "42488707",
+      "42192959",
+      "41450739",
+      "42437015",
+      "42292428",
+      "41898292",
+      "41342434",
+      "42594562",
+      "41570447",
+      "42712898",
+      "41631254",
+      "41878120",
+      "40612350",
+      "42136962",
+      "41438574",
+      "42019096",
+      "36371985",
+      "41958675",
+      "42275231",
+      "41230160",
+      "35817555",
+      "41662891",
+      "42761343",
+      "42679437",
+      "40702585",
+      "41735542",
+      "37360193",
+      "42716912",
+      "34635154",
+      "42237704",
+      "42101296",
+      "42237373",
+      "41403952",
+      "42749387",
+      "35199155",
+      "42277208",
+      "42816857",
+      "37832942",
+      "34952829",
+      "41825641",
+      "42717115",
+      "42043678",
+      "41063413",
+      "42545094",
+      "42283082",
+      "38445965",
+      "41899602",
+      "41677595",
+      "41596599",
+      "41738561",
+      "39622638",
+      "41743703",
+      "29625794",
+      "34090884",
+      "42562887",
+      "41977421",
+      "35840754",
+      "42013787",
+      "35277192",
+      "41723338",
+      "42641865",
+      "39901471"
+    ],
+    "review": [
+      "42827107",
+      "42047907",
+      "41747370",
+      "41958668",
+      "42624180",
+      "42297231",
+      "42688835",
+      "42747576",
+      "41137871",
+      "39853587",
+      "42378815",
+      "42546852",
+      "41346579",
+      "41777263",
+      "42639369",
+      "41846160",
+      "41992363",
+      "41862973",
+      "41309932",
+      "41897442",
+      "42793029",
+      "42053742",
+      "41942920",
+      "42382771",
+      "42193312",
+      "42603101",
+      "42372903",
+      "41782022",
+      "42488707",
+      "42192959",
+      "41450739",
+      "42437015",
+      "42292428",
+      "42594562",
+      "42712898",
+      "41631254",
+      "41878120",
+      "40612350",
+      "41438574",
+      "42019096",
+      "42275231",
+      "41662891",
+      "42761343",
+      "42679437",
+      "42716912",
+      "42237704",
+      "42237373",
+      "41403952",
+      "42749387",
+      "35199155",
+      "42277208",
+      "42816857",
+      "37832942",
+      "34952829",
+      "41825641",
+      "42043678",
+      "41063413",
+      "42283082",
+      "41899602",
+      "41677595",
+      "41596599",
+      "41738561",
+      "29625794",
+      "42562887",
+      "41977421",
+      "35840754",
+      "42013787",
+      "35277192",
+      "41723338",
+      "42641865"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [],
+    "text_mined": []
+  }
+}

@@ -1,0 +1,708 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>From reference-genome prediction to causal generalization: sequence-to-function models for plant regulatory genomics. · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-mid">5</span>
+    <div>
+      <h1>From reference-genome prediction to causal generalization: sequence-to-function models for plant regulatory genomics.</h1>
+      <div class="meta">Zhan, Mingfang; Wu, Ruigang</div>
+      <div class="meta muted">
+        
+        <span class="journal">Frontiers in plant science</span>
+        · 2026-10-02
+         · 全文(pmc)
+         · <a href="https://pubmed.ncbi.nlm.nih.gov/42824471/">原文</a>
+      </div>
+      <p class="one-liner">该文综述植物调控基因组学中序列-功能模型（seq2func）的泛化挑战，虽涉及顺式调控元件和调控序列设计，但未聚焦染色质三维空间架构建模，且为综述性文章，AI方法讨论较泛，与三维基因组建模课题关联有限。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">Sequence-to-function (seq2func) models predict molecular regulatory outputs from DNA sequence and can prioritize non-coding variants, annotate cis-regulatory elements (CREs), and design regulatory sequences. Although accuracy has improved, most models are trained and evaluated on observational data from one or a few reference genomes. Their performance may therefore not translate to natural haplotypes, structural variants, tissues, developmental stages, environments, or species. These limitations are especially important in plants, where pan-genomic diversity, transposable elements, polyploidy, long-range regulation, and genotype-by-environment interactions shape regulatory landscapes. This Mini Review summarizes seq2func modelling in plant regulatory genomics, discusses plant-specific challenges and the complementary value of observational and perturbation assays, and proposes evaluation frameworks based on biologically meaningful distribution shifts. We further outline how pan-genomes, multi-omics, genome editing, reporter assays, active learning, and continual learning could support closed-loop experimental-computational systems. Progress should be judged not only by reference-genome accuracy, but by calibrated and experimentally validated generalization across plant diversity.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">序列到功能（seq2func）模型从DNA序列预测分子调控输出，可用于优先排序非编码变异、注释顺式调控元件（cis-regulatory elements, CREs）及设计调控序列。尽管准确性已有所提升，但大多数模型是在一个或少数参考基因组上的观测数据中训练和评估的。因此，其性能可能无法推广至自然单倍型、结构变异、组织、发育阶段、环境或物种。这些局限性在植物中尤为重要，因为泛基因组多样性、转座元件、多倍性、长距离调控以及基因型与环境的互作塑造了调控景观。本迷你综述总结了植物调控基因组学中的seq2func建模，讨论了植物特有的挑战以及观测和扰动实验的互补价值，并提出了基于生物学意义分布偏移的评估框架。我们进一步概述了泛基因组、多组学、基因组编辑、报告基因检测、主动学习和持续学习如何支持闭环实验-计算系统。进展不仅应依据参考基因组准确性来评判，还应依据经过校准和实验验证的跨植物多样性泛化能力来评判。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：From reference-genome prediction to causal generalization: sequence-to-function models for plant regulatory genomics</li>
+<li><strong>作者</strong>：Zhan, Mingfang; Wu, Ruigang</li>
+<li><strong>单位</strong>：未提供</li>
+<li><strong>期刊/平台</strong>：Frontiers in Plant Science</li>
+<li><strong>年份</strong>：2026-10-02</li>
+<li><strong>论文类型</strong>：Mini Review（迷你综述）</li>
+<li><strong>领域</strong>：植物调控基因组学 × 序列-功能（seq2func）深度学习模型</li>
+<li><strong>关键词</strong>：sequence-to-function models, plant regulatory genomics, pan-genome, causal generalization, distribution shift, closed-loop AI（基于全文归纳）</li>
+<li><strong>DOI/ID</strong>：10.3389/fpls.2026.1968878</li>
+<li><strong>URL</strong>：https://pubmed.ncbi.nlm.nih.gov/42824471/</li>
+<li><strong>代码</strong>：未提供</li>
+<li><strong>数据</strong>：未提供</li>
+<li><strong>阅读日期</strong>：未提供</li>
+<li><strong>在「三维基因组/染色质组织 × AI 方法/物理模拟」方向中的位置</strong>：本文不直接研究三维基因组或染色质高级结构，而是聚焦植物调控基因组学中的序列-功能预测模型。但其核心关切——从参考基因组观测数据到跨基因型/环境/物种的因果泛化——与三维基因组领域面临的泛化挑战高度同构。文中讨论的分布偏移（distribution shift）评估框架、观测与扰动实验互补、主动学习与持续学习闭环等思路，可直接迁移到染色质构象预测模型的评估与迭代设计中。文中提及的染色质互作信息作为预测基因表达的输入特征（如DeepCBA），也构成与三维基因组方法的直接接口。</li>
+</ul>
+<hr />
+<h2>02 一句话总结</h2>
+<p>本文是一篇迷你综述，系统梳理植物调控基因组学中序列-功能（seq2func）模型的现状与局限，指出基于参考基因组的观测数据训练与评估无法保证对自然单倍型、结构变异、组织、发育阶段、环境及物种的泛化，并提出以生物学有意义的分布偏移为基准的评估框架，以及结合泛基因组、多组学、基因组编辑、报告基因检测、主动学习和持续学习的闭环实验-计算系统作为改进路径。</p>
+<hr />
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：seq2func 模型在植物调控基因组学中，从参考基因组预测到跨遗传/环境/物种的因果泛化，面临哪些挑战？如何评估和改进其泛化能力？</li>
+<li><strong>为什么重要</strong>：植物基因组具有高重复序列含量、转座子丰富、多倍化普遍、长程调控广泛、基因型-环境互作（G×E）复杂等特点。若模型仅在参考基因组上表现良好，则无法有效应用于育种群体中的非参考等位基因、结构变异或工程化调控序列，限制了其在精准育种和气候韧性作物改良中的实际价值。</li>
+<li><strong>现有方法为何不足</strong>：当前大多数模型在单一或少数参考基因组的观测数据上训练和评估，随机留出位点的测试仅衡量熟悉环境中的插值能力，而非对植物生物学和育种最相关的变异类型的预测能力。观测关联不能确立因果关系，高留出准确率不等于模型恢复了真实的调控规则。</li>
+<li><strong>精确的「Can ... ?」研究问题</strong>：Can sequence-to-function models trained on reference-genome observational data generalize reliably to non-reference haplotypes, structural variants, tissues, environments, and species in plants, and can their predictions be validated as causal through perturbation assays?</li>
+</ul>
+<hr />
+<h2>04 背景与发展脉络</h2>
+<blockquote>
+<p>注：以下脉络主要基于本文框架构建，标注「仅本文框架」；部分外部引用经文中提及，标注「经外部核验（文中引用）」。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>代表性方法/事件</th>
+<th>优点</th>
+<th>局限</th>
+<th>本文主张的位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>早期 seq2func 奠基</td>
+<td>Zhou and Troyanskaya (2015); Kelley et al. (2016) 的深度神经网络映射 DNA 序列到分子输出</td>
+<td>首次实现端到端序列-功能预测</td>
+<td>主要在人类/动物系统；输入窗口有限</td>
+<td>奠定了 seq2func 范式 [经外部核验（文中引用）]</td>
+</tr>
+<tr>
+<td>植物 seq2func 初步应用</td>
+<td>Peleke et al. (2024) 跨物种基因-转录本丰度预测；Wang et al. (2024) DeepCBA 整合染色质可及性与互作信息</td>
+<td>证明植物中可行；跨物种迁移有信号</td>
+<td>参考基因组依赖；物种间迁移有限</td>
+<td>植物 seq2func 的可行性证据 [经外部核验（文中引用）]</td>
+</tr>
+<tr>
+<td>长上下文架构</td>
+<td>Enformer/Borezoi 风格架构、注意力/状态空间模型</td>
+<td>可纳入远端调控信息</td>
+<td>长窗口不必然带来泛化或机制理解</td>
+<td>需要合适的归纳偏置与训练多样性 [仅本文框架]</td>
+</tr>
+<tr>
+<td>植物基础模型/基因组语言模型</td>
+<td>PlantCaduceus, AgroNT, plant-adapted nucleotide transformer</td>
+<td>自监督序列表征</td>
+<td>表征不等于调控机制；泛化未验证</td>
+<td>有前景但需功能监督与分布偏移评估 [经外部核验（文中引用）]</td>
+</tr>
+<tr>
+<td>因果与泛化转向</td>
+<td>本文提出的分布偏移评估 + 观测/扰动互补 + 闭环学习</td>
+<td>明确评估泛化与因果性</td>
+<td>尚未有完整实现</td>
+<td>本文的核心主张位置 [仅本文框架]</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>参考基因组偏差</td>
+<td>模型在参考基因组上训练/评估，无法覆盖自然群体中的等位基因多样性</td>
+<td>参考基因组只是物种序列空间的一种实现；育种相关变异常为非参考等位基因或结构变异</td>
+<td>"A reference genome represents only one realization of a species' regulatory sequence space"（Pan-genomic diversity 节）</td>
+</tr>
+<tr>
+<td>转座子与重复序列干扰</td>
+<td>重复序列富集导致模型利用序列组成或同源性而非可迁移的调控特征</td>
+<td>转座子可贡献启动子/增强子，但其效应依赖插入位置、序列年龄、表观状态和邻近元件</td>
+<td>"Repeat-rich genomes also increase the risk that models exploit homology or composition rather than transferable regulatory features"（Pan-genomic diversity 节）</td>
+</tr>
+<tr>
+<td>多倍体与同源基因混淆</td>
+<td>同源基因座序列高度相似但调控状态不同，训练标签可能混合不同亚基因组信号</td>
+<td>短读段多组学数据在同源序列间比对模糊；基因水平聚合标签掩盖亚基因组特异性</td>
+<td>"training labels...can inadvertently mix homeolog-specific regulatory signals, which may inflate aggregate performance while degrading homeolog-specific predictive fidelity"（Polyploidy 节）</td>
+</tr>
+<tr>
+<td>远端调控与长程互作</td>
+<td>仅用近端启动子窗口会遗漏远端增强子等调控元件</td>
+<td>植物中长程调控广泛存在；长窗口增加计算成本但未必提升机制理解</td>
+<td>"regulatory effects can involve distal cis-regulatory elements, repetitive DNA, and chromatin architecture"（Seq2func models 节）</td>
+</tr>
+<tr>
+<td>上下文依赖（组织/发育/环境）</td>
+<td>同一序列在不同条件下功能不同，静态模型无法区分</td>
+<td>序列定义调控潜力，但输出取决于转录因子丰度、染色质状态、激素信号等上下文</td>
+<td>"DNA sequence defines regulatory potential, but output depends on the cellular and environmental context"（Context dependence 节）</td>
+</tr>
+<tr>
+<td>观测关联 ≠ 因果</td>
+<td>高预测准确率被误读为模型发现了因果调控规则</td>
+<td>观测数据中的关联可能来自连锁、混杂或序列组成偏差</td>
+<td>"High held-out accuracy on observational data should not therefore be interpreted as evidence that a model has recovered causal regulatory rules"（From observational prediction 节）</td>
+</tr>
+<tr>
+<td>评估协议不匹配</td>
+<td>随机留出位点测试不能反映实际部署场景</td>
+<td>实际应用面对的是新单倍型、新组织、新环境、新物种——即分布偏移</td>
+<td>"Evaluation based on randomly held-out loci from a reference genome therefore measures interpolation in a familiar setting"（Introduction 节）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>06 核心思想</h2>
+<h3>1) 表面方法</h3>
+<p>本文是一篇迷你综述，不提出新模型，而是系统性地：
+- 梳理植物 seq2func 模型的现状（CNN、Transformer/长上下文架构、基因组语言模型）；
+- 列举植物基因组对 seq2func 的独特挑战（泛基因组多样性、转座子、多倍体、远端调控、上下文依赖）；
+- 提出以分布偏移（covariate shift / label shift / concept shift）为分类框架的评估基准；
+- 提出观测（多组学）+ 扰动（MPRA/STARR-seq/CRISPR 编辑）互补的因果验证路径；
+- 提出主动学习 + 持续学习 + 闭环实验-计算系统的迭代框架。</p>
+<h3>2) 核心洞察</h3>
+<ul>
+<li><strong>泛化不是插值</strong>：参考基因组上的随机留出测试衡量的是熟悉环境中的插值能力，而植物育种和调控发现真正需要的是对非参考等位基因、结构变异、新环境和新物种的外推能力。</li>
+<li><strong>三种分布偏移的区分</strong>：将评估问题分解为 covariate shift（序列分布变化）、label shift（测量过程变化）、concept shift（序列-功能映射关系变化），为设计有意义的基准提供了可操作框架。</li>
+<li><strong>观测与扰动的互补性</strong>：观测数据（ATAC-seq、ChIP-seq、RNA-seq）提供内源染色质环境中的关联证据，报告基因检测提供分离的序列内在活性，内源编辑提供因果验证——三者构成从关联到因果的证据链。</li>
+<li><strong>闭环而非一次性预测</strong>：模型不应是静态注释工具，而应作为"虚拟实验"参与迭代——不确定性指导实验选择，实验结果反馈更新模型。</li>
+</ul>
+<h3>3) 可能的普适教训 [Analysis]</h3>
+<ul>
+<li><strong>评估协议决定结论边界</strong>：任何序列-功能（或序列-结构）预测模型的性能声明都必须限定其训练数据覆盖的序列空间和生物学上下文。对三维基因组模型而言，这意味着跨细胞类型、跨物种、跨构象状态的评估应成为标准实践。</li>
+<li><strong>"上下文"是模型的核心变量而非噪声</strong>：植物中组织/环境/发育对调控的影响提示，染色质结构预测模型同样需要显式编码细胞状态和实验条件，而非仅依赖序列。</li>
+<li><strong>因果验证是模型可信度的最终标尺</strong>：预测染色质互作或调控效应的模型，其价值最终取决于能否通过扰动实验（如 CRISPR 删除增强子、染色质构象捕获后的编辑验证）得到确认。</li>
+</ul>
+<hr />
+<h2>07 方法总览</h2>
+<p>本文为综述，无原始方法。但文中提出的闭环框架可概括为：</p>
+<ul>
+<li><strong>输入</strong>：参考基因组与泛基因组序列、多组学观测数据（ATAC-seq、DNase-seq、ChIP-seq、CUT&amp;Tag、RNA-seq、 nascent transcription、染色体构象数据）、报告基因检测数据（MPRA、STARR-seq）、内源编辑结果（CRISPR 删除/替换/碱基编辑/CRISPRi/a）</li>
+<li><strong>输出</strong>：调控元件注释、变异效应预测、序列设计建议、经实验验证的因果调控机制</li>
+<li><strong>核心模块</strong>：
+  1. <strong>seq2func 预测模型</strong>：CNN 基线、长上下文 Transformer/状态空间架构、基因组语言模型
+  2. <strong>分布偏移评估框架</strong>：covariate shift（新单倍型/结构变异/物种）、label shift（不同检测平台/测量类型）、concept shift（不同组织/发育/环境）
+  3. <strong>扰动实验模块</strong>：MPRA/STARR-seq 高通量报告基因检测 + CRISPR 内源编辑验证
+  4. <strong>主动学习模块</strong>：基于模型不确定性（高不确定性、模型分歧、 underrepresented haplotypes）选择下一轮实验
+  5. <strong>持续学习模块</strong>：replay-based rehearsal、参数正则化（EWC）、模块化 adapter 架构，避免灾难性遗忘</li>
+<li><strong>流程</strong>：观测数据训练模型 → 在分布偏移基准上评估 → 不确定性指导选择扰动实验 → 实验结果验证/修正预测 → 持续学习更新模型 → 循环迭代</li>
+</ul>
+<hr />
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>seq2func 预测模型（CNN/Transformer/长上下文）</td>
+<td>从 DNA 序列映射到分子功能输出</td>
+<td>核心预测引擎；CNN 提供局部 motif 识别基线，长上下文架构捕获远端调控</td>
+<td>输入：one-hot 编码 DNA 序列（可含染色质/表观特征）；输出：可及性、TF 占用、表达等</td>
+<td>文中引用 Kelley et al. 2016; Avsec et al. 2021; Peleke et al. 2024; Wang et al. 2024</td>
+<td>移除则无预测能力；但仅靠模型无法保证泛化 [预期效应]</td>
+</tr>
+<tr>
+<td>分布偏移评估框架</td>
+<td>按 covariate/label/concept shift 分类测试泛化</td>
+<td>随机留出测试不能反映实际部署场景；需要生物学有意义的基准</td>
+<td>输入：模型预测 + 分层测试集（新单倍型/结构变异/组织/环境/物种）；输出：分层性能与校准报告</td>
+<td>Table 1（文中）；"Benchmarking should include held-out accessions or haplotypes..."（Evaluating generalization 节）</td>
+<td>移除则无法判断模型是否真正泛化，性能声明可能误导 [预期效应]</td>
+</tr>
+<tr>
+<td>报告基因检测（MPRA/STARR-seq）</td>
+<td>高通量测量序列内在调控活性</td>
+<td>提供独立于内源染色质环境的序列活性测量，补充观测数据</td>
+<td>输入：天然/合成片段文库；输出：定量活性分数</td>
+<td>"MPRAs and STARR-seq allow systematic testing of natural and synthetic fragments"（From observational prediction 节）；Jores et al. 2020</td>
+<td>移除则缺乏序列内在活性的直接证据，难以区分序列效应与上下文效应 [预期效应]</td>
+</tr>
+<tr>
+<td>内源基因组编辑（CRISPR）</td>
+<td>在天然染色质环境中因果验证调控元件</td>
+<td>报告基因检测无法完全模拟内源染色质环境；编辑提供因果证据</td>
+<td>输入：候选调控元件/变异；输出：编辑后表型变化</td>
+<td>"CRISPR-based editing enables direct tests in native genomic contexts"（From observational prediction 节）；Rodríguez-Leal et al. 2017</td>
+<td>移除则无法确证因果关系，预测停留在关联层面 [预期效应]</td>
+</tr>
+<tr>
+<td>主动学习</td>
+<td>基于不确定性选择信息量最大的实验</td>
+<td>序列空间组合爆炸，无法穷尽实验；需要优先测试最有信息量的候选</td>
+<td>输入：模型预测 + 不确定性估计；输出：下一轮实验候选集</td>
+<td>"Active learning can prioritize experiments that maximize expected information gain"（Closed-loop 节）</td>
+<td>移除则实验选择无指导，迭代效率大幅降低 [预期效应]</td>
+</tr>
+<tr>
+<td>持续学习</td>
+<td>在累积实验数据上更新模型而不遗忘旧知识</td>
+<td>实验数据持续产生；朴素微调会导致灾难性遗忘</td>
+<td>输入：新实验数据 + 旧数据/参数约束；输出：更新后的模型</td>
+<td>文中提及 replay、EWC、modular adapters 三种策略（Closed-loop 节）</td>
+<td>移除则模型无法持续改进，或更新后丢失已有能力 [预期效应]</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>09 关键公式符号</h2>
+<p><strong>不适用。</strong> 本文为综述论文，未提出新的数学模型或算法公式。文中涉及的分布偏移分类（covariate/label/concept shift）为概念性框架而非形式化定义。</p>
+<hr />
+<h2>10 实验设计与证据链</h2>
+<p>本文为迷你综述，不包含原始实验。文中引用的关键实证研究作为支撑证据：</p>
+<table>
+<thead>
+<tr>
+<th>实验/研究</th>
+<th>检验的 claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Peleke et al. (2024) 跨物种基因表达预测</td>
+<td>seq2func 在植物中可行，存在保守特征</td>
+<td>拟南芥、番茄、高粱、玉米</td>
+<td>识别出保守和物种特异性预测特征；近缘物种迁移更强</td>
+<td>植物 seq2func 的可行性；跨物种迁移有信号</td>
+<td>不能证明跨物种泛化普遍成立</td>
+<td>"Early studies demonstrate feasibility in plants"（Seq2func models 节）</td>
+</tr>
+<tr>
+<td>Wang et al. (2024) DeepCBA</td>
+<td>整合染色质可及性和互作信息可改善表达预测</td>
+<td>玉米</td>
+<td>整合多模态染色质特征提升预测</td>
+<td>染色质互作信息对表达预测有价值</td>
+<td>未证明因果性</td>
+<td>"DeepCBA integrated sequence, chromatin accessibility, and chromatin-interaction information"（Seq2func models 节）</td>
+</tr>
+<tr>
+<td>Jores et al. (2020) 烟草 STARR-seq</td>
+<td>报告基因检测可识别植物增强子</td>
+<td>烟草叶片</td>
+<td>鉴定增强子活性及序列特征</td>
+<td>报告基因检测在植物中可行</td>
+<td>未证明内源功能</td>
+<td>"STARR-seq identified plant enhancer activity and functional sequence features"（From observational prediction 节）</td>
+</tr>
+<tr>
+<td>Rodríguez-Leal et al. (2017) 番茄启动子编辑</td>
+<td>内源编辑可创造定量性状变异</td>
+<td>番茄启动子编辑</td>
+<td>产生连续的表型变异</td>
+<td>内源编辑是因果验证的有效工具</td>
+<td>未推广到所有调控元件</td>
+<td>"Promoter editing in tomato has shown that targeted cis-regulatory modifications can create quantitative trait variation"（From observational prediction 节）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>评测协议</strong>：文中未提供具体数据集、指标或基准实现，但明确提出了评估泛化的分层测试要求（held-out accessions, structural variants, tissues, environments, species）和校准报告要求。</p>
+<hr />
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：本文讨论的是植物调控基因组学中的 seq2func 模型，即从 DNA 序列预测分子调控输出（可及性、TF 占用、表达等）。不涉及蛋白质编码序列的功能预测，也不涉及三维基因组结构预测本身。</li>
+<li><strong>oracle/真值输入</strong>：文中强调观测数据（ATAC-seq、ChIP-seq 等）作为训练标签的局限性——它们反映的是内源染色质环境中的关联而非因果。报告基因检测和 CRISPR 编辑被视为更接近因果真值的实验来源，但各自也有边界（报告基因缺乏内源染色质上下文；编辑成本高、通量低）。</li>
+<li><strong>端到端状态</strong>：文中明确指出，从序列到分子功能的预测已初步可行，但从分子功能到有机体表型（如产量、抗逆性）的桥接仍是最困难的一步。seq2func 分数可作为 GWAS 精细定位和基因组预测的特征或先验，但不等同于表型预测。</li>
+<li><strong>算力成本</strong>：文中未讨论具体算力需求，但指出长上下文架构和基因组语言模型计算成本高，且"更长上下文不保证机制洞察或泛化"。</li>
+<li><strong>历史依赖</strong>：模型性能依赖训练数据的参考基因组偏差；持续学习需要应对数据分布漂移和灾难性遗忘。</li>
+<li><strong>最难情形</strong>：结构变异（尤其是转座子插入和拷贝数变异）、多倍体中的亚基因组特异性调控、以及未观测环境（如田间胁迫组合）下的预测。</li>
+<li><strong>群体/领域边界</strong>：结论主要针对植物系统，但分布偏移评估框架和闭环学习思路可推广到其他物种和调控预测任务。文中明确建议以拟南芥、水稻、玉米、高粱、番茄、大豆、小麦等作为锚定物种建立基准。</li>
+<li><strong>不确定性</strong>：文中强调模型应报告校准的不确定性（calibrated uncertainty）和有效域（domain of validity），但未提供具体实现方法。</li>
+</ul>
+<p><strong>有边界的复述</strong>：本文主张，植物 seq2func 模型的进展不应仅以参考基因组上的准确率衡量，而应通过跨单倍型、结构变异、组织、环境、物种的分布偏移测试来评估其泛化能力，并通过报告基因检测和内源编辑的扰动实验来验证预测的因果性；在此基础上，主动学习和持续学习可支撑闭环的实验-计算迭代系统。</p>
+<hr />
+<h2>12 作者自认局限</h2>
+<table>
+<thead>
+<tr>
+<th>局限</th>
+<th>具体表现</th>
+<th>作者提出的未来方向</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>观测数据无法确立因果</td>
+<td>"Observational associations do not establish that a nucleotide, motif, or cis-regulatory element causally determines a measured output"</td>
+<td>结合报告基因检测（MPRA/STARR-seq）和内源 CRISPR 编辑进行分层验证</td>
+<td>From observational prediction 节</td>
+</tr>
+<tr>
+<td>报告基因检测的上下文缺失</td>
+<td>游离基因报告系统可能无法完全再现内源染色质环境（如甲基化、三维互作）</td>
+<td>将报告基因检测视为"内在调控潜力"的测量，与内源编辑互补使用</td>
+<td>From observational prediction 节（隐含）</td>
+</tr>
+<tr>
+<td>长上下文架构的收益未验证</td>
+<td>"Longer context alone does not guarantee mechanistic insight or generalization"</td>
+<td>需要合适的归纳偏置、训练多样性和分布偏移评估</td>
+<td>Seq2func models 节</td>
+</tr>
+<tr>
+<td>闭环学习的实际障碍</td>
+<td>数据共享限制、缺乏标准化扰动数据集、植物世代时间长限制迭代速度</td>
+<td>设计围绕延迟反馈、跨实验室数据协调和显式不确定性校准的闭环系统</td>
+<td>Closed-loop 节</td>
+</tr>
+<tr>
+<td>可解释性方法（如归因图）的局限</td>
+<td>归因图等方法可优先化候选变异，但"不提供因果证据"</td>
+<td>将可解释性输出视为假设，需经扰动实验验证</td>
+<td>From observational prediction 节（隐含）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>作者提及的相关约束</strong>（非正式局限）：
+- 植物中长程调控和三维基因组数据的获取比动物系统更具挑战性（文中提及染色体构象检测为可用资源之一，但未展开讨论其局限）。
+- 转座子富集的基因组中，序列比对和特征归因的可靠性可能下降（"Repeat-rich genomes also increase the risk that models exploit homology or composition"）。</p>
+<hr />
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分布偏移框架缺乏形式化定义和量化指标</td>
+<td>文中将 covariate/label/concept shift 作为概念框架提出，但未给出如何量化这些偏移、如何设定通过/失败阈值</td>
+<td>若无量化标准，"生物学有意义的基准"难以落地为可操作的评测协议</td>
+<td>在具体数据集上定义偏移度量（如序列相似性距离、标签分布差异），并比较不同模型在偏移下的性能衰减曲线</td>
+<td>"Benchmarking should include held-out accessions or haplotypes..."（Evaluating generalization 节）——有方向无操作化</td>
+</tr>
+<tr>
+<td>闭环框架的可行性论证不足</td>
+<td>主动学习和持续学习在植物中的实际应用面临数据稀缺、实验周期长、跨实验室标准化困难等障碍，文中仅简要提及</td>
+<td>若闭环无法在合理时间尺度内迭代，其实际价值存疑</td>
+<td>在模式植物（如拟南芥）中建立小规模闭环原型，测量每轮迭代的预测改进幅度和成本</td>
+<td>Closed-loop 节中作者自认"practical barriers are particularly severe in plants"</td>
+</tr>
+<tr>
+<td>对三维基因组信息的讨论过于简略</td>
+<td>文中提及染色质互作信息可改善预测（DeepCBA），但未深入讨论三维基因组数据在 seq2func 中的整合策略和挑战</td>
+<td>三维基因组是连接序列与调控功能的关键中间层，尤其在远端增强子-启动子互作方面</td>
+<td>系统比较加入/不加入 Hi-C 或 HiChIP 特征对远端调控预测的增益，并评估跨细胞类型的可迁移性</td>
+<td>"chromosome-conformation assays identify distal contacts"（Seq2func models 节）——仅一句带过</td>
+</tr>
+<tr>
+<td>"因果"概念的使用可能过于宽松</td>
+<td>文中将 CRISPR 编辑和报告基因检测视为因果验证，但这些实验验证的是局部序列-功能因果关系，而非有机体表型层面的因果</td>
+<td>从分子因果到表型因果的鸿沟可能比文中暗示的更大</td>
+<td>追踪从编辑变异到表型变化的完整因果链，评估中间环节的丢失或补偿效应</td>
+<td>"the hardest step is often the connection from predicted regulatory activity to organismal phenotype"（Bridging 节）——作者部分承认</td>
+</tr>
+<tr>
+<td>对模型架构选择的建议缺乏实证比较</td>
+<td>文中列举 CNN、Transformer、基因组语言模型等架构，但未提供在植物数据上的系统比较证据</td>
+<td>架构选择直接影响可扩展性和可解释性，需要实证指导</td>
+<td>在统一基准上比较不同架构在分布偏移下的性能、校准质量和计算成本</td>
+<td>文中仅引用已有研究，无新比较实验</td>
+</tr>
+<tr>
+<td>转座子作为调控元件的正面贡献被低估</td>
+<td>文中主要将转座子视为挑战（重复序列、比对模糊），但转座子也是新调控元件的来源</td>
+<td>转座子衍生的调控元件可能为育种提供重要靶点</td>
+<td>分析转座子插入多态性与调控活性变化的关系，评估模型对转座子携带调控元件的预测能力</td>
+<td>"Transposable elements can contribute promoters, enhancers, transcription factor motifs"（Pan-genomic diversity 节）——作者提及但未展开</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>14 学到什么</h2>
+<blockquote>
+<p>标题：Agent 提炼的知识候选</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>分布偏移分类框架（可直接迁移）</strong>：将模型评估从"随机留出"升级为三类分布偏移——covariate shift（输入序列分布变化，如新单倍型/结构变异/物种）、label shift（测量过程变化，如不同检测平台）、concept shift（序列-功能映射关系变化，如不同组织/环境）。<strong>迁移到三维基因组</strong>：染色质构象预测模型应明确测试跨细胞类型（concept shift）、跨物种（covariate shift）、跨实验技术如 Hi-C vs HiChIP vs Micro-C（label shift）的性能。</p>
+</li>
+<li>
+<p><strong>观测-扰动互补的证据链设计</strong>：观测数据（ATAC-seq、ChIP-seq、Hi-C）提供内源环境中的关联证据；报告基因检测（MPRA/STARR-seq）提供分离的序列内在活性；内源编辑（CRISPR）提供因果验证。<strong>迁移到三维基因组</strong>：Hi-C 预测的增强子-启动子互作可通过 CRISPR 删除增强子后检测目标基因表达和染色质互作变化来验证；也可用报告基因系统测试特定序列片段的增强子活性。</p>
+</li>
+<li>
+<p><strong>"上下文"是核心变量而非噪声</strong>：植物中同一序列在不同组织/环境下的功能差异巨大，模型必须显式编码上下文。<strong>迁移到三维基因组</strong>：染色质构象预测模型应纳入细胞类型、发育阶段、处理条件等上下文信息，而非仅依赖序列。</p>
+</li>
+<li>
+<p><strong>不确定性指导实验选择（主动学习）</strong>：模型应输出校准的不确定性，优先选择高不确定性、高信息增益的实验。<strong>迁移到三维基因组</strong>：在预测 CTCF 结合位点或增强子-启动子互作时，优先验证模型分歧最大的区域，可最大化每轮实验的信息量。</p>
+</li>
+<li>
+<p><strong>持续学习的三策略</strong>：replay-based rehearsal（重放旧数据）、参数正则化（如 EWC）、模块化 adapter 架构（新增任务参数而不覆盖共享表示）。<strong>迁移到三维基因组</strong>：随着新物种、新细胞类型的 Hi-C 数据持续产生，模型更新需避免灾难性遗忘。</p>
+</li>
+<li>
+<p><strong>"性能报告必须分层"</strong>：模型应在独特序列 vs 重复序列、参考 vs 非参考等位基因、近端 vs 远端调控等分层上分别报告性能，而非仅报告聚合指标。<strong>迁移到三维基因组</strong>：应分别报告 TAD 边界、CTCF 环、增强子-启动子互作等不同结构特征的预测性能。</p>
+</li>
+<li>
+<p><strong>"更长上下文不保证更好泛化"</strong>：架构扩展（更长窗口、更大模型）需要与训练多样性和归纳偏置匹配，否则只是计算成本增加。<strong>迁移到三维基因组</strong>：从局部序列到 1Mb 窗口的扩展需要验证是否真正提升了远端调控预测能力，而非仅增加参数。</p>
+</li>
+<li>
+<p><strong>锚定物种基准策略</strong>：建议以拟南芥、水稻、玉米、高粱、番茄、大豆、小麦等作为锚定物种建立跨物种基准。<strong>迁移到三维基因组</strong>：可建立跨物种的染色质构象基准集（如人类、小鼠、拟南芥、水稻、玉米），测试模型的可迁移性。</p>
+</li>
+</ol>
+<hr />
+<h2>15 与已有知识连接</h2>
+<ul>
+<li>
+<p><strong>与人类/动物 seq2func 的联系</strong>：文中引用的奠基工作（Zhou and Troyanskaya 2015; Kelley et al. 2016; Avsec et al. 2021）均来自人类/动物系统。植物 seq2func 的发展路径（CNN → 长上下文 → 基础模型）与动物系统高度平行，但植物特有的基因组特征（转座子丰富、多倍化、G×E 显著）要求专门的评估框架。<strong>可迁移到三维基因组</strong>：人类三维基因组预测模型（如 Enformer、Akita）的架构和经验可直接迁移到植物，但需注意植物特有的染色质组织特征（如更小的 TAD 结构、不同的 CTCF 非依赖绝缘机制）。</p>
+</li>
+<li>
+<p><strong>与三维基因组预测模型的接口</strong>：文中提及 DeepCBA（Wang et al. 2024）整合染色质可及性和染色质互作信息预测基因表达，这直接连接了 seq2func 与三维基因组建模。<strong>可迁移</strong>：三维基因组预测模型（如预测 Hi-C 接触图的深度模型）可作为 seq2func 的中间层或特征提供者，为基因表达预测提供远端调控上下文。</p>
+</li>
+<li>
+<p><strong>与基础模型/基因组语言模型的联系</strong>：文中引用的 PlantCaduceus、AgroNT 等植物基因组基础模型，与动物基因组基础模型（如 Nucleotide Transformer、DNABERT-2）构成平行发展。<strong>可迁移到三维基因组</strong>：基因组基础模型的表征可微调用于染色质构象预测，或作为多任务学习中的共享编码器。</p>
+</li>
+<li>
+<p><strong>与因果推断文献的联系</strong>：文中"观测关联 ≠ 因果"的论点与孟德尔随机化、共定位分析等遗传流行病学方法形成互补——seq2func 提供分子层面的因果候选，遗传学方法提供群体层面的因果证据。<strong>可迁移到三维基因组</strong>：染色质互作预测的因果验证可借鉴这一分层证据策略。</p>
+</li>
+<li>
+<p><strong>与主动学习/持续学习文献的联系</strong>：文中引用的 EWC（Kirkpatrick et al. 2017）和 replay 策略（Parisi et al. 2019）来自持续学习领域。<strong>可迁移到三维基因组</strong>：这些方法可直接应用于跨细胞类型、跨物种的染色质构象模型持续更新。</p>
+</li>
+<li>
+<p><strong>与泛化理论的联系</strong>：文中对分布偏移的分类（covariate/label/concept shift）源自监督学习中的数据集偏移理论（如 Quiñonero-Candela et al. 2008 的框架）。<strong>可迁移到三维基因组</strong>：为三维基因组模型的泛化评估提供了理论语言。</p>
+</li>
+</ul>
+<hr />
+<h2>16 研究想法</h2>
+<blockquote>
+<p>标题：Agent 生成的研究候选</p>
+</blockquote>
+<h3>候选 1：植物三维基因组 seq2func 的分布偏移基准集</h3>
+<ul>
+<li><strong>名称</strong>：Plant3D-Gen-Bench：跨物种/跨组织/跨平台的染色质构象预测基准</li>
+<li><strong>来源局限/观察</strong>：本文提出分布偏移评估框架但未落地；三维基因组领域同样缺乏系统性的跨条件评估基准</li>
+<li><strong>核心假设</strong>：现有染色质构象预测模型在跨细胞类型（concept shift）、跨物种（covariate shift）、跨实验技术（label shift）上的性能衰减可被量化，且衰减模式可预测</li>
+<li><strong>初步方法</strong>：收集拟南芥、水稻、玉米、番茄的 Hi-C/HiChIP/Micro-C 数据，按细胞类型、发育阶段、物种、实验平台分层构建测试集；评估现有模型（如 Akita 风格架构）在各分层上的性能；报告校准误差和不确定性质量</li>
+<li><strong>验证方式</strong>：与随机留出基线对比，展示分层评估揭示的泛化差距；建立公开排行榜</li>
+<li><strong>创新状态</strong>：unverified（三维基因组领域已有跨细胞类型评估，但缺乏系统性的分布偏移分类框架和植物多物种基准）</li>
+</ul>
+<h3>候选 2：上下文条件化的染色质构象预测模型</h3>
+<ul>
+<li><strong>名称</strong>：ContextFold：显式编码细胞状态与环境的染色质构象预测模型</li>
+<li><strong>来源局限/观察</strong>：本文强调"上下文决定序列-功能关系"，但现有三维基因组预测模型大多仅以序列为输入，忽略细胞类型/处理条件</li>
+<li><strong>核心假设</strong>：将细胞类型、发育阶段、处理条件作为显式条件输入，可显著提升跨条件泛化能力，且优于仅增加序列窗口长度</li>
+<li><strong>初步方法</strong>：在现有长上下文架构（如 Enformer 风格）基础上，增加条件编码器（如细胞类型 embedding、处理条件向量），与序列表征融合后预测 Hi-C 接触图或调控输出；在植物多组织数据上训练</li>
+<li><strong>验证方式</strong>：与无条件基线在跨组织预测任务上对比；测试在未见组织上的零样本泛化</li>
+<li><strong>创新状态</strong>：partially checked（人类系统中已有条件模型探索，植物中未见系统实现）</li>
+</ul>
+<h3>候选 3：不确定性引导的染色质互作验证闭环</h3>
+<ul>
+<li><strong>名称</strong>：Active3D-Loop：基于模型不确定性的 Hi-C 互作验证实验选择框架</li>
+<li><strong>来源局限/观察</strong>：本文提出主动学习选择实验，但未具体化；三维基因组中，Hi-C 预测的互作需要 3C/qPCR 或 CRISPR 验证，成本高，需要优先排序</li>
+<li><strong>核心假设</strong>：模型不确定性（如 ensemble 分歧、MC-dropout 方差）与预测错误的概率正相关，不确定性最高的互作对包含最多的新信息</li>
+<li><strong>初步方法</strong>：训练 ensemble 染色质构象预测模型，对候选增强子-启动子互作输出预测均值和不确定性；设计采集函数（如 BALD、uncertainty sampling）排序候选；在拟南芥或水稻中选取 Top-K 进行 3C/qPCR 验证</li>
+<li><strong>验证方式</strong>：比较不确定性引导选择与随机选择、预测强度排序选择的验证命中率；评估每轮验证后模型性能提升</li>
+<li><strong>创新状态</strong>：unverified（主动学习在调控基因组学中已有概念验证，但未在三维基因组互作验证中系统应用）</li>
+</ul>
+<h3>候选 4：转座子插入多态性的调控效应预测</h3>
+<ul>
+<li><strong>名称</strong>：TE-Reg-Effect：预测转座子插入对染色质状态和互作影响的 seq2func 模型</li>
+<li><strong>来源局限/观察</strong>：本文指出转座子可贡献调控元件但效应依赖上下文；现有 seq2func 模型对转座子序列的预测可靠性未经验证</li>
+<li><strong>核心假设</strong>：转座子插入的调控效应可通过其序列特征、插入位置和表观状态预测，且模型需在重复序列分层上单独评估</li>
+<li><strong>初步方法</strong>：利用泛基因组中已知的转座子插入多态性，结合对应基因座的 ATAC-seq/甲基化/Hi-C 数据构建训练集；训练模型预测插入后的染色质状态变化；在独立品系中验证</li>
+<li><strong>验证方式</strong>：在转座子插入位点的预测准确率 vs 非重复区域；跨品系泛化测试</li>
+<li><strong>创新状态</strong>：unverified（转座子调控功能已有大量实验研究，但系统性的 seq2func 预测模型缺乏）</li>
+</ul>
+<h3>候选 5：多倍体亚基因组特异性调控预测</h3>
+<ul>
+<li><strong>名称</strong>：SubGenome-Seq2Func：面向多倍体作物的亚基因组特异性调控预测框架</li>
+<li><strong>来源局限/观察</strong>：本文强调多倍体（如小麦、棉花）中同源基因座序列高度相似但调控不同，现有模型无法区分</li>
+<li><strong>核心假设</strong>：同源基因座的调控差异可由序列差异（如 SNP、indel、TE 插入）和表观状态共同预测，且亚基因组特异性特征可学习</li>
+<li><strong>初步方法</strong>：利用小麦或棉花的亚基因组分辨的 ATAC-seq/RNA-seq 数据，构建同源基因座对数据集；训练模型区分亚基因组特异性调控；整合 Hi-C 数据预测同源基因座的互作差异</li>
+<li><strong>验证方式</strong>：同源基因座对的分类准确率；与 aggregate 基因水平模型的对比</li>
+<li><strong>创新状态</strong>：unverified（多倍体调控已有组学研究，但 seq2func 建模几乎空白）</li>
+</ul></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Full manuscript text (Mini Review, Frontiers in Plant Science)</li>
+<li><strong>Assessment boundary</strong> Scientific content, technical soundness, clarity, and alignment with stated scope; no assessment of editorial fit or publication policy</li>
+<li><strong>Shared manuscript claim summary</strong> The manuscript argues that sequence-to-function (seq2func) models in plant regulatory genomics, while improving in accuracy, are predominantly trained and evaluated on observational data from reference genomes, and therefore may not generalize to natural genetic, developmental, environmental, or species diversity. It proposes evaluation frameworks based on biologically meaningful distribution shifts and outlines a closed-loop experimental–computational system involving pan-genomes, multi-omics, genome editing, reporter assays, active learning, and continual learning.</li>
+<li><strong>Visible evidence base</strong> Full text including abstract, introduction, sections on seq2func models, plant-specific challenges, causal inference, evaluation frameworks, and closed-loop systems; one figure referenced (Figure 1); one table referenced (Table 1); citations to prior work</li>
+<li><strong>Missing materials affecting confidence</strong> Figure 1 and Table 1 are referenced but not provided; no data, code, or empirical results are included; no supplementary materials; no line numbers</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li><strong>Overall assessment</strong> This Mini Review provides a well-structured and timely synthesis of seq2func modelling in plant regulatory genomics, with a clear emphasis on generalization beyond reference genomes. The manuscript is conceptually coherent and identifies important gaps in current evaluation practices. However, several claims are made without direct evidence or detailed support, and the absence of Figure 1 and Table 1 limits full assessment. The review would benefit from more concrete examples, quantitative benchmarks, and a clearer distinction between established findings and proposed directions.</li>
+<li><strong>Who would be interested in the results, and why</strong> Researchers in plant functional genomics, computational biology, and breeding, particularly those working on cis-regulatory element discovery, variant effect prediction, and integration of multi-omics data. The manuscript is also relevant to method developers in machine learning applied to genomics, and to those interested in causal inference and experimental design in plant systems.</li>
+<li><strong>Major strengths</strong> The manuscript addresses a timely and important problem: the gap between reference-genome-based prediction and real-world genetic and environmental diversity in plants. The discussion of distribution shifts (covariate, label, concept) is a useful framework. The emphasis on combining observational and perturbation data, and on closed-loop systems, is forward-looking and practical. The writing is clear and accessible for a broad audience.</li>
+<li><strong>Major Concerns</strong> Several claims are made without supporting data or detailed examples. The manuscript repeatedly states that models may not generalize, but does not provide quantitative evidence or case studies. The discussion of polyploidy and transposable elements is general and lacks specific examples of model failures. The proposed evaluation frameworks are described at a high level but not operationalized. The absence of Figure 1 and Table 1 prevents assessment of key illustrative content. Some statements are repeated verbatim (e.g., the sentence about interpretability methods), suggesting incomplete editing.</li>
+<li><strong>Minor Comments</strong> The manuscript would benefit from a glossary of terms for nonspecialists. Some references are cited but not discussed in context. The section on closed-loop systems is speculative and could be strengthened by referencing existing examples in other fields. The conclusion is somewhat repetitive of earlier sections.</li>
+<li><strong>Technical failings that need to be addressed before the case is established</strong> The manuscript does not provide empirical evidence or detailed case studies to support the central claim that seq2func models fail to generalize. The proposed evaluation frameworks are not tested or exemplified. The absence of Figure 1 and Table 1 means that key content cannot be evaluated. Some claims about model limitations are stated as fact without citation or data.</li>
+<li><strong>Assessment against Nature-style criteria</strong> Originality: The manuscript offers a useful synthesis but does not present novel methods or data; the conceptual framework of distribution shifts is not new but is applied here to plant genomics in a coherent way. Scientific importance: The topic is important and timely, but the manuscript does not provide new evidence or a testable framework that would advance the field beyond current discussions. Interdisciplinary readership: The manuscript is accessible to a broad audience, but the lack of concrete examples and data may limit its impact. Technical soundness: The manuscript is technically sound in its descriptions but lacks empirical support for its central claims. Readability for nonspecialists: The writing is clear, but some sections assume familiarity with machine learning and genomics terminology.</li>
+<li><strong>Recommendation posture</strong> Supportive if technical concerns are resolved, particularly the addition of concrete examples, quantitative benchmarks, and the inclusion of Figure 1 and Table 1. Currently, the manuscript is a reasonable review but does not establish a strong case for its central claims from the provided evidence.</li>
+</ul>
+<h3>Major Concerns</h3>
+<ul>
+<li><strong>Concern ID</strong> R1-M1</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Evidence sufficiency</li>
+<li><strong>Claim pointer</strong> The manuscript claims that seq2func models trained on reference genomes may not generalize to natural haplotypes, structural variants, tissues, developmental stages, environments, or species.</li>
+<li><strong>Evidence pointer</strong> Sections "Why plant genomes challenge seq2func prediction" and "Evaluating generalization in plant seq2func models"; location not provided</li>
+<li><strong>Concern</strong> The central claim of limited generalization is stated repeatedly but is not supported by specific examples, quantitative data, or case studies. No empirical evidence is provided to demonstrate that models fail under the described distribution shifts. The manuscript would be strengthened by citing or summarizing specific studies that show performance degradation, or by presenting a small illustrative analysis.</li>
+<li><strong>Why it matters</strong> Without evidence, the claim remains an assertion. The manuscript's value depends on convincing the reader that this is a real and important problem, not just a theoretical possibility.</li>
+<li>
+<p><strong>Resolution test</strong> Provide at least two concrete examples from the literature or from the authors' own work where seq2func models show degraded performance under covariate, label, or concept shift. Include quantitative metrics (e.g., accuracy, AUROC, calibration) comparing reference-genome and shifted settings.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M2</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Completeness of key content</li>
+<li><strong>Claim pointer</strong> The manuscript references Figure 1 (closed-loop framework) and Table 1 (distribution shifts) as key illustrative content.</li>
+<li><strong>Evidence pointer</strong> Figure 1 and Table 1 are referenced but not provided; location not provided</li>
+<li><strong>Concern</strong> The manuscript relies on Figure 1 and Table 1 to convey important concepts, but these are not included in the provided material. Without them, the reader cannot fully understand the proposed framework or the taxonomy of distribution shifts.</li>
+<li><strong>Why it matters</strong> The absence of these elements prevents a complete assessment of the manuscript's contribution and clarity. The framework and table are likely central to the authors' argument.</li>
+<li>
+<p><strong>Resolution test</strong> Include Figure 1 and Table 1 in the manuscript or provide a detailed textual description of their content. Ensure that all referenced elements are available for review.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M3</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Operationalization of proposed frameworks</li>
+<li><strong>Claim pointer</strong> The manuscript proposes evaluation frameworks based on biologically meaningful distribution shifts and a closed-loop system involving active learning and continual learning.</li>
+<li><strong>Evidence pointer</strong> Sections "Evaluating generalization in plant seq2func models" and "Toward closed-loop plant regulatory AI"; location not provided</li>
+<li><strong>Concern</strong> The proposed frameworks are described at a high level but are not operationalized. No specific metrics, benchmarks, or protocols are given for implementing the distribution-shift tests. The closed-loop system is described conceptually but lacks details on how active learning or continual learning would be implemented in practice, especially given the practical barriers mentioned.</li>
+<li><strong>Why it matters</strong> For the manuscript to be actionable, the frameworks need to be concrete enough for other researchers to adopt. Without operational details, the proposals remain aspirational.</li>
+<li>
+<p><strong>Resolution test</strong> Provide a specific example of a benchmark design, including data sources, split strategies, and evaluation metrics. For the closed-loop system, describe a concrete workflow with steps, data types, and decision criteria.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M4</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Repetition and editing</li>
+<li><strong>Claim pointer</strong> The manuscript contains a duplicated sentence about interpretability methods.</li>
+<li><strong>Evidence pointer</strong> Section "Evaluating generalization in plant seq2func models"; location not provided</li>
+<li><strong>Concern</strong> The sentence "Interpretability methods, including attribution maps and in silico mutagenesis, should be treated as hypotheses rather than causal proof" appears twice in the same section. This suggests incomplete editing and detracts from the manuscript's professionalism.</li>
+<li><strong>Why it matters</strong> Repetition undermines clarity and may indicate a lack of careful revision, which is important for a review article.</li>
+<li><strong>Resolution test</strong> Remove the duplicate sentence and ensure the text is free of unintended repetition.</li>
+</ul>
+<h3>Minor Comments</h3>
+<ul>
+<li><strong>Concern ID</strong> R1-m1</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Clarity for nonspecialists</li>
+<li><strong>Affected element</strong> Introduction and Section "Sequence-to-function models and plant regulatory genomics"</li>
+<li><strong>Evidence pointer</strong> Location not provided</li>
+<li><strong>Issue</strong> Terms such as "one-hot-encoded DNA sequences," "attention-based, state-space, and other long-context architectures," and "TF-MoDISco-style motif clustering" are used without definition or explanation.</li>
+<li>
+<p><strong>Required correction</strong> Add brief definitions or a glossary for these terms to improve accessibility for readers outside computational biology.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m2</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Citation completeness</li>
+<li><strong>Affected element</strong> Section "Why plant genomes challenge seq2func prediction"</li>
+<li><strong>Evidence pointer</strong> Location not provided</li>
+<li><strong>Issue</strong> Some statements about plant genome diversity and transposable elements are made without specific citations (e.g., "Maize provides a prominent example of extensive structural and transposable-element variation").</li>
+<li>
+<p><strong>Required correction</strong> Add citations to support these statements, or clarify that they are general knowledge.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m3</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Consistency of terminology</li>
+<li><strong>Affected element</strong> Throughout</li>
+<li><strong>Evidence pointer</strong> Location not provided</li>
+<li><strong>Issue</strong> The term "seq2func" is defined in the abstract and introduction, but the manuscript also uses "sequence-to-function" and "sequence-to-function (seq2func)" interchangeably.</li>
+<li>
+<p><strong>Required correction</strong> Use "seq2func" consistently after first definition, or define the abbreviation once and use it throughout.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m4</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Structure and flow</li>
+<li><strong>Affected element</strong> Section "From observational prediction to causal inference"</li>
+<li><strong>Evidence pointer</strong> Location not provided</li>
+<li><strong>Issue</strong> The subsection "Bridging seq2func predictions to organismal phenotypes in plants" is placed within the causal inference section but reads more like a separate topic. The transition is abrupt.</li>
+<li>
+<p><strong>Required correction</strong> Consider moving this subsection to a separate section or integrating it more smoothly with the preceding discussion.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m5</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Speculative content</li>
+<li><strong>Affected element</strong> Section "Toward closed-loop plant regulatory AI"</li>
+<li><strong>Evidence pointer</strong> Location not provided</li>
+<li><strong>Issue</strong> The discussion of active learning and continual learning is speculative and does not reference any existing implementations in plant genomics.</li>
+<li><strong>Required correction</strong> Either cite examples from other fields or clearly label this as a proposal for future work.</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>The claim that seq2func models "may not translate" to natural diversity is unsupported by direct evidence in the manuscript.</li>
+<li>The claim that "aggregate scores can conceal poor performance" is plausible but not demonstrated with examples.</li>
+<li>The claim that "longer context alone does not guarantee mechanistic insight or generalization" is stated without supporting data.</li>
+<li>The proposed closed-loop framework is not supported by any empirical or simulation-based evidence.</li>
+<li>The statement that "interpretability methods... should be treated as hypotheses rather than causal proof" is a reasonable recommendation but is presented as a conclusion without discussion of counterarguments.</li>
+<li>The manuscript's assertion that "a practical near-term roadmap is to establish two or three well-characterized anchor loci" is a proposal, not a finding, and is not supported by feasibility analysis.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

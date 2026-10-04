@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EpiZoo: a DNA sequence-aware foundation model for cross-species single-cell epigenomics · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-mid">5</span>
+    <div>
+      <h1>EpiZoo: a DNA sequence-aware foundation model for cross-species single-cell epigenomics</h1>
+      <div class="meta">Li K; Chen X; Jiang Q; Wang Z; Lv H; Jiang R</div>
+      <div class="meta muted">
+        
+        <span class="journal">bioRxiv</span> <span class="preprint-badge">预印本</span>
+        · 2026-09-29
+         · 仅摘要
+         · <a href="https://www.biorxiv.org/content/10.64898/2026.09.24.754017">原文</a>
+      </div>
+      <p class="one-liner">EpiZoo是一个跨物种单细胞表观基因组学的DNA序列感知基础模型，虽涉及染色质可及性调控，但主要聚焦单细胞分析任务而非三维染色质空间架构建模，方法上AI可迁移但对象和结构轴较弱。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">Large-scale single-cell epigenomic atlases characterize chromatin regulatory landscapes across diverse biological contexts, spanning cell types, tissues, individuals and species. Foundation models provide an opportunity to capture the full spectrum of cellular diversity in these atlases, yet current models remain largely confined to individual species by genomic coordinate dependence and overlook regulatory information encoded in DNA sequences. Here we introduce EpiZoo, a DNA sequence-aware foundation model for cross-species single-cell epigenomics. EpiZoo converts million-dimensional single-cell epigenomic profiles from diverse species into compact cell sentences that integrate DNA-encoded regulatory information, sequence-independent epigenomic context and accessibility-based importance. Built around a mixture-of-experts transformer and containing 2.6 billion parameters in total, EpiZoo is pretrained on our manually curated multi-species Omni-scATAC corpus of approximately 20.9 million cells to learn regulatory programs across species. On external datasets excluded from pretraining, EpiZoo achieves state-of-the-art performance in fundamental single-cell analysis tasks, including feature extraction, cell type annotation and data imputation. Its sequence-aware architecture enables extension to evolutionarily diverse species, and supports comparative analysis of regulatory conservation and divergence during primate evolution. Benefiting from this modeling design, EpiZoo enables context-aware prioritization of somatic mutations in cancer and prediction of cell-type-specific chromatin accessibility from DNA sequences across genomic regions and species.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">大规模单细胞表观基因组图谱描绘了跨越细胞类型、组织、个体和物种等多种生物学背景下的染色质调控景观。基础模型为捕捉这些图谱中细胞多样性的全谱提供了机会，然而现有模型因基因组坐标依赖性而主要局限于单个物种，并忽视了DNA序列中编码的调控信息。在此，我们介绍了EpiZoo，一种面向跨物种单细胞表观基因组学的DNA序列感知基础模型。EpiZoo将来自不同物种的百万维单细胞表观基因组谱转化为紧凑的细胞句子，这些句子整合了DNA编码的调控信息、序列无关的表观基因组背景以及基于可及性的重要性。EpiZoo围绕混合专家变换器构建，总参数达26亿，在我们手动整理的多物种Omni-scATAC语料库（约2090万个细胞）上进行预训练，以学习跨物种的调控程序。在预训练未涉及的外部数据集上，EpiZoo在基础单细胞分析任务中达到了最先进性能，包括特征提取、细胞类型注释和数据插补。其序列感知架构使其能够扩展到进化上多样的物种，并支持灵长类进化过程中调控保守性和分歧的比较分析。得益于这种建模设计，EpiZoo能够实现癌症中体细胞突变的情境感知优先级排序，以及从DNA序列跨基因组区域和物种预测细胞类型特异性的染色质可及性。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：EpiZoo: a DNA sequence-aware foundation model for cross-species single-cell epigenomics</li>
+<li><strong>作者与单位</strong>：Li K; Chen X; Jiang Q; Wang Z; Lv H; Jiang R（单位未提供）</li>
+<li><strong>期刊/预印本平台</strong>：bioRxiv（预印本）</li>
+<li><strong>年份</strong>：2026-09-29</li>
+<li><strong>论文类型</strong>：预印本（方法学/基础模型论文）</li>
+<li><strong>领域</strong>：单细胞表观基因组学 × 基础模型（foundation model）</li>
+<li><strong>关键词</strong>：single-cell epigenomics, foundation model, cross-species, DNA sequence, scATAC-seq, mixture-of-experts</li>
+<li><strong>DOI/arXiv 号</strong>：10.64898/2026.09.24.754017</li>
+<li><strong>代码</strong>：未提供</li>
+<li><strong>数据</strong>：Omni-scATAC 语料库（约 2090 万细胞，多物种，人工整理）</li>
+<li><strong>阅读日期</strong>：未提供</li>
+<li><strong>该文在「三维基因组/染色质组织 × AI 方法/物理模拟」方向中的位置</strong>：该文聚焦单细胞染色质可及性（scATAC-seq）的跨物种建模，属于染色质调控层级的序列-表观关联建模。与三维基因组方向的关系：其"DNA sequence-aware"设计（从序列预测染色质可及性）与三维基因组中"序列→结构"的预测范式同源；其跨物种迁移与比较分析思路可迁移至三维基因组的结构保守性/分歧性研究。但本文不涉及三维染色质结构（如 Hi-C、TAD、loop）的直接建模。</li>
+</ul>
+<hr />
+<h2>02 一句话总结</h2>
+<p>EpiZoo 将跨物种单细胞表观基因组谱转换为整合 DNA 序列调控信息、序列无关表观上下文与可及性重要性的"细胞句子"，通过 26 亿参数的 mixture-of-experts transformer 在约 2090 万细胞的 Omni-scATAC 语料上预训练，在特征提取、细胞类型注释、数据填补等下游任务上达到 SOTA，并支持跨物种扩展、灵长类调控保守性/分歧性比较、癌症体细胞突变优先级排序及从 DNA 序列预测细胞类型特异性染色质可及性。</p>
+<hr />
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：现有单细胞表观基因组基础模型受限于单一物种（依赖基因组坐标对齐），且未充分利用 DNA 序列中编码的调控信息，无法实现真正的跨物种建模与调控程序比较。</li>
+<li><strong>为什么重要</strong>：大规模单细胞表观基因组图谱覆盖多种细胞类型、组织、个体和物种，基础模型有望捕获全谱系细胞多样性；跨物种建模是理解调控保守性与进化分歧的关键。</li>
+<li><strong>现有方法为何不足</strong>：① 依赖基因组坐标的模型无法直接跨物种迁移（不同物种坐标不兼容）；② 忽略 DNA 序列中的调控信息，模型无法学习序列-表观关联；③ 缺乏大规模多物种训练语料。</li>
+<li><strong>精确研究问题</strong>：Can a DNA sequence-aware foundation model pretrained on multi-species single-cell epigenomic atlases achieve cross-species generalization and enable comparative regulatory analysis?</li>
+</ul>
+<hr />
+<h2>04 背景与发展脉络</h2>
+<blockquote>
+<p>注：以下脉络基于本文框架整理，未经外部核验，标注为「仅本文框架」。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>代表性方法</th>
+<th>优点</th>
+<th>局限</th>
+<th>本文位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>单物种单细胞表观模型</td>
+<td>scATAC-seq 专用模型（如基于坐标的 embedding）</td>
+<td>在单一物种内有效</td>
+<td>无法跨物种迁移；忽略序列信息</td>
+<td>被超越</td>
+</tr>
+<tr>
+<td>基础模型用于单细胞</td>
+<td>大规模预训练 transformer（如 scGPT 类）</td>
+<td>捕获细胞多样性</td>
+<td>多限于转录组或单物种；表观组应用少</td>
+<td>被超越</td>
+</tr>
+<tr>
+<td>序列感知表观模型</td>
+<td>DNA sequence-based 预测模型（如 Enformer 类）</td>
+<td>从序列预测调控</td>
+<td>非单细胞分辨率；非跨物种基础模型</td>
+<td>被整合</td>
+</tr>
+<tr>
+<td><strong>本文</strong></td>
+<td><strong>EpiZoo：序列感知 + MoE transformer + 多物种预训练</strong></td>
+<td>跨物种、序列感知、单细胞分辨率</td>
+<td>未涉及三维结构；依赖语料质量</td>
+<td><strong>本文主张的位置</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基因组坐标依赖</td>
+<td>现有模型无法跨物种迁移</td>
+<td>不同物种基因组坐标不兼容，模型绑定于参考基因组</td>
+<td>摘要："current models remain largely confined to individual species by genomic coordinate dependence"</td>
+</tr>
+<tr>
+<td>序列信息缺失</td>
+<td>模型忽略 DNA 编码的调控信息</td>
+<td>现有方法仅用表观信号，未整合序列特征</td>
+<td>摘要："overlook regulatory information encoded in DNA sequences"</td>
+</tr>
+<tr>
+<td>缺乏多物种语料</td>
+<td>无法训练跨物种模型</td>
+<td>缺少人工整理的多物种单细胞表观数据</td>
+<td>摘要："manually curated multi-species Omni-scATAC corpus"</td>
+</tr>
+<tr>
+<td>跨物种比较困难</td>
+<td>调控保守性/分歧性分析受限</td>
+<td>缺乏统一表征空间</td>
+<td>摘要："supports comparative analysis of regulatory conservation and divergence"</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>06 核心思想</h2>
+<p><strong>1) 表面方法</strong>：
+- 将单细胞表观基因组谱（百万维）转换为紧凑的"细胞句子"（cell sentences），整合三类信息：DNA 序列编码的调控信息、序列无关的表观上下文、基于可及性的重要性权重。
+- 使用 mixture-of-experts (MoE) transformer，总参数量 26 亿。
+- 在约 2090 万细胞的多物种 Omni-scATAC 语料上预训练。</p>
+<p><strong>2) 核心洞察</strong>：
+- 跨物种建模的关键在于<strong>摆脱坐标依赖</strong>：用 DNA 序列作为跨物种的"通用语言"，使不同物种的细胞可在同一表征空间中对齐。
+- "细胞句子"设计将高维稀疏表观谱压缩为紧凑、可解释的 token 序列，同时保留序列调控信息与表观上下文，使模型既能做表征学习又能做序列-表观关联预测。</p>
+<p><strong>3) 可能的普适教训 [Analysis]</strong>：
+- 在生物基础模型中，<strong>"坐标依赖"是跨条件泛化的根本障碍</strong>；用序列（或更一般的生物学通用语言）替代坐标，可同时解决跨物种、跨个体、跨组织迁移问题。
+- 对三维基因组方向：Hi-C 等结构数据同样存在坐标依赖问题，EpiZoo 的"序列感知 + 紧凑句子"思路可迁移至"序列→三维结构"的跨物种建模。</p>
+<hr />
+<h2>07 方法总览</h2>
+<ul>
+<li><strong>输入</strong>：单细胞表观基因组谱（scATAC-seq，百万维稀疏计数）+ 对应 DNA 序列</li>
+<li><strong>输出</strong>：细胞表征（embedding）、细胞类型注释、填补后的表观谱、序列→可及性预测、突变优先级分数</li>
+<li><strong>模块</strong>：
+  1. <strong>细胞句子构建器</strong>：将表观谱转换为紧凑句子，整合序列调控信息、序列无关表观上下文、可及性重要性
+  2. <strong>MoE transformer 编码器</strong>：26 亿参数，处理细胞句子
+  3. <strong>预训练目标</strong>：在 Omni-scATAC 语料上学习跨物种调控程序
+  4. <strong>下游任务头</strong>：特征提取、注释、填补、突变优先级、序列→可及性预测</li>
+<li><strong>训练</strong>：预训练于约 2090 万细胞的多物种语料；下游任务在外部数据集（排除在预训练之外）上评估</li>
+<li><strong>工具/框架</strong>：未提供</li>
+<li><strong>假设</strong>：DNA 序列中的调控信息可跨物种迁移；紧凑句子表示足以捕获单细胞表观谱的关键信息</li>
+<li><strong>流程</strong>：原始 scATAC 谱 → 细胞句子构建（整合序列+表观+重要性）→ MoE transformer 编码 → 预训练表征 → 下游任务微调/零样本评估</li>
+</ul>
+<hr />
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>细胞句子构建器</td>
+<td>将百万维表观谱压缩为紧凑句子，整合序列调控信息、表观上下文、可及性重要性</td>
+<td>解决高维稀疏与坐标依赖问题；使跨物种对齐成为可能</td>
+<td>输入：scATAC 谱 + DNA 序列；输出：细胞句子 token 序列</td>
+<td>摘要："convert ... into compact cell sentences that integrate ..."</td>
+<td>预期影响：模型无法跨物种泛化，序列信息丢失 [Analysis]</td>
+</tr>
+<tr>
+<td>MoE transformer 编码器</td>
+<td>处理细胞句子，学习跨物种调控程序</td>
+<td>大规模参数 + 条件计算，适配多物种异质数据</td>
+<td>输入：细胞句子；输出：细胞表征</td>
+<td>摘要："Built around a mixture-of-experts transformer and containing 2.6 billion parameters"</td>
+<td>预期影响：容量下降，跨物种泛化能力减弱 [Analysis]</td>
+</tr>
+<tr>
+<td>多物种预训练</td>
+<td>在 Omni-scATAC 上学习通用调控程序</td>
+<td>提供跨物种先验</td>
+<td>输入：约 2090 万细胞；输出：预训练权重</td>
+<td>摘要："pretrained on our manually curated multi-species Omni-scATAC corpus"</td>
+<td>预期影响：缺乏跨物种先验，下游性能下降 [Analysis]</td>
+</tr>
+<tr>
+<td>下游任务头</td>
+<td>特征提取、注释、填补、突变优先级、序列→可及性</td>
+<td>验证预训练表征的通用性</td>
+<td>输入：预训练表征；输出：任务特定预测</td>
+<td>摘要："achieves state-of-the-art performance in ... feature extraction, cell type annotation and data imputation"</td>
+<td>未提供消融数据</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：本文未提供模块级消融实验，所有"移除后影响"均为 [Analysis] 预期，非实测。</p>
+</blockquote>
+<hr />
+<h2>09 关键公式符号</h2>
+<p><strong>不适用</strong>。本文为预印本，提供的材料（摘要）中未包含任何数学公式或符号定义。</p>
+<hr />
+<h2>10 实验设计与证据链</h2>
+<p><strong>数据集/群体</strong>：
+- 预训练：Omni-scATAC 语料库，约 2090 万细胞，多物种，人工整理
+- 评估：外部数据集（排除在预训练之外）</p>
+<p><strong>规模</strong>：模型总参数量 26 亿（MoE transformer）</p>
+<p><strong>指标</strong>：未提供具体指标名称（如 F1、AUROC、准确率等）</p>
+<p><strong>基线</strong>：未提供具体基线模型名称</p>
+<p><strong>预算/骨干/仪器</strong>：未提供</p>
+<p><strong>oracle 输入</strong>：未提供</p>
+<p><strong>评测协议</strong>：未提供</p>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的 claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>特征提取</td>
+<td>预训练表征可用于下游分析</td>
+<td>外部数据集，SOTA 对比</td>
+<td>达到 SOTA</td>
+<td>表征质量高</td>
+<td>未提供具体数值与基线细节</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>细胞类型注释</td>
+<td>跨物种注释能力</td>
+<td>外部数据集，SOTA 对比</td>
+<td>达到 SOTA</td>
+<td>跨物种泛化有效</td>
+<td>未提供物种范围与注释粒度</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>数据填补</td>
+<td>缺失表观谱恢复</td>
+<td>外部数据集，SOTA 对比</td>
+<td>达到 SOTA</td>
+<td>填补能力优于现有方法</td>
+<td>未提供填补评价指标</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>跨物种扩展</td>
+<td>可推广至进化上多样的物种</td>
+<td>未提供具体物种</td>
+<td>支持扩展</td>
+<td>序列感知设计有效</td>
+<td>未提供物种多样性范围</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>灵长类调控比较</td>
+<td>保守性/分歧性分析</td>
+<td>灵长类进化比较</td>
+<td>支持分析</td>
+<td>可做比较调控分析</td>
+<td>未提供具体发现</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>癌症突变优先级</td>
+<td>上下文感知的突变排序</td>
+<td>癌症体细胞突变</td>
+<td>支持</td>
+<td>序列+表观上下文有效</td>
+<td>未提供评价指标</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>序列→可及性预测</td>
+<td>从 DNA 序列预测细胞类型特异性可及性</td>
+<td>跨基因组区域和物种</td>
+<td>支持</td>
+<td>序列-表观关联可学习</td>
+<td>未提供预测精度</td>
+<td>摘要</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：所有实验描述均来自摘要，缺乏具体数值、统计检验与消融实验。证据链完整度有限。</p>
+</blockquote>
+<hr />
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：本文结论限于单细胞表观基因组学（scATAC-seq），不涉及三维染色质结构（Hi-C、TAD、loop）建模。</li>
+<li><strong>oracle/真值输入</strong>：未提供；下游任务评估依赖外部数据集，但未说明标注来源与质量。</li>
+<li><strong>端到端状态</strong>：预训练→下游微调/评估的流程完整，但未说明是否端到端可微（细胞句子构建是否可学习）。</li>
+<li><strong>算力成本</strong>：未提供训练算力、时间、硬件信息。</li>
+<li><strong>历史数据依赖</strong>：预训练依赖 Omni-scATAC 语料，其物种组成、细胞类型覆盖、批次效应处理未说明。</li>
+<li><strong>模型依赖</strong>：MoE transformer 架构细节（专家数、路由机制、层数、隐藏维度）未提供。</li>
+<li><strong>最难情形</strong>：未说明模型在哪些场景下失败（如极端稀疏数据、新物种零样本、低质量文库）。</li>
+<li><strong>不确定性</strong>：预印本未经同行评审；所有 SOTA 声明缺乏具体数值与统计检验。</li>
+<li><strong>有边界的复述</strong>：EpiZoo 在约 2090 万细胞的多物种 scATAC 语料上预训练，通过序列感知的细胞句子表示实现跨物种单细胞表观组分析，在外部数据集上报告了 SOTA 性能，并支持突变优先级与序列→可及性预测；但具体性能数值、消融实验、架构细节与失败模式均未在提供的材料中披露。</li>
+</ul>
+<hr />
+<h2>12 作者自认局限</h2>
+<p>在提供的材料（摘要）中未发现作者明确承认的局限。</p>
+<p><strong>作者提及的相关约束</strong>（非正式局限，来自摘要措辞）：
+- 语料库为"manually curated"，暗示数据整理成本高、可能引入人工偏差。
+- 模型总参数 26 亿，暗示训练与推理资源需求较大。
+- 下游任务均需"external datasets excluded from pretraining"验证，暗示预训练语料与评估集需严格分离。</p>
+<hr />
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"SOTA"声明缺乏具体数值</td>
+<td>可能仅在部分任务/数据集上达到 SOTA，或与弱基线对比</td>
+<td>无法评估真实增益</td>
+<td>要求提供完整基准表、统计检验、基线列表</td>
+<td>摘要仅定性描述</td>
+</tr>
+<tr>
+<td>细胞句子构建的"重要性"权重来源不明</td>
+<td>可及性重要性可能引入归纳偏置，或依赖启发式规则</td>
+<td>影响表征质量与可解释性</td>
+<td>要求提供构建细节与消融实验</td>
+<td>摘要："accessibility-based importance"</td>
+</tr>
+<tr>
+<td>跨物种泛化的边界未定义</td>
+<td>可能仅对近缘物种有效，远缘物种（如非哺乳动物）性能下降</td>
+<td>决定模型适用范围</td>
+<td>要求提供物种多样性梯度评估</td>
+<td>摘要仅提及"evolutionarily diverse species"</td>
+</tr>
+<tr>
+<td>26 亿参数 MoE 的实际激活参数未披露</td>
+<td>MoE 的推理成本可能远低于稠密模型，但未说明</td>
+<td>影响可复现性与部署评估</td>
+<td>要求提供专家数、激活参数比</td>
+<td>摘要仅提及总参数量</td>
+</tr>
+<tr>
+<td>与三维基因组方向的关系未讨论</td>
+<td>染色质可及性与三维结构强相关，但本文未涉及</td>
+<td>对三维基因组读者，迁移价值需自行评估</td>
+<td>要求作者讨论或补充 Hi-C 相关实验</td>
+<td>摘要未提及三维结构</td>
+</tr>
+<tr>
+<td>预训练语料的物种组成与平衡性未披露</td>
+<td>可能偏向模式物种，影响跨物种泛化声明</td>
+<td>决定"cross-species"结论的普适性</td>
+<td>要求提供语料物种列表与细胞数分布</td>
+<td>摘要仅称"multi-species"</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>14 学到什么</h2>
+<p><strong>Agent 提炼的知识候选</strong>：</p>
+<ol>
+<li>
+<p><strong>序列感知替代坐标依赖</strong>：EpiZoo 的核心设计——用 DNA 序列作为跨物种的"通用语言"替代基因组坐标——可直接迁移至三维基因组方向。Hi-C 等结构数据同样受坐标依赖限制，可尝试"序列→结构"的跨物种建模。</p>
+</li>
+<li>
+<p><strong>紧凑句子表示</strong>：将百万维稀疏表观谱压缩为紧凑 token 序列的思路，可迁移至三维基因组的高维 Hi-C 矩阵压缩，降低计算复杂度并提升可解释性。</p>
+</li>
+<li>
+<p><strong>MoE 架构用于生物基础模型</strong>：26 亿参数 MoE transformer 表明，条件计算可支撑大规模多物种预训练，三维基因组领域可借鉴此架构处理多细胞类型/多物种的结构数据。</p>
+</li>
+<li>
+<p><strong>三源信息整合</strong>：序列调控信息 + 序列无关表观上下文 + 可及性重要性的整合策略，提示三维基因组建模可类似地整合序列基序、CTCF/cohesin 结合、拓扑关联域等异构信息。</p>
+</li>
+<li>
+<p><strong>跨物种比较分析框架</strong>：EpiZoo 支持灵长类调控保守性/分歧性比较，三维基因组可迁移此框架研究 TAD/loop 的进化保守性与分歧。</p>
+</li>
+<li>
+<p><strong>序列→可及性预测的可迁移性</strong>：从 DNA 序列预测细胞类型特异性可及性，与三维基因组中"序列→结构"预测（如从序列预测 CTCF loop）范式同源，可借鉴其模型设计。</p>
+</li>
+</ol>
+<hr />
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>与单细胞基础模型谱系</strong>：EpiZoo 属于单细胞基础模型（如 scGPT、scFoundation）在表观基因组领域的扩展，但创新性地引入序列感知与跨物种设计。可对比 scGPT（转录组）与 EpiZoo（表观组）的架构差异。</li>
+<li><strong>与序列预测模型</strong>：Enformer、Basenji 等从序列预测调控输出的模型是 EpiZoo"序列→可及性"预测的前驱；EpiZoo 将其扩展到单细胞分辨率与跨物种场景。</li>
+<li><strong>与三维基因组方向</strong>：染色质可及性（ATAC）与三维结构（Hi-C）高度相关；EpiZoo 的序列感知设计可视为"序列→开放染色质"的建模，三维基因组可延伸为"序列→三维结构"。CTCF/cohesin 介导的 loop 形成与可及性位点相关，EpiZoo 的跨物种比较框架可迁移至 loop 保守性研究。</li>
+<li><strong>与进化基因组学</strong>：灵长类调控保守性/分歧性分析连接了比较基因组学与表观组学，三维基因组领域已有类似研究（如 TAD 进化），EpiZoo 提供了新的表征空间。</li>
+<li><strong>候选方向（未验证）</strong>：EpiZoo 的"细胞句子"表示是否可扩展至多组学（ATAC + RNA + Hi-C）联合建模，值得探索。</li>
+</ul>
+<hr />
+<h2>16 研究想法</h2>
+<p><strong>Agent 生成的研究候选</strong>：</p>
+<h3>候选 1：EpiZoo-3D——序列感知的跨物种三维基因组基础模型</h3>
+<ul>
+<li><strong>名称</strong>：EpiZoo-3D</li>
+<li><strong>来源局限/观察</strong>：EpiZoo 仅建模染色质可及性，未涉及三维结构；三维基因组数据（Hi-C）同样受坐标依赖限制，缺乏跨物种基础模型。</li>
+<li><strong>核心假设</strong>：DNA 序列中的调控信息足以跨物种预测三维染色质结构（如 TAD 边界、loop 锚点），且可及性可作为中间表征。</li>
+<li><strong>相对本文的增量</strong>：将 EpiZoo 的"细胞句子"扩展为"结构句子"，整合序列、可及性与 Hi-C 特征；预训练语料需包含多物种 Hi-C 数据。</li>
+<li><strong>初步方法</strong>：在 EpiZoo 预训练权重上增加 Hi-C 预测头，或在细胞句子中注入结构 token；采用 MoE 架构处理多物种结构异质性。</li>
+<li><strong>验证方式</strong>：跨物种 TAD/loop 预测准确率；与单物种模型对比；灵长类结构保守性分析。</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul>
+<h3>候选 2：序列→可及性→三维结构的级联预测框架</h3>
+<ul>
+<li><strong>名称</strong>：Seq-ATAC-3D Cascade</li>
+<li><strong>来源局限/观察</strong>：EpiZoo 已实现序列→可及性预测；三维结构预测（如 DeepC、Orca）多为单物种或依赖序列特征，未利用单细胞可及性作为中间层。</li>
+<li><strong>核心假设</strong>：单细胞可及性预测可作为三维结构预测的强中间表征，提升跨细胞类型和跨物种的结构预测精度。</li>
+<li><strong>相对本文的增量</strong>：利用 EpiZoo 的可及性预测作为特征，输入三维结构预测模型；实现"序列→可及性→结构"的端到端级联。</li>
+<li><strong>初步方法</strong>：EpiZoo 输出可及性谱 → 聚合为区域级特征 → 输入 Hi-C 预测模型（如 HiC-Reg）；在跨物种数据上评估。</li>
+<li><strong>验证方式</strong>：与直接序列→结构预测对比；消融可及性中间层。</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul>
+<h3>候选 3：细胞句子表示迁移至三维基因组表征学习</h3>
+<ul>
+<li><strong>名称</strong>：Structure-Aware Cell Sentences</li>
+<li><strong>来源局限/观察</strong>：EpiZoo 的细胞句子压缩了表观谱，但未包含结构信息；三维基因组数据高维且稀疏，缺乏紧凑表示。</li>
+<li><strong>核心假设</strong>：将 Hi-C 接触矩阵压缩为"结构句子"（类似细胞句子），可提升跨细胞类型/物种的结构表征学习效率。</li>
+<li><strong>相对本文的增量</strong>：将 EpiZoo 的句子构建思想迁移至三维结构域，提出结构句子的构建与预训练策略。</li>
+<li><strong>初步方法</strong>：对 Hi-C 矩阵进行可微压缩（如基于重要接触的 token 化），整合序列与可及性特征；在 MoE transformer 中预训练。</li>
+<li><strong>验证方式</strong>：结构句子重建 Hi-C 的保真度；下游任务（如细胞类型注释、结构变异影响预测）性能。</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul>
+<h3>候选 4：跨物种染色质结构保守性/分歧性的统一表征比较</h3>
+<ul>
+<li><strong>名称</strong>：Cross-Species 3D Regulatory Comparison</li>
+<li><strong>来源局限/观察</strong>：EpiZoo 支持灵长类调控保守性/分歧性分析，但仅限可及性；三维结构（TAD/loop）的跨物种比较缺乏统一表征空间。</li>
+<li><strong>核心假设</strong>：EpiZoo 的表征空间可扩展至三维结构，实现可及性与结构的联合保守性/分歧性分析。</li>
+<li><strong>相对本文的增量</strong>：在 EpiZoo 框架中引入结构模态，提出联合比较指标。</li>
+<li><strong>初步方法</strong>：多物种 Hi-C + ATAC 联合嵌入；定义结构保守性得分；在灵长类数据上验证。</li>
+<li><strong>验证方式</strong>：与已知保守 TAD/loop 数据库比对；进化速率关联分析。</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul>
+<h3>候选 5：EpiZoo 的突变优先级框架迁移至三维结构变异影响预测</h3>
+<ul>
+<li><strong>名称</strong>：3D Variant Effect Prioritization</li>
+<li><strong>来源局限/观察</strong>：EpiZoo 支持癌症体细胞突变的上下文感知优先级排序，但仅基于可及性；三维结构破坏性变异（如 TAD 边界破坏）缺乏类似框架。</li>
+<li><strong>核心假设</strong>：EpiZoo 的序列+表观上下文建模可扩展至预测变异对三维结构的影响。</li>
+<li><strong>相对本文的增量</strong>：将突变优先级框架从可及性扩展至结构模态。</li>
+<li><strong>初步方法</strong>：在 EpiZoo 中引入结构预测头；对突变前后序列分别预测结构特征，计算差异得分。</li>
+<li><strong>验证方式</strong>：与已知结构破坏性变异数据库比对；功能实验验证。</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Abstract only</li>
+<li><strong>Assessment boundary</strong> Claims and evidence as presented in the abstract; no figures, tables, methods, or supplementary materials were provided</li>
+<li><strong>Shared manuscript claim summary</strong> The authors introduce EpiZoo, a 2.6 billion parameter mixture-of-experts transformer foundation model for cross-species single-cell epigenomics. The model converts single-cell epigenomic profiles into "cell sentences" integrating DNA sequence information, sequence-independent epigenomic context, and accessibility-based importance. It is pretrained on a manually curated multi-species corpus (Omni-scATAC) of approximately 20.9 million cells. The authors claim state-of-the-art performance on external datasets for feature extraction, cell type annotation, and data imputation; extension to evolutionarily diverse species; support for comparative analysis of regulatory conservation and divergence in primate evolution; context-aware prioritization of somatic mutations in cancer; and prediction of cell-type-specific chromatin accessibility from DNA sequences across genomic regions and species.</li>
+<li><strong>Visible evidence base</strong> Abstract text only; no figures, tables, methods, or supplementary materials</li>
+<li><strong>Missing materials affecting confidence</strong> Full manuscript, methods description, model architecture details, training and evaluation protocols, benchmark definitions, external dataset descriptions, statistical analyses, and all quantitative results</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li><strong>Overall assessment</strong> The abstract presents an ambitious and potentially impactful foundation model for cross-species single-cell epigenomics. The conceptual advance of incorporating DNA sequence information into a single-cell epigenomic foundation model is timely and addresses a recognized limitation of coordinate-based models. However, the abstract alone provides no quantitative evidence, no methodological detail, and no clear description of evaluation protocols. The breadth of claimed capabilities is substantial, and the current evidence base is insufficient to assess whether any of these claims are established. The work is likely to interest a broad readership if the technical claims hold, but the case is not currently established from the provided material.</li>
+<li><strong>Who would be interested in the results, and why</strong> Computational biologists and machine learning researchers working on single-cell genomics, epigenomics, and foundation models; experimental biologists studying chromatin regulation, cell type diversity, and gene regulation; cancer genomics researchers interested in variant prioritization; evolutionary biologists studying regulatory conservation and divergence. The cross-species scope and sequence-aware design could appeal to researchers seeking models that generalize beyond human or mouse.</li>
+<li><strong>Major strengths</strong> The conceptual framing is clear and addresses a real gap in the field, namely the species confinement of existing single-cell epigenomic foundation models. The proposed integration of DNA sequence information with epigenomic context is a sensible and potentially powerful design choice. The scale of the pretraining corpus (approximately 20.9 million cells) and model size (2.6 billion parameters) are substantial. The range of downstream applications, from basic analysis tasks to cancer variant prioritization and cross-species prediction, suggests broad utility if validated.</li>
+<li><strong>Major Concerns</strong></li>
+<li><strong>Concern ID</strong> R1-M1</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Evidence sufficiency</li>
+<li><strong>Claim pointer</strong> "EpiZoo achieves state-of-the-art performance in fundamental single-cell analysis tasks, including feature extraction, cell type annotation and data imputation"</li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided</li>
+<li><strong>Concern</strong> The abstract states state-of-the-art performance without reporting any quantitative results, baseline comparisons, or evaluation metrics. No information is given about which datasets were used for evaluation, which baselines were compared, or how statistical significance was assessed.</li>
+<li><strong>Why it matters</strong> The central claim of the paper is that EpiZoo outperforms existing methods. Without quantitative evidence, this claim cannot be evaluated, and the reader cannot determine whether the improvement is meaningful or marginal.</li>
+<li><strong>Resolution test</strong> Provide benchmark results with clear metrics, baseline comparisons, and statistical tests in the full manuscript, with key numbers summarized in the abstract.</li>
+<li><strong>Concern ID</strong> R1-M2</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Methodological transparency</li>
+<li><strong>Claim pointer</strong> "EpiZoo converts million-dimensional single-cell epigenomic profiles from diverse species into compact cell sentences that integrate DNA-encoded regulatory information, sequence-independent epigenomic context and accessibility-based importance"</li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided</li>
+<li><strong>Concern</strong> The abstract describes the "cell sentence" representation and the integration of three information types but provides no detail on how these are computed, encoded, or combined. The mixture-of-experts transformer architecture is mentioned but not described in terms of routing, expert count, or training objective.</li>
+<li><strong>Why it matters</strong> Reproducibility and technical assessment require understanding the model architecture and the input representation. Without this information, reviewers and readers cannot judge whether the design is sound or whether the claimed capabilities follow from the architecture.</li>
+<li><strong>Resolution test</strong> Provide a detailed methods section describing the cell sentence construction, the transformer architecture, the pretraining objective, and the training procedure.</li>
+<li><strong>Concern ID</strong> R1-M3</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Claim scope versus evidence</li>
+<li><strong>Claim pointer</strong> "Its sequence-aware architecture enables extension to evolutionarily diverse species, and supports comparative analysis of regulatory conservation and divergence during primate evolution"</li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided</li>
+<li><strong>Concern</strong> The abstract claims extension to evolutionarily diverse species and support for comparative analysis in primate evolution, but no results are presented. It is unclear whether these are demonstrated capabilities or anticipated applications.</li>
+<li><strong>Why it matters</strong> The distinction between demonstrated results and potential applications is critical for assessing the maturity of the work. If these are only anticipated capabilities, the claim should be framed accordingly.</li>
+<li><strong>Resolution test</strong> Clarify in the abstract and manuscript which capabilities are demonstrated with results and which are proposed as future directions. Provide supporting analyses for any demonstrated claims.</li>
+<li><strong>Concern ID</strong> R1-M4</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Evidence sufficiency</li>
+<li><strong>Claim pointer</strong> "EpiZoo enables context-aware prioritization of somatic mutations in cancer and prediction of cell-type-specific chromatin accessibility from DNA sequences across genomic regions and species"</li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided</li>
+<li><strong>Concern</strong> Two additional application domains are claimed, cancer mutation prioritization and cross-species chromatin accessibility prediction, but no results, datasets, or evaluation details are provided.</li>
+<li><strong>Why it matters</strong> These are substantial claims that extend beyond the core single-cell analysis tasks. Without evidence, the reader cannot assess whether these applications are validated or speculative.</li>
+<li><strong>Resolution test</strong> Provide results for each application with appropriate benchmarks and comparisons in the full manuscript.</li>
+<li><strong>Minor Comments</strong></li>
+<li><strong>Concern ID</strong> R1-m1</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Clarity</li>
+<li><strong>Affected element</strong> Abstract terminology</li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided</li>
+<li><strong>Issue</strong> The term "cell sentences" is introduced without definition or context. It is unclear whether this is a novel concept or a rephrasing of existing tokenization approaches.</li>
+<li><strong>Required correction</strong> Define the term clearly in the abstract or use more standard terminology that conveys the same meaning.</li>
+<li><strong>Concern ID</strong> R1-m2</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Completeness</li>
+<li><strong>Affected element</strong> Pretraining corpus description</li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided</li>
+<li><strong>Issue</strong> The Omni-scATAC corpus is described as "manually curated" and containing approximately 20.9 million cells, but no information is given about species composition, tissue types, or data sources.</li>
+<li><strong>Required correction</strong> Provide a brief description of the corpus composition in the abstract or refer to a table or supplementary figure.</li>
+<li><strong>Concern ID</strong> R1-m3</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Precision</li>
+<li><strong>Affected element</strong> Performance claim</li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided</li>
+<li><strong>Issue</strong> The phrase "state-of-the-art performance" is used without specifying the comparison set or the performance metric.</li>
+<li><strong>Required correction</strong> Specify the baselines and metrics used, or rephrase to indicate the comparison is detailed in the manuscript.</li>
+<li><strong>Technical failings that need to be addressed before the case is established</strong> R1-M1, R1-M2, R1-M3, R1-M4. The abstract provides no quantitative results, no methodological detail, and no clear separation between demonstrated capabilities and anticipated applications. The case for the model's utility and novelty cannot be assessed without the full manuscript.</li>
+<li><strong>Assessment against Nature-style criteria</strong> Originality: the concept of a sequence-aware cross-species single-cell epigenomic foundation model appears novel and addresses a recognized limitation, but the abstract does not provide enough detail to assess the degree of conceptual advance over existing models. Scientific importance: the potential impact is high given the breadth of applications, but importance is contingent on the validity of the claims, which cannot be assessed. Interdisciplinary readership: the work is likely to appeal to computational and experimental biologists, but the abstract is written in a way that is accessible to a broad audience. Technical soundness: cannot be assessed from the abstract alone; no architecture details, training procedures, or evaluation protocols are provided. Readability for nonspecialists: the abstract is generally clear, though terms such as "cell sentences" and "mixture-of-experts transformer" may require additional context for a general audience.</li>
+<li><strong>Recommendation posture</strong> Currently not established from the provided evidence. The abstract presents an interesting and potentially important model, but the absence of quantitative results and methodological detail prevents any assessment of whether the claims are supported. A full manuscript with detailed methods and results is required before the case can be evaluated.</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>State-of-the-art performance on feature extraction, cell type annotation, and data imputation is unsupported by any quantitative evidence in the abstract.</li>
+<li>Extension to evolutionarily diverse species and support for comparative analysis in primate evolution are claimed without demonstrated results.</li>
+<li>Context-aware prioritization of somatic mutations in cancer is claimed without any supporting results.</li>
+<li>Prediction of cell-type-specific chromatin accessibility from DNA sequences across genomic regions and species is claimed without any supporting results.</li>
+<li>The pretraining corpus of approximately 20.9 million cells is described but its composition and quality are not assessable from the abstract.</li>
+<li>The model architecture and training procedure are not described in sufficient detail to assess technical soundness.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

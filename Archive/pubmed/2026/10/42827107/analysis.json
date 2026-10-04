@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42827107",
+  "title": "Single-cell epigenomics of colorectal cancer.",
+  "authors": "Kang, Dain; Lee, Jun Ho; Jung, Inkyung",
+  "journal": "Experimental & molecular medicine",
+  "published_date": "2026-10-03",
+  "window": {
+    "start": "2026-09-27",
+    "end": "2026-10-03"
+  },
+  "score": 4,
+  "one_liner_zh": "该综述聚焦结直肠癌单细胞表观基因组学，虽涉及染色质可及性和顺式调控元件，但以肿瘤异质性和临床转化为主，缺乏三维基因组/染色质空间架构建模及AI或分子模拟方法，仅边缘相关。",
+  "abstract": "Colorectal cancer (CRC) exhibits remarkable phenotypic heterogeneity that cannot be fully explained by genetic alterations alone. Advances in single-nucleus assay for transposase-accessible chromatin sequencing have revealed chromatin accessibility as a central regulatory layer shaping tumor identity, cellular plasticity and therapeutic response. In this Review, we synthesize recent single-cell epigenomic studies to outline an emerging regulatory principle for CRC. From an epigenetic perspective, CRC can be conceptualized as two distinct epigenomic states, intrinsic consensus molecular subtype (iCMS)2 and iCMS3, defined by divergent cis-regulatory element activities across distal enhancer and promoter landscapes. Tumor progression is accompanied by stepwise regulatory rewiring, encompassing erosion of differentiation programs in adenomas, regulatory bifurcation during malignant transformation, oncofetal reprogramming associated with therapy resistance and organotropic adaptation during metastasis. We further discuss how stromal and immune compartments undergo dynamic epigenomic remodeling, converging toward a concept of iCMS-defined epigenomic ecosystems, and how genomic alterations engage in bidirectional crosstalk with chromatin states to generate intratumoral heterogeneity. Finally, we highlight translational applications including epigenetic-immune combination therapies, liquid biopsy-based monitoring, spatial epigenomics and artificial intelligence-driven modeling.",
+  "abstract_zh": "结直肠癌（CRC）表现出显著的表型异质性，仅靠遗传改变无法完全解释。单核转座酶可及染色质测序（single-nucleus assay for transposase-accessible chromatin sequencing）的进展揭示了染色质可及性作为塑造肿瘤身份、细胞可塑性和治疗反应的核心调控层。在本综述中，我们综合了近期单细胞表观基因组研究，以勾勒CRC的新兴调控原则。从表观遗传学视角来看，CRC可被概念化为两种不同的表观基因组状态，即内在共有分子亚型（iCMS）2和iCMS3，这些状态由远端增强子和启动子景观中不同的顺式调控元件活性所定义。肿瘤进展伴随逐步的调控重连，包括腺瘤中分化程序的侵蚀、恶性转化过程中的调控分叉、与治疗耐药相关的肿瘤胎儿重编程以及转移过程中的器官趋向性适应。我们进一步讨论了基质和免疫区室如何经历动态表观基因组重塑，汇聚于iCMS定义的表观基因组生态系统概念，以及基因组改变如何与染色质状态进行双向串扰以产生瘤内异质性。最后，我们强调了转化应用，包括表观遗传-免疫联合疗法、基于液体活检的监测、空间表观基因组学和人工智能驱动的建模。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42827107/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42827107/",
+  "paper_page_path": "papers/pubmed/42827107/index.html"
+}

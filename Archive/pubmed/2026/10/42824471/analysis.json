@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42824471",
+  "title": "From reference-genome prediction to causal generalization: sequence-to-function models for plant regulatory genomics.",
+  "authors": "Zhan, Mingfang; Wu, Ruigang",
+  "journal": "Frontiers in plant science",
+  "published_date": "2026-10-02",
+  "window": {
+    "start": "2026-09-27",
+    "end": "2026-10-03"
+  },
+  "score": 5,
+  "one_liner_zh": "该文综述植物调控基因组学中序列-功能模型（seq2func）的泛化挑战，虽涉及顺式调控元件和调控序列设计，但未聚焦染色质三维空间架构建模，且为综述性文章，AI方法讨论较泛，与三维基因组建模课题关联有限。",
+  "abstract": "Sequence-to-function (seq2func) models predict molecular regulatory outputs from DNA sequence and can prioritize non-coding variants, annotate cis-regulatory elements (CREs), and design regulatory sequences. Although accuracy has improved, most models are trained and evaluated on observational data from one or a few reference genomes. Their performance may therefore not translate to natural haplotypes, structural variants, tissues, developmental stages, environments, or species. These limitations are especially important in plants, where pan-genomic diversity, transposable elements, polyploidy, long-range regulation, and genotype-by-environment interactions shape regulatory landscapes. This Mini Review summarizes seq2func modelling in plant regulatory genomics, discusses plant-specific challenges and the complementary value of observational and perturbation assays, and proposes evaluation frameworks based on biologically meaningful distribution shifts. We further outline how pan-genomes, multi-omics, genome editing, reporter assays, active learning, and continual learning could support closed-loop experimental-computational systems. Progress should be judged not only by reference-genome accuracy, but by calibrated and experimentally validated generalization across plant diversity.",
+  "abstract_zh": "序列到功能（seq2func）模型从DNA序列预测分子调控输出，可用于优先排序非编码变异、注释顺式调控元件（cis-regulatory elements, CREs）及设计调控序列。尽管准确性已有所提升，但大多数模型是在一个或少数参考基因组上的观测数据中训练和评估的。因此，其性能可能无法推广至自然单倍型、结构变异、组织、发育阶段、环境或物种。这些局限性在植物中尤为重要，因为泛基因组多样性、转座元件、多倍性、长距离调控以及基因型与环境的互作塑造了调控景观。本迷你综述总结了植物调控基因组学中的seq2func建模，讨论了植物特有的挑战以及观测和扰动实验的互补价值，并提出了基于生物学意义分布偏移的评估框架。我们进一步概述了泛基因组、多组学、基因组编辑、报告基因检测、主动学习和持续学习如何支持闭环实验-计算系统。进展不仅应依据参考基因组准确性来评判，还应依据经过校准和实验验证的跨植物多样性泛化能力来评判。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42824471/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42824471/",
+  "paper_page_path": "papers/pubmed/42824471/index.html"
+}

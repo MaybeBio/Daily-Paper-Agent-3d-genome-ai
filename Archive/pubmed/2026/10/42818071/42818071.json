@@ -1,0 +1,240 @@
+{
+  "identity": {
+    "pmid": "42818071",
+    "doi": "10.64898/2026.09.18.752723",
+    "title": "CardioChrom Reconstructs the Human Cardiac Virtual Epigenome from Single-Nucleus Transcriptomes."
+  },
+  "content": {
+    "abstract": "BACKGROUND: Matched epigenomic profiling remains scarce in human heart failure, limiting regulatory interpretation of single-nucleus ribonucleic acid (RNA) sequencing data. We developed CardioChrom, a cardiac-specialized framework that reconstructs chromatin accessibility, histone H3 lysine 27 acetylation (H3K27ac), and histone H3 lysine 27 trimethylation (H3K27me3) from single-nucleus RNA profiles. METHODS: CardioChrom was developed using same-nucleus human heart datasets jointly measuring RNA with chromatin accessibility by assay for transposase-accessible chromatin (ATAC), H3K27ac, or H3K27me3, with donor-separated development and leave-one-cell-type-out testing. Frozen models were evaluated in 10-donor and 23-sample external human heart cohorts. Histone reconstruction was benchmarked against measured profiles and a Transformer. The models were then applied without refitting to an RNA-only cohort of 43 donors with heart failure with preserved ejection fraction (HFpEF). RESULTS: Across unseen cardiac cell types, CardioChrom increased area under the precision- recall curve by 0.0109 relative to within-cell-type RNA shuffling in 11 of 12 cell types and increased area under the receiver operating characteristic curve by 0.0179 in all 12.CardioChrom exceeded controls in both external cohorts and matched or exceeded the Transformer across 6 prespecified histone metrics. In HFpEF, 3,581 donor-level pathway-layer associations met global false discovery rate, sex-adjustment, and leave-one-donor-out robustness criteria. Endothelial cells showed prominent reconstructed histone-associated changes involving coagulation, inflammation, hypoxia, and profibrotic signaling. Von Willebrand factor expression and its reconstructed regulatory states were consistently reduced, and all 6 linked candidate cis-regulatory elements were classified as repressed. Motif-supported TF-cCRE-gene hypotheses were generated in endothelial cells and fibroblasts. CONCLUSIONS: CardioChrom extends RNA-only human heart failure cohorts toward cell-type-resolved virtual epigenomic and regulatory analysis while distinguishing predictions from direct measurements. CLINICAL PERSPECTIVE: What Is New?: CardioChrom is, to our knowledge, the first cardiac-specialized virtual epigenome framework to integrate same-nucleus human heart RNA-ATAC and RNA-histone reference data to reconstruct chromatin accessibility, H3K27ac, and H3K27me3 states from single-nucleus RNA profiles.The framework was tested beyond its training setting, including unseen donors, leave-one-cell-type-out evaluation, and independent human heart cohorts, and consistently exceeded simple RNA-shuffled or peak-frequency baselines while remaining competitive with or superior to Transformer-based comparators.What Are the Clinical Implications?: Many heart-failure cohorts contain transcriptomic data without matched epigenomic measurements. CardioChrom provides a way to extend these RNA-only datasets toward cell-type-resolved regulatory-state analysis without requiring additional tissue or multimodal assays.In an independent RNA-only HFpEF cohort, CardioChrom identified prominent endothelial regulatory remodeling involving Coagulation, IL6/JAK/STAT3, TNFalpha/NFkappaB, Hypoxia, and TGF-beta/EMT and generated TF-cCRE-gene hypotheses that can be prioritized for experimental validation.",
+    "keywords": [],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article",
+      "Preprint"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Huang, Hongbiao",
+        "Hui, Xiaodan",
+        "Li, Yingjian",
+        "Abdelbaset-Ismail, Ahmed",
+        "Xu, Zixuan",
+        "Yadav, Suchen",
+        "Tan, Yi"
+      ],
+      "short_names": [
+        "Huang H",
+        "Hui X",
+        "Li Y",
+        "Abdelbaset-Ismail A",
+        "Xu Z",
+        "Yadav S",
+        "Tan Y"
+      ],
+      "auids": [
+        "ORCID: 0000-0002-5420-3415"
+      ],
+      "affiliations": []
+    },
+    "xml": [
+      {
+        "full_name": "Huang, Hongbiao",
+        "short_name": "Huang H",
+        "identifiers": [
+          "0000-0002-5420-3415"
+        ],
+        "affiliations": []
+      },
+      {
+        "full_name": "Hui, Xiaodan",
+        "short_name": "Hui X",
+        "identifiers": [],
+        "affiliations": []
+      },
+      {
+        "full_name": "Li, Yingjian",
+        "short_name": "Li Y",
+        "identifiers": [],
+        "affiliations": []
+      },
+      {
+        "full_name": "Abdelbaset-Ismail, Ahmed",
+        "short_name": "Abdelbaset-Ismail A",
+        "identifiers": [],
+        "affiliations": []
+      },
+      {
+        "full_name": "Xu, Zixuan",
+        "short_name": "Xu Z",
+        "identifiers": [],
+        "affiliations": []
+      },
+      {
+        "full_name": "Yadav, Suchen",
+        "short_name": "Yadav S",
+        "identifiers": [],
+        "affiliations": []
+      },
+      {
+        "full_name": "Tan, Yi",
+        "short_name": "Tan Y",
+        "identifiers": [],
+        "affiliations": []
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "bioRxiv : the preprint server for biology"
+    ],
+    "journal_abbrev": [
+      "bioRxiv"
+    ],
+    "pub_date": "2026 Sep 24",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article",
+      "Preprint"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/01 11:37",
+    "fetched_at": "2026-10-04 10:22:40"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42818071",
+      "42475469",
+      "35195064",
+      "41937210",
+      "33191916",
+      "30284014",
+      "42814674",
+      "38664790",
+      "35400201",
+      "32664951",
+      "40836920",
+      "32529949",
+      "39326643",
+      "42137938",
+      "42650039",
+      "39187646",
+      "41731605",
+      "39888372",
+      "40660409",
+      "42367874",
+      "39567716",
+      "41484780",
+      "34904892",
+      "42809537",
+      "33422696",
+      "36321557",
+      "42727325",
+      "42072343",
+      "40063068",
+      "41676679",
+      "33118835",
+      "41924281",
+      "42737817",
+      "32973863",
+      "42271487",
+      "36902216",
+      "41033661",
+      "41684930",
+      "35605196",
+      "41971346",
+      "42509463",
+      "37294468",
+      "28193859",
+      "41310253",
+      "29807547",
+      "41832957",
+      "26977395",
+      "42537336",
+      "33058867",
+      "39673349",
+      "28733351",
+      "39210544",
+      "42490484",
+      "33046126",
+      "41422136",
+      "33717140",
+      "31097419",
+      "41554477",
+      "30795793",
+      "42688241",
+      "38194039",
+      "35113653",
+      "31053165",
+      "39920894",
+      "41735542",
+      "40385400",
+      "42538413",
+      "37114830",
+      "36563664",
+      "37682469",
+      "32772801",
+      "32885678",
+      "32403949",
+      "21160473",
+      "36777038",
+      "40161758",
+      "42818030",
+      "36278398",
+      "37246858",
+      "34130702",
+      "41351424",
+      "42763729",
+      "33164753",
+      "42568060",
+      "41571092",
+      "42619834",
+      "40964403",
+      "39919251",
+      "30477572",
+      "39311911",
+      "42366973",
+      "41465249",
+      "28249877",
+      "41675513",
+      "40119005",
+      "40606924",
+      "32550550",
+      "38798502",
+      "42614523",
+      "42074532"
+    ],
+    "review": [
+      "42818071",
+      "36321557",
+      "37294468",
+      "41465249",
+      "40119005"
+    ],
+    "pmc": [
+      "13622052"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://assays.cancer.gov/CPTAC-1496",
+        "provider": "NCI CPTAC Assay Portal",
+        "category": "Miscellaneous",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://doi.org/10.64898/2026.09.18.752723",
+        "provider": "Cold Spring Harbor Laboratory",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

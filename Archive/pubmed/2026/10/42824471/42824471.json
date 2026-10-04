@@ -1,0 +1,235 @@
+{
+  "identity": {
+    "pmid": "42824471",
+    "doi": "10.3389/fpls.2026.1968878",
+    "title": "From reference-genome prediction to causal generalization: sequence-to-function models for plant regulatory genomics."
+  },
+  "content": {
+    "abstract": "Sequence-to-function (seq2func) models predict molecular regulatory outputs from DNA sequence and can prioritize non-coding variants, annotate cis-regulatory elements (CREs), and design regulatory sequences. Although accuracy has improved, most models are trained and evaluated on observational data from one or a few reference genomes. Their performance may therefore not translate to natural haplotypes, structural variants, tissues, developmental stages, environments, or species. These limitations are especially important in plants, where pan-genomic diversity, transposable elements, polyploidy, long-range regulation, and genotype-by-environment interactions shape regulatory landscapes. This Mini Review summarizes seq2func modelling in plant regulatory genomics, discusses plant-specific challenges and the complementary value of observational and perturbation assays, and proposes evaluation frameworks based on biologically meaningful distribution shifts. We further outline how pan-genomes, multi-omics, genome editing, reporter assays, active learning, and continual learning could support closed-loop experimental-computational systems. Progress should be judged not only by reference-genome accuracy, but by calibrated and experimentally validated generalization across plant diversity.",
+    "keywords": [
+      "cis-regulatory code",
+      "cis-regulatory elements",
+      "crop improvement",
+      "genome editing",
+      "machine learning",
+      "pan-genome",
+      "plant genomics",
+      "sequence-to-function models"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Zhan, Mingfang",
+        "Wu, Ruigang"
+      ],
+      "short_names": [
+        "Zhan M",
+        "Wu R"
+      ],
+      "auids": [],
+      "affiliations": [
+        "College of Life Sciences, Wuchang University of Technology, Wuhan, Hubei, China.",
+        "School of Landscape and Ecological Engineering, Hebei University of Engineering, Handan, China."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Zhan, Mingfang",
+        "short_name": "Zhan M",
+        "identifiers": [],
+        "affiliations": [
+          "College of Life Sciences, Wuchang University of Technology, Wuhan, Hubei, China."
+        ]
+      },
+      {
+        "full_name": "Wu, Ruigang",
+        "short_name": "Wu R",
+        "identifiers": [],
+        "affiliations": [
+          "School of Landscape and Ecological Engineering, Hebei University of Engineering, Handan, China."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Frontiers in plant science"
+    ],
+    "journal_abbrev": [
+      "Front Plant Sci"
+    ],
+    "pub_date": "2026",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/02 13:37",
+    "fetched_at": "2026-10-04 10:22:40"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42824471",
+      "42739369",
+      "42475469",
+      "42509369",
+      "41280085",
+      "42654900",
+      "33193733",
+      "38093018",
+      "33001599",
+      "42726296",
+      "15478601",
+      "41514301",
+      "41420926",
+      "39090688",
+      "38187729",
+      "42708417",
+      "35435921",
+      "42492189",
+      "40060626",
+      "30446793",
+      "42452277",
+      "41612176",
+      "34037796",
+      "40826469",
+      "42026468",
+      "35561852",
+      "41922965",
+      "29855387",
+      "35750315",
+      "40240259",
+      "42464962",
+      "42745980",
+      "33484244",
+      "39894347",
+      "23572549",
+      "37600946",
+      "39392676",
+      "40719915",
+      "33217199",
+      "28204611",
+      "34456947",
+      "42741764",
+      "28219347",
+      "40530265",
+      "41376168",
+      "42792973",
+      "39026761",
+      "20438361",
+      "42723285",
+      "40421528",
+      "40140332",
+      "42792956",
+      "42579872",
+      "32043966",
+      "36282971",
+      "41768065",
+      "41096905",
+      "42619371",
+      "22915576",
+      "29618048",
+      "36255144",
+      "40660356",
+      "41959049",
+      "19958507",
+      "42481850",
+      "42498815",
+      "31228310",
+      "41024142",
+      "42821319",
+      "42700247",
+      "41421305",
+      "31012843",
+      "35639931",
+      "26072432",
+      "17300983",
+      "35560205",
+      "26876195",
+      "27499678",
+      "33119236",
+      "40369872",
+      "41310253",
+      "39791953",
+      "36050782",
+      "28787426",
+      "41421017",
+      "40633538",
+      "39048791",
+      "41845915",
+      "40205616",
+      "41576119",
+      "41495833",
+      "32543792",
+      "41993329",
+      "42296264",
+      "41906094",
+      "38632097",
+      "38889146",
+      "34416864",
+      "37309871",
+      "40626041"
+    ],
+    "review": [
+      "42824471",
+      "42739369",
+      "42509369",
+      "42654900",
+      "33193733",
+      "38093018",
+      "33001599",
+      "42726296",
+      "41420926",
+      "42708417",
+      "42492189",
+      "30446793",
+      "42452277",
+      "41922965",
+      "35750315",
+      "40240259",
+      "42464962",
+      "33484244",
+      "39894347",
+      "40719915",
+      "33217199",
+      "34456947",
+      "28219347",
+      "40530265",
+      "41376168",
+      "20438361",
+      "42723285",
+      "40140332",
+      "41768065",
+      "36255144",
+      "42481850",
+      "41421305",
+      "26072432",
+      "17300983",
+      "35560205",
+      "26876195",
+      "33119236",
+      "28787426",
+      "41421017",
+      "39048791",
+      "41845915",
+      "38632097",
+      "37309871"
+    ],
+    "pmc": [
+      "13628167"
+    ],
+    "entrez": {},
+    "external": [],
+    "text_mined": []
+  }
+}

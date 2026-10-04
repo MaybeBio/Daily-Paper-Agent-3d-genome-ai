@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42824423",
+  "title": "Entropy-driven machine learning for deciphering mRNA rearrangement by splicing in complex microorganisms.",
+  "authors": "Mancini, Alessio; Merelli, Emanuela; Piangerelli, Marco; Pucciarelli, Sandra; Vito, Leonardo",
+  "journal": "Frontiers in bioinformatics",
+  "published_date": "2026-10-02",
+  "window": {
+    "start": "2026-09-27",
+    "end": "2026-10-03"
+  },
+  "score": 3,
+  "one_liner_zh": "该文用可解释机器学习预测四膜虫内含子保留，聚焦剪接调控而非染色质三维组织，且无AI/分子模拟的空间架构建模，与本课题关联微弱。",
+  "abstract": "INTRODUCTION: Alternative splicing allows a single gene to produce multiple messenger RNA (mRNA) variants by differential RNA processing, resulting in the translation of distinct protein isoforms. Intron retention (IR) is a specific type of alternative splicing in which introns remain unspliced in the mature mRNA. The exact regulatory code behind intron splicing remains not fully deciphered, and unraveling these mechanisms is critical to uncovering the foundations of genetic disorders: a substantial fraction of disease-causing mutations disrupt intron splicing. METHODS: We applied explainable machine learning (xML) models to intronic sequences from four species of the ciliate genus Tetrahymena (T. thermophila, T. malaccensis, T. borealis and T. elliotti), which allow the intron retention process to be analysed without tissue-specific confounders. Retained introns (RIs) and constitutively spliced introns (CSIs) were extracted through an automated Galaxy pipeline and described by several features of the intronic sequences, including the absence of repetitive nucleotide motifs - quantified as entropy - the GC content, the complexity of the secondary structures as estimated by the Lempel-Ziv (LZ) measure, and the effective distance between the branch point and the 3' splice site. Four classifiers were compared by 10-fold cross-validation within the training set and evaluated on an independent test set. RESULTS: Across 289.6 k analysed introns, the C5.0 decision tree gave the best and most consistent performance, ranking first in three of the four species (accuracy 0.948-0.984). The key distinguishing features of retained introns were a higher entropy (Shannon entropy above 1.67, versus below 1.53 for constitutively spliced introns, against a theoretical maximum of 2) and more complex secondary structures near the 3' splice sites, together with a greater effective branch-point-to-3'-splice-site distance and a relative enrichment of the GC dinucleotide. DISCUSSION: These features converge on weaker, less accessible splicing signals, which may impair splice-site recognition and bias the outcome towards retention. Our work identifies key sequence-level features predictive of intron retention in Tetrahymena and could provide a generalizable, explainable ML framework for investigating splicing regulation in other eukaryotes.",
+  "abstract_zh": "引言：可变剪接（alternative splicing）使得单个基因通过差异RNA加工产生多种信使RNA（mRNA）变体，从而翻译出不同的蛋白质亚型。内含子保留（intron retention, IR）是可变剪接的一种特定类型，其中内含子在成熟mRNA中未被剪接。内含子剪接背后的精确调控代码尚未完全破译，揭示这些机制对于发现遗传疾病的基础至关重要：相当一部分致病突变会破坏内含子剪接。方法：我们将可解释机器学习（explainable machine learning, xML）模型应用于来自纤毛虫属四膜虫（Tetrahymena）四个物种（T. thermophila、T. malaccensis、T. borealis和T. elliotti）的内含子序列，这些序列允许在没有组织特异性混杂因素的情况下分析内含子保留过程。通过自动化Galaxy流程提取保留内含子（retained introns, RIs）和组成型剪接内含子（constitutively spliced introns, CSIs），并用内含子序列的多个特征进行描述，包括重复核苷酸基序的缺失（以熵量化）、GC含量、通过Lempel-Ziv（LZ）度量估计的二级结构复杂性，以及分支点与3'剪接位点之间的有效距离。在训练集内通过10折交叉验证比较了四个分类器，并在独立测试集上进行了评估。结果：在分析的289.6千个内含子中，C5.0决策树表现最佳且最一致，在四个物种中的三个中排名第一（准确率0.948-0.984）。保留内含子的关键区分特征包括更高的熵（Shannon熵高于1.67，而组成型剪接内含子低于1.53，理论最大值为2）、3'剪接位点附近更复杂的二级结构，以及更大的分支点至3'剪接位点有效距离和GC二核苷酸的相对富集。讨论：这些特征汇聚于更弱、更难接近的剪接信号，这可能损害剪接位点识别并使结果偏向于保留。我们的工作识别了预测四膜虫内含子保留的关键序列水平特征，并可能为研究其他真核生物中的剪接调控提供一种可推广、可解释的机器学习框架。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42824423/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42824423/",
+  "paper_page_path": "papers/pubmed/42824423/index.html"
+}

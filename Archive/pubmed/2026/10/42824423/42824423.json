@@ -1,0 +1,240 @@
+{
+  "identity": {
+    "pmid": "42824423",
+    "doi": "10.3389/fbinf.2026.1889469",
+    "title": "Entropy-driven machine learning for deciphering mRNA rearrangement by splicing in complex microorganisms."
+  },
+  "content": {
+    "abstract": "INTRODUCTION: Alternative splicing allows a single gene to produce multiple messenger RNA (mRNA) variants by differential RNA processing, resulting in the translation of distinct protein isoforms. Intron retention (IR) is a specific type of alternative splicing in which introns remain unspliced in the mature mRNA. The exact regulatory code behind intron splicing remains not fully deciphered, and unraveling these mechanisms is critical to uncovering the foundations of genetic disorders: a substantial fraction of disease-causing mutations disrupt intron splicing. METHODS: We applied explainable machine learning (xML) models to intronic sequences from four species of the ciliate genus Tetrahymena (T. thermophila, T. malaccensis, T. borealis and T. elliotti), which allow the intron retention process to be analysed without tissue-specific confounders. Retained introns (RIs) and constitutively spliced introns (CSIs) were extracted through an automated Galaxy pipeline and described by several features of the intronic sequences, including the absence of repetitive nucleotide motifs - quantified as entropy - the GC content, the complexity of the secondary structures as estimated by the Lempel-Ziv (LZ) measure, and the effective distance between the branch point and the 3' splice site. Four classifiers were compared by 10-fold cross-validation within the training set and evaluated on an independent test set. RESULTS: Across 289.6 k analysed introns, the C5.0 decision tree gave the best and most consistent performance, ranking first in three of the four species (accuracy 0.948-0.984). The key distinguishing features of retained introns were a higher entropy (Shannon entropy above 1.67, versus below 1.53 for constitutively spliced introns, against a theoretical maximum of 2) and more complex secondary structures near the 3' splice sites, together with a greater effective branch-point-to-3'-splice-site distance and a relative enrichment of the GC dinucleotide. DISCUSSION: These features converge on weaker, less accessible splicing signals, which may impair splice-site recognition and bias the outcome towards retention. Our work identifies key sequence-level features predictive of intron retention in Tetrahymena and could provide a generalizable, explainable ML framework for investigating splicing regulation in other eukaryotes.",
+    "keywords": [
+      "Lempel-Ziv (LZ) measure",
+      "Shannon entropy",
+      "Tetrahymena",
+      "cis-regulatory elements",
+      "explainable machine learning",
+      "intron retention",
+      "multiple mRNA variants"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Mancini, Alessio",
+        "Merelli, Emanuela",
+        "Piangerelli, Marco",
+        "Pucciarelli, Sandra",
+        "Vito, Leonardo"
+      ],
+      "short_names": [
+        "Mancini A",
+        "Merelli E",
+        "Piangerelli M",
+        "Pucciarelli S",
+        "Vito L"
+      ],
+      "auids": [],
+      "affiliations": [
+        "School of Biosciences and Veterinary Medicine, Biosciences and Biotechnology Division, University of Camerino, Camerino, Italy.",
+        "Clinical Laboratory Unit, Senigallia Hospital, Azienda Sanitaria Territoriale (AST), Ancona, Italy.",
+        "School of Science and Technology, Computer Science Division, University of Camerino, Camerino, Italy.",
+        "School of Science and Technology, Computer Science Division, University of Camerino, Camerino, Italy.",
+        "R&D Division, Vici & C. S.p.A., Santarcangelo di Romagna (RN), Italy.",
+        "School of Biosciences and Veterinary Medicine, Biosciences and Biotechnology Division, University of Camerino, Camerino, Italy.",
+        "School of Science and Technology, Computer Science Division, University of Camerino, Camerino, Italy.",
+        "R&D Division, Logical System Srl, Jesi (AN), Italy."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Mancini, Alessio",
+        "short_name": "Mancini A",
+        "identifiers": [],
+        "affiliations": [
+          "School of Biosciences and Veterinary Medicine, Biosciences and Biotechnology Division, University of Camerino, Camerino, Italy.",
+          "Clinical Laboratory Unit, Senigallia Hospital, Azienda Sanitaria Territoriale (AST), Ancona, Italy."
+        ]
+      },
+      {
+        "full_name": "Merelli, Emanuela",
+        "short_name": "Merelli E",
+        "identifiers": [],
+        "affiliations": [
+          "School of Science and Technology, Computer Science Division, University of Camerino, Camerino, Italy."
+        ]
+      },
+      {
+        "full_name": "Piangerelli, Marco",
+        "short_name": "Piangerelli M",
+        "identifiers": [],
+        "affiliations": [
+          "School of Science and Technology, Computer Science Division, University of Camerino, Camerino, Italy.",
+          "R&D Division, Vici & C. S.p.A., Santarcangelo di Romagna (RN), Italy."
+        ]
+      },
+      {
+        "full_name": "Pucciarelli, Sandra",
+        "short_name": "Pucciarelli S",
+        "identifiers": [],
+        "affiliations": [
+          "School of Biosciences and Veterinary Medicine, Biosciences and Biotechnology Division, University of Camerino, Camerino, Italy."
+        ]
+      },
+      {
+        "full_name": "Vito, Leonardo",
+        "short_name": "Vito L",
+        "identifiers": [],
+        "affiliations": [
+          "School of Science and Technology, Computer Science Division, University of Camerino, Camerino, Italy.",
+          "R&D Division, Logical System Srl, Jesi (AN), Italy."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Frontiers in bioinformatics"
+    ],
+    "journal_abbrev": [
+      "Front Bioinform"
+    ],
+    "pub_date": "2026",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/02 13:37",
+    "fetched_at": "2026-10-04 10:22:40"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42824423",
+      "25110928",
+      "29062321",
+      "42475469",
+      "34570750",
+      "17324281",
+      "25771198",
+      "28364390",
+      "24222354",
+      "12968682",
+      "19446035",
+      "7890647",
+      "8246985",
+      "21247441",
+      "9774478",
+      "37879864",
+      "16199547",
+      "8255769",
+      "24239545",
+      "18202663",
+      "10551782",
+      "9856491",
+      "20163725",
+      "23071450",
+      "33887804",
+      "23301075",
+      "19001018",
+      "26246046",
+      "16260721",
+      "35447236",
+      "19683670",
+      "29236736",
+      "35723015",
+      "28419974",
+      "42245286",
+      "1309264",
+      "18688272",
+      "36307006",
+      "9555046",
+      "2402440",
+      "26796962",
+      "29959282",
+      "8953241",
+      "17156453",
+      "40065603",
+      "17001642",
+      "25784052",
+      "22913769",
+      "21415568",
+      "24709818",
+      "11068191",
+      "8919913",
+      "42787793",
+      "42327213",
+      "41316016",
+      "40870034",
+      "27543438",
+      "11410667",
+      "34948044",
+      "17881373",
+      "42363761",
+      "10627481",
+      "9358179",
+      "9111348",
+      "18456862",
+      "8634918",
+      "12140320",
+      "15046980",
+      "33253191",
+      "3386632",
+      "17332017",
+      "18024426",
+      "15468927",
+      "21787833",
+      "24476532",
+      "18194514",
+      "41278789",
+      "36303034",
+      "42391237",
+      "15452114",
+      "35018432",
+      "16971948",
+      "24398628",
+      "19858364",
+      "34990853",
+      "10219960",
+      "7926724",
+      "9225466",
+      "9553088",
+      "2307372",
+      "7473725",
+      "8413203",
+      "19682432",
+      "40473812",
+      "36949544",
+      "31581208",
+      "30904096",
+      "28927534",
+      "2365710",
+      "8036160"
+    ],
+    "review": [
+      "42824423",
+      "24222354",
+      "16199547",
+      "33887804",
+      "36307006",
+      "8953241",
+      "25784052",
+      "40870034",
+      "18024426",
+      "15468927",
+      "21787833",
+      "30904096"
+    ],
+    "pmc": [
+      "13627988"
+    ],
+    "entrez": {},
+    "external": [],
+    "text_mined": []
+  }
+}

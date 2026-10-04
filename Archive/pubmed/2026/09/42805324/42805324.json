@@ -1,0 +1,344 @@
+{
+  "identity": {
+    "pmid": "42805324",
+    "doi": "10.1016/j.jmb.2026.170040",
+    "title": "TAD boundary disruption in Xq27-q28 deletions rewires 3D chromatin architecture and may predispose to primary skewed X chromosome inactivation."
+  },
+  "content": {
+    "abstract": "In placental females, X chromosome inactivation (XCI) establishes random monoallelic expression as XIST RNA spreads along a pre-existing three-dimensional (3D) chromatin contact network. How structural variants reshape this 3D landscape to influence XCI choice remains unclear. We previously reported two female individuals with overlapping Xq27-q28 deletions but discordant XCI, skewed in one and random in the other. By re-evaluating 17 reported cases, we found that skewing in a subset was not readily explained by classical routes of primary bias from the canonical XCI machinery or by secondary cell selection. Using the deep-learning model Orca, we predicted that the deletion in the skewed case would fuse disparate topologically associating domains (TADs) into a neo-TAD. Analysis of human preimplantation Hi-C data showed that the relevant TAD boundaries were already apparent by the 8-cell stage, before stable XCI. 3D DNA-FISH revealed reduced spatial distances between selected loci, consistent with the Orca-predicted neo-TAD architecture, in patient-derived naive iPSCs and lymphoblastoid cells. Orca-predicted neo-TAD formation was also identified in three of six random-XCI cases, indicating that it is insufficient on its own to bias XCI. We identified 86 candidate Polycomb-associated loci with chromatin features consistent with Polycomb seed sites on the human X chromosome. The skewed case showed the most extensive disruption of these candidate loci, although candidate-locus disruption was also observed in random-XCI cases. We therefore propose a working seed convergence model in which the convergence of predicted neo-TAD formation and extensive disruption of candidate Polycomb-associated loci may predispose to skewed XCI.",
+    "keywords": [
+      "X chromosome inactivation (XCI)",
+      "Xq27-q28 deletion",
+      "candidate Polycomb-associated loci",
+      "induced pluripotent stem cells (iPSCs)",
+      "neo-TAD",
+      "skewed XCI",
+      "topologically associating domain (TAD)"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Katoh, Kimiko",
+        "Nishide, Hiroyo",
+        "Hamaguchi, Yu",
+        "Soga, Minami",
+        "Aiba, Kaori",
+        "Kato, Kagayaki",
+        "Tsutsumi, Motosuke",
+        "Sakamoto, Joe",
+        "Solovieva, Elena",
+        "Nemoto, Tomomi",
+        "Era, Takumi",
+        "Hamada, Michiaki",
+        "Uchiyama, Ikuo",
+        "Wakamatsu, Nobuaki",
+        "Asai, Masato"
+      ],
+      "short_names": [
+        "Katoh K",
+        "Nishide H",
+        "Hamaguchi Y",
+        "Soga M",
+        "Aiba K",
+        "Kato K",
+        "Tsutsumi M",
+        "Sakamoto J",
+        "Solovieva E",
+        "Nemoto T",
+        "Era T",
+        "Hamada M",
+        "Uchiyama I",
+        "Wakamatsu N",
+        "Asai M"
+      ],
+      "auids": [],
+      "affiliations": [
+        "Department of Disease Model, Institute for Developmental Research, Aichi Developmental Disability Center, Aichi, Japan. Electronic address: kkatoh@inst-hsc.jp.",
+        "Laboratory of Genome Informatics, National Institute for Basic Biology, Aichi, Japan.",
+        "Department of Electrical Engineering and Bioscience, Faculty of Science and Engineering, Waseda University, Tokyo, Japan.",
+        "Department of Cell Modulation, Institute of Molecular Embryology and Genetics, Kumamoto University, Kumamoto, Japan.",
+        "Department of Neurology, Aichi Children's Health and Medical Center, Aichi, Japan.",
+        "Optics and Imaging Facility, Trans-Scale Biology Center, National Institute for Basic Biology, Aichi, Japan.",
+        "Division of Biophotonics, National Institute for Physiological Sciences, Aichi, Japan; Department of Medical Engineering, National Defense Medical College, Saitama, Japan.",
+        "Division of Biophotonics, National Institute for Physiological Sciences, Aichi, Japan; Department of Pharmacology, Faculty of Medicine, Hamamatsu University School of Medicine, Shizuoka, Japan.",
+        "Department of Electrical Engineering and Bioscience, Faculty of Science and Engineering, Waseda University, Tokyo, Japan.",
+        "Division of Biophotonics, National Institute for Physiological Sciences, Aichi, Japan.",
+        "Department of Cell Modulation, Institute of Molecular Embryology and Genetics, Kumamoto University, Kumamoto, Japan.",
+        "Department of Electrical Engineering and Bioscience, Faculty of Science and Engineering, Waseda University, Tokyo, Japan.",
+        "Laboratory of Genome Informatics, National Institute for Basic Biology, Aichi, Japan.",
+        "Department of Pathology and Host Defense, Faculty of Medicine, Kagawa University, Kagawa, Japan.",
+        "Department of Disease Model, Institute for Developmental Research, Aichi Developmental Disability Center, Aichi, Japan; Division of Neurochemistry, Nagoya University Graduate School of Medicine, Aichi, Japan. Electronic address: masato-a@inst-hsc.jp."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Katoh, Kimiko",
+        "short_name": "Katoh K",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Disease Model, Institute for Developmental Research, Aichi Developmental Disability Center, Aichi, Japan. Electronic address: kkatoh@inst-hsc.jp."
+        ]
+      },
+      {
+        "full_name": "Nishide, Hiroyo",
+        "short_name": "Nishide H",
+        "identifiers": [],
+        "affiliations": [
+          "Laboratory of Genome Informatics, National Institute for Basic Biology, Aichi, Japan."
+        ]
+      },
+      {
+        "full_name": "Hamaguchi, Yu",
+        "short_name": "Hamaguchi Y",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Electrical Engineering and Bioscience, Faculty of Science and Engineering, Waseda University, Tokyo, Japan."
+        ]
+      },
+      {
+        "full_name": "Soga, Minami",
+        "short_name": "Soga M",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Cell Modulation, Institute of Molecular Embryology and Genetics, Kumamoto University, Kumamoto, Japan."
+        ]
+      },
+      {
+        "full_name": "Aiba, Kaori",
+        "short_name": "Aiba K",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Neurology, Aichi Children's Health and Medical Center, Aichi, Japan."
+        ]
+      },
+      {
+        "full_name": "Kato, Kagayaki",
+        "short_name": "Kato K",
+        "identifiers": [],
+        "affiliations": [
+          "Optics and Imaging Facility, Trans-Scale Biology Center, National Institute for Basic Biology, Aichi, Japan."
+        ]
+      },
+      {
+        "full_name": "Tsutsumi, Motosuke",
+        "short_name": "Tsutsumi M",
+        "identifiers": [],
+        "affiliations": [
+          "Division of Biophotonics, National Institute for Physiological Sciences, Aichi, Japan; Department of Medical Engineering, National Defense Medical College, Saitama, Japan."
+        ]
+      },
+      {
+        "full_name": "Sakamoto, Joe",
+        "short_name": "Sakamoto J",
+        "identifiers": [],
+        "affiliations": [
+          "Division of Biophotonics, National Institute for Physiological Sciences, Aichi, Japan; Department of Pharmacology, Faculty of Medicine, Hamamatsu University School of Medicine, Shizuoka, Japan."
+        ]
+      },
+      {
+        "full_name": "Solovieva, Elena",
+        "short_name": "Solovieva E",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Electrical Engineering and Bioscience, Faculty of Science and Engineering, Waseda University, Tokyo, Japan."
+        ]
+      },
+      {
+        "full_name": "Nemoto, Tomomi",
+        "short_name": "Nemoto T",
+        "identifiers": [],
+        "affiliations": [
+          "Division of Biophotonics, National Institute for Physiological Sciences, Aichi, Japan."
+        ]
+      },
+      {
+        "full_name": "Era, Takumi",
+        "short_name": "Era T",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Cell Modulation, Institute of Molecular Embryology and Genetics, Kumamoto University, Kumamoto, Japan."
+        ]
+      },
+      {
+        "full_name": "Hamada, Michiaki",
+        "short_name": "Hamada M",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Electrical Engineering and Bioscience, Faculty of Science and Engineering, Waseda University, Tokyo, Japan."
+        ]
+      },
+      {
+        "full_name": "Uchiyama, Ikuo",
+        "short_name": "Uchiyama I",
+        "identifiers": [],
+        "affiliations": [
+          "Laboratory of Genome Informatics, National Institute for Basic Biology, Aichi, Japan."
+        ]
+      },
+      {
+        "full_name": "Wakamatsu, Nobuaki",
+        "short_name": "Wakamatsu N",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Pathology and Host Defense, Faculty of Medicine, Kagawa University, Kagawa, Japan."
+        ]
+      },
+      {
+        "full_name": "Asai, Masato",
+        "short_name": "Asai M",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Disease Model, Institute for Developmental Research, Aichi Developmental Disability Center, Aichi, Japan; Division of Neurochemistry, Nagoya University Graduate School of Medicine, Aichi, Japan. Electronic address: masato-a@inst-hsc.jp."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Journal of molecular biology"
+    ],
+    "journal_abbrev": [
+      "J Mol Biol"
+    ],
+    "pub_date": "2026 Sep 28",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/28 23:28",
+    "fetched_at": "2026-10-04 10:22:40"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42805324",
+      "32485067",
+      "27437574",
+      "28401797",
+      "26786180",
+      "25506417",
+      "17431892",
+      "31743397",
+      "33545030",
+      "32000688",
+      "40025499",
+      "34445777",
+      "36879111",
+      "31698618",
+      "42368022",
+      "40014450",
+      "31398259",
+      "34749781",
+      "22495304",
+      "41890091",
+      "32680558",
+      "31781162",
+      "28582519",
+      "23469258",
+      "39638559",
+      "26235224",
+      "37254161",
+      "41530571",
+      "37081156",
+      "42180998",
+      "19429659",
+      "25919240",
+      "25640760",
+      "39375734",
+      "21276761",
+      "20593031",
+      "38937070",
+      "22948768",
+      "11432961",
+      "30229980",
+      "36943625",
+      "33022222",
+      "38822397",
+      "9618446",
+      "19005673",
+      "28766050",
+      "31974854",
+      "33910018",
+      "37408072",
+      "15378546",
+      "26132880",
+      "23634718",
+      "37139561",
+      "37723501",
+      "16680199",
+      "19116729",
+      "17342157",
+      "29654311",
+      "39754175",
+      "28663000",
+      "41029434",
+      "12497247",
+      "36299587",
+      "35413815",
+      "41090715",
+      "18361425",
+      "32673569",
+      "36609218",
+      "39294757",
+      "18445549",
+      "25043884",
+      "36695960",
+      "39999165",
+      "32379046",
+      "35721087",
+      "27262949",
+      "42475469",
+      "21445353",
+      "38627676",
+      "12605437",
+      "20170342",
+      "27706140",
+      "24162848",
+      "41828556",
+      "34311045",
+      "34093998",
+      "25338305",
+      "17217653",
+      "25503791",
+      "18097474",
+      "40796890",
+      "22375556",
+      "40131313",
+      "34415530",
+      "34131144",
+      "32025035",
+      "34128148",
+      "39975382",
+      "26904175",
+      "23092449"
+    ],
+    "review": [
+      "42805324",
+      "28582519",
+      "42180998",
+      "39375734",
+      "9618446",
+      "26132880"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://linkinghub.elsevier.com/retrieve/pii/S0022-2836(26)00413-4",
+        "provider": "Elsevier Science",
+        "category": "Full Text Sources",
+        "attribute": "subscription/membership/fee required",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

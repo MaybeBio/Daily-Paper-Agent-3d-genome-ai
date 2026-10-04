@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42814605",
+  "title": "MMP2Mol: a matched molecular pairs-based framework for ligand-based de novo drug design.",
+  "authors": "Chen, Dekun; Li, Hui; Liu, Jianwang; Jiang, Yueping; Cao, Dongsheng; Liu, Shao",
+  "journal": "Briefings in bioinformatics",
+  "published_date": "2026-09-30",
+  "window": {
+    "start": "2026-09-27",
+    "end": "2026-10-03"
+  },
+  "score": 2,
+  "one_liner_zh": "该文提出基于匹配分子对与化学语言模型的配体药物设计框架，对象为小分子生成而非染色质/三维基因组，且无空间架构建模或可迁移的染色质组织方法，仅与AI生成方法有微弱关联。",
+  "abstract": "Designing target-relevant molecules is particularly difficult when only limited bioactivity data are available. We present MMP2Mol, a ligand-based generative framework that combines matched molecular pair (MMP) analysis with a pretrained chemical language model (CLM). MMP2Mol extracts target-specific structure-activity transformations from available ligands, applies the prioritized transformations to construct a virtual focused library, and fine-tunes the CLM toward target-relevant chemical space. The framework was evaluated across ten therapeutic targets and compared with direct CLM fine-tuning, Seq2Seq, and Reinvent 4. In repeated experiments on F2, BRD4, and PARP1, MMP2Mol achieved 92.8%-95.3% validity and 99.5%-99.7% uniqueness. When both methods were evaluated against the same original active-compound reference, molecular novelty increased from 57.8%-64.0% for the CLM baseline to 79.8%-82.0% for MMP2Mol, while internal diversity remained broadly comparable. The gains were most evident for F2 and BRD4, whereas performance varied across the smaller target datasets. These findings indicate that MMP-derived chemical knowledge can improve the focus and reproducibility of ligand-based molecular generation under limited-data conditions. MMP2Mol therefore provides a practical strategy for computational candidate generation and prioritization in early-stage drug discovery.",
+  "abstract_zh": "当仅有有限的生物活性数据可用时，设计靶标相关分子尤为困难。我们提出了MMP2Mol，一种基于配体的生成框架，它将匹配分子对（MMP）分析与预训练的化学语言模型（CLM）相结合。MMP2Mol从可用配体中提取靶标特异性的结构-活性转换，应用优先排序的转换构建虚拟聚焦库，并微调CLM以朝向靶标相关的化学空间。该框架在十个治疗靶标上进行了评估，并与直接CLM微调、Seq2Seq和Reinvent 4进行了比较。在F2、BRD4和PARP1的重复实验中，MMP2Mol实现了92.8%-95.3%的有效性和99.5%-99.7%的独特性。当两种方法针对相同的原始活性化合物参考进行评估时，分子新颖性从CLM基线的57.8%-64.0%增加到MMP2Mol的79.8%-82.0%，而内部多样性保持大致相当。这些增益在F2和BRD4上最为显著，而在较小的靶标数据集上性能有所变化。这些发现表明，MMP衍生的化学知识可以在有限数据条件下提高基于配体的分子生成的聚焦性和可重复性。因此，MMP2Mol为早期药物发现中的计算候选生成和优先级排序提供了一种实用策略。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42814605/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42814605/",
+  "paper_page_path": "papers/pubmed/42814605/index.html"
+}

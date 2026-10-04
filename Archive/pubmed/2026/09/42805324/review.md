@@ -1,0 +1,101 @@
+## Review setup
+- **Input scope** Abstract only
+- **Assessment boundary** Claims and conclusions as presented in the abstract; no access to methods, figures, tables, or supplementary materials
+- **Shared manuscript claim summary** The authors propose that Xq27-q28 deletions can predispose to primary skewed X chromosome inactivation (XCI) through a combination of predicted neo-TAD formation and extensive disruption of candidate Polycomb-associated loci, based on re-evaluation of 17 reported cases, deep-learning predictions, human preimplantation Hi-C data, and 3D DNA-FISH in patient-derived cells.
+- **Visible evidence base** Abstract text only; no quantitative data, statistical analyses, or methodological details provided
+- **Missing materials affecting confidence** Full methods, all figures and tables, supplementary data, case-level details for the 17 re-evaluated cases, Hi-C data processing details, Orca model parameters and validation, DNA-FISH probe design and quantification, and any statistical tests
+
+## Reviewer
+- **Overall assessment** The abstract presents a potentially interesting hypothesis linking structural variant-induced 3D genome reorganization to XCI skewing, but the evidence as summarized is insufficient to establish causality or even a robust association. The working model is speculative and the key claims are supported only by qualitative statements without quantitative support. The manuscript may have merit, but the current abstract does not provide enough detail to assess technical soundness or the strength of the conclusions.
+- **Who would be interested in the results, and why** Researchers in X chromosome inactivation, 3D chromatin architecture, topologically associating domain biology, and clinical genetics of X-linked structural variants would find this relevant. The potential link between TAD disruption and XCI skewing could inform understanding of variable penetrance in X-linked disorders, which is of broad interest to human geneticists.
+- **Major strengths** The study addresses an important and under-explored question about how structural variants influence XCI choice through 3D genome organization. The use of multiple complementary approaches (clinical case re-evaluation, deep-learning prediction, preimplantation Hi-C, and DNA-FISH) is commendable. The authors acknowledge that neo-TAD formation alone is insufficient, which shows scientific caution.
+- **Major Concerns**  
+  - **Concern ID** R1-M1  
+  - **Severity** Major  
+  - **Blocking** Yes  
+  - **Axis** Evidence sufficiency  
+  - **Claim pointer** The claim that the deletion in the skewed case would fuse disparate TADs into a neo-TAD, and that this is supported by DNA-FISH showing reduced spatial distances.  
+  - **Evidence pointer** Abstract; location not provided  
+  - **Concern** The abstract states that 3D DNA-FISH revealed reduced spatial distances between selected loci in patient-derived cells, but provides no quantitative data, no number of cells examined, no statistical comparison to controls, and no information on which loci were selected or how they relate to the predicted neo-TAD.  
+  - **Why it matters** Without quantitative evidence and appropriate controls, the DNA-FISH result cannot be distinguished from technical variation or cell-type-specific differences unrelated to the deletion. This is a central piece of evidence for the neo-TAD model.  
+  - **Resolution test** Provide quantitative distance measurements with effect sizes, statistical tests, number of nuclei, and appropriate control cell lines. Show that the reduced distances are specific to the predicted neo-TAD region and not a global chromatin compaction effect.  
+  - **Concern ID** R1-M2  
+  - **Severity** Major  
+  - **Blocking** Yes  
+  - **Axis** Causal inference  
+  - **Claim pointer** The proposal that convergence of predicted neo-TAD formation and extensive disruption of candidate Polycomb-associated loci may predispose to skewed XCI.  
+  - **Evidence pointer** Abstract; location not provided  
+  - **Concern** The abstract reports that three of six random-XCI cases also showed predicted neo-TAD formation, and that candidate-locus disruption was observed in random-XCI cases. This means neither feature is specific to the skewed case. The claim of a "working seed convergence model" is presented without any statistical or probabilistic framework to support the idea that the combination is more than coincidental.  
+  - **Why it matters** The core hypothesis of the paper rests on the combination of two features being predictive of skewing, but with only one skewed case and six random cases, the power to establish this is extremely limited. The abstract does not report whether the random-XCI cases with neo-TAD formation also had candidate-locus disruption, which is essential to evaluate the convergence model.  
+  - **Resolution test** Provide a clear contingency analysis showing the distribution of neo-TAD formation and candidate-locus disruption across all cases. If possible, include additional skewed cases or a statistical model that accounts for the observed frequencies.  
+  - **Concern ID** R1-M3  
+  - **Severity** Major  
+  - **Blocking** Yes  
+  - **Axis** Methodological transparency  
+  - **Claim pointer** The re-evaluation of 17 reported cases leading to the conclusion that skewing in a subset was not readily explained by classical routes.  
+  - **Evidence pointer** Abstract; location not provided  
+  - **Concern** The abstract provides no details on how the 17 cases were selected, what criteria were used to classify XCI status, how "classical routes of primary bias" were defined and excluded, or how secondary cell selection was ruled out. This re-evaluation is foundational to the entire study, yet it is described in a single sentence.  
+  - **Why it matters** If the case classification or the exclusion of alternative explanations is flawed, the entire premise of the study collapses. The reader cannot assess whether the subset of cases with unexplained skewing is genuinely unexplained or an artifact of incomplete analysis.  
+  - **Resolution test** Provide a detailed supplementary table of all 17 cases with clinical features, XCI status, deletion coordinates, and the specific reasoning for excluding classical mechanisms. Describe the criteria for "not readily explained" in operational terms.  
+  - **Concern ID** R1-M4  
+  - **Severity** Major  
+  - **Blocking** No  
+  - **Axis** Model validation  
+  - **Claim pointer** The deep-learning model Orca predicted that the deletion in the skewed case would fuse disparate TADs into a neo-TAD.  
+  - **Evidence pointer** Abstract; location not provided  
+  - **Concern** The abstract does not describe how Orca was validated for this specific application, what input data were used, how the prediction confidence was assessed, or whether the model has been benchmarked against experimentally validated TAD disruption events.  
+  - **Why it matters** Deep-learning predictions are only as reliable as their training data and validation. Without evidence that Orca accurately predicts neo-TAD formation in the context of large deletions on the X chromosome, the prediction remains an unverified computational assertion.  
+  - **Resolution test** Provide model validation metrics, including performance on known TAD disruption cases, and report prediction confidence intervals or alternative model outputs for the specific deletion studied.  
+  - **Concern ID** R1-M5  
+  - **Severity** Major  
+  - **Blocking** No  
+  - **Axis** Developmental relevance  
+  - **Claim pointer** The statement that relevant TAD boundaries were already apparent by the 8-cell stage, before stable XCI, based on human preimplantation Hi-C data.  
+  - **Evidence pointer** Abstract; location not provided  
+  - **Concern** The abstract does not specify which preimplantation Hi-C dataset was used, how many embryos or cells were analyzed, how TAD boundaries were called at this stage, or whether the specific boundaries relevant to the Xq27-q28 region were robustly detected.  
+  - **Why it matters** The developmental timing argument is important for distinguishing primary effects on XCI choice from secondary consequences of skewing. If the Hi-C data are of low resolution or from a limited number of embryos, the boundary calls may be unreliable.  
+  - **Resolution test** Provide details on the dataset, quality metrics, boundary-calling methodology, and confidence in the specific boundaries at the Xq27-q28 locus.  
+- **Minor Comments**  
+  - **Concern ID** R1-m1  
+  - **Severity** Minor  
+  - **Axis** Clarity  
+  - **Affected element** Definition of "candidate Polycomb-associated loci"  
+  - **Evidence pointer** Abstract; location not provided  
+  - **Issue** The abstract states that 86 candidate loci were identified but does not explain the criteria for candidacy or the chromatin features used.  
+  - **Required correction** Briefly define the criteria in the abstract or refer to a methods section with clear operational definitions.  
+  - **Concern ID** R1-m2  
+  - **Severity** Minor  
+  - **Axis** Terminology  
+  - **Affected element** Use of "primary skewed"  
+  - **Evidence pointer** Abstract; location not provided  
+  - **Issue** The term "primary skewed" is used without explicit definition, and the distinction from secondary skewing is only implied.  
+  - **Required correction** Define "primary skewed" explicitly in the abstract or introduction.  
+  - **Concern ID** R1-m3  
+  - **Severity** Minor  
+  - **Axis** Reporting completeness  
+  - **Affected element** Sample types for DNA-FISH  
+  - **Evidence pointer** Abstract; location not provided  
+  - **Issue** The abstract mentions patient-derived naive iPSCs and lymphoblastoid cells but does not state whether both cell types were from the same patient or whether results were consistent across cell types.  
+  - **Required correction** Clarify the sample provenance and whether DNA-FISH results were concordant across cell types.  
+  - **Concern ID** R1-m4  
+  - **Severity** Minor  
+  - **Axis** Statistical reporting  
+  - **Affected element** "Reduced spatial distances"  
+  - **Evidence pointer** Abstract; location not provided  
+  - **Issue** No effect size or p-value is reported for the DNA-FISH distance measurements.  
+  - **Required correction** Include representative statistics in the abstract or refer to figures with full statistical reporting.  
+- **Technical failings that need to be addressed before the case is established** R1-M1 (quantitative DNA-FISH evidence), R1-M2 (statistical support for the convergence model), R1-M3 (transparent case re-evaluation methodology), R1-M4 (Orca validation), R1-M5 (preimplantation Hi-C data quality)
+- **Assessment against Nature-style criteria**  
+  - **Originality** The idea that structural variant-induced TAD disruption could influence XCI choice is novel and not well explored in the literature. This is a strength.  
+  - **Scientific importance** If established, the findings could have implications for understanding variable XCI skewing in X-linked disorders. However, the importance is currently limited by the speculative nature of the model and the small number of cases.  
+  - **Interdisciplinary readership** The topic bridges 3D genomics, XCI biology, and clinical genetics, which could attract a broad readership. The abstract is written in a way that is largely accessible to nonspecialists, though some terms (e.g., "seed convergence model") are introduced without sufficient context.  
+  - **Technical soundness** Cannot be adequately assessed from the abstract alone. The lack of quantitative data and methodological detail prevents evaluation of the technical rigor.  
+  - **Readability for nonspecialists** The abstract is generally readable, but the logical flow from case re-evaluation to computational prediction to experimental validation to model proposal is dense and would benefit from clearer signposting.  
+- **Recommendation posture** Currently not established from the provided evidence. The hypothesis is interesting and the multi-pronged approach is promising, but the abstract does not provide sufficient quantitative or methodological detail to support the central claims. The authors should be encouraged to resubmit with full data, but the case for a causal link between TAD disruption and XCI skewing is not made in the current form.
+
+## Risk / unsupported claims
+- The claim that the deletion in the skewed case would fuse disparate TADs into a neo-TAD is unsupported without Orca validation details and experimental confirmation beyond qualitative DNA-FISH statements.
+- The claim that the convergence of neo-TAD formation and candidate-locus disruption "may predispose" to skewed XCI is unsupported because the abstract does not report the co-occurrence of these features in the random-XCI cases.
+- The claim that skewing in a subset of cases was "not readily explained" by classical routes is unsupported without a detailed case-by-case analysis.
+- The developmental relevance argument based on 8-cell stage Hi-C data is unverifiable without dataset details and boundary-calling confidence metrics.
+- The identification of 86 candidate Polycomb-associated loci is unverifiable without criteria and validation.

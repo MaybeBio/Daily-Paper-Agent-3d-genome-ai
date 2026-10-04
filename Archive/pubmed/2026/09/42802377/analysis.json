@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42802377",
+  "title": "Deep Learning Predicts Hematopoietic Stem Cell Aging From 3D Chromatin Images.",
+  "authors": "Picazo, Pablo Ianez; Mejia-Ramirez, Eva; Di Bari, Dario; Vitali, Elena; Florian, Maria Carolina; Petrone, Paula",
+  "journal": "Aging cell",
+  "published_date": "2026-09-28",
+  "window": {
+    "start": "2026-09-27",
+    "end": "2026-10-03"
+  },
+  "score": 7,
+  "one_liner_zh": "该文用CNN从3D染色质图像预测造血干细胞衰老，虽对象为染色质组织且用深度学习方法，但聚焦衰老表型而非三维基因组结构（TAD/环等）建模，方法可迁移但结构/调控深度有限。",
+  "abstract": "The functional decline of the hematopoietic system during aging affects organismal function and contributes to reduced healthspan. Quantifying hematopoietic aging holds great scientific and clinical relevance. Alterations in chromatin architecture are a well-established hallmark of aging that encode rich and informative signatures of the aging process, yet they remain largely unexplored as quantitative markers. Here, we present an interpretable deep learning approach based on convolutional neural networks, ChromAgeNet, that learns changes in the spatial features of chromatin architecture upon aging of hematopoietic stem cells (HSCs). We trained our algorithm on 3D microscope images of DAPI-stained HSC nuclei to discriminate between young and aged murine HSCs, achieving an AUROC of 0.77 +/- 0.03. This approach outperforms classical machine learning models trained on handcrafted chromatin features from the same dataset. We then applied explainable artificial intelligence techniques, identifying chromatin entropy, peripheral heterochromatin, and chromatin condensates as predictive markers. As a proof of concept, we evaluated the potential of our model as a phenotypic screening tool for aged HSCs treated with epigenetic drugs to detect rejuvenation. Altogether, we demonstrate that changes in chromatin organization can be modeled via machine learning to predict age-associated chromatin states in the hematopoietic compartment. Our developed framework, ChromAgeNet, serves as an interpretable algorithm to unravel the intricate relationship between chromatin changes and stem cell aging, and advance high-throughput drug screening for rejuvenation therapies.",
+  "abstract_zh": "衰老过程中造血系统的功能衰退会影响机体功能，并导致健康寿命缩短。量化造血系统衰老具有重要的科学和临床意义。染色质结构的改变是公认的衰老标志，编码了衰老过程中丰富且信息量大的特征，但作为定量标记仍鲜有探索。在此，我们提出一种基于卷积神经网络的可解释深度学习方法ChromAgeNet，用于学习造血干细胞（HSCs）衰老过程中染色质结构空间特征的变化。我们在DAPI染色的HSC细胞核三维显微镜图像上训练算法，以区分年轻和年老小鼠HSCs，实现了0.77 +/- 0.03的AUROC。该方法优于在同一数据集上基于手工染色质特征训练的经典机器学习模型。随后，我们应用可解释人工智能技术，识别出染色质熵、外周异染色质和染色质凝聚体作为预测标记。作为概念验证，我们评估了模型作为表型筛选工具的潜力，用于检测经表观遗传药物处理的年老HSCs的年轻化效果。总体而言，我们证明了染色质组织的变化可通过机器学习建模，以预测造血区室中与年龄相关的染色质状态。我们开发的框架ChromAgeNet作为一种可解释算法，有助于揭示染色质变化与干细胞衰老之间的复杂关系，并推进年轻化疗法的高通量药物筛选。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42802377/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42802377/",
+  "paper_page_path": "papers/pubmed/42802377/index.html"
+}

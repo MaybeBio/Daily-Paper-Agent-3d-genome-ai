@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42800003",
+  "title": "Mechanism of SGLT2 inhibitors in improving immune imbalance in diabetic mice with sepsis via regulating macrophage M2 polarization through the APOC1/HMGB1/TLR4 axis.",
+  "authors": "You, TingTing; Yang, HuoBao; Chen, Gang",
+  "journal": "Journal of immunology (Baltimore, Md. : 1950)",
+  "published_date": "2026-09-27",
+  "window": {
+    "start": "2026-09-27",
+    "end": "2026-10-03"
+  },
+  "score": 0,
+  "one_liner_zh": "该研究探讨SGLT2抑制剂通过APOC1/HMGB1/TLR4轴调节巨噬细胞极化改善脓毒症合并糖尿病小鼠免疫失衡，属于免疫炎症机制研究，与三维基因组/染色质组织建模及AI/分子模拟方法无关。",
+  "abstract": "This study aimed to investigate the mechanism by which the sodium-glucose cotransporter-2 (SGLT2) inhibitor dapagliflozin improves immune imbalance in sepsis with diabetes, focusing on its regulation of macrophage M2 polarization through the APOC1/HMGB1/TLR4 axis. A mouse model of type 2 diabetes was established through intraperitoneal injection of streptozotocin, after which sepsis was induced by cecal ligation and puncture. For in vitro studies, RAW264.7 macrophages and bone marrow-derived macrophages were exposed to high glucose and lipopolysaccharide. Molecular docking was employed to examine potential binding between dapagliflozin and APOC1. Organ pathology in lung, liver, and kidney was evaluated using hematoxylin and eosin staining and biochemical assay kits. Expression levels of APOC1, HMGB1, TLR4, and macrophage M1/M2 markers were analyzed via immunohistochemistry and immunofluorescence. Inflammatory cytokine levels were quantified with enzyme-linked immunosorbent assay. The SGLT2 inhibitor dapagliflozin effectively alleviated lung, liver, kidney injury and dysfunction and reduced inflammatory responses in diabetic mice with sepsis. The treatment also decreased inflammatory cytokine levels in the high glucose/lipopolysaccharide-stimulated cellular model. Furthermore, dapagliflozin treatment significantly increased the levels of M2 macrophage markers in both in vivo and in vitro models. Mechanistically, dapagliflozin was found to target, bind to, and downregulate APOC1 expression. Further investigations revealed that APOC1 promotes macrophage M1 polarization via the APOC1/HMGB1/TLR4 axis, an effect reversed by dapagliflozin. The SGLT2 inhibitor dapagliflozin ameliorates organ damage and inflammation in sepsis with diabetes by promoting macrophage M2 polarization through inhibition of the APOC1/HMGB1/TLR4 axis.",
+  "abstract_zh": "本研究旨在探讨钠-葡萄糖协同转运蛋白2（SGLT2）抑制剂达格列净改善脓毒症合并糖尿病免疫失衡的机制，重点关注其通过APOC1/HMGB1/TLR4轴调控巨噬细胞M2极化。通过腹腔注射链脲佐菌素建立2型糖尿病小鼠模型，随后采用盲肠结扎穿刺法诱导脓毒症。体外研究中，RAW264.7巨噬细胞和骨髓来源巨噬细胞暴露于高糖和脂多糖。采用分子对接 (molecular docking) 检测达格列净与APOC1之间的潜在结合。肺、肝和肾的器官病理通过苏木精-伊红染色和生化检测试剂盒评估。APOC1、HMGB1、TLR4及巨噬细胞M1/M2标志物的表达水平通过免疫组织化学和免疫荧光分析。炎症细胞因子水平通过酶联免疫吸附测定 (enzyme-linked immunosorbent assay) 定量。SGLT2抑制剂达格列净有效减轻了脓毒症合并糖尿病小鼠的肺、肝、肾损伤及功能障碍，并降低了炎症反应。该治疗还降低了高糖/脂多糖刺激细胞模型中的炎症细胞因子水平。此外，达格列净处理在体内和体外模型中均显著增加了M2巨噬细胞标志物的水平。机制上，达格列净被发现可靶向结合并下调APOC1表达。进一步研究表明，APOC1通过APOC1/HMGB1/TLR4轴促进巨噬细胞M1极化，而达格列净可逆转此效应。SGLT2抑制剂达格列净通过抑制APOC1/HMGB1/TLR4轴促进巨噬细胞M2极化，从而改善脓毒症合并糖尿病的器官损伤和炎症。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42800003/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42800003/",
+  "paper_page_path": "papers/pubmed/42800003/index.html"
+}
