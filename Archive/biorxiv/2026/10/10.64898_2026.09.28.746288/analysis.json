@@ -1,0 +1,24 @@
+{
+  "source": "biorxiv",
+  "id": "10.64898/2026.09.28.746288",
+  "title": "Kidzoi Enables Cell-Type-Specific Regulatory Activity and Variant Effect Prediction in Kidney",
+  "authors": "Rather AA; Lee D",
+  "journal": "bioRxiv",
+  "published_date": "2026-10-04",
+  "window": {
+    "start": "2026-10-04",
+    "end": "2026-10-10"
+  },
+  "score": 5,
+  "one_liner_zh": "该文开发了基于Borzoi迁移学习的肾脏细胞类型特异序列-功能模型Kidzoi，预测染色质可及性并改进调控变异效应预测，虽涉及染色质水平调控，但未建模三维空间架构，方法为深度学习应用而非三维基因组建模。",
+  "abstract": "Sequence-to-function (S2F) deep learning models predict genome-wide functional profiles directly from DNA sequences and have significantly advanced our understanding of gene regulation. However, existing S2F models are fundamentally constrained by their initial training datasets, and no single model encompasses the full spectrum of cell types, clinical conditions, and cellular states, while training new models de novo is nontrivial. Here, we develop Kidzoi, a kidney cell-type-specific S2F model obtained by transfer learning from the pretrained model Borzoi using single-nucleus chromatin accessibility data from human kidney tissue. Kidzoi accurately predicts cell-type-specific chromatin accessibility and improves regulatory variant effect prediction by 10–23% over existing models. Furthermore, Kidzoi effectively prioritizes genome-wide association study (GWAS) fine-mapped causal variants associated with kidney function (estimated glomerular filtration rate based on both creatinine and cystatin C; eGFRcr-cys) while resolving their cell-type specificity. Systematic ablation of flanking sequence indicates that a local context of 32–64 kbp , representing only 6–12% of the full model input, is sufficient for accurate variant effect prediction. Finally, we show that a multi-task model achieves comparable performance to single-task models at a substantially reduced computational cost.",
+  "abstract_zh": "序列到功能（S2F）深度学习模型直接从DNA序列预测全基因组功能谱，显著推进了我们对基因调控的理解。然而，现有S2F模型从根本上受限于其初始训练数据集，且没有任何单一模型涵盖所有细胞类型、临床条件和细胞状态，而从头训练新模型并非易事。在此，我们开发了Kidzoi，一种肾脏细胞类型特异性的S2F模型，通过从预训练模型Borzoi进行迁移学习，利用人类肾脏组织的单核染色质可及性数据获得。Kidzoi准确预测细胞类型特异性的染色质可及性，并将调控变异效应预测性能较现有模型提高10–23%。此外，Kidzoi有效优先排序与肾功能相关的全基因组关联研究（GWAS）精细定位因果变异（基于肌酐和胱抑素C的估算肾小球滤过率；eGFRcr-cys），同时解析其细胞类型特异性。对侧翼序列的系统性消融表明，仅占全模型输入6–12%的32–64 kbp局部上下文足以实现准确的变异效应预测。最后，我们展示多任务模型在显著降低计算成本的同时，达到与单任务模型相当的性能。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://www.biorxiv.org/content/10.64898/2026.09.28.746288",
+  "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.28.746288",
+  "paper_page_path": "papers/biorxiv/10.64898_2026.09.28.746288/index.html"
+}

@@ -1,0 +1,77 @@
+## Review setup
+- **Input scope** Abstract only
+- **Assessment boundary** Claims and evidence presented in the abstract; no figures, methods, or supplementary material provided
+- **Shared manuscript claim summary** The authors use hybrid molecular dynamics–Monte Carlo simulations of active polymer melts to show that active loop extrusion enhances intra-chain contacts, reduces chain segment size, induces nonmonotonic overlap parameters, dilutes entanglements, suppresses inter-TAD contacts, and can produce more compact conformations than TAD-bounded systems, with implications for gene regulation via cis-regulatory elements.
+- **Visible evidence base** Abstract text only; no quantitative results, simulation parameters, or statistical analyses are available
+- **Missing materials affecting confidence** Full manuscript, all figures and tables, simulation methodology details, parameter ranges, control simulations, and any statistical or error analysis
+
+## Reviewer
+- **Overall assessment** The abstract presents a plausible and potentially interesting computational study linking active loop extrusion to entanglement dilution and altered polymer conformations. However, the claims are broad and mechanistic, and the abstract alone provides insufficient quantitative detail to evaluate the robustness of the findings. The central assertions, particularly the nonmonotonic overlap parameter and the comparison between TAD and non-TAD systems, require direct evidence that is not visible here. The work may appeal to a specialized biophysics and chromatin biology audience, but its broader significance is not yet established from the supplied material.
+- **Who would be interested in the results, and why** Researchers in computational polymer physics, chromatin organization, and gene regulation would be interested. The study addresses a fundamental question about how active processes alter entanglement and compaction in polymer melts, which is relevant to understanding chromosome architecture and the physical basis of TAD function. The potential link to cis-regulatory element efficiency could attract molecular biologists studying gene expression control.
+- **Major strengths** The topic is timely and interdisciplinary, bridging polymer physics and chromatin biology. The use of hybrid molecular dynamics–Monte Carlo simulations is an appropriate approach for modeling active loop extrusion in entangled melts. The abstract identifies a clear and testable prediction, namely that active extrusion dilutes entanglements and reduces inter-TAD overlaps, which could have functional consequences.
+- **Major Concerns** 
+  - **Concern ID** R1-M1
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Evidence sufficiency
+  - **Claim pointer** The abstract claims that "overlap parameter in active melts is nonmonotonic and on the order of unity within the parameters of this study" and that "active loop extrusion suppresses contacts between TADs in favor of intra-TAD contacts."
+  - **Evidence pointer** Abstract only; location not provided
+  - **Concern** The abstract provides no quantitative data, such as actual overlap parameter values, contact probability curves, or comparisons across parameter ranges. The nonmonotonic behavior and the suppression of inter-TAD contacts are stated as findings, but no figures or statistical measures are referenced. Without these, the reader cannot assess the magnitude of the effects or whether they are robust to parameter variation.
+  - **Why it matters** The core novelty of the work appears to rest on these specific quantitative claims. If the nonmonotonicity is weak or parameter-dependent, the conclusion about entanglement dilution may not hold generally. Similarly, the claim about TAD suppression requires direct comparison data, which is absent.
+  - **Resolution test** Provide the relevant figures (e.g., overlap parameter versus segment length, contact probability maps) with error bars or confidence intervals, and specify the parameter ranges over which the nonmonotonic behavior is observed. Show a direct comparison of inter-TAD versus intra-TAD contact frequencies.
+  - **Concern ID** R1-M2
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Claim support
+  - **Claim pointer** The abstract states that "active extrusion without TADs may induce more compact conformations than with TADs, due in part to fractal loopy globule-like dynamics."
+  - **Evidence pointer** Abstract only; location not provided
+  - **Concern** This is a surprising and potentially important claim, but the abstract offers no evidence for the "fractal loopy globule-like dynamics" mechanism. The term is not defined, and no scaling analysis or structural metrics (e.g., radius of gyration, contact scaling exponents) are provided. The phrase "may induce" also introduces uncertainty that is not resolved.
+  - **Why it matters** If the non-TAD system is more compact, this challenges the conventional view that TAD boundaries promote compaction. The mechanistic explanation is central to the paper's contribution, but it is currently unsupported.
+  - **Resolution test** Include a figure showing radius of gyration or contact probability scaling for TAD versus non-TAD systems, and provide a quantitative definition of "fractal loopy globule" with supporting scaling exponents or structural analysis.
+  - **Concern ID** R1-M3
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Reproducibility
+  - **Claim pointer** The abstract describes "hybrid molecular dynamics – Monte Carlo simulations" but provides no simulation details.
+  - **Evidence pointer** Abstract only; location not provided
+  - **Concern** No information is given on polymer length, monomer density, extrusion speed, cohesin processivity, CTCF barrier strength, or equilibration protocols. These parameters are critical for interpreting the results and for reproducing the simulations.
+  - **Why it matters** The conclusions about entanglement dilution and compaction are likely parameter-sensitive. Without this information, the generality of the findings cannot be evaluated, and other groups cannot replicate the work.
+  - **Resolution test** Provide a methods section with full simulation parameters, including system size, interaction potentials, extrusion rate, and any dimensionless numbers that characterize the system.
+- **Minor Comments** 
+  - **Concern ID** R1-m1
+  - **Severity** Minor
+  - **Axis** Clarity
+  - **Affected element** Abstract wording
+  - **Evidence pointer** Abstract, first sentence
+  - **Issue** The phrase "the cohesin protein complex creates chromatin loops" is stated as fact, but the abstract is about simulations, not experimental observations. This could be clarified to distinguish the model assumption from the biological context.
+  - **Required correction** Rephrase to indicate that the model is based on the active loop extrusion mechanism, e.g., "In the active loop extrusion model, cohesin is assumed to create chromatin loops."
+  - **Concern ID** R1-m2
+  - **Severity** Minor
+  - **Axis** Precision
+  - **Affected element** Abstract claim on gene regulation
+  - **Evidence pointer** Abstract, final sentence
+  - **Issue** The claim that reduced overlaps "contribut[e] to effective gene regulation by cis-regulatory elements" is speculative and not directly tested in the simulations. The link between physical compaction and regulatory efficiency is plausible but not demonstrated.
+  - **Required correction** Soften the claim to indicate a potential implication, e.g., "This work suggests a possible role for reduced overlaps in facilitating cis-regulatory interactions, though this remains to be tested."
+  - **Concern ID** R1-m3
+  - **Severity** Minor
+  - **Axis** Terminology
+  - **Affected element** Abstract, "fractal loopy globule-like dynamics"
+  - **Evidence pointer** Abstract, near the end
+  - **Issue** The term "fractal loopy globule" is not standard and is not defined in the abstract. This may confuse readers unfamiliar with the concept.
+  - **Required correction** Provide a brief definition or cite a reference for this term, or replace it with a more standard descriptor such as "compact, loop-dominated conformations."
+- **Technical failings that need to be addressed before the case is established** R1-M1, R1-M2, R1-M3. The abstract lacks quantitative evidence, mechanistic support, and simulation details, all of which are necessary to establish the central claims.
+- **Assessment against Nature-style criteria** 
+  - Originality: The idea of linking active loop extrusion to entanglement dilution is novel and could be of interest, but the abstract does not demonstrate how this advances beyond existing polymer physics models of chromatin.
+  - Scientific importance: The potential implications for gene regulation are significant, but the evidence is indirect and the mechanism is not fully resolved.
+  - Interdisciplinary readership: The topic bridges physics and biology, but the abstract is written in a way that assumes familiarity with both polymer physics and chromatin biology, which may limit accessibility.
+  - Technical soundness: Cannot be assessed from the abstract alone; the lack of simulation details and quantitative results is a major gap.
+  - Readability for nonspecialists: The abstract is concise but uses jargon (e.g., "overlap parameter," "fractal loopy globule") without sufficient explanation, reducing readability for a broad audience.
+- **Recommendation posture** Currently not established from the provided evidence. The abstract presents interesting hypotheses, but the lack of quantitative data, mechanistic analysis, and simulation parameters means the claims cannot be evaluated. I would be supportive if the full manuscript provides the missing evidence and addresses the concerns above.
+
+## Risk / unsupported claims
+- The nonmonotonic overlap parameter and its magnitude ("on the order of unity") are unsupported without quantitative data.
+- The suppression of inter-TAD contacts in favor of intra-TAD contacts is unsupported without contact frequency comparisons.
+- The claim that non-TAD systems can be more compact than TAD systems is unsupported and mechanistically unexplained.
+- The "fractal loopy globule-like dynamics" mechanism is undefined and unverified.
+- The link to gene regulation via cis-regulatory elements is speculative and not directly tested.
+- All simulation parameters and methodology are unverifiable from the abstract.

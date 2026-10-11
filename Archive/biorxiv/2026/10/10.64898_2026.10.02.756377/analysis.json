@@ -1,0 +1,24 @@
+{
+  "source": "biorxiv",
+  "id": "10.64898/2026.10.02.756377",
+  "title": "Cerberus: bidirectional state space blocks improve accuracy and efficiency of regulatory sequence models",
+  "authors": "Kelley DR; Yuan H; Huang X; Linder J",
+  "journal": "bioRxiv",
+  "published_date": "2026-10-09",
+  "window": {
+    "start": "2026-10-04",
+    "end": "2026-10-10"
+  },
+  "score": 6,
+  "one_liner_zh": "该文提出基于Mamba-2双向状态空间块的Cerberus模型，用于从DNA序列预测调控活性和变异效应，虽非直接建模染色质三维结构，但其长程序列交互建模与增强子-启动子、CTCF位点锚定分析对三维基因组调控特征预测有方法学启发。",
+  "abstract": "Sequence-to-function models predict regulatory activity and variant effects from DNA sequence alone, and leading models such as Borzoi compute long-range interactions with self-attention. The reference genome caps unique training sequences, and new assays add labels, not sequences. This constraint favors architectures that learn more from limited sequence diversity. We compared long-range blocks with the rest of the architecture and the training data held fixed, replacing Borzoi's transformer blocks with Hydra, a bidirectional state space block built on Mamba-2. Hydra blocks ran 5.7-fold faster on 8,192-token inputs, and models built on them predicted binned coverage on held-out sequences and classified fine-mapped eQTLs more accurately. Hydra's linear cost in sequence length let us run the blocks at 32 bp resolution and remove the U-net decoder, leaving a convolution-SSM model smaller and more accurate than the one it replaced. Scaling this architecture up on an augmented track collection produced Cerberus, an ensemble of eight models over 786 kb of input. We evaluated it on GTEx v11 fine-mapped eQTL, sQTL, and paQTL benchmarks with negatives matched on allele frequency, gene expression, and phenotype-specific positional annotations to reduce confounding by these properties. Cerberus is more accurate than Borzoi on all three phenotypes, 0.692 versus 0.668 mean eQTL AUPRC across 48 tissues, and estimates eQTL effect sizes better, 0.379 versus 0.321 Spearman $\\rho$. Against AlphaGenome, it trades leads in eQTL classification, ahead on variants 3 to 100 kb from the transcription start site and behind in coding sequence and within 3 kb. Interpretation of the trained blocks shows interaction range growing with block depth, from a 0.9 kb median half-life in the first block to 79 kb in the seventh, and the deepest heads anchoring on promoters, enhancers, and CTCF peaks. We release the models, the training data, the training and evaluation code, and the benchmark sets, supporting variant scoring and transfer learning.",
+  "abstract_zh": "序列到功能模型仅从DNA序列预测调控活性和变异效应，领先模型如Borzoi通过自注意力计算长程相互作用。参考基因组限制了独特训练序列的数量，而新实验测定增加的是标签而非序列。这一约束有利于那些能从有限序列多样性中学习更多信息的架构。我们固定长程模块与架构其余部分及训练数据不变，将Borzoi的Transformer模块替换为Hydra——一种基于Mamba-2构建的双向状态空间模块。Hydra模块在8,192个token输入上运行速度快5.7倍，基于其构建的模型在预测保留序列上的分箱覆盖度及分类精细定位eQTL方面更为准确。Hydra在序列长度上的线性成本使我们能以32 bp分辨率运行这些模块并移除U-net解码器，得到一个比原模型更小且更准确的卷积-SSM模型。将该架构在增强的轨道集合上扩展，产生了Cerberus——一个覆盖786 kb输入的八模型集成。我们在GTEx v11精细定位eQTL、sQTL和paQTL基准上对其评估，负样本在等位基因频率、基因表达和表型特异性位置注释上匹配，以减少这些属性的混杂效应。Cerberus在所有三种表型上均比Borzoi更准确，在48个组织中平均eQTL AUPRC为0.692对0.668，并且能更好地估计eQTL效应大小，Spearman ρ为0.379对0.321。与AlphaGenome相比，它在eQTL分类上互有领先，在距转录起始位点3至100 kb的变异上占优，而在编码序列及3 kb以内区域则落后。对训练模块的解释显示，相互作用范围随模块深度增加而增长，从第一个模块的0.9 kb中位半衰期到第七个模块的79 kb，最深的注意力头锚定在启动子、增强子和CTCF峰上。我们发布了模型、训练数据、训练与评估代码以及基准集，支持变异评分和迁移学习。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://www.biorxiv.org/content/10.64898/2026.10.02.756377",
+  "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.02.756377",
+  "paper_page_path": "papers/biorxiv/10.64898_2026.10.02.756377/index.html"
+}

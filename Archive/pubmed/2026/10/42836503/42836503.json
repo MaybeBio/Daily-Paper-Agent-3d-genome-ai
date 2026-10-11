@@ -1,0 +1,390 @@
+{
+  "identity": {
+    "pmid": "42836503",
+    "doi": "10.2174/0113892002399475260223055432",
+    "title": "The Role of Exosomal Biomarkers in the Monitoring of Bioactivation and Metabolite Clearance of Chemotherapeutics in Cancer Patients."
+  },
+  "content": {
+    "abstract": "Bioactivation and clearance of anticancer agents are crucial factors in the efficacy and toxicity of anticancer drugs. Exosomes are membrane-bound vesicles secreted by tumor cells and the tumor microenvironment. These vesicles contain drug-metabolizing enzymes, transporters, and RNA. Exosomes can be non-invasively collected from the blood. This article has been prepared by combining the evidence of the role of exosomal cytochrome P450 isoforms, such as cytochrome P450 family 2 subfamily C member 19, cytochrome P450 family 2 subfamily D member 6, and cytochrome P450 family 3 subfamily A member 5, in the oxidation of anticancer drugs in the first phase of drug metabolism. Exosomal UDP-glucuronosyltransferase 1A1 has been found to help in the conjugation of anticancer drugs in the second phase of drug metabolism. Exosomal ATP-binding cassette transporters, P-glycoprotein, multidrug resistance-associated protein 1, and breast cancer resistance protein have been found to act as intercellular conveyors of drug efflux capacity. These transporters can modulate the efficacy of chemotherapy. Exosomal microRNAs, such as microRNA-21, microRNA-155, and microRNA-1246, have been found to modulate apoptosis, DNA repair, metabolic adaptation, and chemotherapy resistance through the PI3K/AKT pathway, EZH2/STAT3 pathway, and PDCD4 pathway. Long non-coding RNAs, such as UCA1 and HOXA antisense RNA, can reprogram the chromatin structure. These long non-coding RNAs can suppress tumor suppressor genes, thus leading to chemotherapy resistance. Bioinformatics pipelines have been designed to bridge the gap between exosomal RNA and protein levels in the profile of dynamic metabolic states. The challenges in the field of exosomal therapy drug monitoring have been discussed in the article. The article has recommended the use of artificial intelligence in the integration of omics with microfluidic technology for the improvement of exosomal therapy drug monitoring.",
+    "keywords": [
+      "Exosomal biomarkers",
+      "MicroRNA",
+      "bioactivation and clearance",
+      "chemotherapy resistance",
+      "drug metabolism",
+      "extracellular vesicles"
+    ],
+    "mesh_terms": [
+      "Humans",
+      "*Exosomes/metabolism",
+      "*Neoplasms/drug therapy/metabolism",
+      "*Antineoplastic Agents/pharmacokinetics/therapeutic use/metabolism",
+      "Animals",
+      "MicroRNAs/metabolism",
+      "*Biomarkers, Tumor/metabolism",
+      "Biomarkers/metabolism",
+      "Cytochrome P-450 Enzyme System/metabolism"
+    ],
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Satheesh, S",
+        "Sekar, V",
+        "Kaarnika, V S",
+        "Maageswaree, B S",
+        "Bhoopendra, G K",
+        "Ibrahim, B",
+        "Nithish, S",
+        "Gowtham, V"
+      ],
+      "short_names": [
+        "Satheesh S",
+        "Sekar V",
+        "Kaarnika VS",
+        "Maageswaree BS",
+        "Bhoopendra GK",
+        "Ibrahim B",
+        "Nithish S",
+        "Gowtham V"
+      ],
+      "auids": [
+        "ORCID: 0000-0001-7179-1143",
+        "ORCID: 0009-0008-0538-0280",
+        "ORCID: 0009-0008-0603-0338",
+        "ORCID: 0009-0009-7985-5274",
+        "ORCID: 0009-0004-7981-5161",
+        "ORCID: 0009-0006-5271-7988",
+        "ORCID: 0009-0001-3007-2027",
+        "ORCID: 0009-0008-3562-3060"
+      ],
+      "affiliations": [
+        "Department of Pharmacy Practice, JKKN College of Pharmacy, Kumarapalayam, Namakkal, India.",
+        "Department of Pharmaceutical Analysis, JKKN College of Pharmacy, Kumarapalayam, Namakkal, India.",
+        "PSG Institute of Medical Sciences and Research, Coimbatore, India.",
+        "Department of Pharmaceutical Analysis, JKKN College of Pharmacy, Kumarapalayam, Namakkal, India.",
+        "Department of Pharmaceutical Analysis, JKKN College of Pharmacy, Kumarapalayam, Namakkal, India.",
+        "Department of Pharmaceutical Analysis, JKKN College of Pharmacy, Kumarapalayam, Namakkal, India.",
+        "Department of Pharmaceutical Analysis, JKKN College of Pharmacy, Kumarapalayam, Namakkal, India.",
+        "Department of Pharmaceutical Analysis, JKKN College of Pharmacy, Kumarapalayam, Namakkal, India."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Satheesh, S",
+        "short_name": "Satheesh S",
+        "identifiers": [
+          "0000-0001-7179-1143"
+        ],
+        "affiliations": [
+          "Department of Pharmacy Practice, JKKN College of Pharmacy, Kumarapalayam, Namakkal, India."
+        ]
+      },
+      {
+        "full_name": "Sekar, V",
+        "short_name": "Sekar V",
+        "identifiers": [
+          "0009-0008-0538-0280"
+        ],
+        "affiliations": [
+          "Department of Pharmaceutical Analysis, JKKN College of Pharmacy, Kumarapalayam, Namakkal, India."
+        ]
+      },
+      {
+        "full_name": "Kaarnika, V S",
+        "short_name": "Kaarnika VS",
+        "identifiers": [
+          "0009-0008-0603-0338"
+        ],
+        "affiliations": [
+          "PSG Institute of Medical Sciences and Research, Coimbatore, India."
+        ]
+      },
+      {
+        "full_name": "Maageswaree, B S",
+        "short_name": "Maageswaree BS",
+        "identifiers": [
+          "0009-0009-7985-5274"
+        ],
+        "affiliations": [
+          "Department of Pharmaceutical Analysis, JKKN College of Pharmacy, Kumarapalayam, Namakkal, India."
+        ]
+      },
+      {
+        "full_name": "Bhoopendra, G K",
+        "short_name": "Bhoopendra GK",
+        "identifiers": [
+          "0009-0004-7981-5161"
+        ],
+        "affiliations": [
+          "Department of Pharmaceutical Analysis, JKKN College of Pharmacy, Kumarapalayam, Namakkal, India."
+        ]
+      },
+      {
+        "full_name": "Ibrahim, B",
+        "short_name": "Ibrahim B",
+        "identifiers": [
+          "0009-0006-5271-7988"
+        ],
+        "affiliations": [
+          "Department of Pharmaceutical Analysis, JKKN College of Pharmacy, Kumarapalayam, Namakkal, India."
+        ]
+      },
+      {
+        "full_name": "Nithish, S",
+        "short_name": "Nithish S",
+        "identifiers": [
+          "0009-0001-3007-2027"
+        ],
+        "affiliations": [
+          "Department of Pharmaceutical Analysis, JKKN College of Pharmacy, Kumarapalayam, Namakkal, India."
+        ]
+      },
+      {
+        "full_name": "Gowtham, V",
+        "short_name": "Gowtham V",
+        "identifiers": [
+          "0009-0008-3562-3060"
+        ],
+        "affiliations": [
+          "Department of Pharmaceutical Analysis, JKKN College of Pharmacy, Kumarapalayam, Namakkal, India."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Current drug metabolism"
+    ],
+    "journal_abbrev": [
+      "Curr Drug Metab"
+    ],
+    "pub_date": "2026",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/06 11:31",
+    "fetched_at": "2026-10-11 10:31:44"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42836503",
+      "34856955",
+      "39643147",
+      "41502528",
+      "30683984",
+      "23132334",
+      "28240776",
+      "18370231",
+      "41070737",
+      "33544643",
+      "33823894",
+      "17159598",
+      "39245345",
+      "32087558",
+      "32545155",
+      "26143224",
+      "31867576",
+      "32746854",
+      "40420738",
+      "32924276",
+      "40591081",
+      "38925018",
+      "41619072",
+      "38277757",
+      "42194032",
+      "19633292",
+      "39129308",
+      "37664422",
+      "35955480",
+      "33613113",
+      "25836015",
+      "16509759",
+      "40108898",
+      "41190394",
+      "30285771",
+      "42218707",
+      "29151358",
+      "35128660",
+      "21434857",
+      "31300868",
+      "29323722",
+      "30770776",
+      "28689377",
+      "30728048",
+      "38059464",
+      "38971914",
+      "39608481",
+      "33296693",
+      "42220423",
+      "33738133",
+      "28446531",
+      "42766055",
+      "19949935",
+      "19949922",
+      "24140465",
+      "30866952",
+      "35948201",
+      "19194632",
+      "28407783",
+      "15134533",
+      "31322822",
+      "41883015",
+      "34165701",
+      "42235483",
+      "34607808",
+      "42104551",
+      "42001081",
+      "38619588",
+      "33719007",
+      "41405275",
+      "37839359",
+      "16049130",
+      "42334747",
+      "35405312",
+      "38454346",
+      "33430032",
+      "31896067",
+      "35604532",
+      "39577219",
+      "37689120",
+      "18855611",
+      "24358977",
+      "27097837",
+      "34897815",
+      "41029829",
+      "34022068",
+      "27129167",
+      "32618144",
+      "40976320",
+      "36139487",
+      "16178819",
+      "26556876",
+      "41357241",
+      "32391938",
+      "30309355",
+      "27298339",
+      "41392934",
+      "31546654",
+      "39400677",
+      "33311449"
+    ],
+    "review": [
+      "42836503",
+      "39643147",
+      "41502528",
+      "30683984",
+      "28240776",
+      "18370231",
+      "33544643",
+      "17159598",
+      "39245345",
+      "32087558",
+      "32545155",
+      "26143224",
+      "32746854",
+      "40420738",
+      "32924276",
+      "40591081",
+      "38925018",
+      "41619072",
+      "38277757",
+      "42194032",
+      "39129308",
+      "37664422",
+      "35955480",
+      "33613113",
+      "25836015",
+      "16509759",
+      "40108898",
+      "41190394",
+      "42218707",
+      "29151358",
+      "35128660",
+      "21434857",
+      "31300868",
+      "29323722",
+      "28689377",
+      "38971914",
+      "39608481",
+      "33296693",
+      "42220423",
+      "33738133",
+      "42766055",
+      "19949935",
+      "35948201",
+      "19194632",
+      "15134533",
+      "31322822",
+      "41883015",
+      "34165701",
+      "42104551",
+      "38619588",
+      "33719007",
+      "37839359",
+      "42334747",
+      "35405312",
+      "38454346",
+      "33430032",
+      "31896067",
+      "35604532",
+      "39577219",
+      "18855611",
+      "24358977",
+      "27097837",
+      "34897815",
+      "40976320",
+      "36139487",
+      "16178819",
+      "41357241",
+      "32391938",
+      "30309355",
+      "41392934",
+      "31546654",
+      "39400677"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://medlineplus.gov/cancer.html",
+        "provider": "MedlinePlus Health Information",
+        "category": "Medical",
+        "attribute": "free resource",
+        "linkname": "Cancer"
+      },
+      {
+        "url": "https://antibodies.cancer.gov/detail/CPTC-OTUB1-1",
+        "provider": "NCI CPTC Antibody Characterization Program",
+        "category": "Research Materials",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://assays.cancer.gov/CPTAC-1275",
+        "provider": "NCI CPTAC Assay Portal",
+        "category": "Miscellaneous",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://www.eurekaselect.com/251568/article",
+        "provider": "Bentham Science Publishers Ltd.",
+        "category": "Full Text Sources",
+        "attribute": "subscription/membership/fee required",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

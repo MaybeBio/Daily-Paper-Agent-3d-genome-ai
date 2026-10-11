@@ -1,0 +1,32 @@
+{
+  "source": "arxiv",
+  "source_id": "2610.08298v1",
+  "title": "Design Principles for Programmable Topological Soft Networks",
+  "doi": "",
+  "abstract": "Physical crosslinks in conventional gels are static and spatially localised, fundamentally limiting their capacity to adapt, self-heal, or perform mechanical work. Topological gels, which are held together by physical entanglements such as threadings, links, and mechanical interlocks, constitute a different paradigm by treating connectivity as a mobile, dynamic degree of freedom. Here, by using molecular dynamics simulations of semiflexible polymers and threadable colloidal rings, we establish some general design principles that transform self-assembled topological gels into programmable soft materials. We present three different modes of control. First, by controlling the mobility of the entanglements, one can tune the mechanical response of the material. Quenched anchoring forces the network to store elastic stress and yield, whereas with annealed anchoring the material can relax stresses by redistributing its entanglements whilst preserving global connectivity. Second, by controlling the degree or type of geometric confinement, it is possible to template macroscopic architecture, converting for instance 3D isotropic gels into surface-spanning 2D nets or quasi-1D topological rings with distinct graph-spectral signatures. Third, by allowing dynamical rewiring of entanglements through polymer reconnection, the material topology can be rewritten after assembly, yielding interlocked structures dominated by simple pairwise links rather than the highly complex linked states previously observed in reconnecting flexible polymers. By establishing a direct link between microscopic entanglement dynamics and emerging mechanical function, our work offers design principles for adaptive soft metamaterials and provides insights into biological topological networks such as kinetoplast DNA and chromatin loop networks.",
+  "authors": [
+    "Andrea Bonato",
+    "Davide Marenduzzo",
+    "Enzo Orlandini"
+  ],
+  "published_date": "2026-10-06T13:01:42Z",
+  "updated_date": "2026-10-06T13:01:42Z",
+  "journal": "",
+  "category": "cond-mat.soft",
+  "landing_url": "https://arxiv.org/abs/2610.08298v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.08298v1",
+  "pdf_path": "",
+  "pdf_downloaded": false,
+  "query": "(all:\"3D genome\" OR all:\"three-dimensional genome\" OR all:\"genome organization\" OR all:\"genome architecture\" OR all:\"genome folding\" OR all:\"nuclear organization\" OR all:\"nuclear architecture\" OR all:\"chromatin organization\" OR all:\"chromatin architecture\" OR all:\"chromatin conformation\" OR all:\"chromatin topology\" OR all:\"chromatin structure\" OR all:\"chromatin loop\" OR all:\"chromatin interaction\" OR all:\"chromatin domain\" OR all:\"topologically associating domain\" OR all:\"A/B compartment\" OR all:\"chromosome conformation capture\" OR all:\"Hi-C\" OR all:HiChIP OR all:\"loop extrusion\" OR all:\"loop-extrusion\" OR all:CTCF OR all:cohesin OR all:\"cis-regulatory\" OR all:\"cis-regulatory element\" OR all:\"regulatory element\" OR all:\"regulatory genomics\" OR all:\"chromatin accessibility\" OR all:\"enhancer-promoter\" OR all:\"promoter-enhancer\") AND (all:\"deep learning\" OR all:\"machine learning\" OR all:\"neural network\" OR all:\"graph neural network\" OR all:\"convolutional neural network\" OR all:transformer OR all:\"language model\" OR all:\"foundation model\" OR all:\"diffusion model\" OR all:generative OR all:\"flow matching\" OR all:alphafold OR all:esmfold OR all:rosetta OR all:\"molecular dynamics\" OR all:simulation OR all:docking)\n",
+  "version": "1",
+  "keywords": [
+    "cond-mat.soft"
+  ],
+  "extra": {
+    "entry_id": "http://arxiv.org/abs/2610.08298v1",
+    "raw_categories": [
+      "cond-mat.soft"
+    ],
+    "journal_ref": ""
+  }
+}

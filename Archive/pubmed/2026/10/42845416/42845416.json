@@ -1,0 +1,202 @@
+{
+  "identity": {
+    "pmid": "42845416",
+    "doi": "10.64898/2026.08.08.743709",
+    "title": "Entanglement dilution and high fractal dimension mediated by loop extrusion revealed in simulations of active polymer melts."
+  },
+  "content": {
+    "abstract": "In the active loop extrusion model, the cohesin protein complex creates chromatin loops in eukaryotic cells. Extrusion maintains topologically associated domains (TADs), which are contiguous segments of chromatin that preferentially colocalize in space and are typically bounded by CTCF proteins that pause cohesin translocation. Here, we model active loop extrusion with hybrid molecular dynamics - Monte Carlo simulations in entangled flexible linear polymer melts. Intra-chain contact probabilities of polymers with active loop extrusion are enhanced compared to their equilibrium, passive counterparts. Extrusion causes the size of chain segments to be much smaller than in passive melts. While the overlap parameter in passive melts without extrusion monotonically increases with segment length, it is nonmonotonic in active melts and on the order of unity within the parameters of this study. Active loop extrusion suppresses contacts between TADs in favor of intra-TAD contacts. Reduction of overlaps between chain segments dilutes entanglements in active melts. Depending on parameters, active extrusion without TADs may induce more compact conformations than with TADs, due in part to fractal loopy globule-like dynamics. This work suggests that active loop extrusion reduces overlaps between TADs, contributing to effective gene regulation by cis -regulatory elements.",
+    "keywords": [],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article",
+      "Preprint"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Chan, Brian",
+        "Rubinstein, Michael"
+      ],
+      "short_names": [
+        "Chan B",
+        "Rubinstein M"
+      ],
+      "auids": [
+        "ORCID: 0000-0003-2040-0071",
+        "ORCID: 0000-0002-5455-0951"
+      ],
+      "affiliations": []
+    },
+    "xml": [
+      {
+        "full_name": "Chan, Brian",
+        "short_name": "Chan B",
+        "identifiers": [
+          "0000-0003-2040-0071"
+        ],
+        "affiliations": []
+      },
+      {
+        "full_name": "Rubinstein, Michael",
+        "short_name": "Rubinstein M",
+        "identifiers": [
+          "0000-0002-5455-0951"
+        ],
+        "affiliations": []
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "bioRxiv : the preprint server for biology"
+    ],
+    "journal_abbrev": [
+      "bioRxiv"
+    ],
+    "pub_date": "2026 Aug 13",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article",
+      "Preprint"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/08 11:39",
+    "fetched_at": "2026-10-11 10:31:44"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42845416",
+      "38328091",
+      "38753513",
+      "29967174",
+      "37253009",
+      "39543681",
+      "29077530",
+      "35585235",
+      "27057066",
+      "40374602",
+      "29757144",
+      "37076620",
+      "37699887",
+      "32250245",
+      "36840746",
+      "36182691",
+      "40063813",
+      "29140466",
+      "27210764",
+      "29217591",
+      "36897969",
+      "41238959",
+      "26499245",
+      "31887284",
+      "37302180",
+      "36325618",
+      "34309513",
+      "34197738",
+      "35440598",
+      "26997526",
+      "34321070",
+      "41840057",
+      "39110499",
+      "29217590",
+      "40181539",
+      "38295892",
+      "40060486",
+      "37126401",
+      "38755928",
+      "37177993",
+      "29300120",
+      "42476989",
+      "37786717",
+      "31522987",
+      "30961051",
+      "41974991",
+      "37381036",
+      "41111100",
+      "32631111",
+      "39093600",
+      "26518482",
+      "37146570",
+      "40766525",
+      "37603403",
+      "39975341",
+      "34749781",
+      "42316862",
+      "37961446",
+      "33562371",
+      "35420890",
+      "39229088",
+      "37047368",
+      "28475897",
+      "32612238",
+      "36129789",
+      "33767413",
+      "33422934",
+      "39827577",
+      "32065581",
+      "30125668",
+      "33940823",
+      "40210441",
+      "35676475",
+      "27028634",
+      "38643244",
+      "34217222",
+      "31482924",
+      "26271925",
+      "41380688",
+      "31264253",
+      "35860407",
+      "40189615",
+      "31177910",
+      "33419949",
+      "31776509",
+      "41415375",
+      "42050930",
+      "39614448",
+      "34525654",
+      "37774974",
+      "38502563",
+      "41102415",
+      "41629529",
+      "36031655",
+      "32782014",
+      "36348120",
+      "28863138",
+      "23781815",
+      "39110491",
+      "42146630"
+    ],
+    "review": [
+      "42845416",
+      "29077530",
+      "31887284",
+      "37302180",
+      "32631111",
+      "37603403",
+      "33767413",
+      "33422934",
+      "39827577",
+      "30125668",
+      "31264253"
+    ],
+    "pmc": [
+      "13640637"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://doi.org/10.64898/2026.08.08.743709",
+        "provider": "Cold Spring Harbor Laboratory",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

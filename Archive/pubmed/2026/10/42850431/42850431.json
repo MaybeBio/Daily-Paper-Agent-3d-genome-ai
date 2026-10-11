@@ -1,0 +1,181 @@
+{
+  "identity": {
+    "pmid": "42850431",
+    "doi": "10.1038/s41592-026-03254-z",
+    "title": "Tangermeme: a toolkit for understanding cis-regulatory logic using deep learning models."
+  },
+  "content": {
+    "abstract": "Deep learning models have achieved state-of-the-art performance at predicting diverse genomic modalities, yet their promise for biological discovery lies in how they are used after demonstrating their predictive performance. Here we describe the functionality of tangermeme, a highly optimized toolkit for 'everything-but-the-model' when it comes to genomic deep learning, and demonstrate how tangermeme can be used to distill the learned cis-regulatory patterns from models into human-interpretable insights.",
+    "keywords": [],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Schreiber, Jacob"
+      ],
+      "short_names": [
+        "Schreiber J"
+      ],
+      "auids": [
+        "ORCID: 0000-0003-4230-6625"
+      ],
+      "affiliations": [
+        "Research Institute of Molecular Pathology, Vienna BioCenter, Vienna, Austria. jacob.schreiber@umassmed.edu.",
+        "Department of Genomics and Computational Biology, UMass Chan Medical School, Worcester, MA, USA. jacob.schreiber@umassmed.edu."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Schreiber, Jacob",
+        "short_name": "Schreiber J",
+        "identifiers": [
+          "0000-0003-4230-6625"
+        ],
+        "affiliations": [
+          "Research Institute of Molecular Pathology, Vienna BioCenter, Vienna, Austria. jacob.schreiber@umassmed.edu.",
+          "Department of Genomics and Computational Biology, UMass Chan Medical School, Worcester, MA, USA. jacob.schreiber@umassmed.edu."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Nature methods"
+    ],
+    "journal_abbrev": [
+      "Nat Methods"
+    ],
+    "pub_date": "2026 Oct 8",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/09 05:30",
+    "fetched_at": "2026-10-11 10:31:44"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42850431",
+      "42475469",
+      "39284975",
+      "42625183",
+      "38177592",
+      "37796983",
+      "29855387",
+      "41429964",
+      "38588559",
+      "36796796",
+      "41957161",
+      "39090688",
+      "40568119",
+      "38317052",
+      "40567341",
+      "42848121",
+      "41544987",
+      "41588477",
+      "40678458",
+      "37600972",
+      "39026761",
+      "42549891",
+      "42739369",
+      "36566626",
+      "41922965",
+      "37561655",
+      "40577658",
+      "38853896",
+      "33137083",
+      "40637148",
+      "29630604",
+      "38405704",
+      "38474116",
+      "41031902",
+      "42477062",
+      "38036790",
+      "34650237",
+      "41310253",
+      "40598008",
+      "39173285",
+      "41959049",
+      "42508236",
+      "42144405",
+      "32275915",
+      "39950082",
+      "41731742",
+      "36253864",
+      "40874866",
+      "41832209",
+      "40451921",
+      "37326960",
+      "42680998",
+      "41239183",
+      "35325548",
+      "41567872",
+      "41283681",
+      "42334640",
+      "34330244",
+      "42323878",
+      "36807077",
+      "41054966",
+      "42454932",
+      "38190667",
+      "40553343",
+      "41924282",
+      "42226266",
+      "41153440",
+      "31976892",
+      "41267404",
+      "41514301",
+      "41024066",
+      "40862800",
+      "41935094",
+      "40397945",
+      "41042660",
+      "41122544",
+      "40613943",
+      "41610586",
+      "40163820",
+      "38872809",
+      "38940172",
+      "27490187",
+      "31131151",
+      "40796376",
+      "40036975",
+      "36265006",
+      "42441428",
+      "41034712",
+      "41001538",
+      "39884279",
+      "36347526",
+      "34731472",
+      "41039509",
+      "40640789",
+      "40328536",
+      "39948208",
+      "29522900",
+      "35709752",
+      "40828572",
+      "42216449"
+    ],
+    "review": [
+      "42850431",
+      "41429964",
+      "42739369",
+      "41922965",
+      "37561655",
+      "42323878",
+      "42226266"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [],
+    "text_mined": []
+  }
+}

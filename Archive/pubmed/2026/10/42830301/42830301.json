@@ -1,0 +1,335 @@
+{
+  "identity": {
+    "pmid": "42830301",
+    "doi": "10.1038/s41467-026-77207-7",
+    "title": "Molecular basis of nick ligation in the nucleosome by DNA Ligase IIIalpha."
+  },
+  "content": {
+    "abstract": "Genomic DNA is packaged into chromatin through a fundamental repeating unit known as the nucleosome core particle. Chromatinized genomic DNA is constantly exposed to endogenous and exogenous stresses that result in DNA damage, which must be repaired to maintain genome stability. Single-strand breaks (SSBs) are a prevalent form of DNA damage that arise via the oxidation-induced disintegration of the sugar-phosphate backbone or as repair intermediates during base excision repair. DNA ligase IIIalpha (LigIIIalpha) is one of the primary enzymes responsible for repairing ligatable SSBs during the terminal step of single-strand break repair (SSBR) and base excision repair (BER). To date, a mechanistic description of how LigIIIalpha processes nicks within chromatin remains elusive. Here, we use a combination of biochemical assays, molecular dynamics simulations, and cryogenic electron microscopy to define the molecular basis of nick ligation in the nucleosome by LigIIIalpha, providing foundational insight into the terminal step of chromatin-based SSBR/BER.",
+    "keywords": [],
+    "mesh_terms": [
+      "*Nucleosomes/metabolism/genetics/chemistry",
+      "*DNA Ligase ATP/metabolism/chemistry",
+      "Excision Repair",
+      "*DNA Breaks, Single-Stranded",
+      "Animals",
+      "Molecular Dynamics Simulation",
+      "*Xenopus Proteins/metabolism/chemistry/genetics",
+      "Cryoelectron Microscopy",
+      "Chromatin/metabolism",
+      "DNA Repair",
+      "DNA Damage",
+      "Xenopus laevis",
+      "Poly-ADP-Ribose Binding Proteins"
+    ],
+    "pub_types": [
+      "Journal Article",
+      "Research Support, N.I.H., Extramural"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Boesch, Daniel J",
+        "Martin, Nadia I",
+        "Kontor, Chantal A",
+        "Nguyen, Ashlee G",
+        "Tomkinson, Alan E",
+        "Van Houten, Bennett",
+        "Gillet, Natacha",
+        "Bignon, Emmanuelle",
+        "Whitaker, Amy M",
+        "Weaver, Tyler M"
+      ],
+      "short_names": [
+        "Boesch DJ",
+        "Martin NI",
+        "Kontor CA",
+        "Nguyen AG",
+        "Tomkinson AE",
+        "Van Houten B",
+        "Gillet N",
+        "Bignon E",
+        "Whitaker AM",
+        "Weaver TM"
+      ],
+      "auids": [
+        "ORCID: 0000-0002-2671-1711",
+        "ORCID: 0000-0002-4009-2478",
+        "ORCID: 0000-0002-5138-7140"
+      ],
+      "affiliations": [
+        "Department of Biochemistry and Molecular Genetics, University of Virginia School of Medicine, Charlottesville, VA, USA.",
+        "University of Virginia Comprehensive Cancer Center, Charlottesville, VA, USA.",
+        "Department of Biochemistry and Molecular Genetics, University of Virginia School of Medicine, Charlottesville, VA, USA.",
+        "Cancer Epigenetics Institute, Nuclear Dynamics and Cancer Program, Fox Chase Cancer Center, Philadelphia, PA, USA.",
+        "Department of Biochemistry and Molecular Genetics, University of Virginia School of Medicine, Charlottesville, VA, USA.",
+        "Departments of Internal Medicine, Molecular Genetics & Microbiology, University of New Mexico Health Sciences Center, Albuquerque, NM, USA.",
+        "University of New Mexico Comprehensive Cancer Center, Albuquerque, NM, USA.",
+        "UPMC, Hillman Cancer Center, Pittsburgh, PA, USA.",
+        "Department of Pharmacology and Chemical Biology, University of Pittsburgh School of Medicine, Pittsburgh, PA, USA.",
+        "CNRS, ENS de Lyon, LCH, UMR 5182, Lyon cedex 07, France.",
+        "Universite de Lorraine, CNRS, UMR 7019 LPCT, Nancy, France.",
+        "Cancer Epigenetics Institute, Nuclear Dynamics and Cancer Program, Fox Chase Cancer Center, Philadelphia, PA, USA.",
+        "Department of Biochemistry and Molecular Genetics, University of Virginia School of Medicine, Charlottesville, VA, USA. fsp8ux@virginia.edu.",
+        "University of Virginia Comprehensive Cancer Center, Charlottesville, VA, USA. fsp8ux@virginia.edu."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Boesch, Daniel J",
+        "short_name": "Boesch DJ",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Biochemistry and Molecular Genetics, University of Virginia School of Medicine, Charlottesville, VA, USA.",
+          "University of Virginia Comprehensive Cancer Center, Charlottesville, VA, USA."
+        ]
+      },
+      {
+        "full_name": "Martin, Nadia I",
+        "short_name": "Martin NI",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Biochemistry and Molecular Genetics, University of Virginia School of Medicine, Charlottesville, VA, USA."
+        ]
+      },
+      {
+        "full_name": "Kontor, Chantal A",
+        "short_name": "Kontor CA",
+        "identifiers": [],
+        "affiliations": [
+          "Cancer Epigenetics Institute, Nuclear Dynamics and Cancer Program, Fox Chase Cancer Center, Philadelphia, PA, USA."
+        ]
+      },
+      {
+        "full_name": "Nguyen, Ashlee G",
+        "short_name": "Nguyen AG",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Biochemistry and Molecular Genetics, University of Virginia School of Medicine, Charlottesville, VA, USA."
+        ]
+      },
+      {
+        "full_name": "Tomkinson, Alan E",
+        "short_name": "Tomkinson AE",
+        "identifiers": [
+          "0000-0002-2671-1711"
+        ],
+        "affiliations": [
+          "Departments of Internal Medicine, Molecular Genetics & Microbiology, University of New Mexico Health Sciences Center, Albuquerque, NM, USA.",
+          "University of New Mexico Comprehensive Cancer Center, Albuquerque, NM, USA."
+        ]
+      },
+      {
+        "full_name": "Van Houten, Bennett",
+        "short_name": "Van Houten B",
+        "identifiers": [
+          "0000-0002-4009-2478"
+        ],
+        "affiliations": [
+          "UPMC, Hillman Cancer Center, Pittsburgh, PA, USA.",
+          "Department of Pharmacology and Chemical Biology, University of Pittsburgh School of Medicine, Pittsburgh, PA, USA."
+        ]
+      },
+      {
+        "full_name": "Gillet, Natacha",
+        "short_name": "Gillet N",
+        "identifiers": [],
+        "affiliations": [
+          "CNRS, ENS de Lyon, LCH, UMR 5182, Lyon cedex 07, France."
+        ]
+      },
+      {
+        "full_name": "Bignon, Emmanuelle",
+        "short_name": "Bignon E",
+        "identifiers": [],
+        "affiliations": [
+          "Université de Lorraine, CNRS, UMR 7019 LPCT, Nancy, France."
+        ]
+      },
+      {
+        "full_name": "Whitaker, Amy M",
+        "short_name": "Whitaker AM",
+        "identifiers": [],
+        "affiliations": [
+          "Cancer Epigenetics Institute, Nuclear Dynamics and Cancer Program, Fox Chase Cancer Center, Philadelphia, PA, USA."
+        ]
+      },
+      {
+        "full_name": "Weaver, Tyler M",
+        "short_name": "Weaver TM",
+        "identifiers": [
+          "0000-0002-5138-7140"
+        ],
+        "affiliations": [
+          "Department of Biochemistry and Molecular Genetics, University of Virginia School of Medicine, Charlottesville, VA, USA. fsp8ux@virginia.edu.",
+          "University of Virginia Comprehensive Cancer Center, Charlottesville, VA, USA. fsp8ux@virginia.edu."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Nature communications"
+    ],
+    "journal_abbrev": [
+      "Nat Commun"
+    ],
+    "pub_date": "2026 Sep 2",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article",
+      "Research Support, N.I.H., Extramural"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/05 05:31",
+    "fetched_at": "2026-10-11 10:31:44"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42830301",
+      "41993504",
+      "40097433",
+      "38718860",
+      "41271738",
+      "28184006",
+      "38736258",
+      "39476546",
+      "21930793",
+      "41161019",
+      "38135179",
+      "12897160",
+      "39574623",
+      "34181949",
+      "33440161",
+      "18313385",
+      "35643889",
+      "40286853",
+      "33649352",
+      "36063009",
+      "34102106",
+      "40427542",
+      "18166975",
+      "24891506",
+      "34339737",
+      "39162207",
+      "41480640",
+      "35689883",
+      "37574475",
+      "32564733",
+      "17348689",
+      "42509793",
+      "28011149",
+      "36104361",
+      "41370201",
+      "40347914",
+      "22718094",
+      "32853828",
+      "37714297",
+      "42831429",
+      "40081282",
+      "33484638",
+      "40563529",
+      "11554302",
+      "33330937",
+      "15288782",
+      "27240007",
+      "25957487",
+      "34437813",
+      "23868975",
+      "40076422",
+      "31627880",
+      "29588367",
+      "9584196",
+      "32383115",
+      "21183466",
+      "31093909",
+      "26730949",
+      "18524993",
+      "32018112",
+      "22749145",
+      "17118715",
+      "30266807",
+      "32939087",
+      "21636980",
+      "24755000",
+      "25539916",
+      "38215753",
+      "20634149",
+      "30807703",
+      "26466358",
+      "24674627",
+      "37573020",
+      "23430749",
+      "40211828",
+      "17123872",
+      "12453426",
+      "20471329",
+      "42695281",
+      "30170831",
+      "40162218",
+      "23543741",
+      "41099692",
+      "24013086",
+      "22130663",
+      "16793420",
+      "39159820",
+      "41360787",
+      "22641215",
+      "11032816",
+      "29361157",
+      "15141024",
+      "38266593",
+      "15260972",
+      "32383116",
+      "12411511",
+      "23355608",
+      "22219182",
+      "41819421",
+      "23708312"
+    ],
+    "review": [
+      "42830301",
+      "41161019",
+      "35643889",
+      "18166975",
+      "35689883",
+      "28011149",
+      "40347914",
+      "22718094",
+      "37714297",
+      "40563529",
+      "11554302",
+      "27240007",
+      "25957487",
+      "34437813",
+      "31627880",
+      "32383115",
+      "22749145",
+      "17118715",
+      "24755000",
+      "26466358",
+      "17123872",
+      "42695281",
+      "30170831",
+      "24013086"
+    ],
+    "pmc": [
+      "13635136"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://doi.org/10.1038/s41467-026-77207-7",
+        "provider": "Nature Publishing Group",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

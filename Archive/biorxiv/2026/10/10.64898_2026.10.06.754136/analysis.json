@@ -1,0 +1,24 @@
+{
+  "source": "biorxiv",
+  "id": "10.64898/2026.10.06.754136",
+  "title": "Molecular Force Gates Regulate Mechanical Transmission Across the Nuclear Envelope",
+  "authors": "Domkam N; Yerima G; Tsukamoto S; Mofrad M",
+  "journal": "bioRxiv",
+  "published_date": "2026-10-07",
+  "window": {
+    "start": "2026-10-04",
+    "end": "2026-10-10"
+  },
+  "score": 5,
+  "one_liner_zh": "该文用原子级分子动力学模拟研究核膜LINC复合物中SUN-KASH界面的力门控机制，虽涉及核架构与染色质组织但未直接建模染色质三维结构，方法可迁移至染色质力学调控建模。",
+  "abstract": "The LINC (linker of nucleoskeleton and cytoskeleton) complex is a central mechanotransductive apparatus that physically couples cytoskeletal forces to the nuclear interior, thereby regulating nuclear architecture, chromatin organization, and downstream signaling. Using atomistic molecular dynamics simulations, we identify and characterize force gates within the LINC complex, structural interactions that maintain mechanical connectivity under load. By introducing targeted mutations into the KASH peptide and SUN protein, we provide computational evidence that a key disulfide bond (SUN2 Cys563 to KASH2 Cys6862) and specific residues within the KASH β strand interaction motif (KASH6875, KASH6877) act as distinct mechanical elements during force transmission across the SUN and KASH interface. Leveraging this framework, we show that the disulfide bond and the β sheet network contribute unequally: removing the disulfide reduces both sustained and peak force transmission approximately twofold, whereas disrupting the β sheet network leaves peak force largely intact while altering interfacial coupling and the duration over which load is borne. Localized molecular changes therefore reshape mechanical coupling to the nucleus through distinct routes rather than through a single graded loss of force. Such altered LINC mechanics may be relevant to laminopathies, including Hutchinson Gilford Progeria Syndrome (HGPS), in which defective nuclear lamina compromises force transmission; however, implications for specific diseases remain speculative and require experimental validation. By resolving how distinct molecular contacts contribute to force transmission in space and sequence, this work establishes a framework for dissecting mechanical coupling at protein interfaces under load. These findings provide a foundation for future studies aimed at experimentally testing how individual interface interactions govern nuclear force transmission, a prerequisite for therapeutically targeting LINC mechanics. More broadly, the force gate framework may guide strategies to modulate interfaces that bear mechanical loads in other mechanically regulated proteins. Together, these findings establish a computational framework for investigating force transmission at mechanically loaded protein interfaces and provide experimentally testable predictions for future studies.",
+  "abstract_zh": "LINC（核骨架与细胞骨架连接复合体）是一种关键的机械转导装置，将细胞骨架力物理耦合至细胞核内部，从而调控核结构、染色质组织及下游信号传导。通过原子级分子动力学模拟，我们识别并表征了LINC复合体中的力门控（force gates），即在负载下维持机械连接的结构性相互作用。通过向KASH肽和SUN蛋白引入靶向突变，我们提供了计算证据，表明一个关键二硫键（SUN2 Cys563至KASH2 Cys6862）以及KASH β链相互作用基序内的特定残基（KASH6875、KASH6877）在SUN和KASH界面上的力传递过程中充当不同的机械元件。利用这一框架，我们展示了二硫键和β折叠网络对力的贡献不均等：去除二硫键使持续力和峰值力传递均减少约两倍，而破坏β折叠网络则使峰值力基本保持不变，但改变了界面耦合及负载承受的持续时间。因此，局部分子变化通过不同途径重塑对细胞核的机械耦合，而非通过单一渐进的力损失实现。这种改变的LINC力学可能与核纤层蛋白病相关，包括哈钦森-吉尔福德早衰综合征（HGPS），其中缺陷的核纤层损害力传递；然而，对特定疾病的影响仍属推测，需实验验证。通过解析不同分子接触如何在空间和序列上贡献于力传递，本研究建立了在负载下剖析蛋白质界面机械耦合的框架。这些发现为未来旨在实验测试单个界面相互作用如何调控核力传递的研究奠定了基础，这是治疗性靶向LINC力学的先决条件。更广泛地，力门控框架可能指导调节其他机械调控蛋白中承受机械负载界面的策略。综上，这些发现建立了研究机械负载蛋白质界面力传递的计算框架，并为未来研究提供了可实验验证的预测。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://www.biorxiv.org/content/10.64898/2026.10.06.754136",
+  "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.06.754136",
+  "paper_page_path": "papers/biorxiv/10.64898_2026.10.06.754136/index.html"
+}

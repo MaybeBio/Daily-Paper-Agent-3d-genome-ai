@@ -1,0 +1,76 @@
+## Review setup
+- **Input scope** Abstract only
+- **Assessment boundary** Claims and evidence as presented in the abstract; no methods, figures, tables, or supplementary materials were provided
+- **Shared manuscript claim summary** The authors train a deep-learning model on mouse embryonic stem cell nucleosome maps to predict occupancy from DNA sequence, identify short motifs in regulatory windows, and propose that repetitive elements (SINEs with CTCF motifs, LINEs with zinc-finger motifs, microsatellites) act as organizers of nucleosome phasing, extending sequence-encoded nucleosome architecture to mammals.
+- **Visible evidence base** Abstract text only; no quantitative results, model architecture details, validation metrics, or genomic analyses are available
+- **Missing materials affecting confidence** Full manuscript, methods section, all figures and tables, model training and evaluation details, statistical analyses, and any supplementary data
+
+## Reviewer
+- **Overall assessment** The abstract presents a potentially interesting claim that sequence-encoded nucleosome positioning extends to mammalian genomes through repetitive elements and short motifs. However, the evidence base is limited to a summary with no quantitative support, no model validation details, and no clear demonstration that the proposed mechanism is distinct from prior work. The central claims are plausible but currently not established from the supplied material.
+- **Who would be interested in the results, and why** Chromatin biologists studying nucleosome positioning and genome organization; computational biologists developing sequence-based predictive models; researchers interested in the regulatory roles of repetitive elements. The work could inform understanding of how primary sequence constrains chromatin architecture in mammals, with potential implications for gene regulation and genome evolution.
+- **Major strengths** The abstract addresses a significant gap in the field by extending sequence-encoded nucleosome architecture from yeast to mammals. The use of deep learning to denoise assay-specific biases is a sensible approach. The focus on repetitive elements as organizers is a novel angle that could have broad implications.
+- **Major Concerns**  
+  - **Concern ID** R1-M1  
+  - **Severity** Major  
+  - **Blocking** Yes  
+  - **Axis** Evidence sufficiency  
+  - **Claim pointer** The model "accurately predicts in vivo occupancy" and "captures shared biological signals while effectively denoising assay-specific technical biases."  
+  - **Evidence pointer** Abstract only; location not provided  
+  - **Concern** No quantitative metrics (e.g., correlation coefficients, AUC, or comparison to baselines) are provided to support the accuracy claim. The denoising claim is asserted without demonstration of how technical biases were identified or removed.  
+  - **Why it matters** Without validation metrics, the reader cannot assess whether the model performs meaningfully better than existing approaches or whether the denoising step introduces artifacts. This is foundational to all subsequent claims.  
+  - **Resolution test** Provide performance metrics against held-out chromosomes, comparison to existing nucleosome prediction tools, and a clear description of the denoising procedure with evidence that biological signal is preserved.
+  - **Concern ID** R1-M2  
+  - **Severity** Major  
+  - **Blocking** Yes  
+  - **Axis** Claim support  
+  - **Claim pointer** "Repetitive DNA elements play a major role in establishing these highly organized nucleosome arrays on a genomic scale," specifically CTCF motifs in SINEs, zinc-finger motifs in LINEs, and microsatellites.  
+  - **Evidence pointer** Abstract only; location not provided  
+  - **Concern** The abstract states these elements "act as potent organizers" but provides no statistical evidence, effect sizes, or causal demonstration. It is unclear whether these elements are necessary, sufficient, or merely correlated with nucleosome phasing.  
+  - **Why it matters** This is the central mechanistic claim of the paper. Without evidence that disruption or removal of these motifs abolishes phasing, or that their insertion creates phasing, the claim remains correlational.  
+  - **Resolution test** Include perturbation experiments (e.g., in silico mutagenesis of specific motifs) with quantitative readouts of phasing strength, and statistical comparisons to control sequences.
+  - **Concern ID** R1-M3  
+  - **Severity** Major  
+  - **Blocking** Yes  
+  - **Axis** Novelty and distinction from prior work  
+  - **Claim pointer** "Our findings extend the concept of sequence-encoded nucleosome architecture to mammalian genomes."  
+  - **Evidence pointer** Abstract only; location not provided  
+  - **Concern** Prior work has already demonstrated sequence preferences in mammalian nucleosome positioning, including roles for CTCF and repetitive elements. The abstract does not specify what is genuinely new beyond this, nor does it compare to existing models or findings.  
+  - **Why it matters** The claim of extension implies a gap that may already be partially filled. Without explicit comparison to prior models and data, the novelty is unclear.  
+  - **Resolution test** Provide a systematic comparison to existing nucleosome prediction models and prior experimental data on repetitive element involvement, highlighting specific advances.
+- **Minor Comments**  
+  - **Concern ID** R1-m1  
+  - **Severity** Minor  
+  - **Axis** Clarity  
+  - **Affected element** Definition of "nucleosome islands"  
+  - **Evidence pointer** Abstract; location not provided  
+  - **Issue** The term "nucleosome islands" is introduced without definition. It is unclear whether this refers to regions of high occupancy, regularly spaced arrays, or something else.  
+  - **Required correction** Define the term explicitly in the abstract or introduction, with operational criteria.
+  - **Concern ID** R1-m2  
+  - **Severity** Minor  
+  - **Axis** Reproducibility  
+  - **Affected element** Model description  
+  - **Evidence pointer** Abstract; location not provided  
+  - **Issue** The deep-learning model architecture is not described, making it impossible to assess reproducibility or compare to existing tools.  
+  - **Required correction** Include a brief description of the model type, input features, and training data in the abstract or methods.
+  - **Concern ID** R1-m3  
+  - **Severity** Minor  
+  - **Axis** Scope  
+  - **Affected element** Generalization claim  
+  - **Evidence pointer** Abstract; location not provided  
+  - **Issue** The model is trained on mouse embryonic stem cells, but the abstract implies general mammalian relevance without evidence from other cell types or species.  
+  - **Required correction** Clarify the scope of the claims or provide validation in additional contexts.
+- **Technical failings that need to be addressed before the case is established** R1-M1, R1-M2, R1-M3. The lack of quantitative validation, causal evidence for repetitive element function, and clear novelty distinction are all blocking.
+- **Assessment against Nature-style criteria**  
+  - Originality: The focus on repetitive elements as nucleosome organizers is potentially original, but the abstract does not sufficiently distinguish from prior work on CTCF and repeat-associated positioning.  
+  - Scientific importance: The question of sequence-encoded nucleosome architecture in mammals is important, and a robust answer would be of broad interest.  
+  - Interdisciplinary readership: The topic bridges genomics, chromatin biology, and machine learning, which could appeal to a wide audience if presented accessibly.  
+  - Technical soundness: Cannot be assessed from the abstract; no metrics, methods, or validation are provided.  
+  - Readability for nonspecialists: The abstract is generally clear but uses jargon (e.g., "nucleosome phasing," "SINEs," "LINEs") without sufficient context for a general reader.
+- **Recommendation posture** Currently not established from the provided evidence. The claims are plausible and potentially significant, but the abstract alone does not provide the quantitative or mechanistic support needed to assess validity. A full manuscript with detailed methods and results would be required for a supportive posture.
+
+## Risk / unsupported claims
+- The claim of accurate prediction is unsupported without metrics.
+- The claim that repetitive elements "act as potent organizers" is unsupported without perturbation or statistical evidence.
+- The claim of extending sequence-encoded architecture to mammals is weakly supported given prior work is not addressed.
+- The denoising claim is unverifiable without details on the procedure and validation.
+- The generalizability to mammalian genomes beyond mouse embryonic stem cells is not assessable.

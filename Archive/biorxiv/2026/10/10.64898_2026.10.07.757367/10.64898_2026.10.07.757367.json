@@ -1,0 +1,91 @@
+{
+  "source": "biorxiv",
+  "source_id": "10.64898/2026.10.07.757367",
+  "title": "Artificial Intelligence Applied to Epigenomic Data in Leukemia: A Systematic Review of Diagnostic, Prognostic and Monitoring Models",
+  "doi": "10.64898/2026.10.07.757367",
+  "abstract": "<h4>Background: </h4> Epigenetic deregulation is a defining feature of leukemia, and DNA methylation and chromatin accessibility profiles encode the cell of origin, lineage and clinical behaviour of the disease. Artificial intelligence (AI) and machine learning (ML) can extract predictive patterns from these high-dimensional data, but the published models have not been systematically appraised. We systematically reviewed AI models built on epigenomic data in leukemia for diagnosis, prognosis, relapse and treatment-response prediction, and measurable residual disease (MRD) detection. <h4>Methods:</h4> This review followed PRISMA 2020 and the SWiM guideline. PubMed was searched on 7 October 2026 with three structured queries, supplemented by a broader PubMed query, citation searching and web searching. Eligible studies were peer-reviewed primary studies that applied an ML or deep-learning algorithm to DNA methylation, chromatin-accessibility or histone-modification data from human leukemia samples and reported a quantitative diagnostic, prognostic, response or MRD outcome. Risk of bias and applicability were assessed with PROBAST, informed by PROBAST+AI. Owing to heterogeneity, results were synthesized narratively and in structured tables, without meta-analysis. <h4>Results:</h4> Of 68 unique database records and 32 reports from other sources, 30 studies (2010-2026; 22 since 2020) were included: 16 in acute myeloid leukemia, 4 in acute lymphoblastic leukemia, 2 spanning acute leukemia lineages, 3 in juvenile myelomonocytic leukemia and 5 in chronic lymphocytic leukemia; 10 were pediatric. DNA methylation was the input in 28 studies and chromatin accessibility in 2; no eligible study modelled histone marks. Tree ensembles (n = 9) and support vector machines (n = 5) were the most frequent algorithms. Diagnostic classifiers reported accuracy, concordance or F1 scores of 0.87-1.00, and two classifiers were applied to nanopore sequencing data, one returning acute leukemia subtype calls within about 2 hours. Prognostic epigenomic scores were associated with survival (reported hazard ratios 2.36-10.82), but discrimination fell on transport to independent cohorts (C-index 0.677 internally vs 0.529 in one external cohort). Fifteen studies validated models on an external epigenomic cohort, one prospectively. Overall risk of bias was high in 21 studies, unclear in 8 and low in 1, driven by the analysis domain (small samples, absent calibration, possible data leakage). Calibration was reported in 3 studies and code was available for 11. <h4>Conclusions:</h4> Epigenomic AI models classify leukemia subtypes with high reported accuracy and can deliver same-day diagnoses, and methylation-based scores add prognostic information. However, the evidence is dominated by retrospective, high-risk-of-bias development studies with limited external validation and almost no prospective or impact evaluation. Prospective, multi-center validation with calibrated, transparently reported models is required before clinical adoption.",
+  "authors": [
+    "Martelli J",
+    "Martelli J"
+  ],
+  "published_date": "2026-10-09",
+  "updated_date": "",
+  "journal": "bioRxiv",
+  "category": "",
+  "landing_url": "https://www.biorxiv.org/content/10.64898/2026.10.07.757367",
+  "pdf_url": "https://www.biorxiv.org/content/10.64898/2026.10.07.757367.full.pdf",
+  "pdf_path": "",
+  "pdf_downloaded": false,
+  "query": "(\"3D genome\" OR \"three-dimensional genome\" OR \"genome organization\" OR \"genome architecture\" OR \"genome folding\" OR \"nuclear organization\" OR \"nuclear architecture\" OR \"chromatin organization\" OR \"chromatin architecture\" OR \"chromatin conformation\" OR \"chromatin topology\" OR \"chromatin structure\" OR \"chromatin loop\" OR \"chromatin interaction\" OR \"chromatin domain\" OR \"topologically associating domain\" OR \"A/B compartment\" OR \"chromosome conformation capture\" OR \"Hi-C\" OR HiChIP OR \"loop extrusion\" OR \"loop-extrusion\" OR CTCF OR cohesin OR \"cis-regulatory\" OR \"cis-regulatory element\" OR \"regulatory element\" OR \"regulatory genomics\" OR \"chromatin accessibility\" OR \"enhancer-promoter\" OR \"promoter-enhancer\") AND (\"deep learning\" OR \"machine learning\" OR \"neural network\" OR \"graph neural network\" OR \"convolutional neural network\" OR transformer OR \"language model\" OR \"foundation model\" OR \"diffusion model\" OR generative OR \"flow matching\" OR esmfold OR rosetta OR alphafold OR \"molecular dynamics\" OR simulation OR docking)",
+  "version": "",
+  "keywords": [],
+  "extra": {
+    "provider": "europepmc",
+    "epmc_id": "PPR1338208",
+    "raw_record": {
+      "id": "PPR1338208",
+      "source": "PPR",
+      "doi": "10.64898/2026.10.07.757367",
+      "title": "Artificial Intelligence Applied to Epigenomic Data in Leukemia: A Systematic Review of Diagnostic, Prognostic and Monitoring Models",
+      "authorString": "Martelli J, Martelli J.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Martelli J",
+            "lastName": "Martelli",
+            "firstName": "Jacopo",
+            "initials": "J"
+          },
+          {
+            "fullName": "Martelli J",
+            "lastName": "Martelli",
+            "firstName": "Jacopo",
+            "initials": "J"
+          }
+        ]
+      },
+      "pubYear": "2026",
+      "abstractText": "<h4>Background: </h4> Epigenetic deregulation is a defining feature of leukemia, and DNA methylation and chromatin accessibility profiles encode the cell of origin, lineage and clinical behaviour of the disease. Artificial intelligence (AI) and machine learning (ML) can extract predictive patterns from these high-dimensional data, but the published models have not been systematically appraised. We systematically reviewed AI models built on epigenomic data in leukemia for diagnosis, prognosis, relapse and treatment-response prediction, and measurable residual disease (MRD) detection. <h4>Methods:</h4> This review followed PRISMA 2020 and the SWiM guideline. PubMed was searched on 7 October 2026 with three structured queries, supplemented by a broader PubMed query, citation searching and web searching. Eligible studies were peer-reviewed primary studies that applied an ML or deep-learning algorithm to DNA methylation, chromatin-accessibility or histone-modification data from human leukemia samples and reported a quantitative diagnostic, prognostic, response or MRD outcome. Risk of bias and applicability were assessed with PROBAST, informed by PROBAST+AI. Owing to heterogeneity, results were synthesized narratively and in structured tables, without meta-analysis. <h4>Results:</h4> Of 68 unique database records and 32 reports from other sources, 30 studies (2010-2026; 22 since 2020) were included: 16 in acute myeloid leukemia, 4 in acute lymphoblastic leukemia, 2 spanning acute leukemia lineages, 3 in juvenile myelomonocytic leukemia and 5 in chronic lymphocytic leukemia; 10 were pediatric. DNA methylation was the input in 28 studies and chromatin accessibility in 2; no eligible study modelled histone marks. Tree ensembles (n = 9) and support vector machines (n = 5) were the most frequent algorithms. Diagnostic classifiers reported accuracy, concordance or F1 scores of 0.87-1.00, and two classifiers were applied to nanopore sequencing data, one returning acute leukemia subtype calls within about 2 hours. Prognostic epigenomic scores were associated with survival (reported hazard ratios 2.36-10.82), but discrimination fell on transport to independent cohorts (C-index 0.677 internally vs 0.529 in one external cohort). Fifteen studies validated models on an external epigenomic cohort, one prospectively. Overall risk of bias was high in 21 studies, unclear in 8 and low in 1, driven by the analysis domain (small samples, absent calibration, possible data leakage). Calibration was reported in 3 studies and code was available for 11. <h4>Conclusions:</h4> Epigenomic AI models classify leukemia subtypes with high reported accuracy and can deliver same-day diagnoses, and methylation-based scores add prognostic information. However, the evidence is dominated by retrospective, high-risk-of-bias development studies with limited external validation and almost no prospective or impact evaluation. Prospective, multi-center validation with calibrated, transparently reported models is required before clinical adoption.",
+      "pubTypeList": {
+        "pubType": [
+          "Preprint"
+        ]
+      },
+      "bookOrReportDetails": {
+        "publisher": "bioRxiv",
+        "yearOfPublication": 2026
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Free",
+            "availabilityCode": "F",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.64898/2026.10.07.757367"
+          }
+        ]
+      },
+      "isOpenAccess": "N",
+      "inEPMC": "N",
+      "inPMC": "N",
+      "citedByCount": 0,
+      "hasReferences": "N",
+      "hasTextMinedTerms": "N",
+      "hasDbCrossReferences": "N",
+      "hasPDF": "N",
+      "hasBook": "N",
+      "hasSuppl": "N",
+      "hasLabsLinks": "N",
+      "hasData": "N",
+      "authMan": "N",
+      "epmcAuthMan": "N",
+      "nihAuthMan": "N",
+      "hasTMAccessionNumbers": "N",
+      "dateOfCreation": "2026-10-10",
+      "firstPublicationDate": "2026-10-09",
+      "firstIndexDate": "2026-10-10",
+      "hasEvaluations": "N"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42842425",
+  "title": "VAEBAC: A representation-learning framework for proteome-scale prediction of amyloidogenic proteins and functional stratification of nucleic-acid-binding proteins.",
+  "authors": "Ashraf, Muhammad Uzair; Ahmad, Owais; Khan, Rizwan Hasan",
+  "journal": "Bioinformatics (Oxford, England)",
+  "published_date": "2026-10-07",
+  "window": {
+    "start": "2026-10-04",
+    "end": "2026-10-10"
+  },
+  "score": 3,
+  "one_liner_zh": "该文用VAEBAC表示学习框架预测核酸结合蛋白的淀粉样倾向，虽涉及基因组组织相关蛋白，但核心是蛋白聚集预测而非染色质三维空间架构建模，且无AI/分子模拟方法用于染色质结构，与本课题关联较弱。",
+  "abstract": "MOTIVATION: Nucleic-acid-binding proteins (NABPs) govern transcription, replication and genome organization, yet the distribution of aggregation susceptibility within regulatory proteomes remains unresolved. Here, we systematically examine amyloidogenic potential across the nucleic-acid-binding proteomes of four phylogenetically diverse organisms-Escherichia coli, Bacillus subtilis, Saccharomyces cerevisiae and Homo sapiens-spanning prokaryotes and eukaryotes, to determine whether aggregation-prone sequence architectures are selectively constrained within transcriptional networks. RESULTS: Using VAEBAC, a representation-learning framework that integrates large-scale amyloid-family sequences with experimentally validated annotations, we performed proteome-scale prediction of amyloidogenicity across nucleic-acid-binding proteins in each organism. Predicted amyloidogenic proteins were consistently and significantly enriched in Gene Ontology categories associated with regulation of DNA-templated transcription, RNA biosynthesis, and gene expression across all four organisms, a pattern validated using three independent annotation tools. Fisher's exact test confirmed significant enrichment of amyloidogenic NABPs among transcription regulators in eukaryotic proteomes. Residue-level mapping demonstrated spatial separation between predicted aggregation-prone regions and DNA-binding interfaces, suggesting structural compatibility between regulatory function and conditional aggregation. Experimental validation confirmed fibrillar assembly of selected proteins. These findings support a conserved model in which aggregation susceptibility is functionally stratified across transcriptional regulatory tiers rather than uniformly suppressed within NABPs, a principle conserved across 3.5 billion years of evolution. AVAILABILITY AND IMPLEMENTATION: VAEBAC is freely accessible at https://www.vaebac.com. SUPPLEMENTARY INFORMATION: Supplementary data are available at Bioinformatics online.",
+  "abstract_zh": "动机：核酸结合蛋白（NABPs）调控转录、复制和基因组组织，然而调控蛋白质组中聚集易感性的分布仍未明确。在此，我们系统性地考察了四种系统发育多样性生物——大肠杆菌（Escherichia coli）、枯草芽孢杆菌（Bacillus subtilis）、酿酒酵母（Saccharomyces cerevisiae）和人类（Homo sapiens）——的核酸结合蛋白质组中的淀粉样生成潜力，涵盖原核生物和真核生物，以确定聚集倾向的序列架构是否在转录网络中选择性受限。结果：利用VAEBAC，一种整合大规模淀粉样家族序列与实验验证注释的表征学习框架，我们对每种生物中核酸结合蛋白进行了蛋白质组规模的淀粉样生成性预测。预测的淀粉样生成蛋白在四种生物中均一致且显著富集于与DNA模板化转录调控、RNA生物合成和基因表达相关的基因本体（Gene Ontology）类别中，这一模式通过三种独立注释工具得到验证。Fisher精确检验确认了真核蛋白质组中转录调控因子中淀粉样生成性NABPs的显著富集。残基水平映射显示预测的聚集倾向区域与DNA结合界面之间存在空间分离，表明调控功能与条件性聚集之间的结构兼容性。实验验证确认了选定蛋白质的纤维状组装。这些发现支持一个保守模型，即聚集易感性在转录调控层级中功能分层，而非在NABPs内被均匀抑制，这一原则在35亿年的进化中得以保守。可用性和实现：VAEBAC可免费访问于https://www.vaebac.com。补充信息：补充数据可在Bioinformatics在线获取。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42842425/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42842425/",
+  "paper_page_path": "papers/pubmed/42842425/index.html"
+}

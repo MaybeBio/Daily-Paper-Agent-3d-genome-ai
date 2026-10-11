@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42845416",
+  "title": "Entanglement dilution and high fractal dimension mediated by loop extrusion revealed in simulations of active polymer melts.",
+  "authors": "Chan, Brian; Rubinstein, Michael",
+  "journal": "bioRxiv : the preprint server for biology",
+  "published_date": "2026-10-08",
+  "window": {
+    "start": "2026-10-04",
+    "end": "2026-10-10"
+  },
+  "score": 9,
+  "one_liner_zh": "该文用混合分子动力学-蒙特卡洛模拟活性聚合物熔体中的环挤出过程，揭示其稀释缠结、增强TAD内接触并影响染色质空间组织的机制，直接命中染色质三维架构建模与分子模拟方法。",
+  "abstract": "In the active loop extrusion model, the cohesin protein complex creates chromatin loops in eukaryotic cells. Extrusion maintains topologically associated domains (TADs), which are contiguous segments of chromatin that preferentially colocalize in space and are typically bounded by CTCF proteins that pause cohesin translocation. Here, we model active loop extrusion with hybrid molecular dynamics - Monte Carlo simulations in entangled flexible linear polymer melts. Intra-chain contact probabilities of polymers with active loop extrusion are enhanced compared to their equilibrium, passive counterparts. Extrusion causes the size of chain segments to be much smaller than in passive melts. While the overlap parameter in passive melts without extrusion monotonically increases with segment length, it is nonmonotonic in active melts and on the order of unity within the parameters of this study. Active loop extrusion suppresses contacts between TADs in favor of intra-TAD contacts. Reduction of overlaps between chain segments dilutes entanglements in active melts. Depending on parameters, active extrusion without TADs may induce more compact conformations than with TADs, due in part to fractal loopy globule-like dynamics. This work suggests that active loop extrusion reduces overlaps between TADs, contributing to effective gene regulation by cis -regulatory elements.",
+  "abstract_zh": "在主动环挤压模型中，cohesin蛋白复合体在真核细胞中形成染色质环。挤压维持了拓扑关联结构域（TADs），这些是染色质中连续片段，在空间上优先共定位，通常由暂停cohesin转位的CTCF蛋白界定。在此，我们通过混合分子动力学-蒙特卡洛模拟，在缠结的柔性线性聚合物熔体中模拟主动环挤压。与平衡态、被动对应物相比，具有主动环挤压的聚合物链内接触概率增强。挤压导致链段尺寸远小于被动熔体中的尺寸。虽然无挤压被动熔体中的重叠参数随链段长度单调增加，但在主动熔体中它呈非单调性，且在本研究参数范围内处于单位量级。主动环挤压抑制TAD间接触，有利于TAD内接触。链段间重叠的减少稀释了主动熔体中的缠结。根据参数不同，无TAD的主动挤压可能比有TAD时诱导更紧凑的构象，部分归因于分形环状球状动力学。这项工作表明，主动环挤压减少TAD间的重叠，有助于顺式调控元件实现有效的基因调控。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42845416/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42845416/",
+  "paper_page_path": "papers/pubmed/42845416/index.html"
+}

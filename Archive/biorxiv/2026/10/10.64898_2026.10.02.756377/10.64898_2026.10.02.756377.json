@@ -1,0 +1,105 @@
+{
+  "source": "biorxiv",
+  "source_id": "10.64898/2026.10.02.756377",
+  "title": "Cerberus: bidirectional state space blocks improve accuracy and efficiency of regulatory sequence models",
+  "doi": "10.64898/2026.10.02.756377",
+  "abstract": "Sequence-to-function models predict regulatory activity and variant effects from DNA sequence alone, and leading models such as Borzoi compute long-range interactions with self-attention. The reference genome caps unique training sequences, and new assays add labels, not sequences. This constraint favors architectures that learn more from limited sequence diversity. We compared long-range blocks with the rest of the architecture and the training data held fixed, replacing Borzoi's transformer blocks with Hydra, a bidirectional state space block built on Mamba-2. Hydra blocks ran 5.7-fold faster on 8,192-token inputs, and models built on them predicted binned coverage on held-out sequences and classified fine-mapped eQTLs more accurately. Hydra's linear cost in sequence length let us run the blocks at 32 bp resolution and remove the U-net decoder, leaving a convolution-SSM model smaller and more accurate than the one it replaced. Scaling this architecture up on an augmented track collection produced Cerberus, an ensemble of eight models over 786 kb of input. We evaluated it on GTEx v11 fine-mapped eQTL, sQTL, and paQTL benchmarks with negatives matched on allele frequency, gene expression, and phenotype-specific positional annotations to reduce confounding by these properties. Cerberus is more accurate than Borzoi on all three phenotypes, 0.692 versus 0.668 mean eQTL AUPRC across 48 tissues, and estimates eQTL effect sizes better, 0.379 versus 0.321 Spearman $\\rho$. Against AlphaGenome, it trades leads in eQTL classification, ahead on variants 3 to 100 kb from the transcription start site and behind in coding sequence and within 3 kb. Interpretation of the trained blocks shows interaction range growing with block depth, from a 0.9 kb median half-life in the first block to 79 kb in the seventh, and the deepest heads anchoring on promoters, enhancers, and CTCF peaks. We release the models, the training data, the training and evaluation code, and the benchmark sets, supporting variant scoring and transfer learning.",
+  "authors": [
+    "Kelley DR",
+    "Yuan H",
+    "Huang X",
+    "Linder J"
+  ],
+  "published_date": "2026-10-09",
+  "updated_date": "",
+  "journal": "bioRxiv",
+  "category": "",
+  "landing_url": "https://www.biorxiv.org/content/10.64898/2026.10.02.756377",
+  "pdf_url": "https://www.biorxiv.org/content/10.64898/2026.10.02.756377.full.pdf",
+  "pdf_path": "",
+  "pdf_downloaded": false,
+  "query": "(\"3D genome\" OR \"three-dimensional genome\" OR \"genome organization\" OR \"genome architecture\" OR \"genome folding\" OR \"nuclear organization\" OR \"nuclear architecture\" OR \"chromatin organization\" OR \"chromatin architecture\" OR \"chromatin conformation\" OR \"chromatin topology\" OR \"chromatin structure\" OR \"chromatin loop\" OR \"chromatin interaction\" OR \"chromatin domain\" OR \"topologically associating domain\" OR \"A/B compartment\" OR \"chromosome conformation capture\" OR \"Hi-C\" OR HiChIP OR \"loop extrusion\" OR \"loop-extrusion\" OR CTCF OR cohesin OR \"cis-regulatory\" OR \"cis-regulatory element\" OR \"regulatory element\" OR \"regulatory genomics\" OR \"chromatin accessibility\" OR \"enhancer-promoter\" OR \"promoter-enhancer\") AND (\"deep learning\" OR \"machine learning\" OR \"neural network\" OR \"graph neural network\" OR \"convolutional neural network\" OR transformer OR \"language model\" OR \"foundation model\" OR \"diffusion model\" OR generative OR \"flow matching\" OR esmfold OR rosetta OR alphafold OR \"molecular dynamics\" OR simulation OR docking)",
+  "version": "",
+  "keywords": [],
+  "extra": {
+    "provider": "europepmc",
+    "epmc_id": "PPR1338061",
+    "raw_record": {
+      "id": "PPR1338061",
+      "source": "PPR",
+      "doi": "10.64898/2026.10.02.756377",
+      "title": "Cerberus: bidirectional state space blocks improve accuracy and efficiency of regulatory sequence models",
+      "authorString": "Kelley DR, Yuan H, Huang X, Linder J.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Kelley DR",
+            "lastName": "Kelley",
+            "firstName": "David",
+            "initials": "DR"
+          },
+          {
+            "fullName": "Yuan H",
+            "lastName": "Yuan",
+            "firstName": "Han",
+            "initials": "H"
+          },
+          {
+            "fullName": "Huang X",
+            "lastName": "Huang",
+            "firstName": "Xingfan",
+            "initials": "X"
+          },
+          {
+            "fullName": "Linder J",
+            "lastName": "Linder",
+            "firstName": "Johannes",
+            "initials": "J"
+          }
+        ]
+      },
+      "pubYear": "2026",
+      "abstractText": "Sequence-to-function models predict regulatory activity and variant effects from DNA sequence alone, and leading models such as Borzoi compute long-range interactions with self-attention. The reference genome caps unique training sequences, and new assays add labels, not sequences. This constraint favors architectures that learn more from limited sequence diversity. We compared long-range blocks with the rest of the architecture and the training data held fixed, replacing Borzoi's transformer blocks with Hydra, a bidirectional state space block built on Mamba-2. Hydra blocks ran 5.7-fold faster on 8,192-token inputs, and models built on them predicted binned coverage on held-out sequences and classified fine-mapped eQTLs more accurately. Hydra's linear cost in sequence length let us run the blocks at 32 bp resolution and remove the U-net decoder, leaving a convolution-SSM model smaller and more accurate than the one it replaced. Scaling this architecture up on an augmented track collection produced Cerberus, an ensemble of eight models over 786 kb of input. We evaluated it on GTEx v11 fine-mapped eQTL, sQTL, and paQTL benchmarks with negatives matched on allele frequency, gene expression, and phenotype-specific positional annotations to reduce confounding by these properties. Cerberus is more accurate than Borzoi on all three phenotypes, 0.692 versus 0.668 mean eQTL AUPRC across 48 tissues, and estimates eQTL effect sizes better, 0.379 versus 0.321 Spearman $\\rho$. Against AlphaGenome, it trades leads in eQTL classification, ahead on variants 3 to 100 kb from the transcription start site and behind in coding sequence and within 3 kb. Interpretation of the trained blocks shows interaction range growing with block depth, from a 0.9 kb median half-life in the first block to 79 kb in the seventh, and the deepest heads anchoring on promoters, enhancers, and CTCF peaks. We release the models, the training data, the training and evaluation code, and the benchmark sets, supporting variant scoring and transfer learning.",
+      "pubTypeList": {
+        "pubType": [
+          "Preprint"
+        ]
+      },
+      "bookOrReportDetails": {
+        "publisher": "bioRxiv",
+        "yearOfPublication": 2026
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Free",
+            "availabilityCode": "F",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.64898/2026.10.02.756377"
+          }
+        ]
+      },
+      "isOpenAccess": "N",
+      "inEPMC": "N",
+      "inPMC": "N",
+      "citedByCount": 0,
+      "hasReferences": "N",
+      "hasTextMinedTerms": "N",
+      "hasDbCrossReferences": "N",
+      "hasPDF": "N",
+      "hasBook": "N",
+      "hasSuppl": "N",
+      "hasLabsLinks": "N",
+      "hasData": "N",
+      "authMan": "N",
+      "epmcAuthMan": "N",
+      "nihAuthMan": "N",
+      "hasTMAccessionNumbers": "N",
+      "dateOfCreation": "2026-10-10",
+      "firstPublicationDate": "2026-10-09",
+      "firstIndexDate": "2026-10-10",
+      "hasEvaluations": "N"
+    }
+  }
+}

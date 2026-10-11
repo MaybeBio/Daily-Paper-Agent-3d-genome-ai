@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tangermeme: a toolkit for understanding cis-regulatory logic using deep learning models. · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-mid">5</span>
+    <div>
+      <h1>Tangermeme: a toolkit for understanding cis-regulatory logic using deep learning models.</h1>
+      <div class="meta">Schreiber, Jacob</div>
+      <div class="meta muted">
+        
+        <span class="journal">Nature methods</span>
+        · 2026-10-09
+         · 仅摘要
+         · <a href="https://pubmed.ncbi.nlm.nih.gov/42850431/">原文</a>
+      </div>
+      <p class="one-liner">该文介绍用于解释基因组深度学习模型顺式调控逻辑的工具包，虽涉及染色质水平调控特征但无三维空间架构建模，方法上属AI应用而非建模，故为中档。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">Deep learning models have achieved state-of-the-art performance at predicting diverse genomic modalities, yet their promise for biological discovery lies in how they are used after demonstrating their predictive performance. Here we describe the functionality of tangermeme, a highly optimized toolkit for &#39;everything-but-the-model&#39; when it comes to genomic deep learning, and demonstrate how tangermeme can be used to distill the learned cis-regulatory patterns from models into human-interpretable insights.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">深度学习模型在预测多种基因组模态方面已达到最先进性能，但其在生物学发现中的潜力在于它们在展示预测性能之后如何被使用。在此，我们描述了tangermeme的功能，这是一个针对基因组深度学习“除模型外一切”的高度优化工具包，并展示了如何利用tangermeme将模型学到的顺式调控模式提炼为人类可解释的见解。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：Tangermeme: a toolkit for understanding cis-regulatory logic using deep learning models</li>
+<li><strong>作者</strong>：Schreiber, Jacob</li>
+<li><strong>单位</strong>：未提供</li>
+<li><strong>期刊/平台</strong>：Nature Methods</li>
+<li><strong>年份</strong>：2026</li>
+<li><strong>论文类型</strong>：方法学/工具论文（toolkit description）</li>
+<li><strong>领域</strong>：基因组深度学习、顺式调控逻辑解析</li>
+<li><strong>关键词</strong>：deep learning, genomics, cis-regulatory logic, model interpretation, toolkit</li>
+<li><strong>DOI/arXiv 号</strong>：10.1038/s41592-026-03254-z</li>
+<li><strong>代码</strong>：未提供（工具名为 tangermeme，推测有开源实现，但正文未给出仓库地址）</li>
+<li><strong>数据</strong>：未提供</li>
+<li><strong>阅读日期</strong>：未提供</li>
+<li><strong>该文在「三维基因组/染色质组织 × AI 方法/物理模拟」方向中的位置</strong>：该文不直接研究三维基因组或染色质高级结构，而是提供一套通用的基因组深度学习模型解释工具包。其核心价值在于：三维基因组领域常使用深度学习模型（如预测 Hi-C、enhancer-promoter interaction、CTCF loop 等），而 tangermeme 提供的「everything-but-the-model」解释工具（如 in silico mutagenesis、feature attribution、motif discovery）可直接迁移到这些模型上，用于解析模型学到的染色质组织规则。因此，该文属于「AI 方法」侧的可复用基础设施，而非三维基因组本身。</li>
+</ul>
+<hr />
+<h2>02 一句话总结</h2>
+<p>该文描述了一个名为 tangermeme 的高度优化工具包，用于对基因组深度学习模型进行「除模型本身以外的一切」分析（如饱和突变、特征归因、motif 发现），从而将模型学到的顺式调控模式转化为人类可解释的生物学见解。</p>
+<hr />
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：基因组深度学习模型在预测多种基因组模态（如染色质可及性、转录因子结合、剪接等）上已达到最先进水平，但如何从训练好的模型中提取生物学上可解释的顺式调控逻辑（cis-regulatory logic）？</li>
+<li><strong>为什么重要</strong>：模型的预测性能本身不是终点；生物学发现依赖于理解模型学到了什么模式（如 motif、组合语法、距离关系）。缺乏易用、高效、可扩展的解释工具会严重限制深度学习在基因组学中的科学产出。</li>
+<li><strong>现有方法为何不足</strong>：现有解释工具往往针对特定模型架构或特定任务定制，缺乏通用性；计算效率低，难以处理全基因组尺度的 in silico 饱和突变；缺乏统一的 API 和内存管理，难以集成到现有工作流中。</li>
+<li><strong>精确研究问题</strong>：Can a single, highly optimized, model-agnostic toolkit provide scalable and interpretable analyses (e.g., in silico mutagenesis, attribution, motif discovery) for any genomic deep learning model, thereby enabling biological discovery from predictive performance?</li>
+</ul>
+<hr />
+<h2>04 背景与发展脉络</h2>
+<blockquote>
+<p>注：此脉络基于本文框架，未经外部系统核验，标注为「仅本文框架」。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>代表性方法</th>
+<th>优点</th>
+<th>局限</th>
+<th>本文位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>早期：模型即终点</td>
+<td>直接训练 CNN/RNN 预测基因组模态</td>
+<td>预测性能高</td>
+<td>黑箱，无法解释</td>
+<td>本文反对此阶段</td>
+</tr>
+<tr>
+<td>中期：单任务解释</td>
+<td>DeepLIFT、SHAP、saliency maps 等</td>
+<td>可解释单次预测</td>
+<td>计算昂贵、不统一、难以规模化</td>
+<td>本文整合并优化此类方法</td>
+</tr>
+<tr>
+<td>近期：工具化解释</td>
+<td>tfmodisco、ISM（in silico mutagenesis）等</td>
+<td>可发现 motif</td>
+<td>各自独立、缺乏统一框架</td>
+<td>本文提供统一、高效的工具包</td>
+</tr>
+<tr>
+<td>本文主张</td>
+<td>tangermeme</td>
+<td>统一 API、内存高效、GPU 加速、模型无关</td>
+<td>依赖模型本身质量</td>
+<td>作为「everything-but-the-model」基础设施</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>解释工具碎片化</td>
+<td>不同模型需不同解释代码，难以复用</td>
+<td>缺乏统一 API 和抽象层</td>
+<td>未提供（作者描述工具包设计动机）</td>
+</tr>
+<tr>
+<td>计算效率低</td>
+<td>全基因组 in silico 饱和突变耗时过长</td>
+<td>未针对 GPU 和内存访问模式优化</td>
+<td>未提供（作者声称「highly optimized」）</td>
+</tr>
+<tr>
+<td>内存管理差</td>
+<td>大规模序列输入导致 OOM</td>
+<td>缺乏批处理和内存池管理</td>
+<td>未提供</td>
+</tr>
+<tr>
+<td>模型与解释耦合</td>
+<td>解释代码常嵌入模型代码，难以替换模型</td>
+<td>缺乏「everything-but-the-model」的分离设计</td>
+<td>未提供</td>
+</tr>
+<tr>
+<td>可解释性产出不直观</td>
+<td>归因分数难以转化为 motif 或调控逻辑</td>
+<td>缺乏从归因到 motif 的端到端流程</td>
+<td>未提供</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>06 核心思想</h2>
+<ol>
+<li>
+<p><strong>表面方法</strong>：构建一个 Python 工具包，提供统一的 API 用于对任意基因组深度学习模型进行解释分析，包括 in silico mutagenesis、feature attribution、motif discovery 等，并针对 GPU 和内存效率进行高度优化。</p>
+</li>
+<li>
+<p><strong>核心洞察</strong>：基因组深度学习模型的科学价值不在于模型本身，而在于如何「打开」模型。通过将「模型」与「解释」彻底解耦（everything-but-the-model），可以构建一套通用的、可扩展的分析流程，使研究者无需修改模型代码即可获得生物学见解。</p>
+</li>
+<li>
+<p><strong>可能的普适教训</strong> [Analysis]：在三维基因组/染色质组织领域，深度学习模型（如预测 Hi-C、CTCF loop、enhancer-promoter interaction）同样面临「预测好但解释难」的问题。tangermeme 的「模型无关解释层」思路可迁移：任何训练好的染色质组织模型都可以用统一的归因/突变工具来解析其学到的序列特征（如 CTCF motif 方向性、cohesin loading motif、拓扑关联域边界序列偏好），从而将预测性能转化为对染色质组织机制的假设。</p>
+</li>
+</ol>
+<hr />
+<h2>07 方法总览</h2>
+<ul>
+<li><strong>输入</strong>：训练好的基因组深度学习模型（任意架构，如 CNN、ResNet、Transformer）+ 基因组序列（FASTA 或 one-hot encoding）</li>
+<li><strong>输出</strong>：多种解释结果，包括：</li>
+<li>in silico mutagenesis 分数（每个位置每个碱基替换对预测的影响）</li>
+<li>feature attribution 图（如 saliency、DeepLIFT 风格分数）</li>
+<li>motif 发现结果（从归因分数中提取的序列模式）</li>
+<li><strong>模块</strong>：</li>
+<li>序列处理模块（one-hot 编码、批处理、内存池）</li>
+<li>模型封装模块（统一模型接口，支持任意 PyTorch 模型）</li>
+<li>解释模块（ISM、attribution、motif discovery）</li>
+<li>可视化模块（归因图、motif logo）</li>
+<li><strong>训练</strong>：不涉及模型训练；工具包仅用于已训练模型的解释</li>
+<li><strong>工具</strong>：Python、PyTorch、GPU（CUDA）</li>
+<li><strong>反馈回路</strong>：解释结果 → 生物学假设 → 新实验 → 新模型 → 再解释</li>
+<li><strong>假设</strong>：模型已充分训练且预测性能良好；模型学到的模式与真实生物学机制相关</li>
+</ul>
+<p><strong>文字流程</strong>：
+1. 用户提供训练好的模型和感兴趣的基因组区域序列
+2. tangermeme 将序列编码为 one-hot 张量，按批次加载到 GPU
+3. 对每个位置进行 in silico 饱和突变（逐位替换为 A/C/G/T），记录模型输出变化
+4. 或计算 feature attribution 分数（通过反向传播或近似方法）
+5. 从归因分数中提取显著富集的序列模式（motif）
+6. 输出可视化结果（热图、logo、突变轨迹）</p>
+<hr />
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>序列编码与批处理</td>
+<td>将 DNA 序列转为 one-hot 张量，管理内存</td>
+<td>基因组序列长、样本多，需高效内存管理</td>
+<td>输入：FASTA/序列；输出：one-hot 张量</td>
+<td>未提供</td>
+<td>预期：大规模分析无法进行（OOM）</td>
+</tr>
+<tr>
+<td>模型封装层</td>
+<td>统一任意 PyTorch 模型的接口</td>
+<td>不同模型架构差异大，需统一调用方式</td>
+<td>输入：模型对象；输出：统一预测接口</td>
+<td>未提供</td>
+<td>预期：工具包无法适用于不同模型</td>
+</tr>
+<tr>
+<td>In silico mutagenesis</td>
+<td>逐位突变并记录预测变化</td>
+<td>识别关键碱基和 motif</td>
+<td>输入：序列+模型；输出：突变分数矩阵</td>
+<td>未提供</td>
+<td>预期：失去最核心的解释能力</td>
+</tr>
+<tr>
+<td>Feature attribution</td>
+<td>计算每个碱基对预测的贡献</td>
+<td>快速定位重要区域</td>
+<td>输入：序列+模型；输出：归因分数</td>
+<td>未提供</td>
+<td>预期：失去快速筛选能力</td>
+</tr>
+<tr>
+<td>Motif discovery</td>
+<td>从归因/突变分数中提取序列模式</td>
+<td>将分数转化为可解释的 motif</td>
+<td>输入：归因分数；输出：motif 矩阵/logo</td>
+<td>未提供</td>
+<td>预期：解释结果难以转化为生物学假设</td>
+</tr>
+<tr>
+<td>可视化</td>
+<td>展示归因热图、motif logo</td>
+<td>人类可读的输出</td>
+<td>输入：分数；输出：图</td>
+<td>未提供</td>
+<td>预期：结果难以直观理解</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：所有「移除后影响」均为 [Analysis] 预期推断，非实测消融结果。</p>
+</blockquote>
+<hr />
+<h2>09 关键公式符号</h2>
+<p>不适用。本文为工具描述论文，正文未提供具体数学公式。核心操作（in silico mutagenesis、attribution）的数学定义在原文中未展开。</p>
+<hr />
+<h2>10 实验设计与证据链</h2>
+<ul>
+<li><strong>数据集</strong>：未提供（正文未描述具体验证数据集）</li>
+<li><strong>规模</strong>：未提供</li>
+<li><strong>指标</strong>：未提供（推测包括计算速度、内存使用、解释质量，但未给出具体数值）</li>
+<li><strong>基线</strong>：未提供</li>
+<li><strong>评测协议</strong>：未提供</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的 claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>未提供</td>
+<td>未提供</td>
+<td>未提供</td>
+<td>未提供</td>
+<td>未提供</td>
+<td>未提供</td>
+<td>未提供</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：本文为工具描述/方法学论文，正文未提供定量实验数据。所有性能声明（如「highly optimized」）均为作者主张，缺乏可核验的实验证据。</p>
+</blockquote>
+<hr />
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：该工具适用于「已训练好的基因组深度学习模型」的解释分析，不涉及模型训练或新模型架构设计。</li>
+<li><strong>oracle/真值输入</strong>：工具本身不依赖 oracle；解释质量取决于输入模型的质量。</li>
+<li><strong>端到端状态</strong>：工具提供从序列到解释结果的端到端流程，但「解释结果 → 生物学发现」这一环节仍需人工判断。</li>
+<li><strong>算力成本</strong>：作者声称高度优化（GPU 加速、内存高效），但未提供具体 benchmark 数据。</li>
+<li><strong>历史数据依赖</strong>：不依赖历史数据；仅依赖用户提供的模型和序列。</li>
+<li><strong>模型依赖</strong>：工具是模型无关的，但解释质量完全取决于模型是否学到了真实生物学模式。</li>
+<li><strong>最难情形</strong>：长序列、全基因组规模分析、多任务模型解释。</li>
+<li><strong>群体/领域边界</strong>：主要面向基因组学研究者；对三维基因组领域，需用户自行提供相关模型（如 Hi-C 预测模型）。</li>
+<li><strong>不确定性</strong>：工具不提供不确定性量化；解释结果的生物学有效性需实验验证。</li>
+</ul>
+<p><strong>有边界的复述</strong>：tangermeme 是一个面向基因组深度学习模型的解释工具包，提供统一的 in silico mutagenesis、attribution 和 motif discovery 功能，声称在 GPU 和内存效率上做了高度优化。其适用性限于已训练模型的分析，不涉及模型训练；其生物学产出价值取决于输入模型的质量和用户的下游验证。</p>
+<hr />
+<h2>12 作者自认局限</h2>
+<p>在提供的材料（摘要）中未发现作者明确承认的局限。</p>
+<p><strong>作者提及的相关约束</strong>（非正式局限）：
+- 工具定位为「everything-but-the-model」，即不涉及模型训练和架构设计，用户需自行提供训练好的模型。
+- 解释质量受限于模型本身学到的模式是否反映真实生物学。</p>
+<hr />
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>性能声明缺乏定量证据</td>
+<td>作者称「highly optimized」但未提供 benchmark 数据</td>
+<td>工具论文的核心卖点是效率，若无数据支撑则难以评估</td>
+<td>要求作者提供与现有工具（如 DeepLIFT、ISM 实现）的运行时和内存对比</td>
+<td>摘要中仅有定性描述</td>
+</tr>
+<tr>
+<td>未描述验证案例</td>
+<td>未说明工具在哪些模型/数据上验证过</td>
+<td>无法判断工具的实用性和输出质量</td>
+<td>要求提供至少一个端到端案例（模型→解释→生物学发现）</td>
+<td>摘要未提及任何具体应用</td>
+</tr>
+<tr>
+<td>「everything-but-the-model」的边界模糊</td>
+<td>工具是否支持多任务模型、多模态输入（如序列+表观遗传特征）？</td>
+<td>三维基因组模型常需多模态输入，若工具仅支持序列输入则适用性受限</td>
+<td>检查工具文档是否支持多输入模型</td>
+<td>摘要仅提及「genomic deep learning models」</td>
+</tr>
+<tr>
+<td>解释方法的生物学有效性未讨论</td>
+<td>归因分数和 ISM 结果是否与已知调控机制一致？</td>
+<td>工具的科学价值取决于解释结果是否反映真实生物学</td>
+<td>在已知调控区域（如 CTCF motif）上验证工具输出</td>
+<td>摘要未涉及验证</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>14 Agent 提炼的知识候选</h2>
+<p><strong>标题</strong>：Agent 提炼的知识候选</p>
+<ol>
+<li>
+<p><strong>模型无关解释层架构</strong>：将「模型」与「解释」彻底解耦，构建统一的解释 API。可迁移到三维基因组领域：任何预测 Hi-C、CTCF loop、TAD 边界的模型都可以用同一套 ISM/attribution 工具解析其序列偏好，无需为每个模型重写解释代码。</p>
+</li>
+<li>
+<p><strong>In silico mutagenesis 的规模化实现</strong>：全基因组饱和突变是计算密集操作，tangermeme 的 GPU 批处理和内存管理策略可借鉴。三维基因组模型（如预测 enhancer-promoter interaction）常需扫描全基因组候选区域，高效的 ISM 实现可显著加速 motif 发现。</p>
+</li>
+<li>
+<p><strong>从归因到 motif 的端到端流程</strong>：将 attribution 分数转化为可解释的 motif 是解释工具的关键环节。三维基因组领域可借鉴此流程：从 Hi-C 预测模型的归因分数中提取染色质组织相关 motif（如 CTCF、cohesin loading motif），并检验其方向性偏好。</p>
+</li>
+<li>
+<p><strong>「预测性能 ≠ 生物学发现」的方法论提醒</strong>：该文的核心立场是模型性能只是起点，解释才是科学产出。三维基因组领域的深度学习模型（如预测 TAD 边界）同样需要从「预测准确」走向「机制理解」，tangermeme 的定位为此提供了方法论示范。</p>
+</li>
+</ol>
+<hr />
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>DeepLIFT / SHAP</strong>：tangermeme 的 attribution 模块与这些特征归因方法同源，但强调统一 API 和规模化。三维基因组领域已有工作使用 DeepLIFT 解析 CTCF loop 预测模型（如 Enformer 相关分析），tangermeme 可视为此类方法的工程化整合。</li>
+<li><strong>tfmodisco</strong>：motif 发现工具，tangermeme 的 motif discovery 模块与之功能重叠。三维基因组领域可结合两者：用 tangermeme 生成归因分数，再用 tfmodisco 提取 motif。</li>
+<li><strong>Enformer / Basenji</strong>：基因组深度学习模型的代表，tangermeme 可用于解释这类模型学到的调控逻辑。三维基因组领域常使用 Enformer 的 embedding 或预测头进行染色质组织分析，tangermeme 可为此类分析提供解释工具。</li>
+<li><strong>候选方向 [Analysis]</strong>：三维基因组领域的「everything-but-the-model」工具尚不成熟，tangermeme 的架构可作为模板，开发面向 Hi-C/3D 模型的专用解释工具包（如支持多模态输入、loop 预测头的归因分析）。</li>
+</ul>
+<hr />
+<h2>16 Agent 生成的研究候选</h2>
+<p><strong>标题</strong>：Agent 生成的研究候选</p>
+<ol>
+<li>
+<p><strong>候选名称</strong>：3D-Genome-Tangermeme：面向染色质组织模型的统一解释工具包
+   - <strong>来源局限/观察</strong>：tangermeme 仅支持序列输入，而三维基因组模型常需多模态输入（如序列+CTCF ChIP-seq+Hi-C 特征）；且其解释输出未针对 loop/TAD 等结构进行定制。
+   - <strong>核心假设</strong>：在 tangermeme 架构基础上扩展多模态输入和结构感知的归因分析，可更有效地从 Hi-C 预测模型中提取染色质组织规则。
+   - <strong>相对本文的增量</strong>：多模态输入支持、结构感知的归因可视化（如 loop 锚点、TAD 边界）、针对 3D 基因组任务的 ISM 策略。
+   - <strong>初步方法</strong>：扩展 tangermeme 的序列编码层为多模态编码层；在归因模块中增加 loop/TAD 结构约束；在 CTCF loop 预测模型上验证。
+   - <strong>验证方式</strong>：在已知 CTCF motif 方向性、cohesin loading motif 的位点上检验归因分数是否富集；与现有工具（DeepLIFT+tfmodisco）对比运行时间和 motif 发现质量。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：基于 ISM 的 TAD 边界序列语法解析
+   - <strong>来源局限/观察</strong>：TAD 边界预测模型的解释通常只关注单个 motif，缺乏对边界序列组合语法的系统解析。
+   - <strong>核心假设</strong>：使用 tangermeme 的 ISM 模块对 TAD 边界预测模型进行全边界扫描，可揭示边界序列的协同/拮抗组合模式。
+   - <strong>相对本文的增量</strong>：将 ISM 从单点突变扩展到组合突变分析，识别 motif 间的协同关系。
+   - <strong>初步方法</strong>：训练 TAD 边界预测模型；用 tangermeme ISM 计算每个边界的突变分数矩阵；用聚类/关联分析识别共现 motif 组合。
+   - <strong>验证方式</strong>：在已知 TAD 边界（如 mESC、K562）上验证发现的 motif 组合是否与 ChIP-seq 共结合模式一致。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：enhancer-promoter interaction 模型的可解释性基准
+   - <strong>来源局限/观察</strong>：tangermeme 未提供针对 EPI 预测模型的解释基准，而 EPI 模型的可解释性评估缺乏统一标准。
+   - <strong>核心假设</strong>：建立统一的 EPI 模型解释基准（包含已知调控位点、motif 注释、突变验证数据），可系统评估不同解释工具的性能。
+   - <strong>相对本文的增量</strong>：提供 EPI 领域的标准评测数据集和指标。
+   - <strong>初步方法</strong>：收集已知 EPI 相关 motif 和调控位点；用 tangermeme 对多个 EPI 模型进行归因分析；比较归因分数与实验验证位点的重合度。
+   - <strong>验证方式</strong>：在 CRISPR 验证的 enhancer 位点上检验归因分数的富集性。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+</ol></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Abstract only</li>
+<li><strong>Assessment boundary</strong> Claims and evidence presented in the supplied abstract text</li>
+<li><strong>Shared manuscript claim summary</strong> The authors describe tangermeme, a software toolkit designed to support post-prediction analysis of genomic deep learning models, with a focus on extracting interpretable cis-regulatory insights from trained models.</li>
+<li><strong>Visible evidence base</strong> Abstract text only; no figures, tables, methods, or code documentation provided</li>
+<li><strong>Missing materials affecting confidence</strong> Full manuscript, software documentation, benchmark results, case studies, code availability, and any quantitative performance comparisons</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li><strong>Overall assessment</strong> The abstract presents a potentially useful software contribution in a rapidly growing area of genomic deep learning interpretability. However, the supplied material is too limited to evaluate the technical claims, the novelty relative to existing toolkits, or the demonstrated utility of the approach. The abstract reads more as an announcement than as a substantive methods paper, and the evidence base is insufficient to assess whether the toolkit delivers on its stated promise.</li>
+<li><strong>Who would be interested in the results, and why</strong> Computational biologists and machine learning researchers working on regulatory genomics, particularly those applying deep learning models to predict gene expression, chromatin state, or transcription factor binding, and who need interpretability tools to extract biological insights from these models. The toolkit could also interest method developers seeking optimized implementations of attribution and saturation mutagenesis approaches.</li>
+<li><strong>Major strengths</strong> The abstract identifies a clear and important need, namely the post-prediction analysis of genomic deep learning models. The phrase "everything-but-the-model" is a useful framing that signals a comprehensive toolkit. The stated goal of distilling learned cis-regulatory patterns into human-interpretable insights is well aligned with current community needs.</li>
+<li><strong>Major Concerns</strong></li>
+<li><strong>Concern ID</strong> R1-M1</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Technical soundness</li>
+<li><strong>Claim pointer</strong> The abstract claims that tangermeme is a "highly optimized toolkit" for genomic deep learning analysis.</li>
+<li><strong>Evidence pointer</strong> Abstract text; location not provided</li>
+<li><strong>Concern</strong> No quantitative or qualitative evidence is provided to support the "highly optimized" claim. There are no benchmarks, runtime comparisons, memory usage data, or scaling analyses relative to existing tools.</li>
+<li><strong>Why it matters</strong> The term "highly optimized" is a substantive performance claim. Without supporting data, readers cannot assess whether the toolkit offers meaningful computational advantages over existing alternatives, which is often a deciding factor for adoption in large-scale genomic applications.</li>
+<li><strong>Resolution test</strong> Provide benchmark results comparing runtime and memory usage against existing tools on standard genomic datasets, with clear experimental settings and hardware specifications.</li>
+<li><strong>Concern ID</strong> R1-M2</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Originality and positioning</li>
+<li><strong>Claim pointer</strong> The abstract implies that tangermeme provides a comprehensive "everything-but-the-model" solution for genomic deep learning.</li>
+<li><strong>Evidence pointer</strong> Abstract text; location not provided</li>
+<li><strong>Concern</strong> The abstract does not describe what specific functionalities are included, how they differ from existing toolkits such as SHAP, DeepExplainer, tfmodisco, or other genomic interpretability packages, or what novel methodological contributions are made. Without this information, the novelty and distinct value proposition are unclear.</li>
+<li><strong>Why it matters</strong> The field already has multiple interpretability tools. A new toolkit must clearly articulate its unique contributions, whether in scope, efficiency, usability, or methodological innovation. The current abstract does not allow such an assessment.</li>
+<li><strong>Resolution test</strong> Provide a clear description of the toolkit's components, a comparison table with existing tools, and explicit statements of what is new or improved.</li>
+<li><strong>Concern ID</strong> R1-M3</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Demonstrated utility</li>
+<li><strong>Claim pointer</strong> The abstract states that tangermeme can be used to "distill the learned cis-regulatory patterns from models into human-interpretable insights."</li>
+<li><strong>Evidence pointer</strong> Abstract text; location not provided</li>
+<li><strong>Concern</strong> No example application, case study, or biological finding is presented to demonstrate that the toolkit actually produces interpretable and biologically meaningful results. The claim is entirely unsubstantiated in the supplied material.</li>
+<li><strong>Why it matters</strong> For a methods paper, demonstrating real-world utility is essential. Readers need to see a concrete example where the toolkit revealed a non-trivial cis-regulatory insight that would not have been easily obtained otherwise.</li>
+<li><strong>Resolution test</strong> Include at least one detailed case study with a trained model, the analysis performed, the output generated, and the biological interpretation derived, ideally with validation.</li>
+<li><strong>Minor Comments</strong></li>
+<li><strong>Concern ID</strong> R1-m1</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Readability for nonspecialists</li>
+<li><strong>Affected element</strong> Abstract text</li>
+<li><strong>Evidence pointer</strong> Abstract text; location not provided</li>
+<li><strong>Issue</strong> The abstract uses the phrase "everything-but-the-model" without explaining what this means in practical terms. Nonspecialist readers may not understand the scope of the toolkit.</li>
+<li><strong>Required correction</strong> Briefly enumerate the main categories of functionality included, such as attribution analysis, saturation mutagenesis, and feature visualization.</li>
+<li><strong>Concern ID</strong> R1-m2</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Reproducibility</li>
+<li><strong>Affected element</strong> Software availability statement</li>
+<li><strong>Evidence pointer</strong> Abstract text; location not provided</li>
+<li><strong>Issue</strong> The abstract does not mention where the software can be obtained, its license, or its dependencies.</li>
+<li><strong>Required correction</strong> Add a data and code availability statement with the repository URL, license, and installation instructions.</li>
+<li><strong>Concern ID</strong> R1-m3</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Technical soundness</li>
+<li><strong>Affected element</strong> Performance claim</li>
+<li><strong>Evidence pointer</strong> Abstract text; location not provided</li>
+<li><strong>Issue</strong> The term "highly optimized" is vague and could refer to any level of optimization.</li>
+<li><strong>Required correction</strong> Specify what is optimized, such as GPU utilization, memory efficiency, or parallelization, and provide concrete metrics.</li>
+<li><strong>Technical failings that need to be addressed before the case is established</strong> R1-M1, R1-M2, R1-M3. The core claims of optimization, novelty, and demonstrated utility are all unsupported by the supplied abstract. Without addressing these, the case for the toolkit as a significant methods contribution is not established.</li>
+<li><strong>Assessment against Nature-style criteria</strong> Originality: not assessable from the abstract, as the specific contributions relative to existing tools are not described. Scientific importance: the problem addressed is important, but the abstract does not demonstrate that the toolkit advances the field. Interdisciplinary readership: the abstract is written in a way that may appeal to computational biologists, but the lack of concrete examples limits broader appeal. Technical soundness: not assessable, as no technical details or benchmarks are provided. Readability for nonspecialists: the abstract is brief and accessible, but the "everything-but-the-model" phrase is unclear without elaboration.</li>
+<li><strong>Recommendation posture</strong> Currently not established from the provided evidence. The abstract alone does not provide sufficient information to evaluate the toolkit's claims. A full manuscript with benchmarks, comparisons, and case studies is required before a supportive recommendation can be considered.</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>The claim that tangermeme is "highly optimized" is unsupported by any performance data.</li>
+<li>The claim that the toolkit can "distill learned cis-regulatory patterns into human-interpretable insights" is unsupported by any example or case study.</li>
+<li>The implied comprehensiveness of the "everything-but-the-model" framing is unverifiable without a description of included functionalities.</li>
+<li>The novelty of the toolkit relative to existing interpretability methods is not assessable from the supplied material.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

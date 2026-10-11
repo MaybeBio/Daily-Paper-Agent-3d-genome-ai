@@ -2,6 +2,291 @@
   "version": 1,
   "documents": [
     {
+      "id": "biorxiv:10.64898/2026.10.02.756377",
+      "title": "Cerberus: bidirectional state space blocks improve accuracy and efficiency of regulatory sequence models",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/biorxiv/10.64898_2026.10.02.756377/index.html",
+      "meta": [
+        "Kelley DR; Yuan H; Huang X; Linder J",
+        "bioRxiv",
+        "2026-10-09"
+      ],
+      "tags": [],
+      "summary": "该文提出基于Mamba-2双向状态空间块的Cerberus模型，用于从DNA序列预测调控活性和变异效应，虽非直接建模染色质三维结构，但其长程序列交互建模与增强子-启动子、CTCF位点锚定分析对三维基因组调控特征预测有方法学启发。",
+      "abstract": "Sequence-to-function models predict regulatory activity and variant effects from DNA sequence alone, and leading models such as Borzoi compute long-range interactions with self-attention. The reference genome caps unique training sequences, and new assays add labels, not sequences. This constraint favors architectures that learn more from limited sequence diversity. We compared long-range blocks with the rest of the architecture and the training data held fixed, replacing Borzoi's transformer blocks with Hydra, a bidirectional state space block built on Mamba-2. Hydra blocks ran 5.7-fold faster on 8,192-token inputs, and models built on them predicted binned coverage on held-out sequences and classified fine-mapped eQTLs more accurately. Hydra's linear cost in sequence length let us run the blocks at 32 bp resolution and remove the U-net decoder, leaving a convolution-SSM model smaller and more accurate than the one it replaced. Scaling this architecture up on an augmented track collection produced Cerberus, an ensemble of eight models over 786 kb of input. We evaluated it on GTEx v11 fine-mapped eQTL, sQTL, and paQTL benchmarks with negatives matched on allele frequency, gene expression, and phenotype-specific positional annotations to reduce confounding by these properties. Cerberus is more accurate than Borzoi on all three phenotypes, 0.692 versus 0.668 mean eQTL AUPRC across 48 tissues, and estimates eQTL effect sizes better, 0.379 versus 0.321 Spearman $\\rho$. Against AlphaGenome, it trades leads in eQTL classification, ahead on variants 3 to 100 kb from the transcription start site and behind in coding sequence and within 3 kb. Interpretation of the trained blocks shows interaction range growing with block depth, from a 0.9 kb median half-life in the first block to 79 kb in the seventh, and the deepest heads anchoring on promoters, enhancers, and CTCF peaks. We release the models, the training data, the training and evaluation code, and the benchmark sets, supporting variant scoring and transfer learning. 序列到功能模型仅从DNA序列预测调控活性和变异效应，领先模型如Borzoi通过自注意力计算长程相互作用。参考基因组限制了独特训练序列的数量，而新实验测定增加的是标签而非序列。这一约束有利于那些能从有限序列多样性中学习更多信息的架构。我们固定长程模块与架构其余部分及训练数据不变，将Borzoi的Transformer模块替换为Hydra——一种基于Mamba-2构建的双向状态空间模块。Hydra模块在8,192个token输入上运行速度快5.7倍，基于其构建的模型在预测保留序列上的分箱覆盖度及分类精细定位eQTL方面更为准确。Hydra在序列长度上的线性成本使我们能以32 bp分辨率运行这些模块并移除U-net解码器，得到一个比原模型更小且更准确的卷积-SSM模型。将该架构在增强的轨道集合上扩展，产生了Cerberus——一个覆盖786 kb输入的八模型集成。我们在GTEx v11精细定位eQTL、sQTL和paQTL基准上对其评估，负样本在等位基因频率、基因表达和表型特异性位置注释上匹配，以减少这些属性的混杂效应。Cerberus在所有三种表型上均比Borzoi更准确，在48个组织中平均eQTL AUPRC为0.692对0.668，并且能更好地估计eQTL效应大小，Spearman ρ为0.379对0.321。与AlphaGenome相比，它在eQTL分类上互有领先，在距转录起始位点3至100 kb的变异上占优，而在编码序列及3 kb以内区域则落后。对训练模块的解释显示，相互作用范围随模块深度增加而增长，从第一个模块的0.9 kb中位半衰期到第七个模块的79 kb，最深的注意力头锚定在启动子、增强子和CTCF峰上。我们发布了模型、训练数据、训练与评估代码以及基准集，支持变异评分和迁移学习。",
+      "date": "2026-10-09"
+    },
+    {
+      "id": "biorxiv:10.64898/2026.10.07.757367",
+      "title": "Artificial Intelligence Applied to Epigenomic Data in Leukemia: A Systematic Review of Diagnostic, Prognostic and Monitoring Models",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/biorxiv/10.64898_2026.10.07.757367/index.html",
+      "meta": [
+        "Martelli J; Martelli J",
+        "bioRxiv",
+        "2026-10-09"
+      ],
+      "tags": [],
+      "summary": "该综述系统评估了AI/ML在白血病表观基因组数据（DNA甲基化、染色质可及性）上的诊断、预后与监测模型，但对象为临床疾病预测而非染色质三维空间组织建模，且无分子模拟或三维架构方法，与本课题关联微弱。",
+      "abstract": "<h4>Background: </h4> Epigenetic deregulation is a defining feature of leukemia, and DNA methylation and chromatin accessibility profiles encode the cell of origin, lineage and clinical behaviour of the disease. Artificial intelligence (AI) and machine learning (ML) can extract predictive patterns from these high-dimensional data, but the published models have not been systematically appraised. We systematically reviewed AI models built on epigenomic data in leukemia for diagnosis, prognosis, relapse and treatment-response prediction, and measurable residual disease (MRD) detection. <h4>Methods:</h4> This review followed PRISMA 2020 and the SWiM guideline. PubMed was searched on 7 October 2026 with three structured queries, supplemented by a broader PubMed query, citation searching and web searching. Eligible studies were peer-reviewed primary studies that applied an ML or deep-learning algorithm to DNA methylation, chromatin-accessibility or histone-modification data from human leukemia samples and reported a quantitative diagnostic, prognostic, response or MRD outcome. Risk of bias and applicability were assessed with PROBAST, informed by PROBAST+AI. Owing to heterogeneity, results were synthesized narratively and in structured tables, without meta-analysis. <h4>Results:</h4> Of 68 unique database records and 32 reports from other sources, 30 studies (2010-2026; 22 since 2020) were included: 16 in acute myeloid leukemia, 4 in acute lymphoblastic leukemia, 2 spanning acute leukemia lineages, 3 in juvenile myelomonocytic leukemia and 5 in chronic lymphocytic leukemia; 10 were pediatric. DNA methylation was the input in 28 studies and chromatin accessibility in 2; no eligible study modelled histone marks. Tree ensembles (n = 9) and support vector machines (n = 5) were the most frequent algorithms. Diagnostic classifiers reported accuracy, concordance or F1 scores of 0.87-1.00, and two classifiers were applied to nanopore sequencing data, one returning acute leukemia subtype calls within about 2 hours. Prognostic epigenomic scores were associated with survival (reported hazard ratios 2.36-10.82), but discrimination fell on transport to independent cohorts (C-index 0.677 internally vs 0.529 in one external cohort). Fifteen studies validated models on an external epigenomic cohort, one prospectively. Overall risk of bias was high in 21 studies, unclear in 8 and low in 1, driven by the analysis domain (small samples, absent calibration, possible data leakage). Calibration was reported in 3 studies and code was available for 11. <h4>Conclusions:</h4> Epigenomic AI models classify leukemia subtypes with high reported accuracy and can deliver same-day diagnoses, and methylation-based scores add prognostic information. However, the evidence is dominated by retrospective, high-risk-of-bias development studies with limited external validation and almost no prospective or impact evaluation. Prospective, multi-center validation with calibrated, transparently reported models is required before clinical adoption. <h4>背景：</h4> 表观遗传失调是白血病的定义性特征，DNA甲基化和染色质可及性谱编码了疾病的起源细胞、谱系和临床行为。人工智能（AI）和机器学习（ML）可以从这些高维数据中提取预测模式，但已发表的模型尚未得到系统评估。我们系统回顾了基于白血病表观基因组数据构建的AI模型，用于诊断、预后、复发和治疗反应预测，以及可测量残留病（MRD）检测。<h4>方法：</h4> 本综述遵循PRISMA 2020和SWiM指南。于2026年10月7日使用三个结构化查询在PubMed进行检索，并通过更广泛的PubMed查询、引文检索和网络检索进行补充。符合条件的研究为同行评审的原始研究，这些研究将ML或深度学习算法应用于人类白血病样本的DNA甲基化、染色质可及性或组蛋白修饰数据，并报告了定量的诊断、预后、反应或MRD结果。使用PROBAST评估偏倚风险和适用性，并参考PROBAST+AI。由于异质性，结果以叙述性和结构化表格形式综合，未进行荟萃分析。<h4>结果：</h4> 在68条独特数据库记录和32份其他来源报告中，纳入30项研究（2010-2026年；其中22项自2020年以来）：16项针对急性髓系白血病，4项针对急性淋巴细胞白血病，2项涵盖急性白血病谱系，3项针对幼年型粒单核细胞白血病，5项针对慢性淋巴细胞白血病；其中10项为儿科研究。DNA甲基化是28项研究的输入，染色质可及性为2项；没有符合条件的研究对组蛋白标记进行建模。树集成（n = 9）和支持向量机（n = 5）是最常见的算法。诊断分类器报告的准确率、一致性或F1分数为0.87-1.00，两个分类器应用于纳米孔测序数据，其中一个在约2小时内返回急性白血病亚型分类。预后表观基因组评分与生存相关（报告的风险比为2.36-10.82），但在转移到独立队列时区分度下降（内部C指数为0.677，而一个外部队列中为0.529）。15项研究在外部表观基因组队列上验证了模型，其中1项为前瞻性验证。总体偏倚风险在21项研究中为高，8项为不清楚，1项为低，主要由分析领域驱动（样本量小、缺乏校准、可能存在数据泄漏）。3项研究报告了校准，11项提供了代码。<h4>结论：</h4> 表观基因组AI模型以高报告准确率分类白血病亚型，并能提供当日诊断，基于甲基化的评分增加了预后信息。然而，证据主要由回顾性、高偏倚风险的发展研究主导，外部验证有限，几乎没有前瞻性或影响评估。在临床采用之前，需要进行前瞻性、多中心验证，并采用校准良好、透明报告的模型。",
+      "date": "2026-10-09"
+    },
+    {
+      "id": "pubmed:42850431",
+      "title": "Tangermeme: a toolkit for understanding cis-regulatory logic using deep learning models.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42850431/index.html",
+      "meta": [
+        "Schreiber, Jacob",
+        "Nature methods",
+        "2026-10-09"
+      ],
+      "tags": [],
+      "summary": "该文介绍用于解释基因组深度学习模型顺式调控逻辑的工具包，虽涉及染色质水平调控特征但无三维空间架构建模，方法上属AI应用而非建模，故为中档。",
+      "abstract": "Deep learning models have achieved state-of-the-art performance at predicting diverse genomic modalities, yet their promise for biological discovery lies in how they are used after demonstrating their predictive performance. Here we describe the functionality of tangermeme, a highly optimized toolkit for 'everything-but-the-model' when it comes to genomic deep learning, and demonstrate how tangermeme can be used to distill the learned cis-regulatory patterns from models into human-interpretable insights. 深度学习模型在预测多种基因组模态方面已达到最先进性能，但其在生物学发现中的潜力在于它们在展示预测性能之后如何被使用。在此，我们描述了tangermeme的功能，这是一个针对基因组深度学习“除模型外一切”的高度优化工具包，并展示了如何利用tangermeme将模型学到的顺式调控模式提炼为人类可解释的见解。",
+      "date": "2026-10-09"
+    },
+    {
+      "id": "pubmed:42850882",
+      "title": "Kingdom-wide comparative transcriptomics reveals deeply conserved and predictable stress response programs across Viridiplantae.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42850882/index.html",
+      "meta": [
+        "Koh, Eugene; Peh, Li Hui; Tan, Sabrina; Koh, Teng-Seah; Chin, Li-Li; Ho, Boon-Chuan; Mutwil, Marek",
+        "Molecular plant",
+        "2026-10-09"
+      ],
+      "tags": [],
+      "summary": "该文构建植物界跨物种胁迫转录组图谱，用DNA/RNA基础模型预测胁迫响应，但对象为基因表达而非染色质三维组织，无空间架构建模，仅序列预测方法可迁移性有限。",
+      "abstract": "How conserved stress responses are across the plant kingdom remains poorly understood. Here, we present a kingdom-wide stress transcriptome atlas of 36 Viridiplantae species, from chlorophytes to angiosperms, across nine abiotic and biotic stresses. The atlas integrates reanalyzed public RNA-seq data with new in-house stress experiments on three species representing basal lineages, yielding 13.6 million differential expression calls from over 3,200 manually curated control-treatment comparisons. We find that ancient gene families respond broadly but moderately, while lineage-specific families respond narrowly but intensely, revealing a division of labor in stress gene deployment. Stress response conservation decays with phylogenetic distance yet remains detectable across more than 700 million years of divergence, with upregulated genes diverging faster than downregulated genes. Functional co-occurrence analysis uncovers a deeply conserved growth-defense tradeoff alongside stress-specific transcriptional rewiring. Conserved stress co-expression modules undergo regulatory sub-functionalization through duplication, with whole-genome duplicate pairs preferentially retained within modules. Finally, DNA and RNA foundation models predict stress responsiveness from sequence alone (auROC 0.755), suggesting a partially conserved cis-regulatory code underlying stress responses across the kingdom. 植物界中应激反应的保守程度至今仍知之甚少。在此，我们呈现了一个涵盖36种绿色植物（Viridiplantae）物种、从绿藻到被子植物、跨越九种非生物和生物胁迫的植物界级应激转录组图谱。该图谱整合了重新分析的公共RNA-seq数据，以及对代表基部谱系的三个物种进行的新内部胁迫实验，从超过3,200个手动整理的对照-处理比较中产生了1,360万个差异表达调用。我们发现，古老基因家族响应广泛但程度适中，而谱系特异性家族响应狭窄但强烈，揭示了应激基因部署中的分工机制。应激反应保守性随系统发育距离增加而衰减，但在超过7亿年的分化中仍可检测到，其中上调基因的进化速度快于下调基因。功能共现分析揭示了一个深度保守的生长-防御权衡，以及应激特异性转录重连。保守的应激共表达模块通过复制经历调控亚功能化，其中全基因组重复对优先保留在模块内。最后，DNA和RNA基础模型仅从序列即可预测应激响应性（auROC 0.755），表明植物界中应激反应背后存在部分保守的顺式调控编码。",
+      "date": "2026-10-09"
+    },
+    {
+      "id": "pubmed:42853536",
+      "title": "SpliceDetector: A Splice Sites Detection Method Based on Biology Attention and Ensemble Module.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42853536/index.html",
+      "meta": [
+        "Shen, Jiquan; Wang, Yingying; Luo, Junwei",
+        "Interdisciplinary sciences, computational life sciences",
+        "2026-10-09"
+      ],
+      "tags": [],
+      "summary": "该文提出基于生物学注意力和集成模块的剪接位点检测深度学习方法，虽涉及基因组调控序列特征，但对象为剪接位点而非染色质三维组织，且无空间构象建模，与课题关联较弱。",
+      "abstract": "Splice site detection is a fundamental task in genome annotation, yet existing deep learning methods still have limitations in incorporating biological prior knowledge and extracting multi-scale features. This study presents SpliceDetector, a multi-scale residual attention network based on multi-level attention mechanisms and ensemble strategies. SpliceDetector employs a Biology Attention mechanism that utilizes tri-scale depthwise separable convolutions to capture short-range splice site motifs GT-AG, medium-range regulatory elements (ESE/ESS), and long-range sequence context (ISE/ISS). Three complementary sub-models further leverage ECA (Efficient Channel Attention), Biology Attention, and CBAM (Convolutional Block Attention Module) to improve feature representation from the channel, biological, and spatial dimensions, respectively. Their outputs are combined through validation-performance-based a weighted ensemble to improve prediction stability. SpliceDetector outperforms the compared methods on all six benchmark datasets from three species (O. sativa japonica, A. thaliana, and H. sapiens) for both donor-site and acceptor-site detection. Interpretability analyses further indicate that the learned attention distributions correspond to known splicing signals, suggesting that SpliceDetector captures biologically relevant sequence patterns rather than relying only on classification accuracy. The code implementation of SpliceDetector is publicly available at https://github.com/HpuBioinformatics/SpliceDetector . Article type: Original Article. SpliceDetector: A Splice Sites Detection Method Based on Biology Attention and Ensemble Module. 剪接位点检测是基因组注释中的一项基础任务，然而现有深度学习方法在整合生物学先验知识和提取多尺度特征方面仍存在局限性。本研究提出了SpliceDetector，一种基于多层次注意力机制和集成策略的多尺度残差注意力网络。SpliceDetector采用生物学注意力（Biology Attention）机制，利用三尺度深度可分离卷积来捕获短程剪接位点基序GT-AG、中程调控元件（ESE/ESS）以及长程序列上下文（ISE/ISS）。三个互补的子模型进一步利用ECA（高效通道注意力）、生物学注意力和CBAM（卷积块注意力模块），分别从通道、生物学和空间维度改进特征表示。它们的输出通过基于验证性能的加权集成进行组合，以提高预测稳定性。SpliceDetector在来自三个物种（O. sativa japonica、A. thaliana和H. sapiens）的所有六个基准数据集上，在供体位点和受体位点检测方面均优于对比方法。可解释性分析进一步表明，学习到的注意力分布与已知剪接信号相对应，提示SpliceDetector捕获了生物学相关的序列模式，而非仅依赖分类准确性。SpliceDetector的代码实现公开可用，网址为https://github.com/HpuBioinformatics/SpliceDetector。文章类型：原创文章。SpliceDetector：一种基于生物学注意力和集成模块的剪接位点检测方法。",
+      "date": "2026-10-09"
+    },
+    {
+      "id": "arxiv:2610.12281v1",
+      "title": "Unlocking the Regulatory Genome by ARGUS: An Evidence-Constrained Agentic Framework for Interpreting Single Nucleotide Variants",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/arxiv/2610.12281v1/index.html",
+      "meta": [
+        "Pratik Dutta; Matthew B. Obusan; Max Chao; Rekha Sathian; Nimisha Papineni; Ramana V. Davuluri",
+        "arXiv",
+        "2026-10-08"
+      ],
+      "tags": [],
+      "summary": "该文提出ARGUS智能体框架，用LLM规划结合DNABERT模型解释非编码单核苷酸变异对转录因子结合的影响，但对象是变异功能解读而非染色质三维空间架构建模，且方法为LLM推理而非AI/分子模拟建模，与三维基因组课题关联较弱。",
+      "abstract": "Over 90% of disease-associated variants from genome-wide association studies fall in noncoding regulatory regions, yet their functional interpretation remains a central open problem in genomic medicine. Large language models prompted to interpret such variants routinely hallucinate transcription factor (TF) binding changes, fabricate experimental support, and assign biological significance to statistically negligible signals. We present ARGUS (Agentic Regulatory Genomics for an Uncertainty-aware Scientist), which strictly separates deterministic biological computation from LLM-mediated reasoning. ARGUS wraps 458 DNABERT-based TF binding models in a hypothesis-directed investigation loop where a planner selects evidence sources based on current uncertainty, a verifier deterministically interprets each observation, and intermediate results change the investigation path. On variant rs6983267 at the 8q24 cancer risk locus, the same planner produces four divergent trajectories for four TFs. FOXA1 is rescued in 3 steps when real ADASTRA allele-specific binding data (15 experiments, FDR = 0.030) reveals a model false negative masked by saturation. KLF6 traverses 8 steps across ADASTRA, JASPAR motif analysis, and ENCODE cCRE regulatory annotation before abstaining due to mixed indirect evidence. RAD21 abstains in 8 steps after ADASTRA returns a coverage-qualified but nonsignificant allelic test (5 experiments, FDR = 0.65), and SP1, which shares FOXA1's saturated retained prediction, abstains because no direct experimental evidence exists at this locus. All observations come from real ADASTRA, JASPAR, and ENCODE cCRE queries; none are simulated. A comparison of fixed-priority and LLM-mediated planning shows that the LLM planner reaches identical verdicts with fewer tool calls by declining evidence that cannot resolve the claim under test. 全基因组关联研究中超过90%的疾病相关变异位于非编码调控区域，然而其功能解读仍是基因组医学中的一个核心未解问题。用于解读此类变异的大型语言模型常会幻觉性地生成转录因子（TF）结合变化、捏造实验支持，并将生物学意义赋予统计上可忽略的信号。我们提出了ARGUS（面向不确定性感知科学家的智能调控基因组学），该方法严格区分确定性生物计算与LLM介导的推理。ARGUS将458个基于DNABERT的TF结合模型封装在一个假设导向的调查循环中，其中规划者根据当前不确定性选择证据来源，验证者确定性地解读每个观察结果，中间结果会改变调查路径。在8q24癌症风险位点的rs6983267变异上，同一规划者为四个TF生成了四条不同的轨迹。当真实的ADASTRA等位基因特异性结合数据（15项实验，FDR = 0.030）揭示出由饱和效应掩盖的模型假阴性时，FOXA1在3步内被解救。KLF6在ADASTRA、JASPAR基序分析和ENCODE cCRE调控注释之间遍历8步，最终因混合间接证据而弃权。RAD21在ADASTRA返回覆盖度合格但非显著的等位基因测试（5项实验，FDR = 0.65）后，在8步内弃权；而SP1，与FOXA1共享饱和的保留预测，因该位点缺乏直接实验证据而弃权。所有观察结果均来自真实的ADASTRA、JASPAR和ENCODE cCRE查询，无任何模拟。固定优先级与LLM介导规划的对比显示，LLM规划者通过拒绝无法解决测试主张的证据，以更少的工具调用达到相同结论。",
+      "date": "2026-10-08"
+    },
+    {
+      "id": "biorxiv:10.64898/2026.10.07.757277",
+      "title": "Unsupervised Clustering Enables Cohort-Specific Variant Recalibration in Crops",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/biorxiv/10.64898_2026.10.07.757277/index.html",
+      "meta": [
+        "Bergmann T; MacNish TR; Batley J; Edwards D",
+        "bioRxiv",
+        "2026-10-08"
+      ],
+      "tags": [],
+      "summary": "该文研究作物基因组变异质量校正的机器学习方法，与三维基因组/染色质组织建模无关，且无空间结构或AI/分子模拟方法贡献。",
+      "abstract": "Genomic selection (GS) and trait discovery in crops require reliable marker datasets, yet variant discovery remains constrained by the lack of standardised, high-confidence reference resources. Publicly available plant genomic resources are often based on outdated reference genomes, heterogenous pipelines, and generic variant hard-filtering thresholds derived from human studies. Consequently, implementation of the Genome Analysis Toolkit (GATK) Best Practices framework, including machine learning-based variant quality score recalibration (VQSR), remains challenging in crop genomes. Here, we present a crop-adapted framework for unsupervised variant quality assessment and VQSR enabling advanced SNP and insertion-deletion (INDEL) discovery without predefined high-confidence reference variant sets. Using Brassica napus as a model, we use the Illumina 60k Brassica SNP array to generate a reference-specific truth set for data pre-processing and independent evaluation of an unsupervised machine-learning approach for constructing cohort-specific VQSR resources. Gaussian mixture model (GMM)-based clustering of multidimensional variant annotation profiles identifies high-, intermediate-, and low-quality variant classes, providing flexible training resources for VQSR without requiring labelled training data. We further validate the framework in diploid Brassica oleracea and hexaploid wheat (Triticum aestivum) across cohorts differing in population size, genetic diversity, and genome architecture. Despite population- and species-specific differences in variant annotation profiles, GMM-based clustering consistently identifies informative variant quality classes and enables cohort-specific recalibration of both SNPs and INDELs. Our results demonstrate that unsupervised machine learning can extend GATK Best Practices to crop species lacking comprehensive genomic resources, providing a scalable approach for generating high-quality variant datasets for crop genomics and downstream breeding applications. 基因组选择（GS）和作物性状发现需要可靠的标记数据集，然而变异发现仍受限于缺乏标准化、高置信度的参考资源。公开可用的植物基因组资源通常基于过时的参考基因组、异质性流程以及源自人类研究的通用变异硬过滤阈值。因此，在作物基因组中实施基因组分析工具包（GATK）最佳实践框架，包括基于机器学习的变异质量评分重校准（VQSR），仍具挑战性。在此，我们提出一种适用于作物的无监督变异质量评估和VQSR框架，无需预定义的高置信度参考变异集即可实现先进的SNP和插入缺失（INDEL）发现。以甘蓝型油菜（Brassica napus）为模型，我们利用Illumina 60k Brassica SNP芯片生成参考特异性真值集，用于数据预处理和独立评估一种无监督机器学习方法，以构建群体特异性VQSR资源。基于高斯混合模型（GMM）的多维变异注释谱聚类可识别高、中、低质量变异类别，为VQSR提供灵活的训练资源，无需标记训练数据。我们进一步在二倍体甘蓝（Brassica oleracea）和六倍体小麦（Triticum aestivum）中验证该框架，涵盖不同群体规模、遗传多样性和基因组结构的群体。尽管变异注释谱存在群体和物种特异性差异，基于GMM的聚类仍能一致识别信息丰富的变异质量类别，并实现SNP和INDEL的群体特异性重校准。我们的结果表明，无监督机器学习可将GATK最佳实践扩展到缺乏全面基因组资源的作物物种，为作物基因组学和下游育种应用提供生成高质量变异数据集的可扩展方法。",
+      "date": "2026-10-08"
+    },
+    {
+      "id": "pubmed:42845416",
+      "title": "Entanglement dilution and high fractal dimension mediated by loop extrusion revealed in simulations of active polymer melts.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42845416/index.html",
+      "meta": [
+        "Chan, Brian; Rubinstein, Michael",
+        "bioRxiv : the preprint server for biology",
+        "2026-10-08"
+      ],
+      "tags": [],
+      "summary": "该文用混合分子动力学-蒙特卡洛模拟活性聚合物熔体中的环挤出过程，揭示其稀释缠结、增强TAD内接触并影响染色质空间组织的机制，直接命中染色质三维架构建模与分子模拟方法。",
+      "abstract": "In the active loop extrusion model, the cohesin protein complex creates chromatin loops in eukaryotic cells. Extrusion maintains topologically associated domains (TADs), which are contiguous segments of chromatin that preferentially colocalize in space and are typically bounded by CTCF proteins that pause cohesin translocation. Here, we model active loop extrusion with hybrid molecular dynamics - Monte Carlo simulations in entangled flexible linear polymer melts. Intra-chain contact probabilities of polymers with active loop extrusion are enhanced compared to their equilibrium, passive counterparts. Extrusion causes the size of chain segments to be much smaller than in passive melts. While the overlap parameter in passive melts without extrusion monotonically increases with segment length, it is nonmonotonic in active melts and on the order of unity within the parameters of this study. Active loop extrusion suppresses contacts between TADs in favor of intra-TAD contacts. Reduction of overlaps between chain segments dilutes entanglements in active melts. Depending on parameters, active extrusion without TADs may induce more compact conformations than with TADs, due in part to fractal loopy globule-like dynamics. This work suggests that active loop extrusion reduces overlaps between TADs, contributing to effective gene regulation by cis -regulatory elements. 在主动环挤压模型中，cohesin蛋白复合体在真核细胞中形成染色质环。挤压维持了拓扑关联结构域（TADs），这些是染色质中连续片段，在空间上优先共定位，通常由暂停cohesin转位的CTCF蛋白界定。在此，我们通过混合分子动力学-蒙特卡洛模拟，在缠结的柔性线性聚合物熔体中模拟主动环挤压。与平衡态、被动对应物相比，具有主动环挤压的聚合物链内接触概率增强。挤压导致链段尺寸远小于被动熔体中的尺寸。虽然无挤压被动熔体中的重叠参数随链段长度单调增加，但在主动熔体中它呈非单调性，且在本研究参数范围内处于单位量级。主动环挤压抑制TAD间接触，有利于TAD内接触。链段间重叠的减少稀释了主动熔体中的缠结。根据参数不同，无TAD的主动挤压可能比有TAD时诱导更紧凑的构象，部分归因于分形环状球状动力学。这项工作表明，主动环挤压减少TAD间的重叠，有助于顺式调控元件实现有效的基因调控。",
+      "date": "2026-10-08"
+    },
+    {
+      "id": "pubmed:42846624",
+      "title": "Immunoinformatics-based design of a multi-epitope mRNA vaccine candidate targeting the major human-infecting hepatitis E virus genotypes 1-4.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42846624/index.html",
+      "meta": [
+        "Khonza, Maham Mehrangaze; Saeed, Zain; Jabeen, Zohra; Arab, Wafaa; Kakakhel, Sehrish; Yamin, Maham; Ghaith, Mazen M; Javed, Aneela; Zohaib, Ali; Abdulal, Rwaa H",
+        "Frontiers in bioinformatics",
+        "2026-10-08"
+      ],
+      "tags": [],
+      "summary": "该文是免疫信息学设计针对戊型肝炎病毒的多表位mRNA疫苗，涉及分子模拟但对象为病毒疫苗，与染色质三维组织及基因组调控建模无关，无可迁移启发。",
+      "abstract": "BACKGROUND: Hepatitis E virus (HEV) is one of the leading causes of acute and chronic hepatitis among humans across the globe and is linked to severe diseases in immunocompromised individuals and pregnant women. Despite its substantial global burden, only one vaccine is licensed (in China and Pakistan), limiting its global accessibility. Furthermore, no globally approved mRNA vaccine against HEV is currently available, highlighting the need to develop strategies for alternative vaccines. METHODS: In this study, the amino acid sequences of ORF2 capsid proteins representative of HEV genotypes 1-4 were curated, retrieved, and analyzed to generate a consensus sequence. The conserved cytotoxic T lymphocyte (CTL), helper T lymphocyte (HTL), and B-cell epitopes were computationally screened based on their antigenicity, allergenicity, toxicity, IFN-gamma induction, and human non-homology. Then, the selected epitopes, seven in total, were assembled into a computational multi-epitope mRNA construct incorporated with beta-defensin adjuvant, correct linkers, and regulatory elements [Kozak, tPA, MITD, and globin untranslated regions (UTRs)]. The construct was subsequently subjected to structural modeling, refinement and validation, docked with the TLR1/TLR2 heterodimer, followed by normal mode analysis and a 100-ns molecular dynamics simulation with MM-GBSA binding free-energy estimation, immune simulations, codon optimization, and in silico vaccine construct design. RESULTS: The computational analyses predicted that the proposed epitopes possessed a favorable antigenicity (VaxiJen score >/=0.4-1), with non-allergenicity and epitope conservancy (80%-100%) across the analyzed HEV genotypes (1-4), and that the assembled vaccine construct was structurally stable. Protein-protein docking of the vaccine construct candidate with the TLR1/TLR2 heterodimer and normal mode analysis of the docked complex indicated a stable structural interface rather than a confirmation of biological receptor engagement; a subsequent 100-ns molecular dynamics simulation supported a persistent, increasingly hydrogen-bonded interface with a favorable MM-GBSA binding free-energy (-91.96 kcal/mol). Computational immune simulations predicted cellular and humoral immune responses with B- and T-cell interaction activity and cytokine production levels. CONCLUSION: This study describes a computationally designed multi-epitope mRNA vaccine candidate with predicted immunogenicity and structural stability against the major human-infecting HEV genotypes 1-4. These computational results support the proposed vaccine construct as a promising candidate for further research to assess its immunogenicity; safety and protective efficacy will require experimental validation before its translational potential is verified. 背景：戊型肝炎病毒（HEV）是全球人类急性和慢性肝炎的主要病因之一，并与免疫功能低下个体和孕妇中的严重疾病相关。尽管其全球负担重大，目前仅有一种疫苗获得许可（在中国和巴基斯坦），限制了其全球可及性。此外，目前尚无全球批准的针对HEV的mRNA疫苗，凸显了开发替代疫苗策略的必要性。方法：在本研究中，选取、检索并分析了代表HEV基因型1-4的ORF2衣壳蛋白氨基酸序列，以生成共有序列。基于抗原性、致敏性、毒性、IFN-γ诱导性和人类非同源性，对保守的细胞毒性T淋巴细胞（CTL）、辅助性T淋巴细胞（HTL）和B细胞表位进行了计算筛选。随后，将选定的表位（共七个）组装成一个计算性多表位mRNA构建体，并整合了β-防御素佐剂、正确的连接子和调控元件[Kozak、tPA、MITD和珠蛋白非翻译区（UTRs）]。该构建体随后进行了结构建模、优化和验证，与TLR1/TLR2异二聚体进行对接，随后进行正态模式分析和100纳秒分子动力学模拟，并估算MM-GBSA结合自由能、免疫模拟、密码子优化和计算机疫苗构建体设计。结果：计算分析预测，所提出的表位具有良好的抗原性（VaxiJen评分≥0.4-1），具有非致敏性，并在所分析的HEV基因型（1-4）中表现出表位保守性（80%-100%），且组装的疫苗构建体结构稳定。疫苗构建体候选物与TLR1/TLR2异二聚体的蛋白-蛋白对接及对接复合物的正态模式分析表明，结构界面稳定，而非确认生物受体结合；随后的100纳秒分子动力学模拟支持一个持续且氢键增强的界面，并具有有利的MM-GBSA结合自由能（-91.96 kcal/mol）。计算免疫模拟预测了细胞和体液免疫反应，包括B细胞和T细胞相互作用活性及细胞因子产生水平。结论：本研究描述了一个计算设计的针对主要感染人类的HEV基因型1-4的多表位mRNA疫苗候选物，具有预测的免疫原性和结构稳定性。这些计算结果支持所提出的疫苗构建体作为进一步研究其免疫原性的有前景候选物；其安全性和保护效力需在转化潜力验证前通过实验验证。",
+      "date": "2026-10-08"
+    },
+    {
+      "id": "biorxiv:10.64898/2026.10.06.754136",
+      "title": "Molecular Force Gates Regulate Mechanical Transmission Across the Nuclear Envelope",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/biorxiv/10.64898_2026.10.06.754136/index.html",
+      "meta": [
+        "Domkam N; Yerima G; Tsukamoto S; Mofrad M",
+        "bioRxiv",
+        "2026-10-07"
+      ],
+      "tags": [],
+      "summary": "该文用原子级分子动力学模拟研究核膜LINC复合物中SUN-KASH界面的力门控机制，虽涉及核架构与染色质组织但未直接建模染色质三维结构，方法可迁移至染色质力学调控建模。",
+      "abstract": "The LINC (linker of nucleoskeleton and cytoskeleton) complex is a central mechanotransductive apparatus that physically couples cytoskeletal forces to the nuclear interior, thereby regulating nuclear architecture, chromatin organization, and downstream signaling. Using atomistic molecular dynamics simulations, we identify and characterize force gates within the LINC complex, structural interactions that maintain mechanical connectivity under load. By introducing targeted mutations into the KASH peptide and SUN protein, we provide computational evidence that a key disulfide bond (SUN2 Cys563 to KASH2 Cys6862) and specific residues within the KASH β strand interaction motif (KASH6875, KASH6877) act as distinct mechanical elements during force transmission across the SUN and KASH interface. Leveraging this framework, we show that the disulfide bond and the β sheet network contribute unequally: removing the disulfide reduces both sustained and peak force transmission approximately twofold, whereas disrupting the β sheet network leaves peak force largely intact while altering interfacial coupling and the duration over which load is borne. Localized molecular changes therefore reshape mechanical coupling to the nucleus through distinct routes rather than through a single graded loss of force. Such altered LINC mechanics may be relevant to laminopathies, including Hutchinson Gilford Progeria Syndrome (HGPS), in which defective nuclear lamina compromises force transmission; however, implications for specific diseases remain speculative and require experimental validation. By resolving how distinct molecular contacts contribute to force transmission in space and sequence, this work establishes a framework for dissecting mechanical coupling at protein interfaces under load. These findings provide a foundation for future studies aimed at experimentally testing how individual interface interactions govern nuclear force transmission, a prerequisite for therapeutically targeting LINC mechanics. More broadly, the force gate framework may guide strategies to modulate interfaces that bear mechanical loads in other mechanically regulated proteins. Together, these findings establish a computational framework for investigating force transmission at mechanically loaded protein interfaces and provide experimentally testable predictions for future studies. LINC（核骨架与细胞骨架连接复合体）是一种关键的机械转导装置，将细胞骨架力物理耦合至细胞核内部，从而调控核结构、染色质组织及下游信号传导。通过原子级分子动力学模拟，我们识别并表征了LINC复合体中的力门控（force gates），即在负载下维持机械连接的结构性相互作用。通过向KASH肽和SUN蛋白引入靶向突变，我们提供了计算证据，表明一个关键二硫键（SUN2 Cys563至KASH2 Cys6862）以及KASH β链相互作用基序内的特定残基（KASH6875、KASH6877）在SUN和KASH界面上的力传递过程中充当不同的机械元件。利用这一框架，我们展示了二硫键和β折叠网络对力的贡献不均等：去除二硫键使持续力和峰值力传递均减少约两倍，而破坏β折叠网络则使峰值力基本保持不变，但改变了界面耦合及负载承受的持续时间。因此，局部分子变化通过不同途径重塑对细胞核的机械耦合，而非通过单一渐进的力损失实现。这种改变的LINC力学可能与核纤层蛋白病相关，包括哈钦森-吉尔福德早衰综合征（HGPS），其中缺陷的核纤层损害力传递；然而，对特定疾病的影响仍属推测，需实验验证。通过解析不同分子接触如何在空间和序列上贡献于力传递，本研究建立了在负载下剖析蛋白质界面机械耦合的框架。这些发现为未来旨在实验测试单个界面相互作用如何调控核力传递的研究奠定了基础，这是治疗性靶向LINC力学的先决条件。更广泛地，力门控框架可能指导调节其他机械调控蛋白中承受机械负载界面的策略。综上，这些发现建立了研究机械负载蛋白质界面力传递的计算框架，并为未来研究提供了可实验验证的预测。",
+      "date": "2026-10-07"
+    },
+    {
+      "id": "pubmed:42838963",
+      "title": "alpha7 integrin co-regulates chromatin accessibility and gene expression in HPV-negative head and neck cancer.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42838963/index.html",
+      "meta": [
+        "Borodins, Olegs; Vehlow, Anne; Sameith, Katrin; Dahl, Andreas; Spangle, Jennifer M; Aust, Daniela E; Brunner, Cornelia; Monni, Outi; Lange, Inga; Mircetic, Jovan; Thomas, Elisa; Cordes, Nils",
+        "Signal transduction and targeted therapy",
+        "2026-10-07"
+      ],
+      "tags": [],
+      "summary": "该研究结合多组学与AI分析，发现alpha7整合素通过AURKA轴调控染色质可及性和基因表达，但核心对象是癌症信号通路而非染色质三维空间架构建模，方法上AI仅用于特征选择，缺乏三维基因组结构建模。",
+      "abstract": "Epigenetic regulation and gene transcription are dynamically modulated by extracellular signals, including focal adhesions; however, the role of integrins in these processes remains poorly understood. In this study in HPV-negative head and neck squamous cell carcinoma, (HNSCC), we combined investigations in physiological three-dimensional, matrix-embedded cell models and patient-derived organoids with multi-omics analyses, bioinformatics and artificial intelligence, to unmask the integrin effector signaling network that reshapes chromatin to drive cancer. Among the 12 alpha/beta1 integrin receptors, alpha7 integrin (ITGA7) emerged as the most potent modulator of histone post-translational modifications, associated with significant changes in gene transcription and chromatin accessibility. Depletion of ITGA7, achieved independently by CRISPR/Cas9 knockout and RNA interference, reduced chromatin accessibility at the AURKA locus and downregulated an AURKA-centered transcriptional program. Mechanistically, phosphoproteomics revealed significant inhibition of MAPK- and PI3K/AKT-dependent signaling with concomitant functional impairment of cell cycling and cell survival upon ITGA7 depletion. Across all analyses, machine-learning-based feature selection consistently nominated AURKA as the dominant downstream node, and tumor ITGA7 expression stratified patient overall survival in a non-linear manner. In summary, these findings establish alpha7 integrin as a key co-regulator of chromatin accessibility and gene transcription in HPV-negative HNSCC, acting through an AURKA-centered axis that couples adhesion signaling to cell cycle control and patient survival, and nominate AURKA, potentially targetable with clinical Aurora-A inhibitors such as alisertib, as an actionable therapeutic node downstream of the currently non-druggable ITGA7. 表观遗传调控和基因转录受到包括黏着斑在内的细胞外信号的动态调节；然而，整合素在这些过程中的作用仍知之甚少。在本研究中，针对HPV阴性头颈部鳞状细胞癌（HNSCC），我们结合了生理性三维基质包埋细胞模型和患者来源类器官的研究，并整合多组学分析、生物信息学和人工智能，以揭示重塑染色质以驱动癌症的整合素效应信号网络。在12种α/β1整合素受体中，α7整合素（ITGA7）被鉴定为组蛋白翻译后修饰的最强调节因子，与基因转录和染色质可及性的显著变化相关。通过CRISPR/Cas9敲除和RNA干扰独立实现的ITGA7缺失，降低了AURKA位点的染色质可及性，并下调了以AURKA为中心的转录程序。机制上，磷酸化蛋白质组学揭示了ITGA7缺失后MAPK和PI3K/AKT依赖性信号传导的显著抑制，同时伴随细胞周期和细胞存活的功能损伤。在所有分析中，基于机器学习的特征选择一致地将AURKA提名为主要下游节点，且肿瘤ITGA7表达以非线性方式分层患者总生存期。总之，这些发现确立了α7整合素作为HPV阴性HNSCC中染色质可及性和基因转录的关键共调节因子，通过以AURKA为中心的轴发挥作用，该轴将黏附信号传导与细胞周期控制和患者生存联系起来，并提名AURKA——可潜在靶向临床Aurora-A抑制剂如alisertib——作为当前不可成药ITGA7下游的可操作治疗节点。",
+      "date": "2026-10-07"
+    },
+    {
+      "id": "pubmed:42838973",
+      "title": "Near-atomistic simulations reveal the molecular principles that control chromatin structure and phase separation.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42838973/index.html",
+      "meta": [
+        "Russell, Kieran; Chen, Yifang; Espinosa, Jorge R; Farre-Gil, David; Zhou, Huabin; Maristany, M Julia; Perez-Lopez, Jose Ignacio; Huertas, Jan; Orozco, Modesto; Rosen, Michael K; Collepardo-Guevara, Rosana",
+        "Nature communications",
+        "2026-10-07"
+      ],
+      "tags": [],
+      "summary": "该文提出高性能粗粒化模型OpenCGChromatin，实现近原子级染色质模拟，从物理化学原理预测连接DNA长度依赖的染色质结构、相分离及组蛋白修饰对压缩的调控，直接命中染色质三维架构建模与分子模拟方法。",
+      "abstract": "Understanding how chromatin's physicochemical properties shape its emergent organization is central to deciphering genome function. To address this, we present OpenCGChromatin, a high-performance coarse-grained model that achieves near-atomistic simulations of chromatin systems an order of magnitude larger than previously possible, spanning biomolecular condensates and fibers tens of kilobases in length. OpenCGChromatin simulations independently predict, from physicochemical principles, the linker-DNA-dependent chromatin structures observed by cryo-ET and the relative thermodynamic stability of condensates inferred from biochemical assays. Crucially, OpenCGChromatin resolves histone-tail dynamics and interaction networks that remain inaccessible experimentally, explaining how linker-DNA length controls histone tail accessibility and the resulting multiscale structure of chromatin condensates. Extending simulations to 108-nucleosome fibers shows that acetylation disrupts chromatin compaction in a pattern-specific manner by weakening key tail-mediated interactions, with H4K16 and H3K9 emerging as the most energetically disruptive modifications. These results position OpenCGChromatin as a powerful framework for linking molecular detail to emergent chromatin organization. 理解染色质的物理化学性质如何塑造其涌现性组织，是解读基因组功能的核心。为此，我们提出了OpenCGChromatin，一种高性能粗粒化模型，能够实现对染色质系统的近原子级模拟，其规模比以往可能达到的大一个数量级，涵盖生物分子凝聚体和长达数十千碱基的纤维。OpenCGChromatin模拟从物理化学原理出发，独立预测了通过冷冻电子断层扫描（cryo-ET）观察到的连接子DNA依赖性染色质结构，以及从生化测定推断出的凝聚体相对热力学稳定性。关键的是，OpenCGChromatin解析了实验上无法触及的组蛋白尾部动力学和相互作用网络，解释了连接子DNA长度如何控制组蛋白尾部的可及性，以及由此产生的染色质凝聚体的多尺度结构。将模拟扩展到108核小体纤维表明，乙酰化通过削弱关键的尾部介导相互作用，以模式特异性的方式破坏染色质压缩，其中H4K16和H3K9成为能量上最具破坏性的修饰。这些结果将OpenCGChromatin定位为一个强大的框架，用于将分子细节与涌现性染色质组织联系起来。",
+      "date": "2026-10-07"
+    },
+    {
+      "id": "pubmed:42839831",
+      "title": "Active Field Theory Approach to Explain Size Control of Transcriptional Condensates.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42839831/index.html",
+      "meta": [
+        "Hertag, Kathrin; Shoup, Samuel; Thews, Leonhard T; Khatter, Radhika; Ferrario, Eugenio; Robinson, Joshua F; Wittmann, Sina; Schick, Sandra; Speck, Thomas",
+        "Macromolecular bioscience",
+        "2026-10-07"
+      ],
+      "tags": [],
+      "summary": "该文用活性场论解释转录凝聚体的尺寸控制，虽涉及转录调控和相分离，但对象是转录凝聚体而非染色质三维组织，且方法为场论模拟而非AI或染色质分子模拟，与课题关联有限。",
+      "abstract": "Transcription factors organize into liquid-like condensates to facilitate gene expression, yet the physical mechanisms governing their formation and properties remain poorly understood. We study the size statistics of transcriptional condensates in human HAP1 cells using widefield and super-resolution microscopy tagging the epigenetic reader BRD4. We find that hubs that appear monolithic in widefield resolve into clusters of smaller droplets that resist coarsening. We link this size control to Active Model B+, a non-equilibrium field theory that captures a regime of reverse Ostwald ripening out of thermal equilibrium. In this regime, chemically driven currents cause larger droplets to transfer mass back to smaller ones, stabilizing a state of microphase segregation. The observed exponential size distribution of BRD4 foci quantitatively matches our numerical simulations, suggesting a universal physical picture for the non-equilibrium self-limitation of cellular condensates. 转录因子组织成液态样凝聚体以促进基因表达，然而调控其形成与性质的物理机制仍知之甚少。我们利用宽场和超分辨显微镜标记表观遗传阅读器BRD4，研究人HAP1细胞中转录凝聚体的尺寸统计。我们发现，在宽场下看似整体的中心体，在更高分辨率下解析为抵抗粗化的小液滴簇。我们将这种尺寸控制与Active Model B+联系起来，这是一种非平衡场论，捕捉了热平衡外反向奥斯特瓦尔德熟化（reverse Ostwald ripening）的机制。在该机制中，化学驱动的电流使较大液滴将质量转移回较小液滴，从而稳定微相分离状态。观察到的BRD4焦点指数尺寸分布与我们的数值模拟定量匹配，提示了细胞凝聚体非平衡自限性的普遍物理图景。",
+      "date": "2026-10-07"
+    },
+    {
+      "id": "pubmed:42842425",
+      "title": "VAEBAC: A representation-learning framework for proteome-scale prediction of amyloidogenic proteins and functional stratification of nucleic-acid-binding proteins.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42842425/index.html",
+      "meta": [
+        "Ashraf, Muhammad Uzair; Ahmad, Owais; Khan, Rizwan Hasan",
+        "Bioinformatics (Oxford, England)",
+        "2026-10-07"
+      ],
+      "tags": [],
+      "summary": "该文用VAEBAC表示学习框架预测核酸结合蛋白的淀粉样倾向，虽涉及基因组组织相关蛋白，但核心是蛋白聚集预测而非染色质三维空间架构建模，且无AI/分子模拟方法用于染色质结构，与本课题关联较弱。",
+      "abstract": "MOTIVATION: Nucleic-acid-binding proteins (NABPs) govern transcription, replication and genome organization, yet the distribution of aggregation susceptibility within regulatory proteomes remains unresolved. Here, we systematically examine amyloidogenic potential across the nucleic-acid-binding proteomes of four phylogenetically diverse organisms-Escherichia coli, Bacillus subtilis, Saccharomyces cerevisiae and Homo sapiens-spanning prokaryotes and eukaryotes, to determine whether aggregation-prone sequence architectures are selectively constrained within transcriptional networks. RESULTS: Using VAEBAC, a representation-learning framework that integrates large-scale amyloid-family sequences with experimentally validated annotations, we performed proteome-scale prediction of amyloidogenicity across nucleic-acid-binding proteins in each organism. Predicted amyloidogenic proteins were consistently and significantly enriched in Gene Ontology categories associated with regulation of DNA-templated transcription, RNA biosynthesis, and gene expression across all four organisms, a pattern validated using three independent annotation tools. Fisher's exact test confirmed significant enrichment of amyloidogenic NABPs among transcription regulators in eukaryotic proteomes. Residue-level mapping demonstrated spatial separation between predicted aggregation-prone regions and DNA-binding interfaces, suggesting structural compatibility between regulatory function and conditional aggregation. Experimental validation confirmed fibrillar assembly of selected proteins. These findings support a conserved model in which aggregation susceptibility is functionally stratified across transcriptional regulatory tiers rather than uniformly suppressed within NABPs, a principle conserved across 3.5 billion years of evolution. AVAILABILITY AND IMPLEMENTATION: VAEBAC is freely accessible at https://www.vaebac.com. SUPPLEMENTARY INFORMATION: Supplementary data are available at Bioinformatics online. 动机：核酸结合蛋白（NABPs）调控转录、复制和基因组组织，然而调控蛋白质组中聚集易感性的分布仍未明确。在此，我们系统性地考察了四种系统发育多样性生物——大肠杆菌（Escherichia coli）、枯草芽孢杆菌（Bacillus subtilis）、酿酒酵母（Saccharomyces cerevisiae）和人类（Homo sapiens）——的核酸结合蛋白质组中的淀粉样生成潜力，涵盖原核生物和真核生物，以确定聚集倾向的序列架构是否在转录网络中选择性受限。结果：利用VAEBAC，一种整合大规模淀粉样家族序列与实验验证注释的表征学习框架，我们对每种生物中核酸结合蛋白进行了蛋白质组规模的淀粉样生成性预测。预测的淀粉样生成蛋白在四种生物中均一致且显著富集于与DNA模板化转录调控、RNA生物合成和基因表达相关的基因本体（Gene Ontology）类别中，这一模式通过三种独立注释工具得到验证。Fisher精确检验确认了真核蛋白质组中转录调控因子中淀粉样生成性NABPs的显著富集。残基水平映射显示预测的聚集倾向区域与DNA结合界面之间存在空间分离，表明调控功能与条件性聚集之间的结构兼容性。实验验证确认了选定蛋白质的纤维状组装。这些发现支持一个保守模型，即聚集易感性在转录调控层级中功能分层，而非在NABPs内被均匀抑制，这一原则在35亿年的进化中得以保守。可用性和实现：VAEBAC可免费访问于https://www.vaebac.com。补充信息：补充数据可在Bioinformatics在线获取。",
+      "date": "2026-10-07"
+    },
+    {
+      "id": "arxiv:2610.08298v1",
+      "title": "Design Principles for Programmable Topological Soft Networks",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/arxiv/2610.08298v1/index.html",
+      "meta": [
+        "Andrea Bonato; Davide Marenduzzo; Enzo Orlandini",
+        "arXiv",
+        "2026-10-06"
+      ],
+      "tags": [],
+      "summary": "该文用分子动力学模拟研究半柔性聚合物与胶体环自组装拓扑凝胶的可编程设计原则，虽对象非染色质，但其拓扑纠缠网络（如环连接、动态重连）的建模思路对染色质环网络与环挤出机制的计算建模具有可迁移启发。",
+      "abstract": "Physical crosslinks in conventional gels are static and spatially localised, fundamentally limiting their capacity to adapt, self-heal, or perform mechanical work. Topological gels, which are held together by physical entanglements such as threadings, links, and mechanical interlocks, constitute a different paradigm by treating connectivity as a mobile, dynamic degree of freedom. Here, by using molecular dynamics simulations of semiflexible polymers and threadable colloidal rings, we establish some general design principles that transform self-assembled topological gels into programmable soft materials. We present three different modes of control. First, by controlling the mobility of the entanglements, one can tune the mechanical response of the material. Quenched anchoring forces the network to store elastic stress and yield, whereas with annealed anchoring the material can relax stresses by redistributing its entanglements whilst preserving global connectivity. Second, by controlling the degree or type of geometric confinement, it is possible to template macroscopic architecture, converting for instance 3D isotropic gels into surface-spanning 2D nets or quasi-1D topological rings with distinct graph-spectral signatures. Third, by allowing dynamical rewiring of entanglements through polymer reconnection, the material topology can be rewritten after assembly, yielding interlocked structures dominated by simple pairwise links rather than the highly complex linked states previously observed in reconnecting flexible polymers. By establishing a direct link between microscopic entanglement dynamics and emerging mechanical function, our work offers design principles for adaptive soft metamaterials and provides insights into biological topological networks such as kinetoplast DNA and chromatin loop networks. 传统凝胶中的物理交联是静态且空间局部的，从根本上限制了其适应、自修复或执行机械功的能力。拓扑凝胶通过物理缠结（如穿线、链接和机械互锁）维持结构，构成了一种不同的范式，将连通性视为可移动、动态的自由度。在此，通过使用半柔性聚合物和可穿线胶体环的分子动力学模拟，我们建立了一些通用设计原则，将自组装拓扑凝胶转化为可编程软材料。我们提出了三种不同的控制模式。第一，通过控制缠结的移动性，可以调节材料的机械响应。淬火锚定迫使网络存储弹性应力并屈服，而退火锚定则使材料能够通过重新分布缠结来松弛应力，同时保持全局连通性。第二，通过控制几何限制的程度或类型，可以模板化宏观结构，例如将三维各向同性凝胶转化为具有不同图谱谱特征的表面覆盖二维网络或准一维拓扑环。第三，通过允许聚合物重连实现缠结的动态重新布线，材料拓扑可以在组装后被重写，产生由简单成对链接主导的互锁结构，而非先前在重连柔性聚合物中观察到的高度复杂链接状态。通过建立微观缠结动力学与涌现机械功能之间的直接联系，我们的工作为自适应软超材料提供了设计原则，并为生物拓扑网络（如动基体DNA和染色质环网络）提供了见解。",
+      "date": "2026-10-06"
+    },
+    {
+      "id": "pubmed:42836503",
+      "title": "The Role of Exosomal Biomarkers in the Monitoring of Bioactivation and Metabolite Clearance of Chemotherapeutics in Cancer Patients.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42836503/index.html",
+      "meta": [
+        "Satheesh, S; Sekar, V; Kaarnika, V S; Maageswaree, B S; Bhoopendra, G K; Ibrahim, B; Nithish, S; Gowtham, V",
+        "Current drug metabolism",
+        "2026-10-06"
+      ],
+      "tags": [],
+      "summary": "该文综述外泌体生物标志物在化疗药物代谢监测中的作用，虽提及lncRNA可重编程染色质结构并建议用AI整合组学，但核心对象是药物代谢与化疗耐药，非三维基因组/染色质组织建模，且无AI或分子模拟方法实质贡献。",
+      "abstract": "Bioactivation and clearance of anticancer agents are crucial factors in the efficacy and toxicity of anticancer drugs. Exosomes are membrane-bound vesicles secreted by tumor cells and the tumor microenvironment. These vesicles contain drug-metabolizing enzymes, transporters, and RNA. Exosomes can be non-invasively collected from the blood. This article has been prepared by combining the evidence of the role of exosomal cytochrome P450 isoforms, such as cytochrome P450 family 2 subfamily C member 19, cytochrome P450 family 2 subfamily D member 6, and cytochrome P450 family 3 subfamily A member 5, in the oxidation of anticancer drugs in the first phase of drug metabolism. Exosomal UDP-glucuronosyltransferase 1A1 has been found to help in the conjugation of anticancer drugs in the second phase of drug metabolism. Exosomal ATP-binding cassette transporters, P-glycoprotein, multidrug resistance-associated protein 1, and breast cancer resistance protein have been found to act as intercellular conveyors of drug efflux capacity. These transporters can modulate the efficacy of chemotherapy. Exosomal microRNAs, such as microRNA-21, microRNA-155, and microRNA-1246, have been found to modulate apoptosis, DNA repair, metabolic adaptation, and chemotherapy resistance through the PI3K/AKT pathway, EZH2/STAT3 pathway, and PDCD4 pathway. Long non-coding RNAs, such as UCA1 and HOXA antisense RNA, can reprogram the chromatin structure. These long non-coding RNAs can suppress tumor suppressor genes, thus leading to chemotherapy resistance. Bioinformatics pipelines have been designed to bridge the gap between exosomal RNA and protein levels in the profile of dynamic metabolic states. The challenges in the field of exosomal therapy drug monitoring have been discussed in the article. The article has recommended the use of artificial intelligence in the integration of omics with microfluidic technology for the improvement of exosomal therapy drug monitoring. 抗癌药物的生物活化和清除是影响抗癌药物疗效和毒性的关键因素。外泌体（exosomes）是由肿瘤细胞和肿瘤微环境分泌的膜结合囊泡。这些囊泡含有药物代谢酶、转运体和RNA。外泌体可从血液中非侵入性收集。本文通过综合外泌体细胞色素P450亚型（如细胞色素P450家族2亚家族C成员19、细胞色素P450家族2亚家族D成员6和细胞色素P450家族3亚家族A成员5）在药物代谢第一阶段中氧化抗癌药物作用的证据而撰写。已发现外泌体UDP-葡萄糖醛酸转移酶1A1有助于药物代谢第二阶段中抗癌药物的结合反应。已发现外泌体ATP结合盒转运体、P-糖蛋白、多药耐药相关蛋白1和乳腺癌耐药蛋白可作为药物外排能力的细胞间传递载体。这些转运体可调节化疗的疗效。已发现外泌体微小RNA（如microRNA-21、microRNA-155和microRNA-1246）通过PI3K/AKT通路、EZH2/STAT3通路和PDCD4通路调节凋亡、DNA修复、代谢适应和化疗耐药。长链非编码RNA（如UCA1和HOXA反义RNA）可重编程染色质结构。这些长链非编码RNA可抑制肿瘤抑制基因，从而导致化疗耐药。已设计生物信息学流程，以弥合动态代谢状态谱中外泌体RNA和蛋白质水平之间的差距。本文讨论了外泌体治疗药物监测领域的挑战。文章建议使用人工智能将组学与微流控技术整合，以改进外泌体治疗药物监测。",
+      "date": "2026-10-06"
+    },
+    {
+      "id": "pubmed:42830301",
+      "title": "Molecular basis of nick ligation in the nucleosome by DNA Ligase IIIalpha.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42830301/index.html",
+      "meta": [
+        "Boesch, Daniel J; Martin, Nadia I; Kontor, Chantal A; Nguyen, Ashlee G; Tomkinson, Alan E; Van Houten, Bennett; Gillet, Natacha; Bignon, Emmanuelle; Whitaker, Amy M; Weaver, Tyler M",
+        "Nature communications",
+        "2026-10-05"
+      ],
+      "tags": [],
+      "summary": "该文研究DNA连接酶IIIalpha在核小体上修复单链断裂的分子机制，虽涉及染色质和分子动力学模拟，但核心是DNA修复而非三维基因组/染色质组织建模，方法可迁移性有限。",
+      "abstract": "Genomic DNA is packaged into chromatin through a fundamental repeating unit known as the nucleosome core particle. Chromatinized genomic DNA is constantly exposed to endogenous and exogenous stresses that result in DNA damage, which must be repaired to maintain genome stability. Single-strand breaks (SSBs) are a prevalent form of DNA damage that arise via the oxidation-induced disintegration of the sugar-phosphate backbone or as repair intermediates during base excision repair. DNA ligase IIIalpha (LigIIIalpha) is one of the primary enzymes responsible for repairing ligatable SSBs during the terminal step of single-strand break repair (SSBR) and base excision repair (BER). To date, a mechanistic description of how LigIIIalpha processes nicks within chromatin remains elusive. Here, we use a combination of biochemical assays, molecular dynamics simulations, and cryogenic electron microscopy to define the molecular basis of nick ligation in the nucleosome by LigIIIalpha, providing foundational insight into the terminal step of chromatin-based SSBR/BER. 基因组DNA通过被称为核小体核心颗粒的基本重复单元包装成染色质。染色质化的基因组DNA持续暴露于内源性和外源性应激，导致DNA损伤，这些损伤必须被修复以维持基因组稳定性。单链断裂（SSBs）是DNA损伤的一种常见形式，源于糖-磷酸骨架的氧化诱导解体或作为碱基切除修复过程中的修复中间体。DNA连接酶IIIα（LigIIIalpha）是负责在单链断裂修复（SSBR）和碱基切除修复（BER）的末端步骤中修复可连接SSBs的主要酶之一。迄今为止，关于LigIIIalpha如何在染色质内处理切口的机制描述仍然缺乏。在此，我们结合生化实验、分子动力学模拟和冷冻电子显微镜，定义了LigIIIalpha在核小体中进行切口连接的分子基础，为基于染色质的SSBR/BER末端步骤提供了基础性见解。",
+      "date": "2026-10-05"
+    },
+    {
+      "id": "biorxiv:10.64898/2026.09.28.746288",
+      "title": "Kidzoi Enables Cell-Type-Specific Regulatory Activity and Variant Effect Prediction in Kidney",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/biorxiv/10.64898_2026.09.28.746288/index.html",
+      "meta": [
+        "Rather AA; Lee D",
+        "bioRxiv",
+        "2026-10-04"
+      ],
+      "tags": [],
+      "summary": "该文开发了基于Borzoi迁移学习的肾脏细胞类型特异序列-功能模型Kidzoi，预测染色质可及性并改进调控变异效应预测，虽涉及染色质水平调控，但未建模三维空间架构，方法为深度学习应用而非三维基因组建模。",
+      "abstract": "Sequence-to-function (S2F) deep learning models predict genome-wide functional profiles directly from DNA sequences and have significantly advanced our understanding of gene regulation. However, existing S2F models are fundamentally constrained by their initial training datasets, and no single model encompasses the full spectrum of cell types, clinical conditions, and cellular states, while training new models de novo is nontrivial. Here, we develop Kidzoi, a kidney cell-type-specific S2F model obtained by transfer learning from the pretrained model Borzoi using single-nucleus chromatin accessibility data from human kidney tissue. Kidzoi accurately predicts cell-type-specific chromatin accessibility and improves regulatory variant effect prediction by 10–23% over existing models. Furthermore, Kidzoi effectively prioritizes genome-wide association study (GWAS) fine-mapped causal variants associated with kidney function (estimated glomerular filtration rate based on both creatinine and cystatin C; eGFRcr-cys) while resolving their cell-type specificity. Systematic ablation of flanking sequence indicates that a local context of 32–64 kbp , representing only 6–12% of the full model input, is sufficient for accurate variant effect prediction. Finally, we show that a multi-task model achieves comparable performance to single-task models at a substantially reduced computational cost. 序列到功能（S2F）深度学习模型直接从DNA序列预测全基因组功能谱，显著推进了我们对基因调控的理解。然而，现有S2F模型从根本上受限于其初始训练数据集，且没有任何单一模型涵盖所有细胞类型、临床条件和细胞状态，而从头训练新模型并非易事。在此，我们开发了Kidzoi，一种肾脏细胞类型特异性的S2F模型，通过从预训练模型Borzoi进行迁移学习，利用人类肾脏组织的单核染色质可及性数据获得。Kidzoi准确预测细胞类型特异性的染色质可及性，并将调控变异效应预测性能较现有模型提高10–23%。此外，Kidzoi有效优先排序与肾功能相关的全基因组关联研究（GWAS）精细定位因果变异（基于肌酐和胱抑素C的估算肾小球滤过率；eGFRcr-cys），同时解析其细胞类型特异性。对侧翼序列的系统性消融表明，仅占全模型输入6–12%的32–64 kbp局部上下文足以实现准确的变异效应预测。最后，我们展示多任务模型在显著降低计算成本的同时，达到与单任务模型相当的性能。",
+      "date": "2026-10-04"
+    },
+    {
+      "id": "biorxiv:10.64898/2026.09.30.755582",
+      "title": "The mammalian genome is punctuated by regularly spaced nucleosome islands",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/biorxiv/10.64898_2026.09.30.755582/index.html",
+      "meta": [
+        "Christophe M; Altamirano L; Navarro P; Mozziconacci J",
+        "bioRxiv",
+        "2026-10-04"
+      ],
+      "tags": [],
+      "summary": "该文用深度学习从DNA序列预测小鼠胚胎干细胞核小体占据，揭示重复元件和短基序驱动核小体规则排列，虽聚焦核小体而非三维染色质折叠，但其序列-染色质结构建模思路对染色质架构预测有可迁移启发。",
+      "abstract": "Nucleosome positioning plays a fundamental role in regulating DNA accessibility and cellular activity, yet the precise rules by which mammalian sequences instruct this organization have remained incomplete. Prior work has established that intrinsic sequence preferences dictate nucleosome architecture in yeast, but in mammals, this sequence code is modulated by chromatin state and cell-type–specific factors. Here, we train a deep-learning model on genome-wide maps from mouse embryonic stem cells to predict nucleosome occupancy directly from the primary DNA sequence. Our model accurately predicts in vivo occupancy and captures shared biological signals while effectively denoising assay-specific technical biases. Through in silico mutagenesis, we identify specific nucleosome positioning regions comprised of short 5-to-20-base-pair motifs concentrated within dense regulatory windows. Furthermore, we demonstrate that repetitive DNA elements play a major role in establishing these highly organized nucleosome arrays on a genomic scale. Specifically, CCCTC-binding factor motifs embedded within short interspersed nuclear elements, zinc-finger–bound motifs within long interspersed nuclear elements, and microsatellite repeats act as potent organizers of nucleosome phasing. Together, our findings extend the concept of sequence-encoded nucleosome architecture to mammalian genomes and reveal that regularly spaced nucleosome islands are shaped by short, recurrent sets of DNA motifs that couple local sequence to chromatin structure. 核小体定位在调控DNA可及性和细胞活动中扮演着基础性角色，然而哺乳动物序列指导这一组织的精确规则仍不完整。先前的研究已确立，内在序列偏好决定了酵母中的核小体结构，但在哺乳动物中，这一序列密码受到染色质状态和细胞类型特异性因子的调节。在此，我们基于小鼠胚胎干细胞的基因组范围图谱训练了一个深度学习模型，以直接从初级DNA序列预测核小体占据情况。我们的模型准确预测了体内占据情况，并捕获了共享的生物信号，同时有效去除了检测特异性的技术偏差。通过计算机模拟诱变，我们识别出由短至5到20个碱基对基序组成的特定核小体定位区域，这些基序集中在密集的调控窗口内。此外，我们证明重复DNA元件在基因组尺度上建立这些高度组织的核小体阵列中发挥主要作用。具体而言，嵌入短散在核元件中的CCCTC结合因子基序、长散在核元件中的锌指结合基序以及微卫星重复序列，作为核小体相位化的强效组织者。总之，我们的发现将序列编码的核小体结构概念扩展到哺乳动物基因组，并揭示规则间隔的核小体岛由短小、重复出现的DNA基序集合塑造，这些基序将局部序列与染色质结构耦合。",
+      "date": "2026-10-04"
+    },
+    {
       "id": "pubmed:42827107",
       "title": "Single-cell epigenomics of colorectal cancer.",
       "subtitle": "",

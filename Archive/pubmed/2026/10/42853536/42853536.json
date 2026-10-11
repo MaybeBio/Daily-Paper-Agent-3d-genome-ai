@@ -1,0 +1,202 @@
+{
+  "identity": {
+    "pmid": "42853536",
+    "doi": "10.1007/s12539-026-00878-9",
+    "title": "SpliceDetector: A Splice Sites Detection Method Based on Biology Attention and Ensemble Module."
+  },
+  "content": {
+    "abstract": "Splice site detection is a fundamental task in genome annotation, yet existing deep learning methods still have limitations in incorporating biological prior knowledge and extracting multi-scale features. This study presents SpliceDetector, a multi-scale residual attention network based on multi-level attention mechanisms and ensemble strategies. SpliceDetector employs a Biology Attention mechanism that utilizes tri-scale depthwise separable convolutions to capture short-range splice site motifs GT-AG, medium-range regulatory elements (ESE/ESS), and long-range sequence context (ISE/ISS). Three complementary sub-models further leverage ECA (Efficient Channel Attention), Biology Attention, and CBAM (Convolutional Block Attention Module) to improve feature representation from the channel, biological, and spatial dimensions, respectively. Their outputs are combined through validation-performance-based a weighted ensemble to improve prediction stability. SpliceDetector outperforms the compared methods on all six benchmark datasets from three species (O. sativa japonica, A. thaliana, and H. sapiens) for both donor-site and acceptor-site detection. Interpretability analyses further indicate that the learned attention distributions correspond to known splicing signals, suggesting that SpliceDetector captures biologically relevant sequence patterns rather than relying only on classification accuracy. The code implementation of SpliceDetector is publicly available at https://github.com/HpuBioinformatics/SpliceDetector . Article type: Original Article. SpliceDetector: A Splice Sites Detection Method Based on Biology Attention and Ensemble Module.",
+    "keywords": [
+      "Biology attention",
+      "Deep residual network",
+      "Ensemble learning",
+      "Splice-site detection"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Shen, Jiquan",
+        "Wang, Yingying",
+        "Luo, Junwei"
+      ],
+      "short_names": [
+        "Shen J",
+        "Wang Y",
+        "Luo J"
+      ],
+      "auids": [
+        "ORCID: 0000-0001-6841-9893"
+      ],
+      "affiliations": [
+        "School of Software, Henan Polytechnic University, Jiaozuo, 454000, China.",
+        "College of Chemical and Environmental Engineering, Anyang Institute of Technology, Anyang, 455000, China.",
+        "School of Software, Henan Polytechnic University, Jiaozuo, 454000, China.",
+        "School of Software, Henan Polytechnic University, Jiaozuo, 454000, China. luojunwei@hpu.edu.cn."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Shen, Jiquan",
+        "short_name": "Shen J",
+        "identifiers": [],
+        "affiliations": [
+          "School of Software, Henan Polytechnic University, Jiaozuo, 454000, China.",
+          "College of Chemical and Environmental Engineering, Anyang Institute of Technology, Anyang, 455000, China."
+        ]
+      },
+      {
+        "full_name": "Wang, Yingying",
+        "short_name": "Wang Y",
+        "identifiers": [],
+        "affiliations": [
+          "School of Software, Henan Polytechnic University, Jiaozuo, 454000, China."
+        ]
+      },
+      {
+        "full_name": "Luo, Junwei",
+        "short_name": "Luo J",
+        "identifiers": [
+          "0000-0001-6841-9893"
+        ],
+        "affiliations": [
+          "School of Software, Henan Polytechnic University, Jiaozuo, 454000, China. luojunwei@hpu.edu.cn."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Interdisciplinary sciences, computational life sciences"
+    ],
+    "journal_abbrev": [
+      "Interdiscip Sci"
+    ],
+    "pub_date": "2026 Oct 9",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/09 17:34",
+    "fetched_at": "2026-10-11 10:31:44"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42853536",
+      "38674339",
+      "36203144",
+      "32550561",
+      "41913931",
+      "34493371",
+      "42475469",
+      "41577981",
+      "42056343",
+      "40302345",
+      "38179749",
+      "42242678",
+      "42174428",
+      "42074175",
+      "40727355",
+      "42328788",
+      "37119553",
+      "41880056",
+      "41962361",
+      "36879189",
+      "41475079",
+      "41430059",
+      "41726927",
+      "39917382",
+      "32696716",
+      "38744015",
+      "34571539",
+      "40781470",
+      "42234353",
+      "40804792",
+      "37050738",
+      "41600379",
+      "41755271",
+      "41299278",
+      "31881982",
+      "41257600",
+      "41439182",
+      "41143908",
+      "32704450",
+      "41399733",
+      "41679678",
+      "42634172",
+      "41877008",
+      "41316016",
+      "41245458",
+      "40596197",
+      "34252942",
+      "41501380",
+      "36935548",
+      "38042102",
+      "41762162",
+      "42375198",
+      "37631621",
+      "40174502",
+      "36736446",
+      "41755306",
+      "39312561",
+      "41977286",
+      "41857714",
+      "34790508",
+      "41475129",
+      "40353937",
+      "42218235",
+      "41634097",
+      "40998452",
+      "37353532",
+      "42466302",
+      "41023936",
+      "31009682",
+      "36860882",
+      "38626509",
+      "42793949",
+      "41850098",
+      "40614457",
+      "39046868",
+      "29931149",
+      "41384114",
+      "40947694",
+      "37960438",
+      "38830995",
+      "41257586",
+      "42393111",
+      "29668310",
+      "41667551",
+      "41270095",
+      "41753848",
+      "36403092",
+      "41094889",
+      "33646948",
+      "39550226",
+      "41034439",
+      "41407810",
+      "17958908",
+      "33740884",
+      "40157959",
+      "41739832",
+      "41310253",
+      "38443802",
+      "41476368",
+      "39880865"
+    ],
+    "review": [
+      "42853536"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [],
+    "text_mined": []
+  }
+}

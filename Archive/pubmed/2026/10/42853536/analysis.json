@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42853536",
+  "title": "SpliceDetector: A Splice Sites Detection Method Based on Biology Attention and Ensemble Module.",
+  "authors": "Shen, Jiquan; Wang, Yingying; Luo, Junwei",
+  "journal": "Interdisciplinary sciences, computational life sciences",
+  "published_date": "2026-10-09",
+  "window": {
+    "start": "2026-10-04",
+    "end": "2026-10-10"
+  },
+  "score": 3,
+  "one_liner_zh": "该文提出基于生物学注意力和集成模块的剪接位点检测深度学习方法，虽涉及基因组调控序列特征，但对象为剪接位点而非染色质三维组织，且无空间构象建模，与课题关联较弱。",
+  "abstract": "Splice site detection is a fundamental task in genome annotation, yet existing deep learning methods still have limitations in incorporating biological prior knowledge and extracting multi-scale features. This study presents SpliceDetector, a multi-scale residual attention network based on multi-level attention mechanisms and ensemble strategies. SpliceDetector employs a Biology Attention mechanism that utilizes tri-scale depthwise separable convolutions to capture short-range splice site motifs GT-AG, medium-range regulatory elements (ESE/ESS), and long-range sequence context (ISE/ISS). Three complementary sub-models further leverage ECA (Efficient Channel Attention), Biology Attention, and CBAM (Convolutional Block Attention Module) to improve feature representation from the channel, biological, and spatial dimensions, respectively. Their outputs are combined through validation-performance-based a weighted ensemble to improve prediction stability. SpliceDetector outperforms the compared methods on all six benchmark datasets from three species (O. sativa japonica, A. thaliana, and H. sapiens) for both donor-site and acceptor-site detection. Interpretability analyses further indicate that the learned attention distributions correspond to known splicing signals, suggesting that SpliceDetector captures biologically relevant sequence patterns rather than relying only on classification accuracy. The code implementation of SpliceDetector is publicly available at https://github.com/HpuBioinformatics/SpliceDetector . Article type: Original Article. SpliceDetector: A Splice Sites Detection Method Based on Biology Attention and Ensemble Module.",
+  "abstract_zh": "剪接位点检测是基因组注释中的一项基础任务，然而现有深度学习方法在整合生物学先验知识和提取多尺度特征方面仍存在局限性。本研究提出了SpliceDetector，一种基于多层次注意力机制和集成策略的多尺度残差注意力网络。SpliceDetector采用生物学注意力（Biology Attention）机制，利用三尺度深度可分离卷积来捕获短程剪接位点基序GT-AG、中程调控元件（ESE/ESS）以及长程序列上下文（ISE/ISS）。三个互补的子模型进一步利用ECA（高效通道注意力）、生物学注意力和CBAM（卷积块注意力模块），分别从通道、生物学和空间维度改进特征表示。它们的输出通过基于验证性能的加权集成进行组合，以提高预测稳定性。SpliceDetector在来自三个物种（O. sativa japonica、A. thaliana和H. sapiens）的所有六个基准数据集上，在供体位点和受体位点检测方面均优于对比方法。可解释性分析进一步表明，学习到的注意力分布与已知剪接信号相对应，提示SpliceDetector捕获了生物学相关的序列模式，而非仅依赖分类准确性。SpliceDetector的代码实现公开可用，网址为https://github.com/HpuBioinformatics/SpliceDetector。文章类型：原创文章。SpliceDetector：一种基于生物学注意力和集成模块的剪接位点检测方法。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42853536/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42853536/",
+  "paper_page_path": "papers/pubmed/42853536/index.html"
+}

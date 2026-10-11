@@ -1,0 +1,304 @@
+{
+  "identity": {
+    "pmid": "42846624",
+    "doi": "10.3389/fbinf.2026.1922523",
+    "title": "Immunoinformatics-based design of a multi-epitope mRNA vaccine candidate targeting the major human-infecting hepatitis E virus genotypes 1-4."
+  },
+  "content": {
+    "abstract": "BACKGROUND: Hepatitis E virus (HEV) is one of the leading causes of acute and chronic hepatitis among humans across the globe and is linked to severe diseases in immunocompromised individuals and pregnant women. Despite its substantial global burden, only one vaccine is licensed (in China and Pakistan), limiting its global accessibility. Furthermore, no globally approved mRNA vaccine against HEV is currently available, highlighting the need to develop strategies for alternative vaccines. METHODS: In this study, the amino acid sequences of ORF2 capsid proteins representative of HEV genotypes 1-4 were curated, retrieved, and analyzed to generate a consensus sequence. The conserved cytotoxic T lymphocyte (CTL), helper T lymphocyte (HTL), and B-cell epitopes were computationally screened based on their antigenicity, allergenicity, toxicity, IFN-gamma induction, and human non-homology. Then, the selected epitopes, seven in total, were assembled into a computational multi-epitope mRNA construct incorporated with beta-defensin adjuvant, correct linkers, and regulatory elements [Kozak, tPA, MITD, and globin untranslated regions (UTRs)]. The construct was subsequently subjected to structural modeling, refinement and validation, docked with the TLR1/TLR2 heterodimer, followed by normal mode analysis and a 100-ns molecular dynamics simulation with MM-GBSA binding free-energy estimation, immune simulations, codon optimization, and in silico vaccine construct design. RESULTS: The computational analyses predicted that the proposed epitopes possessed a favorable antigenicity (VaxiJen score >/=0.4-1), with non-allergenicity and epitope conservancy (80%-100%) across the analyzed HEV genotypes (1-4), and that the assembled vaccine construct was structurally stable. Protein-protein docking of the vaccine construct candidate with the TLR1/TLR2 heterodimer and normal mode analysis of the docked complex indicated a stable structural interface rather than a confirmation of biological receptor engagement; a subsequent 100-ns molecular dynamics simulation supported a persistent, increasingly hydrogen-bonded interface with a favorable MM-GBSA binding free-energy (-91.96 kcal/mol). Computational immune simulations predicted cellular and humoral immune responses with B- and T-cell interaction activity and cytokine production levels. CONCLUSION: This study describes a computationally designed multi-epitope mRNA vaccine candidate with predicted immunogenicity and structural stability against the major human-infecting HEV genotypes 1-4. These computational results support the proposed vaccine construct as a promising candidate for further research to assess its immunogenicity; safety and protective efficacy will require experimental validation before its translational potential is verified.",
+    "keywords": [
+      "ORF2",
+      "hepatitis E virus",
+      "immunoinformatics",
+      "mRNA vaccine",
+      "multi-epitope mRNA vaccine",
+      "reverse vaccinology",
+      "vaccine design",
+      "viral genotypes"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Khonza, Maham Mehrangaze",
+        "Saeed, Zain",
+        "Jabeen, Zohra",
+        "Arab, Wafaa",
+        "Kakakhel, Sehrish",
+        "Yamin, Maham",
+        "Ghaith, Mazen M",
+        "Javed, Aneela",
+        "Zohaib, Ali",
+        "Abdulal, Rwaa H"
+      ],
+      "short_names": [
+        "Khonza MM",
+        "Saeed Z",
+        "Jabeen Z",
+        "Arab W",
+        "Kakakhel S",
+        "Yamin M",
+        "Ghaith MM",
+        "Javed A",
+        "Zohaib A",
+        "Abdulal RH"
+      ],
+      "auids": [],
+      "affiliations": [
+        "Atta-Ur-Rahman School of Applied Biosciences, National University of Sciences and Technology, Islamabad, Pakistan.",
+        "Atta-Ur-Rahman School of Applied Biosciences, National University of Sciences and Technology, Islamabad, Pakistan.",
+        "Atta-Ur-Rahman School of Applied Biosciences, National University of Sciences and Technology, Islamabad, Pakistan.",
+        "Vaccines and Immunotherapy Unit, King Fahd Medical Research Center, King Abdulaziz University, Jeddah, Saudi Arabia.",
+        "Department of Biochemistry, Abdul Wali Khan University Mardan, Mardan, Pakistan.",
+        "Atta-Ur-Rahman School of Applied Biosciences, National University of Sciences and Technology, Islamabad, Pakistan.",
+        "Department of Microbiology and Immunology, Peter Doherty Institute for Infection and Immunity, The University of Melbourne, Melbourne, VIC, Australia.",
+        "Department of Clinical Laboratory Sciences, Faculty of Applied Medical Sciences, Umm Al-Qura University, Makkah, Saudi Arabia.",
+        "Atta-Ur-Rahman School of Applied Biosciences, National University of Sciences and Technology, Islamabad, Pakistan.",
+        "Infectious Disease Research Department, King Abdullah International Medical Research Center, Jeddah, Saudi Arabia.",
+        "King Saud bin Abdulaziz University for Health Sciences, Jeddah, Saudi Arabia.",
+        "Ministry of the National Guard - Health Affairs, Jeddah, Saudi Arabia.",
+        "Infectious Disease Research Department, King Abdullah International Medical Research Center, Jeddah, Saudi Arabia.",
+        "King Saud bin Abdulaziz University for Health Sciences, Jeddah, Saudi Arabia.",
+        "Ministry of the National Guard - Health Affairs, Jeddah, Saudi Arabia."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Khonza, Maham Mehrangaze",
+        "short_name": "Khonza MM",
+        "identifiers": [],
+        "affiliations": [
+          "Atta-Ur-Rahman School of Applied Biosciences, National University of Sciences and Technology, Islamabad, Pakistan."
+        ]
+      },
+      {
+        "full_name": "Saeed, Zain",
+        "short_name": "Saeed Z",
+        "identifiers": [],
+        "affiliations": [
+          "Atta-Ur-Rahman School of Applied Biosciences, National University of Sciences and Technology, Islamabad, Pakistan."
+        ]
+      },
+      {
+        "full_name": "Jabeen, Zohra",
+        "short_name": "Jabeen Z",
+        "identifiers": [],
+        "affiliations": [
+          "Atta-Ur-Rahman School of Applied Biosciences, National University of Sciences and Technology, Islamabad, Pakistan."
+        ]
+      },
+      {
+        "full_name": "Arab, Wafaa",
+        "short_name": "Arab W",
+        "identifiers": [],
+        "affiliations": [
+          "Vaccines and Immunotherapy Unit, King Fahd Medical Research Center, King Abdulaziz University, Jeddah, Saudi Arabia."
+        ]
+      },
+      {
+        "full_name": "Kakakhel, Sehrish",
+        "short_name": "Kakakhel S",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Biochemistry, Abdul Wali Khan University Mardan, Mardan, Pakistan."
+        ]
+      },
+      {
+        "full_name": "Yamin, Maham",
+        "short_name": "Yamin M",
+        "identifiers": [],
+        "affiliations": [
+          "Atta-Ur-Rahman School of Applied Biosciences, National University of Sciences and Technology, Islamabad, Pakistan.",
+          "Department of Microbiology and Immunology, Peter Doherty Institute for Infection and Immunity, The University of Melbourne, Melbourne, VIC, Australia."
+        ]
+      },
+      {
+        "full_name": "Ghaith, Mazen M",
+        "short_name": "Ghaith MM",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Clinical Laboratory Sciences, Faculty of Applied Medical Sciences, Umm Al-Qura University, Makkah, Saudi Arabia."
+        ]
+      },
+      {
+        "full_name": "Javed, Aneela",
+        "short_name": "Javed A",
+        "identifiers": [],
+        "affiliations": [
+          "Atta-Ur-Rahman School of Applied Biosciences, National University of Sciences and Technology, Islamabad, Pakistan."
+        ]
+      },
+      {
+        "full_name": "Zohaib, Ali",
+        "short_name": "Zohaib A",
+        "identifiers": [],
+        "affiliations": [
+          "Infectious Disease Research Department, King Abdullah International Medical Research Center, Jeddah, Saudi Arabia.",
+          "King Saud bin Abdulaziz University for Health Sciences, Jeddah, Saudi Arabia.",
+          "Ministry of the National Guard - Health Affairs, Jeddah, Saudi Arabia."
+        ]
+      },
+      {
+        "full_name": "Abdulal, Rwaa H",
+        "short_name": "Abdulal RH",
+        "identifiers": [],
+        "affiliations": [
+          "Infectious Disease Research Department, King Abdullah International Medical Research Center, Jeddah, Saudi Arabia.",
+          "King Saud bin Abdulaziz University for Health Sciences, Jeddah, Saudi Arabia.",
+          "Ministry of the National Guard - Health Affairs, Jeddah, Saudi Arabia."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Frontiers in bioinformatics"
+    ],
+    "journal_abbrev": [
+      "Front Bioinform"
+    ],
+    "pub_date": "2026",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/08 17:35",
+    "fetched_at": "2026-10-11 10:31:44"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42846624",
+      "42192530",
+      "41929236",
+      "41083417",
+      "42445188",
+      "42797492",
+      "42710342",
+      "41897006",
+      "42696180",
+      "42676359",
+      "41252394",
+      "42333966",
+      "40226615",
+      "40594603",
+      "40830404",
+      "42436212",
+      "41599631",
+      "42417153",
+      "41822585",
+      "42148102",
+      "41949632",
+      "42774152",
+      "42696893",
+      "42794409",
+      "41381008",
+      "42380441",
+      "40739488",
+      "38028215",
+      "42600189",
+      "41303441",
+      "41239337",
+      "41901750",
+      "41931545",
+      "41534429",
+      "41343928",
+      "42168870",
+      "40698087",
+      "41629588",
+      "40134009",
+      "41791311",
+      "41792674",
+      "40854643",
+      "41593501",
+      "42827211",
+      "41915177",
+      "39441880",
+      "42064452",
+      "39936152",
+      "42786366",
+      "40688509",
+      "41444309",
+      "40177491",
+      "42653802",
+      "40433372",
+      "41905024",
+      "40125606",
+      "42527813",
+      "41674438",
+      "34994279",
+      "40689170",
+      "39840071",
+      "41304878",
+      "42236804",
+      "36845087",
+      "42365117",
+      "42426163",
+      "41478472",
+      "42464250",
+      "39325755",
+      "41023772",
+      "37424185",
+      "42749444",
+      "41185870",
+      "38096182",
+      "40610881",
+      "38487680",
+      "42663966",
+      "41484553",
+      "41457476",
+      "42013568",
+      "41028278",
+      "40854630",
+      "42753003",
+      "41281982",
+      "41211458",
+      "41134838",
+      "41888661",
+      "34425197",
+      "42185761",
+      "41255832",
+      "41930240",
+      "41274916",
+      "41686297",
+      "41706189",
+      "41360964",
+      "41196893",
+      "35318896",
+      "31394292",
+      "37874075",
+      "42115669"
+    ],
+    "review": [
+      "42846624"
+    ],
+    "pmc": [
+      "13642824"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://assays.cancer.gov/CPTAC-76",
+        "provider": "NCI CPTAC Assay Portal",
+        "category": "Miscellaneous",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://doi.org/10.3389/fbinf.2026.1922523",
+        "provider": "Frontiers Media SA",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

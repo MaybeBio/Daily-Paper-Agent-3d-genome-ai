@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Near-atomistic simulations reveal the molecular principles that control chromatin structure and phase separation. · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-high">9</span>
+    <div>
+      <h1>Near-atomistic simulations reveal the molecular principles that control chromatin structure and phase separation.</h1>
+      <div class="meta">Russell, Kieran; Chen, Yifang; Espinosa, Jorge R; Farre-Gil, David; Zhou, Huabin; Maristany, M Julia; Perez-Lopez, Jose Ignacio; Huertas, Jan; Orozco, Modesto; Rosen, Michael K; Collepardo-Guevara, Rosana</div>
+      <div class="meta muted">
+        
+        <span class="journal">Nature communications</span>
+        · 2026-10-07
+         · 全文(pmc)
+         · <a href="https://pubmed.ncbi.nlm.nih.gov/42838973/">原文</a>
+      </div>
+      <p class="one-liner">该文提出高性能粗粒化模型OpenCGChromatin，实现近原子级染色质模拟，从物理化学原理预测连接DNA长度依赖的染色质结构、相分离及组蛋白修饰对压缩的调控，直接命中染色质三维架构建模与分子模拟方法。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">Understanding how chromatin&#39;s physicochemical properties shape its emergent organization is central to deciphering genome function. To address this, we present OpenCGChromatin, a high-performance coarse-grained model that achieves near-atomistic simulations of chromatin systems an order of magnitude larger than previously possible, spanning biomolecular condensates and fibers tens of kilobases in length. OpenCGChromatin simulations independently predict, from physicochemical principles, the linker-DNA-dependent chromatin structures observed by cryo-ET and the relative thermodynamic stability of condensates inferred from biochemical assays. Crucially, OpenCGChromatin resolves histone-tail dynamics and interaction networks that remain inaccessible experimentally, explaining how linker-DNA length controls histone tail accessibility and the resulting multiscale structure of chromatin condensates. Extending simulations to 108-nucleosome fibers shows that acetylation disrupts chromatin compaction in a pattern-specific manner by weakening key tail-mediated interactions, with H4K16 and H3K9 emerging as the most energetically disruptive modifications. These results position OpenCGChromatin as a powerful framework for linking molecular detail to emergent chromatin organization.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">理解染色质的物理化学性质如何塑造其涌现性组织，是解读基因组功能的核心。为此，我们提出了OpenCGChromatin，一种高性能粗粒化模型，能够实现对染色质系统的近原子级模拟，其规模比以往可能达到的大一个数量级，涵盖生物分子凝聚体和长达数十千碱基的纤维。OpenCGChromatin模拟从物理化学原理出发，独立预测了通过冷冻电子断层扫描（cryo-ET）观察到的连接子DNA依赖性染色质结构，以及从生化测定推断出的凝聚体相对热力学稳定性。关键的是，OpenCGChromatin解析了实验上无法触及的组蛋白尾部动力学和相互作用网络，解释了连接子DNA长度如何控制组蛋白尾部的可及性，以及由此产生的染色质凝聚体的多尺度结构。将模拟扩展到108核小体纤维表明，乙酰化通过削弱关键的尾部介导相互作用，以模式特异性的方式破坏染色质压缩，其中H4K16和H3K9成为能量上最具破坏性的修饰。这些结果将OpenCGChromatin定位为一个强大的框架，用于将分子细节与涌现性染色质组织联系起来。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：Near-atomistic simulations reveal the molecular principles that control chromatin structure and phase separation</li>
+<li><strong>作者与单位</strong>：Russell, Kieran; Chen, Yifang; Espinosa, Jorge R; Farre-Gil, David; Perez-Lopez, Jose Ignacio; Huertas, Jan; Maristany, M Julia; Collepardo-Guevara, Rosana（剑桥大学等，具体单位未在摘要中提供）；Rosen, Michael K（UT Southwestern，据作者信息推断）；Orozco, Modesto（IRB Barcelona，据作者信息推断）</li>
+<li><strong>期刊/预印本平台</strong>：Nature Communications</li>
+<li><strong>年份</strong>：2026-10-07</li>
+<li><strong>论文类型</strong>：研究论文（含方法学开发与机制研究）</li>
+<li><strong>领域</strong>：三维基因组 / 染色质组织 × 分子模拟（粗粒化建模）</li>
+<li><strong>关键词</strong>：chromatin, phase separation, coarse-grained simulation, linker DNA, histone tails, acetylation, nucleosome</li>
+<li><strong>DOI/arXiv 号</strong>：10.1038/s41467-026-78050-6</li>
+<li><strong>代码</strong>：OpenCGChromatin（基于 OpenMM 实现，具体仓库地址未提供）</li>
+<li><strong>数据</strong>：模拟轨迹与源数据（Source Data 随文章发布）</li>
+<li><strong>阅读日期</strong>：未提供</li>
+<li><strong>该文在课题方向中的位置</strong>：属于「三维基因组/染色质组织 × AI/物理模拟」中的物理模拟分支，是近原子级（near-atomistic）粗粒化染色质建模的前沿工作。相比此前同类模型（如该组 2023 年的 residue-level 模型），本工作实现了 GPU 加速、规模扩展（至 108 核小体/18 kb 纤维）和相分离直接模拟，是该方向中「从分子细节到介观相行为」桥接的代表性方法。</li>
+</ul>
+<h2>02 一句话总结</h2>
+<p>本文开发了 GPU 加速的近原子级粗粒化染色质模型 OpenCGChromatin，通过模拟 12–108 核小体阵列，从物理化学原理出发独立预测了 linker DNA 长度对染色质纤维压缩和相分离的调控机制，并识别出 H4K16 和 H3K9 乙酰化为最关键的破坏性修饰位点。</p>
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：染色质的物理化学性质（特别是 linker DNA 长度和组蛋白翻译后修饰）如何通过分子间相互作用决定其从单纤维结构到相分离行为的涌现组织？</li>
+<li><strong>为什么重要</strong>：染色质的高级组织直接关联基因表达调控，理解其物理原理是连接基因组序列/修饰状态与功能输出的关键。</li>
+<li><strong>现有方法为何不足</strong>：</li>
+<li>实验方法（cryo-ET、cryo-EM、生化实验）无法解析单个组蛋白尾巴的动态行为和残基级别的相互作用网络；</li>
+<li>已有计算模型要么缺乏化学特异性（如最小模型），要么计算成本过高无法达到相分离所需的时间和规模尺度；</li>
+<li>此前近原子级模型（如该组 2023 年模型）仅能模拟 3–12 核小体，无法触及相分离。</li>
+<li><strong>精确研究问题（Can 形式）</strong>：Can a near-atomistic coarse-grained model, parameterized from physicochemical principles, independently predict the experimentally observed linker-length-dependent chromatin structures and condensate stability, and reveal the molecular mechanisms (histone tail dynamics, interaction networks) that govern these phenomena?</li>
+</ul>
+<h2>04 背景与发展脉络</h2>
+<blockquote>
+<p>注：此脉络基于本文引言及作者引用，标注为「仅本文框架」，未经外部系统核验。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>代表性方法</th>
+<th>优点</th>
+<th>局限</th>
+<th>本文位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>实验结构解析</td>
+<td>cryo-EM、X-ray crystallography、cryo-ET</td>
+<td>提供真实结构信息</td>
+<td>静态、无法解析动力学和残基级相互作用</td>
+<td>本文用其作为验证基准</td>
+</tr>
+<tr>
+<td>早期粗粒化模型</td>
+<td>单粒子/低分辨率核小体模型</td>
+<td>可模拟大尺度</td>
+<td>缺乏化学特异性，无法解释修饰效应</td>
+<td>本文用其补充宏观流变学</td>
+</tr>
+<tr>
+<td>近原子级粗粒化模型</td>
+<td>该组 2023 年 residue-level 模型（ellipsoid DNA）</td>
+<td>保留化学细节</td>
+<td>计算昂贵，仅 3–12 核小体</td>
+<td>本文的直接前身</td>
+</tr>
+<tr>
+<td>本文</td>
+<td>OpenCGChromatin（CGeNArate DNA + 全粒子化）</td>
+<td>GPU 加速、&gt;10 倍提速、可模拟 108 核小体/相分离</td>
+<td>仍为隐式溶剂、Debye–Hückel 静电</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>近原子级模型计算成本过高</td>
+<td>此前模型仅能模拟 3–12 核小体，无法触及相分离尺度</td>
+<td>刚性 DNA 的 ellipsoid 表示需要复杂坐标变换和 Jacobian 计算，难以 GPU 化</td>
+<td>Introduction 末段、Results "The OpenCGChromatin model" 节</td>
+</tr>
+<tr>
+<td>缺乏化学特异性的模型无法解释修饰效应</td>
+<td>最小模型无法区分不同乙酰化位点的效应</td>
+<td>缺少残基级分辨率</td>
+<td>Discussion 中关于最小模型仅用于补充流变学计算的说明</td>
+</tr>
+<tr>
+<td>实验无法解析组蛋白尾巴动态</td>
+<td>cryo-ET 无法检测纤维内外组蛋白尾巴的构象差异</td>
+<td>实验分辨率与动态捕获限制</td>
+<td>Results 图 6 相关分析、Discussion 中关于实验与模拟互补的论述</td>
+</tr>
+<tr>
+<td>静电处理过于简化</td>
+<td>对称 Debye–Hückel 无法捕捉二价离子效应</td>
+<td>隐式溶剂平均场近似的固有限制</td>
+<td>Methods 节、Discussion 中关于 Mg²⁺ 效应的讨论</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p><strong>1) 表面方法</strong>：开发了一个全粒子化的近原子级粗粒化染色质模型——每个氨基酸一个 bead（位于 Cα）、每个核苷酸一个 bead（位于 C1'），DNA 采用 CGeNArate 模型（序列依赖的多项式势能），组蛋白核心用弹性网络稳定，组蛋白尾巴为柔性链，静电用 Debye–Hückel 隐式溶剂处理。整个模型在 OpenMM 中 GPU 加速实现。</p>
+<p><strong>2) 核心洞察</strong>：染色质本质上是一种「半柔性 stickers-and-spacers 聚合物」——核小体面和组蛋白尾巴是 stickers（吸引性相互作用位点），linker DNA 是 spacers。但与传统 stickers-and-spacers 模型不同，spacers 并非惰性连接体：linker DNA 的双螺旋几何（长度决定旋转相位）直接决定了核小体的相对取向，从而控制哪些 stickers 被暴露或埋藏。因此，<strong>spacer 的几何机械性质是调控 sticker 有效性的关键变量</strong>——这是染色质区别于一般 IDP 相分离的核心特征。</p>
+<p><strong>3) 可能的普适教训 [Analysis]</strong>：该工作展示了一个方法论范式——通过「物理原理驱动的无偏模拟」来发现生物学机制，而非从实验数据反推。模型仅用 12 核小体阵列的沉降系数数据做参数校准，却能独立预测 cryo-ET 结构、相分离行为和乙酰化位点特异性效应，说明<strong>当模型的化学细节足够丰富时，涌现的介观行为可以超越训练数据的范围</strong>。这对三维基因组领域的 AI 方法有启示：纯数据驱动的预测模型可能受限于训练数据分布，而物理模拟可以生成训练数据覆盖不到的构象空间。</p>
+<h2>07 方法总览</h2>
+<ul>
+<li><strong>输入</strong>：染色质序列信息（核小体定位、linker DNA 长度、组蛋白修饰状态）</li>
+<li><strong>输出</strong>：染色质纤维的平衡构象系综、相分离行为（共存密度、界面）、残基级相互作用网络、组蛋白尾巴动态</li>
+<li><strong>模块</strong>：
+  1. <strong>OpenCGChromatin 力场</strong>：蛋白质（每个残基一个 bead，Kim–Hummer/Ashbaugh–Hatch 参数）、DNA（CGeNArate 模型，每个核苷酸一个 bead + 3 个虚拟位点：2 个磷酸基团带 −1e 电荷、1 个排除体积 bead）、弹性网络（稳定组蛋白核心和核小体 DNA）
+  2. <strong>Hamiltonian Replica Exchange (HREX)</strong>：通过 Debye 长度缩放实现增强采样，15 个 replica 覆盖 60–150 mM 盐浓度
+  3. <strong>直接共存模拟</strong>：81 个四核小体阵列置于拉长盒子中，自发形成凝聚相/稀相界面
+  4. <strong>分析工具</strong>：沉降系数（Kirkwood 近似）、接触频率、能量加权接触分析、连通分量分析、密度分布、流变学（最小模型补充）</li>
+<li><strong>流程</strong>：参数化（混合 bottom-up/top-down）→ 12 核小体验证（沉降系数 vs 实验）→ 相分离直接共存模拟 → 残基级机制分析 → 108 核小体长纤维乙酰化模拟</li>
+</ul>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CGeNArate DNA 模型</td>
+<td>以全粒子化 Cartesian 表示替代原 ellipsoid 刚性 DNA</td>
+<td>消除坐标变换/Jacobian 计算，实现 GPU 加速；同时保留 DNA 双螺旋几何和序列依赖性</td>
+<td>输入：DNA 序列；输出：每个核苷酸的 bead 位置和虚拟位点</td>
+<td>Results 图 1b 性能基准；Methods 节</td>
+<td>预期：若保留原 ellipsoid 模型，无法达到 108 核小体规模（实测 &gt;10 倍加速）</td>
+</tr>
+<tr>
+<td>HREX 增强采样</td>
+<td>通过 Debye 长度副本交换克服染色质粗糙能量景观</td>
+<td>染色质静电主导的势垒在常规 MD 中难以跨越</td>
+<td>输入：15 个不同 λD 的副本；输出：平衡构象系综</td>
+<td>Methods 节；~30% 交换接受率（Supplementary Fig. 8）</td>
+<td>预期：移除后采样不足，无法获得收敛的构象分布</td>
+</tr>
+<tr>
+<td>直接共存模拟</td>
+<td>在拉长盒子中模拟凝聚相与稀相平衡</td>
+<td>无需预先假设相分离，直接从物理原理预测</td>
+<td>输入：81 个四核小体阵列；输出：共存密度、界面结构</td>
+<td>Results 图 4a,b</td>
+<td>预期：移除后无法获得无偏的相分离预测</td>
+</tr>
+<tr>
+<td>能量加权接触分析</td>
+<td>按相互作用能量对残基接触加权</td>
+<td>区分强/弱相互作用，识别关键驱动残基</td>
+<td>输入：轨迹坐标；输出：残基级能量贡献谱</td>
+<td>Results 图 6；Methods 节</td>
+<td>预期：移除后只能获得二进制接触信息，无法识别 H4K16/H3K9 的关键地位</td>
+</tr>
+<tr>
+<td>最小模型补充模拟</td>
+<td>计算完整 binodal 和流变学性质</td>
+<td>近原子模型无法达到流变学所需的时间尺度</td>
+<td>输入：粗粒化核小体参数；输出：G(t)、表面张力</td>
+<td>Supplementary Fig. 14</td>
+<td>预期：移除后缺少宏观物性预测，但核心机制结论不受影响</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式符号</h2>
+<p>本文为方法学论文，正文中未出现需要单独列出的核心公式（力场参数和势函数形式在补充信息中）。以下为理解本文必需的物理概念：</p>
+<ul>
+<li><strong>Debye–Hückel 静电屏蔽</strong>：( U_{DH}(r) = \frac{q_i q_j}{4\pi\epsilon_0 \epsilon_r r} e^{-r/\lambda_D} )，其中 ( \lambda_D ) 为 Debye 长度，本文通过缩放 ( \lambda_D ) 实现 HREX 副本交换</li>
+<li><strong>Kirkwood 近似（沉降系数）</strong>：( S \propto \frac{1}{N^2} \sum_{i&lt;j} \langle r_{ij}^{-1} \rangle )，用于从模拟轨迹计算与实验沉降系数可比的量</li>
+<li><strong>Ashbaugh–Hatch 势</strong>：修改的 Lennard-Jones 势，用于蛋白质残基间的疏水/亲水相互作用，参数取自 Kim–Hummer 力场</li>
+<li><strong>连通分量</strong>：以 13 nm 截断距离定义核小体间接触图，用于计算最大连通分量大小</li>
+</ul>
+<h2>10 实验设计与证据链</h2>
+<p><strong>数据集/群体</strong>：
+- 12 核小体阵列：10 种 linker 长度（18, 20, 22, 25, 30, 36, 41, 53, 58, 63 bp）
+- 相分离模拟：81 个四核小体阵列（25 bp 和 30 bp linker），拉长盒子 500 × 83 × 83 nm³
+- 长纤维模拟：108 核小体阵列，22 bp linker，三种乙酰化模式（0 Ac、5×12 Ac、54 Ac），100 μs</p>
+<p><strong>指标</strong>：沉降系数（S）、半径回旋（Rg）、非球形度（asphericity）、接触频率（按核小体距离和方向分类）、能量加权接触分数、crowding density、最大连通分量</p>
+<p><strong>基线/对照</strong>：实验沉降系数数据（Routh et al. 等）、cryo-ET 结构数据、该组此前模型结果</p>
+<p><strong>评测协议</strong>：模拟预测 vs 实验测量直接对比；不同 linker 长度/乙酰化模式间的系统比较</p>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的 claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>12 核小体沉降系数扫描</td>
+<td>模型能复现 linker 长度依赖的压缩振荡</td>
+<td>10 种 linker 长度 vs 实验沉降系数</td>
+<td>近定量一致，捕捉 10N vs 10N+5 振荡</td>
+<td>模型力场能正确编码 linker DNA 几何-相互作用耦合</td>
+<td>不能证明模型对所有序列/修饰组合都准确</td>
+<td>Results 图 2a</td>
+</tr>
+<tr>
+<td>接触类型分析（图 2b,c）</td>
+<td>10N linker 促进 face-face 堆积</td>
+<td>不同 linker 长度的第二近邻接触分类</td>
+<td>10N 长度 face-face 占优，10N+5 更异质</td>
+<td>压缩振荡源于核小体取向的几何匹配</td>
+<td>未直接测量相互作用能量</td>
+<td>Results 图 2b,c</td>
+</tr>
+<tr>
+<td>直接共存模拟（图 4a,b）</td>
+<td>25 bp 比 30 bp 更易相分离</td>
+<td>81 阵列，25 vs 30 bp，20 μs</td>
+<td>25 bp 形成稳定凝聚相，30 bp 仅弱相分离</td>
+<td>linker 长度通过单纤维构象调控相行为</td>
+<td>未系统扫描浓度/温度相图（由最小模型补充）</td>
+<td>Results 图 4a,b</td>
+</tr>
+<tr>
+<td>相分离实验验证（图 4e,f）</td>
+<td>模拟预测与体外实验一致</td>
+<td>25 vs 30 bp 阵列，100 mM 盐</td>
+<td>25 bp 形成液滴，30 bp 不形成</td>
+<td>模拟预测的相行为差异在实验中复现</td>
+<td>实验为定性观察，未定量比较</td>
+<td>Results 图 4e,f</td>
+</tr>
+<tr>
+<td>108 核小体乙酰化模拟（图 7,8）</td>
+<td>乙酰化模式影响纤维结构和动力学</td>
+<td>0 Ac vs 5×12 Ac vs 54 Ac，100 μs</td>
+<td>乙酰化导致扩展构象、降低长程接触</td>
+<td>乙酰化通过减少有效 sticker 数量解压缩染色质</td>
+<td>未模拟体内更复杂的修饰组合</td>
+<td>Results 图 7,8</td>
+</tr>
+<tr>
+<td>残基级能量分析（图 8c）</td>
+<td>H4K16 和 H3K9 是最关键的乙酰化位点</td>
+<td>34 个赖氨酸位点的能量加权接触比较</td>
+<td>H4K16 和 H3K9 乙酰化导致最大能量损失</td>
+<td>这些位点的调控重要性源于其物理化学位置</td>
+<td>未直接验证体内表型</td>
+<td>Results 图 8c</td>
+</tr>
+</tbody>
+</table>
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：本文结论限于<strong>体外重构染色质阵列</strong>（规则 linker、Widom 601 序列）的平衡热力学行为，不涉及体内复杂环境（核小体定位异质性、结合蛋白、ATP 驱动的非平衡过程）。</li>
+<li><strong>oracle/真值输入</strong>：模型参数部分来自原子模拟（bottom-up），部分校准自实验沉降系数（top-down）。所有其他预测（cryo-ET 结构、相分离、乙酰化效应）均为无偏预测。</li>
+<li><strong>端到端状态</strong>：从序列到相行为的端到端预测已实现，但<strong>定量</strong>相图（binodal、临界点）由最小模型补充，非近原子模型直接输出。</li>
+<li><strong>算力成本</strong>：GPU 加速后单根 108 核小体纤维可模拟至 100 μs，但相分离模拟（81 阵列 × 20 μs）仍需大量计算资源；未提供具体 GPU 时数。</li>
+<li><strong>历史数据依赖</strong>：模型参数不依赖大规模实验数据集拟合，但验证依赖已有实验数据（沉降系数、cryo-ET）。</li>
+<li><strong>模型依赖</strong>：结论依赖于 CGeNArate DNA 力场和 Kim–Hummer 蛋白质力场的准确性；Debye–Hückel 隐式溶剂无法捕捉离子特异性效应。</li>
+<li><strong>最难情形</strong>：长 linker（≥50 bp）在低盐条件下的定量预测偏差最大（作者承认）；体内复杂修饰组合的预测未验证。</li>
+<li><strong>群体/领域边界</strong>：结论适用于<strong>纯化染色质</strong>的物理化学行为，不能直接外推到活细胞中的染色质组织。</li>
+<li><strong>不确定性</strong>：模拟时间为粗粒化时间，不能直接映射到实验动力学；相分离模拟的有限尺寸效应已通过盒子尺寸扫描部分控制。</li>
+</ul>
+<p><strong>有边界的复述</strong>：在体外重构的规则染色质阵列中，linker DNA 长度通过双螺旋几何决定核小体取向和组蛋白尾巴暴露程度，从而调控单纤维压缩和相分离倾向；乙酰化通过中和赖氨酸正电荷、减少有效 sticker 数量来解压缩染色质，其中 H4K16 和 H3K9 因位于关键电荷块中而具有最大的能量效应。</p>
+<h2>12 作者自认局限</h2>
+<table>
+<thead>
+<tr>
+<th>局限</th>
+<th>具体表现</th>
+<th>作者提出的未来方向</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Debye–Hückel 隐式溶剂无法捕捉二价离子效应</td>
+<td>Mg²⁺ 介导的离子桥联和关联效应未被描述</td>
+<td>引入更精细的静电处理或显式离子</td>
+<td>Discussion 末段</td>
+</tr>
+<tr>
+<td>模型不含非核小体蛋白和 RNA</td>
+<td>结果仅反映染色质内在物理化学性质</td>
+<td>扩展至多组分系统</td>
+<td>Discussion 中关于模型范围的说明</td>
+</tr>
+<tr>
+<td>核小体呼吸（breathing）受限</td>
+<td>仅末端 10 bp DNA 允许呼吸，可能限制某些构象</td>
+<td>放松弹性网络约束</td>
+<td>Methods 节、Discussion</td>
+</tr>
+<tr>
+<td>相分离定量相图由最小模型补充</td>
+<td>近原子模型无法直接计算完整 binodal</td>
+<td>发展多尺度方法</td>
+<td>Supplementary Fig. 14 相关说明</td>
+</tr>
+<tr>
+<td>乙酰化模拟采用随机 50% 修饰</td>
+<td>未模拟特定修饰组合或剂量效应</td>
+<td>系统扫描修饰模式</td>
+<td>Results 图 7 相关说明</td>
+</tr>
+<tr>
+<td>模拟时间不能直接映射实验动力学</td>
+<td>粗粒化时间尺度缺乏校准</td>
+<td>与实验动力学数据交叉验证</td>
+<td>Methods 节</td>
+</tr>
+</tbody>
+</table>
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>模型参数校准仅使用沉降系数数据</td>
+<td>单一可观测量的拟合可能欠约束；不同参数组合可能产生相同沉降系数但不同构象分布</td>
+<td>若力场在未测试的 linker 长度/序列上失效，预测可能不可靠</td>
+<td>用 FRET、SAXS 等正交实验数据做盲测</td>
+<td>Results 图 2a；Methods 节</td>
+</tr>
+<tr>
+<td>相分离模拟使用四核小体阵列而非长纤维</td>
+<td>短阵列的末端效应可能影响相行为；四核小体可能无法代表体内更长的染色质纤维</td>
+<td>结论的外推性取决于阵列长度是否足够</td>
+<td>系统变化阵列长度（如 6、8、12 核小体）重复相分离模拟</td>
+<td>Results 图 4；Methods 节</td>
+</tr>
+<tr>
+<td>乙酰化模拟中「随机 50% 修饰」可能掩盖位点协同效应</td>
+<td>实际细胞中修饰是高度协同的（如 H4K16ac 与 H3K9ac 的联合效应）</td>
+<td>若协同效应重要，单一位点分析可能高估或低估某些位点的作用</td>
+<td>模拟特定修饰组合并与 ChIP-seq 数据对比</td>
+<td>Results 图 7,8</td>
+</tr>
+<tr>
+<td>与 cryo-ET 的比较仅用几何描述符（D, α, para）</td>
+<td>这些描述符可能不足以区分不同的三维组织模式</td>
+<td>若描述符不敏感，模型可能在某些构象上错误但与实验「一致」</td>
+<td>使用更丰富的拓扑/几何特征（如接触图、环状性）做比较</td>
+<td>Supplementary Fig. 7</td>
+</tr>
+<tr>
+<td>模型预测 H4K16/H3K9 为最关键位点，但实验验证有限</td>
+<td>作者未提供这些位点的直接突变/乙酰化实验验证</td>
+<td>核心机制 claim 需要独立实验支持</td>
+<td>设计 H4K16A/H3K9A 突变体的体外相分离实验</td>
+<td>Results 图 8c；Discussion</td>
+</tr>
+<tr>
+<td>乙酰化效应仅通过电荷中和实现</td>
+<td>乙酰化还可能通过改变尾巴构象偏好（如疏水相互作用）影响行为</td>
+<td>若构象效应重要，仅中和电荷的模拟可能低估乙酰化影响</td>
+<td>比较电荷中和 vs 全原子乙酰化模拟的尾巴构象分布</td>
+<td>Methods 节</td>
+</tr>
+</tbody>
+</table>
+<h2>14 学到什么</h2>
+<p><strong>Agent 提炼的知识候选</strong>：</p>
+<ol>
+<li>
+<p><strong>可迁移概念——「spacer 几何调控 sticker 有效性」</strong>：在染色质中，linker DNA 不仅是连接体，其长度决定的旋转相位直接控制核小体取向和尾巴暴露。这一「连接体几何→相互作用位点可及性」的机制可迁移到其他重复单元聚合物系统（如人工核小体阵列设计、合成染色质）。</p>
+</li>
+<li>
+<p><strong>可迁移方法——HREX 的 Debye 长度缩放</strong>：通过缩放 Debye 长度而非温度实现副本交换，特别适合静电主导的体系，且副本数需求远低于温度副本交换。可迁移到其他带电生物聚合物的模拟。</p>
+</li>
+<li>
+<p><strong>可迁移方法——能量加权接触分析</strong>：将接触频率按相互作用能量加权，比二进制接触图更能识别关键残基/位点。可迁移到蛋白质-RNA 相分离、转录凝聚体的模拟分析。</p>
+</li>
+<li>
+<p><strong>可迁移实验设计——「无偏预测 + 实验验证」范式</strong>：模型仅用沉降系数校准，却预测了 cryo-ET 结构、相分离和乙酰化位点效应。这种「最小校准、最大预测」的策略对三维基因组 AI 模型有启示：应优先选择信息量高但数量少的实验数据做校准，保留模型的预测自由度。</p>
+</li>
+<li>
+<p><strong>可迁移概念——「半柔性 stickers-and-spacers」框架</strong>：将染色质视为 stickers（核小体面+尾巴）和 spacers（linker DNA）的聚合物，但 spacers 具有刚性几何约束。这一框架可扩展到异染色质（HP1 交联）、转录凝聚体（多价转录因子）等系统。</p>
+</li>
+<li>
+<p><strong>可迁移工具——OpenCGChromatin 的 GPU 实现</strong>：基于 OpenMM 的 GPU 加速方案使近原子模型达到 108 核小体/100 μs 的规模，为三维基因组模拟提供了新的工具基础。</p>
+</li>
+</ol>
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>该组前期工作</strong>：本文直接继承并改进了该组 2023 年的 residue-level 染色质模型（Collepardo-Guevara 组），主要改进为 GPU 化、DNA 模型升级（CGeNArate）和规模扩展。可对比阅读该组 2023 年论文以了解模型演进。</li>
+<li><strong>实验基础</strong>：沉降系数实验数据来自 Routh et al. 等早期工作；cryo-ET 数据来自该组与合作者 2023 年工作（Cai et al., Nature 2023 等）。本文的 25 bp vs 30 bp 相分离差异与此前 cryo-ET 观察一致。</li>
+<li><strong>理论框架</strong>：sticker-and-spacer 模型源自 Rubinstein 和 Pappu 等对 IDP 相分离的理论框架（如 Pappu 组 2018 年 PRL 等）。本文将这一框架扩展到具有刚性几何约束的染色质系统。</li>
+<li><strong>相关方法</strong>：CGeNArate 模型来自 Orozco 组（Walther et al. 2020），是 DNA 粗粒化领域的代表性工作。本文将其整合到染色质模型中。</li>
+<li><strong>与 AI 方法的关系</strong>：本文是物理模拟路线，与 AlphaFold 3、Chroma 等 AI 结构预测方法互补。物理模拟可生成 AI 训练数据覆盖不到的构象空间，而 AI 方法可加速物理模拟的构象搜索。三维基因组领域可探索「AI 预测 + 物理模拟验证」的混合路线。</li>
+<li><strong>与单分子实验的关联</strong>：本文预测的尾巴可及性差异可通过单分子 FRET 或纳米孔测序验证，与染色质纤维动态的活细胞成像（如 CRISPR imaging）互补。</li>
+</ul>
+<h2>16 研究想法</h2>
+<p><strong>Agent 生成的研究候选</strong>：</p>
+<ol>
+<li>
+<p><strong>候选名称</strong>：LinkerDNA-GPT——基于 OpenCGChromatin 模拟数据训练的染色质构象生成模型
+   - <strong>来源局限/观察</strong>：OpenCGChromatin 虽能模拟 108 核小体，但计算成本仍高，无法覆盖全基因组尺度的异质 linker 分布
+   - <strong>核心假设</strong>：从 OpenCGChromatin 模拟中提取的核小体-核小体相互作用势可以作为 AI 生成模型的训练信号，实现从 linker 长度序列到三维构象的快速预测
+   - <strong>初步方法</strong>：用 OpenCGChromatin 生成不同 linker 长度/修饰组合的训练集，训练基于图神经网络的构象生成器，用物理模拟做验证
+   - <strong>验证方式</strong>：在未见过的 linker 组合上比较生成构象与直接模拟的接触图、Rg 分布
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：Acetylation-Pattern-Encoder——预测修饰模式对染色质相分离的定量影响
+   - <strong>来源局限/观察</strong>：本文仅模拟了随机 50% 乙酰化，未系统扫描修饰模式（如连续修饰块 vs 分散修饰）
+   - <strong>核心假设</strong>：修饰模式（而非仅修饰比例）通过改变尾巴可及性的空间分布来定量调控相分离
+   - <strong>初步方法</strong>：在 OpenCGChromatin 中系统变化乙酰化模式（块状、交替、梯度），计算 binodal 和接触网络拓扑
+   - <strong>验证方式</strong>：与体外重构实验（不同修饰模式的液滴形成实验）对比
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：CG2AA-Bridge——粗粒化到全原子的多尺度回映方法
+   - <strong>来源局限/观察</strong>：OpenCGChromatin 的粗粒化分辨率无法解析尾巴的二级结构偏好
+   - <strong>核心假设</strong>：从粗粒化轨迹中提取的核小体相对位置和方向可以作为全原子模拟的约束，实现多尺度回映
+   - <strong>初步方法</strong>：开发从 OpenCGChromatin 轨迹到全原子染色质模型的回映协议，用回映结构做短时间全原子 MD 验证
+   - <strong>验证方式</strong>：比较回映结构的残基接触与 cryo-ET 数据
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：PhaseDiagram-Predictor——基于序列特征的染色质相分离预测器
+   - <strong>来源局限/观察</strong>：本文的相分离模拟仅覆盖 25/30 bp 两种 linker，未建立 linker 长度-相行为映射
+   - <strong>核心假设</strong>：linker 长度、GC 含量、修饰密度等序列特征可以预测染色质的相分离倾向
+   - <strong>初步方法</strong>：用 OpenCGChromatin 系统扫描 linker 长度（10–80 bp）和序列组成，训练相分离倾向预测器
+   - <strong>验证方式</strong>：与文献中不同 linker 长度的液滴实验数据对比
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：H4K16-Switch-Model——H4K16 乙酰化作为染色质相分离分子开关的定量模型
+   - <strong>来源局限/观察</strong>：本文识别 H4K16 为最关键的乙酰化位点，但未量化其开关效应
+   - <strong>核心假设</strong>：H4K16 乙酰化通过破坏 H4 尾巴与酸性 patch 的特定相互作用，产生超过其电荷效应的构象转变
+   - <strong>初步方法</strong>：在 OpenCGChromatin 中分别模拟 H4K16 单独乙酰化 vs 全部赖氨酸乙酰化，比较构象和相行为差异
+   - <strong>验证方式</strong>：与 H4K16 特异性乙酰化酶的体外实验对比
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+</ol></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Full manuscript text including abstract, introduction, results, methods, and figure legends</li>
+<li><strong>Assessment boundary</strong> Scientific validity, methodological rigor, claims versus evidence, and alignment with Nature-style criteria</li>
+<li><strong>Shared manuscript claim summary</strong> The authors present OpenCGChromatin, a GPU-accelerated coarse-grained chromatin model with residue-level protein and nucleotide-level DNA resolution. They claim it enables near-atomistic simulations of chromatin systems an order of magnitude larger than previously possible, independently predicts linker-length-dependent chromatin structures observed by cryo-ET, resolves histone-tail dynamics inaccessible experimentally, and identifies H4K16 and H3K9 acetylation as the most energetically disruptive modifications for chromatin compaction. They further propose a mechanistic framework positioning chromatin as a semi-flexible stickers-and-spacers polymer whose phase behavior is governed by linker-DNA-imposed nucleosome orientation.</li>
+<li><strong>Visible evidence base</strong> Main text figures 1-8, methods section, and references to supplementary figures 3-17 and tables</li>
+<li><strong>Missing materials affecting confidence</strong> Supplementary Information (model Hamiltonian, parameterization details, validation protocols, full analysis definitions), Source Data files, and Reporting Summary were not provided for review</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li>
+<p><strong>Overall assessment</strong> This manuscript presents a technically impressive computational advance with the potential to significantly impact the chromatin biology and biomolecular condensate fields. The OpenCGChromatin model addresses a genuine gap: the inability of existing near-atomistic models to access biologically relevant length and time scales. The validation against experimental sedimentation data and cryo-ET structures is a strength, and the mechanistic insights regarding linker-length-dependent phase behavior are conceptually novel. However, several concerns temper my enthusiasm. The central mechanistic claims regarding histone tail accessibility and the energetic dominance of specific acetylation sites rest on analyses whose definitions are only partially visible in the main text. The comparison between 25 bp and 30 bp systems, while informative, conflates linker length with nucleosome repeat length, and the attribution of phase behavior differences to "frustration" versus other physicochemical factors requires more rigorous support. The single-trajectory-per-condition design for the phase separation simulations, acknowledged by the authors, limits statistical confidence in the reported differences. The acetylation study, while suggestive, uses an extreme 50% random acetylation level that may not reflect physiological conditions, and the claim that H4K16 and H3K9 emerge as "most disruptive" requires careful interpretation given the pooling strategy across systems with different acetylation patterns. Overall, the model itself appears to be a valuable community resource, but the biological conclusions, particularly those extending beyond the validated compaction regime, need additional support or more cautious framing.</p>
+</li>
+<li>
+<p><strong>Who would be interested in the results, and why</strong> Chromatin biologists studying higher-order genome organization, particularly those interested in the biophysical basis of chromatin phase separation and the role of linker DNA in shaping nuclear architecture. Computational biophysicists developing coarse-grained models of protein-DNA systems will find the methodological advances and GPU implementation of direct interest. Researchers studying histone post-translational modifications, especially acetylation, and their effects on chromatin structure will be interested in the predictive framework for identifying energetically important modification sites. The broader phase separation community, including those studying other nucleic acid-protein systems, may find the stickers-and-spacers framework with explicit spacer mechanics conceptually transferable.</p>
+</li>
+<li>
+<p><strong>Major strengths</strong> The model represents a genuine methodological advance, achieving an order-of-magnitude improvement in accessible system size while maintaining near-atomistic resolution. The validation strategy is appropriate: reproducing experimental sedimentation coefficients across linker lengths provides a stringent test, and the agreement with cryo-ET structural features adds confidence. The phase separation predictions are bold and testable, and the connection between single-fiber conformational properties and collective phase behavior is conceptually elegant. The identification of H4K16 and H3K9 as energetically critical acetylation sites from unbiased simulations is a striking result with potential biological significance. The manuscript is generally well-written and the figures are informative.</p>
+</li>
+<li>
+<p><strong>Major Concerns</strong></p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M1</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Statistical rigor and reproducibility</li>
+<li><strong>Claim pointer</strong> The authors claim that 25 bp chromatin phase-separates while 30 bp chromatin shows only weak phase separation, and that 25 bp arrays expand upon phase separation while 30 bp arrays do not.</li>
+<li><strong>Evidence pointer</strong> Figure 4a-d, Figure 5b, Methods section "Phase separation"</li>
+<li><strong>Concern</strong> The phase separation simulations consist of a single trajectory per condition (81 tetranucleosome arrays per simulation, one simulation for 25 bp and one for 30 bp). The authors acknowledge this in the Methods, noting that error bars represent temporal block-to-block variability rather than variation across independent replicates. This design fundamentally limits the statistical confidence in the reported differences between 25 bp and 30 bp systems. The differences in density profiles, largest connected component size, and conformational distributions could reflect initial condition sensitivity or stochastic variation rather than robust thermodynamic differences. The claim that 25 bp chromatin "phase-separates" while 30 bp does not is a strong binary statement resting on n=1 per condition.</li>
+<li><strong>Why it matters</strong> The central mechanistic conclusion of the paper, that linker length controls phase behavior through conformational frustration, depends critically on the reliability of the difference between the 25 bp and 30 bp phase separation simulations. If this difference is not robust across independent simulations, the primary biological claim is undermined. The field of biomolecular condensates is already grappling with reproducibility challenges, and a claim of this significance requires demonstration of robustness.</li>
+<li>
+<p><strong>Resolution test</strong> The authors should provide at minimum 3 independent simulations per condition (ideally 5 or more) with different random seeds and, if feasible, different initial configurations. The reported differences in density profiles, cluster sizes, and conformational distributions should be shown to be consistent across replicates. Statistical comparison of the 25 bp and 30 bp conditions should be performed using appropriate tests that account for the hierarchical structure of the data (e.g., mixed-effects models or bootstrapping across replicates).</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M2</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Claim-evidence alignment</li>
+<li><strong>Claim pointer</strong> The authors claim that "OpenCGChromatin resolves histone-tail dynamics and interaction networks that remain inaccessible experimentally, explaining how linker-DNA length controls histone tail accessibility and the resulting multiscale structure of chromatin condensates."</li>
+<li><strong>Evidence pointer</strong> Figure 6, Methods section "Analysis methods"</li>
+<li><strong>Concern</strong> The energy-weighted contact analysis presented in Figure 6 is central to the mechanistic claim that 30 bp linkers bury H4 and H2A N-terminal tails in intra-array contacts while 25 bp linkers expose all tails for inter-array interactions. However, the definition of the energy-weighted score is only partially described in the main text. The Methods state that contacts are weighted by pairwise interaction energy evaluated at instantaneous separation, but the specific functional form, the treatment of different interaction types (electrostatic vs. Lennard-Jones), and the normalization scheme are not fully specified. The claim that this analysis "resolves" tail dynamics implies a level of detail that may not be supported by the coarse-grained representation. Furthermore, the comparison between intra-array and inter-array contacts in Figure 6a vs 6b is presented as the key mechanistic distinction, but the absolute magnitudes and the statistical significance of the differences between 25 bp and 30 bp conditions are not reported.</li>
+<li><strong>Why it matters</strong> The mechanistic explanation for why linker length controls phase behavior rests on this contact analysis. If the energy-weighted scoring is not rigorously defined and validated, or if the differences between conditions are not statistically robust, the proposed mechanism is not established. The claim of resolving "interaction networks that remain inaccessible experimentally" is strong and requires that the computational analysis be held to a high standard of rigor.</li>
+<li>
+<p><strong>Resolution test</strong> The authors should provide a complete mathematical definition of the energy-weighted contact score in the main text or clearly reference the Supplementary Information section where it is defined. They should report the statistical significance of the differences between 25 bp and 30 bp conditions for the key contact types (H4, H2A N) in both intra-array and inter-array categories. Ideally, they should also validate the energy-weighted approach against simpler contact frequency analyses to demonstrate that the weighting scheme does not introduce artifacts.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M3</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Interpretational overreach</li>
+<li><strong>Claim pointer</strong> The authors state that "the simulations suggest that linker-induced frustration in the 25 bp fibers enables conformational expansion upon phase separation that exposes additional interaction sites, allowing fibers to reorganize and diversify their interaction modes" and that this "provides a direct coupling between single-fiber frustration, histone-tail accessibility, and network connectivity that defines how chromatin's geometry and chemical makeup jointly control its phase behavior."</li>
+<li><strong>Evidence pointer</strong> Figure 5, Figure 6, Discussion</li>
+<li><strong>Concern</strong> The causal chain proposed, from linker length to frustration to expansion to tail exposure to enhanced inter-array connectivity to phase separation, is presented as a coherent mechanism. However, the evidence for each causal link is correlational. The authors show that 25 bp arrays are more expanded in dilute conditions and expand further in the condensed phase, and that tail contacts differ between conditions. But they do not demonstrate that the expansion is caused by frustration rather than by, for example, differences in net charge, hydration, or excluded volume effects. The term "frustration" is used descriptively but is not quantified or directly measured. The claim of a "direct coupling" implies a mechanistic understanding that may exceed what the simulations can establish.</li>
+<li><strong>Why it matters</strong> The conceptual framework presented in the Discussion, positioning chromatin as a semi-flexible stickers-and-spacers polymer where spacer mechanics control phase behavior, is potentially important and generative. However, if the causal claims are overstated relative to the evidence, the framework may be prematurely solidified and could misdirect future research. The distinction between correlation and causation is particularly important in computational studies where the modeler has full access to all variables.</li>
+<li>
+<p><strong>Resolution test</strong> The authors should either (a) provide additional analyses that directly test the proposed causal chain, such as perturbing specific interactions (e.g., neutralizing specific tail charges, modifying DNA flexibility) and showing the predicted effects on phase behavior, or (b) soften the causal language and present the mechanism as a hypothesis consistent with the simulations rather than a demonstrated principle. Quantifying "frustration" through a measurable order parameter would also strengthen the claim.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M4</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Generalizability of acetylation findings</li>
+<li><strong>Claim pointer</strong> The authors claim that "extending simulations to 108-nucleosome fibers shows that acetylation disrupts chromatin compaction in a pattern-specific manner by weakening key tail-mediated interactions, with H4K16 and H3K9 emerging as the most energetically disruptive modifications."</li>
+<li><strong>Evidence pointer</strong> Figure 7, Figure 8, Methods section "Long fiber dynamics"</li>
+<li><strong>Concern</strong> The acetylation simulations use a 50% random acetylation level across all lysines in acetylated regions. This is acknowledged as an upper bound, but the interpretation of the results as identifying "the most energetically disruptive modifications" may be sensitive to this choice. The comparison between H4K16 and H3K9 as "most disruptive" is based on a ranking of energy-weighted contact scores, but the statistical significance of this ranking is not established. Furthermore, the simulations use only three acetylation patterns (0 Ac, 5x12 Ac, 54 Ac), and the 5x12 pattern creates alternating blocks of acetylated and unacetylated nucleosomes that may not represent any physiological arrangement. The claim that the findings reveal "pattern-specific" effects is based on a very limited exploration of the pattern space.</li>
+<li><strong>Why it matters</strong> The acetylation results are presented as a key application of the model with potential biological significance. If the conclusions are sensitive to the specific simulation choices (acetylation level, pattern, and the specific lysines modified), the generalizability of the findings is limited. The claim that specific modification sites are "most disruptive" could be misinterpreted as a prediction about which acetylation marks are most biologically important, when the simulations only address which are most disruptive under a specific, extreme acetylation condition.</li>
+<li>
+<p><strong>Resolution test</strong> The authors should either (a) perform additional simulations with different acetylation levels (e.g., 10%, 25%) and patterns to test the robustness of the ranking, or (b) temper the claims to state that under the specific conditions simulated, H4K16 and H3K9 show the largest energetic effects, without generalizing to biological importance. Reporting confidence intervals or bootstrap estimates for the energy-weighted scores would also help establish the robustness of the ranking.</p>
+</li>
+<li>
+<p><strong>Minor Comments</strong></p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m1</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Clarity of model validation</li>
+<li><strong>Affected element</strong> Figure 2a and Supplementary Figure 4</li>
+<li><strong>Evidence pointer</strong> Figure 2a, Supplementary Figure 4</li>
+<li><strong>Issue</strong> The validation against experimental sedimentation coefficients is presented as a key strength, but the figure only shows simulated values with experimental values overlaid. It is unclear how the experimental values were obtained and whether the comparison is apples-to-apples (e.g., same salt conditions, same temperature, same buffer composition).</li>
+<li>
+<p><strong>Required correction</strong> Please clarify in the figure legend or main text the source of the experimental sedimentation coefficients and any adjustments made to ensure comparability with simulation conditions. If the experimental values are from different buffer conditions, this should be stated and the potential impact on the comparison discussed.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m2</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Completeness of benchmarking</li>
+<li><strong>Affected element</strong> Figure 1b</li>
+<li><strong>Evidence pointer</strong> Figure 1b</li>
+<li><strong>Issue</strong> The benchmarking data in Figure 1b are described as single measurements (n=1) with no uncertainty or inferential comparison claimed. While this is appropriate for a hardware benchmark, the claim of "over an order-of-magnitude acceleration" would be more convincing with at least a few repeated measurements to demonstrate stability.</li>
+<li>
+<p><strong>Required correction</strong> Please provide at least 3 repeated benchmark measurements per condition and report the mean and range, or state clearly that the benchmarks are representative single measurements and the performance gain is approximate.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m3</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Statistical reporting</li>
+<li><strong>Affected element</strong> Figure 2b-c, Figure 3a-b, Figure 6, Figure 7d, Figure 8b</li>
+<li><strong>Evidence pointer</strong> Multiple figures</li>
+<li><strong>Issue</strong> The Methods state that error bars represent standard deviations across five temporal blocks from a single trajectory. This is appropriate for describing temporal variability, but the figures do not consistently indicate whether any differences between conditions are statistically significant. For example, in Figure 3a-b, the differences between 10N and 10N+5 contact frequencies appear visually clear, but no statistical test is reported.</li>
+<li>
+<p><strong>Required correction</strong> Please add statistical comparisons (e.g., t-tests or Mann-Whitney U tests on block means) for the key comparisons between conditions, or state explicitly that the reported differences are descriptive and not statistically tested. If the latter, the language in the text should be adjusted to avoid implying statistical significance.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m4</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Parameter sensitivity</li>
+<li><strong>Affected element</strong> Contact definitions</li>
+<li><strong>Evidence pointer</strong> Methods section "Analysis methods"</li>
+<li><strong>Issue</strong> The contact cutoff for residue-residue contacts is defined as rc = 0.5(sigma_i + sigma_j) + 0.25 nm, and the nucleosome-nucleosome contact cutoff is 13 nm. The sensitivity of the results to these choices is not discussed. Given that the central mechanistic claims depend on contact analyses, it would be valuable to know whether the conclusions are robust to reasonable variations in these cutoffs.</li>
+<li>
+<p><strong>Required correction</strong> Please add a sensitivity analysis in the Supplementary Information showing that the key conclusions (e.g., the ranking of tail contact frequencies, the difference between 25 bp and 30 bp systems) are robust to variations in the contact cutoffs (e.g., +/- 20%).</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m5</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Terminology precision</li>
+<li><strong>Affected element</strong> Abstract and Introduction</li>
+<li><strong>Evidence pointer</strong> Abstract, Introduction</li>
+<li><strong>Issue</strong> The term "near-atomistic" is used throughout, but its precise meaning is not defined. The model represents each amino acid as one bead and each nucleotide as one bead, which is a coarse-grained representation, not "near-atomistic" in the sense of retaining atomic detail. The term could be misleading to readers unfamiliar with the field.</li>
+<li>
+<p><strong>Required correction</strong> Please define "near-atomistic" in the Introduction, clarifying that it refers to residue-level and nucleotide-level resolution, and consider whether a more precise term such as "residue-resolution" or "united-atom" would be more appropriate.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m6</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Discussion of limitations</li>
+<li><strong>Affected element</strong> Discussion</li>
+<li><strong>Evidence pointer</strong> Discussion</li>
+<li><strong>Issue</strong> The Discussion does not adequately address the limitations of the implicit solvent treatment. The Debye-Hückel model is acknowledged in the Methods, but the potential impact of neglecting specific ion effects, hydration forces, and hydrophobic effects on the phase behavior predictions is not discussed.</li>
+<li><strong>Required correction</strong> Please add a paragraph in the Discussion addressing the limitations of the implicit solvent model and how these might affect the quantitative predictions of phase behavior, particularly at the salt concentrations studied.</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>The claim that OpenCGChromatin "independently predicts" experimental observations is partially supported for sedimentation coefficients but is not established for the phase separation behavior, as the experimental comparison relies on qualitative agreement with prior work from the same group.</li>
+<li>The claim that H4K16 and H3K9 are "the most energetically disruptive modifications" is not statistically supported and is based on a single simulation per acetylation pattern with an extreme 50% acetylation level.</li>
+<li>The claim that the model "resolves histone-tail dynamics and interaction networks that remain inaccessible experimentally" is overstated; the model provides predictions that are not directly validated against experimental measurements of tail dynamics.</li>
+<li>The mechanistic claim of "direct coupling between single-fiber frustration, histone-tail accessibility, and network connectivity" is presented as established but is a hypothesis consistent with the simulations, not a demonstrated causal chain.</li>
+<li>The claim of "over an order-of-magnitude acceleration" is based on single benchmark measurements and should be treated as approximate.</li>
+<li>The generalizability of the phase behavior findings to longer, heterogeneous chromatin fibers is acknowledged as limited by the authors, but the Discussion could more prominently caveat this limitation.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,356 @@
+{
+  "identity": {
+    "pmid": "42838963",
+    "doi": "10.1038/s41392-026-02995-9",
+    "title": "alpha7 integrin co-regulates chromatin accessibility and gene expression in HPV-negative head and neck cancer."
+  },
+  "content": {
+    "abstract": "Epigenetic regulation and gene transcription are dynamically modulated by extracellular signals, including focal adhesions; however, the role of integrins in these processes remains poorly understood. In this study in HPV-negative head and neck squamous cell carcinoma, (HNSCC), we combined investigations in physiological three-dimensional, matrix-embedded cell models and patient-derived organoids with multi-omics analyses, bioinformatics and artificial intelligence, to unmask the integrin effector signaling network that reshapes chromatin to drive cancer. Among the 12 alpha/beta1 integrin receptors, alpha7 integrin (ITGA7) emerged as the most potent modulator of histone post-translational modifications, associated with significant changes in gene transcription and chromatin accessibility. Depletion of ITGA7, achieved independently by CRISPR/Cas9 knockout and RNA interference, reduced chromatin accessibility at the AURKA locus and downregulated an AURKA-centered transcriptional program. Mechanistically, phosphoproteomics revealed significant inhibition of MAPK- and PI3K/AKT-dependent signaling with concomitant functional impairment of cell cycling and cell survival upon ITGA7 depletion. Across all analyses, machine-learning-based feature selection consistently nominated AURKA as the dominant downstream node, and tumor ITGA7 expression stratified patient overall survival in a non-linear manner. In summary, these findings establish alpha7 integrin as a key co-regulator of chromatin accessibility and gene transcription in HPV-negative HNSCC, acting through an AURKA-centered axis that couples adhesion signaling to cell cycle control and patient survival, and nominate AURKA, potentially targetable with clinical Aurora-A inhibitors such as alisertib, as an actionable therapeutic node downstream of the currently non-druggable ITGA7.",
+    "keywords": [],
+    "mesh_terms": [
+      "Humans",
+      "*Integrin alpha Chains/genetics/metabolism",
+      "*Gene Expression Regulation, Neoplastic/genetics",
+      "*Chromatin/genetics/metabolism",
+      "*Head and Neck Neoplasms/genetics/pathology/metabolism",
+      "Human Papillomavirus Viruses/genetics/pathogenicity",
+      "Cell Line, Tumor",
+      "Signal Transduction/genetics",
+      "*Squamous Cell Carcinoma of Head and Neck/genetics/pathology/metabolism",
+      "*Aurora Kinase A/genetics",
+      "Antigens, CD"
+    ],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Borodins, Olegs",
+        "Vehlow, Anne",
+        "Sameith, Katrin",
+        "Dahl, Andreas",
+        "Spangle, Jennifer M",
+        "Aust, Daniela E",
+        "Brunner, Cornelia",
+        "Monni, Outi",
+        "Lange, Inga",
+        "Mircetic, Jovan",
+        "Thomas, Elisa",
+        "Cordes, Nils"
+      ],
+      "short_names": [
+        "Borodins O",
+        "Vehlow A",
+        "Sameith K",
+        "Dahl A",
+        "Spangle JM",
+        "Aust DE",
+        "Brunner C",
+        "Monni O",
+        "Lange I",
+        "Mircetic J",
+        "Thomas E",
+        "Cordes N"
+      ],
+      "auids": [
+        "ORCID: 0000-0002-6669-3706",
+        "ORCID: 0000-0002-5381-0547",
+        "ORCID: 0000-0002-6456-5508",
+        "ORCID: 0000-0002-2319-8799"
+      ],
+      "affiliations": [
+        "OncoRay-National Center for Radiation Research in Oncology, Faculty of Medicine Carl Gustav Carus, Technische Universitat Dresden, Dresden, Germany.",
+        "OncoRay-National Center for Radiation Research in Oncology, Faculty of Medicine Carl Gustav Carus, Technische Universitat Dresden, Dresden, Germany.",
+        "DRESDEN-concept Genome Center, Technology Platform at the Center for Molecular and Cellular Bioengineering (CMCB) Technology Platform, Technische Universitat Dresden, Dresden, Germany.",
+        "DRESDEN-concept Genome Center, Technology Platform at the Center for Molecular and Cellular Bioengineering (CMCB) Technology Platform, Technische Universitat Dresden, Dresden, Germany.",
+        "Department of Radiation Oncology, Winship Cancer Institute of Emory University, Atlanta, GA, USA.",
+        "Department for Pathology and Tumour and Normal Tissue Bank of the National Center for Tumor Diseases/University Cancer Center (NCT/UCC), University Hospital Carl Gustav Carus, Technische Universitat Dresden, Dresden, Germany.",
+        "Department of Otorhinolaryngology, Ulm University Medical Center, Ulm, Germany.",
+        "Applied Tumor Genomics Research Program, Faculty of Medicine, University of Helsinki, Helsinki, Finland.",
+        "ICAN Digital Precision Cancer Medicine Flagship, Helsinki, Finland.",
+        "Laboratory of Genetics, Diagnostic Center, Helsinki University Hospital, Helsinki, Finland.",
+        "OncoRay-National Center for Radiation Research in Oncology, Faculty of Medicine Carl Gustav Carus, Technische Universitat Dresden, Dresden, Germany.",
+        "Helmholtz-Zentrum Dresden-Rossendorf (HZDR), Institute of Radiooncology - OncoRay, Dresden, Germany.",
+        "German Cancer Consortium (DKTK), Partner Site Dresden, and German Cancer Research Center (DKFZ), Heidelberg, Germany.",
+        "OncoRay-National Center for Radiation Research in Oncology, Faculty of Medicine Carl Gustav Carus, Technische Universitat Dresden, Dresden, Germany.",
+        "German Cancer Consortium (DKTK), Partner Site Dresden, and German Cancer Research Center (DKFZ), Heidelberg, Germany.",
+        "Department of Radiotherapy and Radiation Oncology, University Hospital Carl Gustav Carus, Technische Universitat Dresden, Dresden, Germany.",
+        "OncoRay-National Center for Radiation Research in Oncology, Faculty of Medicine Carl Gustav Carus, Technische Universitat Dresden, Dresden, Germany. Nils.Cordes@OncoRay.de.",
+        "Helmholtz-Zentrum Dresden-Rossendorf (HZDR), Institute of Radiooncology - OncoRay, Dresden, Germany. Nils.Cordes@OncoRay.de.",
+        "German Cancer Consortium (DKTK), Partner Site Dresden, and German Cancer Research Center (DKFZ), Heidelberg, Germany. Nils.Cordes@OncoRay.de.",
+        "Department of Radiotherapy and Radiation Oncology, University Hospital Carl Gustav Carus, Technische Universitat Dresden, Dresden, Germany. Nils.Cordes@OncoRay.de."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Borodins, Olegs",
+        "short_name": "Borodins O",
+        "identifiers": [
+          "0000-0002-6669-3706"
+        ],
+        "affiliations": [
+          "OncoRay-National Center for Radiation Research in Oncology, Faculty of Medicine Carl Gustav Carus, Technische Universität Dresden, Dresden, Germany."
+        ]
+      },
+      {
+        "full_name": "Vehlow, Anne",
+        "short_name": "Vehlow A",
+        "identifiers": [
+          "0000-0002-5381-0547"
+        ],
+        "affiliations": [
+          "OncoRay-National Center for Radiation Research in Oncology, Faculty of Medicine Carl Gustav Carus, Technische Universität Dresden, Dresden, Germany."
+        ]
+      },
+      {
+        "full_name": "Sameith, Katrin",
+        "short_name": "Sameith K",
+        "identifiers": [],
+        "affiliations": [
+          "DRESDEN-concept Genome Center, Technology Platform at the Center for Molecular and Cellular Bioengineering (CMCB) Technology Platform, Technische Universität Dresden, Dresden, Germany."
+        ]
+      },
+      {
+        "full_name": "Dahl, Andreas",
+        "short_name": "Dahl A",
+        "identifiers": [],
+        "affiliations": [
+          "DRESDEN-concept Genome Center, Technology Platform at the Center for Molecular and Cellular Bioengineering (CMCB) Technology Platform, Technische Universität Dresden, Dresden, Germany."
+        ]
+      },
+      {
+        "full_name": "Spangle, Jennifer M",
+        "short_name": "Spangle JM",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Radiation Oncology, Winship Cancer Institute of Emory University, Atlanta, GA, USA."
+        ]
+      },
+      {
+        "full_name": "Aust, Daniela E",
+        "short_name": "Aust DE",
+        "identifiers": [],
+        "affiliations": [
+          "Department for Pathology and Tumour and Normal Tissue Bank of the National Center for Tumor Diseases/University Cancer Center (NCT/UCC), University Hospital Carl Gustav Carus, Technische Universität Dresden, Dresden, Germany."
+        ]
+      },
+      {
+        "full_name": "Brunner, Cornelia",
+        "short_name": "Brunner C",
+        "identifiers": [
+          "0000-0002-6456-5508"
+        ],
+        "affiliations": [
+          "Department of Otorhinolaryngology, Ulm University Medical Center, Ulm, Germany."
+        ]
+      },
+      {
+        "full_name": "Monni, Outi",
+        "short_name": "Monni O",
+        "identifiers": [
+          "0000-0002-2319-8799"
+        ],
+        "affiliations": [
+          "Applied Tumor Genomics Research Program, Faculty of Medicine, University of Helsinki, Helsinki, Finland.",
+          "ICAN Digital Precision Cancer Medicine Flagship, Helsinki, Finland.",
+          "Laboratory of Genetics, Diagnostic Center, Helsinki University Hospital, Helsinki, Finland."
+        ]
+      },
+      {
+        "full_name": "Lange, Inga",
+        "short_name": "Lange I",
+        "identifiers": [],
+        "affiliations": [
+          "OncoRay-National Center for Radiation Research in Oncology, Faculty of Medicine Carl Gustav Carus, Technische Universität Dresden, Dresden, Germany.",
+          "Helmholtz-Zentrum Dresden-Rossendorf (HZDR), Institute of Radiooncology - OncoRay, Dresden, Germany."
+        ]
+      },
+      {
+        "full_name": "Mircetic, Jovan",
+        "short_name": "Mircetic J",
+        "identifiers": [],
+        "affiliations": [
+          "German Cancer Consortium (DKTK), Partner Site Dresden, and German Cancer Research Center (DKFZ), Heidelberg, Germany."
+        ]
+      },
+      {
+        "full_name": "Thomas, Elisa",
+        "short_name": "Thomas E",
+        "identifiers": [],
+        "affiliations": [
+          "OncoRay-National Center for Radiation Research in Oncology, Faculty of Medicine Carl Gustav Carus, Technische Universität Dresden, Dresden, Germany.",
+          "German Cancer Consortium (DKTK), Partner Site Dresden, and German Cancer Research Center (DKFZ), Heidelberg, Germany.",
+          "Department of Radiotherapy and Radiation Oncology, University Hospital Carl Gustav Carus, Technische Universität Dresden, Dresden, Germany."
+        ]
+      },
+      {
+        "full_name": "Cordes, Nils",
+        "short_name": "Cordes N",
+        "identifiers": [],
+        "affiliations": [
+          "OncoRay-National Center for Radiation Research in Oncology, Faculty of Medicine Carl Gustav Carus, Technische Universität Dresden, Dresden, Germany. Nils.Cordes@OncoRay.de.",
+          "Helmholtz-Zentrum Dresden-Rossendorf (HZDR), Institute of Radiooncology - OncoRay, Dresden, Germany. Nils.Cordes@OncoRay.de.",
+          "German Cancer Consortium (DKTK), Partner Site Dresden, and German Cancer Research Center (DKFZ), Heidelberg, Germany. Nils.Cordes@OncoRay.de.",
+          "Department of Radiotherapy and Radiation Oncology, University Hospital Carl Gustav Carus, Technische Universität Dresden, Dresden, Germany. Nils.Cordes@OncoRay.de."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Signal transduction and targeted therapy"
+    ],
+    "journal_abbrev": [
+      "Signal Transduct Target Ther"
+    ],
+    "pub_date": "2026 Oct 7",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/07 05:31",
+    "fetched_at": "2026-10-11 10:31:44"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42838963",
+      "41612193",
+      "41507992",
+      "41456831",
+      "42178570",
+      "42310749",
+      "31698037",
+      "39762343",
+      "30755439",
+      "42178443",
+      "41194597",
+      "26011651",
+      "33091845",
+      "41099090",
+      "40908208",
+      "31721164",
+      "41712063",
+      "41974002",
+      "42319071",
+      "42742886",
+      "39848454",
+      "25663685",
+      "34496296",
+      "27373675",
+      "40974867",
+      "33059733",
+      "42531323",
+      "40382983",
+      "36575316",
+      "31864826",
+      "39206755",
+      "42823180",
+      "38286037",
+      "25497870",
+      "41844706",
+      "39382421",
+      "39826667",
+      "41965446",
+      "31325216",
+      "38821599",
+      "41940897",
+      "41879001",
+      "38869038",
+      "38673957",
+      "27924820",
+      "42400233",
+      "41193441",
+      "33789881",
+      "39375732",
+      "39865116",
+      "41651176",
+      "41904511",
+      "27986750",
+      "41429863",
+      "42571522",
+      "42065048",
+      "34598317",
+      "39791215",
+      "35768785",
+      "40660234",
+      "42319496",
+      "33994859",
+      "32745900",
+      "32228580",
+      "42611118",
+      "40259045",
+      "40371884",
+      "42033450",
+      "40775425",
+      "33019757",
+      "26527316",
+      "40018925",
+      "42372200",
+      "27356739",
+      "31789398",
+      "32084217",
+      "40341699",
+      "30376862",
+      "32592364",
+      "31393061",
+      "40383937",
+      "33811778",
+      "38942893",
+      "40913157",
+      "33802627",
+      "33794365",
+      "32450521",
+      "40066708",
+      "39892781",
+      "30535476",
+      "31292160",
+      "30910837",
+      "25889801",
+      "41962619",
+      "40210748",
+      "40121428",
+      "32842349",
+      "31170090",
+      "24091622",
+      "41168931"
+    ],
+    "review": [
+      "42838963",
+      "41940897"
+    ],
+    "pmc": [
+      "13642342"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://medlineplus.gov/headandneckcancer.html",
+        "provider": "MedlinePlus Health Information",
+        "category": "Medical",
+        "attribute": "free resource",
+        "linkname": "Head and Neck Cancer"
+      },
+      {
+        "url": "https://doi.org/10.1038/s41392-026-02995-9",
+        "provider": "Nature Publishing Group",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://assays.cancer.gov/CPTAC-1341",
+        "provider": "NCI CPTAC Assay Portal",
+        "category": "Miscellaneous",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

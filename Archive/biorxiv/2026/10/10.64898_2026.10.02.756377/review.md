@@ -1,0 +1,103 @@
+## Review setup
+- **Input scope** Full manuscript text (abstract-level detail provided)
+- **Assessment boundary** Claims and evidence as presented in the supplied text only
+- **Shared manuscript claim summary** The authors introduce Cerberus, an ensemble of eight sequence-to-function models built on Hydra, a bidirectional state space block derived from Mamba-2. They claim Hydra blocks are faster than Borzoi's transformer blocks, that models using Hydra predict regulatory activity and classify eQTLs more accurately, that running at 32 bp resolution allows removal of the U-net decoder, and that Cerberus outperforms Borzoi on eQTL, sQTL, and paQTL benchmarks while trading leads with AlphaGenome. They also claim interpretable interaction ranges that grow with block depth.
+- **Visible evidence base** Abstract text only. No figures, tables, methods, or supplementary materials provided.
+- **Missing materials affecting confidence** All figures, tables, methods details, benchmark definitions, model architecture specifications, training procedures, statistical tests, and code availability verification. The provided text is an abstract-level summary without quantitative uncertainty estimates or methodological detail.
+
+## Reviewer
+- **Overall assessment** The manuscript addresses a timely and important problem in regulatory genomics: improving sequence-to-function model accuracy and efficiency under the constraint of limited unique training sequences. The core architectural contribution, replacing self-attention with bidirectional state space blocks, is plausible and potentially impactful. However, the supplied material is an abstract-level summary that does not permit verification of the central claims. Key methodological details, statistical rigor, and benchmark construction are not assessable from the provided text. The claims are promising but currently not established from the evidence provided.
+- **Who would be interested in the results, and why** Computational biologists developing sequence-to-function models, researchers studying regulatory genomics and variant effect prediction, and methodologists interested in efficient long-range sequence modeling. The efficiency gains and accuracy improvements over Borzoi would be of practical interest to the genomics community, and the architectural comparison between attention and state space models has broader relevance to machine learning researchers working on biological sequences.
+- **Major strengths** The problem framing is well motivated, emphasizing the fixed reference genome constraint and the value of architectures that learn more from limited sequence diversity. The architectural comparison is clean in principle, holding other components fixed. The efficiency gain of 5.7-fold is substantial and practically meaningful. The evaluation across multiple variant classes (eQTL, sQTL, paQTL) with matched negatives addresses known confounding issues. The release of models, code, and benchmarks is commendable for reproducibility.
+- **Major Concerns**
+  - **Concern ID** R1-M1
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** "Hydra blocks ran 5.7-fold faster on 8,192-token inputs, and models built on them predicted binned coverage on held-out sequences and classified fine-mapped eQTLs more accurately."
+  - **Evidence pointer** Location not provided
+  - **Concern** The speed and accuracy claims are presented without any experimental detail. No information is given about hardware, batch size, sequence length distribution, or the specific metrics and statistical tests used to establish that the accuracy differences are significant. The eQTL classification improvement is not quantified in this sentence, and no confidence intervals or significance tests are reported anywhere in the supplied text.
+  - **Why it matters** Without knowing the variance across replicates or the statistical significance of the accuracy differences, the reader cannot determine whether the reported improvements are robust or within noise. The 5.7-fold speedup claim requires specification of the exact comparison conditions to be meaningful.
+  - **Resolution test** Provide benchmark details including hardware specifications, timing methodology, number of replicates, and statistical significance tests (e.g., paired tests across validation folds or tissues) for all accuracy comparisons.
+  - **Concern ID** R1-M2
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** "Cerberus is more accurate than Borzoi on all three phenotypes, 0.692 versus 0.668 mean eQTL AUPRC across 48 tissues, and estimates eQTL effect sizes better, 0.379 versus 0.321 Spearman rho."
+  - **Evidence pointer** Location not provided
+  - **Concern** The headline performance numbers are reported as point estimates without any measure of uncertainty. For the eQTL AUPRC, the mean across 48 tissues is given, but no standard deviation, standard error, or per-tissue distribution is shown. The Spearman rho comparison similarly lacks confidence intervals. It is unclear whether these differences are statistically significant and whether they are consistent across tissues or driven by a subset.
+  - **Why it matters** In benchmark comparisons, point estimates without uncertainty can be misleading. The claim that Cerberus is "more accurate" on all three phenotypes requires evidence that the differences are not attributable to chance, particularly given the matched-negative design which may introduce subtle biases.
+  - **Resolution test** Report per-tissue results with measures of variance, perform paired statistical tests across tissues, and provide confidence intervals for all reported metrics.
+  - **Concern ID** R1-M3
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Benchmark validity
+  - **Claim pointer** "We evaluated it on GTEx v11 fine-mapped eQTL, sQTL, and paQTL benchmarks with negatives matched on allele frequency, gene expression, and phenotype-specific positional annotations to reduce confounding by these properties."
+  - **Evidence pointer** Location not provided
+  - **Concern** The negative matching strategy is described at a high level but without sufficient detail to assess its adequacy. Matching on allele frequency, gene expression, and positional annotations is sensible, but the exact matching procedure, the number of negatives per positive, the tolerance thresholds, and whether matching was performed separately for each phenotype are not specified. The statement "to reduce confounding" acknowledges the limitation but does not establish that confounding was adequately controlled.
+  - **Why it matters** The validity of the benchmark depends critically on the quality of negative sets. If matching is imperfect, the reported accuracy differences could reflect artifacts of the benchmark construction rather than genuine model performance. The comparison with AlphaGenome, which may use different benchmark construction, is particularly sensitive to this issue.
+  - **Resolution Test** Provide detailed description of the negative matching procedure, including exact matching criteria, quality checks, and sensitivity analyses demonstrating that results are robust to matching parameters.
+  - **Concern ID** R1-M4
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** "Hydra's linear cost in sequence length let us run the blocks at 32 bp resolution and remove the U-net decoder, leaving a convolution-SSM model smaller and more accurate than the one it replaced."
+  - **Evidence pointer** Location not provided
+  - **Concern** The claim that removing the U-net decoder and running at 32 bp resolution yields a model that is both smaller and more accurate is central to the architectural contribution, but no details are provided on model size, parameter counts, or the specific accuracy comparison supporting this claim. The interaction between resolution, decoder removal, and accuracy is not explained.
+  - **Why it matters** This claim justifies the architectural design choice. Without quantitative details on model size and the accuracy comparison, the reader cannot evaluate whether the trade-off is favorable or whether the comparison was fair (e.g., same training budget, same evaluation protocol).
+  - **Resolution Test** Report parameter counts for both architectures, describe the training setup, and provide the accuracy comparison with appropriate controls.
+  - **Concern ID** R1-M5
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Interpretability
+  - **Claim pointer** "Interpretation of the trained blocks shows interaction range growing with block depth, from a 0.9 kb median half-life in the first block to 79 kb in the seventh, and the deepest heads anchoring on promoters, enhancers, and CTCF peaks."
+  - **Evidence pointer** Location not provided
+  - **Concern** The interpretability analysis is described in two sentences without any methodological detail. The "median half-life" metric is not defined, the method for measuring interaction range is not specified, and the claim about "deepest heads anchoring" on genomic features lacks quantitative support. It is unclear how these conclusions were derived and whether they are robust.
+  - **Why it matters** The interpretability results are presented as supporting evidence for the model's biological relevance. Without methodological detail, these claims cannot be evaluated or reproduced, and the reader cannot assess whether the interpretation is meaningful or an artifact of the analysis method.
+  - **Resolution Test** Provide the interpretation methodology, define all metrics, show the distribution of interaction ranges across blocks, and provide statistical support for the anchoring claims.
+- **Minor Comments**
+  - **Concern ID** R1-m1
+  - **Severity** Minor
+  - **Axis** Clarity
+  - **Affected Element** Model naming
+  - **Evidence pointer** Location not provided
+  - **Issue** The relationship between Hydra, Cerberus, and the "convolution-SSM model" is not entirely clear. The text describes Hydra as a block type, then refers to a "convolution-SSM model" after removing the U-net, and finally introduces Cerberus as an ensemble. The hierarchy of these terms should be clarified.
+  - **Required Correction** Define each model name explicitly and describe the relationship between them (e.g., is Cerberus an ensemble of the convolution-SSM model trained on augmented data?).
+  - **Concern ID** R1-m2
+  - **Severity** Minor
+  - **Axis** Completeness
+  - **Affected Element** Comparison with AlphaGenome
+  - **Evidence pointer** Location not provided
+  - **Concern** The comparison with AlphaGenome is described only in terms of eQTL classification, with Cerberus ahead on variants 3 to 100 kb from the TSS and behind in coding sequence and within 3 kb. No quantitative results are given for this comparison.
+  - **Required Correction** Provide the quantitative results for the AlphaGenome comparison, including the specific metrics and the breakdown by distance-to-TSS categories.
+  - **Concern ID** R1-m3
+  - **Severity** Minor
+  - **Axis** Reproducibility
+  - **Affected Element** Data and code release
+  - **Evidence pointer** Location not provided
+  - **Concern** The release of "the training data" is mentioned, but it is unclear what this includes given that the reference genome and GTEx data are public. The augmented track collection is mentioned but not described.
+  - **Required Correction** Specify what constitutes the released training data, describe the augmented track collection, and provide the repository URLs or accession numbers.
+  - **Concern ID** R1-m4
+  - **Severity** Minor
+  - **Axis** Clarity
+  - **Affected Element** "Trades leads" phrasing
+  - **Evidence pointer** Location not provided
+  - **Concern** The phrase "trades leads" is informal and ambiguous. It is unclear whether this means the models are comparable overall with differences in specific regions, or whether there is a systematic tradeoff.
+  - **Required Correction** Replace with a precise description of the comparative performance, including overall metrics and the specific regions where each model performs better.
+- **Technical failings that need to be addressed before the case is established** R1-M1, R1-M2, R1-M3, R1-M4, R1-M5. The supplied material is an abstract-level summary that does not provide the methodological detail, statistical rigor, or quantitative evidence needed to establish the central claims of the manuscript.
+- **Assessment against Nature-style criteria** 
+  - Originality: The application of bidirectional state space blocks to regulatory sequence modeling is a novel contribution that extends recent advances in efficient sequence modeling to genomics. The specific architectural choices and the systematic comparison with attention-based models are original.
+  - Scientific importance: The problem of improving sequence-to-function models under the constraint of limited training sequences is important for understanding gene regulation and interpreting genetic variants. The potential efficiency gains are practically significant.
+  - Interdisciplinary readership: The work bridges machine learning and genomics, and the results would be of interest to both communities. The efficiency and accuracy improvements are broadly relevant.
+  - Technical soundness: Not assessable from the supplied material. The claims require detailed methodological description and statistical validation that are not provided.
+  - Readability for nonspecialists: The abstract is generally accessible, but the technical claims (e.g., "bidirectional state space block," "median half-life") are not explained sufficiently for a broad audience.
+- **Recommendation posture** Currently not established from the provided evidence. The claims are promising and the direction is valuable, but the abstract-level material does not permit verification of the central results. A full manuscript with detailed methods, statistical analyses, and benchmark descriptions would be required to assess whether the claims hold.
+
+## Risk / unsupported claims
+- The 5.7-fold speedup claim is unsupported without hardware and benchmarking details.
+- The accuracy improvements over Borzoi are unsupported without statistical significance testing and variance reporting.
+- The claim that the convolution-SSM model is "smaller and more accurate" is unsupported without parameter counts and controlled comparisons.
+- The interpretability results (interaction range growth, anchoring on genomic features) are unsupported without methodological detail.
+- The benchmark construction and negative matching adequacy are not assessable from the supplied text.
+- The comparison with AlphaGenome is not quantitatively supported.
+- The claim that Cerberus "supports variant scoring and transfer learning" is stated without demonstration or evaluation.

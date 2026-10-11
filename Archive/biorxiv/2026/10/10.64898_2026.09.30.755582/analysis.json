@@ -1,0 +1,24 @@
+{
+  "source": "biorxiv",
+  "id": "10.64898/2026.09.30.755582",
+  "title": "The mammalian genome is punctuated by regularly spaced nucleosome islands",
+  "authors": "Christophe M; Altamirano L; Navarro P; Mozziconacci J",
+  "journal": "bioRxiv",
+  "published_date": "2026-10-04",
+  "window": {
+    "start": "2026-10-04",
+    "end": "2026-10-10"
+  },
+  "score": 6,
+  "one_liner_zh": "该文用深度学习从DNA序列预测小鼠胚胎干细胞核小体占据，揭示重复元件和短基序驱动核小体规则排列，虽聚焦核小体而非三维染色质折叠，但其序列-染色质结构建模思路对染色质架构预测有可迁移启发。",
+  "abstract": "Nucleosome positioning plays a fundamental role in regulating DNA accessibility and cellular activity, yet the precise rules by which mammalian sequences instruct this organization have remained incomplete. Prior work has established that intrinsic sequence preferences dictate nucleosome architecture in yeast, but in mammals, this sequence code is modulated by chromatin state and cell-type–specific factors. Here, we train a deep-learning model on genome-wide maps from mouse embryonic stem cells to predict nucleosome occupancy directly from the primary DNA sequence. Our model accurately predicts in vivo occupancy and captures shared biological signals while effectively denoising assay-specific technical biases. Through in silico mutagenesis, we identify specific nucleosome positioning regions comprised of short 5-to-20-base-pair motifs concentrated within dense regulatory windows. Furthermore, we demonstrate that repetitive DNA elements play a major role in establishing these highly organized nucleosome arrays on a genomic scale. Specifically, CCCTC-binding factor motifs embedded within short interspersed nuclear elements, zinc-finger–bound motifs within long interspersed nuclear elements, and microsatellite repeats act as potent organizers of nucleosome phasing. Together, our findings extend the concept of sequence-encoded nucleosome architecture to mammalian genomes and reveal that regularly spaced nucleosome islands are shaped by short, recurrent sets of DNA motifs that couple local sequence to chromatin structure.",
+  "abstract_zh": "核小体定位在调控DNA可及性和细胞活动中扮演着基础性角色，然而哺乳动物序列指导这一组织的精确规则仍不完整。先前的研究已确立，内在序列偏好决定了酵母中的核小体结构，但在哺乳动物中，这一序列密码受到染色质状态和细胞类型特异性因子的调节。在此，我们基于小鼠胚胎干细胞的基因组范围图谱训练了一个深度学习模型，以直接从初级DNA序列预测核小体占据情况。我们的模型准确预测了体内占据情况，并捕获了共享的生物信号，同时有效去除了检测特异性的技术偏差。通过计算机模拟诱变，我们识别出由短至5到20个碱基对基序组成的特定核小体定位区域，这些基序集中在密集的调控窗口内。此外，我们证明重复DNA元件在基因组尺度上建立这些高度组织的核小体阵列中发挥主要作用。具体而言，嵌入短散在核元件中的CCCTC结合因子基序、长散在核元件中的锌指结合基序以及微卫星重复序列，作为核小体相位化的强效组织者。总之，我们的发现将序列编码的核小体结构概念扩展到哺乳动物基因组，并揭示规则间隔的核小体岛由短小、重复出现的DNA基序集合塑造，这些基序将局部序列与染色质结构耦合。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://www.biorxiv.org/content/10.64898/2026.09.30.755582",
+  "source_url": "https://www.biorxiv.org/content/10.64898/2026.09.30.755582",
+  "paper_page_path": "papers/biorxiv/10.64898_2026.09.30.755582/index.html"
+}

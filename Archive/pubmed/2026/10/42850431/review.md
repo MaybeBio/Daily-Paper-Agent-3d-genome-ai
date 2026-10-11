@@ -1,0 +1,70 @@
+## Review setup
+- **Input scope** Abstract only
+- **Assessment boundary** Claims and evidence presented in the supplied abstract text
+- **Shared manuscript claim summary** The authors describe tangermeme, a software toolkit designed to support post-prediction analysis of genomic deep learning models, with a focus on extracting interpretable cis-regulatory insights from trained models.
+- **Visible evidence base** Abstract text only; no figures, tables, methods, or code documentation provided
+- **Missing materials affecting confidence** Full manuscript, software documentation, benchmark results, case studies, code availability, and any quantitative performance comparisons
+
+## Reviewer
+- **Overall assessment** The abstract presents a potentially useful software contribution in a rapidly growing area of genomic deep learning interpretability. However, the supplied material is too limited to evaluate the technical claims, the novelty relative to existing toolkits, or the demonstrated utility of the approach. The abstract reads more as an announcement than as a substantive methods paper, and the evidence base is insufficient to assess whether the toolkit delivers on its stated promise.
+- **Who would be interested in the results, and why** Computational biologists and machine learning researchers working on regulatory genomics, particularly those applying deep learning models to predict gene expression, chromatin state, or transcription factor binding, and who need interpretability tools to extract biological insights from these models. The toolkit could also interest method developers seeking optimized implementations of attribution and saturation mutagenesis approaches.
+- **Major strengths** The abstract identifies a clear and important need, namely the post-prediction analysis of genomic deep learning models. The phrase "everything-but-the-model" is a useful framing that signals a comprehensive toolkit. The stated goal of distilling learned cis-regulatory patterns into human-interpretable insights is well aligned with current community needs.
+- **Major Concerns**
+  - **Concern ID** R1-M1
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** The abstract claims that tangermeme is a "highly optimized toolkit" for genomic deep learning analysis.
+  - **Evidence pointer** Abstract text; location not provided
+  - **Concern** No quantitative or qualitative evidence is provided to support the "highly optimized" claim. There are no benchmarks, runtime comparisons, memory usage data, or scaling analyses relative to existing tools.
+  - **Why it matters** The term "highly optimized" is a substantive performance claim. Without supporting data, readers cannot assess whether the toolkit offers meaningful computational advantages over existing alternatives, which is often a deciding factor for adoption in large-scale genomic applications.
+  - **Resolution test** Provide benchmark results comparing runtime and memory usage against existing tools on standard genomic datasets, with clear experimental settings and hardware specifications.
+  - **Concern ID** R1-M2
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Originality and positioning
+  - **Claim pointer** The abstract implies that tangermeme provides a comprehensive "everything-but-the-model" solution for genomic deep learning.
+  - **Evidence pointer** Abstract text; location not provided
+  - **Concern** The abstract does not describe what specific functionalities are included, how they differ from existing toolkits such as SHAP, DeepExplainer, tfmodisco, or other genomic interpretability packages, or what novel methodological contributions are made. Without this information, the novelty and distinct value proposition are unclear.
+  - **Why it matters** The field already has multiple interpretability tools. A new toolkit must clearly articulate its unique contributions, whether in scope, efficiency, usability, or methodological innovation. The current abstract does not allow such an assessment.
+  - **Resolution test** Provide a clear description of the toolkit's components, a comparison table with existing tools, and explicit statements of what is new or improved.
+  - **Concern ID** R1-M3
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Demonstrated utility
+  - **Claim pointer** The abstract states that tangermeme can be used to "distill the learned cis-regulatory patterns from models into human-interpretable insights."
+  - **Evidence pointer** Abstract text; location not provided
+  - **Concern** No example application, case study, or biological finding is presented to demonstrate that the toolkit actually produces interpretable and biologically meaningful results. The claim is entirely unsubstantiated in the supplied material.
+  - **Why it matters** For a methods paper, demonstrating real-world utility is essential. Readers need to see a concrete example where the toolkit revealed a non-trivial cis-regulatory insight that would not have been easily obtained otherwise.
+  - **Resolution test** Include at least one detailed case study with a trained model, the analysis performed, the output generated, and the biological interpretation derived, ideally with validation.
+- **Minor Comments**
+  - **Concern ID** R1-m1
+  - **Severity** Minor
+  - **Axis** Readability for nonspecialists
+  - **Affected element** Abstract text
+  - **Evidence pointer** Abstract text; location not provided
+  - **Issue** The abstract uses the phrase "everything-but-the-model" without explaining what this means in practical terms. Nonspecialist readers may not understand the scope of the toolkit.
+  - **Required correction** Briefly enumerate the main categories of functionality included, such as attribution analysis, saturation mutagenesis, and feature visualization.
+  - **Concern ID** R1-m2
+  - **Severity** Minor
+  - **Axis** Reproducibility
+  - **Affected element** Software availability statement
+  - **Evidence pointer** Abstract text; location not provided
+  - **Issue** The abstract does not mention where the software can be obtained, its license, or its dependencies.
+  - **Required correction** Add a data and code availability statement with the repository URL, license, and installation instructions.
+  - **Concern ID** R1-m3
+  - **Severity** Minor
+  - **Axis** Technical soundness
+  - **Affected element** Performance claim
+  - **Evidence pointer** Abstract text; location not provided
+  - **Issue** The term "highly optimized" is vague and could refer to any level of optimization.
+  - **Required correction** Specify what is optimized, such as GPU utilization, memory efficiency, or parallelization, and provide concrete metrics.
+- **Technical failings that need to be addressed before the case is established** R1-M1, R1-M2, R1-M3. The core claims of optimization, novelty, and demonstrated utility are all unsupported by the supplied abstract. Without addressing these, the case for the toolkit as a significant methods contribution is not established.
+- **Assessment against Nature-style criteria** Originality: not assessable from the abstract, as the specific contributions relative to existing tools are not described. Scientific importance: the problem addressed is important, but the abstract does not demonstrate that the toolkit advances the field. Interdisciplinary readership: the abstract is written in a way that may appeal to computational biologists, but the lack of concrete examples limits broader appeal. Technical soundness: not assessable, as no technical details or benchmarks are provided. Readability for nonspecialists: the abstract is brief and accessible, but the "everything-but-the-model" phrase is unclear without elaboration.
+- **Recommendation posture** Currently not established from the provided evidence. The abstract alone does not provide sufficient information to evaluate the toolkit's claims. A full manuscript with benchmarks, comparisons, and case studies is required before a supportive recommendation can be considered.
+
+## Risk / unsupported claims
+- The claim that tangermeme is "highly optimized" is unsupported by any performance data.
+- The claim that the toolkit can "distill learned cis-regulatory patterns into human-interpretable insights" is unsupported by any example or case study.
+- The implied comprehensiveness of the "everything-but-the-model" framing is unverifiable without a description of included functionalities.
+- The novelty of the toolkit relative to existing interpretability methods is not assessable from the supplied material.

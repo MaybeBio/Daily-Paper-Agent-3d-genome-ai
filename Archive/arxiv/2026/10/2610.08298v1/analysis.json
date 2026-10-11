@@ -1,0 +1,24 @@
+{
+  "source": "arxiv",
+  "id": "2610.08298v1",
+  "title": "Design Principles for Programmable Topological Soft Networks",
+  "authors": "Andrea Bonato; Davide Marenduzzo; Enzo Orlandini",
+  "journal": "",
+  "published_date": "2026-10-06",
+  "window": {
+    "start": "2026-10-04",
+    "end": "2026-10-10"
+  },
+  "score": 6,
+  "one_liner_zh": "该文用分子动力学模拟研究半柔性聚合物与胶体环自组装拓扑凝胶的可编程设计原则，虽对象非染色质，但其拓扑纠缠网络（如环连接、动态重连）的建模思路对染色质环网络与环挤出机制的计算建模具有可迁移启发。",
+  "abstract": "Physical crosslinks in conventional gels are static and spatially localised, fundamentally limiting their capacity to adapt, self-heal, or perform mechanical work. Topological gels, which are held together by physical entanglements such as threadings, links, and mechanical interlocks, constitute a different paradigm by treating connectivity as a mobile, dynamic degree of freedom. Here, by using molecular dynamics simulations of semiflexible polymers and threadable colloidal rings, we establish some general design principles that transform self-assembled topological gels into programmable soft materials. We present three different modes of control. First, by controlling the mobility of the entanglements, one can tune the mechanical response of the material. Quenched anchoring forces the network to store elastic stress and yield, whereas with annealed anchoring the material can relax stresses by redistributing its entanglements whilst preserving global connectivity. Second, by controlling the degree or type of geometric confinement, it is possible to template macroscopic architecture, converting for instance 3D isotropic gels into surface-spanning 2D nets or quasi-1D topological rings with distinct graph-spectral signatures. Third, by allowing dynamical rewiring of entanglements through polymer reconnection, the material topology can be rewritten after assembly, yielding interlocked structures dominated by simple pairwise links rather than the highly complex linked states previously observed in reconnecting flexible polymers. By establishing a direct link between microscopic entanglement dynamics and emerging mechanical function, our work offers design principles for adaptive soft metamaterials and provides insights into biological topological networks such as kinetoplast DNA and chromatin loop networks.",
+  "abstract_zh": "传统凝胶中的物理交联是静态且空间局部的，从根本上限制了其适应、自修复或执行机械功的能力。拓扑凝胶通过物理缠结（如穿线、链接和机械互锁）维持结构，构成了一种不同的范式，将连通性视为可移动、动态的自由度。在此，通过使用半柔性聚合物和可穿线胶体环的分子动力学模拟，我们建立了一些通用设计原则，将自组装拓扑凝胶转化为可编程软材料。我们提出了三种不同的控制模式。第一，通过控制缠结的移动性，可以调节材料的机械响应。淬火锚定迫使网络存储弹性应力并屈服，而退火锚定则使材料能够通过重新分布缠结来松弛应力，同时保持全局连通性。第二，通过控制几何限制的程度或类型，可以模板化宏观结构，例如将三维各向同性凝胶转化为具有不同图谱谱特征的表面覆盖二维网络或准一维拓扑环。第三，通过允许聚合物重连实现缠结的动态重新布线，材料拓扑可以在组装后被重写，产生由简单成对链接主导的互锁结构，而非先前在重连柔性聚合物中观察到的高度复杂链接状态。通过建立微观缠结动力学与涌现机械功能之间的直接联系，我们的工作为自适应软超材料提供了设计原则，并为生物拓扑网络（如动基体DNA和染色质环网络）提供了见解。",
+  "has_fulltext": true,
+  "fulltext_source": "ar5iv",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://arxiv.org/abs/2610.08298v1",
+  "source_url": "https://arxiv.org/abs/2610.08298v1",
+  "paper_page_path": "papers/arxiv/2610.08298v1/index.html"
+}

@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42850431",
+  "title": "Tangermeme: a toolkit for understanding cis-regulatory logic using deep learning models.",
+  "authors": "Schreiber, Jacob",
+  "journal": "Nature methods",
+  "published_date": "2026-10-09",
+  "window": {
+    "start": "2026-10-04",
+    "end": "2026-10-10"
+  },
+  "score": 5,
+  "one_liner_zh": "该文介绍用于解释基因组深度学习模型顺式调控逻辑的工具包，虽涉及染色质水平调控特征但无三维空间架构建模，方法上属AI应用而非建模，故为中档。",
+  "abstract": "Deep learning models have achieved state-of-the-art performance at predicting diverse genomic modalities, yet their promise for biological discovery lies in how they are used after demonstrating their predictive performance. Here we describe the functionality of tangermeme, a highly optimized toolkit for 'everything-but-the-model' when it comes to genomic deep learning, and demonstrate how tangermeme can be used to distill the learned cis-regulatory patterns from models into human-interpretable insights.",
+  "abstract_zh": "深度学习模型在预测多种基因组模态方面已达到最先进性能，但其在生物学发现中的潜力在于它们在展示预测性能之后如何被使用。在此，我们描述了tangermeme的功能，这是一个针对基因组深度学习“除模型外一切”的高度优化工具包，并展示了如何利用tangermeme将模型学到的顺式调控模式提炼为人类可解释的见解。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42850431/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42850431/",
+  "paper_page_path": "papers/pubmed/42850431/index.html"
+}

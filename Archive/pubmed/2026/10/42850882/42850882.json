@@ -1,0 +1,242 @@
+{
+  "identity": {
+    "pmid": "42850882",
+    "doi": "10.1016/j.molp.2026.10.001",
+    "title": "Kingdom-wide comparative transcriptomics reveals deeply conserved and predictable stress response programs across Viridiplantae."
+  },
+  "content": {
+    "abstract": "How conserved stress responses are across the plant kingdom remains poorly understood. Here, we present a kingdom-wide stress transcriptome atlas of 36 Viridiplantae species, from chlorophytes to angiosperms, across nine abiotic and biotic stresses. The atlas integrates reanalyzed public RNA-seq data with new in-house stress experiments on three species representing basal lineages, yielding 13.6 million differential expression calls from over 3,200 manually curated control-treatment comparisons. We find that ancient gene families respond broadly but moderately, while lineage-specific families respond narrowly but intensely, revealing a division of labor in stress gene deployment. Stress response conservation decays with phylogenetic distance yet remains detectable across more than 700 million years of divergence, with upregulated genes diverging faster than downregulated genes. Functional co-occurrence analysis uncovers a deeply conserved growth-defense tradeoff alongside stress-specific transcriptional rewiring. Conserved stress co-expression modules undergo regulatory sub-functionalization through duplication, with whole-genome duplicate pairs preferentially retained within modules. Finally, DNA and RNA foundation models predict stress responsiveness from sequence alone (auROC 0.755), suggesting a partially conserved cis-regulatory code underlying stress responses across the kingdom.",
+    "keywords": [
+      "Comparative stress transcriptomics",
+      "Viridiplantae",
+      "gene expression prediction",
+      "growth-defense tradeoff",
+      "stress response conservation"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Koh, Eugene",
+        "Peh, Li Hui",
+        "Tan, Sabrina",
+        "Koh, Teng-Seah",
+        "Chin, Li-Li",
+        "Ho, Boon-Chuan",
+        "Mutwil, Marek"
+      ],
+      "short_names": [
+        "Koh E",
+        "Peh LH",
+        "Tan S",
+        "Koh TS",
+        "Chin LL",
+        "Ho BC",
+        "Mutwil M"
+      ],
+      "auids": [],
+      "affiliations": [
+        "School of Biological Sciences, Nanyang Technological University, 60 Nanyang Drive, Singapore 637551, Republic of Singapore.",
+        "School of Biological Sciences, Nanyang Technological University, 60 Nanyang Drive, Singapore 637551, Republic of Singapore.",
+        "School of Biological Sciences, Nanyang Technological University, 60 Nanyang Drive, Singapore 637551, Republic of Singapore.",
+        "Singapore Botanic Gardens, National Parks Board, 1 Cluny Road, Singapore 259569, Republic of Singapore.",
+        "Singapore Botanic Gardens, National Parks Board, 1 Cluny Road, Singapore 259569, Republic of Singapore.",
+        "Singapore Botanic Gardens, National Parks Board, 1 Cluny Road, Singapore 259569, Republic of Singapore; Department of Biological Sciences, National University of Singapore, Science Drive 4, Singapore 117534, Republic of Singapore.",
+        "Department of Plant & Environmental Sciences, University of Copenhagen, Frederiksberg C 1871, Denmark. Electronic address: mutwil@plen.ku.dk."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Koh, Eugene",
+        "short_name": "Koh E",
+        "identifiers": [],
+        "affiliations": [
+          "School of Biological Sciences, Nanyang Technological University, 60 Nanyang Drive, Singapore 637551, Republic of Singapore."
+        ]
+      },
+      {
+        "full_name": "Peh, Li Hui",
+        "short_name": "Peh LH",
+        "identifiers": [],
+        "affiliations": [
+          "School of Biological Sciences, Nanyang Technological University, 60 Nanyang Drive, Singapore 637551, Republic of Singapore."
+        ]
+      },
+      {
+        "full_name": "Tan, Sabrina",
+        "short_name": "Tan S",
+        "identifiers": [],
+        "affiliations": [
+          "School of Biological Sciences, Nanyang Technological University, 60 Nanyang Drive, Singapore 637551, Republic of Singapore."
+        ]
+      },
+      {
+        "full_name": "Koh, Teng-Seah",
+        "short_name": "Koh TS",
+        "identifiers": [],
+        "affiliations": [
+          "Singapore Botanic Gardens, National Parks Board, 1 Cluny Road, Singapore 259569, Republic of Singapore."
+        ]
+      },
+      {
+        "full_name": "Chin, Li-Li",
+        "short_name": "Chin LL",
+        "identifiers": [],
+        "affiliations": [
+          "Singapore Botanic Gardens, National Parks Board, 1 Cluny Road, Singapore 259569, Republic of Singapore."
+        ]
+      },
+      {
+        "full_name": "Ho, Boon-Chuan",
+        "short_name": "Ho BC",
+        "identifiers": [],
+        "affiliations": [
+          "Singapore Botanic Gardens, National Parks Board, 1 Cluny Road, Singapore 259569, Republic of Singapore; Department of Biological Sciences, National University of Singapore, Science Drive 4, Singapore 117534, Republic of Singapore."
+        ]
+      },
+      {
+        "full_name": "Mutwil, Marek",
+        "short_name": "Mutwil M",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Plant & Environmental Sciences, University of Copenhagen, Frederiksberg C 1871, Denmark. Electronic address: mutwil@plen.ku.dk."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Molecular plant"
+    ],
+    "journal_abbrev": [
+      "Mol Plant"
+    ],
+    "pub_date": "2026 Oct 8",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/09 05:30",
+    "fetched_at": "2026-10-11 10:31:44"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42850882",
+      "31602652",
+      "41459447",
+      "42475469",
+      "38507444",
+      "35012508",
+      "41776219",
+      "34544366",
+      "41187558",
+      "42593485",
+      "32977756",
+      "42792889",
+      "40885917",
+      "42589656",
+      "38970011",
+      "40880367",
+      "38338732",
+      "32996462",
+      "39606674",
+      "42389138",
+      "35151253",
+      "40943349",
+      "42656797",
+      "42079237",
+      "40240958",
+      "32646368",
+      "40597593",
+      "40021992",
+      "42161986",
+      "42787204",
+      "30514299",
+      "34493743",
+      "23985061",
+      "40629278",
+      "24098807",
+      "25859541",
+      "41023625",
+      "41199156",
+      "41261436",
+      "34561734",
+      "41942515",
+      "27965700",
+      "42720865",
+      "33392793",
+      "39844029",
+      "40713541",
+      "42260369",
+      "41520972",
+      "40607808",
+      "42479760",
+      "41085651",
+      "41629774",
+      "42364177",
+      "41484693",
+      "42565562",
+      "42098615",
+      "31996126",
+      "25933420",
+      "42374233",
+      "33176698",
+      "36743489",
+      "39684617",
+      "35371130",
+      "30863419",
+      "42410333",
+      "40648090",
+      "38187729",
+      "29892845",
+      "35698031",
+      "38568355",
+      "19758430",
+      "42450734",
+      "42473451",
+      "40725413",
+      "42045993",
+      "27322342",
+      "41868532",
+      "26482678",
+      "39404907",
+      "39838282",
+      "41703217",
+      "34638707",
+      "33407131",
+      "40399819",
+      "41291431",
+      "40228790",
+      "40898064",
+      "42200200",
+      "41673553",
+      "31842737",
+      "33173574",
+      "41200496",
+      "37323660",
+      "42116101",
+      "42215866",
+      "36432841",
+      "41327045",
+      "37366497",
+      "42337708",
+      "41677925"
+    ],
+    "review": [
+      "42850882",
+      "19758430"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [],
+    "text_mined": []
+  }
+}
