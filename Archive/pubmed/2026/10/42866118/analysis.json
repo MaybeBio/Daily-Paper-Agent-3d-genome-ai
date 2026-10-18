@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42866118",
+  "title": "Advances in plant metabolic engineering through synthetic biology.",
+  "authors": "Alsuwat, Hind; Alvarez, Derry; Al-Babili, Salim",
+  "journal": "Frontiers in plant science",
+  "published_date": "2026-10-13",
+  "window": {
+    "start": "2026-10-11",
+    "end": "2026-10-17"
+  },
+  "score": 1,
+  "one_liner_zh": "该综述聚焦植物代谢工程与合成生物学技术（CRISPR、基因编辑等），仅简要提及AI在代谢通路设计中的作用，不涉及三维基因组、染色质组织或空间架构建模，与本课题无关。",
+  "abstract": "The challenges associated with the escalating global population and climate change in crop production and food security are substantial. This underscores the necessity for improvements in crop nutrition, yield, and resilience to environmental stresses. Plant metabolic pathways directly influence growth, nutrient accumulation, and stress responses, rendering them prime targets for crop enhancement. Advances in plant synthetic biology and gene editing are facilitating more precise modifications of genes, regulatory elements, and metabolic pathways. This review highlights the primary technologies used in plant metabolic engineering and focuses on representative examples of their implementation for crop improvement, including but not limited to CRISPR-Cas systems, multiplex genome editing, knock-in and knock-out strategies, CRISPR-mediated gene regulation (CRISPRi/CRISPRa), base editing, prime editing, RNA targeting technologies, synthetic promoters, and gene stacking strategies. Furthermore, the emerging role of artificial intelligence in the design and optimization of metabolic pathways and genome editing tools will be briefly discussed.",
+  "abstract_zh": "全球人口不断增长和气候变化给作物生产与粮食安全带来的挑战十分严峻。这凸显了改善作物营养、产量及对环境胁迫的耐受性的必要性。植物代谢途径直接影响生长、养分积累和胁迫响应，使其成为作物改良的主要靶点。植物合成生物学和基因编辑的进展正在促进对基因、调控元件和代谢途径进行更精确的修饰。本综述重点介绍了植物代谢工程中使用的主要技术，并聚焦于其在作物改良中应用的代表性实例，包括但不限于CRISPR-Cas系统、多重基因组编辑、敲入和敲除策略、CRISPR介导的基因调控（CRISPRi/CRISPRa）、碱基编辑、引物编辑、RNA靶向技术、合成启动子和基因堆叠策略。此外，还将简要讨论人工智能在代谢途径和基因组编辑工具设计与优化中的新兴作用。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42866118/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42866118/",
+  "paper_page_path": "papers/pubmed/42866118/index.html"
+}

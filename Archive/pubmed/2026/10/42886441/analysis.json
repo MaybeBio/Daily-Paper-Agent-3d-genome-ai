@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42886441",
+  "title": "DESIGN: a framework for generative AI-enabled crop molecular design-driven breeding.",
+  "authors": "Xu, Feng; Fu, Ran; Cheng, Qian; Jiang, Shuqin; Yan, Jun; Wang, Xiangfeng",
+  "journal": "Science China. Life sciences",
+  "published_date": "2026-10-16",
+  "window": {
+    "start": "2026-10-11",
+    "end": "2026-10-17"
+  },
+  "score": 2,
+  "one_liner_zh": "该综述探讨生成式AI在作物分子设计育种中的应用，虽涉及基因调控元件设计，但对象为作物育种而非染色质三维组织，且无染色质空间架构建模或AI/分子模拟方法，与本课题关联微弱。",
+  "abstract": "Crop breeding is shifting from selecting naturally occurring variants to actively designing genetic features. Generative artificial intelligence (GenAI) provides a computational foundation for this transition; however, its application in crop systems remains limited. This review bridges this gap by systematically evaluating the translational potential of GenAI for crop molecular design breeding. We examine four major computational architectures and their applications across six key areas relevant to crop breeding: gene regulatory element design, protein engineering, small-molecule generation, gene-editing tool optimization, single-cell modeling, and cross-domain knowledge integration. Building on these advances, we propose the DESIGN framework, which organizes GenAI-enabled breeding into six synergistic capabilities: Discover, Engineer, Simulate, Integrate, Generate, and Navigate, thereby forming a closed-loop system spanning molecular design to field deployment. Finally, we discuss key bottlenecks in data, models, and validation, and outline a roadmap for translating GenAI into breeding practice. This review provides a conceptual and methodological foundation for the emerging paradigm of design-driven crop breeding.",
+  "abstract_zh": "作物育种正从选择自然变异转向主动设计遗传特征。生成式人工智能（GenAI）为这一转变提供了计算基础；然而，其在作物系统中的应用仍然有限。本综述通过系统评估GenAI在作物分子设计育种中的转化潜力，弥合了这一差距。我们考察了四种主要计算架构及其在作物育种相关的六个关键领域中的应用：基因调控元件设计、蛋白质工程、小分子生成、基因编辑工具优化、单细胞建模和跨领域知识整合。基于这些进展，我们提出了DESIGN框架，将GenAI赋能的育种组织为六种协同能力：发现（Discover）、工程化（Engineer）、模拟（Simulate）、整合（Integrate）、生成（Generate）和导航（Navigate），从而形成一个从分子设计到田间部署的闭环系统。最后，我们讨论了数据、模型和验证方面的关键瓶颈，并勾勒出将GenAI转化为育种实践的路线图。本综述为设计驱动型作物育种这一新兴范式提供了概念和方法论基础。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42886441/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42886441/",
+  "paper_page_path": "papers/pubmed/42886441/index.html"
+}

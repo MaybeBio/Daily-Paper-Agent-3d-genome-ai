@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42875456",
+  "title": "Molecular dynamics guided all-atom reconstruction of cryo-ET maps reveals mechanisms of histone tail mediated chromatin compaction.",
+  "authors": "Li, Shuxiang; Aristizabal, Maria J; Grigoryev, Sergei A; Panchenko, Anna R",
+  "journal": "Nature communications",
+  "published_date": "2026-10-15",
+  "window": {
+    "start": "2026-10-11",
+    "end": "2026-10-17"
+  },
+  "score": 8,
+  "one_liner_zh": "该文结合全原子分子动力学模拟与冷冻电镜断层扫描，构建三核小体模型揭示组蛋白尾介导的染色质压缩机制，属于染色质三维组织与分子模拟交叉的高质量建模研究。",
+  "abstract": "Dynamics and physical state of chromatin are crucial in regulating gene expression, DNA replication, and repair. Intrinsically disordered histone tails were previously recognized as key modulators of chromatin states. However, detailed atomistic mechanisms by which histone tail dynamics are associated with chromatin compaction and higher-order chromatin organization remain poorly understood. In this work, we combine extensive all-atom molecular dynamics simulations of tri-nucleosomes with varying linker lengths and cryo-electron tomography (cryo-ET) of native nucleosome arrays. Our approach offers distinct advantages as it elucidates realistic inter-nucleosomal interactions and tri-nucleosome orientations derived from physics-based MD simulations, enabling a more accurate and physically grounded interpretation of cryo-ET data. The results reveal that tri-nucleosome models can be successfully used for fitting and the near-atomistic interpretation of cryo-ET density maps of native human chromatin. Moreover, histone tails were shown to promote chromatin compaction via three major patterns: through histone-DNA interactions, histone H2A-H4 and H3-H4 tail-tail interactions. Notably, the distributions of MD-generated structural parameters of tri-nucleosomes were found to be in strong agreement with those of experimental condensed chromatin arrays.",
+  "abstract_zh": "染色质的动力学和物理状态在调控基因表达、DNA复制及修复中至关重要。先前研究已识别出内在无序的组蛋白尾部是染色质状态的关键调节因子。然而，组蛋白尾部动力学与染色质压缩及高阶染色质组织相关联的详细原子机制仍知之甚少。在本工作中，我们结合了具有不同连接长度的三核小体的广泛全原子分子动力学 (molecular dynamics) 模拟以及天然核小体阵列的冷冻电子断层扫描 (cryo-electron tomography, cryo-ET)。我们的方法具有显著优势，因为它阐明了基于物理的MD模拟得出的真实核小体间相互作用及三核小体取向，从而能够对cryo-ET数据进行更准确且物理基础更扎实的解释。结果表明，三核小体模型可成功用于拟合天然人类染色质cryo-ET密度图，并实现近原子级解释。此外，组蛋白尾部被证明通过三种主要模式促进染色质压缩：通过组蛋白-DNA相互作用、组蛋白H2A-H4和H3-H4尾部-尾部相互作用。值得注意的是，MD生成的三核小体结构参数分布与实验性浓缩染色质阵列的分布高度一致。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42875456/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42875456/",
+  "paper_page_path": "papers/pubmed/42875456/index.html"
+}

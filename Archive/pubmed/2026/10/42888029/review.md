@@ -1,0 +1,70 @@
+## Review setup
+- **Input scope** Abstract only
+- **Assessment boundary** Claims and evidence as presented in the abstract; no methods, figures, tables, or supplementary materials were provided
+- **Shared manuscript claim summary** The authors propose scHiC-Diff, a conditional diffusion-based framework for imputing and enhancing single-cell Hi-C contact maps. The method treats contact matrices as masked images and uses a Diffusion Transformer (DiT) to model long-range dependencies. The authors claim improved recovery of chromatin interaction patterns and enhanced downstream analyses across two simulated and three real scHi-C datasets, plus improved chromatin organization reconstruction and loop detection in a developmental dataset.
+- **Visible evidence base** Abstract text only; no quantitative results, benchmark details, or dataset descriptions are available
+- **Missing materials affecting confidence** Full methods, all figures and tables, simulation protocols, real dataset descriptions, baseline method specifications, evaluation metrics, and code availability
+
+## Reviewer
+- **Overall assessment** The abstract presents a conceptually reasonable application of conditional diffusion models to a well-recognized problem in single-cell Hi-C analysis. The choice of a Diffusion Transformer to treat contact maps as masked images is technically plausible and aligns with recent advances in generative modeling. However, the abstract provides no quantitative evidence, no comparison details, and no methodological specifics that would allow an independent assessment of the claimed improvements. The core claims of enhanced recovery and downstream analysis are therefore not verifiable from the supplied material.
+- **Who would be interested in the results, and why** Computational biologists and bioinformaticians working on 3D genome organization, particularly those developing or applying imputation methods for sparse single-cell chromatin conformation data. The work may also interest methodologists in generative modeling applied to biological imaging or matrix completion problems.
+- **Major strengths** The problem is well motivated, specifically the confounding of technical dropouts with genuine absence of interactions. The use of a conditional diffusion framework with a DiT backbone is a modern and potentially powerful approach for capturing long-range dependencies in sparse contact maps. The evaluation plan, spanning simulated and real datasets plus a developmental application, is appropriate in scope.
+- **Major Concerns**
+  - **Concern ID** R1-M1
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Evidence sufficiency
+  - **Claim pointer** "scHiC-Diff improves the recovery of chromatin interaction patterns and enhances downstream analyses compared with existing methods"
+  - **Evidence pointer** Abstract only; location not provided
+  - **Concern** The central performance claim is stated without any quantitative support. No metrics, effect sizes, or statistical significance are reported. The abstract does not specify which existing methods were compared, under what conditions, or on which specific datasets the improvements were observed.
+  - **Why it matters** Without quantitative evidence, the reader cannot judge whether the improvements are meaningful, consistent, or statistically robust. The claim as stated is unfalsifiable from the provided material.
+  - **Resolution test** Provide a results table or figure with key metrics (e.g., imputation accuracy, contact recovery F1, loop detection precision and recall) for scHiC-Diff and all baselines across each dataset, with variance or confidence intervals.
+  - **Concern ID** R1-M2
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Methodological transparency
+  - **Claim pointer** "scHiC-Diff employs a forward process that progressively perturbs contact maps and a reverse denoising process that reconstructs chromatin interactions from noisy observations"
+  - **Evidence pointer** Abstract only; location not provided
+  - **Concern** The abstract describes the diffusion framework at a high level but provides no details on the forward process design, the noise schedule, the conditioning mechanism, the training objective, or how the model distinguishes technical dropouts from true zeros. The treatment of contact maps as masked images is mentioned but not elaborated.
+  - **Why it matters** The key challenge stated in the introduction is the confounding of dropouts with genuine absences. The abstract does not explain how scHiC-Diff addresses this distinction, which is central to the method's novelty and utility.
+  - **Resolution test** Describe the model architecture, training procedure, and specifically how dropout events are modeled or inferred. Provide a schematic or formal description of the forward and reverse processes.
+  - **Concern ID** R1-M3
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Reproducibility and completeness
+  - **Claim pointer** "Across two complementary simulated datasets and three real scHiC datasets"
+  - **Evidence pointer** Abstract only; location not provided
+  - **Concern** The datasets are named but not described. No information is given on species, cell types, sequencing depth, number of cells, or how ground truth was established for simulated data. The developmental dataset is mentioned but not identified.
+  - **Why it matters** Without dataset details, the generalizability of the results cannot be assessed. The choice of real datasets and simulation protocols strongly influences the validity of benchmark conclusions.
+  - **Resolution test** Provide a supplementary table listing dataset characteristics, simulation parameters, and ground truth definitions.
+- **Minor Comments**
+  - **Concern ID** R1-m1
+  - **Severity** Minor
+  - **Axis** Clarity
+  - **Affected element** Terminology
+  - **Evidence pointer** Abstract; location not provided
+  - **Issue** The term "enhancement" is used in the title and abstract but not defined. It is unclear whether this refers to resolution enhancement, contrast improvement, or something else.
+  - **Required correction** Define "enhancement" explicitly in the context of scHi-C data processing.
+  - **Concern ID** R1-m2
+  - **Severity** Minor
+  - **Axis** Completeness
+  - **Affected element** Downstream analysis
+  - **Evidence pointer** Abstract; location not provided
+  - **Issue** The abstract claims "enhanced downstream analyses" and "improved reconstruction of chromatin organization and enhanced chromatin loop detection" but does not specify which downstream tasks were evaluated beyond loop detection.
+  - **Required correction** List the downstream analyses performed and the specific metrics used for each.
+  - **Concern ID** R1-m3
+  - **Severity** Minor
+  - **Axis** Accessibility
+  - **Affected element** Code and data availability
+  - **Evidence pointer** Abstract; location not provided
+  - **Issue** No mention of code or data availability, which is essential for reproducibility in computational biology.
+  - **Required correction** State where code, trained models, and processed datasets will be made available.
+- **Technical failings that need to be addressed before the case is established** R1-M1, R1-M2, and R1-M3 are all blocking. The abstract does not provide sufficient evidence, methodological detail, or dataset context to establish the core claims.
+- **Assessment against Nature-style criteria** Originality is plausible, as the application of conditional diffusion with a DiT to scHi-C imputation appears novel, but this cannot be fully assessed without a literature comparison in the methods. Scientific importance is potentially high given the widespread dropout problem in scHi-C, but the magnitude of the advance is unquantified. Interdisciplinary readership is likely, spanning genomics and machine learning, but the abstract is accessible to both audiences. Technical soundness cannot be evaluated from the abstract alone. Readability for nonspecialists is adequate, though the term "enhancement" and the diffusion framework may require more explanation for a general audience.
+- **Recommendation posture** Currently not established from the provided evidence. The approach is promising and the problem is important, but the abstract alone does not support the performance claims. A full manuscript with quantitative results, methodological details, and dataset descriptions would be required for a supportive assessment.
+
+## Risk / unsupported claims
+- The claim of improved recovery and downstream analysis over existing methods is unsupported by any quantitative data in the abstract.
+- The claim of enhanced chromatin loop detection is unsupported without specific metrics or comparison baselines.
+- The claim that scHiC-Diff addresses the confounding of dropouts with genuine absences is not substantiated by any described mechanism.
+- The generalizability across two simulated and three real datasets is not assessable without dataset descriptions and evaluation protocols.

@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42877042",
+  "title": "Integrated multi-omics and genome mining strategies for activating cryptic polyketide biosynthetic gene clusters in Streptomyces: an overview.",
+  "authors": "Santhoshkumar, R; Mohamed, Hafid; Jemo, Martin",
+  "journal": "Frontiers in microbiology",
+  "published_date": "2026-10-15",
+  "window": {
+    "start": "2026-10-11",
+    "end": "2026-10-17"
+  },
+  "score": 2,
+  "one_liner_zh": "该综述聚焦链霉菌隐性聚酮生物合成基因簇的激活策略，虽提及AI和染色质拓扑重连，但对象非三维基因组/染色质组织，且无染色质空间架构建模或AI/分子模拟方法实质贡献。",
+  "abstract": "Beneficial microbes from soil or marine habitats are promising sources for discovery of new bioactive compounds for medicine and agriculture, largely through biosynthetic gene clusters (BGCs) that encode the production of complex natural products for drug and antibiotic discovery. However, most BGCs are transcriptionally silent under standard testing conditions and may require a complex, integrated approach for activation. In this review, we revisit previous approaches to activating BGCs, focusing on polyketides. We additionally discuss how integrating genome mining strategies with multi-omics integration, synthetic biology methods, and precise genome-editing tools is providing increasingly precise strategies for the discovery and engineering of polyketide-producing Streptomyces. We further discuss how to couple artificial intelligence (AI)-designed promoters could enable the production of novel compounds with improved yields, expanded chemical diversity, and enhanced industrial potential. We further examine how state-of-the-art CRISPR-Cas systems, including base editing, facilitate precise editing of high-GC-content genomes while circumventing the genome instability and Cas9-associated cellular toxicity that frequently accompany double-strand break formation in Streptomyces, and how chromatin topology rewiring dismantles transcriptional silencing. Unlike reviews that address genome mining, pathway engineering, or genome editing as separate approaches, this review presents an integrated framework linking computational BGC prediction, multi-omics validation, and precision engineering to prioritize and activate cryptic polyketide pathways in Streptomyces. We propose comprehensive computational genomics prediction approaches and integrate them with experimental validation through promoter engineering, transcription factor decoys, and chassis strain optimization, highlighting how these methods and tools are advancing the field from descriptive BGC catalogs to scalable, predictive models for next-generation drug discovery. Future efforts to couple AI-generated, sequence-orthogonal promoter libraries with biology-based modeling hold great promise.",
+  "abstract_zh": "来自土壤或海洋栖息地的有益微生物是发现用于医药和农业的新型生物活性化合物的有前景来源，这主要通过生物合成基因簇（BGCs）实现，这些基因簇编码复杂天然产物的生产，用于药物和抗生素发现。然而，大多数BGCs在标准测试条件下转录沉默，可能需要复杂、综合的方法来激活。在本综述中，我们重新审视了先前激活BGCs的方法，重点关注聚酮类化合物。我们进一步讨论了如何将基因组挖掘策略与多组学整合、合成生物学方法以及精确基因组编辑工具相结合，为发现和工程化产聚酮链霉菌（Streptomyces）提供日益精确的策略。我们还探讨了如何将人工智能（AI）设计的启动子耦合，以实现新型化合物的生产，提高产量、扩展化学多样性并增强工业潜力。我们进一步考察了最先进的CRISPR-Cas系统（包括碱基编辑）如何促进高GC含量基因组的精确编辑，同时规避链霉菌中常伴随双链断裂形成的基因组不稳定性和Cas9相关细胞毒性，以及染色质拓扑重塑如何解除转录沉默。与将基因组挖掘、途径工程或基因组编辑作为独立方法处理的综述不同，本综述提出了一个整合框架，将计算BGC预测、多组学验证和精确工程联系起来，以优先排序并激活链霉菌中的隐秘聚酮途径。我们提出了全面的计算基因组学预测方法，并通过启动子工程、转录因子诱饵和底盘菌株优化将其与实验验证相结合，强调这些方法和工具如何推动该领域从描述性BGC目录向可扩展、可预测的下一代药物发现模型发展。未来将AI生成的序列正交启动子库与基于生物学的建模相结合的努力具有巨大前景。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42877042/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42877042/",
+  "paper_page_path": "papers/pubmed/42877042/index.html"
+}

@@ -1,0 +1,72 @@
+## Review setup
+- **Input scope** Abstract only
+- **Assessment boundary** Claims and evidence as presented in the abstract; no figures, tables, methods, or supplementary materials were provided
+- **Shared manuscript claim summary** The authors propose DNA-LLM2Vec, a staged decoder-to-encoder adaptation framework for DNA foundation models, which introduces bidirectional context, masked next-token prediction (MNTP), and contrastive views encoding strand and positional invariance. They instantiate it on DNAGPT and HyenaDNA, evaluate seven biological task families with frozen linear probing, and report architecture-aware and task-conditioned benefits, including improved enhancer-promoter interaction and Virus-COVID performance, improved causal-eQTL variant-effect prediction at distance, and motif-aware contact structure with strand-consistent geometry.
+- **Visible evidence base** Abstract text only; no quantitative results beyond two MCC values (27.5% for DNAGPT, 26.7% for HyenaDNA), no baselines, no statistical significance, no method details, no figure or table references
+- **Missing materials affecting confidence** Full manuscript, methods section, all figures and tables, baseline comparisons, hyperparameter details, dataset splits, evaluation protocols, code verification, and any supplementary information
+
+## Reviewer
+- **Overall assessment** The abstract presents a potentially interesting and timely contribution to the adaptation of decoder DNA foundation models for bidirectional genomic tasks. The core idea of staged conversion with task-conditioned benefits is plausible and aligns with current trends in genomic representation learning. However, the abstract alone provides insufficient evidence to evaluate the technical soundness, the magnitude of improvements, or the generalizability of the claims. The reported results are sparse, lack baseline context, and do not include statistical validation. The claim that benefits are "architecture-aware and task-conditioned" is intriguing but not substantiated with comparative data. The manuscript may have merit, but the case is not established from the supplied material.
+- **Who would be interested in the results, and why** Computational biologists and machine learning researchers working on genomic foundation models, particularly those interested in adapting large language model architectures for regulatory genomics, variant effect prediction, and sequence-to-function tasks. The work could also interest researchers developing bidirectional encoders for long-context biological sequences and those studying the trade-offs between decoder and encoder pretraining paradigms.
+- **Major strengths** The conceptual framing is clear and addresses a recognized limitation of decoder-only models for genomic tasks requiring bidirectional context. The staged adaptation approach (opening bidirectional context, repairing with MNTP, then contrastive views) is methodologically coherent. The choice of two architecturally distinct backbones (DNAGPT and HyenaDNA) strengthens the claim of architecture-awareness. The inclusion of causal-eQTL variant-effect prediction and base-pair mutagenesis diagnostics suggests a broader evaluation beyond classification benchmarks.
+- **Major Concerns**
+  - **Concern ID** R1-M1
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Evidence sufficiency
+  - **Claim pointer** The abstract claims that DNA-LLM2Vec "raises frozen Avg-EPI MCC to 27.5% for DNAGPT and 26.7% for HyenaDNA" for extended-context families.
+  - **Evidence pointer** Abstract only; no figure or table reference provided
+  - **Concern** The reported MCC values are presented without any baseline comparison. It is unclear what the MCC was before adaptation, what the performance of the original decoder models was, or what the performance of existing bidirectional encoders is on the same tasks. Without baselines, the magnitude of improvement cannot be assessed.
+  - **Why it matters** The central claim of the paper is that conversion improves performance. Without a baseline, the reader cannot determine whether the reported values represent a meaningful advance or are within the range of existing methods. This undermines the scientific contribution.
+  - **Resolution test** Provide baseline MCC values for the unadapted decoder models, for standard bidirectional encoders (e.g., DNABERT, Nucleotide Transformer), and ideally for a simple linear probe on one-hot encoded sequences, all on identical task splits and evaluation protocols.
+  - **Concern ID** R1-M2
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** The abstract claims that "crop-based positional contrastive learning helps most for the extended-context families" and that "the results depend on backbone and tokenisation" for shorter local families.
+  - **Evidence pointer** Abstract only; no method details or results tables provided
+  - **Concern** The abstract does not specify what "crop-based positional contrastive learning" entails, how the contrastive views are constructed, what the loss function is, or how the "best downstream view" is selected. The claim that the best view "depends on the task structure and the backbone" is presented without any supporting data or analysis.
+  - **Why it matters** The method's novelty and utility hinge on the design of the contrastive views and the selection mechanism. Without details, the approach cannot be reproduced or evaluated, and the claim of task-conditioned benefits remains unverifiable.
+  - **Resolution test** Provide a full method description including the contrastive loss formulation, the construction of strand and positional views, the selection criterion for the best view, and a table showing performance across all task families for each backbone and each view configuration.
+  - **Concern ID** R1-M3
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Claim support
+  - **Claim pointer** The abstract claims that "bidirectional context and MNTP improve causal-eQTL variant-effect prediction specifically at distance" and that "a base-pair mutagenesis diagnostic shows that adaptation organises motif-aware contact structure while reverse-complement training imprints strand-consistent geometry."
+  - **Evidence pointer** Abstract only; no results or figures referenced
+  - **Concern** These are two distinct and potentially significant claims, but no quantitative results are provided for either. The eQTL claim lacks effect sizes, distance thresholds, or comparisons to the unadapted model. The mutagenesis diagnostic claims are qualitative and not supported by any displayed data.
+  - **Why it matters** These claims extend the paper's contribution beyond classification benchmarks and suggest mechanistic insights. Without evidence, they read as speculation rather than findings, which weakens the overall credibility of the manuscript.
+  - **Resolution test** Provide quantitative results for eQTL prediction (e.g., AUROC or correlation) stratified by distance from the variant, with and without adaptation. For the mutagenesis diagnostic, show representative contact maps or motif enrichment analyses that demonstrate the claimed organization and strand consistency.
+- **Minor Comments**
+  - **Concern ID** R1-m1
+  - **Severity** Minor
+  - **Axis** Clarity
+  - **Affected element** Terminology
+  - **Evidence pointer** Abstract, first sentence
+  - **Issue** The phrase "representations are directional" is used without definition. It is unclear whether this refers to the autoregressive nature of the model, the orientation of the sequence, or something else.
+  - **Required correction** Define "directional" in the context of decoder representations, ideally with a one-sentence explanation of why this is a limitation for genomic tasks.
+  - **Concern ID** R1-m2
+  - **Severity** Minor
+  - **Axis** Reproducibility
+  - **Affected element** Evaluation protocol
+  - **Evidence pointer** Abstract, "frozen linear probing"
+  - **Issue** The abstract states that evaluation uses "frozen linear probing" but does not specify whether the probe is trained on the full training set, what the train-validation-test split is, or whether results are averaged over multiple seeds.
+  - **Required correction** Specify the evaluation protocol in the abstract or methods, including the number of seeds and the variance of the reported metrics.
+  - **Concern ID** R1-m3
+  - **Severity** Minor
+  - **Axis** Completeness
+  - **Affected element** Benchmark coverage
+  - **Evidence pointer** Abstract, "seven biological task families (grouped from GB, NT, GUE, and GUE+EPI)"
+  - **Issue** The abstract lists the source benchmarks but does not name the seven task families. This makes it difficult to assess the breadth of the evaluation.
+  - **Required correction** List the seven task families explicitly in the abstract or provide a table in the main text.
+- **Technical failings that need to be addressed before the case is established** R1-M1 (missing baselines), R1-M2 (insufficient method detail), R1-M3 (unsupported mechanistic claims). These are blocking because the core claims of improvement and task-conditioned benefit cannot be evaluated from the abstract alone.
+- **Assessment against Nature-style criteria** Originality: The staged decoder-to-encoder adaptation with contrastive views is a novel combination, though individual components (bidirectional adaptation, contrastive learning) exist in the literature. Scientific importance: Potentially high, as it addresses a practical limitation of decoder DNA models, but the importance is not yet demonstrated without baseline comparisons. Interdisciplinary readership: The work bridges machine learning and genomics, and the framing is accessible, but the abstract assumes familiarity with both fields. Technical soundness: Cannot be assessed from the abstract; the method description is too sparse. Readability for nonspecialists: The abstract is dense and uses field-specific jargon (e.g., "MNTP," "Avg-EPI MCC") without explanation, which limits accessibility.
+- **Recommendation posture** Currently not established from the provided evidence. The conceptual contribution is promising, but the abstract does not provide sufficient quantitative or methodological detail to support the claims. A full manuscript with baselines, method details, and statistical validation would be required to assess the work fairly.
+
+## Risk / unsupported claims
+- The claim that DNA-LLM2Vec "raises frozen Avg-EPI MCC to 27.5% for DNAGPT and 26.7% for HyenaDNA" is unsupported without baseline values.
+- The claim that benefits are "architecture-aware and task-conditioned rather than uniform" is unsupported without a full results table across all task families and backbones.
+- The claim that "bidirectional context and MNTP improve causal-eQTL variant-effect prediction specifically at distance" is unsupported without quantitative results.
+- The claim that "adaptation organises motif-aware contact structure while reverse-complement training imprints strand-consistent geometry" is unsupported without displayed data.
+- The claim that "neither predicts the best downstream view" is unsupported without a systematic comparison of view selection.
+- The overall generalizability of the approach to other decoder DNA foundation models is not assessable from the abstract.

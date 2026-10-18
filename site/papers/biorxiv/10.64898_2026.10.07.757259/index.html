@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DNA-LLM2Vec: Architecture-Aware Task-Conditioned Adaptation of Decoder DNA Foundation Models · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-mid">6</span>
+    <div>
+      <h1>DNA-LLM2Vec: Architecture-Aware Task-Conditioned Adaptation of Decoder DNA Foundation Models</h1>
+      <div class="meta">Liang Y; Zhai K; Gan Y; Li S; Shao J; Watson GH; Poesio M</div>
+      <div class="meta muted">
+        
+        <span class="journal">bioRxiv</span> <span class="preprint-badge">预印本</span>
+        · 2026-10-14
+         · 仅摘要
+         · <a href="https://www.biorxiv.org/content/10.64898/2026.10.07.757259">原文</a>
+      </div>
+      <p class="one-liner">该文提出DNA-LLM2Vec，将解码器DNA基础模型转换为双向编码器以增强长程基因组任务（如增强子-启动子互作）的表示，虽涉及染色质水平调控预测但未直接建模三维空间结构，方法上属AI基因组语言模型，对三维基因组调控特征建模有参考价值。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">Decoder DNA foundation models pretrain with dense next-token prediction and scale to long sequences, but their representations are directional. This is a poor fit for genomic tasks that need sequence context both upstream and downstream of a locus. Bidirectional masked-language-model encoders supply this context, but they pretrain more sparsely and scale less easily to long windows. We introduce DNA-LLM2Vec, a staged decoder-to-encoder framework that opens bidirectional context, repairs the resulting mismatch with masked next-token prediction, and applies contrastive views encoding strand and positional invariance. We instantiate it on two architecturally distinct backbones, DNAGPT and HyenaDNA, and evaluate seven biological task families (grouped from GB, NT, GUE, and GUE+EPI) with frozen linear probing. The benefits of conversion are architecture-aware and task-conditioned rather than uniform. Crop-based positional contrastive learning helps most for the extended-context families (enhancer-promoter interaction and Virus-COVID), raising frozen Avg-EPI MCC to 27.5% for DNAGPT and 26.7% for HyenaDNA, whereas for shorter, local families the results depend on backbone and tokenisation. Beyond classification, bidirectional context and MNTP improve causal-eQTL variant-effect prediction specifically at distance, and a base-pair mutagenesis diagnostic shows that adaptation organises motif-aware contact structure while reverse-complement training imprints strand-consistent geometry, yet neither predicts the best downstream view. DNA-LLM2Vec therefore produces frozen bidirectional representations whose most effective adaptation view depends on the task structure and the backbone. Code and checkpoints are available at https://github.com/semi-nothing/dna-llm2vec.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">解码器DNA基础模型通过密集的下一词元预测进行预训练，并能扩展到长序列，但其表示具有方向性。这对于需要基因座上下游序列上下文的基因组任务来说并不适合。双向掩码语言模型编码器提供了这种上下文，但它们的预训练较为稀疏，且难以扩展到长窗口。我们引入了DNA-LLM2Vec，一个分阶段的解码器到编码器框架，它打开双向上下文，通过掩码下一词元预测修复由此产生的不匹配，并应用编码链和位置不变性的对比视图。我们在两个架构不同的骨干模型DNAGPT和HyenaDNA上实例化它，并通过冻结线性探针评估七个生物任务家族（从GB、NT、GUE和GUE+EPI分组）。转换的益处是架构感知和任务条件化的，而非统一的。基于裁剪的位置对比学习对扩展上下文家族（增强子-启动子相互作用和病毒-COVID）帮助最大，将DNAGPT的冻结平均EPI MCC提高到27.5%，HyenaDNA提高到26.7%，而对于较短、局部的家族，结果取决于骨干模型和词元化。除了分类之外，双向上下文和MNTP特别在距离上改善了因果eQTL变异效应预测，而碱基对诱变诊断显示，适应组织出基序感知的接触结构，而反向互补训练印刻出链一致的几何结构，但两者都不能预测最佳的下游视图。因此，DNA-LLM2Vec产生冻结的双向表示，其最有效的适应视图取决于任务结构和骨干模型。代码和检查点可在https://github.com/semi-nothing/dna-llm2vec获取。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：DNA-LLM2Vec: Architecture-Aware Task-Conditioned Adaptation of Decoder DNA Foundation Models</li>
+<li><strong>作者</strong>：Liang Y; Zhai K; Gan Y; Li S; Shao J; Watson GH; Poesio M</li>
+<li><strong>单位</strong>：未提供</li>
+<li><strong>期刊/预印本平台</strong>：bioRxiv</li>
+<li><strong>年份</strong>：2026</li>
+<li><strong>论文类型</strong>：预印本（方法学 + 实证评估）</li>
+<li><strong>领域</strong>：基因组学 × 大语言模型（DNA foundation models）</li>
+<li><strong>关键词</strong>：DNA foundation models, decoder-to-encoder adaptation, bidirectional context, masked next-token prediction, contrastive learning, linear probing, variant effect prediction</li>
+<li><strong>DOI/arXiv 号</strong>：10.64898/2026.10.07.757259</li>
+<li><strong>代码</strong>：https://github.com/semi-nothing/dna-llm2vec</li>
+<li><strong>数据</strong>：GB（GenomicBenchmarks）、NT（Nucleotide Transformer 基准）、GUE、GUE+EPI（增强子-启动子互作）</li>
+<li><strong>阅读日期</strong>：未提供</li>
+<li><strong>在「三维基因组/染色质组织 × AI 方法/物理模拟」方向中的位置</strong>：本文不直接建模三维基因组结构，但增强子-启动子互作（EPI）预测是三维基因组功能读出的核心任务之一。本文提出的 decoder-to-encoder 双向上下文适配 + 对比学习框架，为染色质组织相关任务（如 EPI、causal-eQTL 变异效应）提供了一种可迁移的表示学习策略，属于「序列模型 → 功能预测」路线，与三维基因组结构预测（如 Hi-C 衍生任务）在表示层面可衔接。</li>
+</ul>
+<hr />
+<h2>02 一句话总结</h2>
+<p>本文提出 DNA-LLM2Vec，一种将 decoder-only DNA 基础模型分阶段转换为双向 encoder 的适配框架，通过 masked next-token prediction（MNTP）修复方向性失配、并用 crop-based 对比学习注入位置与链（strand）不变性，在七个基因组任务族上以 frozen linear probing 评估，发现转换收益是架构感知且任务条件化的，而非均匀提升。</p>
+<hr />
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：Decoder-only DNA foundation models 的表示是方向性的（directional），只依赖上游上下文，这对需要同时利用位点上下游序列信息的基因组任务（如增强子-启动子互作、变异效应预测）是次优的。如何在不重新预训练的前提下，将 decoder 模型转换为具备双向上下文的 encoder 表示？</li>
+<li><strong>为什么重要</strong>：DNA 序列的功能解读本质上是双向的——调控元件的作用依赖于两侧的序列环境。若基础模型表示方向性过强，下游任务（尤其长程调控任务）将受限于上下文覆盖不全。</li>
+<li><strong>现有方法不足</strong>：双向 masked-language-model encoders（如 Nucleotide Transformer）虽提供双向上下文，但预训练更稀疏（masked token 比例低），且难以扩展到长序列窗口；decoder 模型虽可长序列预训练，但表示方向性不匹配任务需求。</li>
+<li><strong>精确研究问题</strong>：Can a staged decoder-to-encoder conversion with masked next-token prediction and contrastive views produce frozen bidirectional representations that consistently outperform the original decoder across diverse genomic task families?</li>
+</ul>
+<hr />
+<h2>04 背景与发展脉络</h2>
+<blockquote>
+<p>注：此脉络基于本文引言与相关工作，标注为「仅本文框架」，未经外部系统核验。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>代表方法</th>
+<th>优点</th>
+<th>局限</th>
+<th>本文位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. 双向 encoder DNA 模型</td>
+<td>Nucleotide Transformer, DNABERT</td>
+<td>双向上下文，适合局部功能预测</td>
+<td>预训练稀疏，长序列扩展困难</td>
+<td>作为对比基线</td>
+</tr>
+<tr>
+<td>2. Decoder-only DNA 模型</td>
+<td>DNAGPT, HyenaDNA</td>
+<td>密集 next-token 预训练，可扩展长序列</td>
+<td>表示方向性，缺下游上下文</td>
+<td>作为被转换的骨干</td>
+</tr>
+<tr>
+<td>3. Decoder→Encoder 转换</td>
+<td>LLM2Vec（NLP 领域）</td>
+<td>复用 decoder 预训练权重，获得双向表示</td>
+<td>未针对 DNA 特性（链、位置）适配</td>
+<td>本文核心：引入 MNTP + 对比视图</td>
+</tr>
+<tr>
+<td>4. 任务条件化适配</td>
+<td>本文 DNA-LLM2Vec</td>
+<td>架构感知、任务条件化的转换收益</td>
+<td>收益非均匀，依赖骨干与任务结构</td>
+<td>本文贡献</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Decoder 表示方向性</td>
+<td>只利用上游上下文，下游任务（如 EPI）性能受限</td>
+<td>Decoder 预训练目标为 next-token prediction，天然单向</td>
+<td>摘要：representations are directional</td>
+</tr>
+<tr>
+<td>双向 encoder 扩展性差</td>
+<td>长序列窗口下预训练稀疏，难以规模化</td>
+<td>Masked LM 的 mask 比例低，训练信号稀疏</td>
+<td>摘要：pretrain more sparsely and scale less easily to long windows</td>
+</tr>
+<tr>
+<td>转换后失配</td>
+<td>直接 decoder→encoder 转换后表示不一致</td>
+<td>预训练目标与转换后目标不匹配</td>
+<td>摘要：repairs the resulting mismatch with masked next-token prediction</td>
+</tr>
+<tr>
+<td>收益非均匀</td>
+<td>不同任务族、不同骨干上转换收益差异大</td>
+<td>任务结构（长程 vs 局部）与 tokenisation 交互</td>
+<td>摘要：architecture-aware and task-conditioned rather than uniform</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>06 核心思想</h2>
+<ol>
+<li>
+<p><strong>表面方法</strong>：三阶段转换——(1) 将 decoder 的 causal attention 改为 bidirectional attention；(2) 用 masked next-token prediction（MNTP）在双向上下文中继续训练，修复方向性失配；(3) 用 crop-based 对比学习注入位置与链（strand）不变性。在七个任务族上以 frozen linear probing 评估。</p>
+</li>
+<li>
+<p><strong>核心洞察</strong>：转换收益不是「越多越好」或「普遍有效」，而是由任务结构（是否需要长程双向上下文）与骨干架构（tokenisation、序列长度处理方式）共同决定。crop-based 对比学习对长程任务（EPI、Virus-COVID）帮助最大，而对短程局部任务则依赖骨干。</p>
+</li>
+<li>
+<p><strong>可能的普适教训 [Analysis]</strong>：在基础模型适配中，「架构-任务匹配度」比「模型容量」更重要。对于三维基因组任务（如 Hi-C 环、TAD 边界预测），若任务本质需要双向长程上下文，则 decoder 模型需显式转换；反之，若任务以局部序列特征为主，转换可能无益甚至有害。这提示三维基因组领域的模型选择应基于任务上下文需求而非模型规模。</p>
+</li>
+</ol>
+<hr />
+<h2>07 方法总览</h2>
+<ul>
+<li><strong>输入</strong>：DNA 序列（长度因任务族而异，最长覆盖 Virus-COVID 与 EPI 的长窗口）</li>
+<li><strong>输出</strong>：frozen 双向表示（用于 linear probing 分类或回归）</li>
+<li><strong>模块</strong>：
+  1. <strong>Bidirectional attention conversion</strong>：将 decoder 的 causal mask 替换为 bidirectional mask
+  2. <strong>Masked next-token prediction (MNTP)</strong>：在双向上下文中预测被 mask 的 token，修复方向性失配
+  3. <strong>Crop-based contrastive learning</strong>：对同一序列的不同 crop 构造正样本对，编码位置不变性；对 reverse-complement 构造链不变性视图</li>
+<li><strong>训练</strong>：分阶段进行，先 MNTP 再对比学习（staged）</li>
+<li><strong>骨干</strong>：DNAGPT（GPT 风格）与 HyenaDNA（Hyena 架构，长序列高效）</li>
+<li><strong>评估</strong>：frozen linear probing，七个任务族（GB、NT、GUE、GUE+EPI 分组）</li>
+<li><strong>工具</strong>：未提供具体框架（如 PyTorch 版本等）</li>
+<li><strong>假设</strong>：双向上下文 + 位置/链不变性可提升下游任务泛化；转换收益与任务结构相关</li>
+<li><strong>流程</strong>：原始 decoder 权重 → 双向 attention 转换 → MNTP 训练 → 对比学习 → frozen 表示 → linear probing 评估</li>
+</ul>
+<hr />
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bidirectional attention conversion</td>
+<td>将 causal attention 改为双向</td>
+<td>Decoder 表示方向性，缺下游上下文</td>
+<td>输入：decoder 权重；输出：双向 attention 权重</td>
+<td>摘要：directional representations are a poor fit</td>
+<td>预期：保留方向性，长程任务性能下降 [预期效应]</td>
+</tr>
+<tr>
+<td>Masked next-token prediction (MNTP)</td>
+<td>在双向上下文中预测 mask token</td>
+<td>修复转换后预训练目标与任务目标失配</td>
+<td>输入：双向 attention 模型 + masked 序列；输出：MNTP 训练后权重</td>
+<td>摘要：repairs the resulting mismatch</td>
+<td>预期：表示一致性下降，下游任务整体退化 [预期效应]</td>
+</tr>
+<tr>
+<td>Crop-based contrastive learning（位置）</td>
+<td>同一序列不同 crop 为正样本对</td>
+<td>编码位置不变性，长程任务需要</td>
+<td>输入：序列 crops；输出：位置不变表示</td>
+<td>摘要：helps most for extended-context families</td>
+<td>实测：EPI 与 Virus-COVID 提升最大（frozen Avg-EPI MCC 27.5%/26.7%）</td>
+</tr>
+<tr>
+<td>Reverse-complement contrastive learning（链）</td>
+<td>正链与反互补链为正样本对</td>
+<td>编码链不变性，DNA 无方向性</td>
+<td>输入：序列 + reverse-complement；输出：链不变表示</td>
+<td>摘要：imprints strand-consistent geometry</td>
+<td>预期：对链敏感任务（如转录方向）可能有害 [预期效应]</td>
+</tr>
+<tr>
+<td>Frozen linear probing</td>
+<td>冻结表示，训练线性分类头</td>
+<td>评估表示质量，避免微调混淆</td>
+<td>输入：frozen 表示；输出：任务预测</td>
+<td>摘要：evaluate with frozen linear probing</td>
+<td>移除后：无法隔离表示质量与分类头贡献</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>09 关键公式符号</h2>
+<p>不适用。本文为方法学实证论文，摘要与正文中未提供可提取的数学公式（如损失函数具体形式、对比学习目标函数等）。具体公式需查阅全文 Methods 节，但当前材料未提供。</p>
+<hr />
+<h2>10 实验设计与证据链</h2>
+<ul>
+<li><strong>数据集/群体</strong>：</li>
+<li>GB（GenomicBenchmarks）：多个基因组分类任务</li>
+<li>NT（Nucleotide Transformer 基准）：多物种序列分类</li>
+<li>GUE：多个基因组理解任务</li>
+<li>GUE+EPI：增强子-启动子互作任务（含扩展集）</li>
+<li>Virus-COVID：病毒序列分类（长上下文）</li>
+<li><strong>规模</strong>：未提供具体样本数（需查全文）</li>
+<li><strong>指标</strong>：分类任务用 MCC（Matthews Correlation Coefficient），变异效应预测用因果 eQTL 评估</li>
+<li><strong>基线</strong>：原始 decoder（DNAGPT、HyenaDNA）frozen 表示</li>
+<li><strong>骨干</strong>：DNAGPT、HyenaDNA</li>
+<li><strong>评测协议</strong>：frozen linear probing，七个任务族分组评估</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的 claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>七任务族 frozen linear probing</td>
+<td>转换后表示优于原始 decoder</td>
+<td>DNA-LLM2Vec vs 原始 decoder，两骨干</td>
+<td>收益非均匀：长程任务提升，短程任务依赖骨干</td>
+<td>转换收益是任务条件化的</td>
+<td>不能声称普遍优于所有基线</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>EPI 任务（GUE+EPI）</td>
+<td>crop-based 对比学习提升长程互作预测</td>
+<td>有/无对比学习，两骨干</td>
+<td>frozen Avg-EPI MCC：DNAGPT 27.5%，HyenaDNA 26.7%</td>
+<td>对比学习对长程任务最有效</td>
+<td>未与 SOTA 微调模型对比</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>Virus-COVID 任务</td>
+<td>长上下文任务受益于双向上下文</td>
+<td>转换前后对比</td>
+<td>提升显著（具体数值未提供）</td>
+<td>双向上下文对长程任务关键</td>
+<td>未提供跨数据集泛化证据</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>causal-eQTL 变异效应预测</td>
+<td>双向上下文提升远端变异效应预测</td>
+<td>转换前后，按距离分层</td>
+<td>提升集中在远距离变异</td>
+<td>双向上下文对远端调控重要</td>
+<td>未提供功能验证（如 CRISPR）</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>碱基突变诊断（mutagenesis）</td>
+<td>转换后表示组织出 motif 感知接触结构</td>
+<td>突变前后表示对比</td>
+<td>转换后出现 motif 感知结构；reverse-complement 训练产生链一致几何</td>
+<td>表示结构被适配改变</td>
+<td>结构变化不预测下游最优视图</td>
+<td>摘要</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：本文结论限于 frozen linear probing 评估，不涉及微调（fine-tuning）场景。若下游任务使用微调，转换收益可能不同。</li>
+<li><strong>oracle/真值输入</strong>：EPI 与 eQTL 任务依赖实验验证的互作/效应标签，标签质量决定评估上限。</li>
+<li><strong>端到端状态</strong>：本文为表示学习 + 线性探测，非端到端任务模型。最终任务性能受分类头容量限制。</li>
+<li><strong>算力成本</strong>：未提供训练成本数据。MNTP + 对比学习需额外训练阶段，成本高于直接使用原始 decoder。</li>
+<li><strong>历史数据依赖</strong>：预训练权重（DNAGPT、HyenaDNA）来自各自原始预训练，转换过程依赖这些权重的质量。</li>
+<li><strong>模型依赖</strong>：结论基于两个骨干（DNAGPT、HyenaDNA），不能外推至所有 decoder DNA 模型（如 Evo、Caduceus 等）。</li>
+<li><strong>最难情形</strong>：短程局部任务（如启动子二分类）上转换收益不稳定，甚至可能有害。</li>
+<li><strong>不确定性</strong>：mutagenesis 诊断显示表示结构变化与下游最优视图无稳定对应关系，说明「结构改善」不等于「任务改善」。</li>
+<li><strong>群体/领域边界</strong>：结论限于基因组序列分类与变异效应预测，不涉及三维基因组结构直接预测（如 Hi-C 接触图）。</li>
+<li><strong>有边界的复述</strong>：DNA-LLM2Vec 在 frozen 设置下，对需要长程双向上下文的任务族（EPI、Virus-COVID）带来稳定提升，对短程任务则骨干依赖；其表示结构变化（motif 感知、链一致几何）可观测，但不直接预测下游最优视图。</li>
+</ul>
+<hr />
+<h2>12 作者自认局限</h2>
+<p>在提供的材料（摘要）中未发现作者明确承认的局限。作者提及的相关约束（非正式局限）：</p>
+<ul>
+<li>转换收益是「architecture-aware and task-conditioned rather than uniform」，即非普适。</li>
+<li>mutagenesis 诊断显示「neither predicts the best downstream view」，即表示结构分析不能指导视图选择。</li>
+<li>评估限于 frozen linear probing，未覆盖微调场景。</li>
+</ul>
+<hr />
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>仅用两个骨干（DNAGPT、HyenaDNA）</td>
+<td>结论可能不适用于其他 decoder 架构（如基于 Mamba 的 DNA 模型）</td>
+<td>若架构差异大，转换策略需重新设计</td>
+<td>在 Evo、Caduceus 等模型上重复实验</td>
+<td>摘要：two architecturally distinct backbones</td>
+</tr>
+<tr>
+<td>评估限于 frozen linear probing</td>
+<td>微调场景下转换收益可能消失或反转</td>
+<td>实际应用中微调更常见</td>
+<td>在相同任务上比较微调 vs frozen</td>
+<td>摘要：evaluate with frozen linear probing</td>
+</tr>
+<tr>
+<td>对比学习对短程任务无稳定收益</td>
+<td>可能是 crop 策略不适合短序列，而非对比学习本身无效</td>
+<td>若任务以局部 motif 为主，位置不变性可能有害</td>
+<td>对不同任务调整 crop 大小做消融</td>
+<td>摘要：results depend on backbone and tokenisation</td>
+</tr>
+<tr>
+<td>mutagenesis 结构分析不预测下游性能</td>
+<td>表示结构指标与任务性能脱节，诊断工具价值有限</td>
+<td>若结构分析不能指导选择，其实用性存疑</td>
+<td>开发可预测下游性能的结构指标</td>
+<td>摘要：neither predicts the best downstream view</td>
+</tr>
+<tr>
+<td>未与 SOTA 微调模型对比</td>
+<td>提升可能仅相对原始 decoder 显著，不具竞争力</td>
+<td>实际部署需与最优方法比较</td>
+<td>在相同基准上对比微调 SOTA</td>
+<td>摘要：未提供此类对比</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>14 Agent 提炼的知识候选</h2>
+<p><strong>Agent 提炼的知识候选</strong>（面向三维基因组/染色质组织 × AI/分子模拟）：</p>
+<ol>
+<li>
+<p><strong>Decoder→Encoder 转换策略可迁移至三维基因组任务</strong>：若三维基因组预测模型（如基于序列的 EPI/Hi-C 预测器）使用 decoder 骨干，可借鉴本文三阶段转换（双向 attention + MNTP + 对比学习）获得双向上下文表示。迁移路径：将 EPI 任务替换为 Hi-C 接触预测或 TAD 边界识别。</p>
+</li>
+<li>
+<p><strong>Crop-based 对比学习适用于长程调控任务</strong>：三维基因组中增强子-启动子互作本质是长程（可达 Mb 级），crop 策略可编码「位置不变性」——即互作不依赖绝对基因组坐标。可迁移至：从序列预测 Hi-C 环时，对不同基因组窗口的 crop 构造正样本对。</p>
+</li>
+<li>
+<p><strong>Reverse-complement 对比学习编码链不变性</strong>：三维基因组结构（如环、TAD）不依赖 DNA 链方向，链不变表示可提升跨链泛化。可迁移至：Hi-C 数据增强时利用 reverse-complement 对称性。</p>
+</li>
+<li>
+<p><strong>任务条件化评估框架</strong>：本文的「按任务族分层评估」设计可迁移至三维基因组领域——不同结构任务（环、TAD、compartment）对上下文需求不同，应分别评估而非聚合。</p>
+</li>
+<li>
+<p><strong>Frozen linear probing 作为表示质量评估协议</strong>：在三维基因组领域，可用 frozen 表示 + 线性头快速评估预训练模型质量，避免微调成本。</p>
+</li>
+<li>
+<p><strong>Mutagenesis 诊断方法</strong>：碱基突变扫描可揭示模型是否学习到 motif 感知结构，可迁移至三维基因组模型的可解释性分析（如 CTCF motif 对环预测的贡献）。</p>
+</li>
+</ol>
+<hr />
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>LLM2Vec（NLP）</strong>：本文直接继承 LLM2Vec 的 decoder-to-encoder 转换思想，但针对 DNA 特性（链、位置）扩展了对比学习视图。可连接至：BehnamGhader et al., "LLM2Vec: Large Language Models Are Secretly Powerful Text Encoders"（2024）。</li>
+<li><strong>DNA foundation models</strong>：DNAGPT（GPT 风格 DNA 模型）与 HyenaDNA（长序列 Hyena 架构）为本文骨干，可连接至：Zhou et al. (2023) DNAGPT；Nguyen et al. (2024) HyenaDNA。</li>
+<li><strong>Nucleotide Transformer</strong>：作为双向 encoder 基线，可连接至：Dalla-Torre et al. (2023)。</li>
+<li><strong>Enhancer-Promoter Interaction 预测</strong>：EPI 是三维基因组功能读出，可连接至：Zeng et al. (2023) EPI 预测方法；以及 3D-Genome 领域 Hi-C 衍生任务。</li>
+<li><strong>对比学习在基因组学</strong>：可连接至：Enformer（Avsec et al., 2021）的序列-表达建模，以及 ChromBERT 等基因组对比学习方法。</li>
+<li><strong>[Analysis] 候选方向</strong>：本文的 crop-based 对比学习与 Hi-C 的「距离-尺度」特性有潜在联系——Hi-C 接触频率随基因组距离衰减，crop 策略可能需按距离分层设计，此为未在本文中探索的迁移方向。</li>
+</ul>
+<hr />
+<h2>16 Agent 生成的研究候选</h2>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>来源局限/观察</th>
+<th>核心假设</th>
+<th>相对本文的增量</th>
+<th>初步方法</th>
+<th>验证方式</th>
+<th>可能的失败模式</th>
+<th>创新状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>HiC-LLM2Vec：面向 Hi-C 接触预测的双向上下文适配</strong></td>
+<td>本文仅评估序列分类与 eQTL，未涉及三维结构预测</td>
+<td>将 DNA-LLM2Vec 转换策略应用于 Hi-C 接触预测，可提升长程接触（&gt;1Mb）预测精度</td>
+<td>将转换框架从功能预测扩展到结构预测任务</td>
+<td>在 DNAGPT/HyenaDNA 上应用三阶段转换，以 Hi-C 接触图为监督信号做 linear probing</td>
+<td>与原始 decoder 及 Enformer 在 GM12878 等细胞系上比较 AUROC/AP</td>
+<td>Hi-C 信号受多种因素影响，双向上下文增益被噪声淹没</td>
+<td>unverified</td>
+</tr>
+<tr>
+<td><strong>Distance-Aware Crop 对比学习</strong></td>
+<td>本文 crop 策略未考虑基因组距离尺度</td>
+<td>按基因组距离分层设计 crop 大小，可更好编码 Hi-C 的距离-尺度特性</td>
+<td>将对比学习从「位置不变」扩展到「尺度感知」</td>
+<td>对不同距离区间（&lt;100kb, 100kb-1Mb, &gt;1Mb）使用不同 crop 大小训练</td>
+<td>在 EPI 与 Hi-C 环预测上比较分层 vs 统一 crop</td>
+<td>距离分层引入额外超参数，过拟合风险</td>
+<td>unverified</td>
+</tr>
+<tr>
+<td><strong>Strand-Consistent 3D 结构编码</strong></td>
+<td>本文 reverse-complement 对比学习产生链一致几何，但未用于结构任务</td>
+<td>链一致表示可提升 3D 结构预测（如 TAD 边界）的跨链泛化</td>
+<td>将链不变性从序列表示扩展到结构预测</td>
+<td>在 TAD 边界预测任务上比较有/无 reverse-complement 对比学习的表示</td>
+<td>跨染色体交叉验证 TAD 边界 F1</td>
+<td>TAD 边界可能本身具有链偏好（如 CTCF 方向性），链不变性有害</td>
+<td>unverified</td>
+</tr>
+<tr>
+<td><strong>Mutagenesis-Guided 视图选择</strong></td>
+<td>本文发现结构分析不预测下游最优视图</td>
+<td>可设计「任务特定突变敏感性」指标来指导视图选择</td>
+<td>将诊断从「事后分析」转为「事前选择」</td>
+<td>对候选视图做碱基突变扫描，选择对任务关键 motif 最敏感的视图</td>
+<td>在多个任务族上比较「突变引导选择」vs 默认视图</td>
+<td>突变敏感性指标与任务性能相关性弱</td>
+<td>unverified</td>
+</tr>
+<tr>
+<td><strong>多骨干架构感知适配</strong></td>
+<td>本文仅两个骨干，结论可能架构依赖</td>
+<td>不同架构（attention vs 卷积 vs 状态空间）需要不同转换策略</td>
+<td>建立「架构-转换策略」匹配图谱</td>
+<td>在 4-6 种 decoder DNA 模型上系统比较转换策略</td>
+<td>跨骨干比较任务性能与转换收益</td>
+<td>架构差异过大，无法归纳统一规律</td>
+<td>unverified</td>
+</tr>
+<tr>
+<td><strong>Frozen 表示 + 3D 结构微调</strong></td>
+<td>本文仅 frozen linear probing，未探索下游微调</td>
+<td>转换后的 frozen 表示可作为 3D 结构预测模型的初始化，优于随机初始化</td>
+<td>将表示学习与结构预测解耦</td>
+<td>用 DNA-LLM2Vec 表示初始化 Hi-C 预测头，微调后比较</td>
+<td>与随机初始化及原始 decoder 初始化比较</td>
+<td>微调破坏转换后的表示结构</td>
+<td>unverified</td>
+</tr>
+</tbody>
+</table></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Abstract only</li>
+<li><strong>Assessment boundary</strong> Claims and evidence as presented in the abstract; no figures, tables, methods, or supplementary materials were provided</li>
+<li><strong>Shared manuscript claim summary</strong> The authors propose DNA-LLM2Vec, a staged decoder-to-encoder adaptation framework for DNA foundation models, which introduces bidirectional context, masked next-token prediction (MNTP), and contrastive views encoding strand and positional invariance. They instantiate it on DNAGPT and HyenaDNA, evaluate seven biological task families with frozen linear probing, and report architecture-aware and task-conditioned benefits, including improved enhancer-promoter interaction and Virus-COVID performance, improved causal-eQTL variant-effect prediction at distance, and motif-aware contact structure with strand-consistent geometry.</li>
+<li><strong>Visible evidence base</strong> Abstract text only; no quantitative results beyond two MCC values (27.5% for DNAGPT, 26.7% for HyenaDNA), no baselines, no statistical significance, no method details, no figure or table references</li>
+<li><strong>Missing materials affecting confidence</strong> Full manuscript, methods section, all figures and tables, baseline comparisons, hyperparameter details, dataset splits, evaluation protocols, code verification, and any supplementary information</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li><strong>Overall assessment</strong> The abstract presents a potentially interesting and timely contribution to the adaptation of decoder DNA foundation models for bidirectional genomic tasks. The core idea of staged conversion with task-conditioned benefits is plausible and aligns with current trends in genomic representation learning. However, the abstract alone provides insufficient evidence to evaluate the technical soundness, the magnitude of improvements, or the generalizability of the claims. The reported results are sparse, lack baseline context, and do not include statistical validation. The claim that benefits are "architecture-aware and task-conditioned" is intriguing but not substantiated with comparative data. The manuscript may have merit, but the case is not established from the supplied material.</li>
+<li><strong>Who would be interested in the results, and why</strong> Computational biologists and machine learning researchers working on genomic foundation models, particularly those interested in adapting large language model architectures for regulatory genomics, variant effect prediction, and sequence-to-function tasks. The work could also interest researchers developing bidirectional encoders for long-context biological sequences and those studying the trade-offs between decoder and encoder pretraining paradigms.</li>
+<li><strong>Major strengths</strong> The conceptual framing is clear and addresses a recognized limitation of decoder-only models for genomic tasks requiring bidirectional context. The staged adaptation approach (opening bidirectional context, repairing with MNTP, then contrastive views) is methodologically coherent. The choice of two architecturally distinct backbones (DNAGPT and HyenaDNA) strengthens the claim of architecture-awareness. The inclusion of causal-eQTL variant-effect prediction and base-pair mutagenesis diagnostics suggests a broader evaluation beyond classification benchmarks.</li>
+<li><strong>Major Concerns</strong></li>
+<li><strong>Concern ID</strong> R1-M1</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Evidence sufficiency</li>
+<li><strong>Claim pointer</strong> The abstract claims that DNA-LLM2Vec "raises frozen Avg-EPI MCC to 27.5% for DNAGPT and 26.7% for HyenaDNA" for extended-context families.</li>
+<li><strong>Evidence pointer</strong> Abstract only; no figure or table reference provided</li>
+<li><strong>Concern</strong> The reported MCC values are presented without any baseline comparison. It is unclear what the MCC was before adaptation, what the performance of the original decoder models was, or what the performance of existing bidirectional encoders is on the same tasks. Without baselines, the magnitude of improvement cannot be assessed.</li>
+<li><strong>Why it matters</strong> The central claim of the paper is that conversion improves performance. Without a baseline, the reader cannot determine whether the reported values represent a meaningful advance or are within the range of existing methods. This undermines the scientific contribution.</li>
+<li><strong>Resolution test</strong> Provide baseline MCC values for the unadapted decoder models, for standard bidirectional encoders (e.g., DNABERT, Nucleotide Transformer), and ideally for a simple linear probe on one-hot encoded sequences, all on identical task splits and evaluation protocols.</li>
+<li><strong>Concern ID</strong> R1-M2</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Technical soundness</li>
+<li><strong>Claim pointer</strong> The abstract claims that "crop-based positional contrastive learning helps most for the extended-context families" and that "the results depend on backbone and tokenisation" for shorter local families.</li>
+<li><strong>Evidence pointer</strong> Abstract only; no method details or results tables provided</li>
+<li><strong>Concern</strong> The abstract does not specify what "crop-based positional contrastive learning" entails, how the contrastive views are constructed, what the loss function is, or how the "best downstream view" is selected. The claim that the best view "depends on the task structure and the backbone" is presented without any supporting data or analysis.</li>
+<li><strong>Why it matters</strong> The method's novelty and utility hinge on the design of the contrastive views and the selection mechanism. Without details, the approach cannot be reproduced or evaluated, and the claim of task-conditioned benefits remains unverifiable.</li>
+<li><strong>Resolution test</strong> Provide a full method description including the contrastive loss formulation, the construction of strand and positional views, the selection criterion for the best view, and a table showing performance across all task families for each backbone and each view configuration.</li>
+<li><strong>Concern ID</strong> R1-M3</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Claim support</li>
+<li><strong>Claim pointer</strong> The abstract claims that "bidirectional context and MNTP improve causal-eQTL variant-effect prediction specifically at distance" and that "a base-pair mutagenesis diagnostic shows that adaptation organises motif-aware contact structure while reverse-complement training imprints strand-consistent geometry."</li>
+<li><strong>Evidence pointer</strong> Abstract only; no results or figures referenced</li>
+<li><strong>Concern</strong> These are two distinct and potentially significant claims, but no quantitative results are provided for either. The eQTL claim lacks effect sizes, distance thresholds, or comparisons to the unadapted model. The mutagenesis diagnostic claims are qualitative and not supported by any displayed data.</li>
+<li><strong>Why it matters</strong> These claims extend the paper's contribution beyond classification benchmarks and suggest mechanistic insights. Without evidence, they read as speculation rather than findings, which weakens the overall credibility of the manuscript.</li>
+<li><strong>Resolution test</strong> Provide quantitative results for eQTL prediction (e.g., AUROC or correlation) stratified by distance from the variant, with and without adaptation. For the mutagenesis diagnostic, show representative contact maps or motif enrichment analyses that demonstrate the claimed organization and strand consistency.</li>
+<li><strong>Minor Comments</strong></li>
+<li><strong>Concern ID</strong> R1-m1</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Clarity</li>
+<li><strong>Affected element</strong> Terminology</li>
+<li><strong>Evidence pointer</strong> Abstract, first sentence</li>
+<li><strong>Issue</strong> The phrase "representations are directional" is used without definition. It is unclear whether this refers to the autoregressive nature of the model, the orientation of the sequence, or something else.</li>
+<li><strong>Required correction</strong> Define "directional" in the context of decoder representations, ideally with a one-sentence explanation of why this is a limitation for genomic tasks.</li>
+<li><strong>Concern ID</strong> R1-m2</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Reproducibility</li>
+<li><strong>Affected element</strong> Evaluation protocol</li>
+<li><strong>Evidence pointer</strong> Abstract, "frozen linear probing"</li>
+<li><strong>Issue</strong> The abstract states that evaluation uses "frozen linear probing" but does not specify whether the probe is trained on the full training set, what the train-validation-test split is, or whether results are averaged over multiple seeds.</li>
+<li><strong>Required correction</strong> Specify the evaluation protocol in the abstract or methods, including the number of seeds and the variance of the reported metrics.</li>
+<li><strong>Concern ID</strong> R1-m3</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Completeness</li>
+<li><strong>Affected element</strong> Benchmark coverage</li>
+<li><strong>Evidence pointer</strong> Abstract, "seven biological task families (grouped from GB, NT, GUE, and GUE+EPI)"</li>
+<li><strong>Issue</strong> The abstract lists the source benchmarks but does not name the seven task families. This makes it difficult to assess the breadth of the evaluation.</li>
+<li><strong>Required correction</strong> List the seven task families explicitly in the abstract or provide a table in the main text.</li>
+<li><strong>Technical failings that need to be addressed before the case is established</strong> R1-M1 (missing baselines), R1-M2 (insufficient method detail), R1-M3 (unsupported mechanistic claims). These are blocking because the core claims of improvement and task-conditioned benefit cannot be evaluated from the abstract alone.</li>
+<li><strong>Assessment against Nature-style criteria</strong> Originality: The staged decoder-to-encoder adaptation with contrastive views is a novel combination, though individual components (bidirectional adaptation, contrastive learning) exist in the literature. Scientific importance: Potentially high, as it addresses a practical limitation of decoder DNA models, but the importance is not yet demonstrated without baseline comparisons. Interdisciplinary readership: The work bridges machine learning and genomics, and the framing is accessible, but the abstract assumes familiarity with both fields. Technical soundness: Cannot be assessed from the abstract; the method description is too sparse. Readability for nonspecialists: The abstract is dense and uses field-specific jargon (e.g., "MNTP," "Avg-EPI MCC") without explanation, which limits accessibility.</li>
+<li><strong>Recommendation posture</strong> Currently not established from the provided evidence. The conceptual contribution is promising, but the abstract does not provide sufficient quantitative or methodological detail to support the claims. A full manuscript with baselines, method details, and statistical validation would be required to assess the work fairly.</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>The claim that DNA-LLM2Vec "raises frozen Avg-EPI MCC to 27.5% for DNAGPT and 26.7% for HyenaDNA" is unsupported without baseline values.</li>
+<li>The claim that benefits are "architecture-aware and task-conditioned rather than uniform" is unsupported without a full results table across all task families and backbones.</li>
+<li>The claim that "bidirectional context and MNTP improve causal-eQTL variant-effect prediction specifically at distance" is unsupported without quantitative results.</li>
+<li>The claim that "adaptation organises motif-aware contact structure while reverse-complement training imprints strand-consistent geometry" is unsupported without displayed data.</li>
+<li>The claim that "neither predicts the best downstream view" is unsupported without a systematic comparison of view selection.</li>
+<li>The overall generalizability of the approach to other decoder DNA foundation models is not assessable from the abstract.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

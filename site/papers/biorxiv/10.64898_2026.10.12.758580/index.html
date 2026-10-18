@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A high-resolution protein-RNA binding atlas for structure-aware interaction prediction and post-transcriptional regulatory modeling · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-low">4</span>
+    <div>
+      <h1>A high-resolution protein-RNA binding atlas for structure-aware interaction prediction and post-transcriptional regulatory modeling</h1>
+      <div class="meta">Karimzadeh M; Fish L; Karner H; Linder J; Emadi A; Hernandez-Corchado A; Smaili FZ; Stewart EM; Kelley DR; Wang B; Najafabadi HS; Leonetti M; Goodarzi H</div>
+      <div class="meta muted">
+        
+        <span class="journal">bioRxiv</span> <span class="preprint-badge">预印本</span>
+        · 2026-10-13
+         · 全文(europepmc)
+         · <a href="https://www.biorxiv.org/content/10.64898/2026.10.12.758580">原文</a>
+      </div>
+      <p class="one-liner">该文构建RNA结合蛋白高分辨率结合图谱并开发结构感知神经网络Pythia预测RBP-RNA互作，虽涉及RNA结构建模与调控，但对象为RNA-蛋白互作而非染色质三维组织，方法可迁移性有限。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">RNA-binding proteins (RBPs) control post-transcriptional gene expression by regulating RNA processing, localization, stability, and translation. However, our understanding of RNA regulation remains limited by the resolution, scale, and uniformity of available RBP binding maps. Here we introduce eclair CLIP (ecCLIP), a high-throughput CLIP-seq platform that combines endogenous protein tagging for uniform affinity capture with ligation-free library preparation to generate high-resolution RNA-protein binding profiles. We applied ecCLIP to 67 endogenously tagged RBPs in HEK293T cells, generating a high-quality transcriptome-scale atlas that recovered known binding preferences and captured post-transcriptional regulons linked to RNA half-life. To test the utility of the atlas, we incorporated ecCLIP into Borzuki, a Borzoi-derived sequence-to-function model trained on complementary RNA degradation, expression, CLIP, and Perturb-seq data. Inclusion of ecCLIP data improved RNA half-life prediction and assessment of 3′ UTR variant effects on RNA stability, demonstrating that our atlas helps capture RNA dynamics. To directly model the cis-regulatory grammar underlying these RBP-RNA interactions, we developed Pythia, a structure-aware neural network architecture that incorporates context-free grammar-inspired fixed convolutions to explicitly encode RNA base-pairing features. Pythia predicted RBP binding from sequence and structural context and decomposed predictions into sequence- and structure-dependent components. We tested this decomposition for five RBPs using massively parallel reporter CLIP (MPRC) binding assays in cells, using synthetic RNA libraries containing mutations designed to preserve or disrupt predicted RNA structures across nominated binding sites. We used the same MPRC strategy to confirm allele-specific binding effects for variants prioritized by Pythia. Together, ecCLIP and Pythia provide a resource for structure-aware decoding of RNA-protein interaction grammar and interpretation of post-transcriptional regulatory variation.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">RNA结合蛋白（RBPs）通过调控RNA加工、定位、稳定性和翻译来控制转录后基因表达。然而，我们对RNA调控的理解仍受限于现有RBP结合图谱的分辨率、规模及一致性。在此，我们引入eclair CLIP（ecCLIP），一种高通量CLIP-seq平台，该平台结合内源蛋白标记以实现均匀亲和捕获，并采用无连接酶文库制备，从而生成高分辨率的RNA-蛋白质结合谱。我们将ecCLIP应用于HEK293T细胞中的67个内源标记RBPs，生成了一个高质量的转录组规模图谱，该图谱恢复了已知的结合偏好，并捕获了与RNA半衰期相关的转录后调控子。为测试该图谱的实用性，我们将ecCLIP整合到Borzuki中，这是一个源自Borzoi的序列到功能模型，训练于互补的RNA降解、表达、CLIP和Perturb-seq数据。ecCLIP数据的加入改善了RNA半衰期预测及3′ UTR变异对RNA稳定性影响的评估，表明我们的图谱有助于捕获RNA动态。为直接模拟这些RBP-RNA相互作用背后的顺式调控语法，我们开发了Pythia，一种结构感知的神经网络架构，该架构结合了受上下文无关语法启发的固定卷积，以显式编码RNA碱基配对特征。Pythia从序列和结构背景中预测RBP结合，并将预测分解为序列依赖和结构依赖的组分。我们使用大规模并行报告基因CLIP（MPRC）结合实验在细胞中测试了五种RBPs的这种分解，使用包含设计用于在指定结合位点保留或破坏预测RNA结构的突变的合成RNA文库。我们使用相同的MPRC策略确认了由Pythia优先排序的变异体的等位基因特异性结合效应。总之，ecCLIP和Pythia为RNA-蛋白质相互作用语法的结构感知解码及转录后调控变异的解释提供了资源。</div>
+  </section>
+  
+  
+  
+</article>
+</main>
+</body>
+</html>

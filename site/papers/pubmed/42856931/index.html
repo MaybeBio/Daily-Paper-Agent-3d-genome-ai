@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Central Dogma Transformer II: an AI microscope for understanding cellular regulatory mechanisms. · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-low">4</span>
+    <div>
+      <h1>Central Dogma Transformer II: an AI microscope for understanding cellular regulatory mechanisms.</h1>
+      <div class="meta">Ota, Nobuyuki</div>
+      <div class="meta muted">
+        
+        <span class="journal">Bioinformatics advances</span>
+        · 2026-10-11
+         · 全文(pmc)
+         · <a href="https://pubmed.ncbi.nlm.nih.gov/42856931/">原文</a>
+      </div>
+      <p class="one-liner">该文提出镜像中心法则的Transformer模型，通过DNA/RNA自注意力和交叉注意力预测基因调控网络并识别调控元件，但对象是基因表达调控而非染色质三维空间组织，且未涉及染色质折叠或空间构象建模，方法虽为AI但与本课题三维基因组建模关联较弱。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">MOTIVATION: Interpretability is not optional in biology: understanding gene regulation requires models whose learned structure can be directly interrogated, not merely accurate predictors whose internals resist mapping onto regulatory relationships. We ask whether an architecture mirroring the central dogma yields attention and gradient maps that recover known regulatory elements and networks in inspectable form. RESULTS: Central Dogma Transformer II (CDT-II) mirrors the central dogma in its architecture-DNA self-attention, RNA self-attention, and DNA-to-RNA cross-attention-requiring only genomic embeddings and raw per-cell expression. On K562 CRISPR interference (CRISPRi) data with five genes held out entirely, CDT-II predicts perturbation effects (per-gene mean r = 0.84 ), recovers the GFI1B regulatory network (6.6-fold enrichment, P = 3.5 x 10-17 ), and concentrates cross-attention on ENCODE regulatory elements including CTCF sites (mean 7.67  x  across 28 target genes, P &lt; .001 ). Gradient attribution predicts consequences of perturbing therapeutic targets (mean r = 0.82 ). For TFRC, target of the anti-TfR1 antibody PPMX-T003, it identifies erythrocyte-structure, iron-dependent DNA-synthesis and oxidative-stress genes, matching anemia and ferroptosis reported clinically and preclinically-without clinical data as input. CDT-II acts as an AI microscope, surfacing clinically relevant regulatory structure from perturbation experiments alone. AVAILABILITY AND IMPLEMENTATION: Source code is available at https://github.com/nobusama/CDT2. Pre-computed embeddings, training data, and model weights are available at https://huggingface.co/datasets/nobusama17/CDT2-data.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">动机：在生物学中，可解释性并非可选：理解基因调控需要模型的学习结构能够被直接探究，而不仅仅是内部难以映射到调控关系的准确预测器。我们探究一种镜像中心法则的架构是否能产生注意力和梯度图，以可检查的形式恢复已知的调控元件和网络。结果：中心法则Transformer II（CDT-II）在其架构中镜像了中心法则——DNA自注意力、RNA自注意力和DNA到RNA交叉注意力——仅需基因组嵌入和原始单细胞表达。在K562 CRISPR干扰（CRISPRi）数据上，完全保留五个基因，CDT-II预测扰动效应（每基因平均r = 0.84），恢复GFI1B调控网络（6.6倍富集，P = 3.5 x 10-17），并将交叉注意力集中在ENCODE调控元件上，包括CTCF位点（28个目标基因平均7.67倍，P &lt; .001）。梯度归因预测扰动治疗靶点的后果（平均r = 0.82）。对于TFRC，即抗TfR1抗体PPMX-T003的靶点，它识别出红细胞结构、铁依赖性DNA合成和氧化应激基因，与临床和临床前报道的贫血和铁死亡相符——无需临床数据作为输入。CDT-II充当AI显微镜，仅从扰动实验中揭示临床相关的调控结构。可用性和实现：源代码可在https://github.com/nobusama/CDT2获取。预计算嵌入、训练数据和模型权重可在https://huggingface.co/datasets/nobusama17/CDT2-data获取。</div>
+  </section>
+  
+  
+  
+</article>
+</main>
+</body>
+</html>

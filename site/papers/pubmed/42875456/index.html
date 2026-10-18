@@ -1,0 +1,742 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Molecular dynamics guided all-atom reconstruction of cryo-ET maps reveals mechanisms of histone tail mediated chromatin compaction. · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-high">8</span>
+    <div>
+      <h1>Molecular dynamics guided all-atom reconstruction of cryo-ET maps reveals mechanisms of histone tail mediated chromatin compaction.</h1>
+      <div class="meta">Li, Shuxiang; Aristizabal, Maria J; Grigoryev, Sergei A; Panchenko, Anna R</div>
+      <div class="meta muted">
+        
+        <span class="journal">Nature communications</span>
+        · 2026-10-15
+         · 全文(pmc)
+         · <a href="https://pubmed.ncbi.nlm.nih.gov/42875456/">原文</a>
+      </div>
+      <p class="one-liner">该文结合全原子分子动力学模拟与冷冻电镜断层扫描，构建三核小体模型揭示组蛋白尾介导的染色质压缩机制，属于染色质三维组织与分子模拟交叉的高质量建模研究。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">Dynamics and physical state of chromatin are crucial in regulating gene expression, DNA replication, and repair. Intrinsically disordered histone tails were previously recognized as key modulators of chromatin states. However, detailed atomistic mechanisms by which histone tail dynamics are associated with chromatin compaction and higher-order chromatin organization remain poorly understood. In this work, we combine extensive all-atom molecular dynamics simulations of tri-nucleosomes with varying linker lengths and cryo-electron tomography (cryo-ET) of native nucleosome arrays. Our approach offers distinct advantages as it elucidates realistic inter-nucleosomal interactions and tri-nucleosome orientations derived from physics-based MD simulations, enabling a more accurate and physically grounded interpretation of cryo-ET data. The results reveal that tri-nucleosome models can be successfully used for fitting and the near-atomistic interpretation of cryo-ET density maps of native human chromatin. Moreover, histone tails were shown to promote chromatin compaction via three major patterns: through histone-DNA interactions, histone H2A-H4 and H3-H4 tail-tail interactions. Notably, the distributions of MD-generated structural parameters of tri-nucleosomes were found to be in strong agreement with those of experimental condensed chromatin arrays.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">染色质的动力学和物理状态在调控基因表达、DNA复制及修复中至关重要。先前研究已识别出内在无序的组蛋白尾部是染色质状态的关键调节因子。然而，组蛋白尾部动力学与染色质压缩及高阶染色质组织相关联的详细原子机制仍知之甚少。在本工作中，我们结合了具有不同连接长度的三核小体的广泛全原子分子动力学 (molecular dynamics) 模拟以及天然核小体阵列的冷冻电子断层扫描 (cryo-electron tomography, cryo-ET)。我们的方法具有显著优势，因为它阐明了基于物理的MD模拟得出的真实核小体间相互作用及三核小体取向，从而能够对cryo-ET数据进行更准确且物理基础更扎实的解释。结果表明，三核小体模型可成功用于拟合天然人类染色质cryo-ET密度图，并实现近原子级解释。此外，组蛋白尾部被证明通过三种主要模式促进染色质压缩：通过组蛋白-DNA相互作用、组蛋白H2A-H4和H3-H4尾部-尾部相互作用。值得注意的是，MD生成的三核小体结构参数分布与实验性浓缩染色质阵列的分布高度一致。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：Molecular dynamics guided all-atom reconstruction of cryo-ET maps reveals mechanisms of histone tail mediated chromatin compaction</li>
+<li><strong>作者与单位</strong>：Li, Shuxiang; Aristizabal, Maria J; Grigoryev, Sergei A; Panchenko, Anna R（Queen's University, Canada 等）</li>
+<li><strong>期刊/预印本平台</strong>：Nature Communications</li>
+<li><strong>年份</strong>：2026-10-15</li>
+<li><strong>论文类型</strong>：研究论文（Research Article）</li>
+<li><strong>领域</strong>：三维基因组 / 染色质组织 × 分子模拟（all-atom MD）× 冷冻电子断层扫描（cryo-ET）</li>
+<li><strong>关键词</strong>：chromatin compaction, histone tails, molecular dynamics, cryo-ET, tri-nucleosome, all-atom reconstruction</li>
+<li><strong>DOI/arXiv 号</strong>：10.1038/s41467-026-77871-9</li>
+<li><strong>代码</strong>：未提供</li>
+<li><strong>数据</strong>：cryo-ET 原始倾斜序列来自 Dryad 数据仓库（https://doi.org/10.5061/dryad.ttdz08m21）；拟合构象库见补充材料</li>
+<li><strong>阅读日期</strong>：未提供</li>
+<li><strong>在该方向中的位置</strong>：本文处于「三维基因组/染色质组织 × 物理模拟（all-atom MD）× 冷冻电镜断层成像」交叉点，提出以 MD 采样的三核小体构象作为整体单元拟合 cryo-ET 密度图，替代传统单核小体刚性拟合，属于「物理模拟引导的 cryo-ET 结构解释」路线，与纯 AI 重建方法形成互补。</li>
+</ul>
+<h2>02 一句话总结</h2>
+<p>本文用全原子分子动力学（MD）模拟不同 linker 长度的三核小体，将其构象整体刚性拟合进人源染色质 cryo-ET 密度图，发现组蛋白尾部通过 tail–tail 与 tail–DNA 互作驱动核小体间压实，且 MD 生成的核小体间距/二面角分布与实验冷凝染色质阵列一致。</p>
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：组蛋白尾部（intrinsically disordered）如何通过原子级互作驱动染色质纤维的压实与高阶折叠？如何从 cryo-ET 密度图中重建出物理上可信的、含尾部原子细节的染色质结构？</li>
+<li><strong>为什么重要</strong>：染色质动态折叠直接调控基因表达、复制与修复；组蛋白尾部是翻译后修饰（如 H3K9me）的主要载体，其互作机制是表观遗传调控的结构基础。传统 cryo-ET 解释只能定位核小体盘，无法解析尾部原子级互作。</li>
+<li><strong>现有方法不足</strong>：</li>
+<li>单核小体刚性拟合：忽略 linker DNA 的扭转约束与核小体间相对取向，在致密区易产生歧义或错误连接；</li>
+<li>传统建模用直线 linker 连接核小体，忽略 DNA 扭转力学；</li>
+<li>组蛋白尾部在 cryo-ET 密度中不可见，常规建模直接省略。</li>
+<li><strong>精确研究问题（Can ... ?）</strong>：Can all-atom MD 采样的三核小体构象作为整体拟合单元，在 cryo-ET 密度图中产生比单核小体拟合更准确、且能揭示组蛋白尾部介导压实机制的原子级染色质结构？</li>
+</ul>
+<h2>04 背景与发展脉络</h2>
+<blockquote>
+<p>注：此脉络为「经外部核验」——基于文中引用与领域常识，但具体分期表述为本文框架。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>代表性方法</th>
+<th>优点</th>
+<th>局限</th>
+<th>本文位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>早期晶体/单颗粒</td>
+<td>核小体核心颗粒 X 射线晶体（如 PDB:1KX5）</td>
+<td>高分辨率原子结构</td>
+<td>静态、无 linker、无尾部构象</td>
+<td>提供核小体核心模板</td>
+</tr>
+<tr>
+<td>冷冻电镜/断层成像</td>
+<td>cryo-ET 单核小体刚性拟合（如 ref. 12 的 mono-nucleosome fitting）</td>
+<td>保留天然染色质环境</td>
+<td>忽略 linker 扭转、核小体间取向任意、尾部缺失</td>
+<td>本文的直接改进对象</td>
+</tr>
+<tr>
+<td>聚合物/粗粒化模拟</td>
+<td>CG 染色质纤维模型（如 ref. 59 的 linker 长度依赖折叠）</td>
+<td>可采样大尺度构象</td>
+<td>缺乏原子分辨率，无法解析尾部原子互作</td>
+<td>提供 linker 长度依赖折叠的预测，本文用 all-atom 验证</td>
+</tr>
+<tr>
+<td>全原子 MD</td>
+<td>单核小体/单核小体+linker 的 all-atom MD（如 ref. 25）</td>
+<td>原子级互作细节</td>
+<td>体系小、无法覆盖阵列级折叠</td>
+<td>本文扩展至三核小体并连接 cryo-ET</td>
+</tr>
+<tr>
+<td>本文</td>
+<td>all-atom MD 三核小体 + cryo-ET 整体拟合</td>
+<td>原子级 + 实验约束 + 尾部互作机制</td>
+<td>计算成本高、构象采样有限</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>单核小体拟合歧义</td>
+<td>在致密染色质区，多个单核小体可被错误拟合进同一高密度区，核小体连接路径任意</td>
+<td>单核小体拟合不考虑核小体间相对取向与 linker 连接约束</td>
+<td>Results 节、Fig. 1a–b 及正文描述</td>
+</tr>
+<tr>
+<td>linker DNA 被忽略</td>
+<td>传统模型用直线连接核小体，忽略 DNA 扭转与弯曲约束</td>
+<td>单核小体模板不含 linker 几何信息</td>
+<td>Results 节、Discussion 节</td>
+</tr>
+<tr>
+<td>组蛋白尾部缺失</td>
+<td>常规 cryo-ET 建模省略尾部，无法解释尾部介导的互作</td>
+<td>尾部在 cryo-ET 密度中不可见，且 PDB 结构中常截断</td>
+<td>Results 节、Methods 节（H3 尾部线性延伸）</td>
+</tr>
+<tr>
+<td>尾部构象采样不足</td>
+<td>尾部是 intrinsically disordered，单次结构无法代表其构象 ensemble</td>
+<td>计算成本限制 all-atom 采样</td>
+<td>Discussion 节（承认采样限制）</td>
+</tr>
+<tr>
+<td>实验与模拟尺度不匹配</td>
+<td>单核小体 MD 无法覆盖阵列级折叠行为</td>
+<td>体系大小限制</td>
+<td>Discussion 节（提出 CG 作为互补）</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<ol>
+<li>
+<p><strong>表面方法</strong>：构建四种三核小体体系（有/无尾部 × 22 bp linker，另有 26 bp 与 31 bp linker 的带尾部体系），各跑 3 次独立 4 µs 全原子 MD；从 MD 轨迹中均匀抽取构象，用 ChimeraX fitmap 将整个三核小体（含尾部与 linker）刚性拟合进 cryo-ET 密度图；同时将 MD 生成的核小体间距/二面角分布与实验 cryo-ET 中测得的分布直接对比。</p>
+</li>
+<li>
+<p><strong>核心洞察</strong>：三核小体是「最小可折叠单元」——它同时包含核小体间相对取向、linker DNA 扭转约束和尾部互作三种关键信息，因此作为整体拟合单元能天然消除单核小体拟合的歧义，且 MD 采样的构象多样性可覆盖 cryo-ET 中观察到的异质性。尾部缺失体系（NUC_notail）拟合开放染色质好，带尾部体系（NUC_tail）拟合致密染色质好，说明尾部是压实的直接驱动力。</p>
+</li>
+<li>
+<p><strong>可能的普适教训 [Analysis]</strong>：将「模拟生成的构象 ensemble」而非「单一静态结构」作为实验数据解释的先验，是连接分子模拟与冷冻电镜断层成像的通用策略。该方法不依赖 AI 训练数据，物理约束天然嵌入，可迁移至其他柔性生物大分子复合物的 cryo-ET 解释。</p>
+</li>
+</ol>
+<h2>07 方法总览</h2>
+<ul>
+<li><strong>输入</strong>：</li>
+<li>三核小体初始结构：基于 cryo-EM 结构 PDB 6L4A（22 bp linker），替换为 TP53 基因序列（485 bp），H3 尾部线性延伸，无尾部体系截断尾部</li>
+<li>cryo-ET 密度图：人 K562 细胞染色质，0 mM Mg²⁺（开放，7 张图）与 0.75 mM Mg²⁺（致密，13 张图），来自 ref. 12</li>
+<li><strong>输出</strong>：</li>
+<li>拟合进 cryo-ET 图的三核小体原子模型（含尾部与 linker）</li>
+<li>MD 构象的核小体间距/二面角分布 vs 实验分布对比</li>
+<li>尾部互作模式（tail–tail、tail–DNA）的原子级描述</li>
+<li><strong>模块</strong>：
+  1. 三核小体建模（PDB 6L4A 模板 + w3DNA 序列替换 + linker 延长）
+  2. 全原子 MD（AMBER 14SB + OL15 + OPC 水模型，150 mM NaCl，300 K，4 µs × 3 重复）
+  3. cryo-ET 拟合（ChimeraX fitmap，刚性整体拟合，200 帧/run 均匀抽样）
+  4. 结构分析（接触分析、MM/GBSA 结合自由能、Rg 分布、自由能景观）</li>
+<li><strong>文字流程</strong>：构建三核小体 → MD 采样构象 ensemble → 从轨迹中抽帧 → 整体刚性拟合进 cryo-ET 密度图 → 评估拟合优度（相关系数、inside-contour）→ 对比 MD 与实验的结构参数分布 → 分析尾部互作模式与自由能景观 → 得出尾部介导压实机制。</li>
+</ul>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>三核小体建模</td>
+<td>构建含不同 linker 长度与尾部状态的初始结构</td>
+<td>三核小体是最小折叠单元，需覆盖 linker 长度变异</td>
+<td>输入：PDB 6L4A、TP53 序列；输出：4 种体系初始结构</td>
+<td>Methods 节、Fig. S24–S25</td>
+<td>无此模块则无法进行 MD</td>
+</tr>
+<tr>
+<td>全原子 MD</td>
+<td>采样物理可行的三核小体构象 ensemble</td>
+<td>提供 cryo-ET 拟合的构象库，同时揭示尾部互作动态</td>
+<td>输入：初始结构；输出：4 µs 轨迹 × 3 重复</td>
+<td>Methods 节、Table S2–S3</td>
+<td>无 MD 则回到单核小体拟合，无法解决歧义</td>
+</tr>
+<tr>
+<td>cryo-ET 整体拟合</td>
+<td>将 MD 构象刚性拟合进实验密度图</td>
+<td>将模拟 ensemble 与实验数据对接，获得实验约束的原子模型</td>
+<td>输入：MD 帧 + cryo-ET 图；输出：拟合模型 + 相关系数</td>
+<td>Results 节、Fig. 1c–d、Fig. S5–S9</td>
+<td>无拟合则 MD 结果无法与实验直接关联</td>
+</tr>
+<tr>
+<td>结构参数对比</td>
+<td>比较 MD 与实验的核小体间距/二面角分布</td>
+<td>验证 MD 构象是否重现实验染色质特征</td>
+<td>输入：MD 轨迹 + 实验测量值；输出：分布对比图</td>
+<td>Results 节、Fig. 2</td>
+<td>无对比则无法验证 MD 的预测能力</td>
+</tr>
+<tr>
+<td>接触与能量分析</td>
+<td>量化尾部互作模式与结合自由能</td>
+<td>揭示尾部介导压实的原子机制</td>
+<td>输入：MD 轨迹；输出：接触图、MM/GBSA 能量</td>
+<td>Results 节、Fig. 4–5、Table S1</td>
+<td>无此模块则只有结构描述，无机制解释</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式符号</h2>
+<table>
+<thead>
+<tr>
+<th>公式</th>
+<th>符号含义</th>
+<th>用途</th>
+<th>直觉</th>
+<th>来源指针</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>correlation coefficient = ⟨u,v⟩ / (|u||v|)</td>
+<td>u：拟合模型生成的密度图；v：实验 cryo-ET 密度图</td>
+<td>评估拟合优度</td>
+<td>两密度图向量夹角的余弦，值越接近 1 拟合越好</td>
+<td>Methods 节（Fitting 部分）</td>
+</tr>
+<tr>
+<td>inside-contour</td>
+<td>模型原子落在实验密度等值面内的比例</td>
+<td>补充拟合质量指标</td>
+<td>衡量模型原子与实验密度的空间重叠程度</td>
+<td>Methods 节（Fitting 部分）</td>
+</tr>
+<tr>
+<td>Rg（radius of gyration）</td>
+<td>三核小体整体或各核小体的回转半径</td>
+<td>表征体系紧凑程度</td>
+<td>值越小越紧凑</td>
+<td>Results 节、Fig. 3a–c</td>
+</tr>
+<tr>
+<td>自由能景观 F = -k_BT ln P</td>
+<td>P 为构象概率密度</td>
+<td>描述构象能量地形</td>
+<td>概率高的区域能量低</td>
+<td>Results 节、Fig. 3d、Fig. S15</td>
+</tr>
+</tbody>
+</table>
+<h2>10 实验设计与证据链</h2>
+<ul>
+<li><strong>数据集/群体</strong>：</li>
+<li>模拟体系：4 种三核小体（NUC_tail^22、NUC_notail^22、NUC_tail^26、NUC_tail^31），各 3 次独立 4 µs MD</li>
+<li>实验 cryo-ET：人 K562 细胞染色质，0 mM Mg²⁺（开放，7 张图）与 0.75 mM Mg²⁺（致密，13 张图），来自 ref. 12</li>
+<li><strong>规模</strong>：48,000 次拟合操作（600 帧 × 4 体系 × 20 张图）</li>
+<li><strong>指标</strong>：拟合相关系数、inside-contour、核小体间距（D、N 距离）、二面角（β、para 角）、Rg、接触数、MM/GBSA 结合能</li>
+<li><strong>基线</strong>：单核小体（PDB 1KX5）刚性拟合</li>
+<li><strong>骨干/仪器</strong>：GROMACS 2022.3（MD）、ChimeraX 1.7（拟合）、VMD 1.9.3（可视化与分析）</li>
+<li><strong>oracle 输入</strong>：cryo-ET 密度图（实验数据，非模拟生成）</li>
+<li><strong>评测协议</strong>：3 次独立 MD 重复；拟合优度用相关系数与 inside-contour；MD 与实验分布对比用中位数与分布宽度</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的 claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>三核小体 vs 单核小体拟合（开放染色质，0 mM Mg²⁺）</td>
+<td>三核小体拟合优于单核小体</td>
+<td>NUC_notail^22 vs 1KX5 单核小体</td>
+<td>三核小体拟合相关系数显著更高，核小体连接更合理</td>
+<td>三核小体作为整体拟合单元可消除单核小体拟合歧义</td>
+<td>未在所有 cryo-ET 图上测试；未与 AI 方法对比</td>
+<td>Results 节、Fig. 1a–c、Fig. S5–S6</td>
+</tr>
+<tr>
+<td>三核小体 vs 单核小体拟合（致密染色质，0.75 mM Mg²⁺）</td>
+<td>三核小体拟合在致密区同样有效</td>
+<td>NUC_tail^22 vs 1KX5</td>
+<td>三核小体拟合避免多个核小体挤入同一密度区</td>
+<td>三核小体拟合在致密区尤其有价值</td>
+<td>致密区 linker 密度缺失仍可能影响精度</td>
+<td>Results 节、Fig. 1b–d、Fig. S5–S6</td>
+</tr>
+<tr>
+<td>MD 构象 vs 实验 cryo-ET 结构参数分布</td>
+<td>MD 重现实验染色质特征</td>
+<td>NUC_tail^22/26/31 的 D、N 距离、β、para 角 vs 实验测量</td>
+<td>中位数与分布宽度与实验一致</td>
+<td>MD 构象 ensemble 能代表天然染色质构象</td>
+<td>分布比实验窄，存在构象欠采样</td>
+<td>Results 节、Fig. 2</td>
+</tr>
+<tr>
+<td>有尾 vs 无尾体系</td>
+<td>尾部驱动压实</td>
+<td>NUC_tail^22 vs NUC_notail^22</td>
+<td>有尾体系 Rg 更小、间距更近、自由能阱更窄</td>
+<td>尾部通过 tail–tail 与 tail–DNA 互作驱动压实</td>
+<td>未测试尾部修饰（如乙酰化）的影响</td>
+<td>Results 节、Fig. 3</td>
+</tr>
+<tr>
+<td>不同 linker 长度</td>
+<td>linker 长度影响折叠模式</td>
+<td>NUC_tail^22 vs 26 vs 31</td>
+<td>22 bp 更易形成 face-to-face 压实，26 bp 更开放</td>
+<td>linker 长度决定核小体间取向偏好</td>
+<td>仅 3 种长度，未覆盖生理范围</td>
+<td>Results 节、Fig. S12–S13</td>
+</tr>
+<tr>
+<td>尾部互作模式分析</td>
+<td>识别关键互作残基</td>
+<td>NUC_tail^22 中 tail–tail 与 tail–DNA 接触</td>
+<td>H3 K9–H4 D24 盐桥、H3/H4 尾部插入 DNA 小沟</td>
+<td>尾部通过静电互作中和 DNA 电荷促进压实</td>
+<td>未做突变验证</td>
+<td>Results 节、Fig. 4–5</td>
+</tr>
+<tr>
+<td>去噪滤波器稳健性</td>
+<td>拟合结果不依赖去噪方法</td>
+<td>NAD（非线性）vs 高斯（线性）滤波</td>
+<td>三种滤波方法下拟合位置/取向无显著差异</td>
+<td>拟合方法对去噪选择稳健</td>
+<td>仅测试一种 tomogram</td>
+<td>Results 节、Fig. S9</td>
+</tr>
+</tbody>
+</table>
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：本文任务限于三核小体级别的染色质局部结构重建与尾部互作机制解析，不涉及全基因组尺度或核小体阵列以上的高阶折叠。</li>
+<li><strong>oracle/真值输入</strong>：cryo-ET 密度图来自实验（人 K562 细胞），但 MD 构象库的初始结构基于体外重建的三核小体 cryo-EM 结构（PDB 6L4A），序列替换为 TP53 基因序列，并非 K562 内源序列。</li>
+<li><strong>端到端状态</strong>：非端到端。MD 与 cryo-ET 拟合是两个独立步骤，拟合优度评估依赖人工设定的阈值与聚类参数。</li>
+<li><strong>算力成本</strong>：4 种体系 × 3 次重复 × 4 µs 全原子 MD，计算成本极高；拟合操作 48,000 次，需大量计算资源（文中提及使用 Digital Research Alliance of Canada 高性能计算）。</li>
+<li><strong>历史数据依赖</strong>：cryo-ET 图来自先前研究（ref. 12），非本文新采集；MD 初始结构依赖 PDB 6L4A 与 1KX5。</li>
+<li><strong>模型依赖</strong>：结果依赖 AMBER 14SB/OL15 力场与 OPC 水模型的准确性；不同力场可能改变尾部构象采样。</li>
+<li><strong>最难情形</strong>：致密染色质区（0.75 mM Mg²⁺）linker DNA 密度部分缺失，拟合仍依赖 MD 构象的先验；尾部在 cryo-ET 中不可见，尾部互作结论完全依赖 MD 模拟。</li>
+<li><strong>群体/领域边界</strong>：结论基于人源 K562 细胞染色质与体外三核小体模拟；不适用于含 linker histone H1、含修饰尾部或含非组蛋白因子的染色质。</li>
+<li><strong>有边界的复述</strong>：在 K562 细胞 cryo-ET 图与所选力场条件下，MD 采样的三核小体构象可作为整体拟合单元，比单核小体拟合更准确地重建核小体排列；模拟表明组蛋白尾部通过 tail–tail 与 tail–DNA 静电互作促进核小体压实，且 22 bp linker 体系最易形成 face-to-face 压实构象。</li>
+</ul>
+<h2>12 作者自认局限</h2>
+<table>
+<thead>
+<tr>
+<th>局限</th>
+<th>具体表现</th>
+<th>作者提出的未来方向</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>尾部构象采样有限</td>
+<td>全原子 MD 计算成本高，disordered 尾部的构象采样不充分</td>
+<td>使用粗粒化（CG）方法提高采样效率</td>
+<td>Discussion 节</td>
+</tr>
+<tr>
+<td>模拟分布比实验窄</td>
+<td>MD 生成的核小体间距/角度分布宽度小于实验观测</td>
+<td>可能需更长模拟时间或增强采样</td>
+<td>Results 节（Fig. 2 讨论）</td>
+</tr>
+<tr>
+<td>力场精度限制</td>
+<td>AMBER 14SB/OL15 对 intrinsically disordered 蛋白的准确性有限</td>
+<td>未明确提及</td>
+<td>Discussion 节</td>
+</tr>
+<tr>
+<td>未包含染色质相关因子</td>
+<td>模拟体系不含 linker histone H1、修饰酶等</td>
+<td>未明确提及</td>
+<td>Discussion 节</td>
+</tr>
+<tr>
+<td>计算成本高</td>
+<td>4 µs × 3 重复 × 4 体系的全原子模拟极为昂贵</td>
+<td>未明确提及</td>
+<td>Discussion 节（提及 CG 互补）</td>
+</tr>
+</tbody>
+</table>
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>三核小体拟合优度高于单核小体，但比较基准有限</td>
+<td>未与更先进的 AI 辅助拟合方法（如 deep learning 直接分割）对比；单核小体拟合本身是弱基线</td>
+<td>若仅优于弱基线，则「优越性」结论可能过度</td>
+<td>与 CryoDRGN、EMAN2 等深度学习 cryo-ET 分析方法对比</td>
+<td>Results 节、Fig. 1</td>
+</tr>
+<tr>
+<td>尾部互作结论完全依赖 MD 模拟</td>
+<td>尾部在 cryo-ET 中不可见，无实验直接验证；力场偏差可能导致假阳性互作</td>
+<td>核心机制 claim 缺乏独立实验验证</td>
+<td>突变尾部关键残基（如 H3K9A）后重复模拟或实验</td>
+<td>Results 节、Fig. 4–5</td>
+</tr>
+<tr>
+<td>模拟分布与实验一致，但分布窄</td>
+<td>「一致」可能因比较指标不敏感（仅中位数与宽度），而非真正重现构象 ensemble</td>
+<td>若构象 ensemble 不准确，拟合结果可能偏差</td>
+<td>用更严格的统计检验（如 KS 检验）比较完整分布</td>
+<td>Results 节、Fig. 2</td>
+</tr>
+<tr>
+<td>22 bp linker 的 face-to-face 偏好可能受初始结构影响</td>
+<td>初始结构来自 6L4A（22 bp linker 的 cryo-EM 结构），可能引入初始构象偏差</td>
+<td>若初始结构偏差主导，则 linker 长度效应结论不可靠</td>
+<td>从不同初始构象启动模拟，检查收敛性</td>
+<td>Methods 节</td>
+</tr>
+<tr>
+<td>未测试尾部翻译后修饰的影响</td>
+<td>实际染色质中尾部修饰（如乙酰化、甲基化）广泛存在，可能改变互作模式</td>
+<td>机制结论可能不适用于修饰态染色质</td>
+<td>模拟乙酰化/磷酸化尾部变体</td>
+<td>Discussion 节（提及 H3K9 甲基化）</td>
+</tr>
+<tr>
+<td>拟合评估依赖人工阈值</td>
+<td>相关系数与 inside-contour 的显著性阈值设定可能影响结论</td>
+<td>阈值选择可能使结果偏向预期结论</td>
+<td>敏感性分析：变化阈值范围检查结论稳定性</td>
+<td>Methods 节（Fitting 部分）</td>
+</tr>
+</tbody>
+</table>
+<h2>14 学到什么</h2>
+<p><strong>Agent 提炼的知识候选</strong></p>
+<ol>
+<li>
+<p><strong>「模拟 ensemble 作为实验拟合先验」范式</strong>：不直接拟合单一结构，而是用 MD 采样的构象 ensemble 作为拟合库，天然嵌入物理约束（DNA 扭转、尾部互作）。可迁移至三维基因组领域：用 polymer 模型或 CG MD 生成染色质纤维构象库，再拟合 Hi-C、GAM、cryo-ET 等实验数据，替代传统单结构拟合。</p>
+</li>
+<li>
+<p><strong>三核小体作为「最小折叠单元」</strong>：三核小体同时包含核小体间取向、linker 几何与尾部互作三种关键信息，是连接单核小体与阵列级折叠的桥梁。可迁移至三维基因组建模：在 Hi-C 数据驱动的染色质重建中，以三核小体（或寡核小体）为基本单元而非单核小体，可减少连接歧义。</p>
+</li>
+<li>
+<p><strong>尾部互作的三类模式</strong>：tail–tail 盐桥（如 H3K9–H4D24）、tail–DNA 小沟插入、tail 介导的 DNA 电荷中和。可迁移至表观遗传机制研究：将 H3K9me 等修饰位点映射到互作模式上，预测修饰对压实的影响。</p>
+</li>
+<li>
+<p><strong>linker 长度决定核小体取向偏好</strong>：22 bp linker 倾向 face-to-face 压实，26 bp 更开放。可迁移至三维基因组：linker 长度多态性（NRL）可能是细胞类型特异性染色质构象的物理决定因素，可在 polymer 模型中参数化。</p>
+</li>
+<li>
+<p><strong>无尾部体系作为「物理消融」对照</strong>：通过构建尾部截断体系，直接比较有/无尾部的构象差异，实现计算层面的「基因敲除」。可迁移至模拟研究设计：在染色质模拟中系统截断不同尾部组合，定位各尾部的功能贡献。</p>
+</li>
+<li>
+<p><strong>cryo-ET 拟合的稳健性验证</strong>：测试不同去噪滤波器（非线性 vs 线性）对拟合结果的影响，确认结论不依赖预处理选择。可迁移至 AI 辅助 cryo-ET 分析：深度学习去噪结果应做多方法交叉验证。</p>
+</li>
+</ol>
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>与 ref. 12（cryo-ET of native chromatin）直接衔接</strong>：本文使用的 cryo-ET 图来自该研究，且 D/N 距离、β/para 角定义沿用该文，属于同一课题组的系列工作延伸。</li>
+<li><strong>与 ref. 59（CG 模拟 linker 长度依赖折叠）</strong>：本文的 linker 长度效应（22 vs 26 vs 31 bp）与 CG 模拟预测一致，形成 CG→AA 的多尺度验证链。</li>
+<li><strong>与 ref. 25（单核小体尾部模拟）</strong>：本文的尾部互作模式（H3/H4 尾部插入 DNA 小沟）与此前单核小体模拟一致，但扩展至核小体间互作。</li>
+<li><strong>与 ref. 78（PDB 6L4A，人三核小体 cryo-EM）</strong>：初始结构模板来源，本文在其基础上替换序列并做 MD 采样。</li>
+<li><strong>与 ref. 80（PDB 1KX5，核小体 X 射线结构）</strong>：尾部初始构象来源，但 H3 尾部因核小体间冲突而线性延伸。</li>
+<li><strong>与 Hi-C/3D 基因组领域</strong>：本文的「核小体间 face-to-face 压实」与 Hi-C 中观察到的 nucleosome-nucleosome 接触模式（如 ref. 73–76 的 i±2 互作）一致，为 Hi-C 接触提供了原子级物理解释。</li>
+<li><strong>与 AI 方法的关系</strong>：本文方法不依赖 AI，但 cryo-ET 图预处理使用了深度学习去噪（ref. 32），属于 AI 辅助实验数据处理；与纯 AI 结构预测（如 AlphaFold 类）互补——AI 预测静态结构，MD 提供动态 ensemble。</li>
+</ul>
+<h2>16 研究想法</h2>
+<p><strong>Agent 生成的研究候选</strong></p>
+<ol>
+<li>
+<p><strong>候选名称</strong>：MD-guided Hi-C contact map 反演框架
+   - <strong>来源局限/观察</strong>：本文用 MD ensemble 拟合 cryo-ET 密度图，但 Hi-C 数据缺乏密度图，无法直接套用。
+   - <strong>核心假设</strong>：MD 采样的三核小体构象 ensemble 的接触频率（如核小体间距 &lt; 阈值）与 Hi-C 中观察到的局部接触模式（如 i±2 增强）存在定量对应。
+   - <strong>初步方法</strong>：从本文 MD 轨迹中计算核小体间接触概率矩阵，与 K562 Hi-C 局部接触图对比；若一致，则用 MD ensemble 作为 Hi-C 反演的构象库，替代传统 polymer 模型。
+   - <strong>验证方式</strong>：在已知细胞类型（K562）上比较反演结构与 cryo-ET 拟合结构的一致性。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：组蛋白尾部修饰的「计算敲入」模拟
+   - <strong>来源局限/观察</strong>：本文只模拟了未修饰尾部；实际染色质中 H3K9me3、H4K16ac 等修饰广泛存在。
+   - <strong>核心假设</strong>：H3K9me3 增强 tail–tail 疏水互作促进压实，H4K16ac 削弱 tail–DNA 静电互作促进开放。
+   - <strong>初步方法</strong>：在本文三核小体体系上引入修饰残基参数（如 Amber 力场中 Lys 甲基化参数），比较修饰前后 Rg、接触数、自由能景观。
+   - <strong>验证方式</strong>：与 H3K9me3 细胞系 cryo-ET 或 MNase-seq 数据对比。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：linker 长度多态性（NRL）的原子级相图
+   - <strong>来源局限/观察</strong>：本文只测了 22/26/31 bp 三种 linker；生理 NRL 范围更宽（~10–80 bp）。
+   - <strong>核心假设</strong>：存在临界 NRL 值，低于该值 face-to-face 压实占优，高于该值 side-to-side 或开放构象占优。
+   - <strong>初步方法</strong>：系统扫描 NRL = 10–80 bp，用本文 MD 协议模拟，构建 NRL-构象相图。
+   - <strong>验证方式</strong>：与 ref. 59 的 CG 相图对比，验证 CG→AA 一致性。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：cryo-ET 拟合的 AI-MD 混合管线
+   - <strong>来源局限/观察</strong>：本文拟合需 48,000 次 fitmap 操作，计算成本高；深度学习可直接从密度图预测构象，但缺乏物理约束。
+   - <strong>核心假设</strong>：用深度学习从 cryo-ET 密度图粗预测核小体位置/取向，再用 MD ensemble 精修，可大幅降低计算成本且保持物理合理性。
+   - <strong>初步方法</strong>：训练 3D CNN 从 cryo-ET 密度图预测三核小体构象参数，输出作为 MD ensemble 拟合的初始种子。
+   - <strong>验证方式</strong>：在本文 20 张 cryo-ET 图上对比混合管线与纯 fitmap 的拟合质量与耗时。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：尾部互作 motif 的跨物种保守性分析
+   - <strong>来源局限/观察</strong>：本文识别的互作残基（H3K9、H4D24 等）是否在物种间保守未知。
+   - <strong>核心假设</strong>：尾部互作关键残基在真核生物中保守，且保守性与表型（如异染色质形成能力）相关。
+   - <strong>初步方法</strong>：对本文识别的互作残基做多序列比对，结合 AlphaFold 预测的尾部构象，分析保守性-互作强度关联。
+   - <strong>验证方式</strong>：在酵母、果蝇等模式生物中验证互作 motif 的存在。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+</ol></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Full manuscript text (abstract, results, discussion, methods) without supplementary figures, tables, or source data</li>
+<li><strong>Assessment boundary</strong> Scientific claims, methodological soundness, and interpretive validity based solely on the provided text</li>
+<li><strong>Shared manuscript claim summary</strong> The authors combine all-atom molecular dynamics simulations of tri-nucleosomes with varying linker lengths and cryo-ET maps of native human chromatin to develop a fitting framework that enables near-atomistic interpretation of cryo-ET density maps. They report that histone tails promote chromatin compaction through three interaction patterns: histone-DNA interactions, H2A-H4 tail-tail interactions, and H3-H4 tail-tail interactions. They further claim that simulated structural parameters (inter-nucleosomal distances and dihedral angles) reproduce experimental distributions from condensed chromatin arrays.</li>
+<li><strong>Visible evidence base</strong> Main text figures referenced (Figs. 1-5), supplementary figures referenced (Figs. S1-S25), supplementary tables referenced (Tables 1-3), and methods text</li>
+<li><strong>Missing materials affecting confidence</strong> Supplementary figures and tables, source data, reporting summary, and methodological details for cryo-ET map collection and processing are not provided in the submitted material</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li>
+<p><strong>Overall assessment</strong> The manuscript presents a potentially valuable integrative approach that combines all-atom MD simulations with cryo-ET map fitting to interpret chromatin structure at near-atomistic resolution. The central concept of using tri-nucleosome conformations as fitting templates, rather than individual nucleosome cores, is a reasonable methodological advance that could address known limitations of mono-nucleosome fitting approaches. However, the manuscript as provided has several significant gaps that prevent full evaluation of the claims. The absence of quantitative validation metrics, limited description of the cryo-ET data processing pipeline, and the lack of direct comparison between simulated and experimental distributions with statistical rigor weaken the central claims. The mechanistic conclusions regarding histone tail interactions are based on simulation data without experimental validation, and the manuscript does not adequately address potential force field limitations or sampling convergence. The writing is generally clear, but the results section would benefit from more precise quantitative reporting.</p>
+</li>
+<li>
+<p><strong>Who would be interested in the results, and why</strong> Researchers in chromatin biophysics, computational structural biology, and cryo-electron tomography methodology would find this work relevant. The approach of using MD-derived multi-nucleosome conformations for cryo-ET map interpretation could be of interest to the structural biology community working on flexible or heterogeneous macromolecular assemblies. The mechanistic insights into histone tail-mediated chromatin compaction would interest chromatin biologists studying gene regulation and epigenetic mechanisms. The methodological framework may also appeal to computational biologists developing integrative modeling approaches that combine simulation with experimental data.</p>
+</li>
+<li>
+<p><strong>Major strengths</strong>
+  1. The conceptual advance of using tri-nucleosome conformations from MD simulations as fitting templates for cryo-ET maps is a thoughtful approach that addresses known limitations of mono-nucleosome fitting, particularly in condensed chromatin regions where ambiguous fits are common.
+  2. The systematic comparison of three linker lengths (22, 26, and 31 bp) provides a useful parameter sweep that allows assessment of how linker length affects nucleosome organization and compaction.
+  3. The identification of specific histone tail interaction patterns (tail-tail and tail-DNA) at atomistic resolution provides mechanistic hypotheses that are testable and could guide future experimental work.
+  4. The authors acknowledge limitations of their approach, including sampling constraints and force field accuracy, which demonstrates scientific rigor.</p>
+</li>
+<li>
+<p><strong>Major Concerns</strong></p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M1</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Evidence sufficiency</li>
+<li><strong>Claim pointer</strong> The authors claim that "the distributions of MD-generated structural parameters of tri-nucleosomes were found to be in strong agreement with those of experimental condensed chromatin arrays."</li>
+<li><strong>Evidence pointer</strong> Figure 2 and associated text, location not provided</li>
+<li><strong>Concern</strong> The claim of "strong agreement" between simulated and experimental distributions is not supported by quantitative statistical analysis in the provided text. The authors state that simulated distributions were "narrower than experimental ones, possibly pointing to some degree of conformational under-sampling," which contradicts the characterization of "strong agreement." No statistical tests comparing the distributions are reported, and the figure panels referenced do not include confidence intervals or quantitative comparison metrics.</li>
+<li><strong>Why it matters</strong> The central validation of the MD approach rests on this comparison. If the agreement is only qualitative or if the distributions are systematically narrower, the claim that MD simulations capture the relevant conformational ensemble of native chromatin is not established. This directly affects whether the mechanistic conclusions about histone tail function can be generalized.</li>
+<li>
+<p><strong>Resolution test</strong> Provide quantitative statistical comparisons between simulated and experimental distributions (e.g., Kolmogorov-Smirnov tests, overlap coefficients, or Bayesian comparison metrics). Report effect sizes and confidence intervals. If distributions are systematically narrower in simulations, discuss the implications for the interpretation of the fitting results and mechanistic conclusions.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M2</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Methodological completeness</li>
+<li><strong>Claim pointer</strong> The authors claim that their tri-nucleosome fitting approach "provides a practically superior strategy for building biologically meaningful chromatin models" compared to mono-nucleosome fitting.</li>
+<li><strong>Evidence pointer</strong> Figure 1 and associated text, location not provided</li>
+<li><strong>Concern</strong> The comparison between tri-nucleosome and mono-nucleosome fitting approaches is presented qualitatively. The authors state that mono-nucleosome fitting has limitations, but no quantitative comparison of fitting quality between the two approaches is provided. The claim of superiority requires a systematic comparison using the same cryo-ET maps, with quantitative metrics for both approaches. Additionally, the authors note that "inside-contour values could not be directly compared between tri-nucleosome and mono-nucleosome systems because this measure is very sensitive to the fitted system's size," which limits the comparability of the reported metrics.</li>
+<li><strong>Why it matters</strong> The methodological contribution of this work depends on demonstrating that tri-nucleosome fitting provides meaningful advantages over existing approaches. Without a quantitative head-to-head comparison, the practical value of the method is not established, and readers cannot assess whether the additional computational cost is justified.</li>
+<li>
+<p><strong>Resolution test</strong> Perform a systematic comparison of fitting quality between mono-nucleosome and tri-nucleosome approaches on the same cryo-ET maps, reporting quantitative metrics (correlation coefficients, cross-validation scores, or similar) with appropriate statistical testing. Address the size-dependence issue of the inside-contour metric or use alternative comparison metrics that are size-independent.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M3</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Interpretive validity</li>
+<li><strong>Claim pointer</strong> The authors claim that histone tails "promote chromatin compaction via three major patterns: through histone-DNA interactions, histone H2A-H4 and H3-H4 tail-tail interactions."</li>
+<li><strong>Evidence pointer</strong> Figures 4-5 and associated text, location not provided</li>
+<li><strong>Concern</strong> The mechanistic conclusions about histone tail interactions are derived exclusively from MD simulations. The authors do not provide experimental validation of these specific interaction patterns, nor do they compare their findings with available experimental data on histone tail interactions (e.g., cross-linking studies, NMR, or mutagenesis experiments). The claim that these are the "major patterns" of tail-mediated compaction requires either experimental support or a more careful caveat that these are simulation-derived predictions. Additionally, the authors do not report whether these interaction patterns are stable across the independent simulation runs or whether they represent transient states.</li>
+<li><strong>Why it matters</strong> The mechanistic claims are the primary scientific contribution of the work. If these patterns are not validated or are presented without appropriate caveats, readers may overinterpret simulation results as established biological mechanisms. The transient nature of histone tail interactions, acknowledged elsewhere in the manuscript, complicates the identification of "major" interaction patterns.</li>
+<li>
+<p><strong>Resolution test</strong> Provide a more nuanced interpretation that clearly distinguishes simulation-derived predictions from experimentally established mechanisms. Report the persistence and reproducibility of the identified interaction patterns across independent runs. If possible, compare with available experimental data on histone tail interactions or clearly state the predictions that could be tested experimentally.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M4</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Technical soundness</li>
+<li><strong>Claim pointer</strong> The authors state that "three independent simulation runs were performed for each system, 4 µs each" and that "the initial 200 ns of each simulation trajectory were discarded as equilibration."</li>
+<li><strong>Evidence pointer</strong> Methods section, location not provided</li>
+<li><strong>Concern</strong> The manuscript does not report convergence metrics for the MD simulations. For intrinsically disordered histone tails, which are expected to sample a broad conformational ensemble, 4 µs may not be sufficient to achieve converged sampling, particularly for the larger tri-nucleosome systems. The authors do not report whether the structural parameters (distances, angles) have converged within each trajectory or across the three independent runs. The choice of 200 ns for equilibration is not justified.</li>
+<li><strong>Why it matters</strong> The reliability of all structural and mechanistic conclusions depends on adequate conformational sampling. If the simulations are not converged, the reported distributions and interaction patterns may not be representative of the equilibrium ensemble, and the comparison with experimental data would be compromised.</li>
+<li>
+<p><strong>Resolution test</strong> Report convergence metrics such as block averaging, autocorrelation times, or split-half analysis for the key structural parameters. Show that the three independent runs sample similar distributions. Justify the equilibration time and demonstrate that the results are robust to the choice of equilibration period.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M5</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Reproducibility</li>
+<li><strong>Claim pointer</strong> The authors state that "the raw tilt series are available from the Dryad data repository" and that "a library of successfully fitted conformations" will be provided.</li>
+<li><strong>Evidence pointer</strong> Methods section and Discussion, location not provided</li>
+<li><strong>Concern</strong> The manuscript does not provide sufficient detail on the cryo-ET data processing pipeline, including the specific steps of tomographic reconstruction, denoising, and the criteria used to select regions for fitting. The deep learning-based denoising method is referenced but not described in sufficient detail. The criteria for determining a "successful" fit are not explicitly defined. The availability of the fitting library is mentioned but the format and access details are not provided.</li>
+<li><strong>Why it matters</strong> Reproducibility is a core requirement for scientific publication. Without detailed methods for the cryo-ET processing and fitting pipeline, other researchers cannot replicate the approach or assess its robustness. The lack of clear criteria for successful fits undermines the objectivity of the reported results.</li>
+<li>
+<p><strong>Resolution test</strong> Provide a detailed description of the cryo-ET processing pipeline, including software versions, parameters, and validation steps. Define explicit criteria for successful fits. Provide clear access information for the fitting library and any code used in the analysis.</p>
+</li>
+<li>
+<p><strong>Minor Comments</strong></p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m1</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Clarity</li>
+<li><strong>Affected element</strong> Figure 1 caption and text</li>
+<li><strong>Evidence pointer</strong> Figure 1, location not provided</li>
+<li><strong>Issue</strong> The text describing Figure 1 is incomplete and contains a grammatical error. The sentence "see Fig. S1 for strong contrast with a black background and volume rendering of cryo-ET density maps" appears to be missing a closing parenthesis and the description is unclear.</li>
+<li>
+<p><strong>Required correction</strong> Revise the figure caption and associated text to clearly describe what is shown in each panel of Figure 1 and the supplementary figures. Ensure the sentence structure is complete and grammatically correct.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m2</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Statistical reporting</li>
+<li><strong>Affected element</strong> Figure 2 and associated text</li>
+<li><strong>Evidence pointer</strong> Figure 2, location not provided</li>
+<li><strong>Issue</strong> The manuscript reports median values for distances and angles but does not report measures of dispersion (e.g., interquartile ranges) or sample sizes for the experimental distributions. The number of nucleosome pairs analyzed in the experimental cryo-ET maps is not stated.</li>
+<li>
+<p><strong>Required correction</strong> Report the sample sizes and appropriate measures of dispersion for all experimental distributions. If the experimental data are from a previous study, clearly state the sample sizes from that study.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m3</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Terminology</li>
+<li><strong>Affected element</strong> Abstract and Results</li>
+<li><strong>Evidence pointer</strong> Abstract, location not provided</li>
+<li><strong>Issue</strong> The term "near-atomistic interpretation" is used in the abstract and throughout the manuscript. This is imprecise, as the fitting approach uses all-atom models but the cryo-ET maps are at much lower resolution. The term could be misinterpreted as claiming atomic resolution for the cryo-ET maps.</li>
+<li>
+<p><strong>Required correction</strong> Clarify the terminology. For example, use "all-atom model fitting into cryo-ET maps" or "atomistic model-based interpretation" to avoid implying that the cryo-ET maps themselves achieve atomic resolution.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m4</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Completeness</li>
+<li><strong>Affected element</strong> Methods section</li>
+<li><strong>Evidence pointer</strong> Methods, location not provided</li>
+<li><strong>Issue</strong> The methods section does not describe the force field parameters used for the histone tails specifically, nor does it describe how post-translational modifications (if any) were modeled. Given that the manuscript discusses H3K9 methylation in the Discussion, it is unclear whether modified histone states were included in the simulations.</li>
+<li>
+<p><strong>Required correction</strong> Clarify whether post-translational modifications were included in the simulations. If not, clearly state this limitation and adjust the Discussion accordingly.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m5</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Referencing</li>
+<li><strong>Affected element</strong> Discussion</li>
+<li><strong>Evidence pointer</strong> Discussion, location not provided</li>
+<li><strong>Issue</strong> The Discussion references "recent super-resolution microscopy studies" and "previous studies" without providing specific citations in the text provided. While the reference list is not included in the submitted material, the in-text citations should be checked for completeness.</li>
+<li><strong>Required correction</strong> Ensure all references cited in the text are included in the reference list and that the citation format is consistent throughout.</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>The claim of "strong agreement" between simulated and experimental structural parameter distributions is not quantitatively supported in the provided text</li>
+<li>The claim that tri-nucleosome fitting is a "practically superior strategy" compared to mono-nucleosome fitting is not supported by a systematic quantitative comparison</li>
+<li>The identification of "three major patterns" of histone tail-mediated compaction is presented as a finding but is based solely on simulation data without experimental validation</li>
+<li>The statement that "histone tails were shown to promote chromatin compaction" implies experimental demonstration, but the evidence presented is from simulations</li>
+<li>The claim that the approach "may help to resolve ambiguities in cryo-ET maps" is speculative and not directly demonstrated</li>
+<li>The assertion that the tri-nucleosome models "specify the relative orientation of consecutive nucleosomes" in partially resolved maps is not validated with specific examples or quantitative assessments of fitting reliability</li>
+<li>The manuscript mentions "a library of successfully fitted conformations" but the criteria for "successful" fitting are not defined, making this claim unverifiable from the provided material</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

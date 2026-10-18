@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42856121",
+  "title": "Genetic risk and inflammatory signaling converge on cell type-specific regulatory programs in type 1 diabetes.",
+  "authors": "Wang, Liu; Wei, Zong",
+  "journal": "bioRxiv : the preprint server for biology",
+  "published_date": "2026-10-11",
+  "window": {
+    "start": "2026-10-11",
+    "end": "2026-10-17"
+  },
+  "score": 5,
+  "one_liner_zh": "该文整合表观基因组与GWAS数据，用深度学习ChromBPNet预测T1D相关SNP对染色质可及性的影响，虽涉及染色质调控建模，但对象非三维基因组/染色质高级结构，且未涉及空间折叠或互作建模。",
+  "abstract": "Type 1 diabetes (T1D) is a complex autoimmune disease characterized by the destruction of insulin-producing pancreatic beta cells. Both genetic susceptibility and epigenetic dysregulation contribute to T1D risk. Recent studies have reported beta-cell dysfunction before disease onset, suggesting that beta-cell-intrinsic mechanisms contribute to pathogenesis. However, the mechanistic link between disease-associated variants and beta-cell dysfunction remains poorly understood. We hypothesized that a subset of T1D-associated variants directly influences cell type-specific candidate cis-regulatory elements (cCREs) by disrupting transcription factor (TF) binding and altering gene expression. To define cell type-specific cCREs in human islets, we integrated publicly available epigenomic datasets, including bulk histone modification profiles and single-cell multiomic data from human pancreatic islets. We combined these data with T1D genome-wide association study (GWAS) variants to identify disease-associated SNPs located within enhancer regions. Using multiomic datasets from PANC-DB, we characterized cell type-specific chromatin accessibility in nondiabetic and T1D islets and identified regulatory regions that may control gene expression in beta cells and other islet cell types. We then applied ChromBPNet, a deep learning model that predicts base-pair-resolution chromatin accessibility from scATAC-seq data, to evaluate how specific variants may alter local regulatory activity. In parallel, we used TF footprinting to nominate TFs likely to bind these variant-containing regions. These analyses identified several T1D-associated SNPs predicted to alter chromatin accessibility at candidate TF binding sites, suggesting mechanisms by which noncoding variants may contribute to beta-cell dysfunction and T1D susceptibility. Our findings link T1D-associated variants to cell type-specific enhancer activity and regulatory pathways and provide candidates for future mechanistic studies.",
+  "abstract_zh": "1型糖尿病（T1D）是一种复杂的自身免疫性疾病，其特征是产生胰岛素的胰腺β细胞被破坏。遗传易感性和表观遗传失调均促成T1D风险。近期研究报道了疾病发作前的β细胞功能障碍，提示β细胞内在机制参与发病过程。然而，疾病相关变异与β细胞功能障碍之间的机制联系仍知之甚少。我们假设，一部分T1D相关变异通过破坏转录因子（TF）结合并改变基因表达，直接影响细胞类型特异性的候选顺式调控元件（cCREs）。为定义人类胰岛中的细胞类型特异性cCREs，我们整合了公开可用的表观基因组数据集，包括来自人类胰腺胰岛的批量组蛋白修饰谱和单细胞多组学数据。我们将这些数据与T1D全基因组关联研究（GWAS）变异相结合，以识别位于增强子区域内的疾病相关SNP。利用PANC-DB的多组学数据集，我们表征了非糖尿病和T1D胰岛中细胞类型特异性的染色质可及性，并识别了可能控制β细胞及其他胰岛细胞类型基因表达的调控区域。随后，我们应用ChromBPNet（一种从scATAC-seq数据预测碱基对分辨率染色质可及性的深度学习模型）来评估特定变异如何改变局部调控活性。同时，我们使用TF足迹分析来提名可能结合这些含变异区域的TF。这些分析识别出若干T1D相关SNP，预测其会改变候选TF结合位点的染色质可及性，提示非编码变异可能促成β细胞功能障碍和T1D易感性的机制。我们的发现将T1D相关变异与细胞类型特异性的增强子活性和调控通路联系起来，并为未来机制研究提供了候选靶点。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42856121/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42856121/",
+  "paper_page_path": "papers/pubmed/42856121/index.html"
+}

@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conditional diffusion for single-cell Hi-C data imputation and enhancement with scHiC-Diff. · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-high">8</span>
+    <div>
+      <h1>Conditional diffusion for single-cell Hi-C data imputation and enhancement with scHiC-Diff.</h1>
+      <div class="meta">Liu, Wuhao; Fang, Zhaoyu; Du, Xuyan; Tang, Li; Li, Min</div>
+      <div class="meta muted">
+        
+        <span class="journal">Genome research</span>
+        · 2026-10-16
+         · 仅摘要
+         · <a href="https://pubmed.ncbi.nlm.nih.gov/42888029/">原文</a>
+      </div>
+      <p class="one-liner">该文提出基于条件扩散模型（Diffusion Transformer）的scHiC-Diff框架，用于单细胞Hi-C接触图的缺失填补与增强，直接面向三维基因组染色质互作建模，并显著提升染色质环检测等下游分析，属于AI方法在染色质空间架构建模中的实质应用。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">Single-cell high-throughput chromosome conformation capture (scHi-C) enables the analysis of cell-to-cell variability in three-dimensional (3D) genome organization, but its utility is severely limited by pervasive technical dropouts, leading to extremely sparse contact maps. Accurately identifying dropout events and imputing the corresponding missing chromatin contacts remains a challenging problem, as technical dropouts are confounded with genuine absences of chromatin interactions. Existing imputation and enhancement methods often rely on smoothing strategies or restrictive parametric likelihood assumptions, which may obscure fine-scale chromatin structures and cell-specific features. Here, we present scHiC-Diff, a conditional diffusion-based framework for scHi-C data imputation and enhancement. scHiC-Diff employs a forward process that progressively perturbs contact maps and a reverse denoising process that reconstructs chromatin interactions from noisy observations. To better capture long-range dependencies in complex 3D genome structures, scHi-C contact matrices are treated as masked images and modeled using a Diffusion Transformer (DiT). Across two complementary simulated datasets and three real scHi-C datasets, scHiC-Diff improves the recovery of chromatin interaction patterns and enhances downstream analyses compared with existing methods. Application to a developmental scHi-C dataset further demonstrates improved reconstruction of chromatin organization and enhanced chromatin loop detection.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">单细胞高通量染色体构象捕获（scHi-C）技术能够分析三维（3D）基因组组织中的细胞间变异性，但其应用受到普遍存在的技术性缺失事件的严重限制，导致接触图谱极为稀疏。准确识别缺失事件并填补相应的缺失染色质接触仍是一个具有挑战性的问题，因为技术性缺失与染色质相互作用的真实缺失相互混淆。现有的填补和增强方法通常依赖平滑策略或限制性参数似然假设，这可能掩盖精细尺度的染色质结构和细胞特异性特征。在此，我们提出scHiC-Diff，一种基于条件扩散的框架，用于scHi-C数据的填补和增强。scHiC-Diff采用一个前向过程，逐步扰动接触图谱，以及一个反向去噪过程，从噪声观测中重建染色质相互作用。为了更好地捕捉复杂3D基因组结构中的长程依赖性，scHi-C接触矩阵被视为掩码图像，并使用扩散变换器（DiT）进行建模。在两个互补的模拟数据集和三个真实的scHi-C数据集中，与现有方法相比，scHiC-Diff改善了染色质相互作用模式的恢复，并增强了下游分析。应用于一个发育过程中的scHi-C数据集，进一步展示了染色质组织重建的改进和染色质环检测的增强。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：Conditional diffusion for single-cell Hi-C data imputation and enhancement with scHiC-Diff</li>
+<li><strong>作者</strong>：Liu, Wuhao; Fang, Zhaoyu; Du, Xuyan; Tang, Li; Li, Min</li>
+<li><strong>单位</strong>：未提供</li>
+<li><strong>期刊/平台</strong>：Genome Research</li>
+<li><strong>年份</strong>：2026（在线日期 2026-10-16）</li>
+<li><strong>论文类型</strong>：方法学论文（含应用验证）</li>
+<li><strong>领域</strong>：三维基因组 / 单细胞 Hi-C 数据修复与增强 × 扩散模型（AI）</li>
+<li><strong>关键词</strong>：scHi-C、dropout imputation、conditional diffusion、Diffusion Transformer (DiT)、chromatin loop detection</li>
+<li><strong>DOI/arXiv</strong>：10.1101/gr.281897.126</li>
+<li><strong>代码</strong>：未提供</li>
+<li><strong>数据</strong>：两个模拟数据集 + 三个真实 scHi-C 数据集 + 一个发育 scHi-C 数据集（具体名称未提供）</li>
+<li><strong>阅读日期</strong>：未提供</li>
+<li><strong>在该方向中的位置</strong>：本文属于「三维基因组 × AI 方法」中单细胞 Hi-C 数据修复与增强的子方向，将条件扩散模型（conditional diffusion）与 Diffusion Transformer（DiT）引入 scHi-C 接触矩阵的缺失值填补与去噪，区别于传统平滑策略和参数化似然方法，是扩散模型在单细胞染色质构象数据上的直接应用。</li>
+</ul>
+<hr />
+<h2>02 一句话总结</h2>
+<p>本文提出 scHiC-Diff，一个基于条件扩散模型（以 Diffusion Transformer 为骨干）的框架，通过前向扰动与反向去噪过程对单细胞 Hi-C 接触矩阵进行 dropout 填补与增强，在模拟和真实 scHi-C 数据集上改善了染色质互作模式的恢复和下游分析（如染色质环检测）。</p>
+<hr />
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：单细胞 Hi-C 数据因技术性 dropout 导致接触矩阵极度稀疏，如何准确识别 dropout 事件并填补缺失的染色质接触？</li>
+<li><strong>为什么重要</strong>：scHi-C 是分析细胞间 3D 基因组组织变异性的关键工具，但稀疏性严重限制其效用；错误填补会混淆技术 dropout 与真实缺失的染色质互作，影响下游结构推断。</li>
+<li><strong>现有方法为何不足</strong>：现有 imputation/enhancement 方法多依赖平滑策略（smoothing）或限制性参数似然假设，可能模糊精细染色质结构和细胞特异性特征。</li>
+<li><strong>精确研究问题</strong>：Can a conditional diffusion model with a Diffusion Transformer backbone accurately impute dropout events in scHi-C contact maps while preserving cell-specific and fine-scale chromatin structures?</li>
+</ul>
+<hr />
+<h2>04 背景与发展脉络</h2>
+<blockquote>
+<p>注：此脉络基于本文框架，未经外部核验。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>代表性方法</th>
+<th>优点</th>
+<th>局限</th>
+<th>本文位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>早期 scHi-C 填补</td>
+<td>基于邻域平滑或局部平均</td>
+<td>简单、计算快</td>
+<td>模糊精细结构，忽略长程依赖</td>
+<td>被超越</td>
+</tr>
+<tr>
+<td>参数化似然方法</td>
+<td>假设特定分布（如负二项）建模接触</td>
+<td>统计可解释</td>
+<td>假设限制性强，难以适应复杂 3D 结构</td>
+<td>被超越</td>
+</tr>
+<tr>
+<td>深度学习方法</td>
+<td>基于 CNN/自编码器的 imputation</td>
+<td>能学习非线性模式</td>
+<td>对长程依赖捕捉不足，可能过度平滑</td>
+<td>被超越</td>
+</tr>
+<tr>
+<td>扩散模型（本文）</td>
+<td>scHiC-Diff（条件扩散 + DiT）</td>
+<td>生成式建模，保留细胞特异性，捕捉长程依赖</td>
+<td>计算成本高，需调参</td>
+<td>本文主张的位置</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>技术性 dropout 严重</td>
+<td>scHi-C 接触矩阵极度稀疏</td>
+<td>单细胞起始材料少，捕获效率低</td>
+<td>摘要：pervasive technical dropouts, extremely sparse contact maps</td>
+</tr>
+<tr>
+<td>dropout 与真实缺失混淆</td>
+<td>难以区分技术缺失与真实无互作</td>
+<td>两者在观测上不可直接区分</td>
+<td>摘要：technical dropouts are confounded with genuine absences</td>
+</tr>
+<tr>
+<td>现有方法模糊精细结构</td>
+<td>平滑策略掩盖 fine-scale 染色质结构</td>
+<td>平滑操作本质上是低通滤波</td>
+<td>摘要：smoothing strategies ... may obscure fine-scale chromatin structures</td>
+</tr>
+<tr>
+<td>参数假设限制</td>
+<td>似然方法依赖特定分布假设</td>
+<td>真实接触分布复杂，假设不成立</td>
+<td>摘要：restrictive parametric likelihood assumptions</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>06 核心思想</h2>
+<ol>
+<li>
+<p><strong>表面方法</strong>：将 scHi-C 接触矩阵视为带掩码的图像，使用条件扩散模型（conditional diffusion）进行 imputation 和 enhancement。前向过程逐步向接触图添加噪声，反向去噪过程从噪声观测中重建染色质互作。骨干网络为 Diffusion Transformer（DiT），以捕捉长程依赖。</p>
+</li>
+<li>
+<p><strong>核心洞察</strong>：扩散模型的生成式框架天然适合处理 dropout 填补问题——通过学习数据分布而非简单平滑，可以在填补缺失接触的同时保留细胞特异性和精细结构；将接触矩阵视为图像并采用 Transformer 骨干，能有效建模 3D 基因组中远距离位点间的依赖关系。</p>
+</li>
+<li>
+<p><strong>可能的普适教训 [Analysis]</strong>：对于高稀疏、高噪声的生物学数据，生成式条件模型（如扩散模型）比判别式平滑方法更能保留数据的内在变异性；将非图像数据（如接触矩阵）重新表示为图像并利用视觉骨干（如 DiT）是一种可迁移的策略。</p>
+</li>
+</ol>
+<hr />
+<h2>07 方法总览</h2>
+<ul>
+<li><strong>输入</strong>：单细胞 Hi-C 接触矩阵（稀疏、含 dropout）</li>
+<li><strong>输出</strong>：填补和增强后的接触矩阵（用于下游分析）</li>
+<li><strong>模块</strong>：
+  1. 前向扩散过程（向接触图逐步添加噪声）
+  2. 反向去噪过程（从噪声观测重建接触）
+  3. Diffusion Transformer（DiT）骨干（处理接触矩阵作为 masked images）</li>
+<li><strong>训练</strong>：未提供具体训练细节（损失函数、优化器、训练轮数等）</li>
+<li><strong>工具</strong>：未提供具体软件/框架</li>
+<li><strong>反馈回路</strong>：未提供</li>
+<li><strong>假设</strong>：接触矩阵可被表示为图像并适用于扩散模型；dropout 可通过学习数据分布被填补</li>
+<li><strong>文字流程</strong>：输入稀疏 scHi-C 接触矩阵 → 前向过程添加噪声扰动 → 反向去噪过程（由 DiT 驱动）从噪声观测中重建接触 → 输出增强后的接触矩阵 → 用于下游分析（如染色质环检测）</li>
+</ul>
+<hr />
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>前向扩散过程</td>
+<td>逐步扰动接触图</td>
+<td>为反向去噪提供训练信号</td>
+<td>输入：原始接触矩阵；输出：噪声化矩阵</td>
+<td>摘要：forward process that progressively perturbs contact maps</td>
+<td>预期：无法训练去噪网络 [Analysis]</td>
+</tr>
+<tr>
+<td>反向去噪过程</td>
+<td>从噪声观测重建染色质互作</td>
+<td>核心填补机制</td>
+<td>输入：噪声化矩阵；输出：重建接触矩阵</td>
+<td>摘要：reverse denoising process that reconstructs chromatin interactions</td>
+<td>预期：imputation 完全失效 [Analysis]</td>
+</tr>
+<tr>
+<td>Diffusion Transformer (DiT) 骨干</td>
+<td>建模长程依赖，处理 masked images</td>
+<td>捕捉 3D 基因组中远距离互作</td>
+<td>输入：带掩码的接触矩阵；输出：去噪后的特征表示</td>
+<td>摘要：modeled using a Diffusion Transformer (DiT)</td>
+<td>预期：长程依赖捕捉能力下降，可能退化为局部方法 [Analysis]</td>
+</tr>
+<tr>
+<td>条件机制</td>
+<td>以观测数据为条件引导生成</td>
+<td>区分 dropout 与真实缺失</td>
+<td>输入：观测接触图；输出：条件化生成结果</td>
+<td>摘要：conditional diffusion-based framework</td>
+<td>预期：填补结果可能偏离真实分布 [Analysis]</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：以上「移除后影响」均为 [Analysis] 预期效应，文中未提供消融实验证据。</p>
+</blockquote>
+<hr />
+<h2>09 关键公式符号</h2>
+<p>不适用。提供的材料（摘要）中未包含具体公式。</p>
+<hr />
+<h2>10 实验设计与证据链</h2>
+<ul>
+<li><strong>数据集</strong>：两个互补的模拟数据集 + 三个真实 scHi-C 数据集 + 一个发育 scHi-C 数据集（具体名称、规模未提供）</li>
+<li><strong>指标</strong>：未提供具体指标（如 Pearson correlation、SSIM、loop detection F1 等）</li>
+<li><strong>基线</strong>：现有 imputation/enhancement 方法（具体名称未提供）</li>
+<li><strong>评测协议</strong>：未提供</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的 claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>模拟数据集实验</td>
+<td>scHiC-Diff 能恢复染色质互作模式</td>
+<td>与现有方法对比</td>
+<td>改善恢复</td>
+<td>方法有效</td>
+<td>未提供具体数值，无法评估效应量</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>真实 scHi-C 数据集实验</td>
+<td>方法在真实数据上优于基线</td>
+<td>与现有方法对比</td>
+<td>改善恢复和下游分析</td>
+<td>方法具有实际应用价值</td>
+<td>未提供统计显著性</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>发育数据集应用</td>
+<td>改善染色质组织重建和环检测</td>
+<td>与现有方法对比</td>
+<td>改善重建和环检测</td>
+<td>方法可迁移到生物学应用</td>
+<td>未提供环检测的定量指标</td>
+<td>摘要</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：scHi-C 接触矩阵的 dropout imputation 和 enhancement，不涉及其他数据类型（如 bulk Hi-C、scATAC-seq）。</li>
+<li><strong>oracle/真值输入</strong>：模拟数据有已知真值，真实数据无 ground truth，评估依赖下游任务。</li>
+<li><strong>端到端状态</strong>：方法输出增强后的接触矩阵，下游分析（如环检测）是独立步骤，非端到端联合优化。</li>
+<li><strong>算力成本</strong>：未提供。</li>
+<li><strong>历史数据依赖</strong>：依赖训练数据的分布，跨细胞类型或物种的泛化性未验证。</li>
+<li><strong>模型依赖</strong>：依赖 DiT 架构和扩散模型超参数，未提供敏感性分析。</li>
+<li><strong>最难情形</strong>：极低覆盖度或高 dropout 率的细胞可能仍难以准确填补。</li>
+<li><strong>群体/领域边界</strong>：验证限于 scHi-C 数据，未扩展到其他 3D 基因组数据类型。</li>
+<li><strong>不确定性</strong>：未提供置信区间或不确定性量化。</li>
+</ul>
+<p><strong>有边界的复述</strong>：scHiC-Diff 在测试的模拟和真实 scHi-C 数据集上，相比现有方法改善了接触矩阵的恢复和下游分析表现，但其泛化性、计算成本和统计显著性未在提供材料中量化。</p>
+<hr />
+<h2>12 作者自认局限</h2>
+<p>在提供的材料（摘要）中未发现作者明确承认的局限。</p>
+<p><strong>作者提及的相关约束</strong>（非正式局限）：
+- 摘要指出 dropout 与真实缺失的混淆是根本挑战，暗示方法可能无法完全解决此问题。
+- 方法依赖将接触矩阵视为图像，可能对非图像化表示的数据不适用。</p>
+<hr />
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>摘要未提供定量指标</td>
+<td>可能效应量小或仅在特定条件下显著</td>
+<td>无法评估实际增益</td>
+<td>查阅全文获取具体数值和统计检验</td>
+<td>摘要仅定性描述</td>
+</tr>
+<tr>
+<td>模拟数据与真实数据差异</td>
+<td>模拟数据可能过于理想化</td>
+<td>真实数据表现可能低于模拟</td>
+<td>对比模拟与真实数据的性能差距</td>
+<td>摘要未说明模拟数据生成方式</td>
+</tr>
+<tr>
+<td>未提及基线方法名称</td>
+<td>可能基线选择偏向弱方法</td>
+<td>对比公平性存疑</td>
+<td>检查全文基线设置</td>
+<td>摘要仅说 "existing methods"</td>
+</tr>
+<tr>
+<td>未提供计算成本</td>
+<td>扩散模型通常计算昂贵</td>
+<td>实际可用性受限</td>
+<td>查阅全文运行时间和资源需求</td>
+<td>摘要未提及</td>
+</tr>
+<tr>
+<td>未讨论超参数敏感性</td>
+<td>结果可能依赖特定配置</td>
+<td>稳健性未知</td>
+<td>查阅全文消融实验</td>
+<td>摘要未提及</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>14 学到什么</h2>
+<p><strong>Agent 提炼的知识候选</strong></p>
+<ol>
+<li><strong>条件扩散模型用于稀疏数据填补</strong>：将 dropout 视为噪声扰动，用反向去噪重建缺失值，这一框架可迁移到其他稀疏 3D 基因组数据（如单细胞 ATAC-seq 的染色质可及性矩阵）。</li>
+<li><strong>接触矩阵作为图像表示</strong>：将 Hi-C 接触矩阵视为 masked images 并利用视觉骨干（DiT）建模，提示在 3D 基因组任务中可复用计算机视觉架构。</li>
+<li><strong>长程依赖建模</strong>：Transformer 骨干能捕捉染色质远距离互作，可迁移到其他需要长程依赖的基因组任务（如增强子-启动子互作预测）。</li>
+<li><strong>生成式 vs 判别式</strong>：生成式方法保留数据变异性，适合细胞异质性分析，可启发其他单细胞组学数据的处理。</li>
+<li><strong>下游任务验证</strong>：通过染色质环检测等下游任务评估 imputation 质量，提示方法评估应结合生物学功能验证。</li>
+</ol>
+<hr />
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>扩散模型在基因组学中的应用</strong>：与 DNA 序列生成（如 DNA-Diffusion）和单细胞 RNA-seq 数据增强（如 scDiff）方法类似，本文扩展了扩散模型在基因组数据修复中的应用。</li>
+<li><strong>Hi-C imputation 方法</strong>：与 bulk Hi-C 的 HiCPlus、DeepHiC 等深度学习方法对比，本文聚焦单细胞场景，强调细胞特异性保留。</li>
+<li><strong>Transformer 在 3D 基因组中的应用</strong>：与 Enformer、BERT 类基因组模型相关，但本文将其用于接触矩阵的生成式建模而非序列特征提取。</li>
+<li><strong>单细胞 3D 基因组分析</strong>：与 scHiCluster、Higashi 等方法互补，本文提供生成式替代方案。</li>
+<li><strong>[Analysis] 候选方向</strong>：可进一步探索扩散模型在 bulk Hi-C 增强、跨细胞类型泛化、以及多模态（Hi-C + 表观）联合建模中的应用。</li>
+</ul>
+<hr />
+<h2>16 研究想法</h2>
+<p><strong>Agent 生成的研究候选</strong></p>
+<ol>
+<li>
+<p><strong>候选名称</strong>：scHiC-Diff 的跨细胞类型泛化评估
+   - <strong>来源局限/观察</strong>：摘要未验证跨细胞类型或物种的泛化性
+   - <strong>核心假设</strong>：模型在训练分布外的细胞类型上性能下降
+   - <strong>相对本文的增量</strong>：系统评估泛化边界，可能需引入域适应机制
+   - <strong>初步方法</strong>：在多种细胞类型上训练/测试，分析性能与细胞类型相似度的关系
+   - <strong>验证方式</strong>：对比同型/异型细胞测试的 imputation 指标
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：扩散模型与物理模拟的混合框架
+   - <strong>来源局限/观察</strong>：纯数据驱动方法可能违反染色质物理约束（如聚合酶链式反应距离关系）
+   - <strong>核心假设</strong>：在扩散模型中引入物理约束（如 polymer model 能量函数）可提升填补准确性
+   - <strong>相对本文的增量</strong>：将物理先验注入生成式模型
+   - <strong>初步方法</strong>：在反向去噪过程中添加物理正则项，或使用物理模拟生成训练数据
+   - <strong>验证方式</strong>：对比有无物理约束的 imputation 质量和下游结构重建
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：scHiC-Diff 与染色质环检测的端到端联合优化
+   - <strong>来源局限/观察</strong>：本文中环检测是独立下游步骤，非联合优化
+   - <strong>核心假设</strong>：联合训练 imputation 和 loop calling 可提升两者性能
+   - <strong>相对本文的增量</strong>：多任务学习框架
+   - <strong>初步方法</strong>：在 DiT 输出上添加 loop detection 头，联合损失训练
+   - <strong>验证方式</strong>：对比联合 vs 分步的环检测 F1 和 imputation 质量
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：不确定性量化的 scHiC imputation
+   - <strong>来源局限/观察</strong>：扩散模型可提供生成分布但摘要未利用
+   - <strong>核心假设</strong>：通过多次采样估计填补置信度，可指导下游分析（如高置信互作优先）
+   - <strong>相对本文的增量</strong>：从点估计到分布输出
+   - <strong>初步方法</strong>：对同一输入多次采样，计算互作概率和方差
+   - <strong>验证方式</strong>：比较不确定性加权 vs 点估计的下游分析表现
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：scHiC-Diff 扩展到多模态数据（Hi-C + 表观组）
+   - <strong>来源局限/观察</strong>：仅使用接触矩阵，未利用表观基因组信息
+   - <strong>核心假设</strong>：条件化于表观特征（如 CTCF、H3K27ac）可提升填补准确性
+   - <strong>相对本文的增量</strong>：多模态条件扩散
+   - <strong>初步方法</strong>：将表观信号作为条件输入 DiT
+   - <strong>验证方式</strong>：对比有无表观条件的 imputation 质量
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+</ol></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Abstract only</li>
+<li><strong>Assessment boundary</strong> Claims and evidence as presented in the abstract; no methods, figures, tables, or supplementary materials were provided</li>
+<li><strong>Shared manuscript claim summary</strong> The authors propose scHiC-Diff, a conditional diffusion-based framework for imputing and enhancing single-cell Hi-C contact maps. The method treats contact matrices as masked images and uses a Diffusion Transformer (DiT) to model long-range dependencies. The authors claim improved recovery of chromatin interaction patterns and enhanced downstream analyses across two simulated and three real scHi-C datasets, plus improved chromatin organization reconstruction and loop detection in a developmental dataset.</li>
+<li><strong>Visible evidence base</strong> Abstract text only; no quantitative results, benchmark details, or dataset descriptions are available</li>
+<li><strong>Missing materials affecting confidence</strong> Full methods, all figures and tables, simulation protocols, real dataset descriptions, baseline method specifications, evaluation metrics, and code availability</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li><strong>Overall assessment</strong> The abstract presents a conceptually reasonable application of conditional diffusion models to a well-recognized problem in single-cell Hi-C analysis. The choice of a Diffusion Transformer to treat contact maps as masked images is technically plausible and aligns with recent advances in generative modeling. However, the abstract provides no quantitative evidence, no comparison details, and no methodological specifics that would allow an independent assessment of the claimed improvements. The core claims of enhanced recovery and downstream analysis are therefore not verifiable from the supplied material.</li>
+<li><strong>Who would be interested in the results, and why</strong> Computational biologists and bioinformaticians working on 3D genome organization, particularly those developing or applying imputation methods for sparse single-cell chromatin conformation data. The work may also interest methodologists in generative modeling applied to biological imaging or matrix completion problems.</li>
+<li><strong>Major strengths</strong> The problem is well motivated, specifically the confounding of technical dropouts with genuine absence of interactions. The use of a conditional diffusion framework with a DiT backbone is a modern and potentially powerful approach for capturing long-range dependencies in sparse contact maps. The evaluation plan, spanning simulated and real datasets plus a developmental application, is appropriate in scope.</li>
+<li><strong>Major Concerns</strong></li>
+<li><strong>Concern ID</strong> R1-M1</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Evidence sufficiency</li>
+<li><strong>Claim pointer</strong> "scHiC-Diff improves the recovery of chromatin interaction patterns and enhances downstream analyses compared with existing methods"</li>
+<li><strong>Evidence pointer</strong> Abstract only; location not provided</li>
+<li><strong>Concern</strong> The central performance claim is stated without any quantitative support. No metrics, effect sizes, or statistical significance are reported. The abstract does not specify which existing methods were compared, under what conditions, or on which specific datasets the improvements were observed.</li>
+<li><strong>Why it matters</strong> Without quantitative evidence, the reader cannot judge whether the improvements are meaningful, consistent, or statistically robust. The claim as stated is unfalsifiable from the provided material.</li>
+<li><strong>Resolution test</strong> Provide a results table or figure with key metrics (e.g., imputation accuracy, contact recovery F1, loop detection precision and recall) for scHiC-Diff and all baselines across each dataset, with variance or confidence intervals.</li>
+<li><strong>Concern ID</strong> R1-M2</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Methodological transparency</li>
+<li><strong>Claim pointer</strong> "scHiC-Diff employs a forward process that progressively perturbs contact maps and a reverse denoising process that reconstructs chromatin interactions from noisy observations"</li>
+<li><strong>Evidence pointer</strong> Abstract only; location not provided</li>
+<li><strong>Concern</strong> The abstract describes the diffusion framework at a high level but provides no details on the forward process design, the noise schedule, the conditioning mechanism, the training objective, or how the model distinguishes technical dropouts from true zeros. The treatment of contact maps as masked images is mentioned but not elaborated.</li>
+<li><strong>Why it matters</strong> The key challenge stated in the introduction is the confounding of dropouts with genuine absences. The abstract does not explain how scHiC-Diff addresses this distinction, which is central to the method's novelty and utility.</li>
+<li><strong>Resolution test</strong> Describe the model architecture, training procedure, and specifically how dropout events are modeled or inferred. Provide a schematic or formal description of the forward and reverse processes.</li>
+<li><strong>Concern ID</strong> R1-M3</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Reproducibility and completeness</li>
+<li><strong>Claim pointer</strong> "Across two complementary simulated datasets and three real scHiC datasets"</li>
+<li><strong>Evidence pointer</strong> Abstract only; location not provided</li>
+<li><strong>Concern</strong> The datasets are named but not described. No information is given on species, cell types, sequencing depth, number of cells, or how ground truth was established for simulated data. The developmental dataset is mentioned but not identified.</li>
+<li><strong>Why it matters</strong> Without dataset details, the generalizability of the results cannot be assessed. The choice of real datasets and simulation protocols strongly influences the validity of benchmark conclusions.</li>
+<li><strong>Resolution test</strong> Provide a supplementary table listing dataset characteristics, simulation parameters, and ground truth definitions.</li>
+<li><strong>Minor Comments</strong></li>
+<li><strong>Concern ID</strong> R1-m1</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Clarity</li>
+<li><strong>Affected element</strong> Terminology</li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided</li>
+<li><strong>Issue</strong> The term "enhancement" is used in the title and abstract but not defined. It is unclear whether this refers to resolution enhancement, contrast improvement, or something else.</li>
+<li><strong>Required correction</strong> Define "enhancement" explicitly in the context of scHi-C data processing.</li>
+<li><strong>Concern ID</strong> R1-m2</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Completeness</li>
+<li><strong>Affected element</strong> Downstream analysis</li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided</li>
+<li><strong>Issue</strong> The abstract claims "enhanced downstream analyses" and "improved reconstruction of chromatin organization and enhanced chromatin loop detection" but does not specify which downstream tasks were evaluated beyond loop detection.</li>
+<li><strong>Required correction</strong> List the downstream analyses performed and the specific metrics used for each.</li>
+<li><strong>Concern ID</strong> R1-m3</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Accessibility</li>
+<li><strong>Affected element</strong> Code and data availability</li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided</li>
+<li><strong>Issue</strong> No mention of code or data availability, which is essential for reproducibility in computational biology.</li>
+<li><strong>Required correction</strong> State where code, trained models, and processed datasets will be made available.</li>
+<li><strong>Technical failings that need to be addressed before the case is established</strong> R1-M1, R1-M2, and R1-M3 are all blocking. The abstract does not provide sufficient evidence, methodological detail, or dataset context to establish the core claims.</li>
+<li><strong>Assessment against Nature-style criteria</strong> Originality is plausible, as the application of conditional diffusion with a DiT to scHi-C imputation appears novel, but this cannot be fully assessed without a literature comparison in the methods. Scientific importance is potentially high given the widespread dropout problem in scHi-C, but the magnitude of the advance is unquantified. Interdisciplinary readership is likely, spanning genomics and machine learning, but the abstract is accessible to both audiences. Technical soundness cannot be evaluated from the abstract alone. Readability for nonspecialists is adequate, though the term "enhancement" and the diffusion framework may require more explanation for a general audience.</li>
+<li><strong>Recommendation posture</strong> Currently not established from the provided evidence. The approach is promising and the problem is important, but the abstract alone does not support the performance claims. A full manuscript with quantitative results, methodological details, and dataset descriptions would be required for a supportive assessment.</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>The claim of improved recovery and downstream analysis over existing methods is unsupported by any quantitative data in the abstract.</li>
+<li>The claim of enhanced chromatin loop detection is unsupported without specific metrics or comparison baselines.</li>
+<li>The claim that scHiC-Diff addresses the confounding of dropouts with genuine absences is not substantiated by any described mechanism.</li>
+<li>The generalizability across two simulated and three real datasets is not assessable without dataset descriptions and evaluation protocols.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42884061",
+  "title": "Artificial Intelligence for Plant Gene Regulatory Networks.",
+  "authors": "Yu, Haopeng",
+  "journal": "International journal of molecular sciences",
+  "published_date": "2026-10-16",
+  "window": {
+    "start": "2026-10-11",
+    "end": "2026-10-17"
+  },
+  "score": 5,
+  "one_liner_zh": "该文综述了植物基因调控网络推断的计算方法三代演进，涉及染色质可及性和顺式调控语法，但未聚焦三维基因组/染色质空间架构建模，AI方法为综述性介绍而非建模贡献。",
+  "abstract": "Gene regulatory networks (GRNs) are the maps that plant biologists most want to draw, with arrows pointing from transcription factors to the genes they control, explaining how plants develop and respond to the environment. Since experimental validation of even one arrow can take years, and a single plant genome harbours tens of millions of candidate TF-target pairs, this gap has driven the development of numerous computational methods for GRN inference. Here I review three generations of computational approaches to plant GRN inference and measure them against a five-level ladder of evidence, including statistical association, conditional dependence, physical binding, functional regulation and causal circuits. Classical statistics and machine learning have simplified complex gene expression data into clear, prioritised predictions. Techniques like single-cell and multi-omics methods help uncover cell type-specific networks based on chromatin accessibility and binding motifs. Now, deep learning can interpret cis-regulatory grammar directly from genome sequences, and foundation models trained on plant genomes and millions of cells hold exciting potential to share regulatory insights across different species. The most promising route forward is a lab-in-the-loop division of labour in which foundation models serve not as oracles but as hypothesis engines, collapsing fifty million candidate TF-target pairs into the few hundred edges most worth the bench's time, with each round of validation sharpening the next round of prediction.",
+  "abstract_zh": "基因调控网络（GRNs）是植物生物学家最想绘制的图谱，其中的箭头指向转录因子及其所控制的基因，用以解释植物的发育过程及对环境响应的机制。由于即使验证一个箭头也可能耗时数年，而单个植物基因组中蕴含数千万个候选转录因子-靶基因对，这一差距推动了大量用于GRN推断的计算方法的发展。在此，我回顾了三代植物GRN推断的计算方法，并依据五级证据阶梯对其进行衡量，包括统计关联、条件依赖性、物理结合、功能调控及因果回路。经典统计学和机器学习已将复杂的基因表达数据简化为清晰、优先排序的预测。单细胞和多组学等技术有助于基于染色质可及性和结合基序揭示细胞类型特异的网络。如今，深度学习能够直接从基因组序列解读顺式调控语法，而基于植物基因组和数百万细胞训练的基础模型在跨物种共享调控见解方面展现出令人振奋的潜力。最有前景的前进路径是实验室在环的分工模式，其中基础模型并非充当神谕，而是作为假设引擎，将五千万个候选转录因子-靶基因对缩减为最值得实验验证的数百条边，每一轮验证都会优化下一轮的预测。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42884061/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42884061/",
+  "paper_page_path": "papers/pubmed/42884061/index.html"
+}

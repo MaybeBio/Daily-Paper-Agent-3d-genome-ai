@@ -1,0 +1,822 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recent advances in coarse-grained simulations of nucleic acid condensation. · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-mid">7</span>
+    <div>
+      <h1>Recent advances in coarse-grained simulations of nucleic acid condensation.</h1>
+      <div class="meta">Fong Ng, Jessica; Li, Shanlong; Chen, Jianhan</div>
+      <div class="meta muted">
+        
+        <span class="journal">The Biochemical journal</span>
+        · 2026-10-15
+         · 全文(pmc)
+         · <a href="https://pubmed.ncbi.nlm.nih.gov/42878016/">原文</a>
+      </div>
+      <p class="one-liner">该综述聚焦核酸凝聚体的粗粒化分子模拟方法，虽对象为核酸相分离而非染色质三维组织，但其多尺度模拟框架和相分离机制建模思路对染色质空间架构的粗粒化建模具有直接可迁移的启发价值。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">Biomolecular condensates, formed through phase separation of multivalent biomolecules, play essential roles in cellular processes such as stress response, RNA processing, transcriptional control, and genome organization. Nucleic acids are increasingly recognized as important drivers and regulators of condensate formation and dynamics. This review examines recent advances in coarse-grained molecular simulations of dynamic nucleic acids and their phase transitions. We survey established computational frameworks validated against experimental data and discuss emerging applications that address increasingly complex systems. Existing studies reveal that base-mediated interactions emerge as dominant drivers in homotypic nucleic acid condensation and that simulation resolution fundamentally determines which physical phenomena are accessible and observable. We underscore that different modeling approaches at various resolutions provide complementary insights into nucleic acid condensation mechanisms and the driving forces. We emphasize the opportunities and challenges in extending these frameworks to capture the complexity of nucleic acid-mediated phase separation in biological contexts, while identifying important gaps in current modeling capabilities. Overall, molecular simulations at multiple scales have proven to be powerful tools for elucidating the mechanistic principles underlying nucleic acid condensates and their cellular functions.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">通过多价生物分子相分离（phase separation）形成的生物分子凝聚体，在应激反应、RNA加工、转录调控和基因组组织等细胞过程中发挥重要作用。核酸日益被认为是凝聚体形成和动态变化的重要驱动因子与调节因子。本综述考察了动态核酸及其相转变的粗粒化分子模拟（coarse-grained molecular simulations）近期进展。我们概述了经实验数据验证的既有计算框架，并讨论了应对日益复杂系统的新兴应用。现有研究表明，碱基介导的相互作用在同型核酸凝聚中成为主要驱动因素，且模拟分辨率从根本上决定了哪些物理现象是可及且可观测的。我们强调，不同分辨率下的多种建模方法为核酸凝聚机制及其驱动力提供了互补性见解。我们着重指出，在将这些框架扩展至捕捉生物背景下核酸介导相分离复杂性方面的机遇与挑战，同时识别当前建模能力中的重要空白。总体而言，多尺度分子模拟已被证明是阐明核酸凝聚体及其细胞功能背后机制原理的有力工具。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：Recent advances in coarse-grained simulations of nucleic acid condensation</li>
+<li><strong>作者</strong>：Fong Ng, Jessica; Li, Shanlong; Chen, Jianhan</li>
+<li><strong>单位</strong>：University of Massachusetts - Amherst（基于 Open Access 声明推断，具体单位未在材料中提供）</li>
+<li><strong>期刊/平台</strong>：The Biochemical Journal</li>
+<li><strong>年份</strong>：2026-10-15</li>
+<li><strong>论文类型</strong>：综述（Review）</li>
+<li><strong>领域</strong>：计算生物物理 / 生物分子凝聚体 / 核酸相分离 / 粗粒化分子模拟</li>
+<li><strong>关键词</strong>：coarse-grained simulations, nucleic acid condensation, phase separation, biomolecular condensates, RNA, DNA, iConRNA, SIS</li>
+<li><strong>DOI/arXiv 号</strong>：10.1042/BCJ20260251</li>
+<li><strong>代码</strong>：未提供</li>
+<li><strong>数据</strong>：未提供</li>
+<li><strong>阅读日期</strong>：未提供</li>
+<li><strong>该文在「三维基因组/染色质组织 × AI 方法/物理模拟」方向中的位置</strong>：本文聚焦核酸（RNA/DNA）相分离的粗粒化模拟方法综述，属于染色质组织与凝聚体形成的物理模拟方法谱系。与三维基因组课题的直接关联在于：染色质区室化、转录凝聚体、异染色质形成等过程均涉及核酸-蛋白共凝聚，本文系统梳理了从最小模型到多珠模型的 CG 方法谱系及其对核酸凝聚驱动力的物理认识（碱基介导互作 vs. 静电互作），为三维基因组研究中染色质凝聚体建模、相分离机制解析提供了方法学参考与可迁移的建模框架。</li>
+</ul>
+<hr />
+<h2>02 一句话总结</h2>
+<p>本文系统综述了从原子级到不同粗粒化分辨率的核酸相分离模拟方法，指出碱基介导的相互作用（配对与堆叠）是核酸同型凝聚的主要驱动力，并强调模拟分辨率从根本上决定了可观测的物理现象范围。</p>
+<hr />
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：核酸（RNA/DNA）相分离的分子驱动力是什么？不同分辨率的粗粒化模型如何捕捉这些驱动力？现有 CG 模型在描述核酸凝聚方面的能力边界在哪里？</li>
+<li><strong>为什么重要</strong>：核酸是多种生物分子凝聚体的关键组分（如应激颗粒、转录凝聚体、染色质区室），理解其相分离机制对解析基因组组织、基因调控及神经退行性疾病（如三核苷酸重复扩增疾病）的分子基础至关重要。</li>
+<li><strong>现有方法为何不足</strong>：全原子模拟无法触及相分离所需的空间和时间尺度；实验手段（浊度、荧光、SAXS）只能提供宏观相界和全局结构参数，无法直接解析分子层面的竞争性相互作用（静电 vs. 碱基互作 vs. 水合效应）。</li>
+<li><strong>精确研究问题</strong>：Can coarse-grained models at various resolutions capture the experimentally observed phase behaviors of nucleic acids and reveal the dominant molecular driving forces of condensation?</li>
+</ul>
+<hr />
+<h2>04 背景与发展脉络</h2>
+<blockquote>
+<p>注：以下脉络主要基于本文框架，部分代表性方法经外部核验（如 Martini、oxDNA 为领域内公认方法），标注如下。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>代表性方法</th>
+<th>优点</th>
+<th>局限</th>
+<th>本文主张的位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>全原子模拟</td>
+<td>AMBER χOL3, CHARMM36, AMBER BSC1/OL24</td>
+<td>最详细的分子描述，可解析离子配位、水合效应</td>
+<td>无法直接模拟相分离（尺度限制）；力场平衡挑战大</td>
+<td>提供 CG 模型开发的物理约束与参考数据</td>
+</tr>
+<tr>
+<td>最小模型/贴片粒子</td>
+<td>stickers-and-spacers, patchy-particle 模型</td>
+<td>计算极高效，可探索大参数空间</td>
+<td>缺乏序列特异性，无法区分碱基化学差异</td>
+<td>适合研究普适相行为规律，不适合序列特异问题</td>
+</tr>
+<tr>
+<td>单珠模型</td>
+<td>SIS, HPS, Mpipi/Mpipi-Recharge, COCOMO</td>
+<td>保留序列身份，计算效率高</td>
+<td>无法区分碱基堆叠与配对；静电处理粗糙</td>
+<td>SIS 证明碱基配对足以驱动相分离</td>
+</tr>
+<tr>
+<td>双珠模型</td>
+<td>HPS-Urry DNA, CALVADOS-RNA, oxRNA/oxDNA</td>
+<td>分离骨架静电与碱基互作，可捕捉局部结构</td>
+<td>参数化复杂；部分模型缺乏序列依赖性</td>
+<td>在效率与保真度间取得平衡</td>
+</tr>
+<tr>
+<td>多珠/中间分辨率</td>
+<td>iCONNA, Martini 3 扩展</td>
+<td>可显式区分堆叠、配对、静电、离子配位</td>
+<td>计算成本高于低分辨率模型</td>
+<td>目前最平衡的选择，可捕捉多驱动力竞争</td>
+</tr>
+<tr>
+<td>结构预测/染色质模型</td>
+<td>本文范围外（引用文献 36-42）</td>
+<td>—</td>
+<td>—</td>
+<td>明确排除在综述范围外</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>全原子模拟无法触及相分离尺度</td>
+<td>无法直接模拟宏观相分离过程</td>
+<td>相分离涉及微秒-毫秒时间和数十纳米以上空间尺度，远超全原子模拟能力</td>
+<td>Introduction 末段；Atomistic insights 节</td>
+</tr>
+<tr>
+<td>实验无法解析分子级驱动力</td>
+<td>浊度/荧光/SAXS 只能给出宏观相界和全局参数</td>
+<td>缺乏直接探测分子内/间竞争性相互作用的实验手段</td>
+<td>Introduction 第 3 段</td>
+</tr>
+<tr>
+<td>CG 模型分辨率与物理现象可及性之间的根本矛盾</td>
+<td>低分辨率模型无法捕捉碱基堆叠/配对等关键互作；高分辨率模型计算成本高</td>
+<td>分辨率决定了可表示的相互作用类型和可观测的物理现象</td>
+<td>Abstract；Concluding discussion 第 1 段</td>
+</tr>
+<tr>
+<td>缺乏系统基准测试</td>
+<td>不同模型间难以公平比较</td>
+<td>各模型采用不同参数化策略和验证目标</td>
+<td>CG models 节开头（"there is a lack of a systematic benchmark"）</td>
+</tr>
+<tr>
+<td>蛋白质-核酸异型体系建模不足</td>
+<td>多数核酸 CG 模型未与蛋白质模型耦合</td>
+<td>蛋白质-核酸互作参数化数据稀缺</td>
+<td>Concluding discussion 第 2 段；iCONNA 节末</td>
+</tr>
+<tr>
+<td>Mg²⁺ 配位模式处理粗糙</td>
+<td>多数 CG 模型将 Mg²⁺ 视为简单带电球或隐式处理</td>
+<td>内层/外层配位的热力学差异难以在低分辨率下表达</td>
+<td>Atomistic insights 节；Concluding discussion 第 3 段</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>06 核心思想</h2>
+<h3>1) 表面方法</h3>
+<p>按分辨率层级系统梳理核酸相分离的 CG 模拟方法：从最小模型（单珠/贴片粒子）→ 单珠核苷酸模型（SIS, HPS, Mpipi, COCOMO）→ 双珠模型（HPS-Urry DNA, CALVADOS-RNA, oxDNA/oxRNA）→ 中间分辨率多珠模型（iCONNA, Martini 3 扩展），逐一讨论其参数化策略、验证能力和应用场景。</p>
+<h3>2) 核心洞察</h3>
+<ul>
+<li><strong>碱基介导的相互作用（配对 + 堆叠）是核酸同型凝聚的主要驱动力</strong>，而非单纯的静电作用。SIS 模型仅用碱基配对就重现了 CAG 重复序列的相分离行为；iCONNA 进一步证明 rA30 与 rU30 的相分离差异源于碱基堆叠而非 Mg²⁺ 桥接强度（rU30 的 Mg²⁺ 桥接反而更强）。</li>
+<li><strong>模拟分辨率决定了可访问的物理现象</strong>：低分辨率模型适合探索普适相行为，但无法捕捉序列特异性和离子配位效应；中间分辨率模型（如 iCONNA）在效率与保真度间取得最佳平衡。</li>
+<li><strong>核酸相分离的 LCST 行为源于温度依赖的脱水效应</strong>，这是隐式溶剂 CG 模型难以捕捉的固有挑战。</li>
+</ul>
+<h3>3) 可能的普适教训 [Analysis]</h3>
+<ul>
+<li><strong>"最小模型成功"的启示</strong>：SIS 以单一可调参数（碱基配对强度）重现复杂相行为，说明在强静电屏蔽条件下，短程特异性互作可能主导相分离——这对染色质凝聚体建模有直接借鉴意义：染色质区室化可能同样由局部特异性互作（如转录因子-核酸、组蛋白修饰-阅读器）驱动，而非全局静电。</li>
+<li><strong>多尺度互补原则</strong>：本文反复强调不同分辨率模型提供互补视角，而非相互替代。这提示三维基因组研究中应建立"全原子→CG→连续介质"的多尺度模拟管线，而非追求单一"万能"模型。</li>
+<li><strong>参数化策略的多样性</strong>：从单一结构靶标（SIS）到多靶标热力学拟合（iCONNA）再到实验数据直接拟合（COCOMO），不同策略各有适用场景。对染色质模型而言，可能需要类似 iCONNA 的多靶标策略以同时捕捉局部结构与相行为。</li>
+</ul>
+<hr />
+<h2>07 方法总览</h2>
+<p>本文为综述，无单一方法流程。以下为综述所覆盖的 CG 建模方法谱系的通用流程：</p>
+<ul>
+<li><strong>输入</strong>：核酸序列（长度、组成、修饰）、溶液条件（盐浓度、Mg²⁺ 浓度、温度）、力场参数（键合/非键合相互作用参数）</li>
+<li><strong>输出</strong>：相分离行为（相界、临界浓度）、链构象（Rg、Re、OCF）、凝聚体内部结构（网络拓扑、链延展性）、离子分布</li>
+<li><strong>模块</strong>：
+  1. 分辨率选择（单珠/双珠/多珠）
+  2. 相互作用势函数设计（静电、碱基配对、堆叠、排除体积、溶剂效应）
+  3. 参数化策略（原子模拟拟合、实验数据拟合、统计势、机器学习）
+  4. 模拟引擎（Langevin 动力学、Monte Carlo）
+  5. 相分离分析（团簇分析、密度分布、序参量）</li>
+<li><strong>工具</strong>：SIS（Thirumalai 组）、iCONNA（Li &amp; Chen）、HPS/Mpipi/COCOMO（蛋白质-核酸）、oxDNA/oxRNA（结构预测）、Martini 3（通用 CG）</li>
+<li><strong>验证</strong>：与实验相图、SAXS 结构参数、单分子 FRET、NMR 离子环境数据对照</li>
+<li><strong>假设</strong>：隐式溶剂（多数模型）；Mg²⁺ 以水合球形式处理（iCONNA）；碱基配对限于 Watson-Crick（SIS）</li>
+</ul>
+<hr />
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>碱基配对相互作用</td>
+<td>驱动同型核酸凝聚的核心短程互作</td>
+<td>SIS 证明仅此一项即可驱动相分离</td>
+<td>输入：互补碱基对；输出：链间/链内配对网络</td>
+<td>SIS 重现 CAG 重复相分离（Results 节）</td>
+<td>无此模块则无法捕捉序列依赖性相分离（预期）</td>
+</tr>
+<tr>
+<td>碱基堆叠相互作用</td>
+<td>提供额外凝聚驱动力，区分嘌呤/嘧啶</td>
+<td>iCONNA 证明堆叠是 rA30 与 rU30 差异的关键</td>
+<td>输入：相邻碱基对；输出：链刚性、凝聚驱动力</td>
+<td>iCONNA 对 rA30/rU30 的区分（Results 节）</td>
+<td>仅保留配对则无法解释嘌呤/嘧啶差异（预期）</td>
+</tr>
+<tr>
+<td>静电相互作用（DH）</td>
+<td>描述磷酸骨架-阳离子互作</td>
+<td>电荷中和是凝聚的必要条件</td>
+<td>输入：磷酸位点电荷、离子浓度；输出：链间静电排斥/桥接</td>
+<td>poly(P) 实验与模拟（Atomistic insights 节）</td>
+<td>移除后无法解释盐浓度依赖性（实测：多数模型依赖 DH 参数）</td>
+</tr>
+<tr>
+<td>Mg²⁺ 显式/隐式处理</td>
+<td>捕捉二价离子桥接与配位效应</td>
+<td>Mg²⁺ 对核酸凝聚有特异性贡献</td>
+<td>输入：Mg²⁺ 浓度、配位模式；输出：桥接强度、相界移动</td>
+<td>iCONNA 中 Mg²⁺ 桥接分析（Results 节）</td>
+<td>隐式处理会丢失内层/外层配位差异（预期）</td>
+</tr>
+<tr>
+<td>分辨率选择（珠数）</td>
+<td>决定可表示的相互作用类型</td>
+<td>分辨率是效率-保真度权衡的核心</td>
+<td>输入：研究问题；输出：模型复杂度</td>
+<td>全文贯穿的模型谱系比较</td>
+<td>过低分辨率无法捕捉堆叠/配位；过高则无法达到相分离尺度（预期）</td>
+</tr>
+<tr>
+<td>参数化策略</td>
+<td>确定相互作用强度</td>
+<td>模型预测能力取决于参数可靠性</td>
+<td>输入：参考数据（原子模拟/实验）；输出：力场参数</td>
+<td>各模型参数化描述（CG models 节）</td>
+<td>参数不当导致相界偏移或错误相行为（预期）</td>
+</tr>
+<tr>
+<td>温度依赖性处理</td>
+<td>捕捉 LCST/UCST 行为</td>
+<td>核酸相分离具有强温度依赖性</td>
+<td>输入：温度；输出：相界位置</td>
+<td>poly(P) LCST 行为（Atomistic insights 节）</td>
+<td>隐式溶剂模型难以捕捉脱水驱动的 LCST（实测：多数模型未验证温度依赖性）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>09 关键公式符号</h2>
+<p>本文为综述，未给出具体公式。以下为综述讨论中隐含的关键物理量及其符号（基于领域通用知识，标注 [Analysis]）：</p>
+<table>
+<thead>
+<tr>
+<th>符号/概念</th>
+<th>含义</th>
+<th>用途</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Δnmg</td>
+<td>每个磷酸基团上过量结合的 Mg²⁺ 数</td>
+<td>量化 Mg²⁺ 结合强度，用于校准 λ</td>
+<td>iCONNA 参数化（Methods 节描述）</td>
+</tr>
+<tr>
+<td>λ</td>
+<td>磷酸-Mg²⁺ 静电相互作用经验缩放因子</td>
+<td>校正 Mg²⁺ 结合强度</td>
+<td>iCONNA 参数化（Methods 节描述）</td>
+</tr>
+<tr>
+<td>Rg</td>
+<td>回旋半径</td>
+<td>表征链全局尺寸</td>
+<td>多模型验证指标（CG models 节）</td>
+</tr>
+<tr>
+<td>Re</td>
+<td>端到端距离</td>
+<td>表征链延展性</td>
+<td>多模型验证指标（CG models 节）</td>
+</tr>
+<tr>
+<td>OCF</td>
+<td>取向相关函数</td>
+<td>表征链局部刚性/构象</td>
+<td>iCONNA 验证指标（Results 节）</td>
+</tr>
+<tr>
+<td>Csat</td>
+<td>饱和浓度</td>
+<td>相分离临界浓度</td>
+<td>HPS/Mpipi 应用（Results 节）</td>
+</tr>
+<tr>
+<td>Lp</td>
+<td>持久长度</td>
+<td>表征链刚性</td>
+<td>COCOMO 参数化靶标（CG models 节）</td>
+</tr>
+<tr>
+<td>T_c</td>
+<td>临界温度</td>
+<td>相图关键参数</td>
+<td>综述讨论温度依赖性时隐含 [Analysis]</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>10 实验设计与证据链</h2>
+<p>本文为综述，无原始实验。以下为综述引用的关键验证证据：</p>
+<p><strong>数据集/规模</strong>：CAG 重复序列（长度和浓度依赖性，SIS）；rA30/rU30（iCONNA）；poly(P)（原子模拟）；FUSRGG3/PLP/polyU 体系（CALVADOS-RNA）；CAG/CUG/CUU 三核苷酸重复（iCONNA）；G4C2 重复（Martini 3）；DNA/RNA 纳米星（oxDNA/oxRNA）。</p>
+<p><strong>指标</strong>：相分离边界（相图）、Rg、Re、OCF、Csat、团簇尺寸分布、链内/链间配对比例、Mg²⁺ 富集程度。</p>
+<p><strong>基线/对照</strong>：实验浊度测定、SAXS 结构参数、单分子 FRET、NMR 离子环境数据。</p>
+<table>
+<thead>
+<tr>
+<th>实验/模拟</th>
+<th>检验的 claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SIS 多链模拟 CAG 重复</td>
+<td>碱基配对足以驱动相分离</td>
+<td>不同链长、浓度；高盐屏蔽条件</td>
+<td>重现实验观察的长度和浓度依赖性相分离</td>
+<td>碱基配对是核心驱动力</td>
+<td>无法区分配对 vs. 堆叠的相对贡献</td>
+<td>CG models 节（SIS 部分）</td>
+</tr>
+<tr>
+<td>iCONNA 模拟 rA30 vs rU30</td>
+<td>碱基堆叠决定序列依赖性相分离</td>
+<td>50 mM MgCl₂，升温条件</td>
+<td>rA30 相分离而 rU30 保持均相；rU30 的 Mg²⁺ 桥接更强</td>
+<td>堆叠而非静电桥接是决定性因素</td>
+<td>未推广到其他序列</td>
+<td>Results 节（iCONNA 部分）</td>
+</tr>
+<tr>
+<td>iCONNA 模拟 CAG/CUG/CUU</td>
+<td>模型可区分不同三核苷酸重复的相分离倾向</td>
+<td>相同溶液条件</td>
+<td>CAG 和 CUG 相分离，CUU 不分离</td>
+<td>模型具有序列预测能力</td>
+<td>未系统扫描序列空间</td>
+<td>Results 节（iCONNA 部分）</td>
+</tr>
+<tr>
+<td>poly(P) 原子模拟</td>
+<td>温度驱动的脱水是 LCST 机制</td>
+<td>Mg²⁺ 存在；升温</td>
+<td>高温促进磷酸-Mg²⁺ 去溶剂化，增强链间交联</td>
+<td>LCST 的分子机制</td>
+<td>未直接模拟完整相分离</td>
+<td>Atomistic insights 节</td>
+</tr>
+<tr>
+<td>HPS 模拟 LAF-1 RGG + RNA</td>
+<td>RNA 在凝聚体中的空间分布</td>
+<td>含酸性/碱性斑块序列</td>
+<td>RNA 优先分布于凝聚体表面，与正电斑块互作</td>
+<td>序列模式决定 RNA 定位</td>
+<td>未定量表面张力等物理量</td>
+<td>Results 节（HPS 部分）</td>
+</tr>
+<tr>
+<td>Mpipi-Recharge 模拟 RRP + poly(rU)</td>
+<td>非对称静电处理改善再入相行为</td>
+<td>多个 RRP 序列；poly(rU) 浓度梯度</td>
+<td>重现实验再入相分离</td>
+<td>非对称静电对异型体系重要</td>
+<td>未测试 DNA 体系</td>
+<td>Results 节（Mpipi 部分）</td>
+</tr>
+<tr>
+<td>Martini 3 模拟 G4C2</td>
+<td>CG 可捕捉 G-四链体介导的凝聚</td>
+<td>3-8 个重复；含 Mg²⁺</td>
+<td>重复数增加促进凝聚；Mg²⁺ 富集于致密相</td>
+<td>G4 结构促进凝聚</td>
+<td>未验证温度依赖性</td>
+<td>Emerging applications 节</td>
+</tr>
+<tr>
+<td>oxDNA/oxRNA 纳米星模拟</td>
+<td>双珠模型可捕捉纳米星几何与柔性差异</td>
+<td>DNA vs RNA 纳米星</td>
+<td>RNA 纳米星臂间角偏差更大</td>
+<td>骨架化学影响纳米星几何</td>
+<td>未延伸到多链相分离</td>
+<td>Emerging applications 节</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：本文仅覆盖核酸（RNA/DNA）的 CG 模拟，明确排除结构预测模型、染色质组织模型（引用文献 36-42 但不在综述范围内）及蛋白质 CG 模型（仅讨论与核酸耦合的蛋白质模型）。</li>
+<li><strong>Oracle/真值输入</strong>：模型验证依赖实验数据（SAXS、浊度、FRET、NMR）和原子模拟结果作为"真值"；iCONNA 的 λ 参数依赖 Δnmg 数据（来自原子模拟/理论/ML/实验）。</li>
+<li><strong>端到端状态</strong>：综述中多数模型尚未实现"序列→相图"的端到端预测；iCONNA 最接近，但仅限于短寡核苷酸和特定序列类型。</li>
+<li><strong>算力成本</strong>：综述未提供各模型的定量计算成本比较，仅定性讨论效率-保真度权衡。</li>
+<li><strong>历史数据依赖</strong>：多数模型参数化依赖有限的实验数据集（如特定序列的 Rg 或相图数据），外推至新序列或溶液条件存在风险。</li>
+<li><strong>模型依赖</strong>：所有 CG 模型依赖隐式溶剂假设，无法捕捉水分子介导的相互作用细节；Mg²⁺ 处理方式（水合球 vs 显式）显著影响结果。</li>
+<li><strong>最难情形</strong>：含复杂二级结构（G-四链体、假结）的核酸、蛋白质-核酸共凝聚体系、以及温度依赖的 LCST/UCST 行为是当前 CG 模型最难准确描述的场景。</li>
+<li><strong>群体/领域边界</strong>：结论主要适用于体外纯化核酸体系；细胞内环境（大分子拥挤、主动过程、蛋白质修饰）的核酸凝聚行为可能涉及额外机制。</li>
+<li><strong>有边界的复述</strong>：在已发表的 CG 模拟研究中，碱基介导的相互作用（配对与堆叠）在同型核酸凝聚中表现出比静电桥接更主导的贡献；这一结论在 SIS 和 iCONNA 两个独立模型中均得到支持，但主要基于三核苷酸重复和均聚物体系，尚不能推广至所有核酸序列和溶液条件。</li>
+</ul>
+<hr />
+<h2>12 作者自认局限</h2>
+<table>
+<thead>
+<tr>
+<th>局限</th>
+<th>具体表现</th>
+<th>作者提出的未来方向</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>缺乏系统基准测试</td>
+<td>各 CG 模型采用不同参数化策略和验证目标，难以公平比较</td>
+<td>建立系统基准，评估不同模型对实验可观测量的预测能力</td>
+<td>CG models 节开头</td>
+</tr>
+<tr>
+<td>蛋白质-核酸互作参数化数据稀缺</td>
+<td>多数核酸 CG 模型未与蛋白质模型耦合；异型体系建模不足</td>
+<td>积累实验热力学数据，改进蛋白质-核酸互作参数化</td>
+<td>Concluding discussion 第 2 段</td>
+</tr>
+<tr>
+<td>Mg²⁺ 配位模式处理粗糙</td>
+<td>多数模型将 Mg²⁺ 视为简单带电球或隐式处理，无法区分内层/外层配位</td>
+<td>引入 RISM 方法或 ML 训练的有效势</td>
+<td>Concluding discussion 第 3 段</td>
+</tr>
+<tr>
+<td>隐式溶剂模型难以捕捉 LCST</td>
+<td>温度依赖的脱水效应是 LCST 的核心机制，但隐式溶剂 CG 框架难以表达</td>
+<td>开发编码温度依赖脱水效应的策略</td>
+<td>Concluding discussion 第 3 段</td>
+</tr>
+<tr>
+<td>复杂核酸结构（G4 等）的 CG 建模仍不成熟</td>
+<td>Martini 3 扩展虽可捕捉 G4 折叠，但温度/盐依赖性验证不足</td>
+<td>进一步验证和优化复杂结构核酸的 CG 模型</td>
+<td>Emerging applications 节（G4 部分）</td>
+</tr>
+<tr>
+<td>从分子互作到材料性质的连接缺失</td>
+<td>模型可预测相界，但难以预测凝聚体黏度、表面张力等材料性质</td>
+<td>系统研究 CG 参数与流变学可观测量之间的关联</td>
+<td>Concluding discussion 第 4 段</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"碱基互作主导"结论可能受限于测试序列</td>
+<td>SIS 和 iCONNA 的验证主要基于三核苷酸重复和均聚物；这些序列本身具有强配对/堆叠倾向，可能高估碱基互作在一般序列中的主导性</td>
+<td>若结论过度泛化，可能误导 CG 模型设计中对静电项的忽视</td>
+<td>在随机序列、含修饰碱基序列、不同 GC 含量序列上系统测试 SIS/iCONNA 的相图预测</td>
+<td>Results 节（SIS/iCONNA 部分）</td>
+</tr>
+<tr>
+<td>iCONNA 的 λ 参数校准依赖 Δnmg 数据，存在循环论证风险</td>
+<td>Δnmg 本身来自模拟/理论/ML 预测，若这些预测有偏，λ 校准会继承偏差</td>
+<td>参数校准的独立性决定模型预测的可信度</td>
+<td>用实验直接测量的 Mg²⁺ 结合数据（如 ITC、NMR）独立校准 λ</td>
+<td>iCONNA 参数化描述（Methods 节）</td>
+</tr>
+<tr>
+<td>综述未讨论 CG 模型对凝聚体动力学（非平衡态）的预测能力</td>
+<td>多数验证集中在平衡态相图，但细胞内凝聚体常处于非平衡态（如 ATP 驱动的动态交换）</td>
+<td>若模型仅能预测平衡态，对理解细胞内凝聚体功能有限</td>
+<td>比较 CG 模拟与 FRAP/光漂白实验的动力学时间尺度</td>
+<td>Concluding discussion 未提及动力学验证</td>
+</tr>
+<tr>
+<td>对"分辨率决定可及现象"的论断缺乏定量证据</td>
+<td>综述未提供不同分辨率模型对同一体系预测差异的系统比较</td>
+<td>该论断是综述的核心论点之一，需定量支持</td>
+<td>对同一核酸序列用 SIS/iCONNA/全原子分别模拟，比较相图和构象系综</td>
+<td>Abstract 与 Concluding discussion 的定性表述</td>
+</tr>
+<tr>
+<td>蛋白质-核酸异型体系综述覆盖不足</td>
+<td>仅简要提及 HPS/Mpipi/COCONO 在蛋白-RNA 体系的应用，未深入讨论核酸模型与蛋白质模型的兼容性问题</td>
+<td>三维基因组中染色质凝聚体几乎均为蛋白-核酸共凝聚体系</td>
+<td>系统比较不同核酸模型与同一蛋白质模型耦合时的相行为差异</td>
+<td>CG models 节（heterotypic 部分）</td>
+</tr>
+<tr>
+<td>未讨论机器学习在 CG 模型参数化中的潜力</td>
+<td>仅提及 ML 可用于 Δnmg 预测，未讨论 ML 势函数或自动参数化方法</td>
+<td>ML 辅助参数化可能是 CG 模型发展的关键方向</td>
+<td>综述未覆盖该方向，需查阅其他文献</td>
+<td>Concluding discussion 第 3 段（仅一句提及）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>14 学到什么</h2>
+<p><strong>Agent 提炼的知识候选</strong></p>
+<ol>
+<li>
+<p><strong>碱基互作主导性假说</strong>：在强静电屏蔽条件下（高盐/高 Mg²⁺），碱基配对和堆叠而非静电桥接主导核酸同型凝聚。可迁移至三维基因组：染色质区室化可能由局部序列特异性互作（如 CTCF-核酸、RNA-DNA 互作）驱动，而非全局静电。可在 Hi-C 数据中检验：若碱基互作主导，则区室边界应与序列组成（GC 含量、重复序列）强相关。</p>
+</li>
+<li>
+<p><strong>分辨率-可及现象映射原则</strong>：CG 模型的分辨率决定了可观测的物理现象范围。对三维基因组研究，这意味着：全基因组染色质模型（如 Hi-C 驱动的聚合物模型）无法捕捉局部碱基互作细节；而局部高分辨率模型（如 iCONNA 级别）无法扩展到全基因组尺度。需要建立多尺度耦合框架。</p>
+</li>
+<li>
+<p><strong>最小参数化策略</strong>：SIS 以单一能量参数重现复杂相行为，说明"少参数、靶向单一可观测"的建模策略在相分离研究中有效。可迁移至染色质模型：以 Hi-C 接触图为靶标，最小化参数数量，避免过拟合。</p>
+</li>
+<li>
+<p><strong>多靶标验证方法</strong>：iCONNA 同时验证 Rg、OCF、折叠/熔解温度、相图等多重可观测，确保参数平衡。对染色质模型，应同时验证 Hi-C 接触图、TAD 边界、区室强度、凝聚体动力学等多层次数据。</p>
+</li>
+<li>
+<p><strong>Mg²⁺ 处理方式的重要性</strong>：Mg²⁺ 的配位模式（内层 vs 外层）显著影响核酸凝聚行为。对三维基因组研究，二价离子（Mg²⁺、Ca²⁺）对染色质高级结构的影响可能被低估，值得在模型中显式考虑。</p>
+</li>
+<li>
+<p><strong>LCST 的分子机制</strong>：温度依赖的脱水和离子释放驱动 LCST 型相分离。对染色质凝聚体（如转录凝聚体），温度依赖性可能是一个被忽视的调控维度。</p>
+</li>
+<li>
+<p><strong>异型体系建模缺口</strong>：蛋白质-核酸共凝聚的 CG 建模仍不成熟，特别是核酸模型与蛋白质模型的兼容性。这是三维基因组模拟（染色质+转录因子+RNA 聚合酶）的关键瓶颈。</p>
+</li>
+<li>
+<p><strong>实验-模拟对照范式</strong>：综述强调模拟预测需与 SAXS、FRET、NMR 等多尺度实验数据对照。三维基因组模拟应建立类似的"模拟-实验"闭环验证流程。</p>
+</li>
+</ol>
+<hr />
+<h2>15 与已有知识连接</h2>
+<ul>
+<li>
+<p><strong>与三维基因组模拟的关联</strong>：本文综述的 CG 核酸模型（SIS, iCONNA, oxDNA）与三维基因组研究中常用的聚合物模型（如 Hi-C 驱动的 block copolymer 模型、Strings &amp; Binders 模型）在方法论上互补。前者强调序列级互作细节，后者强调全基因组尺度结构。本文的"分辨率-可及现象"框架可用于指导两类模型的耦合策略。</p>
+</li>
+<li>
+<p><strong>与相分离领域经典工作的关联</strong>：本文讨论的 stickers-and-spacers 框架（引用文献 9, 125-130）与 Brangwynne、Hyman 等人在蛋白质相分离领域的框架一脉相承，但将其扩展到核酸体系。该框架已被用于解释染色质区室化（如 HP1 凝聚体介导的异染色质形成）。</p>
+</li>
+<li>
+<p><strong>与染色质凝聚体实验研究的关联</strong>：本文引用的 CAG 重复相分离实验（文献 25）与三核苷酸重复扩增疾病的病理机制直接相关，该机制在三维基因组研究中与基因组不稳定性和核组织异常相关。</p>
+</li>
+<li>
+<p><strong>与机器学习方法的关联</strong>：本文提及 ML 可用于预测 Δnmg（离子结合参数），这与三维基因组研究中 ML 辅助 Hi-C 数据分析和染色质结构预测的趋势一致。ML 辅助 CG 参数化是两领域的交叉前沿。</p>
+</li>
+<li>
+<p><strong>与力场开发领域的关联</strong>：本文讨论的 Martini 3 扩展（文献 103）和 oxDNA/oxRNA 是核酸 CG 力场的代表性工作，与三维基因组研究中用于染色质模拟的力场（如自底向上的 Hi-C 约束模型）形成对照。</p>
+</li>
+<li>
+<p><strong>候选方向 [Analysis]</strong>：本文未讨论但值得关注的交叉方向包括：(1) 将 iCONNA 类模型与染色质区室模型耦合，研究 RNA 介导的染色质凝聚；(2) 将 ML 势函数应用于核酸-蛋白质共凝聚模拟；(3) 将本文的"碱基互作主导"假说与 Hi-C 数据中的序列-结构关联分析结合。</p>
+</li>
+</ul>
+<hr />
+<h2>16 研究想法</h2>
+<p><strong>Agent 生成的研究候选</strong></p>
+<h3>候选 1：基于碱基互作主导假说的染色质区室化预测模型</h3>
+<ul>
+<li><strong>名称</strong>：Sequence-Driven Compartmentalization Predictor (SDCP)</li>
+<li><strong>来源局限/观察</strong>：本文提出碱基互作（配对+堆叠）在核酸凝聚中主导，但该结论未在染色质尺度验证。Hi-C 数据显示区室 A/B 与 GC 含量、基因密度相关，但机制不清。</li>
+<li><strong>核心假设</strong>：染色质区室化部分由序列内在的碱基互作倾向驱动，而非仅由表观遗传修饰和蛋白质因子决定。</li>
+<li><strong>方法</strong>：将 iCONNA 类碱基互作参数扩展到染色质尺度的 block copolymer 模型，以序列组成（GC 含量、重复序列密度）为输入，预测区室化倾向；与 Hi-C 数据对照。</li>
+<li><strong>验证</strong>：使用不同细胞类型的 Hi-C 数据，比较序列预测的区室化与实验区室的吻合度；在序列突变（如 CRISPR 编辑）体系中检验预测。</li>
+<li><strong>创新状态</strong>：unverified（需文献调研确认是否已有类似工作）</li>
+</ul>
+<h3>候选 2：多尺度耦合框架：从碱基互作到染色质凝聚体</h3>
+<ul>
+<li><strong>名称</strong>：Multi-Scale Chromatin Condensate Simulator (MSCS)</li>
+<li><strong>来源局限/观察</strong>：本文强调分辨率-可及现象的权衡，但未提供多尺度耦合方案。三维基因组研究缺乏从序列到凝聚体的统一模拟框架。</li>
+<li><strong>核心假设</strong>：通过局部高分辨率（iCONNA 类）与全局低分辨率（聚合物模型）的耦合，可以在保持计算效率的同时捕捉序列特异性的凝聚行为。</li>
+<li><strong>方法</strong>：开发自适应分辨率切换算法，在凝聚体界面附近使用高分辨率模型，在远场使用低分辨率模型；通过 Lattice Boltzmann 或 AdResS 类方法实现尺度耦合。</li>
+<li><strong>验证</strong>：对已知的 CAG 重复和 G4C2 重复体系进行模拟，比较耦合模型与纯高/低分辨率模型的相图预测。</li>
+<li><strong>创新状态</strong>：unverified（AdResS 等方法在蛋白质体系已有应用，但核酸-染色质体系未见报道）</li>
+</ul>
+<h3>候选 3：ML 辅助的 Mg²⁺ 依赖染色质凝聚模型</h3>
+<ul>
+<li><strong>名称</strong>：Ion-Aware Chromatin Condensation Network (IACCN)</li>
+<li><strong>来源局限/观察</strong>：本文指出 Mg²⁺ 配位模式对核酸凝聚重要，但多数 CG 模型处理粗糙。三维基因组研究中离子条件对 Hi-C 结构的影响尚未系统建模。</li>
+<li><strong>核心假设</strong>：ML 训练的 Mg²⁺ 配位有效势可以替代显式离子模拟，在 CG 尺度捕捉离子依赖的染色质凝聚行为。</li>
+<li><strong>方法</strong>：用原子模拟生成 Mg²⁺-核酸配位训练数据，训练图神经网络或 ML 势函数，嵌入 CG 模拟框架；系统扫描 Mg²⁺ 浓度对染色质凝聚相图的影响。</li>
+<li><strong>验证</strong>：与实验 SAXS 和 ITC 数据对照；预测不同 Mg²⁺ 浓度下的 Hi-C 接触模式变化。</li>
+<li><strong>创新状态</strong>：partially checked（ML 势函数在离子-核酸体系已有初步应用，但未与染色质凝聚结合）</li>
+</ul>
+<h3>候选 4：RNA 介导的染色质凝聚体空间组织模拟</h3>
+<ul>
+<li><strong>名称</strong>：RNA-Mediated Chromatin Condensate Organization Simulator (RMCOS)</li>
+<li><strong>来源局限/观察</strong>：本文指出 RNA 在异型凝聚中可作促进剂和抑制剂（再入相行为），但未讨论 RNA 在染色质凝聚体中的空间组织作用。三维基因组中 lncRNA 介导的凝聚体（如 Xist 介导的 X 失活）机制不清。</li>
+<li><strong>核心假设</strong>：RNA 的电荷密度和序列组成决定其在染色质凝聚体中的空间分布（表面 vs. 内部），进而影响凝聚体的功能输出。</li>
+<li><strong>方法</strong>：扩展 HPS/Mpipi 类模型至三组分体系（染色质+RNA+蛋白质），系统扫描 RNA 长度、电荷密度、序列组成对凝聚体内部结构的影响。</li>
+<li><strong>验证</strong>：与 Xist 介导的 X 失活凝聚体实验数据对照；预测 RNA 敲低后的凝聚体结构变化。</li>
+<li><strong>创新状态</strong>：unverified（三组分核酸-蛋白-RNA 凝聚模拟未见系统研究）</li>
+</ul>
+<h3>候选 5：温度依赖性染色质凝聚的 CG 模型</h3>
+<ul>
+<li><strong>名称</strong>：Thermo-Responsive Chromatin Condensate Model (TRCCM)</li>
+<li><strong>来源局限/观察</strong>：本文指出核酸凝聚的 LCST 特性源于温度依赖的脱水效应，但多数 CG 模型无法捕捉温度依赖性。三维基因组研究中温度对染色质高级结构的影响（如热休克响应）尚未建模。</li>
+<li><strong>核心假设</strong>：在 CG 模型中引入温度依赖的溶剂化自由能项，可以捕捉核酸凝聚的 LCST/UCST 行为，并预测温度变化对染色质凝聚体的影响。</li>
+<li><strong>方法</strong>：在 iCONNA 框架中引入温度依赖的相互作用参数（基于实验或原子模拟的脱水自由能数据），系统测试不同温度下的相图。</li>
+<li><strong>验证</strong>：与 poly(P) 和 CAG 重复的温度依赖性实验相图对照；预测热休克条件下的染色质凝聚体变化。</li>
+<li><strong>创新状态</strong>：unverified（温度依赖性 CG 模型在蛋白质体系已有探索，核酸体系未见系统工作）</li>
+</ul></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Full manuscript text including abstract, main text, and references cited within the text.</li>
+<li><strong>Assessment boundary</strong> Scientific content, technical soundness, and clarity of the review article. Editorial and formatting aspects are not assessed.</li>
+<li><strong>Shared manuscript claim summary</strong> The manuscript reviews recent advances in coarse-grained (CG) simulations of nucleic acid condensation, arguing that base-mediated interactions are dominant drivers in homotypic nucleic acid condensation and that simulation resolution fundamentally determines which physical phenomena are accessible. It surveys models across resolutions, highlights applications to complex nucleic acid systems, and identifies gaps and future directions.</li>
+<li><strong>Visible evidence base</strong> Full text of the manuscript, including abstract, introduction, sections on atomistic insights, CG models (SIS/TIS, iConRNA), emerging applications (G-quadruplex, nanostars), heterotypic systems, and concluding outlook. Figures and tables are referenced but not provided.</li>
+<li><strong>Missing materials affecting confidence</strong> Figures (Figure 1, 2, 3) and Table 1 are referenced but not included. Specific numerical data, simulation parameters, and quantitative comparisons are not fully detailed in the text. Reference list is not provided in full.</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li>
+<p><strong>Overall assessment</strong> This is a well-structured and timely review that addresses an important and rapidly evolving area at the interface of computational biophysics and cell biology. The manuscript provides a clear organizational framework based on model resolution, which is useful for readers. The central thesis, that base-mediated interactions dominate homotypic nucleic acid condensation and that resolution determines accessible physics, is coherent and supported by the examples discussed. However, the review would benefit from a more critical and quantitative comparison of model performance, a clearer articulation of validation standards, and a more balanced discussion of limitations. The absence of figures and Table 1 in the provided material limits full assessment of the presented evidence.</p>
+</li>
+<li>
+<p><strong>Who would be interested in the results, and why</strong> Computational biophysicists and physical chemists developing or applying CG models for nucleic acids; experimental biologists studying biomolecular condensates, particularly those involving RNA; researchers in the fields of phase separation, gene regulation, and neurodegeneration where nucleic acid condensation is implicated; and synthetic biologists interested in programmable nucleic acid nanostructures.</p>
+</li>
+<li>
+<p><strong>Major strengths</strong> The review fills a niche by focusing specifically on CG simulations of nucleic acid condensation, a topic that is often treated as a subsection within broader reviews of biomolecular condensates. The organization by model resolution is logical and helps readers navigate a complex field. The discussion of SIS and iConRNA in detail provides concrete examples of how different modeling choices affect outcomes. The identification of key gaps, such as the need for better protein–nucleic acid interaction parameters and the challenge of capturing temperature-dependent effects in implicit-solvent models, is valuable and forward-looking.</p>
+</li>
+<li>
+<p><strong>Major Concerns</strong></p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M1</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Technical soundness</li>
+<li><strong>Claim pointer</strong> The manuscript states that "base-mediated interactions emerge as dominant drivers in homotypic nucleic acid condensation" and that this is a key theme across the reviewed models.</li>
+<li><strong>Evidence pointer</strong> Sections "CG models for nucleic acid phase separation", "Single-site and triple-site interaction models (SIS/TIS)", "Intermediate resolution model for condensates of RNAs (iConRNA)"</li>
+<li><strong>Concern</strong> The claim that base-mediated interactions are the dominant driver is primarily supported by two models (SIS and iConRNA). The SIS model does not include electrostatics at all, and iConRNA uses a scaling factor for Mg2+ interactions that is calibrated to experimental data. The review does not critically discuss whether this dominance is an artifact of model construction or a genuine physical feature. For example, in SIS, the absence of electrostatics means base pairing is the only attractive interaction, which could bias the conclusion. The review would be strengthened by a more nuanced discussion of how model construction choices might influence the apparent dominance of base-mediated interactions.</li>
+<li><strong>Why it matters</strong> The central thesis of the review rests on this claim. If the dominance of base-mediated interactions is partly a consequence of model design rather than a universal physical principle, the review's main message could be misleading for readers who are not experts in CG modeling.</li>
+<li>
+<p><strong>Resolution test</strong> The authors should either (a) provide a more critical analysis of how the absence or simplification of electrostatic interactions in different models affects the conclusion, or (b) present evidence from models that include both electrostatics and base interactions at comparable resolution to show that base interactions still dominate. A comparative table of model features and their predicted dominant interactions would be helpful.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M2</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Scientific importance</li>
+<li><strong>Claim pointer</strong> The manuscript states that "simulation resolution fundamentally determines which physical phenomena are accessible and observable."</li>
+<li><strong>Evidence pointer</strong> Sections "CG models for nucleic acid phase separation", "Emerging application of CG models to phase separation of complex nucleic acids"</li>
+<li><strong>Concern</strong> While this statement is broadly true, the review does not systematically analyze how resolution choices map to specific physical phenomena. For example, the discussion of one-bead models notes their limitation in capturing base stacking, but the review does not provide a clear framework for readers to understand which phenomena require which resolution. A more explicit mapping, perhaps in a table or figure, would strengthen the review's utility.</li>
+<li><strong>Why it matters</strong> The review aims to guide readers in choosing appropriate models. Without a clear articulation of the resolution–phenomenon relationship, readers may struggle to apply the insights to their own systems.</li>
+<li>
+<p><strong>Resolution test</strong> The authors should provide a more explicit and systematic discussion of the relationship between model resolution and accessible physical phenomena, potentially in the form of a summary table or figure that maps resolution levels to specific observable properties (e.g., phase boundaries, internal structure, dynamics, ion effects).</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M3</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Technical soundness</li>
+<li><strong>Claim pointer</strong> The manuscript states that iConRNA "accurately recapitulate[s] the nontrivial dependence of CAG repeat phase separation on sequence length, ionic strength, temperature, Mg2+, and RNA concentrations" and that this "is a major achievement that has not been demonstrated by other CG or atomistic models to date."</li>
+<li><strong>Evidence pointer</strong> Section "Intermediate resolution model for condensates of RNAs (iConRNA)"</li>
+<li><strong>Concern</strong> This is a strong claim that would benefit from more detailed evidence. The text does not provide quantitative comparisons between iConRNA predictions and experimental data. Without figures or tables showing the agreement, the claim is difficult to evaluate. Additionally, the statement "not been demonstrated by other CG or atomistic models to date" is a strong negative claim that would require a comprehensive literature search to support.</li>
+<li><strong>Why it matters</strong> The review's credibility depends on the accuracy of its claims about model performance. Overstating the achievements of a particular model could mislead readers.</li>
+<li>
+<p><strong>Resolution test</strong> The authors should provide quantitative comparisons (e.g., phase boundary coordinates, critical concentrations) between iConRNA predictions and experimental measurements, and temper the claim about uniqueness unless a thorough literature comparison is provided.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M4</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Interdisciplinary readership</li>
+<li><strong>Claim pointer</strong> The manuscript aims to be accessible to a broad audience, including experimentalists, as implied by the abstract and introduction.</li>
+<li><strong>Evidence pointer</strong> Throughout the manuscript, particularly in sections describing model details</li>
+<li><strong>Concern</strong> The manuscript uses technical jargon without sufficient explanation for non-specialists. Terms such as "Debye–Hückel approximation," "reference interaction site model (RISM)," "stickers-and-spacers," and "Wang–Frenkel nonbonded interactions" are introduced without adequate context. While the intended audience may include computational biophysicists, the review's stated scope includes experimental biologists who study condensates. The manuscript would benefit from a glossary or more careful introduction of technical terms.</li>
+<li><strong>Why it matters</strong> The review aims to bridge computational and experimental communities. If experimentalists cannot fully understand the model descriptions, the review's impact will be limited.</li>
+<li>
+<p><strong>Resolution test</strong> The authors should either add a glossary of technical terms or expand the explanations of key concepts to make the manuscript more accessible to non-specialists.</p>
+</li>
+<li>
+<p><strong>Minor Comments</strong></p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m1</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Clarity</li>
+<li><strong>Affected element</strong> Abstract</li>
+<li><strong>Evidence pointer</strong> Abstract, first sentence</li>
+<li><strong>Issue</strong> The abstract begins with a general statement about biomolecular condensates that is not specific to nucleic acids. This is acceptable, but the abstract could more quickly focus on the nucleic acid-specific aspects that are the subject of the review.</li>
+<li>
+<p><strong>Required correction</strong> Consider revising the first sentence to more directly introduce the nucleic acid focus, e.g., "Nucleic acid condensation, a key driver of biomolecular condensate formation and function, is increasingly studied using coarse-grained simulations..."</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m2</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Completeness</li>
+<li><strong>Affected element</strong> Section "CG models for protein–nucleic acid heterotypic phase transitions"</li>
+<li><strong>Evidence pointer</strong> Section "CG models for protein–nucleic acid heterotypic phase transitions", subsection "Minimal models and patchy particles"</li>
+<li><strong>Issue</strong> The discussion of minimal models is brief and does not mention specific recent studies beyond general statements. Given the breadth of this area, a few more specific examples would strengthen the review.</li>
+<li>
+<p><strong>Required correction</strong> Add 1-2 specific examples of recent minimal-model studies of protein–nucleic acid systems, with brief descriptions of their key findings.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m3</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Technical soundness</li>
+<li><strong>Affected element</strong> Section "Emerging application of CG models to phase separation of complex nucleic acids", subsection "G-quadruplex"</li>
+<li><strong>Evidence pointer</strong> Section "G-quadruplex"</li>
+<li><strong>Issue</strong> The text states that the Martini 3 model "can capture the spontaneous quadruplex folding without relying on an elastic network." This is an important technical achievement, but the text does not provide details on how this was validated or what the limitations are.</li>
+<li>
+<p><strong>Required correction</strong> Add a sentence or two describing the validation approach and any known limitations of the Martini 3 model for G-quadruplex simulations.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m4</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Clarity</li>
+<li><strong>Affected element</strong> Section "Concluding discussion and outlook"</li>
+<li><strong>Evidence pointer</strong> Section "Concluding discussion and outlook", first paragraph</li>
+<li><strong>Issue</strong> The concluding paragraph lists several future directions but does not prioritize them or provide a clear sense of which are most urgent or feasible.</li>
+<li>
+<p><strong>Required correction</strong> Consider adding a sentence that prioritizes the most pressing challenges or opportunities, e.g., "Among these, the development of transferable protein–nucleic acid interaction parameters is arguably the most urgent need."</p>
+</li>
+<li>
+<p><strong>Technical failings that need to be addressed before the case is established</strong> No fundamental technical failings identified. The main issues are the lack of quantitative evidence for some strong claims (R1-M3) and the need for a more critical analysis of the central thesis (R1-M1). These are matters of presentation and depth rather than technical errors.</p>
+</li>
+<li>
+<p><strong>Assessment against Nature-style criteria</strong></p>
+</li>
+<li><strong>Originality</strong> The review addresses a specific and timely topic that is not covered in depth by existing reviews. The focus on CG simulations of nucleic acid condensation, as opposed to protein condensation or nucleic acid structure prediction, provides a distinct angle. The organization by model resolution is a useful framework. However, the review does not introduce fundamentally new concepts or perspectives; it synthesizes existing work.</li>
+<li><strong>Scientific importance</strong> The topic is of high importance given the growing recognition of nucleic acid condensation in gene regulation, stress response, and disease. The review identifies key gaps and future directions, which is valuable for the field. However, the impact would be enhanced by a more critical and quantitative assessment of model capabilities.</li>
+<li><strong>Interdisciplinary readership</strong> The review has the potential to appeal to both computational and experimental researchers. However, the technical detail may be challenging for experimentalists without a computational background. The review would benefit from improved accessibility.</li>
+<li><strong>Technical soundness</strong> The technical content appears sound based on the text provided. The descriptions of the models are accurate, and the discussion of limitations is generally appropriate. However, the lack of figures and Table 1 limits full verification. The strong claims about iConRNA's performance (R1-M3) require more evidence.</li>
+<li>
+<p><strong>Readability for nonspecialists</strong> The manuscript is generally well-written and logically organized. However, the use of technical jargon without adequate explanation (R1-M4) reduces readability for non-specialists. The abstract and introduction are accessible, but the main text becomes more technical.</p>
+</li>
+<li>
+<p><strong>Recommendation posture</strong> Supportive if technical concerns are resolved. The review addresses an important topic and provides a useful synthesis of recent work. The main issues are the need for more quantitative evidence for key claims, a more critical analysis of the central thesis, and improved accessibility for non-specialists. These are addressable through revision.</p>
+</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>The claim that iConRNA "accurately recapitulate[s] the nontrivial dependence of CAG repeat phase separation on sequence length, ionic strength, temperature, Mg2+, and RNA concentrations" is not supported by quantitative data in the provided text. Figures or tables showing the comparison are needed.</li>
+<li>The statement that iConRNA's achievement "has not been demonstrated by other CG or atomistic models to date" is a strong negative claim that is not supported by a comprehensive literature comparison in the provided text.</li>
+<li>The claim that "base-mediated interactions emerge as dominant drivers in homotypic nucleic acid condensation" is supported by the discussed models but may be influenced by model construction choices (e.g., SIS lacks electrostatics). A more critical discussion is needed.</li>
+<li>The statement that "simulation resolution fundamentally determines which physical phenomena are accessible and observable" is presented as a general principle but is not systematically analyzed across the reviewed models.</li>
+<li>The discussion of the Martini 3 model's ability to capture spontaneous quadruplex folding is not accompanied by validation details or limitations.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,77 @@
+## Review setup
+- **Input scope** Abstract only
+- **Assessment boundary** Claims and conclusions as presented in the abstract
+- **Shared manuscript claim summary** The abstract presents a review of three generations of computational methods for plant gene regulatory network (GRN) inference, evaluated against a five-level evidence ladder, and proposes a lab-in-the-loop framework where foundation models act as hypothesis engines to prioritise candidate TF-target pairs for experimental validation.
+- **Visible evidence base** Abstract text only; no figures, tables, methods, or references provided
+- **Missing materials affecting confidence** Full manuscript text, figures, tables, references, and any supplementary information; without these, the depth and accuracy of the review's coverage, the validity of the five-level ladder, and the support for the proposed framework cannot be assessed
+
+## Reviewer
+- **Overall assessment** The abstract outlines a potentially useful conceptual framework for organising computational approaches to plant GRN inference, and the proposed lab-in-the-loop division of labour is a sensible and timely suggestion. However, the abstract is too brief to establish the scientific case for the review's novelty, completeness, or accuracy. The five-level evidence ladder is introduced but not justified, the three generations of methods are named but not critically compared, and the claims about foundation models are speculative without supporting examples or benchmarks. The abstract reads as a high-level overview rather than a substantive scientific contribution, and the provided material is insufficient to evaluate whether the full manuscript delivers on its promises.
+- **Who would be interested in the results, and why** Plant molecular biologists and computational biologists working on gene regulation, particularly those interested in GRN inference, single-cell genomics, and the application of deep learning and foundation models to plant biology. The proposed framework for prioritising experimental validation could also interest researchers developing high-throughput validation pipelines.
+- **Major strengths** The abstract identifies a real and important bottleneck in plant biology, namely the vast gap between candidate TF-target pairs and experimentally validated interactions. The five-level evidence ladder provides a clear conceptual structure for comparing methods. The proposal to position foundation models as hypothesis engines rather than oracles is a pragmatic and well-framed perspective that could help guide the field.
+- **Major Concerns** 
+  - **Concern ID** R1-M1
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Evidence sufficiency
+  - **Claim pointer** The abstract claims that the review measures computational methods against a five-level ladder of evidence including statistical association, conditional dependence, physical binding, functional regulation and causal circuits.
+  - **Evidence pointer** Abstract text; location not provided
+  - **Concern** The five-level ladder is stated but no justification is given for why these five levels are the correct or complete hierarchy, how they relate to existing frameworks in the field, or how methods are assigned to each level. The abstract does not indicate whether the ladder is a novel contribution or a synthesis of existing concepts.
+  - **Why it matters** The ladder appears to be the central organising principle of the review. If it is not rigorously defined and defended, the entire comparative framework lacks a solid foundation, and readers cannot assess whether the categorisation of methods is fair or useful.
+  - **Resolution test** The full manuscript must provide a clear definition of each level, examples of methods assigned to each level, and a discussion of the ladder's limitations and relationship to prior classification schemes.
+  - **Concern ID** R1-M2
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Claim support
+  - **Claim pointer** The abstract claims that deep learning can interpret cis-regulatory grammar directly from genome sequences and that foundation models trained on plant genomes and millions of cells hold potential to share regulatory insights across species.
+  - **Evidence pointer** Abstract text; location not provided
+  - **Concern** These are strong claims about current capabilities and future potential, but the abstract provides no specific examples, benchmarks, or citations to support them. The phrase "can interpret" implies established capability, while "hold exciting potential" is speculative. Without concrete evidence of what has been achieved and what remains aspirational, the claims are not assessable.
+  - **Why it matters** The credibility of the review depends on accurate representation of the state of the field. Overstating current capabilities or making unsupported promises about foundation models could mislead readers, particularly those less familiar with deep learning methods.
+  - **Resolution test** The full manuscript must cite specific studies demonstrating cis-regulatory grammar interpretation from sequence, provide quantitative benchmarks where available, and clearly distinguish demonstrated results from speculative potential for cross-species transfer.
+  - **Concern ID** R1-M3
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Reproducibility and completeness
+  - **Claim pointer** The abstract claims to review three generations of computational approaches to plant GRN inference.
+  - **Evidence pointer** Abstract text; location not provided
+  - **Concern** The abstract names the three generations but does not indicate the criteria for this generational division, the key methods within each generation, or how the generations relate chronologically or conceptually. The claim of a review is not verifiable from the abstract alone.
+  - **Why it matters** A review's value lies in its comprehensive and critical coverage. Without knowing which methods are included, how they are compared, and what criteria define each generation, the reader cannot judge whether the review is complete, balanced, or useful.
+  - **Resolution test** The full manuscript must provide a clear definition of the three generations, a comprehensive list of methods within each, and a critical comparison of their strengths and weaknesses with appropriate citations.
+- **Minor Comments** 
+  - **Concern ID** R1-m1
+  - **Severity** Minor
+  - **Axis** Clarity
+  - **Affected element** The phrase "the maps that plant biologists most want to draw"
+  - **Evidence pointer** Abstract text; location not provided
+  - **Issue** This phrasing is informal and overgeneralises. It is not clear that all plant biologists would prioritise GRNs above other maps, such as metabolic or signalling networks.
+  - **Required correction** Rephrase to be more precise, for example "GRNs are a central goal for many plant biologists" or similar.
+  - **Concern ID** R1-m2
+  - **Severity** Minor
+  - **Axis** Precision
+  - **Affected element** The claim that "a single plant genome harbours tens of millions of candidate TF-target pairs"
+  - **Evidence pointer** Abstract text; location not provided
+  - **Issue** The number is presented without context. It is unclear whether this refers to all possible pairs, pairs passing some filter, or a specific species. The range is also very wide.
+  - **Required correction** Provide a specific calculation or citation, and clarify the basis for the estimate.
+  - **Concern ID** R1-m3
+  - **Severity** Minor
+  - **Axis** Terminology
+  - **Affected element** The term "lab-in-the-loop"
+  - **Evidence pointer** Abstract text; location not provided
+  - **Issue** This term is not standard in the field and is not defined in the abstract. It may be confused with "human-in-the-loop" or other related concepts.
+  - **Required correction** Define the term on first use or use a more standard phrase such as "experimentally guided iterative refinement".
+- **Technical failings that need to be addressed before the case is established** R1-M1, R1-M2, R1-M3. The abstract does not provide sufficient evidence to establish the validity of the five-level ladder, the accuracy of claims about deep learning and foundation models, or the completeness of the three-generation review. These are foundational to the manuscript's contribution.
+- **Assessment against Nature-style criteria** 
+  - Originality: The five-level ladder and the lab-in-the-loop proposal have elements of novelty, but the abstract does not demonstrate how they differ from existing frameworks or proposals in the field. The originality is therefore not established from the provided material.
+  - Scientific importance: The bottleneck of TF-target validation is important, and a framework that helps prioritise experiments could be valuable. However, the abstract does not show how the proposed approach would change practice or improve outcomes.
+  - Interdisciplinary readership: The topic bridges plant biology, computational biology, and machine learning, which could attract a broad audience. The abstract is written in accessible language, but the lack of specific examples or results limits its appeal to specialists.
+  - Technical soundness: Not assessable from the abstract. No methods, data, or benchmarks are presented.
+  - Readability for nonspecialists: The abstract is generally clear and avoids excessive jargon, though terms like "cis-regulatory grammar" and "foundation models" may need more explanation for a general audience.
+- **Recommendation posture** Currently not established from the provided evidence. The abstract presents a promising conceptual framework, but the full manuscript must provide rigorous definitions, comprehensive coverage, and concrete evidence to support the claims. A revised abstract that includes specific examples, citations, and a clearer statement of the review's novel contributions would strengthen the case.
+
+## Risk / unsupported claims
+- The five-level evidence ladder is presented as a framework but is not justified or defined in the abstract.
+- The claim that deep learning "can interpret cis-regulatory grammar directly from genome sequences" is stated as fact without supporting evidence.
+- The potential of foundation models to share regulatory insights across species is speculative and not supported by examples.
+- The estimate of "tens of millions of candidate TF-target pairs" is given without calculation or citation.
+- The three-generation division of computational methods is asserted without criteria or examples.
+- The lab-in-the-loop framework is proposed as "the most promising route forward" without comparison to alternative strategies or evidence of its effectiveness.

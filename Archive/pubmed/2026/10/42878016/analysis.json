@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42878016",
+  "title": "Recent advances in coarse-grained simulations of nucleic acid condensation.",
+  "authors": "Fong Ng, Jessica; Li, Shanlong; Chen, Jianhan",
+  "journal": "The Biochemical journal",
+  "published_date": "2026-10-15",
+  "window": {
+    "start": "2026-10-11",
+    "end": "2026-10-17"
+  },
+  "score": 7,
+  "one_liner_zh": "该综述聚焦核酸凝聚体的粗粒化分子模拟方法，虽对象为核酸相分离而非染色质三维组织，但其多尺度模拟框架和相分离机制建模思路对染色质空间架构的粗粒化建模具有直接可迁移的启发价值。",
+  "abstract": "Biomolecular condensates, formed through phase separation of multivalent biomolecules, play essential roles in cellular processes such as stress response, RNA processing, transcriptional control, and genome organization. Nucleic acids are increasingly recognized as important drivers and regulators of condensate formation and dynamics. This review examines recent advances in coarse-grained molecular simulations of dynamic nucleic acids and their phase transitions. We survey established computational frameworks validated against experimental data and discuss emerging applications that address increasingly complex systems. Existing studies reveal that base-mediated interactions emerge as dominant drivers in homotypic nucleic acid condensation and that simulation resolution fundamentally determines which physical phenomena are accessible and observable. We underscore that different modeling approaches at various resolutions provide complementary insights into nucleic acid condensation mechanisms and the driving forces. We emphasize the opportunities and challenges in extending these frameworks to capture the complexity of nucleic acid-mediated phase separation in biological contexts, while identifying important gaps in current modeling capabilities. Overall, molecular simulations at multiple scales have proven to be powerful tools for elucidating the mechanistic principles underlying nucleic acid condensates and their cellular functions.",
+  "abstract_zh": "通过多价生物分子相分离（phase separation）形成的生物分子凝聚体，在应激反应、RNA加工、转录调控和基因组组织等细胞过程中发挥重要作用。核酸日益被认为是凝聚体形成和动态变化的重要驱动因子与调节因子。本综述考察了动态核酸及其相转变的粗粒化分子模拟（coarse-grained molecular simulations）近期进展。我们概述了经实验数据验证的既有计算框架，并讨论了应对日益复杂系统的新兴应用。现有研究表明，碱基介导的相互作用在同型核酸凝聚中成为主要驱动因素，且模拟分辨率从根本上决定了哪些物理现象是可及且可观测的。我们强调，不同分辨率下的多种建模方法为核酸凝聚机制及其驱动力提供了互补性见解。我们着重指出，在将这些框架扩展至捕捉生物背景下核酸介导相分离复杂性方面的机遇与挑战，同时识别当前建模能力中的重要空白。总体而言，多尺度分子模拟已被证明是阐明核酸凝聚体及其细胞功能背后机制原理的有力工具。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42878016/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42878016/",
+  "paper_page_path": "papers/pubmed/42878016/index.html"
+}

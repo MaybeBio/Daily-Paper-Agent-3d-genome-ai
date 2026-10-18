@@ -1,0 +1,116 @@
+{
+  "identity": {
+    "pmid": "42866118",
+    "doi": "10.3389/fpls.2026.1957203",
+    "title": "Advances in plant metabolic engineering through synthetic biology."
+  },
+  "content": {
+    "abstract": "The challenges associated with the escalating global population and climate change in crop production and food security are substantial. This underscores the necessity for improvements in crop nutrition, yield, and resilience to environmental stresses. Plant metabolic pathways directly influence growth, nutrient accumulation, and stress responses, rendering them prime targets for crop enhancement. Advances in plant synthetic biology and gene editing are facilitating more precise modifications of genes, regulatory elements, and metabolic pathways. This review highlights the primary technologies used in plant metabolic engineering and focuses on representative examples of their implementation for crop improvement, including but not limited to CRISPR-Cas systems, multiplex genome editing, knock-in and knock-out strategies, CRISPR-mediated gene regulation (CRISPRi/CRISPRa), base editing, prime editing, RNA targeting technologies, synthetic promoters, and gene stacking strategies. Furthermore, the emerging role of artificial intelligence in the design and optimization of metabolic pathways and genome editing tools will be briefly discussed.",
+    "keywords": [
+      "CRISPR",
+      "genome edited plants",
+      "plant metabolic engineering",
+      "plant transformation",
+      "synthetic biology"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Alsuwat, Hind",
+        "Alvarez, Derry",
+        "Al-Babili, Salim"
+      ],
+      "short_names": [
+        "Alsuwat H",
+        "Alvarez D",
+        "Al-Babili S"
+      ],
+      "auids": [],
+      "affiliations": [
+        "The BioActives Lab, King Abdullah University of Science and Technology (KAUST), Thuwal, Saudi Arabia.",
+        "Biological and Environmental Science and Engineering (BESE) Division, King Abdullah University of Science and Technology (KAUST), Thuwal, Saudi Arabia.",
+        "The BioActives Lab, King Abdullah University of Science and Technology (KAUST), Thuwal, Saudi Arabia.",
+        "Biological and Environmental Science and Engineering (BESE) Division, King Abdullah University of Science and Technology (KAUST), Thuwal, Saudi Arabia.",
+        "The BioActives Lab, King Abdullah University of Science and Technology (KAUST), Thuwal, Saudi Arabia.",
+        "Biological and Environmental Science and Engineering (BESE) Division, King Abdullah University of Science and Technology (KAUST), Thuwal, Saudi Arabia."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Alsuwat, Hind",
+        "short_name": "Alsuwat H",
+        "identifiers": [],
+        "affiliations": [
+          "The BioActives Lab, King Abdullah University of Science and Technology (KAUST), Thuwal, Saudi Arabia.",
+          "Biological and Environmental Science and Engineering (BESE) Division, King Abdullah University of Science and Technology (KAUST), Thuwal, Saudi Arabia."
+        ]
+      },
+      {
+        "full_name": "Alvarez, Derry",
+        "short_name": "Alvarez D",
+        "identifiers": [],
+        "affiliations": [
+          "The BioActives Lab, King Abdullah University of Science and Technology (KAUST), Thuwal, Saudi Arabia.",
+          "Biological and Environmental Science and Engineering (BESE) Division, King Abdullah University of Science and Technology (KAUST), Thuwal, Saudi Arabia."
+        ]
+      },
+      {
+        "full_name": "Al-Babili, Salim",
+        "short_name": "Al-Babili S",
+        "identifiers": [],
+        "affiliations": [
+          "The BioActives Lab, King Abdullah University of Science and Technology (KAUST), Thuwal, Saudi Arabia.",
+          "Biological and Environmental Science and Engineering (BESE) Division, King Abdullah University of Science and Technology (KAUST), Thuwal, Saudi Arabia."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Frontiers in plant science"
+    ],
+    "journal_abbrev": [
+      "Front Plant Sci"
+    ],
+    "pub_date": "2026",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/13 17:37",
+    "fetched_at": "2026-10-18 08:30:12"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42866118"
+    ],
+    "review": [
+      "42866118"
+    ],
+    "pmc": [
+      "13655800"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://doi.org/10.3389/fpls.2026.1957203",
+        "provider": "Frontiers Media SA",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

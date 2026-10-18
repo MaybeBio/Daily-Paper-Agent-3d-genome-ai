@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42888029",
+  "title": "Conditional diffusion for single-cell Hi-C data imputation and enhancement with scHiC-Diff.",
+  "authors": "Liu, Wuhao; Fang, Zhaoyu; Du, Xuyan; Tang, Li; Li, Min",
+  "journal": "Genome research",
+  "published_date": "2026-10-16",
+  "window": {
+    "start": "2026-10-11",
+    "end": "2026-10-17"
+  },
+  "score": 8,
+  "one_liner_zh": "该文提出基于条件扩散模型（Diffusion Transformer）的scHiC-Diff框架，用于单细胞Hi-C接触图的缺失填补与增强，直接面向三维基因组染色质互作建模，并显著提升染色质环检测等下游分析，属于AI方法在染色质空间架构建模中的实质应用。",
+  "abstract": "Single-cell high-throughput chromosome conformation capture (scHi-C) enables the analysis of cell-to-cell variability in three-dimensional (3D) genome organization, but its utility is severely limited by pervasive technical dropouts, leading to extremely sparse contact maps. Accurately identifying dropout events and imputing the corresponding missing chromatin contacts remains a challenging problem, as technical dropouts are confounded with genuine absences of chromatin interactions. Existing imputation and enhancement methods often rely on smoothing strategies or restrictive parametric likelihood assumptions, which may obscure fine-scale chromatin structures and cell-specific features. Here, we present scHiC-Diff, a conditional diffusion-based framework for scHi-C data imputation and enhancement. scHiC-Diff employs a forward process that progressively perturbs contact maps and a reverse denoising process that reconstructs chromatin interactions from noisy observations. To better capture long-range dependencies in complex 3D genome structures, scHi-C contact matrices are treated as masked images and modeled using a Diffusion Transformer (DiT). Across two complementary simulated datasets and three real scHi-C datasets, scHiC-Diff improves the recovery of chromatin interaction patterns and enhances downstream analyses compared with existing methods. Application to a developmental scHi-C dataset further demonstrates improved reconstruction of chromatin organization and enhanced chromatin loop detection.",
+  "abstract_zh": "单细胞高通量染色体构象捕获（scHi-C）技术能够分析三维（3D）基因组组织中的细胞间变异性，但其应用受到普遍存在的技术性缺失事件的严重限制，导致接触图谱极为稀疏。准确识别缺失事件并填补相应的缺失染色质接触仍是一个具有挑战性的问题，因为技术性缺失与染色质相互作用的真实缺失相互混淆。现有的填补和增强方法通常依赖平滑策略或限制性参数似然假设，这可能掩盖精细尺度的染色质结构和细胞特异性特征。在此，我们提出scHiC-Diff，一种基于条件扩散的框架，用于scHi-C数据的填补和增强。scHiC-Diff采用一个前向过程，逐步扰动接触图谱，以及一个反向去噪过程，从噪声观测中重建染色质相互作用。为了更好地捕捉复杂3D基因组结构中的长程依赖性，scHi-C接触矩阵被视为掩码图像，并使用扩散变换器（DiT）进行建模。在两个互补的模拟数据集和三个真实的scHi-C数据集中，与现有方法相比，scHiC-Diff改善了染色质相互作用模式的恢复，并增强了下游分析。应用于一个发育过程中的scHi-C数据集，进一步展示了染色质组织重建的改进和染色质环检测的增强。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42888029/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42888029/",
+  "paper_page_path": "papers/pubmed/42888029/index.html"
+}

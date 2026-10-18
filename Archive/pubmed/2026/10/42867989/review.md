@@ -1,0 +1,90 @@
+## Review setup
+- **Input scope** Abstract only
+- **Assessment boundary** Claims and evidence presented in the abstract; no access to figures, tables, methods, or supplementary materials
+- **Shared manuscript claim summary** The authors present UDI-UMI-STARR-seq, a high-throughput enhancer activity assay with dual indexes and unique molecular identifiers, applied to 253,632 fragments from 46,142 candidate enhancers. They assess the effects of CRISPR/Cas9-mediated deletion of six transcription factors on enhancer activity and gene expression, identify responsive fragments enriched for p53 family motifs, map enhancer-gene associations, and build a deep learning model of enhancer grammar. They further apply the framework to the 16p12.1 deletion and report associations with neuronal function genes.
+- **Visible evidence base** Abstract text only; no quantitative results, effect sizes, statistical measures, or methodological details are provided
+- **Missing materials affecting confidence** Full manuscript, all figures and tables, detailed methods, statistical analyses, model architecture and performance metrics, validation data, and any supplementary information
+
+## Reviewer
+- **Overall assessment** The abstract describes a technically ambitious and potentially valuable framework for linking genetic perturbations to enhancer dynamics. The integration of a high-throughput enhancer assay with transcriptomics and deep learning is conceptually appealing. However, the abstract provides insufficient quantitative detail to evaluate the robustness of the findings. Key claims regarding the number of responsive fragments, the enrichment of p53 family motifs, the enhancer-gene mapping, and the deep learning model performance are stated without supporting numbers or statistical evidence. The application to 16p12.1 deletion is presented as a proof of concept but lacks specificity. The work is likely of interest to the gene regulation and functional genomics communities, but the current evidence base does not allow a full assessment of technical soundness or the strength of the conclusions.
+- **Who would be interested in the results, and why** Researchers in transcriptional regulation, enhancer biology, functional genomics, and computational biology would be interested. The method offers a scalable approach to quantify enhancer activity under genetic perturbations, which is relevant to understanding disease-associated noncoding variants. The deep learning component may appeal to those studying cis-regulatory grammar. Clinically oriented groups studying copy number variants such as 16p12.1 deletion may also find the framework useful for linking noncoding perturbations to gene expression changes.
+- **Major strengths** The approach integrates multiple technologies (enhancer assay, RNA-seq, CRISPR perturbation, deep learning) into a single framework. The scale of the analysis, with over 250,000 fragments and 46,000 enhancers, is substantial. The inclusion of six transcription factors with diverse roles provides breadth. The application to a clinically relevant deletion syndrome demonstrates potential translational utility.
+- **Major Concerns**
+  - **Concern ID** R1-M1
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** The abstract claims that UDI-UMI-STARR-seq integrates dual indexes and unique molecular identifiers to profile perturbation-associated changes in enhancer activity.
+  - **Evidence pointer** Methods section not provided
+  - **Concern** The abstract does not describe how the dual indexes and UMIs are used to control for technical variability, PCR duplication, or mapping artifacts. No validation of the assay against existing STARR-seq methods or orthogonal approaches is presented.
+  - **Why it matters** The core methodological innovation is the foundation of all subsequent claims. Without evidence of assay accuracy, reproducibility, and sensitivity, the reliability of the responsive fragment identification is uncertain.
+  - **Resolution test** Provide validation data comparing UDI-UMI-STARR-seq to conventional STARR-seq or orthogonal enhancer assays, including correlation metrics, reproducibility across replicates, and demonstration that UMIs effectively correct for amplification bias.
+  - **Concern ID** R1-M2
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Statistical rigor
+  - **Claim pointer** The abstract states that responsive fragments are repressed or induced and enriched for p53 family motifs.
+  - **Evidence pointer** Results section not provided
+  - **Concern** No thresholds, effect sizes, or statistical significance criteria are given for defining responsive fragments. The enrichment for p53 family motifs is stated without an enrichment score, background model, or p-value.
+  - **Why it matters** Without defined criteria, the reader cannot assess whether the responsive fragment set is robust or whether the motif enrichment is biologically meaningful or a consequence of the fragment selection.
+  - **Resolution test** Specify the statistical thresholds for calling responsive fragments (e.g., fold change and FDR), report the number of responsive fragments per perturbation, and provide enrichment statistics with appropriate background controls for motif analysis.
+  - **Concern ID** R1-M3
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Evidence for downstream claims
+  - **Claim pointer** The abstract claims that enhancer-gene mapping reveals associations between responsive fragments and gene expression changes, including Wnt/p53 targets after ATF2 or LEF1 depletion.
+  - **Evidence pointer** Results section not provided
+  - **Concern** The mapping method is not described, and no examples, correlation coefficients, or significance measures are provided. The specific link to Wnt/p53 targets is asserted without showing which genes changed, by what magnitude, or how the enhancer-gene linkage was established.
+  - **Why it matters** The enhancer-gene mapping is a central claim that connects enhancer activity to gene expression. Without evidence, the biological interpretation of the perturbation effects is unsupported.
+  - **Resolution test** Describe the enhancer-gene mapping algorithm, provide validation (e.g., comparison to Hi-C or eQTL data), and show representative examples with quantitative expression changes and statistical support for the Wnt/p53 enrichment.
+  - **Concern ID** R1-M4
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Model validation
+  - **Claim pointer** The abstract claims that a deep learning model recapitulates enhancer grammar, including cooperative motif syntax and flanking sequence context.
+  - **Evidence pointer** Methods and results sections not provided
+  - **Concern** No model architecture, training data, performance metrics, or comparison to existing models is given. The claim of recapitulating cooperative motif syntax and flanking context is not supported by any quantitative evaluation.
+  - **Why it matters** The deep learning model is presented as a key outcome. Without performance benchmarks or interpretability analyses, the claim of recapitulating enhancer grammar is not verifiable.
+  - **Resolution test** Provide model architecture, training and test set details, performance metrics (e.g., AUC, correlation with experimental activity), and interpretability analyses (e.g., attribution maps) demonstrating motif syntax and flanking context contributions.
+  - **Concern ID** R1-M5
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Clinical relevance
+  - **Claim pointer** The abstract claims that applying the framework to 16p12.1 deletion identifies responsive fragments associated with genes involved in neuronal function.
+  - **Evidence pointer** Results section not provided
+  - **Concern** The 16p12.1 application is described in a single sentence with no details on which fragments were responsive, which genes were implicated, or how the neuronal function association was determined.
+  - **Why it matters** This application is presented as a demonstration of scalability and clinical utility. Without specifics, the claim is anecdotal and cannot be evaluated.
+  - **Resolution test** Report the number of responsive fragments in the 16p12.1 region, the associated genes, the direction of expression changes, and the statistical evidence for neuronal function enrichment.
+- **Minor Comments**
+  - **Concern ID** R1-m1
+  - **Severity** Minor
+  - **Axis** Clarity
+  - **Affected element** Title
+  - **Evidence pointer** Title
+  - **Issue** The title states "Quantifying the impact of genetic mutations on enhancer dynamics," but the abstract focuses on transcription factor deletions and a copy number variant, not mutations in the general sense.
+  - **Required correction** Consider revising the title to reflect the specific perturbations used, such as "transcription factor perturbations" or "genetic perturbations."
+  - **Concern ID** R1-m2
+  - **Severity** Minor
+  - **Axis** Completeness
+  - **Affected element** Abstract
+  - **Evidence pointer** Abstract
+  - **Issue** The abstract does not state the number of responsive fragments identified or the proportion of fragments affected per transcription factor deletion.
+  - **Required correction** Add a summary statistic, such as the total number or percentage of responsive fragments, to give readers a sense of the effect size.
+  - **Concern ID** R1-m3
+  - **Severity** Minor
+  - **Axis** Reproducibility
+  - **Affected element** Methods
+  - **Evidence pointer** Methods section not provided
+  - **Issue** The abstract does not mention whether the experiments were performed in replicates or how biological variability was handled.
+  - **Required correction** State the number of biological and technical replicates in the abstract or methods summary.
+- **Technical failings that need to be addressed before the case is established** R1-M1 (assay validation), R1-M2 (statistical thresholds for responsive fragments and motif enrichment), R1-M3 (enhancer-gene mapping evidence), R1-M4 (deep learning model validation), R1-M5 (16p12.1 application specificity)
+- **Assessment against Nature-style criteria** Originality is high, as the combination of UMI-based enhancer profiling with perturbation and deep learning is novel. Scientific importance is potentially high for understanding noncoding regulatory variation, but the abstract does not yet demonstrate a clear biological discovery beyond the methodological framework. Interdisciplinary readership is plausible, spanning genomics, computational biology, and clinical genetics. Technical soundness cannot be assessed from the abstract alone, as no validation or statistical details are provided. Readability for nonspecialists is moderate, but the abstract assumes familiarity with STARR-seq and enhancer assays.
+- **Recommendation posture** Currently not established from the provided evidence. The framework is promising and the scale is impressive, but the abstract lacks the quantitative and methodological detail needed to support the central claims. A full manuscript with validation data, statistical rigor, and model performance metrics would be required to assess whether the case is made.
+
+## Risk / unsupported claims
+- The claim that UDI-UMI-STARR-seq accurately profiles enhancer activity is unsupported without assay validation.
+- The identification of responsive fragments and their enrichment for p53 family motifs is unsupported without thresholds and enrichment statistics.
+- The enhancer-gene mapping and the link to Wnt/p53 targets are unsupported without methodological details and quantitative results.
+- The deep learning model's ability to recapitulate enhancer grammar is unsupported without performance metrics and interpretability analyses.
+- The 16p12.1 application and its association with neuronal function genes is unsupported without specific results.
+- The overall scalability claim is plausible but not quantitatively demonstrated in the abstract.

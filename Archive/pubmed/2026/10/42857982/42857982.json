@@ -1,0 +1,393 @@
+{
+  "identity": {
+    "pmid": "42857982",
+    "doi": "10.1161/JAHA.126.049987",
+    "title": "Regional Adipose Distribution Reveals Differential Genetic Risk Patterns for Cardiometabolic Diseases."
+  },
+  "content": {
+    "abstract": "BACKGROUND: Cardiometabolic risk associated with obesity is increasingly recognized to be strongly influenced by the anatomical distribution and ectopic deposition of adipose tissue, yet the genetic mechanisms linking adipose depots to cardiometabolic diseases remain incompletely understood. METHODS: Using large-scale genome-wide association summary statistics, we systematically characterized shared genetic architecture between 7 magnetic resonance imaging-derived regional and ectopic adipose traits and 20 cardiometabolic diseases, including major cardiovascular outcomes and type 2 diabetes. Genetic overlap was assessed at genome-wide, regional, and variant levels, followed by functional annotation, cell-type enrichment, and phenotype enrichment analyses. Protein-protein interaction networks and molecular docking analyses were further applied to prioritize disease-relevant genes and potential therapeutic compounds. RESULTS: We identified widespread yet heterogeneous genetic overlap, including 109 adipose-cardiometabolic diseases pairs with genome-wide overlap, 92 pairs showing regional concordance across 423 genomic regions, and 146 pleiotropic loci supported by colocalization. Shared variants were enriched in regulatory elements and connected to pleiotropic genes involved in metabolic and inflammatory pathways, including insulin signaling, ion homeostasis, and cellular stress responses. Cell type enrichment analyses highlighted immune, endothelial, and metabolically active parenchymal cells as key contributing cell types. Network and docking analyses further prioritized cardiometabolic disease-related genes such as MMP9, PPARG, and TM6SF2, along with candidate compounds exhibiting favorable binding properties. CONCLUSIONS: This study delineates differential genetic risk patterns linking adipose distribution to multiple cardiometabolic diseases and reveals interconnected metabolic, immune, and vascular mechanisms, providing a genetic framework for cardiometabolic and cardiovascular risk assessment and the prioritization of potential therapeutic targets.",
+    "keywords": [
+      "adipose distribution",
+      "cardiometabolic diseases",
+      "cross-trait GWAS",
+      "pleiotropy",
+      "shared genetic architecture"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Wu, Qian",
+        "Yang, Fan",
+        "An, Qi",
+        "Liu, Ying",
+        "Tian, Hexian",
+        "Du, Yamin",
+        "Cai, Wenjie",
+        "Lei, Minghuan",
+        "Xu, Jinglei",
+        "Deng, Linlin",
+        "Zhai, Ying",
+        "Zhang, Zhihui",
+        "Wu, Yue",
+        "Wang, Haolin",
+        "Cheng, Yue",
+        "Liu, Feng",
+        "Li, Dong"
+      ],
+      "short_names": [
+        "Wu Q",
+        "Yang F",
+        "An Q",
+        "Liu Y",
+        "Tian H",
+        "Du Y",
+        "Cai W",
+        "Lei M",
+        "Xu J",
+        "Deng L",
+        "Zhai Y",
+        "Zhang Z",
+        "Wu Y",
+        "Wang H",
+        "Cheng Y",
+        "Liu F",
+        "Li D"
+      ],
+      "auids": [
+        "ORCID: 0009-0000-9764-0650",
+        "ORCID: 0000-0001-5756-4868",
+        "ORCID: 0009-0001-2142-8626",
+        "ORCID: 0009-0001-6058-3119",
+        "ORCID: 0000-0003-3159-4924",
+        "ORCID: 0000-0002-3570-4222",
+        "ORCID: 0000-0002-0331-6022"
+      ],
+      "affiliations": [
+        "Department of Radiology Tianjin Key Laboratory of Functional Imaging & Tianjin Institute of Radiology, Tianjin Medical University General Hospital Tianjin 300052 China.",
+        "Department of Radiology Tianjin Key Laboratory of Functional Imaging & Tianjin Institute of Radiology, Tianjin Medical University General Hospital Tianjin 300052 China.",
+        "Department of Radiology Tianjin Key Laboratory of Functional Imaging & Tianjin Institute of Radiology, Tianjin Medical University General Hospital Tianjin 300052 China.",
+        "Department of Radiology Tianjin Key Laboratory of Functional Imaging & Tianjin Institute of Radiology, Tianjin Medical University General Hospital Tianjin 300052 China.",
+        "Department of Radiology Tianjin Key Laboratory of Functional Imaging & Tianjin Institute of Radiology, Tianjin Medical University General Hospital Tianjin 300052 China.",
+        "Department of Radiology Tianjin Key Laboratory of Functional Imaging & Tianjin Institute of Radiology, Tianjin Medical University General Hospital Tianjin 300052 China.",
+        "Department of Radiology Tianjin Key Laboratory of Functional Imaging & Tianjin Institute of Radiology, Tianjin Medical University General Hospital Tianjin 300052 China.",
+        "Department of Radiology Tianjin Key Laboratory of Functional Imaging & Tianjin Institute of Radiology, Tianjin Medical University General Hospital Tianjin 300052 China.",
+        "Department of Radiology Tianjin Key Laboratory of Functional Imaging & Tianjin Institute of Radiology, Tianjin Medical University General Hospital Tianjin 300052 China.",
+        "Department of Radiology Tianjin Key Laboratory of Functional Imaging & Tianjin Institute of Radiology, Tianjin Medical University General Hospital Tianjin 300052 China.",
+        "Department of Radiology Tianjin Key Laboratory of Functional Imaging & Tianjin Institute of Radiology, Tianjin Medical University General Hospital Tianjin 300052 China.",
+        "Department of Radiology Tianjin Key Laboratory of Functional Imaging & Tianjin Institute of Radiology, Tianjin Medical University General Hospital Tianjin 300052 China.",
+        "Department of Radiology Tianjin Key Laboratory of Functional Imaging & Tianjin Institute of Radiology, Tianjin Medical University General Hospital Tianjin 300052 China.",
+        "Department of Radiology Tianjin Key Laboratory of Functional Imaging & Tianjin Institute of Radiology, Tianjin Medical University General Hospital Tianjin 300052 China.",
+        "Department of Radiology Tianjin First Central Hospital Tianjin 300192 China.",
+        "Department of Radiology Tianjin Key Laboratory of Functional Imaging & Tianjin Institute of Radiology, Tianjin Medical University General Hospital Tianjin 300052 China.",
+        "Department of Radiology Tianjin Key Laboratory of Functional Imaging & Tianjin Institute of Radiology, Tianjin Medical University General Hospital Tianjin 300052 China."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Wu, Qian",
+        "short_name": "Wu Q",
+        "identifiers": [
+          "0009-0000-9764-0650"
+        ],
+        "affiliations": [
+          "Department of Radiology Tianjin Key Laboratory of Functional Imaging & Tianjin Institute of Radiology, Tianjin Medical University General Hospital Tianjin 300052 China."
+        ]
+      },
+      {
+        "full_name": "Yang, Fan",
+        "short_name": "Yang F",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Radiology Tianjin Key Laboratory of Functional Imaging & Tianjin Institute of Radiology, Tianjin Medical University General Hospital Tianjin 300052 China."
+        ]
+      },
+      {
+        "full_name": "An, Qi",
+        "short_name": "An Q",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Radiology Tianjin Key Laboratory of Functional Imaging & Tianjin Institute of Radiology, Tianjin Medical University General Hospital Tianjin 300052 China."
+        ]
+      },
+      {
+        "full_name": "Liu, Ying",
+        "short_name": "Liu Y",
+        "identifiers": [
+          "0000-0001-5756-4868"
+        ],
+        "affiliations": [
+          "Department of Radiology Tianjin Key Laboratory of Functional Imaging & Tianjin Institute of Radiology, Tianjin Medical University General Hospital Tianjin 300052 China."
+        ]
+      },
+      {
+        "full_name": "Tian, Hexian",
+        "short_name": "Tian H",
+        "identifiers": [
+          "0009-0001-2142-8626"
+        ],
+        "affiliations": [
+          "Department of Radiology Tianjin Key Laboratory of Functional Imaging & Tianjin Institute of Radiology, Tianjin Medical University General Hospital Tianjin 300052 China."
+        ]
+      },
+      {
+        "full_name": "Du, Yamin",
+        "short_name": "Du Y",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Radiology Tianjin Key Laboratory of Functional Imaging & Tianjin Institute of Radiology, Tianjin Medical University General Hospital Tianjin 300052 China."
+        ]
+      },
+      {
+        "full_name": "Cai, Wenjie",
+        "short_name": "Cai W",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Radiology Tianjin Key Laboratory of Functional Imaging & Tianjin Institute of Radiology, Tianjin Medical University General Hospital Tianjin 300052 China."
+        ]
+      },
+      {
+        "full_name": "Lei, Minghuan",
+        "short_name": "Lei M",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Radiology Tianjin Key Laboratory of Functional Imaging & Tianjin Institute of Radiology, Tianjin Medical University General Hospital Tianjin 300052 China."
+        ]
+      },
+      {
+        "full_name": "Xu, Jinglei",
+        "short_name": "Xu J",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Radiology Tianjin Key Laboratory of Functional Imaging & Tianjin Institute of Radiology, Tianjin Medical University General Hospital Tianjin 300052 China."
+        ]
+      },
+      {
+        "full_name": "Deng, Linlin",
+        "short_name": "Deng L",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Radiology Tianjin Key Laboratory of Functional Imaging & Tianjin Institute of Radiology, Tianjin Medical University General Hospital Tianjin 300052 China."
+        ]
+      },
+      {
+        "full_name": "Zhai, Ying",
+        "short_name": "Zhai Y",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Radiology Tianjin Key Laboratory of Functional Imaging & Tianjin Institute of Radiology, Tianjin Medical University General Hospital Tianjin 300052 China."
+        ]
+      },
+      {
+        "full_name": "Zhang, Zhihui",
+        "short_name": "Zhang Z",
+        "identifiers": [
+          "0009-0001-6058-3119"
+        ],
+        "affiliations": [
+          "Department of Radiology Tianjin Key Laboratory of Functional Imaging & Tianjin Institute of Radiology, Tianjin Medical University General Hospital Tianjin 300052 China."
+        ]
+      },
+      {
+        "full_name": "Wu, Yue",
+        "short_name": "Wu Y",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Radiology Tianjin Key Laboratory of Functional Imaging & Tianjin Institute of Radiology, Tianjin Medical University General Hospital Tianjin 300052 China."
+        ]
+      },
+      {
+        "full_name": "Wang, Haolin",
+        "short_name": "Wang H",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Radiology Tianjin Key Laboratory of Functional Imaging & Tianjin Institute of Radiology, Tianjin Medical University General Hospital Tianjin 300052 China."
+        ]
+      },
+      {
+        "full_name": "Cheng, Yue",
+        "short_name": "Cheng Y",
+        "identifiers": [
+          "0000-0003-3159-4924"
+        ],
+        "affiliations": [
+          "Department of Radiology Tianjin First Central Hospital Tianjin 300192 China."
+        ]
+      },
+      {
+        "full_name": "Liu, Feng",
+        "short_name": "Liu F",
+        "identifiers": [
+          "0000-0002-3570-4222"
+        ],
+        "affiliations": [
+          "Department of Radiology Tianjin Key Laboratory of Functional Imaging & Tianjin Institute of Radiology, Tianjin Medical University General Hospital Tianjin 300052 China."
+        ]
+      },
+      {
+        "full_name": "Li, Dong",
+        "short_name": "Li D",
+        "identifiers": [
+          "0000-0002-0331-6022"
+        ],
+        "affiliations": [
+          "Department of Radiology Tianjin Key Laboratory of Functional Imaging & Tianjin Institute of Radiology, Tianjin Medical University General Hospital Tianjin 300052 China."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Journal of the American Heart Association"
+    ],
+    "journal_abbrev": [
+      "J Am Heart Assoc"
+    ],
+    "pub_date": "2026 Oct 10",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/11 04:08",
+    "fetched_at": "2026-10-18 08:30:12"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42857982",
+      "41570977",
+      "42106791",
+      "42496099",
+      "41830484",
+      "42807309",
+      "35292083",
+      "40784299",
+      "41419940",
+      "41896987",
+      "42350845",
+      "41174273",
+      "40605082",
+      "42462659",
+      "41606734",
+      "41956029",
+      "42439983",
+      "42856657",
+      "40630117",
+      "41974591",
+      "42553536",
+      "41379756",
+      "42221083",
+      "42350979",
+      "41300562",
+      "41859020",
+      "41526633",
+      "42304163",
+      "42475469",
+      "41250111",
+      "42770684",
+      "42405204",
+      "40721144",
+      "42596011",
+      "42515984",
+      "42675179",
+      "42510853",
+      "41053791",
+      "42625847",
+      "42519498",
+      "40447981",
+      "30947744",
+      "41761370",
+      "41366697",
+      "40862320",
+      "41445618",
+      "42535737",
+      "40820219",
+      "42676977",
+      "42653451",
+      "42216045",
+      "41833577",
+      "41845536",
+      "39059088",
+      "42081878",
+      "40917930",
+      "41294023",
+      "31130283",
+      "42276302",
+      "40205616",
+      "31739742",
+      "38616254",
+      "40678804",
+      "40369625",
+      "41705074",
+      "42386713",
+      "35472084",
+      "42298576",
+      "36753304",
+      "31679650",
+      "42700945",
+      "42741480",
+      "42528585",
+      "42141940",
+      "33541420",
+      "41406704",
+      "42362821",
+      "40245477",
+      "40340016",
+      "39986329",
+      "40948843",
+      "40653482",
+      "42183231",
+      "42260332",
+      "41916952",
+      "42143449",
+      "41689074",
+      "41950637",
+      "40185091",
+      "31564431",
+      "42642720",
+      "41277170",
+      "30704512",
+      "41986815",
+      "42006785",
+      "42226250",
+      "34620218",
+      "40826382",
+      "40262193",
+      "42771182"
+    ],
+    "review": [
+      "42857982",
+      "35472084",
+      "42362821",
+      "40340016",
+      "39986329",
+      "41689074"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://www.ahajournals.org/doi/10.1161/JAHA.126.049987?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub  0pubmed",
+        "provider": "Atypon",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://assays.cancer.gov/non-CPTAC-4047",
+        "provider": "NCI CPTAC Assay Portal",
+        "category": "Miscellaneous",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

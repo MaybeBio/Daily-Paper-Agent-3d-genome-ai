@@ -1,0 +1,400 @@
+{
+  "identity": {
+    "pmid": "42875502",
+    "doi": "10.1038/s41586-026-11119-w",
+    "title": "A microexon regulatory code reveals autism-linked genetic variation."
+  },
+  "content": {
+    "abstract": "Neuronal microexons are a highly conserved class of alternative splicing events enriched in genes with critical functions in nervous system biology(1,2). Microexon splicing is often disrupted in the brains of autistic individuals, and mice with microexon deficiencies display autism-like phenotypes(1,3,4). However, the full landscape of microexons is not known, and the impact of genetic variation on these exons has not been systematically investigated. Here, through extensive transcriptome profiling, we detect hundreds of new microexons, including many with neuronal subtype-specific splicing patterns, and others that activate nonsense-mediated mRNA decay. Using machine learning, we define a sequence code predictive of neuronally spliced microexons and use this to identify critical regulatory elements surrounding the expanded microexon repertoire. This code further reveals genomic variants predicted to alter microexon splicing in individuals affected by autism, with rare variants having the strongest estimated impact. These variants are mostly detected in idiopathic individuals and are associated with autism status. They also converge on synaptic and other autism-linked genes, as well as genes not previously linked to autism. Our results collectively define an expanded repertoire of microexons, delineate their regulatory code, and pinpoint variants predicted to affect their splicing, with implications for the disruption of functions central to neuronal biology and brain disorders.",
+    "keywords": [],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Parada, Guillermo E",
+        "Bretschneider, Hannes",
+        "Li, Jack Daiyang",
+        "Fine, Jacob L",
+        "Dupas, Steven J",
+        "Ellis, Jonathan D",
+        "Braunschweig, Ulrich",
+        "Bonnal, Sophie",
+        "Dalal, Taykhoom",
+        "Engchuan, Worrawat",
+        "Zarrei, Mehdi",
+        "Wei, Wei",
+        "Zafar, Nadia",
+        "Hemberg, Martin",
+        "Attisano, Liliana",
+        "Ellis, James",
+        "Irimia, Manuel",
+        "Wainberg, Michael",
+        "Trost, Brett",
+        "Scherer, Stephen W",
+        "Morris, Quaid D",
+        "Blencowe, Benjamin J"
+      ],
+      "short_names": [
+        "Parada GE",
+        "Bretschneider H",
+        "Li JD",
+        "Fine JL",
+        "Dupas SJ",
+        "Ellis JD",
+        "Braunschweig U",
+        "Bonnal S",
+        "Dalal T",
+        "Engchuan W",
+        "Zarrei M",
+        "Wei W",
+        "Zafar N",
+        "Hemberg M",
+        "Attisano L",
+        "Ellis J",
+        "Irimia M",
+        "Wainberg M",
+        "Trost B",
+        "Scherer SW",
+        "Morris QD",
+        "Blencowe BJ"
+      ],
+      "auids": [
+        "ORCID: 0009-0008-6707-1117",
+        "ORCID: 0009-0003-1611-5398",
+        "ORCID: 0000-0001-6653-0926",
+        "ORCID: 0000-0003-3944-631X",
+        "ORCID: 0000-0001-6138-1925",
+        "ORCID: 0000-0001-8895-5239",
+        "ORCID: 0000-0003-4824-2642",
+        "ORCID: 0000-0002-2179-2567",
+        "ORCID: 0000-0001-6061-0239",
+        "ORCID: 0000-0002-8326-1999",
+        "ORCID: 0000-0002-2760-6999",
+        "ORCID: 0000-0002-4461-0340"
+      ],
+      "affiliations": [
+        "Donnelly Centre, University of Toronto, Toronto, Ontario, Canada.",
+        "Vector Institute, Toronto, Ontario, Canada.",
+        "Centre for Developmental Neurobiology, King's College London, Guy's Campus, London, UK.",
+        "The Francis Crick Institute, London, UK.",
+        "Donnelly Centre, University of Toronto, Toronto, Ontario, Canada.",
+        "Vector Institute, Toronto, Ontario, Canada.",
+        "Donnelly Centre, University of Toronto, Toronto, Ontario, Canada.",
+        "Department of Molecular Genetics, University of Toronto, Toronto, Ontario, Canada.",
+        "Donnelly Centre, University of Toronto, Toronto, Ontario, Canada.",
+        "Vector Institute, Toronto, Ontario, Canada.",
+        "Department of Molecular Genetics, University of Toronto, Toronto, Ontario, Canada.",
+        "Donnelly Centre, University of Toronto, Toronto, Ontario, Canada.",
+        "Department of Molecular Genetics, University of Toronto, Toronto, Ontario, Canada.",
+        "Donnelly Centre, University of Toronto, Toronto, Ontario, Canada.",
+        "Donnelly Centre, University of Toronto, Toronto, Ontario, Canada.",
+        "Centre for Genomic Regulation, Barcelona Institute of Science and Technology, Barcelona, Spain.",
+        "Computational Biology and Medicine Program, Weill-Cornell Graduate School, New York, NY, USA.",
+        "Computational and Systems Biology Program, Memorial Sloan Kettering Cancer Center, New York, NY, USA.",
+        "The Centre for Applied Genomics and Genetics and Genome Biology Program, The Hospital for Sick Children, Toronto, Ontario, Canada.",
+        "The Centre for Applied Genomics and Genetics and Genome Biology Program, The Hospital for Sick Children, Toronto, Ontario, Canada.",
+        "Developmental, Stem Cell & Cancer Biology Program, The Hospital for Sick Children, Toronto, Ontario, Canada.",
+        "Department of Biochemistry, Donnelly Centre, University of Toronto, Toronto, Ontario, Canada.",
+        "The Gene Lay Institute of Immunology and Inflammation, Brigham and Women's Hospital, Massachusetts General Hospital, and Harvard Medical School, Boston, MA, USA.",
+        "Department of Biochemistry, Donnelly Centre, University of Toronto, Toronto, Ontario, Canada.",
+        "Department of Molecular Genetics, University of Toronto, Toronto, Ontario, Canada.",
+        "Developmental, Stem Cell & Cancer Biology Program, The Hospital for Sick Children, Toronto, Ontario, Canada.",
+        "Centre for Genomic Regulation, Barcelona Institute of Science and Technology, Barcelona, Spain.",
+        "Universitat Pompeu Fabra, Barcelona, Spain.",
+        "ICREA, Barcelona, Spain.",
+        "Prosserman Centre for Population Health Research, Lunenfeld-Tanenbaum Research Institute, Sinai Health, Toronto, Ontario, Canada.",
+        "Department of Psychiatry, University of Toronto, Toronto, Ontario, Canada.",
+        "Department of Computer Science, University of Toronto, Toronto, Ontario, Canada.",
+        "Biostatistics Division, Dalla Lana School of Public Health, University of Toronto, Toronto, Ontario, Canada.",
+        "Department of Molecular Genetics, University of Toronto, Toronto, Ontario, Canada.",
+        "The Centre for Applied Genomics and Genetics and Genome Biology Program, The Hospital for Sick Children, Toronto, Ontario, Canada.",
+        "Molecular Medicine Program, The Hospital for Sick Children, Toronto, Ontario, Canada.",
+        "Department of Molecular Genetics, University of Toronto, Toronto, Ontario, Canada.",
+        "The Centre for Applied Genomics and Genetics and Genome Biology Program, The Hospital for Sick Children, Toronto, Ontario, Canada.",
+        "Donnelly Centre, University of Toronto, Toronto, Ontario, Canada. morrisq@mskcc.org.",
+        "Vector Institute, Toronto, Ontario, Canada. morrisq@mskcc.org.",
+        "Department of Molecular Genetics, University of Toronto, Toronto, Ontario, Canada. morrisq@mskcc.org.",
+        "Computational Biology and Medicine Program, Weill-Cornell Graduate School, New York, NY, USA. morrisq@mskcc.org.",
+        "Computational and Systems Biology Program, Memorial Sloan Kettering Cancer Center, New York, NY, USA. morrisq@mskcc.org.",
+        "Department of Computer Science, University of Toronto, Toronto, Ontario, Canada. morrisq@mskcc.org.",
+        "Donnelly Centre, University of Toronto, Toronto, Ontario, Canada. b.blencowe@utoronto.ca.",
+        "Vector Institute, Toronto, Ontario, Canada. b.blencowe@utoronto.ca.",
+        "Centre for Developmental Neurobiology, King's College London, Guy's Campus, London, UK. b.blencowe@utoronto.ca.",
+        "The Francis Crick Institute, London, UK. b.blencowe@utoronto.ca.",
+        "Department of Molecular Genetics, University of Toronto, Toronto, Ontario, Canada. b.blencowe@utoronto.ca."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Parada, Guillermo E",
+        "short_name": "Parada GE",
+        "identifiers": [],
+        "affiliations": [
+          "Donnelly Centre, University of Toronto, Toronto, Ontario, Canada.",
+          "Vector Institute, Toronto, Ontario, Canada.",
+          "Centre for Developmental Neurobiology, King's College London, Guy's Campus, London, UK.",
+          "The Francis Crick Institute, London, UK."
+        ]
+      },
+      {
+        "full_name": "Bretschneider, Hannes",
+        "short_name": "Bretschneider H",
+        "identifiers": [],
+        "affiliations": [
+          "Donnelly Centre, University of Toronto, Toronto, Ontario, Canada.",
+          "Vector Institute, Toronto, Ontario, Canada."
+        ]
+      },
+      {
+        "full_name": "Li, Jack Daiyang",
+        "short_name": "Li JD",
+        "identifiers": [
+          "0009-0008-6707-1117"
+        ],
+        "affiliations": [
+          "Donnelly Centre, University of Toronto, Toronto, Ontario, Canada.",
+          "Department of Molecular Genetics, University of Toronto, Toronto, Ontario, Canada."
+        ]
+      },
+      {
+        "full_name": "Fine, Jacob L",
+        "short_name": "Fine JL",
+        "identifiers": [
+          "0009-0003-1611-5398"
+        ],
+        "affiliations": [
+          "Donnelly Centre, University of Toronto, Toronto, Ontario, Canada.",
+          "Vector Institute, Toronto, Ontario, Canada.",
+          "Department of Molecular Genetics, University of Toronto, Toronto, Ontario, Canada."
+        ]
+      },
+      {
+        "full_name": "Dupas, Steven J",
+        "short_name": "Dupas SJ",
+        "identifiers": [],
+        "affiliations": [
+          "Donnelly Centre, University of Toronto, Toronto, Ontario, Canada.",
+          "Department of Molecular Genetics, University of Toronto, Toronto, Ontario, Canada."
+        ]
+      },
+      {
+        "full_name": "Ellis, Jonathan D",
+        "short_name": "Ellis JD",
+        "identifiers": [],
+        "affiliations": [
+          "Donnelly Centre, University of Toronto, Toronto, Ontario, Canada."
+        ]
+      },
+      {
+        "full_name": "Braunschweig, Ulrich",
+        "short_name": "Braunschweig U",
+        "identifiers": [
+          "0000-0001-6653-0926"
+        ],
+        "affiliations": [
+          "Donnelly Centre, University of Toronto, Toronto, Ontario, Canada."
+        ]
+      },
+      {
+        "full_name": "Bonnal, Sophie",
+        "short_name": "Bonnal S",
+        "identifiers": [],
+        "affiliations": [
+          "Centre for Genomic Regulation, Barcelona Institute of Science and Technology, Barcelona, Spain."
+        ]
+      },
+      {
+        "full_name": "Dalal, Taykhoom",
+        "short_name": "Dalal T",
+        "identifiers": [
+          "0000-0003-3944-631X"
+        ],
+        "affiliations": [
+          "Computational Biology and Medicine Program, Weill-Cornell Graduate School, New York, NY, USA.",
+          "Computational and Systems Biology Program, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+        ]
+      },
+      {
+        "full_name": "Engchuan, Worrawat",
+        "short_name": "Engchuan W",
+        "identifiers": [
+          "0000-0001-6138-1925"
+        ],
+        "affiliations": [
+          "The Centre for Applied Genomics and Genetics and Genome Biology Program, The Hospital for Sick Children, Toronto, Ontario, Canada."
+        ]
+      },
+      {
+        "full_name": "Zarrei, Mehdi",
+        "short_name": "Zarrei M",
+        "identifiers": [],
+        "affiliations": [
+          "The Centre for Applied Genomics and Genetics and Genome Biology Program, The Hospital for Sick Children, Toronto, Ontario, Canada."
+        ]
+      },
+      {
+        "full_name": "Wei, Wei",
+        "short_name": "Wei W",
+        "identifiers": [],
+        "affiliations": [
+          "Developmental, Stem Cell & Cancer Biology Program, The Hospital for Sick Children, Toronto, Ontario, Canada."
+        ]
+      },
+      {
+        "full_name": "Zafar, Nadia",
+        "short_name": "Zafar N",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Biochemistry, Donnelly Centre, University of Toronto, Toronto, Ontario, Canada."
+        ]
+      },
+      {
+        "full_name": "Hemberg, Martin",
+        "short_name": "Hemberg M",
+        "identifiers": [
+          "0000-0001-8895-5239"
+        ],
+        "affiliations": [
+          "The Gene Lay Institute of Immunology and Inflammation, Brigham and Women's Hospital, Massachusetts General Hospital, and Harvard Medical School, Boston, MA, USA."
+        ]
+      },
+      {
+        "full_name": "Attisano, Liliana",
+        "short_name": "Attisano L",
+        "identifiers": [
+          "0000-0003-4824-2642"
+        ],
+        "affiliations": [
+          "Department of Biochemistry, Donnelly Centre, University of Toronto, Toronto, Ontario, Canada."
+        ]
+      },
+      {
+        "full_name": "Ellis, James",
+        "short_name": "Ellis J",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Molecular Genetics, University of Toronto, Toronto, Ontario, Canada.",
+          "Developmental, Stem Cell & Cancer Biology Program, The Hospital for Sick Children, Toronto, Ontario, Canada."
+        ]
+      },
+      {
+        "full_name": "Irimia, Manuel",
+        "short_name": "Irimia M",
+        "identifiers": [
+          "0000-0002-2179-2567"
+        ],
+        "affiliations": [
+          "Centre for Genomic Regulation, Barcelona Institute of Science and Technology, Barcelona, Spain.",
+          "Universitat Pompeu Fabra, Barcelona, Spain.",
+          "ICREA, Barcelona, Spain."
+        ]
+      },
+      {
+        "full_name": "Wainberg, Michael",
+        "short_name": "Wainberg M",
+        "identifiers": [
+          "0000-0001-6061-0239"
+        ],
+        "affiliations": [
+          "Prosserman Centre for Population Health Research, Lunenfeld-Tanenbaum Research Institute, Sinai Health, Toronto, Ontario, Canada.",
+          "Department of Psychiatry, University of Toronto, Toronto, Ontario, Canada.",
+          "Department of Computer Science, University of Toronto, Toronto, Ontario, Canada.",
+          "Biostatistics Division, Dalla Lana School of Public Health, University of Toronto, Toronto, Ontario, Canada."
+        ]
+      },
+      {
+        "full_name": "Trost, Brett",
+        "short_name": "Trost B",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Molecular Genetics, University of Toronto, Toronto, Ontario, Canada.",
+          "The Centre for Applied Genomics and Genetics and Genome Biology Program, The Hospital for Sick Children, Toronto, Ontario, Canada.",
+          "Molecular Medicine Program, The Hospital for Sick Children, Toronto, Ontario, Canada."
+        ]
+      },
+      {
+        "full_name": "Scherer, Stephen W",
+        "short_name": "Scherer SW",
+        "identifiers": [
+          "0000-0002-8326-1999"
+        ],
+        "affiliations": [
+          "Department of Molecular Genetics, University of Toronto, Toronto, Ontario, Canada.",
+          "The Centre for Applied Genomics and Genetics and Genome Biology Program, The Hospital for Sick Children, Toronto, Ontario, Canada."
+        ]
+      },
+      {
+        "full_name": "Morris, Quaid D",
+        "short_name": "Morris QD",
+        "identifiers": [
+          "0000-0002-2760-6999"
+        ],
+        "affiliations": [
+          "Donnelly Centre, University of Toronto, Toronto, Ontario, Canada. morrisq@mskcc.org.",
+          "Vector Institute, Toronto, Ontario, Canada. morrisq@mskcc.org.",
+          "Department of Molecular Genetics, University of Toronto, Toronto, Ontario, Canada. morrisq@mskcc.org.",
+          "Computational Biology and Medicine Program, Weill-Cornell Graduate School, New York, NY, USA. morrisq@mskcc.org.",
+          "Computational and Systems Biology Program, Memorial Sloan Kettering Cancer Center, New York, NY, USA. morrisq@mskcc.org.",
+          "Department of Computer Science, University of Toronto, Toronto, Ontario, Canada. morrisq@mskcc.org."
+        ]
+      },
+      {
+        "full_name": "Blencowe, Benjamin J",
+        "short_name": "Blencowe BJ",
+        "identifiers": [
+          "0000-0002-4461-0340"
+        ],
+        "affiliations": [
+          "Donnelly Centre, University of Toronto, Toronto, Ontario, Canada. b.blencowe@utoronto.ca.",
+          "Vector Institute, Toronto, Ontario, Canada. b.blencowe@utoronto.ca.",
+          "Centre for Developmental Neurobiology, King's College London, Guy's Campus, London, UK. b.blencowe@utoronto.ca.",
+          "The Francis Crick Institute, London, UK. b.blencowe@utoronto.ca.",
+          "Department of Molecular Genetics, University of Toronto, Toronto, Ontario, Canada. b.blencowe@utoronto.ca."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Nature"
+    ],
+    "journal_abbrev": [
+      "Nature"
+    ],
+    "pub_date": "2026 Oct 14",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/15 07:18",
+    "fetched_at": "2026-10-18 08:30:12"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42875502"
+    ],
+    "review": [
+      "42875502"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://doi.org/10.1038/s41586-026-11119-w",
+        "provider": "Nature Publishing Group",
+        "category": "Full Text Sources",
+        "attribute": "subscription/membership/fee required",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Emerging frontiers for AI in single-cell genomics. · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-mid">5</span>
+    <div>
+      <h1>Emerging frontiers for AI in single-cell genomics.</h1>
+      <div class="meta">Mitra, Sneha; Li, Jiaxin; Leslie, Christina S</div>
+      <div class="meta muted">
+        
+        <span class="journal">Molecular cell</span>
+        · 2026-10-15
+         · 仅摘要
+         · <a href="https://pubmed.ncbi.nlm.nih.gov/42880218/">原文</a>
+      </div>
+      <p class="one-liner">该文综述AI在单细胞基因组学中的应用，涵盖scATAC-seq和单细胞多组学调控建模，虽涉及染色质可及性但未聚焦三维基因组空间架构，方法上以AI综述为主，对染色质调控建模有部分启发。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">We are just over a decade into the single-cell revolution in biology, which has been coupled to the growing use of artificial intelligence (AI) in single-cell genomics. Most early single-cell RNA embedding models and subsequent &#34;foundation models&#34;-representational models pretrained on large single-cell datasets-did not gain wide traction among experimental biologists. However, as massive single-cell RNA-sequencing (scRNA-seq) atlas efforts ramp up, there is a clear rationale for exploiting AI models to interpret new datasets in the context of vast existing data resources. Meanwhile, the advent of single-cell epigenetic/multiomic assays and Perturb-seq technologies presents new opportunities for AI modeling. Here, we review AI embedding and foundation models for scRNA-seq and single-cell assay for transposase-accessible chromatin using sequencing (scATAC-seq), extensive machine-learning efforts to exploit single-cell multiome in regulatory genomics, and AI strategies to learn &#34;virtual cell&#34; models from Perturb-seq, ending with a description of current limitations of single-cell AI models and an outlook for future advances.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">我们正处于生物学单细胞革命开启十余年之际，这场革命与人工智能（AI）在单细胞基因组学中日益广泛的应用紧密相连。早期的大多数单细胞RNA嵌入模型及随后的“基础模型”——在大型单细胞数据集上预训练的表征模型——并未在实验生物学家中获得广泛采用。然而，随着大规模单细胞RNA测序（scRNA-seq）图谱计划的推进，利用AI模型在庞大现有数据资源背景下解读新数据集具有明确合理性。同时，单细胞表观遗传/多组学检测和Perturb-seq技术的出现为AI建模带来了新机遇。在此，我们回顾了针对scRNA-seq和单细胞转座酶可及染色质测序（scATAC-seq）的AI嵌入与基础模型，广泛利用单细胞多组学进行调控基因组学的机器学习努力，以及从Perturb-seq中学习“虚拟细胞”模型的AI策略，最后描述了当前单细胞AI模型的局限性并展望了未来进展。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：Emerging frontiers for AI in single-cell genomics</li>
+<li><strong>作者</strong>：Mitra, Sneha; Li, Jiaxin; Leslie, Christina S</li>
+<li><strong>单位</strong>：未提供（根据作者信息推断为 Memorial Sloan Kettering Cancer Center 相关机构，但原文未明确标注，故标注为未提供）</li>
+<li><strong>期刊/平台</strong>：Molecular Cell</li>
+<li><strong>年份</strong>：2026-10-15</li>
+<li><strong>论文类型</strong>：综述（Review）</li>
+<li><strong>领域</strong>：单细胞基因组学 × 人工智能</li>
+<li><strong>关键词</strong>：single-cell genomics, AI, foundation models, scRNA-seq, scATAC-seq, multiome, Perturb-seq, virtual cell</li>
+<li><strong>DOI/arXiv 号</strong>：10.1016/j.molcel.2026.09.014</li>
+<li><strong>代码</strong>：未提供</li>
+<li><strong>数据</strong>：未提供</li>
+<li><strong>阅读日期</strong>：2026-10-15</li>
+<li><strong>该文在「三维基因组/染色质组织 × AI 方法/物理模拟」方向中的位置</strong>：本文聚焦单细胞基因组学中的 AI 嵌入模型与 foundation models，覆盖 scRNA-seq、scATAC-seq、multiome 调控基因组学及 Perturb-seq 虚拟细胞建模。与三维基因组方向的直接关联在于：scATAC-seq 与 multiome 部分涉及染色质可及性与调控基因组学，其 AI 建模策略（如嵌入、多模态整合）可迁移至 3D 基因组结构预测与染色质组织建模。本文属于「AI × 基因组学」交叉领域的综述，为三维基因组 AI 方法提供可借鉴的模型架构与训练范式。</li>
+</ul>
+<hr />
+<h2>02 一句话总结</h2>
+<p>本文系统综述了 AI 在单细胞基因组学中的嵌入模型、foundation models、multiome 调控建模及 Perturb-seq 虚拟细胞策略，指出早期模型未获实验生物学家广泛采用，但大规模图谱与多组学数据为 AI 建模提供了新机遇，并总结了当前局限与未来方向。</p>
+<hr />
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：AI 模型（尤其是嵌入模型与 foundation models）在单细胞基因组学中如何设计、训练与应用？其当前能力边界与未来发展方向是什么？</li>
+<li><strong>为什么重要</strong>：单细胞技术已产生海量数据，AI 模型可帮助在既有数据资源背景下解读新数据集，并整合多组学信息揭示调控机制。</li>
+<li><strong>现有方法为何不足</strong>：早期 scRNA-seq 嵌入模型与 foundation models 未获实验生物学家广泛采用，可能因可解释性差、生物学验证不足、跨平台泛化能力有限等原因。</li>
+<li><strong>精确研究问题</strong>：Can AI embedding and foundation models effectively integrate single-cell multiomic data to enable interpretable and generalizable "virtual cell" models for regulatory genomics?</li>
+</ul>
+<hr />
+<h2>04 背景与发展脉络</h2>
+<p><strong>脉络标注</strong>：仅本文框架（基于综述内容归纳，未经外部核验）</p>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>代表性方法</th>
+<th>优点</th>
+<th>局限</th>
+<th>本文主张的位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>早期 scRNA-seq 嵌入模型</td>
+<td>PCA、t-SNE、UMAP 等降维/可视化方法</td>
+<td>简单、计算高效</td>
+<td>线性假设、缺乏生物学可解释性</td>
+<td>作为基础但不足以捕捉复杂调控关系</td>
+</tr>
+<tr>
+<td>深度嵌入模型</td>
+<td>autoencoder、VAE（如 scVI）</td>
+<td>非线性、可处理批次效应</td>
+<td>未获实验生物学家广泛采用</td>
+<td>技术可行但缺乏生物学验证与易用性</td>
+</tr>
+<tr>
+<td>Foundation models</td>
+<td>基于 transformer 的预训练模型（如 scGPT、Geneformer）</td>
+<td>大规模预训练、可迁移</td>
+<td>数据偏差、可解释性差、计算成本高</td>
+<td>有潜力但需解决生物学验证与泛化问题</td>
+</tr>
+<tr>
+<td>Multiome 整合模型</td>
+<td>多模态整合方法（如 MOFA+、scMultiome 分析）</td>
+<td>整合染色质可及性与基因表达</td>
+<td>数据稀疏、批次效应复杂</td>
+<td>调控基因组学的新前沿</td>
+</tr>
+<tr>
+<td>Perturb-seq 虚拟细胞模型</td>
+<td>基于扰动数据的生成模型</td>
+<td>可预测扰动响应</td>
+<td>数据规模有限、外推能力不足</td>
+<td>未来方向，需结合物理/机制约束</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>早期模型未获广泛采用</td>
+<td>实验生物学家不常用 scRNA-seq 嵌入模型与 foundation models</td>
+<td>模型缺乏生物学可解释性、验证不足、易用性差</td>
+<td>原文第 1 段（"did not gain wide traction among experimental biologists"）</td>
+</tr>
+<tr>
+<td>数据规模与模型需求不匹配</td>
+<td>早期模型在小规模数据上训练，泛化能力有限</td>
+<td>缺乏大规模图谱数据支撑</td>
+<td>原文第 1 段（"massive scRNA-seq atlas efforts ramp up"）</td>
+</tr>
+<tr>
+<td>多组学整合的复杂性</td>
+<td>multiome 数据整合面临批次效应、数据稀疏</td>
+<td>不同组学技术噪声特性不同</td>
+<td>原文第 3 段（"extensive machine-learning efforts to exploit single-cell multiome"）</td>
+</tr>
+<tr>
+<td>虚拟细胞模型的外推挑战</td>
+<td>Perturb-seq 模型难以预测未见扰动</td>
+<td>扰动组合空间巨大，训练数据覆盖有限</td>
+<td>原文第 4 段（"AI strategies to learn 'virtual cell' models from Perturb-seq"）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>06 核心思想</h2>
+<ol>
+<li>
+<p><strong>表面方法</strong>：综述 AI 嵌入模型、foundation models、multiome 整合模型及 Perturb-seq 虚拟细胞建模，涵盖模型架构、训练策略与应用场景。</p>
+</li>
+<li>
+<p><strong>核心洞察</strong>：单细胞 AI 模型的价值不在于替代实验，而在于在既有大规模数据资源背景下提供可解释的生物学假设；多组学整合与扰动数据是构建「虚拟细胞」的关键，但需解决可解释性与泛化问题。</p>
+</li>
+<li>
+<p><strong>可能的普适教训</strong> [Analysis]：AI 模型在基因组学中的成功取决于「生物学可解释性」与「实验验证闭环」，而非单纯追求预测精度；多模态整合需显式建模不同组学间的调控关系，而非简单拼接特征。</p>
+</li>
+</ol>
+<hr />
+<h2>07 方法总览</h2>
+<ul>
+<li><strong>输入</strong>：scRNA-seq 表达矩阵、scATAC-seq 染色质可及性矩阵、multiome 联合数据、Perturb-seq 扰动数据</li>
+<li><strong>输出</strong>：细胞嵌入表示、基因调控关系、扰动响应预测、虚拟细胞模型</li>
+<li><strong>模块</strong>：
+  1. 数据预处理（归一化、批次校正）
+  2. 嵌入模型（autoencoder、VAE、transformer）
+  3. 多模态整合模块（联合嵌入、跨模态映射）
+  4. 下游任务模块（聚类、差异分析、调控网络推断）</li>
+<li><strong>训练</strong>：自监督预训练（masked language modeling 或 contrastive learning）+ 下游任务微调</li>
+<li><strong>工具</strong>：未提供具体工具列表（综述性质）</li>
+<li><strong>反馈回路</strong>：模型预测 → 实验验证 → 模型迭代（作者主张的理想闭环，但未详细展开）</li>
+<li><strong>假设</strong>：单细胞数据中的生物学信号可通过低维嵌入捕捉；多组学数据共享潜在调控结构</li>
+</ul>
+<p><strong>文字流程</strong>：原始单细胞数据 → 预处理 → 嵌入模型学习细胞表示 → 多模态整合（如适用）→ 下游任务（聚类、调控推断、扰动预测）→ 生物学解释与实验验证。</p>
+<hr />
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>数据预处理</td>
+<td>归一化、批次校正</td>
+<td>消除技术噪声，保证可比性</td>
+<td>输入：原始计数矩阵；输出：标准化矩阵</td>
+<td>原文第 2 段提及数据规模与质量挑战</td>
+<td>预期影响：模型性能下降，批次效应混淆生物学信号</td>
+</tr>
+<tr>
+<td>嵌入模型</td>
+<td>学习细胞低维表示</td>
+<td>降维、去噪、捕捉非线性关系</td>
+<td>输入：标准化矩阵；输出：细胞嵌入</td>
+<td>原文第 1 段（早期嵌入模型）</td>
+<td>预期影响：无法进行下游分析</td>
+</tr>
+<tr>
+<td>Foundation model 预训练</td>
+<td>大规模自监督学习</td>
+<td>利用海量未标注数据学习通用表示</td>
+<td>输入：多数据集表达矩阵；输出：预训练模型</td>
+<td>原文第 1 段（foundation models）</td>
+<td>预期影响：迁移学习能力下降</td>
+</tr>
+<tr>
+<td>多模态整合</td>
+<td>联合建模表达与可及性</td>
+<td>揭示调控关系</td>
+<td>输入：multiome 数据；输出：联合嵌入或调控网络</td>
+<td>原文第 3 段（multiome 调控基因组学）</td>
+<td>预期影响：无法捕捉跨组学调控机制</td>
+</tr>
+<tr>
+<td>虚拟细胞模型</td>
+<td>预测扰动响应</td>
+<td>实现 in silico 实验</td>
+<td>输入：Perturb-seq 数据；输出：扰动后细胞状态</td>
+<td>原文第 4 段（virtual cell models）</td>
+<td>预期影响：无法外推未见扰动</td>
+</tr>
+</tbody>
+</table>
+<p>注：以上「移除后的影响」均为 [Analysis] 预期效应，非原文实测消融结果。</p>
+<hr />
+<h2>09 关键公式符号</h2>
+<p><strong>不适用</strong>。本文为综述，未提供具体数学模型或公式。</p>
+<hr />
+<h2>10 实验设计与证据链</h2>
+<ul>
+<li><strong>数据集/群体</strong>：未提供（综述性质，未报告原始实验）</li>
+<li><strong>规模</strong>：未提供</li>
+<li><strong>指标</strong>：未提供</li>
+<li><strong>基线</strong>：未提供</li>
+<li><strong>预算</strong>：未提供</li>
+<li><strong>骨干/仪器</strong>：未提供</li>
+<li><strong>Oracle 输入</strong>：未提供</li>
+<li><strong>评测协议</strong>：未提供</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的 claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>无（综述）</td>
+<td>不适用</td>
+<td>不适用</td>
+<td>不适用</td>
+<td>不适用</td>
+<td>不适用</td>
+<td>不适用</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：本文为综述，覆盖单细胞基因组学中 AI 模型的现状与未来方向，不涉及具体实验验证。</li>
+<li><strong>Oracle/真值输入</strong>：不适用。</li>
+<li><strong>端到端状态</strong>：不适用。</li>
+<li><strong>算力成本</strong>：未提供。</li>
+<li><strong>历史数据依赖</strong>：作者强调大规模图谱数据（如 scRNA-seq atlas）对 foundation models 的重要性。</li>
+<li><strong>模型依赖</strong>：综述提及多种模型架构（autoencoder、VAE、transformer），但未比较优劣。</li>
+<li><strong>最难情形</strong>：多组学整合与扰动外推被作者视为挑战。</li>
+<li><strong>群体/领域边界</strong>：结论限于单细胞基因组学领域，未直接涉及三维基因组。</li>
+<li><strong>不确定性</strong>：作者未提供定量不确定性评估。</li>
+</ul>
+<p><strong>有边界的复述</strong>：本文主张，AI 模型在单细胞基因组学中的应用仍处于早期阶段，其成功依赖于大规模数据、多组学整合与生物学可解释性；虚拟细胞模型是未来方向，但当前受限于数据覆盖与泛化能力。</p>
+<hr />
+<h2>12 作者自认局限</h2>
+<table>
+<thead>
+<tr>
+<th>局限</th>
+<th>具体表现</th>
+<th>作者提出的未来方向</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>早期模型未获广泛采用</td>
+<td>实验生物学家不常用嵌入模型与 foundation models</td>
+<td>提高可解释性与易用性</td>
+<td>原文第 1 段</td>
+</tr>
+<tr>
+<td>数据规模与质量挑战</td>
+<td>大规模图谱数据仍在建设中</td>
+<td>持续积累数据资源</td>
+<td>原文第 2 段</td>
+</tr>
+<tr>
+<td>多组学整合复杂性</td>
+<td>multiome 数据整合面临技术噪声</td>
+<td>发展更稳健的整合方法</td>
+<td>原文第 3 段</td>
+</tr>
+<tr>
+<td>虚拟细胞模型外推困难</td>
+<td>扰动组合空间巨大</td>
+<td>结合机制约束与更大规模 Perturb-seq 数据</td>
+<td>原文第 4 段</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>综述未提供定量比较</td>
+<td>未报告各模型在标准基准上的性能差异</td>
+<td>读者无法判断模型优劣</td>
+<td>查阅原文引用的原始研究</td>
+<td>原文未提供基准数据</td>
+</tr>
+<tr>
+<td>「未获广泛采用」缺乏证据</td>
+<td>未提供调查或使用统计数据</td>
+<td>该 claim 可能基于作者主观观察</td>
+<td>进行文献计量或用户调查</td>
+<td>原文第 1 段</td>
+</tr>
+<tr>
+<td>虚拟细胞模型前景乐观</td>
+<td>未讨论物理/机制约束的必要性</td>
+<td>纯数据驱动模型可能缺乏外推能力</td>
+<td>对比加入机制约束与纯数据驱动模型</td>
+<td>原文第 4 段</td>
+</tr>
+<tr>
+<td>未讨论三维基因组</td>
+<td>染色质组织与单细胞调控密切相关</td>
+<td>三维基因组信息可能提升调控建模</td>
+<td>将 Hi-C 数据整合进 multiome 模型</td>
+<td>原文未提及</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>14 学到什么</h2>
+<p><strong>Agent 提炼的知识候选</strong></p>
+<ol>
+<li><strong>Foundation model 预训练范式</strong>：大规模自监督预训练 + 下游微调可迁移至三维基因组建模，例如在 Hi-C 数据上预训练染色质结构模型。</li>
+<li><strong>多模态整合策略</strong>：multiome 整合方法（联合嵌入、跨模态映射）可借鉴用于整合 Hi-C、scATAC-seq 与 scRNA-seq 数据，建模染色质组织与基因表达的调控关系。</li>
+<li><strong>虚拟细胞概念</strong>：Perturb-seq 驱动的虚拟细胞模型思想可迁移至三维基因组，预测染色质结构扰动（如 CTCF 敲除）对基因组组织的影响。</li>
+<li><strong>可解释性优先原则</strong>：综述强调生物学可解释性，三维基因组 AI 模型应输出可验证的结构特征（如 TAD 边界、loop 锚点），而非仅预测接触矩阵。</li>
+<li><strong>数据规模驱动</strong>：大规模图谱数据是 foundation models 成功的关键，三维基因组领域需积累跨细胞类型、跨条件的 Hi-C 数据集。</li>
+</ol>
+<hr />
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>相似领域</strong>：scRNA-seq foundation models（如 scGPT、Geneformer）与三维基因组预测模型（如 DeepC、Orca）共享 transformer 架构与自监督预训练思想。</li>
+<li><strong>组合方向</strong>：将 scATAC-seq 可及性数据与 Hi-C 数据联合建模，可参考本文 multiome 整合策略，构建「序列-可及性-结构」端到端模型。</li>
+<li><strong>冲突点</strong>：本文未讨论物理模拟（如分子动力学）在单细胞建模中的作用，而三维基因组领域常结合物理模型（如 polymer 模型），两者可互补。</li>
+<li><strong>可迁移方法</strong>：Perturb-seq 的扰动编码策略可迁移至三维基因组，用于预测 CRISPR 扰动（如删除 TAD 边界）对染色质结构的影响。</li>
+<li><strong>外部文献</strong>：Rao et al. (2014) Hi-C 数据、Dixon et al. (2012) TAD 发现、Fudenberg et al. (2016) loop extrusion 模型，为三维基因组 AI 建模提供物理与实验基础。</li>
+</ul>
+<hr />
+<h2>16 研究想法</h2>
+<p><strong>Agent 生成的研究候选</strong></p>
+<ol>
+<li>
+<p><strong>候选名称</strong>：3D-Genome Foundation Model（3D-GFM）
+   - <strong>来源局限/观察</strong>：现有三维基因组预测模型多为任务特定，缺乏通用预训练模型；本文 foundation model 范式可迁移。
+   - <strong>核心假设</strong>：在跨细胞类型 Hi-C 数据上预训练的 transformer 可捕捉通用染色质组织规则，微调后适用于下游任务（TAD 预测、loop 检测）。
+   - <strong>相对本文的增量</strong>：将单细胞 foundation model 思想扩展至三维基因组，填补领域空白。
+   - <strong>初步方法</strong>：收集公共 Hi-C 数据（如 4DN、ENCODE），构建 contact matrix 预训练任务（masked contact prediction），微调用于结构特征预测。
+   - <strong>验证方式</strong>：在独立 Hi-C 数据集上评估 TAD/loop 预测精度，与 DeepC、Orca 等基线比较。
+   - <strong>可能的失败模式</strong>：Hi-C 数据噪声大、分辨率有限，预训练收益可能不显著。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：Multiome-3D 整合模型
+   - <strong>来源局限/观察</strong>：本文强调 multiome 整合在调控基因组学中的价值，但未涉及三维基因组；染色质结构是调控的关键中介。
+   - <strong>核心假设</strong>：联合建模 scRNA-seq、scATAC-seq 与 Hi-C 可提升基因表达预测与调控机制解析。
+   - <strong>相对本文的增量</strong>：将 multiome 整合扩展至三维结构维度。
+   - <strong>初步方法</strong>：设计多模态 VAE，共享潜在空间编码表达、可及性与结构信息；使用 multiome 数据训练，Hi-C 作为辅助模态。
+   - <strong>验证方式</strong>：在细胞分化时间序列中评估表达预测精度与调控网络推断质量。
+   - <strong>可能的失败模式</strong>：多模态数据配对困难，Hi-C 与单细胞数据难以在同一细胞上获取。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：Perturb-3D 虚拟染色质模型
+   - <strong>来源局限/观察</strong>：本文提出 Perturb-seq 驱动的虚拟细胞模型，但未涉及染色质结构扰动；CTCF/cohesin 扰动对 3D 基因组影响显著。
+   - <strong>核心假设</strong>：基于 Perturb-seq 数据训练的生成模型可预测染色质结构对扰动的响应。
+   - <strong>相对本文的增量</strong>：将虚拟细胞概念扩展至三维基因组扰动预测。
+   - <strong>初步方法</strong>：使用 CRISPR 扰动（CTCF、cohesin 亚基）后的 Hi-C 数据训练条件生成模型，输入扰动类型输出预测 contact matrix。
+   - <strong>验证方式</strong>：与实验 Hi-C 数据比较结构特征（TAD 强度、loop 频率）。
+   - <strong>可能的失败模式</strong>：扰动 Hi-C 数据稀缺，模型泛化受限。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：可解释性驱动的 3D 基因组模型
+   - <strong>来源局限/观察</strong>：本文指出早期模型未获实验生物学家采用，部分因可解释性差；三维基因组模型需输出可验证的结构特征。
+   - <strong>核心假设</strong>：在模型中显式编码 TAD、loop 等结构先验可提升可解释性与生物学验证成功率。
+   - <strong>相对本文的增量</strong>：将可解释性设计原则应用于三维基因组 AI。
+   - <strong>初步方法</strong>：设计结构感知的损失函数（如 TAD 边界一致性、loop 锚点约束），在 Hi-C 预测模型中引入结构正则化。
+   - <strong>验证方式</strong>：通过实验（如 3D-FISH、Hi-C 验证）检验预测结构特征的准确性。
+   - <strong>可能的失败模式</strong>：结构先验可能过度约束模型，降低泛化能力。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+</ol></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Abstract only</li>
+<li><strong>Assessment boundary</strong> Claims and scope as presented in the abstract; full text, figures, and references not available</li>
+<li><strong>Shared manuscript claim summary</strong> The abstract presents a review of AI embedding and foundation models applied to single-cell genomics, covering scRNA-seq, scATAC-seq, multiomic regulatory genomics, and Perturb-seq-based "virtual cell" models, and concludes with limitations and future outlook.</li>
+<li><strong>Visible evidence base</strong> Abstract text only; no figures, tables, or reference list provided</li>
+<li><strong>Missing materials affecting confidence</strong> Full manuscript text, figures, tables, reference list, and any supplementary materials; without these, the depth, accuracy, and completeness of the review cannot be assessed</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li><strong>Overall assessment</strong> The abstract outlines a timely and potentially valuable review topic at the intersection of AI and single-cell genomics. The scope is broad, covering multiple assay types and modeling strategies, which suggests a comprehensive survey. However, the abstract provides only a high-level roadmap without specific claims, examples, or critical evaluation, making it impossible to assess the scientific rigor, balance, or novelty of the review from the supplied material. The writing is clear and accessible, but the lack of detail limits any substantive evaluation.</li>
+<li><strong>Who would be interested in the results, and why</strong> Computational biologists and machine learning researchers developing models for single-cell data would find this review useful as a landscape summary. Experimental biologists using single-cell assays may also benefit from an accessible overview of AI tools and their potential applications. The "virtual cell" concept from Perturb-seq could attract researchers in functional genomics and systems biology.</li>
+<li><strong>Major strengths</strong> The topic is highly relevant and timely, given the rapid growth of single-cell atlases and AI adoption. The abstract clearly delineates the scope across scRNA-seq, scATAC-seq, multiomics, and Perturb-seq, indicating a structured approach. The mention of limitations and future outlook suggests a balanced perspective, which is valuable for a review.</li>
+<li><strong>Major Concerns</strong> None identified from the supplied material, as the abstract does not present specific scientific claims that can be evaluated.</li>
+<li><strong>Minor Comments</strong> None identified from the supplied material, as the abstract is too brief to contain specific elements requiring correction.</li>
+<li><strong>Technical failings that need to be addressed before the case is established</strong> None identifiable from the abstract alone; the full text would be required to assess technical accuracy, coverage, and critical depth.</li>
+<li><strong>Assessment against Nature-style criteria</strong>  </li>
+<li>Originality: Not assessable from the abstract; the topic is not new, but the specific synthesis or perspective could be original, which cannot be determined.  </li>
+<li>Scientific importance: The topic is important given the growing role of AI in single-cell genomics, but the abstract does not demonstrate how the review advances understanding beyond existing literature.  </li>
+<li>Interdisciplinary readership: The abstract suggests appeal to both computational and experimental biologists, but the level of technical detail and accessibility cannot be judged.  </li>
+<li>Technical soundness: Not assessable without the full text; the abstract provides no methodological or factual details to verify.  </li>
+<li>Readability for nonspecialists: The abstract is clearly written and avoids jargon overload, suggesting good accessibility, but this cannot be confirmed for the full text.</li>
+<li><strong>Recommendation posture</strong> Currently not established from the provided evidence. The abstract alone is insufficient to evaluate the review's quality, accuracy, or contribution. A decision would require the full manuscript.</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>The abstract claims that early scRNA-seq embedding models and foundation models "did not gain wide traction among experimental biologists," but no evidence or citation is provided to support this assertion.</li>
+<li>The abstract implies a "clear rationale" for using AI models to interpret new datasets in the context of existing atlases, but the basis for this rationale is not elaborated.</li>
+<li>The abstract mentions "extensive machine-learning efforts" and "AI strategies" without specifying which efforts or strategies are covered, making the scope unverifiable.</li>
+<li>The claim that the review "ends with a description of current limitations" suggests a critical component, but the nature of those limitations is not stated, so the depth of the discussion cannot be assessed.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

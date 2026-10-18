@@ -1,0 +1,110 @@
+{
+  "identity": {
+    "pmid": "42886782",
+    "doi": "10.1126/sciadv.aei0840",
+    "title": "Latent effector capacity governs reversible T cell exhaustion: A theoretical mathematical model of PD-1 blockade response."
+  },
+  "content": {
+    "abstract": "T cell exhaustion is often viewed as a terminal state marked by irreversible loss of function during chronic infection and cancer. However, the rapid recovery of antitumor activity in clinical responders after PD-1 blockade suggests that some exhausted T cells retain hidden functional potential. To explain this paradox, we present a theoretical framework that separates latent effector capacity from active effector function. Latent effector capacity represents a history-dependent state reflecting preserved epigenetic accessibility and regulatory readiness, distinct from ongoing gene expression. In this model, PD-1 signaling acts as a reversible mask that suppresses effector function without eliminating the underlying effector capacity. The framework explains preserved chromatin accessibility, rapid reinvigoration after checkpoint blockade, and variable therapeutic responses. By incorporating nonlinear maintenance and erosion of latent effector capacity, the model predicts a bistable system with a point of no return beyond which exhaustion becomes irreversible. These principles may guide development of mechanistically informed biomarkers and artificial intelligence models predicting response to PD-1 therapy.",
+    "keywords": [],
+    "mesh_terms": [
+      "*T-Cell Exhaustion/immunology",
+      "Humans",
+      "*Programmed Cell Death 1 Receptor/antagonists & inhibitors/metabolism",
+      "*Immune Checkpoint Inhibitors/pharmacology/therapeutic use",
+      "Signal Transduction",
+      "*T-Lymphocytes/immunology/metabolism",
+      "*Models, Theoretical",
+      "Neoplasms/immunology/drug therapy"
+    ],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Liew, Aubrey Y",
+        "Li, Ying",
+        "Dong, Haidong"
+      ],
+      "short_names": [
+        "Liew AY",
+        "Li Y",
+        "Dong H"
+      ],
+      "auids": [
+        "ORCID: 0000-0002-7784-9526",
+        "ORCID: 0000-0002-5782-2983"
+      ],
+      "affiliations": [
+        "Department of Immunology, Mayo Clinic College of Medicine, Rochester, MN, USA.",
+        "Department of Quantitative Health Sciences, Mayo Clinic, Jacksonville, FL, USA.",
+        "Department of Immunology, Mayo Clinic College of Medicine, Rochester, MN, USA.",
+        "Department of Urology, Mayo Clinic, Rochester, MN, USA."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Liew, Aubrey Y",
+        "short_name": "Liew AY",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Immunology, Mayo Clinic College of Medicine, Rochester, MN, USA."
+        ]
+      },
+      {
+        "full_name": "Li, Ying",
+        "short_name": "Li Y",
+        "identifiers": [
+          "0000-0002-7784-9526"
+        ],
+        "affiliations": [
+          "Department of Quantitative Health Sciences, Mayo Clinic, Jacksonville, FL, USA."
+        ]
+      },
+      {
+        "full_name": "Dong, Haidong",
+        "short_name": "Dong H",
+        "identifiers": [
+          "0000-0002-5782-2983"
+        ],
+        "affiliations": [
+          "Department of Immunology, Mayo Clinic College of Medicine, Rochester, MN, USA.",
+          "Department of Urology, Mayo Clinic, Rochester, MN, USA."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Science advances"
+    ],
+    "journal_abbrev": [
+      "Sci Adv"
+    ],
+    "pub_date": "2026 Oct 16",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/16 19:05",
+    "fetched_at": "2026-10-18 08:30:12"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42886782"
+    ],
+    "review": [
+      "42886782"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [],
+    "text_mined": []
+  }
+}

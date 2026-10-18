@@ -2,6 +2,366 @@
   "version": 1,
   "documents": [
     {
+      "id": "biorxiv:10.64898/2026.10.15.759350",
+      "title": "A relational architecture of the human genome",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/biorxiv/10.64898_2026.10.15.759350/index.html",
+      "meta": [
+        "Krause J; Danner M; Kraft F; Islam T; Begemann M; Ziad Z; Elbracht M; Bode M; Kurth I",
+        "bioRxiv",
+        "2026-10-16"
+      ],
+      "tags": [],
+      "summary": "该文用Nucleotide Transformer v3对全人类基因组进行逐位扰动，构建核苷酸间依赖网络并发现'relons'模块，虽非直接染色质三维结构建模，但提出超越线性与3D结构的基因组高阶组织关系，对理解基因组空间组织有概念性启发，方法上属AI但对象与结构/调控轴较弱。",
+      "abstract": "Complex systems exhibit organization not only through their components but also via their interdependencies. Local nucleotide dependencies underpin regulatory motifs and RNA structures, yet principles governing a higher-order organization across the human genome remain unknown. Here we systematically perturbed every position of the com- plete telomere-to-telomere human genome using Nucleotide Transformer v3 with an ex- ascale compute cluster, generating nucleotide-resolution dependency maps that reveal a directed, weighted network of position-to-position genomic relationships. This network recapitulates known biological features and uncovers recurrent, directional architec- tures termed 'relons', spanning coding, non-coding, and unannotated regions. These re- lational modules reflect evolutionary and functional constraints and associate with hu- man genetic variation and pathogenic variants. Our findings suggest a higher-order rela- tional layer of genome organization, providing a framework to interpret DNA as a complex system of dependencies beyond linear and 3D structure, with implications for under- standing genetic variation and disease. 复杂系统不仅通过其组成部分，还通过它们之间的相互依赖性展现出组织性。局部核苷酸依赖性支撑着调控基序和RNA结构，然而，支配人类基因组中更高阶组织的原则仍属未知。在此，我们利用Nucleotide Transformer v3及百亿亿次计算集群，系统性地扰动了完整端粒到端粒人类基因组的每一个位置，生成了核苷酸分辨率的依赖性图谱，揭示了一个有向、加权的位点间基因组关系网络。该网络重现了已知的生物学特征，并发现了跨编码、非编码及未注释区域的重复性、方向性架构，称为“relons”。这些关系模块反映了进化和功能约束，并与人类遗传变异及致病性变异相关联。我们的发现提示基因组组织存在一个更高阶的关系层，为将DNA解读为超越线性和三维结构的依赖复杂系统提供了框架，对理解遗传变异和疾病具有重要意义。",
+      "date": "2026-10-16"
+    },
+    {
+      "id": "pubmed:42881146",
+      "title": "Deep Learning and Domain Expertise for Fabricating High-Performance Biosensors.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42881146/index.html",
+      "meta": [
+        "Xiao, Mei-Ling; Zhang, Pengcheng; Li, Zhijie; Lin, Nuo-Qiao; Wang, Xiaowo; Liu, Jian-Zhong",
+        "ACS sensors",
+        "2026-10-16"
+      ],
+      "tags": [],
+      "summary": "该文用深度学习优化转录因子生物传感器启动子，对象为合成生物学调控元件而非染色质三维组织，且无空间架构建模，仅序列优化方法对三维基因组建模启发有限。",
+      "abstract": "Transcription factor-based biosensors are essential for the scalable bioproduction of plant natural products. However, a major bottleneck in developing high-performance biosensors is the engineering of responsive promoters due to the vast sequence space and poorly understood sequence-function relationships. Here, we extend our previously published DeepSEED framework into an artificial intelligence-driven pipeline for efficient and extensible biosensor-responsive promoter optimization. This strategy integrates deep learning with domain-specific biological expertise. By fixing core promoter elements, varying the number and position of transcription factor binding sites (TFBSs) to define promoter backbones, and subsequently optimizing the flanking sequences, we enable the de novo design of promoters. We systematically apply this strategy to optimize a panel of biosensors across different transcription factors and regulatory modes, including four metabolite-responsive biosensors and a quorum-sensing-based environmental sensor. The resulting biosensors exhibit diverse dynamic behaviors with markedly improved sensitivity, expanded dynamic range, and increased maximum output. For instance, the optimized naringenin biosensor demonstrates a 32-fold broader dynamic range and a 27-fold higher maximum output compared to its parent. To illustrate its utility in metabolic engineering, we employed a DeepSEED-designed promoter to dynamically regulate a p-coumaric acid biosynthesis pathway, boosting production by 117.0%. Our work extends the previously published DeepSEED framework into a powerful pipeline for biosensor optimization and delivers a portfolio of high-performance regulatory elements, addressing a critical need and facilitating the development of more intelligent and productive metabolic engineering systems. 基于转录因子的生物传感器对于植物天然产物的规模化生物生产至关重要。然而，开发高性能生物传感器的一个主要瓶颈在于响应性启动子的工程化，这源于巨大的序列空间和人们对序列-功能关系理解的不足。在此，我们将先前发表的DeepSEED框架扩展为一个人工智能驱动的流程，用于高效且可扩展的生物传感器响应性启动子优化。该策略将深度学习与领域特定的生物学专业知识相结合。通过固定核心启动子元件，改变转录因子结合位点（TFBSs）的数量和位置以定义启动子骨架，并随后优化侧翼序列，我们实现了启动子的从头设计。我们系统地将此策略应用于优化一组跨不同转录因子和调控模式的生物传感器，包括四种代谢物响应性生物传感器和一种基于群体感应的环境传感器。所得生物传感器表现出多样的动态行为，具有显著提高的灵敏度、扩大的动态范围和增加的最大输出。例如，优化的柚皮素生物传感器相比其亲本，动态范围拓宽了32倍，最大输出提高了27倍。为展示其在代谢工程中的实用性，我们采用DeepSEED设计的启动子动态调控对香豆酸生物合成途径，使产量提升了117.0%。我们的工作将先前发表的DeepSEED框架扩展为一个强大的生物传感器优化流程，并提供了一系列高性能调控元件，满足了关键需求，促进了更智能、更高产的代谢工程系统的发展。",
+      "date": "2026-10-16"
+    },
+    {
+      "id": "pubmed:42883209",
+      "title": "Design, Synthesis and Antitumor Activity Evaluation of Novel Dual G9a/EZH2 Inhibitors.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42883209/index.html",
+      "meta": [
+        "Shi, Yajie; Zhang, Qiuyue; Zhang, Maoying; Zhao, Xiujuan; Zhang, Shuhang; Li, Jirui; Li, Haofeng; Fu, Chenglin; Chen, Guoliang",
+        "Molecules (Basel, Switzerland)",
+        "2026-10-16"
+      ],
+      "tags": [],
+      "summary": "该文为G9a/EZH2双靶点抑制剂的设计合成与抗肿瘤活性评价，属药物化学研究，与三维基因组/染色质组织建模及AI/分子模拟方法无实质关联。",
+      "abstract": "Targeting the crosstalk between histone methyltransferases G9a and EZH2 represents a promising strategy for cancer therapy. To improve upon our previously reported dual inhibitor SU08, we rationally designed and synthesized five series (SU, UA, UB, N, and L) of novel G9a/EZH2 dual inhibitors, incorporating diverse pyridone, urea, and thienopyrimidine moieties, yielding a total of 43 compounds. In vitro enzymatic screening revealed that compound SU101 against both EZH2 (IC(50) = 4.08 nM) and G9a (IC(50) = 2.92 nM) was comparable to SU08. Western blot analysis confirmed that SU101 and SU103 effectively suppressed both H3K27me3 and H3K9me2 expression in rhabdomyosarcoma RD cells. In cellular antiproliferative assays, SU101 showed the strongest activity (IC(50) = 15.33 muM). Molecular docking and dynamics simulations verified stable binding interactions between SU101 and both target proteins. Pharmacokinetic studies in rats demonstrated that SU101 possesses excellent oral bioavailability (94.3%), moderate plasma protein binding (84.6%), and an acceptable acute toxicity profile (LD(50) = 31.02 mg/kg in mice). Overall, these results suggest that SU101 may serve as a promising lead compound for further optimization and support the continued exploration of dual G9a/EZH2 inhibitors as a potential therapeutic approach for rhabdomyosarcoma. 靶向组蛋白甲基转移酶G9a与EZH2之间的相互作用代表了一种有前景的癌症治疗策略。为了改进我们先前报道的双重抑制剂SU08，我们合理设计并合成了五个系列（SU、UA、UB、N和L）的新型G9a/EZH2双重抑制剂，其中引入了多种吡啶酮、脲和噻吩并嘧啶结构单元，共获得43个化合物。体外酶学筛选显示，化合物SU101对EZH2（IC(50) = 4.08 nM）和G9a（IC(50) = 2.92 nM）的抑制活性与SU08相当。Western blot分析证实，SU101和SU103在横纹肌肉瘤RD细胞中有效抑制了H3K27me3和H3K9me2的表达。在细胞抗增殖实验中，SU101表现出最强的活性（IC(50) = 15.33 μM）。分子对接和动力学模拟验证了SU101与两种靶蛋白之间的稳定结合相互作用。大鼠药代动力学研究表明，SU101具有优异的口服生物利用度（94.3%）、适度的血浆蛋白结合率（84.6%）和可接受的急性毒性特征（小鼠LD(50) = 31.02 mg/kg）。总体而言，这些结果表明SU101可能作为进一步优化的有前景的先导化合物，并支持继续探索双重G9a/EZH2抑制剂作为横纹肌肉瘤的潜在治疗策略。",
+      "date": "2026-10-16"
+    },
+    {
+      "id": "pubmed:42883216",
+      "title": "Green Extraction and Molecular Docking-Guided Discovery of Asiaticoside as a Multi-Target Modulator of the SIRT1/HMGB1/p53-p21 Axis in H(2)O(2)-Induced Senescent Endothelial Cells.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42883216/index.html",
+      "meta": [
+        "Li, Wenkai; Huang, Jianhua; Zeng, Fei; Wang, Yuping; Liu, Xiong; Wang, Junjie; Liu, Siyu",
+        "Molecules (Basel, Switzerland)",
+        "2026-10-16"
+      ],
+      "tags": [],
+      "summary": "该文研究积雪草苷对氧化应激诱导内皮细胞衰老的调控作用，涉及分子对接但对象为细胞衰老通路，与三维基因组/染色质组织建模无关。",
+      "abstract": "Endothelial cell senescence is a key contributor to vascular ageing and cardiovascular diseases. Asiaticoside, a pentacyclic triterpenoid saponin from Centella asiatica, exhibits anti-inflammatory and antioxidant activities, yet its potential to modulate endothelial senescence remains unexplored. Herein, we report the molecular docking-guided discovery of asiaticoside as a multi-target modulator of the SIRT1/HMGB1/p53-p21 senescence regulatory axis. Asiaticoside was isolated via a green acid-hydrolysis strategy using dilute HCl as the extraction solvent, followed by polyamide enrichment and C(18) reversed-phase purification (purity > 98%). Molecular docking revealed that asiaticoside binds favourably to SIRT1 (-8.1 kcal mol(-1)), the HMGB1-DNA complex (-10.7 kcal mol(-1)), and several senescence-associated secretory phenotype (SASP)-related inflammatory cytokines. In H(2)O(2)-induced senescent human umbilical vein endothelial cells (HUVECs), asiaticoside at 100 muM significantly reduced senescence-associated beta-galactosidase activity and alleviated G0/G1 cell cycle arrest without cytotoxicity. Mechanistically, asiaticoside restored SIRT1 expression, suppressed the secretion of IL-1beta, IL-6, IL-8, TNF-alpha, and HMGB1, downregulated p21 at both mRNA and protein levels, reduced p53 protein expression, and suppressed p16 mRNA expression. These findings demonstrate that asiaticoside attenuates endothelial senescence and SASP-driven inflammation, an effect associated with restoration of SIRT1 expression and suppression of the HMGB1/p53-p21 pathway. 内皮细胞衰老是血管老化与心血管疾病的关键诱因。积雪草苷（Asiaticoside）是从积雪草（Centella asiatica）中提取的一种五环三萜皂苷，具有抗炎和抗氧化活性，但其调节内皮细胞衰老的潜力尚未被探索。在此，我们报道了基于分子对接（molecular docking）引导的积雪草苷作为SIRT1/HMGB1/p53-p21衰老调控轴多靶点调节剂的发现。积雪草苷通过使用稀盐酸作为提取溶剂的绿色酸水解策略分离获得，随后经聚酰胺富集和C(18)反相纯化（纯度>98%）。分子对接显示，积雪草苷与SIRT1（-8.1 kcal mol(-1)）、HMGB1-DNA复合物（-10.7 kcal mol(-1)）以及多种衰老相关分泌表型（senescence-associated secretory phenotype, SASP）相关炎症细胞因子具有良好结合。在H(2)O(2)诱导衰老的人脐静脉内皮细胞（HUVECs）中，100 μM积雪草苷显著降低衰老相关β-半乳糖苷酶活性，并缓解G0/G1细胞周期阻滞，且无细胞毒性。机制上，积雪草苷恢复SIRT1表达，抑制IL-1β、IL-6、IL-8、TNF-α和HMGB1的分泌，在mRNA和蛋白水平下调p21，降低p53蛋白表达，并抑制p16 mRNA表达。这些发现表明，积雪草苷可减轻内皮细胞衰老及SASP驱动的炎症，其效应与恢复SIRT1表达和抑制HMGB1/p53-p21通路相关。",
+      "date": "2026-10-16"
+    },
+    {
+      "id": "pubmed:42884061",
+      "title": "Artificial Intelligence for Plant Gene Regulatory Networks.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42884061/index.html",
+      "meta": [
+        "Yu, Haopeng",
+        "International journal of molecular sciences",
+        "2026-10-16"
+      ],
+      "tags": [],
+      "summary": "该文综述了植物基因调控网络推断的计算方法三代演进，涉及染色质可及性和顺式调控语法，但未聚焦三维基因组/染色质空间架构建模，AI方法为综述性介绍而非建模贡献。",
+      "abstract": "Gene regulatory networks (GRNs) are the maps that plant biologists most want to draw, with arrows pointing from transcription factors to the genes they control, explaining how plants develop and respond to the environment. Since experimental validation of even one arrow can take years, and a single plant genome harbours tens of millions of candidate TF-target pairs, this gap has driven the development of numerous computational methods for GRN inference. Here I review three generations of computational approaches to plant GRN inference and measure them against a five-level ladder of evidence, including statistical association, conditional dependence, physical binding, functional regulation and causal circuits. Classical statistics and machine learning have simplified complex gene expression data into clear, prioritised predictions. Techniques like single-cell and multi-omics methods help uncover cell type-specific networks based on chromatin accessibility and binding motifs. Now, deep learning can interpret cis-regulatory grammar directly from genome sequences, and foundation models trained on plant genomes and millions of cells hold exciting potential to share regulatory insights across different species. The most promising route forward is a lab-in-the-loop division of labour in which foundation models serve not as oracles but as hypothesis engines, collapsing fifty million candidate TF-target pairs into the few hundred edges most worth the bench's time, with each round of validation sharpening the next round of prediction. 基因调控网络（GRNs）是植物生物学家最想绘制的图谱，其中的箭头指向转录因子及其所控制的基因，用以解释植物的发育过程及对环境响应的机制。由于即使验证一个箭头也可能耗时数年，而单个植物基因组中蕴含数千万个候选转录因子-靶基因对，这一差距推动了大量用于GRN推断的计算方法的发展。在此，我回顾了三代植物GRN推断的计算方法，并依据五级证据阶梯对其进行衡量，包括统计关联、条件依赖性、物理结合、功能调控及因果回路。经典统计学和机器学习已将复杂的基因表达数据简化为清晰、优先排序的预测。单细胞和多组学等技术有助于基于染色质可及性和结合基序揭示细胞类型特异的网络。如今，深度学习能够直接从基因组序列解读顺式调控语法，而基于植物基因组和数百万细胞训练的基础模型在跨物种共享调控见解方面展现出令人振奋的潜力。最有前景的前进路径是实验室在环的分工模式，其中基础模型并非充当神谕，而是作为假设引擎，将五千万个候选转录因子-靶基因对缩减为最值得实验验证的数百条边，每一轮验证都会优化下一轮的预测。",
+      "date": "2026-10-16"
+    },
+    {
+      "id": "pubmed:42884921",
+      "title": "Advances and Applications of Genome Editing in Precision Crop Breeding.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42884921/index.html",
+      "meta": [
+        "Zhao, Jing; Qian, Xueyan; Zhong, Xiaofang; Xun, Hongwei; Guo, Dongquan",
+        "Plants (Basel, Switzerland)",
+        "2026-10-16"
+      ],
+      "tags": [],
+      "summary": "该文综述基因组编辑在作物精准育种中的应用，聚焦CRISPR技术改良农艺性状，与三维基因组/染色质组织建模及AI/分子模拟方法无关。",
+      "abstract": "Genome editing is becoming an important tool for crop improvement by enabling precise modification of genetic variation. CRISPR-Cas technologies have expanded beyond nuclease-induced mutations to include base and prime editing, transcriptional and epigenetic regulation, multiplex editing, organelle editing and targeted DNA insertion. These advances support the development of agronomically valuable alleles and extend crop improvement beyond conventional selection, recombination and random mutagenesis. Applications now include plant architecture, yield-related traits, resistance to biotic and abiotic stresses, seed composition and nutritional quality, and extend to de novo domestication, haploid induction and hybrid breeding. Current research is increasingly moving from single-gene modification toward the engineering of promoters, cis-regulatory elements, quantitative alleles and multiple-gene editing, particularly in polyploid crops. Wider breeding applications will depend on efficient delivery and regeneration, recovery of transgene-free and heritable edited germplasm, reliable targeted insertion and validation across relevant environments. Integration with pangenomics, multi-omics, phenomics, artificial intelligence and predictive breeding may further improve target identification, allele design and prediction of editing outcomes, thereby supporting the development of more precise and efficient crop-breeding strategies. 基因组编辑正成为作物改良的重要工具，通过实现对遗传变异的精确修饰。CRISPR-Cas技术已超越核酸酶诱导突变，扩展到碱基编辑和引物编辑、转录与表观遗传调控、多重编辑、细胞器编辑及靶向DNA插入。这些进展支持了农艺价值等位基因的开发，并将作物改良扩展到传统选择、重组和随机诱变之外。应用现涵盖植物结构、产量相关性状、生物与非生物胁迫抗性、种子组成和营养品质，并延伸至从头驯化、单倍体诱导和杂交育种。当前研究正日益从单基因修饰转向启动子、顺式调控元件、数量性状等位基因及多基因编辑的工程化，尤其在多倍体作物中。更广泛的育种应用将依赖于高效递送与再生、无转基因且可遗传编辑种质的回收、可靠的靶向插入及在相关环境中的验证。与泛基因组学、多组学、表型组学、人工智能和预测育种的整合可能进一步改善靶标识别、等位基因设计和编辑结果预测，从而支持更精确和高效的作物育种策略的开发。",
+      "date": "2026-10-16"
+    },
+    {
+      "id": "pubmed:42886441",
+      "title": "DESIGN: a framework for generative AI-enabled crop molecular design-driven breeding.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42886441/index.html",
+      "meta": [
+        "Xu, Feng; Fu, Ran; Cheng, Qian; Jiang, Shuqin; Yan, Jun; Wang, Xiangfeng",
+        "Science China. Life sciences",
+        "2026-10-16"
+      ],
+      "tags": [],
+      "summary": "该综述探讨生成式AI在作物分子设计育种中的应用，虽涉及基因调控元件设计，但对象为作物育种而非染色质三维组织，且无染色质空间架构建模或AI/分子模拟方法，与本课题关联微弱。",
+      "abstract": "Crop breeding is shifting from selecting naturally occurring variants to actively designing genetic features. Generative artificial intelligence (GenAI) provides a computational foundation for this transition; however, its application in crop systems remains limited. This review bridges this gap by systematically evaluating the translational potential of GenAI for crop molecular design breeding. We examine four major computational architectures and their applications across six key areas relevant to crop breeding: gene regulatory element design, protein engineering, small-molecule generation, gene-editing tool optimization, single-cell modeling, and cross-domain knowledge integration. Building on these advances, we propose the DESIGN framework, which organizes GenAI-enabled breeding into six synergistic capabilities: Discover, Engineer, Simulate, Integrate, Generate, and Navigate, thereby forming a closed-loop system spanning molecular design to field deployment. Finally, we discuss key bottlenecks in data, models, and validation, and outline a roadmap for translating GenAI into breeding practice. This review provides a conceptual and methodological foundation for the emerging paradigm of design-driven crop breeding. 作物育种正从选择自然变异转向主动设计遗传特征。生成式人工智能（GenAI）为这一转变提供了计算基础；然而，其在作物系统中的应用仍然有限。本综述通过系统评估GenAI在作物分子设计育种中的转化潜力，弥合了这一差距。我们考察了四种主要计算架构及其在作物育种相关的六个关键领域中的应用：基因调控元件设计、蛋白质工程、小分子生成、基因编辑工具优化、单细胞建模和跨领域知识整合。基于这些进展，我们提出了DESIGN框架，将GenAI赋能的育种组织为六种协同能力：发现（Discover）、工程化（Engineer）、模拟（Simulate）、整合（Integrate）、生成（Generate）和导航（Navigate），从而形成一个从分子设计到田间部署的闭环系统。最后，我们讨论了数据、模型和验证方面的关键瓶颈，并勾勒出将GenAI转化为育种实践的路线图。本综述为设计驱动型作物育种这一新兴范式提供了概念和方法论基础。",
+      "date": "2026-10-16"
+    },
+    {
+      "id": "pubmed:42886782",
+      "title": "Latent effector capacity governs reversible T cell exhaustion: A theoretical mathematical model of PD-1 blockade response.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42886782/index.html",
+      "meta": [
+        "Liew, Aubrey Y; Li, Ying; Dong, Haidong",
+        "Science advances",
+        "2026-10-16"
+      ],
+      "tags": [],
+      "summary": "该文提出T细胞耗竭的理论数学模型，虽涉及表观遗传可及性，但对象为免疫细胞状态而非染色质三维组织，且无AI或分子模拟方法，与本课题关联微弱。",
+      "abstract": "T cell exhaustion is often viewed as a terminal state marked by irreversible loss of function during chronic infection and cancer. However, the rapid recovery of antitumor activity in clinical responders after PD-1 blockade suggests that some exhausted T cells retain hidden functional potential. To explain this paradox, we present a theoretical framework that separates latent effector capacity from active effector function. Latent effector capacity represents a history-dependent state reflecting preserved epigenetic accessibility and regulatory readiness, distinct from ongoing gene expression. In this model, PD-1 signaling acts as a reversible mask that suppresses effector function without eliminating the underlying effector capacity. The framework explains preserved chromatin accessibility, rapid reinvigoration after checkpoint blockade, and variable therapeutic responses. By incorporating nonlinear maintenance and erosion of latent effector capacity, the model predicts a bistable system with a point of no return beyond which exhaustion becomes irreversible. These principles may guide development of mechanistically informed biomarkers and artificial intelligence models predicting response to PD-1 therapy. T细胞耗竭通常被视为一种终末状态，以慢性感染和癌症中功能不可逆丧失为特征。然而，临床应答者在PD-1阻断后抗肿瘤活性的快速恢复表明，部分耗竭T细胞保留了隐藏的功能潜力。为解释这一悖论，我们提出一个理论框架，将潜在效应能力与活跃效应功能区分开来。潜在效应能力代表一种依赖于历史的状态，反映保留的表观遗传可及性和调控准备状态，区别于持续进行的基因表达。在该模型中，PD-1信号充当一种可逆掩蔽，抑制效应功能而不消除潜在的效应能力。该框架解释了保留的染色质可及性、检查点阻断后的快速恢复以及多变的治疗反应。通过纳入潜在效应能力的非线性维持和侵蚀，该模型预测了一个双稳态系统，其存在一个不可逆点，超过该点耗竭变得不可逆。这些原则可能指导基于机制的生物标志物和预测PD-1治疗反应的人工智能模型的发展。",
+      "date": "2026-10-16"
+    },
+    {
+      "id": "pubmed:42888029",
+      "title": "Conditional diffusion for single-cell Hi-C data imputation and enhancement with scHiC-Diff.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42888029/index.html",
+      "meta": [
+        "Liu, Wuhao; Fang, Zhaoyu; Du, Xuyan; Tang, Li; Li, Min",
+        "Genome research",
+        "2026-10-16"
+      ],
+      "tags": [],
+      "summary": "该文提出基于条件扩散模型（Diffusion Transformer）的scHiC-Diff框架，用于单细胞Hi-C接触图的缺失填补与增强，直接面向三维基因组染色质互作建模，并显著提升染色质环检测等下游分析，属于AI方法在染色质空间架构建模中的实质应用。",
+      "abstract": "Single-cell high-throughput chromosome conformation capture (scHi-C) enables the analysis of cell-to-cell variability in three-dimensional (3D) genome organization, but its utility is severely limited by pervasive technical dropouts, leading to extremely sparse contact maps. Accurately identifying dropout events and imputing the corresponding missing chromatin contacts remains a challenging problem, as technical dropouts are confounded with genuine absences of chromatin interactions. Existing imputation and enhancement methods often rely on smoothing strategies or restrictive parametric likelihood assumptions, which may obscure fine-scale chromatin structures and cell-specific features. Here, we present scHiC-Diff, a conditional diffusion-based framework for scHi-C data imputation and enhancement. scHiC-Diff employs a forward process that progressively perturbs contact maps and a reverse denoising process that reconstructs chromatin interactions from noisy observations. To better capture long-range dependencies in complex 3D genome structures, scHi-C contact matrices are treated as masked images and modeled using a Diffusion Transformer (DiT). Across two complementary simulated datasets and three real scHi-C datasets, scHiC-Diff improves the recovery of chromatin interaction patterns and enhances downstream analyses compared with existing methods. Application to a developmental scHi-C dataset further demonstrates improved reconstruction of chromatin organization and enhanced chromatin loop detection. 单细胞高通量染色体构象捕获（scHi-C）技术能够分析三维（3D）基因组组织中的细胞间变异性，但其应用受到普遍存在的技术性缺失事件的严重限制，导致接触图谱极为稀疏。准确识别缺失事件并填补相应的缺失染色质接触仍是一个具有挑战性的问题，因为技术性缺失与染色质相互作用的真实缺失相互混淆。现有的填补和增强方法通常依赖平滑策略或限制性参数似然假设，这可能掩盖精细尺度的染色质结构和细胞特异性特征。在此，我们提出scHiC-Diff，一种基于条件扩散的框架，用于scHi-C数据的填补和增强。scHiC-Diff采用一个前向过程，逐步扰动接触图谱，以及一个反向去噪过程，从噪声观测中重建染色质相互作用。为了更好地捕捉复杂3D基因组结构中的长程依赖性，scHi-C接触矩阵被视为掩码图像，并使用扩散变换器（DiT）进行建模。在两个互补的模拟数据集和三个真实的scHi-C数据集中，与现有方法相比，scHiC-Diff改善了染色质相互作用模式的恢复，并增强了下游分析。应用于一个发育过程中的scHi-C数据集，进一步展示了染色质组织重建的改进和染色质环检测的增强。",
+      "date": "2026-10-16"
+    },
+    {
+      "id": "pubmed:42875456",
+      "title": "Molecular dynamics guided all-atom reconstruction of cryo-ET maps reveals mechanisms of histone tail mediated chromatin compaction.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42875456/index.html",
+      "meta": [
+        "Li, Shuxiang; Aristizabal, Maria J; Grigoryev, Sergei A; Panchenko, Anna R",
+        "Nature communications",
+        "2026-10-15"
+      ],
+      "tags": [],
+      "summary": "该文结合全原子分子动力学模拟与冷冻电镜断层扫描，构建三核小体模型揭示组蛋白尾介导的染色质压缩机制，属于染色质三维组织与分子模拟交叉的高质量建模研究。",
+      "abstract": "Dynamics and physical state of chromatin are crucial in regulating gene expression, DNA replication, and repair. Intrinsically disordered histone tails were previously recognized as key modulators of chromatin states. However, detailed atomistic mechanisms by which histone tail dynamics are associated with chromatin compaction and higher-order chromatin organization remain poorly understood. In this work, we combine extensive all-atom molecular dynamics simulations of tri-nucleosomes with varying linker lengths and cryo-electron tomography (cryo-ET) of native nucleosome arrays. Our approach offers distinct advantages as it elucidates realistic inter-nucleosomal interactions and tri-nucleosome orientations derived from physics-based MD simulations, enabling a more accurate and physically grounded interpretation of cryo-ET data. The results reveal that tri-nucleosome models can be successfully used for fitting and the near-atomistic interpretation of cryo-ET density maps of native human chromatin. Moreover, histone tails were shown to promote chromatin compaction via three major patterns: through histone-DNA interactions, histone H2A-H4 and H3-H4 tail-tail interactions. Notably, the distributions of MD-generated structural parameters of tri-nucleosomes were found to be in strong agreement with those of experimental condensed chromatin arrays. 染色质的动力学和物理状态在调控基因表达、DNA复制及修复中至关重要。先前研究已识别出内在无序的组蛋白尾部是染色质状态的关键调节因子。然而，组蛋白尾部动力学与染色质压缩及高阶染色质组织相关联的详细原子机制仍知之甚少。在本工作中，我们结合了具有不同连接长度的三核小体的广泛全原子分子动力学 (molecular dynamics) 模拟以及天然核小体阵列的冷冻电子断层扫描 (cryo-electron tomography, cryo-ET)。我们的方法具有显著优势，因为它阐明了基于物理的MD模拟得出的真实核小体间相互作用及三核小体取向，从而能够对cryo-ET数据进行更准确且物理基础更扎实的解释。结果表明，三核小体模型可成功用于拟合天然人类染色质cryo-ET密度图，并实现近原子级解释。此外，组蛋白尾部被证明通过三种主要模式促进染色质压缩：通过组蛋白-DNA相互作用、组蛋白H2A-H4和H3-H4尾部-尾部相互作用。值得注意的是，MD生成的三核小体结构参数分布与实验性浓缩染色质阵列的分布高度一致。",
+      "date": "2026-10-15"
+    },
+    {
+      "id": "pubmed:42875502",
+      "title": "A microexon regulatory code reveals autism-linked genetic variation.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42875502/index.html",
+      "meta": [
+        "Parada, Guillermo E; Bretschneider, Hannes; Li, Jack Daiyang; Fine, Jacob L; Dupas, Steven J; Ellis, Jonathan D; Braunschweig, Ulrich; Bonnal, Sophie; Dalal, Taykhoom; Engchuan, Worrawat; Zarrei, Mehdi; Wei, Wei; Zafar, Nadia; Hemberg, Martin; Attisano, Liliana; Ellis, James; Irimia, Manuel; Wainberg, Michael; Trost, Brett; Scherer, Stephen W; Morris, Quaid D; Blencowe, Benjamin J",
+        "Nature",
+        "2026-10-15"
+      ],
+      "tags": [],
+      "summary": "该文研究神经元微外显子剪接调控及其与自闭症遗传变异的关系，虽用机器学习定义序列代码，但对象为RNA剪接而非染色质三维组织，且无空间架构建模，与本课题关联微弱。",
+      "abstract": "Neuronal microexons are a highly conserved class of alternative splicing events enriched in genes with critical functions in nervous system biology(1,2). Microexon splicing is often disrupted in the brains of autistic individuals, and mice with microexon deficiencies display autism-like phenotypes(1,3,4). However, the full landscape of microexons is not known, and the impact of genetic variation on these exons has not been systematically investigated. Here, through extensive transcriptome profiling, we detect hundreds of new microexons, including many with neuronal subtype-specific splicing patterns, and others that activate nonsense-mediated mRNA decay. Using machine learning, we define a sequence code predictive of neuronally spliced microexons and use this to identify critical regulatory elements surrounding the expanded microexon repertoire. This code further reveals genomic variants predicted to alter microexon splicing in individuals affected by autism, with rare variants having the strongest estimated impact. These variants are mostly detected in idiopathic individuals and are associated with autism status. They also converge on synaptic and other autism-linked genes, as well as genes not previously linked to autism. Our results collectively define an expanded repertoire of microexons, delineate their regulatory code, and pinpoint variants predicted to affect their splicing, with implications for the disruption of functions central to neuronal biology and brain disorders. 神经元微外显子（neuronal microexons）是一类高度保守的可变剪接事件，富集于在神经系统生物学中具有关键功能的基因中(1,2)。微外显子剪接在自闭症个体的大脑中常被破坏，且微外显子缺陷的小鼠表现出自闭症样表型(1,3,4)。然而，微外显子的完整图谱尚不明确，遗传变异对这些外显子的影响也未被系统研究。在此，通过广泛的转录组分析，我们检测到数百个新的微外显子，包括许多具有神经元亚型特异性剪接模式的微外显子，以及其他激活无义介导的mRNA降解（nonsense-mediated mRNA decay）的微外显子。利用机器学习，我们定义了一个可预测神经元剪接微外显子的序列代码，并以此识别围绕扩展微外显子库的关键调控元件。该代码进一步揭示了预测会改变自闭症个体中微外显子剪接的基因组变异，其中稀有变异具有最强的估计影响。这些变异主要见于特发性个体，并与自闭症状态相关。它们还汇聚于突触及其他自闭症相关基因，以及先前未与自闭症关联的基因。我们的结果共同定义了扩展的微外显子库，描绘了其调控代码，并精确定位了预测影响其剪接的变异，这对神经元生物学和脑部疾病中核心功能的破坏具有意义。",
+      "date": "2026-10-15"
+    },
+    {
+      "id": "pubmed:42877042",
+      "title": "Integrated multi-omics and genome mining strategies for activating cryptic polyketide biosynthetic gene clusters in Streptomyces: an overview.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42877042/index.html",
+      "meta": [
+        "Santhoshkumar, R; Mohamed, Hafid; Jemo, Martin",
+        "Frontiers in microbiology",
+        "2026-10-15"
+      ],
+      "tags": [],
+      "summary": "该综述聚焦链霉菌隐性聚酮生物合成基因簇的激活策略，虽提及AI和染色质拓扑重连，但对象非三维基因组/染色质组织，且无染色质空间架构建模或AI/分子模拟方法实质贡献。",
+      "abstract": "Beneficial microbes from soil or marine habitats are promising sources for discovery of new bioactive compounds for medicine and agriculture, largely through biosynthetic gene clusters (BGCs) that encode the production of complex natural products for drug and antibiotic discovery. However, most BGCs are transcriptionally silent under standard testing conditions and may require a complex, integrated approach for activation. In this review, we revisit previous approaches to activating BGCs, focusing on polyketides. We additionally discuss how integrating genome mining strategies with multi-omics integration, synthetic biology methods, and precise genome-editing tools is providing increasingly precise strategies for the discovery and engineering of polyketide-producing Streptomyces. We further discuss how to couple artificial intelligence (AI)-designed promoters could enable the production of novel compounds with improved yields, expanded chemical diversity, and enhanced industrial potential. We further examine how state-of-the-art CRISPR-Cas systems, including base editing, facilitate precise editing of high-GC-content genomes while circumventing the genome instability and Cas9-associated cellular toxicity that frequently accompany double-strand break formation in Streptomyces, and how chromatin topology rewiring dismantles transcriptional silencing. Unlike reviews that address genome mining, pathway engineering, or genome editing as separate approaches, this review presents an integrated framework linking computational BGC prediction, multi-omics validation, and precision engineering to prioritize and activate cryptic polyketide pathways in Streptomyces. We propose comprehensive computational genomics prediction approaches and integrate them with experimental validation through promoter engineering, transcription factor decoys, and chassis strain optimization, highlighting how these methods and tools are advancing the field from descriptive BGC catalogs to scalable, predictive models for next-generation drug discovery. Future efforts to couple AI-generated, sequence-orthogonal promoter libraries with biology-based modeling hold great promise. 来自土壤或海洋栖息地的有益微生物是发现用于医药和农业的新型生物活性化合物的有前景来源，这主要通过生物合成基因簇（BGCs）实现，这些基因簇编码复杂天然产物的生产，用于药物和抗生素发现。然而，大多数BGCs在标准测试条件下转录沉默，可能需要复杂、综合的方法来激活。在本综述中，我们重新审视了先前激活BGCs的方法，重点关注聚酮类化合物。我们进一步讨论了如何将基因组挖掘策略与多组学整合、合成生物学方法以及精确基因组编辑工具相结合，为发现和工程化产聚酮链霉菌（Streptomyces）提供日益精确的策略。我们还探讨了如何将人工智能（AI）设计的启动子耦合，以实现新型化合物的生产，提高产量、扩展化学多样性并增强工业潜力。我们进一步考察了最先进的CRISPR-Cas系统（包括碱基编辑）如何促进高GC含量基因组的精确编辑，同时规避链霉菌中常伴随双链断裂形成的基因组不稳定性和Cas9相关细胞毒性，以及染色质拓扑重塑如何解除转录沉默。与将基因组挖掘、途径工程或基因组编辑作为独立方法处理的综述不同，本综述提出了一个整合框架，将计算BGC预测、多组学验证和精确工程联系起来，以优先排序并激活链霉菌中的隐秘聚酮途径。我们提出了全面的计算基因组学预测方法，并通过启动子工程、转录因子诱饵和底盘菌株优化将其与实验验证相结合，强调这些方法和工具如何推动该领域从描述性BGC目录向可扩展、可预测的下一代药物发现模型发展。未来将AI生成的序列正交启动子库与基于生物学的建模相结合的努力具有巨大前景。",
+      "date": "2026-10-15"
+    },
+    {
+      "id": "pubmed:42878016",
+      "title": "Recent advances in coarse-grained simulations of nucleic acid condensation.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42878016/index.html",
+      "meta": [
+        "Fong Ng, Jessica; Li, Shanlong; Chen, Jianhan",
+        "The Biochemical journal",
+        "2026-10-15"
+      ],
+      "tags": [],
+      "summary": "该综述聚焦核酸凝聚体的粗粒化分子模拟方法，虽对象为核酸相分离而非染色质三维组织，但其多尺度模拟框架和相分离机制建模思路对染色质空间架构的粗粒化建模具有直接可迁移的启发价值。",
+      "abstract": "Biomolecular condensates, formed through phase separation of multivalent biomolecules, play essential roles in cellular processes such as stress response, RNA processing, transcriptional control, and genome organization. Nucleic acids are increasingly recognized as important drivers and regulators of condensate formation and dynamics. This review examines recent advances in coarse-grained molecular simulations of dynamic nucleic acids and their phase transitions. We survey established computational frameworks validated against experimental data and discuss emerging applications that address increasingly complex systems. Existing studies reveal that base-mediated interactions emerge as dominant drivers in homotypic nucleic acid condensation and that simulation resolution fundamentally determines which physical phenomena are accessible and observable. We underscore that different modeling approaches at various resolutions provide complementary insights into nucleic acid condensation mechanisms and the driving forces. We emphasize the opportunities and challenges in extending these frameworks to capture the complexity of nucleic acid-mediated phase separation in biological contexts, while identifying important gaps in current modeling capabilities. Overall, molecular simulations at multiple scales have proven to be powerful tools for elucidating the mechanistic principles underlying nucleic acid condensates and their cellular functions. 通过多价生物分子相分离（phase separation）形成的生物分子凝聚体，在应激反应、RNA加工、转录调控和基因组组织等细胞过程中发挥重要作用。核酸日益被认为是凝聚体形成和动态变化的重要驱动因子与调节因子。本综述考察了动态核酸及其相转变的粗粒化分子模拟（coarse-grained molecular simulations）近期进展。我们概述了经实验数据验证的既有计算框架，并讨论了应对日益复杂系统的新兴应用。现有研究表明，碱基介导的相互作用在同型核酸凝聚中成为主要驱动因素，且模拟分辨率从根本上决定了哪些物理现象是可及且可观测的。我们强调，不同分辨率下的多种建模方法为核酸凝聚机制及其驱动力提供了互补性见解。我们着重指出，在将这些框架扩展至捕捉生物背景下核酸介导相分离复杂性方面的机遇与挑战，同时识别当前建模能力中的重要空白。总体而言，多尺度分子模拟已被证明是阐明核酸凝聚体及其细胞功能背后机制原理的有力工具。",
+      "date": "2026-10-15"
+    },
+    {
+      "id": "pubmed:42880218",
+      "title": "Emerging frontiers for AI in single-cell genomics.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42880218/index.html",
+      "meta": [
+        "Mitra, Sneha; Li, Jiaxin; Leslie, Christina S",
+        "Molecular cell",
+        "2026-10-15"
+      ],
+      "tags": [],
+      "summary": "该文综述AI在单细胞基因组学中的应用，涵盖scATAC-seq和单细胞多组学调控建模，虽涉及染色质可及性但未聚焦三维基因组空间架构，方法上以AI综述为主，对染色质调控建模有部分启发。",
+      "abstract": "We are just over a decade into the single-cell revolution in biology, which has been coupled to the growing use of artificial intelligence (AI) in single-cell genomics. Most early single-cell RNA embedding models and subsequent \"foundation models\"-representational models pretrained on large single-cell datasets-did not gain wide traction among experimental biologists. However, as massive single-cell RNA-sequencing (scRNA-seq) atlas efforts ramp up, there is a clear rationale for exploiting AI models to interpret new datasets in the context of vast existing data resources. Meanwhile, the advent of single-cell epigenetic/multiomic assays and Perturb-seq technologies presents new opportunities for AI modeling. Here, we review AI embedding and foundation models for scRNA-seq and single-cell assay for transposase-accessible chromatin using sequencing (scATAC-seq), extensive machine-learning efforts to exploit single-cell multiome in regulatory genomics, and AI strategies to learn \"virtual cell\" models from Perturb-seq, ending with a description of current limitations of single-cell AI models and an outlook for future advances. 我们正处于生物学单细胞革命开启十余年之际，这场革命与人工智能（AI）在单细胞基因组学中日益广泛的应用紧密相连。早期的大多数单细胞RNA嵌入模型及随后的“基础模型”——在大型单细胞数据集上预训练的表征模型——并未在实验生物学家中获得广泛采用。然而，随着大规模单细胞RNA测序（scRNA-seq）图谱计划的推进，利用AI模型在庞大现有数据资源背景下解读新数据集具有明确合理性。同时，单细胞表观遗传/多组学检测和Perturb-seq技术的出现为AI建模带来了新机遇。在此，我们回顾了针对scRNA-seq和单细胞转座酶可及染色质测序（scATAC-seq）的AI嵌入与基础模型，广泛利用单细胞多组学进行调控基因组学的机器学习努力，以及从Perturb-seq中学习“虚拟细胞”模型的AI策略，最后描述了当前单细胞AI模型的局限性并展望了未来进展。",
+      "date": "2026-10-15"
+    },
+    {
+      "id": "pubmed:42880219",
+      "title": "Integration by parts: The multi-layered mechanisms of cis-regulatory control.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42880219/index.html",
+      "meta": [
+        "Cornwall-Scoones, Jake; Briscoe, James; Delas, M Joaquina",
+        "Molecular cell",
+        "2026-10-15"
+      ],
+      "tags": [],
+      "summary": "该文提出顺式调控元件多层整合机制框架，聚焦转录因子结合与表达逻辑，虽涉及调控但无染色质三维空间架构建模，且方法仅为概念性综述，缺乏AI或分子模拟建模。",
+      "abstract": "Cis-regulatory elements (CREs) integrate signals from transcription factors (TFs) to control gene expression, yet mechanisms underlying this information processing remain poorly understood. Deep learning demonstrates expression is predictable from CRE sequence, suggesting that unifying principles of regulation are within reach. Here, we propose a framework dividing CRE regulatory logic into two layers: binding-level integration, where cooperative TF interactions modulate DNA occupancy; and transcriptional-level integration, where TF effector domains and cofactors convert binding configurations into expression. At the binding level, we classify TF cooperativity along orthogonal axes-specific versus general, and symmetric versus asymmetric-encompassing protein-protein interactions, nucleosome competition, pioneer activity, and assisted loading. At the transcriptional level, cofactor interactions generate additive, synergistic, or antagonistic logic. Emerging from this complexity is a recurring quantitative pattern: \"multiplication plus saturation,\" reconciling binding specificity with flexibility, explaining how short DNA motifs generate precise expression while maintaining evolvability, and informing synthetic biology and therapeutic applications. 顺式调控元件（cis-regulatory elements, CREs）整合转录因子（transcription factors, TFs）的信号以控制基因表达，然而支撑这一信息处理过程的机制仍知之甚少。深度学习表明，表达可从CRE序列预测，提示调控的统一原则已触手可及。在此，我们提出一个框架，将CRE调控逻辑分为两层：结合层面的整合，其中协同性TF相互作用调节DNA占据；以及转录层面的整合，其中TF效应结构域和辅因子将结合构型转化为表达。在结合层面，我们沿正交轴对TF协同性进行分类——特异性与一般性，以及对称性与非对称性——涵盖蛋白质-蛋白质相互作用、核小体竞争、先锋活性及辅助加载。在转录层面，辅因子相互作用产生加性、协同性或拮抗性逻辑。从这一复杂性中浮现出一个反复出现的定量模式：“乘法加饱和”，它调和了结合特异性与灵活性，解释了短DNA基序如何生成精确表达同时保持可演化性，并为合成生物学和治疗应用提供启示。",
+      "date": "2026-10-15"
+    },
+    {
+      "id": "biorxiv:10.64898/2026.10.07.757259",
+      "title": "DNA-LLM2Vec: Architecture-Aware Task-Conditioned Adaptation of Decoder DNA Foundation Models",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/biorxiv/10.64898_2026.10.07.757259/index.html",
+      "meta": [
+        "Liang Y; Zhai K; Gan Y; Li S; Shao J; Watson GH; Poesio M",
+        "bioRxiv",
+        "2026-10-14"
+      ],
+      "tags": [],
+      "summary": "该文提出DNA-LLM2Vec，将解码器DNA基础模型转换为双向编码器以增强长程基因组任务（如增强子-启动子互作）的表示，虽涉及染色质水平调控预测但未直接建模三维空间结构，方法上属AI基因组语言模型，对三维基因组调控特征建模有参考价值。",
+      "abstract": "Decoder DNA foundation models pretrain with dense next-token prediction and scale to long sequences, but their representations are directional. This is a poor fit for genomic tasks that need sequence context both upstream and downstream of a locus. Bidirectional masked-language-model encoders supply this context, but they pretrain more sparsely and scale less easily to long windows. We introduce DNA-LLM2Vec, a staged decoder-to-encoder framework that opens bidirectional context, repairs the resulting mismatch with masked next-token prediction, and applies contrastive views encoding strand and positional invariance. We instantiate it on two architecturally distinct backbones, DNAGPT and HyenaDNA, and evaluate seven biological task families (grouped from GB, NT, GUE, and GUE+EPI) with frozen linear probing. The benefits of conversion are architecture-aware and task-conditioned rather than uniform. Crop-based positional contrastive learning helps most for the extended-context families (enhancer-promoter interaction and Virus-COVID), raising frozen Avg-EPI MCC to 27.5% for DNAGPT and 26.7% for HyenaDNA, whereas for shorter, local families the results depend on backbone and tokenisation. Beyond classification, bidirectional context and MNTP improve causal-eQTL variant-effect prediction specifically at distance, and a base-pair mutagenesis diagnostic shows that adaptation organises motif-aware contact structure while reverse-complement training imprints strand-consistent geometry, yet neither predicts the best downstream view. DNA-LLM2Vec therefore produces frozen bidirectional representations whose most effective adaptation view depends on the task structure and the backbone. Code and checkpoints are available at https://github.com/semi-nothing/dna-llm2vec. 解码器DNA基础模型通过密集的下一词元预测进行预训练，并能扩展到长序列，但其表示具有方向性。这对于需要基因座上下游序列上下文的基因组任务来说并不适合。双向掩码语言模型编码器提供了这种上下文，但它们的预训练较为稀疏，且难以扩展到长窗口。我们引入了DNA-LLM2Vec，一个分阶段的解码器到编码器框架，它打开双向上下文，通过掩码下一词元预测修复由此产生的不匹配，并应用编码链和位置不变性的对比视图。我们在两个架构不同的骨干模型DNAGPT和HyenaDNA上实例化它，并通过冻结线性探针评估七个生物任务家族（从GB、NT、GUE和GUE+EPI分组）。转换的益处是架构感知和任务条件化的，而非统一的。基于裁剪的位置对比学习对扩展上下文家族（增强子-启动子相互作用和病毒-COVID）帮助最大，将DNAGPT的冻结平均EPI MCC提高到27.5%，HyenaDNA提高到26.7%，而对于较短、局部的家族，结果取决于骨干模型和词元化。除了分类之外，双向上下文和MNTP特别在距离上改善了因果eQTL变异效应预测，而碱基对诱变诊断显示，适应组织出基序感知的接触结构，而反向互补训练印刻出链一致的几何结构，但两者都不能预测最佳的下游视图。因此，DNA-LLM2Vec产生冻结的双向表示，其最有效的适应视图取决于任务结构和骨干模型。代码和检查点可在https://github.com/semi-nothing/dna-llm2vec获取。",
+      "date": "2026-10-14"
+    },
+    {
+      "id": "biorxiv:10.64898/2026.10.12.758580",
+      "title": "A high-resolution protein-RNA binding atlas for structure-aware interaction prediction and post-transcriptional regulatory modeling",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/biorxiv/10.64898_2026.10.12.758580/index.html",
+      "meta": [
+        "Karimzadeh M; Fish L; Karner H; Linder J; Emadi A; Hernandez-Corchado A; Smaili FZ; Stewart EM; Kelley DR; Wang B; Najafabadi HS; Leonetti M; Goodarzi H",
+        "bioRxiv",
+        "2026-10-13"
+      ],
+      "tags": [],
+      "summary": "该文构建RNA结合蛋白高分辨率结合图谱并开发结构感知神经网络Pythia预测RBP-RNA互作，虽涉及RNA结构建模与调控，但对象为RNA-蛋白互作而非染色质三维组织，方法可迁移性有限。",
+      "abstract": "RNA-binding proteins (RBPs) control post-transcriptional gene expression by regulating RNA processing, localization, stability, and translation. However, our understanding of RNA regulation remains limited by the resolution, scale, and uniformity of available RBP binding maps. Here we introduce eclair CLIP (ecCLIP), a high-throughput CLIP-seq platform that combines endogenous protein tagging for uniform affinity capture with ligation-free library preparation to generate high-resolution RNA-protein binding profiles. We applied ecCLIP to 67 endogenously tagged RBPs in HEK293T cells, generating a high-quality transcriptome-scale atlas that recovered known binding preferences and captured post-transcriptional regulons linked to RNA half-life. To test the utility of the atlas, we incorporated ecCLIP into Borzuki, a Borzoi-derived sequence-to-function model trained on complementary RNA degradation, expression, CLIP, and Perturb-seq data. Inclusion of ecCLIP data improved RNA half-life prediction and assessment of 3′ UTR variant effects on RNA stability, demonstrating that our atlas helps capture RNA dynamics. To directly model the cis-regulatory grammar underlying these RBP-RNA interactions, we developed Pythia, a structure-aware neural network architecture that incorporates context-free grammar-inspired fixed convolutions to explicitly encode RNA base-pairing features. Pythia predicted RBP binding from sequence and structural context and decomposed predictions into sequence- and structure-dependent components. We tested this decomposition for five RBPs using massively parallel reporter CLIP (MPRC) binding assays in cells, using synthetic RNA libraries containing mutations designed to preserve or disrupt predicted RNA structures across nominated binding sites. We used the same MPRC strategy to confirm allele-specific binding effects for variants prioritized by Pythia. Together, ecCLIP and Pythia provide a resource for structure-aware decoding of RNA-protein interaction grammar and interpretation of post-transcriptional regulatory variation. RNA结合蛋白（RBPs）通过调控RNA加工、定位、稳定性和翻译来控制转录后基因表达。然而，我们对RNA调控的理解仍受限于现有RBP结合图谱的分辨率、规模及一致性。在此，我们引入eclair CLIP（ecCLIP），一种高通量CLIP-seq平台，该平台结合内源蛋白标记以实现均匀亲和捕获，并采用无连接酶文库制备，从而生成高分辨率的RNA-蛋白质结合谱。我们将ecCLIP应用于HEK293T细胞中的67个内源标记RBPs，生成了一个高质量的转录组规模图谱，该图谱恢复了已知的结合偏好，并捕获了与RNA半衰期相关的转录后调控子。为测试该图谱的实用性，我们将ecCLIP整合到Borzuki中，这是一个源自Borzoi的序列到功能模型，训练于互补的RNA降解、表达、CLIP和Perturb-seq数据。ecCLIP数据的加入改善了RNA半衰期预测及3′ UTR变异对RNA稳定性影响的评估，表明我们的图谱有助于捕获RNA动态。为直接模拟这些RBP-RNA相互作用背后的顺式调控语法，我们开发了Pythia，一种结构感知的神经网络架构，该架构结合了受上下文无关语法启发的固定卷积，以显式编码RNA碱基配对特征。Pythia从序列和结构背景中预测RBP结合，并将预测分解为序列依赖和结构依赖的组分。我们使用大规模并行报告基因CLIP（MPRC）结合实验在细胞中测试了五种RBPs的这种分解，使用包含设计用于在指定结合位点保留或破坏预测RNA结构的突变的合成RNA文库。我们使用相同的MPRC策略确认了由Pythia优先排序的变异体的等位基因特异性结合效应。总之，ecCLIP和Pythia为RNA-蛋白质相互作用语法的结构感知解码及转录后调控变异的解释提供了资源。",
+      "date": "2026-10-13"
+    },
+    {
+      "id": "pubmed:42866118",
+      "title": "Advances in plant metabolic engineering through synthetic biology.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42866118/index.html",
+      "meta": [
+        "Alsuwat, Hind; Alvarez, Derry; Al-Babili, Salim",
+        "Frontiers in plant science",
+        "2026-10-13"
+      ],
+      "tags": [],
+      "summary": "该综述聚焦植物代谢工程与合成生物学技术（CRISPR、基因编辑等），仅简要提及AI在代谢通路设计中的作用，不涉及三维基因组、染色质组织或空间架构建模，与本课题无关。",
+      "abstract": "The challenges associated with the escalating global population and climate change in crop production and food security are substantial. This underscores the necessity for improvements in crop nutrition, yield, and resilience to environmental stresses. Plant metabolic pathways directly influence growth, nutrient accumulation, and stress responses, rendering them prime targets for crop enhancement. Advances in plant synthetic biology and gene editing are facilitating more precise modifications of genes, regulatory elements, and metabolic pathways. This review highlights the primary technologies used in plant metabolic engineering and focuses on representative examples of their implementation for crop improvement, including but not limited to CRISPR-Cas systems, multiplex genome editing, knock-in and knock-out strategies, CRISPR-mediated gene regulation (CRISPRi/CRISPRa), base editing, prime editing, RNA targeting technologies, synthetic promoters, and gene stacking strategies. Furthermore, the emerging role of artificial intelligence in the design and optimization of metabolic pathways and genome editing tools will be briefly discussed. 全球人口不断增长和气候变化给作物生产与粮食安全带来的挑战十分严峻。这凸显了改善作物营养、产量及对环境胁迫的耐受性的必要性。植物代谢途径直接影响生长、养分积累和胁迫响应，使其成为作物改良的主要靶点。植物合成生物学和基因编辑的进展正在促进对基因、调控元件和代谢途径进行更精确的修饰。本综述重点介绍了植物代谢工程中使用的主要技术，并聚焦于其在作物改良中应用的代表性实例，包括但不限于CRISPR-Cas系统、多重基因组编辑、敲入和敲除策略、CRISPR介导的基因调控（CRISPRi/CRISPRa）、碱基编辑、引物编辑、RNA靶向技术、合成启动子和基因堆叠策略。此外，还将简要讨论人工智能在代谢途径和基因组编辑工具设计与优化中的新兴作用。",
+      "date": "2026-10-13"
+    },
+    {
+      "id": "pubmed:42867989",
+      "title": "Quantifying the impact of genetic mutations on enhancer dynamics.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42867989/index.html",
+      "meta": [
+        "Das, Maitreya; Banerjee, Deepro; Hossain, Ayaan; Jensen, Matthew; Mogre, Saie; Sun, Jiawan; Mao, Joseph; Glick, Adam B; Salis, Howard M; Girirajan, Santhosh",
+        "Cell reports",
+        "2026-10-13"
+      ],
+      "tags": [],
+      "summary": "该文通过STARR-seq和深度学习模型研究遗传扰动对增强子活性的影响，虽涉及染色质水平调控元件，但未聚焦三维基因组/染色质空间架构建模，方法上AI应用较浅，故为中档。",
+      "abstract": "Transcriptional regulation is mediated by enhancers, yet how genetic perturbations alter enhancer activity and gene expression remains unclear. We develop UDI-UMI-STARR-seq, integrating dual indexes and unique molecular identifiers, and combine it with RNA-seq to profile perturbation-associated changes in enhancer activity and gene expression. We apply this approach to 253,632 fragments representing 46,142 cell type-specific candidate enhancers and assess the impact of CRISPR/Cas9-mediated deletion of six transcription factors (ATF2, CTCF, FOXA1, LEF1, TCF7L2, and SCRT1). We identify responsive fragments that are repressed or induced and enriched for p53 family motifs. Enhancer-gene mapping reveals associations between responsive fragments and gene expression changes, including Wnt/p53 targets after ATF2 or LEF1 depletion. A deep learning model recapitulates enhancer grammar, including cooperative motif syntax and flanking sequence context. Applying this framework to 16p12.1 deletion identifies responsive fragments associated with genes involved in neuronal function, providing a scalable readout of enhancer dynamics across genetic perturbations. 转录调控由增强子介导，然而遗传扰动如何改变增强子活性及基因表达仍不清楚。我们开发了UDI-UMI-STARR-seq，整合双索引和唯一分子标识符，并将其与RNA-seq结合，以分析扰动相关的增强子活性和基因表达变化。我们将此方法应用于代表46,142个细胞类型特异性候选增强子的253,632个片段，并评估CRISPR/Cas9介导的六个转录因子（ATF2、CTCF、FOXA1、LEF1、TCF7L2和SCRT1）缺失的影响。我们识别出被抑制或诱导的响应片段，这些片段富集p53家族基序。增强子-基因映射揭示了响应片段与基因表达变化之间的关联，包括ATF2或LEF1缺失后的Wnt/p53靶标。一个深度学习模型重现了增强子语法，包括协同基序句法和侧翼序列上下文。将此框架应用于16p12.1缺失，识别出与神经元功能相关基因关联的响应片段，为跨遗传扰动的增强子动态提供了可扩展的读数。",
+      "date": "2026-10-13"
+    },
+    {
+      "id": "biorxiv:10.64898/2026.10.09.757843",
+      "title": "CRISCross: Integration of Epigenetic Information for Deep-Learning-Based Prediction of CRISPR-Cas9 Off-Targets Across Cell Types",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/biorxiv/10.64898_2026.10.09.757843/index.html",
+      "meta": [
+        "Pargeter WJ; Rabsch D; Kaufmann MM; Uhl M; Mitrofanov A; Brox T; Cathomen T; Tran VD; Backofen R",
+        "bioRxiv",
+        "2026-10-11"
+      ],
+      "tags": [],
+      "summary": "该文用深度学习预测CRISPR-Cas9脱靶，整合表观遗传信息（染色质可及性）与序列特征，虽涉及染色质可及性但核心是基因编辑脱靶预测，非三维基因组/染色质组织建模，方法上跨注意力与预训练策略对染色质互作建模有一定启发。",
+      "abstract": "CRISPR-Cas9 enables precise genome editing but remains limited by off-target effects, raising safety concerns and necessitating accurate prediction. Although epigenetic features influence Cas9 binding and cleavage, their predictive signals are often weak, highly variable, and context-dependent, limiting the effectiveness of existing machine learning approaches. Cross-cell-type settings are especially challenging: epigenetic landscapes differ substantially, and models trained on one cell type frequently fail to generalize. Here, we systematically investigate the role of epigenetic context in off-target prediction and demonstrate that its utility depends on modeling interactions with sequence features rather than treating it as an independent signal. Tabular and deep learning experiments demonstrate that epigenetic features provide a consistent but modestly complementary signal, and that late-stage fusion strategies are insufficient to effectively exploit this information. To address this, we introduce CRISCross, a cross-attention-based architecture that captures sequence-epigenetic interactions at the nucleotide level, alongside CRISPRAT, a synthetic pretraining strategy that learns transferable representations from genome-derived sgRNA-off-target pairs without relying on dataset-specific pretraining. CRISCross, incorporating AlphaGenome-derived chromatin accessibility signals, shows better predictive performance than sequence-only baselines across three independent test datasets spanning two cell types, demonstrating improved generalization across guide RNAs, datasets, and cellular contexts. This is particularly relevant for therapeutic applications involving cell types or patient-derived contexts that lack dedicated experimental datasets. In such settings, predicted chromatin accessibility may provide scalable contextual information when direct epigenomic profiling is unavailable or impractical. Together, these results show that accurate CRISPR off-target prediction benefits from interaction-aware integration of epigenetic context alongside generalizable pretraining strategies. <h4>Graphical Abstract</h4> CRISPR-Cas9实现了精确的基因组编辑，但仍受脱靶效应的限制，这引发了安全性担忧，并需要准确的预测。尽管表观遗传特征影响Cas9的结合与切割，但其预测信号往往较弱、高度可变且依赖于上下文，限制了现有机器学习方法的有效性。跨细胞类型设置尤其具有挑战性：表观遗传景观差异显著，且在一个细胞类型上训练的模型常常无法泛化。在此，我们系统研究了表观遗传上下文在脱靶预测中的作用，并证明其效用取决于与序列特征的交互建模，而非将其视为独立信号。表格和深度学习实验表明，表观遗传特征提供了一致但适度互补的信号，而晚期融合策略不足以有效利用这一信息。为解决此问题，我们引入了CRISCross，一种基于交叉注意力的架构，在核苷酸水平捕获序列-表观遗传交互，以及CRISPRAT，一种合成预训练策略，从基因组衍生的sgRNA-脱靶对中学习可迁移表示，而不依赖数据集特定的预训练。CRISCross结合了AlphaGenome衍生的染色质可及性信号，在跨越两个细胞类型的三个独立测试数据集上，显示出比仅序列基线更好的预测性能，证明了在指导RNA、数据集和细胞上下文中的改进泛化能力。这对于涉及缺乏专门实验数据集细胞类型或患者来源上下文的治疗应用尤为重要。在此类设置中，当直接表观基因组分析不可用或不切实际时，预测的染色质可及性可能提供可扩展的上下文信息。综合来看，这些结果表明，准确的CRISPR脱靶预测受益于交互感知的表观遗传上下文整合以及可泛化的预训练策略。 <h4>图形摘要</h4>",
+      "date": "2026-10-11"
+    },
+    {
+      "id": "pubmed:42856121",
+      "title": "Genetic risk and inflammatory signaling converge on cell type-specific regulatory programs in type 1 diabetes.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42856121/index.html",
+      "meta": [
+        "Wang, Liu; Wei, Zong",
+        "bioRxiv : the preprint server for biology",
+        "2026-10-11"
+      ],
+      "tags": [],
+      "summary": "该文整合表观基因组与GWAS数据，用深度学习ChromBPNet预测T1D相关SNP对染色质可及性的影响，虽涉及染色质调控建模，但对象非三维基因组/染色质高级结构，且未涉及空间折叠或互作建模。",
+      "abstract": "Type 1 diabetes (T1D) is a complex autoimmune disease characterized by the destruction of insulin-producing pancreatic beta cells. Both genetic susceptibility and epigenetic dysregulation contribute to T1D risk. Recent studies have reported beta-cell dysfunction before disease onset, suggesting that beta-cell-intrinsic mechanisms contribute to pathogenesis. However, the mechanistic link between disease-associated variants and beta-cell dysfunction remains poorly understood. We hypothesized that a subset of T1D-associated variants directly influences cell type-specific candidate cis-regulatory elements (cCREs) by disrupting transcription factor (TF) binding and altering gene expression. To define cell type-specific cCREs in human islets, we integrated publicly available epigenomic datasets, including bulk histone modification profiles and single-cell multiomic data from human pancreatic islets. We combined these data with T1D genome-wide association study (GWAS) variants to identify disease-associated SNPs located within enhancer regions. Using multiomic datasets from PANC-DB, we characterized cell type-specific chromatin accessibility in nondiabetic and T1D islets and identified regulatory regions that may control gene expression in beta cells and other islet cell types. We then applied ChromBPNet, a deep learning model that predicts base-pair-resolution chromatin accessibility from scATAC-seq data, to evaluate how specific variants may alter local regulatory activity. In parallel, we used TF footprinting to nominate TFs likely to bind these variant-containing regions. These analyses identified several T1D-associated SNPs predicted to alter chromatin accessibility at candidate TF binding sites, suggesting mechanisms by which noncoding variants may contribute to beta-cell dysfunction and T1D susceptibility. Our findings link T1D-associated variants to cell type-specific enhancer activity and regulatory pathways and provide candidates for future mechanistic studies. 1型糖尿病（T1D）是一种复杂的自身免疫性疾病，其特征是产生胰岛素的胰腺β细胞被破坏。遗传易感性和表观遗传失调均促成T1D风险。近期研究报道了疾病发作前的β细胞功能障碍，提示β细胞内在机制参与发病过程。然而，疾病相关变异与β细胞功能障碍之间的机制联系仍知之甚少。我们假设，一部分T1D相关变异通过破坏转录因子（TF）结合并改变基因表达，直接影响细胞类型特异性的候选顺式调控元件（cCREs）。为定义人类胰岛中的细胞类型特异性cCREs，我们整合了公开可用的表观基因组数据集，包括来自人类胰腺胰岛的批量组蛋白修饰谱和单细胞多组学数据。我们将这些数据与T1D全基因组关联研究（GWAS）变异相结合，以识别位于增强子区域内的疾病相关SNP。利用PANC-DB的多组学数据集，我们表征了非糖尿病和T1D胰岛中细胞类型特异性的染色质可及性，并识别了可能控制β细胞及其他胰岛细胞类型基因表达的调控区域。随后，我们应用ChromBPNet（一种从scATAC-seq数据预测碱基对分辨率染色质可及性的深度学习模型）来评估特定变异如何改变局部调控活性。同时，我们使用TF足迹分析来提名可能结合这些含变异区域的TF。这些分析识别出若干T1D相关SNP，预测其会改变候选TF结合位点的染色质可及性，提示非编码变异可能促成β细胞功能障碍和T1D易感性的机制。我们的发现将T1D相关变异与细胞类型特异性的增强子活性和调控通路联系起来，并为未来机制研究提供了候选靶点。",
+      "date": "2026-10-11"
+    },
+    {
+      "id": "pubmed:42856931",
+      "title": "Central Dogma Transformer II: an AI microscope for understanding cellular regulatory mechanisms.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42856931/index.html",
+      "meta": [
+        "Ota, Nobuyuki",
+        "Bioinformatics advances",
+        "2026-10-11"
+      ],
+      "tags": [],
+      "summary": "该文提出镜像中心法则的Transformer模型，通过DNA/RNA自注意力和交叉注意力预测基因调控网络并识别调控元件，但对象是基因表达调控而非染色质三维空间组织，且未涉及染色质折叠或空间构象建模，方法虽为AI但与本课题三维基因组建模关联较弱。",
+      "abstract": "MOTIVATION: Interpretability is not optional in biology: understanding gene regulation requires models whose learned structure can be directly interrogated, not merely accurate predictors whose internals resist mapping onto regulatory relationships. We ask whether an architecture mirroring the central dogma yields attention and gradient maps that recover known regulatory elements and networks in inspectable form. RESULTS: Central Dogma Transformer II (CDT-II) mirrors the central dogma in its architecture-DNA self-attention, RNA self-attention, and DNA-to-RNA cross-attention-requiring only genomic embeddings and raw per-cell expression. On K562 CRISPR interference (CRISPRi) data with five genes held out entirely, CDT-II predicts perturbation effects (per-gene mean r = 0.84 ), recovers the GFI1B regulatory network (6.6-fold enrichment, P = 3.5 x 10-17 ), and concentrates cross-attention on ENCODE regulatory elements including CTCF sites (mean 7.67  x  across 28 target genes, P < .001 ). Gradient attribution predicts consequences of perturbing therapeutic targets (mean r = 0.82 ). For TFRC, target of the anti-TfR1 antibody PPMX-T003, it identifies erythrocyte-structure, iron-dependent DNA-synthesis and oxidative-stress genes, matching anemia and ferroptosis reported clinically and preclinically-without clinical data as input. CDT-II acts as an AI microscope, surfacing clinically relevant regulatory structure from perturbation experiments alone. AVAILABILITY AND IMPLEMENTATION: Source code is available at https://github.com/nobusama/CDT2. Pre-computed embeddings, training data, and model weights are available at https://huggingface.co/datasets/nobusama17/CDT2-data. 动机：在生物学中，可解释性并非可选：理解基因调控需要模型的学习结构能够被直接探究，而不仅仅是内部难以映射到调控关系的准确预测器。我们探究一种镜像中心法则的架构是否能产生注意力和梯度图，以可检查的形式恢复已知的调控元件和网络。结果：中心法则Transformer II（CDT-II）在其架构中镜像了中心法则——DNA自注意力、RNA自注意力和DNA到RNA交叉注意力——仅需基因组嵌入和原始单细胞表达。在K562 CRISPR干扰（CRISPRi）数据上，完全保留五个基因，CDT-II预测扰动效应（每基因平均r = 0.84），恢复GFI1B调控网络（6.6倍富集，P = 3.5 x 10-17），并将交叉注意力集中在ENCODE调控元件上，包括CTCF位点（28个目标基因平均7.67倍，P < .001）。梯度归因预测扰动治疗靶点的后果（平均r = 0.82）。对于TFRC，即抗TfR1抗体PPMX-T003的靶点，它识别出红细胞结构、铁依赖性DNA合成和氧化应激基因，与临床和临床前报道的贫血和铁死亡相符——无需临床数据作为输入。CDT-II充当AI显微镜，仅从扰动实验中揭示临床相关的调控结构。可用性和实现：源代码可在https://github.com/nobusama/CDT2获取。预计算嵌入、训练数据和模型权重可在https://huggingface.co/datasets/nobusama17/CDT2-data获取。",
+      "date": "2026-10-11"
+    },
+    {
+      "id": "pubmed:42857982",
+      "title": "Regional Adipose Distribution Reveals Differential Genetic Risk Patterns for Cardiometabolic Diseases.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42857982/index.html",
+      "meta": [
+        "Wu, Qian; Yang, Fan; An, Qi; Liu, Ying; Tian, Hexian; Du, Yamin; Cai, Wenjie; Lei, Minghuan; Xu, Jinglei; Deng, Linlin; Zhai, Ying; Zhang, Zhihui; Wu, Yue; Wang, Haolin; Cheng, Yue; Liu, Feng; Li, Dong",
+        "Journal of the American Heart Association",
+        "2026-10-11"
+      ],
+      "tags": [],
+      "summary": "该文研究脂肪分布与心血管代谢疾病的遗传关联，未涉及三维基因组、染色质组织或空间架构建模，且无AI/分子模拟方法，与本课题无关。",
+      "abstract": "BACKGROUND: Cardiometabolic risk associated with obesity is increasingly recognized to be strongly influenced by the anatomical distribution and ectopic deposition of adipose tissue, yet the genetic mechanisms linking adipose depots to cardiometabolic diseases remain incompletely understood. METHODS: Using large-scale genome-wide association summary statistics, we systematically characterized shared genetic architecture between 7 magnetic resonance imaging-derived regional and ectopic adipose traits and 20 cardiometabolic diseases, including major cardiovascular outcomes and type 2 diabetes. Genetic overlap was assessed at genome-wide, regional, and variant levels, followed by functional annotation, cell-type enrichment, and phenotype enrichment analyses. Protein-protein interaction networks and molecular docking analyses were further applied to prioritize disease-relevant genes and potential therapeutic compounds. RESULTS: We identified widespread yet heterogeneous genetic overlap, including 109 adipose-cardiometabolic diseases pairs with genome-wide overlap, 92 pairs showing regional concordance across 423 genomic regions, and 146 pleiotropic loci supported by colocalization. Shared variants were enriched in regulatory elements and connected to pleiotropic genes involved in metabolic and inflammatory pathways, including insulin signaling, ion homeostasis, and cellular stress responses. Cell type enrichment analyses highlighted immune, endothelial, and metabolically active parenchymal cells as key contributing cell types. Network and docking analyses further prioritized cardiometabolic disease-related genes such as MMP9, PPARG, and TM6SF2, along with candidate compounds exhibiting favorable binding properties. CONCLUSIONS: This study delineates differential genetic risk patterns linking adipose distribution to multiple cardiometabolic diseases and reveals interconnected metabolic, immune, and vascular mechanisms, providing a genetic framework for cardiometabolic and cardiovascular risk assessment and the prioritization of potential therapeutic targets. 背景：与肥胖相关的心脏代谢风险日益被认为受到脂肪组织解剖分布和异位沉积的强烈影响，然而将脂肪库与心脏代谢疾病联系起来的遗传机制仍不完全清楚。方法：利用大规模全基因组关联研究汇总统计，我们系统性地表征了7种磁共振成像衍生的区域性和异位脂肪性状与20种心脏代谢疾病（包括主要心血管结局和2型糖尿病）之间的共享遗传结构。遗传重叠在全基因组、区域和变异水平上进行评估，随后进行功能注释、细胞类型富集和表型富集分析。进一步应用蛋白质-蛋白质相互作用网络和分子对接分析来优先排序疾病相关基因和潜在治疗化合物。结果：我们识别出广泛但异质的遗传重叠，包括109对具有全基因组重叠的脂肪-心脏代谢疾病组合，92对在423个基因组区域中显示区域一致性，以及146个受共定位支持的多效性位点。共享变异富集于调控元件中，并连接到参与代谢和炎症通路的多效性基因，包括胰岛素信号传导、离子稳态和细胞应激反应。细胞类型富集分析强调免疫细胞、内皮细胞和代谢活跃的实质细胞为关键贡献细胞类型。网络和对接分析进一步优先排序了心脏代谢疾病相关基因，如MMP9、PPARG和TM6SF2，以及具有有利结合特性的候选化合物。结论：本研究描绘了将脂肪分布与多种心脏代谢疾病联系起来的差异遗传风险模式，并揭示了相互关联的代谢、免疫和血管机制，为心脏代谢和心血管风险评估及潜在治疗靶点的优先排序提供了遗传框架。",
+      "date": "2026-10-11"
+    },
+    {
+      "id": "pubmed:42858932",
+      "title": "Transcription factor CTCF activates KIAA1199 expression to inhibit ferroptosis and promote malignant behaviors in colorectal cancer based on bioinformatics and machine learning.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42858932/index.html",
+      "meta": [
+        "Fan, Xiaoye; Meng, Lei; Zheng, Song; He, Xiaoqing",
+        "Gene",
+        "2026-10-11"
+      ],
+      "tags": [],
+      "summary": "该文研究CTCF转录激活KIAA1199调控结直肠癌铁死亡，虽涉及CTCF但仅作为转录因子，无染色质三维组织或空间架构建模，且方法为常规生信与实验，与课题无关。",
+      "abstract": "OBJECTIVES: Colorectal cancer (CRC) is a common malignancy of the colon and rectum, but its molecular mechanisms remain incompletely understood. METHODS: Gene expression omnibus (GEO) database was used to download CRC-related datasets. Weighted gene co-expression network analysis (WGCNA), least absolute shrinkage and selection operator (LASSO), support vector machine (SVM), and random forest (RF) were used to identify key CRC genes. Cell type identification by estimating relative subsets of rna transcripts (CIBERSORT) was used for immune infiltration analysis. Tumor immune estimation resource (TIMER) database was used to assess gene expression across multiple cancers. Human transcription factor target database (hTFtarget) was used to predict regulatory relationships between genes and transcription factors. Chromatin immunoprecipitation (ChIP), dual-luciferase assay, cell transfection, western blot (WB), and reverse transcription quantitative polymerase chain reaction (RT-qPCR) were used to detect protein-gene binding, transcriptional activity, gene knockdown and overexpression, protein expression, and mRNA expression. JASPAR database was used to identify transcription factor binding sites. Cells were treated with a BODIPY 581/591 C11 kit to assess intracellular reactive oxygen species (ROS) levels. The assay kits were employed to determine the levels of ferrous iron (Fe(2+)), malondialdehyde (MDA), and superoxide dismutase (SOD). Cell counting kit-8 (CCK-8) was performed to measure cell viability. RESULTS: Matrix metallopeptidase 7 (MMP7), KIAA1199, and cadherin 3 (CDH3) were identified as potential key CRC genes. Their expression correlated with altered immune cell infiltration patterns. KIAA1199 showed the highest upregulation in CRC tissues. CCCTC-binding factor (CTCF) transcriptionally activated KIAA1199. Knockdown of CTCF decreased the expression of solute carrier family 7 member 11 (SLC7A11) and glutathione peroxidase 4 (GPX4), while increasing ROS, Fe(2+), and MDA, and decreasing SOD levels. CTCF knockdown combined with KIAA1199 overexpression partially rescued these effects, modulating ferroptosis-related oxidative stress in CRC cells. CONCLUSION: CTCF transcriptionally activates KIAA1199 and regulates ferroptosis-related oxidative stress in CRC cells, providing new insights into the molecular mechanisms of CRC. 目的：结直肠癌（CRC）是结肠和直肠的常见恶性肿瘤，但其分子机制尚未完全阐明。方法：利用基因表达综合（GEO）数据库下载CRC相关数据集。采用加权基因共表达网络分析（WGCNA）、最小绝对收缩和选择算子（LASSO）、支持向量机（SVM）和随机森林（RF）鉴定CRC关键基因。通过估计RNA转录本的相对子集进行细胞类型鉴定（CIBERSORT）用于免疫浸润分析。肿瘤免疫估计资源（TIMER）数据库用于评估多种癌症中的基因表达。人类转录因子靶标数据库（hTFtarget）用于预测基因与转录因子之间的调控关系。染色质免疫沉淀（ChIP）、双荧光素酶实验、细胞转染、蛋白质印迹（WB）和逆转录定量聚合酶链反应（RT-qPCR）用于检测蛋白质-基因结合、转录活性、基因敲低和过表达、蛋白质表达及mRNA表达。JASPAR数据库用于识别转录因子结合位点。细胞用BODIPY 581/591 C11试剂盒处理以评估细胞内活性氧（ROS）水平。使用检测试剂盒测定亚铁离子（Fe(2+)）、丙二醛（MDA）和超氧化物歧化酶（SOD）的水平。采用细胞计数试剂盒-8（CCK-8）测量细胞活力。结果：基质金属蛋白酶7（MMP7）、KIAA1199和钙黏蛋白3（CDH3）被鉴定为潜在的CRC关键基因。它们的表达与免疫细胞浸润模式的改变相关。KIAA1199在CRC组织中表现出最高的上调。CCCTC结合因子（CTCF）在转录水平上激活KIAA1199。敲低CTCF降低了溶质载体家族7成员11（SLC7A11）和谷胱甘肽过氧化物酶4（GPX4）的表达，同时增加了ROS、Fe(2+)和MDA，并降低了SOD水平。CTCF敲低与KIAA1199过表达联合部分逆转了这些效应，调节了CRC细胞中铁死亡相关的氧化应激。结论：CTCF在转录水平上激活KIAA1199并调节CRC细胞中铁死亡相关的氧化应激，为CRC的分子机制提供了新见解。",
+      "date": "2026-10-11"
+    },
+    {
       "id": "biorxiv:10.64898/2026.10.02.756377",
       "title": "Cerberus: bidirectional state space blocks improve accuracy and efficiency of regulatory sequence models",
       "subtitle": "",

@@ -1,0 +1,75 @@
+## Review setup
+- **Input scope** Abstract only
+- **Assessment boundary** Claims and evidence presented in the abstract; no full text, figures, tables, or supplementary materials were provided
+- **Shared manuscript claim summary** The authors propose that a subset of type 1 diabetes (T1D) associated genetic variants disrupt transcription factor binding at cell type-specific candidate cis-regulatory elements (cCREs) in human pancreatic islets, thereby altering gene expression and contributing to β-cell dysfunction. They integrate public epigenomic and single-cell multiomic datasets with T1D GWAS variants, apply ChromBPNet to predict variant effects on chromatin accessibility, and use TF footprinting to nominate candidate transcription factors. They report identification of several T1D-associated SNPs predicted to alter chromatin accessibility at candidate TF binding sites.
+- **Visible evidence base** Abstract text only; no figures, tables, methods, or supplementary information were supplied
+- **Missing materials affecting confidence** Full manuscript, all figures and tables, detailed methods, dataset identifiers, variant lists, effect size estimates, statistical significance values, and validation experiments
+
+## Reviewer
+- **Overall assessment** The abstract presents a plausible and potentially interesting hypothesis linking T1D genetic risk to cell type-specific regulatory variation in pancreatic islets. The analytical pipeline is reasonable in concept, and the integration of public multiomic data with GWAS variants is a common and potentially productive approach. However, the abstract provides no quantitative results, no validation, and no assessment of statistical significance or effect sizes. The central claim that specific SNPs alter chromatin accessibility at candidate TF binding sites is stated without supporting evidence. As presented, the case is not established from the supplied material.
+- **Who would be interested in the results, and why** Geneticists and epigenomics researchers studying autoimmune disease risk mechanisms, particularly those focused on noncoding variant interpretation and cell type-specific regulatory genomics. Investigators studying pancreatic islet biology and β-cell dysfunction in T1D would also be interested, as would computational biologists developing and applying deep learning models for regulatory genomics.
+- **Major strengths** The hypothesis is clearly stated and mechanistically plausible. The approach integrates multiple public datasets, which is resource-efficient and potentially reproducible. The use of ChromBPNet for base-pair-resolution predictions is a modern and appropriate computational tool. The focus on cell type-specific effects is scientifically important given the known heterogeneity of islet cell types.
+- **Major Concerns** 
+  - **Concern ID** R1-M1
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Evidence sufficiency
+  - **Claim pointer** The authors claim that "several T1D-associated SNPs predicted to alter chromatin accessibility at candidate TF binding sites" were identified, suggesting mechanisms by which noncoding variants may contribute to β-cell dysfunction and T1D susceptibility.
+  - **Evidence pointer** Abstract, Results section not provided
+  - **Concern** The abstract states that specific SNPs were identified and predicted to alter chromatin accessibility, but no data are presented to support this claim. There are no variant identifiers, no effect sizes, no confidence metrics, no comparison to control SNPs, and no functional validation. The claim is asserted without any visible quantitative or statistical support.
+  - **Why it matters** The central conclusion of the manuscript rests on the identification and predicted functional impact of specific SNPs. Without any evidence of the number of SNPs, the magnitude of predicted effects, the confidence of those predictions, or any form of validation, the reader cannot assess whether the findings are robust or potentially artifactual. This is the core claim of the paper, and it is currently unsupported.
+  - **Resolution test** Provide a table or figure listing the identified SNPs, their genomic locations, the predicted change in chromatin accessibility, the confidence intervals or posterior probabilities from ChromBPNet, and a comparison against matched control SNPs. Ideally, include orthogonal validation such as electrophoretic mobility shift assays, reporter assays, or CRISPR editing in relevant cell lines.
+  - **Concern ID** R1-M2
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** The authors state that they used TF footprinting to nominate TFs likely to bind variant-containing regions.
+  - **Evidence pointer** Abstract, Methods section not provided
+  - **Concern** TF footprinting from scATAC-seq data is technically challenging and prone to false positives, particularly at low coverage or in rare cell types. The abstract does not describe the coverage depth, the number of cells per cell type, the footprinting algorithm used, or any quality control metrics. Without these details, the reliability of the TF nominations cannot be evaluated.
+  - **Why it matters** TF nomination is a key step in the mechanistic interpretation. If the footprinting analysis is underpowered or improperly calibrated, the nominated TFs and the inferred mechanisms could be incorrect, undermining the biological conclusions.
+  - **Resolution test** Describe the scATAC-seq data quality, including cell counts, coverage, and fragment distribution per cell type. Specify the footprinting algorithm and any filtering thresholds. Provide validation of nominated TF motifs, for example by comparing to known TF expression in the relevant cell types or by using motif enrichment against background.
+  - **Concern ID** R1-M3
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Reproducibility and data availability
+  - **Claim pointer** The authors state that they integrated publicly available epigenomic datasets and multiomic datasets from PANC-DB.
+  - **Evidence pointer** Abstract, Data availability section not provided
+  - **Concern** The abstract does not specify which datasets were used, their accession numbers, or the specific processing pipelines. Without this information, the analysis cannot be reproduced or independently verified. The reliance on public data is a strength, but only if the exact data sources and versions are clearly identified.
+  - **Why it matters** Reproducibility is a core requirement for computational genomics studies. If the datasets or processing steps are ambiguous, other researchers cannot confirm the findings or build on them. This is particularly important given the complexity of integrating bulk and single-cell epigenomic data.
+  - **Resolution test** Provide a detailed data availability statement listing all datasets with accession numbers, versions, and processing steps. Include code availability and version numbers for all software tools used.
+- **Minor Comments** 
+  - **Concern ID** R1-m1
+  - **Severity** Minor
+  - **Axis** Clarity
+  - **Affected element** Abstract, Background
+  - **Evidence pointer** Abstract, first paragraph
+  - **Issue** The phrase "β-cell dysfunction before disease onset" is stated without citation or context. It is unclear whether this refers to human studies, animal models, or both, and what specific dysfunction is meant.
+  - **Required correction** Add citations and briefly specify the nature of the dysfunction and the model system.
+  - **Concern ID** R1-m2
+  - **Severity** Minor
+  - **Axis** Terminology
+  - **Affected element** Abstract, Methods
+  - **Evidence pointer** Abstract, third paragraph
+  - **Issue** The term "candidate cis-regulatory elements (cCREs)" is used, but the criteria for defining a cCRE are not stated. Different definitions could lead to different results.
+  - **Required correction** Define the criteria used to call cCREs, for example based on chromatin state annotations or accessibility thresholds.
+  - **Concern ID** R1-m3
+  - **Severity** Minor
+  - **Axis** Scope
+  - **Affected element** Abstract, Results
+  - **Evidence pointer** Abstract, third paragraph
+  - **Issue** The abstract mentions "several T1D-associated SNPs" but does not indicate how many were tested in total or what proportion were predicted to have functional effects. This makes it difficult to assess the enrichment or significance of the findings.
+  - **Required correction** Report the total number of T1D-associated SNPs tested, the number passing filters, and the number predicted to alter accessibility, ideally with an enrichment analysis against matched controls.
+- **Technical failings that need to be addressed before the case is established** R1-M1 (no quantitative evidence for SNP effects), R1-M2 (no details on TF footprinting quality), R1-M3 (no data availability details)
+- **Assessment against Nature-style criteria** 
+  - Originality: The hypothesis is not entirely novel, as similar approaches have been applied to other autoimmune diseases and to T1D in other cell types. The specific focus on β-cell intrinsic mechanisms and the use of ChromBPNet may add some novelty, but this cannot be fully assessed from the abstract.
+  - Scientific importance: The question of how noncoding T1D variants affect β-cell function is important and clinically relevant. If the findings are robust, they could inform mechanistic studies and potentially therapeutic targets.
+  - Interdisciplinary readership: The work bridges genetics, epigenomics, and computational biology, and would appeal to readers in these fields. The clinical relevance to T1D broadens the potential audience.
+  - Technical soundness: Cannot be assessed from the abstract. The methods are named but not described in sufficient detail to evaluate their appropriateness or execution.
+  - Readability for nonspecialists: The abstract is generally clear and well structured, but assumes familiarity with terms such as cCRE, ChromBPNet, and TF footprinting. A brief explanation of these would improve accessibility.
+- **Recommendation posture** Currently not established from the provided evidence. The hypothesis and approach are reasonable, but the central claims are unsupported by any visible data. The manuscript may become publishable if the full text provides robust quantitative results, validation, and detailed methods, but this cannot be determined from the abstract alone.
+
+## Risk / unsupported claims
+- The claim that "several T1D-associated SNPs predicted to alter chromatin accessibility at candidate TF binding sites" is unsupported, as no data are provided.
+- The claim that the findings "link T1D-associated variants to cell type-specific enhancer activity and regulatory pathways" is an overstatement given the lack of functional validation.
+- The claim that β-cell-intrinsic mechanisms contribute to T1D pathogenesis is presented as background and is likely supported by prior literature, but no citations are provided in the abstract.
+- The overall conclusion that the identified SNPs "suggest mechanisms by which noncoding variants may contribute to β-cell dysfunction" is speculative without experimental validation.

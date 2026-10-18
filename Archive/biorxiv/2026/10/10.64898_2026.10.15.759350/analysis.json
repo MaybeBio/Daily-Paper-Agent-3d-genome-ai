@@ -1,0 +1,24 @@
+{
+  "source": "biorxiv",
+  "id": "10.64898/2026.10.15.759350",
+  "title": "A relational architecture of the human genome",
+  "authors": "Krause J; Danner M; Kraft F; Islam T; Begemann M; Ziad Z; Elbracht M; Bode M; Kurth I",
+  "journal": "bioRxiv",
+  "published_date": "2026-10-16",
+  "window": {
+    "start": "2026-10-11",
+    "end": "2026-10-17"
+  },
+  "score": 6,
+  "one_liner_zh": "该文用Nucleotide Transformer v3对全人类基因组进行逐位扰动，构建核苷酸间依赖网络并发现'relons'模块，虽非直接染色质三维结构建模，但提出超越线性与3D结构的基因组高阶组织关系，对理解基因组空间组织有概念性启发，方法上属AI但对象与结构/调控轴较弱。",
+  "abstract": "Complex systems exhibit organization not only through their components but also via their interdependencies. Local nucleotide dependencies underpin regulatory motifs and RNA structures, yet principles governing a higher-order organization across the human genome remain unknown. Here we systematically perturbed every position of the com- plete telomere-to-telomere human genome using Nucleotide Transformer v3 with an ex- ascale compute cluster, generating nucleotide-resolution dependency maps that reveal a directed, weighted network of position-to-position genomic relationships. This network recapitulates known biological features and uncovers recurrent, directional architec- tures termed 'relons', spanning coding, non-coding, and unannotated regions. These re- lational modules reflect evolutionary and functional constraints and associate with hu- man genetic variation and pathogenic variants. Our findings suggest a higher-order rela- tional layer of genome organization, providing a framework to interpret DNA as a complex system of dependencies beyond linear and 3D structure, with implications for under- standing genetic variation and disease.",
+  "abstract_zh": "复杂系统不仅通过其组成部分，还通过它们之间的相互依赖性展现出组织性。局部核苷酸依赖性支撑着调控基序和RNA结构，然而，支配人类基因组中更高阶组织的原则仍属未知。在此，我们利用Nucleotide Transformer v3及百亿亿次计算集群，系统性地扰动了完整端粒到端粒人类基因组的每一个位置，生成了核苷酸分辨率的依赖性图谱，揭示了一个有向、加权的位点间基因组关系网络。该网络重现了已知的生物学特征，并发现了跨编码、非编码及未注释区域的重复性、方向性架构，称为“relons”。这些关系模块反映了进化和功能约束，并与人类遗传变异及致病性变异相关联。我们的发现提示基因组组织存在一个更高阶的关系层，为将DNA解读为超越线性和三维结构的依赖复杂系统提供了框架，对理解遗传变异和疾病具有重要意义。",
+  "has_fulltext": true,
+  "fulltext_source": "europepmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://www.biorxiv.org/content/10.64898/2026.10.15.759350",
+  "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.15.759350",
+  "paper_page_path": "papers/biorxiv/10.64898_2026.10.15.759350/index.html"
+}

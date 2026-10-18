@@ -1,0 +1,191 @@
+{
+  "identity": {
+    "pmid": "42856931",
+    "doi": "10.1093/bioadv/vbag268",
+    "title": "Central Dogma Transformer II: an AI microscope for understanding cellular regulatory mechanisms."
+  },
+  "content": {
+    "abstract": "MOTIVATION: Interpretability is not optional in biology: understanding gene regulation requires models whose learned structure can be directly interrogated, not merely accurate predictors whose internals resist mapping onto regulatory relationships. We ask whether an architecture mirroring the central dogma yields attention and gradient maps that recover known regulatory elements and networks in inspectable form. RESULTS: Central Dogma Transformer II (CDT-II) mirrors the central dogma in its architecture-DNA self-attention, RNA self-attention, and DNA-to-RNA cross-attention-requiring only genomic embeddings and raw per-cell expression. On K562 CRISPR interference (CRISPRi) data with five genes held out entirely, CDT-II predicts perturbation effects (per-gene mean r = 0.84 ), recovers the GFI1B regulatory network (6.6-fold enrichment, P = 3.5 x 10-17 ), and concentrates cross-attention on ENCODE regulatory elements including CTCF sites (mean 7.67  x  across 28 target genes, P < .001 ). Gradient attribution predicts consequences of perturbing therapeutic targets (mean r = 0.82 ). For TFRC, target of the anti-TfR1 antibody PPMX-T003, it identifies erythrocyte-structure, iron-dependent DNA-synthesis and oxidative-stress genes, matching anemia and ferroptosis reported clinically and preclinically-without clinical data as input. CDT-II acts as an AI microscope, surfacing clinically relevant regulatory structure from perturbation experiments alone. AVAILABILITY AND IMPLEMENTATION: Source code is available at https://github.com/nobusama/CDT2. Pre-computed embeddings, training data, and model weights are available at https://huggingface.co/datasets/nobusama17/CDT2-data.",
+    "keywords": [],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Ota, Nobuyuki"
+      ],
+      "short_names": [
+        "Ota N"
+      ],
+      "auids": [
+        "ORCID: 0009-0006-6570-9450"
+      ],
+      "affiliations": [
+        "Independent Researcher, Burlingame, CA, United States."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Ota, Nobuyuki",
+        "short_name": "Ota N",
+        "identifiers": [
+          "0009-0006-6570-9450"
+        ],
+        "affiliations": [
+          "Independent Researcher, Burlingame, CA, United States."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Bioinformatics advances"
+    ],
+    "journal_abbrev": [
+      "Bioinform Adv"
+    ],
+    "pub_date": "2026",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/11 05:07",
+    "fetched_at": "2026-10-18 08:30:12"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42856931",
+      "42475469",
+      "42482180",
+      "36321557",
+      "41883144",
+      "42296381",
+      "42398561",
+      "42705098",
+      "41801512",
+      "41826830",
+      "42635196",
+      "35929807",
+      "15262804",
+      "42039614",
+      "41871930",
+      "42837364",
+      "30816925",
+      "35961023",
+      "42650039",
+      "39417321",
+      "41867859",
+      "32054475",
+      "41131806",
+      "41206950",
+      "40905959",
+      "42705419",
+      "40086360",
+      "42376282",
+      "42412822",
+      "41896196",
+      "42105210",
+      "42378449",
+      "40251476",
+      "42804716",
+      "34718418",
+      "37985457",
+      "42059479",
+      "42758136",
+      "42599963",
+      "37004161",
+      "42517821",
+      "41000760",
+      "31287491",
+      "33305308",
+      "28203701",
+      "31985403",
+      "40501927",
+      "30961611",
+      "30423062",
+      "42727749",
+      "40662821",
+      "40408160",
+      "28485712",
+      "38980373",
+      "42105214",
+      "29186340",
+      "32241274",
+      "42412843",
+      "42281968",
+      "23912807",
+      "42835153",
+      "41325188",
+      "36455424",
+      "37079737",
+      "30726003",
+      "41057793",
+      "42312151",
+      "42099803",
+      "41279458",
+      "40358524",
+      "30452523",
+      "39387266",
+      "41861881",
+      "40581823",
+      "37790443",
+      "42530267",
+      "42304175",
+      "42272755",
+      "40662824",
+      "42527907",
+      "35485748",
+      "40902506",
+      "41555486",
+      "40778316",
+      "42614561",
+      "39096613",
+      "40670912",
+      "36790055",
+      "35396274",
+      "16469103",
+      "40662830",
+      "38963312",
+      "39960893",
+      "29879919",
+      "42499499",
+      "39520544",
+      "38940174",
+      "28629365",
+      "36000859",
+      "42635216"
+    ],
+    "review": [
+      "42856931",
+      "36321557"
+    ],
+    "pmc": [
+      "13649580"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://assays.cancer.gov/non-CPTAC-2704",
+        "provider": "NCI CPTAC Assay Portal",
+        "category": "Miscellaneous",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://academic.oup.com/bioinformaticsadvances/article-lookup/doi/10.1093/bioadv/vbag268",
+        "provider": "Silverchair Information Systems",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

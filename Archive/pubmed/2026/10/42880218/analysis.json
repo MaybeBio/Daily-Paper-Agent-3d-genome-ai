@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42880218",
+  "title": "Emerging frontiers for AI in single-cell genomics.",
+  "authors": "Mitra, Sneha; Li, Jiaxin; Leslie, Christina S",
+  "journal": "Molecular cell",
+  "published_date": "2026-10-15",
+  "window": {
+    "start": "2026-10-11",
+    "end": "2026-10-17"
+  },
+  "score": 5,
+  "one_liner_zh": "该文综述AI在单细胞基因组学中的应用，涵盖scATAC-seq和单细胞多组学调控建模，虽涉及染色质可及性但未聚焦三维基因组空间架构，方法上以AI综述为主，对染色质调控建模有部分启发。",
+  "abstract": "We are just over a decade into the single-cell revolution in biology, which has been coupled to the growing use of artificial intelligence (AI) in single-cell genomics. Most early single-cell RNA embedding models and subsequent \"foundation models\"-representational models pretrained on large single-cell datasets-did not gain wide traction among experimental biologists. However, as massive single-cell RNA-sequencing (scRNA-seq) atlas efforts ramp up, there is a clear rationale for exploiting AI models to interpret new datasets in the context of vast existing data resources. Meanwhile, the advent of single-cell epigenetic/multiomic assays and Perturb-seq technologies presents new opportunities for AI modeling. Here, we review AI embedding and foundation models for scRNA-seq and single-cell assay for transposase-accessible chromatin using sequencing (scATAC-seq), extensive machine-learning efforts to exploit single-cell multiome in regulatory genomics, and AI strategies to learn \"virtual cell\" models from Perturb-seq, ending with a description of current limitations of single-cell AI models and an outlook for future advances.",
+  "abstract_zh": "我们正处于生物学单细胞革命开启十余年之际，这场革命与人工智能（AI）在单细胞基因组学中日益广泛的应用紧密相连。早期的大多数单细胞RNA嵌入模型及随后的“基础模型”——在大型单细胞数据集上预训练的表征模型——并未在实验生物学家中获得广泛采用。然而，随着大规模单细胞RNA测序（scRNA-seq）图谱计划的推进，利用AI模型在庞大现有数据资源背景下解读新数据集具有明确合理性。同时，单细胞表观遗传/多组学检测和Perturb-seq技术的出现为AI建模带来了新机遇。在此，我们回顾了针对scRNA-seq和单细胞转座酶可及染色质测序（scATAC-seq）的AI嵌入与基础模型，广泛利用单细胞多组学进行调控基因组学的机器学习努力，以及从Perturb-seq中学习“虚拟细胞”模型的AI策略，最后描述了当前单细胞AI模型的局限性并展望了未来进展。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42880218/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42880218/",
+  "paper_page_path": "papers/pubmed/42880218/index.html"
+}

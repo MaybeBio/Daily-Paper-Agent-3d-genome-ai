@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Genetic risk and inflammatory signaling converge on cell type-specific regulatory programs in type 1 diabetes. · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-mid">5</span>
+    <div>
+      <h1>Genetic risk and inflammatory signaling converge on cell type-specific regulatory programs in type 1 diabetes.</h1>
+      <div class="meta">Wang, Liu; Wei, Zong</div>
+      <div class="meta muted">
+        
+        <span class="journal">bioRxiv : the preprint server for biology</span>
+        · 2026-10-11
+         · 全文(pmc)
+         · <a href="https://pubmed.ncbi.nlm.nih.gov/42856121/">原文</a>
+      </div>
+      <p class="one-liner">该文整合表观基因组与GWAS数据，用深度学习ChromBPNet预测T1D相关SNP对染色质可及性的影响，虽涉及染色质调控建模，但对象非三维基因组/染色质高级结构，且未涉及空间折叠或互作建模。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">Type 1 diabetes (T1D) is a complex autoimmune disease characterized by the destruction of insulin-producing pancreatic beta cells. Both genetic susceptibility and epigenetic dysregulation contribute to T1D risk. Recent studies have reported beta-cell dysfunction before disease onset, suggesting that beta-cell-intrinsic mechanisms contribute to pathogenesis. However, the mechanistic link between disease-associated variants and beta-cell dysfunction remains poorly understood. We hypothesized that a subset of T1D-associated variants directly influences cell type-specific candidate cis-regulatory elements (cCREs) by disrupting transcription factor (TF) binding and altering gene expression. To define cell type-specific cCREs in human islets, we integrated publicly available epigenomic datasets, including bulk histone modification profiles and single-cell multiomic data from human pancreatic islets. We combined these data with T1D genome-wide association study (GWAS) variants to identify disease-associated SNPs located within enhancer regions. Using multiomic datasets from PANC-DB, we characterized cell type-specific chromatin accessibility in nondiabetic and T1D islets and identified regulatory regions that may control gene expression in beta cells and other islet cell types. We then applied ChromBPNet, a deep learning model that predicts base-pair-resolution chromatin accessibility from scATAC-seq data, to evaluate how specific variants may alter local regulatory activity. In parallel, we used TF footprinting to nominate TFs likely to bind these variant-containing regions. These analyses identified several T1D-associated SNPs predicted to alter chromatin accessibility at candidate TF binding sites, suggesting mechanisms by which noncoding variants may contribute to beta-cell dysfunction and T1D susceptibility. Our findings link T1D-associated variants to cell type-specific enhancer activity and regulatory pathways and provide candidates for future mechanistic studies.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">1型糖尿病（T1D）是一种复杂的自身免疫性疾病，其特征是产生胰岛素的胰腺β细胞被破坏。遗传易感性和表观遗传失调均促成T1D风险。近期研究报道了疾病发作前的β细胞功能障碍，提示β细胞内在机制参与发病过程。然而，疾病相关变异与β细胞功能障碍之间的机制联系仍知之甚少。我们假设，一部分T1D相关变异通过破坏转录因子（TF）结合并改变基因表达，直接影响细胞类型特异性的候选顺式调控元件（cCREs）。为定义人类胰岛中的细胞类型特异性cCREs，我们整合了公开可用的表观基因组数据集，包括来自人类胰腺胰岛的批量组蛋白修饰谱和单细胞多组学数据。我们将这些数据与T1D全基因组关联研究（GWAS）变异相结合，以识别位于增强子区域内的疾病相关SNP。利用PANC-DB的多组学数据集，我们表征了非糖尿病和T1D胰岛中细胞类型特异性的染色质可及性，并识别了可能控制β细胞及其他胰岛细胞类型基因表达的调控区域。随后，我们应用ChromBPNet（一种从scATAC-seq数据预测碱基对分辨率染色质可及性的深度学习模型）来评估特定变异如何改变局部调控活性。同时，我们使用TF足迹分析来提名可能结合这些含变异区域的TF。这些分析识别出若干T1D相关SNP，预测其会改变候选TF结合位点的染色质可及性，提示非编码变异可能促成β细胞功能障碍和T1D易感性的机制。我们的发现将T1D相关变异与细胞类型特异性的增强子活性和调控通路联系起来，并为未来机制研究提供了候选靶点。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：Genetic risk and inflammatory signaling converge on cell type-specific regulatory programs in type 1 diabetes</li>
+<li><strong>作者与单位</strong>：Wang, Liu; Wei, Zong（单位未提供）</li>
+<li><strong>期刊/预印本平台</strong>：bioRxiv : the preprint server for biology</li>
+<li><strong>年份</strong>：2026-10-11</li>
+<li><strong>论文类型</strong>：预印本（preprint）</li>
+<li><strong>领域</strong>：自身免疫病遗传学 / 胰岛细胞表观基因组学 / 非编码变异功能解析</li>
+<li><strong>关键词</strong>：Type 1 diabetes, GWAS, cis-regulatory elements, chromatin accessibility, scATAC-seq, ChromBPNet, TF footprinting</li>
+<li><strong>DOI/arXiv 号</strong>：10.64898/2026.09.25.753922</li>
+<li><strong>代码</strong>：未提供</li>
+<li><strong>数据</strong>：公开数据集（bulk histone modification profiles、单细胞多组学数据、PANC-DB 多组学数据）</li>
+<li><strong>阅读日期</strong>：未提供</li>
+<li><strong>该文在「三维基因组/染色质组织 × AI 方法/物理模拟」方向中的位置</strong>：本文属于「非编码变异 → 染色质调控 → 细胞类型特异性基因表达」的功能基因组学解析路径，使用深度学习模型（ChromBPNet）预测染色质可及性变异效应。与三维基因组方向的关联在于：cCRE 的调控功能依赖于染色质空间组织，但本文未直接涉及 3D 基因组结构（如 Hi-C、enhancer-promoter looping），属于该方向的「上游/平行」工作——提供细胞类型特异性调控元件的注释与变异效应预测，可作为 3D 基因组模型中 enhancer-promoter 互作解析的输入或验证资源。</li>
+</ul>
+<hr />
+<h2>02 一句话总结</h2>
+<p>本文整合胰岛多组学表观基因组数据与 T1D GWAS 变异，使用 ChromBPNet 深度学习模型和 TF footprinting，鉴定出一批位于细胞类型特异性增强子区域、可能通过破坏 TF 结合改变染色质可及性从而影响 β 细胞功能的 T1D 关联 SNP。</p>
+<hr />
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：T1D 关联的非编码变异是否通过影响胰岛细胞类型特异性 cCRE 的 TF 结合与染色质可及性，从而促成 β 细胞内在功能障碍？</li>
+<li><strong>为什么重要</strong>：T1D 的 β 细胞损伤被认为部分源于 β 细胞内在机制，但 GWAS 变异到分子机制的链条长期缺失；解析非编码变异的功能效应是连接遗传风险与疾病机制的关键。</li>
+<li><strong>现有方法为何不足</strong>：传统方法多将 GWAS 变异映射到最近的基因或笼统的调控区域，缺乏细胞类型分辨率与碱基对分辨率的效应评估；bulk 表观基因组数据掩盖了胰岛内多种细胞类型的异质性。</li>
+<li><strong>精确研究问题（Can ... ?）</strong>：Can T1D-associated noncoding variants be predicted to disrupt transcription factor binding and alter chromatin accessibility at cell type-specific cis-regulatory elements in human pancreatic islets?</li>
+</ul>
+<hr />
+<h2>04 背景与发展脉络</h2>
+<blockquote>
+<p>注：以下脉络基于本文框架构建，未经外部系统核验，标注为「仅本文框架」。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>代表性方法</th>
+<th>优点</th>
+<th>局限</th>
+<th>本文位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>阶段 1：GWAS 变异定位</td>
+<td>LD-based fine-mapping、VEP 注释</td>
+<td>快速、可规模化</td>
+<td>缺乏细胞类型分辨率，无法评估调控效应</td>
+<td>本文使用 T1D GWAS 变异作为输入</td>
+</tr>
+<tr>
+<td>阶段 2：表观基因组注释</td>
+<td>bulk ChIP-seq（H3K27ac、H3K4me1）、ATAC-seq</td>
+<td>可定义增强子/启动子</td>
+<td>混合细胞信号，无法解析细胞类型特异性</td>
+<td>本文整合 bulk 与单细胞数据定义 cCRE</td>
+</tr>
+<tr>
+<td>阶段 3：单细胞多组学</td>
+<td>scATAC-seq、scRNA-seq、PANC-DB</td>
+<td>细胞类型分辨率</td>
+<td>数据稀疏、覆盖度有限</td>
+<td>本文使用 PANC-DB 多组学数据</td>
+</tr>
+<tr>
+<td>阶段 4：深度学习变异效应预测</td>
+<td>ChromBPNet、Enformer、Basenji</td>
+<td>碱基对分辨率、可解释性</td>
+<td>依赖训练数据质量，需实验验证</td>
+<td>本文核心方法：ChromBPNet 预测变异对染色质可及性的影响</td>
+</tr>
+<tr>
+<td>阶段 5：TF 结合解析</td>
+<td>TF footprinting、motif 分析</td>
+<td>可提名候选 TF</td>
+<td>受数据深度限制，footprint 信号噪声高</td>
+<td>本文并行使用 TF footprinting 提名 TF</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GWAS 变异到功能机制的鸿沟</td>
+<td>T1D 关联变异大多位于非编码区，难以直接解释功能</td>
+<td>非编码变异通过影响调控元件（如增强子）发挥作用，但缺乏细胞类型特异性的功能注释</td>
+<td>Abstract：作者指出「the mechanistic link between disease-associated variants and β-cell dysfunction remains poorly understood」</td>
+</tr>
+<tr>
+<td>细胞类型异质性掩盖</td>
+<td>胰岛含 α、β、δ、γ 等多种细胞，bulk 数据无法区分</td>
+<td>传统表观基因组数据来自混合细胞群体，信号被稀释</td>
+<td>Abstract：作者强调需要「cell type-specific cCREs」</td>
+</tr>
+<tr>
+<td>碱基对分辨率变异效应评估缺失</td>
+<td>现有方法难以精确评估单个 SNP 对调控活性的影响</td>
+<td>需要能预测单碱基变异效应的模型</td>
+<td>Abstract：作者应用 ChromBPNet 以「predict base-pair-resolution chromatin accessibility」</td>
+</tr>
+<tr>
+<td>TF 结合破坏难以直接观测</td>
+<td>变异可能破坏 TF 结合，但缺乏直接证据</td>
+<td>需要结合 footprinting 与变异效应预测</td>
+<td>Abstract：作者「used TF footprinting to nominate TFs likely to bind these variant-containing regions」</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>06 核心思想</h2>
+<ol>
+<li>
+<p><strong>表面方法</strong>：整合公开的 bulk 组蛋白修饰数据与单细胞多组学数据定义胰岛细胞类型特异性 cCRE；将 T1D GWAS 变异映射到增强子区域；用 ChromBPNet 预测变异对染色质可及性的影响；用 TF footprinting 提名候选 TF。</p>
+</li>
+<li>
+<p><strong>核心洞察</strong>：T1D 遗传风险与炎症信号可能汇聚于相同的细胞类型特异性调控程序——即疾病相关变异通过破坏特定细胞类型中增强子区域的 TF 结合，改变局部染色质可及性，进而影响 β 细胞基因表达，构成遗传易感性与 β 细胞内在功能障碍之间的分子桥梁。</p>
+</li>
+<li>
+<p><strong>可能的普适教训 [Analysis]</strong>：将「遗传变异 → 调控元件 → TF 结合 → 染色质状态 → 基因表达」的因果链分解为可独立检验的环节，并利用深度学习模型在碱基对分辨率上评估变异效应，是解析复杂疾病非编码变异功能的有效范式。该方法可迁移至其他复杂疾病，且其输出的细胞类型特异性调控元件可作为 3D 基因组模型中 enhancer-promoter 互作预测的锚点。</p>
+</li>
+</ol>
+<hr />
+<h2>07 方法总览</h2>
+<ul>
+<li><strong>输入</strong>：</li>
+<li>T1D GWAS 变异列表</li>
+<li>公开 bulk 组蛋白修饰数据（H3K27ac、H3K4me1 等）</li>
+<li>单细胞多组学数据（scATAC-seq、scRNA-seq）</li>
+<li>PANC-DB 多组学数据（非糖尿病与 T1D 胰岛）</li>
+<li><strong>输出</strong>：T1D 关联 SNP 列表，每个 SNP 标注其所在细胞类型特异性 cCRE、预测的染色质可及性改变、候选 TF</li>
+<li><strong>模块</strong>：
+  1. cCRE 定义模块：整合 bulk 与单细胞数据定义细胞类型特异性 cCRE
+  2. 变异映射模块：将 T1D GWAS 变异定位到增强子区域
+  3. 变异效应预测模块：ChromBPNet 预测 SNP 对染色质可及性的影响
+  4. TF 提名模块：TF footprinting 识别候选 TF</li>
+<li><strong>训练</strong>：ChromBPNet 为预训练模型（基于 scATAC-seq 数据训练），本文未重新训练</li>
+<li><strong>工具</strong>：ChromBPNet、TF footprinting 工具（具体工具名未提供）</li>
+<li><strong>假设</strong>：T1D 相关变异通过破坏 TF 结合改变染色质可及性，从而影响基因表达</li>
+<li><strong>文字流程</strong>：收集公开表观基因组数据 → 整合分析定义细胞类型特异性 cCRE → 将 T1D GWAS 变异映射至增强子区域 → 使用 ChromBPNet 预测每个变异对染色质可及性的影响 → 对变异所在区域进行 TF footprinting 分析 → 交叉验证提名候选 TF → 输出候选 SNP-TF-调控元件列表</li>
+</ul>
+<hr />
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cCRE 定义模块</td>
+<td>整合 bulk 与单细胞数据定义细胞类型特异性调控元件</td>
+<td>胰岛细胞异质性要求细胞类型分辨率的调控注释</td>
+<td>输入：bulk 组蛋白修饰、单细胞多组学；输出：细胞类型特异性 cCRE</td>
+<td>Abstract：作者「integrated publicly available epigenomic datasets」</td>
+<td>预期影响：失去细胞类型分辨率，变异效应评估将混杂多种细胞信号 [Analysis]</td>
+</tr>
+<tr>
+<td>变异映射模块</td>
+<td>将 T1D GWAS 变异定位到增强子区域</td>
+<td>筛选候选功能性变异</td>
+<td>输入：GWAS 变异、cCRE 注释；输出：位于增强子的 SNP 列表</td>
+<td>Abstract：作者「identified disease-associated SNPs located within enhancer regions」</td>
+<td>预期影响：无法聚焦候选变异，分析范围过大 [Analysis]</td>
+</tr>
+<tr>
+<td>变异效应预测模块（ChromBPNet）</td>
+<td>预测 SNP 对染色质可及性的影响</td>
+<td>提供碱基对分辨率的变异效应评估</td>
+<td>输入：scATAC-seq 数据、SNP 序列；输出：可及性变化预测</td>
+<td>Abstract：作者「applied ChromBPNet...to evaluate how specific variants may alter local regulatory activity」</td>
+<td>预期影响：失去变异效应的定量预测能力 [Analysis]</td>
+</tr>
+<tr>
+<td>TF 提名模块</td>
+<td>识别可能结合变异区域的 TF</td>
+<td>提名候选机制因子</td>
+<td>输入：变异区域序列、ATAC-seq 数据；输出：候选 TF 列表</td>
+<td>Abstract：作者「used TF footprinting to nominate TFs」</td>
+<td>预期影响：无法将变异与具体 TF 关联 [Analysis]</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：本文为预印本，未提供消融实验数据，以上「移除后影响」均为 [Analysis] 预期推断，非实测消融效应。</p>
+</blockquote>
+<hr />
+<h2>09 关键公式符号</h2>
+<p><strong>不适用。</strong> 本文为计算基因组学应用型研究，摘要中未报告具体数学模型或公式。ChromBPNet 的模型架构与损失函数细节需参考其原始论文（未在本文摘要中提供）。</p>
+<hr />
+<h2>10 实验设计与证据链</h2>
+<ul>
+<li><strong>数据集</strong>：公开 bulk 组蛋白修饰数据、单细胞多组学数据（scATAC-seq、scRNA-seq）、PANC-DB 多组学数据（含非糖尿病与 T1D 胰岛）</li>
+<li><strong>规模</strong>：未提供具体样本数</li>
+<li><strong>指标</strong>：未提供（如 AUROC、召回率等未在摘要中报告）</li>
+<li><strong>基线</strong>：未提供</li>
+<li><strong>预算</strong>：未提供</li>
+<li><strong>骨干/仪器</strong>：未提供</li>
+<li><strong>Oracle 输入</strong>：未提供</li>
+<li><strong>评测协议</strong>：未提供</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的 claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cCRE 定义</td>
+<td>胰岛存在细胞类型特异性调控元件</td>
+<td>整合 bulk 与单细胞数据</td>
+<td>成功定义细胞类型特异性 cCRE</td>
+<td>胰岛调控元件具有细胞类型特异性</td>
+<td>未提供定量验证指标</td>
+<td>Abstract</td>
+</tr>
+<tr>
+<td>变异映射</td>
+<td>T1D 变异富集于增强子区域</td>
+<td>GWAS 变异 vs. cCRE 注释</td>
+<td>鉴定出位于增强子的疾病相关 SNP</td>
+<td>部分 T1D 变异位于增强子</td>
+<td>未提供富集显著性</td>
+<td>Abstract</td>
+</tr>
+<tr>
+<td>ChromBPNet 变异效应预测</td>
+<td>特定 SNP 改变染色质可及性</td>
+<td>参考 vs. 变异序列</td>
+<td>预测出若干 SNP 改变可及性</td>
+<td>变异可能影响局部调控活性</td>
+<td>未提供实验验证</td>
+<td>Abstract</td>
+</tr>
+<tr>
+<td>TF footprinting</td>
+<td>变异区域有候选 TF 结合</td>
+<td>footprint 信号 vs. 变异位置</td>
+<td>提名出候选 TF</td>
+<td>变异可能破坏 TF 结合</td>
+<td>未提供 TF 结合的直接实验证据</td>
+<td>Abstract</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：本文仅做计算预测与候选提名，未进行实验验证（如 CRISPR 编辑、报告基因实验）。</li>
+<li><strong>Oracle/真值输入</strong>：ChromBPNet 为预训练模型，其预测基于训练数据分布；TF footprinting 依赖 ATAC-seq 数据深度。</li>
+<li><strong>端到端状态</strong>：非端到端验证——从 SNP 到基因表达变化的完整链条未在本文中闭合。</li>
+<li><strong>算力成本</strong>：未提供。</li>
+<li><strong>历史数据依赖</strong>：依赖公开数据集的注释质量与样本代表性。</li>
+<li><strong>模型依赖</strong>：结论受 ChromBPNet 预测准确度限制。</li>
+<li><strong>最难情形</strong>：位于非开放染色质区域或低覆盖度区域的变异难以评估。</li>
+<li><strong>群体/领域边界</strong>：数据来源未明确说明种族/人群构成；结论可能不适用于所有人群。</li>
+<li><strong>不确定性</strong>：所有结论均为计算预测，需实验验证。</li>
+<li><strong>有边界的复述</strong>：本文在计算层面鉴定出一批 T1D 关联 SNP，预测其位于胰岛细胞类型特异性增强子区域、可能通过破坏 TF 结合改变染色质可及性，但未提供实验验证，且未涉及 3D 基因组结构层面的 enhancer-promoter 互作解析。</li>
+</ul>
+<hr />
+<h2>12 作者自认局限</h2>
+<p>在提供的材料（仅摘要）中未发现作者明确承认的局限。</p>
+<p><strong>作者提及的相关约束</strong>（非正式局限）：
+- 作者在摘要中暗示「provide candidates for future mechanistic studies」，表明当前结果仅为候选提名，需后续实验验证。
+- 依赖公开数据集的整合分析，数据来源的异质性可能引入偏差。</p>
+<hr />
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ChromBPNet 预测未与实验验证结合</td>
+<td>模型预测可能高估或低估变异效应；预测的「可及性改变」可能不反映真实调控功能</td>
+<td>计算预测若无实验支撑，结论强度有限</td>
+<td>对候选 SNP 进行 CRISPR 编辑或报告基因实验验证</td>
+<td>Abstract 中未提及实验验证</td>
+</tr>
+<tr>
+<td>TF footprinting 信号受数据深度影响</td>
+<td>低覆盖度区域 footprint 信号不可靠，可能产生假阳性 TF 提名</td>
+<td>影响候选 TF 的可信度</td>
+<td>使用独立数据集或 motif 分析交叉验证</td>
+<td>方法学常识 [Analysis]</td>
+</tr>
+<tr>
+<td>未涉及 3D 基因组结构</td>
+<td>增强子功能依赖染色质空间互作，仅可及性不足以解释调控机制</td>
+<td>3D 基因组结构可能提供增强子-启动子互作的直接证据</td>
+<td>整合 Hi-C 或 HiChIP 数据验证 enhancer-promoter 互作</td>
+<td>本文未提及 3D 基因组数据</td>
+</tr>
+<tr>
+<td>细胞类型特异性 cCRE 定义依赖数据质量</td>
+<td>公开数据集的批次效应、抗体质量、细胞注释准确性可能影响 cCRE 定义</td>
+<td>影响所有下游分析的可靠性</td>
+<td>使用独立数据集验证 cCRE 注释</td>
+<td>方法学常识 [Analysis]</td>
+</tr>
+<tr>
+<td>未报告效应量或显著性阈值</td>
+<td>无法评估「预测改变可及性」的 SNP 是否具有统计学意义</td>
+<td>影响结论的定量可信度</td>
+<td>查看全文补充材料中的统计细节</td>
+<td>摘要中未提供</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>14 学到什么</h2>
+<p><strong>Agent 提炼的知识候选</strong></p>
+<ol>
+<li>
+<p><strong>可迁移概念：细胞类型特异性 cCRE 定义流程</strong>。本文整合 bulk 组蛋白修饰与单细胞多组学数据定义细胞类型特异性调控元件的策略，可直接迁移至三维基因组研究——将 cCRE 作为 enhancer-promoter 互作分析的锚点，结合 Hi-C 数据解析细胞类型特异性的染色质空间组织。</p>
+</li>
+<li>
+<p><strong>可迁移方法：深度学习变异效应预测</strong>。ChromBPNet 在碱基对分辨率上预测染色质可及性变异效应的思路，可扩展至 3D 基因组领域——类似模型可训练用于预测变异对 enhancer-promoter 互作强度或 TAD 边界位置的影响。</p>
+</li>
+<li>
+<p><strong>可迁移实验设计：多组学整合 + 变异映射 + 效应预测 + TF 提名的流水线</strong>。该四步流水线可迁移至三维基因组研究：将「变异 → 可及性」替换为「变异 → 3D 结构变化」，使用 Hi-C 或 Micro-C 数据训练深度学习模型。</p>
+</li>
+<li>
+<p><strong>可迁移概念：遗传风险与信号通路汇聚于调控程序</strong>。作者提出 T1D 遗传风险与炎症信号可能汇聚于相同调控程序的假说，该「遗传 × 环境信号汇聚」框架可迁移至三维基因组研究——探索炎症因子是否通过改变染色质空间组织来放大遗传风险效应。</p>
+</li>
+<li>
+<p><strong>对三维基因组方向的启示 [Analysis]</strong>：本文鉴定的细胞类型特异性 cCRE 和候选 SNP 可作为 3D 基因组研究的「兴趣点」——后续可检验这些变异是否影响 enhancer-promoter 空间互作频率，从而将 2D 可及性预测延伸至 3D 结构层面。</p>
+</li>
+</ol>
+<hr />
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>ChromBPNet</strong>：由 ENCODE 项目开发，用于从 scATAC-seq 预测碱基对分辨率染色质可及性（外部可验证：ENCODE 门户）。本文将其应用于变异效应预测，属于该模型的迁移应用。</li>
+<li><strong>PANC-DB</strong>：胰岛多组学数据库，包含非糖尿病与 T1D 供体的单细胞数据（外部可验证：PANC-DB 门户）。</li>
+<li><strong>T1D GWAS</strong>：T1D 遗传学已有大量 GWAS 研究，多个风险位点位于非编码区（如 INS、CTLA4、PTPN22 等区域），本文延续了「非编码变异功能解析」这一方向。</li>
+<li><strong>与 3D 基因组方向的连接 [Analysis]</strong>：本文未涉及 3D 基因组，但其鉴定的 cCRE 可作为 3D 基因组研究中 enhancer-promoter 互作分析的候选区域。已有研究表明 T1D 风险位点可能通过改变染色质环化影响基因表达（如 INS 区域的三维结构研究），本文结果可与该类研究互补。</li>
+<li><strong>与 AI 方法方向的连接</strong>：ChromBPNet 属于「序列 → 染色质状态」的深度学习模型，与 Enformer、Basenji 等模型同属一个技术家族，这些模型均可扩展至 3D 结构预测。</li>
+</ul>
+<hr />
+<h2>16 研究想法</h2>
+<p><strong>Agent 生成的研究候选</strong></p>
+<ol>
+<li>
+<p><strong>候选名称</strong>：T1D 风险变异的 3D 基因组效应解析
+   - <strong>来源局限/观察</strong>：本文仅预测变异对染色质可及性的影响，未涉及 3D 结构；增强子功能依赖空间互作。
+   - <strong>核心假设</strong>：部分 T1D 关联 SNP 通过改变 enhancer-promoter 空间互作频率（而非仅可及性）影响基因表达。
+   - <strong>初步方法</strong>：对本文鉴定的候选 SNP 所在区域，使用 Hi-C 或 HiChIP 数据（胰岛或 β 细胞系）分析 enhancer-promoter 互作；结合深度学习模型（如 Orca、DeepC）预测变异对 3D 结构的影响。
+   - <strong>验证方式</strong>：3C/qPCR 验证互作改变；CRISPR 编辑 SNP 后检测基因表达与染色质构象变化。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：炎症信号对 β 细胞 3D 染色质组织的动态重塑
+   - <strong>来源局限/观察</strong>：作者提出遗传风险与炎症信号汇聚于调控程序，但未探索炎症因子（如 IL-1β、IFN-γ）是否改变染色质空间组织。
+   - <strong>核心假设</strong>：炎症因子通过重塑 β 细胞 3D 染色质结构（如 TAD 边界移动、增强子-启动子互作增强/减弱），放大遗传风险效应。
+   - <strong>初步方法</strong>：对炎症因子处理的 β 细胞系进行 Hi-C 或 Micro-C 测序，比较处理前后 3D 结构变化；将结构变化区域与 T1D 风险位点交叉分析。
+   - <strong>验证方式</strong>：Hi-C 差异分析；CRISPR 干扰验证关键互作的功能意义。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：基于 ChromBPNet 扩展的 3D 结构变异效应预测模型
+   - <strong>来源局限/观察</strong>：ChromBPNet 仅预测可及性，未利用 3D 结构信息；可及性与 3D 结构存在耦合。
+   - <strong>核心假设</strong>：在 ChromBPNet 架构中引入 Hi-C 衍生特征（如 TAD 边界距离、enhancer-promoter 互作频率），可提升变异效应预测的准确性。
+   - <strong>初步方法</strong>：将 Hi-C 数据作为辅助输入特征，训练多任务模型同时预测可及性与 3D 结构特征；在 T1D 变异上评估性能。
+   - <strong>验证方式</strong>：与原始 ChromBPNet 在独立数据集上比较 AUROC/PR-AUC；实验验证 top 预测变异。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：跨细胞类型的调控程序保守性分析：T1D vs. 其他自身免疫病
+   - <strong>来源局限/观察</strong>：本文聚焦胰岛细胞，但自身免疫病共享遗传风险位点与调控程序。
+   - <strong>核心假设</strong>：T1D 相关调控程序在免疫细胞（如 T 细胞、B 细胞）中具有保守性，且与 3D 基因组结构相关。
+   - <strong>初步方法</strong>：将本文鉴定的 cCRE 与免疫细胞（来自其他自身免疫病 GWAS 研究）的 3D 基因组数据交叉分析，寻找共享的调控程序。
+   - <strong>验证方式</strong>：统计富集分析；实验验证共享增强子的功能。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+</ol></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Abstract only</li>
+<li><strong>Assessment boundary</strong> Claims and evidence presented in the abstract; no full text, figures, tables, or supplementary materials were provided</li>
+<li><strong>Shared manuscript claim summary</strong> The authors propose that a subset of type 1 diabetes (T1D) associated genetic variants disrupt transcription factor binding at cell type-specific candidate cis-regulatory elements (cCREs) in human pancreatic islets, thereby altering gene expression and contributing to β-cell dysfunction. They integrate public epigenomic and single-cell multiomic datasets with T1D GWAS variants, apply ChromBPNet to predict variant effects on chromatin accessibility, and use TF footprinting to nominate candidate transcription factors. They report identification of several T1D-associated SNPs predicted to alter chromatin accessibility at candidate TF binding sites.</li>
+<li><strong>Visible evidence base</strong> Abstract text only; no figures, tables, methods, or supplementary information were supplied</li>
+<li><strong>Missing materials affecting confidence</strong> Full manuscript, all figures and tables, detailed methods, dataset identifiers, variant lists, effect size estimates, statistical significance values, and validation experiments</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li><strong>Overall assessment</strong> The abstract presents a plausible and potentially interesting hypothesis linking T1D genetic risk to cell type-specific regulatory variation in pancreatic islets. The analytical pipeline is reasonable in concept, and the integration of public multiomic data with GWAS variants is a common and potentially productive approach. However, the abstract provides no quantitative results, no validation, and no assessment of statistical significance or effect sizes. The central claim that specific SNPs alter chromatin accessibility at candidate TF binding sites is stated without supporting evidence. As presented, the case is not established from the supplied material.</li>
+<li><strong>Who would be interested in the results, and why</strong> Geneticists and epigenomics researchers studying autoimmune disease risk mechanisms, particularly those focused on noncoding variant interpretation and cell type-specific regulatory genomics. Investigators studying pancreatic islet biology and β-cell dysfunction in T1D would also be interested, as would computational biologists developing and applying deep learning models for regulatory genomics.</li>
+<li><strong>Major strengths</strong> The hypothesis is clearly stated and mechanistically plausible. The approach integrates multiple public datasets, which is resource-efficient and potentially reproducible. The use of ChromBPNet for base-pair-resolution predictions is a modern and appropriate computational tool. The focus on cell type-specific effects is scientifically important given the known heterogeneity of islet cell types.</li>
+<li><strong>Major Concerns</strong> </li>
+<li><strong>Concern ID</strong> R1-M1</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Evidence sufficiency</li>
+<li><strong>Claim pointer</strong> The authors claim that "several T1D-associated SNPs predicted to alter chromatin accessibility at candidate TF binding sites" were identified, suggesting mechanisms by which noncoding variants may contribute to β-cell dysfunction and T1D susceptibility.</li>
+<li><strong>Evidence pointer</strong> Abstract, Results section not provided</li>
+<li><strong>Concern</strong> The abstract states that specific SNPs were identified and predicted to alter chromatin accessibility, but no data are presented to support this claim. There are no variant identifiers, no effect sizes, no confidence metrics, no comparison to control SNPs, and no functional validation. The claim is asserted without any visible quantitative or statistical support.</li>
+<li><strong>Why it matters</strong> The central conclusion of the manuscript rests on the identification and predicted functional impact of specific SNPs. Without any evidence of the number of SNPs, the magnitude of predicted effects, the confidence of those predictions, or any form of validation, the reader cannot assess whether the findings are robust or potentially artifactual. This is the core claim of the paper, and it is currently unsupported.</li>
+<li><strong>Resolution test</strong> Provide a table or figure listing the identified SNPs, their genomic locations, the predicted change in chromatin accessibility, the confidence intervals or posterior probabilities from ChromBPNet, and a comparison against matched control SNPs. Ideally, include orthogonal validation such as electrophoretic mobility shift assays, reporter assays, or CRISPR editing in relevant cell lines.</li>
+<li><strong>Concern ID</strong> R1-M2</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Technical soundness</li>
+<li><strong>Claim pointer</strong> The authors state that they used TF footprinting to nominate TFs likely to bind variant-containing regions.</li>
+<li><strong>Evidence pointer</strong> Abstract, Methods section not provided</li>
+<li><strong>Concern</strong> TF footprinting from scATAC-seq data is technically challenging and prone to false positives, particularly at low coverage or in rare cell types. The abstract does not describe the coverage depth, the number of cells per cell type, the footprinting algorithm used, or any quality control metrics. Without these details, the reliability of the TF nominations cannot be evaluated.</li>
+<li><strong>Why it matters</strong> TF nomination is a key step in the mechanistic interpretation. If the footprinting analysis is underpowered or improperly calibrated, the nominated TFs and the inferred mechanisms could be incorrect, undermining the biological conclusions.</li>
+<li><strong>Resolution test</strong> Describe the scATAC-seq data quality, including cell counts, coverage, and fragment distribution per cell type. Specify the footprinting algorithm and any filtering thresholds. Provide validation of nominated TF motifs, for example by comparing to known TF expression in the relevant cell types or by using motif enrichment against background.</li>
+<li><strong>Concern ID</strong> R1-M3</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Reproducibility and data availability</li>
+<li><strong>Claim pointer</strong> The authors state that they integrated publicly available epigenomic datasets and multiomic datasets from PANC-DB.</li>
+<li><strong>Evidence pointer</strong> Abstract, Data availability section not provided</li>
+<li><strong>Concern</strong> The abstract does not specify which datasets were used, their accession numbers, or the specific processing pipelines. Without this information, the analysis cannot be reproduced or independently verified. The reliance on public data is a strength, but only if the exact data sources and versions are clearly identified.</li>
+<li><strong>Why it matters</strong> Reproducibility is a core requirement for computational genomics studies. If the datasets or processing steps are ambiguous, other researchers cannot confirm the findings or build on them. This is particularly important given the complexity of integrating bulk and single-cell epigenomic data.</li>
+<li><strong>Resolution test</strong> Provide a detailed data availability statement listing all datasets with accession numbers, versions, and processing steps. Include code availability and version numbers for all software tools used.</li>
+<li><strong>Minor Comments</strong> </li>
+<li><strong>Concern ID</strong> R1-m1</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Clarity</li>
+<li><strong>Affected element</strong> Abstract, Background</li>
+<li><strong>Evidence pointer</strong> Abstract, first paragraph</li>
+<li><strong>Issue</strong> The phrase "β-cell dysfunction before disease onset" is stated without citation or context. It is unclear whether this refers to human studies, animal models, or both, and what specific dysfunction is meant.</li>
+<li><strong>Required correction</strong> Add citations and briefly specify the nature of the dysfunction and the model system.</li>
+<li><strong>Concern ID</strong> R1-m2</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Terminology</li>
+<li><strong>Affected element</strong> Abstract, Methods</li>
+<li><strong>Evidence pointer</strong> Abstract, third paragraph</li>
+<li><strong>Issue</strong> The term "candidate cis-regulatory elements (cCREs)" is used, but the criteria for defining a cCRE are not stated. Different definitions could lead to different results.</li>
+<li><strong>Required correction</strong> Define the criteria used to call cCREs, for example based on chromatin state annotations or accessibility thresholds.</li>
+<li><strong>Concern ID</strong> R1-m3</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Scope</li>
+<li><strong>Affected element</strong> Abstract, Results</li>
+<li><strong>Evidence pointer</strong> Abstract, third paragraph</li>
+<li><strong>Issue</strong> The abstract mentions "several T1D-associated SNPs" but does not indicate how many were tested in total or what proportion were predicted to have functional effects. This makes it difficult to assess the enrichment or significance of the findings.</li>
+<li><strong>Required correction</strong> Report the total number of T1D-associated SNPs tested, the number passing filters, and the number predicted to alter accessibility, ideally with an enrichment analysis against matched controls.</li>
+<li><strong>Technical failings that need to be addressed before the case is established</strong> R1-M1 (no quantitative evidence for SNP effects), R1-M2 (no details on TF footprinting quality), R1-M3 (no data availability details)</li>
+<li><strong>Assessment against Nature-style criteria</strong> </li>
+<li>Originality: The hypothesis is not entirely novel, as similar approaches have been applied to other autoimmune diseases and to T1D in other cell types. The specific focus on β-cell intrinsic mechanisms and the use of ChromBPNet may add some novelty, but this cannot be fully assessed from the abstract.</li>
+<li>Scientific importance: The question of how noncoding T1D variants affect β-cell function is important and clinically relevant. If the findings are robust, they could inform mechanistic studies and potentially therapeutic targets.</li>
+<li>Interdisciplinary readership: The work bridges genetics, epigenomics, and computational biology, and would appeal to readers in these fields. The clinical relevance to T1D broadens the potential audience.</li>
+<li>Technical soundness: Cannot be assessed from the abstract. The methods are named but not described in sufficient detail to evaluate their appropriateness or execution.</li>
+<li>Readability for nonspecialists: The abstract is generally clear and well structured, but assumes familiarity with terms such as cCRE, ChromBPNet, and TF footprinting. A brief explanation of these would improve accessibility.</li>
+<li><strong>Recommendation posture</strong> Currently not established from the provided evidence. The hypothesis and approach are reasonable, but the central claims are unsupported by any visible data. The manuscript may become publishable if the full text provides robust quantitative results, validation, and detailed methods, but this cannot be determined from the abstract alone.</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>The claim that "several T1D-associated SNPs predicted to alter chromatin accessibility at candidate TF binding sites" is unsupported, as no data are provided.</li>
+<li>The claim that the findings "link T1D-associated variants to cell type-specific enhancer activity and regulatory pathways" is an overstatement given the lack of functional validation.</li>
+<li>The claim that β-cell-intrinsic mechanisms contribute to T1D pathogenesis is presented as background and is likely supported by prior literature, but no citations are provided in the abstract.</li>
+<li>The overall conclusion that the identified SNPs "suggest mechanisms by which noncoding variants may contribute to β-cell dysfunction" is speculative without experimental validation.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

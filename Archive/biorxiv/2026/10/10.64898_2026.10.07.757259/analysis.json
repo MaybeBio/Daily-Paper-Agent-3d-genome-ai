@@ -1,0 +1,24 @@
+{
+  "source": "biorxiv",
+  "id": "10.64898/2026.10.07.757259",
+  "title": "DNA-LLM2Vec: Architecture-Aware Task-Conditioned Adaptation of Decoder DNA Foundation Models",
+  "authors": "Liang Y; Zhai K; Gan Y; Li S; Shao J; Watson GH; Poesio M",
+  "journal": "bioRxiv",
+  "published_date": "2026-10-14",
+  "window": {
+    "start": "2026-10-11",
+    "end": "2026-10-17"
+  },
+  "score": 6,
+  "one_liner_zh": "该文提出DNA-LLM2Vec，将解码器DNA基础模型转换为双向编码器以增强长程基因组任务（如增强子-启动子互作）的表示，虽涉及染色质水平调控预测但未直接建模三维空间结构，方法上属AI基因组语言模型，对三维基因组调控特征建模有参考价值。",
+  "abstract": "Decoder DNA foundation models pretrain with dense next-token prediction and scale to long sequences, but their representations are directional. This is a poor fit for genomic tasks that need sequence context both upstream and downstream of a locus. Bidirectional masked-language-model encoders supply this context, but they pretrain more sparsely and scale less easily to long windows. We introduce DNA-LLM2Vec, a staged decoder-to-encoder framework that opens bidirectional context, repairs the resulting mismatch with masked next-token prediction, and applies contrastive views encoding strand and positional invariance. We instantiate it on two architecturally distinct backbones, DNAGPT and HyenaDNA, and evaluate seven biological task families (grouped from GB, NT, GUE, and GUE+EPI) with frozen linear probing. The benefits of conversion are architecture-aware and task-conditioned rather than uniform. Crop-based positional contrastive learning helps most for the extended-context families (enhancer-promoter interaction and Virus-COVID), raising frozen Avg-EPI MCC to 27.5% for DNAGPT and 26.7% for HyenaDNA, whereas for shorter, local families the results depend on backbone and tokenisation. Beyond classification, bidirectional context and MNTP improve causal-eQTL variant-effect prediction specifically at distance, and a base-pair mutagenesis diagnostic shows that adaptation organises motif-aware contact structure while reverse-complement training imprints strand-consistent geometry, yet neither predicts the best downstream view. DNA-LLM2Vec therefore produces frozen bidirectional representations whose most effective adaptation view depends on the task structure and the backbone. Code and checkpoints are available at https://github.com/semi-nothing/dna-llm2vec.",
+  "abstract_zh": "解码器DNA基础模型通过密集的下一词元预测进行预训练，并能扩展到长序列，但其表示具有方向性。这对于需要基因座上下游序列上下文的基因组任务来说并不适合。双向掩码语言模型编码器提供了这种上下文，但它们的预训练较为稀疏，且难以扩展到长窗口。我们引入了DNA-LLM2Vec，一个分阶段的解码器到编码器框架，它打开双向上下文，通过掩码下一词元预测修复由此产生的不匹配，并应用编码链和位置不变性的对比视图。我们在两个架构不同的骨干模型DNAGPT和HyenaDNA上实例化它，并通过冻结线性探针评估七个生物任务家族（从GB、NT、GUE和GUE+EPI分组）。转换的益处是架构感知和任务条件化的，而非统一的。基于裁剪的位置对比学习对扩展上下文家族（增强子-启动子相互作用和病毒-COVID）帮助最大，将DNAGPT的冻结平均EPI MCC提高到27.5%，HyenaDNA提高到26.7%，而对于较短、局部的家族，结果取决于骨干模型和词元化。除了分类之外，双向上下文和MNTP特别在距离上改善了因果eQTL变异效应预测，而碱基对诱变诊断显示，适应组织出基序感知的接触结构，而反向互补训练印刻出链一致的几何结构，但两者都不能预测最佳的下游视图。因此，DNA-LLM2Vec产生冻结的双向表示，其最有效的适应视图取决于任务结构和骨干模型。代码和检查点可在https://github.com/semi-nothing/dna-llm2vec获取。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://www.biorxiv.org/content/10.64898/2026.10.07.757259",
+  "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.07.757259",
+  "paper_page_path": "papers/biorxiv/10.64898_2026.10.07.757259/index.html"
+}

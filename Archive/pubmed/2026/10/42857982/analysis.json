@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42857982",
+  "title": "Regional Adipose Distribution Reveals Differential Genetic Risk Patterns for Cardiometabolic Diseases.",
+  "authors": "Wu, Qian; Yang, Fan; An, Qi; Liu, Ying; Tian, Hexian; Du, Yamin; Cai, Wenjie; Lei, Minghuan; Xu, Jinglei; Deng, Linlin; Zhai, Ying; Zhang, Zhihui; Wu, Yue; Wang, Haolin; Cheng, Yue; Liu, Feng; Li, Dong",
+  "journal": "Journal of the American Heart Association",
+  "published_date": "2026-10-11",
+  "window": {
+    "start": "2026-10-11",
+    "end": "2026-10-17"
+  },
+  "score": 0,
+  "one_liner_zh": "该文研究脂肪分布与心血管代谢疾病的遗传关联，未涉及三维基因组、染色质组织或空间架构建模，且无AI/分子模拟方法，与本课题无关。",
+  "abstract": "BACKGROUND: Cardiometabolic risk associated with obesity is increasingly recognized to be strongly influenced by the anatomical distribution and ectopic deposition of adipose tissue, yet the genetic mechanisms linking adipose depots to cardiometabolic diseases remain incompletely understood. METHODS: Using large-scale genome-wide association summary statistics, we systematically characterized shared genetic architecture between 7 magnetic resonance imaging-derived regional and ectopic adipose traits and 20 cardiometabolic diseases, including major cardiovascular outcomes and type 2 diabetes. Genetic overlap was assessed at genome-wide, regional, and variant levels, followed by functional annotation, cell-type enrichment, and phenotype enrichment analyses. Protein-protein interaction networks and molecular docking analyses were further applied to prioritize disease-relevant genes and potential therapeutic compounds. RESULTS: We identified widespread yet heterogeneous genetic overlap, including 109 adipose-cardiometabolic diseases pairs with genome-wide overlap, 92 pairs showing regional concordance across 423 genomic regions, and 146 pleiotropic loci supported by colocalization. Shared variants were enriched in regulatory elements and connected to pleiotropic genes involved in metabolic and inflammatory pathways, including insulin signaling, ion homeostasis, and cellular stress responses. Cell type enrichment analyses highlighted immune, endothelial, and metabolically active parenchymal cells as key contributing cell types. Network and docking analyses further prioritized cardiometabolic disease-related genes such as MMP9, PPARG, and TM6SF2, along with candidate compounds exhibiting favorable binding properties. CONCLUSIONS: This study delineates differential genetic risk patterns linking adipose distribution to multiple cardiometabolic diseases and reveals interconnected metabolic, immune, and vascular mechanisms, providing a genetic framework for cardiometabolic and cardiovascular risk assessment and the prioritization of potential therapeutic targets.",
+  "abstract_zh": "背景：与肥胖相关的心脏代谢风险日益被认为受到脂肪组织解剖分布和异位沉积的强烈影响，然而将脂肪库与心脏代谢疾病联系起来的遗传机制仍不完全清楚。方法：利用大规模全基因组关联研究汇总统计，我们系统性地表征了7种磁共振成像衍生的区域性和异位脂肪性状与20种心脏代谢疾病（包括主要心血管结局和2型糖尿病）之间的共享遗传结构。遗传重叠在全基因组、区域和变异水平上进行评估，随后进行功能注释、细胞类型富集和表型富集分析。进一步应用蛋白质-蛋白质相互作用网络和分子对接分析来优先排序疾病相关基因和潜在治疗化合物。结果：我们识别出广泛但异质的遗传重叠，包括109对具有全基因组重叠的脂肪-心脏代谢疾病组合，92对在423个基因组区域中显示区域一致性，以及146个受共定位支持的多效性位点。共享变异富集于调控元件中，并连接到参与代谢和炎症通路的多效性基因，包括胰岛素信号传导、离子稳态和细胞应激反应。细胞类型富集分析强调免疫细胞、内皮细胞和代谢活跃的实质细胞为关键贡献细胞类型。网络和对接分析进一步优先排序了心脏代谢疾病相关基因，如MMP9、PPARG和TM6SF2，以及具有有利结合特性的候选化合物。结论：本研究描绘了将脂肪分布与多种心脏代谢疾病联系起来的差异遗传风险模式，并揭示了相互关联的代谢、免疫和血管机制，为心脏代谢和心血管风险评估及潜在治疗靶点的优先排序提供了遗传框架。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42857982/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42857982/",
+  "paper_page_path": "papers/pubmed/42857982/index.html"
+}

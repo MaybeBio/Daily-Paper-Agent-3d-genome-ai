@@ -1,0 +1,136 @@
+{
+  "identity": {
+    "pmid": "42886441",
+    "doi": "10.1007/s11427-025-3406-3",
+    "title": "DESIGN: a framework for generative AI-enabled crop molecular design-driven breeding."
+  },
+  "content": {
+    "abstract": "Crop breeding is shifting from selecting naturally occurring variants to actively designing genetic features. Generative artificial intelligence (GenAI) provides a computational foundation for this transition; however, its application in crop systems remains limited. This review bridges this gap by systematically evaluating the translational potential of GenAI for crop molecular design breeding. We examine four major computational architectures and their applications across six key areas relevant to crop breeding: gene regulatory element design, protein engineering, small-molecule generation, gene-editing tool optimization, single-cell modeling, and cross-domain knowledge integration. Building on these advances, we propose the DESIGN framework, which organizes GenAI-enabled breeding into six synergistic capabilities: Discover, Engineer, Simulate, Integrate, Generate, and Navigate, thereby forming a closed-loop system spanning molecular design to field deployment. Finally, we discuss key bottlenecks in data, models, and validation, and outline a roadmap for translating GenAI into breeding practice. This review provides a conceptual and methodological foundation for the emerging paradigm of design-driven crop breeding.",
+    "keywords": [
+      "DESIGN framework",
+      "crop breeding",
+      "generative artificial intelligence",
+      "molecular design"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Xu, Feng",
+        "Fu, Ran",
+        "Cheng, Qian",
+        "Jiang, Shuqin",
+        "Yan, Jun",
+        "Wang, Xiangfeng"
+      ],
+      "short_names": [
+        "Xu F",
+        "Fu R",
+        "Cheng Q",
+        "Jiang S",
+        "Yan J",
+        "Wang X"
+      ],
+      "auids": [],
+      "affiliations": [
+        "State Key Laboratory of Maize Bio-Breeding, National Maize Improvement Center, Frontiers Science Center for Molecular Design Breeding, College of Agronomy and Biotechnology, China Agricultural University, Beijing, 100094, China.",
+        "Institute of Hybrid Wheat, Beijing Academy of Agriculture and Forestry Sciences, Beijing, 100097, China.",
+        "State Key Laboratory of Maize Bio-Breeding, National Maize Improvement Center, Frontiers Science Center for Molecular Design Breeding, College of Agronomy and Biotechnology, China Agricultural University, Beijing, 100094, China.",
+        "State Key Laboratory of Maize Bio-Breeding, National Maize Improvement Center, Frontiers Science Center for Molecular Design Breeding, College of Agronomy and Biotechnology, China Agricultural University, Beijing, 100094, China.",
+        "MolBreeding Biotechnology Co., Ltd., Shijiazhuang, 051430, China.",
+        "MolBreeding Biotechnology Co., Ltd., Shijiazhuang, 051430, China.",
+        "State Key Laboratory of Maize Bio-Breeding, National Maize Improvement Center, Frontiers Science Center for Molecular Design Breeding, College of Agronomy and Biotechnology, China Agricultural University, Beijing, 100094, China. yanjun@cau.edu.cn.",
+        "State Key Laboratory of Maize Bio-Breeding, National Maize Improvement Center, Frontiers Science Center for Molecular Design Breeding, College of Agronomy and Biotechnology, China Agricultural University, Beijing, 100094, China. xwang@cau.edu.cn."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Xu, Feng",
+        "short_name": "Xu F",
+        "identifiers": [],
+        "affiliations": [
+          "State Key Laboratory of Maize Bio-Breeding, National Maize Improvement Center, Frontiers Science Center for Molecular Design Breeding, College of Agronomy and Biotechnology, China Agricultural University, Beijing, 100094, China.",
+          "Institute of Hybrid Wheat, Beijing Academy of Agriculture and Forestry Sciences, Beijing, 100097, China."
+        ]
+      },
+      {
+        "full_name": "Fu, Ran",
+        "short_name": "Fu R",
+        "identifiers": [],
+        "affiliations": [
+          "State Key Laboratory of Maize Bio-Breeding, National Maize Improvement Center, Frontiers Science Center for Molecular Design Breeding, College of Agronomy and Biotechnology, China Agricultural University, Beijing, 100094, China."
+        ]
+      },
+      {
+        "full_name": "Cheng, Qian",
+        "short_name": "Cheng Q",
+        "identifiers": [],
+        "affiliations": [
+          "State Key Laboratory of Maize Bio-Breeding, National Maize Improvement Center, Frontiers Science Center for Molecular Design Breeding, College of Agronomy and Biotechnology, China Agricultural University, Beijing, 100094, China.",
+          "MolBreeding Biotechnology Co., Ltd., Shijiazhuang, 051430, China."
+        ]
+      },
+      {
+        "full_name": "Jiang, Shuqin",
+        "short_name": "Jiang S",
+        "identifiers": [],
+        "affiliations": [
+          "MolBreeding Biotechnology Co., Ltd., Shijiazhuang, 051430, China."
+        ]
+      },
+      {
+        "full_name": "Yan, Jun",
+        "short_name": "Yan J",
+        "identifiers": [],
+        "affiliations": [
+          "State Key Laboratory of Maize Bio-Breeding, National Maize Improvement Center, Frontiers Science Center for Molecular Design Breeding, College of Agronomy and Biotechnology, China Agricultural University, Beijing, 100094, China. yanjun@cau.edu.cn."
+        ]
+      },
+      {
+        "full_name": "Wang, Xiangfeng",
+        "short_name": "Wang X",
+        "identifiers": [],
+        "affiliations": [
+          "State Key Laboratory of Maize Bio-Breeding, National Maize Improvement Center, Frontiers Science Center for Molecular Design Breeding, College of Agronomy and Biotechnology, China Agricultural University, Beijing, 100094, China. xwang@cau.edu.cn."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Science China. Life sciences"
+    ],
+    "journal_abbrev": [
+      "Sci China Life Sci"
+    ],
+    "pub_date": "2026 Oct 12",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/16 19:05",
+    "fetched_at": "2026-10-18 08:30:12"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42886441"
+    ],
+    "review": [
+      "42886441"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [],
+    "text_mined": []
+  }
+}

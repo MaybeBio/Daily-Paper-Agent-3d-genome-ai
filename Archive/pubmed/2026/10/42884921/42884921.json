@@ -1,0 +1,129 @@
+{
+  "identity": {
+    "pmid": "42884921",
+    "doi": "10.3390/plants15193057",
+    "title": "Advances and Applications of Genome Editing in Precision Crop Breeding."
+  },
+  "content": {
+    "abstract": "Genome editing is becoming an important tool for crop improvement by enabling precise modification of genetic variation. CRISPR-Cas technologies have expanded beyond nuclease-induced mutations to include base and prime editing, transcriptional and epigenetic regulation, multiplex editing, organelle editing and targeted DNA insertion. These advances support the development of agronomically valuable alleles and extend crop improvement beyond conventional selection, recombination and random mutagenesis. Applications now include plant architecture, yield-related traits, resistance to biotic and abiotic stresses, seed composition and nutritional quality, and extend to de novo domestication, haploid induction and hybrid breeding. Current research is increasingly moving from single-gene modification toward the engineering of promoters, cis-regulatory elements, quantitative alleles and multiple-gene editing, particularly in polyploid crops. Wider breeding applications will depend on efficient delivery and regeneration, recovery of transgene-free and heritable edited germplasm, reliable targeted insertion and validation across relevant environments. Integration with pangenomics, multi-omics, phenomics, artificial intelligence and predictive breeding may further improve target identification, allele design and prediction of editing outcomes, thereby supporting the development of more precise and efficient crop-breeding strategies.",
+    "keywords": [
+      "CRISPR/Cas",
+      "base editing",
+      "crop improvement",
+      "genome editing",
+      "prime editing"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Zhao, Jing",
+        "Qian, Xueyan",
+        "Zhong, Xiaofang",
+        "Xun, Hongwei",
+        "Guo, Dongquan"
+      ],
+      "short_names": [
+        "Zhao J",
+        "Qian X",
+        "Zhong X",
+        "Xun H",
+        "Guo D"
+      ],
+      "auids": [
+        "ORCID: 0000-0003-2409-2299",
+        "ORCID: 0009-0007-8361-1286"
+      ],
+      "affiliations": [
+        "Institute of Agricultural Biotechnology, Jilin Provincial Key Laboratory of Agricultural Biotechnology, Jilin Academy of Agricultural Sciences (Northeast Innovation Center of Agricultural Science and Technology in China), Changchun 130033, China.",
+        "Institute of Agricultural Biotechnology, Jilin Provincial Key Laboratory of Agricultural Biotechnology, Jilin Academy of Agricultural Sciences (Northeast Innovation Center of Agricultural Science and Technology in China), Changchun 130033, China.",
+        "Institute of Agricultural Biotechnology, Jilin Provincial Key Laboratory of Agricultural Biotechnology, Jilin Academy of Agricultural Sciences (Northeast Innovation Center of Agricultural Science and Technology in China), Changchun 130033, China.",
+        "Key Laboratory of Molecular Epigenetics of the Ministry of Education (MOE), Northeast Normal University, Changchun 130024, China.",
+        "Institute of Agricultural Biotechnology, Jilin Provincial Key Laboratory of Agricultural Biotechnology, Jilin Academy of Agricultural Sciences (Northeast Innovation Center of Agricultural Science and Technology in China), Changchun 130033, China."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Zhao, Jing",
+        "short_name": "Zhao J",
+        "identifiers": [],
+        "affiliations": [
+          "Institute of Agricultural Biotechnology, Jilin Provincial Key Laboratory of Agricultural Biotechnology, Jilin Academy of Agricultural Sciences (Northeast Innovation Center of Agricultural Science and Technology in China), Changchun 130033, China."
+        ]
+      },
+      {
+        "full_name": "Qian, Xueyan",
+        "short_name": "Qian X",
+        "identifiers": [],
+        "affiliations": [
+          "Institute of Agricultural Biotechnology, Jilin Provincial Key Laboratory of Agricultural Biotechnology, Jilin Academy of Agricultural Sciences (Northeast Innovation Center of Agricultural Science and Technology in China), Changchun 130033, China."
+        ]
+      },
+      {
+        "full_name": "Zhong, Xiaofang",
+        "short_name": "Zhong X",
+        "identifiers": [],
+        "affiliations": [
+          "Institute of Agricultural Biotechnology, Jilin Provincial Key Laboratory of Agricultural Biotechnology, Jilin Academy of Agricultural Sciences (Northeast Innovation Center of Agricultural Science and Technology in China), Changchun 130033, China."
+        ]
+      },
+      {
+        "full_name": "Xun, Hongwei",
+        "short_name": "Xun H",
+        "identifiers": [
+          "0000-0003-2409-2299"
+        ],
+        "affiliations": [
+          "Key Laboratory of Molecular Epigenetics of the Ministry of Education (MOE), Northeast Normal University, Changchun 130024, China."
+        ]
+      },
+      {
+        "full_name": "Guo, Dongquan",
+        "short_name": "Guo D",
+        "identifiers": [
+          "0009-0007-8361-1286"
+        ],
+        "affiliations": [
+          "Institute of Agricultural Biotechnology, Jilin Provincial Key Laboratory of Agricultural Biotechnology, Jilin Academy of Agricultural Sciences (Northeast Innovation Center of Agricultural Science and Technology in China), Changchun 130033, China."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Plants (Basel, Switzerland)"
+    ],
+    "journal_abbrev": [
+      "Plants (Basel)"
+    ],
+    "pub_date": "2026 Oct 7",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/16 05:33",
+    "fetched_at": "2026-10-18 08:30:12"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42884921"
+    ],
+    "review": [
+      "42884921"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [],
+    "text_mined": []
+  }
+}

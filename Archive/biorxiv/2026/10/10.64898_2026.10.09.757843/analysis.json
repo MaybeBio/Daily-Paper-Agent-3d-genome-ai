@@ -1,0 +1,24 @@
+{
+  "source": "biorxiv",
+  "id": "10.64898/2026.10.09.757843",
+  "title": "CRISCross: Integration of Epigenetic Information for Deep-Learning-Based Prediction of CRISPR-Cas9 Off-Targets Across Cell Types",
+  "authors": "Pargeter WJ; Rabsch D; Kaufmann MM; Uhl M; Mitrofanov A; Brox T; Cathomen T; Tran VD; Backofen R",
+  "journal": "bioRxiv",
+  "published_date": "2026-10-11",
+  "window": {
+    "start": "2026-10-11",
+    "end": "2026-10-17"
+  },
+  "score": 4,
+  "one_liner_zh": "该文用深度学习预测CRISPR-Cas9脱靶，整合表观遗传信息（染色质可及性）与序列特征，虽涉及染色质可及性但核心是基因编辑脱靶预测，非三维基因组/染色质组织建模，方法上跨注意力与预训练策略对染色质互作建模有一定启发。",
+  "abstract": "CRISPR-Cas9 enables precise genome editing but remains limited by off-target effects, raising safety concerns and necessitating accurate prediction. Although epigenetic features influence Cas9 binding and cleavage, their predictive signals are often weak, highly variable, and context-dependent, limiting the effectiveness of existing machine learning approaches. Cross-cell-type settings are especially challenging: epigenetic landscapes differ substantially, and models trained on one cell type frequently fail to generalize. Here, we systematically investigate the role of epigenetic context in off-target prediction and demonstrate that its utility depends on modeling interactions with sequence features rather than treating it as an independent signal. Tabular and deep learning experiments demonstrate that epigenetic features provide a consistent but modestly complementary signal, and that late-stage fusion strategies are insufficient to effectively exploit this information. To address this, we introduce CRISCross, a cross-attention-based architecture that captures sequence-epigenetic interactions at the nucleotide level, alongside CRISPRAT, a synthetic pretraining strategy that learns transferable representations from genome-derived sgRNA-off-target pairs without relying on dataset-specific pretraining. CRISCross, incorporating AlphaGenome-derived chromatin accessibility signals, shows better predictive performance than sequence-only baselines across three independent test datasets spanning two cell types, demonstrating improved generalization across guide RNAs, datasets, and cellular contexts. This is particularly relevant for therapeutic applications involving cell types or patient-derived contexts that lack dedicated experimental datasets. In such settings, predicted chromatin accessibility may provide scalable contextual information when direct epigenomic profiling is unavailable or impractical. Together, these results show that accurate CRISPR off-target prediction benefits from interaction-aware integration of epigenetic context alongside generalizable pretraining strategies. <h4>Graphical Abstract</h4>",
+  "abstract_zh": "CRISPR-Cas9实现了精确的基因组编辑，但仍受脱靶效应的限制，这引发了安全性担忧，并需要准确的预测。尽管表观遗传特征影响Cas9的结合与切割，但其预测信号往往较弱、高度可变且依赖于上下文，限制了现有机器学习方法的有效性。跨细胞类型设置尤其具有挑战性：表观遗传景观差异显著，且在一个细胞类型上训练的模型常常无法泛化。在此，我们系统研究了表观遗传上下文在脱靶预测中的作用，并证明其效用取决于与序列特征的交互建模，而非将其视为独立信号。表格和深度学习实验表明，表观遗传特征提供了一致但适度互补的信号，而晚期融合策略不足以有效利用这一信息。为解决此问题，我们引入了CRISCross，一种基于交叉注意力的架构，在核苷酸水平捕获序列-表观遗传交互，以及CRISPRAT，一种合成预训练策略，从基因组衍生的sgRNA-脱靶对中学习可迁移表示，而不依赖数据集特定的预训练。CRISCross结合了AlphaGenome衍生的染色质可及性信号，在跨越两个细胞类型的三个独立测试数据集上，显示出比仅序列基线更好的预测性能，证明了在指导RNA、数据集和细胞上下文中的改进泛化能力。这对于涉及缺乏专门实验数据集细胞类型或患者来源上下文的治疗应用尤为重要。在此类设置中，当直接表观基因组分析不可用或不切实际时，预测的染色质可及性可能提供可扩展的上下文信息。综合来看，这些结果表明，准确的CRISPR脱靶预测受益于交互感知的表观遗传上下文整合以及可泛化的预训练策略。 <h4>图形摘要</h4>",
+  "has_fulltext": true,
+  "fulltext_source": "europepmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://www.biorxiv.org/content/10.64898/2026.10.09.757843",
+  "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.09.757843",
+  "paper_page_path": "papers/biorxiv/10.64898_2026.10.09.757843/index.html"
+}

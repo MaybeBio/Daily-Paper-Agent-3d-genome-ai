@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A relational architecture of the human genome · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-mid">6</span>
+    <div>
+      <h1>A relational architecture of the human genome</h1>
+      <div class="meta">Krause J; Danner M; Kraft F; Islam T; Begemann M; Ziad Z; Elbracht M; Bode M; Kurth I</div>
+      <div class="meta muted">
+        
+        <span class="journal">bioRxiv</span> <span class="preprint-badge">预印本</span>
+        · 2026-10-16
+         · 全文(europepmc)
+         · <a href="https://www.biorxiv.org/content/10.64898/2026.10.15.759350">原文</a>
+      </div>
+      <p class="one-liner">该文用Nucleotide Transformer v3对全人类基因组进行逐位扰动，构建核苷酸间依赖网络并发现&#39;relons&#39;模块，虽非直接染色质三维结构建模，但提出超越线性与3D结构的基因组高阶组织关系，对理解基因组空间组织有概念性启发，方法上属AI但对象与结构/调控轴较弱。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">Complex systems exhibit organization not only through their components but also via their interdependencies. Local nucleotide dependencies underpin regulatory motifs and RNA structures, yet principles governing a higher-order organization across the human genome remain unknown. Here we systematically perturbed every position of the com- plete telomere-to-telomere human genome using Nucleotide Transformer v3 with an ex- ascale compute cluster, generating nucleotide-resolution dependency maps that reveal a directed, weighted network of position-to-position genomic relationships. This network recapitulates known biological features and uncovers recurrent, directional architec- tures termed &#39;relons&#39;, spanning coding, non-coding, and unannotated regions. These re- lational modules reflect evolutionary and functional constraints and associate with hu- man genetic variation and pathogenic variants. Our findings suggest a higher-order rela- tional layer of genome organization, providing a framework to interpret DNA as a complex system of dependencies beyond linear and 3D structure, with implications for under- standing genetic variation and disease.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">复杂系统不仅通过其组成部分，还通过它们之间的相互依赖性展现出组织性。局部核苷酸依赖性支撑着调控基序和RNA结构，然而，支配人类基因组中更高阶组织的原则仍属未知。在此，我们利用Nucleotide Transformer v3及百亿亿次计算集群，系统性地扰动了完整端粒到端粒人类基因组的每一个位置，生成了核苷酸分辨率的依赖性图谱，揭示了一个有向、加权的位点间基因组关系网络。该网络重现了已知的生物学特征，并发现了跨编码、非编码及未注释区域的重复性、方向性架构，称为“relons”。这些关系模块反映了进化和功能约束，并与人类遗传变异及致病性变异相关联。我们的发现提示基因组组织存在一个更高阶的关系层，为将DNA解读为超越线性和三维结构的依赖复杂系统提供了框架，对理解遗传变异和疾病具有重要意义。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：A relational architecture of the human genome</li>
+<li><strong>作者与单位</strong>：Krause J; Danner M; Kraft F; Islam T; Begemann M; Ziad Z; Elbracht M; Bode M; Kurth I（单位未提供）</li>
+<li><strong>期刊/预印本平台</strong>：bioRxiv（预印本）</li>
+<li><strong>年份</strong>：2026-10-16</li>
+<li><strong>论文类型</strong>：预印本（研究论文）</li>
+<li><strong>领域</strong>：基因组学 / 计算生物学 / 深度学习</li>
+<li><strong>关键词</strong>：relational architecture, dependency maps, Nucleotide Transformer, relons, telomere-to-telomere genome</li>
+<li><strong>DOI/arXiv 号</strong>：10.64898/2026.10.15.759350</li>
+<li><strong>代码</strong>：未提供（文中提及 https://relome.org/ 可能为数据/资源网站）</li>
+<li><strong>数据</strong>：未提供（推测与 relome.org 相关）</li>
+<li><strong>阅读日期</strong>：未提供</li>
+<li><strong>该文在「三维基因组/染色质组织 × AI 方法/物理模拟」方向中的位置</strong>：该文提出一种超越线性序列和 3D 结构的"关系层"（relational layer）基因组组织框架，通过全基因组逐位置扰动 + 大规模语言模型生成核苷酸分辨率依赖图。与三维基因组方向的关系：本文明确声称其发现的"关系架构"是<strong>超出</strong>线性与 3D 结构之外的更高阶组织层，因此对本课题而言，它既是一个<strong>竞争性/互补性框架</strong>（可能挑战 3D 结构作为最高组织层的地位），也是一个<strong>方法论迁移源</strong>（全基因组逐位置 in silico 扰动 + 自注意力模型可迁移到 3D 结构预测或验证）。</li>
+</ul>
+<hr />
+<h2>02 一句话总结</h2>
+<p>通过对完整端粒到端粒（T2T）人类基因组的每个位置进行系统性 in silico 扰动，并使用 Nucleotide Transformer v3 在超大规模计算集群上生成核苷酸分辨率的依赖图，本文揭示了一个有向、加权的"位置-位置"基因组关系网络，并从中识别出反复出现的、有方向性的架构单元"relons"，这些单元与进化约束、遗传变异和致病变异相关联。</p>
+<hr />
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：人类基因组中是否存在超越局部核苷酸依赖（如调控基序、RNA 结构）的<strong>高阶组织原则</strong>？即：基因组中任意两个位置之间是否存在系统性的、可检测的依赖关系，且这些关系构成有意义的组织结构？</li>
+<li><strong>为什么重要</strong>：复杂系统的组织不仅来自组分本身，还来自组分间的相互依赖。如果基因组确实存在这样的"关系层"，它将为理解基因调控、遗传变异效应和疾病机制提供新的框架，超越当前以线性序列和 3D 结构为主的范式。</li>
+<li><strong>现有方法为何不足</strong>：现有方法主要关注局部序列特征（如 motif、RNA 二级结构）或 3D 染色质构象（如 Hi-C），但缺乏对<strong>全基因组范围内、任意两位置之间</strong>依赖关系的系统性、核苷酸分辨率的刻画。</li>
+<li><strong>精确研究问题</strong>：<strong>"Can systematic in silico perturbation of every position in the complete human genome reveal a higher-order, directed, weighted network of position-to-position dependencies that recapitulates known biology and uncovers novel functional architectures?"</strong></li>
+</ul>
+<hr />
+<h2>04 背景与发展脉络</h2>
+<blockquote>
+<p>注：以下脉络基于本文框架推断，标注为「仅本文框架」，未经外部核验。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>代表性方法</th>
+<th>优点</th>
+<th>局限</th>
+<th>本文位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>局部序列分析</td>
+<td>PWM/motif 扫描、RNA 折叠算法</td>
+<td>计算轻量、可解释</td>
+<td>仅捕获局部依赖，无法覆盖长程关系</td>
+<td>本文超越此层</td>
+</tr>
+<tr>
+<td>3D 基因组构象</td>
+<td>Hi-C、HiChIP、SPRITE 等</td>
+<td>捕获空间邻近关系</td>
+<td>群体平均、分辨率受限、依赖实验条件</td>
+<td>本文声称补充/超越 3D 层</td>
+</tr>
+<tr>
+<td>语言模型基因组表示</td>
+<td>DNABERT、Nucleotide Transformer 系列</td>
+<td>学习序列上下文表示</td>
+<td>通常用于预测任务，未系统用于全基因组依赖发现</td>
+<td>本文将其用于全基因组逐位置扰动</td>
+</tr>
+<tr>
+<td>全基因组扰动分析</td>
+<td>大规模饱和突变筛选（如 MPRA、CRISPR）</td>
+<td>实验验证功能</td>
+<td>覆盖有限、成本高</td>
+<td>本文用 in silico 扰动实现全基因组覆盖</td>
+</tr>
+</tbody>
+</table>
+<p><strong>本文主张的位置</strong>：在局部序列依赖和 3D 结构之上，存在一个<strong>有向、加权的"关系层"</strong>，可通过全基因组逐位置扰动 + 大规模语言模型来系统揭示。</p>
+<hr />
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>缺乏全基因组范围的高阶依赖刻画</td>
+<td>现有方法仅覆盖局部 motif 或 3D 邻近关系</td>
+<td>计算成本极高，缺乏可扩展的 in silico 扰动框架</td>
+<td>Abstract："principles governing a higher-order organization across the human genome remain unknown"</td>
+</tr>
+<tr>
+<td>3D 结构不足以解释全部功能约束</td>
+<td>3D 结构是群体平均、动态变化的</td>
+<td>3D 结构仅反映空间邻近，不直接反映序列间的功能依赖</td>
+<td>Abstract："beyond linear and 3D structure"</td>
+</tr>
+<tr>
+<td>遗传变异解读缺乏关系上下文</td>
+<td>变异效应难以从局部序列或 3D 结构预测</td>
+<td>缺乏位置间依赖关系的系统图谱</td>
+<td>Abstract："associate with human genetic variation and pathogenic variants"</td>
+</tr>
+<tr>
+<td>计算可行性障碍</td>
+<td>全基因组逐位置扰动需要天文数字的推理</td>
+<td>需要超大规模计算集群</td>
+<td>Abstract："exascale compute cluster"</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>06 核心思想</h2>
+<p><strong>1) 表面方法</strong>：
+对完整 T2T 人类基因组的<strong>每一个位置</strong>进行系统性 in silico 扰动（推测为 masked token 预测或类似操作），使用 Nucleotide Transformer v3 在 exascale 计算集群上运行，生成每个位置对其他位置影响的<strong>有向、加权依赖图</strong>。</p>
+<p><strong>2) 核心洞察</strong>：
+基因组中位置间的依赖关系不是均匀分布的，而是呈现出<strong>反复出现的、有方向性的模块化架构</strong>（"relons"），这些模块跨越编码区、非编码区和未注释区域，反映进化与功能约束。</p>
+<p><strong>3) 可能的普适教训 [Analysis]</strong>：
+- 大规模语言模型不仅可用于预测任务，其<strong>内部表示可通过系统性扰动来提取结构信息</strong>——这是一种"模型作为实验系统"的范式。
+- 复杂系统的组织可能存在于<strong>多个层次</strong>（序列、3D、关系），且这些层次可能互补而非互斥。
+- 全基因组尺度的 in silico 扰动是可行的（给定足够算力），为未来类似的全基因组分析铺路。</p>
+<hr />
+<h2>07 方法总览</h2>
+<ul>
+<li><strong>输入</strong>：完整 T2T 人类基因组序列（约 3.1 Gb）</li>
+<li><strong>输出</strong>：核苷酸分辨率的、有向加权的"位置-位置"依赖图；识别出的"relons"模块</li>
+<li><strong>核心工具</strong>：Nucleotide Transformer v3（DNA 语言模型）</li>
+<li><strong>计算资源</strong>：exascale 计算集群</li>
+<li><strong>流程</strong>：
+  1. 对基因组每个位置进行系统性扰动（推测为 masked 或替换）
+  2. 用 Nucleotide Transformer v3 对扰动后的序列进行推理
+  3. 比较扰动前后模型输出的变化，量化位置间依赖
+  4. 构建全基因组有向加权网络
+  5. 在网络中识别反复出现的、有方向性的模块（relons）
+  6. 将 relons 与已知生物学特征、进化约束、遗传变异和致病变异进行关联分析</li>
+<li><strong>假设</strong>：语言模型对序列扰动的敏感性可以反映真实的序列依赖关系；模型学到的依赖模式与生物学功能约束相关</li>
+<li><strong>反馈回路</strong>：未提供（推测无显式实验反馈回路，纯计算分析）</li>
+</ul>
+<hr />
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T2T 完整基因组</td>
+<td>提供无缺口参考序列</td>
+<td>全基因组覆盖需要完整序列</td>
+<td>输入：T2T 参考基因组</td>
+<td>Abstract："complete telomere-to-telomere human genome"</td>
+<td>若有缺口，依赖图将不完整</td>
+</tr>
+<tr>
+<td>逐位置扰动引擎</td>
+<td>对每个位置进行系统扰动</td>
+<td>生成位置间依赖的必要操作</td>
+<td>输入：基因组序列；输出：扰动后序列集</td>
+<td>Abstract："systematically perturbed every position"</td>
+<td>移除则无法生成依赖图</td>
+</tr>
+<tr>
+<td>Nucleotide Transformer v3</td>
+<td>对序列进行上下文建模</td>
+<td>核心推理引擎，捕获序列依赖</td>
+<td>输入：序列；输出：token 级表示/预测</td>
+<td>Abstract："using Nucleotide Transformer v3"</td>
+<td>替换为其他模型可能改变依赖图</td>
+</tr>
+<tr>
+<td>依赖图构建模块</td>
+<td>从扰动前后输出差异构建网络</td>
+<td>将模型敏感性转化为位置间关系</td>
+<td>输入：扰动前后模型输出；输出：有向加权网络</td>
+<td>Abstract："generating nucleotide-resolution dependency maps"</td>
+<td>移除则无网络输出</td>
+</tr>
+<tr>
+<td>Relon 识别模块</td>
+<td>在网络中识别反复出现的架构单元</td>
+<td>从海量依赖关系中提取有意义的模块</td>
+<td>输入：依赖网络；输出：relons</td>
+<td>Abstract："uncovers recurrent, directional architectures termed 'relons'"</td>
+<td>移除则仅剩原始网络，无模块化解读</td>
+</tr>
+<tr>
+<td>功能关联分析</td>
+<td>将 relons 与已知生物学特征关联</td>
+<td>验证 relons 的生物学意义</td>
+<td>输入：relons + 注释/变异数据；输出：关联统计</td>
+<td>Abstract："reflect evolutionary and functional constraints and associate with human genetic variation"</td>
+<td>移除则 relons 的生物学意义未验证</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：以上模块拆解基于摘要推断，具体实现细节未提供。所有"移除后影响"为预期效应，非实测消融。</p>
+</blockquote>
+<hr />
+<h2>09 关键公式符号</h2>
+<p><strong>不适用</strong>。摘要中未提供任何数学公式或符号定义。核心概念（依赖图、relons）以文字描述为主，无量化公式。</p>
+<hr />
+<h2>10 实验设计与证据链</h2>
+<p><strong>数据集/群体</strong>：
+- 完整 T2T 人类基因组（约 3.1 Gb，~31 亿个位置）
+- 遗传变异和致病变异数据（具体来源未提供）</p>
+<p><strong>规模</strong>：
+- 全基因组逐位置扰动：~31 亿次独立扰动
+- 计算规模：exascale 集群</p>
+<p><strong>指标</strong>：
+- 未提供具体量化指标（如依赖强度度量、relon 显著性阈值等）</p>
+<p><strong>基线</strong>：
+- 未提供（无对比方法）</p>
+<p><strong>预算/骨干/仪器</strong>：
+- exascale 计算集群（具体配置未提供）</p>
+<p><strong>Oracle 输入</strong>：
+- 不适用（无监督/自监督分析，无标注 oracle）</p>
+<p><strong>评测协议</strong>：
+- 未提供</p>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的 claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>全基因组逐位置扰动</td>
+<td>基因组存在可检测的位置间依赖</td>
+<td>无对比（单臂）</td>
+<td>生成核苷酸分辨率依赖图</td>
+<td>位置间存在系统依赖</td>
+<td>无法证明依赖是功能性的而非模型伪影</td>
+<td>Abstract</td>
+</tr>
+<tr>
+<td>网络与已知生物学特征比对</td>
+<td>依赖图能复现已知生物学</td>
+<td>与已知注释/特征比对</td>
+<td>"recapitulates known biological features"</td>
+<td>依赖图包含已知生物学信号</td>
+<td>无法证明其超越已知特征</td>
+<td>Abstract</td>
+</tr>
+<tr>
+<td>Relon 识别</td>
+<td>存在反复出现的定向架构</td>
+<td>无对比</td>
+<td>识别出跨编码/非编码/未注释区域的 relons</td>
+<td>存在模块化关系架构</td>
+<td>无法证明 relons 是独立于序列/3D 结构的新组织层</td>
+<td>Abstract</td>
+</tr>
+<tr>
+<td>与遗传变异/致病变异关联</td>
+<td>relons 与变异相关</td>
+<td>与变异数据关联分析</td>
+<td>"associate with human genetic variation and pathogenic variants"</td>
+<td>relons 可能具有功能/临床意义</td>
+<td>关联不等于因果；未提供效应量</td>
+<td>Abstract</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：以上实验设计信息均基于摘要推断，具体实验细节、统计方法、对照设置均未提供。</p>
+</blockquote>
+<hr />
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：全基因组（T2T）核苷酸分辨率的位置间依赖关系图谱构建与模块识别。</li>
+<li><strong>Oracle/真值输入</strong>：无监督分析，无 oracle 标注；依赖 Nucleotide Transformer v3 的内部表示作为"真值"来源。</li>
+<li><strong>端到端状态</strong>：从序列到依赖图到 relons 到功能关联的完整流程，但各步骤的验证深度未知。</li>
+<li><strong>算力成本</strong>：exascale 级计算，远超常规实验室资源，可复现性存疑。</li>
+<li><strong>历史数据依赖</strong>：依赖 T2T 参考基因组（2022 年完成）和 Nucleotide Transformer v3 的预训练知识。</li>
+<li><strong>模型依赖</strong>：结论完全依赖 Nucleotide Transformer v3 的表示质量；不同模型可能产生不同依赖图。</li>
+<li><strong>最难情形</strong>：未提供；推测未注释区域和重复序列区域的依赖解读最具挑战。</li>
+<li><strong>群体/领域边界</strong>：仅人类基因组；未涉及其他物种；未涉及细胞类型/状态特异性。</li>
+<li><strong>不确定性</strong>：未提供置信区间、显著性阈值或多重检验校正信息。</li>
+</ul>
+<p><strong>有边界的复述</strong>：在 Nucleotide Transformer v3 的表示空间内，对 T2T 人类基因组进行逐位置扰动，可生成一个有向加权依赖网络，其中可识别出与已知生物学特征和遗传变异相关的模块化结构（relons）。该结论受限于所用模型、计算设置和关联分析的统计严谨性。</p>
+<hr />
+<h2>12 作者自认局限</h2>
+<p>在提供的材料（仅摘要）中未发现作者明确承认的局限。</p>
+<p><strong>作者提及的相关约束</strong>（非正式局限）：
+- 计算资源需求极高（"exascale compute cluster"），暗示可及性受限。
+- 结论基于单一模型（Nucleotide Transformer v3），未讨论模型选择的影响。</p>
+<hr />
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>依赖图完全基于语言模型的敏感性</td>
+<td>模型可能捕获的是统计共现而非真实生物学依赖；模型伪影可能被误读为生物学结构</td>
+<td>核心结论的效度取决于模型表示与生物学真实性的对应关系</td>
+<td>用多个独立模型（如不同架构/训练数据的 DNA LM）交叉验证依赖图一致性；用实验数据（如 MPRA、CRISPR 扰动）验证 relon 的功能</td>
+<td>Abstract："using Nucleotide Transformer v3"</td>
+</tr>
+<tr>
+<td>"Recapitulates known biological features" 缺乏具体细节</td>
+<td>复现已知特征可能是模型训练数据中已包含这些特征的必然结果，而非新发现</td>
+<td>需要区分"模型记住了已知"与"模型揭示了未知"</td>
+<td>检查 relons 中是否包含训练数据中未直接编码的新关联</td>
+<td>Abstract："recapitulates known biological features"</td>
+</tr>
+<tr>
+<td>与遗传变异/致病变异的关联未提供效应量</td>
+<td>关联可能极弱或受混杂因素影响（如变异密度、GC 含量、注释状态）</td>
+<td>临床意义声明需要量化效应</td>
+<td>提供效应量、置信区间、混杂因素校正</td>
+<td>Abstract："associate with human genetic variation and pathogenic variants"</td>
+</tr>
+<tr>
+<td>声称"beyond linear and 3D structure"</td>
+<td>未提供与 3D 结构数据（如 Hi-C）的直接比较</td>
+<td>如果 relons 与 3D 结构高度重合，则"超越"声明不成立</td>
+<td>将依赖图与 Hi-C 等 3D 数据系统比较，量化重叠与差异</td>
+<td>Abstract："beyond linear and 3D structure"</td>
+</tr>
+<tr>
+<td>未提供 relon 的统计显著性标准</td>
+<td>"Recurrent" 的定义不明确，可能依赖任意阈值</td>
+<td>可重复性和客观性存疑</td>
+<td>提供 relon 识别的统计框架、置换检验或 FDR 控制</td>
+<td>Abstract："recurrent, directional architectures"</td>
+</tr>
+<tr>
+<td>计算成本极高</td>
+<td>exascale 级计算不可复制，结果难以独立验证</td>
+<td>科学可复现性受损</td>
+<td>提供降采样/近似方法的验证，或公开中间结果供他人验证</td>
+<td>Abstract："exascale compute cluster"</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>14 Agent 提炼的知识候选</h2>
+<p><strong>面向三维基因组/染色质组织 × AI/分子模拟方向的可迁移知识</strong>：</p>
+<ol>
+<li>
+<p><strong>全基因组逐位置 in silico 扰动范式</strong>：本文的核心方法论——对每个位置进行系统扰动并观察模型输出的变化——可直接迁移到 3D 基因组领域。例如，可对 Hi-C 矩阵或 3D 结构模型中的每个位点/区域进行 in silico 扰动，观察结构预测的变化，从而构建"结构依赖图"。</p>
+</li>
+<li>
+<p><strong>"关系层"作为超越 3D 的组织框架</strong>：本文声称发现独立于 3D 结构的关系层。对本课题而言，这提出了一个重要问题：<strong>序列依赖关系与 3D 空间邻近关系是互补、重叠还是竞争性的组织维度？</strong> 可设计实验将本文的依赖图与 Hi-C 数据直接比较。</p>
+</li>
+<li>
+<p><strong>语言模型作为"虚拟实验系统"</strong>：本文展示了将预训练 DNA 语言模型用作全基因组实验平台的可行性。类似思路可迁移到 3D 基因组：用经过 Hi-C 数据训练的模型（如 Orca、HiC-Transformer 等）进行虚拟扰动实验，预测结构变异对 3D 组织的影响。</p>
+</li>
+<li>
+<p><strong>模块化架构单元（relon）的识别方法</strong>：从大规模依赖网络中提取反复出现的、有方向性的模块的方法论，可迁移到 3D 基因组中识别"结构域"（TAD、compartment）的替代或补充方案。</p>
+</li>
+<li>
+<p><strong>进化约束与关系架构的关联</strong>：将关系架构与进化保守性关联的分析思路，可迁移到 3D 结构域进化保守性的研究中。</p>
+</li>
+<li>
+<p><strong>变异解读的新维度</strong>：将变异映射到关系网络中的思路，为 3D 基因组领域的变异效应预测提供新视角——不仅考虑变异的局部效应和 3D 位置，还考虑其在全局依赖网络中的"关系中心性"。</p>
+</li>
+</ol>
+<hr />
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>Nucleotide Transformer 系列</strong>：本文使用 v3 版本，该系列是 DNA 语言模型的代表（Dalla-Torre et al., 2023, bioRxiv；后续版本持续更新）。与本课题相关：DNA 语言模型已被用于预测染色质特征（如 ENCODE 的 regulatory elements），但用于全基因组依赖图构建尚属首次。</li>
+<li><strong>T2T 基因组</strong>：T2T 联盟（Nurk et al., 2022, Science）完成的无缺口人类基因组，本文基于此实现全基因组覆盖。</li>
+<li><strong>3D 基因组方法</strong>：Hi-C（Lieberman-Aiden et al., 2009, Science）、TAD 识别（Dixon et al., 2012, Nature）等。本文声称的"关系层"与 3D 结构的关系是开放问题，可对比。</li>
+<li><strong>饱和突变/深度突变扫描</strong>：本文的 in silico 全基因组扰动在概念上类似于实验性的深度突变扫描（Fowler &amp; Fields, 2014, Nat Methods），但规模更大且完全计算化。</li>
+<li><strong>图论/网络分析在基因组中的应用</strong>：基因调控网络、蛋白质互作网络分析已有丰富方法，本文将其扩展到核苷酸分辨率的全基因组尺度。</li>
+<li><strong>候选连接方向 [Analysis]</strong>：本文的"关系层"概念与 3D 基因组中的"结构-功能"关系问题直接相关。一个关键未回答问题：<strong>序列依赖关系是否编码了 3D 结构信息，还是独立于 3D 结构的另一组织维度？</strong> 这可通过将本文依赖图与 Hi-C 数据联合分析来检验。</li>
+</ul>
+<hr />
+<h2>16 Agent 生成的研究候选</h2>
+<p><strong>候选 1：序列依赖图与 3D 结构图的系统比较</strong>
+- <strong>名称</strong>：Relon-3D 联合分析
+- <strong>来源局限/观察</strong>：本文声称关系层"beyond 3D structure"，但未提供与 Hi-C 数据的直接比较
+- <strong>核心假设</strong>：序列依赖关系（relons）与 3D 空间邻近关系部分重叠但非冗余，二者共同编码基因组功能约束
+- <strong>相对本文的增量</strong>：将本文的依赖图与公共 Hi-C 数据（如 4DN、ENCODE）系统比较，量化重叠/差异，检验"超越 3D"声明的效度
+- <strong>初步方法</strong>：将本文依赖图（或类似方法生成的图）与 Hi-C 归一化矩阵对齐到相同坐标；计算边重叠率、拓扑差异；用图神经网络学习二者联合预测功能元件
+- <strong>验证方式</strong>：交叉验证预测功能元件（如 enhancer-promoter 互作）的 AUC 提升；置换检验确认重叠显著性
+- <strong>可能的失败模式</strong>：依赖图与 Hi-C 高度冗余，导致"超越 3D"声明不成立；或计算资源需求过高无法复现
+- <strong>创新状态</strong>：unverified</p>
+<p><strong>候选 2：基于依赖图的 3D 结构扰动预测</strong>
+- <strong>名称</strong>：Dependency-Guided 3D Perturbation
+- <strong>来源局限/观察</strong>：本文展示了全基因组 in silico 扰动可揭示序列依赖；类似逻辑可迁移到 3D 结构预测
+- <strong>核心假设</strong>：对序列的 in silico 扰动引起的依赖变化可预测 3D 结构变化（如 TAD 边界位移、compartment 切换）
+- <strong>相对本文的增量</strong>：将扰动-依赖框架从序列层扩展到结构层，建立"序列扰动 → 依赖变化 → 结构变化"的因果链
+- <strong>初步方法</strong>：选取已知影响 3D 结构的变异（如 CTCF motif 破坏）；用 DNA 语言模型生成依赖变化特征；训练模型预测 Hi-C 变化
+- <strong>验证方式</strong>：在独立数据集上预测结构变异对 Hi-C 的影响，与实验验证的 3D 结构变化比较
+- <strong>可能的失败模式</strong>：序列依赖变化与 3D 结构变化之间的映射过于间接，预测精度不足
+- <strong>创新状态</strong>：unverified</p>
+<p><strong>候选 3：Relon 作为 3D 结构域（TAD）的替代/补充注释</strong>
+- <strong>名称</strong>：Relon-TAD 一致性检验
+- <strong>来源局限/观察</strong>：relons 是序列依赖层面的模块，TAD 是 3D 空间层面的模块，二者关系未知
+- <strong>核心假设</strong>：relon 边界与 TAD 边界部分重合，且 relon 能解释 TAD 内/间功能差异
+- <strong>相对本文的增量</strong>：将 relon 概念与成熟的 3D 基因组结构域体系对接
+- <strong>初步方法</strong>：将 relon 边界与 TAD 边界（从公共 Hi-C 数据调用）比较；分析 relon 内/间的表观遗传修饰、表达水平差异
+- <strong>验证方式</strong>：边界重合的富集显著性；relon 对基因表达变异的解释力（方差分解）
+- <strong>可能的失败模式</strong>：relon 与 TAD 高度重合，无增量信息；或 relon 边界不稳定
+- <strong>创新状态</strong>：unverified</p>
+<p><strong>候选 4：跨物种关系架构比较</strong>
+- <strong>名称</strong>：Evolutionary Relon Conservation
+- <strong>来源局限/观察</strong>：本文仅分析人类基因组；关系架构的进化保守性未知
+- <strong>核心假设</strong>：关系架构（relons）在哺乳动物中部分保守，保守的 relon 具有更强功能约束
+- <strong>相对本文的增量</strong>：将单物种分析扩展到比较基因组学
+- <strong>初步方法</strong>：对小鼠、猕猴等物种执行类似的全基因组扰动分析（或降采样版本）；比较 relon 的同线性保守性
+- <strong>验证方式</strong>：保守 relon 中致病变异富集度高于非保守 relon；保守 relon 与 3D 结构保守区域的重叠
+- <strong>可能的失败模式</strong>：计算成本过高；跨物种模型迁移效果差
+- <strong>创新状态</strong>：unverified</p>
+<p><strong>候选 5：依赖图与染色质状态转换的动态建模</strong>
+- <strong>名称</strong>：Relational Dynamics of Chromatin States
+- <strong>来源局限/观察</strong>：本文的依赖图是静态的；染色质状态是动态的
+- <strong>核心假设</strong>：依赖图中的"关系枢纽"位点在染色质状态转换（如激活/沉默）中起关键作用
+- <strong>相对本文的增量</strong>：将静态关系图与动态染色质状态数据结合
+- <strong>初步方法</strong>：将依赖图节点与染色质状态（如 ChromHMM）时间序列对齐；识别关系中心性高的位点；检验其在状态转换中的先行性
+- <strong>验证方式</strong>：关系枢纽位点在状态转换中的富集；预测状态转换的时序准确性
+- <strong>可能的失败模式</strong>：依赖图与染色质状态数据的时间分辨率不匹配
+- <strong>创新状态</strong>：unverified</p></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Abstract only</li>
+<li><strong>Assessment boundary</strong> Claims and evidence as presented in the abstract, with reference to the stated methodology and results</li>
+<li><strong>Shared manuscript claim summary</strong> The authors claim to have systematically perturbed every position of the complete telomere-to-telomere human genome using Nucleotide Transformer v3 on an exascale compute cluster, generating nucleotide-resolution dependency maps that reveal a directed, weighted network of position-to-position genomic relationships. They report the discovery of recurrent, directional architectures termed "relons" spanning coding, non-coding, and unannotated regions, which they state reflect evolutionary and functional constraints and associate with human genetic variation and pathogenic variants. They conclude that these findings suggest a higher-order relational layer of genome organization.</li>
+<li><strong>Visible evidence base</strong> Abstract text only. No figures, tables, methods section, supplementary materials, or data availability statements were provided for review.</li>
+<li><strong>Missing materials affecting confidence</strong> Full manuscript text, all figures and tables, detailed methodology, validation procedures, statistical analyses, data availability information, and any supplementary materials. The absence of these materials substantially limits the ability to assess the validity and robustness of the claims.</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li><strong>Overall assessment</strong> The abstract presents an ambitious and potentially significant claim regarding a higher-order relational architecture of the human genome. The concept of systematically perturbing every position of a complete telomere-to-telomere genome to derive dependency maps is conceptually interesting and could represent a novel contribution. However, the abstract alone provides insufficient evidence to evaluate the technical soundness of the approach, the biological validity of the findings, or the strength of the associations claimed. The computational scale described is extraordinary and raises questions about feasibility and interpretability that cannot be resolved from the supplied material. The claim of discovering a new organizational layer of the genome is strong and would require extensive validation, none of which is visible in the abstract.</li>
+<li><strong>Who would be interested in the results, and why</strong> Researchers in genomics, computational biology, and genome architecture would be the primary audience. Those studying regulatory genomics, evolutionary constraints, and the interpretation of genetic variation in disease contexts would also find relevance. The work could interest scientists working on deep learning applications in genomics and those exploring higher-order genome organization beyond linear sequence and 3D structure. Clinically oriented geneticists might be interested if the associations with pathogenic variants prove robust.</li>
+<li><strong>Major strengths</strong> The conceptual framing of genome organization as a relational network derived from systematic perturbation is original and potentially transformative. The use of a complete telomere-to-telomere genome represents a comprehensive reference. The stated ambition to cover coding, non-coding, and unannotated regions suggests a genome-wide scope that could reveal previously unrecognized features. The explicit connection to human genetic variation and pathogenic variants indicates potential translational relevance.</li>
+<li><strong>Major Concerns</strong> </li>
+<li>R1-M1</li>
+<li>R1-M2</li>
+<li>R1-M3</li>
+<li>R1-M4</li>
+<li><strong>Minor Comments</strong> </li>
+<li>R1-m1</li>
+<li>R1-m2</li>
+<li>R1-m3</li>
+<li><strong>Technical failings that need to be addressed before the case is established</strong> The absence of any methodological detail prevents assessment of the perturbation strategy, the interpretation of model outputs as biological dependencies, and the statistical framework used. The lack of validation data means the biological reality of "relons" cannot be evaluated. The claimed associations with genetic variation and pathogenic variants are presented without any supporting evidence.</li>
+<li><strong>Assessment against Nature-style criteria</strong> Originality is potentially high, as the concept of a genome-wide relational network derived from systematic in silico perturbation appears novel. Scientific importance could be substantial if the claims are validated, as it would propose a new layer of genome organization. Interdisciplinary readership is plausible, spanning genomics, computational biology, and molecular genetics. Technical soundness cannot be assessed from the abstract alone, and the extraordinary computational claims require scrutiny. Readability for nonspecialists is adequate in the abstract, though the concept of "relons" would require clearer explanation in the full manuscript.</li>
+<li><strong>Recommendation posture</strong> Currently not established from the provided evidence. The abstract presents intriguing possibilities, but the evidence base is insufficient to support the strong claims made. A supportive posture would require access to the full manuscript and its validation data.</li>
+</ul>
+<h3>Major Concerns</h3>
+<ul>
+<li><strong>Concern ID</strong> R1-M1</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Technical soundness</li>
+<li><strong>Claim pointer</strong> The authors claim to have systematically perturbed every position of the complete telomere-to-telomere human genome using Nucleotide Transformer v3 with an exascale compute cluster, generating nucleotide-resolution dependency maps.</li>
+<li><strong>Evidence pointer</strong> Abstract, methodology description. Location not provided.</li>
+<li><strong>Concern</strong> The abstract provides no details on the perturbation strategy, the nature of the model outputs, or how these outputs were interpreted as position-to-position dependencies. The computational scale described is unprecedented, and no information is given on how computational feasibility was achieved, how artifacts were controlled, or how the model's predictions were validated against known biology.</li>
+<li><strong>Why it matters</strong> Without methodological transparency, the core technical claim cannot be evaluated. The interpretation of deep learning model outputs as biological dependencies is non-trivial and requires careful benchmarking. The extraordinary computational claim raises questions about reproducibility and accessibility that are central to the work's credibility.</li>
+<li>
+<p><strong>Resolution test</strong> The full manuscript must provide a detailed methods section describing the perturbation protocol, the model architecture and training, the computational infrastructure, and validation against known regulatory elements, RNA structures, and other established genomic features.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M2</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Evidence quality</li>
+<li><strong>Claim pointer</strong> The authors claim the network recapitulates known biological features and uncovers recurrent, directional architectures termed "relons" spanning coding, non-coding, and unannotated regions.</li>
+<li><strong>Evidence pointer</strong> Abstract, results description. Location not provided.</li>
+<li><strong>Concern</strong> No data are presented to demonstrate that the network recapitulates known biological features. The existence and properties of "relons" are asserted without any supporting evidence, such as examples, statistical significance measures, or comparisons to known genomic features. The claim that these span unannotated regions is particularly strong and requires careful demonstration that such regions are not simply artifacts.</li>
+<li><strong>Why it matters</strong> The central discovery claim of the paper rests on the existence and biological relevance of "relons." Without evidence, this remains an unsupported assertion. The recapitulation of known features is a critical sanity check that must be demonstrated explicitly.</li>
+<li>
+<p><strong>Resolution test</strong> The full manuscript must show clear examples of known features being correctly identified, provide statistical evidence for the existence of "relons" beyond what would be expected by chance, and demonstrate their presence across different genomic contexts with appropriate controls.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M3</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Claim support</li>
+<li><strong>Claim pointer</strong> The authors claim these relational modules reflect evolutionary and functional constraints and associate with human genetic variation and pathogenic variants.</li>
+<li><strong>Evidence pointer</strong> Abstract, results description. Location not provided.</li>
+<li><strong>Concern</strong> The associations with evolutionary constraints, genetic variation, and pathogenic variants are stated without any quantitative support. No effect sizes, statistical significance values, or comparison to appropriate null models are provided. The direction and strength of these associations are entirely unspecified.</li>
+<li><strong>Why it matters</strong> These associations are what give the work translational relevance and connect it to existing genomic knowledge. Without quantitative evidence, the claims are unfalsifiable from the abstract and cannot be distinguished from coincidental overlap.</li>
+<li>
+<p><strong>Resolution test</strong> The full manuscript must provide statistical analyses demonstrating that "relons" are enriched in conserved regions, depleted or enriched in variant-dense regions as appropriate, and significantly associated with pathogenic variants relative to appropriate controls.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M4</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Interpretability</li>
+<li><strong>Claim pointer</strong> The authors suggest a higher-order relational layer of genome organization, providing a framework to interpret DNA as a complex system of dependencies beyond linear and 3D structure.</li>
+<li><strong>Evidence pointer</strong> Abstract, conclusion. Location not provided.</li>
+<li><strong>Concern</strong> The conceptual leap from computational dependency maps to a proposed biological organizational layer is substantial. The abstract does not explain what "relons" represent biologically, how they relate to known mechanisms of gene regulation, chromatin organization, or other established genome features, or what physical or molecular basis might underlie them.</li>
+<li><strong>Why it matters</strong> For the work to have lasting impact, the biological interpretation must be grounded in testable hypotheses and mechanistic plausibility. A purely computational construct without biological anchoring would be of limited value to the field.</li>
+<li><strong>Resolution test</strong> The full manuscript should provide biological interpretation of representative "relons," ideally with experimental validation or at least strong correlative evidence linking them to known molecular mechanisms.</li>
+</ul>
+<h3>Minor Comments</h3>
+<ul>
+<li><strong>Concern ID</strong> R1-m1</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Clarity</li>
+<li><strong>Affected element</strong> Terminology</li>
+<li><strong>Evidence pointer</strong> Abstract, term "relons". Location not provided.</li>
+<li><strong>Issue</strong> The term "relons" is introduced without definition or etymological explanation. Readers cannot infer its meaning or significance from the abstract alone.</li>
+<li>
+<p><strong>Required correction</strong> Provide a clear definition of "relons" in the abstract or indicate that a formal definition appears in the full manuscript.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m2</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Reproducibility</li>
+<li><strong>Affected element</strong> Resource availability</li>
+<li><strong>Evidence pointer</strong> Footnotes, URL https://relome.org/. Location not provided.</li>
+<li><strong>Issue</strong> A website is referenced but no description of its contents, availability status, or relationship to the manuscript is provided.</li>
+<li>
+<p><strong>Required correction</strong> Clarify what the website contains, whether it hosts data, code, or visualization tools, and how it relates to the manuscript's findings.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m3</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Completeness</li>
+<li><strong>Affected element</strong> Author list</li>
+<li><strong>Evidence pointer</strong> Footnotes, "Chance of author list in the online version". Location not provided.</li>
+<li><strong>Issue</strong> The footnote appears to contain a typographical error, likely "Change" rather than "Chance," and suggests an inconsistency in the author list.</li>
+<li><strong>Required correction</strong> Correct the typographical error and ensure the author list is consistent between the manuscript and the online version.</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>The existence and biological reality of "relons" as defined recurrent architectural features is unsupported by the abstract alone.</li>
+<li>The claim that the network recapitulates known biological features is unverifiable without presented evidence.</li>
+<li>The associations with evolutionary constraints, human genetic variation, and pathogenic variants are stated without quantitative support.</li>
+<li>The claim of a higher-order relational layer of genome organization beyond linear and 3D structure is an interpretation that cannot be evaluated from the supplied material.</li>
+<li>The computational feasibility of the described exascale perturbation study cannot be assessed without methodological details.</li>
+<li>The generalizability of findings from a single telomere-to-telomere genome to human genetic diversity is not addressed.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

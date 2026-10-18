@@ -1,0 +1,121 @@
+{
+  "identity": {
+    "pmid": "42888029",
+    "doi": "10.1101/gr.281897.126",
+    "title": "Conditional diffusion for single-cell Hi-C data imputation and enhancement with scHiC-Diff."
+  },
+  "content": {
+    "abstract": "Single-cell high-throughput chromosome conformation capture (scHi-C) enables the analysis of cell-to-cell variability in three-dimensional (3D) genome organization, but its utility is severely limited by pervasive technical dropouts, leading to extremely sparse contact maps. Accurately identifying dropout events and imputing the corresponding missing chromatin contacts remains a challenging problem, as technical dropouts are confounded with genuine absences of chromatin interactions. Existing imputation and enhancement methods often rely on smoothing strategies or restrictive parametric likelihood assumptions, which may obscure fine-scale chromatin structures and cell-specific features. Here, we present scHiC-Diff, a conditional diffusion-based framework for scHi-C data imputation and enhancement. scHiC-Diff employs a forward process that progressively perturbs contact maps and a reverse denoising process that reconstructs chromatin interactions from noisy observations. To better capture long-range dependencies in complex 3D genome structures, scHi-C contact matrices are treated as masked images and modeled using a Diffusion Transformer (DiT). Across two complementary simulated datasets and three real scHi-C datasets, scHiC-Diff improves the recovery of chromatin interaction patterns and enhances downstream analyses compared with existing methods. Application to a developmental scHi-C dataset further demonstrates improved reconstruction of chromatin organization and enhanced chromatin loop detection.",
+    "keywords": [],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Liu, Wuhao",
+        "Fang, Zhaoyu",
+        "Du, Xuyan",
+        "Tang, Li",
+        "Li, Min"
+      ],
+      "short_names": [
+        "Liu W",
+        "Fang Z",
+        "Du X",
+        "Tang L",
+        "Li M"
+      ],
+      "auids": [
+        "ORCID: 0009-0008-9860-2793",
+        "ORCID: 0000-0002-0188-1394"
+      ],
+      "affiliations": [
+        "Central South University.",
+        "Central China Normal University.",
+        "Central South University.",
+        "Yale University.",
+        "Central South University; limin@mail.csu.edu.cn."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Liu, Wuhao",
+        "short_name": "Liu W",
+        "identifiers": [
+          "0009-0008-9860-2793"
+        ],
+        "affiliations": [
+          "Central South University."
+        ]
+      },
+      {
+        "full_name": "Fang, Zhaoyu",
+        "short_name": "Fang Z",
+        "identifiers": [],
+        "affiliations": [
+          "Central China Normal University."
+        ]
+      },
+      {
+        "full_name": "Du, Xuyan",
+        "short_name": "Du X",
+        "identifiers": [],
+        "affiliations": [
+          "Central South University."
+        ]
+      },
+      {
+        "full_name": "Tang, Li",
+        "short_name": "Tang L",
+        "identifiers": [],
+        "affiliations": [
+          "Yale University."
+        ]
+      },
+      {
+        "full_name": "Li, Min",
+        "short_name": "Li M",
+        "identifiers": [
+          "0000-0002-0188-1394"
+        ],
+        "affiliations": [
+          "Central South University; limin@mail.csu.edu.cn."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Genome research"
+    ],
+    "journal_abbrev": [
+      "Genome Res"
+    ],
+    "pub_date": "2026 Oct 16",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/16 23:33",
+    "fetched_at": "2026-10-18 08:30:12"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42888029"
+    ],
+    "review": [
+      "42888029"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [],
+    "text_mined": []
+  }
+}

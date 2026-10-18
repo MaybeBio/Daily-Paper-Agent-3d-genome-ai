@@ -1,0 +1,126 @@
+{
+  "source": "biorxiv",
+  "source_id": "10.64898/2026.10.07.757259",
+  "title": "DNA-LLM2Vec: Architecture-Aware Task-Conditioned Adaptation of Decoder DNA Foundation Models",
+  "doi": "10.64898/2026.10.07.757259",
+  "abstract": "Decoder DNA foundation models pretrain with dense next-token prediction and scale to long sequences, but their representations are directional. This is a poor fit for genomic tasks that need sequence context both upstream and downstream of a locus. Bidirectional masked-language-model encoders supply this context, but they pretrain more sparsely and scale less easily to long windows. We introduce DNA-LLM2Vec, a staged decoder-to-encoder framework that opens bidirectional context, repairs the resulting mismatch with masked next-token prediction, and applies contrastive views encoding strand and positional invariance. We instantiate it on two architecturally distinct backbones, DNAGPT and HyenaDNA, and evaluate seven biological task families (grouped from GB, NT, GUE, and GUE+EPI) with frozen linear probing. The benefits of conversion are architecture-aware and task-conditioned rather than uniform. Crop-based positional contrastive learning helps most for the extended-context families (enhancer-promoter interaction and Virus-COVID), raising frozen Avg-EPI MCC to 27.5% for DNAGPT and 26.7% for HyenaDNA, whereas for shorter, local families the results depend on backbone and tokenisation. Beyond classification, bidirectional context and MNTP improve causal-eQTL variant-effect prediction specifically at distance, and a base-pair mutagenesis diagnostic shows that adaptation organises motif-aware contact structure while reverse-complement training imprints strand-consistent geometry, yet neither predicts the best downstream view. DNA-LLM2Vec therefore produces frozen bidirectional representations whose most effective adaptation view depends on the task structure and the backbone. Code and checkpoints are available at https://github.com/semi-nothing/dna-llm2vec.",
+  "authors": [
+    "Liang Y",
+    "Zhai K",
+    "Gan Y",
+    "Li S",
+    "Shao J",
+    "Watson GH",
+    "Poesio M"
+  ],
+  "published_date": "2026-10-14",
+  "updated_date": "",
+  "journal": "bioRxiv",
+  "category": "",
+  "landing_url": "https://www.biorxiv.org/content/10.64898/2026.10.07.757259",
+  "pdf_url": "https://www.biorxiv.org/content/10.64898/2026.10.07.757259.full.pdf",
+  "pdf_path": "",
+  "pdf_downloaded": false,
+  "query": "(\"3D genome\" OR \"three-dimensional genome\" OR \"genome organization\" OR \"genome architecture\" OR \"genome folding\" OR \"nuclear organization\" OR \"nuclear architecture\" OR \"chromatin organization\" OR \"chromatin architecture\" OR \"chromatin conformation\" OR \"chromatin topology\" OR \"chromatin structure\" OR \"chromatin loop\" OR \"chromatin interaction\" OR \"chromatin domain\" OR \"topologically associating domain\" OR \"A/B compartment\" OR \"chromosome conformation capture\" OR \"Hi-C\" OR HiChIP OR \"loop extrusion\" OR \"loop-extrusion\" OR CTCF OR cohesin OR \"cis-regulatory\" OR \"cis-regulatory element\" OR \"regulatory element\" OR \"regulatory genomics\" OR \"chromatin accessibility\" OR \"enhancer-promoter\" OR \"promoter-enhancer\") AND (\"deep learning\" OR \"machine learning\" OR \"neural network\" OR \"graph neural network\" OR \"convolutional neural network\" OR transformer OR \"language model\" OR \"foundation model\" OR \"diffusion model\" OR generative OR \"flow matching\" OR esmfold OR rosetta OR alphafold OR \"molecular dynamics\" OR simulation OR docking)",
+  "version": "",
+  "keywords": [],
+  "extra": {
+    "provider": "europepmc",
+    "epmc_id": "PPR1342178",
+    "raw_record": {
+      "id": "PPR1342178",
+      "source": "PPR",
+      "doi": "10.64898/2026.10.07.757259",
+      "title": "DNA-LLM2Vec: Architecture-Aware Task-Conditioned Adaptation of Decoder DNA Foundation Models",
+      "authorString": "Liang Y, Zhai K, Gan Y, Li S, Shao J, Watson GH, Poesio M.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Liang Y",
+            "lastName": "Liang",
+            "firstName": "Yuan",
+            "initials": "Y"
+          },
+          {
+            "fullName": "Zhai K",
+            "lastName": "Zhai",
+            "firstName": "Ke",
+            "initials": "K"
+          },
+          {
+            "fullName": "Gan Y",
+            "lastName": "Gan",
+            "firstName": "Yujian",
+            "initials": "Y"
+          },
+          {
+            "fullName": "Li S",
+            "lastName": "Li",
+            "firstName": "Siyou",
+            "initials": "S"
+          },
+          {
+            "fullName": "Shao J",
+            "lastName": "Shao",
+            "firstName": "Juexi",
+            "initials": "J"
+          },
+          {
+            "fullName": "Watson GH",
+            "lastName": "Watson",
+            "firstName": "Grant",
+            "initials": "GH"
+          },
+          {
+            "fullName": "Poesio M",
+            "lastName": "Poesio",
+            "firstName": "Massimo",
+            "initials": "M"
+          }
+        ]
+      },
+      "pubYear": "2026",
+      "abstractText": "Decoder DNA foundation models pretrain with dense next-token prediction and scale to long sequences, but their representations are directional. This is a poor fit for genomic tasks that need sequence context both upstream and downstream of a locus. Bidirectional masked-language-model encoders supply this context, but they pretrain more sparsely and scale less easily to long windows. We introduce DNA-LLM2Vec, a staged decoder-to-encoder framework that opens bidirectional context, repairs the resulting mismatch with masked next-token prediction, and applies contrastive views encoding strand and positional invariance. We instantiate it on two architecturally distinct backbones, DNAGPT and HyenaDNA, and evaluate seven biological task families (grouped from GB, NT, GUE, and GUE+EPI) with frozen linear probing. The benefits of conversion are architecture-aware and task-conditioned rather than uniform. Crop-based positional contrastive learning helps most for the extended-context families (enhancer-promoter interaction and Virus-COVID), raising frozen Avg-EPI MCC to 27.5% for DNAGPT and 26.7% for HyenaDNA, whereas for shorter, local families the results depend on backbone and tokenisation. Beyond classification, bidirectional context and MNTP improve causal-eQTL variant-effect prediction specifically at distance, and a base-pair mutagenesis diagnostic shows that adaptation organises motif-aware contact structure while reverse-complement training imprints strand-consistent geometry, yet neither predicts the best downstream view. DNA-LLM2Vec therefore produces frozen bidirectional representations whose most effective adaptation view depends on the task structure and the backbone. Code and checkpoints are available at https://github.com/semi-nothing/dna-llm2vec.",
+      "pubTypeList": {
+        "pubType": [
+          "Preprint"
+        ]
+      },
+      "bookOrReportDetails": {
+        "publisher": "bioRxiv",
+        "yearOfPublication": 2026
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Free",
+            "availabilityCode": "F",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.64898/2026.10.07.757259"
+          }
+        ]
+      },
+      "isOpenAccess": "N",
+      "inEPMC": "N",
+      "inPMC": "N",
+      "citedByCount": 0,
+      "hasReferences": "N",
+      "hasTextMinedTerms": "Y",
+      "hasDbCrossReferences": "N",
+      "hasPDF": "N",
+      "hasBook": "N",
+      "hasSuppl": "N",
+      "hasLabsLinks": "N",
+      "hasData": "N",
+      "authMan": "N",
+      "epmcAuthMan": "N",
+      "nihAuthMan": "N",
+      "hasTMAccessionNumbers": "N",
+      "dateOfCreation": "2026-10-15",
+      "firstPublicationDate": "2026-10-14",
+      "firstIndexDate": "2026-10-16",
+      "hasEvaluations": "N"
+    }
+  }
+}
