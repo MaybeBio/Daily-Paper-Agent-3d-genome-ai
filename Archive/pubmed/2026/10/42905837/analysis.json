@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42905837",
+  "title": "CCAN forms the spherical shell-like structure in interphase kinetochores.",
+  "authors": "Sakai, Yuji; Ariyoshi, Mariko; Hirano, Yasuhiro; Mahana, Yutaka; Suzuki, Aussie; Hirota, Toru; Tachikawa, Masashi; Fukagawa, Tatsuo",
+  "journal": "Science advances",
+  "published_date": "2026-10-22",
+  "window": {
+    "start": "2026-10-18",
+    "end": "2026-10-24"
+  },
+  "score": 5,
+  "one_liner_zh": "该文通过分子动力学模拟和超分辨成像研究着丝粒CCAN复合物的球形壳状空间组织，虽非染色质三维基因组，但其空间架构建模思路可迁移至染色质组织研究。",
+  "abstract": "The kinetochore is an essential structure for the faithful chromosome segregation during mitosis. The 16-protein complex known as the constitutive centromere-associated network (CCAN) localizes the centromere throughout the cell cycle and forms the basis of the kinetochore. Although cryo-electron microscopy has provided a structural model of an individual CCAN unit, how multiple CCAN units are organized within cells remains unclear. Here, using in silico and in vivo analyses, we demonstrate that multiple CCAN units form a spherical shell-like structure in interphase DT40 kinetochores. CENP-T and CENP-N localize to the CCAN shell, whereas the CENP-C cupin domain clusters at the center. Molecular dynamics simulations of CCAN assembly suggest that CENP-C-DNA interactions constrain the orientation of CCAN units, supporting a spherical shell-like organization via CENP-C oligomerization. Super-resolution imaging reveals the spherical shell-like structure at DT40 kinetochores, and CENP-C knockout or expression of a CENP-C DNA binding deficient mutant abolishes the structure, consistent with the simulation-derived model. These findings provide important insights into the spatial organization of functional kinetochores within cells.",
+  "abstract_zh": "着丝粒是细胞有丝分裂过程中确保染色体精确分离的关键结构。由16种蛋白质组成的复合物，即组成型着丝粒相关网络（CCAN），在整个细胞周期中定位于着丝粒，并构成着丝粒的基础。尽管冷冻电子显微镜已提供了单个CCAN单元的结构模型，但多个CCAN单元在细胞内的组织方式仍不清楚。在此，我们通过计算机模拟和体内分析，证明在间期DT40着丝粒中，多个CCAN单元形成球形壳状结构。CENP-T和CENP-N定位于CCAN壳层，而CENP-C的cupin结构域则聚集在中心。CCAN组装的分子动力学模拟表明，CENP-C-DNA相互作用约束了CCAN单元的取向，并通过CENP-C寡聚化支持球形壳状组织。超分辨成像揭示了DT40着丝粒处的球形壳状结构，而CENP-C敲除或表达CENP-C DNA结合缺陷突变体则消除该结构，这与模拟衍生的模型一致。这些发现为细胞内功能性着丝粒的空间组织提供了重要见解。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42905837/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42905837/",
+  "paper_page_path": "papers/pubmed/42905837/index.html"
+}

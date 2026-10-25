@@ -1,0 +1,24 @@
+{
+  "source": "arxiv",
+  "id": "2610.30588v1",
+  "title": "Supercoiling Drives DNA-Protein Co-Condensation",
+  "authors": "Sihan Liu; Hongbo Zhao; Andrej Košmrlj",
+  "journal": "",
+  "published_date": "2026-10-22",
+  "window": {
+    "start": "2026-10-18",
+    "end": "2026-10-24"
+  },
+  "score": 7,
+  "one_liner_zh": "该文通过耦合DNA弹性与蛋白浓度场的理论模型，揭示超螺旋作为拓扑催化剂驱动DNA-蛋白共凝聚，为染色质空间组织的力学调控提供可迁移的建模框架。",
+  "abstract": "The co-condensation of DNA and proteins plays an important role in genome compaction, including heterochromatin formation and chromosome segregation. Meanwhile, transcription and replication continuously generate DNA supercoiling, yet how the resulting torsional stress affects co-condensation remains poorly understood. Here, by coupling DNA elasticity to a protein concentration field, we show that supercoiling acts as a topological catalyst for co-condensation through a mutually reinforcing interplay with protein wetting. Specifically, protein wetting facilitates twist-to-writhe conversion, generating highly writhed DNA conformations that in turn promote capillary collapse into a protein-rich droplet. In the absence of supercoiling, DNA remains kinetically trapped in metastable extended states within our model, whereas sufficiently strong supercoiling removes the nucleation barrier and enables spontaneous co-condensation. These results establish topology as a distinct control parameter for biomolecular condensation and provide a mechanical framework for how active genomic processes can dynamically regulate large-scale genome organization.",
+  "abstract_zh": "DNA与蛋白质的共凝聚在基因组压缩中扮演重要角色，包括异染色质形成和染色体分离。同时，转录和复制持续产生DNA超螺旋，然而由此产生的扭转应力如何影响共凝聚仍知之甚少。在此，通过将DNA弹性与蛋白质浓度场耦合，我们表明超螺旋通过与其蛋白质润湿的相互强化作用，充当共凝聚的拓扑催化剂。具体而言，蛋白质润湿促进扭转到缠绕的转换，生成高度缠绕的DNA构象，进而促进毛细塌缩形成富含蛋白质的液滴。在无超螺旋情况下，DNA在我们的模型中动力学上被困于亚稳态伸展状态，而足够强的超螺旋则消除成核屏障，使自发共凝聚成为可能。这些结果确立了拓扑作为生物分子凝聚的独特控制参数，并为活性基因组过程如何动态调控大规模基因组组织提供了力学框架。",
+  "has_fulltext": true,
+  "fulltext_source": "ar5iv",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://arxiv.org/abs/2610.30588v1",
+  "source_url": "https://arxiv.org/abs/2610.30588v1",
+  "paper_page_path": "papers/arxiv/2610.30588v1/index.html"
+}

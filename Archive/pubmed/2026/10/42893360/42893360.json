@@ -1,0 +1,174 @@
+{
+  "identity": {
+    "pmid": "42893360",
+    "doi": "10.4103/NRR.NRRONLINE-D-26-00772",
+    "title": "Differential evolution of neuroinflammatory remodeling programs related to scar formation and regeneration in spinal cord injury: A cross-species multi-omics analysis."
+  },
+  "content": {
+    "abstract": "Spinal cord injury in mammals often transitions from an acute inflammatory response to persistent neuroinflammatory and scar-associated remodeling, whereas zebrafish attenuate injury-induced inflammatory programs during regenerative repair. The molecular programs underlying these divergent outcomes remain incompletely understood. In this study, we integrated phase-aligned mouse and zebrafish spinal cord injury datasets using single-cell and single-nucleus transcriptomics, spatial transcriptomics, pathway and regulon analyses, expression-based ligand-receptor co-expression analysis, machine-learning validation, chromatin-accessibility profiling, in silico perturbation modeling, and mouse tissue validation. Cross-species analysis revealed a conserved injury-responsive program associated with secreted phosphoprotein 1 (SPP1) and CD44, but with distinct temporal trajectories between species. In mouse spinal cord injury, Spp1 and Cd44 expression remained elevated from acute injury through scar-associated stages and was enriched within lesion-associated myeloid and glial-immune microenvironments. Persistent SPP1-CD44-associated expression was accompanied by inflammatory signaling, reactive gliosis, fibrotic remodeling, and sustained immune-niche remodeling. In zebrafish, spp1 and cd44a were similarly induced during the early injury response but declined during regenerative recovery, consistent with attenuation and reorganization of inflammatory programs rather than absence of early injury activation. Machine-learning analyses supported the cross-dataset reproducibility of SPP1-CD44-related injury-state features across two mouse spinal cord injury datasets. Regulon, perturbation-associated, and chromatin-accessibility analyses further positioned Spp1 within an injury-responsive regulatory context associated with signal transducer and activator of transcription 3 and SMARCA4 (SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily a, member 4) states and identified perturbation-sensitive accessibility changes at the Spp1 promoter. Mouse spinal cord injury tissue validation confirmed increased SPP1 and CD44 protein expression after injury and localized enhanced SPP1 signal to ionized calcium-binding adapter molecule 1-positive lesion-associated myeloid regions. Together, these findings suggest that mammalian spinal cord injury scarring is associated with persistence of a conserved SPP1-CD44-associated neuroinflammatory remodeling program, whereas attenuation of the corresponding program accompanies regenerative spinal cord repair in zebrafish. This cross-species framework provides molecular insights and candidate regulatory programs for future studies aimed at promoting inflammatory resolution and neural repair after spinal cord injury.",
+    "keywords": [
+      "CD44",
+      "SPP1",
+      "inflammatory resolution",
+      "neuroinflammation",
+      "single-cell RNA sequencing",
+      "spatial transcriptomics",
+      "spinal cord injury",
+      "zebrafish regeneration"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Tang, Hao",
+        "Cheng, Fei",
+        "Xu, Juan",
+        "Liao, Huiming",
+        "Lu, Shunfei",
+        "Fu, Xin",
+        "Fang, Sheng"
+      ],
+      "short_names": [
+        "Tang H",
+        "Cheng F",
+        "Xu J",
+        "Liao H",
+        "Lu S",
+        "Fu X",
+        "Fang S"
+      ],
+      "auids": [
+        "ORCID: 0009-0004-5347-0644",
+        "ORCID: 0009-0009-2468-2943"
+      ],
+      "affiliations": [
+        "Department of Orthopedics, The First Affiliated Hospital of Anhui Medical University, Hefei, Anhui Province, China.",
+        "Department of Orthopedics, Binhu Campus, Hefei First People's Hospital, Hefei, Anhui Province, China.",
+        "School of Continuing Education, Lishui University, Lishui, Zhejiang Province, China.",
+        "School of Medicine, Lishui University, Lishui, Zhejiang Province, China.",
+        "School of Medicine, Lishui University, Lishui, Zhejiang Province, China.",
+        "School of Medicine, Lishui University, Lishui, Zhejiang Province, China.",
+        "School of Medicine, Lishui University, Lishui, Zhejiang Province, China."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Tang, Hao",
+        "short_name": "Tang H",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Orthopedics, The First Affiliated Hospital of Anhui Medical University, Hefei, Anhui Province, China."
+        ]
+      },
+      {
+        "full_name": "Cheng, Fei",
+        "short_name": "Cheng F",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Orthopedics, Binhu Campus, Hefei First People's Hospital, Hefei, Anhui Province, China."
+        ]
+      },
+      {
+        "full_name": "Xu, Juan",
+        "short_name": "Xu J",
+        "identifiers": [],
+        "affiliations": [
+          "School of Continuing Education, Lishui University, Lishui, Zhejiang Province, China."
+        ]
+      },
+      {
+        "full_name": "Liao, Huiming",
+        "short_name": "Liao H",
+        "identifiers": [],
+        "affiliations": [
+          "School of Medicine, Lishui University, Lishui, Zhejiang Province, China."
+        ]
+      },
+      {
+        "full_name": "Lu, Shunfei",
+        "short_name": "Lu S",
+        "identifiers": [],
+        "affiliations": [
+          "School of Medicine, Lishui University, Lishui, Zhejiang Province, China."
+        ]
+      },
+      {
+        "full_name": "Fu, Xin",
+        "short_name": "Fu X",
+        "identifiers": [
+          "0009-0004-5347-0644"
+        ],
+        "affiliations": [
+          "School of Medicine, Lishui University, Lishui, Zhejiang Province, China."
+        ]
+      },
+      {
+        "full_name": "Fang, Sheng",
+        "short_name": "Fang S",
+        "identifiers": [
+          "0009-0009-2468-2943"
+        ],
+        "affiliations": [
+          "School of Medicine, Lishui University, Lishui, Zhejiang Province, China."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Neural regeneration research"
+    ],
+    "journal_abbrev": [
+      "Neural Regen Res"
+    ],
+    "pub_date": "2026 Sep 30",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/18 11:29",
+    "fetched_at": "2026-10-25 08:54:29"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42893360"
+    ],
+    "review": [
+      "42893360"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://antibodies.cancer.gov/detail/CPTC-SPP1-1",
+        "provider": "NCI CPTC Antibody Characterization Program",
+        "category": "Research Materials",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://assays.cancer.gov/CPTAC-1367",
+        "provider": "NCI CPTAC Assay Portal",
+        "category": "Miscellaneous",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://www.ovid.com/10.4103/NRR.NRRONLINE-D-26-00772",
+        "provider": "Wolters Kluwer",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

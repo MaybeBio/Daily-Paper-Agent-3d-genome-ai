@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42893867",
+  "title": "Synthesis and Evaluation of Aryloxy-Acetamide Derivatives as CBX2 Inhibitors.",
+  "authors": "Kawamoto, Yuichiro; Takase, Shohei; Kumar, Ashutosh; Maemoto, Yuki; Zhang, Kam Y J; Ito, Hisanaka; Ito, Akihiro",
+  "journal": "Chemical & pharmaceutical bulletin",
+  "published_date": "2026-10-18",
+  "window": {
+    "start": "2026-10-18",
+    "end": "2026-10-24"
+  },
+  "score": 0,
+  "one_liner_zh": "该文合成并评估芳氧基乙酰胺类CBX2抑制剂，属于表观遗传药物化学研究，不涉及三维基因组/染色质组织建模或AI/分子模拟方法，与本课题无关。",
+  "abstract": "The CBX2 protein plays a key role in the methylation of histone lysine residues related to epigenetic silencing. In contrast to other polycomb paralogs, there are few examples of CBX2 modulators, which prompted us to develop small-molecule CBX2 inhibitors by synthetic evolution based on virtual screening hit scaffolds previously reported by our group. We synthesized a series of aryloxy-acetamide derivatives and evaluated their CBX2 inhibitory activities using the NanoBRET assay and the subsequent NanoBiT assay. Through structural modifications, compound 16 was identified as the best CBX2 inhibitor in this series.",
+  "abstract_zh": "CBX2蛋白在表观遗传沉默相关的组蛋白赖氨酸残基甲基化中发挥关键作用。与其他多梳同源物相比，CBX2调节剂的实例较少，这促使我们基于本课题组先前报道的虚拟筛选命中骨架，通过合成进化开发小分子CBX2抑制剂。我们合成了一系列芳氧基-乙酰胺衍生物，并使用NanoBRET测定法及随后的NanoBiT测定法评估了其CBX2抑制活性。通过结构修饰，化合物16被鉴定为该系列中最佳的CBX2抑制剂。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42893867/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42893867/",
+  "paper_page_path": "papers/pubmed/42893867/index.html"
+}

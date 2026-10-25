@@ -1,0 +1,80 @@
+## Review setup
+- **Input scope** Abstract only
+- **Assessment boundary** Claims and evidence presented in the abstract; no methods, figures, tables, or supplementary materials were provided
+- **Shared manuscript claim summary** The authors use a deep-learning model, AlphaGenome, to predict cis-regulatory effects of ~17 million human-lineage-specific single-nucleotide substitutions across 305 tissues and cell types. They report 71,345 predicted cis-regulatory gains, mostly outside human accelerated regions, arising via new CRE creation or co-option of ancestrally accessible CREs. These gains are enriched for distal enhancers and tissue-relevant target gene functions. Genes linked to more gains show increased likelihood of human upregulation, and in silico ancestral reversion implicates specific substitutions creating transcription factor binding motifs. Comparison with archaic hominin genomes indicates most fixed gains predate the split from Neandertals and Denisovans, with a few modern-human-specific gains contributing substantially to upregulation.
+- **Visible evidence base** Abstract text only; no quantitative results, model validation metrics, statistical tests, or methodological details are available
+- **Missing materials affecting confidence** Full manuscript, methods section, all figures and tables, model architecture and training details, validation benchmarks, data sources for archaic hominin genomes, and any statistical analysis details
+
+## Reviewer
+- **Overall assessment** The abstract presents an ambitious and potentially impactful computational framework for mapping human-lineage cis-regulatory evolution. The central idea, using a deep-learning sequence-to-function model to predict regulatory effects of human-specific substitutions and linking these to tissue-specific expression evolution, is timely and of broad interest. However, the abstract alone provides insufficient evidence to evaluate the validity of the predictions, the robustness of the evolutionary inferences, or the strength of the claimed associations. Several claims, particularly regarding the functional consequences of predicted gains and the contribution of modern-human-specific changes, require substantially more supporting detail than is visible here. The work is potentially significant, but the case is not established from the supplied material.
+- **Who would be interested in the results, and why** Evolutionary biologists studying human-specific traits, regulatory genomics researchers, computational biologists working on deep-learning models for genomics, and anthropologists interested in the genetic basis of human evolution. The tissue-resolved map of cis-regulatory changes could serve as a resource for functional follow-up studies.
+- **Major strengths** The study addresses a long-standing challenge, identifying causal cis-regulatory substitutions along the human lineage, using a scalable deep-learning approach. The integration of predictions across a large number of tissues and cell types, and the comparison with archaic hominin genomes, adds evolutionary depth. The focus on tissue-specific biology and the link to gene upregulation provides a plausible path from sequence change to phenotypic consequence.
+- **Major Concerns**
+  - **Concern ID** R1-M1
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** The model AlphaGenome predicts cis-regulatory effects of ~17 million substitutions, and 71,345 predicted gains are reported.
+  - **Evidence pointer** Abstract; location not provided
+  - **Concern** No information is provided about the model's architecture, training data, validation strategy, or predictive accuracy. Without benchmarks demonstrating that AlphaGenome accurately predicts regulatory activity, the reliability of the 71,345 predicted gains is unknown.
+  - **Why it matters** The entire study rests on the validity of these predictions. If the model has high false-positive or false-negative rates, all downstream evolutionary and functional inferences would be compromised.
+  - **Resolution test** Provide model validation against independent experimental data, such as massively parallel reporter assays or CRISPR perturbation data, with clear metrics for precision and recall at the relevant sequence and tissue resolutions.
+  - **Concern ID** R1-M2
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Statistical rigor
+  - **Claim pointer** Predicted gains are enriched for distal enhancers and for target gene functions characteristic of corresponding tissues, and genes linked to more gains are more likely to be upregulated in humans.
+  - **Evidence pointer** Abstract; location not provided
+  - **Concern** The abstract reports enrichments and associations without any statistical measures, effect sizes, or correction for multiple testing across 305 tissues and cell types. The claim that gains contributed to tissue-specific biology requires demonstration that these enrichments exceed what would be expected by chance given the genomic background.
+  - **Why it matters** Without proper statistical controls, the observed patterns could arise from biases in the model's predictions or from genomic features unrelated to human-specific evolution.
+  - **Resolution test** Provide enrichment analyses with appropriate background models, multiple-testing corrections, and effect sizes. For the gene upregulation link, show the strength of the association and confirm it is not driven by a small subset of tissues or genes.
+  - **Concern ID** R1-M3
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Interpretability of causal claims
+  - **Claim pointer** In silico reversion to ancestral alleles traced upregulations to individual substitutions creating transcription factor binding motifs.
+  - **Evidence pointer** Abstract; location not provided
+  - **Concern** The abstract states that reversion traced upregulations to specific substitutions, but it is unclear how many such cases were examined, what fraction showed the predicted effect, and whether the motif creation was validated experimentally or only inferred from sequence. The phrase "traced" implies a causal link that may not be supported by the model alone.
+  - **Why it matters** This is the most direct evidence for causal substitutions driving human-specific expression changes. If the inference is purely computational, the claim of causality is premature.
+  - **Resolution test** Report the number of reversion experiments, the concordance between predicted and observed expression changes, and any orthogonal validation such as electrophoretic mobility shift assays or reporter assays for a subset of substitutions.
+  - **Concern ID** R1-M4
+  - **Severity** Major
+  - **Blocking** No
+  - **Axis** Evolutionary interpretation
+  - **Claim pointer** Nearly all gains now fixed in humans predate the split from archaic hominins, yet a few modern-human-specific gains contribute substantially to gene upregulation.
+  - **Evidence pointer** Abstract; location not provided
+  - **Concern** The abstract does not specify how "nearly all" and "a few" are quantified, nor how the contribution to upregulation is measured. The comparison with Neandertal and Denisovan genomes requires assumptions about ancestral states and the completeness of archaic hominin sequence data that are not described.
+  - **Why it matters** The evolutionary narrative depends on the timing and lineage-specificity of these gains. Without clear definitions and quantitative support, the interpretation is difficult to evaluate.
+  - **Resolution test** Provide the exact numbers and proportions of gains shared with archaic hominins versus modern-human-specific, and define the metric used to assess contribution to upregulation. Clarify how missing data in archaic genomes were handled.
+- **Minor Comments**
+  - **Concern ID** R1-m1
+  - **Severity** Minor
+  - **Axis** Clarity
+  - **Affected element** Definition of "cis-regulatory gains"
+  - **Evidence pointer** Abstract; location not provided
+  - **Issue** The term "gains" is used without a clear operational definition. It is unclear whether this refers to new enhancer activity, increased activity at existing elements, or a binary classification from the model.
+  - **Required correction** Define "gain" explicitly in terms of the model's output and the threshold used to call a gain.
+  - **Concern ID** R1-m2
+  - **Severity** Minor
+  - **Axis** Reproducibility
+  - **Affected element** Model availability
+  - **Evidence pointer** Abstract; location not provided
+  - **Issue** The abstract does not state whether AlphaGenome is publicly available, which is essential for reproducibility and for the community to assess the predictions.
+  - **Required correction** State the availability of the model and the predicted data, ideally with a link to a repository.
+  - **Concern ID** R1-m3
+  - **Severity** Minor
+  - **Axis** Scope of validation
+  - **Affected element** Experimental validation
+  - **Evidence pointer** Abstract; location not provided
+  - **Issue** The abstract mentions no experimental validation of any predicted gain. While this may be present in the full manuscript, its absence from the abstract weakens the immediate credibility of the predictions.
+  - **Required correction** If any experimental validation exists, mention it in the abstract. If not, acknowledge this limitation explicitly.
+- **Technical failings that need to be addressed before the case is established** R1-M1, R1-M2, R1-M3. The model's predictive validity, the statistical support for enrichments and associations, and the causal interpretation of reversion experiments are all essential to the central claims and cannot be assessed from the abstract.
+- **Assessment against Nature-style criteria** Originality: High. The application of a deep-learning model to systematically predict human-lineage cis-regulatory changes across many tissues is a novel approach to a long-standing problem. Scientific importance: Potentially high, as a genome-wide map of regulatory changes could inform many aspects of human evolution. Interdisciplinary readership: Broad, spanning genomics, evolution, and computational biology. Technical soundness: Not assessable from the abstract; the lack of model validation and statistical detail is a major gap. Readability for nonspecialists: The abstract is generally clear, though terms like "co-option" and "cis-regulatory gains" may require some background. Overall, the work has strong potential but does not yet meet the evidentiary standard expected for a high-impact journal based on the supplied material.
+- **Recommendation posture** Currently not established from the provided evidence. The abstract presents a compelling framework, but the core claims require substantial additional detail on model validation, statistical rigor, and causal inference. I would be supportive if these technical concerns are resolved in the full manuscript.
+
+## Risk / unsupported claims
+- The claim that AlphaGenome accurately predicts cis-regulatory effects is unsupported without model validation data.
+- The claim that predicted gains contributed to tissue-specific biology is unsupported without statistical evidence for enrichment.
+- The claim that in silico reversion traced upregulations to individual substitutions is unsupported without details on the number of cases and validation.
+- The claim that a few modern-human-specific gains contribute substantially to upregulation is unsupported without quantitative definitions and metrics.
+- The evolutionary timing of gains relative to the split from archaic hominins is not assessable without details on the comparison method and data handling.

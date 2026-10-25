@@ -1,0 +1,30 @@
+{
+  "source": "arxiv",
+  "source_id": "2610.28853v1",
+  "title": "An autoencoder outperforms two transformers on prediction of gene expression from chromatin accessibility",
+  "doi": "",
+  "abstract": "Models that predict RNA abundance from chromatin accessibility are rarely compared under the same features, targets and metrics. We built one benchmark on 126,604 paired single-nucleus profiles from 19 human studies with a shared vocabulary of 50,000 peaks and 3,185 genes, ten 5x2 cross-validation folds and one scoring target, and compared seven implemented pipelines and two reference predictors across 70 trained runs; each pipeline keeps its own input normalisation and native training target. The scButterfly-B pipeline, built on dual variational autoencoders, outperformed every transformer pipeline, including an autoregressive Perceiver model (Omic Translator) and a support-free reformulation of Cisformer, on per-gene and within-cell Spearman correlation in all sixty paired fold comparisons, with 3.8 times shorter training. Transformer pipelines come within 0.02-0.04 on within-cell profile shape but lag by 0.10-0.24 on per-gene correlation. On two withheld cell types per-gene correlation is low; controls show the podocyte values are typical of within-type correlation for seen cell types of the same size, whereas Paneth values match a cell-agnostic shuffle for every Omic Translator arm. Within the transformer family, prespecified ablations show the Perceiver encoder was worth +0.0439 in within-donor per-gene correlation over full self-attention, a chromosome-aware genomic attention prior reduced it by 0.0096 (exact donor-level sign-flip test, Holm-adjusted p = 1.2e-4), and decoder output order had no detectable effect. A training-mean profile reaches 0.314 within-cell correlation with no input and a constant at the true expressed-gene positions reaches 0.996 per-gene correlation, so oracle-support protocols are reported only as diagnostics. Code, results and an audited release are provided.",
+  "authors": [
+    "Jesse G. Meyer"
+  ],
+  "published_date": "2026-10-20T19:27:47Z",
+  "updated_date": "2026-10-20T19:27:47Z",
+  "journal": "",
+  "category": "q-bio.GN",
+  "landing_url": "https://arxiv.org/abs/2610.28853v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.28853v1",
+  "pdf_path": "",
+  "pdf_downloaded": false,
+  "query": "(all:\"3D genome\" OR all:\"three-dimensional genome\" OR all:\"genome organization\" OR all:\"genome architecture\" OR all:\"genome folding\" OR all:\"nuclear organization\" OR all:\"nuclear architecture\" OR all:\"chromatin organization\" OR all:\"chromatin architecture\" OR all:\"chromatin conformation\" OR all:\"chromatin topology\" OR all:\"chromatin structure\" OR all:\"chromatin loop\" OR all:\"chromatin interaction\" OR all:\"chromatin domain\" OR all:\"topologically associating domain\" OR all:\"A/B compartment\" OR all:\"chromosome conformation capture\" OR all:\"Hi-C\" OR all:HiChIP OR all:\"loop extrusion\" OR all:\"loop-extrusion\" OR all:CTCF OR all:cohesin OR all:\"cis-regulatory\" OR all:\"cis-regulatory element\" OR all:\"regulatory element\" OR all:\"regulatory genomics\" OR all:\"chromatin accessibility\" OR all:\"enhancer-promoter\" OR all:\"promoter-enhancer\") AND (all:\"deep learning\" OR all:\"machine learning\" OR all:\"neural network\" OR all:\"graph neural network\" OR all:\"convolutional neural network\" OR all:transformer OR all:\"language model\" OR all:\"foundation model\" OR all:\"diffusion model\" OR all:generative OR all:\"flow matching\" OR all:alphafold OR all:esmfold OR all:rosetta OR all:\"molecular dynamics\" OR all:simulation OR all:docking)\n",
+  "version": "1",
+  "keywords": [
+    "q-bio.GN"
+  ],
+  "extra": {
+    "entry_id": "http://arxiv.org/abs/2610.28853v1",
+    "raw_categories": [
+      "q-bio.GN"
+    ],
+    "journal_ref": ""
+  }
+}

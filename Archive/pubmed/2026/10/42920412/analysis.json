@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42920412",
+  "title": "Navigating off-target effects in CRISPR-based genome editing for safer gene therapies.",
+  "authors": "Bhardwaj, Anuradha",
+  "journal": "Discover genetics and evolution",
+  "published_date": "2026-10-24",
+  "window": {
+    "start": "2026-10-18",
+    "end": "2026-10-24"
+  },
+  "score": 2,
+  "one_liner_zh": "该文综述CRISPR基因编辑的脱靶效应预测与检测方法，虽涉及机器学习和染色质可及性，但对象是基因编辑安全性而非三维基因组/染色质组织建模，与本课题关联微弱。",
+  "abstract": "Off-target activity remains a significant challenge in the clinical development of CRISPR-based therapies. As programmable nucleases advance from experimental tools toward approved medicines, the ability to predict, detect, and mitigate unintended genomic editing events has acquired direct translational importance. This review examines the molecular basis of off-target cleavage across three nuclease platforms-zinc finger nucleases (ZFNs), transcription activator-like effector nucleases (TALENs), and CRISPR-Cas systems-with emphasis on mechanistic and structural factors that govern mismatch tolerance, including PAM sampling, seed region thermodynamics, and chromatin accessibility. In silico prediction methods are surveyed from early alignment-based approaches through feature-engineered machine learning models to more recent deep learning architectures, with critical attention to training data limitations, cross-platform generalisability, and the distinction between exhaustive genomic search tools and predictive scoring models. The experimental detection landscape is reviewed with expanded coverage of established and newer unbiased genome-wide assays, including their biological principles, sensitivity characteristics, and suitability for structural variant detection. Particular attention is given to next-generation editing modalities-base editors, prime editors, and Cas12/Cas13 systems-and to epigenome editing approaches using non-cleaving CRISPR platforms, which avoid double-strand breaks but retain specificity concerns. The review also addresses delivery-related off-target risks, including tissue-level biodistribution and germline exposure, alongside mitigation strategies. It closes by outlining directions for improving standardisation, expanding structural variation surveillance, and extending safety characterisation to the full diversity of editing platforms now approaching clinical use.",
+  "abstract_zh": "脱靶活性仍然是CRISPR疗法临床开发中的重大挑战。随着可编程核酸酶从实验工具向获批药物迈进，预测、检测和减轻非预期基因组编辑事件的能力已具有直接的转化医学意义。本综述考察了三种核酸酶平台——锌指核酸酶（ZFNs）、转录激活因子样效应物核酸酶（TALENs）和CRISPR-Cas系统——中脱靶切割的分子基础，重点探讨控制错配耐受性的机制和结构因素，包括PAM采样、种子区域热力学和染色质可及性。计算机预测方法从早期基于比对的方法，经特征工程机器学习模型，到更近期的深度学习架构，均被系统评述，并重点关注训练数据局限性、跨平台泛化能力，以及全面基因组搜索工具与预测评分模型之间的区别。实验检测领域被综述，涵盖已建立和较新的无偏全基因组检测方法，包括其生物学原理、灵敏度特征及对结构变异检测的适用性。特别关注下一代编辑模式——碱基编辑器、先导编辑器和Cas12/Cas13系统——以及使用非切割CRISPR平台的表观基因组编辑方法，这些方法避免双链断裂但仍存在特异性问题。本综述还讨论了与递送相关的脱靶风险，包括组织水平生物分布和种系暴露，以及相应的缓解策略。最后，概述了改进标准化、扩展结构变异监测，以及将安全性表征延伸至即将进入临床应用的各类编辑平台的方向。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42920412/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42920412/",
+  "paper_page_path": "papers/pubmed/42920412/index.html"
+}

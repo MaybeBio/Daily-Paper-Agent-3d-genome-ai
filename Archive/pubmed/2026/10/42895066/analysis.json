@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42895066",
+  "title": "Exploring the bistable equilibrium of methylated CpG DNA recognition by the MBD2 protein.",
+  "authors": "Volkenandt, Senta; Belyaeva, Julia; Li, Torry; Elgeti, Matthias; Metzler, Ralf; Imhof, Petra; Williams, David C Jr; Bagherpoor Helabad, Mahdi",
+  "journal": "Nucleic acids research",
+  "published_date": "2026-10-19",
+  "window": {
+    "start": "2026-10-18",
+    "end": "2026-10-24"
+  },
+  "score": 5,
+  "one_liner_zh": "该文用经典分子动力学模拟研究MBD2蛋白识别甲基化CpG DNA的双稳态构象平衡，虽对象为蛋白-DNA识别而非染色质三维组织，但其构象采样与结合态平衡的分子模拟方法对染色质架构建模有可迁移启发。",
+  "abstract": "Methyl-CpG binding domain 2 (MBD2) is a critical epigenetic regulator that selectively binds methylated CpG dinucleotides, key marks controlling gene regulation and chromatin organization. Understanding the interactions and conformational dynamics underlying this high selectivity is essential to elucidate MBD2's regulatory role. Here, using extensive classical MD simulations, we explored the formation of the MBD2-mCpG recognition complex. By initially positioning MBD2 one base pair downstream of its target, we observed its transition to the target site within microseconds. Notably, upon binding, MBD2 adopts two distinct stable conformations: a primary state closely resembling the X-ray crystal structure, and a secondary state of reduced affinity that nevertheless retains comparable selectivity for mCpG. Our results establish S189 as a key macro-switch; loss of its interaction with the methylcytosine backbone shifts the equilibrium toward the secondary state. This is corroborated by MD simulations of the S189A mutant, which preferentially adopts the secondary state-like conformation. Complementary NMR experiments confirm that S189A mutation does not alter mCpG selectivity, while fluorescence polarization measurements reveal a reduced binding affinity, consistent with our MD simulations results. Together, these findings indicate that MBD2 binding to methylated CpG involves a bistable equilibrium, providing new insights into how high affinity and adaptability are balanced in epigenetic recognition. In a broader context, our findings suggest that such alternative bound-state equilibria may represent an inherent feature of specific protein-DNA complexes.",
+  "abstract_zh": "甲基-CpG结合域2（MBD2）是一种关键的表观遗传调控因子，选择性结合甲基化CpG二核苷酸，这些是调控基因表达和染色质组织的重要标记。理解这种高选择性背后的相互作用和构象动态，对于阐明MBD2的调控功能至关重要。在本研究中，我们利用广泛的经典分子动力学（molecular dynamics）模拟，探索了MBD2-mCpG识别复合物的形成过程。通过将MBD2初始定位在其靶标下游一个碱基对处，我们观察到其在微秒时间尺度内转移到靶标位点。值得注意的是，结合后，MBD2采用两种不同的稳定构象：一种主要状态与X射线晶体结构高度相似，另一种亲和力降低的次要状态，但仍保持对mCpG相当的选择性。我们的结果确定S189为关键的大开关；其与甲基胞嘧啶骨架相互作用的丧失使平衡向次要状态偏移。这一结论得到了S189A突变体分子动力学模拟的证实，该突变体优先采用类似次要状态的构象。互补的核磁共振（NMR）实验确认S189A突变不改变mCpG选择性，而荧光偏振测量显示结合亲和力降低，与我们的分子动力学模拟结果一致。综合这些发现，MBD2与甲基化CpG的结合涉及双稳态平衡，为表观遗传识别中高亲和力与适应性如何平衡提供了新见解。在更广泛的背景下，我们的发现表明，这种替代性结合态平衡可能代表特定蛋白质-DNA复合物的固有特征。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42895066/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42895066/",
+  "paper_page_path": "papers/pubmed/42895066/index.html"
+}

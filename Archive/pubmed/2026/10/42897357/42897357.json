@@ -1,0 +1,181 @@
+{
+  "identity": {
+    "pmid": "42897357",
+    "doi": "10.1186/s12284-026-00939-z",
+    "title": "Precision Editing of Cis-Regulatory Elements Drives Crops Quantitative Traits Genetic Improvement: From Functional Dissection to Intelligent Design."
+  },
+  "content": {
+    "abstract": "Since most agronomic traits are quantitative, ensuring food security under the pressures of global climate change and population growth increasingly relies on the precise and efficient genetic improvement of crop quantitative traits, making it a central focus of breeding research. Traditional breeding and transgenic approaches are often insufficient for modulating complex quantitative traits. In contrast, the advent of gene-editing technologies has opened new avenues for crop genetic improvement. Notably, the editing of cis-regulatory elements allows fine-tuning of gene expression levels and spatiotemporal patterns without altering coding sequences, enabling targeted optimization of quantitative traits such as yield, quality, and stress resistance. This review systematically summarizes the evolution of cis-regulatory element editing technologies, from early random mutagenesis and screening to targeted dissection guided by functional genomics and, more recently, to intelligent design integrating multi-omics and artificial intelligence, highlighting key technologies, representative applications, and inherent limitations at each stage while discussing future research directions in data integration, algorithm development, and tool deployment. We hope this review will provide both theoretical guidance and practical strategies for intelligent crop breeding.",
+    "keywords": [
+      "Cis-regulatory elements",
+      "Artificial intelligence",
+      "Functional dissection",
+      "Gene editing",
+      "Intelligent design",
+      "Quantitative traits"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Li, Yulin",
+        "Zhang, Xiangyu",
+        "Cui, Yongtao",
+        "Shang, Guiqi",
+        "Wu, Yue",
+        "Ma, Yiyuan",
+        "Tian, Tian",
+        "Liu, Mengru",
+        "Sang, Shifei"
+      ],
+      "short_names": [
+        "Li Y",
+        "Zhang X",
+        "Cui Y",
+        "Shang G",
+        "Wu Y",
+        "Ma Y",
+        "Tian T",
+        "Liu M",
+        "Sang S"
+      ],
+      "auids": [
+        "ORCID: 0000-0002-0874-5256"
+      ],
+      "affiliations": [
+        "Engineering Research Center of Crop Genetic Improvement and Germplasm Innovation in Henan Province, College of Life Sciences, Henan Normal University, Xinxiang, 453007, Henan, China.",
+        "Engineering Research Center of Crop Genetic Improvement and Germplasm Innovation in Henan Province, College of Life Sciences, Henan Normal University, Xinxiang, 453007, Henan, China.",
+        "Institute of Crops and Nuclear Technology Utilization, Zhejiang Academy of Agricultural Sciences, Hangzhou, 310021, China.",
+        "Engineering Research Center of Crop Genetic Improvement and Germplasm Innovation in Henan Province, College of Life Sciences, Henan Normal University, Xinxiang, 453007, Henan, China.",
+        "Engineering Research Center of Crop Genetic Improvement and Germplasm Innovation in Henan Province, College of Life Sciences, Henan Normal University, Xinxiang, 453007, Henan, China.",
+        "Engineering Research Center of Crop Genetic Improvement and Germplasm Innovation in Henan Province, College of Life Sciences, Henan Normal University, Xinxiang, 453007, Henan, China.",
+        "Engineering Research Center of Crop Genetic Improvement and Germplasm Innovation in Henan Province, College of Life Sciences, Henan Normal University, Xinxiang, 453007, Henan, China.",
+        "Engineering Research Center of Crop Genetic Improvement and Germplasm Innovation in Henan Province, College of Life Sciences, Henan Normal University, Xinxiang, 453007, Henan, China.",
+        "Engineering Research Center of Crop Genetic Improvement and Germplasm Innovation in Henan Province, College of Life Sciences, Henan Normal University, Xinxiang, 453007, Henan, China. sangshifei@htu.edu.cn."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Li, Yulin",
+        "short_name": "Li Y",
+        "identifiers": [],
+        "affiliations": [
+          "Engineering Research Center of Crop Genetic Improvement and Germplasm Innovation in Henan Province, College of Life Sciences, Henan Normal University, Xinxiang, 453007, Henan, China."
+        ]
+      },
+      {
+        "full_name": "Zhang, Xiangyu",
+        "short_name": "Zhang X",
+        "identifiers": [],
+        "affiliations": [
+          "Engineering Research Center of Crop Genetic Improvement and Germplasm Innovation in Henan Province, College of Life Sciences, Henan Normal University, Xinxiang, 453007, Henan, China."
+        ]
+      },
+      {
+        "full_name": "Cui, Yongtao",
+        "short_name": "Cui Y",
+        "identifiers": [],
+        "affiliations": [
+          "Institute of Crops and Nuclear Technology Utilization, Zhejiang Academy of Agricultural Sciences, Hangzhou, 310021, China."
+        ]
+      },
+      {
+        "full_name": "Shang, Guiqi",
+        "short_name": "Shang G",
+        "identifiers": [],
+        "affiliations": [
+          "Engineering Research Center of Crop Genetic Improvement and Germplasm Innovation in Henan Province, College of Life Sciences, Henan Normal University, Xinxiang, 453007, Henan, China."
+        ]
+      },
+      {
+        "full_name": "Wu, Yue",
+        "short_name": "Wu Y",
+        "identifiers": [],
+        "affiliations": [
+          "Engineering Research Center of Crop Genetic Improvement and Germplasm Innovation in Henan Province, College of Life Sciences, Henan Normal University, Xinxiang, 453007, Henan, China."
+        ]
+      },
+      {
+        "full_name": "Ma, Yiyuan",
+        "short_name": "Ma Y",
+        "identifiers": [],
+        "affiliations": [
+          "Engineering Research Center of Crop Genetic Improvement and Germplasm Innovation in Henan Province, College of Life Sciences, Henan Normal University, Xinxiang, 453007, Henan, China."
+        ]
+      },
+      {
+        "full_name": "Tian, Tian",
+        "short_name": "Tian T",
+        "identifiers": [],
+        "affiliations": [
+          "Engineering Research Center of Crop Genetic Improvement and Germplasm Innovation in Henan Province, College of Life Sciences, Henan Normal University, Xinxiang, 453007, Henan, China."
+        ]
+      },
+      {
+        "full_name": "Liu, Mengru",
+        "short_name": "Liu M",
+        "identifiers": [],
+        "affiliations": [
+          "Engineering Research Center of Crop Genetic Improvement and Germplasm Innovation in Henan Province, College of Life Sciences, Henan Normal University, Xinxiang, 453007, Henan, China."
+        ]
+      },
+      {
+        "full_name": "Sang, Shifei",
+        "short_name": "Sang S",
+        "identifiers": [
+          "0000-0002-0874-5256"
+        ],
+        "affiliations": [
+          "Engineering Research Center of Crop Genetic Improvement and Germplasm Innovation in Henan Province, College of Life Sciences, Henan Normal University, Xinxiang, 453007, Henan, China. sangshifei@htu.edu.cn."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Rice (New York, N.Y.)"
+    ],
+    "journal_abbrev": [
+      "Rice (N Y)"
+    ],
+    "pub_date": "2026 Jul 23",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/20 05:30",
+    "fetched_at": "2026-10-25 08:54:29"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42897357"
+    ],
+    "review": [
+      "42897357"
+    ],
+    "pmc": [
+      "13680586"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://dx.doi.org/10.1186/s12284-026-00939-z",
+        "provider": "Springer",
+        "category": "Full Text Sources",
+        "attribute": "subscription/membership/fee required",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

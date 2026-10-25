@@ -1,0 +1,95 @@
+## Review setup
+- **Input scope** Abstract only
+- **Assessment boundary** Claims and conclusions as stated in the abstract; no methods, figures, or supplementary data were available for evaluation
+- **Shared manuscript claim summary** The authors report that the C. elegans HP1 orthologue HPL-2 and the H3K9 methyltransferase MET-2/SETDB1 can promote heterochromatin focus formation, gene repression, and organogenesis independently of H3K9 methylation. They propose two parallel, PTM-independent pathways involving cofactor-driven condensate assemblies.
+- **Visible evidence base** Abstract text only; no experimental details, statistical analyses, or primary data provided
+- **Missing materials affecting confidence** Full manuscript, methods, figures, tables, supplementary information, and any statistical or computational details
+
+## Reviewer
+- **Overall assessment** The abstract presents a potentially interesting and conceptually novel finding that challenges the canonical view of HP1 function as strictly dependent on H3K9 methylation. However, the evidence base available for review is limited to the abstract, which precludes a rigorous assessment of the experimental support for the major claims. The claims regarding colocalization, additive effects, mutant phenotypes, and condensate-mediated mechanisms require detailed validation that cannot be evaluated from the provided material.
+- **Who would be interested in the results, and why** Researchers in chromatin biology, epigenetics, gene regulation, and developmental biology would be interested. The work challenges established models of heterochromatin formation and HP1 function, which has broad implications for understanding how chromatin readers and writers can act independently of their canonical histone modifications. The potential link to condensate biology also appeals to investigators studying phase separation in nuclear organization.
+- **Major strengths** The conceptual advance is significant, as it proposes PTM-independent functions for both a writer and a reader of H3K9 methylation. The use of multiple complementary approaches, including genetics, cell biology, molecular dynamics simulations, and in vitro assays, suggests a multidisciplinary effort. The identification of two parallel pathways is a clear and testable model.
+- **Major Concerns**  
+  - **Concern ID** R1-M1  
+  - **Severity** Major  
+  - **Blocking** Yes  
+  - **Axis** Evidence sufficiency  
+  - **Claim pointer** The claim that HPL-2 and MET-2 colocalize in H3K9me-containing subnuclear foci independently of the PTM and each other.  
+  - **Evidence pointer** Abstract; location not provided  
+  - **Concern** The abstract states that HPL-2 and MET-2 colocalize in foci independently of H3K9me and of each other, but no quantitative data, imaging conditions, or controls are described. It is unclear how independence from the PTM and from each other was established, and whether this was tested in appropriate mutant backgrounds.  
+  - **Why it matters** This colocalization claim is foundational for the proposed parallel pathways. If the independence is not rigorously demonstrated, the entire model of PTM-independent function is weakened.  
+  - **Resolution test** Provide representative images and quantification of colocalization in wild-type, met-2 mutant, hpl-2 mutant, and double mutant backgrounds, with appropriate statistical tests and controls for imaging artifacts.  
+  - **Concern ID** R1-M2  
+  - **Severity** Major  
+  - **Blocking** Yes  
+  - **Axis** Mechanistic support  
+  - **Claim pointer** The claim that cofactor-driven condensate assemblies underlie H3K9me-independent focus formation in vivo.  
+  - **Evidence pointer** Abstract; location not provided  
+  - **Concern** The abstract states that molecular dynamics simulations and in vitro assays suggest that cofactor-driven condensate assemblies underlie focus formation, but no details are given on the simulations, the in vitro systems used, or how these findings are connected to the in vivo observations. The correlation with gene silencing during organogenesis is mentioned but not substantiated.  
+  - **Why it matters** The condensate mechanism is a central explanatory component of the paper. Without detailed evidence linking in vitro and simulation data to in vivo foci and gene repression, the mechanistic claim remains speculative.  
+  - **Resolution test** Provide experimental evidence that disruption of condensate formation, for example through mutation of key residues or altered cofactor levels, abolishes focus formation and gene repression in vivo, and show that the in vitro and simulation results are quantitatively consistent with in vivo observations.  
+  - **Concern ID** R1-M3  
+  - **Severity** Major  
+  - **Blocking** Yes  
+  - **Axis** Phenotypic specificity  
+  - **Claim pointer** The claim that combined loss of HPL-2 and MET-2 additively disrupts gene repression and organogenesis.  
+  - **Evidence pointer** Abstract; location not provided  
+  - **Concern** The abstract reports additive effects on gene repression and organogenesis, but no data are shown to support additivity, such as quantitative phenotypes in single versus double mutants, or transcriptomic analyses. The specificity of the developmental defects is also not described.  
+  - **Why it matters** Additivity is a key argument for parallel pathways. If the effects are not truly additive, the model of independent pathways is not supported.  
+  - **Resolution test** Provide quantitative phenotypic measurements and transcriptomic data for single and double mutants, with statistical analysis demonstrating additive or synergistic effects, and show that the affected genes and developmental processes are specific to these pathways.  
+  - **Concern ID** R1-M4  
+  - **Severity** Major  
+  - **Blocking** Yes  
+  - **Axis** Mutant validation  
+  - **Claim pointer** The claim that a mutant HPL-2 deficient for H3K9me binding maintains localization, restricts cell-fate decisions, and represses developmental genes.  
+  - **Evidence pointer** Abstract; location not provided  
+  - **Concern** The abstract describes a mutant HPL-2 that cannot bind H3K9me, but the nature of the mutation, its effect on protein stability, and the extent to which residual functions are preserved are not described. The dependence on LIN-13 is mentioned but not mechanistically detailed.  
+  - **Why it matters** The mutant is a critical tool for demonstrating H3K9me independence. If the mutation affects protein levels, folding, or other interactions, the conclusions could be confounded.  
+  - **Resolution test** Provide characterization of the mutant protein, including expression levels, stability, and binding assays, and show that the observed functions are specifically due to loss of H3K9me binding rather than other defects.  
+  - **Concern ID** R1-M5  
+  - **Severity** Major  
+  - **Blocking** Yes  
+  - **Axis** Cofactor requirement  
+  - **Claim pointer** The claim that MET-2, catalytically active or not, requires its cofactor LIN-65 to form foci and silence genes in vivo.  
+  - **Evidence pointer** Abstract; location not provided  
+  - **Concern** The abstract states that MET-2 requires LIN-65 for foci formation and gene silencing, but the evidence for this requirement, the nature of the LIN-65 interaction, and whether LIN-65 acts as a scaffold or in another capacity are not described.  
+  - **Why it matters** The LIN-65 dependence is central to the proposed cofactor-driven mechanism. Without mechanistic detail, the claim is not fully supported.  
+  - **Resolution test** Provide genetic and biochemical evidence that LIN-65 is required for MET-2 foci and silencing, and characterize the interaction, for example through co-immunoprecipitation or reconstitution assays.  
+- **Minor Comments**  
+  - **Concern ID** R1-m1  
+  - **Severity** Minor  
+  - **Axis** Clarity  
+  - **Affected element** Terminology  
+  - **Evidence pointer** Abstract; location not provided  
+  - **Issue** The term "PTM-independent pathways" is used, but the abstract also describes H3K9me-containing foci. The relationship between the PTM and the foci is not fully clarified.  
+  - **Required correction** Clarify whether the foci contain H3K9me but the pathways do not require it, or whether the foci are distinct from H3K9me-marked regions.  
+  - **Concern ID** R1-m2  
+  - **Severity** Minor  
+  - **Axis** Quantification  
+  - **Affected element** Statistical reporting  
+  - **Evidence pointer** Abstract; location not provided  
+  - **Issue** No statistical measures, sample sizes, or effect sizes are reported in the abstract.  
+  - **Required correction** Include key quantitative results and statistical information in the abstract or indicate where they are presented in the full manuscript.  
+  - **Concern ID** R1-m3  
+  - **Severity** Minor  
+  - **Axis** Generalizability  
+  - **Affected element** Species specificity  
+  - **Evidence pointer** Abstract; location not provided  
+  - **Issue** The findings are specific to C. elegans, and the abstract does not discuss potential conservation or divergence in other organisms.  
+  - **Required correction** Add a brief statement on the potential relevance to other species or note the limitations of the C. elegans system.  
+- **Technical failings that need to be addressed before the case is established** R1-M1, R1-M2, R1-M3, R1-M4, R1-M5. The abstract alone does not provide sufficient evidence to establish the central claims of PTM independence, additivity, and condensate-mediated mechanisms.
+- **Assessment against Nature-style criteria**  
+  - **Originality** The concept of HP1 and SETDB1 acting independently of H3K9me is novel and challenges established paradigms. This is a strength.  
+  - **Scientific importance** If substantiated, the findings would have broad implications for chromatin biology and gene regulation. The importance is high.  
+  - **Interdisciplinary readership** The work spans genetics, cell biology, biophysics, and developmental biology, which could attract a broad audience. However, the abstract does not clearly frame the interdisciplinary appeal.  
+  - **Technical soundness** Cannot be assessed from the abstract. The lack of methodological detail and quantitative data is a major limitation.  
+  - **Readability for nonspecialists** The abstract is reasonably clear but uses specialized terminology without sufficient context. It may be challenging for nonspecialists to fully appreciate the significance.  
+- **Recommendation posture** Currently not established from the provided evidence. The conceptual advance is promising, but the abstract does not provide sufficient detail to evaluate the technical rigor of the study. A full manuscript with detailed methods, quantitative data, and appropriate controls would be required to assess whether the claims are supported.
+
+## Risk / unsupported claims
+- The claim that HPL-2 and MET-2 colocalize independently of H3K9me and each other is unsupported without imaging data and controls.
+- The claim that cofactor-driven condensate assemblies underlie focus formation is unsupported without detailed in vitro, simulation, and in vivo data.
+- The claim of additive effects on gene repression and organogenesis is unsupported without quantitative phenotypic and transcriptomic data.
+- The claim that a mutant HPL-2 deficient for H3K9me binding maintains function is unsupported without mutant characterization.
+- The claim that MET-2 requires LIN-65 for foci and silencing is unsupported without genetic and biochemical evidence.
+- The correlation between focus formation and gene silencing during organogenesis is stated but not substantiated.

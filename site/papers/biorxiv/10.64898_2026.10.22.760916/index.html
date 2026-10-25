@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reconstructing human gene regulatory evolution using deep learning · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-mid">6</span>
+    <div>
+      <h1>Reconstructing human gene regulatory evolution using deep learning</h1>
+      <div class="meta">Yamada T; Yuan X; Zeberg H; Soltys V; Lana Alberro M; Sarropoulos I; Paabo S; Kaessmann H</div>
+      <div class="meta muted">
+        
+        <span class="journal">bioRxiv</span> <span class="preprint-badge">预印本</span>
+        · 2026-10-23
+         · 仅摘要
+         · <a href="https://www.biorxiv.org/content/10.64898/2026.10.22.760916">原文</a>
+      </div>
+      <p class="one-liner">该文用AlphaGenome深度学习模型预测人类谱系顺式调控元件变异对基因表达进化的影响，虽聚焦调控进化而非染色质三维结构建模，但其序列-功能预测思路和增强子-启动子调控逻辑对染色质空间互作建模有方法迁移价值。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">Understanding the genetic changes that drove the evolution of human-specific traits is a central goal in biology. Changes in gene expression are thought to be a major source of phenotypic innovations, but identifying the underlying changes in cis-regulatory elements (CREs) along the human lineage has been difficult: functional data from great apes are scarce and unobtainable for extinct hominins, and pinpointing causal substitutions requires knowing which sequences determine CRE activity. Here, we used AlphaGenome, a sequence-to-function deep-learning model, to predict the cis-regulatory effects of ~17 million single-nucleotide substitutions specific to the human lineage and traced their consequences for gene expression evolution across 305 tissues and cell types. The 71,345 predicted cis-regulatory gains lie mostly outside human accelerated regions and arose either through creation of new CREs or, more often, through co-option of CREs ancestrally accessible in other tissues. They are also enriched for distal enhancers and for target gene functions characteristic of the corresponding tissues, suggesting that they contributed to the evolution of tissue-specific biology in humans. Genes linked to more gains were more likely to be upregulated in humans, and in silico reversion to ancestral alleles traced such upregulations to individual substitutions creating transcription factor binding motifs. Comparison with Neandertal and Denisovan genomes revealed that nearly all gains now fixed in humans predate the split from archaic hominins, yet a few modern-human-specific gains contribute substantially to gene upregulation. Our study provides a genome-wide, tissue-resolved map of cis-regulatory changes and their contribution to gene expression evolution along the human lineage.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">理解驱动人类特有性状进化的遗传变化是生物学的核心目标。基因表达的变化被认为是表型创新的主要来源，但识别人类谱系中顺式调控元件（cis-regulatory elements, CREs）的潜在变化一直很困难：来自大型猿类的功能数据稀缺，且已灭绝古人类无法获取，而确定因果替换需要知道哪些序列决定CRE活性。在此，我们使用AlphaGenome，一种序列到功能的深度学习模型，预测了人类谱系特异的约1700万个单核苷酸替换的顺式调控效应，并追踪了它们在305个组织和细胞类型中对基因表达进化的影响。预测的71,345个顺式调控增益大多位于人类加速区域之外，通过新CRE的创建或更常见地通过祖先在其他组织中可及的CRE的共选而产生。它们还富集于远端增强子及相应组织特征性的靶基因功能，表明它们促进了人类组织特异性生物学的进化。与更多增益相关的基因更可能在人类中上调，而计算机模拟回复到祖先等位基因将这些上调追溯到创建转录因子结合基序的单个替换。与尼安德特人和丹尼索瓦人基因组的比较显示，几乎所有现在在人类中固定的增益都早于与古人类的分裂，但少数现代人类特异的增益对基因上调有显著贡献。我们的研究提供了人类谱系中顺式调控变化及其对基因表达进化贡献的全基因组、组织分辨图谱。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：Reconstructing human gene regulatory evolution using deep learning</li>
+<li><strong>作者</strong>：Yamada T; Yuan X; Zeberg H; Soltys V; Lana Alberro M; Sarropoulos I; Paabo S; Kaessmann H</li>
+<li><strong>单位</strong>：未提供（根据作者名单推测涉及进化基因组学与古基因组学实验室，具体单位未在摘要中给出）</li>
+<li><strong>期刊/平台</strong>：bioRxiv（预印本）</li>
+<li><strong>年份</strong>：2026-10-23</li>
+<li><strong>论文类型</strong>：预印本（研究论文）</li>
+<li><strong>领域</strong>：调控基因组学 / 进化基因组学 × 深度学习</li>
+<li><strong>关键词</strong>：cis-regulatory elements (CREs)、deep learning、human lineage evolution、gene expression、archaic hominins</li>
+<li><strong>DOI/arXiv 号</strong>：10.64898/2026.10.22.760916</li>
+<li><strong>代码</strong>：未提供</li>
+<li><strong>数据</strong>：未提供（摘要提及使用 AlphaGenome 模型与 305 个组织/细胞类型的预测数据）</li>
+<li><strong>阅读日期</strong>：2026-10-23（按提交日期推定）</li>
+<li><strong>在「三维基因组/染色质组织 × AI 方法/物理模拟」方向中的位置</strong>：本文使用序列到功能的深度学习模型（AlphaGenome）预测顺式调控效应，属于「AI 方法 × 调控基因组学」交叉方向。与三维基因组课题的关联在于：预测的 CRE 活性变化可能涉及染色质可及性与增强子-启动子互作，但本文未直接建模 3D 染色质结构，而是聚焦于序列变异对调控活性的影响。可作为「AI 预测调控功能」的参考方法，但其输出不包含 3D 结构信息。</li>
+</ul>
+<hr />
+<h2>02 一句话总结</h2>
+<p>本文使用 AlphaGenome 深度学习模型预测人类谱系特异的 ~1700 万个单核苷酸替换的顺式调控效应，在 305 个组织/细胞类型中鉴定出 71,345 个调控获得事件，并追踪其对基因表达进化的贡献，发现多数获得源于祖先调控元件的共选（co-option）而非新 CRE 的从头产生。</p>
+<hr />
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：人类谱系特异的顺式调控变化如何驱动基因表达进化？哪些单核苷酸替换是因果性的？</li>
+<li><strong>为什么重要</strong>：基因表达变化被认为是表型创新的主要来源，但识别人类谱系上的因果调控替换一直困难，因为：1) 大猿的功能数据稀缺；2) 灭绝古人类（如尼安德特人、丹尼索瓦人）的功能数据不可获得；3) 需要知道哪些序列决定 CRE 活性才能定位因果替换。</li>
+<li><strong>现有方法为何不足</strong>：传统方法依赖实验测定的功能数据（如 ATAC-seq、ChIP-seq），这些数据在进化尺度上难以获得；且无法对灭绝物种进行实验验证。统计关联方法（如 eQTL）难以区分因果与连锁变异。</li>
+<li><strong>精确研究问题</strong>：Can a sequence-to-function deep learning model predict the cis-regulatory effects of human-lineage-specific substitutions at genome scale, and can these predictions reconstruct the evolutionary trajectory of gene expression changes?</li>
+</ul>
+<hr />
+<h2>04 背景与发展脉络</h2>
+<blockquote>
+<p>注：此脉络基于本文摘要与领域常识构建，标注为「经外部核验」的部分基于公开领域知识，其余为「仅本文框架」。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>代表性方法</th>
+<th>优点</th>
+<th>局限</th>
+<th>本文位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>比较基因组学（早期）</td>
+<td>保守序列分析、加速区域检测（如 HACNs）</td>
+<td>无需功能数据，可跨物种比较</td>
+<td>无法区分功能与非功能变异，无法预测方向性效应</td>
+<td>本文指出预测的调控获得大多位于人类加速区域之外，说明比较基因组学方法可能遗漏关键调控变化</td>
+</tr>
+<tr>
+<td>实验功能基因组学</td>
+<td>ATAC-seq、ChIP-seq、STARR-seq</td>
+<td>直接测定调控活性</td>
+<td>大猿数据稀缺，灭绝物种不可得，通量有限</td>
+<td>本文用 AI 替代实验数据，实现全基因组、多组织预测</td>
+</tr>
+<tr>
+<td>深度学习调控预测</td>
+<td>Enformer、Basenji、AlphaGenome 等</td>
+<td>序列到功能映射，可进行 in silico 突变扫描</td>
+<td>训练数据依赖参考基因组，对进化变异的外推需验证</td>
+<td>本文首次将此类模型系统应用于人类谱系进化重建</td>
+</tr>
+<tr>
+<td>古基因组学整合</td>
+<td>古 DNA 分析（尼安德特人、丹尼索瓦人）</td>
+<td>提供灭绝物种的遗传信息</td>
+<td>仅提供序列信息，无功能数据</td>
+<td>本文用 AI 预测填补古人类功能数据空白</td>
+</tr>
+</tbody>
+</table>
+<p><strong>本文主张的位置</strong>：首次将深度学习调控预测模型（AlphaGenome）与人类谱系进化分析结合，实现全基因组、组织分辨率的调控进化重建，并整合古基因组数据追溯调控获得的时间。</p>
+<hr />
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>大猿功能数据稀缺</td>
+<td>无法直接测定人类近缘物种的 CRE 活性</td>
+<td>实验成本高、样本获取困难</td>
+<td>摘要：「functional data from great apes are scarce」</td>
+</tr>
+<tr>
+<td>灭绝古人类功能数据不可得</td>
+<td>尼安德特人、丹尼索瓦人的调控活性无法实验测定</td>
+<td>古 DNA 仅提供序列信息，无法进行功能实验</td>
+<td>摘要：「unobtainable for extinct hominins」</td>
+</tr>
+<tr>
+<td>因果替换难以定位</td>
+<td>难以确定哪些单核苷酸替换决定 CRE 活性</td>
+<td>需要知道序列-功能映射关系，传统方法缺乏此信息</td>
+<td>摘要：「pinpointing causal substitutions requires knowing which sequences determine CRE activity」</td>
+</tr>
+<tr>
+<td>调控获得的时间难以追溯</td>
+<td>无法判断调控变化发生在人类谱系哪个阶段</td>
+<td>缺乏灭绝物种的功能数据</td>
+<td>摘要通过与古基因组比较解决此问题</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>06 核心思想</h2>
+<h3>1) 表面方法</h3>
+<p>使用 AlphaGenome（序列到功能深度学习模型）对 ~1700 万个人类谱系特异单核苷酸替换进行 in silico 突变效应预测，在 305 个组织/细胞类型中鉴定调控获得事件，并追踪其对基因表达进化的贡献。</p>
+<h3>2) 核心洞察</h3>
+<ul>
+<li><strong>调控获得的主要机制是共选（co-option）而非从头产生</strong>：71,345 个预测的调控获得中，多数源于祖先在其他组织中已可及的 CRE 被共选到新组织，而非全新 CRE 的创建。</li>
+<li><strong>AI 预测可替代实验数据</strong>：深度学习模型能够从序列直接预测调控活性，从而克服大猿和灭绝古人类功能数据不可得的根本障碍。</li>
+<li><strong>调控获得与组织特异性功能相关</strong>：预测的调控获得富集于远端增强子，且目标基因功能与对应组织特征一致，提示这些变化贡献了组织特异性生物学进化。</li>
+</ul>
+<h3>3) 可能的普适教训 [Analysis]</h3>
+<ul>
+<li>序列到功能模型可以作为「虚拟实验」工具，在实验不可行的进化尺度上生成可检验的假设。</li>
+<li>调控进化的主要模式可能是已有调控元件的重新部署（共选），而非新元件的从头进化——这一模式可能也适用于三维基因组中的增强子-启动子互作重布线。</li>
+<li>将 AI 预测与古基因组数据结合，可以追溯调控变化的时间深度，这一策略可迁移到其他谱系或性状的进化研究。</li>
+</ul>
+<hr />
+<h2>07 方法总览</h2>
+<ul>
+<li><strong>输入</strong>：人类谱系特异的 ~1700 万个单核苷酸替换（通过比较人类与近缘物种基因组鉴定）</li>
+<li><strong>输出</strong>：每个替换在 305 个组织/细胞类型中的顺式调控效应预测；71,345 个预测的调控获得事件；与基因表达进化的关联</li>
+<li><strong>核心模块</strong>：
+  1. AlphaGenome 模型：序列到功能的深度学习预测器
+  2. 突变效应扫描：对每个替换进行 in silico 突变效应评估
+  3. 调控获得鉴定：基于预测效应定义调控获得事件
+  4. 组织/细胞类型注释：305 个组织/细胞类型的效应图谱
+  5. 基因表达关联分析：将调控获得与基因表达变化关联
+  6. 古基因组比较：与尼安德特人、丹尼索瓦人基因组比较追溯时间</li>
+<li><strong>训练</strong>：未提供（AlphaGenome 模型的训练细节未在摘要中给出）</li>
+<li><strong>工具</strong>：AlphaGenome（未提供版本或开源信息）</li>
+<li><strong>假设</strong>：序列到功能的映射关系在人类与近缘物种间保守，使得模型可以外推到进化变异</li>
+<li><strong>流程</strong>：鉴定人类谱系特异替换 → AlphaGenome 预测每个替换的调控效应 → 在 305 个组织/细胞类型中定义调控获得 → 关联到基因表达变化 → 与古基因组比较追溯时间</li>
+</ul>
+<hr />
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AlphaGenome 模型</td>
+<td>从 DNA 序列预测调控功能</td>
+<td>替代实验数据，实现全基因组、多组织预测</td>
+<td>输入：序列；输出：调控活性预测</td>
+<td>摘要：「sequence-to-function deep learning model」</td>
+<td>无法进行大规模突变效应扫描（预期影响）</td>
+</tr>
+<tr>
+<td>突变效应扫描</td>
+<td>评估每个替换的调控效应</td>
+<td>定位因果替换</td>
+<td>输入：参考/衍生等位基因序列；输出：效应分数</td>
+<td>摘要：「predict the cis-regulatory effects of ~17 million single-nucleotide substitutions」</td>
+<td>无法鉴定调控获得事件（预期影响）</td>
+</tr>
+<tr>
+<td>调控获得鉴定</td>
+<td>定义 CRE 活性增加的位点</td>
+<td>识别人类谱系上的调控创新</td>
+<td>输入：效应分数；输出：71,345 个调控获得</td>
+<td>摘要：「71,345 predicted cis-regulatory gains」</td>
+<td>无法绘制调控进化图谱（预期影响）</td>
+</tr>
+<tr>
+<td>组织/细胞类型注释</td>
+<td>将预测映射到 305 个组织/细胞类型</td>
+<td>解析组织特异性调控进化</td>
+<td>输入：效应分数+组织注释；输出：组织分辨率的调控获得图谱</td>
+<td>摘要：「across 305 tissues and cell types」</td>
+<td>无法解析组织特异性模式（预期影响）</td>
+</tr>
+<tr>
+<td>古基因组比较</td>
+<td>追溯调控获得的时间</td>
+<td>区分现代人类特异与祖先共享的变化</td>
+<td>输入：尼安德特人/丹尼索瓦人基因组；输出：调控获得的时间分类</td>
+<td>摘要：「Comparison with Neandertal and Denisovan genomes」</td>
+<td>无法判断调控获得是否现代人类特异（预期影响）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：所有消融效应均为「预期影响」，摘要中未提供实测消融实验。</p>
+</blockquote>
+<hr />
+<h2>09 关键公式符号</h2>
+<p>不适用。摘要中未提供任何数学公式或符号定义。</p>
+<hr />
+<h2>10 实验设计与证据链</h2>
+<h3>数据集/群体/规模</h3>
+<ul>
+<li><strong>输入变异</strong>：~1700 万个人类谱系特异单核苷酸替换</li>
+<li><strong>组织/细胞类型</strong>：305 个</li>
+<li><strong>预测调控获得</strong>：71,345 个</li>
+<li><strong>比较基因组</strong>：尼安德特人、丹尼索瓦人基因组</li>
+<li><strong>人类加速区域</strong>：用于排除分析（预测的调控获得大多位于其外）</li>
+</ul>
+<h3>评测协议</h3>
+<ul>
+<li>未提供明确的评测协议（如交叉验证、独立验证等）</li>
+</ul>
+<h3>实验列表</h3>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的 claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>全基因组突变效应预测</td>
+<td>AlphaGenome 可预测人类谱系特异替换的调控效应</td>
+<td>~1700 万替换 × 305 组织</td>
+<td>鉴定出 71,345 个调控获得</td>
+<td>模型可进行全基因组、多组织的调控效应预测</td>
+<td>预测准确性未经实验验证</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>调控获得的机制分类</td>
+<td>调控获得主要通过共选而非从头产生</td>
+<td>新 CRE vs. 祖先可及 CRE 的共选</td>
+<td>多数获得源于共选</td>
+<td>共选是调控进化的主要模式</td>
+<td>分类标准未详细说明</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>与人类加速区域比较</td>
+<td>调控获得是否富集于已知加速区域</td>
+<td>调控获得 vs. HACR 重叠</td>
+<td>大多位于加速区域之外</td>
+<td>传统比较基因组学方法可能遗漏关键调控变化</td>
+<td>未说明重叠的具体比例</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>组织特异性富集分析</td>
+<td>调控获得是否与组织功能相关</td>
+<td>目标基因功能 vs. 组织特征</td>
+<td>富集于远端增强子，目标基因功能与组织一致</td>
+<td>调控获得贡献了组织特异性生物学进化</td>
+<td>因果关系未直接验证</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>古基因组比较</td>
+<td>调控获得的时间深度</td>
+<td>现代人类 vs. 尼安德特人/丹尼索瓦人</td>
+<td>几乎所有固定获得先于与古人类分化</td>
+<td>多数调控变化是祖先共享的</td>
+<td>少数现代人类特异获得的功能影响未详述</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>表达关联分析</td>
+<td>调控获得是否驱动基因上调</td>
+<td>调控获得 vs. 人类中上调基因</td>
+<td>基因链接更多获得更可能上调</td>
+<td>调控获得贡献于表达进化</td>
+<td>未提供效应量或统计显著性</td>
+<td>摘要</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：本文仅覆盖顺式调控效应预测，不涉及三维基因组结构、染色质互作或表观遗传状态。</li>
+<li><strong>oracle/真值输入</strong>：无实验验证的 oracle；预测基于 AlphaGenome 模型，其训练数据与进化变异的外推有效性未在摘要中验证。</li>
+<li><strong>端到端状态</strong>：从序列变异到调控效应预测是端到端的，但「调控获得 → 表达变化 → 表型进化」的链条是推断性的，未直接验证。</li>
+<li><strong>算力成本</strong>：未提供。</li>
+<li><strong>历史数据依赖</strong>：依赖人类与近缘物种的基因组比对（鉴定谱系特异替换）以及 AlphaGenome 的训练数据。</li>
+<li><strong>模型依赖</strong>：结论完全依赖 AlphaGenome 的预测准确性；若模型对进化变异的泛化能力有限，则结论可能偏差。</li>
+<li><strong>最难情形</strong>：预测的调控获得中，哪些是真正因果性的、哪些是连锁或中性变异，未在摘要中区分。</li>
+<li><strong>群体/领域边界</strong>：仅覆盖人类谱系；其他灵长类或哺乳动物的调控进化模式可能不同。</li>
+<li><strong>不确定性</strong>：预测的调控获得未经实验验证；共选 vs. 从头产生的分类标准未详细说明；古基因组比较的覆盖度（尼安德特人/丹尼索瓦人基因组的完整性）未说明。</li>
+</ul>
+<p><strong>有边界的复述</strong>：在 AlphaGenome 模型预测准确且可外推到进化变异的假设下，人类谱系特异的 ~1700 万替换中约有 71,345 个被预测为调控获得，主要分布于非加速区域，多数通过共选机制产生，且与组织特异性表达进化相关；这些获得大多先于现代人类与古人类的分化。</p>
+<hr />
+<h2>12 作者自认局限</h2>
+<p>在提供的摘要材料中，未发现作者明确承认的局限。</p>
+<p><strong>作者提及的相关约束</strong>（非正式局限）：
+- 摘要提到「functional data from great apes are scarce and unobtainable for extinct hominins」——这解释了为何需要 AI 方法，但也暗示预测缺乏直接实验验证。
+- 摘要未提供任何关于模型不确定性、预测验证或方法局限的讨论。</p>
+<hr />
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>预测的调控获得未经实验验证</td>
+<td>AlphaGenome 的预测可能包含大量假阳性；进化变异的外推可能超出模型训练分布</td>
+<td>若预测不可靠，则所有下游结论（共选、组织特异性、时间追溯）均受影响</td>
+<td>用 CRISPR 或报告基因实验验证部分预测；用独立模型（如 Enformer）交叉验证</td>
+<td>摘要未提供任何验证实验</td>
+</tr>
+<tr>
+<td>「共选 vs. 从头产生」的分类标准未说明</td>
+<td>分类可能依赖模型内部表征或序列相似性，标准不同则结论可能改变</td>
+<td>这是核心机制结论，分类标准直接影响解释</td>
+<td>要求作者提供分类方法学细节；用独立数据验证分类</td>
+<td>摘要仅给出结论，无方法细节</td>
+</tr>
+<tr>
+<td>与人类加速区域（HARs）的比较可能受定义影响</td>
+<td>HAR 的定义依赖保守性，而调控获得可能发生在非保守区域</td>
+<td>若 HAR 定义与调控功能无关，则「大多位于 HAR 之外」的意义有限</td>
+<td>使用不同 HAR 定义重复分析；直接比较调控获得与功能验证的 CRE</td>
+<td>摘要仅提及「mostly outside human accelerated regions」</td>
+</tr>
+<tr>
+<td>古基因组比较的覆盖度未说明</td>
+<td>尼安德特人/丹尼索瓦人基因组的覆盖度可能影响「先于分化」的判断</td>
+<td>低覆盖度可能导致假阴性（未检测到古人类中的变异）</td>
+<td>检查古基因组覆盖度；用多个古人类个体重复分析</td>
+<td>摘要未提供覆盖度信息</td>
+</tr>
+<tr>
+<td>表达关联分析缺乏效应量</td>
+<td>「更可能上调」未提供统计显著性或效应大小</td>
+<td>无法评估调控获得对表达的贡献强度</td>
+<td>要求提供效应量、置信区间和多重检验校正</td>
+<td>摘要仅定性描述</td>
+</tr>
+<tr>
+<td>AlphaGenome 模型细节未提供</td>
+<td>无法评估模型架构、训练数据、性能指标</td>
+<td>模型选择直接影响预测可靠性</td>
+<td>要求提供模型卡、基准测试结果</td>
+<td>摘要仅提及模型名称</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>14 学到什么</h2>
+<p><strong>Agent 提炼的知识候选</strong></p>
+<ol>
+<li>
+<p><strong>序列到功能模型作为进化研究的「虚拟实验」工具</strong>：AlphaGenome 展示了深度学习模型可以在实验不可行的进化尺度上生成可检验的调控假设。可迁移到三维基因组课题：使用类似的序列到结构/功能模型预测染色质构象变异对调控的影响。</p>
+</li>
+<li>
+<p><strong>共选（co-option）作为调控进化的主要模式</strong>：多数调控获得源于祖先调控元件的重新部署，而非从头产生。这一概念可迁移到三维基因组：增强子-启动子互作的重布线可能也遵循共选模式，即已有的染色质互作在新组织中被重新利用。</p>
+</li>
+<li>
+<p><strong>组织分辨率的大规模预测策略</strong>：在 305 个组织/细胞类型中系统预测调控效应，提供了组织特异性的进化图谱。可迁移到三维基因组：在不同细胞类型中预测染色质结构变异，解析组织特异性的 3D 基因组进化。</p>
+</li>
+<li>
+<p><strong>古基因组整合追溯时间深度</strong>：通过与尼安德特人/丹尼索瓦人基因组比较，追溯调控变化的时间。可迁移到三维基因组：如果古 DNA 可以用于预测染色质结构（尽管技术上困难），可以追溯 3D 基因组结构的时间演化。</p>
+</li>
+<li>
+<p><strong>in silico 突变扫描的规模化方法</strong>：对 ~1700 万替换进行系统扫描，展示了深度学习模型在高通量变异效应预测中的潜力。可迁移到三维基因组：对影响 CTCF 结合位点、增强子-启动子互作的变异进行系统扫描。</p>
+</li>
+<li>
+<p><strong>调控获得与组织功能的关联分析</strong>：将预测的调控获得与目标基因功能和组织特征关联，验证了生物学相关性。可迁移到三维基因组：将预测的染色质结构变异与组织特异性基因表达程序关联。</p>
+</li>
+</ol>
+<hr />
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>Enformer / Basenji</strong>（Avsec et al., 2021; Kelley et al., 2018）：序列到功能的深度学习模型，AlphaGenome 属于同一范式。这些模型已被用于预测变异效应，但本文首次将其系统应用于人类谱系进化重建。</li>
+<li><strong>人类加速区域（HARs）</strong>（Pollard et al., 2006）：本文发现调控获得大多位于 HAR 之外，提示 HAR 可能不是人类调控进化的唯一或主要载体。</li>
+<li><strong>调控元件共选（regulatory co-option）</strong>：这一概念在发育进化生物学中有广泛讨论（如 Carroll, 2008），本文将其扩展到人类谱系的全基因组尺度。</li>
+<li><strong>古基因组学</strong>（Pääbo, 2014）：尼安德特人/丹尼索瓦人基因组为追溯人类调控进化提供了时间框架，本文用 AI 预测填补了功能数据空白。</li>
+<li><strong>三维基因组关联</strong> [Analysis]：本文未直接涉及 3D 基因组，但其预测的增强子活性变化可能反映染色质可及性和增强子-启动子互作的变化。三维基因组领域的 Hi-C、HiChIP 数据可以作为 AlphaGenome 预测的验证或补充。反之，3D 基因组模型（如 C. Predictor、DeepC）可以用于预测结构变异对调控的影响，与本文的序列-功能预测互补。</li>
+</ul>
+<hr />
+<h2>16 研究想法</h2>
+<p><strong>Agent 生成的研究候选</strong></p>
+<h3>候选 1：三维基因组共选（3D co-option）的进化分析</h3>
+<ul>
+<li><strong>名称</strong>：3D-Genome Co-option Atlas</li>
+<li><strong>来源局限/观察</strong>：本文发现调控共选是调控进化的主要模式，但未涉及 3D 基因组结构。三维基因组中的增强子-启动子互作可能也遵循共选模式。</li>
+<li><strong>核心假设</strong>：人类谱系特异的染色质互作变化主要通过已有互作的重新部署（共选）而非全新互作的产生。</li>
+<li><strong>初步方法</strong>：使用 Hi-C 数据（人类、黑猩猩、大猩猩等）鉴定谱系特异的染色质互作变化；用深度学习模型（如 DeepC）预测祖先序列的 3D 结构；比较共选 vs. 从头产生的比例。</li>
+<li><strong>验证方式</strong>：与本文的调控获得数据交叉验证；用 CRISPR 干扰（CRISPRi）验证关键互作的功能。</li>
+<li><strong>创新状态</strong>：unverified（未在文献中发现直接先例）</li>
+</ul>
+<h3>候选 2：AlphaGenome 预测与 3D 基因组特征的整合</h3>
+<ul>
+<li><strong>名称</strong>：Integrating Sequence-to-Function and 3D Genome Models</li>
+<li><strong>来源局限/观察</strong>：AlphaGenome 预测调控活性但未考虑 3D 结构；3D 基因组模型预测结构但未考虑序列变异效应。</li>
+<li><strong>核心假设</strong>：将序列-功能预测与 3D 结构预测整合，可以提高调控变异效应预测的准确性。</li>
+<li><strong>初步方法</strong>：对同一组人类谱系特异变异，分别用 AlphaGenome 和 3D 基因组模型预测效应；比较预测一致性；构建整合模型。</li>
+<li><strong>验证方式</strong>：用实验数据（如 STARR-seq、MPRA）验证整合模型的预测。</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul>
+<h3>候选 3：灭绝古人类的 3D 基因组重建</h3>
+<ul>
+<li><strong>名称</strong>：Archaic Hominin 3D Genome Reconstruction</li>
+<li><strong>来源局限/观察</strong>：本文用 AlphaGenome 预测了尼安德特人/丹尼索瓦人的调控活性，但未涉及 3D 结构。理论上，如果 3D 基因组模型可以仅从序列预测结构，则可以重建灭绝物种的 3D 基因组。</li>
+<li><strong>核心假设</strong>：基于序列的 3D 基因组预测模型可以外推到灭绝古人类，重建其染色质结构。</li>
+<li><strong>初步方法</strong>：使用 DeepC 或类似模型，以尼安德特人/丹尼索瓦人基因组序列为输入，预测其 3D 结构；与人类和现代猿类比较。</li>
+<li><strong>验证方式</strong>：用已知的序列-结构关系验证预测；与调控活性预测交叉验证。</li>
+<li><strong>创新状态</strong>：unverified（技术上具有挑战性，但逻辑上可行）</li>
+</ul>
+<h3>候选 4：调控获得与 3D 结构变化的因果方向</h3>
+<ul>
+<li><strong>名称</strong>：Causal Direction of Regulatory and 3D Changes</li>
+<li><strong>来源局限/观察</strong>：本文预测了调控获得，但未区分是调控活性变化驱动 3D 结构变化，还是反之。</li>
+<li><strong>核心假设</strong>：在人类谱系进化中，调控活性变化与 3D 结构变化存在因果方向性，且方向因位点而异。</li>
+<li><strong>初步方法</strong>：对预测的调控获得位点，检查其 3D 结构是否也发生变化；用孟德尔随机化或因果推断方法分析方向。</li>
+<li><strong>验证方式</strong>：用时间序列数据（如细胞分化过程中的动态变化）验证因果方向。</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul>
+<h3>候选 5：组织特异性 3D 调控进化的系统图谱</h3>
+<ul>
+<li><strong>名称</strong>：Tissue-Resolved 3D Regulatory Evolution Map</li>
+<li><strong>来源局限/观察</strong>：本文提供了 305 个组织/细胞类型的调控进化图谱，但未涉及 3D 结构。3D 基因组具有高度组织特异性。</li>
+<li><strong>核心假设</strong>：人类谱系特异的 3D 结构变化具有组织特异性，且与组织特异性调控获得相关。</li>
+<li><strong>初步方法</strong>：整合多组织 Hi-C 数据与 AlphaGenome 预测；鉴定组织特异的 3D 调控变化。</li>
+<li><strong>验证方式</strong>：用组织特异性功能数据（如 eQTL、GWAS）验证。</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Abstract only</li>
+<li><strong>Assessment boundary</strong> Claims and evidence presented in the abstract; no methods, figures, tables, or supplementary materials were provided</li>
+<li><strong>Shared manuscript claim summary</strong> The authors use a deep-learning model, AlphaGenome, to predict cis-regulatory effects of ~17 million human-lineage-specific single-nucleotide substitutions across 305 tissues and cell types. They report 71,345 predicted cis-regulatory gains, mostly outside human accelerated regions, arising via new CRE creation or co-option of ancestrally accessible CREs. These gains are enriched for distal enhancers and tissue-relevant target gene functions. Genes linked to more gains show increased likelihood of human upregulation, and in silico ancestral reversion implicates specific substitutions creating transcription factor binding motifs. Comparison with archaic hominin genomes indicates most fixed gains predate the split from Neandertals and Denisovans, with a few modern-human-specific gains contributing substantially to upregulation.</li>
+<li><strong>Visible evidence base</strong> Abstract text only; no quantitative results, model validation metrics, statistical tests, or methodological details are available</li>
+<li><strong>Missing materials affecting confidence</strong> Full manuscript, methods section, all figures and tables, model architecture and training details, validation benchmarks, data sources for archaic hominin genomes, and any statistical analysis details</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li><strong>Overall assessment</strong> The abstract presents an ambitious and potentially impactful computational framework for mapping human-lineage cis-regulatory evolution. The central idea, using a deep-learning sequence-to-function model to predict regulatory effects of human-specific substitutions and linking these to tissue-specific expression evolution, is timely and of broad interest. However, the abstract alone provides insufficient evidence to evaluate the validity of the predictions, the robustness of the evolutionary inferences, or the strength of the claimed associations. Several claims, particularly regarding the functional consequences of predicted gains and the contribution of modern-human-specific changes, require substantially more supporting detail than is visible here. The work is potentially significant, but the case is not established from the supplied material.</li>
+<li><strong>Who would be interested in the results, and why</strong> Evolutionary biologists studying human-specific traits, regulatory genomics researchers, computational biologists working on deep-learning models for genomics, and anthropologists interested in the genetic basis of human evolution. The tissue-resolved map of cis-regulatory changes could serve as a resource for functional follow-up studies.</li>
+<li><strong>Major strengths</strong> The study addresses a long-standing challenge, identifying causal cis-regulatory substitutions along the human lineage, using a scalable deep-learning approach. The integration of predictions across a large number of tissues and cell types, and the comparison with archaic hominin genomes, adds evolutionary depth. The focus on tissue-specific biology and the link to gene upregulation provides a plausible path from sequence change to phenotypic consequence.</li>
+<li><strong>Major Concerns</strong></li>
+<li><strong>Concern ID</strong> R1-M1</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Technical soundness</li>
+<li><strong>Claim pointer</strong> The model AlphaGenome predicts cis-regulatory effects of ~17 million substitutions, and 71,345 predicted gains are reported.</li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided</li>
+<li><strong>Concern</strong> No information is provided about the model's architecture, training data, validation strategy, or predictive accuracy. Without benchmarks demonstrating that AlphaGenome accurately predicts regulatory activity, the reliability of the 71,345 predicted gains is unknown.</li>
+<li><strong>Why it matters</strong> The entire study rests on the validity of these predictions. If the model has high false-positive or false-negative rates, all downstream evolutionary and functional inferences would be compromised.</li>
+<li><strong>Resolution test</strong> Provide model validation against independent experimental data, such as massively parallel reporter assays or CRISPR perturbation data, with clear metrics for precision and recall at the relevant sequence and tissue resolutions.</li>
+<li><strong>Concern ID</strong> R1-M2</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Statistical rigor</li>
+<li><strong>Claim pointer</strong> Predicted gains are enriched for distal enhancers and for target gene functions characteristic of corresponding tissues, and genes linked to more gains are more likely to be upregulated in humans.</li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided</li>
+<li><strong>Concern</strong> The abstract reports enrichments and associations without any statistical measures, effect sizes, or correction for multiple testing across 305 tissues and cell types. The claim that gains contributed to tissue-specific biology requires demonstration that these enrichments exceed what would be expected by chance given the genomic background.</li>
+<li><strong>Why it matters</strong> Without proper statistical controls, the observed patterns could arise from biases in the model's predictions or from genomic features unrelated to human-specific evolution.</li>
+<li><strong>Resolution test</strong> Provide enrichment analyses with appropriate background models, multiple-testing corrections, and effect sizes. For the gene upregulation link, show the strength of the association and confirm it is not driven by a small subset of tissues or genes.</li>
+<li><strong>Concern ID</strong> R1-M3</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Interpretability of causal claims</li>
+<li><strong>Claim pointer</strong> In silico reversion to ancestral alleles traced upregulations to individual substitutions creating transcription factor binding motifs.</li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided</li>
+<li><strong>Concern</strong> The abstract states that reversion traced upregulations to specific substitutions, but it is unclear how many such cases were examined, what fraction showed the predicted effect, and whether the motif creation was validated experimentally or only inferred from sequence. The phrase "traced" implies a causal link that may not be supported by the model alone.</li>
+<li><strong>Why it matters</strong> This is the most direct evidence for causal substitutions driving human-specific expression changes. If the inference is purely computational, the claim of causality is premature.</li>
+<li><strong>Resolution test</strong> Report the number of reversion experiments, the concordance between predicted and observed expression changes, and any orthogonal validation such as electrophoretic mobility shift assays or reporter assays for a subset of substitutions.</li>
+<li><strong>Concern ID</strong> R1-M4</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Evolutionary interpretation</li>
+<li><strong>Claim pointer</strong> Nearly all gains now fixed in humans predate the split from archaic hominins, yet a few modern-human-specific gains contribute substantially to gene upregulation.</li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided</li>
+<li><strong>Concern</strong> The abstract does not specify how "nearly all" and "a few" are quantified, nor how the contribution to upregulation is measured. The comparison with Neandertal and Denisovan genomes requires assumptions about ancestral states and the completeness of archaic hominin sequence data that are not described.</li>
+<li><strong>Why it matters</strong> The evolutionary narrative depends on the timing and lineage-specificity of these gains. Without clear definitions and quantitative support, the interpretation is difficult to evaluate.</li>
+<li><strong>Resolution test</strong> Provide the exact numbers and proportions of gains shared with archaic hominins versus modern-human-specific, and define the metric used to assess contribution to upregulation. Clarify how missing data in archaic genomes were handled.</li>
+<li><strong>Minor Comments</strong></li>
+<li><strong>Concern ID</strong> R1-m1</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Clarity</li>
+<li><strong>Affected element</strong> Definition of "cis-regulatory gains"</li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided</li>
+<li><strong>Issue</strong> The term "gains" is used without a clear operational definition. It is unclear whether this refers to new enhancer activity, increased activity at existing elements, or a binary classification from the model.</li>
+<li><strong>Required correction</strong> Define "gain" explicitly in terms of the model's output and the threshold used to call a gain.</li>
+<li><strong>Concern ID</strong> R1-m2</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Reproducibility</li>
+<li><strong>Affected element</strong> Model availability</li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided</li>
+<li><strong>Issue</strong> The abstract does not state whether AlphaGenome is publicly available, which is essential for reproducibility and for the community to assess the predictions.</li>
+<li><strong>Required correction</strong> State the availability of the model and the predicted data, ideally with a link to a repository.</li>
+<li><strong>Concern ID</strong> R1-m3</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Scope of validation</li>
+<li><strong>Affected element</strong> Experimental validation</li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided</li>
+<li><strong>Issue</strong> The abstract mentions no experimental validation of any predicted gain. While this may be present in the full manuscript, its absence from the abstract weakens the immediate credibility of the predictions.</li>
+<li><strong>Required correction</strong> If any experimental validation exists, mention it in the abstract. If not, acknowledge this limitation explicitly.</li>
+<li><strong>Technical failings that need to be addressed before the case is established</strong> R1-M1, R1-M2, R1-M3. The model's predictive validity, the statistical support for enrichments and associations, and the causal interpretation of reversion experiments are all essential to the central claims and cannot be assessed from the abstract.</li>
+<li><strong>Assessment against Nature-style criteria</strong> Originality: High. The application of a deep-learning model to systematically predict human-lineage cis-regulatory changes across many tissues is a novel approach to a long-standing problem. Scientific importance: Potentially high, as a genome-wide map of regulatory changes could inform many aspects of human evolution. Interdisciplinary readership: Broad, spanning genomics, evolution, and computational biology. Technical soundness: Not assessable from the abstract; the lack of model validation and statistical detail is a major gap. Readability for nonspecialists: The abstract is generally clear, though terms like "co-option" and "cis-regulatory gains" may require some background. Overall, the work has strong potential but does not yet meet the evidentiary standard expected for a high-impact journal based on the supplied material.</li>
+<li><strong>Recommendation posture</strong> Currently not established from the provided evidence. The abstract presents a compelling framework, but the core claims require substantial additional detail on model validation, statistical rigor, and causal inference. I would be supportive if these technical concerns are resolved in the full manuscript.</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>The claim that AlphaGenome accurately predicts cis-regulatory effects is unsupported without model validation data.</li>
+<li>The claim that predicted gains contributed to tissue-specific biology is unsupported without statistical evidence for enrichment.</li>
+<li>The claim that in silico reversion traced upregulations to individual substitutions is unsupported without details on the number of cases and validation.</li>
+<li>The claim that a few modern-human-specific gains contribute substantially to upregulation is unsupported without quantitative definitions and metrics.</li>
+<li>The evolutionary timing of gains relative to the split from archaic hominins is not assessable without details on the comparison method and data handling.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

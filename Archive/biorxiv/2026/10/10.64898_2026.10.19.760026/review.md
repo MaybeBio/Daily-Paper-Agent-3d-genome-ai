@@ -1,0 +1,81 @@
+## Review setup
+- **Input scope** Abstract only
+- **Assessment boundary** Claims and evidence as presented in the abstract; no methods, figures, tables, or supplementary materials were provided
+- **Shared manuscript claim summary** The authors present Bolero, a sequence-to-function deep-learning model that conditions on cell-state embeddings and additional biological variables to predict cell-state-specific chromatin accessibility and transcript abundance from DNA. The model is trained on 10.7 million cells from 33 datasets across six mammals, and is claimed to match or exceed specialised models, extrapolate to unseen cell states, trace non-coding variant effects to cell types, predict activity-regulated chromatin changes without stimulation data, reconstruct regulatory grammar, and extend predictions to species excluded from training. The authors further report that predicted AP-1 responses are less conserved than chromatin accessibility across 84 mammals, driven by human-specific sequence variants.
+- **Visible evidence base** Abstract text only; no quantitative results, model architecture details, training/validation splits, benchmark comparisons, or statistical analyses are provided
+- **Missing materials affecting confidence** Full manuscript, methods section, all figures and tables, model code, training data descriptions, benchmark definitions, and any supplementary information
+
+## Reviewer
+- **Overall assessment** The abstract describes an ambitious and potentially impactful model that aims to unify sequence-based and cell-state-based regulatory prediction. The conceptual framing is strong, and the range of applications is broad. However, the abstract alone provides no quantitative evidence, no methodological detail, and no validation strategy. Several claims, particularly those involving extrapolation to unseen cell states and species, and the cross-mammal conservation analysis, require substantial technical support that is not visible here. The work is potentially significant, but the case is not established from the supplied material.
+- **Who would be interested in the results, and why** Researchers in regulatory genomics, computational biology, and single-cell biology would be interested. The model's ability to condition on cell-state embeddings and predict cell-type-specific regulatory outcomes from DNA could be useful for interpreting non-coding variants, understanding cell-state transitions, and performing comparative genomics. The claim of cross-species prediction without training on those species would be of particular interest to evolutionary and comparative genomicists.
+- **Major strengths** The conceptual integration of sequence-to-function modeling with cell-state embeddings is novel and addresses a clear gap in the field. The breadth of applications, from variant effect tracing to activity-regulated chromatin prediction to cross-species conservation, suggests a versatile framework. The use of a continuous conditioning axis (AP-1 activity score) to predict perturbation responses without stimulation data is an elegant idea.
+- **Major Concerns**
+  - **Concern ID** R1-M1
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** "Trained on 10.7 million cells from 33 datasets across six mammals, Bolero matched or exceeded specialised models"
+  - **Evidence pointer** location not provided
+  - **Concern** The abstract claims that Bolero matched or exceeded specialised models, but no benchmark details, comparison methods, or quantitative results are provided. It is unclear which specialised models were used, on which tasks, and with what metrics.
+  - **Why it matters** Without a clear and rigorous benchmark comparison, the claim of superiority or parity cannot be evaluated. The field has many existing models, and the added value of Bolero must be demonstrated against strong baselines.
+  - **Resolution test** Provide a detailed benchmark section with multiple tasks, multiple baseline models, and statistical significance testing. Show performance metrics (e.g., AUROC, correlation) with confidence intervals.
+  - **Concern ID** R1-M2
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** "Extrapolating cell-state embeddings extended Bolero's predictions to cell states that are absent from training"
+  - **Evidence pointer** location not provided
+  - **Concern** The claim of extrapolation to unseen cell states is strong and requires careful validation. It is not clear how extrapolation was performed, what cell states were held out, or how accuracy was assessed.
+  - **Why it matters** Extrapolation is a key differentiator of the model, but it is also a common failure mode in deep learning. If the extrapolation is not rigorously tested, the claim may be overstated.
+  - **Resolution test** Describe the held-out cell state selection, the extrapolation procedure, and provide quantitative comparisons of predicted versus measured accessibility/expression for those states.
+  - **Concern ID** R1-M3
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** "Bolero further predicted cell-type-specific chromatin accessibility and AP-1 responses in species excluded from training"
+  - **Evidence pointer** location not provided
+  - **Concern** Cross-species prediction is a major claim that requires careful control for sequence similarity and data leakage. The abstract does not specify which species were held out, how predictions were validated, or what the accuracy was.
+  - **Why it matters** If the model simply relies on sequence homology to training species, the claim of functional prediction would be less novel. The validation must demonstrate that predictions are accurate in truly held-out species.
+  - **Resolution test** Specify held-out species, provide validation data (e.g., ATAC-seq or RNA-seq from those species), and show quantitative agreement between predicted and measured signals.
+  - **Concern ID** R1-M4
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** "Across 84 mammals, we found that predicted AP-1 responses were less conserved than chromatin accessibility at cis-regulatory elements, driven by the human-specific sequence variants on AP-1 and cooperating motifs"
+  - **Evidence pointer** location not provided
+  - **Concern** This is a population-level comparative claim that requires a clear definition of conservation, a statistical framework, and a demonstration that the effect is specifically driven by human-specific variants. None of this is visible in the abstract.
+  - **Why it matters** The claim has evolutionary implications and could be a key finding, but without statistical rigor and variant-level analysis, it is not interpretable.
+  - **Resolution test** Provide a detailed description of the conservation metric, the multiple testing correction, and a variant-level analysis showing that human-specific variants on AP-1 and cooperating motifs are enriched in the observed effect.
+- **Minor Comments**
+  - **Concern ID** R1-m1
+  - **Severity** Minor
+  - **Axis** Readability for nonspecialists
+  - **Affected element** Abstract terminology
+  - **Evidence pointer** location not provided
+  - **Issue** The abstract uses terms like "cell-state embeddings" and "continuous conditioning axis" without brief explanation, which may be opaque to readers outside computational biology.
+  - **Required correction** Add a brief parenthetical explanation of these terms or rephrase to be more accessible.
+  - **Concern ID** R1-m2
+  - **Severity** Minor
+  - **Axis** Scientific importance
+  - **Affected element** Claim of "cooperative grammar"
+  - **Evidence pointer** location not provided
+  - **Issue** The phrase "reconstructed the cooperative grammar of motif identity and spacing" is vague. It is unclear what specific grammar rules were found and how they were validated.
+  - **Required correction** Specify the nature of the grammar (e.g., motif pairs, spacing preferences) and how it was validated against experimental data.
+  - **Concern ID** R1-m3
+  - **Severity** Minor
+  - **Axis** Technical soundness
+  - **Affected element** Training data description
+  - **Evidence pointer** location not provided
+  - **Issue** The abstract states "10.7 million cells from 33 datasets across six mammals" but does not specify the cell types, tissues, or assay types. This limits the interpretability of the model's scope.
+  - **Required correction** Provide a brief breakdown of the data composition, including assay types (e.g., ATAC-seq, RNA-seq) and major tissue or cell type categories.
+- **Technical failings that need to be addressed before the case is established** R1-M1, R1-M2, R1-M3, R1-M4
+- **Assessment against Nature-style criteria** Originality is high, as the integration of cell-state embeddings into sequence-to-function models is a novel direction. Scientific importance is potentially high, given the broad applicability to variant interpretation and comparative genomics. Interdisciplinary readership is plausible, as the work bridges genomics, machine learning, and evolutionary biology. Technical soundness cannot be assessed from the abstract alone, and the major concerns above indicate that the current evidence is insufficient. Readability for nonspecialists is moderate, with some jargon that could be clarified.
+- **Recommendation posture** Currently not established from the provided evidence. The conceptual framework is promising, and the work could be supportive if the technical concerns are resolved with detailed methods, rigorous benchmarks, and statistical validation.
+
+## Risk / unsupported claims
+- The claim that Bolero "matched or exceeded specialised models" is unsupported without benchmark details.
+- The claim of extrapolation to unseen cell states is unsupported without validation data.
+- The claim of cross-species prediction is unsupported without held-out species validation.
+- The claim that AP-1 responses are less conserved than chromatin accessibility across 84 mammals is unsupported without a defined conservation metric and statistical analysis.
+- The claim of reconstructing "cooperative grammar" is vague and unsupported without specific findings.
+- The claim that Bolero allows "genome sequences, either native or mutated, to be queried across cell states, perturbations, and different species" is a broad capability statement that is not testable from the abstract.

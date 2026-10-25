@@ -1,0 +1,24 @@
+{
+  "source": "arxiv",
+  "id": "2610.28853v1",
+  "title": "An autoencoder outperforms two transformers on prediction of gene expression from chromatin accessibility",
+  "authors": "Jesse G. Meyer",
+  "journal": "",
+  "published_date": "2026-10-20",
+  "window": {
+    "start": "2026-10-18",
+    "end": "2026-10-24"
+  },
+  "score": 4,
+  "one_liner_zh": "该文用自编码器与Transformer从染色质可及性预测基因表达，虽涉及染色质水平调控特征，但聚焦表达预测而非三维空间架构建模，且无AI/分子模拟方法对染色质组织建模的实质贡献。",
+  "abstract": "Models that predict RNA abundance from chromatin accessibility are rarely compared under the same features, targets and metrics. We built one benchmark on 126,604 paired single-nucleus profiles from 19 human studies with a shared vocabulary of 50,000 peaks and 3,185 genes, ten 5x2 cross-validation folds and one scoring target, and compared seven implemented pipelines and two reference predictors across 70 trained runs; each pipeline keeps its own input normalisation and native training target. The scButterfly-B pipeline, built on dual variational autoencoders, outperformed every transformer pipeline, including an autoregressive Perceiver model (Omic Translator) and a support-free reformulation of Cisformer, on per-gene and within-cell Spearman correlation in all sixty paired fold comparisons, with 3.8 times shorter training. Transformer pipelines come within 0.02-0.04 on within-cell profile shape but lag by 0.10-0.24 on per-gene correlation. On two withheld cell types per-gene correlation is low; controls show the podocyte values are typical of within-type correlation for seen cell types of the same size, whereas Paneth values match a cell-agnostic shuffle for every Omic Translator arm. Within the transformer family, prespecified ablations show the Perceiver encoder was worth +0.0439 in within-donor per-gene correlation over full self-attention, a chromosome-aware genomic attention prior reduced it by 0.0096 (exact donor-level sign-flip test, Holm-adjusted p = 1.2e-4), and decoder output order had no detectable effect. A training-mean profile reaches 0.314 within-cell correlation with no input and a constant at the true expressed-gene positions reaches 0.996 per-gene correlation, so oracle-support protocols are reported only as diagnostics. Code, results and an audited release are provided.",
+  "abstract_zh": "根据染色质可及性预测RNA丰度的模型很少在相同的特征、目标和指标下进行比较。我们基于来自19项人类研究的126,604个配对单核图谱构建了一个基准，使用共享的50,000个峰和3,185个基因词汇表、十个5x2交叉验证折和一个评分目标，并比较了七条已实现的流程和两个参考预测器，共进行70次训练运行；每条流程保留其自身的输入归一化和原生训练目标。基于双变分自编码器构建的scButterfly-B流程，在所有六十次配对折比较中，在每基因和细胞内Spearman相关性上均优于所有transformer流程，包括自回归Perceiver模型（Omic Translator）和Cisformer的无支持重表述，且训练时间缩短3.8倍。Transformer流程在细胞内谱形上接近0.02-0.04，但在每基因相关性上落后0.10-0.24。在两种保留细胞类型上，每基因相关性较低；对照显示，足细胞值对于相同大小的已见细胞类型而言属于典型的类型内相关性，而Paneth值则与每个Omic Translator臂的细胞无关洗牌相匹配。在transformer家族内部，预设消融显示，Perceiver编码器在供体内每基因相关性上比全自注意力高出+0.0439，染色体感知的基因组注意力先验将其降低0.0096（精确供体级符号翻转检验，Holm校正p = 1.2e-4），而解码器输出顺序无检测到的影响。训练均值谱在无输入情况下达到0.314的细胞内相关性，而真实表达基因位置上的常数达到0.996的每基因相关性，因此仅作为诊断报告oracle支持协议。提供了代码、结果和审计发布。",
+  "has_fulltext": true,
+  "fulltext_source": "ar5iv",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://arxiv.org/abs/2610.28853v1",
+  "source_url": "https://arxiv.org/abs/2610.28853v1",
+  "paper_page_path": "papers/arxiv/2610.28853v1/index.html"
+}

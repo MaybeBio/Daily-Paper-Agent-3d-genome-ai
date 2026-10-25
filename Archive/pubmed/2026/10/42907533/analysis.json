@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42907533",
+  "title": "Deep dynamical models of single-cell multiomic velocities predict loss-of-function and rescue perturbations in B cells.",
+  "authors": "Karbalayghareh, Alireza; Pelzer, Benedikt; Chin, Christopher R; Melnick, Ari; Barisic, Darko; Leslie, Christina S",
+  "journal": "Nature biotechnology",
+  "published_date": "2026-10-22",
+  "window": {
+    "start": "2026-10-18",
+    "end": "2026-10-24"
+  },
+  "score": 4,
+  "one_liner_zh": "该文用生成式神经ODE建模单细胞多组学中基因表达与TF基序活性的联合动态，并预测B细胞扰动与挽救，虽涉及CTCF等染色质调控因子，但核心是细胞状态动态与基因调控网络，而非染色质三维空间架构建模，方法可迁移性有限。",
+  "abstract": "Here we present DynaVelo, a generative neural ordinary differential equation model that learns the joint dynamics of gene expression and transcription factor (TF) motif activity from single-cell multiome data. DynaVelo learns a functional form of the vector field, such that the model can be perturbed in silico and not only used to draw trajectories. We show that DynaVelo recovers the bifurcating in vivo dynamics of wild-type murine germinal center (GC) B cells and reveals how these dynamics change under heterozygous loss of epigenetic regulators Arid1a and Ctcf. In silico perturbation yields dynamic and cell-state-specific gene regulatory networks (GRNs) that recover known TF-to-gene edges in the wild-type GC GRN and predicts those that are disrupted in mutants. Perturbing Arid1aHet GCs in silico identified Ctcf, Stat3 and Bcl6 as rescue targets for Arid1a loss. In vivo experiments in double-heterozygous mice confirmed rescue of the Arid1aHet dark-zone phenotype in all three cases, and multiome profiling of Arid1aHet;CtcfHet GCs validated the predicted shift toward wild-type dynamics.",
+  "abstract_zh": "在此，我们提出DynaVelo，一种生成性神经常微分方程模型，它从单细胞多组学数据中学习基因表达与转录因子（TF）基序活性的联合动态。DynaVelo学习向量场的函数形式，使得模型可以在计算机内进行扰动，并不仅用于绘制轨迹。我们展示了DynaVelo能够恢复野生型小鼠生发中心（GC）B细胞的分叉体内动态，并揭示这些动态在表观遗传调节因子Arid1a和Ctcf杂合缺失下如何变化。计算机内扰动产生了动态且细胞状态特异性的基因调控网络（GRNs），这些网络恢复了野生型GC GRN中已知的TF到基因的边，并预测了突变体中受干扰的边。对Arid1aHet GCs进行计算机内扰动，确定了Ctcf、Stat3和Bcl6作为Arid1a缺失的救援靶点。在双杂合小鼠中的体内实验证实了所有三种情况下Arid1aHet暗区表型的救援，并且对Arid1aHet;CtcfHet GCs的多组学分析验证了预测的向野生型动态的转变。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42907533/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42907533/",
+  "paper_page_path": "papers/pubmed/42907533/index.html"
+}

@@ -1,0 +1,201 @@
+{
+  "identity": {
+    "pmid": "42908637",
+    "doi": "10.3389/fmicb.2026.1958192",
+    "title": "Sequence-activity mapping and model-guided engineering of the phenol-responsive DmpR-Po sigma(54) promoter."
+  },
+  "content": {
+    "abstract": "Promoters are core cis-regulatory elements that determine gene expression levels and dynamic responses, and their quantitative engineering directly dictates the performance of synthetic biological systems such as whole-cell biosensors. However, the transcriptional output of complex inducible systems, exemplified by sigma(54)-dependent promoters, relies on long-range coordination among distal bacterial enhancer-binding proteins, DNA architectural proteins, and RNA polymerase. The combined effects of multiple regulatory regions on promoter output remain poorly understood, which limits the cross-background transfer of local sequence rules and hinders the accurate prediction and rational design of promoter activity. The phenol-responsive DmpR-Po promoter serves as both a classical model for investigating sigma(54)-dependent regulation and a high-value sensing element for environmental pollutant detection and high-throughput enzyme activity screening. Resolving sequence-activity relationships across its complete regulatory region therefore holds both mechanistic and practical significance. To overcome the barriers to rational engineering of complex promoters, we established a modular design-measure-model-guide-validate framework targeting the full DmpR-Po regulatory region. A library of 17,500 designed promoter sequences was constructed to systematically perturb the upstream activating sequence (UAS), the IHF2 region, combined UAS-IHF2 mutational backgrounds, and downstream regulatory architecture. Fluorescence-activated cell sorting coupled with sequencing yielded a high-quality sequence-activity map covering 11,940 variants. At the regional level, identical UAS and IHF2 haplotypes generally preserved their relative activity rankings across single-region and joint-variant backgrounds, and the main effects estimated independently for UAS and IHF2 could approximately predict the activity of combined variants. At the nucleotide level, however, the effects of individual substitutions were strongly constrained by the overall DNA architecture and full-sequence context. A deep learning model trained on the complete regulatory sequence captured these context-dependent relationships, achieved robust predictive performance on held-out sequences and a separately transformed and processed Batch 2 derived from the same preconstructed plasmid-library pool, and enabled model-guided prioritization of targeted local variants. Single-clone validation further showed that model-guided edits produced variable experimental outcomes, supporting candidate prioritization while indicating that individual engineering predictions require experimental validation. Collectively, this study characterizes the transferability and context-dependent constraints of regional sequence effects and establishes a data-driven framework for quantitative prediction and model-guided engineering of complex sigma(54)-dependent promoters.",
+    "keywords": [
+      "DeepSHAP",
+      "DmpR-Po",
+      "FACS-seq",
+      "in silico mutagenesis",
+      "machine learning",
+      "promoter engineering",
+      "sigma54 promoter"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Xu, Yuxi",
+        "Song, Mingxuan",
+        "Xing, Wenglong",
+        "Han, Jianying",
+        "Wu, Jiahao",
+        "Cheng, Yi",
+        "Liu, Jiayi",
+        "Wang, Linfeng",
+        "Zeng, Ji",
+        "Zhao, Yu",
+        "Guo, Jinquan",
+        "Cai, Shuting"
+      ],
+      "short_names": [
+        "Xu Y",
+        "Song M",
+        "Xing W",
+        "Han J",
+        "Wu J",
+        "Cheng Y",
+        "Liu J",
+        "Wang L",
+        "Zeng J",
+        "Zhao Y",
+        "Guo J",
+        "Cai S"
+      ],
+      "auids": [],
+      "affiliations": [
+        "School of Biomedical and Pharmaceutical Sciences, Guangdong University of Technology, Guangzhou, China.",
+        "School of Computer Science and Technology, Guangdong University of Technology, Guangzhou, China.",
+        "School of Biomedical and Pharmaceutical Sciences, Guangdong University of Technology, Guangzhou, China.",
+        "School of Biomedical and Pharmaceutical Sciences, Guangdong University of Technology, Guangzhou, China.",
+        "School of Biomedical and Pharmaceutical Sciences, Guangdong University of Technology, Guangzhou, China.",
+        "School of Biomedical and Pharmaceutical Sciences, Guangdong University of Technology, Guangzhou, China.",
+        "School of Biomedical and Pharmaceutical Sciences, Guangdong University of Technology, Guangzhou, China.",
+        "School of Biomedical and Pharmaceutical Sciences, Guangdong University of Technology, Guangzhou, China.",
+        "School of Biomedical and Pharmaceutical Sciences, Guangdong University of Technology, Guangzhou, China.",
+        "Guangdong Provincial Key Laboratory of Functional Soft Condensed Matter, School of Material and Energy, Guangdong University of Technology, Guangzhou, China.",
+        "Department of Breast and Thyroid Surgery, The Affiliated Panyu Central Hospital, Guangzhou Medical University, Guangzhou, China.",
+        "School of Integrated Circuits, Guangdong University of Technology, Guangzhou, China."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Xu, Yuxi",
+        "short_name": "Xu Y",
+        "identifiers": [],
+        "affiliations": [
+          "School of Biomedical and Pharmaceutical Sciences, Guangdong University of Technology, Guangzhou, China."
+        ]
+      },
+      {
+        "full_name": "Song, Mingxuan",
+        "short_name": "Song M",
+        "identifiers": [],
+        "affiliations": [
+          "School of Computer Science and Technology, Guangdong University of Technology, Guangzhou, China."
+        ]
+      },
+      {
+        "full_name": "Xing, Wenglong",
+        "short_name": "Xing W",
+        "identifiers": [],
+        "affiliations": [
+          "School of Biomedical and Pharmaceutical Sciences, Guangdong University of Technology, Guangzhou, China."
+        ]
+      },
+      {
+        "full_name": "Han, Jianying",
+        "short_name": "Han J",
+        "identifiers": [],
+        "affiliations": [
+          "School of Biomedical and Pharmaceutical Sciences, Guangdong University of Technology, Guangzhou, China."
+        ]
+      },
+      {
+        "full_name": "Wu, Jiahao",
+        "short_name": "Wu J",
+        "identifiers": [],
+        "affiliations": [
+          "School of Biomedical and Pharmaceutical Sciences, Guangdong University of Technology, Guangzhou, China."
+        ]
+      },
+      {
+        "full_name": "Cheng, Yi",
+        "short_name": "Cheng Y",
+        "identifiers": [],
+        "affiliations": [
+          "School of Biomedical and Pharmaceutical Sciences, Guangdong University of Technology, Guangzhou, China."
+        ]
+      },
+      {
+        "full_name": "Liu, Jiayi",
+        "short_name": "Liu J",
+        "identifiers": [],
+        "affiliations": [
+          "School of Biomedical and Pharmaceutical Sciences, Guangdong University of Technology, Guangzhou, China."
+        ]
+      },
+      {
+        "full_name": "Wang, Linfeng",
+        "short_name": "Wang L",
+        "identifiers": [],
+        "affiliations": [
+          "School of Biomedical and Pharmaceutical Sciences, Guangdong University of Technology, Guangzhou, China."
+        ]
+      },
+      {
+        "full_name": "Zeng, Ji",
+        "short_name": "Zeng J",
+        "identifiers": [],
+        "affiliations": [
+          "School of Biomedical and Pharmaceutical Sciences, Guangdong University of Technology, Guangzhou, China."
+        ]
+      },
+      {
+        "full_name": "Zhao, Yu",
+        "short_name": "Zhao Y",
+        "identifiers": [],
+        "affiliations": [
+          "Guangdong Provincial Key Laboratory of Functional Soft Condensed Matter, School of Material and Energy, Guangdong University of Technology, Guangzhou, China."
+        ]
+      },
+      {
+        "full_name": "Guo, Jinquan",
+        "short_name": "Guo J",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Breast and Thyroid Surgery, The Affiliated Panyu Central Hospital, Guangzhou Medical University, Guangzhou, China."
+        ]
+      },
+      {
+        "full_name": "Cai, Shuting",
+        "short_name": "Cai S",
+        "identifiers": [],
+        "affiliations": [
+          "School of Integrated Circuits, Guangdong University of Technology, Guangzhou, China."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Frontiers in microbiology"
+    ],
+    "journal_abbrev": [
+      "Front Microbiol"
+    ],
+    "pub_date": "2026",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/23 05:33",
+    "fetched_at": "2026-10-25 08:54:29"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42908637"
+    ],
+    "review": [
+      "42908637"
+    ],
+    "pmc": [
+      "13682980"
+    ],
+    "entrez": {},
+    "external": [],
+    "text_mined": []
+  }
+}

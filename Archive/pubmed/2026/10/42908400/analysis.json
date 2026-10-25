@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42908400",
+  "title": "Disentangling polymer confinement from specific-folding interactions reveals the drivers of Escherichia coli chromosome organization.",
+  "authors": "Delafrouz, Pourya; Nesterova, Tanya; Harris, Frances E; Farooq, Hammad; Du, Lin; Liu, Jian; Ma, Ao; Xiao, Jie; Liang, Jie",
+  "journal": "Nucleic acids research",
+  "published_date": "2026-10-23",
+  "window": {
+    "start": "2026-10-18",
+    "end": "2026-10-24"
+  },
+  "score": 8,
+  "one_liner_zh": "该文用聚合物模拟框架区分非特异性压缩与特异性折叠互作，揭示大肠杆菌染色体组织主要由少数SFI叠加于聚合物背景塑造，为细菌三维基因组架构建模提供可迁移的定量方法。",
+  "abstract": "The three-dimensional organization of the bacterial chromosome is critical for gene regulation. Chromosome conformation capture (Hi-C) has enabled genome-wide mapping of chromosomal folding, yet ensemble-averaged contact maps entangle biologically specific-folding interactions (SFIs) with nonspecific polymer compaction and mask single-cell heterogeneity. Here, we developed a polymer-based simulation framework in Escherichia coli to address these limitations. We found that a null model of 300 000 random polymer configurations recapitulated the global chromosomal organization observed in Hi-C data, establishing that most Hi-C signals reflect generic polymer behavior in a confined volume. Contrasting null-model predictions with experimental Hi-C data isolated a small subset of SFIs (<7%) and generated a specific-fold ensemble of 20 000 single-cell conformations that reproduced chromosomal interaction domains and single-cell heterogeneity. SFIs were enriched in the ter region, reduced nucleoid accessibility, colocalized with cryptic prophages, and depleted in positively supercoiled regions. H-NS and MatP emerged as major chromosome-wide and local determinants of SFIs, respectively. Furthermore, high-SFI regions correlated with stress-adaptive genes, whereas low-SFI regions harbored housekeeping genes. Together, our results established that a small number of biologically encoded SFIs superimposed on a polymer background shape the E. coli chromosome and gene expression, providing a quantitative framework for dissecting chromosome architecture and function.",
+  "abstract_zh": "细菌染色体的三维组织对基因调控至关重要。染色体构象捕获（Hi-C）技术已实现染色体折叠的全基因组图谱绘制，然而，集合平均接触图将生物学特异性折叠相互作用（SFIs）与无特异性聚合物压缩纠缠在一起，并掩盖了单细胞异质性。在此，我们开发了一种基于聚合物的模拟框架，在大肠杆菌中解决这些局限性。我们发现，一个包含300 000种随机聚合物构象的零模型重现了Hi-C数据中观察到的全局染色体组织，从而确立大多数Hi-C信号反映的是受限体积内通用聚合物行为。将零模型预测与实验Hi-C数据对比，分离出一小部分SFIs（<7%），并生成一个包含20 000种单细胞构象的特异性折叠集合，该集合重现了染色体相互作用域和单细胞异质性。SFIs在ter区域富集，降低了核仁可及性，与隐性前噬菌体共定位，并在正超螺旋区域中减少。H-NS和MatP分别成为染色体范围内和局部SFIs的主要决定因素。此外，高SFI区域与应激适应基因相关，而低SFI区域则包含持家基因。综合来看，我们的结果表明，少量生物编码的SFIs叠加在聚合物背景上，塑造了大肠杆菌染色体及基因表达，为解析染色体结构和功能提供了定量框架。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42908400/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42908400/",
+  "paper_page_path": "papers/pubmed/42908400/index.html"
+}

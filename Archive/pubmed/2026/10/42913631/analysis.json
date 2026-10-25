@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42913631",
+  "title": "HP1 can act independently of H3K9 methylation to promote heterochromatin focus formation, gene repression, and organogenesis.",
+  "authors": "Delaney, Colin E; Fol, Lisa; Gruenewald, Stefan B; You, Jia Emil; Ferrario, Eugenio; Moeckel, Martin M; Stelzl, Lukas; Gasser, Susan M; Padeken, Jan; Mango, Susan E",
+  "journal": "Molecular cell",
+  "published_date": "2026-10-23",
+  "window": {
+    "start": "2026-10-18",
+    "end": "2026-10-24"
+  },
+  "score": 6,
+  "one_liner_zh": "该文研究HP1/HPL-2与H3K9甲基转移酶MET-2在H3K9me非依赖途径中通过凝聚体形成介导异染色质焦点和基因沉默，涉及分子动力学模拟，但对象为异染色质焦点而非三维基因组高级结构建模，方法贡献有限。",
+  "abstract": "Histone post-translational modifications (PTMs) segregate genomes into heterochromatin and euchromatin by recruiting readers, such as Heterochromatin Protein 1, which binds methylation of histone H3 lysine 9 (H3K9me). Here, we report H3K9me-independent functions for the C. elegans HP1 orthologue HPL-2 and the H3K9 methyltransferase MET-2/SETDB1. The two colocalize in H3K9me-containing subnuclear foci independently of the PTM and each other. Their combined loss additively disrupts gene repression and organogenesis. A mutant HPL-2 deficient for H3K9me binding maintains localization to heterochromatin foci, restricts cell-fate decisions, and represses developmental genes, dependent on its multi-zinc-finger ligand, LIN-13. MET-2, catalytically active or not, requires its cofactor LIN-65 to form foci and silence genes in vivo. Molecular dynamics simulations and in vitro assays suggest that cofactor-driven condensate assemblies underlie H3K9me-independent focus formation in vivo, which correlates with gene silencing during organogenesis. This study defines two parallel, PTM-independent pathways through which a writer and reader can repress developmentally regulated genes.",
+  "abstract_zh": "组蛋白翻译后修饰（PTMs）通过招募阅读器（如异染色质蛋白1，其结合组蛋白H3赖氨酸9的甲基化（H3K9me））将基因组划分为异染色质和常染色质。在此，我们报道了秀丽隐杆线虫HP1同源物HPL-2和H3K9甲基转移酶MET-2/SETDB1不依赖于H3K9me的功能。两者在含有H3K9me的亚核灶中共定位，且此共定位不依赖于该修饰及彼此。它们的联合缺失以加性方式破坏基因抑制和器官发生。一个缺乏H3K9me结合能力的突变体HPL-2仍能维持其在异染色质灶中的定位，限制细胞命运决定，并抑制发育基因，这依赖于其多锌指配体LIN-13。MET-2，无论是否具有催化活性，都需要其辅因子LIN-65在体内形成灶并沉默基因。分子动力学模拟和体外实验表明，辅因子驱动的凝聚体组装是体内不依赖H3K9me的灶形成的基础，这与器官发生过程中的基因沉默相关。本研究定义了两条平行的、不依赖PTM的途径，通过这些途径，一个写入器和一个阅读器可以抑制发育调控基因。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42913631/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42913631/",
+  "paper_page_path": "papers/pubmed/42913631/index.html"
+}

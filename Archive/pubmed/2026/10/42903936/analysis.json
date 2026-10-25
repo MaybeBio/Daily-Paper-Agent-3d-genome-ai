@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42903936",
+  "title": "Berberine alleviates radiation-induced lung injury by promoting microbiota-derived inosine via the gut-lung axis.",
+  "authors": "Wang, Shuyuan; Huai, Siyuan; Yuan, Zhen; Ji, Tiannan; Xu, Yinmei; Ren, Yifan; Qian, Niansong; Sun, Shengjie; Li, Jianxiong",
+  "journal": "hLife",
+  "published_date": "2026-10-22",
+  "window": {
+    "start": "2026-10-18",
+    "end": "2026-10-24"
+  },
+  "score": 2,
+  "one_liner_zh": "该文研究小檗碱通过肠道菌群-肺轴减轻放射性肺损伤，涉及NAV3位点染色质可及性和组蛋白修饰，但对象为肺损伤而非三维基因组/染色质组织，且无AI或分子模拟建模方法，仅边缘相关。",
+  "abstract": "Radiation-induced lung injury (RILI) is a common complication of radiotherapy. Although berberine (BBR) has been suggested to be associated with reduced RILI incidence, the underlying mechanisms remain unknown. Here, we investigated whether the gut microbiota mediates the radioprotective effects of BBR using a C57BL/6 RILI mouse model with 20 Gy thoracic irradiation (n = 6 per group). BBR (100 mg/kg) and inosine (INO, 300 mg/kg) were administered orally in vivo. Antibiotic depletion and fecal microbiota transplantation were performed to assess microbiota dependence. Lung injury was assessed by histology, pulmonary function, and cytokine levels. Gut microbiota was analyzed by 16S rRNA sequencing, and metabolites were profiled using LC-MS/MS. Transcriptomic and epigenomic alterations were assessed by RNA sequencing, ATAC sequencing, and CUT&Tag analysis. Molecular docking and surface plasmon resonance were used to assess metabolite-protein interactions. We demonstrated that BBR alleviated RILI in a microbiota-dependent manner. BBR increased Akkermansia muciniphila abundance and metabolite INO levels. Mechanistically, INO was associated with reduced neuron navigator 3 (NAV3) expression, accompanied by decreased chromatin accessibility and increased histone H3 lysine 27 trimethylation (H3K27me3) at the NAV3 locus. Together, these findings reveal a gut microbiota-mediated mechanism underlying BBR-mediated protection against RILI, and suggest microbiota-informed biomarkers for risk stratification.",
+  "abstract_zh": "放射性肺损伤（RILI）是放射治疗中常见的并发症。尽管小檗碱（BBR）已被提示与降低RILI发生率相关，但其潜在机制仍不清楚。在此，我们利用C57BL/6 RILI小鼠模型（每组n = 6），通过20 Gy胸部照射，研究了肠道菌群是否介导BBR的辐射保护作用。BBR（100 mg/kg）和肌苷（INO，300 mg/kg）在体内经口服给药。通过抗生素清除和粪菌移植来评估菌群依赖性。肺损伤通过组织学、肺功能和细胞因子水平进行评估。肠道菌群通过16S rRNA测序分析，代谢物通过LC-MS/MS进行谱分析。转录组和表观基因组改变通过RNA测序、ATAC测序和CUT&Tag分析评估。分子对接和表面等离子体共振用于评估代谢物-蛋白质相互作用。我们证明BBR以菌群依赖性方式缓解RILI。BBR增加了嗜黏蛋白阿克曼菌（Akkermansia muciniphila）丰度和代谢物INO水平。机制上，INO与神经元导航器3（NAV3）表达降低相关，伴随NAV3位点染色质可及性降低和组蛋白H3赖氨酸27三甲基化（H3K27me3）增加。综合这些发现，揭示了BBR介导的RILI保护作用背后的肠道菌群介导机制，并提示基于菌群的生物标志物可用于风险分层。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42903936/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42903936/",
+  "paper_page_path": "papers/pubmed/42903936/index.html"
+}

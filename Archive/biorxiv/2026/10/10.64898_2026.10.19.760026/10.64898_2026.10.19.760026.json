@@ -1,0 +1,154 @@
+{
+  "source": "biorxiv",
+  "source_id": "10.64898/2026.10.19.760026",
+  "title": "Predicting cell-state-specific gene regulation from DNA across species",
+  "doi": "10.64898/2026.10.19.760026",
+  "abstract": "DNA encodes the cell's phenotype, but the same DNA sequence is interpreted differently in every cell type, developmental stage, and activity state. Existing deep-learning models solve only half of this puzzle: sequence-to-function models read DNA but treat cell state as a fixed label, while single-cell foundation models represent cell state but not sequence. We developed Bolero, a sequence-to-function model whose parameters condition on atlas-scale cell-state embeddings and additional biological variables to predict cell-state-specific chromatin accessibility and transcript abundance from DNA. Trained on 10.7 million cells from 33 datasets across six mammals, Bolero matched or exceeded specialised models and resolved regulatory differences between closely related cell states, including cortical regional and developmental gradients. Extrapolating cell-state embeddings extended Bolero's predictions to cell states that are absent from training. Cell-state conditioning facilitated tracing of the effects of non-coding variants to the cell types in which they act. Using an AP-1 activity score as a further continuous conditioning axis, Bolero predicted activity-regulated chromatin changes without requiring actual stimulation data. Across human cell types, we reconstructed the cooperative grammar of motif identity and spacing underlying predicted AP-1 responses. Bolero further predicted cell-type-specific chromatin accessibility and AP-1 responses in species excluded from training, extending comparative genomics from sequence conservation to predicted functional conservation. Across 84 mammals, we found that predicted AP-1 responses were less conserved than chromatin accessibility at cis-regulatory elements, driven by the human-specific sequence variants on AP-1 and cooperating motifs. By combining reference genomes with reference cell atlases, Bolero allowed genome sequences, either native or mutated, to be queried across cell states, perturbations, and different species for their chromatin and expression signatures.",
+  "authors": [
+    "Liu H",
+    "Mao S",
+    "Gallent T",
+    "Chen Y",
+    "Yan Z",
+    "Vogel I",
+    "Traunmuller L",
+    "Zhang R",
+    "Buenrostro JD",
+    "Zhou J",
+    "Greenberg ME"
+  ],
+  "published_date": "2026-10-20",
+  "updated_date": "",
+  "journal": "bioRxiv",
+  "category": "",
+  "landing_url": "https://www.biorxiv.org/content/10.64898/2026.10.19.760026",
+  "pdf_url": "https://www.biorxiv.org/content/10.64898/2026.10.19.760026.full.pdf",
+  "pdf_path": "",
+  "pdf_downloaded": false,
+  "query": "(\"3D genome\" OR \"three-dimensional genome\" OR \"genome organization\" OR \"genome architecture\" OR \"genome folding\" OR \"nuclear organization\" OR \"nuclear architecture\" OR \"chromatin organization\" OR \"chromatin architecture\" OR \"chromatin conformation\" OR \"chromatin topology\" OR \"chromatin structure\" OR \"chromatin loop\" OR \"chromatin interaction\" OR \"chromatin domain\" OR \"topologically associating domain\" OR \"A/B compartment\" OR \"chromosome conformation capture\" OR \"Hi-C\" OR HiChIP OR \"loop extrusion\" OR \"loop-extrusion\" OR CTCF OR cohesin OR \"cis-regulatory\" OR \"cis-regulatory element\" OR \"regulatory element\" OR \"regulatory genomics\" OR \"chromatin accessibility\" OR \"enhancer-promoter\" OR \"promoter-enhancer\") AND (\"deep learning\" OR \"machine learning\" OR \"neural network\" OR \"graph neural network\" OR \"convolutional neural network\" OR transformer OR \"language model\" OR \"foundation model\" OR \"diffusion model\" OR generative OR \"flow matching\" OR esmfold OR rosetta OR alphafold OR \"molecular dynamics\" OR simulation OR docking)",
+  "version": "",
+  "keywords": [],
+  "extra": {
+    "provider": "europepmc",
+    "epmc_id": "PPR1346432",
+    "raw_record": {
+      "id": "PPR1346432",
+      "source": "PPR",
+      "doi": "10.64898/2026.10.19.760026",
+      "title": "Predicting cell-state-specific gene regulation from DNA across species",
+      "authorString": "Liu H, Mao S, Gallent T, Chen Y, Yan Z, Vogel I, Traunmuller L, Zhang R, Buenrostro JD, Zhou J, Greenberg ME.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Liu H",
+            "lastName": "Liu",
+            "firstName": "Hanqing",
+            "initials": "H"
+          },
+          {
+            "fullName": "Mao S",
+            "lastName": "Mao",
+            "firstName": "Sheng",
+            "initials": "S"
+          },
+          {
+            "fullName": "Gallent T",
+            "lastName": "Gallent",
+            "firstName": "Tristan",
+            "initials": "T"
+          },
+          {
+            "fullName": "Chen Y",
+            "lastName": "Chen",
+            "firstName": "Yishuang",
+            "initials": "Y"
+          },
+          {
+            "fullName": "Yan Z",
+            "lastName": "Yan",
+            "firstName": "Zhiwen",
+            "initials": "Z"
+          },
+          {
+            "fullName": "Vogel I",
+            "lastName": "Vogel",
+            "firstName": "Ian",
+            "initials": "I"
+          },
+          {
+            "fullName": "Traunmuller L",
+            "lastName": "Traunmuller",
+            "firstName": "Lisa",
+            "initials": "L"
+          },
+          {
+            "fullName": "Zhang R",
+            "lastName": "Zhang",
+            "firstName": "Ruochi",
+            "initials": "R"
+          },
+          {
+            "fullName": "Buenrostro JD",
+            "lastName": "Buenrostro",
+            "firstName": "Jason",
+            "initials": "JD"
+          },
+          {
+            "fullName": "Zhou J",
+            "lastName": "Zhou",
+            "firstName": "Jingtian",
+            "initials": "J"
+          },
+          {
+            "fullName": "Greenberg ME",
+            "lastName": "Greenberg",
+            "firstName": "Michael",
+            "initials": "ME"
+          }
+        ]
+      },
+      "pubYear": "2026",
+      "abstractText": "DNA encodes the cell's phenotype, but the same DNA sequence is interpreted differently in every cell type, developmental stage, and activity state. Existing deep-learning models solve only half of this puzzle: sequence-to-function models read DNA but treat cell state as a fixed label, while single-cell foundation models represent cell state but not sequence. We developed Bolero, a sequence-to-function model whose parameters condition on atlas-scale cell-state embeddings and additional biological variables to predict cell-state-specific chromatin accessibility and transcript abundance from DNA. Trained on 10.7 million cells from 33 datasets across six mammals, Bolero matched or exceeded specialised models and resolved regulatory differences between closely related cell states, including cortical regional and developmental gradients. Extrapolating cell-state embeddings extended Bolero's predictions to cell states that are absent from training. Cell-state conditioning facilitated tracing of the effects of non-coding variants to the cell types in which they act. Using an AP-1 activity score as a further continuous conditioning axis, Bolero predicted activity-regulated chromatin changes without requiring actual stimulation data. Across human cell types, we reconstructed the cooperative grammar of motif identity and spacing underlying predicted AP-1 responses. Bolero further predicted cell-type-specific chromatin accessibility and AP-1 responses in species excluded from training, extending comparative genomics from sequence conservation to predicted functional conservation. Across 84 mammals, we found that predicted AP-1 responses were less conserved than chromatin accessibility at cis-regulatory elements, driven by the human-specific sequence variants on AP-1 and cooperating motifs. By combining reference genomes with reference cell atlases, Bolero allowed genome sequences, either native or mutated, to be queried across cell states, perturbations, and different species for their chromatin and expression signatures.",
+      "pubTypeList": {
+        "pubType": [
+          "Preprint"
+        ]
+      },
+      "bookOrReportDetails": {
+        "publisher": "bioRxiv",
+        "yearOfPublication": 2026
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Free",
+            "availabilityCode": "F",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.64898/2026.10.19.760026"
+          }
+        ]
+      },
+      "isOpenAccess": "N",
+      "inEPMC": "N",
+      "inPMC": "N",
+      "citedByCount": 0,
+      "hasReferences": "N",
+      "hasTextMinedTerms": "N",
+      "hasDbCrossReferences": "N",
+      "hasPDF": "N",
+      "hasBook": "N",
+      "hasSuppl": "N",
+      "hasLabsLinks": "N",
+      "hasData": "N",
+      "authMan": "N",
+      "epmcAuthMan": "N",
+      "nihAuthMan": "N",
+      "hasTMAccessionNumbers": "N",
+      "dateOfCreation": "2026-10-21",
+      "firstPublicationDate": "2026-10-20",
+      "firstIndexDate": "2026-10-21",
+      "hasEvaluations": "N"
+    }
+  }
+}

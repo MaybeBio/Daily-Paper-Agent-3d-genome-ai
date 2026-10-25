@@ -1,0 +1,715 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DeepD enables efficient genome modeling and controllable long-context sequence generation across domains of life · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-mid">5</span>
+    <div>
+      <h1>DeepD enables efficient genome modeling and controllable long-context sequence generation across domains of life</h1>
+      <div class="meta">Lai J; Xin B; Wang Z; Yu A; Chen Z; Guo Y; Zhang M; Hu B; Ye C; Chen J; Liu Q; Zhao H; Song W; Dong N; Yang F; Yang Q; Zhao H</div>
+      <div class="meta muted">
+        
+        <span class="journal">bioRxiv</span> <span class="preprint-badge">预印本</span>
+        · 2026-10-18
+         · 仅摘要
+         · <a href="https://www.biorxiv.org/content/10.64898/2026.10.13.758170">原文</a>
+      </div>
+      <p class="one-liner">DeepD是一个基于系统发育稀疏混合专家模型的基因组基础模型，支持百万级token上下文和可控长序列生成，虽非直接建模染色质三维结构，但其在顺式调控元件、远端调控序列和染色体级序列生成上的能力对三维基因组调控建模具有方法迁移启发。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">Genome foundation models hold great potential for advancing biological research, but modeling diverse complex genomes and generating controllable genome-scale sequences remain challenging. We present DeepD, a phylogeny-informed sparse mixture-of-experts model operating at single-nucleotide resolution over a 1-million-token context while reducing active computation. Pretrained on unselected whole-genome sequences across all domains of life, DeepD learns genic and intergenic sequence features and supports broad sequence-to-function prediction across species. DeepD performs well in human protein fitness and disease variants effect prediction, such as BRCA1 and BRCA2, with particular strength in regulatory regions, such as promoter and transcription-factor binding sites. Expert routing captures exon-intron boundaries, transposable elements, and distal cis-regulatory elements. DeepD also generates experimentally validated core promoters with specified transcriptional strengths. Finally, the Context-Anchor-Body strategy enables generation of complete yeast chromosome sequences and megabase-scale Arabidopsis segments, preserving gene structure and order while introducing variations within natural ranges. Together, DeepD is an efficient genome foundation model that unifies accurate sequence-to-function prediction with controllable genome-scale generation, advancing predictive and generative design of complex genomes.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">基因组基础模型在推动生物学研究方面具有巨大潜力，但建模多样化的复杂基因组并生成可控的基因组规模序列仍具挑战。我们提出了DeepD，一种基于系统发育信息的稀疏混合专家模型，在100万token上下文中以单核苷酸分辨率运行，同时减少主动计算量。DeepD在生命所有领域的未选择全基因组序列上预训练，学习基因和基因间序列特征，并支持跨物种的广泛序列到功能预测。DeepD在人类蛋白质适应性和疾病变异效应预测（如BRCA1和BRCA2）中表现良好，尤其在调控区域（如启动子和转录因子结合位点）方面具有突出优势。专家路由捕获外显子-内含子边界、转座元件和远端顺式调控元件。DeepD还能生成具有指定转录强度的实验验证核心启动子。最后，Context-Anchor-Body策略能够生成完整的酵母染色体序列和兆碱基规模的拟南芥片段，在自然范围内引入变异的同时保留基因结构和顺序。综上，DeepD是一种高效的基因组基础模型，统一了准确的序列到功能预测与可控的基因组规模生成，推进了复杂基因组的预测性和生成性设计。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：DeepD enables efficient genome modeling and controllable long-context sequence generation across domains of life</li>
+<li><strong>作者</strong>：Lai J; Xin B; Wang Z; Yu A; Chen Z; Guo Y; Zhang M; Hu B; Ye C; Chen J; Liu Q; Zhao H; Song W; Dong N; Yang F; Yang Q; Zhao H</li>
+<li><strong>单位</strong>：未提供</li>
+<li><strong>期刊/平台</strong>：bioRxiv（预印本）</li>
+<li><strong>年份</strong>：2026</li>
+<li><strong>论文类型</strong>：预印本（方法学 + 应用研究）</li>
+<li><strong>领域</strong>：基因组基础模型 / 长上下文序列建模 / 生成式基因组设计</li>
+<li><strong>关键词</strong>：genome foundation model, mixture-of-experts, long-context, single-nucleotide resolution, sequence-to-function, genome generation, regulatory elements</li>
+<li><strong>DOI/arXiv</strong>：10.64898/2026.10.13.758170</li>
+<li><strong>代码</strong>：未提供</li>
+<li><strong>数据</strong>：未提供（提及跨生命域全基因组序列预训练）</li>
+<li><strong>阅读日期</strong>：未提供</li>
+<li><strong>在课题方向中的位置</strong>：本文属于「三维基因组/染色质组织 × AI 方法」方向的相邻领域——基因组序列基础模型。其核心价值在于：(1) 单核苷酸分辨率 + 百万级 token 长上下文建模，为染色质组织预测提供序列侧基础模型；(2) 专家路由揭示的远端 cis-regulatory elements 与三维基因组中的 enhancer-promoter 互作直接相关；(3) Context-Anchor-Body 长序列生成策略可迁移至染色质构象的生成式建模。</li>
+</ul>
+<hr />
+<h2>02 一句话总结</h2>
+<p>DeepD 是一个系统发育感知的稀疏 mixture-of-experts 基因组基础模型，在单核苷酸分辨率和 1M token 上下文下预训练于跨生命域全基因组序列，通过专家路由捕获基因结构特征，并借助 Context-Anchor-Body 策略实现可控的兆碱基级基因组序列生成。</p>
+<hr />
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：现有基因组基础模型在建模复杂基因组（尤其是长程依赖、重复区域、调控元件）时面临上下文长度不足和计算成本过高的问题；同时，可控的基因组尺度序列生成尚未解决。</li>
+<li><strong>为什么重要</strong>：基因组序列包含从局部（单核苷酸变异）到全局（染色质组织、拓扑关联域）的多尺度信息。长上下文建模是连接序列与三维基因组结构的关键桥梁；可控生成则直接服务于合成基因组学和基因治疗设计。</li>
+<li><strong>现有方法为何不足</strong>：已有基因组基础模型（如 Nucleotide Transformer、DNABERT 等）上下文通常限制在数千碱基，无法捕获远端调控互作；全注意力机制在长序列上计算成本呈平方增长；生成任务多限于短片段或缺乏可控性。</li>
+<li><strong>精确研究问题</strong>：Can a phylogeny-informed sparse mixture-of-experts model operating at single-nucleotide resolution over a 1M-token context achieve both accurate sequence-to-function prediction and controllable genome-scale generation across domains of life?</li>
+</ul>
+<hr />
+<h2>04 背景与发展脉络</h2>
+<blockquote>
+<p>注：以下脉络基于本文框架及作者引述，标注「仅本文框架」处为未外部核验。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>代表方法</th>
+<th>优点</th>
+<th>局限</th>
+<th>本文位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第一代：k-mer/浅层模型</td>
+<td>k-mer frequency models, SVM</td>
+<td>计算快</td>
+<td>无法捕获长程依赖</td>
+<td>被超越</td>
+</tr>
+<tr>
+<td>第二代：CNN/早期Transformer</td>
+<td>DNABERT, Enformer</td>
+<td>捕获局部 motif 和中等范围调控</td>
+<td>上下文短（≤10kb），无法建模远端互作</td>
+<td>被超越</td>
+</tr>
+<tr>
+<td>第三代：长上下文基因组模型</td>
+<td>Nucleotide Transformer, Evo, GenSLM</td>
+<td>更长上下文，部分支持生成</td>
+<td>计算成本高；生成缺乏可控性；跨物种泛化有限</td>
+<td>被超越</td>
+</tr>
+<tr>
+<td>本文：DeepD</td>
+<td>稀疏 MoE + 1M token + 系统发育感知</td>
+<td>高效长上下文；跨域泛化；可控生成</td>
+<td>预印本，未充分验证</td>
+<td><strong>本文位置</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>该脉络为「仅本文框架」——作者在摘要中未系统回顾全部方法，以上为基于领域常识的整理。</p>
+</blockquote>
+<hr />
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>上下文长度不足</td>
+<td>无法捕获远端 cis-regulatory elements 与基因的互作</td>
+<td>全注意力机制在长序列上计算成本平方增长</td>
+<td>摘要提及「1-million-token context」为创新点</td>
+</tr>
+<tr>
+<td>计算成本高</td>
+<td>长序列建模需要大量算力</td>
+<td>密集注意力在长上下文下不可扩展</td>
+<td>摘要提及「reducing active computation」</td>
+</tr>
+<tr>
+<td>跨物种泛化差</td>
+<td>模型在特定物种上训练后难以迁移</td>
+<td>缺乏系统发育信息引导</td>
+<td>摘要提及「phylogeny-informed」设计</td>
+</tr>
+<tr>
+<td>生成缺乏可控性</td>
+<td>无法指定生成序列的功能属性</td>
+<td>现有生成模型缺乏条件控制机制</td>
+<td>摘要提及「controllable long-context sequence generation」</td>
+</tr>
+<tr>
+<td>基因结构保持困难</td>
+<td>生成序列丢失外显子-内含子结构或基因顺序</td>
+<td>长序列生成中缺乏结构锚定</td>
+<td>摘要提及「preserving gene structure and order」</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>06 核心思想</h2>
+<h3>1) 表面方法</h3>
+<p>DeepD 是一个稀疏 mixture-of-experts（MoE）Transformer，在单核苷酸分辨率下处理 1M token 上下文。预训练数据为跨生命域（细菌、古菌、真核）的全基因组序列。模型支持两类任务：(a) sequence-to-function 预测（如变异效应、蛋白适应度）；(b) 可控序列生成（如启动子生成、染色体尺度序列生成）。</p>
+<h3>2) 核心洞察</h3>
+<ul>
+<li><strong>系统发育感知的稀疏激活</strong>：MoE 的专家路由天然适合建模不同物种/谱系特异的序列模式——不同专家可专门化处理不同系统发育分支的基因组特征，从而在保持单模型统一性的同时实现跨域泛化。</li>
+<li><strong>长上下文是调控建模的关键</strong>：1M token 上下文使模型能够直接看到远端增强子-启动子互作、TAD 边界等三维基因组相关的序列特征，无需显式结构输入。</li>
+<li><strong>Context-Anchor-Body 生成策略</strong>：将长序列生成分解为「上下文（Context）→ 锚点（Anchor）→ 主体（Body）」三阶段，锚点用于固定基因顺序和结构，主体在锚点约束下生成变异，实现「结构保持 + 序列变异」的可控生成。</li>
+</ul>
+<h3>3) 可能的普适教训 [Analysis]</h3>
+<ul>
+<li>稀疏 MoE 是「长序列 + 跨域泛化」的高效架构选择——不是所有 token 都需要相同的计算资源。</li>
+<li>生成任务中，「结构锚定 + 局部变异」的策略比端到端自由生成更可控，这一思路可迁移至染色质构象生成。</li>
+<li>系统发育信息可作为先验注入模型架构（而非仅作为训练数据加权），提升跨物种迁移能力。</li>
+</ul>
+<hr />
+<h2>07 方法总览</h2>
+<ul>
+<li><strong>输入</strong>：单核苷酸分辨率的 DNA 序列（跨生命域全基因组）</li>
+<li><strong>输出</strong>：(a) 序列级功能预测（变异效应、适应度分数）；(b) 生成的序列（启动子、染色体片段）</li>
+<li><strong>核心模块</strong>：
+  1. Tokenizer：单核苷酸 tokenization（无 k-mer 信息损失）
+  2. 稀疏 MoE Transformer：专家路由 + 系统发育感知初始化
+  3. 预测头：sequence-to-function 任务专用
+  4. 生成头：Context-Anchor-Body 策略</li>
+<li><strong>训练</strong>：自监督预训练（masked language modeling 或类似目标，具体未提供）于跨生命域全基因组</li>
+<li><strong>工具/框架</strong>：未提供</li>
+<li><strong>假设</strong>：单核苷酸分辨率 + 长上下文足以捕获基因组功能的关键信号；稀疏激活不损失表达能力</li>
+</ul>
+<p><strong>文字流程</strong>：</p>
+<pre><code>全基因组序列 → 单核苷酸 tokenization → 稀疏 MoE Transformer（1M context）→ 
+  ├─ 预测路径：序列 → 功能预测头 → 变异效应/适应度分数
+  └─ 生成路径：Context（条件序列）→ Anchor（结构锚点）→ Body（主体生成）→ 完整序列
+</code></pre>
+<hr />
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>单核苷酸 tokenizer</td>
+<td>无信息损失的序列编码</td>
+<td>k-mer 会丢失单碱基变异信息</td>
+<td>输入：DNA 序列；输出：token 序列</td>
+<td>摘要提及「single-nucleotide resolution」</td>
+<td>预期：无法精确建模 SNP 效应 [预期效应]</td>
+</tr>
+<tr>
+<td>稀疏 MoE Transformer</td>
+<td>高效长上下文建模</td>
+<td>密集注意力在 1M context 下不可行</td>
+<td>输入：token 序列；输出：上下文表征</td>
+<td>摘要提及「reducing active computation」</td>
+<td>预期：计算成本显著上升，可能无法处理 1M context [预期效应]</td>
+</tr>
+<tr>
+<td>系统发育感知路由</td>
+<td>跨域泛化</td>
+<td>不同物种基因组特征差异大</td>
+<td>输入：token 表征；输出：专家分配</td>
+<td>摘要提及「phylogeny-informed」</td>
+<td>预期：跨物种迁移能力下降 [预期效应]</td>
+</tr>
+<tr>
+<td>预测头</td>
+<td>sequence-to-function</td>
+<td>变异效应预测需要任务专用输出</td>
+<td>输入：上下文表征；输出：功能分数</td>
+<td>摘要提及 BRCA1/BRCA2 预测</td>
+<td>未提供消融</td>
+</tr>
+<tr>
+<td>Context-Anchor-Body 生成</td>
+<td>可控长序列生成</td>
+<td>自由生成无法保持基因结构</td>
+<td>输入：条件序列 + 锚点；输出：完整序列</td>
+<td>摘要提及酵母染色体生成</td>
+<td>预期：生成序列结构完整性下降 [预期效应]</td>
+</tr>
+<tr>
+<td>专家路由的可解释性</td>
+<td>揭示序列特征</td>
+<td>理解模型学到的基因组结构</td>
+<td>输入：路由权重；输出：特征归因</td>
+<td>摘要提及「captures exon-intron boundaries」</td>
+<td>未提供消融</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>09 关键公式符号</h2>
+<blockquote>
+<p>本文为预印本摘要，未提供具体公式。以下为基于描述的合理推断，标注 [Analysis]。</p>
+</blockquote>
+<p><strong>不适用</strong>——摘要中未提供任何数学公式。模型架构细节（MoE 路由公式、损失函数、生成策略的形式化描述）均未在提供的材料中给出。</p>
+<hr />
+<h2>10 实验设计与证据链</h2>
+<h3>数据集/规模/指标/基线</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>预训练数据</td>
+<td>跨生命域全基因组序列（具体物种数、碱基数未提供）</td>
+</tr>
+<tr>
+<td>评估任务 1</td>
+<td>人类蛋白适应度预测（具体数据集未提供）</td>
+</tr>
+<tr>
+<td>评估任务 2</td>
+<td>疾病变异效应预测（BRCA1/BRCA2，具体数据集未提供）</td>
+</tr>
+<tr>
+<td>评估任务 3</td>
+<td>启动子生成 + 实验验证（「experimentally validated」）</td>
+</tr>
+<tr>
+<td>评估任务 4</td>
+<td>酵母染色体完整序列生成、拟南芥兆碱基片段生成</td>
+</tr>
+<tr>
+<td>基线</td>
+<td>未提供</td>
+</tr>
+<tr>
+<td>指标</td>
+<td>未提供（预测任务的具体指标如 AUC、Spearman ρ 等未给出）</td>
+</tr>
+<tr>
+<td>骨干/仪器</td>
+<td>未提供</td>
+</tr>
+<tr>
+<td>Oracle 输入</td>
+<td>未提供</td>
+</tr>
+</tbody>
+</table>
+<h3>实验列表</h3>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的 claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>人类蛋白适应度预测</td>
+<td>跨物种泛化到人类功能预测</td>
+<td>未提供基线</td>
+<td>「performs well」</td>
+<td>DeepD 可迁移到人类功能预测</td>
+<td>无法判断是否 SOTA</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>BRCA1/BRCA2 变异效应</td>
+<td>临床相关变异预测</td>
+<td>未提供基线</td>
+<td>「performs well」</td>
+<td>DeepD 捕获致病变异信号</td>
+<td>无法判断临床实用性</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>调控区预测</td>
+<td>启动子/TF 结合位点预测</td>
+<td>未提供基线</td>
+<td>「particular strength」</td>
+<td>DeepD 擅长调控区建模</td>
+<td>无法量化优势</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>专家路由分析</td>
+<td>捕获基因结构特征</td>
+<td>无对比</td>
+<td>路由捕获外显子-内含子边界、TE、远端 CRE</td>
+<td>模型学到有意义的基因组结构</td>
+<td>未与监督方法对比</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>启动子生成 + 实验验证</td>
+<td>可控生成功能性启动子</td>
+<td>未提供对比</td>
+<td>「experimentally validated」</td>
+<td>生成序列有功能</td>
+<td>未说明验证规模/效率</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>酵母染色体生成</td>
+<td>完整染色体级生成</td>
+<td>未提供对比</td>
+<td>成功生成</td>
+<td>Context-Anchor-Body 有效</td>
+<td>未评估生成序列的生物学功能</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>拟南芥兆碱基生成</td>
+<td>植物基因组尺度生成</td>
+<td>未提供对比</td>
+<td>成功生成</td>
+<td>方法可扩展至兆碱基</td>
+<td>未评估结构保真度</td>
+<td>摘要</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：本文结论限于「序列 → 功能预测」和「序列生成」两类任务，不涉及三维基因组结构预测或染色质构象建模。</li>
+<li><strong>Oracle/真值输入</strong>：未提供。预测任务的真值标签来源（如 ClinVar、深度突变扫描）未说明。</li>
+<li><strong>端到端状态</strong>：预印本阶段，未提供完整评估协议、消融实验或与基线方法的系统对比。</li>
+<li><strong>算力成本</strong>：未提供训练/推理成本数据。「reducing active computation」为定性描述，无量化指标。</li>
+<li><strong>历史数据依赖</strong>：预训练数据的具体构成（物种、版本、过滤标准）未提供，无法评估数据偏差。</li>
+<li><strong>模型依赖</strong>：MoE 路由的稀疏性可能引入对专家分配策略的敏感性，未提供鲁棒性分析。</li>
+<li><strong>最难情形</strong>：未讨论模型在极端 GC 含量、重复序列富集区域、或新物种（训练分布外）上的表现。</li>
+<li><strong>群体/领域边界</strong>：结论声称「across domains of life」，但验证任务集中于人类和模式植物/酵母，微生物领域的验证证据不足。</li>
+<li><strong>不确定性</strong>：所有性能描述均为定性（「performs well」「particular strength」），无置信区间或统计显著性报告。</li>
+</ul>
+<p><strong>有边界的复述</strong>：DeepD 在跨生命域基因组序列上预训练后，在人类蛋白适应度、BRCA1/BRCA2 变异效应预测以及启动子生成任务上表现良好，并能在保持基因结构的前提下生成酵母染色体和拟南芥兆碱基片段；但具体性能指标、与基线的对比、以及泛化边界在提供的材料中未量化。</p>
+<hr />
+<h2>12 作者自认局限</h2>
+<blockquote>
+<p>在提供的材料（摘要）中未发现作者明确承认的局限。</p>
+</blockquote>
+<p><strong>作者提及的相关约束</strong>（非正式局限）：
+- 摘要中「reducing active computation」暗示计算效率是设计考量，但未给出效率-性能权衡的讨论。
+- 「experimentally validated」仅针对启动子，未提及染色体级生成序列的实验验证，暗示生成序列的功能验证仍有限。</p>
+<hr />
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>「performs well」缺乏量化</td>
+<td>可能仅在特定数据集上表现良好，或与基线差距不大</td>
+<td>无法判断实际应用价值</td>
+<td>要求提供与 Nucleotide Transformer、Evo 等基线的系统对比</td>
+<td>摘要未提供任何数值</td>
+</tr>
+<tr>
+<td>跨生命域声称 vs 验证范围</td>
+<td>验证集中于人类、酵母、拟南芥，微生物域证据不足</td>
+<td>「across domains of life」可能过度声称</td>
+<td>检查是否包含细菌/古菌的下游验证任务</td>
+<td>摘要仅提及人类/酵母/拟南芥</td>
+</tr>
+<tr>
+<td>1M context 的实际收益未验证</td>
+<td>长上下文可能只在少数任务上有增益，大部分任务受益于局部上下文</td>
+<td>长上下文是核心卖点，需证明其必要性</td>
+<td>做上下文长度消融（1K vs 10K vs 100K vs 1M）</td>
+<td>摘要未提供消融</td>
+</tr>
+<tr>
+<td>专家路由「捕获」的因果性不明</td>
+<td>路由模式可能与结构特征相关，但不一定是因果解释</td>
+<td>影响对模型可解释性的信任</td>
+<td>检查路由是否在扰动序列后仍稳定</td>
+<td>摘要仅描述相关性</td>
+</tr>
+<tr>
+<td>Context-Anchor-Body 的「可控性」程度不明</td>
+<td>可能只能控制粗粒度结构，无法精确控制序列功能</td>
+<td>生成式设计的核心是精确控制</td>
+<td>测试不同锚点条件下的生成变异范围</td>
+<td>摘要未提供控制粒度分析</td>
+</tr>
+<tr>
+<td>稀疏 MoE 的专家退化风险</td>
+<td>部分专家可能未充分利用，或路由 collapse</td>
+<td>影响模型效率声称的可信度</td>
+<td>分析专家负载均衡度</td>
+<td>摘要未提供</td>
+</tr>
+<tr>
+<td>与三维基因组/染色质组织的关联未展开</td>
+<td>远端 CRE 捕获暗示与 3D 基因组相关，但未直接验证</td>
+<td>对本课题读者是重要连接点</td>
+<td>检查模型表征是否与 Hi-C 数据中的 TAD/loop 注释对齐</td>
+<td>摘要未提及</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>14 Agent 提炼的知识候选</h2>
+<blockquote>
+<p>面向「三维基因组/染色质组织 × AI/物理模拟」课题的可迁移知识：</p>
+</blockquote>
+<ol>
+<li><strong>稀疏 MoE 作为长上下文基因组模型的高效架构</strong>：可迁移至染色质序列建模——在 Hi-C 或 Micro-C 数据上，不同染色质状态（A/B compartment、TAD 内部/边界）可对应不同专家，实现状态感知的构象建模。</li>
+<li><strong>单核苷酸分辨率 + 1M context 的设计原则</strong>：对三维基因组预测任务，序列侧特征（CTCF motif、粘合蛋白结合位点）需要单碱基精度，而远端互作需要长上下文——DeepD 证明两者可兼得。</li>
+<li><strong>Context-Anchor-Body 生成策略</strong>：可迁移至染色质构象生成——以已知 TAD 边界或 loop anchor 为「锚点」，在锚点约束下生成可能的构象集合，实现「结构保持 + 构象变异」的可控生成。</li>
+<li><strong>系统发育感知的专家初始化</strong>：可迁移至跨物种三维基因组建模——不同物种的染色质组织规则不同（如 CTCF 在哺乳动物中主导、在植物中非必需），专家可对应不同物种的折叠规则。</li>
+<li><strong>专家路由作为可解释性工具</strong>：路由权重可揭示模型关注的基因组特征（外显子-内含子边界、TE、远端 CRE），类似方法可用于识别与 TAD 边界或 loop anchor 相关的序列模式。</li>
+<li><strong>远端 cis-regulatory elements 的序列捕获</strong>：DeepD 的专家路由捕获远端 CRE，暗示序列模型可提供 enhancer-promoter 互作的序列先验，可与 Hi-C 数据互补。</li>
+</ol>
+<hr />
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>Nucleotide Transformer (Dalla-Torre et al., 2023)</strong>：DNA 基础模型的早期代表，上下文较短（~500bp），DeepD 将其扩展到 1M context——对三维基因组建模意味着可直接输入整个 TAD 区域序列。</li>
+<li><strong>Evo (Brixi et al., 2024)</strong>：长上下文基因组模型，支持生成，但主要面向微生物基因组——DeepD 声称跨生命域，对植物/动物三维基因组研究更相关。</li>
+<li><strong>Enformer (Avsec et al., 2021)</strong>：序列 → 功能预测的强基线，但上下文限于 200kb——DeepD 的 1M context 可覆盖更大的调控域。</li>
+<li><strong>AlphaFold 类方法在染色质上的应用（如 C-fold）</strong>：物理模拟路线与 DeepD 的序列模型路线互补——DeepD 提供序列先验，物理模型提供折叠机制。</li>
+<li><strong>Hi-C 基础模型（如 HiCFormer, DeepHiC）</strong>：直接建模构象矩阵，但缺乏序列信息——DeepD 的序列表征可作为此类模型的输入特征。</li>
+<li><strong>候选方向 [Analysis]</strong>：DeepD 的「系统发育感知」设计可类比于三维基因组中的「物种感知」建模——不同物种的 TAD 强度、loop 密度差异显著，统一模型需显式编码物种先验。</li>
+</ul>
+<hr />
+<h2>16 Agent 生成的研究候选</h2>
+<h3>候选 1：DeepD-3D——将 DeepD 表征注入 Hi-C 预测模型</h3>
+<ul>
+<li><strong>名称</strong>：Sequence-informed chromatin conformation prediction via DeepD embeddings</li>
+<li><strong>来源局限/观察</strong>：DeepD 捕获远端 CRE 和基因结构，但未与三维构象数据直接关联；现有 Hi-C 预测模型多使用局部序列特征</li>
+<li><strong>核心假设</strong>：DeepD 的 1M context 表征包含增强子-启动子互作的序列先验，可提升 Hi-C 互作预测的准确性，尤其是远端互作</li>
+<li><strong>相对本文的增量</strong>：将 DeepD 从序列模型扩展为「序列 → 构象」的桥接模型</li>
+<li><strong>初步方法</strong>：提取 DeepD 在 TAD 区域上的表征，与 Hi-C 矩阵做对比学习或作为 HiCFormer 类模型的额外输入特征</li>
+<li><strong>验证方式</strong>：在 GM12878、K562 等标准 Hi-C 数据集上比较加入/不加入 DeepD 表征的互作预测 AUC</li>
+<li><strong>可能的失败模式</strong>：DeepD 表征可能主要编码序列功能而非空间邻近性，与 Hi-C 信号无直接对应</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul>
+<h3>候选 2：Anchor-conditioned 染色质构象生成</h3>
+<ul>
+<li><strong>名称</strong>：Context-Anchor-Body for 3D genome conformation generation</li>
+<li><strong>来源局限/观察</strong>：DeepD 的 Context-Anchor-Body 策略在序列生成中有效；三维基因组中 loop anchor（CTCF 位点）是已知的结构锚点</li>
+<li><strong>核心假设</strong>：以 loop anchor 为条件生成构象，可在保持 TAD 结构的同时探索内部构象变异</li>
+<li><strong>相对本文的增量</strong>：将序列生成策略迁移至构象空间</li>
+<li><strong>初步方法</strong>：在变分自编码器或扩散模型框架中，以 anchor 位置为条件变量，生成 Hi-C 矩阵或 3D 坐标</li>
+<li><strong>验证方式</strong>：生成构象的 TAD 边界保持率、loop 重现率、以及 ensemble 多样性指标</li>
+<li><strong>可能的失败模式</strong>：构象空间远复杂于序列空间，anchor 条件可能不足以约束全局折叠</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul>
+<h3>候选 3：系统发育感知的跨物种染色质状态建模</h3>
+<ul>
+<li><strong>名称</strong>：Phylogeny-aware expert routing for cross-species chromatin state prediction</li>
+<li><strong>来源局限/观察</strong>：DeepD 的系统发育感知 MoE 在序列上有效；不同物种的染色质组织规则差异大（CTCF 依赖 vs 非依赖）</li>
+<li><strong>核心假设</strong>：将 DeepD 的 MoE 架构迁移至染色质状态预测，不同专家可对应不同物种的染色质折叠规则</li>
+<li><strong>相对本文的增量</strong>：从序列特征迁移至染色质状态特征</li>
+<li><strong>初步方法</strong>：在染色质状态（如 chromHMM）预测任务上，以物种系统发育关系初始化专家路由</li>
+<li><strong>验证方式</strong>：跨物种染色质状态预测的准确率，特别是低资源物种的迁移学习效果</li>
+<li><strong>可能的失败模式</strong>：染色质状态注释在不同物种间不可比，标签异质性可能阻碍专家分化</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul>
+<h3>候选 4：DeepD 表征与 3D 基因组的对齐分析</h3>
+<ul>
+<li><strong>名称</strong>：Alignment of DeepD latent representations with 3D genome architecture</li>
+<li><strong>来源局限/观察</strong>：DeepD 的专家路由捕获远端 CRE，但未验证这些 CRE 是否在 3D 空间中与目标基因共定位</li>
+<li><strong>核心假设</strong>：DeepD 隐式编码的远端互作信息与 Hi-C 测得的空间邻近性存在可检测的对齐</li>
+<li><strong>相对本文的增量</strong>：提供序列模型与 3D 基因组之间的可解释性桥梁</li>
+<li><strong>初步方法</strong>：对 DeepD 的注意力/路由权重与 Hi-C 互作矩阵做相关性分析，特别关注 TAD 边界和 loop anchor 处的对齐</li>
+<li><strong>验证方式</strong>：Spearman 相关、互信息、以及置换检验</li>
+<li><strong>可能的失败模式</strong>：序列模型可能编码「线性基因组上的调控关系」而非「3D 空间邻近性」，两者不一定对齐</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul>
+<h3>候选 5：长上下文序列模型与物理模拟的混合框架</h3>
+<ul>
+<li><strong>名称</strong>：Hybrid sequence-model + polymer-physics framework for chromatin folding</li>
+<li><strong>来源局限/观察</strong>：DeepD 提供序列先验但无物理机制；聚合物模型（如 C-fold、MILK）提供机制但缺乏序列信息</li>
+<li><strong>核心假设</strong>：将 DeepD 的序列表征作为聚合物模拟的能量项或初始条件，可提升折叠预测的准确性</li>
+<li><strong>相对本文的增量</strong>：统一序列基础模型与物理模拟两条路线</li>
+<li><strong>初步方法</strong>：在聚合物模拟中，将 DeepD 预测的调控互作作为吸引势能项，模拟染色质折叠</li>
+<li><strong>验证方式</strong>：模拟生成的 Hi-C 与实验 Hi-C 的相似度（如 Pearson 相关、Jaccard 指数）</li>
+<li><strong>可能的失败模式</strong>：序列先验与物理模型的耦合方式难以确定，可能引入系统性偏差</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Abstract only</li>
+<li><strong>Assessment boundary</strong> Claims and evidence as presented in the supplied abstract; no figures, tables, methods, or supplementary materials were provided</li>
+<li><strong>Shared manuscript claim summary</strong> The authors present DeepD, a phylogeny-informed sparse mixture-of-experts genome foundation model operating at single-nucleotide resolution over a 1-million-token context. The model is pretrained on unselected whole-genome sequences across all domains of life, supports sequence-to-function prediction across species, demonstrates performance in human protein fitness and disease variant effect prediction, shows particular strength in regulatory regions, routes experts to capture exon-intron boundaries, transposable elements, and distal cis-regulatory elements, generates experimentally validated core promoters with specified transcriptional strengths, and enables generation of complete yeast chromosome sequences and megabase-scale Arabidopsis segments via a Context-Anchor-Body strategy.</li>
+<li><strong>Visible evidence base</strong> Abstract text only. No quantitative results, benchmark comparisons, experimental validation details, model architecture specifications, or data descriptions are provided.</li>
+<li><strong>Missing materials affecting confidence</strong> Full manuscript, all figures and tables, methods section, supplementary information, benchmark definitions, experimental validation protocols, and model implementation details. The absence of these materials severely limits the ability to assess the validity of the claims.</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li><strong>Overall assessment</strong> The abstract presents an ambitious and potentially impactful genome foundation model with a broad scope spanning prediction and generation across domains of life. The conceptual contributions, particularly the phylogeny-informed sparse mixture-of-experts design and the Context-Anchor-Body generation strategy, are interesting and could appeal to a wide audience. However, the abstract provides almost no quantitative evidence, no clear benchmark comparisons, and no methodological detail. The claims are broad and strong, but the visible evidence base is insufficient to establish them. The manuscript may have merit, but the case is not established from the supplied material.</li>
+<li><strong>Who would be interested in the results, and why</strong> Computational biologists and bioinformaticians working on genome foundation models, sequence-to-function prediction, and generative models for genomics would be the primary audience. Researchers studying regulatory genomics, variant effect prediction, and synthetic genomics would also find the results relevant. The cross-domain scope and the generation capabilities could attract researchers interested in genome design and synthetic biology.</li>
+<li><strong>Major strengths</strong> The conceptual framing is strong, combining phylogeny-informed architecture with sparse mixture-of-experts and single-nucleotide resolution over a long context. The breadth of applications, from variant effect prediction to genome-scale generation, is ambitious and potentially valuable. The Context-Anchor-Body strategy for controllable generation is a novel contribution that could address a real gap in the field.</li>
+<li><strong>Major Concerns</strong> The abstract lacks quantitative results, benchmark comparisons, and methodological detail. The claims are broad and strong, but the evidence base is essentially absent. The relationship between the model's design choices and the claimed performance is not explained. The experimental validation of generated promoters is mentioned but not described. The scope of the evaluation across domains of life is not specified.</li>
+<li><strong>Minor Comments</strong> The abstract is dense and could benefit from clearer organization. Some terms, such as "phylogeny-informed" and "Context-Anchor-Body strategy," are introduced without explanation. The claim of "efficient" is not supported by any computational cost comparison.</li>
+<li><strong>Technical failings that need to be addressed before the case is established</strong> R1-M1, R1-M2, R1-M3, R1-M4, R1-M5</li>
+<li><strong>Assessment against Nature-style criteria</strong> Originality: The combination of phylogeny-informed sparse mixture-of-experts with single-nucleotide resolution and long-context generation appears novel, but the abstract does not clearly differentiate DeepD from existing genome foundation models. Scientific importance: The potential to unify prediction and generation across domains of life is scientifically important, but the evidence provided is insufficient to assess whether this potential is realized. Interdisciplinary readership: The work could appeal to computational and experimental biologists, but the abstract assumes significant background knowledge and does not make the case accessible to nonspecialists. Technical soundness: Cannot be assessed from the abstract alone; no quantitative results or methodological details are provided. Readability for nonspecialists: The abstract is technical and dense, with several terms and concepts introduced without sufficient context for a general scientific audience.</li>
+<li><strong>Recommendation posture</strong> Currently not established from the provided evidence. The conceptual contributions are interesting, but the abstract does not provide sufficient quantitative or methodological support for the claims. A full manuscript with detailed results, benchmarks, and methods would be required to assess the validity of the claims.</li>
+</ul>
+<h3>Major Concerns</h3>
+<ul>
+<li><strong>Concern ID</strong> R1-M1</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Evidence sufficiency</li>
+<li><strong>Claim pointer</strong> "DeepD performs well in human protein fitness and disease variants effect prediction, such as BRCA1 and BRCA2, with particular strength in regulatory regions, such as promoter and transcription-factor binding sites."</li>
+<li><strong>Evidence pointer</strong> Abstract only; location not provided</li>
+<li><strong>Concern</strong> The claim of strong performance in variant effect prediction is made without any quantitative results, benchmark comparisons, or baseline references. No metrics, datasets, or evaluation protocols are described.</li>
+<li><strong>Why it matters</strong> Variant effect prediction is a crowded field with established benchmarks and baselines. Without quantitative comparisons, the claim of strong performance cannot be evaluated or contextualized.</li>
+<li>
+<p><strong>Resolution test</strong> Provide performance metrics on established benchmarks, such as ClinVar or DeepSEA, with comparisons to existing models and statistical significance tests.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M2</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Evidence sufficiency</li>
+<li><strong>Claim pointer</strong> "Expert routing captures exon-intron boundaries, transposable elements, and distal cis-regulatory elements."</li>
+<li><strong>Evidence pointer</strong> Abstract only; location not provided</li>
+<li><strong>Concern</strong> The claim that expert routing captures specific genomic features is made without any supporting analysis. No visualization, quantification, or comparison to alternative architectures is provided.</li>
+<li><strong>Why it matters</strong> This claim is central to the model's interpretability and to the value of the sparse mixture-of-experts design. Without evidence, it is unclear whether the routing behavior is meaningful or coincidental.</li>
+<li>
+<p><strong>Resolution test</strong> Provide analyses showing that specific experts consistently activate at these genomic features, with quantitative measures of specificity and comparison to random or alternative routing.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M3</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Evidence sufficiency</li>
+<li><strong>Claim pointer</strong> "DeepD also generates experimentally validated core promoters with specified transcriptional strengths."</li>
+<li><strong>Evidence pointer</strong> Abstract only; location not provided</li>
+<li><strong>Concern</strong> The claim of experimental validation is made without any description of the experimental system, the number of promoters tested, the success rate, or the quantitative agreement between predicted and measured transcriptional strengths.</li>
+<li><strong>Why it matters</strong> Experimental validation is a strong claim that requires detailed evidence. Without specifics, the validity and generalizability of the result cannot be assessed.</li>
+<li>
+<p><strong>Resolution Test</strong> Provide details of the experimental setup, the number of promoters tested, the correlation between predicted and measured strengths, and appropriate controls.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M4</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Evidence sufficiency</li>
+<li><strong>Claim pointer</strong> "The Context-Anchor-Body strategy enables generation of complete yeast chromosome sequences and megabase-scale Arabidopsis segments, preserving gene structure and order while introducing variations within natural ranges."</li>
+<li><strong>Evidence pointer</strong> Abstract only; location not provided</li>
+<li><strong>Concern</strong> The claim of generating complete chromosome sequences and megabase-scale segments is made without any description of the evaluation criteria, the accuracy of gene structure preservation, the nature of the introduced variations, or comparisons to existing generation methods.</li>
+<li><strong>Why it matters</strong> Genome-scale generation is a challenging task, and the claims are strong. Without detailed evaluation, it is unclear whether the generated sequences are biologically meaningful or merely statistically plausible.</li>
+<li>
+<p><strong>Resolution test</strong> Provide quantitative evaluations of generated sequences, including gene structure accuracy, sequence similarity to natural genomes, and comparisons to existing generative models.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M5</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Evidence sufficiency</li>
+<li><strong>Claim pointer</strong> "Pretrained on unselected whole-genome sequences across all domains of life, DeepD learns genic and intergenic sequence features and supports broad sequence-to-function prediction across species."</li>
+<li><strong>Evidence pointer</strong> Abstract only; location not provided</li>
+<li><strong>Concern</strong> The claim of broad cross-species prediction is made without any description of the species covered, the prediction tasks evaluated, or the performance achieved. The scope of "all domains of life" is not specified.</li>
+<li><strong>Why it matters</strong> Cross-species generalization is a key claim for a foundation model. Without details on the evaluation, it is unclear whether the model generalizes or simply memorizes training data.</li>
+<li><strong>Resolution test</strong> Provide details on the species and tasks used for evaluation, with performance metrics and comparisons to species-specific models.</li>
+</ul>
+<h3>Minor Comments</h3>
+<ul>
+<li><strong>Concern ID</strong> R1-m1</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Clarity</li>
+<li><strong>Affected element</strong> Abstract terminology</li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided</li>
+<li><strong>Issue</strong> The term "phylogeny-informed" is used without explanation of how phylogeny informs the model architecture or training.</li>
+<li>
+<p><strong>Required correction</strong> Clarify the role of phylogeny in the model design, or remove the term if it is not central.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m2</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Clarity</li>
+<li><strong>Affected element</strong> Abstract terminology</li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided</li>
+<li><strong>Issue</strong> The "Context-Anchor-Body strategy" is introduced without any description of what the three components represent or how they function.</li>
+<li>
+<p><strong>Required correction</strong> Provide a brief explanation of the strategy in the abstract, or refer to a figure or methods section.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m3</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Quantitative support</li>
+<li><strong>Affected element</strong> Efficiency claim</li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided</li>
+<li><strong>Issue</strong> The claim of "reducing active computation" is made without any quantitative comparison to other models or baselines.</li>
+<li>
+<p><strong>Required correction</strong> Provide a quantitative measure of computational efficiency, such as FLOPs or inference time, compared to relevant baselines.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m4</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Scope clarity</li>
+<li><strong>Affected element</strong> Evaluation scope</li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided</li>
+<li><strong>Issue</strong> The abstract mentions "broad sequence-to-function prediction across species" but does not specify which species or tasks are included.</li>
+<li><strong>Required correction</strong> List the species and tasks evaluated, or refer to a table or figure.</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>The claim of strong performance in variant effect prediction is unsupported by any quantitative evidence.</li>
+<li>The claim that expert routing captures specific genomic features is unsupported by any analysis.</li>
+<li>The claim of experimentally validated promoter generation is unsupported by any experimental details.</li>
+<li>The claim of generating complete yeast chromosomes and megabase-scale Arabidopsis segments is unsupported by any evaluation criteria or results.</li>
+<li>The claim of broad cross-species prediction is unsupported by any species or task descriptions.</li>
+<li>The claim of computational efficiency is unsupported by any quantitative comparison.</li>
+<li>The overall claim that DeepD "unifies accurate sequence-to-function prediction with controllable genome-scale generation" is not assessable from the abstract alone.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

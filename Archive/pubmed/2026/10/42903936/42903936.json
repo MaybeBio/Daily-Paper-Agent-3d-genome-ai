@@ -1,0 +1,182 @@
+{
+  "identity": {
+    "pmid": "42903936",
+    "doi": "10.1016/j.hlife.2025.12.006",
+    "title": "Berberine alleviates radiation-induced lung injury by promoting microbiota-derived inosine via the gut-lung axis."
+  },
+  "content": {
+    "abstract": "Radiation-induced lung injury (RILI) is a common complication of radiotherapy. Although berberine (BBR) has been suggested to be associated with reduced RILI incidence, the underlying mechanisms remain unknown. Here, we investigated whether the gut microbiota mediates the radioprotective effects of BBR using a C57BL/6 RILI mouse model with 20 Gy thoracic irradiation (n = 6 per group). BBR (100 mg/kg) and inosine (INO, 300 mg/kg) were administered orally in vivo. Antibiotic depletion and fecal microbiota transplantation were performed to assess microbiota dependence. Lung injury was assessed by histology, pulmonary function, and cytokine levels. Gut microbiota was analyzed by 16S rRNA sequencing, and metabolites were profiled using LC-MS/MS. Transcriptomic and epigenomic alterations were assessed by RNA sequencing, ATAC sequencing, and CUT&Tag analysis. Molecular docking and surface plasmon resonance were used to assess metabolite-protein interactions. We demonstrated that BBR alleviated RILI in a microbiota-dependent manner. BBR increased Akkermansia muciniphila abundance and metabolite INO levels. Mechanistically, INO was associated with reduced neuron navigator 3 (NAV3) expression, accompanied by decreased chromatin accessibility and increased histone H3 lysine 27 trimethylation (H3K27me3) at the NAV3 locus. Together, these findings reveal a gut microbiota-mediated mechanism underlying BBR-mediated protection against RILI, and suggest microbiota-informed biomarkers for risk stratification.",
+    "keywords": [
+      "berberine",
+      "epigenetic modification",
+      "gut microbiota",
+      "gut-lung axis",
+      "radiation-induced lung injury"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Wang, Shuyuan",
+        "Huai, Siyuan",
+        "Yuan, Zhen",
+        "Ji, Tiannan",
+        "Xu, Yinmei",
+        "Ren, Yifan",
+        "Qian, Niansong",
+        "Sun, Shengjie",
+        "Li, Jianxiong"
+      ],
+      "short_names": [
+        "Wang S",
+        "Huai S",
+        "Yuan Z",
+        "Ji T",
+        "Xu Y",
+        "Ren Y",
+        "Qian N",
+        "Sun S",
+        "Li J"
+      ],
+      "auids": [],
+      "affiliations": [
+        "Department of Radiotherapy, Senior Department of Oncology, The Fifth Medical Center of PLA General Hospital, Beijing, China.",
+        "Division of Medicine, University College London, London, UK.",
+        "School of Medicine, Nankai University, Tianjin, China.",
+        "Department of Radiotherapy, Senior Department of Oncology, The Fifth Medical Center of PLA General Hospital, Beijing, China.",
+        "School of Medicine, Nankai University, Tianjin, China.",
+        "Centre for Human Genetics, University of Oxford, Oxfordshire, UK.",
+        "Department of Emergency, The Fifth Medical Center of PLA General Hospital, Beijing, China.",
+        "Department of Radiotherapy, Senior Department of Oncology, The Fifth Medical Center of PLA General Hospital, Beijing, China.",
+        "Department of Radiotherapy, Senior Department of Oncology, The Fifth Medical Center of PLA General Hospital, Beijing, China.",
+        "School of Medicine, Nankai University, Tianjin, China.",
+        "Department of Thoracic Oncology, Senior Department of Respiratory and Critical Care Medicine, The Eighth Medical Center of PLA General Hospital, Beijing, China.",
+        "Senior Department of Oncology, The Fifth Medical Center of PLA General Hospital, Beijing, China.",
+        "Department of Radiotherapy, Senior Department of Oncology, The Fifth Medical Center of PLA General Hospital, Beijing, China."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Wang, Shuyuan",
+        "short_name": "Wang S",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Radiotherapy, Senior Department of Oncology, The Fifth Medical Center of PLA General Hospital, Beijing, China.",
+          "Division of Medicine, University College London, London, UK.",
+          "School of Medicine, Nankai University, Tianjin, China."
+        ]
+      },
+      {
+        "full_name": "Huai, Siyuan",
+        "short_name": "Huai S",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Radiotherapy, Senior Department of Oncology, The Fifth Medical Center of PLA General Hospital, Beijing, China."
+        ]
+      },
+      {
+        "full_name": "Yuan, Zhen",
+        "short_name": "Yuan Z",
+        "identifiers": [],
+        "affiliations": [
+          "School of Medicine, Nankai University, Tianjin, China.",
+          "Centre for Human Genetics, University of Oxford, Oxfordshire, UK."
+        ]
+      },
+      {
+        "full_name": "Ji, Tiannan",
+        "short_name": "Ji T",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Emergency, The Fifth Medical Center of PLA General Hospital, Beijing, China."
+        ]
+      },
+      {
+        "full_name": "Xu, Yinmei",
+        "short_name": "Xu Y",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Radiotherapy, Senior Department of Oncology, The Fifth Medical Center of PLA General Hospital, Beijing, China."
+        ]
+      },
+      {
+        "full_name": "Ren, Yifan",
+        "short_name": "Ren Y",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Radiotherapy, Senior Department of Oncology, The Fifth Medical Center of PLA General Hospital, Beijing, China.",
+          "School of Medicine, Nankai University, Tianjin, China."
+        ]
+      },
+      {
+        "full_name": "Qian, Niansong",
+        "short_name": "Qian N",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Thoracic Oncology, Senior Department of Respiratory and Critical Care Medicine, The Eighth Medical Center of PLA General Hospital, Beijing, China."
+        ]
+      },
+      {
+        "full_name": "Sun, Shengjie",
+        "short_name": "Sun S",
+        "identifiers": [],
+        "affiliations": [
+          "Senior Department of Oncology, The Fifth Medical Center of PLA General Hospital, Beijing, China."
+        ]
+      },
+      {
+        "full_name": "Li, Jianxiong",
+        "short_name": "Li J",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Radiotherapy, Senior Department of Oncology, The Fifth Medical Center of PLA General Hospital, Beijing, China."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "hLife"
+    ],
+    "journal_abbrev": [
+      "Hlife"
+    ],
+    "pub_date": "2026 Mar",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/22 17:33",
+    "fetched_at": "2026-10-25 08:54:29"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42903936"
+    ],
+    "review": [
+      "42903936"
+    ],
+    "pmc": [
+      "13681558"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://linkinghub.elsevier.com/retrieve/pii/S2949-9283(25)00121-X",
+        "provider": "Elsevier Science",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

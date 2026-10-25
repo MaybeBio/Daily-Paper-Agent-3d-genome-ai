@@ -1,0 +1,24 @@
+{
+  "source": "biorxiv",
+  "id": "10.64898/2026.10.22.760916",
+  "title": "Reconstructing human gene regulatory evolution using deep learning",
+  "authors": "Yamada T; Yuan X; Zeberg H; Soltys V; Lana Alberro M; Sarropoulos I; Paabo S; Kaessmann H",
+  "journal": "bioRxiv",
+  "published_date": "2026-10-23",
+  "window": {
+    "start": "2026-10-18",
+    "end": "2026-10-24"
+  },
+  "score": 6,
+  "one_liner_zh": "该文用AlphaGenome深度学习模型预测人类谱系顺式调控元件变异对基因表达进化的影响，虽聚焦调控进化而非染色质三维结构建模，但其序列-功能预测思路和增强子-启动子调控逻辑对染色质空间互作建模有方法迁移价值。",
+  "abstract": "Understanding the genetic changes that drove the evolution of human-specific traits is a central goal in biology. Changes in gene expression are thought to be a major source of phenotypic innovations, but identifying the underlying changes in cis-regulatory elements (CREs) along the human lineage has been difficult: functional data from great apes are scarce and unobtainable for extinct hominins, and pinpointing causal substitutions requires knowing which sequences determine CRE activity. Here, we used AlphaGenome, a sequence-to-function deep-learning model, to predict the cis-regulatory effects of ~17 million single-nucleotide substitutions specific to the human lineage and traced their consequences for gene expression evolution across 305 tissues and cell types. The 71,345 predicted cis-regulatory gains lie mostly outside human accelerated regions and arose either through creation of new CREs or, more often, through co-option of CREs ancestrally accessible in other tissues. They are also enriched for distal enhancers and for target gene functions characteristic of the corresponding tissues, suggesting that they contributed to the evolution of tissue-specific biology in humans. Genes linked to more gains were more likely to be upregulated in humans, and in silico reversion to ancestral alleles traced such upregulations to individual substitutions creating transcription factor binding motifs. Comparison with Neandertal and Denisovan genomes revealed that nearly all gains now fixed in humans predate the split from archaic hominins, yet a few modern-human-specific gains contribute substantially to gene upregulation. Our study provides a genome-wide, tissue-resolved map of cis-regulatory changes and their contribution to gene expression evolution along the human lineage.",
+  "abstract_zh": "理解驱动人类特有性状进化的遗传变化是生物学的核心目标。基因表达的变化被认为是表型创新的主要来源，但识别人类谱系中顺式调控元件（cis-regulatory elements, CREs）的潜在变化一直很困难：来自大型猿类的功能数据稀缺，且已灭绝古人类无法获取，而确定因果替换需要知道哪些序列决定CRE活性。在此，我们使用AlphaGenome，一种序列到功能的深度学习模型，预测了人类谱系特异的约1700万个单核苷酸替换的顺式调控效应，并追踪了它们在305个组织和细胞类型中对基因表达进化的影响。预测的71,345个顺式调控增益大多位于人类加速区域之外，通过新CRE的创建或更常见地通过祖先在其他组织中可及的CRE的共选而产生。它们还富集于远端增强子及相应组织特征性的靶基因功能，表明它们促进了人类组织特异性生物学的进化。与更多增益相关的基因更可能在人类中上调，而计算机模拟回复到祖先等位基因将这些上调追溯到创建转录因子结合基序的单个替换。与尼安德特人和丹尼索瓦人基因组的比较显示，几乎所有现在在人类中固定的增益都早于与古人类的分裂，但少数现代人类特异的增益对基因上调有显著贡献。我们的研究提供了人类谱系中顺式调控变化及其对基因表达进化贡献的全基因组、组织分辨图谱。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://www.biorxiv.org/content/10.64898/2026.10.22.760916",
+  "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.22.760916",
+  "paper_page_path": "papers/biorxiv/10.64898_2026.10.22.760916/index.html"
+}

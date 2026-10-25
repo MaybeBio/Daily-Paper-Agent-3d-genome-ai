@@ -1,0 +1,24 @@
+{
+  "source": "biorxiv",
+  "id": "10.64898/2026.10.13.758170",
+  "title": "DeepD enables efficient genome modeling and controllable long-context sequence generation across domains of life",
+  "authors": "Lai J; Xin B; Wang Z; Yu A; Chen Z; Guo Y; Zhang M; Hu B; Ye C; Chen J; Liu Q; Zhao H; Song W; Dong N; Yang F; Yang Q; Zhao H",
+  "journal": "bioRxiv",
+  "published_date": "2026-10-18",
+  "window": {
+    "start": "2026-10-18",
+    "end": "2026-10-24"
+  },
+  "score": 5,
+  "one_liner_zh": "DeepD是一个基于系统发育稀疏混合专家模型的基因组基础模型，支持百万级token上下文和可控长序列生成，虽非直接建模染色质三维结构，但其在顺式调控元件、远端调控序列和染色体级序列生成上的能力对三维基因组调控建模具有方法迁移启发。",
+  "abstract": "Genome foundation models hold great potential for advancing biological research, but modeling diverse complex genomes and generating controllable genome-scale sequences remain challenging. We present DeepD, a phylogeny-informed sparse mixture-of-experts model operating at single-nucleotide resolution over a 1-million-token context while reducing active computation. Pretrained on unselected whole-genome sequences across all domains of life, DeepD learns genic and intergenic sequence features and supports broad sequence-to-function prediction across species. DeepD performs well in human protein fitness and disease variants effect prediction, such as BRCA1 and BRCA2, with particular strength in regulatory regions, such as promoter and transcription-factor binding sites. Expert routing captures exon-intron boundaries, transposable elements, and distal cis-regulatory elements. DeepD also generates experimentally validated core promoters with specified transcriptional strengths. Finally, the Context-Anchor-Body strategy enables generation of complete yeast chromosome sequences and megabase-scale Arabidopsis segments, preserving gene structure and order while introducing variations within natural ranges. Together, DeepD is an efficient genome foundation model that unifies accurate sequence-to-function prediction with controllable genome-scale generation, advancing predictive and generative design of complex genomes.",
+  "abstract_zh": "基因组基础模型在推动生物学研究方面具有巨大潜力，但建模多样化的复杂基因组并生成可控的基因组规模序列仍具挑战。我们提出了DeepD，一种基于系统发育信息的稀疏混合专家模型，在100万token上下文中以单核苷酸分辨率运行，同时减少主动计算量。DeepD在生命所有领域的未选择全基因组序列上预训练，学习基因和基因间序列特征，并支持跨物种的广泛序列到功能预测。DeepD在人类蛋白质适应性和疾病变异效应预测（如BRCA1和BRCA2）中表现良好，尤其在调控区域（如启动子和转录因子结合位点）方面具有突出优势。专家路由捕获外显子-内含子边界、转座元件和远端顺式调控元件。DeepD还能生成具有指定转录强度的实验验证核心启动子。最后，Context-Anchor-Body策略能够生成完整的酵母染色体序列和兆碱基规模的拟南芥片段，在自然范围内引入变异的同时保留基因结构和顺序。综上，DeepD是一种高效的基因组基础模型，统一了准确的序列到功能预测与可控的基因组规模生成，推进了复杂基因组的预测性和生成性设计。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://www.biorxiv.org/content/10.64898/2026.10.13.758170",
+  "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.13.758170",
+  "paper_page_path": "papers/biorxiv/10.64898_2026.10.13.758170/index.html"
+}

@@ -1,0 +1,176 @@
+{
+  "identity": {
+    "pmid": "42913631",
+    "doi": "10.1016/j.molcel.2026.10.002",
+    "title": "HP1 can act independently of H3K9 methylation to promote heterochromatin focus formation, gene repression, and organogenesis."
+  },
+  "content": {
+    "abstract": "Histone post-translational modifications (PTMs) segregate genomes into heterochromatin and euchromatin by recruiting readers, such as Heterochromatin Protein 1, which binds methylation of histone H3 lysine 9 (H3K9me). Here, we report H3K9me-independent functions for the C. elegans HP1 orthologue HPL-2 and the H3K9 methyltransferase MET-2/SETDB1. The two colocalize in H3K9me-containing subnuclear foci independently of the PTM and each other. Their combined loss additively disrupts gene repression and organogenesis. A mutant HPL-2 deficient for H3K9me binding maintains localization to heterochromatin foci, restricts cell-fate decisions, and represses developmental genes, dependent on its multi-zinc-finger ligand, LIN-13. MET-2, catalytically active or not, requires its cofactor LIN-65 to form foci and silence genes in vivo. Molecular dynamics simulations and in vitro assays suggest that cofactor-driven condensate assemblies underlie H3K9me-independent focus formation in vivo, which correlates with gene silencing during organogenesis. This study defines two parallel, PTM-independent pathways through which a writer and reader can repress developmentally regulated genes.",
+    "keywords": [
+      "C. elegans",
+      "HP1",
+      "SETDB1",
+      "heterochromatin",
+      "histone methyltransferase",
+      "nuclear organization"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Delaney, Colin E",
+        "Fol, Lisa",
+        "Gruenewald, Stefan B",
+        "You, Jia Emil",
+        "Ferrario, Eugenio",
+        "Moeckel, Martin M",
+        "Stelzl, Lukas",
+        "Gasser, Susan M",
+        "Padeken, Jan",
+        "Mango, Susan E"
+      ],
+      "short_names": [
+        "Delaney CE",
+        "Fol L",
+        "Gruenewald SB",
+        "You JE",
+        "Ferrario E",
+        "Moeckel MM",
+        "Stelzl L",
+        "Gasser SM",
+        "Padeken J",
+        "Mango SE"
+      ],
+      "auids": [],
+      "affiliations": [
+        "Biozentrum, University of Basel, 4056 Basel, Switzerland.",
+        "Institute of Molecular Biology (IMB), 55128 Mainz, Germany.",
+        "Institute of Molecular Physiology (imP), Johannes Gutenberg-Universitat, 55128 Mainz, Germany; KOMET1, Institute of Physics, Johannes Gutenberg-Universitat, 55128 Mainz, Germany.",
+        "Biozentrum, University of Basel, 4056 Basel, Switzerland.",
+        "Institute of Molecular Biology (IMB), 55128 Mainz, Germany.",
+        "Institute of Molecular Biology (IMB), 55128 Mainz, Germany.",
+        "Institute of Molecular Biology (IMB), 55128 Mainz, Germany; Institute of Molecular Physiology (imP), Johannes Gutenberg-Universitat, 55128 Mainz, Germany; KOMET1, Institute of Physics, Johannes Gutenberg-Universitat, 55128 Mainz, Germany; Institute for Quantitative and Computational Biosciences (IQCB), Johannes Gutenberg-Universitat, 55128 Mainz, Germany.",
+        "ISREC Foundation, Agora Cancer Research Center, 1005 Lausanne, Switzerland; Department of Graduate Studies in Agricultural science, Tohoku University, Sendai 980-8572, Japan.",
+        "Institute of Molecular Biology (IMB), 55128 Mainz, Germany; Institute of Molecular Physiology (imP), Johannes Gutenberg-Universitat, 55128 Mainz, Germany. Electronic address: j.padeken@imb-mainz.de.",
+        "Biozentrum, University of Basel, 4056 Basel, Switzerland. Electronic address: susan.mango@unibas.ch."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Delaney, Colin E",
+        "short_name": "Delaney CE",
+        "identifiers": [],
+        "affiliations": [
+          "Biozentrum, University of Basel, 4056 Basel, Switzerland."
+        ]
+      },
+      {
+        "full_name": "Fol, Lisa",
+        "short_name": "Fol L",
+        "identifiers": [],
+        "affiliations": [
+          "Institute of Molecular Biology (IMB), 55128 Mainz, Germany."
+        ]
+      },
+      {
+        "full_name": "Gruenewald, Stefan B",
+        "short_name": "Gruenewald SB",
+        "identifiers": [],
+        "affiliations": [
+          "Institute of Molecular Physiology (imP), Johannes Gutenberg-Universität, 55128 Mainz, Germany; KOMET1, Institute of Physics, Johannes Gutenberg-Universität, 55128 Mainz, Germany."
+        ]
+      },
+      {
+        "full_name": "You, Jia Emil",
+        "short_name": "You JE",
+        "identifiers": [],
+        "affiliations": [
+          "Biozentrum, University of Basel, 4056 Basel, Switzerland."
+        ]
+      },
+      {
+        "full_name": "Ferrario, Eugenio",
+        "short_name": "Ferrario E",
+        "identifiers": [],
+        "affiliations": [
+          "Institute of Molecular Biology (IMB), 55128 Mainz, Germany."
+        ]
+      },
+      {
+        "full_name": "Moeckel, Martin M",
+        "short_name": "Moeckel MM",
+        "identifiers": [],
+        "affiliations": [
+          "Institute of Molecular Biology (IMB), 55128 Mainz, Germany."
+        ]
+      },
+      {
+        "full_name": "Stelzl, Lukas",
+        "short_name": "Stelzl L",
+        "identifiers": [],
+        "affiliations": [
+          "Institute of Molecular Biology (IMB), 55128 Mainz, Germany; Institute of Molecular Physiology (imP), Johannes Gutenberg-Universität, 55128 Mainz, Germany; KOMET1, Institute of Physics, Johannes Gutenberg-Universität, 55128 Mainz, Germany; Institute for Quantitative and Computational Biosciences (IQCB), Johannes Gutenberg-Universität, 55128 Mainz, Germany."
+        ]
+      },
+      {
+        "full_name": "Gasser, Susan M",
+        "short_name": "Gasser SM",
+        "identifiers": [],
+        "affiliations": [
+          "ISREC Foundation, Agora Cancer Research Center, 1005 Lausanne, Switzerland; Department of Graduate Studies in Agricultural science, Tohoku University, Sendai 980-8572, Japan."
+        ]
+      },
+      {
+        "full_name": "Padeken, Jan",
+        "short_name": "Padeken J",
+        "identifiers": [],
+        "affiliations": [
+          "Institute of Molecular Biology (IMB), 55128 Mainz, Germany; Institute of Molecular Physiology (imP), Johannes Gutenberg-Universität, 55128 Mainz, Germany. Electronic address: j.padeken@imb-mainz.de."
+        ]
+      },
+      {
+        "full_name": "Mango, Susan E",
+        "short_name": "Mango SE",
+        "identifiers": [],
+        "affiliations": [
+          "Biozentrum, University of Basel, 4056 Basel, Switzerland. Electronic address: susan.mango@unibas.ch."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Molecular cell"
+    ],
+    "journal_abbrev": [
+      "Mol Cell"
+    ],
+    "pub_date": "2026 Oct 22",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/23 23:31",
+    "fetched_at": "2026-10-25 08:54:29"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42913631"
+    ],
+    "review": [
+      "42913631"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [],
+    "text_mined": []
+  }
+}

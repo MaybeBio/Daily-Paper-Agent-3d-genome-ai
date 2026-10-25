@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42916595",
+  "title": "Promoter Engineering in Yeast Cell Factories: Strategies, Applications, and Perspectives.",
+  "authors": "Bai, Zhenzhen; Jiao, Tian; Darvishi, Farshad; Chu, Haodong; Wang, Zheng; Shi, Shuobo",
+  "journal": "ACS synthetic biology",
+  "published_date": "2026-10-23",
+  "window": {
+    "start": "2026-10-18",
+    "end": "2026-10-24"
+  },
+  "score": 3,
+  "one_liner_zh": "该文综述酵母启动子工程策略及AI/ML在启动子强度预测与设计中的应用，但对象为基因表达调控元件而非染色质三维组织，且无空间架构建模，仅对序列调控建模有间接启发。",
+  "abstract": "Yeasts serve as premier eukaryotic hosts for microbial cell factories, enabling the production of recombinant proteins, biofuels, and high-value natural products. Precise transcriptional control is paramount for balancing complex metabolic pathways and maximizing target product yields. Promoters, as the key regulatory elements governing transcription initiation, have thus become a focal point of metabolic and synthetic biology engineering. This review surveys promoter architecture, function, and engineering in yeast. It outlines promoter structure, from core elements to upstream regulatory sequences, and reviews current and emerging strategies for discovery, optimization, and de novo design, including random mutagenesis, combinatorial assembly, rational design based on transcription factor binding sites, intron-mediated enhancement, cross-species approaches. Importantly, this review highlights the rapidly growing role of machine learning (ML) and artificial intelligence (AI) in promoter engineering, from predictive modeling of promoter strength to in silico generation of synthetic variants. Special emphasis is placed on synthetic promoter engineering to yield tunable and inducible toolkits. The review also highlights applications in yeast cell factories, such as metabolic pathway optimization, dynamic regulation, high-throughput strain screening, and recombinant protein production. By summarizing these recent advances, it serves as a practical resource for researchers aiming to achieve precise metabolic control and improve bioproduction outcomes in yeast.",
+  "abstract_zh": "酵母作为微生物细胞工厂的顶级真核宿主，能够生产重组蛋白、生物燃料和高价值天然产物。精确的转录调控对于平衡复杂代谢途径和最大化目标产物产量至关重要。启动子作为调控转录起始的关键调控元件，因此成为代谢和合成生物学工程的重点。本综述探讨了酵母中启动子的结构、功能及工程化改造。它概述了启动子结构，从核心元件到上游调控序列，并回顾了当前及新兴的发现、优化和从头设计策略，包括随机突变、组合组装、基于转录因子结合位点的理性设计、内含子介导增强、跨物种方法。重要的是，本综述强调了机器学习（ML）和人工智能（AI）在启动子工程中日益增长的作用，从启动子强度的预测建模到合成变体的计算机模拟生成。特别强调了合成启动子工程以产生可调谐和可诱导的工具包。综述还重点介绍了在酵母细胞工厂中的应用，如代谢途径优化、动态调控、高通量菌株筛选和重组蛋白生产。通过总结这些最新进展，它为旨在实现精确代谢控制和改善酵母生物生产结果的研究人员提供了实用资源。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42916595/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42916595/",
+  "paper_page_path": "papers/pubmed/42916595/index.html"
+}

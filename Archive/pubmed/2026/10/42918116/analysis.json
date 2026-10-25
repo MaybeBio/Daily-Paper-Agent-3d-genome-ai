@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42918116",
+  "title": "Integrative Structural Modeling of Intrinsically Disordered Regions in a Human HDAC2 Chromatin Remodeling Complex.",
+  "authors": "Nde, Jules; Kempf, Cassandra G; Zimmermann, Rosalyn C; Cesare, Joseph; Zhang, Ying; Workman, Jerry L; Florens, Laurence; Washburn, Michael P",
+  "journal": "Journal of proteome research",
+  "published_date": "2026-10-23",
+  "window": {
+    "start": "2026-10-18",
+    "end": "2026-10-24"
+  },
+  "score": 6,
+  "one_liner_zh": "该文用交联质谱与整合结构建模解析HDAC2染色质重塑复合物中无序区的空间架构，虽对象为蛋白复合物而非染色质三维组织，但其整合建模思路对染色质构象建模有方法学启发。",
+  "abstract": "Histone deacetylase-containing complexes play central roles in chromatin regulation, yet the structural organization of their intrinsically disordered regions (IDRs) remains poorly understood. Here, we identify the previously uncharacterized protein C16orf87, which we renamed MHAP1, as a binding partner of HDAC2 and MIER1. Because all three proteins contain extensive IDRs that remain difficult to study using single structural analysis methods, we employed an integrative structural approach combining cross-linking mass spectrometry (XL-MS) with integrative structural modeling to define the architecture of the complex. The resulting integrative structural model reveals that the previously uncharacterized C-terminal IDR of HDAC2 acts as a key interaction hub, engaging both the ELM2 domain of MIER1 and the N- and C-terminal regions of MHAP1. These findings provide the first structural framework for the interactions among HDAC2:MIER1:MHAP1 and demonstrate how intrinsically disordered regions can mediate assembly of a chromatin-associated deacetylase complex. Finally, this research further demonstrates the ability of XL-MS to facilitate integrative structural modeling of protein complexes. Mass spectrometry data may be accessed through ProteomeXchange via PXD082280 and the MassIVE repository MSV000102752.",
+  "abstract_zh": "含组蛋白去乙酰化酶的复合物在染色质调控中发挥核心作用，然而其 intrinsically disordered regions (IDRs) 的结构组织仍知之甚少。在此，我们鉴定出先前未表征的蛋白 C16orf87，并将其重命名为 MHAP1，作为 HDAC2 和 MIER1 的结合伙伴。由于这三种蛋白均含有广泛的 IDRs，这些区域难以通过单一结构分析方法进行研究，我们采用了一种整合结构方法，结合交联质谱 (cross-linking mass spectrometry, XL-MS) 与整合结构建模来定义该复合物的架构。所得的整合结构模型揭示，HDAC2 先前未表征的 C 端 IDR 作为关键相互作用枢纽，同时与 MIER1 的 ELM2 结构域以及 MHAP1 的 N 端和 C 端区域结合。这些发现为 HDAC2:MIER1:MHAP1 之间的相互作用提供了首个结构框架，并展示了 intrinsically disordered regions 如何介导染色质相关去乙酰化酶复合物的组装。最后，本研究进一步证明了 XL-MS 在促进蛋白质复合物整合结构建模方面的能力。质谱数据可通过 ProteomeXchange 以 PXD082280 及 MassIVE 存储库 MSV000102752 访问。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42918116/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42918116/",
+  "paper_page_path": "papers/pubmed/42918116/index.html"
+}

@@ -1,0 +1,36 @@
+{
+  "source": "arxiv",
+  "source_id": "2610.30588v1",
+  "title": "Supercoiling Drives DNA-Protein Co-Condensation",
+  "doi": "",
+  "abstract": "The co-condensation of DNA and proteins plays an important role in genome compaction, including heterochromatin formation and chromosome segregation. Meanwhile, transcription and replication continuously generate DNA supercoiling, yet how the resulting torsional stress affects co-condensation remains poorly understood. Here, by coupling DNA elasticity to a protein concentration field, we show that supercoiling acts as a topological catalyst for co-condensation through a mutually reinforcing interplay with protein wetting. Specifically, protein wetting facilitates twist-to-writhe conversion, generating highly writhed DNA conformations that in turn promote capillary collapse into a protein-rich droplet. In the absence of supercoiling, DNA remains kinetically trapped in metastable extended states within our model, whereas sufficiently strong supercoiling removes the nucleation barrier and enables spontaneous co-condensation. These results establish topology as a distinct control parameter for biomolecular condensation and provide a mechanical framework for how active genomic processes can dynamically regulate large-scale genome organization.",
+  "authors": [
+    "Sihan Liu",
+    "Hongbo Zhao",
+    "Andrej Košmrlj"
+  ],
+  "published_date": "2026-10-22T01:42:38Z",
+  "updated_date": "2026-10-22T01:42:38Z",
+  "journal": "",
+  "category": "physics.bio-ph, cond-mat.soft, q-bio.BM",
+  "landing_url": "https://arxiv.org/abs/2610.30588v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.30588v1",
+  "pdf_path": "",
+  "pdf_downloaded": false,
+  "query": "(all:\"3D genome\" OR all:\"three-dimensional genome\" OR all:\"genome organization\" OR all:\"genome architecture\" OR all:\"genome folding\" OR all:\"nuclear organization\" OR all:\"nuclear architecture\" OR all:\"chromatin organization\" OR all:\"chromatin architecture\" OR all:\"chromatin conformation\" OR all:\"chromatin topology\" OR all:\"chromatin structure\" OR all:\"chromatin loop\" OR all:\"chromatin interaction\" OR all:\"chromatin domain\" OR all:\"topologically associating domain\" OR all:\"A/B compartment\" OR all:\"chromosome conformation capture\" OR all:\"Hi-C\" OR all:HiChIP OR all:\"loop extrusion\" OR all:\"loop-extrusion\" OR all:CTCF OR all:cohesin OR all:\"cis-regulatory\" OR all:\"cis-regulatory element\" OR all:\"regulatory element\" OR all:\"regulatory genomics\" OR all:\"chromatin accessibility\" OR all:\"enhancer-promoter\" OR all:\"promoter-enhancer\") AND (all:\"deep learning\" OR all:\"machine learning\" OR all:\"neural network\" OR all:\"graph neural network\" OR all:\"convolutional neural network\" OR all:transformer OR all:\"language model\" OR all:\"foundation model\" OR all:\"diffusion model\" OR all:generative OR all:\"flow matching\" OR all:alphafold OR all:esmfold OR all:rosetta OR all:\"molecular dynamics\" OR all:simulation OR all:docking)\n",
+  "version": "1",
+  "keywords": [
+    "physics.bio-ph",
+    "cond-mat.soft",
+    "q-bio.BM"
+  ],
+  "extra": {
+    "entry_id": "http://arxiv.org/abs/2610.30588v1",
+    "raw_categories": [
+      "physics.bio-ph",
+      "cond-mat.soft",
+      "q-bio.BM"
+    ],
+    "journal_ref": ""
+  }
+}
