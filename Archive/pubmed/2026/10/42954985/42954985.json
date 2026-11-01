@@ -1,0 +1,148 @@
+{
+  "identity": {
+    "pmid": "42954985",
+    "doi": "10.1039/d6nr02103d",
+    "title": "Charge-altering histone mutations reprogram electrostatic coupling from single nucleosomes to higher-order chromatin structures."
+  },
+  "content": {
+    "abstract": "Nucleosomes are stabilized and organized by electrostatic interactions that govern chromatin folding and higher-order structure. Although many cancer-associated histone mutations alter residue charge, how such perturbations propagate from single nucleosomes to higher-order chromatin organization remains unclear. Here, through large-scale analysis of histone mutation datasets, we show that charge-altering mutations are enriched among recurrent high-frequency mutations and exhibit stronger predicted destabilizing effects on nucleosome-associated interactions than charge-neutral variants. We demonstrate that even a single charge-altering mutation can substantially reshape the nucleosome surface electrostatic potential, thereby modulating long-range electrostatic interactions with regulatory proteins. By systematically analyzing 25 experimentally resolved nucleosome-protein complexes and 183 mutant models, we quantify how individual charge-altering mutations substantially alter electrostatic interaction forces. Extensive molecular dynamics simulations totaling 18 mus further reveal that single-point mutations can produce less favorable nucleosome-protein binding-energy estimates and reorganize interfacial hydrogen-bonding networks. Importantly, analysis of higher-order nucleosome assemblies shows that charge-altering mutations can modulate inter-nucleosomal electrostatic interactions in a packing-geometry-dependent manner, while mutations near the acidic patch can also perturb H4 tail-nucleosome electrostatic coupling. Our results provide a physical framework for understanding how local electrostatic perturbations caused by cancer-associated charge-altering histone mutations may influence nucleosome interactions across multiple structural scales.",
+    "keywords": [],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Zhang, Houfang",
+        "Hu, Guanhua",
+        "Liu, Gege",
+        "Xu, Wang",
+        "Zhao, Xinyi",
+        "Li, Anbang",
+        "Peng, Yunhui"
+      ],
+      "short_names": [
+        "Zhang H",
+        "Hu G",
+        "Liu G",
+        "Xu W",
+        "Zhao X",
+        "Li A",
+        "Peng Y"
+      ],
+      "auids": [
+        "ORCID: 0000-0001-9768-4127"
+      ],
+      "affiliations": [
+        "Institute of Biophysics and Department of Physics, Central China Normal University, Wuhan, 430079, China. yunhuipeng@ccnu.edu.cn.",
+        "Institute of Biophysics and Department of Physics, Central China Normal University, Wuhan, 430079, China. yunhuipeng@ccnu.edu.cn.",
+        "Institute of Biophysics and Department of Physics, Central China Normal University, Wuhan, 430079, China. yunhuipeng@ccnu.edu.cn.",
+        "Institute of Biophysics and Department of Physics, Central China Normal University, Wuhan, 430079, China. yunhuipeng@ccnu.edu.cn.",
+        "Institute of Biophysics and Department of Physics, Central China Normal University, Wuhan, 430079, China. yunhuipeng@ccnu.edu.cn.",
+        "Institute of Biophysics and Department of Physics, Central China Normal University, Wuhan, 430079, China. yunhuipeng@ccnu.edu.cn.",
+        "Institute of Biophysics and Department of Physics, Central China Normal University, Wuhan, 430079, China. yunhuipeng@ccnu.edu.cn."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Zhang, Houfang",
+        "short_name": "Zhang H",
+        "identifiers": [],
+        "affiliations": [
+          "Institute of Biophysics and Department of Physics, Central China Normal University, Wuhan, 430079, China. yunhuipeng@ccnu.edu.cn."
+        ]
+      },
+      {
+        "full_name": "Hu, Guanhua",
+        "short_name": "Hu G",
+        "identifiers": [],
+        "affiliations": [
+          "Institute of Biophysics and Department of Physics, Central China Normal University, Wuhan, 430079, China. yunhuipeng@ccnu.edu.cn."
+        ]
+      },
+      {
+        "full_name": "Liu, Gege",
+        "short_name": "Liu G",
+        "identifiers": [],
+        "affiliations": [
+          "Institute of Biophysics and Department of Physics, Central China Normal University, Wuhan, 430079, China. yunhuipeng@ccnu.edu.cn."
+        ]
+      },
+      {
+        "full_name": "Xu, Wang",
+        "short_name": "Xu W",
+        "identifiers": [],
+        "affiliations": [
+          "Institute of Biophysics and Department of Physics, Central China Normal University, Wuhan, 430079, China. yunhuipeng@ccnu.edu.cn."
+        ]
+      },
+      {
+        "full_name": "Zhao, Xinyi",
+        "short_name": "Zhao X",
+        "identifiers": [],
+        "affiliations": [
+          "Institute of Biophysics and Department of Physics, Central China Normal University, Wuhan, 430079, China. yunhuipeng@ccnu.edu.cn."
+        ]
+      },
+      {
+        "full_name": "Li, Anbang",
+        "short_name": "Li A",
+        "identifiers": [],
+        "affiliations": [
+          "Institute of Biophysics and Department of Physics, Central China Normal University, Wuhan, 430079, China. yunhuipeng@ccnu.edu.cn."
+        ]
+      },
+      {
+        "full_name": "Peng, Yunhui",
+        "short_name": "Peng Y",
+        "identifiers": [
+          "0000-0001-9768-4127"
+        ],
+        "affiliations": [
+          "Institute of Biophysics and Department of Physics, Central China Normal University, Wuhan, 430079, China. yunhuipeng@ccnu.edu.cn."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Nanoscale"
+    ],
+    "journal_abbrev": [
+      "Nanoscale"
+    ],
+    "pub_date": "2026 Oct 29",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/29 17:36",
+    "fetched_at": "2026-11-01 11:00:03"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42954985"
+    ],
+    "review": [
+      "42954985"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://doi.org/10.1039/d6nr02103d",
+        "provider": "Royal Society of Chemistry",
+        "category": "Full Text Sources",
+        "attribute": "subscription/membership/fee required",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42958318",
+  "title": "GECSI: large-scale chromatin state imputation from gene expression.",
+  "authors": "Fu, Jingyuan; Ernst, Jason",
+  "journal": "Genome biology",
+  "published_date": "2026-10-30",
+  "window": {
+    "start": "2026-10-25",
+    "end": "2026-10-31"
+  },
+  "score": 4,
+  "one_liner_zh": "该文用基因表达数据通过多类逻辑回归集成预测染色质状态注释，虽涉及染色质调控特征，但无三维空间结构建模且方法为传统机器学习，与三维基因组/染色质组织建模关联较弱。",
+  "abstract": "Chromatin state annotations based on epigenetic marks are powerful resources, but many additional samples have gene expression data available while lacking epigenetic mark data and chromatin state annotations. Using the EpiATLAS resource of the International Human Epigenome Consortium (IHEC), we develop Gene Expression-based Chromatin State Imputation (GECSI), which uses an ensemble of multi-class logistic regression classifiers to predict chromatin state annotations from gene expression data. We show in cross-validation that GECSI accurately predicts observed chromatin state annotations. We also apply GECSI using gene expression data in 449 IHEC additional samples, providing an expanded chromatin state annotation resource.",
+  "abstract_zh": "基于表观遗传标记的染色质状态注释是强大的资源，但许多额外样本有基因表达数据可用，却缺乏表观遗传标记数据和染色质状态注释。利用国际人类表观基因组联盟 (International Human Epigenome Consortium, IHEC) 的 EpiATLAS 资源，我们开发了基于基因表达的染色质状态插补 (Gene Expression-based Chromatin State Imputation, GECSI)，它使用多类逻辑回归分类器的集成来从基因表达数据预测染色质状态注释。我们在交叉验证中表明，GECSI 能准确预测观察到的染色质状态注释。我们还对 449 个 IHEC 额外样本应用 GECSI 使用基因表达数据，提供了一个扩展的染色质状态注释资源。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42958318/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42958318/",
+  "paper_page_path": "papers/pubmed/42958318/index.html"
+}

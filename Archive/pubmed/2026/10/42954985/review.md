@@ -1,0 +1,84 @@
+## Review setup
+- **Input scope** Abstract only
+- **Assessment boundary** Claims and evidence as presented in the abstract; no figures, tables, methods, or supplementary materials were provided
+- **Shared manuscript claim summary** The authors propose that cancer-associated histone mutations that alter residue charge are enriched among recurrent high-frequency mutations, produce stronger predicted destabilizing effects on nucleosome-associated interactions, reshape nucleosome surface electrostatic potential, alter electrostatic interaction forces in nucleosome-protein complexes, yield less favorable binding-energy estimates and reorganize interfacial hydrogen-bonding networks in molecular dynamics simulations, and modulate inter-nucleosomal electrostatic interactions in a packing-geometry-dependent manner, including perturbation of H4 tail-nucleosome coupling.
+- **Visible evidence base** Abstract text only; references to "large-scale analysis of histone mutation datasets," "25 experimentally resolved nucleosome-protein complexes and 183 mutant models," "extensive molecular dynamics simulations totaling 18 mus," and "analysis of higher-order nucleosome assemblies" are stated but no data, figures, or methodological details are visible
+- **Missing materials affecting confidence** Full manuscript, figures, tables, methods section, statistical analyses, simulation parameters, dataset descriptions, and any supplementary information
+
+## Reviewer
+- **Overall assessment** The abstract presents a potentially interesting and timely hypothesis linking charge-altering histone mutations to multi-scale electrostatic perturbations in chromatin. The conceptual framework is coherent and the multi-scale approach from single nucleosomes to higher-order structures is appealing. However, the abstract alone provides insufficient detail to evaluate the rigor of the analyses, the validity of the statistical claims, the quality of the molecular dynamics simulations, or the robustness of the conclusions. Several claims are stated as established findings without visible supporting evidence. The work may be of interest to the chromatin biology and biophysics communities, but the case is not established from the supplied material.
+- **Who would be interested in the results, and why** Researchers in chromatin structure and dynamics, histone modification and mutation biology, cancer genomics, and computational biophysics would be interested. The work connects cancer-associated mutations to physical mechanisms of chromatin organization, which could inform understanding of how epigenetic dysregulation operates at a molecular level. The multi-scale electrostatic framework may also appeal to those studying nucleosome-protein interactions and higher-order chromatin folding.
+- **Major strengths** The conceptual framing is clear and addresses a genuine gap in understanding how local charge perturbations propagate across structural scales. The combination of dataset analysis, structural modeling, and molecular dynamics simulations represents a multi-pronged approach that, if executed rigorously, could provide a compelling physical framework. The focus on packing-geometry-dependent effects and the acidic patch region suggests attention to mechanistic detail.
+- **Major Concerns**
+  - **Concern ID** R1-M1
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Evidence sufficiency
+  - **Claim pointer** "charge-altering mutations are enriched among recurrent high-frequency mutations and exhibit stronger predicted destabilizing effects on nucleosome-associated interactions than charge-neutral variants"
+  - **Evidence pointer** "large-scale analysis of histone mutation datasets" location not provided
+  - **Concern** The abstract states this enrichment and destabilization claim without providing any statistical measures, effect sizes, dataset composition, or comparison baselines. It is unclear how "recurrent high-frequency" was defined, which mutation datasets were used, how charge-altering status was assigned, and what metric was used to predict destabilizing effects.
+  - **Why it matters** This is the foundational claim of the paper. If the enrichment analysis is not statistically robust or the destabilization prediction is based on a questionable metric, the entire premise linking cancer-associated mutations to electrostatic perturbation is weakened.
+  - **Resolution test** Provide the dataset sources, inclusion criteria, statistical tests with effect sizes and confidence intervals, and validation of the prediction metric against experimental data.
+  - **Concern ID** R1-M2
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** "even a single charge-altering mutation can substantially reshape the nucleosome surface electrostatic potential, thereby modulating long-range electrostatic interactions with regulatory proteins"
+  - **Evidence pointer** "systematically analyzing 25 experimentally resolved nucleosome-protein complexes and 183 mutant models" location not provided
+  - **Concern** The abstract claims quantification of electrostatic interaction forces across 25 complexes and 183 mutant models, but no details are given on how electrostatic potentials were computed, what force metrics were used, how "substantially" was defined, or how the 25 complexes and 183 mutants were selected. The link between surface potential reshaping and functional modulation of regulatory protein interactions is asserted rather than demonstrated.
+  - **Why it matters** This is the central mechanistic claim. Without clear computational methodology and quantitative thresholds, the claim that single mutations substantially alter electrostatic interactions cannot be evaluated.
+  - **Resolution test** Specify the electrostatic computation method, the force metric and its units, the selection criteria for complexes and mutants, and provide quantitative comparisons with appropriate controls.
+  - **Concern ID** R1-M3
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** "Extensive molecular dynamics simulations totaling 18 mus further reveal that single-point mutations can produce less favorable nucleosome-protein binding-energy estimates and reorganize interfacial hydrogen-bonding networks"
+  - **Evidence pointer** "molecular dynamics simulations totaling 18 mus" location not provided
+  - **Concern** The abstract reports 18 microseconds of total simulation time but does not specify the number of systems simulated, the simulation length per system, the force field used, the convergence criteria, or the error estimates for binding-energy calculations. The claim that mutations "can produce less favorable" binding energies is vague and does not indicate whether this effect is consistent, statistically significant, or system-dependent.
+  - **Why it matters** Molecular dynamics results are highly sensitive to simulation setup and analysis methods. Without convergence assessment and statistical rigor, the binding-energy and hydrogen-bonding claims are not interpretable.
+  - **Resolution test** Provide simulation details, convergence metrics, replicate information, and statistical analysis of binding-energy differences with uncertainties.
+  - **Concern ID** R1-M4
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Evidence sufficiency
+  - **Claim pointer** "charge-altering mutations can modulate inter-nucleosomal electrostatic interactions in a packing-geometry-dependent manner, while mutations near the acidic patch can also perturb H4 tail-nucleosome electrostatic coupling"
+  - **Evidence pointer** "analysis of higher-order nucleosome assemblies" location not provided
+  - **Concern** The abstract claims geometry-dependent modulation of inter-nucleosomal interactions and perturbation of H4 tail coupling, but no details are given on the higher-order assembly models used, the range of packing geometries tested, the specific mutations examined near the acidic patch, or the quantitative readouts for these effects.
+  - **Why it matters** This is the key claim that bridges single-nucleosome effects to higher-order chromatin structure. Without a clear description of the models and the nature of the geometry dependence, the multi-scale conclusion is not supported.
+  - **Resolution test** Describe the higher-order assembly models, the geometric parameters varied, the specific mutations tested, and provide quantitative measures of how electrostatic interactions change with packing geometry.
+- **Minor Comments**
+  - **Concern ID** R1-m1
+  - **Severity** Minor
+  - **Axis** Clarity
+  - **Affected element** Abstract wording
+  - **Evidence pointer** Abstract, "we show" and "we demonstrate" statements
+  - **Issue** The abstract uses "we show" and "we demonstrate" interchangeably without distinguishing between computational predictions, statistical associations, and simulation-based inferences.
+  - **Required correction** Use more precise language that distinguishes between statistical findings, computational predictions, and simulation results.
+  - **Concern ID** R1-m2
+  - **Severity** Minor
+  - **Axis** Reproducibility
+  - **Affected element** Dataset description
+  - **Evidence pointer** "large-scale analysis of histone mutation datasets" location not provided
+  - **Issue** The abstract does not indicate whether the mutation datasets are publicly available or how the authors accessed them.
+  - **Required correction** State the dataset sources and accession numbers in the abstract or methods.
+  - **Concern ID** R1-m3
+  - **Severity** Minor
+  - **Axis** Scope
+  - **Affected element** Generalizability claim
+  - **Evidence pointer** Abstract, final sentence
+  - **Issue** The abstract concludes that the results "provide a physical framework" but does not acknowledge limitations regarding the number of mutations tested or the model systems used.
+  - **Required correction** Add a brief statement of limitations or scope of the framework.
+- **Technical failings that need to be addressed before the case is established** R1-M1, R1-M2, R1-M3, and R1-M4 are all blocking because the abstract does not provide sufficient methodological detail or quantitative evidence to support the central claims. The statistical basis for the enrichment claim, the computational methodology for electrostatic calculations, the rigor of the molecular dynamics simulations, and the nature of the higher-order assembly analysis all require full manuscript details to be assessed.
+- **Assessment against Nature-style criteria** Originality: The conceptual angle linking charge-altering histone mutations to multi-scale electrostatic effects is moderately original, though electrostatic regulation of chromatin is an established theme. Scientific importance: Potentially high for chromatin biology and cancer epigenetics, but the importance depends on the robustness of the multi-scale connection. Interdisciplinary readership: The work could appeal to biophysicists, structural biologists, and cancer geneticists, but the abstract does not make the case accessible to nonspecialists. Technical soundness: Cannot be assessed from the abstract alone; the computational and statistical methods are not described in sufficient detail. Readability for nonspecialists: The abstract is reasonably clear but uses specialized terms without sufficient context for a broad audience.
+- **Recommendation posture** Currently not established from the provided evidence. The conceptual framework is promising, but the abstract alone does not provide enough methodological detail or quantitative support to evaluate the validity of the claims. A full manuscript review would be required to determine whether the technical concerns can be resolved.
+
+## Risk / unsupported claims
+- The claim that charge-altering mutations are enriched among recurrent high-frequency mutations is unsupported without dataset details and statistical analysis.
+- The claim that charge-altering mutations exhibit stronger predicted destabilizing effects than charge-neutral variants is unsupported without specification of the prediction method and validation.
+- The claim that a single charge-altering mutation can substantially reshape nucleosome surface electrostatic potential is unsupported without computational details and quantitative thresholds.
+- The claim that electrostatic interaction forces are substantially altered across 25 complexes and 183 mutants is unsupported without methodology and quantitative results.
+- The claim that molecular dynamics simulations totaling 18 mus reveal less favorable binding-energy estimates is unsupported without simulation parameters, convergence analysis, and statistical treatment.
+- The claim that charge-altering mutations reorganize interfacial hydrogen-bonding networks is unsupported without specific examples and analysis details.
+- The claim that charge-altering mutations modulate inter-nucleosomal electrostatic interactions in a packing-geometry-dependent manner is unsupported without model descriptions and quantitative readouts.
+- The claim that mutations near the acidic patch perturb H4 tail-nucleosome electrostatic coupling is unsupported without specific mutation identities and measured effects.
+- The overall conclusion that the results provide a physical framework for multi-scale electrostatic perturbation is not evaluable from the abstract alone.

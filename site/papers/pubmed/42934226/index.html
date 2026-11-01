@@ -1,0 +1,884 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A droplet-based long-read single-cell epigenome sequencing method for the high-throughput profiling of multidimensional regulatory elements within individual cells. · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-mid">6</span>
+    <div>
+      <h1>A droplet-based long-read single-cell epigenome sequencing method for the high-throughput profiling of multidimensional regulatory elements within individual cells.</h1>
+      <div class="meta">Lu, Jiansen; Chen, Kexuan; Jia, Shengtao; Chen, Guodong; Yu, Xianhong; Li, Wen</div>
+      <div class="meta muted">
+        
+        <span class="journal">Cell discovery</span>
+        · 2026-10-27
+         · 全文(pmc)
+         · <a href="https://pubmed.ncbi.nlm.nih.gov/42934226/">原文</a>
+      </div>
+      <p class="one-liner">开发基于液滴的长读长单细胞表观基因组测序平台（dscNanoATAC/dscNanoCUT），并利用单倍型数据优化深度学习模型预测等位基因特异性三维基因组结构，与染色质构象计算建模部分相关。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">Recently, long-read sequencing methods have revolutionized genomic research by allowing the resolution of previously inaccessible regions across the genome. However, the throughput and scalability of these methods have hindered their general application in the field. To address this limitation, we developed droplet-based methods for the single-cell profiling of chromatin accessibility (droplet-based single-cell Nanopore ATAC-seq, dscNanoATAC) and histone modifications (droplet-based single-cell NanoCUT&amp;Tag, dscNanoCUT) by combining a commercial microfluidic device and long-read sequencing platform, achieving a throughput of ~5000 cells in a single experiment and significantly reducing the time and costs compared with previous techniques. With cultured mammalian cells, we demonstrated the ability of dscNanoATAC and dscNanoCUT to detect allele-specific epigenetics, neighboring co-accessibility, and regulatory elements within low-mappability regions. Furthermore, leveraging the haplotype-resolved data generated from dscNanoATAC, we optimized a deep-learning model to predict allele-specific three-dimensional genome structures with high resolution (10 kb). We also applied dscNanoATAC and dscNanoCUT in complex tissues using the mouse brain as an example, and characterized the allele-specific regulation of the imprinting gene Ube3a in neurons, obtaining insights into the mechanisms underlying the pathogenesis of Prader-Willi and Angelman syndrome. With dscNanoCUT, we systematically evaluated the activity of transposon elements and revealed their potential regulatory functions in the mouse brain. Together, dscNanoATAC and dscNanoCUT serve as a versatile and scalable long-read epigenome sequencing platform, enabling multidimensional analyses of elements ranging from chromatin accessibility to histone modifications and their interplay between chromatin structures. This platform may advance our understanding of epigenetic regulation in complex biological systems.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">最近，长读长测序方法通过解析基因组中先前难以触及的区域，彻底改变了基因组研究。然而，这些方法的通量和可扩展性阻碍了它们在该领域的普遍应用。为了解决这一限制，我们通过结合商业微流控装置和长读长测序平台，开发了用于单细胞染色质可及性分析（基于液滴的单细胞Nanopore ATAC-seq，dscNanoATAC）和组蛋白修饰分析（基于液滴的单细胞NanoCUT&amp;Tag，dscNanoCUT）的基于液滴的方法，在单次实验中实现了约5000个细胞的通量，并显著减少了与先前技术相比的时间和成本。利用培养的哺乳动物细胞，我们证明了dscNanoATAC和dscNanoCUT能够检测等位基因特异性表观遗传学、邻近共可及性以及低比对区域内的调控元件。此外，利用dscNanoATAC生成的单倍型解析数据，我们优化了一个深度学习模型，以高分辨率（10 kb）预测等位基因特异性三维基因组结构。我们还将dscNanoATAC和dscNanoCUT应用于复杂组织，以小鼠大脑为例，并表征了神经元中印记基因Ube3a的等位基因特异性调控，从而获得了对Prader-Willi和Angelman综合征发病机制背后机制的见解。利用dscNanoCUT，我们系统评估了转座子元件的活性，并揭示了它们在小鼠大脑中的潜在调控功能。总之，dscNanoATAC和dscNanoCUT作为一个多功能且可扩展的长读长表观基因组测序平台，能够对从染色质可及性到组蛋白修饰的元素及其在染色质结构之间的相互作用进行多维分析。该平台可能促进我们对复杂生物系统中表观遗传调控的理解。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：A droplet-based long-read single-cell epigenome sequencing method for the high-throughput profiling of multidimensional regulatory elements within individual cells</li>
+<li><strong>作者与单位</strong>：Lu, Jiansen; Chen, Kexuan; Jia, Shengtao; Chen, Guodong; Yu, Xianhong; Li, Wen（单位未提供，推测为南方医科大学相关团队，因致谢提及 Southern Medical University）</li>
+<li><strong>期刊/预印本平台</strong>：Cell Discovery</li>
+<li><strong>年份</strong>：2026-10-27（在线发表日期）</li>
+<li><strong>论文类型</strong>：方法学论文（Method）</li>
+<li><strong>领域</strong>：单细胞表观基因组学、长读长测序、三维基因组</li>
+<li><strong>关键词</strong>：droplet-based single-cell ATAC-seq; droplet-based single-cell CUT&Tag; Nanopore long-read sequencing; allele-specific epigenetics; 3D genome structure prediction</li>
+<li><strong>DOI/arXiv 号</strong>：10.1038/s41421-026-00928-y</li>
+<li><strong>代码</strong>：Nanoplexer (https://github.com/hanyue36/nanoplexer)；Snakemake 工作流（未提供独立仓库地址）</li>
+<li><strong>数据</strong>：未提供公开数据仓库链接（补充表 S1-S11 提供元数据与结果）</li>
+<li><strong>阅读日期</strong>：未提供</li>
+<li><strong>该文在「三维基因组/染色质组织 × AI 方法/物理模拟」方向中的位置</strong>：本文开发了两种基于液滴微流控与 Nanopore 长读长测序的单细胞表观基因组方法（dscNanoATAC 和 dscNanoCUT），并在此基础上构建了等位基因特异的三维基因组结构预测流程（AS-C.Origami），属于「单细胞表观遗传 × 三维基因组 × 深度学习预测」交叉方向。其核心贡献在于：①将长读长单细胞表观基因组方法从板式扩展到液滴式高通量；②利用长读长的高 SNP 捕获率实现等位基因特异的染色质可及性与组蛋白修饰分析；③将等位基因特异的染色质可及性数据输入深度学习模型（C.Origami）预测等位基因特异的 3D 染色质结构，为三维基因组结构与表观遗传调控的关联研究提供了新范式。</li>
+</ul>
+<hr />
+<h2>02 一句话总结</h2>
+<p>本文开发了基于液滴微流控与 Nanopore 长读长测序的单细胞 ATAC-seq（dscNanoATAC）和 CUT&amp;Tag（dscNanoCUT）方法，实现单次实验约 5000 个细胞的高通量表观基因组 profiling，并利用长读长的高效单倍型分型能力检测等位基因特异的染色质可及性与组蛋白修饰，进而驱动等位基因特异的 3D 染色质结构预测（AS-C.Origami，10 kb 分辨率），在小鼠脑中揭示了印记基因 Ube3a 的等位基因特异调控机制。</p>
+<hr />
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：现有单细胞表观基因组方法（如 10x ATAC-seq、板式 scNanoATAC-seq）要么受限于短读长无法高效解析等位基因特异信息和重复区域，要么因板式流程而通量低、成本高、操作繁琐。如何实现高通量、低成本、长读长的单细胞表观基因组 profiling，并利用其长读长优势解析等位基因特异的调控元件及其与三维基因组结构的关系？</li>
+<li><strong>为什么重要</strong>：等位基因特异的基因调控（如基因组印记、X 染色体失活）是发育和疾病（如 Prader-Willi 和 Angelman 综合征）的核心机制。传统短读长方法因 SNP 捕获率低（~2%）难以在单细胞水平解析等位基因特异调控；而三维基因组结构是调控元件发挥功能的物理基础，等位基因特异的 3D 结构预测是理解等位基因特异调控的关键。</li>
+<li><strong>现有方法为何不足</strong>：</li>
+<li>短读长单细胞 ATAC-seq（如 10x）无法有效进行单倍型分型（haplotagging），等位基因特异分析受限；</li>
+<li>板式长读长单细胞方法（scNanoATAC-seq、scNanoSeq-CUT&amp;Tag）通量低（通常数百细胞）、成本高、操作复杂；</li>
+<li>现有 Hi-C 方法（包括长读长 scNanoHi-C）在等位基因特异的 3D 结构解析上分辨率有限，且难以在单细胞水平大规模应用。</li>
+<li><strong>精确的「Can ... ?」研究问题</strong>：Can droplet-based microfluidic encapsulation combined with Nanopore long-read sequencing enable high-throughput single-cell epigenome profiling with efficient allele-specific resolution, and can the resulting allele-specific chromatin accessibility data drive high-resolution prediction of allele-specific 3D genome structures?</li>
+</ul>
+<hr />
+<h2>04 背景与发展脉络</h2>
+<blockquote>
+<p>注：此脉络基于本文框架整理，标注「仅本文框架」；部分外部引用经核验。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>代表性方法</th>
+<th>优点</th>
+<th>局限</th>
+<th>本文位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第一代：单细胞 ATAC-seq（短读长）</td>
+<td>10x Genomics scATAC-seq、sci-ATAC-seq</td>
+<td>高通量、自动化、成本可控</td>
+<td>读长短（~150 bp），SNP 捕获率低（~2%），无法高效 haplotagging；重复区域无法唯一比对</td>
+<td>本文的对比基线</td>
+</tr>
+<tr>
+<td>第二代：单细胞长读长表观基因组</td>
+<td>scNanoATAC-seq（板式）、scNanoSeq-CUT&amp;Tag（板式）</td>
+<td>读长长（~5 kb），可 haplotagging、解析重复区域</td>
+<td>板式流程通量低（数百细胞）、成本高、操作繁琐</td>
+<td>本文的直接前身，本文将其液滴化</td>
+</tr>
+<tr>
+<td>第三代（本文）：液滴式长读长单细胞表观基因组</td>
+<td><strong>dscNanoATAC / dscNanoCUT</strong></td>
+<td>高通量（~5000 细胞/次）、长读长（~3 kb）、成本降低 5 倍以上、时间缩短</td>
+<td>读长略短于板式方法；细胞回收率仍有提升空间</td>
+<td><strong>本文核心方法贡献</strong></td>
+</tr>
+<tr>
+<td>三维基因组结构预测（AI 方法）</td>
+<td>C-Origami（基于序列+ATAC+CTCF 预测 Hi-C）、Orca、DeepC</td>
+<td>从 1D 表观信号预测 3D 结构，避免 Hi-C 实验的稀疏性</td>
+<td>通常预测 bulk 结构，无法解析等位基因特异结构</td>
+<td>本文将其扩展为等位基因特异版本（AS-C.Origami）</td>
+</tr>
+<tr>
+<td>等位基因特异 3D 结构解析</td>
+<td>等位基因特异 Hi-C（如 SNP-split Hi-C）、scNanoHi-C</td>
+<td>直接实验测量等位基因特异互作</td>
+<td>数据稀疏、分辨率有限、成本高</td>
+<td>本文用深度学习预测替代实验测量，克服稀疏性</td>
+</tr>
+</tbody>
+</table>
+<p><strong>本文主张的位置</strong>：在方法学上，本文是首个将液滴微流控与 Nanopore 长读长测序结合的单细胞表观基因组平台；在三维基因组预测上，本文首次将等位基因特异的单细胞染色质可及性数据输入深度学习模型，实现等位基因特异的 3D 结构预测。</p>
+<hr />
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>短读长无法高效 haplotagging</td>
+<td>10x scATAC-seq 仅 ~2% 的 reads 可被直接 haplotagging</td>
+<td>短读长（~150 bp）难以同时覆盖多个 SNP</td>
+<td>Results 图 2a；Introduction 第 2 段</td>
+</tr>
+<tr>
+<td>板式长读长方法通量低</td>
+<td>scNanoATAC-seq 单次实验仅数百细胞，成本高（~$1.98/细胞）</td>
+<td>板式流程依赖人工操作，难以规模化</td>
+<td>Introduction 第 2 段；Results 图 S3c</td>
+</tr>
+<tr>
+<td>等位基因特异的 3D 结构难以实验测量</td>
+<td>Hi-C 数据稀疏，等位基因特异互作难以在单细胞水平解析</td>
+<td>SNP 位点稀疏 + Hi-C 数据本身稀疏，双重稀疏导致信号极弱</td>
+<td>Discussion 第 2 段；Results 图 3b</td>
+</tr>
+<tr>
+<td>重复区域无法用短读长解析</td>
+<td>短读长无法唯一比对到重复元件（如 LINE、LTR）</td>
+<td>重复元件序列高度相似，短读长无法区分</td>
+<td>Results 图 2f；图 S8</td>
+</tr>
+<tr>
+<td>单细胞表观与 3D 结构数据难以整合</td>
+<td>缺乏同一细胞中同时获取表观状态与 3D 结构的方法</td>
+<td>实验上难以在同一细胞中同时测量两种信息</td>
+<td>Discussion 第 2 段；Results 图 3a</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>06 核心思想</h2>
+<h3>1) 表面方法</h3>
+<ul>
+<li><strong>dscNanoATAC</strong>：将 Tn5 转座酶处理后的细胞核与条形码微珠共同封装入液滴（商业微流控芯片），在液滴内进行转座片段扩增并引入细胞条形码和 UMI，随后打破液滴、构建 Nanopore 长读长测序文库。</li>
+<li><strong>dscNanoCUT</strong>：类似流程，但使用 pA-Tn5 融合蛋白靶向特定组蛋白修饰（如 H3K27ac、H3K27me3），在抗体引导下对目标区域进行转座。</li>
+<li><strong>AS-C.Origami</strong>：以 DNA 序列、bulk ATAC-seq、CTCF ChIP-seq 为输入，训练 C-Origami 模型预测 Hi-C 接触图；随后将 dscNanoATAC 的等位基因特异可及性信号作为输入，分别预测父源和母源的 3D 结构。</li>
+</ul>
+<h3>2) 核心洞察</h3>
+<ul>
+<li><strong>液滴封装 + 长读长 = 高通量与等位基因分辨率的兼得</strong>：液滴微流控提供高通量（~5000 细胞），而 Nanopore 长读长（~3 kb）使得每个片段可覆盖多个 SNP，从而实现高效的等位基因分型（haplotagging 率 ~58.6%，接近板式方法，远高于短读长的 ~2%）。</li>
+<li><strong>长读长片段的双端信息 = 物理共可及性</strong>：由于长读长片段可同时覆盖两个相邻的调控元件（如增强子-启动子对），其本身即提供了物理连接信息，可直接推断共可及性（co-accessibility），无需依赖细胞间相关性推断。</li>
+<li><strong>等位基因特异的 1D 表观信号可驱动等位基因特异的 3D 结构预测</strong>：深度学习模型（C-Origami）已能从 1D 信号预测 3D 结构；将等位基因特异的可及性信号分别输入，即可获得等位基因特异的 3D 结构预测，绕开等位基因特异 Hi-C 实验的稀疏性问题。</li>
+</ul>
+<h3>3) 可能的普适教训 [Analysis]</h3>
+<ul>
+<li><strong>「长读长 + 单细胞」的组合不仅是测序长度的提升，而是信息维度的跃迁</strong>：长读长使得单分子同时携带多个维度的信息（序列变异 + 表观状态 + 物理连接），这为多模态单细胞分析提供了新思路。</li>
+<li><strong>深度学习模型可作为实验测量的「超分辨率」补充</strong>：当实验数据（等位基因特异 Hi-C）过于稀疏时，用 1D 表观信号驱动模型预测 3D 结构，是一种「以模型补实验」的策略，可迁移到其他稀疏数据场景。</li>
+<li><strong>液滴化是方法推广的关键杠杆</strong>：将板式流程液滴化不仅提升通量，更重要的是使方法具备商业化和标准化潜力，这是方法能否被广泛采用的关键。</li>
+</ul>
+<hr />
+<h2>07 方法总览</h2>
+<ul>
+<li><strong>输入</strong>：</li>
+<li>dscNanoATAC：细胞核悬液（Tn5 预处理）、条形码微珠、液滴生成油</li>
+<li>dscNanoCUT：细胞核悬液（抗体 + pA-Tn5 预处理）、条形码微珠</li>
+<li>AS-C.Origami：DNA 序列（参考基因组）、bulk ATAC-seq、CTCF ChIP-seq、dscNanoATAC 等位基因特异可及性信号</li>
+<li><strong>输出</strong>：</li>
+<li>dscNanoATAC：单细胞染色质可及性矩阵（含等位基因分辨）</li>
+<li>dscNanoCUT：单细胞组蛋白修饰谱（H3K27ac/H3K27me3）</li>
+<li>AS-C.Origami：等位基因特异的 3D 染色质接触图（10 kb 分辨率）</li>
+<li><strong>核心模块</strong>：
+  1. 液滴封装与条形码标记
+  2. 长读长测序文库构建
+  3. 生物信息学预处理（Nanoplexer 拆分、条形码提取、UMI 去重）
+  4. 单细胞峰识别与聚类（ArchR/Signac）
+  5. 等位基因特异分析（haplotagging、等位基因特异峰）
+  6. 共可及性分析（基于长读长物理连接）
+  7. AS-C.Origami 模型训练与预测</li>
+<li><strong>训练</strong>：C-Origami 模型使用 GM12878 的 bulk ATAC-seq、CTCF ChIP-seq 和 Hi-C 数据训练（参考 zenodo 数据，https://zenodo.org/record/7226561）</li>
+<li><strong>工具</strong>：Nanoplexer、Snakemake、seqkit、cutadapt、umi_tools、minimap2、samtools、bedtools、ArchR、Signac、HiCRep、cooltools</li>
+<li><strong>假设</strong>：</li>
+<li>长读长片段的两端均代表真实的 Tn5 插入位点</li>
+<li>等位基因特异的可及性信号可反映等位基因特异的染色质状态</li>
+<li>C-Origami 模型在等位基因特异输入下仍保持预测准确性</li>
+<li><strong>流程</strong>（文字描述）：
+  1. 细胞核制备 → Tn5 转座（ATAC）或抗体 + pA-Tn5 结合（CUT&amp;Tag）
+  2. 与条形码微珠共封装入液滴 → 液滴内 PCR 引入细胞条形码和 UMI
+  3. 破乳、纯化 → Nanopore 文库构建 → 长读长测序
+  4. 生物信息学：Nanoplexer 拆分 → 条形码/UMI 提取 → 比对 → 峰识别 → 聚类 → 等位基因特异分析 → 共可及性分析
+  5. AS-C.Origami：训练模型 → 输入等位基因特异可及性 → 预测等位基因特异接触图 → 与 Pore-C/Hi-C 验证</li>
+</ul>
+<hr />
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>液滴微流控封装</td>
+<td>将单个细胞核与条形码微珠包裹在独立液滴中</td>
+<td>实现单细胞分辨和高通量（~5000 细胞/次）</td>
+<td>输入：细胞核悬液、微珠、油；输出：含单细胞条形码的液滴</td>
+<td>Results 图 1a；图 S3a-b（时间从 1 周缩短至 1 天）</td>
+<td>移除后回到板式流程，通量降低 10 倍以上，成本增加 5 倍</td>
+</tr>
+<tr>
+<td>双条形码/UMI 策略</td>
+<td>通过 hairpin 结构使片段两端携带相同条形码和 UMI</td>
+<td>实现 paired-end 条形码的相互校正，降低测序错误影响</td>
+<td>输入：液滴内 PCR 产物；输出：双端条形码片段</td>
+<td>Results 图 1b-c；图 S2（82.5% 双条形码 reads）</td>
+<td>移除后条形码错误率上升，细胞鉴定准确性下降</td>
+</tr>
+<tr>
+<td>长读长测序</td>
+<td>在 Nanopore 平台测序，读长 ~3-4 kb</td>
+<td>覆盖多个 SNP 实现 haplotagging；解析重复区域</td>
+<td>输入：扩增文库；输出：长读长测序数据</td>
+<td>Results 图 1d；图 S4d-g</td>
+<td>移除后回到短读长，haplotagging 率从 58.6% 降至 ~2%</td>
+</tr>
+<tr>
+<td>生物信息学预处理流程</td>
+<td>Nanoplexer 拆分、条形码提取、UMI 去重、比对</td>
+<td>将长读长数据转化为单细胞表观矩阵</td>
+<td>输入：原始 FASTQ；输出：单细胞峰矩阵</td>
+<td>Methods 节；Results 图 1c</td>
+<td>移除后无法从原始数据获得单细胞分辨信息</td>
+</tr>
+<tr>
+<td>等位基因特异分析</td>
+<td>基于 SNP 进行 haplotagging，区分父源/母源信号</td>
+<td>解析等位基因特异的调控（印记、X 失活）</td>
+<td>输入：比对后的 BAM；输出：等位基因特异峰</td>
+<td>Results 图 2a-c；图 4d-e</td>
+<td>移除后丧失等位基因分辨能力，无法研究印记</td>
+</tr>
+<tr>
+<td>共可及性分析</td>
+<td>利用长读长片段同时覆盖两个峰的特性推断物理连接</td>
+<td>直接测量增强子-启动子共可及性，无需相关性推断</td>
+<td>输入：单细胞片段；输出：共可及性网络</td>
+<td>Results 图 2d-f；图 S6c-e</td>
+<td>移除后回到相关性推断，分辨率降低</td>
+</tr>
+<tr>
+<td>AS-C.Origami</td>
+<td>深度学习预测等位基因特异的 3D 染色质结构</td>
+<td>克服等位基因特异 Hi-C 数据稀疏性</td>
+<td>输入：序列+ATAC+CTCF；输出：10 kb 等位基因特异接触图</td>
+<td>Results 图 3a-i</td>
+<td>移除后无法获得等位基因特异的 3D 结构信息</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>09 关键公式符号</h2>
+<blockquote>
+<p>本文为方法学论文，核心公式较少，以下列出理解所需的关键统计量。</p>
+</blockquote>
+<p><strong>1. 等位基因特异峰检验（二项检验）</strong></p>
+<p>对每个峰中的 reads 进行父源/母源计数：</p>
+<p>$$X \sim \text{Binomial}(n, p=0.5)$$</p>
+<ul>
+<li>$X$：父源（或母源）reads 数</li>
+<li>$n$：该峰中总可分型 reads 数</li>
+<li>$p=0.5$：无等位基因偏好时的零假设概率</li>
+<li>双侧检验，$P &lt; 0.05$ 判定为等位基因特异峰</li>
+</ul>
+<p><strong>2. 共可及性检验（Kolmogorov-Smirnov 检验）</strong></p>
+<p>比较支持片段长度分布与背景片段长度分布：</p>
+<p>$$D_{KS} = \sup_x |F_{\text{support}}(x) - F_{\text{background}}(x)|$$</p>
+<ul>
+<li>$F_{\text{support}}(x)$：支持片段的经验累积分布函数</li>
+<li>$F_{\text{background}}(x)$：背景片段的经验累积分布函数</li>
+<li>$D_{KS}$：KS 统计量，用于判断两分布是否显著不同</li>
+</ul>
+<p><strong>3. 分层调整相关系数（SCC，用于 Hi-C 比较）</strong></p>
+<p>$$\text{SCC} = \frac{\sum_{ij} w_{ij}(x_{ij} - \bar{x})(y_{ij} - \bar{y})}{\sqrt{\sum_{ij} w_{ij}(x_{ij} - \bar{x})^2 \sum_{ij} w_{ij}(y_{ij} - \bar{y})^2}}$$</p>
+<ul>
+<li>$x_{ij}, y_{ij}$：两个接触矩阵在 $(i,j)$ 位置的接触频率</li>
+<li>$w_{ij}$：基于距离分层的权重</li>
+<li>用于比较预测与实验的接触图相似性</li>
+</ul>
+<p><strong>4. 绝缘分数（Insulation score）</strong></p>
+<p>$$I(b) = \frac{1}{w^2} \sum_{i=b-w}^{b-1} \sum_{j=b+1}^{b+w} M_{ij}$$</p>
+<ul>
+<li>$M_{ij}$：接触矩阵在 $(i,j)$ 的接触频率</li>
+<li>$w$：滑动窗口大小（本文 200 kb 窗口，10 kb 分辨率）</li>
+<li>用于识别 TAD 边界</li>
+</ul>
+<hr />
+<h2>10 实验设计与证据链</h2>
+<h3>数据集/群体</h3>
+<table>
+<thead>
+<tr>
+<th>数据集</th>
+<th>规模</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GM78 细胞系（人类 B 淋巴细胞）</td>
+<td>10,000 细胞输入，8,057 细胞通过 QC</td>
+<td>dscNanoATAC 主要验证</td>
+</tr>
+<tr>
+<td>四种人类细胞系混合（GM78、HEK293T、K562、H9）</td>
+<td>7,064 细胞</td>
+<td>细胞类型区分验证</td>
+</tr>
+<tr>
+<td>小鼠脑组织（CTX 皮层、HPF 海马）</td>
+<td>7,621 细胞（3,125 CTX + 4,496 HPF）</td>
+<td>复杂组织验证</td>
+</tr>
+<tr>
+<td>人类细胞系混合（dscNanoCUT）</td>
+<td>2,100 细胞</td>
+<td>H3K27ac profiling 验证</td>
+</tr>
+<tr>
+<td>小鼠皮层（dscNanoCUT）</td>
+<td>1,946（H3K27ac）+ 1,884（H3K27me3）</td>
+<td>组蛋白修饰验证</td>
+</tr>
+</tbody>
+</table>
+<h3>评测指标</h3>
+<ul>
+<li>细胞回收率、有效 reads 比例、TSS 富集分数、FRiP、haplotagging 率、UMI 去重效率</li>
+<li>聚类分离度（silhouette coefficient）</li>
+<li>SCC（与 Pore-C/Hi-C 比较）</li>
+<li>绝缘分数相关性</li>
+</ul>
+<h3>基线/对比方法</h3>
+<ul>
+<li>10x scATAC-seq（短读长）</li>
+<li>scNanoATAC-seq（板式长读长）</li>
+<li>scNanoSeq-CUT&amp;Tag（板式长读长）</li>
+<li>bulk ATAC-seq、bulk CUT&amp;Tag、ENCODE ChIP-seq</li>
+</ul>
+<h3>实验列表</h3>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的 claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>物种混合实验（人类+小鼠）</td>
+<td>液滴封装无交叉污染</td>
+<td>低/高细胞上样量</td>
+<td>碰撞率 0.85%（低上样）至 6.48%（高上样）</td>
+<td>液滴封装有效，交叉污染可控</td>
+<td>高上样时碰撞率仍较高，需优化上样量</td>
+<td>Results 图 S3d-e</td>
+</tr>
+<tr>
+<td>GM78 dscNanoATAC 与 10x scATAC-seq 对比</td>
+<td>dscNanoATAC 数据质量不低于短读长方法</td>
+<td>TSS 富集、FRiP、峰数</td>
+<td>TSS 富集分数相当，FRiP 更高</td>
+<td>dscNanoATAC 数据质量可靠</td>
+<td>未提供全基因组范围系统比较</td>
+<td>Results 图 1d；图 S4d-g</td>
+</tr>
+<tr>
+<td>四种细胞系混合聚类</td>
+<td>dscNanoATAC 可区分不同细胞类型</td>
+<td>UMAP + silhouette</td>
+<td>silhouette = 0.90</td>
+<td>细胞类型分辨能力强</td>
+<td>未与 10x 方法在相同细胞混合上直接比较</td>
+<td>Results 图 1e</td>
+</tr>
+<tr>
+<td>haplotagging 效率比较</td>
+<td>长读长显著优于短读长</td>
+<td>dscNanoATAC vs 10x scATAC-seq</td>
+<td>58.6% vs ~2.0%</td>
+<td>长读长在等位基因分析上优势显著</td>
+<td>未评估不同 SNP 密度区域的表现差异</td>
+<td>Results 图 2a</td>
+</tr>
+<tr>
+<td>等位基因特异峰验证</td>
+<td>dscNanoATAC 可检测等位基因特异可及性</td>
+<td>二项检验 + 已知印记位点</td>
+<td>检测到 X 染色体失活和已知印记位点</td>
+<td>等位基因特异分析有效</td>
+<td>未进行实验验证（如 CRISPR 验证）</td>
+<td>Results 图 2b-c；图 4d-e</td>
+</tr>
+<tr>
+<td>共可及性分析</td>
+<td>长读长可直接检测物理共可及性</td>
+<td>与 Cicero 相关性方法对比</td>
+<td>所有共可及性事件均被 Cicero 检测到，且分数更高</td>
+<td>物理共可及性更直接、更可靠</td>
+<td>未评估共可及性网络的生物学功能</td>
+<td>Results 图 2d-f；图 S6c-e</td>
+</tr>
+<tr>
+<td>AS-C.Origami 预测 vs Pore-C</td>
+<td>预测的等位基因特异 3D 结构准确</td>
+<td>SCC + 绝缘分数</td>
+<td>平均 SCC 从 0.32 提升至 0.41；绝缘分数相关性从 0.41 提升至 0.54</td>
+<td>AS-C.Origami 能预测等位基因特异的 3D 结构</td>
+<td>预测在低 SNP 密度区域可靠性下降</td>
+<td>Results 图 3b-h</td>
+</tr>
+<tr>
+<td>小鼠脑组织应用</td>
+<td>dscNanoATAC 可用于复杂组织</td>
+<td>细胞类型注释 + 等位基因分析</td>
+<td>捕获所有主要脑细胞类型；Ube3a 等位基因特异调控</td>
+<td>方法适用于复杂组织</td>
+<td>未进行多生物学重复</td>
+<td>Results 图 4a-e</td>
+</tr>
+<tr>
+<td>dscNanoCUT 组蛋白修饰</td>
+<td>dscNanoCUT 可检测 H3K27ac/H3K27me3</td>
+<td>与 bulk CUT&amp;Tag 对比</td>
+<td>峰重叠率高，细胞类型特异</td>
+<td>dscNanoCUT 有效</td>
+<td>未与短读长单细胞 CUT&amp;Tag 系统比较</td>
+<td>Results 图 5a-f；图 6a-f</td>
+</tr>
+<tr>
+<td>TE 分析</td>
+<td>长读长可解析重复元件表观状态</td>
+<td>短读长 vs 长读长</td>
+<td>长读长显著提高 TE 定位能力</td>
+<td>长读长在重复元件分析上优势明显</td>
+<td>未进行 TE 功能验证</td>
+<td>Results 图 6e-f；图 S15</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：本文的结论局限于单细胞表观基因组方法学验证和等位基因特异的 3D 结构预测，不涉及 3D 结构的功能实验验证。</li>
+<li><strong>oracle/真值输入</strong>：AS-C.Origami 的训练使用了 GM78 的 bulk Hi-C 数据作为真值；等位基因特异的验证使用了 Pore-C 数据作为参考。这些参考数据本身存在稀疏性和噪声。</li>
+<li><strong>端到端状态</strong>：dscNanoATAC/dscNanoCUT 是端到端可用的实验流程；AS-C.Origami 是端到端可用的预测流程，但预测结果未经实验（如等位基因特异 Hi-C、FISH）直接验证。</li>
+<li><strong>算力成本</strong>：未提供训练 AS-C.Origami 的具体算力需求；C-Origami 原始模型需要 GPU 训练，但推理成本较低。</li>
+<li><strong>历史数据依赖</strong>：AS-C.Origami 依赖训练时的 bulk 数据质量；等位基因特异预测依赖输入数据的 SNP 密度。</li>
+<li><strong>模型依赖</strong>：AS-C.Origami 的预测质量依赖 C-Origami 架构的假设（序列+ATAC+CTCF 足以预测 3D 结构），且未考虑其他表观修饰（如 DNA 甲基化）对 3D 结构的影响。</li>
+<li><strong>最难情形</strong>：低 SNP 密度区域（如近着丝粒、异染色质区）的等位基因特异预测可靠性显著下降；高重复区域（如卫星 DNA）仍难以解析。</li>
+<li><strong>群体/领域边界</strong>：方法在培养细胞系和小鼠脑组织中验证；未在人类原代组织、肿瘤样本或发育时间序列中验证。结论不能外推到这些场景。</li>
+<li><strong>不确定性</strong>：等位基因特异峰的判定依赖二项检验，未进行多重检验校正的讨论；共可及性分析的假阳性率未系统评估。</li>
+</ul>
+<p><strong>有边界的复述</strong>：本文证明，在培养细胞系和小鼠脑组织中，液滴式长读长单细胞表观基因组方法能够在 ~5000 细胞规模上实现与板式方法相当的等位基因特异分辨能力，且基于等位基因特异染色质可及性数据训练的深度学习模型能够预测 10 kb 分辨率的等位基因特异 3D 染色质结构，预测结果与 Pore-C 数据中等位基因特异互作模式一致。</p>
+<hr />
+<h2>12 作者自认局限</h2>
+<table>
+<thead>
+<tr>
+<th>局限</th>
+<th>具体表现</th>
+<th>作者提出的未来方向</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>读长和通量仍可提升</td>
+<td>当前读长 ~3 kb，通量 ~5000 细胞/次；优化 Tn5 浓度和微流控预扩增系统可能提高扩增效率和读长</td>
+<td>优化 Tn5 酶浓度和微流控预扩增系统</td>
+<td>Discussion「Limitations of the study」第 1 点</td>
+</tr>
+<tr>
+<td>缺乏匹配的基因表达信息</td>
+<td>方法仅捕获表观基因组数据，无法直接评估表观变化对转录的影响</td>
+<td>与多组学平台整合，如同时捕获基因表达</td>
+<td>Discussion「Limitations of the study」第 2 点</td>
+</tr>
+<tr>
+<td>长读长导致片段数较少</td>
+<td>相同测序深度下，长读长产生的片段数少于短读长，可能影响细胞回收率</td>
+<td>未明确提及</td>
+<td>Discussion「Limitations of the study」第 3 点</td>
+</tr>
+<tr>
+<td>dscNanoCUT 细胞回收率可改进</td>
+<td>缺乏专门的去交联步骤可能限制扩增效率</td>
+<td>优化去交联步骤</td>
+<td>Discussion「Limitations of the study」第 4 点</td>
+</tr>
+<tr>
+<td>AS-C.Origami 仅使用 ATAC 数据</td>
+<td>当前仅整合 dscNanoATAC 数据，未整合 dscNanoCUT 的组蛋白修饰数据</td>
+<td>将 dscNanoCUT 数据整合到统一深度学习框架中</td>
+<td>Discussion「Limitations of the study」第 5 点</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AS-C.Origami 的验证主要依赖 Pore-C 数据，而 Pore-C 本身也是长读长方法，可能存在系统性偏差</td>
+<td>预测与 Pore-C 的一致性可能部分源于方法学相似性（均偏好长片段），而非真实的等位基因特异结构</td>
+<td>如果预测仅与 Pore-C 一致而与真实结构不符，则预测的生物学意义有限</td>
+<td>使用独立方法（如等位基因特异 FISH、Micro-C）验证预测的等位基因特异结构</td>
+<td>Results 图 3b-h；Discussion 第 2 段</td>
+</tr>
+<tr>
+<td>等位基因特异峰的判定未进行多重检验校正</td>
+<td>全基因组范围内进行数万次二项检验，未校正可能导致大量假阳性</td>
+<td>等位基因特异峰的数目可能被高估</td>
+<td>使用 BH-FDR 或置换检验重新分析</td>
+<td>Results 图 2b；Methods「Identification of allele-specific peaks」</td>
+</tr>
+<tr>
+<td>共价性分析仅基于物理共片段，未考虑染色质环的细胞异质性</td>
+<td>单个细胞中两个位点的共片段可能反映的是细胞群体中的平均结构，而非单细胞内的真实共定位</td>
+<td>如果共价性反映的是群体平均，则单细胞层面的推断可能不准确</td>
+<td>与单细胞 Hi-C 数据对比，评估单细胞层面的共价性一致性</td>
+<td>Results 图 2d-f；Discussion 第 1 段</td>
+</tr>
+<tr>
+<td>小鼠脑组织分析仅基于单次实验（每组织一个反应）</td>
+<td>缺乏生物学重复，无法评估技术变异与生物学变异</td>
+<td>结论的稳健性存疑</td>
+<td>增加独立生物学重复</td>
+<td>Results 图 4a；Methods「Processing of dissected mouse brain tissues」</td>
+</tr>
+<tr>
+<td>细胞类型注释依赖参考数据集（10x 多组学）</td>
+<td>参考数据集的注释偏差可能影响脑细胞类型识别的准确性</td>
+<td>如果注释有误，后续等位基因特异分析可能基于错误的细胞类型</td>
+<td>使用多重正交标记基因验证注释</td>
+<td>Results 图 4b；图 S12c-g</td>
+</tr>
+<tr>
+<td>AS-C.Origami 的等位基因特异预测未考虑亲本特异性 CTCF 结合差异</td>
+<td>CTCF 结合本身可能是等位基因特异的，但模型仅使用 ATAC 信号作为输入</td>
+<td>如果 CTCF 结合差异是 3D 结构差异的主要驱动因素，模型可能遗漏关键信息</td>
+<td>将等位基因特异的 CTCF ChIP-seq 数据纳入模型输入</td>
+<td>Results 图 3a；Discussion 第 2 段</td>
+</tr>
+<tr>
+<td>成本分析未包含设备折旧和人力成本</td>
+<td>仅比较了试剂成本（$0.39 vs $1.98/细胞），未包含微流控设备、Nanopore 测序仪等固定成本</td>
+<td>实际推广成本可能高于报告值</td>
+<td>进行全成本核算</td>
+<td>Results 图 S3c</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>14 学到什么</h2>
+<blockquote>
+<p>以下为 Agent 提炼的知识候选，面向「三维基因组/染色质组织 × AI/分子模拟」课题方向。</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>长读长单细胞表观数据可作为 3D 基因组结构预测的高质量输入</strong>：dscNanoATAC 的等位基因特异可及性信号成功驱动了 C-Origami 模型预测等位基因特异的 3D 结构。这提示：单细胞表观遗传数据（ATAC、CUT&amp;Tag）与 3D 结构预测模型的结合是可行的，且能提供 Hi-C 无法达到的等位基因分辨率。</p>
+</li>
+<li>
+<p><strong>物理共可及性（physical co-accessibility）是增强子-启动子互作推断的新维度</strong>：传统方法（如 Cicero）基于细胞间相关性推断共可及性，而长读长片段直接提供物理连接证据。这一思路可迁移到 3D 基因组研究中：长读长 Hi-C（如 Pore-C、HiFi-SIM）与单细胞表观数据的联合分析可提供更直接的调控互作证据。</p>
+</li>
+<li>
+<p><strong>等位基因特异的 1D 表观信号可推断等位基因特异的 3D 结构</strong>：这是本文最重要的概念贡献。对于印记基因、X 失活等场景，实验测量等位基因特异的 Hi-C 极为困难，但通过将等位基因特异的 ATAC 信号输入深度学习模型，可以预测等位基因特异的 3D 结构。这一「以模型补实验」的策略可推广到其他难以实验测量的场景。</p>
+</li>
+<li>
+<p><strong>液滴微流控是单细胞多组学标准化的关键平台</strong>：本文展示了液滴平台与长读长测序的兼容性，且成本降低 5 倍。对于 3D 基因组研究，这意味着未来可能实现大规模单细胞 3D 基因组与表观组的联合 profiling。</p>
+</li>
+<li>
+<p><strong>深度学习模型的可迁移性</strong>：C-Origami 原本为 bulk 数据设计，本文展示了其在新数据类型（等位基因特异的单细胞 ATAC）上的迁移能力。这提示：3D 基因组预测模型可能具有比预期更强的泛化能力，值得在其他数据类型（如甲基化、组蛋白修饰）上测试。</p>
+</li>
+<li>
+<p><strong>长读长在重复元件分析中的独特优势</strong>：本文展示了长读长在 LINE/LTR 等重复元件表观状态解析上的优势。对于 3D 基因组研究，这意味着长读长 Hi-C 可能揭示短读长无法解析的重复元件相关的 3D 结构（如着丝粒、端粒）。</p>
+</li>
+</ol>
+<hr />
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>C-Origami（Fudenberg et al., 2023, Nature Genetics）</strong>：本文直接基于 C-Origami 架构，将其扩展为等位基因特异版本。C-Origami 证明了从序列+ATAC+CTCF 预测 Hi-C 的可行性；本文进一步证明该架构可接受等位基因特异的输入并输出等位基因特异的 3D 结构。</li>
+<li><strong>scNanoATAC-seq（Hu et al., 2023）</strong>：本文的直接前身，板式长读长单细胞 ATAC-seq。本文将其液滴化，实现通量提升。</li>
+<li><strong>scNanoSeq-CUT&amp;Tag（Wang et al., 2023）</strong>：板式长读长单细胞 CUT&amp;Tag，本文将其液滴化为 dscNanoCUT。</li>
+<li><strong>Cicero（Pliner et al., 2018, Molecular Cell）</strong>：基于相关性的共可及性推断方法。本文的物理共可及性方法与之互补，且本文结果显示物理方法识别的共可及性事件在 Cicero 中得分更高。</li>
+<li><strong>10x Genomics scATAC-seq</strong>：短读长单细胞 ATAC-seq 的代表，本文的主要对比基线。其 haplotagging 率仅 ~2%，凸显长读长优势。</li>
+<li><strong>Pore-C（Ulahannan et al., 2019）</strong>：长读长 Hi-C 方法，本文用于验证 AS-C.Origami 的预测结果。</li>
+<li><strong>HiCRep（Yang et al., 2017）</strong>：用于比较 Hi-C 图谱的 SCC 指标，本文用于评估预测与实验的一致性。</li>
+<li><strong>印记基因调控（Prader-Willi/Angelman 综合征）</strong>：本文在小鼠脑中揭示了 Ube3a 的等位基因特异调控，与已知的 Ube3a 印记调控机制一致。</li>
+<li><strong>Fiberfold（2024）</strong>：本文讨论中提及的类似工作，基于 Fiber-seq 数据预测单倍型特异的 3D 结构，与 AS-C-Origami 思路相似但数据源不同。</li>
+</ul>
+<hr />
+<h2>16 研究想法</h2>
+<blockquote>
+<p>以下为 Agent 生成的研究候选，面向「三维基因组/染色质组织 × AI/分子模拟」课题方向。</p>
+</blockquote>
+<h3>候选 1：基于长读长单细胞多组学的等位基因特异 3D 基因组结构预测框架</h3>
+<ul>
+<li><strong>名称</strong>：Allele-specific Multi-omics 3D Genome Predictor (AS-M3D)</li>
+<li><strong>来源局限/观察</strong>：AS-C.Origami 仅使用 ATAC-seq 作为等位基因特异的输入，未整合组蛋白修饰（dscNanoCUT 数据）和 DNA 甲基化信息。而 3D 结构形成受多种表观修饰协同调控。</li>
+<li><strong>核心假设</strong>：整合等位基因特异的 ATAC、H3K27ac、H3K27me3、CTCF 结合和 DNA 甲基化数据，可显著提升等位基因特异 3D 结构预测的准确性，尤其是在印记区域和 X 染色体失活区域。</li>
+<li><strong>初步方法</strong>：扩展 C-Origami 架构，将多模态表观信号作为并行输入通道；使用注意力机制融合不同模态；在 GM78 和人类原代细胞中训练和验证。</li>
+<li><strong>验证方式</strong>：与等位基因特异 Pore-C、Micro-C 数据比较；在已知印记区域（如 SNRPN、H19/IGF2）验证预测的等位基因特异 TAD 和 loop。</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul>
+<h3>候选 2：基于长读长共可及性网络的增强子-启动子互作图构建</h3>
+<ul>
+<li><strong>名称</strong>：Long-read Co-accessibility Interaction Network (LCIN)</li>
+<li><strong>来源局限/观察</strong>：本文的共可及性分析仅关注相邻峰对，未构建全基因组范围的互作图。长读长片段的物理连接信息可扩展为全基因组互作网络。</li>
+<li><strong>核心假设</strong>：基于长读长物理共可及性构建的增强子-启动子互作图，比基于相关性的方法（如 Cicero）具有更低的假阳性和更高的空间分辨率。</li>
+<li><strong>初步方法</strong>：从 dscNanoATAC 数据中提取所有跨峰长读长片段，构建峰-峰连接矩阵；使用图神经网络嵌入峰的特征（序列、表观状态、CTCF 结合）；预测增强子-启动子互作。</li>
+<li><strong>验证方式</strong>：与 HiChIP、Pore-C 数据比较；在已知细胞类型特异性互作区域验证。</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul>
+<h3>候选 3：等位基因特异的 3D 结构预测用于疾病变异功能注释</h3>
+<ul>
+<li><strong>名称</strong>：Allele-specific 3D Variant Effect Predictor (A3D-VEP)</li>
+<li><strong>来源局限/观察</strong>：AS-C.Origami 预测了等位基因特异的 3D 结构，但未将其应用于疾病变异的注释。许多疾病相关 SNP 位于非编码区，其功能可能通过改变等位基因特异的 3D 结构实现。</li>
+<li><strong>核心假设</strong>：疾病相关 SNP 所在区域的等位基因特异 3D 结构差异（如 TAD 边界位移、loop 形成差异）可用于预测 SNP 的功能影响。</li>
+<li><strong>初步方法</strong>：对疾病相关 SNP 区域，使用 AS-C.Origami 预测野生型和突变型的等位基因特异 3D 结构；计算结构差异评分（如 TAD 边界位移、接触概率变化）；与 eQTL、GWAS 数据整合。</li>
+<li><strong>验证方式</strong>：在已知功能 SNP（如 rs6983267 附近 MYC 增强子）中验证；与 CRISPR 干扰实验数据比较。</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul>
+<h3>候选 4：单细胞表观数据驱动的 3D 基因组结构生成模型</h3>
+<ul>
+<li><strong>名称</strong>：Single-cell Epigenome-to-3D-Structure Diffusion Model (SE3D-Diff)</li>
+<li><strong>来源局限/观察</strong>：AS-C.Origami 预测的是接触图（contact map），而非具体的 3D 结构坐标。对于分子模拟和机制研究，需要原子级或核小体级的 3D 结构。</li>
+<li><strong>核心假设</strong>：从单细胞表观数据（ATAC、CUT&amp;Tag）出发，通过生成模型可以直接采样等位基因特异的 3D 染色质结构集合，捕捉细胞异质性。</li>
+<li><strong>初步方法</strong>：使用扩散模型（diffusion model）学习从表观信号到 3D 结构的映射；以 C-Origami 预测的接触图为约束，生成满足接触概率的 3D 结构集合；对等位基因特异的输入分别生成父源和母源结构。</li>
+<li><strong>验证方式</strong>：与 FISH 测量的物理距离比较；与分子模拟（如 polymer model）生成的平衡结构比较。</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul>
+<h3>候选 5：长读长单细胞表观数据与 3D 基因组的联合降维与细胞类型注释</h3>
+<ul>
+<li><strong>名称</strong>：Joint Epigenome-3D Embedding (JE3D)</li>
+<li><strong>来源局限/观察</strong>：本文分别分析了表观数据和 3D 结构预测，但未将两者联合用于细胞类型注释。3D 结构特征（如 TAD 边界、compartment 状态）可能提供表观数据之外的细胞类型信息。</li>
+<li><strong>核心假设</strong>：将单细胞表观信号与预测的 3D 结构特征联合嵌入，可提高细胞类型注释的准确性，特别是对表观上相似的细胞类型。</li>
+<li><strong>初步方法</strong>：对每个细胞，从 dscNanoATAC 数据预测 3D 结构；提取结构特征（如 TAD 边界强度、compartment 得分、loop 数量）；将表观特征与结构特征拼接，使用变分自编码器联合嵌入。</li>
+<li><strong>验证方式</strong>：与已知细胞类型注释比较；在脑组织数据中验证神经元亚型的分辨能力。</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Full manuscript text (abstract, introduction, results, discussion, methods) without figures or supplementary tables</li>
+<li><strong>Assessment boundary</strong> Technical and conceptual evaluation of the described methods, results, and claims as presented in the text</li>
+<li><strong>Shared manuscript claim summary</strong> The authors present two droplet-based long-read single-cell epigenome sequencing methods (dscNanoATAC and dscNanoCUT) that achieve ~5000 cells per experiment, demonstrate allele-specific epigenetics, neighboring co-accessibility, and regulatory element detection in low-mappability regions, and introduce AS-C.Origami for predicting allele-specific 3D genome structures at 10 kb resolution. Applications in mouse brain reveal allele-specific regulation of Ube3a and transposon-associated regulatory elements.</li>
+<li><strong>Visible evidence base</strong> Text descriptions of results, figure legends, methods, and supplementary table titles</li>
+<li><strong>Missing materials affecting confidence</strong> All figures and supplementary figures, all supplementary tables, sequencing data availability, code availability, and detailed quality metrics</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li>
+<p><strong>Overall assessment</strong> This manuscript describes a technically ambitious and potentially valuable advance in single-cell epigenomics by adapting droplet-based microfluidics to long-read Nanopore sequencing. The core methods, dscNanoATAC and dscNanoCUT, address a genuine need for higher-throughput long-read single-cell epigenome profiling. The biological applications, particularly the allele-specific analysis of the Pradet-Willi/Angelman syndrome region and transposon element profiling, are of interest. However, the manuscript as provided has several critical gaps that prevent full evaluation. The absence of all figures and supplementary data makes it impossible to assess data quality, reproducibility, and the validity of key claims. The AS-C.Origami section, while conceptually interesting, lacks sufficient detail on training, validation, and the biological significance of the predictions. The comparison with existing methods is incomplete, and several claims about performance and utility are not fully supported by the evidence presented in the text alone. The manuscript would benefit from a more critical discussion of limitations and a clearer demonstration of the advantages over existing approaches.</p>
+</li>
+<li>
+<p><strong>Who would be interested in the results, and why</strong> Researchers in single-cell genomics, epigenomics, and long-read sequencing technologies would be the primary audience. Those studying allele-specific regulation, genomic imprinting, and the regulatory role of transposable elements would find the applications relevant. The methods could also be of interest to those developing high-throughput single-cell assays and computational tools for epigenome analysis. The potential for clinical translation in understanding disorders like Pradet-Willi and Angelman syndrome may attract a broader biomedical audience.</p>
+</li>
+<li>
+<p><strong>Major strengths</strong>
+  1. The development of droplet-based long-read single-cell epigenome methods addresses a clear technological gap, potentially making long-read single-cell profiling more accessible and scalable.
+  2. The demonstration of allele-specific epigenetics and neighboring co-accessibility using long reads is a significant advantage over short-read methods.
+  3. The application to complex tissues (mouse brain) and the identification of cell type-specific regulatory elements, including those in low-mappability regions, showcases the biological utility of the approach.
+  4. The integration of a deep-learning model (AS-C.Origami) to predict allele-specific 3D genome structures from the generated data is a novel and forward-looking contribution.</p>
+</li>
+<li>
+<p><strong>Major Concerns</strong></p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M1</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Evidence</li>
+<li><strong>Claim pointer</strong> The claim that dscNanoATAC and dscNanoCUT achieve a throughput of ~5000 cells in a single experiment with high data quality.</li>
+<li><strong>Evidence pointer</strong> Results section "Technology workflow and data quality"; Figure 1; Supplementary Figures S1-S4; Supplementary Table S1</li>
+<li><strong>Concern</strong> The manuscript text describes the throughput and quality metrics, but the actual data supporting these claims are not visible. The figures and supplementary tables that would show cell counts, quality distributions, reproducibility, and comparisons with existing methods are not provided. Without these, the core performance claims cannot be verified.</li>
+<li><strong>Why it matters</strong> The primary contribution of this work is the method itself. If the throughput, data quality, and reproducibility are not convincingly demonstrated with data, the central claims of the manuscript are unsupported.</li>
+<li>
+<p><strong>Resolution test</strong> Provide all figures and supplementary tables. Show clear evidence of cell capture rates, library complexity, signal-to-noise ratios, and reproducibility across replicates. Include direct comparisons with existing methods (e.g., scNanoATAC-seq, 10x scATAC-seq) using the same cell types and metrics.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M2</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Technical Soundness</li>
+<li><strong>Claim pointer</strong> The claim that the AS-C.Origami model can predict allele-specific 3D genome structures at high resolution (10 kb) from dscNanoATAC data.</li>
+<li><strong>Evidence pointer</strong> Results section "Allele-specific-C.Origami enables the prediction of high-resolution cell type- and allele-specific 3D chromatin architectures"; Figure 3; Supplementary Figures S9-S11</li>
+<li><strong>Concern</strong> The description of the AS-C.Origami workflow is insufficient. The text mentions training a model based on a previous study, but does not provide details on the training data, model architecture, hyperparameters, or validation strategy. The benchmarking against Pote-C and Hi-C data is described, but the actual correlation values and their significance are not presented in the text. The claim of "high resolution" is not substantiated without a clear comparison to the resolution of the input data and existing methods.</li>
+<li><strong>Why it matters</strong> The AS-C.Origami section is a major part of the manuscript's novelty. If the model's development and validation are not rigorously described and demonstrated, the claim of predicting allele-specific 3D structures is not credible.</li>
+<li>
+<p><strong>Resolution test</strong> Provide a detailed description of the model architecture, training procedure, and validation datasets. Show the actual correlation plots and statistics for the benchmarking against Pote-C and Hi-C data. Demonstrate that the model's predictions are accurate and specific, and that the 10 kb resolution claim is justified.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M3</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Evidence</li>
+<li><strong>Claim pointer</strong> The claim that dscNanoATAC and dscNanoCUT can identify allele-specific regulatory elements and transposon-associated regulatory elements in the mouse brain.</li>
+<li><strong>Evidence pointer</strong> Results sections "dscNanoATAC revealed allele-specific regulatory elements in the mouse brain" and "dscNanoCUT captured allele-specific histone modifications in the mouse brain"; Figures 4-6; Supplementary Figures S12-S19; Supplementary Tables S5-S11</li>
+<li><strong>Concern</strong> The biological findings, such as the allele-specific regulation of Ube3a and the identification of transposon-associated regulatory elements, are described in the text, but the supporting data are not visible. The figures that would show the genomic tracks, co-accessibility maps, and cell type-specific patterns are not provided. The statistical significance of these findings is not reported in the text.</li>
+<li><strong>Why it matters</strong> The biological applications are important for demonstrating the utility of the methods. Without the actual data, the significance and validity of these findings cannot be assessed.</li>
+<li>
+<p><strong>Resolution test</strong> Provide all figures and supplementary tables. Show clear genomic tracks and statistical analyses for the allele-specific peaks and co-accessibility events. Include validation of the Ube3a findings and the transposon-associated regulatory elements.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M4</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Reproducibility</li>
+<li><strong>Claim pointer</strong> The claim that the methods are scalable and cost-effective compared with previous techniques.</li>
+<li><strong>Evidence pointer</strong> Results section "Technology workflow and data quality"; Supplementary Figure S3</li>
+<li><strong>Concern</strong> The cost and time comparisons are mentioned in the text, but the details of the cost analysis are not provided. The comparison with plate-based methods is described, but the specific cost breakdown and time savings are not quantified in the text.</li>
+<li><strong>Why it matters</strong> The scalability and cost-effectiveness are key selling points of the methods. Without a clear and detailed cost analysis, these claims are not substantiated.</li>
+<li>
+<p><strong>Resolution test</strong> Provide a detailed cost analysis table comparing dscNanoATAC and dscNanoCUT with existing methods, including reagent costs, sequencing costs, and hands-on time.</p>
+</li>
+<li>
+<p><strong>Minor Comments</strong></p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m1</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Clarity</li>
+<li><strong>Affected element</strong> Abstract</li>
+<li><strong>Evidence pointer</strong> Abstract</li>
+<li><strong>Issue</strong> The abstract is dense and uses technical jargon without sufficient context for a general reader. The phrase "multidimensional regulatory elements" is vague.</li>
+<li>
+<p><strong>Required correction</strong> Clarify the abstract by briefly explaining what "multidimensional" means in this context and consider simplifying the language to improve accessibility.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m2</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Completeness</li>
+<li><strong>Affected element</strong> Methods section</li>
+<li><strong>Evidence pointer</strong> Materials and methods</li>
+<li><strong>Issue</strong> The methods section for the computational pipeline is described in the results but not fully detailed in the methods. The specific parameters for the "local minima-based strategy" and the "stringent filtration step" are not fully described.</li>
+<li>
+<p><strong>Required correction</strong> Provide a more detailed description of the computational pipeline, including all parameters and thresholds used.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m3</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Statistical Rigor</li>
+<li><strong>Affected element</strong> Results section</li>
+<li><strong>Evidence pointer</strong> Results sections on allele-specific peaks and co-accessibility</li>
+<li><strong>Issue</strong> The statistical methods for identifying allele-specific peaks and co-accessibility events are not described in the text. The thresholds for significance are not stated.</li>
+<li>
+<p><strong>Required correction</strong> Clearly describe the statistical tests and thresholds used for identifying allele-specific peaks and co-accessibility events.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m4</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Reproducibility</li>
+<li><strong>Affected element</strong> Methods section</li>
+<li><strong>Evidence pointer</strong> Materials and methods</li>
+<li><strong>Issue</strong> The methods for the mouse brain experiments are described, but the number of biological replicates and the details of the reference datasets used for label transfer are not specified.</li>
+<li>
+<p><strong>Required correction</strong> Specify the number of replicates and provide details on the reference datasets used for cell type annotation.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m5</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Clarity</li>
+<li><strong>Affected element</strong> Discussion</li>
+<li><strong>Evidence pointer</strong> Discussion</li>
+<li><strong>Issue</strong> The discussion of the AS-C.Origami model's advantages over existing methods is brief and does not fully address potential limitations or alternative approaches.</li>
+<li>
+<p><strong>Required correction</strong> Expand the discussion to include a more critical comparison with existing methods and a more detailed consideration of the model's limitations.</p>
+</li>
+<li>
+<p><strong>Technical failings that need to be addressed before the case is established</strong></p>
+</li>
+<li>R1-M1: Lack of visible data to support throughput and quality claims.</li>
+<li>R1-M2: Insufficient detail on AS-C.Origami model development and validation.</li>
+<li>R1-M3: Lack of visible data to support biological findings.</li>
+<li>
+<p>R1-M4: Incomplete cost and time analysis.</p>
+</li>
+<li>
+<p><strong>Assessment against Nature-style criteria</strong></p>
+</li>
+<li><strong>Originality</strong> The work is original in its combination of droplet-based microfluidics with long-read sequencing for single-cell epigenomics. The AS-C.Origami approach is also novel. However, the originality is somewhat tempered by the fact that the underlying methods (scNanoATAC-seq, scNanoCUT) have been previously described, and the novelty lies in the droplet-based adaptation.</li>
+<li><strong>Scientific importance</strong> The methods have the potential to be important for the field by making long-read single-cell epigenomics more accessible and scalable. The biological findings, particularly in the Pradet-Willi/Angelman syndrome region, could be of significant interest.</li>
+<li><strong>Interdisciplinary readership</strong> The work is likely to appeal to a specialized audience in genomics and epigenomics. The technical nature of the methods and the focus on specific biological applications may limit its appeal to a broader interdisciplinary readership.</li>
+<li><strong>Technical soundness</strong> The technical soundness cannot be fully assessed due to the lack of visible data and methodological details. The described methods are plausible, but the evidence is insufficient to confirm their validity.</li>
+<li>
+<p><strong>Readability for nonspecialists</strong> The manuscript is written for a specialist audience and uses technical jargon without sufficient explanation. The abstract and introduction are particularly dense and may be challenging for nonspecialists.</p>
+</li>
+<li>
+<p><strong>Recommendation posture</strong> Currently not established from the provided evidence. The manuscript describes a potentially valuable technical advance, but the lack of visible data and methodological details prevents a full evaluation of the claims. The authors should be encouraged to resubmit a revised version with all figures, supplementary data, and a more detailed methods section. If the data support the claims, the work could be of significant interest to the field.</p>
+</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>The claim of achieving ~5000 cells per experiment is unsupported without visible data.</li>
+<li>The claim of high data quality and reproducibility is unsupported without visible quality metrics.</li>
+<li>The claim that AS-C.Origami predicts allele-specific 3D structures at 10 kb resolution is unsupported without model details and validation data.</li>
+<li>The claim of identifying allele-specific regulatory elements in the mouse brain is unsupported without visible genomic data.</li>
+<li>The claim of cost-effectiveness is unsupported without a detailed cost analysis.</li>
+<li>The claim that the methods can be easily applied to other droplet-based platforms is plausible but not demonstrated.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

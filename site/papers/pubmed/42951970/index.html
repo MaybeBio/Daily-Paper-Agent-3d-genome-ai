@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Genetic variants shape single-cell chromatin accessibility and disease risk. · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-mid">6</span>
+    <div>
+      <h1>Genetic variants shape single-cell chromatin accessibility and disease risk.</h1>
+      <div class="meta">Xue, Angli; Fan, Jianan; Dong, Oscar A; Huang, Hao Lawrence; Chen, Ling; Allen, Peter C; Spenceley, Eleanor; Sagi-Zsigmond, Eszter; Bowen, Blake; Henry, Albert; Cuomo, Anna S E; Tanudisastro, Hope A; Qiao, Zhen; Dorans, Elizabeth; Ben-David, Eyal; Farh, Kyle Kai-How; Hu, Linfeng; Liu, Yijia Christiana; Neavin, Drew R; Lee, Arthur S; Senabouth, Anne; Bartie, Caitlin; McCloy, Rachael A; Chin, Venessa; Zhou, Wei; Price, Alkes L; de Lange, Katrina M; Figtree, Gemma A; Hewitt, Alex W; MacArthur, Daniel G; Powell, Joseph E</div>
+      <div class="meta muted">
+        
+        <span class="journal">Nature</span>
+        · 2026-10-29
+         · 仅摘要
+         · <a href="https://pubmed.ncbi.nlm.nih.gov/42951970/">原文</a>
+      </div>
+      <p class="one-liner">该研究利用大规模单细胞染色质可及性数据鉴定caQTL，并训练图神经网络推断峰-基因连接，虽聚焦遗传变异与调控，但核心是染色质可及性而非三维空间架构建模，方法上AI应用较浅，故评6分。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">Understanding how genetic variation shapes gene regulation at single-cell resolution is crucial for elucidating complex disease mechanisms(1), but has been limited by the lack of large-scale single-cell multi-omics data(2-4). Here we present single-cell assay for transposase-accessible chromatin with sequencing of 3.5 million peripheral blood mononuclear cells from 1,042 donors with matched whole-genome sequencing. Across 28 immune cell types, we tested 440,996 chromatin accessibility peaks and identified 243,225 chromatin accessibility quantitative trait loci (caQTLs) at 100,483 peaks, 60% of them cell-type specific. Rare variant analysis identified 38,161 associated peaks, with predicted transcription factor-binding disruption implicated at individual loci. Colocalization with expression QTLs (eQTLs) from single-cell RNA sequencing data (5.4 million peripheral blood mononuclear cells)(5) defined 28,834 candidate cis-regulatory elements. Across genome-wide association studies for 16 diseases and 44 blood traits, caQTLs colocalized 4.5-22.6% more signals than eQTLs alone. Cell-type-specific and tissue-specific context, distal effects and multi-causal-variant models raised genome-wide association study-eQTL concordance from approximately 16% to approximately 65%. Cell state further modulates genetic effects, with 27% of over 200,000 caQTL-cell-state interactions lacking a main effect. At the inflammatory bowel disease risk gene ADCY7, accessibility effects varied with genotype and G protein-mediated pathway activity in CD4(+) T cells. A graph neural network trained on both eQTL and caQTL layers inferred peak-gene links in unpaired multiome data with up to 17.2% higher accuracy than QTL-agnostic data, uncovering 128 additional transcription factor-target pairs (22% increase). Together, these results show that genetic variants shape chromatin accessibility in a cell-type-specific and cell-state-specific manner, influencing immune function and disease risk.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">理解遗传变异如何在单细胞分辨率下塑造基因调控，对于阐明复杂疾病机制至关重要(1)，但由于缺乏大规模单细胞多组学数据而受到限制(2-4)。在此，我们展示了来自1,042名供体的350万个外周血单核细胞的转座酶可及性染色质单细胞测序，并配有匹配的全基因组测序。在28种免疫细胞类型中，我们检测了440,996个染色质可及性峰，并在100,483个峰处鉴定出243,225个染色质可及性数量性状位点（caQTLs），其中60%具有细胞类型特异性。罕见变异分析鉴定出38,161个相关峰，并在个别位点提示预测的转录因子结合破坏。与来自单细胞RNA测序数据的表达QTL（eQTLs）（540万个外周血单核细胞）(5)共定位，定义了28,834个候选顺式调控元件。在针对16种疾病和44种血液性状的全基因组关联研究中，caQTLs比单独eQTLs多共定位4.5-22.6%的信号。细胞类型特异性和组织特异性背景、远端效应以及多因果变异模型将全基因组关联研究-eQTL一致性从约16%提高到约65%。细胞状态进一步调节遗传效应，在超过200,000个caQTL-细胞状态相互作用中，有27%缺乏主效应。在炎症性肠病风险基因ADCY7处，可及性效应随CD4(+) T细胞中的基因型和G蛋白介导通路活性而变化。一个在eQTL和caQTL层上训练的图神经网络在非配对多组学数据中推断峰-基因连接，其准确率比不区分QTL的数据高出多达17.2%，并发现了128个额外的转录因子-靶标对（增加22%）。总之，这些结果表明，遗传变异以细胞类型特异性和细胞状态特异性方式塑造染色质可及性，从而影响免疫功能和疾病风险。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：Genetic variants shape single-cell chromatin accessibility and disease risk</li>
+<li><strong>作者与单位</strong>：Xue, Angli; Fan, Jianan; Dong, Oscar A; Huang, Hao Lawrence; Chen, Ling; Allen, Peter C; Spenceley, Eleanor; Sagi-Zsigmond, Eszter; Bowen, Blake; Henry, Albert; Cuomo, Anna S E; Tanudisastro, Hope A; Qiao, Zhen; Dorans, Elizabeth; Ben-David, Eyal; Farh, Kyle Kai-How; Hu, Linfeng; Liu, Yijia Christiana; Neavin, Drew R; Lee, Arthur S; Senabouth, Anne; Bartie, Caitlin; McCloy, Rachael A; Chin, Venessa; Zhou, Wei; Price, Alkes L; de Lange, Katrina M; Figtree, Gemma A; Hewitt, Alex W; MacArthur, Daniel G; Powell, Joseph E（单位未在摘要中提供）</li>
+<li><strong>期刊/预印本平台</strong>：Nature</li>
+<li><strong>年份</strong>：2026-10-29</li>
+<li><strong>论文类型</strong>：研究论文（Research Article）</li>
+<li><strong>领域</strong>：单细胞基因组学、染色质可及性、遗传变异、疾病遗传学</li>
+<li><strong>关键词</strong>：caQTL、单细胞ATAC-seq、染色质可及性、eQTL、GWAS共定位、图神经网络</li>
+<li><strong>DOI/arXiv 号</strong>：10.1038/s41586-026-11173-4</li>
+<li><strong>代码</strong>：未提供</li>
+<li><strong>数据</strong>：3.5百万PBMC单细胞ATAC-seq（1,042 donors）；5.4百万PBMC单细胞RNA-seq（外部数据，引用[5]）</li>
+<li><strong>阅读日期</strong>：未提供</li>
+<li><strong>该文在「三维基因组/染色质组织 × AI 方法/物理模拟」方向中的位置</strong>：该文属于单细胞染色质可及性QTL（caQTL）定位与遗传变异功能解读，核心是染色质可及性作为基因调控的中间表型，并通过图神经网络（GNN）推断peak-gene连接。与三维基因组方向直接相关的是：染色质可及性peak与三维基因组中增强子-启动子互作（如Hi-C loops）高度重叠，caQTL与eQTL的共定位可视为一维调控信号的关联，而GNN推断peak-gene link可迁移到三维基因组中增强子-启动子配对预测。该文不涉及三维构象数据（如Hi-C、HiChIP），但提供了单细胞层面遗传变异对染色质状态影响的系统框架，可作为三维基因组QTL（如hiQTL、loopQTL）研究的参照。</li>
+</ul>
+<hr />
+<h2>02 一句话总结</h2>
+<p>该研究利用1,042个供体外周血单核细胞的单细胞ATAC-seq数据（350万细胞），在28种免疫细胞类型中定位了243,225个caQTL，发现60%为细胞类型特异性，并通过与scRNA-seq eQTL共定位、GWAS共定位及图神经网络推断peak-gene连接，证明遗传变异以细胞类型和细胞状态特异方式塑造染色质可及性，进而影响免疫功能和疾病风险。</p>
+<hr />
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：遗传变异如何在单细胞分辨率下影响染色质可及性？这些效应是否具有细胞类型和细胞状态特异性？它们如何与基因表达和疾病风险关联？</li>
+<li><strong>为什么重要</strong>：理解遗传变异对基因调控的影响是阐明复杂疾病机制的关键。单细胞分辨率可揭示细胞类型/状态特异的调控效应，而传统bulk分析会掩盖这些异质性。</li>
+<li><strong>现有方法为何不足</strong>：此前缺乏大规模单细胞多组学数据（如单细胞ATAC-seq与基因型匹配），导致无法在单细胞层面系统定位caQTL；bulk caQTL分析无法解析细胞类型/状态特异的效应；eQTL共定位仅能解释部分GWAS信号，需要染色质层面的补充。</li>
+<li><strong>精确的「Can ... ?」研究问题</strong>：Can single-cell chromatin accessibility QTL mapping, integrated with eQTL colocalization and graph neural networks, systematically reveal cell-type- and cell-state-specific genetic effects on gene regulation and disease risk?</li>
+</ul>
+<hr />
+<h2>04 背景与发展脉络</h2>
+<p>（标注：以下脉络为「经外部核验」的领域常识，结合本文框架）</p>
+<ol>
+<li>
+<p><strong>阶段一：bulk ATAC-seq QTL（caQTL）</strong><br />
+   - 代表方法：如GTEx、BLUEPRINT等项目的bulk caQTL分析。<br />
+   - 优点：可定位与基因型相关的染色质可及性变异。<br />
+   - 局限：无法解析细胞类型/状态异质性，信号为混合细胞平均。</p>
+</li>
+<li>
+<p><strong>阶段二：单细胞ATAC-seq QTL（sc-caQTL）</strong><br />
+   - 代表方法：如单细胞多组学技术（10x Multiome、sci-ATAC-seq）结合基因型。<br />
+   - 优点：可在细胞类型/状态层面定位QTL，揭示细胞特异性调控。<br />
+   - 局限：样本量小、细胞数少，统计功效不足；缺乏与大规模eQTL和GWAS的系统整合。</p>
+</li>
+<li>
+<p><strong>阶段三：多组学整合与AI模型（本文位置）</strong><br />
+   - 本文在单细胞ATAC-seq大规模数据（350万细胞、1,042 donors）基础上，系统定位caQTL，并与scRNA-seq eQTL共定位、GWAS共定位，以及用GNN推断peak-gene连接。<br />
+   - 优点：大规模、多细胞类型、多组学整合，并引入AI模型提升peak-gene推断。<br />
+   - 局限：未纳入三维基因组数据（如Hi-C），peak-gene连接推断仍为计算预测，缺乏实验验证。</p>
+</li>
+</ol>
+<hr />
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>缺乏大规模单细胞多组学数据</td>
+<td>无法在单细胞层面系统定位caQTL</td>
+<td>单细胞ATAC-seq成本高、样本量小</td>
+<td>摘要：此前缺乏大规模单细胞多组学数据（引用2-4）</td>
+</tr>
+<tr>
+<td>细胞类型/状态特异性被掩盖</td>
+<td>bulk caQTL无法解析异质性</td>
+<td>混合细胞平均信号</td>
+<td>摘要：60% caQTL为细胞类型特异性</td>
+</tr>
+<tr>
+<td>eQTL共定位解释力有限</td>
+<td>GWAS信号仅部分被eQTL解释</td>
+<td>eQTL仅反映表达层面，缺乏染色质层面信息</td>
+<td>摘要：caQTL比eQTL多共定位4.5-22.6%信号</td>
+</tr>
+<tr>
+<td>peak-gene连接推断不准确</td>
+<td>传统方法忽略多组学信息</td>
+<td>缺乏整合eQTL和caQTL的模型</td>
+<td>摘要：GNN比QTL-agnostic方法准确率高17.2%</td>
+</tr>
+<tr>
+<td>细胞状态对遗传效应的调节</td>
+<td>27%的caQTL-细胞状态互作无主效应</td>
+<td>传统QTL分析忽略细胞状态</td>
+<td>摘要：27%的互作缺乏主效应</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>06 核心思想</h2>
+<ol>
+<li>
+<p><strong>表面方法</strong>：<br />
+   对1,042个供体的350万PBMC单细胞ATAC-seq数据进行细胞类型注释（28种免疫细胞），在每个细胞类型中测试440,996个peak的caQTL；与scRNA-seq eQTL共定位；与GWAS共定位；用GNN整合eQTL和caQTL层推断peak-gene连接。</p>
+</li>
+<li>
+<p><strong>核心洞察</strong>：<br />
+   遗传变异对染色质可及性的影响高度细胞类型和细胞状态特异，且这种特异性是解释疾病风险的关键。caQTL与eQTL的共定位可定义候选顺式调控元件（cCRE），而GNN能利用多组学QTL信息提升peak-gene推断，揭示传统方法遗漏的调控关系。</p>
+</li>
+<li>
+<p><strong>可能的普适教训 [Analysis]</strong>：<br />
+   - 单细胞分辨率是解析遗传调控异质性的必要条件，但需要大规模样本和细胞数以获得统计功效。<br />
+   - 多组学整合（ATAC + RNA + 基因型）比单一组学更能解释疾病关联。<br />
+   - AI模型（如GNN）可有效利用QTL层信息进行调控元件-基因配对推断，该思路可迁移到三维基因组中增强子-启动子互作预测。</p>
+</li>
+</ol>
+<hr />
+<h2>07 方法总览</h2>
+<ul>
+<li><strong>输入</strong>：  </li>
+<li>1,042个供体的PBMC单细胞ATAC-seq数据（350万细胞）  </li>
+<li>匹配的全基因组测序（WGS）数据  </li>
+<li>外部scRNA-seq eQTL数据（5.4百万PBMC，引用[5]）  </li>
+<li>
+<p>GWAS数据（16种疾病、44种血液性状）</p>
+</li>
+<li>
+<p><strong>输出</strong>：  </p>
+</li>
+<li>243,225个caQTL（位于100,483个peak）  </li>
+<li>28,834个候选顺式调控元件（cCRE）  </li>
+<li>38,161个罕见变异关联peak  </li>
+<li>
+<p>GNN推断的peak-gene连接（新增128个TF-target对）</p>
+</li>
+<li>
+<p><strong>模块</strong>：<br />
+  1. 单细胞ATAC-seq数据处理与细胞类型注释（28种免疫细胞）<br />
+  2. 每个细胞类型内caQTL定位（440,996个peak）<br />
+  3. 罕见变异分析（预测TF结合破坏）<br />
+  4. 与scRNA-seq eQTL共定位（定义cCRE）<br />
+  5. 与GWAS共定位（16疾病+44血液性状）<br />
+  6. 细胞状态互作分析（caQTL-细胞状态互作）<br />
+  7. GNN训练（整合eQTL和caQTL层，推断peak-gene连接）</p>
+</li>
+<li>
+<p><strong>训练</strong>：<br />
+  GNN在eQTL和caQTL层上训练，输入为peak和基因的基因组特征，输出为peak-gene连接概率。</p>
+</li>
+<li>
+<p><strong>工具</strong>：未提供具体软件名。</p>
+</li>
+<li>
+<p><strong>反馈回路</strong>：<br />
+  GNN推断的peak-gene连接可反馈到cCRE定义和GWAS共定位，形成迭代优化。</p>
+</li>
+<li>
+<p><strong>假设</strong>：  </p>
+</li>
+<li>染色质可及性peak是基因调控的代理；  </li>
+<li>caQTL与eQTL共定位可定义功能性调控元件；  </li>
+<li>
+<p>GNN能学习peak-gene连接的序列和QTL特征。</p>
+</li>
+<li>
+<p><strong>文字流程</strong>：<br />
+  单细胞ATAC-seq → 细胞类型注释 → 每个细胞类型内caQTL定位 → 与eQTL共定位（cCRE）→ 与GWAS共定位 → 细胞状态互作分析 → GNN推断peak-gene连接 → 整合结果解释疾病风险。</p>
+</li>
+</ul>
+<hr />
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>单细胞ATAC-seq数据处理与细胞类型注释</td>
+<td>将350万细胞分为28种免疫细胞类型</td>
+<td>细胞类型特异性是核心发现的前提</td>
+<td>输入：原始ATAC-seq计数；输出：细胞类型标签</td>
+<td>摘要：28种免疫细胞类型</td>
+<td>无法进行细胞类型特异性caQTL分析</td>
+</tr>
+<tr>
+<td>caQTL定位</td>
+<td>在每个细胞类型中测试peak-基因型关联</td>
+<td>识别遗传变异对染色质可及性的影响</td>
+<td>输入：peak计数+基因型；输出：caQTL列表</td>
+<td>摘要：243,225个caQTL，60%细胞类型特异</td>
+<td>失去核心发现</td>
+</tr>
+<tr>
+<td>罕见变异分析</td>
+<td>识别罕见变异对peak的关联</td>
+<td>补充常见变异分析，揭示低频调控效应</td>
+<td>输入：罕见变异+peak；输出：38,161个关联peak</td>
+<td>摘要：38,161个关联peak</td>
+<td>遗漏低频调控变异</td>
+</tr>
+<tr>
+<td>eQTL共定位</td>
+<td>定义候选顺式调控元件（cCRE）</td>
+<td>将caQTL与表达关联，确认调控功能</td>
+<td>输入：caQTL+eQTL；输出：28,834个cCRE</td>
+<td>摘要：28,834个cCRE</td>
+<td>无法确认caQTL的功能后果</td>
+</tr>
+<tr>
+<td>GWAS共定位</td>
+<td>将caQTL与疾病/性状关联</td>
+<td>连接染色质调控与疾病风险</td>
+<td>输入：caQTL+GWAS；输出：共定位信号</td>
+<td>摘要：caQTL比eQTL多共定位4.5-22.6%</td>
+<td>无法解释疾病风险</td>
+</tr>
+<tr>
+<td>细胞状态互作分析</td>
+<td>检测caQTL效应随细胞状态变化</td>
+<td>揭示动态调控</td>
+<td>输入：caQTL+细胞状态；输出：互作列表</td>
+<td>摘要：27%互作无主效应</td>
+<td>遗漏状态依赖的调控</td>
+</tr>
+<tr>
+<td>GNN推断peak-gene连接</td>
+<td>整合eQTL和caQTL层预测peak-gene配对</td>
+<td>提升调控关系推断</td>
+<td>输入：peak/gene特征+QTL层；输出：连接概率</td>
+<td>摘要：准确率高17.2%，新增128个TF-target对</td>
+<td>降低peak-gene推断准确性</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>09 关键公式符号</h2>
+<p>不适用（摘要中未提供具体公式或统计模型细节）。</p>
+<hr />
+<h2>10 实验设计与证据链</h2>
+<ul>
+<li><strong>数据集/群体</strong>：1,042个供体的PBMC单细胞ATAC-seq（350万细胞）；外部scRNA-seq eQTL数据（5.4百万PBMC）；GWAS数据（16疾病+44血液性状）</li>
+<li><strong>规模</strong>：440,996个peak；243,225个caQTL；100,483个peak含caQTL；38,161个罕见变异关联peak；28,834个cCRE</li>
+<li><strong>指标</strong>：caQTL数量、细胞类型特异性比例、共定位比例、GNN准确率提升</li>
+<li><strong>基线</strong>：QTL-agnostic GNN（未整合QTL层）</li>
+<li><strong>骨干/仪器</strong>：未提供</li>
+<li><strong>oracle 输入</strong>：未提供</li>
+<li><strong>评测协议</strong>：未提供</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>caQTL定位</td>
+<td>遗传变异影响染色质可及性</td>
+<td>28种细胞类型分别测试</td>
+<td>243,225个caQTL</td>
+<td>遗传变异广泛影响染色质可及性</td>
+<td>未提供效应大小或方向</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>细胞类型特异性分析</td>
+<td>caQTL具有细胞类型特异性</td>
+<td>跨细胞类型比较</td>
+<td>60%为细胞类型特异</td>
+<td>细胞类型特异性是主要特征</td>
+<td>未提供具体细胞类型间重叠度</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>罕见变异分析</td>
+<td>罕见变异影响peak</td>
+<td>罕见变异关联测试</td>
+<td>38,161个peak</td>
+<td>罕见变异参与调控</td>
+<td>未提供效应大小</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>eQTL共定位</td>
+<td>caQTL与表达关联</td>
+<td>与scRNA-seq eQTL共定位</td>
+<td>28,834个cCRE</td>
+<td>caQTL具有调控功能</td>
+<td>未提供共定位比例</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>GWAS共定位</td>
+<td>caQTL解释疾病风险</td>
+<td>与16疾病+44性状GWAS共定位</td>
+<td>共定位信号增加4.5-22.6%</td>
+<td>caQTL比eQTL更能解释疾病风险</td>
+<td>未提供具体疾病列表</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>细胞状态互作</td>
+<td>细胞状态调节遗传效应</td>
+<td>互作分析</td>
+<td>27%互作无主效应</td>
+<td>细胞状态依赖的调控</td>
+<td>未提供具体状态</td>
+<td>摘要</td>
+</tr>
+<tr>
+<td>GNN推断</td>
+<td>QTL层提升peak-gene推断</td>
+<td>与QTL-agnostic对比</td>
+<td>准确率高17.2%，新增128个TF-target对</td>
+<td>多组学QTL信息提升AI推断</td>
+<td>未提供GNN架构细节</td>
+<td>摘要</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：该研究聚焦于PBMC中28种免疫细胞类型的染色质可及性QTL定位及其与表达、疾病风险的关联。任务范围限于外周血免疫细胞，不涵盖其他组织或细胞类型。</li>
+<li><strong>oracle/真值输入</strong>：caQTL定位依赖基因型（WGS）和peak计数；eQTL数据来自外部scRNA-seq；GWAS数据来自公开研究。GNN的peak-gene连接无实验验证（如Hi-C或CRISPR验证）。</li>
+<li><strong>端到端状态</strong>：从单细胞ATAC-seq到caQTL、共定位、GNN推断的完整流程已实现，但peak-gene连接仅为计算预测，未进行实验验证。</li>
+<li><strong>算力成本</strong>：未提供。</li>
+<li><strong>历史数据依赖</strong>：依赖外部scRNA-seq eQTL和GWAS数据，这些数据的质量、人群和细胞类型组成可能影响共定位结果。</li>
+<li><strong>模型依赖</strong>：GNN的准确率提升依赖于训练数据的QTL层质量；不同GNN架构或特征可能导致不同结果。</li>
+<li><strong>最难情形</strong>：罕见变异分析可能受限于样本量；细胞状态互作分析可能受限于状态注释的准确性。</li>
+<li><strong>群体/领域边界</strong>：供体为PBMC，可能以特定人群为主（未提供种族/民族信息）；结果可能不适用于其他组织或非免疫细胞。</li>
+<li><strong>不确定性</strong>：caQTL效应大小、方向、功能验证均未提供；共定位比例和GNN提升的具体数值未提供置信区间。</li>
+<li><strong>有边界的复述</strong>：在1,042个供体的PBMC单细胞ATAC-seq数据中，遗传变异以细胞类型和细胞状态特异方式影响染色质可及性，且这些效应与eQTL和GWAS信号共定位，GNN整合QTL层可提升peak-gene推断；但结论限于免疫细胞，且peak-gene连接未经实验验证。</li>
+</ul>
+<hr />
+<h2>12 作者自认局限</h2>
+<p>在提供的材料（摘要）中未发现作者明确承认的局限。</p>
+<p><strong>作者提及的相关约束</strong>（非正式局限）：
+- 摘要引用[2-4]指出此前缺乏大规模单细胞多组学数据，暗示本研究的数据规模是克服该约束的关键，但未明确讨论自身局限。
+- 罕见变异分析仅报告了关联peak数量，未提供效应大小或功能验证，可能暗示统计功效或验证不足。</p>
+<hr />
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>caQTL定位依赖peak计数，可能受测序深度和批次效应影响</td>
+<td>不同细胞类型的peak检测灵敏度不同，可能导致caQTL数量偏差</td>
+<td>影响caQTL的可靠性和可重复性</td>
+<td>使用伪bulk或独立数据集验证caQTL</td>
+<td>摘要未提及批次校正或质控细节</td>
+</tr>
+<tr>
+<td>60%细胞类型特异性可能受细胞类型注释分辨率影响</td>
+<td>更细的细胞亚型可能降低特异性比例</td>
+<td>影响对细胞类型特异性的解释</td>
+<td>使用不同注释策略比较</td>
+<td>摘要未提供注释方法</td>
+</tr>
+<tr>
+<td>GNN准确率提升17.2%可能依赖特定训练/测试划分</td>
+<td>过拟合或数据泄漏可能导致虚高</td>
+<td>影响peak-gene推断的泛化性</td>
+<td>交叉验证或独立数据集测试</td>
+<td>摘要未提供GNN架构或验证细节</td>
+</tr>
+<tr>
+<td>共定位分析依赖外部eQTL和GWAS数据</td>
+<td>不同数据集的LD结构和人群差异可能影响共定位</td>
+<td>影响cCRE和疾病关联的可靠性</td>
+<td>使用多数据集共定位或精细映射</td>
+<td>摘要未提供共定位方法细节</td>
+</tr>
+<tr>
+<td>罕见变异分析可能受限于样本量</td>
+<td>1,042个供体对罕见变异统计功效不足</td>
+<td>影响罕见变异结论的稳健性</td>
+<td>扩大样本量或使用负担检验</td>
+<td>摘要未提供罕见变异MAF阈值</td>
+</tr>
+<tr>
+<td>细胞状态互作分析中27%无主效应</td>
+<td>可能受状态注释或统计模型影响</td>
+<td>影响对状态依赖调控的理解</td>
+<td>使用不同状态定义或模型比较</td>
+<td>摘要未提供状态定义</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>14 学到什么</h2>
+<p><strong>Agent 提炼的知识候选</strong></p>
+<ol>
+<li><strong>单细胞QTL定位的流程设计</strong>：从单细胞ATAC-seq到细胞类型注释、peak计数、QTL定位的完整流程，可迁移到三维基因组QTL（如hiQTL、loopQTL）分析，需匹配基因型数据。</li>
+<li><strong>多组学共定位策略</strong>：caQTL与eQTL共定位定义cCRE的方法，可迁移到三维基因组中增强子-启动子互作（如Hi-C loops）与eQTL的共定位，以识别功能性三维调控元件。</li>
+<li><strong>GNN整合多组学QTL层</strong>：GNN利用eQTL和caQTL层推断peak-gene连接，该思路可迁移到三维基因组中，利用Hi-C、HiChIP等数据作为额外层，提升增强子-启动子配对预测。</li>
+<li><strong>细胞状态互作分析</strong>：检测QTL效应随细胞状态变化的框架，可迁移到三维基因组中，研究染色质构象QTL是否随细胞状态（如激活、分化）变化。</li>
+<li><strong>罕见变异与TF结合破坏预测</strong>：预测罕见变异对TF结合的影响，可迁移到三维基因组中，预测变异对CTCF、 cohesin等三维基因组因子结合的影响。</li>
+<li><strong>GWAS共定位的增量价值</strong>：caQTL比eQTL多解释4.5-22.6%的GWAS信号，提示三维基因组QTL可能进一步增加解释力，值得探索。</li>
+</ol>
+<hr />
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>相似领域</strong>：与GTEx、BLUEPRINT等bulk caQTL研究相比，本文在单细胞层面扩展了QTL定位，与单细胞eQTL研究（如OneK1K、DICE）互补。</li>
+<li><strong>组合方向</strong>：本文的caQTL与eQTL共定位可视为一维调控信号关联，与三维基因组研究（如Hi-C、HiChIP）结合，可构建从遗传变异→染色质构象→可及性→表达→疾病的完整调控链。</li>
+<li><strong>可迁移方法</strong>：GNN推断peak-gene连接的方法可迁移到三维基因组中，利用Hi-C数据作为训练特征，预测增强子-启动子互作（如Enformer、DeepC等已有类似思路）。</li>
+<li><strong>冲突点</strong>：本文未使用三维基因组数据，peak-gene连接推断可能遗漏三维构象信息；与Hi-C-based方法（如ABC模型）相比，本文的GNN可能更依赖一维特征。</li>
+<li><strong>候选方向</strong>：将本文的caQTL框架扩展到三维基因组QTL（如loopQTL、compartmentQTL），并利用GNN整合多组学数据，是自然延伸。</li>
+</ul>
+<hr />
+<h2>16 研究想法</h2>
+<p><strong>Agent 生成的研究候选</strong></p>
+<ol>
+<li>
+<p><strong>候选名称</strong>：三维基因组QTL（3D-QTL）定位与多组学整合
+   - <strong>来源局限/观察</strong>：本文仅使用一维染色质可及性数据，未纳入三维基因组信息；peak-gene连接推断可能遗漏三维构象调控。
+   - <strong>核心假设</strong>：遗传变异影响染色质三维构象（如loop、compartment），且这些效应与caQTL和eQTL互补，可进一步解释GWAS信号。
+   - <strong>增量方法</strong>：在单细胞或bulk Hi-C/HiChIP数据中定位loopQTL或compartmentQTL，与caQTL和eQTL共定位，构建三维调控网络。
+   - <strong>验证方式</strong>：使用独立数据集（如GTEx、ENCODE）验证3D-QTL的可重复性；与GWAS共定位评估疾病解释力。
+   - <strong>创新状态</strong>：unverified（需文献调研确认是否已有类似研究）</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：GNN整合三维基因组与QTL层推断增强子-启动子连接
+   - <strong>来源局限/观察</strong>：本文GNN仅使用eQTL和caQTL层，未利用三维基因组数据；三维互作是增强子-启动子连接的直接证据。
+   - <strong>核心假设</strong>：在GNN中加入Hi-C/HiChIP互作特征，可进一步提升peak-gene连接预测准确性。
+   - <strong>增量方法</strong>：将Hi-C互作矩阵作为GNN的边特征，与caQTL和eQTL层联合训练，预测peak-gene连接。
+   - <strong>验证方式</strong>：与本文GNN对比准确率；使用CRISPR验证或Hi-C验证预测的peak-gene对。
+   - <strong>创新状态</strong>：partially checked（已有类似方法如DeepC、Enformer，但未结合QTL层）</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：细胞状态依赖的三维基因组QTL动态分析
+   - <strong>来源局限/观察</strong>：本文发现27%的caQTL-细胞状态互作无主效应，提示遗传效应随状态变化；三维构象可能同样具有状态依赖性。
+   - <strong>核心假设</strong>：三维基因组QTL效应随细胞状态（如激活、分化）变化，且这些动态变化与疾病风险相关。
+   - <strong>增量方法</strong>：在多个细胞状态（如静息vs激活T细胞）中定位3D-QTL，检测状态互作效应。
+   - <strong>验证方式</strong>：使用时间序列Hi-C数据或单细胞Hi-C数据验证；与疾病相关状态关联。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：罕见变异对三维基因组因子结合的影响预测
+   - <strong>来源局限/观察</strong>：本文预测了罕见变异对TF结合破坏的影响，但未涉及CTCF、cohesin等三维基因组因子。
+   - <strong>核心假设</strong>：罕见变异破坏CTCF/cohesin结合位点，导致三维构象改变，进而影响基因表达和疾病风险。
+   - <strong>增量方法</strong>：利用CTCF/cohesin ChIP-seq数据，预测罕见变异对结合的影响，并与3D-QTL和GWAS关联。
+   - <strong>验证方式</strong>：使用Hi-C数据验证变异对loop的影响；与疾病关联分析。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+</ol></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Abstract only</li>
+<li><strong>Assessment boundary</strong> Claims and evidence as presented in the abstract; no figures, tables, methods, or supplementary materials were provided</li>
+<li><strong>Shared manuscript claim summary</strong> The authors report a single-cell ATAC-seq dataset of 3.5 million peripheral blood mononuclear cells from 1,042 donors with matched whole-genome sequencing, identify 243,225 chromatin accessibility quantitative trait loci across 28 immune cell types, perform rare variant and colocalization analyses, integrate with eQTL data, and train a graph neural network to infer peak-gene links. They conclude that genetic variants shape chromatin accessibility in cell-type- and cell-state-specific manners relevant to immune function and disease risk.</li>
+<li><strong>Visible evidence base</strong> Abstract text only; no figures, tables, methods, or supplementary information were provided</li>
+<li><strong>Missing materials affecting confidence</strong> Full manuscript, all figures and tables, methods section, supplementary information, statistical details, and data availability statements</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li><strong>Overall assessment</strong> The abstract describes a large-scale and potentially valuable resource for understanding genetic regulation of chromatin accessibility at single-cell resolution. The scale of the dataset and the breadth of analyses are impressive. However, the abstract alone does not provide sufficient methodological detail or quantitative evidence to assess the validity of the key claims. Several claims, particularly those involving model performance and percentage improvements, cannot be evaluated without access to the underlying methods and results. The work is likely of interest to the human genetics and functional genomics communities, but the case for its conclusions is not fully established from the supplied material.</li>
+<li><strong>Who would be interested in the results, and why</strong> Human geneticists studying regulatory variation, functional genomicists working on single-cell multi-omics, computational biologists developing methods for QTL mapping and peak-gene linking, and researchers investigating the genetic basis of immune-mediated diseases and blood traits. The resource itself would be of broad utility to the community.</li>
+<li><strong>Major strengths</strong> The scale of the dataset (3.5 million cells, 1,042 donors) is substantial and likely to be a valuable community resource. The integration of multiple analytical layers (caQTL, rare variants, colocalization, cell-state interactions, deep learning) is comprehensive. The reported improvement in GWAS-eQTL concordance through cell-type-specific and multi-causal-variant models addresses an important limitation in the field.</li>
+<li><strong>Major Concerns</strong></li>
+<li><strong>Concern ID</strong> R1-M1</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Technical soundness</li>
+<li><strong>Claim pointer</strong> The authors claim that a graph neural network trained on both eQTL and caQTL layers inferred peak-gene links with up to 17.2% higher accuracy than QTL-agnostic data, uncovering 128 additional transcription factor-target pairs (22% increase).</li>
+<li><strong>Evidence pointer</strong> Abstract only; location not provided</li>
+<li><strong>Concern</strong> The abstract reports specific performance metrics for the graph neural network but provides no information about the evaluation framework, baseline methods, cross-validation strategy, or statistical significance of the reported improvements. The claim of "up to 17.2% higher accuracy" is ambiguous without knowing the metric used, the comparison conditions, and the variance across test sets.</li>
+<li><strong>Why it matters</strong> The deep learning component is presented as a key innovation of the work. Without details on how accuracy was measured and whether the improvement is statistically robust, the claim cannot be verified. Overstated or non-robust performance gains in computational methods are a common source of irreproducibility.</li>
+<li><strong>Resolution test</strong> Provide the evaluation metric, baseline model specifications, cross-validation scheme, confidence intervals or significance tests for the accuracy improvement, and a clear definition of what "QTL-agnostic" means in this context.</li>
+<li><strong>Concern ID</strong> R1-M2</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Technical soundness</li>
+<li><strong>Claim pointer</strong> The authors claim that cell-type-specific and tissue-specific context, distal effects and multi-causal-variant models raised genome-wide association study-eQTL concordance from approximately 16% to approximately 65%.</li>
+<li><strong>Evidence pointer</strong> Abstract only; location not provided</li>
+<li><strong>Concern</strong> The abstract reports a large improvement in GWAS-eQTL concordance but does not specify how concordance was defined, which GWAS traits were included, how the baseline 16% was calculated, or which specific modeling choices contributed most to the improvement. The jump from 16% to 65% is striking and would require careful validation to rule out overfitting or circularity.</li>
+<li><strong>Why it matters</strong> This is a central claim of the paper with implications for how the field interprets the utility of single-cell chromatin data for disease variant prioritization. If the improvement is not robust to different GWAS datasets or if the modeling choices are not generalizable, the conclusion would be substantially weakened.</li>
+<li><strong>Resolution test</strong> Provide a precise definition of concordance, list the GWAS traits and the number of loci used, describe the model selection procedure, and demonstrate that the improvement holds in held-out or independent datasets.</li>
+<li><strong>Concern ID</strong> R1-M3</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Reproducibility and data availability</li>
+<li><strong>Claim pointer</strong> The authors describe a dataset of 3.5 million single-cell ATAC-seq profiles from 1,042 donors and report 243,225 caQTLs at 100,483 peaks.</li>
+<li><strong>Evidence pointer</strong> Abstract only; location not provided</li>
+<li><strong>Concern</strong> The abstract does not state whether the raw data, processed data, or analysis code will be made available to the community. Given the scale of the resource and its potential utility, data accessibility is a critical factor in assessing the impact of the work.</li>
+<li><strong>Why it matters</strong> A major value of this study lies in the resource itself. Without clear data availability statements, the reproducibility of the analyses and the usability of the resource by other groups cannot be assessed.</li>
+<li><strong>Resolution test</strong> Provide explicit statements on data deposition (raw and processed), code availability, and any access restrictions in the full manuscript.</li>
+<li><strong>Minor Comments</strong></li>
+<li><strong>Concern ID</strong> R1-m1</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Clarity</li>
+<li><strong>Affected element</strong> Definition of "cell-type specific"</li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided</li>
+<li><strong>Issue</strong> The abstract states that 60% of caQTLs are cell-type specific but does not define the threshold or statistical criterion used to make this determination.</li>
+<li><strong>Required correction</strong> Specify the statistical test and significance threshold used to classify a caQTL as cell-type specific.</li>
+<li><strong>Concern ID</strong> R1-m2</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Clarity</li>
+<li><strong>Affected element</strong> Rare variant analysis</li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided</li>
+<li><strong>Issue</strong> The abstract mentions "38,161 associated peaks" from rare variant analysis but does not specify the minor allele frequency threshold, the statistical model, or the multiple testing correction applied.</li>
+<li><strong>Required correction</strong> Provide the rare variant definition, the analysis framework, and the significance criteria in the methods.</li>
+<li><strong>Concern ID</strong> R1-m3</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Interpretability</li>
+<li><strong>Affected element</strong> ADC7 example</li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided</li>
+<li><strong>Issue</strong> The ADCY7 example is presented as an illustration of cell-state-dependent effects but the abstract does not explain what "G protein-mediated pathway activity" means in this context or how it was measured.</li>
+<li><strong>Required correction</strong> Clarify the experimental or computational approach used to define pathway activity and how the interaction between genotype and pathway activity was tested.</li>
+<li><strong>Concern ID</strong> R1-m4</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Completeness</li>
+<li><strong>Affected element</strong> Colocalization analysis</li>
+<li><strong>Evidence pointer</strong> Abstract; location not provided</li>
+<li><strong>Issue</strong> The abstract reports 28,834 candidate cis-regulatory elements from colocalization with eQTLs but does not state the colocalization method or the posterior probability threshold used.</li>
+<li><strong>Required correction</strong> Specify the colocalization approach and the threshold for declaring a candidate element.</li>
+<li><strong>Technical failings that need to be addressed before the case is established</strong> R1-M1 and R1-M2 are the primary technical concerns. The performance claims for the graph neural network and the concordance improvement require detailed methodological transparency and validation. R1-M3 regarding data availability is also critical for establishing the resource value of the work.</li>
+<li><strong>Assessment against Nature-style criteria</strong> Originality: The combination of a large-scale single-cell ATAC-seq QTL resource with deep learning-based peak-gene inference appears novel, though the abstract alone does not allow full assessment of methodological novelty. Scientific importance: The potential to improve GWAS variant prioritization through cell-type-specific chromatin data is of high importance to the field. Interdisciplinary readership: The work bridges human genetics, single-cell genomics, and computational biology, which would appeal to a broad readership. Technical soundness: Cannot be fully assessed from the abstract; the reported performance metrics and concordance improvements require detailed methods and validation. Readability for nonspecialists: The abstract is dense and assumes substantial background knowledge in statistical genetics and single-cell genomics; it would benefit from clearer framing of the key concepts and implications for a general audience.</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>The claim of "up to 17.2% higher accuracy" for the graph neural network is unsupported without details on the evaluation metric, baseline, and statistical significance.</li>
+<li>The claim that concordance improved from approximately 16% to approximately 65% is unsupported without a definition of concordance and details on the traits and models used.</li>
+<li>The claim that 27% of over 200,000 caQTL-cell-state interactions lack a main effect is not interpretable without a definition of "main effect" and the statistical framework used.</li>
+<li>The biological interpretation of the ADCY7 example cannot be evaluated without additional context on the pathway activity measurement and the interaction test.</li>
+<li>The overall conclusion that genetic variants shape chromatin accessibility in a cell-type-specific and cell-state-specific manner is plausible but cannot be fully verified from the abstract alone.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

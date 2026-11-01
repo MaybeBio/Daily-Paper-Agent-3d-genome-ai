@@ -1,0 +1,80 @@
+## Review setup
+- **Input scope** Abstract only
+- **Assessment boundary** Claims and evidence as presented in the abstract; no full text, figures, tables, or supplementary materials were provided
+- **Shared manuscript claim summary** The authors report all-atom molecular dynamics simulations of NSD2 bound to the nucleosome for wild type, E1099K, T1150A, and the double mutant. They claim that global enzyme dynamics are unaltered by mutations, but time-lagged independent component analysis and Markov state modeling reveal differences in free-energy landscapes, reduced SAM-H3K36 distances, and reorganized intramolecular contact networks in mutants, consistent with experimentally observed hyperactive methylation.
+- **Visible evidence base** Abstract text only; no simulation details, convergence metrics, free-energy plots, Markov state model validation, or experimental comparison data are visible
+- **Missing materials affecting confidence** Full methods, simulation parameters, force fields, system setup, sampling lengths, convergence assessments, tICA and Markov state model validation, free-energy landscape figures, contact network analyses, and any direct experimental activity measurements
+
+## Reviewer
+- **Overall assessment** The abstract presents a plausible mechanistic hypothesis linking oncogenic NSD2 mutations to hyperactive methylation via altered conformational dynamics. However, the evidence base is limited to a summary, and several claims are either under-specified or not verifiable from the supplied material. The central conclusion that mutations reorganize conformational dynamics to enhance catalytic efficiency is interesting but requires substantial technical validation before the case is established.
+- **Who would be interested in the results, and why** Researchers in epigenetic regulation, cancer biology, and computational biophysics would be interested. The work addresses a clinically relevant question about how specific oncogenic mutations alter enzyme function, and the proposed dynamic-based mechanism could inform drug discovery targeting NSD2. The methodological approach using tICA and Markov state modeling may also appeal to computational chemists studying conformational ensembles of large protein-nucleosome complexes.
+- **Major strengths** The study addresses a biologically and clinically important question with a sophisticated computational approach. The use of multiple mutants including a double mutant is a strength. The claim that mutations act through reorganization of conformational dynamics rather than simple destabilization is a nuanced and potentially valuable insight.
+- **Major Concerns**
+  - **Concern ID** R1-M1
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** The authors claim that tICA and Markov state modeling uncovered fundamental differences in free-energy landscapes among the variants.
+  - **Evidence pointer** Abstract; location not provided
+  - **Concern** No details are provided on the tICA implementation, number of features, lag times, or the construction and validation of the Markov state models. Without these, the reliability of the free-energy landscapes and transition analyses cannot be assessed.
+  - **Why it matters** Markov state models are highly sensitive to feature selection, lag time, and discretization. Poor choices can produce artifactual macrostates and misleading free-energy differences. The central mechanistic claim depends entirely on the validity of these models.
+  - **Resolution test** Provide tICA eigenvalue plots, implied timescale tests, Chapman-Kolmogorov validation, and a clear description of the discretization scheme and model selection criteria.
+  - **Concern ID** R1-M2
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** The authors claim that global dynamics of the enzymes remain unaltered upon mutations.
+  - **Evidence pointer** Abstract; location not provided
+  - **Concern** The abstract states that global dynamics are unaltered, but no metric is defined for "global dynamics." It is unclear whether this refers to root-mean-square deviation, root-mean-square fluctuation, principal component analysis, or another measure. The claim is also in tension with the later statement that mutations reorganize contact networks and alter free-energy landscapes.
+  - **Why it matters** If global dynamics are truly unaltered, this is a strong and non-obvious claim that requires quantitative support. If the claim is based on a limited metric, it may be misleading.
+  - **Resolution test** Define the specific metric used to assess global dynamics, report the values for all variants, and show that the differences are statistically insignificant with appropriate error bars.
+  - **Concern ID** R1-M3
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Evidence quality
+  - **Claim pointer** The authors claim that mutant systems demonstrate reduced SAM-H3K36 distances with modified energy landscapes that facilitate transitions or favor prolonged occupancy of catalytically competent states.
+  - **Evidence pointer** Abstract; location not provided
+  - **Concern** The abstract does not report the magnitude of the distance changes, the statistical significance, or the populations of the catalytically competent states. Without these numbers, the claim is qualitative and cannot be evaluated.
+  - **Why it matters** The biological conclusion of enhanced catalytic activity rests on the assertion that mutants spend more time in productive geometries. This requires quantitative population analysis and error assessment.
+  - **Resolution test** Report mean and standard error of SAM-H3K36 distances for each variant, the equilibrium populations of the catalytically competent macrostates, and a statistical test comparing WT to mutants.
+  - **Concern ID** R1-M4
+  - **Severity** Major
+  - **Blocking** No
+  - **Axis** Scientific importance
+  - **Claim pointer** The authors claim that findings are consistent with experimental observations of enhanced catalytic activity.
+  - **Evidence pointer** Abstract; location not provided
+  - **Concern** No experimental data are cited or described in the abstract. The claim of consistency with experiments is unverifiable from the supplied material.
+  - **Why it matters** The connection between simulation and experiment is critical for establishing biological relevance. Without explicit experimental references or quantitative comparison, the claim is unsupported.
+  - **Resolution test** Cite the specific experimental studies and provide a quantitative or qualitative comparison between simulated populations or distances and measured activity changes.
+- **Minor Comments**
+  - **Concern ID** R1-m1
+  - **Severity** Minor
+  - **Axis** Readability
+  - **Affected element** Abstract text
+  - **Evidence pointer** Abstract; location not provided
+  - **Issue** The phrase "optimizing substance engagement geometry" appears to be a typographical error; "substance" should likely be "substrate."
+  - **Required correction** Replace "substance" with "substrate."
+  - **Concern ID** R1-m2
+  - **Severity** Minor
+  - **Axis** Technical soundness
+  - **Affected element** Simulation details
+  - **Evidence pointer** Abstract; location not provided
+  - **Issue** The abstract does not state the simulation length, number of replicas, or force field used. These are essential for assessing sampling adequacy.
+  - **Required correction** Add a sentence in the abstract or methods summarizing simulation length, number of independent runs, and force field.
+  - **Concern ID** R1-m3
+  - **Severity** Minor
+  - **Axis** Scientific importance
+  - **Affected element** Therapeutic claim
+  - **Evidence pointer** Abstract; location not provided
+  - **Issue** The claim that the results "establish a framework to develop novel therapeutics" is speculative and not supported by any drug design or validation data in the abstract.
+  - **Required correction** Soften the claim to indicate that the findings may inform future therapeutic development, or remove the statement.
+- **Technical failings that need to be addressed before the case is established** R1-M1, R1-M2, R1-M3. The Markov state model validation, the definition and quantitative support for the "unaltered global dynamics" claim, and the quantitative distance and population analyses are all essential and currently missing.
+- **Assessment against Nature-style criteria** Originality is moderate; the application of tICA and Markov state modeling to NSD2-nucleosome systems is novel, but the general concept of mutation-induced conformational changes is not new. Scientific importance is high given the clinical relevance of NSD2 in cancer. Interdisciplinary readership is plausible, as the work bridges computational chemistry and epigenetics. Technical soundness cannot be assessed from the abstract alone and is the primary concern. Readability for nonspecialists is adequate, though the abstract uses specialized terms without definition.
+- **Recommendation posture** Currently not established from the provided evidence. The abstract presents an interesting hypothesis, but the technical validation and quantitative evidence required to support the central claims are not visible. A supportive recommendation would require full access to the methods, validation data, and quantitative results.
+
+## Risk / unsupported claims
+- The claim that global dynamics remain unaltered is unsupported without a defined metric and quantitative comparison.
+- The claim that mutants exhibit reduced SAM-H3K36 distances and altered free-energy landscapes is unquantified and unverifiable from the abstract.
+- The claim of consistency with experimental observations is unsupported because no experimental references are provided.
+- The claim that mutations "optimize substrate engagement geometry" is qualitative and lacks structural or energetic evidence.
+- The therapeutic framework claim is speculative and not supported by any data in the abstract.

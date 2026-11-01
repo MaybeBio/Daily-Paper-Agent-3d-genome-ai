@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42928016",
+  "title": "Population epigenomics of plant DNA methylation: perspectives for molecular breeding.",
+  "authors": "Long, Xi; Zheng, Juyun; Fang, Lei; Zhao, Ting",
+  "journal": "Journal of Zhejiang University. Science. B",
+  "published_date": "2026-10-25",
+  "window": {
+    "start": "2026-10-25",
+    "end": "2026-10-31"
+  },
+  "score": 2,
+  "one_liner_zh": "该文综述植物DNA甲基化群体表观基因组学及其在分子育种中的应用，仅在展望中提及三维基因组和深度学习，未涉及染色质空间架构建模或AI/分子模拟方法。",
+  "abstract": "DNA methylation, a key epigenetic modification, contributes to regulatory diversity in plants and plays important roles in phenotypic plasticity and environmental adaptation. Recent population epigenomic studies have revealed extensive methylation variation across plant genomes, characterized genomic distribution and genetic architecture, and demonstrated both its dependence on and partial independence from underlying DNA sequence variation. These studies have further linked methylation variation to gene expression regulation, domestication, local adaptation, and complex trait variation through integrative analyses and epigenome-wide association research. Advances in high-throughput sequencing have enabled the generation of population-scale plant methylomes across natural accessions, wild relatives, landraces, and breeding germplasm, providing new avenues to systematically investigate epigenomic diversity and its functional consequences. In parallel, public methylome resources, epigenomic databases, and multi-omics analytical platforms are accelerating comparative and cross-species analyses of plant epigenomic variation. Future efforts that integrate population methylomes with genomics, transcriptomics, chromatin accessibility, three-dimensional genome organization, deep learning-based analytical frameworks, and targeted epigenome editing are expected to facilitate the discovery of epigenetic breeding markers, promoting the application of epigenomic variation in crop improvement.",
+  "abstract_zh": "DNA甲基化作为一种关键的表观遗传修饰， contributes to植物中的调控多样性，并在表型可塑性和环境适应中发挥重要作用。近期的人群表观基因组研究揭示了植物基因组中广泛的甲基化变异，刻画了其基因组分布和遗传结构，并展示了其对底层DNA序列变异的依赖性和部分独立性。这些研究通过整合分析和表观基因组广泛关联研究，进一步将甲基化变异与基因表达调控、驯化、局部适应及复杂性状变异联系起来。高通量测序的进展使得能够在自然种质、野生近缘种、地方品种和育种种质中生成群体规模的植物甲基化组，为系统研究表观基因组多样性及其功能后果提供了新途径。同时，公共甲基化组资源、表观基因组数据库和多组学分析平台正在加速植物表观基因组变异的比较和跨物种分析。未来，将群体甲基化组与基因组学、转录组学、染色质可及性、三维基因组组织、基于深度学习的分析框架以及靶向表观基因组编辑相结合的努力，有望促进表观遗传育种标记的发现，推动表观基因组变异在作物改良中的应用。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42928016/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42928016/",
+  "paper_page_path": "papers/pubmed/42928016/index.html"
+}

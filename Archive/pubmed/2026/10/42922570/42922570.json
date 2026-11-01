@@ -1,0 +1,142 @@
+{
+  "identity": {
+    "pmid": "42922570",
+    "doi": "10.64898/2026.08.30.748130",
+    "title": "HiC-LEGO: Biologically Guided High-Resolution 3D Genome Reconstruction Preserves Chromatin Organization at Kilobase Resolution."
+  },
+  "content": {
+    "abstract": "Three-dimensional (3D) chromosome reconstruction from Hi-C contact maps remains challenging because genome organization is hierarchical and fine-resolution models must reconcile local structure with chromosome-scale constraints. Here we present HiC-LEGO, a domain-aware hierarchical framework integrating ensemble chromatin domains with graph-based structural learning and progressive chromosome assembly. By combining ensemble domain selection with hierarchical reconstruction, HiC-LEGO reduces dependence on individual domain definitions while maintaining local organization during chromosome-scale assembly. Across five human cell lines at 5-kb resolution, HiC-LEGO achieves higher reconstruction concordance than evaluated state-of-the-art methods while better preserving domain organization. At 1-kb resolution, HiC-LEGO reconstructs complete GM12878 chromosome 8 and recovers close spatial proximity between an epigenomically supported distal MYC enhancer and its promoter. Reconstructions from 5-kb Micro-C data show that 249 experimentally defined RCMC microcompartment interactions at the Ppm1g locus occupy compact 3D configurations. In the breast cancer dataset, HiC-LEGO reconstructs structures that maintain stable TAD organization across healthy breast, primary tumors, and liver metastases, while revealing greater inter-patient structural heterogeneity in malignant pleural effusion samples. Pore-C validation shows that experimentally observed multi-way contacts spanning 1-5 Mb are enriched in compact reconstructed configurations across all 23 chromosomes. Thus, HiC-LEGO preserves regulatory interactions, disease-associated chromatin organization and higher-order spatial relationships beyond pairwise contact-map concordance.",
+    "keywords": [
+      "3D chromosome reconstruction",
+      "Graph neural networks (GNN)",
+      "Hi-C",
+      "Micro-C",
+      "Pore-C",
+      "Topologically associating domains (TADs)",
+      "breast cancer"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article",
+      "Preprint"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Pandeya, Abhishek",
+        "Chowdhury, Md Fahimul Kabir",
+        "Oluwadare, Oluwatosin"
+      ],
+      "short_names": [
+        "Pandeya A",
+        "Chowdhury MFK",
+        "Oluwadare O"
+      ],
+      "auids": [
+        "ORCID: 0009-0008-7759-9361",
+        "ORCID: 0009-0003-8034-5235",
+        "ORCID: 0000-0002-5264-2342"
+      ],
+      "affiliations": [
+        "Department of Computer Science and Engineering, University of North Texas, 3940 N Elm St, Denton, 76207, TX, USA.",
+        "Center for Computational Life Sciences, University of North Texas, 3940 N Elm St, Denton, 76207, TX, USA.",
+        "Department of Computer Science and Engineering, University of North Texas, 3940 N Elm St, Denton, 76207, TX, USA.",
+        "Center for Computational Life Sciences, University of North Texas, 3940 N Elm St, Denton, 76207, TX, USA.",
+        "Department of Computer Science and Engineering, University of North Texas, 3940 N Elm St, Denton, 76207, TX, USA.",
+        "Center for Computational Life Sciences, University of North Texas, 3940 N Elm St, Denton, 76207, TX, USA."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Pandeya, Abhishek",
+        "short_name": "Pandeya A",
+        "identifiers": [
+          "0009-0008-7759-9361"
+        ],
+        "affiliations": [
+          "Department of Computer Science and Engineering, University of North Texas, 3940 N Elm St, Denton, 76207, TX, USA.",
+          "Center for Computational Life Sciences, University of North Texas, 3940 N Elm St, Denton, 76207, TX, USA."
+        ]
+      },
+      {
+        "full_name": "Chowdhury, Md Fahimul Kabir",
+        "short_name": "Chowdhury MFK",
+        "identifiers": [
+          "0009-0003-8034-5235"
+        ],
+        "affiliations": [
+          "Department of Computer Science and Engineering, University of North Texas, 3940 N Elm St, Denton, 76207, TX, USA.",
+          "Center for Computational Life Sciences, University of North Texas, 3940 N Elm St, Denton, 76207, TX, USA."
+        ]
+      },
+      {
+        "full_name": "Oluwadare, Oluwatosin",
+        "short_name": "Oluwadare O",
+        "identifiers": [
+          "0000-0002-5264-2342"
+        ],
+        "affiliations": [
+          "Department of Computer Science and Engineering, University of North Texas, 3940 N Elm St, Denton, 76207, TX, USA.",
+          "Center for Computational Life Sciences, University of North Texas, 3940 N Elm St, Denton, 76207, TX, USA."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "bioRxiv : the preprint server for biology"
+    ],
+    "journal_abbrev": [
+      "bioRxiv"
+    ],
+    "pub_date": "2026 Sep 3",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article",
+      "Preprint"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/25 03:36",
+    "fetched_at": "2026-11-01 11:00:03"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42922570"
+    ],
+    "review": [
+      "42922570"
+    ],
+    "pmc": [
+      "13684533"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/pmid/42922570/",
+        "provider": "PubMed Central",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://assays.cancer.gov/CPTAC-1474",
+        "provider": "NCI CPTAC Assay Portal",
+        "category": "Miscellaneous",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://doi.org/10.64898/2026.08.30.748130",
+        "provider": "Cold Spring Harbor Laboratory",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

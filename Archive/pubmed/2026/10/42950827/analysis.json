@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42950827",
+  "title": "A systematic delineation of 3'UTR regulatory elements and their contextual associations.",
+  "authors": "Liang, Nan; Li, Jing-Yi; Ding, Yang; Wang, Yu; Champer, Jackson; Ren, Li-Chen; Gao, Ge",
+  "journal": "Cell systems",
+  "published_date": "2026-10-28",
+  "window": {
+    "start": "2026-10-25",
+    "end": "2026-10-31"
+  },
+  "score": 3,
+  "one_liner_zh": "该文用深度学习模型系统解析3'UTR调控元件及其对RNA输出和核质分布的影响，对象是RNA调控而非染色质三维组织，虽涉及基因组调控但无染色质空间架构建模，方法可迁移性有限。",
+  "abstract": "The 3'UTR encodes regulatory information that shapes transcript abundance and subcellular distribution, yet the underlying sequence rules remain incompletely defined. We quantified the effects of  approximately 2 million synthetic 3'UTR inserts in A549 and HCT116 cells on RNA output and nuclear-cytoplasmic partitioning. We identified a broad repertoire of short 2- to 8-nt elements. Their effects largely followed a dominant coupled axis linking high RNA output with cytoplasmic enrichment and low RNA output with nuclear enrichment and were predominantly additive. A context-aware deep learning model captures most of this behavior while revealing that strong context dependence is uncommon and emerges mainly in rare, extreme contexts consistent with higher-order constraints. Applying the model to ClinVar 3'UTR variants prioritizes a subset of pathogenic single-nucleotide variants (SNVs) with aberrant predicted effects, frequently explained by creation or disruption of splice-site-like U1 motifs that can trigger telescripting-associated readthrough, highlighting a potent route to 3'UTR-driven disease mechanisms. A record of this paper's transparent peer review process is included in the supplemental information.",
+  "abstract_zh": "3'UTR编码调控信息，这些信息塑造了转录本的丰度和亚细胞分布，然而其背后的序列规则尚未完全明确。我们在A549和HCT116细胞中量化了约200万个合成3'UTR插入片段对RNA输出和核-细胞质分配的影响。我们识别出一系列广泛的2至8核苷酸短元件。它们的作用大多遵循一个主导的耦合轴，将高RNA输出与细胞质富集相关联，低RNA输出与核富集相关联，并且这些作用主要是加性的。一个上下文感知的深度学习模型捕获了大部分这种行为，同时揭示出强上下文依赖性并不常见，主要出现在稀有、极端的上下文中，这与高阶约束一致。将该模型应用于ClinVar 3'UTR变异体，优先筛选出一部分具有异常预测效应的致病性单核苷酸变异（SNVs），这些效应通常由剪接位点样U1基序的创建或破坏所解释，这些基序可触发与telescripting相关的通读，突显了3'UTR驱动疾病机制的一条强效途径。本论文透明同行评审过程的记录包含在补充信息中。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42950827/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42950827/",
+  "paper_page_path": "papers/pubmed/42950827/index.html"
+}

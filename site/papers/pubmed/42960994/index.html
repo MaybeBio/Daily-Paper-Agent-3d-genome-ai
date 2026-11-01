@@ -1,0 +1,698 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cross-task benchmarking reveals variable transferability of deep learning models across molecular quantitative trait loci. · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-mid">6</span>
+    <div>
+      <h1>Cross-task benchmarking reveals variable transferability of deep learning models across molecular quantitative trait loci.</h1>
+      <div class="meta">Chen, Sihan; Wang, Xiaoyu; Peleg, Anton Y; Xu, Shuting; Li, Fuyi; Webb, Geoffrey I; Song, Jiangning</div>
+      <div class="meta muted">
+        
+        <span class="journal">Briefings in bioinformatics</span>
+        · 2026-10-30
+         · 全文(pmc)
+         · <a href="https://pubmed.ncbi.nlm.nih.gov/42960994/">原文</a>
+      </div>
+      <p class="one-liner">该文系统评估了深度学习模型在多种分子QTL（含染色质可及性、染色质环等）预测中的跨任务迁移能力，虽以QTL预测为主而非直接建模染色质三维结构，但涉及染色质组织相关调控特征且采用AI方法，对本课题有方法学参考价值。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">Most genetic variants associated with complex traits reside in non-coding regions of the genome, complicating their functional interpretation. Recent deep learning models have advanced the prediction of expression quantitative trait loci (eQTLs), but whether these models generalize across diverse molecular phenotypes is unknown. Here, we assess the cross-task transferability of pretrained regulatory features from six representative sequence- and annotation-based models across nine classes of molecular quantitative trait loci (xQTLs). We observe that while all models perform well in eQTL prediction, their performance varies substantially across other xQTL predictions. Chromatin accessibility, transcription factor binding, and histone QTLs are generally well predicted, whereas chromatin looping and microRNA expression QTLs remain challenging. Foundation models, particularly AlphaGenome and Borzoi, consistently outperform models based on local sequence context and exhibit improved robustness across class-imbalance settings. Tree-based ensemble classifiers further enhance predictive performance, suggesting that nonlinear interactions among regulatory features contribute substantially to variant prioritization. Applying AlphaGenome and Borzoi to coronary artery disease-associated genome-wide association studies loci identifies 337 high-confidence candidate chromatin accessibility QTLs, including 11 previously reported and 326 candidates that display significantly larger allele-specific differences in predicted chromatin accessibility signals. Collectively, our results reveal substantial variability in the cross-task performance of current eQTL-centric models, highlight the advantages of long-range genomic representations and inform the prioritization of candidate regulatory variants contributing to complex diseases.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">与复杂性状相关的大多数遗传变异位于基因组的非编码区域，这使其功能解读变得复杂。最近的深度学习模型在预测表达数量性状位点（eQTLs）方面取得了进展，但这些模型是否能跨不同的分子表型进行泛化尚不清楚。在此，我们评估了来自六个代表性序列和注释基础模型的预训练调控特征在九类分子数量性状位点（xQTLs）上的跨任务可迁移性。我们观察到，尽管所有模型在eQTL预测中表现良好，但它们在其它xQTL预测中的性能差异显著。染色质可及性、转录因子结合和组蛋白QTLs通常预测良好，而染色质环化和microRNA表达QTLs仍具挑战性。基础模型，特别是AlphaGenome和Borzoi，始终优于基于局部序列上下文的模型，并在类别不平衡设置中表现出更强的鲁棒性。基于树的集成分类器进一步增强了预测性能，表明调控特征之间的非线性交互对变异优先级排序有显著贡献。将AlphaGenome和Borzoi应用于冠状动脉疾病相关的全基因组关联研究位点，识别出337个高置信度候选染色质可及性QTLs，其中包括11个先前报道的和326个在预测染色质可及性信号中表现出显著更大等位基因特异性差异的候选位点。总体而言，我们的结果揭示了当前以eQTL为中心的模型在跨任务性能上的显著变异性，强调了长程基因组表征的优势，并为复杂疾病相关候选调控变异的优先级排序提供了信息。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li>标题：Cross-task benchmarking reveals variable transferability of deep learning models across molecular quantitative trait loci</li>
+<li>作者与单位：Chen, Sihan; Wang, Xiaoyu; Peleg, Anton Y; Xu, Shuting; Li, Fuyi; Webb, Geoffrey I; Song, Jiangning（具体单位未在提供材料中列出；通讯与监督为 J.S., G.W., F.L.）</li>
+<li>期刊/预印本平台：Briefings in Bioinformatics</li>
+<li>年份：2026-10-30（按提供日期）</li>
+<li>论文类型：Benchmarking / 方法学评估研究（跨任务迁移性评测）</li>
+<li>领域：基因组学 × 深度学习 × 调控变异功能预测（xQTL）</li>
+<li>关键词：未提供（可据摘要概括：xQTL、eQTL、cross-task transferability、genomic foundation models、variant prioritization）</li>
+<li>DOI/arXiv 号：10.1093/bib/bbag599</li>
+<li>代码：https://github.com/SihanChen-bioinfo/xQTL-ModelBenchmarking</li>
+<li>数据：GTEx v10 及既往发表数据集（apaQTL、bQTL、caQTL、clQTL、eQTL、hQTL、miQTL、pQTL、sQTL）；1000 Genomes Project 作为负对照来源；GWAS Catalog CAD-SNPs（2492 个）</li>
+<li>阅读日期：未提供</li>
+<li>在「三维基因组/染色质组织 × AI/物理模拟」方向中的位置：本文并非三维基因组建模论文，而是对染色质相关调控变异（含 clQTL，即 chromatin looping QTL）预测模型的跨任务迁移性评测。对本课题的价值在于：① 直接给出 clQTL（染色质环化）在当前主流序列/注释模型下的可预测性下限证据；② 提供「长程上下文表征 vs 局部序列」在染色质高级结构相关任务上的对比结论；③ 提供可迁移的 benchmark 设计范式（统一预处理、染色体划分、类别不平衡敏感性、共识预测策略）。</li>
+</ul>
+<h2>02 一句话总结</h2>
+<p>该研究用统一的预处理与评测流程，将六个代表性调控变异预测模型（GWAVA、DeepSEA、ExPecto、Enformer、Borzoi、AlphaGenome）的预训练特征迁移到九类 xQTL 的二分类任务上，发现迁移性随分子表型显著变化——染色质可及性/转录因子结合/组蛋白 QTL 易预测，而染色质环化（clQTL）与 microRNA QTL 难预测，长程表征的基础模型（AlphaGenome、Borzoi）整体更优且更抗类别不平衡，并据此在 CAD GWAS 位点上给出 337 个共识候选 caQTL。</p>
+<h2>03 研究问题</h2>
+<ul>
+<li>具体问题：以 eQTL 为中心训练的调控变异预测模型，其预训练特征能否迁移到其他分子表型（xQTL）的变异优先级排序任务？迁移性由什么因素决定？</li>
+<li>为什么重要：&gt;90% 复杂性状相关变异位于非编码区，实验鉴定 xQTL 成本高、依赖组织/细胞类型；若模型只能预测 eQTL，则无法覆盖更广的调控架构。</li>
+<li>现有方法为何不足：计算工作过度集中于 eQTL，对其他调控表型泛化性有限；早期方法（GWAVA）依赖注释可得性，序列模型（DeepSEA、ExPecto）受限于短序列上下文，难以捕捉长程调控互作。</li>
+<li>精确研究问题（Can ... ?）：Can pretrained regulatory features from eQTL-centric sequence- and annotation-based models transfer across nine classes of xQTLs, and which model/feature properties determine the degree of transferability?</li>
+</ul>
+<h2>04 背景与发展脉络</h2>
+<ul>
+<li>阶段一：基于注释的方法（GWAVA）——利用人工整理功能注释做变异优先级排序；优点：生物学信息直接；局限：受注释可得性约束，不直接从 DNA 序列学习，难捕捉上下文依赖与长程效应。</li>
+<li>阶段二：短上下文序列模型（DeepSEA、ExPecto）——直接从原始 DNA 序列预测多种调控活性；优点：可解释 eQTL；局限：序列上下文短，难捕捉长程调控互作。</li>
+<li>阶段三：基因组基础模型（Enformer、Borzoi、AlphaGenome）——自监督建模长程依赖，统一框架同时捕捉局部序列决定因素与远端调控互作；优点：长程表征、跨细胞上下文；局限：模型规模、算力、预训练数据依赖。</li>
+<li>本文主张的位置：在上述脉络中，本文不提出新模型，而是主张「跨表型迁移性被系统性高估」，并给出迁移性梯度（chromatin-activity-linked 表型 &gt; 高阶/转录后表型）的实证框架。</li>
+<li>脉络标注：以上阶段划分与代表性方法定位来自本文 Introduction 的叙述（仅本文框架）；其中 Enformer/Borzoi/AlphaGenome 长程优势与既往工作一致的说法由作者引用 [20,21,25] 支撑，但未在提供材料中做外部独立核验。</li>
+</ul>
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>计算研究过度集中于 eQTL</td>
+<td>其他调控表型缺乏稳健预测器</td>
+<td>作者称该窄焦点限制了基因组调控架构理解</td>
+<td>Introduction 段 4；引用 [10,11,18,19,21,22]</td>
+</tr>
+<tr>
+<td>跨表型迁移性未知</td>
+<td>模型在 eQTL 表现好，其他 xQTL 表现差异大</td>
+<td>作者归因于不同分子表型调控复杂度不同、与染色质特征关联直接程度不同</td>
+<td>Results「Cross-xQTL prediction performance」；Discussion 段 2</td>
+</tr>
+<tr>
+<td>clQTL/miQTL 难预测</td>
+<td>所有模型一般 AUROC &lt; 0.71，MCC 低</td>
+<td>作者解释为其机制更 context-specific 或间接，现有数据与架构表征不足</td>
+<td>Results 图 3A、Fig. S3、Table 1；Discussion 段 2</td>
+</tr>
+<tr>
+<td>类别不平衡下指标虚高</td>
+<td>AUROC 稳定但 AUPRC/F1/MCC 随负样本比例上升显著下降</td>
+<td>作者指出 AUROC 在功能变异稀疏的真实场景下可能高估实用性</td>
+<td>Results「Factors influencing...」；图 5、Fig. S9、Table S7</td>
+</tr>
+<tr>
+<td>线性分类器失效</td>
+<td>L1/Enet 在多个 xQTL 上 AUROC 接近 0.5、MCC 近 0</td>
+<td>作者解释为序列模型表征含大量非线性交互</td>
+<td>Results 图 4、Fig. S8、Table S6</td>
+</tr>
+<tr>
+<td>特征维度不一致</td>
+<td>六个模型输出特征维度不同</td>
+<td>作者承认这可能是性能比较的潜在混杂因素</td>
+<td>Discussion 段 1（作者自述）</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p>1) 表面方法：固定统一预处理与评测管线，把六个模型的变异级染色质特征抽出，统一训练 XGBoost 等下游分类器，在九类 xQTL 上做二分类，并做不平衡、随机种子、染色体划分、阈值四类敏感性分析。
+2) 核心洞察：模型迁移性不是模型固有属性，而是「预训练表征与目标分子表型之间对齐程度」的函数——与染色质活性直接相关的表型（caQTL/bQTL/hQTL）可迁移，涉及高阶染色质构象（clQTL）或转录后过程（miQTL）的表型不可迁移。
+3) 可能的普适教训 [Analysis]：在评测跨任务泛化时，必须把「表征对齐度」与「分类器容量」分离考察；仅报告 AUROC 会系统性掩盖稀疏正例场景下的实用性衰减；共识预测（多模型一致）可作为无标签条件下的候选提纯手段。</p>
+<h2>07 方法总览</h2>
+<ul>
+<li>输入：九类 xQTL 的显著变异（正例）+ 1000 Genomes 抽样的非 xQTL 变异（负例，1:10，另做 1:5、1:1）；MAF ≥ 0.01；CAD-SNPs 2492 个。</li>
+<li>输出：各模型在各 xQTL 上的 AUROC/AUPRC/F1/MCC/Brier；特征重要性富集；337 个共识 CAD 相关候选 caQTL。</li>
+<li>模块：① 数据收集与负对照构建（含严格匹配敏感性集：≥500 kb、排除已知 xQTL、MAF 差 &lt;0.05、按调控元件注释匹配）；② 六模型特征抽取；③ 下游分类器（XGBoost 主，RF/L1/Enet 对照）；④ 评测指标；⑤ 特征重要性→组织注释映射 + 10 000 次置换检验 + FDR；⑥ g:Profiler 富集（KEGG、HP）；⑦ 等位特异 DNase-seq 信号差异评估。</li>
+<li>训练：染色体划分（每数据集随机选测试染色体保留约 20%），同一划分用于全部六模型；训练集内 5 折交叉验证调参；固定随机种子 seed=0（另做 42、68）。</li>
+<li>工具：XGBoost、Random Forest、L1、Elastic Net；g:Profiler；GENCODE v38。</li>
+<li>反馈回路：无显式迭代反馈回路（单轮 benchmark）。</li>
+<li>假设：模型输出的变异级染色质特征是可比且可迁移的；负对照抽样能代表非功能变异；固定阈值 0.5 在跨模型比较中公平。</li>
+<li>文字流程：收集九类 xQTL 与负对照 → 按染色体划分训练/测试 → 六模型抽取变异级特征 → 训练 XGBoost（5 折调参）→ 在测试染色体上算 AUROC/AUPRC/F1/MCC/Brier → 做不平衡/种子/染色体/阈值敏感性 → 特征重要性富集与组织映射 → 迁移到 CAD-SNPs 做共识候选 → 富集分析与等位特异 DNase 验证。</li>
+</ul>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>统一预处理与评测管线</td>
+<td>保证跨模型公平比较</td>
+<td>六模型架构与特征表示不同</td>
+<td>输入 xQTL 变异集；输出统一特征矩阵与划分</td>
+<td>Fig. 1；Materials and methods</td>
+<td>移除则跨模型比较不可比（预期效应）</td>
+</tr>
+<tr>
+<td>负对照构建（1:10，另 1:5/1:1）</td>
+<td>构造类别不平衡的真实场景</td>
+<td>功能变异稀疏</td>
+<td>1000G 抽样 → 负例集</td>
+<td>Table S1；Results</td>
+<td>移除则无法评估不平衡鲁棒性（预期效应）</td>
+</tr>
+<tr>
+<td>严格匹配负对照敏感性集</td>
+<td>排除 LD 与注释混杂</td>
+<td>主分析负对照可能引入偏差</td>
+<td>≥500 kb、MAF 匹配、注释匹配 → 敏感性结果</td>
+<td>Fig. S7</td>
+<td>实测：主结论趋势被复现，未改变结论</td>
+</tr>
+<tr>
+<td>六模型特征抽取</td>
+<td>提供迁移表征</td>
+<td>比较不同表征范式</td>
+<td>变异 → 染色质特征</td>
+<td>Table S2；Fig. 2D/E、Fig. S1/S2</td>
+<td>移除则无迁移性结论（预期效应）</td>
+</tr>
+<tr>
+<td>XGBoost 下游分类器</td>
+<td>非线性整合特征</td>
+<td>表征含非线性交互</td>
+<td>特征 → 概率</td>
+<td>图 4、Fig. S8、Table S6</td>
+<td>实测：换线性模型（L1/Enet）性能大幅下降，部分近随机</td>
+</tr>
+<tr>
+<td>随机种子重复（0/42/68）</td>
+<td>检验初始化稳健性</td>
+<td>排除随机性</td>
+<td>三次运行 → 均值/SD</td>
+<td>Table S3</td>
+<td>实测：AUROC SD 0.00012–0.00735，AUPRC SD 0.00004–0.01106，结论稳健</td>
+</tr>
+<tr>
+<td>统一测试染色体分析</td>
+<td>排除染色体组成影响</td>
+<td>各 xQTL 原划分不同</td>
+<td>固定 chr2/12/14/19/21</td>
+<td>Table S4</td>
+<td>实测：与原始划分基本一致，仅微小差异</td>
+</tr>
+<tr>
+<td>阈值敏感性分析</td>
+<td>检验固定 0.5 的影响</td>
+<td>不平衡下阈值敏感</td>
+<td>训练集 MCC 最优阈值 → 测试</td>
+<td>Table S5</td>
+<td>实测：F1/MCC 变化，AUROC/AUPRC 基本不变，结论一致</td>
+</tr>
+<tr>
+<td>特征重要性→组织映射 + 置换检验</td>
+<td>解释生物学相关性</td>
+<td>连接特征与表型</td>
+<td>特征 → 组织富集 + 经验 P + FDR</td>
+<td>Fig. 2D/E、Fig. S1/S2/S5/S6</td>
+<td>移除则失去机制解释（预期效应）</td>
+</tr>
+<tr>
+<td>共识预测（AlphaGenome ∩ Borzoi）</td>
+<td>提纯候选</td>
+<td>单模型假阳性</td>
+<td>CAD-SNPs → 337 候选</td>
+<td>Fig. 6B、Fig. S10</td>
+<td>实测：两模型 PCC 0.807、Spearman 0.746、一致率 89.92%、κ=0.6673</td>
+</tr>
+<tr>
+<td>等位特异 DNase-seq 差异</td>
+<td>正交功能验证</td>
+<td>预测需独立支持</td>
+<td>候选 vs 非 caQTL → 信号差</td>
+<td>Fig. 6C/D/E</td>
+<td>实测：共识候选等位差异显著大于非 caQTL</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式符号</h2>
+<ul>
+<li>F1 与 MCC：文中给出定义式（Materials and methods「Model performance evaluation」），其中 TP/TN/FP/FN 分别为真阳/真阴/假阳/假阴。用途：阈值依赖的二分类性能；直觉：MCC 对类别不平衡更稳健。</li>
+<li>Brier score：$BS = \frac{1}{N}\sum_{i=1}^{N}(f_i - y_i)^2$，其中 $f_i$ 为变异 i 的预测概率，$y_i \in {0,1}$ 为真实标签，N 为变异数。用途：评估概率校准；直觉：越低越好。</li>
+<li>Pearson 相关系数（PCC）：用于预测概率与效应大小的相关（Results 图 2F、图 3B/C），以及 AlphaGenome 与 Borzoi 分数相关（Fig. S10）。具体公式未在提供材料中展开。</li>
+<li>注：F1、MCC 的完整展开式在提供材料中以「calculated as follows」引出但公式体未完整呈现，故不臆造。</li>
+</ul>
+<h2>10 实验设计与证据链</h2>
+<ul>
+<li>数据集/群体：九类 xQTL（apaQTL、bQTL、caQTL、clQTL、eQTL、hQTL、miQTL、pQTL、sQTL），来源 GTEx v10 与既往发表；eQTL 为 14 811 个全血 eQTL；负对照来自 1000 Genomes，比例 1:10（另 1:5、1:1）；MAF ≥ 0.01；CAD-SNPs 2492 个（GWAS Catalog，MONDO_0005090）。</li>
+<li>规模：各 xQTL 具体数量见 Table S1（提供材料未列数值）。</li>
+<li>指标：AUROC、AUPRC、F1、MCC、Brier score；MAF 分布一致性；PCC（概率 vs 效应大小）。</li>
+<li>基线：六模型互为基线；下游分类器以 XGBoost 为主，RF/L1/Enet 为对照。</li>
+<li>预算：未提供（未报告 GPU/训练成本）。</li>
+<li>骨干/仪器：GWAVA、DeepSEA、ExPecto、Enformer、Borzoi、AlphaGenome；下游 XGBoost/RF/L1/Enet。</li>
+<li>oracle 输入：无 oracle 输入；标签来自实验鉴定的 xQTL。</li>
+<li>评测协议：染色体划分，测试染色体保留约 20%；固定阈值 0.5；5 折交叉验证调参；固定 seed=0。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>eQTL 预测</td>
+<td>六模型在 eQTL 上的性能排序</td>
+<td>1:10 不平衡</td>
+<td>AlphaGenome AUROC=0.810/AUPRC=0.389/F1=0.343/MCC=0.292 最佳；Borzoi 0.804、Enformer 0.799；GWAVA 0.775；ExPecto 0.724；DeepSEA 0.688</td>
+<td>基础模型在 eQTL 上更优</td>
+<td>不能说明在其他表型同样最优</td>
+<td>Results 图 2、Table 1</td>
+</tr>
+<tr>
+<td>跨 xQTL 预测</td>
+<td>迁移性是否随表型变化</td>
+<td>九类 xQTL × 六模型</td>
+<td>caQTL/bQTL/hQTL 高（caQTL AlphaGenome AUROC=0.954、AUPRC=0.757）；clQTL/miQTL 一般 AUROC&lt;0.71；apaQTL/pQTL/sQTL 中等（pQTL Borzoi AUROC=0.794、AUPRC=0.442）</td>
+<td>存在迁移性梯度</td>
+<td>不能说明 clQTL/miQTL 不可预测（仅当前特征下难）</td>
+<td>Results 图 3、Fig. S3、Table 1</td>
+</tr>
+<tr>
+<td>负对照敏感性</td>
+<td>结论是否受负对照选择影响</td>
+<td>严格匹配集（≥500 kb、MAF、注释）</td>
+<td>趋势复现</td>
+<td>主结论稳健</td>
+<td>不能排除其他未匹配混杂</td>
+<td>Fig. S7</td>
+</tr>
+<tr>
+<td>随机种子</td>
+<td>结论是否受初始化影响</td>
+<td>seed 0/42/68</td>
+<td>AUROC SD 0.00012–0.00735；AUPRC SD 0.00004–0.01106</td>
+<td>对初始化稳健</td>
+<td>不能推广到未测种子</td>
+<td>Table S3</td>
+</tr>
+<tr>
+<td>统一测试染色体</td>
+<td>结论是否受染色体组成影响</td>
+<td>chr2/12/14/19/21</td>
+<td>与原始划分基本一致</td>
+<td>对划分稳健</td>
+<td>不能排除其他染色体组合</td>
+<td>Table S4</td>
+</tr>
+<tr>
+<td>阈值敏感性</td>
+<td>固定 0.5 是否影响结论</td>
+<td>训练集 MCC 最优阈值</td>
+<td>F1/MCC 变化，AUROC/AUPRC 基本不变</td>
+<td>结论不依赖固定阈值</td>
+<td>不能说明最优阈值在所有场景最优</td>
+<td>Table S5</td>
+</tr>
+<tr>
+<td>分类器选择</td>
+<td>下游分类器影响多大</td>
+<td>XGBoost vs RF vs L1 vs Enet</td>
+<td>XGBoost 最佳（caQTL AUROC 0.894–0.954、AUPRC 0.652–0.757）；RF 略低（0.887–0.946、0.598–0.733）；线性模型常近随机</td>
+<td>非线性集成更优</td>
+<td>不能说明 XGBoost 在所有特征集上最优</td>
+<td>图 4、Fig. S8、Table S6</td>
+</tr>
+<tr>
+<td>类别不平衡</td>
+<td>不平衡如何影响指标</td>
+<td>1:1/1:5/1:10</td>
+<td>AUROC 稳定，AUPRC 显著下降（AlphaGenome caQTL AUPRC 0.954→0.757）；基础模型更稳健</td>
+<td>AUROC 可能高估实用性</td>
+<td>不能说明基础模型完全免疫不平衡</td>
+<td>图 5、Fig. S9、Table S7</td>
+</tr>
+<tr>
+<td>CAD 候选识别</td>
+<td>能否迁移到疾病位点</td>
+<td>AlphaGenome ∩ Borzoi</td>
+<td>Borzoi 503、AlphaGenome 422，共识 337（11 已知 + 326 新）；PCC 0.807、Spearman 0.746、一致率 89.92%、κ=0.6673</td>
+<td>共识策略可提纯候选</td>
+<td>不能建立因果性</td>
+<td>图 6、Fig. S10</td>
+</tr>
+<tr>
+<td>功能富集</td>
+<td>候选是否生物学相关</td>
+<td>g:Profiler KEGG/HP</td>
+<td>胆固醇代谢 FDR=5.32×10⁻⁹；atherosclerosis FDR=8.57×10⁻⁹；arteriosclerosis FDR=2.14×10⁻⁸；coronary artery atherosclerosis FDR=7.42×10⁻⁵</td>
+<td>候选与 CAD 相关过程富集</td>
+<td>不能证明这些基因因果驱动 CAD</td>
+<td>Fig. S11、Fig. S12</td>
+</tr>
+<tr>
+<td>等位特异 DNase</td>
+<td>候选是否有功能信号</td>
+<td>共识候选 vs 非 caQTL</td>
+<td>共识候选等位差异显著更大；rs11670056 差异明显且在 ELL 基因内</td>
+<td>提供正交支持</td>
+<td>不能替代实验验证</td>
+<td>图 6C/D/E</td>
+</tr>
+</tbody>
+</table>
+<h2>11 结论正确解读</h2>
+<ul>
+<li>任务范围：二分类变异优先级排序，非效应量回归、非因果推断、非三维结构预测。</li>
+<li>oracle/真值输入：标签来自实验鉴定的 xQTL（GTEx v10 与既往发表），无 oracle 特征输入。</li>
+<li>端到端状态：不是端到端——预训练模型冻结，仅下游分类器训练；因此结论针对「冻结表征的可迁移性」，不针对微调后的可迁移性。</li>
+<li>算力成本：未报告；作者在 Discussion 中提及基础模型受模型规模、算力、预训练数据依赖约束，但无量化。</li>
+<li>历史数据依赖：依赖 GTEx v10 与既往发表数据集的组织/细胞类型覆盖；预训练数据与目标组织匹配度可能影响性能（作者引用 [43]）。</li>
+<li>模型依赖：结论限于所测六模型；作者明确未评估 Caduceus、HyenaDNA、Nucleotide Transformer 等基因组语言模型。</li>
+<li>最难情形：clQTL 与 miQTL（一般 AUROC&lt;0.71）；高类别不平衡（1:10）下的 AUPRC/F1/MCC。</li>
+<li>群体/领域边界：eQTL 为全血，bQTL/caQTL/clQTL 为 HCASMC，hQTL 为 LCL，miQTL/pQTL/sQTL 为全血，apaQTL 为全血；CAD-SNPs 为常染色体；MAF ≥ 0.01。</li>
+<li>不确定性：特征维度差异为潜在混杂（作者自述）；负对照抽样策略虽做敏感性但仍可能残留混杂；共识候选需 fine-mapping、colocalization 或正交功能实验确认因果。</li>
+<li>有边界复述：在当前六模型冻结表征 + XGBoost 下游 + 上述数据条件下，跨 xQTL 迁移性存在稳定梯度，长程基础模型在多数表型与不平衡条件下更优，但 clQTL/miQTL 仍难预测，CAD 候选仅为优先级排序而非因果结论。</li>
+</ul>
+<h2>12 作者自认局限</h2>
+<table>
+<thead>
+<tr>
+<th>局限</th>
+<th>具体表现</th>
+<th>作者提出的未来方向</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>特征维度不一致</td>
+<td>六模型输出特征维度不同，可能混杂性能比较</td>
+<td>未明确给出解决方向，仅作为潜在混杂提出</td>
+<td>Discussion 段 1</td>
+</tr>
+<tr>
+<td>未评估新兴基因组语言模型</td>
+<td>Caduceus、HyenaDNA、Nucleotide Transformer 未纳入</td>
+<td>未来扩展纳入以检验结论是否跨范式成立</td>
+<td>Discussion 段 5</td>
+</tr>
+<tr>
+<td>基础模型算力约束</td>
+<td>模型规模、计算需求、预训练数据依赖</td>
+<td>大规模或资源受限应用时需权衡</td>
+<td>Discussion 段 5</td>
+</tr>
+<tr>
+<td>候选因果性未建立</td>
+<td>共识候选需进一步验证</td>
+<td>fine-mapping、colocalization 或正交功能实验</td>
+<td>Results「Identification of novel CAD-associated caQTLs」末段</td>
+</tr>
+</tbody>
+</table>
+<p>作者提及的相关约束（非正式局限）：预训练数据与目标组织/细胞类型匹配度可能影响性能（Discussion 段 2，引用 [43]）；基因组基础模型领域快速演进，benchmark 范围有时效性（Discussion 段 5）。</p>
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>冻结表征 + XGBoost 的评测范式可能低估基础模型</td>
+<td>微调或端到端训练可能改变迁移性排序</td>
+<td>若结论被用于「选模型」，冻结设定可能误导</td>
+<td>对同一六模型做微调/线性探测对比</td>
+<td>Materials and methods（冻结特征 + XGBoost）</td>
+</tr>
+<tr>
+<td>特征维度差异未控制</td>
+<td>高维特征可能仅因容量优势而表现更好</td>
+<td>可能把「维度红利」误读为「长程表征优势」</td>
+<td>维度对齐（PCA/随机投影）后重跑</td>
+<td>Discussion 段 1（作者自述）</td>
+</tr>
+<tr>
+<td>负对照来自 1000 Genomes 随机抽样</td>
+<td>即使严格匹配，仍可能残留功能相关混杂</td>
+<td>影响 AUPRC 绝对值与跨表型比较</td>
+<td>使用不变/中性位点或匹配功能注释的负对照</td>
+<td>Materials and methods；Fig. S7</td>
+</tr>
+<tr>
+<td>clQTL 难预测的归因未直接检验</td>
+<td>可能是特征缺失，也可能是标签质量/样本量问题</td>
+<td>决定后续应改架构还是改数据</td>
+<td>报告 clQTL 样本量、标签来源、特征覆盖度并做消融</td>
+<td>Results 图 3A；Discussion 段 2</td>
+</tr>
+<tr>
+<td>共识策略（∩）提高精度但可能损失召回</td>
+<td>两模型共享偏差会同时漏掉真候选</td>
+<td>影响下游候选清单完整性</td>
+<td>报告单模型 vs 共识的召回代理指标（如已知 caQTL 回收率）</td>
+<td>Fig. 6B、Fig. S10</td>
+</tr>
+<tr>
+<td>等位特异 DNase 验证非因果</td>
+<td>等位差异可能来自 LD 或细胞类型特异</td>
+<td>支持相关性而非因果</td>
+<td>fine-mapping/colocalization/MPRA</td>
+<td>图 6C/D/E；Results 末段</td>
+</tr>
+<tr>
+<td>组织匹配度作为解释未量化</td>
+<td>未给出预训练组织与目标组织的匹配度量</td>
+<td>使「对齐度」解释停留在定性</td>
+<td>构造组织匹配评分并与性能做相关</td>
+<td>Discussion 段 2（引用 [43]）</td>
+</tr>
+</tbody>
+</table>
+<h2>14 学到什么</h2>
+<p>Agent 提炼的知识候选：
+- 可迁移概念：跨任务迁移性应作为「表征-表型对齐度」的函数来评测，而非模型固有属性；迁移性梯度（染色质活性直接相关 &gt; 高阶构象/转录后）可作为本课题的先验假设。
+- 可迁移方法：统一预处理 + 染色体划分 + 固定随机种子 + 多类敏感性分析（负对照、种子、染色体、阈值）的 benchmark 范式，可直接迁移到三维基因组预测任务（如 contact map 预测、loop 预测、TAD 边界预测）的评测设计。
+- 可迁移公式/指标：Brier score 用于概率校准；MCC 用于不平衡场景；AUROC 与 AUPRC 分离报告以暴露稀疏正例下的实用性衰减。
+- 可迁移实验设计：共识预测（多模型交集）作为无标签提纯策略；等位特异信号差异作为正交验证代理。
+- 面向本课题的迁移点：clQTL 难预测（AUROC&lt;0.71）提示当前序列/注释表征对染色质环化机制覆盖不足，可考虑引入 Hi-C/Micro-C 衍生特征、结构域上下文或物理模拟先验；长程基础模型优势提示在三维基因组任务中应优先评估长程上下文架构；类别不平衡敏感性提示在 loop/TAD 等稀疏事件预测中必须报告 AUPRC 而非仅 AUROC。</p>
+<h2>15 与已有知识连接</h2>
+<ul>
+<li>相似：本文对 Enformer/Borzoi/AlphaGenome 长程优势的结论与作者引用 [20,21,25] 一致（经本文引用，未在提供材料中独立核验）。</li>
+<li>组合：本文的 benchmark 范式可与三维基因组预测任务（contact map、loop、TAD）评测组合，形成「调控变异 × 染色质构象」的联合评测。</li>
+<li>冲突：本文发现 GWAVA（纯注释）在多个 xQTL 上优于 DeepSEA/ExPecto（短序列模型），与「序列模型必然优于注释模型」的直觉冲突；作者以此强调生物学注释仍高度信息量。</li>
+<li>可迁移领域：基因组语言模型（Caduceus、HyenaDNA、Nucleotide Transformer，作者引用 [23,44,45]）代表不同范式，其表征是否在三维基因组任务上更可迁移，为候选方向（未核验）。</li>
+<li>用户已有知识连接：若用户熟悉 Hi-C 数据稀疏性与 loop 检测的类别不平衡问题，本文的 AUROC/AUPRC 分离结论可直接类比。</li>
+</ul>
+<h2>16 研究想法</h2>
+<p>Agent 生成的研究候选：</p>
+<p>1) 名称：三维基因组任务上的跨任务迁移性 benchmark（3D-xQTL-Bench）
+- 来源局限/观察：本文发现 clQTL 难预测（AUROC&lt;0.71），且未评估三维构象专用表征。
+- 核心假设：引入 Hi-C/Micro-C 衍生特征或结构域上下文可提升 clQTL 及 loop/TAD 相关任务的迁移性。
+- 相对本文的增量：把 benchmark 从「序列/注释特征」扩展到「构象特征」，并覆盖 loop/TAD 预测任务。
+- 初步方法：在本文统一管线上，替换/拼接特征为「基础模型嵌入 + 构象特征」，下游仍用 XGBoost 与线性对照。
+- 验证方式：与本文 clQTL 结果对比 AUROC/AUPRC/MCC；做特征消融与不平衡敏感性。
+- 可能的失败模式：构象特征与标签循环依赖（Hi-C 数据本身用于定义 clQTL），导致信息泄漏。
+- 创新状态：unverified。</p>
+<p>2) 名称：表征维度对齐的迁移性归因实验
+- 来源局限/观察：作者自述特征维度差异为潜在混杂。
+- 核心假设：维度对齐后，基础模型相对局部模型的优势会缩小但不会消失。
+- 相对本文的增量：把「长程表征优势」与「维度红利」分离。
+- 初步方法：对六模型特征做 PCA/随机投影到统一维度，重跑全部 xQTL。
+- 验证方式：比较对齐前后 AUROC/AUPRC 差值；报告置信区间。
+- 可能的失败模式：降维破坏非线性结构，导致所有模型同时退化，无法归因。
+- 创新状态：partially checked（作者已承认混杂，但未做对齐实验）。</p>
+<p>3) 名称：组织匹配度量化与性能预测
+- 来源局限/观察：作者定性提出预训练组织与目标组织匹配度影响性能，但未量化。
+- 核心假设：组织匹配评分与跨 xQTL 性能正相关。
+- 相对本文的增量：把「对齐度」从定性解释变为可计算指标。
+- 初步方法：用特征重要性组织富集分布构造匹配评分，与各 xQTL 性能做相关。
+- 验证方式：留一表型交叉验证；置换检验。
+- 可能的失败模式：匹配评分与性能均由同一特征重要性推导，存在循环。
+- 创新状态：unverified。</p>
+<p>4) 名称：共识预测的召回-精度权衡分析
+- 来源局限/观察：本文用 AlphaGenome ∩ Borzoi 提纯候选，但未报告召回。
+- 核心假设：共识策略在提高精度的同时损失可测量的召回，且损失随模型相关性升高而增大。
+- 相对本文的增量：给出共识策略的定量权衡曲线。
+- 初步方法：用已知 caQTL 作为正例锚点，计算单模型 vs 共识的召回代理；模拟不同模型相关性下的权衡。
+- 验证方式：在多个 xQTL 上重复；与随机交集对照。
+- 可能的失败模式：已知 caQTL 数量太少，召回估计方差过大。
+- 创新状态：unverified。</p></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Full manuscript text (abstract, introduction, methods, results, discussion, conclusions) without figures, tables, or supplementary materials</li>
+<li><strong>Assessment boundary</strong> Scientific validity, methodological rigor, and interpretation of reported results based on the provided text only</li>
+<li><strong>Shared manuscript claim summary</strong> The authors benchmark six deep learning models for eQTL prediction across nine xQTL classes, finding variable cross-task transferability, with foundation models (AlphaGenome, Borzoi) performing best, and apply these models to prioritize candidate caQTLs in coronary artery disease GWAS loci</li>
+<li><strong>Visible evidence base</strong> Text descriptions of results, performance metrics mentioned in text (AUROC, AUPRC, F1, MCC, Brier scores), sensitivity analyses described, enrichment analyses described</li>
+<li><strong>Missing materials affecting confidence</strong> All figures, tables, supplementary materials, and the GitHub repository contents were not provided; exact performance values for many comparisons are only described qualitatively in text</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li>
+<p><strong>Overall assessment</strong> This manuscript addresses an important and timely question: whether deep learning models trained for eQTL prediction generalize across diverse molecular QTL types. The cross-task benchmarking framework is well conceived, and the inclusion of six models spanning annotation-based, local-sequence, and long-range genomic foundation models provides a useful comparative landscape. The finding that performance varies substantially across xQTL types, with chromatin-related QTLs being more predictable than looping or microRNA QTLs, is biologically plausible and of practical value. However, the manuscript as presented has several limitations that temper enthusiasm. The reliance on text descriptions without access to the actual figures and tables makes full verification impossible, but even from the text, several concerns emerge: the negative control construction may introduce biases not fully addressed, the comparison across models with different feature dimensionalities is acknowledged but not resolved, and the clinical application section, while interesting, would benefit from clearer demonstration that the predicted caQTLs add information beyond existing annotations. The sensitivity analyses described are commendable and suggest robustness, but the manuscript would be strengthened by more explicit reporting of confidence intervals or variability measures across the random seeds tested.</p>
+</li>
+<li>
+<p><strong>Who would be interested in the results, and why</strong> Computational biologists and bioinformaticians developing or applying deep learning models for regulatory variant interpretation would find this benchmarking useful for model selection. Statistical geneticists working on fine-mapping and variant prioritization in GWAS follow-up studies would be interested in the practical application to CAD. Researchers studying the genetic architecture of gene regulation across molecular phenotypes would benefit from the cross-xQTL perspective. The finding that tree-based classifiers substantially outperform linear models on deep learning features is methodologically informative for the broader machine learning for genomics community.</p>
+</li>
+<li>
+<p><strong>Major strengths</strong>
+  1. The cross-xQTL benchmarking framework addresses a genuine gap in the field, as most evaluations focus on eQTLs alone
+  2. The inclusion of six models spanning different architectural paradigms (annotation-based, local sequence, long-range foundation models) provides a comprehensive comparison
+  3. The sensitivity analyses addressing negative control selection, random seed variability, and classification threshold are rigorous and strengthen confidence in the main findings
+  4. The application to CAD GWAS loci demonstrates practical utility and provides biological validation through enrichment analyses and allele-specific DNase-seq signal differences
+  5. The discussion of limitations, including feature dimensionality confounding and the exclusion of emerging DNA language models, is honest and balanced</p>
+</li>
+<li>
+<p><strong>Major Concerns</strong></p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M1</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Experimental design and control selection</li>
+<li><strong>Claim pointer</strong> The authors claim that negative controls were "randomly selected from the 1000 Genomes Project reference panel at a 1:10 ratio relative to the number of significant xQTLs" and that a "more stringently matched negative-control set" was constructed for sensitivity analysis</li>
+<li><strong>Evidence pointer</strong> Materials and methods, Data collection and processing; Results, Cross-xQTL prediction performance</li>
+<li><strong>Concern</strong> The primary negative control selection strategy of random sampling from 1000 Genomes without matching for genomic context, MAF, or LD structure may introduce substantial confounding. Randomly selected variants are likely to differ systematically from true xQTLs in allele frequency, local sequence composition, and proximity to genes or regulatory elements. While the authors describe a matched control set for sensitivity analysis, the primary results rely on the unmatched controls. The matched control set requires variants to be at least 500 kb from xQTLs and matched by MAF and regulatory annotation, but the text does not clarify whether this matched set was used for all nine xQTL types or only a subset, nor does it report the number of controls successfully matched. If matching substantially reduced the control pool, statistical power may be compromised.</li>
+<li><strong>Why it matters</strong> The choice of negative controls is arguably the most consequential decision in any variant effect prediction benchmark. If controls are not matched on key confounders, the reported performance differences between models may reflect differences in how well each model captures these confounders rather than true biological signal. This directly affects the validity of the central claim that foundation models generalize better across xQTL types.</li>
+<li>
+<p><strong>Resolution test</strong> The authors should report the number of matched controls achieved for each xQTL type, demonstrate that the matched and unmatched control sets produce similar conclusions, and ideally include a third control set matched for LD structure or genomic position. If the matched control analysis is only reported in supplementary materials, it should be moved to the main text for the primary performance comparisons.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M2</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Statistical rigor and uncertainty quantification</li>
+<li><strong>Claim pointer</strong> The authors report performance differences between models (e.g., "AlphaGenome achieved the best overall performance (AUROC = 0.810, AUPRC = 0.389)") and state that "standard deviations ranging from 0.00012 to 0.00735 for AUROC" across random seeds</li>
+<li><strong>Evidence pointer</strong> Results, Comparative evaluation of model prediction performance for eQTL identification; Results, Cross-xQTL prediction performance</li>
+<li><strong>Concern</strong> The manuscript reports point estimates for performance metrics but does not describe any formal statistical testing for differences between models. The random seed variability is reported as standard deviations, but it is unclear whether these represent variability across three seeds only, which is a very small sample for estimating uncertainty. No confidence intervals are provided for the AUROC or AUPRC values, and no statistical test (e.g., DeLong test for correlated ROC curves, or bootstrap-based comparisons) is described to establish whether observed differences between models are statistically significant. The text frequently uses qualitative language such as "consistently outperformed" and "substantially reduced" without quantitative support.</li>
+<li><strong>Why it matters</strong> The central claims of the paper are about relative model performance. Without formal statistical comparison, readers cannot assess whether the observed differences are meaningful or within the range of sampling variability. This is particularly important for the more nuanced claims, such as intermediate performance for apaQTLs, pQTLs, and sQTLs, where differences between models may be small.</li>
+<li>
+<p><strong>Resolution test</strong> The authors should provide confidence intervals for all reported performance metrics, perform formal statistical comparisons between models (e.g., DeLong tests for AUROC differences, or bootstrap-based tests for AUPRC), and report the number of bootstrap replicates or the specific test used. For the random seed analysis, they should clarify whether three seeds is the total and acknowledge the limitation of this approach for uncertainty estimation.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M3</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Clinical application and validation</li>
+<li><strong>Claim pointer</strong> The authors claim that applying AlphaGenome and Borzoi to CAD GWAS loci "identifies 337 high-confidence candidate chromatin accessibility QTLs, including 11 previously reported and 326 candidates that display significantly larger allele-specific differences in predicted chromatin accessibility signals"</li>
+<li><strong>Evidence pointer</strong> Results, Identification of novel CAD-associated caQTLs; Discussion</li>
+<li><strong>Concern</strong> The clinical application section, while potentially valuable, raises several questions. First, the threshold for "high-confidence" is not defined in the text. Second, the validation is limited to allele-specific differences in predicted chromatin accessibility signals, which is somewhat circular since the models were trained to predict such signals. The enrichment analyses for cholesterol metabolism and atherosclerosis are supportive but do not establish causality. The authors acknowledge that "fine-mapping, colocalization, or orthogonal functional assays will be required to establish their causal roles," which is appropriate, but the current validation is relatively weak. Third, the overlap with previously reported caQTLs is only 11 out of 337, which raises the question of whether the remaining 326 are genuinely novel or false positives. Fourth, the text mentions that 9 CAD variants overlapped with positive caQTL training samples and 15 with negative controls, but the implications of this overlap for potential data leakage are not discussed.</li>
+<li><strong>Why it matters</strong> The clinical application is presented as a demonstration of practical utility, but the validation is insufficient to establish that the predicted caQTLs are biologically meaningful. If the primary value of the paper is the benchmarking framework, the clinical application is secondary, but it should be presented with appropriate caveats and stronger validation or clearly framed as hypothesis-generating.</li>
+<li>
+<p><strong>Resolution test</strong> The authors should define the threshold for high-confidence predictions, provide a more detailed comparison of the 11 previously reported versus 326 novel caQTLs (e.g., effect sizes, genomic annotations), discuss the potential for data leakage given the overlap with training samples, and either strengthen the validation (e.g., with independent functional data) or explicitly frame the CAD application as hypothesis-generating rather than validated.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M4</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Feature comparability and confounding</li>
+<li><strong>Claim pointer</strong> The authors state that "all benchmarking analyses were conducted using a unified preprocessing and evaluation pipeline" and that features were "retained as generated by the original models to preserve their intended regulatory information"</li>
+<li><strong>Evidence pointer</strong> Materials and methods, Framework for cross-xQTL prediction; Discussion</li>
+<li><strong>Concern</strong> The authors acknowledge that the six models generate features with different dimensionalities, which they note "may represent a potential confounding factor when comparing model performance." However, this issue is not addressed beyond acknowledgment. Models with higher-dimensional features may perform better simply because they provide more information to the downstream classifier, regardless of the quality of the underlying biological representation. Additionally, the text does not describe how features were normalized or standardized across models before being fed to the classifiers, which could affect performance. The comparison between annotation-based (GWAVA) and sequence-based models is particularly problematic, as these feature types are fundamentally different in nature.</li>
+<li><strong>Why it matters</strong> The central benchmarking claim requires that performance differences reflect genuine differences in model quality rather than artifacts of feature dimensionality or preprocessing. Without addressing this, the ranking of models may be misleading.</li>
+<li>
+<p><strong>Resolution test</strong> The authors should either (a) perform a dimensionality-controlled comparison, such as using PCA or feature selection to match feature counts across models, (b) report performance as a function of feature dimensionality to demonstrate that the observed differences are not simply a consequence of more features, or (c) provide a more thorough discussion of why feature dimensionality is unlikely to explain the observed patterns, with supporting analysis.</p>
+</li>
+<li>
+<p><strong>Minor Comments</strong></p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m1</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Reporting clarity</li>
+<li><strong>Affected element</strong> Performance metrics reporting</li>
+<li><strong>Evidence pointer</strong> Results, Comparative evaluation of model prediction performance for eQTL identification</li>
+<li><strong>Issue</strong> The text reports AUROC and AUPRC values for some models but not all, and the values for F1, MCC, and Brier scores are mentioned as being in Table 1 without specific numbers in the text. This makes it difficult to follow the comparative narrative without constantly referring to the table.</li>
+<li>
+<p><strong>Required correction</strong> Consider reporting all key metrics for the main comparisons in the text, or at least for the top-performing and bottom-performing models, to make the results section self-contained.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m2</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Terminology precision</li>
+<li><strong>Affected element</strong> Use of "foundation models"</li>
+<li><strong>Evidence pointer</strong> Abstract; Introduction; Results</li>
+<li><strong>Issue</strong> The term "foundation models" is used to describe AlphaGenome and Borzoi, but the text also includes Enformer in this category in some places. The distinction between "foundation models" and "sequence-based models" is not consistently applied, which could confuse readers about which models belong to which category.</li>
+<li>
+<p><strong>Required correction</strong> Define the model categories explicitly and use them consistently throughout the manuscript.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m3</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Methodological detail</li>
+<li><strong>Affected element</strong> Classifier training details</li>
+<li><strong>Evidence pointer</strong> Materials and methods, Framework for cross-xQTL prediction</li>
+<li><strong>Issue</strong> The text states that XGBoost classifiers were trained with hyperparameter optimization using 5-fold cross-validation, but does not describe the hyperparameter search space, the number of tuning iterations, or the criteria for selecting the final hyperparameters. Similarly, the Random Forest and linear models are mentioned but not described in detail.</li>
+<li>
+<p><strong>Required correction</strong> Provide additional details on the hyperparameter search procedure, including the parameter grids and the selection criteria, to enable reproducibility.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m4</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Data availability</li>
+<li><strong>Affected element</strong> Source data for figures</li>
+<li><strong>Evidence pointer</strong> Data availability</li>
+<li><strong>Issue</strong> The data availability statement mentions a GitHub repository for code and candidate caQTLs, but does not mention whether the underlying xQTL datasets, processed features, or model predictions will be made available. This limits reproducibility.</li>
+<li>
+<p><strong>Required correction</strong> Consider depositing the processed feature matrices and model predictions in a public repository, or clearly state why these cannot be shared.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m5</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Discussion completeness</li>
+<li><strong>Affected element</strong> Comparison with prior benchmarks</li>
+<li><strong>Evidence pointer</strong> Discussion</li>
+<li><strong>Issue</strong> The discussion does not compare the findings with prior benchmarking studies of regulatory variant prediction models, which would help contextualize the results and highlight what is newly learned.</li>
+<li><strong>Required correction</strong> Add a brief comparison with relevant prior benchmarking efforts, noting where the current findings agree or disagree.</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>The claim that "foundation models consistently outperform local-context and annotation-based models" across all xQTL types is not fully supported by the text, as specific performance values for all models across all nine xQTL types are not provided in the visible text</li>
+<li>The claim that "326 candidates that display significantly larger allele-specific differences in predicted chromatin accessibility signals" implies biological validation, but this is based on model predictions rather than independent experimental data</li>
+<li>The statement that "the concordance between AlphaGenome and Borzoi provides a consensus-based prioritization strategy" is reasonable but the clinical utility of this strategy is not demonstrated with external validation</li>
+<li>The claim that "tree-based ensemble methods provide a stable advantage in ranking causal variants" is based on the described analyses, but the text does not report whether this advantage was consistent across all xQTL types or only for specific ones</li>
+<li>The assertion that "the degree of tissue and cell-type correspondence between the model pretraining data and the xQTL datasets may influence model performance" is presented as a possible explanation but is not directly tested in the reported analyses</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

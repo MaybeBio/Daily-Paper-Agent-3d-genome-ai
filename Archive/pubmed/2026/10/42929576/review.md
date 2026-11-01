@@ -1,0 +1,87 @@
+## Review setup
+- **Input scope** Abstract only
+- **Assessment boundary** Claims and evidence presented in the abstract; no methods, figures, tables, or supplementary materials were provided
+- **Shared manuscript claim summary** The authors propose CASSIA, a semi-supervised label-guided representation learning framework that integrates a binary accessibility denoising autoencoder, a Jensen-Shannon divergence-based clustering constraint, a similarity difference-aware triplet objective, and optional spatial neighborhood consistency. The framework is claimed to reconstruct cellular and spatial regulatory identities from sparse chromatin accessibility data with improved agreement to biological annotations and tissue organization relative to representative baselines, and to yield interpretable regulatory programs.
+- **Visible evidence base** Abstract text only; no quantitative results, dataset descriptions, baseline specifications, or evaluation metrics are provided
+- **Missing materials affecting confidence** Full manuscript, methods section, all figures and tables, dataset details, baseline definitions, hyperparameter settings, ablation studies, and code availability
+
+## Reviewer
+- **Overall assessment** The abstract presents a methodologically plausible framework for a relevant problem in single-cell chromatin accessibility analysis. The combination of semi-supervised learning with multiple objective terms is reasonable, and the inclusion of spatial consistency is timely. However, the abstract provides no quantitative evidence, no dataset descriptions, no baseline specifications, and no evaluation metrics. The core claims of improved performance and interpretability cannot be assessed from the supplied material. The manuscript may have merit, but the case is not established from the abstract alone.
+- **Who would be interested in the results, and why** Computational biologists and bioinformaticians working on single-cell epigenomics, particularly those developing or applying methods for cell-type annotation, regulatory element identification, and spatial transcriptomics or epigenomics integration. Researchers interested in representation learning for sparse high-dimensional genomic data would also find the methodological contributions relevant.
+- **Major strengths** The problem addressed is well motivated, as chromatin accessibility data are inherently sparse and regulatory identities are not directly observable. The proposed framework integrates multiple complementary objectives, which is a sensible design. The inclusion of spatial neighborhood consistency is a forward-looking feature given the growing availability of spatial epigenomic data. The abstract is clearly written and accessible to a broad computational biology audience.
+- **Major Concerns**
+  - **Concern ID** R1-M1
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Evidence sufficiency
+  - **Claim pointer** "CASSIA reconstructs cellular and spatial regulatory identities with improved agreement to biological annotations and tissue organization compared with representative baselines"
+  - **Evidence pointer** Abstract only; no figures, tables, or quantitative results provided
+  - **Concern** The central performance claim is made without any supporting quantitative data. No metrics, no effect sizes, no statistical significance, and no comparison details are provided. The reader cannot evaluate whether the improvement is meaningful, consistent across datasets, or statistically robust.
+  - **Why it matters** The primary contribution of the manuscript is the claimed improvement over existing methods. Without quantitative evidence, the claim is unverifiable and the scientific contribution cannot be assessed.
+  - **Resolution test** Provide performance metrics such as adjusted Rand index, normalized mutual information, or F1 scores for cell-type annotation across multiple datasets, with error bars or confidence intervals, and clearly specify the baselines and their configurations.
+  - **Concern ID** R1-M2
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Reproducibility
+  - **Claim pointer** "CASSIA leverages limited high-confidence anchors to learn informative accessibility representations"
+  - **Evidence pointer** Location not provided
+  - **Concern** The abstract does not specify how anchors are defined, how many are required, how they are selected, or how sensitive the method is to anchor quality and quantity. The semi-supervised setting is central to the method, but the operational details are absent.
+  - **Why it matters** Reproducibility and practical usability depend on clear specifications of the anchor selection procedure. If the method is highly sensitive to anchor choice, its utility is limited.
+  - **Resolution test** Describe the anchor selection procedure in detail, report performance as a function of anchor number and quality, and provide sensitivity analyses.
+  - **Concern ID** R1-M3
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Scope of validation
+  - **Claim pointer** "Across diverse chromatin accessibility datasets, CASSIA reconstructs cellular and spatial regulatory identities"
+  - **Evidence pointer** Location not provided
+  - **Concern** The abstract claims diversity of datasets but does not enumerate them, their species, tissue types, technologies, or data sparsity levels. The claim of generalizability cannot be evaluated without knowing the range of conditions tested.
+  - **Why it matters** Generalizability is a key selling point. If the datasets are all similar in nature, the claim of diversity is overstated.
+  - **Resolution test** List all datasets used, including species, tissue, technology, number of cells, and sparsity characteristics, and show performance separately for each.
+  - **Concern ID** R1-M4
+  - **Severity** Major
+  - **Blocking** No
+  - **Axis** Interpretability claim
+  - **Claim pointer** "Identity-associated accessible regions and transcription factor activity profiles reveal distinct regulatory programs underlying inferred identities"
+  - **Evidence pointer** Location not provided
+  - **Concern** The claim that the method yields interpretable regulatory programs is plausible but unsupported. No examples, no enrichment analyses, no comparison to known regulatory mechanisms, and no validation of the identified programs are provided.
+  - **Why it matters** Interpretability is a stated advantage of the method. Without demonstration, this claim remains speculative.
+  - **Resolution test** Provide at least one concrete example of an inferred identity with associated regulatory regions and TF activities, validated against known biology or orthogonal data.
+- **Minor Comments**
+  - **Concern ID** R1-m1
+  - **Severity** Minor
+  - **Axis** Clarity
+  - **Affected element** Method description
+  - **Evidence pointer** Abstract
+  - **Issue** The abstract lists three objective terms and a spatial consistency term but does not explain how they are balanced or optimized jointly.
+  - **Required correction** Briefly state the loss weighting scheme or refer to the methods section for the full optimization details.
+  - **Concern ID** R1-m2
+  - **Severity** Minor
+  - **Axis** Terminology
+  - **Affected element** "binary accessibility denoising autoencoder"
+  - **Evidence pointer** Abstract
+  - **Issue** The term "denoising" in the context of binary accessibility data is not defined. It is unclear whether noise is added during training or whether the model is designed to handle dropout.
+  - **Required correction** Clarify the denoising mechanism and its relevance to sparse accessibility data.
+  - **Concern ID** R1-m3
+  - **Severity** Minor
+  - **Axis** Comparison fairness
+  - **Affected element** Baseline selection
+  - **Evidence pointer** Abstract
+  - **Issue** The abstract refers to "representative baselines" without naming them. The reader cannot judge whether the comparisons are fair or comprehensive.
+  - **Required correction** Name the baselines in the abstract or state that they are described in the methods.
+  - **Concern ID** R1-m4
+  - **Severity** Minor
+  - **Axis** Availability
+  - **Affected element** Code and data availability
+  - **Evidence pointer** Location not provided
+  - **Issue** No statement about code or data availability is present in the abstract.
+  - **Required correction** Add a data and code availability statement in the manuscript.
+- **Technical failings that need to be addressed before the case is established** R1-M1, R1-M2, R1-M3. The absence of quantitative results, anchor specification, and dataset enumeration prevents any assessment of the central claims.
+- **Assessment against Nature-style criteria** Originality: The combination of semi-supervised learning with a denoising autoencoder, clustering constraint, triplet loss, and spatial consistency is a novel integration, though individual components are established. Scientific importance: The problem is important for single-cell epigenomics, but the significance of the contribution cannot be gauged without evidence. Interdisciplinary readership: The abstract is written accessibly and could appeal to computational and experimental biologists. Technical soundness: Cannot be assessed from the abstract; the architecture is plausible but unverified. Readability for nonspecialists: The abstract is clear and well structured, though some terms assume familiarity with the field.
+- **Recommendation posture** Currently not established from the provided evidence. The manuscript may be sound, but the abstract alone does not provide sufficient information to support the claims. A full review of the complete manuscript would be required to determine whether the technical concerns are resolved.
+
+## Risk / unsupported claims
+- The claim of improved agreement with biological annotations and tissue organization is unsupported by any quantitative data.
+- The claim of generalizability across diverse datasets is unsupported because no datasets are enumerated.
+- The claim of interpretable regulatory programs is unsupported by examples or validation.
+- The semi-supervised anchor selection procedure and its robustness are not described and therefore cannot be evaluated.
+- The balancing and optimization of the multiple loss terms are not described and cannot be assessed.

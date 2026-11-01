@@ -1,0 +1,95 @@
+## Review setup
+- **Input scope** Full manuscript text (abstract, results, methods, discussion) as provided
+- **Assessment boundary** Scientific content, methodological soundness, claims vs. evidence, and presentation quality based solely on the supplied material
+- **Shared manuscript claim summary** XChrom is a deep learning framework that integrates genomic DNA sequence and single-cell RNA-seq-derived cell identity to predict chromatin accessibility across unseen genomic regions and cells, with demonstrated superiority over existing methods in cross-region, cross-cell, cross-both, cross-sample, and cross-species scenarios, plus interpretability and COVID-19 application.
+- **Visible evidence base** Main text figures referenced (Figures 1–7), supplementary figures (S1–S18), tables (S1–S10), and methods descriptions; no actual data, code outputs, or figure images were provided
+- **Missing materials affecting confidence** Figure images, supplementary data, actual numerical results, code repository contents, and detailed hyperparameter settings; statistical test outputs referenced but not shown
+
+## Reviewer
+- **Overall assessment** The manuscript presents a conceptually appealing and practically relevant framework that addresses a genuine gap in single-cell chromatin accessibility prediction. The integration of sequence and cell-state information is a reasonable and timely idea. However, the evidence as presented in the text alone is insufficient to fully verify the claimed performance advantages, robustness, and biological insights. Several claims are made without quantitative support visible in the provided material, and the methodological details, while described, cannot be independently assessed without the actual data and code. The work is potentially significant, but the current evidence base does not fully establish all conclusions.
+- **Who would be interested in the results, and why** Computational biologists developing single-cell multi-omics integration methods; experimentalists studying gene regulation and chromatin dynamics; researchers working on cross-species regulatory genomics; and those interested in applying predictive models to disease contexts such as COVID-19. The open-source availability and tutorials increase potential uptake.
+- **Major strengths** 1) Addresses a clear and important limitation of existing methods (inability to predict unseen cells and regions simultaneously). 2) The hybrid architecture is a sensible design that leverages complementary data modalities. 3) Comprehensive evaluation across multiple scenarios (within-sample, cross-sample, cross-species) is commendable. 4) Inclusion of interpretability analyses (ISM, TF activity) adds biological value. 5) Open-source implementation and detailed tutorials support reproducibility and community use.
+- **Major Concerns**  
+  - **R1-M1**  
+    - **Severity** Major  
+    - **Blocking** Yes  
+    - **Axis** Evidence sufficiency  
+    - **Claim pointer** "XChrom consistently outperforms existing methods in cross-region and cross-cell predictions" (Abstract; Results section)  
+    - **Evidence pointer** Figures 2b–2d, Tables S1–S3; location not provided  
+    - **Concern** The claim of consistent superiority is made, but the actual performance numbers, effect sizes, and statistical significance are not visible in the provided text. Without the figure data or tables, the magnitude and consistency of the improvement cannot be verified.  
+    - **Why it matters** This is the central claim of the paper. If the performance advantage is marginal or inconsistent across datasets, the practical utility of XChrom is weakened.  
+    - **Resolution test** Provide the actual performance metrics (e.g., AUROC/AUPRC values with confidence intervals) for all datasets and comparisons, along with statistical test results, in the main text or supplementary tables.  
+  - **R1-M2**  
+    - **Severity** Major  
+    - **Blocking** Yes  
+    - **Axis** Methodological clarity  
+    - **Claim pointer** "XChrom can predict new samples from the same tissue or organ as the training set" (Results section, cross-sample scenario)  
+    - **Evidence pointer** Figure 5, Tables S5–S6; location not provided  
+    - **Concern** The cross-sample evaluation relies on batch correction (Harmony), but the sensitivity of results to the choice of batch correction method is only briefly mentioned. The claim that XChrom "remains applicable" after correction is plausible but not fully established without showing the range of performance across different correction strategies and the potential failure modes.  
+    - **Why it matters** Cross-sample generalization is a key practical use case. If performance degrades significantly with different batch correction methods or if the correction introduces artifacts, the claim of applicability is overstated.  
+    - **Resolution test** Show performance across all tested batch correction methods (including no correction) with error bars, and discuss conditions under which XChrom fails.  
+  - **R1-M3**  
+    - **Severity** Major  
+    - **Blocking** Yes  
+    - **Axis** Biological validation  
+    - **Claim pointer** "XChrom accurately identifies TF activities in novel but related cell states and reveals pathogenesis-associated regulatory alterations" (Results section, COVID-19 application)  
+    - **Evidence pointer** Figure 7, Tables S9–S10; location not provided  
+    - **Concern** The COVID-19 analysis is presented as a demonstration of biological utility, but the validation is indirect. The claim that predicted TF activities reflect true regulatory changes requires comparison with orthogonal experimental data (e.g., ChIP-seq, ATAC-seq from sorted populations) or at least a clear demonstration that the predicted changes are not artifacts of the model's assumptions.  
+    - **Why it matters** The biological interpretability and disease relevance are major selling points. Without external validation, the findings remain model predictions that may not reflect actual regulatory biology.  
+    - **Resolution test** Provide orthogonal validation (e.g., comparison with published TF ChIP-seq or perturbation data) or clearly state the limitations of the current validation approach.  
+  - **R1-M4**  
+    - **Severity** Major  
+    - **Blocking** No  
+    - **Axis** Generalizability  
+    - **Claim pointer** "XChrom's robust performance and its ability to capture evolutionarily conserved regulatory rules" (Abstract; Results section, cross-species)  
+    - **Evidence pointer** Figure 6, Table S7; location not provided  
+    - **Concern** The cross-species analysis is limited to motor cortex data from four species. The claim of capturing "evolutionarily conserved regulatory rules" is broad and may not hold for other tissues or more divergent species. The analysis of conserved TF activity is correlative and does not establish causality.  
+    - **Why it matters** Overgeneralization could mislead users into applying XChrom to species or tissues where it may not perform well.  
+    - **Resolution test** Acknowledge the scope of cross-species validation and suggest additional tests on more diverse datasets or species.  
+- **Minor Comments**  
+  - **R1-m1**  
+    - **Severity** Minor  
+    - **Axis** Clarity  
+    - **Affected element** Methods, XChrom Architecture  
+    - **Evidence pointer** Methods section, "XChrom Architecture"  
+    - **Issue** The description of the sequence encoding module is brief; the exact number of parameters, layer sizes, and activation functions are not fully specified.  
+    - **Required correction** Provide a table or detailed text listing all layer dimensions, kernel sizes, strides, and activation functions for reproducibility.  
+  - **R1-m2**  
+    - **Severity** Minor  
+    - **Axis** Statistical rigor  
+    - **Affected element** Results, cross-species analysis  
+    - **Evidence pointer** Figure 6, Table S7; location not provided  
+    - **Issue** The statistical comparison between human and mouse models on macaque/marmoset data is mentioned but the exact test and correction for multiple comparisons are not described.  
+    - **Required correction** Specify the statistical tests used, whether corrections for multiple testing were applied, and report effect sizes.  
+  - **R1-m3**  
+    - **Severity** Minor  
+    - **Axis** Presentation  
+    - **Affected element** Discussion  
+    - **Evidence pointer** Discussion section  
+    - **Issue** The discussion of limitations is brief and does not address potential biases in the training data or the impact of cell type imbalance on predictions.  
+    - **Required correction** Expand the limitations paragraph to include data biases, model assumptions, and potential failure modes.  
+  - **R1-m4**  
+    - **Severity** Minor  
+    - **Axis** Reproducibility  
+    - **Affected element** Data Availability Statement  
+    - **Evidence pointer** Data Availability Statement  
+    - **Issue** The statement mentions processed data on Zenodo, but the raw data access for some datasets (e.g., COVID-19) is not clearly specified.  
+    - **Required correction** Clarify access conditions for all raw and processed datasets, including any restrictions.  
+- **Technical failings that need to be addressed before the case is established**  
+  - R1-M1 (performance claims not verifiable from provided material)  
+  - R1-M2 (cross-sample generalizability not fully established)  
+  - R1-M3 (biological validation insufficient)  
+- **Assessment against Nature-style criteria**  
+  - **Originality** The idea of jointly modeling sequence and cell state for cross-cell and cross-region prediction is a novel contribution that goes beyond existing methods. The specific architecture and application scenarios are not duplicative of prior work.  
+  - **Scientific importance** The problem addressed is of high importance in single-cell genomics. If the claims hold, the framework could enable broader use of scATAC-seq data and facilitate regulatory studies in understudied cell types and species.  
+  - **Interdisciplinary readership** The work bridges computational method development, single-cell biology, and disease genomics, making it relevant to a broad audience. The COVID-19 application enhances appeal.  
+  - **Technical soundness** The architecture is reasonable, but the evidence provided in the text is insufficient to fully assess technical soundness. Key performance metrics and statistical analyses are not visible. The ablation studies are described but their results are not shown in detail.  
+  - **Readability for nonspecialists** The abstract and introduction are accessible, but the methods and results sections assume familiarity with deep learning and single-cell terminology. Some terms (e.g., "cross-both") are not defined clearly for a general audience.  
+- **Recommendation posture** Supportive if technical concerns are resolved. The core idea is promising and the scope of evaluation is broad, but the current evidence base does not fully substantiate all claims. The authors should provide the actual data, figures, and statistical outputs to allow verification, and strengthen the biological validation.
+
+## Risk / unsupported claims
+- "XChrom consistently outperforms existing methods" – not verifiable without actual performance numbers.
+- "XChrom can predict new samples from the same tissue or organ" – only shown for one tissue type (BMMC) with batch correction; generalizability to other tissues is assumed.
+- "XChrom captures evolutionarily conserved regulatory rules" – based on correlative TF activity analysis without causal validation.
+- "XChrom accurately identifies TF activities in novel but related cell states" – validation is indirect and lacks orthogonal experimental support.
+- "XChrom's predictions benefit from key model components" – ablation results are described but not shown in detail, making the claim difficult to assess.

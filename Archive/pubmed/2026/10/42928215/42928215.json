@@ -1,0 +1,134 @@
+{
+  "identity": {
+    "pmid": "42928215",
+    "doi": "10.1186/s13059-026-04199-4",
+    "title": "simPIC: flexible simulation of single-cell ATAC-seq paired-insertion counts from individuals to populations."
+  },
+  "content": {
+    "abstract": "Single-cell Assay for Transposase Accessible Chromatin (scATAC-seq) is increasingly used at population scale to study how genetic variation shapes chromatin accessibility. Method development is limited by the lack of flexible simulation tools with known ground truth. Here, we present simPIC, a fast, memory-efficient framework for simulating realistic single-cell ATAC-seq count data across individuals and populations. simPIC models cell groups, batch effects, and genotype-dependent accessibility variation, enabling evaluation of population-scale methods, including chromatin accessibility quantitative trait locus mapping. Across multiple datasets and cell types, simPIC closely matches real data distributions while scaling to cohort sizes impractical for current tools.",
+    "keywords": [
+      "Simulation",
+      "Single-cell ATAC-seq",
+      "Single-cell genomics",
+      "Software"
+    ],
+    "mesh_terms": [
+      "*Single-Cell Analysis/methods",
+      "*Chromatin Immunoprecipitation Sequencing/methods",
+      "*Software",
+      "Humans",
+      "Computer Simulation",
+      "Quantitative Trait Loci",
+      "Animals",
+      "Chromatin",
+      "Transposases/metabolism"
+    ],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Chugh, Sagrika",
+        "Shim, Heejung",
+        "McCarthy, Davis J"
+      ],
+      "short_names": [
+        "Chugh S",
+        "Shim H",
+        "McCarthy DJ"
+      ],
+      "auids": [],
+      "affiliations": [
+        "Bioinformatics and Cellular Genomics, St. Vincent's Institute of Medical Research, 9 Princes Street, 3065, Fitzroy, Victoria, Australia.",
+        "School of Mathematics and Statistics, Faculty of Science, University of Melbourne, Grattan Street, 3010, Parkville, Victoria, Australia.",
+        "School of Mathematics and Statistics, Faculty of Science, University of Melbourne, Grattan Street, 3010, Parkville, Victoria, Australia.",
+        "Snow Vision Accelerator, Sydney Precision Data Science Centre, School of Mathematics and Statistics, University of Sydney, Sydney, New South Wales, Australia.",
+        "Melbourne Integrative Genomics, ARC Centre of Excellence for the Mathematical Analysis of Cellular Systems, School of Mathematics and Statistics, University of Melbourne, Parkville, 3010, Victoria, Australia.",
+        "Bioinformatics and Cellular Genomics, St. Vincent's Institute of Medical Research, 9 Princes Street, 3065, Fitzroy, Victoria, Australia. dmccarthy@svi.edu.au.",
+        "School of Mathematics and Statistics, Faculty of Science, University of Melbourne, Grattan Street, 3010, Parkville, Victoria, Australia. dmccarthy@svi.edu.au.",
+        "Faculty of Medicine, Dentistry and Health Sciences, University of Melbourne, Grattan Street, 3010, Parkville, Victoria, Australia. dmccarthy@svi.edu.au."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Chugh, Sagrika",
+        "short_name": "Chugh S",
+        "identifiers": [],
+        "affiliations": [
+          "Bioinformatics and Cellular Genomics, St. Vincent's Institute of Medical Research, 9 Princes Street, 3065, Fitzroy, Victoria, Australia.",
+          "School of Mathematics and Statistics, Faculty of Science, University of Melbourne, Grattan Street, 3010, Parkville, Victoria, Australia."
+        ]
+      },
+      {
+        "full_name": "Shim, Heejung",
+        "short_name": "Shim H",
+        "identifiers": [],
+        "affiliations": [
+          "School of Mathematics and Statistics, Faculty of Science, University of Melbourne, Grattan Street, 3010, Parkville, Victoria, Australia.",
+          "Snow Vision Accelerator, Sydney Precision Data Science Centre, School of Mathematics and Statistics, University of Sydney, Sydney, New South Wales, Australia.",
+          "Melbourne Integrative Genomics, ARC Centre of Excellence for the Mathematical Analysis of Cellular Systems, School of Mathematics and Statistics, University of Melbourne, Parkville, 3010, Victoria, Australia."
+        ]
+      },
+      {
+        "full_name": "McCarthy, Davis J",
+        "short_name": "McCarthy DJ",
+        "identifiers": [],
+        "affiliations": [
+          "Bioinformatics and Cellular Genomics, St. Vincent's Institute of Medical Research, 9 Princes Street, 3065, Fitzroy, Victoria, Australia. dmccarthy@svi.edu.au.",
+          "School of Mathematics and Statistics, Faculty of Science, University of Melbourne, Grattan Street, 3010, Parkville, Victoria, Australia. dmccarthy@svi.edu.au.",
+          "Faculty of Medicine, Dentistry and Health Sciences, University of Melbourne, Grattan Street, 3010, Parkville, Victoria, Australia. dmccarthy@svi.edu.au."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Genome biology"
+    ],
+    "journal_abbrev": [
+      "Genome Biol"
+    ],
+    "pub_date": "2026 Jul 29",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/26 05:30",
+    "fetched_at": "2026-11-01 11:00:03"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42928215"
+    ],
+    "review": [
+      "42928215"
+    ],
+    "pmc": [
+      "13700425"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://genomebiology.biomedcentral.com/articles/10.1186/s13059-026-04199-4",
+        "provider": "BioMed Central",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/pmid/42928215/",
+        "provider": "PubMed Central",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

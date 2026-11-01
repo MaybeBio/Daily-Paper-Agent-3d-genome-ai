@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42949763",
+  "title": "XChrom: A Cross-Cell Chromatin Accessibility Prediction Model Integrating Genomic Sequence and Cellular Context.",
+  "authors": "Miao, Yuanyuan; Liang, Xuan; Zhang, Wenwen; Han, Dongmei; Li, Yurun; Wang, Zhen",
+  "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+  "published_date": "2026-10-28",
+  "window": {
+    "start": "2026-10-25",
+    "end": "2026-10-31"
+  },
+  "score": 6,
+  "one_liner_zh": "XChrom是一个整合基因组序列与单细胞转录组细胞身份的深度学习模型，用于跨细胞预测染色质可及性，属于染色质水平调控建模但未涉及三维空间构象。",
+  "abstract": "Single-cell chromatin accessibility offers unique insights into transcriptional regulation beyond gene expression. However, paired datasets of these two modalities remain relatively scarce, and existing computational models cannot simultaneously predict chromatin accessibility for unseen genomic regions and cells. Here, we present XChrom, a deep learning framework for genome-wide cross-cell chromatin accessibility prediction that integrates genomic sequence and single-cell transcriptomics-derived cell identity into a unified model. Comprehensive evaluations show that XChrom consistently outperforms existing methods in cross-region and cross-cell predictions, and uniquely enables cross-both predictions. It also supports cross-sample prediction when batch effects are properly corrected. Cross-species analyses demonstrate XChrom's robust performance and its ability to capture evolutionarily conserved regulatory rules. Applied to peripheral blood mononuclear cells from COVID-19 patients, XChrom accurately identifies transcription factor activities in novel but related cell states and reveals pathogenesis-associated regulatory alterations. XChrom is available as an open-source Python package, facilitating single-cell transcriptional regulation research.",
+  "abstract_zh": "单细胞染色质可及性为转录调控提供了超越基因表达的独特见解。然而，这两种模态的配对数据集仍相对稀缺，现有计算模型无法同时预测未见基因组区域和细胞的染色质可及性。在此，我们提出XChrom，一种用于全基因组跨细胞染色质可及性预测的深度学习框架，将基因组序列和单细胞转录组学衍生的细胞身份整合到一个统一模型中。综合评估显示，XChrom在跨区域和跨细胞预测中始终优于现有方法，并独特地实现了跨两者预测。在批次效应得到适当校正时，它还支持跨样本预测。跨物种分析证明了XChrom的稳健性能及其捕捉进化保守调控规则的能力。应用于COVID-19患者的外周血单核细胞时，XChrom准确识别了新颖但相关细胞状态中的转录因子活性，并揭示了与发病机制相关的调控改变。XChrom作为开源Python包提供，促进了单细胞转录调控研究。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42949763/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42949763/",
+  "paper_page_path": "papers/pubmed/42949763/index.html"
+}

@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42951970",
+  "title": "Genetic variants shape single-cell chromatin accessibility and disease risk.",
+  "authors": "Xue, Angli; Fan, Jianan; Dong, Oscar A; Huang, Hao Lawrence; Chen, Ling; Allen, Peter C; Spenceley, Eleanor; Sagi-Zsigmond, Eszter; Bowen, Blake; Henry, Albert; Cuomo, Anna S E; Tanudisastro, Hope A; Qiao, Zhen; Dorans, Elizabeth; Ben-David, Eyal; Farh, Kyle Kai-How; Hu, Linfeng; Liu, Yijia Christiana; Neavin, Drew R; Lee, Arthur S; Senabouth, Anne; Bartie, Caitlin; McCloy, Rachael A; Chin, Venessa; Zhou, Wei; Price, Alkes L; de Lange, Katrina M; Figtree, Gemma A; Hewitt, Alex W; MacArthur, Daniel G; Powell, Joseph E",
+  "journal": "Nature",
+  "published_date": "2026-10-29",
+  "window": {
+    "start": "2026-10-25",
+    "end": "2026-10-31"
+  },
+  "score": 6,
+  "one_liner_zh": "该研究利用大规模单细胞染色质可及性数据鉴定caQTL，并训练图神经网络推断峰-基因连接，虽聚焦遗传变异与调控，但核心是染色质可及性而非三维空间架构建模，方法上AI应用较浅，故评6分。",
+  "abstract": "Understanding how genetic variation shapes gene regulation at single-cell resolution is crucial for elucidating complex disease mechanisms(1), but has been limited by the lack of large-scale single-cell multi-omics data(2-4). Here we present single-cell assay for transposase-accessible chromatin with sequencing of 3.5 million peripheral blood mononuclear cells from 1,042 donors with matched whole-genome sequencing. Across 28 immune cell types, we tested 440,996 chromatin accessibility peaks and identified 243,225 chromatin accessibility quantitative trait loci (caQTLs) at 100,483 peaks, 60% of them cell-type specific. Rare variant analysis identified 38,161 associated peaks, with predicted transcription factor-binding disruption implicated at individual loci. Colocalization with expression QTLs (eQTLs) from single-cell RNA sequencing data (5.4 million peripheral blood mononuclear cells)(5) defined 28,834 candidate cis-regulatory elements. Across genome-wide association studies for 16 diseases and 44 blood traits, caQTLs colocalized 4.5-22.6% more signals than eQTLs alone. Cell-type-specific and tissue-specific context, distal effects and multi-causal-variant models raised genome-wide association study-eQTL concordance from approximately 16% to approximately 65%. Cell state further modulates genetic effects, with 27% of over 200,000 caQTL-cell-state interactions lacking a main effect. At the inflammatory bowel disease risk gene ADCY7, accessibility effects varied with genotype and G protein-mediated pathway activity in CD4(+) T cells. A graph neural network trained on both eQTL and caQTL layers inferred peak-gene links in unpaired multiome data with up to 17.2% higher accuracy than QTL-agnostic data, uncovering 128 additional transcription factor-target pairs (22% increase). Together, these results show that genetic variants shape chromatin accessibility in a cell-type-specific and cell-state-specific manner, influencing immune function and disease risk.",
+  "abstract_zh": "理解遗传变异如何在单细胞分辨率下塑造基因调控，对于阐明复杂疾病机制至关重要(1)，但由于缺乏大规模单细胞多组学数据而受到限制(2-4)。在此，我们展示了来自1,042名供体的350万个外周血单核细胞的转座酶可及性染色质单细胞测序，并配有匹配的全基因组测序。在28种免疫细胞类型中，我们检测了440,996个染色质可及性峰，并在100,483个峰处鉴定出243,225个染色质可及性数量性状位点（caQTLs），其中60%具有细胞类型特异性。罕见变异分析鉴定出38,161个相关峰，并在个别位点提示预测的转录因子结合破坏。与来自单细胞RNA测序数据的表达QTL（eQTLs）（540万个外周血单核细胞）(5)共定位，定义了28,834个候选顺式调控元件。在针对16种疾病和44种血液性状的全基因组关联研究中，caQTLs比单独eQTLs多共定位4.5-22.6%的信号。细胞类型特异性和组织特异性背景、远端效应以及多因果变异模型将全基因组关联研究-eQTL一致性从约16%提高到约65%。细胞状态进一步调节遗传效应，在超过200,000个caQTL-细胞状态相互作用中，有27%缺乏主效应。在炎症性肠病风险基因ADCY7处，可及性效应随CD4(+) T细胞中的基因型和G蛋白介导通路活性而变化。一个在eQTL和caQTL层上训练的图神经网络在非配对多组学数据中推断峰-基因连接，其准确率比不区分QTL的数据高出多达17.2%，并发现了128个额外的转录因子-靶标对（增加22%）。总之，这些结果表明，遗传变异以细胞类型特异性和细胞状态特异性方式塑造染色质可及性，从而影响免疫功能和疾病风险。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42951970/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42951970/",
+  "paper_page_path": "papers/pubmed/42951970/index.html"
+}

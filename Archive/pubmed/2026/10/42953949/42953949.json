@@ -1,0 +1,150 @@
+{
+  "identity": {
+    "pmid": "42953949",
+    "doi": "10.1002/advs.77107",
+    "title": "Genome-Wide and Multi-Omics Analysis Identified DNA-Interacting Circular RNA circFOXK2 as MLL1 Regulator for Histone H3K4 Methylation in Pancreatic Ductal Adenocarcinoma."
+  },
+  "content": {
+    "abstract": "Pancreatic ductal adenocarcinoma (PDAC) is one of the most devastating malignancies with high lethality despite the current therapeutic interventions. Circular RNAs (circRNAs) play important roles in many biological processes and disease development. However, the underlying mechanism remains largely unexplored. To identify novel druggable targets, we aimed to elucidate the mechanisms contributing to the critical roles of circRNAs in PDAC. We performed a genome-wide and multi-omics investigation on the circFOXK2-DNA interaction in PDAC progression. Single-cell ATAC-sequencing analysis using the publicly available dataset revealed the importance of the circFOXK2-DNA interaction network in intratumoral heterogeneity. Through circRNA-DNA interaction by complementary base pairing, circFOXK2 recognizes targets at different genomic locations: enhancer, promoter, and intragenic region. CircFOXK2 forms a docking pocket by intramolecular base pairing for the N-terminal RNA-recognition motif of PPIE, disrupting the PPIE-MLL1 interaction. This removes the PPIE inhibitory effects on MLL1 for gene-activating H3K4 methylation. Specifically, circFOXK2 promotes TMSB15B and BCAS1 expressions by enhancing H3K4me3 at the promoter. At the gene body, circFOXK2 facilitates transcription elongation of TRIO and LAMA4 by intragenic H3K4me3. At the distal intergenic enhancer, circFOXK2 promotes H3K4me1 of CYP26A1 and TCP11 for gene activation. These results highlight the importance and therapeutic potential of circRNA-DNA interaction in gene regulation.",
+    "keywords": [
+      "H3K4 methylation",
+      "MLL1",
+      "PPIE",
+      "circular RNA",
+      "pancreatic ductal adenocarcinoma"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Wong, Chi Hin",
+        "Pena-Paladines, Jessica Jazmin",
+        "Leung, Sum Yin Valerie",
+        "To, Ka-Fai",
+        "Chok, Kenneth Siu Ho",
+        "Chen, Yangchao"
+      ],
+      "short_names": [
+        "Wong CH",
+        "Pena-Paladines JJ",
+        "Leung SYV",
+        "To KF",
+        "Chok KSH",
+        "Chen Y"
+      ],
+      "auids": [
+        "ORCID: 0000-0002-9070-193X",
+        "ORCID: 0009-0008-7660-6603",
+        "ORCID: 0000-0001-7921-3807",
+        "ORCID: 0000-0002-0249-3414"
+      ],
+      "affiliations": [
+        "School of Biomedical Sciences, Faculty of Medicine, The Chinese University of Hong Kong, Shatin, New Territories, Hong Kong.",
+        "Shenzhen Research Institute, The Chinese University of Hong Kong, Shenzhen, China.",
+        "School of Biomedical Sciences, Faculty of Medicine, The Chinese University of Hong Kong, Shatin, New Territories, Hong Kong.",
+        "Centre for Immuno-Oncology, Nuffield Department of Medicine, University of Oxford, Oxford, UK.",
+        "Department of Anatomical and Cellular Pathology, Prince of Wales Hospital, The Chinese University of Hong Kong, Shatin, Hong Kong.",
+        "Department of Surgery, Faculty of Medicine, The Chinese University of Hong Kong, Shatin, Hong Kong.",
+        "School of Biomedical Sciences, Faculty of Medicine, The Chinese University of Hong Kong, Shatin, New Territories, Hong Kong.",
+        "Shenzhen Research Institute, The Chinese University of Hong Kong, Shenzhen, China."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Wong, Chi Hin",
+        "short_name": "Wong CH",
+        "identifiers": [
+          "0000-0002-9070-193X"
+        ],
+        "affiliations": [
+          "School of Biomedical Sciences, Faculty of Medicine, The Chinese University of Hong Kong, Shatin, New Territories, Hong Kong.",
+          "Shenzhen Research Institute, The Chinese University of Hong Kong, Shenzhen, China."
+        ]
+      },
+      {
+        "full_name": "Peña-Paladines, Jessica Jazmin",
+        "short_name": "Peña-Paladines JJ",
+        "identifiers": [],
+        "affiliations": [
+          "School of Biomedical Sciences, Faculty of Medicine, The Chinese University of Hong Kong, Shatin, New Territories, Hong Kong."
+        ]
+      },
+      {
+        "full_name": "Leung, Sum Yin Valerie",
+        "short_name": "Leung SYV",
+        "identifiers": [
+          "0009-0008-7660-6603"
+        ],
+        "affiliations": [
+          "Centre for Immuno-Oncology, Nuffield Department of Medicine, University of Oxford, Oxford, UK."
+        ]
+      },
+      {
+        "full_name": "To, Ka-Fai",
+        "short_name": "To KF",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Anatomical and Cellular Pathology, Prince of Wales Hospital, The Chinese University of Hong Kong, Shatin, Hong Kong."
+        ]
+      },
+      {
+        "full_name": "Chok, Kenneth Siu Ho",
+        "short_name": "Chok KSH",
+        "identifiers": [
+          "0000-0001-7921-3807"
+        ],
+        "affiliations": [
+          "Department of Surgery, Faculty of Medicine, The Chinese University of Hong Kong, Shatin, Hong Kong."
+        ]
+      },
+      {
+        "full_name": "Chen, Yangchao",
+        "short_name": "Chen Y",
+        "identifiers": [
+          "0000-0002-0249-3414"
+        ],
+        "affiliations": [
+          "School of Biomedical Sciences, Faculty of Medicine, The Chinese University of Hong Kong, Shatin, New Territories, Hong Kong.",
+          "Shenzhen Research Institute, The Chinese University of Hong Kong, Shenzhen, China."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Advanced science (Weinheim, Baden-Wurttemberg, Germany)"
+    ],
+    "journal_abbrev": [
+      "Adv Sci (Weinh)"
+    ],
+    "pub_date": "2026 Oct 29",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/29 15:20",
+    "fetched_at": "2026-11-01 11:00:03"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42953949"
+    ],
+    "review": [
+      "42953949"
+    ],
+    "pmc": [
+      "13717413"
+    ],
+    "entrez": {},
+    "external": [],
+    "text_mined": []
+  }
+}

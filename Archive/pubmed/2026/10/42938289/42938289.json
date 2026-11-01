@@ -1,0 +1,203 @@
+{
+  "identity": {
+    "pmid": "42938289",
+    "doi": "10.3390/genes17101173",
+    "title": "A Frozen Plant DNA Language Model for Computational Prioritization and Functional Annotation of Melon (Cucumis melo) Variants."
+  },
+  "content": {
+    "abstract": "Background/Objectives: Fruit quality in melon is determined by complex traits including sugar accumulation, aroma, flesh color, ripening behavior and disease resistance. Conventional genomic selection provides limited mechanistic interpretation, especially for regulatory and de novo variants. We adapted the EVEE interpretable embedding-probing framework to melon using PlantCAD2 as a frozen DNA language model backbone. Methods: The model was not fine-tuned or further pre-trained. Instead, lightweight probes were trained on fixed embeddings derived from sequence windows surrounding genetic variants. The pipeline integrated supervised variant-effect prediction, functional perturbation profiling, training-free masked log-likelihood ratio scoring, and cis-regulatory element generation. We applied the framework to 32,268 public genotyping-by-sequencing (GBS) SNPs from a melon diversity panel. A total of 30,052 variants were successfully encoded and analyzed. Results: Of these, 31.9% were classified as high predicted functional effect under the GWAS-proximal probe. We adopted a rigorous independent split based on chromosome and locus blocks to ensure test variants and training variants occupy distinct linkage-disequilibrium blocks. In this setting, the covariance probe yields an AUROC of approximately 0.51 with a 95% confidence interval covering 0.50, indicating no predictive advantage over random guessing. The full-cohort AUROC value of 0.748 reported earlier is attributed to linkage-disequilibrium leakage and overlapping positive samples between datasets, and thus does not reflect true independent generalization. The 17-class structural annotation probe reached 95.97% per-position accuracy. Functional perturbation signals were enriched in intronic, coding, and proximal promoter regions, consistent with known regulatory architectures in melon. Using the masked language model head with Gibbs sampling, we generated 76 candidate 400 bp cis-regulatory elements associated with sugar metabolism pathways. A posterior consistency check against 18 published GWAS/QTL loci showed effect-score patterns broadly concordant with reported loci; this is a consistency analysis against known loci, not an independent prospective validation. Variants in the CmTST2 region exhibited elevated mean effect scores of 0.7922 compared with the genome-wide background of 0.406. Conclusions: Overall, this study provides a computational, hypothesis-generating framework in which a frozen plant DNA language model combined with lightweight probes prioritizes melon variants and generates candidate regulatory sequences; all outputs are unverified in-silico predictions requiring experimental validation before any functional or breeding use. Because every variant is scored independently from its local sequence context, the framework necessarily treats genetically linked, network-dependent traits as single-locus effects and does not model epistasis, pathway-level interactions, or genotype-by-environment effects; the outputs are sequence-level priors, not phenotype predictions. The results support a generalizable framework for model-guided functional genomics and precision breeding in Cucurbitaceae crops.",
+    "keywords": [
+      "Cucumis melo",
+      "PlantCAD2",
+      "cis-regulatory elements",
+      "genomic foundation models",
+      "model-guided breeding",
+      "variant-effect prediction"
+    ],
+    "mesh_terms": [
+      "Polymorphism, Single Nucleotide",
+      "*Cucumis melo/genetics",
+      "Large Language Models",
+      "Quantitative Trait Loci",
+      "*DNA, Plant/genetics",
+      "Genome, Plant",
+      "Molecular Sequence Annotation",
+      "Fruit/genetics"
+    ],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Sun, Guosheng",
+        "Wei, Yanping",
+        "Li, Entong",
+        "Xiao, Mengting",
+        "Zhang, Zhilin",
+        "Zhang, Zhenchao",
+        "Dai, Zhongliang",
+        "Ma, Zhihu",
+        "Zhang, Changwei"
+      ],
+      "short_names": [
+        "Sun G",
+        "Wei Y",
+        "Li E",
+        "Xiao M",
+        "Zhang Z",
+        "Zhang Z",
+        "Dai Z",
+        "Ma Z",
+        "Zhang C"
+      ],
+      "auids": [
+        "ORCID: 0009-0006-2798-7097",
+        "ORCID: 0009-0006-4347-438X",
+        "ORCID: 0000-0001-6426-7060"
+      ],
+      "affiliations": [
+        "Zhenjiang Institute of Agricultural Sciences in Hilly Area of Jiangsu Province, Zhenjiang 212400, China.",
+        "State Key Laboratory of Crop Genetics and Germplasm Enhancement, College of Horticulture, Nanjing Agricultural University, Nanjing 210095, China.",
+        "Biological Breeding Laboratory, Xinjiang Academy of Agricultural Sciences, Urumqi 830091, China.",
+        "State Key Laboratory of Crop Genetics and Germplasm Enhancement, College of Horticulture, Nanjing Agricultural University, Nanjing 210095, China.",
+        "State Key Laboratory of Crop Genetics and Germplasm Enhancement, College of Horticulture, Nanjing Agricultural University, Nanjing 210095, China.",
+        "State Key Laboratory of Crop Genetics and Germplasm Enhancement, College of Horticulture, Nanjing Agricultural University, Nanjing 210095, China.",
+        "Zhenjiang Institute of Agricultural Sciences in Hilly Area of Jiangsu Province, Zhenjiang 212400, China.",
+        "Zhenjiang Institute of Agricultural Sciences in Hilly Area of Jiangsu Province, Zhenjiang 212400, China.",
+        "Zhenjiang Institute of Agricultural Sciences in Hilly Area of Jiangsu Province, Zhenjiang 212400, China.",
+        "State Key Laboratory of Crop Genetics and Germplasm Enhancement, College of Horticulture, Nanjing Agricultural University, Nanjing 210095, China."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Sun, Guosheng",
+        "short_name": "Sun G",
+        "identifiers": [],
+        "affiliations": [
+          "Zhenjiang Institute of Agricultural Sciences in Hilly Area of Jiangsu Province, Zhenjiang 212400, China.",
+          "State Key Laboratory of Crop Genetics and Germplasm Enhancement, College of Horticulture, Nanjing Agricultural University, Nanjing 210095, China."
+        ]
+      },
+      {
+        "full_name": "Wei, Yanping",
+        "short_name": "Wei Y",
+        "identifiers": [],
+        "affiliations": [
+          "Biological Breeding Laboratory, Xinjiang Academy of Agricultural Sciences, Urumqi 830091, China."
+        ]
+      },
+      {
+        "full_name": "Li, Entong",
+        "short_name": "Li E",
+        "identifiers": [
+          "0009-0006-2798-7097"
+        ],
+        "affiliations": [
+          "State Key Laboratory of Crop Genetics and Germplasm Enhancement, College of Horticulture, Nanjing Agricultural University, Nanjing 210095, China."
+        ]
+      },
+      {
+        "full_name": "Xiao, Mengting",
+        "short_name": "Xiao M",
+        "identifiers": [],
+        "affiliations": [
+          "State Key Laboratory of Crop Genetics and Germplasm Enhancement, College of Horticulture, Nanjing Agricultural University, Nanjing 210095, China."
+        ]
+      },
+      {
+        "full_name": "Zhang, Zhilin",
+        "short_name": "Zhang Z",
+        "identifiers": [],
+        "affiliations": [
+          "State Key Laboratory of Crop Genetics and Germplasm Enhancement, College of Horticulture, Nanjing Agricultural University, Nanjing 210095, China."
+        ]
+      },
+      {
+        "full_name": "Zhang, Zhenchao",
+        "short_name": "Zhang Z",
+        "identifiers": [],
+        "affiliations": [
+          "Zhenjiang Institute of Agricultural Sciences in Hilly Area of Jiangsu Province, Zhenjiang 212400, China."
+        ]
+      },
+      {
+        "full_name": "Dai, Zhongliang",
+        "short_name": "Dai Z",
+        "identifiers": [],
+        "affiliations": [
+          "Zhenjiang Institute of Agricultural Sciences in Hilly Area of Jiangsu Province, Zhenjiang 212400, China."
+        ]
+      },
+      {
+        "full_name": "Ma, Zhihu",
+        "short_name": "Ma Z",
+        "identifiers": [
+          "0009-0006-4347-438X"
+        ],
+        "affiliations": [
+          "Zhenjiang Institute of Agricultural Sciences in Hilly Area of Jiangsu Province, Zhenjiang 212400, China."
+        ]
+      },
+      {
+        "full_name": "Zhang, Changwei",
+        "short_name": "Zhang C",
+        "identifiers": [
+          "0000-0001-6426-7060"
+        ],
+        "affiliations": [
+          "State Key Laboratory of Crop Genetics and Germplasm Enhancement, College of Horticulture, Nanjing Agricultural University, Nanjing 210095, China."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Genes"
+    ],
+    "journal_abbrev": [
+      "Genes (Basel)"
+    ],
+    "pub_date": "2026 Sep 23",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/27 11:31",
+    "fetched_at": "2026-11-01 11:00:03"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42938289"
+    ],
+    "review": [
+      "42938289"
+    ],
+    "pmc": [
+      "13703983"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://www.mdpi.com/resolver?pii=genes17101173",
+        "provider": "MDPI",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/pmid/42938289/",
+        "provider": "PubMed Central",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

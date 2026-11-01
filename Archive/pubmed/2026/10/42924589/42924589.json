@@ -1,0 +1,194 @@
+{
+  "identity": {
+    "pmid": "42924589",
+    "doi": "10.1002/cns.71219",
+    "title": "Integrative Transcriptomics and Machine Learning Identify Temporal Stress Signatures and Astrocytic Neurocan Associated With Hypothalamic Injury."
+  },
+  "content": {
+    "abstract": "BACKGROUND: Stress-related neurological dysfunction evolves dynamically, but molecular markers distinguishing stress stages remain limited. We aimed to characterize temporal hypothalamic transcriptomic changes and identify molecular signatures for stress-stage discrimination. METHODS: Whole-transcriptome sequencing was performed in mouse hypothalami after stress. Differential expression, temporal clustering, co-expression network analysis, and machine learning were integrated to identify stress-associated mRNA and miRNA signatures. Candidate markers were validated by RT-qPCR and single-nucleus RNA sequencing. Ncan function was further evaluated by protein supplementation, perineuronal net analysis, behavioral testing, and regulatory network analysis. RESULTS: mRNAs exhibited strong temporal sensitivity and captured stage-specific transcriptional remodeling, whereas miRNAs primarily reflected stress regardless of duration. A six-mRNA signature (Ncan, Mt2, Nab2, Ptch1, and Catspere1/Catspere2) accurately distinguished control, acute stress, and chronic stress (accuracy, 1.000), while an 11-miRNA signature robustly classified stress states (accuracy, 0.944). Both signatures were validated by RT-qPCR and nested cross-validation, with accuracies of 0.898 and 0.890, respectively. Ncan was consistently top-ranked, predominantly expressed in astrocytes, progressively downregulated by stress, and its supplementation restored PNNs and alleviated depressive-like behaviors. Virtual Ncan knockout disrupted the stress network, with Ctcf predicted as its upstream regulator. CONCLUSION: Our study identifies distinct stress-stage and stress-state transcriptomic signatures and highlights astrocytic Ncan as a candidate biomarker that may contribute to stress-induced neural injury by regulating PNN homeostasis.",
+    "keywords": [
+      "Ncan",
+      "hypothalamus",
+      "machine learning",
+      "stress",
+      "transcriptome"
+    ],
+    "mesh_terms": [
+      "Animals",
+      "*Hypothalamus/metabolism/pathology/injuries",
+      "Mice",
+      "*Astrocytes/metabolism",
+      "*Transcriptome/physiology",
+      "*Machine Learning",
+      "*Stress, Psychological/metabolism/genetics/pathology",
+      "Male",
+      "Mice, Inbred C57BL",
+      "Gene Expression Profiling/methods",
+      "RNA, Messenger/metabolism",
+      "*Chondroitin Sulfate Proteoglycans/genetics/metabolism"
+    ],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Zhu, Weihao",
+        "Li, Chenyu",
+        "He, Mengting",
+        "Shi, Rui",
+        "Liu, Xia",
+        "Shi, Weibo",
+        "Cong, Bin"
+      ],
+      "short_names": [
+        "Zhu W",
+        "Li C",
+        "He M",
+        "Shi R",
+        "Liu X",
+        "Shi W",
+        "Cong B"
+      ],
+      "auids": [
+        "ORCID: 0000-0003-3349-7204"
+      ],
+      "affiliations": [
+        "Hebei Medical University Postdoctoral Research Station in Basic Medicine, Shijiazhuang, China.",
+        "Hebei Key Laboratory of Forensic Medicine, Collaborative Innovation Center of Forensic Medical Molecular Identification, College of Forensic Medicine, Hebei Medical University, Shijiazhuang, China.",
+        "Hebei Key Laboratory of Forensic Medicine, Collaborative Innovation Center of Forensic Medical Molecular Identification, College of Forensic Medicine, Hebei Medical University, Shijiazhuang, China.",
+        "Hebei Key Laboratory of Forensic Medicine, Collaborative Innovation Center of Forensic Medical Molecular Identification, College of Forensic Medicine, Hebei Medical University, Shijiazhuang, China.",
+        "Hebei Key Laboratory of Forensic Medicine, Collaborative Innovation Center of Forensic Medical Molecular Identification, College of Forensic Medicine, Hebei Medical University, Shijiazhuang, China.",
+        "Shenzhen Second People's Hospital, The First Affiliated Hospital of Shenzhen University, Shenzhen, China.",
+        "Hebei Key Laboratory of Forensic Medicine, Collaborative Innovation Center of Forensic Medical Molecular Identification, College of Forensic Medicine, Hebei Medical University, Shijiazhuang, China.",
+        "Hebei Medical University Postdoctoral Research Station in Basic Medicine, Shijiazhuang, China.",
+        "Hebei Key Laboratory of Forensic Medicine, Collaborative Innovation Center of Forensic Medical Molecular Identification, College of Forensic Medicine, Hebei Medical University, Shijiazhuang, China."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Zhu, Weihao",
+        "short_name": "Zhu W",
+        "identifiers": [],
+        "affiliations": [
+          "Hebei Medical University Postdoctoral Research Station in Basic Medicine, Shijiazhuang, China.",
+          "Hebei Key Laboratory of Forensic Medicine, Collaborative Innovation Center of Forensic Medical Molecular Identification, College of Forensic Medicine, Hebei Medical University, Shijiazhuang, China."
+        ]
+      },
+      {
+        "full_name": "Li, Chenyu",
+        "short_name": "Li C",
+        "identifiers": [],
+        "affiliations": [
+          "Hebei Key Laboratory of Forensic Medicine, Collaborative Innovation Center of Forensic Medical Molecular Identification, College of Forensic Medicine, Hebei Medical University, Shijiazhuang, China."
+        ]
+      },
+      {
+        "full_name": "He, Mengting",
+        "short_name": "He M",
+        "identifiers": [],
+        "affiliations": [
+          "Hebei Key Laboratory of Forensic Medicine, Collaborative Innovation Center of Forensic Medical Molecular Identification, College of Forensic Medicine, Hebei Medical University, Shijiazhuang, China."
+        ]
+      },
+      {
+        "full_name": "Shi, Rui",
+        "short_name": "Shi R",
+        "identifiers": [],
+        "affiliations": [
+          "Hebei Key Laboratory of Forensic Medicine, Collaborative Innovation Center of Forensic Medical Molecular Identification, College of Forensic Medicine, Hebei Medical University, Shijiazhuang, China."
+        ]
+      },
+      {
+        "full_name": "Liu, Xia",
+        "short_name": "Liu X",
+        "identifiers": [],
+        "affiliations": [
+          "Shenzhen Second People's Hospital, The First Affiliated Hospital of Shenzhen University, Shenzhen, China."
+        ]
+      },
+      {
+        "full_name": "Shi, Weibo",
+        "short_name": "Shi W",
+        "identifiers": [],
+        "affiliations": [
+          "Hebei Key Laboratory of Forensic Medicine, Collaborative Innovation Center of Forensic Medical Molecular Identification, College of Forensic Medicine, Hebei Medical University, Shijiazhuang, China."
+        ]
+      },
+      {
+        "full_name": "Cong, Bin",
+        "short_name": "Cong B",
+        "identifiers": [
+          "0000-0003-3349-7204"
+        ],
+        "affiliations": [
+          "Hebei Medical University Postdoctoral Research Station in Basic Medicine, Shijiazhuang, China.",
+          "Hebei Key Laboratory of Forensic Medicine, Collaborative Innovation Center of Forensic Medical Molecular Identification, College of Forensic Medicine, Hebei Medical University, Shijiazhuang, China."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "CNS neuroscience & therapeutics"
+    ],
+    "journal_abbrev": [
+      "CNS Neurosci Ther"
+    ],
+    "pub_date": "2026 Oct",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/25 03:36",
+    "fetched_at": "2026-11-01 11:00:03"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42924589"
+    ],
+    "review": [
+      "42924589"
+    ],
+    "pmc": [
+      "13692808"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://medlineplus.gov/stress.html",
+        "provider": "MedlinePlus Health Information",
+        "category": "Medical",
+        "attribute": "free resource",
+        "linkname": "Stress"
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/pmid/42924589/",
+        "provider": "PubMed Central",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://doi.org/10.1002/cns.71219",
+        "provider": "Wiley",
+        "category": "Full Text Sources",
+        "attribute": "subscription/membership/fee required",
+        "linkname": ""
+      },
+      {
+        "url": "https://assays.cancer.gov/non-CPTAC-3484",
+        "provider": "NCI CPTAC Assay Portal",
+        "category": "Miscellaneous",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42954985",
+  "title": "Charge-altering histone mutations reprogram electrostatic coupling from single nucleosomes to higher-order chromatin structures.",
+  "authors": "Zhang, Houfang; Hu, Guanhua; Liu, Gege; Xu, Wang; Zhao, Xinyi; Li, Anbang; Peng, Yunhui",
+  "journal": "Nanoscale",
+  "published_date": "2026-10-29",
+  "window": {
+    "start": "2026-10-25",
+    "end": "2026-10-31"
+  },
+  "score": 7,
+  "one_liner_zh": "该研究通过大规模组蛋白突变分析、183个突变体静电建模与18微秒分子动力学模拟，揭示电荷改变型组蛋白突变如何从单核小体静电势重塑到高阶染色质核小体间静电耦合，为染色质高级结构的静电调控与计算建模提供物理框架。",
+  "abstract": "Nucleosomes are stabilized and organized by electrostatic interactions that govern chromatin folding and higher-order structure. Although many cancer-associated histone mutations alter residue charge, how such perturbations propagate from single nucleosomes to higher-order chromatin organization remains unclear. Here, through large-scale analysis of histone mutation datasets, we show that charge-altering mutations are enriched among recurrent high-frequency mutations and exhibit stronger predicted destabilizing effects on nucleosome-associated interactions than charge-neutral variants. We demonstrate that even a single charge-altering mutation can substantially reshape the nucleosome surface electrostatic potential, thereby modulating long-range electrostatic interactions with regulatory proteins. By systematically analyzing 25 experimentally resolved nucleosome-protein complexes and 183 mutant models, we quantify how individual charge-altering mutations substantially alter electrostatic interaction forces. Extensive molecular dynamics simulations totaling 18 mus further reveal that single-point mutations can produce less favorable nucleosome-protein binding-energy estimates and reorganize interfacial hydrogen-bonding networks. Importantly, analysis of higher-order nucleosome assemblies shows that charge-altering mutations can modulate inter-nucleosomal electrostatic interactions in a packing-geometry-dependent manner, while mutations near the acidic patch can also perturb H4 tail-nucleosome electrostatic coupling. Our results provide a physical framework for understanding how local electrostatic perturbations caused by cancer-associated charge-altering histone mutations may influence nucleosome interactions across multiple structural scales.",
+  "abstract_zh": "核小体通过静电相互作用得以稳定和组织，这些相互作用调控染色质折叠及高阶结构。尽管许多癌症相关的组蛋白突变改变残基电荷，但这些扰动如何从单个核小体传播至高阶染色质组织仍不清楚。在此，通过对组蛋白突变数据集的大规模分析，我们表明电荷改变突变在复发性高频突变中富集，并且与电荷中性变异相比，对核小体相关相互作用表现出更强的预测去稳定效应。我们证明，即使单个电荷改变突变也能显著重塑核小体表面静电势，从而调节与调控蛋白的长程静电相互作用。通过系统分析25个实验解析的核小体-蛋白质复合物和183个突变模型，我们量化了单个电荷改变突变如何显著改变静电相互作用力。总计18微秒的广泛分子动力学模拟进一步揭示，单点突变可产生较不利的核小体-蛋白质结合能估计，并重排界面氢键网络。重要的是，对高阶核小体组装的分析表明，电荷改变突变能以堆积几何依赖的方式调节核小体间静电相互作用，而酸性斑块附近的突变也能扰动H4尾部-核小体静电耦合。我们的结果为理解癌症相关电荷改变组蛋白突变引起的局部静电扰动如何可能跨多个结构尺度影响核小体相互作用提供了物理框架。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42954985/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42954985/",
+  "paper_page_path": "papers/pubmed/42954985/index.html"
+}

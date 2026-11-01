@@ -1,0 +1,183 @@
+{
+  "identity": {
+    "pmid": "42932848",
+    "doi": "10.1093/bib/bbag589",
+    "title": "EpiInsula: calibrated regression of the Hi-C insulation score from cell-type-specific epigenomic signal."
+  },
+  "content": {
+    "abstract": "Chromatin insulation shapes which regulatory elements can reach which promoters, but much computational prediction of chromatin organisation has been posed as boundary classification, which discards the depth and shape of the insulation profile. We developed EpiInsula, a dilated convolutional framework that predicts the 10-kb Hi-C insulation score as a continuous quantity from six cell-type-specific epigenomic tracks read over a +/-700-kb window. Under a chromosome-disjoint partition that scores every evaluated locus with a model which never saw its chromosome, held-out correlations across four human cell lines are 0.791, 0.780, 0.860 and 0.774, and the regression of measured on predicted insulation has slopes of 0.90-0.95, indicating calibration of the conditional mean, the sense used throughout. Against seven methods fitted under a single evaluation contract, EpiInsula gives the highest correlation and, with boundary thresholds selected on validation chromosomes and frozen before testing, the highest boundary F1 against 4D Nucleome calls in every cell line; the lead is retained on the fine-scale component of the profile, and three published contact-map predictors retrained on the same data give lower correlation on the derived insulation score. On boundaries that differ between IMR-90 and K562 it recovers 0.383 of the contrasts against 0.024-0.264 for all seven comparison methods; it ranks first at every point of a 25-point threshold grid and in all six cell-line pairs, and the remaining methods are ranked differently from pooled correlation. EpiInsula provides a framework for predicting chromatin organisation on a continuous scale from routinely available epigenomic assays. Availability: https://github.com/Yin-Shen/EpiInsula.",
+    "keywords": [
+      "Hi-C",
+      "chromatin organisation",
+      "cross-cell-type transfer",
+      "deep learning",
+      "epigenomic prediction",
+      "insulation score"
+    ],
+    "mesh_terms": [
+      "Humans",
+      "*Epigenomics/methods",
+      "*Chromatin/genetics/metabolism",
+      "*Insulator Elements",
+      "Cell Line",
+      "*Epigenesis, Genetic",
+      "*Software"
+    ],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Jin, Yuyu",
+        "Chen, Tong",
+        "Gao, Jie",
+        "Tong, Mengyao",
+        "Xu, Guangcheng",
+        "Zhang, Xueyu",
+        "Liu, Weixu",
+        "Shen, Yin"
+      ],
+      "short_names": [
+        "Jin Y",
+        "Chen T",
+        "Gao J",
+        "Tong M",
+        "Xu G",
+        "Zhang X",
+        "Liu W",
+        "Shen Y"
+      ],
+      "auids": [
+        "ORCID: 0000-0001-7002-4022"
+      ],
+      "affiliations": [
+        "School of Biomedical Engineering, Anhui Medical University, 81 Meishan Road, Shushan District, Hefei, Anhui 230032, China.",
+        "School of Biomedical Engineering, Anhui Medical University, 81 Meishan Road, Shushan District, Hefei, Anhui 230032, China.",
+        "School of Biomedical Engineering, Anhui Medical University, 81 Meishan Road, Shushan District, Hefei, Anhui 230032, China.",
+        "School of Biomedical Engineering, Anhui Medical University, 81 Meishan Road, Shushan District, Hefei, Anhui 230032, China.",
+        "School of Biomedical Engineering, Anhui Medical University, 81 Meishan Road, Shushan District, Hefei, Anhui 230032, China.",
+        "School of Biomedical Engineering, Anhui Medical University, 81 Meishan Road, Shushan District, Hefei, Anhui 230032, China.",
+        "School of Medical Humanities, Anhui Medical University, 81 Meishan Road, Shushan District, Hefei, Anhui 230032, China.",
+        "School of Biomedical Engineering, Anhui Medical University, 81 Meishan Road, Shushan District, Hefei, Anhui 230032, China."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Jin, Yuyu",
+        "short_name": "Jin Y",
+        "identifiers": [],
+        "affiliations": [
+          "School of Biomedical Engineering, Anhui Medical University, 81 Meishan Road, Shushan District, Hefei, Anhui 230032, China."
+        ]
+      },
+      {
+        "full_name": "Chen, Tong",
+        "short_name": "Chen T",
+        "identifiers": [],
+        "affiliations": [
+          "School of Biomedical Engineering, Anhui Medical University, 81 Meishan Road, Shushan District, Hefei, Anhui 230032, China."
+        ]
+      },
+      {
+        "full_name": "Gao, Jie",
+        "short_name": "Gao J",
+        "identifiers": [],
+        "affiliations": [
+          "School of Biomedical Engineering, Anhui Medical University, 81 Meishan Road, Shushan District, Hefei, Anhui 230032, China."
+        ]
+      },
+      {
+        "full_name": "Tong, Mengyao",
+        "short_name": "Tong M",
+        "identifiers": [],
+        "affiliations": [
+          "School of Biomedical Engineering, Anhui Medical University, 81 Meishan Road, Shushan District, Hefei, Anhui 230032, China."
+        ]
+      },
+      {
+        "full_name": "Xu, Guangcheng",
+        "short_name": "Xu G",
+        "identifiers": [],
+        "affiliations": [
+          "School of Biomedical Engineering, Anhui Medical University, 81 Meishan Road, Shushan District, Hefei, Anhui 230032, China."
+        ]
+      },
+      {
+        "full_name": "Zhang, Xueyu",
+        "short_name": "Zhang X",
+        "identifiers": [],
+        "affiliations": [
+          "School of Biomedical Engineering, Anhui Medical University, 81 Meishan Road, Shushan District, Hefei, Anhui 230032, China."
+        ]
+      },
+      {
+        "full_name": "Liu, Weixu",
+        "short_name": "Liu W",
+        "identifiers": [],
+        "affiliations": [
+          "School of Medical Humanities, Anhui Medical University, 81 Meishan Road, Shushan District, Hefei, Anhui 230032, China."
+        ]
+      },
+      {
+        "full_name": "Shen, Yin",
+        "short_name": "Shen Y",
+        "identifiers": [
+          "0000-0001-7002-4022"
+        ],
+        "affiliations": [
+          "School of Biomedical Engineering, Anhui Medical University, 81 Meishan Road, Shushan District, Hefei, Anhui 230032, China."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Briefings in bioinformatics"
+    ],
+    "journal_abbrev": [
+      "Brief Bioinform"
+    ],
+    "pub_date": "2026 Sep 1",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/26 17:31",
+    "fetched_at": "2026-11-01 11:00:03"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42932848"
+    ],
+    "review": [
+      "42932848"
+    ],
+    "pmc": [
+      "13704792"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/pmid/42932848/",
+        "provider": "PubMed Central",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://academic.oup.com/bib/article-lookup/doi/10.1093/bib/bbag589",
+        "provider": "Silverchair Information Systems",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

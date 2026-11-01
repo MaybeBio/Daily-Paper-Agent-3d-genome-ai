@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42926727",
+  "title": "Unlocking the Regulatory Genome by ARGUS: An Evidence-Constrained Agentic Framework for Interpreting Single Nucleotide Variants.",
+  "authors": "Dutta, Pratik; Obusan, Matthew B; Chao, Max; Sathian, Rekha; Papineni, Nimisha; Davuluri, Ramana V",
+  "journal": "ArXiv",
+  "published_date": "2026-10-25",
+  "window": {
+    "start": "2026-10-25",
+    "end": "2026-10-31"
+  },
+  "score": 4,
+  "one_liner_zh": "该文提出ARGUS智能体框架，用LLM规划结合DNABERT模型解释非编码单核苷酸变异对转录因子结合的影响，虽涉及染色质水平调控元件（cCRE）和等位基因特异性结合，但核心是变异功能解读而非染色质三维空间架构建模，且方法为LLM代理而非AI/分子模拟建模，与课题关联较弱。",
+  "abstract": "Over 90% of disease-associated variants from genome-wide association studies fall in noncoding regulatory regions, yet their functional interpretation remains a central open problem in genomic medicine. Large language models prompted to interpret such variants routinely hallucinate transcription factor (TF) binding changes, fabricate experimental support, and assign biological significance to statistically negligible signals. We present ARGUS (Agentic Regulatory Genomics for an Uncertainty-aware Scientist), which strictly separates deterministic biological computation from LLM-mediated reasoning. ARGUS wraps 458 DNABERT-based TF binding models in a hypothesis-directed investigation loop where a planner selects evidence sources based on current uncertainty, a verifier deterministically interprets each observation, and intermediate results change the investigation path. On variant rs6983267 at the 8q24 cancer risk locus, the same planner produces four divergent trajectories for four TFs. FOXA1 is rescued in 3 steps when real ADASTRA allele-specific binding data (15 experiments, FDR = 0.030) reveals a model false negative masked by saturation (both alleles predicted at near-maximal binding, leaving the model unable to resolve allelic differences). KLF6 traverses 8 steps across ADASTRA, JASPAR motif analysis, and ENCODE cCRE regulatory annotation before abstaining due to mixed indirect evidence. RAD21 abstains in 8 steps after ADASTRA returns a powered but nonsignificant allelic test (5 experiments, FDR = 0.65), and SP1, which shares FOXA1's saturated retained prediction, abstains because no direct experimental evidence exists at this locus. All trajectories are produced from real data against local ADASTRA, JASPAR, and ENCODE cCRE evidence sources, with no simulated observations. A comparison of fixed-priority and LLM-mediated planning shows that the LLM planner reaches identical verdicts with fewer tool calls by declining evidence that cannot resolve the claim under test.",
+  "abstract_zh": "超过90%的来自全基因组关联研究的疾病相关变异落在非编码调控区，然而其功能解释仍然是基因组医学中一个核心的未解问题。被提示解释此类变异的大语言模型经常幻觉出转录因子（transcription factor, TF）结合变化、捏造实验支持，并将生物学意义赋予统计上可忽略的信号。我们提出ARGUS（Agentic Regulatory Genomics for an Uncertainty-aware Scientist），它将确定性生物计算与LLM介导的推理严格分离。ARGUS将458个基于DNABERT的TF结合模型包裹在一个假设导向的调查循环中，其中规划器根据当前不确定性选择证据来源，验证器确定性地解释每个观察结果，中间结果改变调查路径。在8q24癌症风险位点的变异rs6983267上，同一规划器为四个TF产生四条不同的轨迹。当真实的ADASTRA等位基因特异性结合数据（15个实验，FDR = 0.030）揭示出一个被饱和掩盖的模型假阴性（两个等位基因均被预测为接近最大结合，使模型无法解析等位基因差异）时，FOXA1在3步内被挽救。KLF6跨越ADASTRA、JASPAR基序分析和ENCODE cCRE调控注释历经8步，最终因混合的间接证据而弃权。RAD21在ADASTRA返回一个有统计功效但不显著的等位基因检验（5个实验，FDR = 0.65）后于8步内弃权，而SP1与FOXA1共享饱和的保留预测，因该位点不存在直接实验证据而弃权。所有轨迹均由真实数据针对本地ADASTRA、JASPAR和ENCODE cCRE证据来源产生，没有模拟观察结果。固定优先级规划与LLM介导规划的比较表明，LLM规划器通过拒绝无法解决所检验主张的证据，以更少的工具调用达到相同的判定。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42926727/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42926727/",
+  "paper_page_path": "papers/pubmed/42926727/index.html"
+}

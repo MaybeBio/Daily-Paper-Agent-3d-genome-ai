@@ -1,0 +1,148 @@
+{
+  "identity": {
+    "pmid": "42934226",
+    "doi": "10.1038/s41421-026-00928-y",
+    "title": "A droplet-based long-read single-cell epigenome sequencing method for the high-throughput profiling of multidimensional regulatory elements within individual cells."
+  },
+  "content": {
+    "abstract": "Recently, long-read sequencing methods have revolutionized genomic research by allowing the resolution of previously inaccessible regions across the genome. However, the throughput and scalability of these methods have hindered their general application in the field. To address this limitation, we developed droplet-based methods for the single-cell profiling of chromatin accessibility (droplet-based single-cell Nanopore ATAC-seq, dscNanoATAC) and histone modifications (droplet-based single-cell NanoCUT&Tag, dscNanoCUT) by combining a commercial microfluidic device and long-read sequencing platform, achieving a throughput of ~5000 cells in a single experiment and significantly reducing the time and costs compared with previous techniques. With cultured mammalian cells, we demonstrated the ability of dscNanoATAC and dscNanoCUT to detect allele-specific epigenetics, neighboring co-accessibility, and regulatory elements within low-mappability regions. Furthermore, leveraging the haplotype-resolved data generated from dscNanoATAC, we optimized a deep-learning model to predict allele-specific three-dimensional genome structures with high resolution (10 kb). We also applied dscNanoATAC and dscNanoCUT in complex tissues using the mouse brain as an example, and characterized the allele-specific regulation of the imprinting gene Ube3a in neurons, obtaining insights into the mechanisms underlying the pathogenesis of Prader-Willi and Angelman syndrome. With dscNanoCUT, we systematically evaluated the activity of transposon elements and revealed their potential regulatory functions in the mouse brain. Together, dscNanoATAC and dscNanoCUT serve as a versatile and scalable long-read epigenome sequencing platform, enabling multidimensional analyses of elements ranging from chromatin accessibility to histone modifications and their interplay between chromatin structures. This platform may advance our understanding of epigenetic regulation in complex biological systems.",
+    "keywords": [],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Lu, Jiansen",
+        "Chen, Kexuan",
+        "Jia, Shengtao",
+        "Chen, Guodong",
+        "Yu, Xianhong",
+        "Li, Wen"
+      ],
+      "short_names": [
+        "Lu J",
+        "Chen K",
+        "Jia S",
+        "Chen G",
+        "Yu X",
+        "Li W"
+      ],
+      "auids": [
+        "ORCID: 0000-0002-6873-0283"
+      ],
+      "affiliations": [
+        "School of Laboratory Medicine and Biotechnology, Southern Medical University, Guangzhou, Guangdong, China. jiansenlu@jnu.edu.cn.",
+        "School of Medicine, Jinan University, Guangzhou, Guangdong, China. jiansenlu@jnu.edu.cn.",
+        "The Second Affiliated Hospital & Liangzhu Laboratory, Zhejiang University School of Medicine, Hangzhou, Zhejiang, China.",
+        "Department of Cardiology, Heart Center, Zhujiang Hospital, Southern Medical University, Guangzhou, Guangdong, China.",
+        "Shanghai MobiDrop Co. Ltd, Shanghai, China.",
+        "Shanghai MobiDrop Co. Ltd, Shanghai, China. xhy@pku.edu.cn.",
+        "School of Laboratory Medicine and Biotechnology, Southern Medical University, Guangzhou, Guangdong, China. lw20240811@smu.edu.cn."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Lu, Jiansen",
+        "short_name": "Lu J",
+        "identifiers": [],
+        "affiliations": [
+          "School of Laboratory Medicine and Biotechnology, Southern Medical University, Guangzhou, Guangdong, China. jiansenlu@jnu.edu.cn.",
+          "School of Medicine, Jinan University, Guangzhou, Guangdong, China. jiansenlu@jnu.edu.cn."
+        ]
+      },
+      {
+        "full_name": "Chen, Kexuan",
+        "short_name": "Chen K",
+        "identifiers": [],
+        "affiliations": [
+          "The Second Affiliated Hospital & Liangzhu Laboratory, Zhejiang University School of Medicine, Hangzhou, Zhejiang, China."
+        ]
+      },
+      {
+        "full_name": "Jia, Shengtao",
+        "short_name": "Jia S",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Cardiology, Heart Center, Zhujiang Hospital, Southern Medical University, Guangzhou, Guangdong, China."
+        ]
+      },
+      {
+        "full_name": "Chen, Guodong",
+        "short_name": "Chen G",
+        "identifiers": [],
+        "affiliations": [
+          "Shanghai MobiDrop Co. Ltd, Shanghai, China."
+        ]
+      },
+      {
+        "full_name": "Yu, Xianhong",
+        "short_name": "Yu X",
+        "identifiers": [],
+        "affiliations": [
+          "Shanghai MobiDrop Co. Ltd, Shanghai, China. xhy@pku.edu.cn."
+        ]
+      },
+      {
+        "full_name": "Li, Wen",
+        "short_name": "Li W",
+        "identifiers": [
+          "0000-0002-6873-0283"
+        ],
+        "affiliations": [
+          "School of Laboratory Medicine and Biotechnology, Southern Medical University, Guangzhou, Guangdong, China. lw20240811@smu.edu.cn."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Cell discovery"
+    ],
+    "journal_abbrev": [
+      "Cell Discov"
+    ],
+    "pub_date": "2026 Oct 27",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/27 05:29",
+    "fetched_at": "2026-11-01 11:00:03"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42934226"
+    ],
+    "review": [
+      "42934226"
+    ],
+    "pmc": [
+      "13710847"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://doi.org/10.1038/s41421-026-00928-y",
+        "provider": "Nature Publishing Group",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/pmid/42934226/",
+        "provider": "PubMed Central",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

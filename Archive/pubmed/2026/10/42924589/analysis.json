@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42924589",
+  "title": "Integrative Transcriptomics and Machine Learning Identify Temporal Stress Signatures and Astrocytic Neurocan Associated With Hypothalamic Injury.",
+  "authors": "Zhu, Weihao; Li, Chenyu; He, Mengting; Shi, Rui; Liu, Xia; Shi, Weibo; Cong, Bin",
+  "journal": "CNS neuroscience & therapeutics",
+  "published_date": "2026-10-25",
+  "window": {
+    "start": "2026-10-25",
+    "end": "2026-10-31"
+  },
+  "score": 2,
+  "one_liner_zh": "该研究通过转录组测序和机器学习识别下丘脑应激时序标志物及星形胶质细胞Ncan功能，属于神经内分泌与应激生物学，未涉及三维基因组或染色质空间架构建模，仅提及Ctcf为预测调控因子，与课题核心方向无关。",
+  "abstract": "BACKGROUND: Stress-related neurological dysfunction evolves dynamically, but molecular markers distinguishing stress stages remain limited. We aimed to characterize temporal hypothalamic transcriptomic changes and identify molecular signatures for stress-stage discrimination. METHODS: Whole-transcriptome sequencing was performed in mouse hypothalami after stress. Differential expression, temporal clustering, co-expression network analysis, and machine learning were integrated to identify stress-associated mRNA and miRNA signatures. Candidate markers were validated by RT-qPCR and single-nucleus RNA sequencing. Ncan function was further evaluated by protein supplementation, perineuronal net analysis, behavioral testing, and regulatory network analysis. RESULTS: mRNAs exhibited strong temporal sensitivity and captured stage-specific transcriptional remodeling, whereas miRNAs primarily reflected stress regardless of duration. A six-mRNA signature (Ncan, Mt2, Nab2, Ptch1, and Catspere1/Catspere2) accurately distinguished control, acute stress, and chronic stress (accuracy, 1.000), while an 11-miRNA signature robustly classified stress states (accuracy, 0.944). Both signatures were validated by RT-qPCR and nested cross-validation, with accuracies of 0.898 and 0.890, respectively. Ncan was consistently top-ranked, predominantly expressed in astrocytes, progressively downregulated by stress, and its supplementation restored PNNs and alleviated depressive-like behaviors. Virtual Ncan knockout disrupted the stress network, with Ctcf predicted as its upstream regulator. CONCLUSION: Our study identifies distinct stress-stage and stress-state transcriptomic signatures and highlights astrocytic Ncan as a candidate biomarker that may contribute to stress-induced neural injury by regulating PNN homeostasis.",
+  "abstract_zh": "背景：应激相关的神经功能障碍呈动态演变，但区分应激阶段的分子标志物仍然有限。我们旨在表征下丘脑时间性转录组变化，并识别用于应激阶段区分的分子特征。方法：在小鼠下丘脑应激后进行全转录组测序。整合差异表达、时间聚类、共表达网络分析和机器学习，以识别应激相关的mRNA和miRNA特征。候选标志物通过RT-qPCR和单核RNA测序进行验证。Ncan功能进一步通过蛋白补充、神经元周围网络分析、行为测试和调控网络分析进行评估。结果：mRNA表现出强烈的时间敏感性，并捕获了阶段特异性的转录重塑，而miRNA主要反映应激状态，与持续时间无关。一个六-mRNA特征（Ncan、Mt2、Nab2、Ptch1和Catspere1/Catspere2）准确区分了对照组、急性应激和慢性应激（准确率，1.000），而一个11-miRNA特征稳健地分类了应激状态（准确率，0.944）。两个特征均通过RT-qPCR和嵌套交叉验证得到验证，准确率分别为0.898和0.890。Ncan始终排名靠前，主要在星形胶质细胞中表达，随应激逐渐下调，其补充恢复了PNN并缓解了抑郁样行为。虚拟Ncan敲除破坏了应激网络，Ctcf被预测为其上游调控因子。结论：我们的研究识别了不同的应激阶段和应激状态转录组特征，并强调星形胶质细胞Ncan作为候选生物标志物，可能通过调控PNN稳态参与应激诱导的神经损伤。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42924589/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42924589/",
+  "paper_page_path": "papers/pubmed/42924589/index.html"
+}

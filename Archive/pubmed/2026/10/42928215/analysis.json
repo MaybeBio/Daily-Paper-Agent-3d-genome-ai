@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42928215",
+  "title": "simPIC: flexible simulation of single-cell ATAC-seq paired-insertion counts from individuals to populations.",
+  "authors": "Chugh, Sagrika; Shim, Heejung; McCarthy, Davis J",
+  "journal": "Genome biology",
+  "published_date": "2026-10-26",
+  "window": {
+    "start": "2026-10-25",
+    "end": "2026-10-31"
+  },
+  "score": 4,
+  "one_liner_zh": "simPIC 是模拟单细胞 ATAC-seq 插入计数的工具，用于群体规模染色质可及性研究，但仅涉及一维可及性统计建模，不涉及三维基因组或空间构象建模。",
+  "abstract": "Single-cell Assay for Transposase Accessible Chromatin (scATAC-seq) is increasingly used at population scale to study how genetic variation shapes chromatin accessibility. Method development is limited by the lack of flexible simulation tools with known ground truth. Here, we present simPIC, a fast, memory-efficient framework for simulating realistic single-cell ATAC-seq count data across individuals and populations. simPIC models cell groups, batch effects, and genotype-dependent accessibility variation, enabling evaluation of population-scale methods, including chromatin accessibility quantitative trait locus mapping. Across multiple datasets and cell types, simPIC closely matches real data distributions while scaling to cohort sizes impractical for current tools.",
+  "abstract_zh": "单细胞转座酶可及染色质分析（scATAC-seq）正日益在群体规模上用于研究遗传变异如何塑造染色质可及性。方法开发受限于缺乏具有已知真实值的灵活模拟工具。在此，我们提出simPIC，一个快速、内存高效的框架，用于模拟跨个体和群体的真实单细胞ATAC-seq计数数据。simPIC模拟细胞群、批次效应和基因型依赖性可及性变异，从而能够评估群体规模方法，包括染色质可及性数量性状基因座定位。在多个数据集和细胞类型中，simPIC紧密匹配真实数据分布，同时扩展到当前工具无法处理的队列规模。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42928215/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42928215/",
+  "paper_page_path": "papers/pubmed/42928215/index.html"
+}

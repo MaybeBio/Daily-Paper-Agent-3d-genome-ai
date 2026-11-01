@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42929553",
+  "title": "Decoding Conformational Dynamics and Hyperactivity of Histone H3K36 N-Methyltransferase in Oncogenic Mutations via tICA and Markov State Modeling.",
+  "authors": "Shah, Tejas; Heidari, Sahar; Rydzewski, Jakub; Torabifard, Hedieh",
+  "journal": "Journal of chemical information and modeling",
+  "published_date": "2026-10-26",
+  "window": {
+    "start": "2026-10-25",
+    "end": "2026-10-31"
+  },
+  "score": 5,
+  "one_liner_zh": "该研究通过全原子分子动力学模拟、tICA和马尔可夫状态模型，揭示NSD2组蛋白甲基转移酶致癌突变通过构象动力学重排增强催化活性的机制，涉及染色质修饰酶与核小体相互作用，但未直接建模染色质三维空间架构，方法可迁移至染色质相关蛋白的构象动力学研究。",
+  "abstract": "NSD2 is a histone methyltransferase that modifies lysine 36 in histone H3 (H3K36), playing a central role in chromatin organization and transcriptional regulation. Oncogenic mutations, such as E1099K and T1150A in NSD2, have been associated with hyperactive methylation, but the molecular mechanisms underlying this gain of function remain poorly understood. In this study, we performed all-atom molecular dynamics simulations of NSD2 bound to the nucleosome in wild type (WT), E1099K, T1150A, and the E1099K/T1150A double mutant. Analysis of MD simulations reveals that the global dynamics of the enzymes remain unaltered upon mutations. The time-lagged independent component analysis and Markov state modeling uncovered fundamental differences in free-energy landscapes among the variants. The WT NSD2 exhibited energetically and kinetically unfavorable transitions between the macrostates along with extended enzyme-substrate distances. On the other hand, the mutant systems demonstrate reduced SAM-H3K36 distances with modified energy landscapes that facilitate transitions or favor prolonged occupancy of catalytically competent states. Importantly, the mutations reorganize the network of intramolecular contacts around the catalytic site, SAM-binding pocket, and histone-binding interface, optimizing substance engagement geometry. These findings are consistent with experimental observations of enhanced catalytic activity and suggest that oncogenic mutations promote hyperactivity through strategic reorganization of conformational dynamics rather than simple destabilization, balancing local flexibility with global stability to enhance catalytic efficiency. Our results provide mechanistic insights into NSD2 dysregulation in cancer and establish a framework to develop novel therapeutics that target the enzyme's dynamic landscape.",
+  "abstract_zh": "NSD2是一种组蛋白甲基转移酶，修饰组蛋白H3中的第36位赖氨酸（H3K36），在染色质组织和转录调控中发挥核心作用。致癌突变，如NSD2中的E1099K和T1150A，与过度活跃的甲基化相关，但这一功能获得背后的分子机制仍知之甚少。在本研究中，我们对野生型（WT）、E1099K、T1150A以及E1099K/T1150A双突变体中与核小体结合的NSD2进行了全原子分子动力学模拟。MD模拟分析显示，突变后酶的全局动力学保持不变。时间滞后独立成分分析和马尔可夫状态建模揭示了各变体之间自由能景观的根本差异。WT NSD2在大状态之间的转变在能量和动力学上均不利，且酶-底物距离延长。另一方面，突变系统表现出减小的SAM-H3K36距离，并具有修饰的能量景观，促进转变或有利于催化活性状态的长时间占据。重要的是，突变重组了催化位点、SAM结合口袋和组蛋白结合界面周围分子内接触的网络，优化了底物结合几何结构。这些发现与增强催化活性的实验观察一致，并表明致癌突变通过构象动力学的战略性重组而非简单去稳定化来促进过度活跃，平衡局部灵活性与全局稳定性以增强催化效率。我们的结果为癌症中NSD2失调提供了机制性见解，并建立了开发靶向该酶动态景观的新型治疗策略的框架。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42929553/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42929553/",
+  "paper_page_path": "papers/pubmed/42929553/index.html"
+}

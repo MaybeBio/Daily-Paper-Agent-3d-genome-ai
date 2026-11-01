@@ -1,0 +1,111 @@
+{
+  "identity": {
+    "pmid": "42958318",
+    "doi": "10.1186/s13059-026-04209-5",
+    "title": "GECSI: large-scale chromatin state imputation from gene expression."
+  },
+  "content": {
+    "abstract": "Chromatin state annotations based on epigenetic marks are powerful resources, but many additional samples have gene expression data available while lacking epigenetic mark data and chromatin state annotations. Using the EpiATLAS resource of the International Human Epigenome Consortium (IHEC), we develop Gene Expression-based Chromatin State Imputation (GECSI), which uses an ensemble of multi-class logistic regression classifiers to predict chromatin state annotations from gene expression data. We show in cross-validation that GECSI accurately predicts observed chromatin state annotations. We also apply GECSI using gene expression data in 449 IHEC additional samples, providing an expanded chromatin state annotation resource.",
+    "keywords": [
+      "Chromatin",
+      "Chromatin states",
+      "Epigenetics",
+      "Epigenomics",
+      "Gene expression",
+      "Genome annotation",
+      "Imputation",
+      "Machine learning"
+    ],
+    "mesh_terms": [
+      "Humans",
+      "*Chromatin/genetics/metabolism",
+      "Epigenesis, Genetic",
+      "Molecular Sequence Annotation",
+      "Epigenomics/methods",
+      "*Gene Expression"
+    ],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Fu, Jingyuan",
+        "Ernst, Jason"
+      ],
+      "short_names": [
+        "Fu J",
+        "Ernst J"
+      ],
+      "auids": [],
+      "affiliations": [
+        "Computer Science Department, University of California, Los Angeles, Los Angeles, CA, 90095, USA.",
+        "Department of Biological Chemistry, University of California, Los Angeles, Los Angeles, CA, 90095, USA.",
+        "Computer Science Department, University of California, Los Angeles, Los Angeles, CA, 90095, USA. jason.ernst@ucla.edu.",
+        "Department of Biological Chemistry, University of California, Los Angeles, Los Angeles, CA, 90095, USA. jason.ernst@ucla.edu.",
+        "Department of Computational Medicine, University of California, Los Angeles, Los Angeles, CA, 90095, USA. jason.ernst@ucla.edu.",
+        "Eli and Edythe Broad Center of Regenerative Medicine and Stem Cell Research at University of California, Los Angeles, Los Angeles, CA, 90095, USA. jason.ernst@ucla.edu.",
+        "Jonsson Comprehensive Cancer Center, University of California, Los Angeles, Los Angeles, CA, 90095, USA. jason.ernst@ucla.edu.",
+        "Molecular Biology Institute, University of California, Los Angeles, Los Angeles, CA, 90095, USA. jason.ernst@ucla.edu."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Fu, Jingyuan",
+        "short_name": "Fu J",
+        "identifiers": [],
+        "affiliations": [
+          "Computer Science Department, University of California, Los Angeles, Los Angeles, CA, 90095, USA.",
+          "Department of Biological Chemistry, University of California, Los Angeles, Los Angeles, CA, 90095, USA."
+        ]
+      },
+      {
+        "full_name": "Ernst, Jason",
+        "short_name": "Ernst J",
+        "identifiers": [],
+        "affiliations": [
+          "Computer Science Department, University of California, Los Angeles, Los Angeles, CA, 90095, USA. jason.ernst@ucla.edu.",
+          "Department of Biological Chemistry, University of California, Los Angeles, Los Angeles, CA, 90095, USA. jason.ernst@ucla.edu.",
+          "Department of Computational Medicine, University of California, Los Angeles, Los Angeles, CA, 90095, USA. jason.ernst@ucla.edu.",
+          "Eli and Edythe Broad Center of Regenerative Medicine and Stem Cell Research at University of California, Los Angeles, Los Angeles, CA, 90095, USA. jason.ernst@ucla.edu.",
+          "Jonsson Comprehensive Cancer Center, University of California, Los Angeles, Los Angeles, CA, 90095, USA. jason.ernst@ucla.edu.",
+          "Molecular Biology Institute, University of California, Los Angeles, Los Angeles, CA, 90095, USA. jason.ernst@ucla.edu."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Genome biology"
+    ],
+    "journal_abbrev": [
+      "Genome Biol"
+    ],
+    "pub_date": "2026 Aug 1",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/30 05:31",
+    "fetched_at": "2026-11-01 11:00:03"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42958318"
+    ],
+    "review": [
+      "42958318"
+    ],
+    "pmc": [
+      "13721437"
+    ],
+    "entrez": {},
+    "external": [],
+    "text_mined": []
+  }
+}

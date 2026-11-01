@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42935097",
+  "title": "Single-cell multi-omics reveals distinct regulatory architectures coordinating carbon assimilation and cyclic electron flow in maize C(4) photosynthesis.",
+  "authors": "Li, Chuanshun; Zhang, You; Lin, Kande; Liu, Xiaojian; Zhang, Hanxiao; Yang, Jianzhao; Zhao, Caiyao; Yang, Leyi; Long, Zhengbiao; Li, Yangmeihui; Deng, Qilin; Ma, Bin; Wei, Tong; Zhong, Silin; Zhu, Xinguang; Li, Pinghua; Pan, Xiaoyong; Tu, Xiaoyu",
+  "journal": "Molecular plant",
+  "published_date": "2026-10-27",
+  "window": {
+    "start": "2026-10-25",
+    "end": "2026-10-31"
+  },
+  "score": 3,
+  "one_liner_zh": "该文利用单细胞多组学解析玉米C4光合作用中碳同化与环式电子流的调控架构，虽涉及染色质可及性和组蛋白修饰，但核心是转录调控与光合功能，未聚焦三维基因组/染色质空间组织建模，且无AI或分子模拟方法。",
+  "abstract": "C(4) photosynthesis arose repeatedly through redeployment of pre-existing regulatory circuitry, yet how a shared regulatory system coordinates its interdependent photosynthetic functions remains unresolved. Here we integrate single-nucleus RNA-seq and sci-ATAC-seq with bulk histone profiles from mesophyll- and bundle sheath-enriched fractions and transcription factor binding profiles obtained in protoplasts. We compare the C(4) shuttle and Calvin-Benson-Bassham cycle with NDH-mediated cyclic electron flow in bundle sheath cells. Selected carbon assimilation loci were associated with differential H3K27me3, whereas the NDH-associated branch showed regulatory inputs linked to DNA binding with one finger (DOF) transcription factors. Dissection of the ZmNdhU promoter identifies a 49 bp DOF-responsive cis element whose activity is sensitive to local sequence context and insertion position in the promoter constructs tested and that supports vascular bundle-associated reporter expression in a heterologous promoter context. Bundle sheath-enriched expression of ZmDOF30 increases NDH-associated expression, cyclic electron flow, leaf ATP content and photosynthetic performance. In a field trial, the transgenic lines showed increased growth and biomass. Comparative analyses revealed lineage-associated variation in predicted promoter-proximal DOF-binding potential within a broader H3K27me3-associated transcription factor background. These findings distinguish regulatory configurations among maize photosynthetic modules and identify DOF-NDH regulation as a candidate route for improving photosynthetic performance in maize, with broader relevance to NADP-ME grasses.",
+  "abstract_zh": "C(4)光合作用通过预先存在的调控回路的重部署而反复出现，然而一个共享的调控系统如何协调其相互依赖的光合功能仍未解决。在此，我们整合了单核RNA-seq和sci-ATAC-seq，以及来自叶肉和束鞘富集组分的批量组蛋白谱和在前原生质体中获得的转录因子结合谱。我们比较了C(4)穿梭和Calvin-Benson-Bassham循环与束鞘细胞中NDH介导的环式电子流。选定的碳同化位点与差异H3K27me3相关，而NDH相关分支显示出与单指DNA结合（DOF）转录因子相关的调控输入。对ZmNdhU启动子的剖析鉴定出一个49 bp的DOF响应顺式元件，其活性对测试的启动子构建体中的局部序列上下文和插入位置敏感，并在异源启动子上下文中支持维管束相关的报告基因表达。束鞘富集的ZmDOF30表达增加了NDH相关表达、环式电子流、叶片ATP含量和光合性能。在田间试验中，转基因品系显示出增加的生长和生物量。比较分析揭示了在更广泛的H3K27me3相关转录因子背景下，谱系相关的预测启动子近端DOF结合潜力变异。这些发现区分了玉米光合模块间的调控配置，并将DOF-NDH调控确定为改善玉米光合性能的候选途径，对NADP-ME禾本科植物具有更广泛的相关性。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42935097/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42935097/",
+  "paper_page_path": "papers/pubmed/42935097/index.html"
+}

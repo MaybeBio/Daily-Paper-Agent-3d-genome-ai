@@ -1,0 +1,88 @@
+{
+  "identity": {
+    "pmid": "42963434",
+    "doi": "10.1007/s10142-026-02097-3",
+    "title": "Host genomic context determines the direction of an oracle-predicted sequence effect: a composition-preserving CpG intervention in Enformer and Borzoi."
+  },
+  "content": {
+    "abstract": "Sequence-to-function models are increasingly used as oracles to score designed regulatory elements, on the untested assumption that an effect measured at one locus holds at another. Taking chromatin and host loci from multiple sclerosis risk regions, we kept four questions apart: sequence realism, transfer of discrimination, edit stability, calibration. A sixth-order Markov chain reproduced the cell-type-specific motif enrichment a trained transformer missed, despite its lower held-out likelihood. Scores differ in level between loci far more than between inserts at one locus, yet inserts selected by an Enformer-derived index kept 85% of their advantage at four unseen loci. Once GC was matched, however, the index separated peak-derived from inaccessible sequence at none of 12 hosts, and from random sequence in opposite directions at different hosts. Placing identical inserts and an identical CpG edit at 24 host loci, the effect varied far beyond sampling noise on host identity alone ([Formula: see text]), unpredicted by 18 host properties. It survives scoring only the bins the insert occupies ([Formula: see text], and across 200 loci), so is no artefact of aggregation; the apparent host dominance, however, falls from 25-fold to 3-fold under that localised score, and the one locus positive under the whole-window score reverses under it. Borzoi reproduced the heterogeneity but not its amplitude, and the objective did not predict lentiMPRA activity. For these two oracles and this edit, the size of a predicted effect depends on where it is measured, and its direction at any one locus is not robust.",
+    "keywords": [
+      "Deep learning",
+      "Enformer",
+      "Genomic context",
+      "Multiple sclerosis",
+      "Regulatory genomics",
+      "Sequence design"
+    ],
+    "mesh_terms": [
+      "Humans",
+      "*CpG Islands",
+      "*Multiple Sclerosis/genetics",
+      "Genomics",
+      "*Models, Genetic",
+      "Chromatin/genetics"
+    ],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Uysal, Selahattin Alperen"
+      ],
+      "short_names": [
+        "Uysal SA"
+      ],
+      "auids": [
+        "ORCID: 0000-0003-3777-6411"
+      ],
+      "affiliations": [
+        "Department of Medical Biology and Genetics, Ege University School of Medicine, Izmir, Turkiye. dralperenuysal@gmail.com."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Uysal, Selahattin Alperen",
+        "short_name": "Uysal SA",
+        "identifiers": [
+          "0000-0003-3777-6411"
+        ],
+        "affiliations": [
+          "Department of Medical Biology and Genetics, Ege University School of Medicine, İzmir, Türkiye. dralperenuysal@gmail.com."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Functional & integrative genomics"
+    ],
+    "journal_abbrev": [
+      "Funct Integr Genomics"
+    ],
+    "pub_date": "2026 Oct 31",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/31 05:32",
+    "fetched_at": "2026-11-01 11:00:03"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42963434"
+    ],
+    "review": [
+      "42963434"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [],
+    "text_mined": []
+  }
+}

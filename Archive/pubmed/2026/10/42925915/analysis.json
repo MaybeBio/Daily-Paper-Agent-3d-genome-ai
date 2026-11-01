@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42925915",
+  "title": "Comparative analysis of KMT2A fusions in human models of acute myeloid leukemia.",
+  "authors": "Safa-Tahar-Henni, Safia; Milan, Thomas; DesCoteaux, Thomas; Roques, Elodie; Bonnet-Magnaval, Florence; Osborne, Michael J; Bresson, Eva; Mathien, Simon; Chazin, Walter J; Hebert, Josee; Borden, Katherine L B; Najmanovich, Rafael; Cellot, Sonia; Barabe, Frederic; Wilhelm, Brian T",
+  "journal": "Experimental hematology",
+  "published_date": "2026-10-25",
+  "window": {
+    "start": "2026-10-25",
+    "end": "2026-10-31"
+  },
+  "score": 3,
+  "one_liner_zh": "该研究比较KMT2A融合AML模型的转录组与表观遗传特征，涉及染色质可及性但无三维基因组/染色质组织建模，且方法以实验测序和药物筛选为主，仅含分子对接模拟，与本课题关联较弱。",
+  "abstract": "Pediatric acute myeloid leukemia (AML) frequently involves chromosomal rearrangements, particularly KMT2A (MLL) gene fusions, with the KMT2A-MLLT4 (KM4-AML) fusion being highly aggressive and associated with poor prognosis. This study presents a comparative analysis of transcriptomic and epigenetic profiles between human leukemia models harboring KM4-AML and KMT2A-MLLT3 (KM3-AML) fusions. Transcriptomic signatures of KM4-AML models closely resembled those of patient samples, underscoring the model's clinical relevance. Epigenetic analysis revealed distinct chromatin accessibility and methylation patterns between KM4-AML and KM3-AML, particularly in enhancer regions linked to aggressive leukemia phenotypes. PROM1 was identified as a potential biomarker for KM4-AML, with its overexpression correlating with poor prognosis. Furthermore, high-throughput drug screening identified dopamine receptor antagonists (DRAs) as promising therapeutic candidates showing selective response for KM4-AML models. Docking simulations and NMR assays confirmed favorable binding interactions between DRAs and S100A8, S100A9 and ANXA6. These findings provide insights into the molecular mechanisms driving KM4-AML and offer potential therapeutic avenues for treatment.",
+  "abstract_zh": "儿童急性髓系白血病（AML）常涉及染色体重排，尤其是KMT2A（MLL）基因融合，其中KMT2A-MLLT4（KM4-AML）融合具有高度侵袭性，并与不良预后相关。本研究对携带KM4-AML和KMT2A-MLLT3（KM3-AML）融合的人白血病模型进行了转录组和表观遗传谱的比较分析。KM4-AML模型的转录组特征与患者样本高度相似，凸显了该模型的临床相关性。表观遗传分析揭示了KM4-AML和KM3-AML之间不同的染色质可及性和甲基化模式，特别是在与侵袭性白血病表型相关的增强子区域。PROM1被确定为KM4-AML的潜在生物标志物，其过表达与不良预后相关。此外，高通量药物筛选鉴定出多巴胺受体拮抗剂（DRAs）作为有前景的治疗候选药物，对KM4-AML模型显示出选择性反应。对接模拟和核磁共振（NMR）实验证实了DRAs与S100A8、S100A9和ANXA6之间的有利结合相互作用。这些发现为驱动KM4-AML的分子机制提供了见解，并为其治疗提供了潜在途径。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42925915/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42925915/",
+  "paper_page_path": "papers/pubmed/42925915/index.html"
+}

@@ -1,0 +1,137 @@
+{
+  "identity": {
+    "pmid": "42928016",
+    "doi": "10.1631/jzus.B2600175",
+    "title": "Population epigenomics of plant DNA methylation: perspectives for molecular breeding."
+  },
+  "content": {
+    "abstract": "DNA methylation, a key epigenetic modification, contributes to regulatory diversity in plants and plays important roles in phenotypic plasticity and environmental adaptation. Recent population epigenomic studies have revealed extensive methylation variation across plant genomes, characterized genomic distribution and genetic architecture, and demonstrated both its dependence on and partial independence from underlying DNA sequence variation. These studies have further linked methylation variation to gene expression regulation, domestication, local adaptation, and complex trait variation through integrative analyses and epigenome-wide association research. Advances in high-throughput sequencing have enabled the generation of population-scale plant methylomes across natural accessions, wild relatives, landraces, and breeding germplasm, providing new avenues to systematically investigate epigenomic diversity and its functional consequences. In parallel, public methylome resources, epigenomic databases, and multi-omics analytical platforms are accelerating comparative and cross-species analyses of plant epigenomic variation. Future efforts that integrate population methylomes with genomics, transcriptomics, chromatin accessibility, three-dimensional genome organization, deep learning-based analytical frameworks, and targeted epigenome editing are expected to facilitate the discovery of epigenetic breeding markers, promoting the application of epigenomic variation in crop improvement.",
+    "keywords": [
+      "DNA methylation",
+      "Epigenome-wide association study",
+      "Gene expression",
+      "Molecular breeding",
+      "Population-scale epigenomics",
+      "Single methylation polymorphism"
+    ],
+    "mesh_terms": [
+      "*DNA Methylation",
+      "*Epigenomics",
+      "*Epigenesis, Genetic",
+      "Genome, Plant",
+      "*Plant Breeding",
+      "*Plants/genetics",
+      "*DNA Shuffling"
+    ],
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Long, Xi",
+        "Zheng, Juyun",
+        "Fang, Lei",
+        "Zhao, Ting"
+      ],
+      "short_names": [
+        "Long X",
+        "Zheng J",
+        "Fang L",
+        "Zhao T"
+      ],
+      "auids": [],
+      "affiliations": [
+        "Zhejiang Provincial Key Laboratory of Crop Genetic Resources, the Advance Seed Institute, Key Laboratory of Plant Factory Generation-adding Breeding, Ministry of Agriculture and Rural Affairs, College of Agriculture and Biotechnology, Zhejiang University, Hangzhou 310058, China.",
+        "Cotton Research Institute, Xinjiang Academy of Agricultural Sciences, Key Laboratory of Cotton Genetic Improvement and Smart Production of Xinjiang, Urumqi 830091, China.",
+        "Zhejiang Provincial Key Laboratory of Crop Genetic Resources, the Advance Seed Institute, Key Laboratory of Plant Factory Generation-adding Breeding, Ministry of Agriculture and Rural Affairs, College of Agriculture and Biotechnology, Zhejiang University, Hangzhou 310058, China.",
+        "Zhejiang Provincial Key Laboratory of Crop Genetic Resources, the Advance Seed Institute, Key Laboratory of Plant Factory Generation-adding Breeding, Ministry of Agriculture and Rural Affairs, College of Agriculture and Biotechnology, Zhejiang University, Hangzhou 310058, China. 0618041@zju.edu.cn."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Long, Xi",
+        "short_name": "Long X",
+        "identifiers": [],
+        "affiliations": [
+          "Zhejiang Provincial Key Laboratory of Crop Genetic Resources, the Advance Seed Institute, Key Laboratory of Plant Factory Generation-adding Breeding, Ministry of Agriculture and Rural Affairs, College of Agriculture and Biotechnology, Zhejiang University, Hangzhou 310058, China."
+        ]
+      },
+      {
+        "full_name": "Zheng, Juyun",
+        "short_name": "Zheng J",
+        "identifiers": [],
+        "affiliations": [
+          "Cotton Research Institute, Xinjiang Academy of Agricultural Sciences, Key Laboratory of Cotton Genetic Improvement and Smart Production of Xinjiang, Urumqi 830091, China."
+        ]
+      },
+      {
+        "full_name": "Fang, Lei",
+        "short_name": "Fang L",
+        "identifiers": [],
+        "affiliations": [
+          "Zhejiang Provincial Key Laboratory of Crop Genetic Resources, the Advance Seed Institute, Key Laboratory of Plant Factory Generation-adding Breeding, Ministry of Agriculture and Rural Affairs, College of Agriculture and Biotechnology, Zhejiang University, Hangzhou 310058, China."
+        ]
+      },
+      {
+        "full_name": "Zhao, Ting",
+        "short_name": "Zhao T",
+        "identifiers": [],
+        "affiliations": [
+          "Zhejiang Provincial Key Laboratory of Crop Genetic Resources, the Advance Seed Institute, Key Laboratory of Plant Factory Generation-adding Breeding, Ministry of Agriculture and Rural Affairs, College of Agriculture and Biotechnology, Zhejiang University, Hangzhou 310058, China. 0618041@zju.edu.cn."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Journal of Zhejiang University. Science. B"
+    ],
+    "journal_abbrev": [
+      "J Zhejiang Univ Sci B"
+    ],
+    "pub_date": "2026 Oct 23",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/25 23:29",
+    "fetched_at": "2026-11-01 11:00:03"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42928016"
+    ],
+    "review": [
+      "42928016"
+    ],
+    "pmc": [
+      "13696095"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/pmid/42928016/",
+        "provider": "PubMed Central",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "http://www.jzus.zju.edu.cn/article.php?doi=10.1631/jzus.B2600175",
+        "provider": "Zhejiang University Press",
+        "category": "Full Text Sources",
+        "attribute": "subscription/membership/fee required",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

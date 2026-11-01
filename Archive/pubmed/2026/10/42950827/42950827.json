@@ -1,0 +1,159 @@
+{
+  "identity": {
+    "pmid": "42950827",
+    "doi": "10.1016/j.cels.2026.101761",
+    "title": "A systematic delineation of 3'UTR regulatory elements and their contextual associations."
+  },
+  "content": {
+    "abstract": "The 3'UTR encodes regulatory information that shapes transcript abundance and subcellular distribution, yet the underlying sequence rules remain incompletely defined. We quantified the effects of  approximately 2 million synthetic 3'UTR inserts in A549 and HCT116 cells on RNA output and nuclear-cytoplasmic partitioning. We identified a broad repertoire of short 2- to 8-nt elements. Their effects largely followed a dominant coupled axis linking high RNA output with cytoplasmic enrichment and low RNA output with nuclear enrichment and were predominantly additive. A context-aware deep learning model captures most of this behavior while revealing that strong context dependence is uncommon and emerges mainly in rare, extreme contexts consistent with higher-order constraints. Applying the model to ClinVar 3'UTR variants prioritizes a subset of pathogenic single-nucleotide variants (SNVs) with aberrant predicted effects, frequently explained by creation or disruption of splice-site-like U1 motifs that can trigger telescripting-associated readthrough, highlighting a potent route to 3'UTR-driven disease mechanisms. A record of this paper's transparent peer review process is included in the supplemental information.",
+    "keywords": [
+      "3'UTR",
+      "RNA biology",
+      "RNA localization",
+      "U1 telescripting",
+      "gene regulation",
+      "machine learning",
+      "massively parallel reporter assay"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Liang, Nan",
+        "Li, Jing-Yi",
+        "Ding, Yang",
+        "Wang, Yu",
+        "Champer, Jackson",
+        "Ren, Li-Chen",
+        "Gao, Ge"
+      ],
+      "short_names": [
+        "Liang N",
+        "Li JY",
+        "Ding Y",
+        "Wang Y",
+        "Champer J",
+        "Ren LC",
+        "Gao G"
+      ],
+      "auids": [],
+      "affiliations": [
+        "State Key Laboratory of Gene Function and Modulation Research, School of Life Sciences, Biomedical Pioneering Innovation Center (BIOPIC) and Beijing Advanced Innovation Center for Genomics (ICG), Peking University, Beijing 100871, China; Center for Bioinformatics (CBI), Peking University, Beijing 100871, China.",
+        "State Key Laboratory of Gene Function and Modulation Research, School of Life Sciences, Biomedical Pioneering Innovation Center (BIOPIC) and Beijing Advanced Innovation Center for Genomics (ICG), Peking University, Beijing 100871, China; Center for Bioinformatics (CBI), Peking University, Beijing 100871, China.",
+        "State Key Laboratory of Gene Function and Modulation Research, School of Life Sciences, Biomedical Pioneering Innovation Center (BIOPIC) and Beijing Advanced Innovation Center for Genomics (ICG), Peking University, Beijing 100871, China; Center for Bioinformatics (CBI), Peking University, Beijing 100871, China.",
+        "State Key Laboratory of Gene Function and Modulation Research, School of Life Sciences, Biomedical Pioneering Innovation Center (BIOPIC) and Beijing Advanced Innovation Center for Genomics (ICG), Peking University, Beijing 100871, China; Center for Bioinformatics (CBI), Peking University, Beijing 100871, China.",
+        "Center for Bioinformatics (CBI), Peking University, Beijing 100871, China; Center for Life Sciences, Peking University, Beijing 100871, China. Electronic address: jchamper@pku.edu.cn.",
+        "State Key Laboratory of Gene Function and Modulation Research, School of Life Sciences, Biomedical Pioneering Innovation Center (BIOPIC) and Beijing Advanced Innovation Center for Genomics (ICG), Peking University, Beijing 100871, China; Center for Bioinformatics (CBI), Peking University, Beijing 100871, China. Electronic address: renlc@mail.cbi.pku.edu.cn.",
+        "State Key Laboratory of Gene Function and Modulation Research, School of Life Sciences, Biomedical Pioneering Innovation Center (BIOPIC) and Beijing Advanced Innovation Center for Genomics (ICG), Peking University, Beijing 100871, China; Center for Bioinformatics (CBI), Peking University, Beijing 100871, China. Electronic address: gaog@mail.cbi.pku.edu.cn."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Liang, Nan",
+        "short_name": "Liang N",
+        "identifiers": [],
+        "affiliations": [
+          "State Key Laboratory of Gene Function and Modulation Research, School of Life Sciences, Biomedical Pioneering Innovation Center (BIOPIC) and Beijing Advanced Innovation Center for Genomics (ICG), Peking University, Beijing 100871, China; Center for Bioinformatics (CBI), Peking University, Beijing 100871, China."
+        ]
+      },
+      {
+        "full_name": "Li, Jing-Yi",
+        "short_name": "Li JY",
+        "identifiers": [],
+        "affiliations": [
+          "State Key Laboratory of Gene Function and Modulation Research, School of Life Sciences, Biomedical Pioneering Innovation Center (BIOPIC) and Beijing Advanced Innovation Center for Genomics (ICG), Peking University, Beijing 100871, China; Center for Bioinformatics (CBI), Peking University, Beijing 100871, China."
+        ]
+      },
+      {
+        "full_name": "Ding, Yang",
+        "short_name": "Ding Y",
+        "identifiers": [],
+        "affiliations": [
+          "State Key Laboratory of Gene Function and Modulation Research, School of Life Sciences, Biomedical Pioneering Innovation Center (BIOPIC) and Beijing Advanced Innovation Center for Genomics (ICG), Peking University, Beijing 100871, China; Center for Bioinformatics (CBI), Peking University, Beijing 100871, China."
+        ]
+      },
+      {
+        "full_name": "Wang, Yu",
+        "short_name": "Wang Y",
+        "identifiers": [],
+        "affiliations": [
+          "State Key Laboratory of Gene Function and Modulation Research, School of Life Sciences, Biomedical Pioneering Innovation Center (BIOPIC) and Beijing Advanced Innovation Center for Genomics (ICG), Peking University, Beijing 100871, China; Center for Bioinformatics (CBI), Peking University, Beijing 100871, China."
+        ]
+      },
+      {
+        "full_name": "Champer, Jackson",
+        "short_name": "Champer J",
+        "identifiers": [],
+        "affiliations": [
+          "Center for Bioinformatics (CBI), Peking University, Beijing 100871, China; Center for Life Sciences, Peking University, Beijing 100871, China. Electronic address: jchamper@pku.edu.cn."
+        ]
+      },
+      {
+        "full_name": "Ren, Li-Chen",
+        "short_name": "Ren LC",
+        "identifiers": [],
+        "affiliations": [
+          "State Key Laboratory of Gene Function and Modulation Research, School of Life Sciences, Biomedical Pioneering Innovation Center (BIOPIC) and Beijing Advanced Innovation Center for Genomics (ICG), Peking University, Beijing 100871, China; Center for Bioinformatics (CBI), Peking University, Beijing 100871, China. Electronic address: renlc@mail.cbi.pku.edu.cn."
+        ]
+      },
+      {
+        "full_name": "Gao, Ge",
+        "short_name": "Gao G",
+        "identifiers": [],
+        "affiliations": [
+          "State Key Laboratory of Gene Function and Modulation Research, School of Life Sciences, Biomedical Pioneering Innovation Center (BIOPIC) and Beijing Advanced Innovation Center for Genomics (ICG), Peking University, Beijing 100871, China; Center for Bioinformatics (CBI), Peking University, Beijing 100871, China. Electronic address: gaog@mail.cbi.pku.edu.cn."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Cell systems"
+    ],
+    "journal_abbrev": [
+      "Cell Syst"
+    ],
+    "pub_date": "2026 Oct 28",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/28 23:27",
+    "fetched_at": "2026-11-01 11:00:03"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42950827"
+    ],
+    "review": [
+      "42950827"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://linkinghub.elsevier.com/retrieve/pii/S2405-4712(26)00243-7",
+        "provider": "Elsevier Science",
+        "category": "Full Text Sources",
+        "attribute": "subscription/membership/fee required",
+        "linkname": ""
+      },
+      {
+        "url": "https://antibodies.cancer.gov/detail/CPTC-NT5E-1",
+        "provider": "NCI CPTC Antibody Characterization Program",
+        "category": "Research Materials",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

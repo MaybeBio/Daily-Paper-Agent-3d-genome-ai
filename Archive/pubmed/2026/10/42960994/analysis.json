@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42960994",
+  "title": "Cross-task benchmarking reveals variable transferability of deep learning models across molecular quantitative trait loci.",
+  "authors": "Chen, Sihan; Wang, Xiaoyu; Peleg, Anton Y; Xu, Shuting; Li, Fuyi; Webb, Geoffrey I; Song, Jiangning",
+  "journal": "Briefings in bioinformatics",
+  "published_date": "2026-10-30",
+  "window": {
+    "start": "2026-10-25",
+    "end": "2026-10-31"
+  },
+  "score": 6,
+  "one_liner_zh": "该文系统评估了深度学习模型在多种分子QTL（含染色质可及性、染色质环等）预测中的跨任务迁移能力，虽以QTL预测为主而非直接建模染色质三维结构，但涉及染色质组织相关调控特征且采用AI方法，对本课题有方法学参考价值。",
+  "abstract": "Most genetic variants associated with complex traits reside in non-coding regions of the genome, complicating their functional interpretation. Recent deep learning models have advanced the prediction of expression quantitative trait loci (eQTLs), but whether these models generalize across diverse molecular phenotypes is unknown. Here, we assess the cross-task transferability of pretrained regulatory features from six representative sequence- and annotation-based models across nine classes of molecular quantitative trait loci (xQTLs). We observe that while all models perform well in eQTL prediction, their performance varies substantially across other xQTL predictions. Chromatin accessibility, transcription factor binding, and histone QTLs are generally well predicted, whereas chromatin looping and microRNA expression QTLs remain challenging. Foundation models, particularly AlphaGenome and Borzoi, consistently outperform models based on local sequence context and exhibit improved robustness across class-imbalance settings. Tree-based ensemble classifiers further enhance predictive performance, suggesting that nonlinear interactions among regulatory features contribute substantially to variant prioritization. Applying AlphaGenome and Borzoi to coronary artery disease-associated genome-wide association studies loci identifies 337 high-confidence candidate chromatin accessibility QTLs, including 11 previously reported and 326 candidates that display significantly larger allele-specific differences in predicted chromatin accessibility signals. Collectively, our results reveal substantial variability in the cross-task performance of current eQTL-centric models, highlight the advantages of long-range genomic representations and inform the prioritization of candidate regulatory variants contributing to complex diseases.",
+  "abstract_zh": "与复杂性状相关的大多数遗传变异位于基因组的非编码区域，这使其功能解读变得复杂。最近的深度学习模型在预测表达数量性状位点（eQTLs）方面取得了进展，但这些模型是否能跨不同的分子表型进行泛化尚不清楚。在此，我们评估了来自六个代表性序列和注释基础模型的预训练调控特征在九类分子数量性状位点（xQTLs）上的跨任务可迁移性。我们观察到，尽管所有模型在eQTL预测中表现良好，但它们在其它xQTL预测中的性能差异显著。染色质可及性、转录因子结合和组蛋白QTLs通常预测良好，而染色质环化和microRNA表达QTLs仍具挑战性。基础模型，特别是AlphaGenome和Borzoi，始终优于基于局部序列上下文的模型，并在类别不平衡设置中表现出更强的鲁棒性。基于树的集成分类器进一步增强了预测性能，表明调控特征之间的非线性交互对变异优先级排序有显著贡献。将AlphaGenome和Borzoi应用于冠状动脉疾病相关的全基因组关联研究位点，识别出337个高置信度候选染色质可及性QTLs，其中包括11个先前报道的和326个在预测染色质可及性信号中表现出显著更大等位基因特异性差异的候选位点。总体而言，我们的结果揭示了当前以eQTL为中心的模型在跨任务性能上的显著变异性，强调了长程基因组表征的优势，并为复杂疾病相关候选调控变异的优先级排序提供了信息。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42960994/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42960994/",
+  "paper_page_path": "papers/pubmed/42960994/index.html"
+}

@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42932848",
+  "title": "EpiInsula: calibrated regression of the Hi-C insulation score from cell-type-specific epigenomic signal.",
+  "authors": "Jin, Yuyu; Chen, Tong; Gao, Jie; Tong, Mengyao; Xu, Guangcheng; Zhang, Xueyu; Liu, Weixu; Shen, Yin",
+  "journal": "Briefings in bioinformatics",
+  "published_date": "2026-10-26",
+  "window": {
+    "start": "2026-10-25",
+    "end": "2026-10-31"
+  },
+  "score": 8,
+  "one_liner_zh": "EpiInsula 用扩张卷积从细胞类型特异的表观基因组信号连续回归预测 Hi-C 绝缘分数（insulation score），直接建模染色质边界/绝缘这一三维基因组组织特征，属 AI 方法驱动的染色质空间架构预测。",
+  "abstract": "Chromatin insulation shapes which regulatory elements can reach which promoters, but much computational prediction of chromatin organisation has been posed as boundary classification, which discards the depth and shape of the insulation profile. We developed EpiInsula, a dilated convolutional framework that predicts the 10-kb Hi-C insulation score as a continuous quantity from six cell-type-specific epigenomic tracks read over a +/-700-kb window. Under a chromosome-disjoint partition that scores every evaluated locus with a model which never saw its chromosome, held-out correlations across four human cell lines are 0.791, 0.780, 0.860 and 0.774, and the regression of measured on predicted insulation has slopes of 0.90-0.95, indicating calibration of the conditional mean, the sense used throughout. Against seven methods fitted under a single evaluation contract, EpiInsula gives the highest correlation and, with boundary thresholds selected on validation chromosomes and frozen before testing, the highest boundary F1 against 4D Nucleome calls in every cell line; the lead is retained on the fine-scale component of the profile, and three published contact-map predictors retrained on the same data give lower correlation on the derived insulation score. On boundaries that differ between IMR-90 and K562 it recovers 0.383 of the contrasts against 0.024-0.264 for all seven comparison methods; it ranks first at every point of a 25-point threshold grid and in all six cell-line pairs, and the remaining methods are ranked differently from pooled correlation. EpiInsula provides a framework for predicting chromatin organisation on a continuous scale from routinely available epigenomic assays. Availability: https://github.com/Yin-Shen/EpiInsula.",
+  "abstract_zh": "染色质绝缘决定了哪些调控元件能够接触到哪些启动子，但许多关于染色质组织的计算预测被设定为边界分类问题，这丢弃了绝缘剖面的深度和形状。我们开发了EpiInsula，一个扩张卷积框架，从读取±700-kb窗口内的六种细胞类型特异性表观基因组轨道中，将10-kb Hi-C绝缘分数预测为连续量。在染色体不相交划分下，每个评估位点均由从未见过其染色体的模型评分，四个人类细胞系中的留出相关性分别为0.791、0.780、0.860和0.774，且实测对预测绝缘的回归斜率在0.90-0.95之间，表明条件均值的校准，这是全文使用的含义。与在单一评估合同下拟合的七种方法相比，EpiInsula给出最高相关性，并且在验证染色体上选择边界阈值并在测试前冻结的情况下，在每个细胞系中针对4D Nucleome调用获得最高边界F1分数；该领先优势在剖面的细尺度成分上得以保留，三种已发表的接触图预测器在相同数据上重新训练后，在派生绝缘分数上给出较低相关性。在IMR-90和K562之间不同的边界上，它恢复了0.383的对比度，而所有七种比较方法仅为0.024-0.264；它在25点阈值网格的每一点以及所有六个细胞系对中均排名第一，而其余方法的排名与合并相关性不同。EpiInsula提供了一个框架，用于从常规可用的表观基因组测定中连续尺度预测染色质组织。可用性：https://github.com/Yin-Shen/EpiInsula。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42932848/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42932848/",
+  "paper_page_path": "papers/pubmed/42932848/index.html"
+}

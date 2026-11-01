@@ -1,0 +1,130 @@
+{
+  "identity": {
+    "pmid": "42960511",
+    "doi": "10.1093/nar/gkag983",
+    "title": "Data analysis of experimentally solved nucleosome arrays reveals heterogeneous features."
+  },
+  "content": {
+    "abstract": "Atomic-resolution nucleosome array structures have provided invaluable information on eukaryotic genome packing. Although these arrays are often obtained for regular fibers with designed sequences, such information complements in vivo genome organization data and modeling studies. Here, we analyze such systems with a focus on chromatin organization. We highlight both robust and unique features, as well as suitable average values for coarse-grained modeling, such as the relative orientation and positioning of neighboring nucleosomes, and opening of the linker DNA. Our associated web resource (https://www.biomath.nyu.edu/chromstruct/) shares these collected systems and provides tools for their analysis. The heterogeneous features exhibit a wide range of geometrical properties that depend on linker DNA length, core histone protein variants, auxiliary protein binding, and fiber interdigitation. Yet experimental fiber geometries can be reproduced reasonably using average parameters, as demonstrated here by simulations with our mesoscale model for regular fibers and as reported separately for life-like systems with epigenetic marks. Such analysis may also be useful for modular design of chromatin fibers. The structural characterization of these chromatin building blocks provides new insights into the regulation of chromatin architecture and has implications for the modular design of chromatin fibers.",
+    "keywords": [],
+    "mesh_terms": [
+      "*Nucleosomes/chemistry/genetics/metabolism",
+      "Histones/chemistry/metabolism/genetics",
+      "DNA/chemistry/genetics",
+      "Chromatin/chemistry/genetics",
+      "Models, Molecular",
+      "Nucleic Acid Conformation",
+      "Animals"
+    ],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Portillo-Ledesma, Stephanie",
+        "Li, Zilong",
+        "Franowicz, Elijah",
+        "Schlick, Tamar"
+      ],
+      "short_names": [
+        "Portillo-Ledesma S",
+        "Li Z",
+        "Franowicz E",
+        "Schlick T"
+      ],
+      "auids": [
+        "ORCID: 0000-0002-5134-7026",
+        "ORCID: 0000-0002-2392-2062"
+      ],
+      "affiliations": [
+        "Department of Chemistry, 100 Washington Square East, Silver Building, New York University, New York, NY 10003, United States.",
+        "Simons Center for Computational Physical Chemistry, 24 Waverly Place, Silver Building, New York University, New York, NY 10003, United States.",
+        "Department of Chemistry, 100 Washington Square East, Silver Building, New York University, New York, NY 10003, United States.",
+        "Simons Center for Computational Physical Chemistry, 24 Waverly Place, Silver Building, New York University, New York, NY 10003, United States.",
+        "Department of Chemistry, 100 Washington Square East, Silver Building, New York University, New York, NY 10003, United States.",
+        "Department of Chemistry, 100 Washington Square East, Silver Building, New York University, New York, NY 10003, United States.",
+        "Courant Institute School of Mathematics, Computing, and Data Science, New York University, 251 Mercer St., New York, NY 10012, United States.",
+        "New York University-East China Normal University Center for Computational Chemistry, New York University Shanghai, Shanghai 200122, China.",
+        "Simons Center for Computational Physical Chemistry, 24 Waverly Place, Silver Building, New York University, New York, NY 10003, United States."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Portillo-Ledesma, Stephanie",
+        "short_name": "Portillo-Ledesma S",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Chemistry, 100 Washington Square East, Silver Building, New York University, New York, NY 10003, United States.",
+          "Simons Center for Computational Physical Chemistry, 24 Waverly Place, Silver Building, New York University, New York, NY 10003, United States."
+        ]
+      },
+      {
+        "full_name": "Li, Zilong",
+        "short_name": "Li Z",
+        "identifiers": [
+          "0000-0002-5134-7026"
+        ],
+        "affiliations": [
+          "Department of Chemistry, 100 Washington Square East, Silver Building, New York University, New York, NY 10003, United States.",
+          "Simons Center for Computational Physical Chemistry, 24 Waverly Place, Silver Building, New York University, New York, NY 10003, United States."
+        ]
+      },
+      {
+        "full_name": "Franowicz, Elijah",
+        "short_name": "Franowicz E",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Chemistry, 100 Washington Square East, Silver Building, New York University, New York, NY 10003, United States."
+        ]
+      },
+      {
+        "full_name": "Schlick, Tamar",
+        "short_name": "Schlick T",
+        "identifiers": [
+          "0000-0002-2392-2062"
+        ],
+        "affiliations": [
+          "Department of Chemistry, 100 Washington Square East, Silver Building, New York University, New York, NY 10003, United States.",
+          "Courant Institute School of Mathematics, Computing, and Data Science, New York University, 251 Mercer St., New York, NY 10012, United States.",
+          "New York University-East China Normal University Center for Computational Chemistry, New York University Shanghai, Shanghai 200122, China.",
+          "Simons Center for Computational Physical Chemistry, 24 Waverly Place, Silver Building, New York University, New York, NY 10003, United States."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Nucleic acids research"
+    ],
+    "journal_abbrev": [
+      "Nucleic Acids Res"
+    ],
+    "pub_date": "2026 Oct 24",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/30 11:41",
+    "fetched_at": "2026-11-01 11:00:03"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42960511"
+    ],
+    "review": [
+      "42960511"
+    ],
+    "pmc": [
+      "13720507"
+    ],
+    "entrez": {},
+    "external": [],
+    "text_mined": []
+  }
+}

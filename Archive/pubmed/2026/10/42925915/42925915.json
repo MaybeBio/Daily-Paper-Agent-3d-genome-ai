@@ -1,0 +1,259 @@
+{
+  "identity": {
+    "pmid": "42925915",
+    "doi": "10.1016/j.exphem.2026.105955",
+    "title": "Comparative analysis of KMT2A fusions in human models of acute myeloid leukemia."
+  },
+  "content": {
+    "abstract": "Pediatric acute myeloid leukemia (AML) frequently involves chromosomal rearrangements, particularly KMT2A (MLL) gene fusions, with the KMT2A-MLLT4 (KM4-AML) fusion being highly aggressive and associated with poor prognosis. This study presents a comparative analysis of transcriptomic and epigenetic profiles between human leukemia models harboring KM4-AML and KMT2A-MLLT3 (KM3-AML) fusions. Transcriptomic signatures of KM4-AML models closely resembled those of patient samples, underscoring the model's clinical relevance. Epigenetic analysis revealed distinct chromatin accessibility and methylation patterns between KM4-AML and KM3-AML, particularly in enhancer regions linked to aggressive leukemia phenotypes. PROM1 was identified as a potential biomarker for KM4-AML, with its overexpression correlating with poor prognosis. Furthermore, high-throughput drug screening identified dopamine receptor antagonists (DRAs) as promising therapeutic candidates showing selective response for KM4-AML models. Docking simulations and NMR assays confirmed favorable binding interactions between DRAs and S100A8, S100A9 and ANXA6. These findings provide insights into the molecular mechanisms driving KM4-AML and offer potential therapeutic avenues for treatment.",
+    "keywords": [
+      "KMT2A-AML",
+      "KMT2A-MLLT4",
+      "NMR",
+      "drug screen",
+      "selectivity drug activity"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Safa-Tahar-Henni, Safia",
+        "Milan, Thomas",
+        "DesCoteaux, Thomas",
+        "Roques, Elodie",
+        "Bonnet-Magnaval, Florence",
+        "Osborne, Michael J",
+        "Bresson, Eva",
+        "Mathien, Simon",
+        "Chazin, Walter J",
+        "Hebert, Josee",
+        "Borden, Katherine L B",
+        "Najmanovich, Rafael",
+        "Cellot, Sonia",
+        "Barabe, Frederic",
+        "Wilhelm, Brian T"
+      ],
+      "short_names": [
+        "Safa-Tahar-Henni S",
+        "Milan T",
+        "DesCoteaux T",
+        "Roques E",
+        "Bonnet-Magnaval F",
+        "Osborne MJ",
+        "Bresson E",
+        "Mathien S",
+        "Chazin WJ",
+        "Hebert J",
+        "Borden KLB",
+        "Najmanovich R",
+        "Cellot S",
+        "Barabe F",
+        "Wilhelm BT"
+      ],
+      "auids": [],
+      "affiliations": [
+        "Laboratory for High Throughput Biology; Institute for Research in Immunology and Cancer, Montreal, Quebec, Canada.",
+        "Laboratory for High Throughput Biology; Institute for Research in Immunology and Cancer, Montreal, Quebec, Canada.",
+        "Department of Pharmacology and Physiology, Faculty of Medicine, Universite de Montreal, Montreal, Quebec, Canada.",
+        "Laboratory for High Throughput Biology; Institute for Research in Immunology and Cancer, Montreal, Quebec, Canada.",
+        "Laboratory for High Throughput Biology; Institute for Research in Immunology and Cancer, Montreal, Quebec, Canada.",
+        "Institute for Research in Immunology and Cancer, Montreal, Quebec, Canada; Biophysics platform.",
+        "Centre de recherche en infectiologie du CHUL, Centre de recherche du CHU de Quebec - Universite Laval, Quebec City, Quebec, Canada.",
+        "Institute for Research in Immunology and Cancer, Montreal, Quebec, Canada; High throughput screening platform.",
+        "Department of Biochemistry, Vanderbilt University. Nashville, Tennessee, USA.",
+        "Institut universitaire d'hemato-oncologie et de therapie cellulaire, Maisonneuve-Rosemont Hospital, Montreal, QC, Canada; Quebec Leukemia Cell Bank, Maisonneuve-Rosemont Hospital Research Center, Montreal, QC, Canada; Department of Medicine, Faculty of Medicine, Universite de Montreal, Montreal, Quebec, Canada.",
+        "Department of Pharmacology and Robert H. Lurie Cancer Centre, Northwestern University, Chicago, Illinois, USA.",
+        "Department of Pharmacology and Physiology, Faculty of Medicine, Universite de Montreal, Montreal, Quebec, Canada.",
+        "Faculty of Medicine, Faculty of Pharmacy, University of Montreal, Montreal, QC, Canada.",
+        "Department of Pharmacology and Physiology, Faculty of Medicine, Universite de Montreal, Montreal, Quebec, Canada; Department of Medicine, Universite Laval, Quebec City, Quebec, Canada.",
+        "Laboratory for High Throughput Biology; Institute for Research in Immunology and Cancer, Montreal, Quebec, Canada; Department of Medicine, Faculty of Medicine, Universite de Montreal, Montreal, Quebec, Canada. Electronic address: brian.wilhelm@umontreal.ca."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Safa-Tahar-Henni, Safia",
+        "short_name": "Safa-Tahar-Henni S",
+        "identifiers": [],
+        "affiliations": [
+          "Laboratory for High Throughput Biology; Institute for Research in Immunology and Cancer, Montréal, Québec, Canada."
+        ]
+      },
+      {
+        "full_name": "Milan, Thomas",
+        "short_name": "Milan T",
+        "identifiers": [],
+        "affiliations": [
+          "Laboratory for High Throughput Biology; Institute for Research in Immunology and Cancer, Montréal, Québec, Canada."
+        ]
+      },
+      {
+        "full_name": "DesCôteaux, Thomas",
+        "short_name": "DesCôteaux T",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Pharmacology and Physiology, Faculty of Medicine, Université de Montréal, Montréal, Québec, Canada."
+        ]
+      },
+      {
+        "full_name": "Roques, Élodie",
+        "short_name": "Roques É",
+        "identifiers": [],
+        "affiliations": [
+          "Laboratory for High Throughput Biology; Institute for Research in Immunology and Cancer, Montréal, Québec, Canada."
+        ]
+      },
+      {
+        "full_name": "Bonnet-Magnaval, Florence",
+        "short_name": "Bonnet-Magnaval F",
+        "identifiers": [],
+        "affiliations": [
+          "Laboratory for High Throughput Biology; Institute for Research in Immunology and Cancer, Montréal, Québec, Canada."
+        ]
+      },
+      {
+        "full_name": "Osborne, Michael J",
+        "short_name": "Osborne MJ",
+        "identifiers": [],
+        "affiliations": [
+          "Institute for Research in Immunology and Cancer, Montréal, Québec, Canada; Biophysics platform."
+        ]
+      },
+      {
+        "full_name": "Bresson, Eva",
+        "short_name": "Bresson E",
+        "identifiers": [],
+        "affiliations": [
+          "Centre de recherche en infectiologie du CHUL, Centre de recherche du CHU de Québec - Université Laval, Québec City, Québec, Canada."
+        ]
+      },
+      {
+        "full_name": "Mathien, Simon",
+        "short_name": "Mathien S",
+        "identifiers": [],
+        "affiliations": [
+          "Institute for Research in Immunology and Cancer, Montréal, Québec, Canada; High throughput screening platform."
+        ]
+      },
+      {
+        "full_name": "Chazin, Walter J",
+        "short_name": "Chazin WJ",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Biochemistry, Vanderbilt University. Nashville, Tennessee, USA."
+        ]
+      },
+      {
+        "full_name": "Hébert, Josée",
+        "short_name": "Hébert J",
+        "identifiers": [],
+        "affiliations": [
+          "Institut universitaire d'hémato-oncologie et de thérapie cellulaire, Maisonneuve-Rosemont Hospital, Montréal, QC, Canada; Quebec Leukemia Cell Bank, Maisonneuve-Rosemont Hospital Research Center, Montréal, QC, Canada; Department of Medicine, Faculty of Medicine, Université de Montréal, Montréal, Québec, Canada."
+        ]
+      },
+      {
+        "full_name": "Borden, Katherine L B",
+        "short_name": "Borden KLB",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Pharmacology and Robert H. Lurie Cancer Centre, Northwestern University, Chicago, Illinois, USA."
+        ]
+      },
+      {
+        "full_name": "Najmanovich, Rafael",
+        "short_name": "Najmanovich R",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Pharmacology and Physiology, Faculty of Medicine, Université de Montréal, Montréal, Québec, Canada."
+        ]
+      },
+      {
+        "full_name": "Cellot, Sonia",
+        "short_name": "Cellot S",
+        "identifiers": [],
+        "affiliations": [
+          "Faculty of Medicine, Faculty of Pharmacy, University of Montréal, Montréal, QC, Canada."
+        ]
+      },
+      {
+        "full_name": "Barabé, Frédéric",
+        "short_name": "Barabé F",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Pharmacology and Physiology, Faculty of Medicine, Université de Montréal, Montréal, Québec, Canada; Department of Medicine, Université Laval, Quebec City, Québec, Canada."
+        ]
+      },
+      {
+        "full_name": "Wilhelm, Brian T",
+        "short_name": "Wilhelm BT",
+        "identifiers": [],
+        "affiliations": [
+          "Laboratory for High Throughput Biology; Institute for Research in Immunology and Cancer, Montréal, Québec, Canada; Department of Medicine, Faculty of Medicine, Université de Montréal, Montréal, Québec, Canada. Electronic address: brian.wilhelm@umontreal.ca."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Experimental hematology"
+    ],
+    "journal_abbrev": [
+      "Exp Hematol"
+    ],
+    "pub_date": "2026 Oct 24",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/10/25 03:36",
+    "fetched_at": "2026-11-01 11:00:03"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42925915"
+    ],
+    "review": [
+      "42925915"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://linkinghub.elsevier.com/retrieve/pii/S0301-472X(26)00588-6",
+        "provider": "Elsevier Science",
+        "category": "Full Text Sources",
+        "attribute": "subscription/membership/fee required",
+        "linkname": ""
+      },
+      {
+        "url": "https://antibodies.cancer.gov/detail/CPTC-PROM1-2",
+        "provider": "NCI CPTC Antibody Characterization Program",
+        "category": "Research Materials",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://assays.cancer.gov/non-CPTAC-1155",
+        "provider": "NCI CPTAC Assay Portal",
+        "category": "Miscellaneous",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://www.clinicalkey.com/content/playBy/pii?v=S0301-472X(26)00588-6",
+        "provider": "ClinicalKey",
+        "category": "Full Text Sources",
+        "attribute": "subscription/membership/fee required",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

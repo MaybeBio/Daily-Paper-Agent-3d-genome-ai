@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>XChrom: A Cross-Cell Chromatin Accessibility Prediction Model Integrating Genomic Sequence and Cellular Context. · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-mid">6</span>
+    <div>
+      <h1>XChrom: A Cross-Cell Chromatin Accessibility Prediction Model Integrating Genomic Sequence and Cellular Context.</h1>
+      <div class="meta">Miao, Yuanyuan; Liang, Xuan; Zhang, Wenwen; Han, Dongmei; Li, Yurun; Wang, Zhen</div>
+      <div class="meta muted">
+        
+        <span class="journal">Advanced science (Weinheim, Baden-Wurttemberg, Germany)</span>
+        · 2026-10-28
+         · 全文(pmc)
+         · <a href="https://pubmed.ncbi.nlm.nih.gov/42949763/">原文</a>
+      </div>
+      <p class="one-liner">XChrom是一个整合基因组序列与单细胞转录组细胞身份的深度学习模型，用于跨细胞预测染色质可及性，属于染色质水平调控建模但未涉及三维空间构象。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">Single-cell chromatin accessibility offers unique insights into transcriptional regulation beyond gene expression. However, paired datasets of these two modalities remain relatively scarce, and existing computational models cannot simultaneously predict chromatin accessibility for unseen genomic regions and cells. Here, we present XChrom, a deep learning framework for genome-wide cross-cell chromatin accessibility prediction that integrates genomic sequence and single-cell transcriptomics-derived cell identity into a unified model. Comprehensive evaluations show that XChrom consistently outperforms existing methods in cross-region and cross-cell predictions, and uniquely enables cross-both predictions. It also supports cross-sample prediction when batch effects are properly corrected. Cross-species analyses demonstrate XChrom&#39;s robust performance and its ability to capture evolutionarily conserved regulatory rules. Applied to peripheral blood mononuclear cells from COVID-19 patients, XChrom accurately identifies transcription factor activities in novel but related cell states and reveals pathogenesis-associated regulatory alterations. XChrom is available as an open-source Python package, facilitating single-cell transcriptional regulation research.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">单细胞染色质可及性为转录调控提供了超越基因表达的独特见解。然而，这两种模态的配对数据集仍相对稀缺，现有计算模型无法同时预测未见基因组区域和细胞的染色质可及性。在此，我们提出XChrom，一种用于全基因组跨细胞染色质可及性预测的深度学习框架，将基因组序列和单细胞转录组学衍生的细胞身份整合到一个统一模型中。综合评估显示，XChrom在跨区域和跨细胞预测中始终优于现有方法，并独特地实现了跨两者预测。在批次效应得到适当校正时，它还支持跨样本预测。跨物种分析证明了XChrom的稳健性能及其捕捉进化保守调控规则的能力。应用于COVID-19患者的外周血单核细胞时，XChrom准确识别了新颖但相关细胞状态中的转录因子活性，并揭示了与发病机制相关的调控改变。XChrom作为开源Python包提供，促进了单细胞转录调控研究。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：XChrom: A Cross-Cell Chromatin Accessibility Prediction Model Integrating Genomic Sequence and Cellular Context</li>
+<li><strong>作者与单位</strong>：Miao, Yuanyuan; Liang, Xuan; Zhang, Wenwen; Han, Dongmei; Li, Yurun; Wang, Zhen（单位未在提供材料中列出）</li>
+<li><strong>期刊/预印本平台</strong>：Advanced Science (Weinheim, Baden-Wurttemberg, Germany)</li>
+<li><strong>年份</strong>：2026-10-28（在线发表日期）</li>
+<li><strong>论文类型</strong>：研究论文（含方法开发与基准测试）</li>
+<li><strong>领域</strong>：单细胞表观基因组学 / 计算生物学 / 深度学习</li>
+<li><strong>关键词</strong>：染色质可及性预测、单细胞、深度学习、跨细胞预测、序列建模</li>
+<li><strong>DOI/arXiv 号</strong>：10.1002/advs.78456</li>
+<li><strong>代码</strong>：https://github.com/Miaoyuanyuan777/XChrom（分析代码：https://github.com/Miaoyuanyuan777/XChrom_analysis）</li>
+<li><strong>数据</strong>：10x Multiome 数据集（h_PBMC, m_brain, h_brain）、E-MTAB-11708（h_gonads）、GSE218576（m_palates）、GSE194122（BMMC）、GSE229169（跨物种运动皮层）、COVID-19 数据集（Helmholtz Berlin 存储库）、PBMC10k；处理后数据已上传 Zenodo: https://doi.org/10.5281/zenodo.16959681</li>
+<li><strong>阅读日期</strong>：未提供</li>
+<li><strong>在「三维基因组/染色质组织 × AI 方法/物理模拟」方向中的位置</strong>：该文属于「序列 → 染色质可及性」的深度学习预测方法，核心创新在于将细胞身份（来自 scRNA-seq）与 DNA 序列联合建模，实现跨细胞、跨区域、跨样本乃至跨物种的染色质可及性预测。与三维基因组方向的关联在于：染色质可及性是三维基因组功能读段之一，该文的方法论（序列编码 + 细胞上下文编码 + 矩阵乘法融合）可迁移至 3D 基因组结构预测（如 Hi-C 接触图的条件生成），但其本身不预测三维结构。</li>
+</ul>
+<h2>02 一句话总结</h2>
+<p>XChrom 通过将 DNA 序列编码（CNN）与 scRNA-seq 衍生的细胞身份嵌入（MLP）做矩阵乘法融合，在统一框架中同时实现跨区域（未见序列）、跨细胞（未见细胞）和跨样本/跨物种的染色质可及性预测，并在 COVID-19 单核细胞数据上验证了其对新型细胞状态和疾病相关调控变化的捕捉能力。</p>
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：能否构建一个统一的深度学习模型，同时预测 (i) 训练中未见的基因组区域（cross-region）、(ii) 训练中未见的细胞（cross-cell）、以及 (iii) 两者均未见的组合（cross-both）的染色质可及性？</li>
+<li><strong>为什么重要</strong>：单细胞染色质可及性（scATAC-seq）是理解转录调控的关键，但配对的多组学数据（同一细胞的 RNA + ATAC）稀缺且昂贵。若能仅从 scRNA-seq（数据丰富）推断染色质可及性，将极大扩展表观基因组研究的覆盖范围，尤其在疾病样本中。</li>
+<li><strong>现有方法不足</strong>：</li>
+<li>第一类（如 Seurat、LS_Lab、MultiVI）基于 RNA-ATAC 流形映射/共享潜空间，不利用 DNA 序列信息，因此无法预测训练数据中未定义的基因组区域。</li>
+<li>第二类（如 scBasset）是纯序列模型，能预测未见区域，但无法泛化到未见细胞——因为模型没有细胞身份的输入通道。</li>
+<li><strong>精确研究问题（Can ... ?）</strong>：Can a deep learning model that jointly encodes genomic sequence and cell identity predict chromatin accessibility for unseen genomic regions and unseen cells simultaneously, and generalize across samples and species?</li>
+</ul>
+<h2>04 背景与发展脉络</h2>
+<blockquote>
+<p>注：此脉络基于本文框架整理，部分外部引用经核验（标注），整体判断为「经外部核验 + 本文框架」混合。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>代表方法</th>
+<th>优点</th>
+<th>局限</th>
+<th>本文位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>多组学整合（流形映射）</td>
+<td>Seurat [5]（外部核验：Seurat v4 参考映射）、LS_Lab [6]、MultiVI [7]</td>
+<td>利用 RNA-ATAC 共享结构，可预测已有细胞类型</td>
+<td>不利用序列，无法预测未见区域；依赖配对数据</td>
+<td>本文在 cross-cell 任务中作为基线</td>
+</tr>
+<tr>
+<td>序列模型</td>
+<td>scBasset [9]（外部核验：Calico 开源）、Basenji 类模型</td>
+<td>捕捉序列-功能规则，可预测未见区域</td>
+<td>无细胞上下文通道，无法泛化到未见细胞</td>
+<td>本文的序列模块直接继承其 CNN 架构</td>
+</tr>
+<tr>
+<td>多模态融合（本文）</td>
+<td>XChrom</td>
+<td>序列 + 细胞身份联合建模，同时实现 cross-region / cross-cell / cross-both</td>
+<td>需要配对数据训练；细胞身份来自 RNA 可能引入模态偏差</td>
+<td>本文提出的新位置</td>
+</tr>
+</tbody>
+</table>
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>配对多组学数据稀缺</td>
+<td>scATAC-seq 与 scRNA-seq 配对数据远少于单模态数据</td>
+<td>实验成本高，难以大规模获取</td>
+<td>Introduction 第 2 段（"paired datasets of these two modalities remain relatively scarce"）</td>
+</tr>
+<tr>
+<td>现有跨模态方法无法预测未见区域</td>
+<td>Seurat/LS_Lab/MultiVI 仅能在训练中定义的基因组区域内预测</td>
+<td>不利用 DNA 序列信息，缺乏序列-功能映射</td>
+<td>Introduction 第 3 段（"constrained to predicting chromatin accessibility only within the predefined genomic regions"）</td>
+</tr>
+<tr>
+<td>纯序列模型无法泛化到未见细胞</td>
+<td>scBasset 对未见细胞的预测无细胞特异性</td>
+<td>模型无细胞身份输入，输出为平均/共享可及性</td>
+<td>Introduction 第 4 段（"cannot generalize to unseen cells"）</td>
+</tr>
+<tr>
+<td>跨样本/跨物种时批次效应干扰</td>
+<td>直接迁移模型到新样本时性能下降</td>
+<td>scRNA-seq 数据存在技术性批次差异</td>
+<td>Results "XChrom can Predict New Samples..." 节（需批次校正，图 S10）</td>
+</tr>
+<tr>
+<td>训练集中稀有细胞类型难以学习</td>
+<td>细胞类型占比过低时预测性能下降</td>
+<td>数据不平衡导致细胞嵌入欠拟合</td>
+<td>Results 图 4c,d（B 细胞比例消融实验）</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<h3>1) 表面方法</h3>
+<p>XChrom 是一个双通道神经网络：
+- <strong>序列通道</strong>：以 1344 bp DNA 序列（one-hot 编码）为输入，经 7 层 CNN（卷积+BN+池化+GELU）输出 32 维 peak embedding。
+- <strong>细胞通道</strong>：以 scRNA-seq 衍生的细胞嵌入（如 PCA 32 维）为输入，经 LayerNorm + 两层全连接（64→32）输出 32 维 cell embedding。
+- <strong>融合</strong>：peak embedding 与 cell embedding 做矩阵乘法（外积），经 sigmoid 输出每个 peak × 每个细胞的二值可及性概率。
+- <strong>训练</strong>：二元交叉熵损失，Adam 优化器（β1=0.95, β2=0.9995），学习率指数衰减，早停机制。</p>
+<h3>2) 核心洞察</h3>
+<ul>
+<li><strong>可及性 = 序列潜能 × 细胞状态</strong>：一个基因组区域的可及性由两部分决定——该区域编码的顺式调控信息（序列通道）和该细胞中反式调控环境（细胞通道）。矩阵乘法融合恰好建模了这种「乘法交互」而非「加法交互」，即序列特征在不同细胞状态下被差异化解读。</li>
+<li><strong>细胞嵌入作为条件变量</strong>：将 scRNA-seq 衍生的细胞身份作为条件输入，使模型在推理时可以对任意新细胞（只要有 RNA 数据）预测其全基因组可及性，无需该细胞的 ATAC 数据。</li>
+<li><strong>跨物种泛化源于保守调控规则</strong>：模型在人类数据上训练后能预测小鼠、猕猴、狨猴的可及性，说明其捕捉的是进化保守的序列-调控关系，而非物种特异记忆。</li>
+</ul>
+<h3>3) 可能的普适教训 [Analysis]</h3>
+<ul>
+<li><strong>乘法融合优于拼接融合</strong>：当两个输入模态存在「门控/调节」关系（如序列特征被细胞状态调制）时，外积/乘法融合比简单的向量拼接更符合生物机制，且能自然产生 peak×cell 的输出矩阵。</li>
+<li><strong>条件生成框架的通用性</strong>：将「预测目标」分解为「固有属性编码器 × 上下文编码器」的框架，可迁移至其他条件预测任务（如 Hi-C 接触图按细胞类型条件生成、增强子-启动子互作按组织条件预测）。</li>
+<li><strong>消融实验设计范式</strong>：通过替换/移除单一模块（如用细胞索引替代 RNA 嵌入、用简化 CNN 替代默认序列编码器）来归因各模块功能，是深度学习生物学方法验证的清晰范式。</li>
+</ul>
+<h2>07 方法总览</h2>
+<ul>
+<li><strong>输入</strong>：</li>
+<li>序列：peak 中心 ± 672 bp（共 1344 bp），one-hot 编码为 (1344, 4) 矩阵。</li>
+<li>细胞：scRNA-seq 经 PCA 降维后的 32 维嵌入（经 Z-score 归一化 + LayerNorm）。</li>
+<li>可选：测序深度（每个细胞的 Z-score 归一化值）作为可学习校正项。</li>
+<li><strong>输出</strong>：每个 peak × 每个细胞的二值可及性概率矩阵（0-1 连续值）。</li>
+<li><strong>模块</strong>：
+  1. 序列编码器：7 个卷积块（Conv1D + BN + MaxPool + GELU），输出通道数递增（288→512），最后经 Conv1D + GELU 降维至 256 通道，再经全连接输出 32 维 peak embedding。
+  2. 细胞编码器：LayerNorm → Dense(64, ReLU) → Dense(32, linear)。
+  3. 融合层：peak embedding (P×32) × cell embedding (32×C) → P×C 矩阵 → 加测序深度校正项 → sigmoid。</li>
+<li><strong>训练</strong>：二元交叉熵，Adam（β1=0.95, β2=0.9995），学习率 0.01 指数衰减（每 10000 步 ×0.9），早停（训练集 AUROC 50 轮无改善则停），最大 1000 epochs。</li>
+<li><strong>数据增强</strong>：随机反向互补（50% 概率）、随机平移 ±3 bp。</li>
+<li><strong>推理</strong>：输入新细胞的 RNA 嵌入 + 任意基因组坐标序列，输出该细胞的全基因组可及性预测。</li>
+<li><strong>工具</strong>：Python 3.8, TensorFlow-GPU 2.6.0, Keras 2.6.0；预处理用 Scanpy 1.9.5, AnnData 0.9.2, scikit-learn 1.0.2。</li>
+<li><strong>基线方法</strong>：scBasset（序列-only）、Seurat、LS_Lab、MultiVI（跨模态映射）。</li>
+<li><strong>评测协议</strong>：三种测试集划分（cross-region / cross-cell / cross-both），指标为 AUROC/AUPRC（overall / per-cell / per-peak 三个层级）；细胞状态保真度用 NS、LS、ARI、AMI、ASW。</li>
+</ul>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>序列编码器（7 层 CNN）</td>
+<td>从 DNA 序列提取顺式调控特征</td>
+<td>使模型能预测未见基因组区域</td>
+<td>输入：(1344,4) one-hot；输出：32 维 peak embedding</td>
+<td>Results 图 2b：cross-region 任务与 scBasset 相当</td>
+<td>[实测] 替换为简化 3 层 CNN（simpler_CNN）后 cross-region AUROC 显著下降（图 4b）</td>
+</tr>
+<tr>
+<td>细胞编码器（2 层 MLP）</td>
+<td>将 scRNA-seq 嵌入变换为可与其他模态融合的细胞表示</td>
+<td>使模型能泛化到未见细胞</td>
+<td>输入：32 维 PCA 嵌入；输出：32 维 cell embedding</td>
+<td>Results 图 2c：cross-cell 任务显著优于 Seurat/LS_Lab/MultiVI</td>
+<td>[实测] 替换为细胞索引（cell_index）后 cross-cell 性能大幅下降（图 4a）</td>
+</tr>
+<tr>
+<td>矩阵乘法融合层</td>
+<td>建模序列特征与细胞状态的乘法交互</td>
+<td>可及性是序列潜能与细胞环境的乘积关系</td>
+<td>输入：P×32 与 32×C；输出：P×C 概率矩阵</td>
+<td>Results 图 2d：cross-both 任务可行</td>
+<td>[预期] 若改为拼接+全连接，可能降低跨细胞泛化能力 [Analysis]</td>
+</tr>
+<tr>
+<td>测序深度校正项</td>
+<td>校正单细胞测序深度对可及性检测的影响</td>
+<td>scATAC-seq 数据存在深度异质性</td>
+<td>输入：每细胞 Z-score 深度；输出：加到 logit 的偏置项</td>
+<td>Methods "XChrom Architecture" 节</td>
+<td>[预期] 移除后低深度细胞预测偏差增大 [Analysis]</td>
+</tr>
+<tr>
+<td>数据增强（随机翻转/平移）</td>
+<td>增加序列输入的多样性，促进链/位置不变性</td>
+<td>可及性不应依赖链方向或微小位移</td>
+<td>训练时对序列做 50% 翻转和 ±3 bp 平移</td>
+<td>Methods "XChrom Architecture" 节</td>
+<td>[预期] 移除后可能降低 cross-region 泛化 [Analysis]</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式符号</h2>
+<blockquote>
+<p>仅列理解模型所必需的公式。</p>
+</blockquote>
+<p><strong>1. 序列编码</strong>：
+[
+h_{peak} = \text{Flatten}(\text{CNN}<em>{7}(X</em>{seq}))
+]
+- (X_{seq} \in \mathbb{R}^{1344 \times 4})：one-hot 编码的 DNA 序列
+- (h_{peak} \in \mathbb{R}^{32})：peak embedding</p>
+<p><strong>2. 细胞编码</strong>：
+[
+h_{cell} = W_2 \cdot \text{ReLU}(W_1 \cdot \text{LayerNorm}(z_{rna}))
+]
+- (z_{rna} \in \mathbb{R}^{32})：scRNA-seq PCA 嵌入（Z-score 归一化后）
+- (W_1 \in \mathbb{R}^{64 \times 32}, W_2 \in \mathbb{R}^{32 \times 64})：可学习权重
+- (h_{cell} \in \mathbb{R}^{32})：cell embedding</p>
+<p><strong>3. 融合与预测</strong>：
+[
+P_{ij} = \sigma\left( h_{peak,i}^\top h_{cell,j} + b \cdot d_j \right)
+]
+- (P_{ij})：peak (i) 在细胞 (j) 中的可及性概率
+- (h_{peak,i}^\top h_{cell,j})：矩阵乘法（外积）融合
+- (d_j)：细胞 (j) 的测序深度（Z-score 归一化），(b) 为可学习标量
+- (\sigma(\cdot))：sigmoid 函数</p>
+<p><strong>4. 损失函数</strong>：
+[
+\mathcal{L} = -\frac{1}{N}\sum_{i,j} \left[ y_{ij} \log P_{ij} + (1-y_{ij}) \log(1-P_{ij}) \right]
+]
+- (y_{ij} \in {0,1})：二值化可及性标签（测序计数 ≥ 1 为 1）</p>
+<p><strong>5. 评估指标</strong>：
+- AUROC / AUPRC：在 overall（所有 peak-cell 对）、per-cell（按细胞平均）、per-peak（按 peak 平均）三个层级计算。
+- NS（Neighbor Score）：(NS_k = \frac{1}{N}\sum_{i=1}^{N} \frac{|N_k^{true}(i) \cap N_k^{imp}(i)|}{k})，衡量预测/去噪后数据与 RNA 空间的邻域一致性。
+- LS（Label Score）：(LS_k = \frac{1}{N}\sum_{i=1}^{N} \frac{1}{k}\sum_{j \in N_k^{imp}(i)} I(y_j = y_i))，衡量预测数据的局部标签纯度。</p>
+<h2>10 实验设计与证据链</h2>
+<p><strong>数据集</strong>：
+- 训练/测试：5 个公开配对 scRNA-seq + scATAC-seq 数据集（人类 PBMC、小鼠脑、人脑、性腺、腭板等），覆盖人类和小鼠。
+- 跨样本：人类 BMMC 数据集（GSE194122），含多个供体/批次。
+- 跨物种：人类、小鼠、猕猴、狨猴运动皮层数据集（GSE229169）。
+- COVID-19：PBMC 数据集（含 mild/severe/convalescent），scRNA-seq 与 scATAC-seq 非配对。</p>
+<p><strong>规模</strong>：未提供具体细胞数/peak 数（原文未在摘要中给出）。</p>
+<p><strong>基线</strong>：scBasset（序列-only）、Seurat、LS_Lab、MultiVI。</p>
+<p><strong>评测协议</strong>：三种测试任务（cross-region / cross-cell / cross-both），指标 AUROC/AUPRC（overall/per-cell/per-peak），NS/LS（k=10,50,100），ARI/AMI/ASW。</p>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的 claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>三任务基准测试</td>
+<td>XChrom 在 cross-region / cross-cell / cross-both 均有效</td>
+<td>与 scBasset、Seurat、LS_Lab、MultiVI 对比</td>
+<td>XChrom 在 cross-cell 和 cross-both 显著优于所有基线；cross-region 与 scBasset 相当</td>
+<td>序列+细胞身份联合建模优于单一模态方法</td>
+<td>未提供具体数值，无法判断效应量</td>
+<td>Results 图 2b-d</td>
+</tr>
+<tr>
+<td>去噪/细胞状态保真度</td>
+<td>XChrom 去噪后数据保留细胞身份</td>
+<td>NS/LS 对比 scBasset 和 raw 数据</td>
+<td>XChrom 在多个 k 值下 NS/LS 最高</td>
+<td>预测数据具有高细胞状态保真度</td>
+<td>未提供统计显著性检验细节</td>
+<td>Results 图 3b</td>
+</tr>
+<tr>
+<td>跨样本预测</td>
+<td>XChrom 可预测新样本（同组织）</td>
+<td>BMMC 5 样本交叉验证，需 Harmony 批次校正</td>
+<td>批次校正后性能显著提升，优于基线</td>
+<td>批次校正是跨样本应用的必要预处理</td>
+<td>未测试无校正时的极限</td>
+<td>Results 图 5a, S10</td>
+</tr>
+<tr>
+<td>跨物种预测</td>
+<td>XChrom 捕捉进化保守调控规则</td>
+<td>人类/小鼠模型 → 猕猴/狨猴</td>
+<td>跨物种预测性能良好</td>
+<td>模型学到保守的序列-调控关系</td>
+<td>未与物种特异模型对比</td>
+<td>Results 图 6a-c</td>
+</tr>
+<tr>
+<td>B 细胞比例消融</td>
+<td>训练集中细胞类型比例影响泛化</td>
+<td>0%, 1%, 3.7%, 7.3% B 细胞</td>
+<td>比例越低，B 细胞预测性能越差；但少量比例即可恢复</td>
+<td>模型需要一定量的细胞类型代表</td>
+<td>未测试其他细胞类型</td>
+<td>Results 图 4c,d</td>
+</tr>
+<tr>
+<td>COVID-19 应用</td>
+<td>XChrom 可预测疾病相关新细胞状态</td>
+<td>训练于健康 PBMC10k，预测 COVID-19 PBMC</td>
+<td>成功预测 novel monocyte 亚群（HLA-DRloS100Ahi）的 TF 活性，与 scATAC-seq 验证一致</td>
+<td>模型可外推到疾病状态</td>
+<td>未做前瞻性验证</td>
+<td>Results 图 7</td>
+</tr>
+<tr>
+<td>模块消融</td>
+<td>序列模块负责 cross-region，细胞模块负责 cross-cell</td>
+<td>替换序列为索引 / 细胞为索引 / 简化 CNN</td>
+<td>细胞索引大幅降低 cross-cell；简化 CNN 降低 cross-region</td>
+<td>两模块功能分离</td>
+<td>未测试两模块同时移除</td>
+<td>Results 图 4a,b</td>
+</tr>
+</tbody>
+</table>
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：XChrom 预测的是<strong>二值染色质可及性</strong>（开放/不开放），而非可及性程度（连续计数）或三维结构。其输出是 peak × cell 的概率矩阵。</li>
+<li><strong>输入依赖</strong>：推理时需要该细胞的 scRNA-seq 数据（或至少 PCA 嵌入）。若完全没有 RNA 数据，则无法利用细胞通道——此时退化为类似 scBasset 的序列-only 模型。</li>
+<li><strong>端到端状态</strong>：模型是端到端训练的（序列+细胞嵌入 → 可及性），但细胞嵌入本身来自外部 scRNA-seq 流程（PCA），并非端到端学习。</li>
+<li><strong>跨样本/跨物种的前提</strong>：跨样本需要批次校正（Harmony 等）；跨物种需要序列比对到参考基因组，且性能在远缘物种（如人类→小鼠）可能下降。</li>
+<li><strong>细胞类型外推的边界</strong>：当某细胞类型在训练集中完全缺失时（如 B 细胞 0% 条件），模型无法正确重建该细胞类型的可及性谱——需要至少少量代表。</li>
+<li><strong>不确定性</strong>：论文未报告预测概率的校准性或不确定性估计；AUROC/AUPRC 的置信区间仅在部分比较中提及。</li>
+<li><strong>生物学解释</strong>：模型可解释性限于 TF motif 活性推断（通过插入/扰动），不提供因果机制。</li>
+<li><strong>有边界的复述</strong>：XChrom 在「有配对 RNA-ATAC 训练数据、目标细胞有 RNA 嵌入、目标基因组区域可比对到参考基因组」的条件下，能同时预测未见区域和未见细胞的染色质可及性，并在同组织新样本（经批次校正）和跨物种（保守调控）场景下保持可用性；其预测的 TF 活性在 COVID-19 单核细胞中与独立 ATAC 数据一致。</li>
+</ul>
+<h2>12 作者自认局限</h2>
+<table>
+<thead>
+<tr>
+<th>局限</th>
+<th>具体表现</th>
+<th>作者提出的未来方向</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>未显式建模基因组变异</td>
+<td>模型不包含 SNP/CNV 等样本间序列差异信息</td>
+<td>未来可引入序列变异作为输入</td>
+<td>Discussion 第 1 段（"does not explicitly account for genomic variation between samples"）</td>
+</tr>
+<tr>
+<td>细胞身份与序列嵌入的独立性假设</td>
+<td>peak 和 cell 嵌入被假设为独立，可能忽略二者的耦合</td>
+<td>未来可建模 peak-cell 交互的依赖关系</td>
+<td>Discussion 第 2 段（"there may be a coupling between these two embeddings"）</td>
+</tr>
+<tr>
+<td>无法直接构建完整 GRN</td>
+<td>模型识别 TF 活性，但不捕获 TF-靶基因关系</td>
+<td>未来可结合 GRN 推断方法</td>
+<td>Discussion 第 3 段（"does not directly capture the relationships between these TFs and their target genes"）</td>
+</tr>
+<tr>
+<td>跨样本需批次校正</td>
+<td>未校正时性能下降</td>
+<td>未来可开发内置批次校正机制</td>
+<td>Results "XChrom can Predict New Samples..." 节</td>
+</tr>
+</tbody>
+</table>
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>矩阵乘法融合的「乘法交互」解释缺乏直接验证</td>
+<td>模型性能提升可能来自参数增加而非乘法交互本身；未与拼接+全连接基线对比</td>
+<td>若乘法非关键，则核心创新点被削弱</td>
+<td>增加「拼接融合」和「加法融合」消融实验</td>
+<td>Results 图 4 仅对比了替换序列/细胞输入的变体，未对比融合方式</td>
+</tr>
+<tr>
+<td>跨物种性能可能受序列保守性混淆</td>
+<td>跨物种预测好可能因为测试区域本身序列保守，而非模型学到「调控规则」</td>
+<td>需区分「序列相似性」与「调控逻辑保守」</td>
+<td>控制序列同一性后重新评估；或在低保守但功能同源的区域测试</td>
+<td>Results 图 6 未报告序列保守性分层分析</td>
+</tr>
+<tr>
+<td>COVID-19 应用缺乏定量验证</td>
+<td>TF 活性差异未与独立 ChIP-seq 或扰动实验交叉验证；仅与同一数据的 ATAC 模态比较</td>
+<td>若预测的 TF 活性是循环论证（从 RNA 推断），则生物学新发现有限</td>
+<td>用独立 TF 靶基因集或 CRISPR 扰动验证</td>
+<td>Results 图 7 未提供独立验证</td>
+</tr>
+<tr>
+<td>稀有细胞类型外推的「少量即可」结论可能依赖细胞类型</td>
+<td>B 细胞消融仅测试一种细胞类型；其他稀有类型（如祖细胞）可能更难以少量代表恢复</td>
+<td>泛化性声明需更多细胞类型验证</td>
+<td>在多种稀有细胞类型上重复消融实验</td>
+<td>Results 图 4c,d 仅 B 细胞</td>
+</tr>
+<tr>
+<td>未报告训练/推理时间与显存</td>
+<td>全基因组 × 全细胞预测的计算成本未知</td>
+<td>影响实际可用性</td>
+<td>补充 benchmark 数据</td>
+<td>全文未提供</td>
+</tr>
+<tr>
+<td>与三维基因组方向的连接缺失</td>
+<td>未讨论可及性预测与 Hi-C/3D 结构预测的关系</td>
+<td>对三维基因组领域读者，迁移价值需自行推断</td>
+<td>在讨论中增加与 3D 基因组模型的对比</td>
+<td>Discussion 未提及 3D 基因组</td>
+</tr>
+</tbody>
+</table>
+<h2>14 学到什么</h2>
+<blockquote>
+<p>Agent 提炼的知识候选</p>
+</blockquote>
+<ol>
+<li><strong>乘法融合架构（可迁移）</strong>：将「序列特征 × 细胞状态」的矩阵乘法融合作为条件预测框架，可直接迁移至三维基因组任务——例如「序列特征 × 细胞类型嵌入 → Hi-C 接触概率」或「CTCF/ cohesin 基序特征 × 细胞状态 → 环域（loop）概率」。</li>
+<li><strong>三任务评估范式（可迁移）</strong>：cross-region / cross-cell / cross-both 的划分方式适用于任何「特征 × 条件」预测模型，可用于评估 3D 基因组模型对未见基因组区域和未见细胞类型的泛化能力。</li>
+<li><strong>细胞身份嵌入的替代来源</strong>：本文使用 scRNA-seq PCA 嵌入作为细胞身份，但该框架不限于 RNA——任何细胞状态向量（如 ATAC 自身、甲基化、染色质状态）均可作为条件输入，为多模态 3D 基因组预测提供思路。</li>
+<li><strong>去噪能力作为评估维度</strong>：NS/LS 等细胞状态保真度指标可用于评估预测/去噪后的染色质数据是否保留生物学信号，这一评估思路可迁移至 Hi-C 数据去噪或增强。</li>
+<li><strong>跨物种迁移的验证策略</strong>：通过训练集与测试集跨物种划分来验证模型是否学到保守调控规则，该策略可用于评估 3D 基因组模型在非模式物种上的可迁移性。</li>
+<li><strong>TF motif 活性推断方法（可迁移）</strong>：通过 motif 插入 + 预测差异计算单细胞 TF 活性，可迁移至 3D 基因组模型——例如插入/删除 CTCF motif 预测对接触域边界的影响。</li>
+<li><strong>批次校正作为预处理</strong>：跨样本预测需先做 RNA 嵌入的批次校正，提示 3D 基因组跨样本预测同样需要类似的嵌入对齐步骤。</li>
+</ol>
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>scBasset [9]</strong>：XChrom 的序列编码器直接继承 scBasset 的 CNN 架构，可视为 scBasset 的多模态扩展。外部核验：scBasset 为 Calico 实验室开源工具，发表于 Nature Machine Intelligence（2021）。</li>
+<li><strong>Seurat [5] / LS_Lab [6] / MultiVI [7]</strong>：均为 RNA-ATAC 跨模态映射方法，XChrom 在 cross-cell 任务中作为基线。外部核验：Seurat v4 为 Satija 实验室广泛使用的单细胞分析工具；MultiVI 为 scvi-tools 生态的 multimodal VAE。</li>
+<li><strong>Enformer / Basenji 系列</strong>：序列-功能预测的经典框架，XChrom 的序列模块属于同一范式，但增加了细胞条件通道。</li>
+<li><strong>3D 基因组方向的连接点</strong>：</li>
+<li><strong>Akita / DeepC / C.Origami</strong>：序列 → Hi-C 接触图预测模型，与 XChrom 共享「序列编码器」思路，但缺少细胞条件通道——XChrom 的「细胞嵌入 × 序列嵌入」融合方式可视为其条件扩展。</li>
+<li><strong>单细胞 Hi-C 预测</strong>：当前缺乏从 RNA 推断单细胞 3D 基因组的模型，XChrom 的框架提供了「RNA 嵌入 → 染色质状态」的现成通道。</li>
+<li><strong>调控规则保守性</strong>：XChrom 跨物种实验与 3D 基因组领域「CTCF/cohesin 环路进化保守性」研究呼应，其方法可用于跨物种 3D 结构预测。</li>
+<li><strong>COVID-19 表观调控</strong>：作者发现的 monocyte 亚群 TF 活性变化与已报道的 COVID-19 髓系细胞炎症程序一致（外部核验：Schulte-Schrepping et al., Cell 2020 等），支持模型输出的生物学合理性。</li>
+</ul>
+<h2>16 研究想法</h2>
+<blockquote>
+<p>Agent 生成的研究候选</p>
+</blockquote>
+<p><strong>候选 1：XChrom-3D——将乘法融合框架扩展至单细胞 Hi-C 接触图预测</strong>
+- <strong>来源局限/观察</strong>：XChrom 证明「序列 × 细胞嵌入」可预测染色质可及性；3D 基因组领域缺乏从 RNA 推断单细胞 Hi-C 的模型。
+- <strong>核心假设</strong>：染色质三维结构同样由「顺式序列特征 × 反式细胞状态」决定，乘法融合可捕捉这种交互。
+- <strong>初步方法</strong>：将 XChrom 的序列编码器替换为 Akita 风格的 CNN，输出改为接触图（bin × bin）；细胞嵌入通道保留，融合层改为「接触图特征 × 细胞嵌入」的条件调制。
+- <strong>验证方式</strong>：在 paired scRNA + scHi-C 数据上评估 cross-cell 泛化；与 Akita（无条件）对比。
+- <strong>创新状态</strong>：unverified</p>
+<p><strong>候选 2：稀有细胞类型的外推边界系统评估</strong>
+- <strong>来源局限/观察</strong>：XChrom 仅测试了 B 细胞一种稀有类型；「少量代表即可恢复」的结论可能不普适。
+- <strong>核心假设</strong>：不同细胞类型的外推难度与其转录组独特性（距其他类型的距离）相关。
+- <strong>初步方法</strong>：在多种细胞类型上重复 B 细胞消融实验，计算外推性能与细胞类型转录组距离/熵的关联。
+- <strong>验证方式</strong>：回归分析外推 AUROC ~ 细胞类型独特性指标。
+- <strong>创新状态</strong>：unverified</p>
+<p><strong>候选 3：TF motif 活性推断用于 3D 基因组环路注释</strong>
+- <strong>来源局限/观察</strong>：XChrom 的 motif 插入方法可推断单细胞 TF 活性；3D 基因组中 TF 对 loop/domain 的贡献缺乏单细胞分辨率注释。
+- <strong>核心假设</strong>：XChrom 推断的 TF 活性可预测细胞类型特异的 TAD/loop 变化。
+- <strong>初步方法</strong>：在 paired scRNA + scATAC + Hi-C 数据上，将 XChrom TF 活性与 Hi-C 差异区域关联；用 CTCF/cohesin motif 插入预测 loop 强度变化。
+- <strong>验证方式</strong>：与 ChIP-seq 验证的 TF 结合位点比较；与已知 loop 数据库（如 HiChIP）交叉验证。
+- <strong>创新状态</strong>：unverified</p>
+<p><strong>候选 4：跨物种 3D 基因组预测的保守性分析</strong>
+- <strong>来源局限/观察</strong>：XChrom 跨物种预测成功提示保守调控规则；3D 基因组跨物种预测尚未系统评估。
+- <strong>核心假设</strong>：训练于人类 Hi-C 的模型可预测小鼠/猕猴的 TAD/loop，且性能与序列保守性相关。
+- <strong>初步方法</strong>：用 XChrom-3D（候选 1）在人类数据训练，测试于小鼠/猕猴/狨猴；分层分析序列保守性对预测性能的影响。
+- <strong>验证方式</strong>：与物种内训练的模型对比；分析保守 loop 的序列特征。
+- <strong>创新状态</strong>：unverified</p>
+<p><strong>候选 5：XChrom 框架用于非编码变异对染色质可及性影响的预测</strong>
+- <strong>来源局限/观察</strong>：XChrom 未建模 SNP/CNV，但序列通道天然支持变异输入。
+- <strong>核心假设</strong>：XChrom 可预测 SNP 对可及性的影响（等位基因特异可及性），且优于现有方法（如 deltaSVM）。
+- <strong>初步方法</strong>：对 eQTL/GWAS 位点做等位基因替换，比较预测可及性差异；在 matched SNP-ATAC 数据上验证。
+- <strong>验证方式</strong>：与实验测定的等位基因特异可及性（如 dsQTL）比较 AUROC。
+- <strong>创新状态</strong>：unverified</p></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Full manuscript text (abstract, results, methods, discussion) as provided</li>
+<li><strong>Assessment boundary</strong> Scientific content, methodological soundness, claims vs. evidence, and presentation quality based solely on the supplied material</li>
+<li><strong>Shared manuscript claim summary</strong> XChrom is a deep learning framework that integrates genomic DNA sequence and single-cell RNA-seq-derived cell identity to predict chromatin accessibility across unseen genomic regions and cells, with demonstrated superiority over existing methods in cross-region, cross-cell, cross-both, cross-sample, and cross-species scenarios, plus interpretability and COVID-19 application.</li>
+<li><strong>Visible evidence base</strong> Main text figures referenced (Figures 1–7), supplementary figures (S1–S18), tables (S1–S10), and methods descriptions; no actual data, code outputs, or figure images were provided</li>
+<li><strong>Missing materials affecting confidence</strong> Figure images, supplementary data, actual numerical results, code repository contents, and detailed hyperparameter settings; statistical test outputs referenced but not shown</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li><strong>Overall assessment</strong> The manuscript presents a conceptually appealing and practically relevant framework that addresses a genuine gap in single-cell chromatin accessibility prediction. The integration of sequence and cell-state information is a reasonable and timely idea. However, the evidence as presented in the text alone is insufficient to fully verify the claimed performance advantages, robustness, and biological insights. Several claims are made without quantitative support visible in the provided material, and the methodological details, while described, cannot be independently assessed without the actual data and code. The work is potentially significant, but the current evidence base does not fully establish all conclusions.</li>
+<li><strong>Who would be interested in the results, and why</strong> Computational biologists developing single-cell multi-omics integration methods; experimentalists studying gene regulation and chromatin dynamics; researchers working on cross-species regulatory genomics; and those interested in applying predictive models to disease contexts such as COVID-19. The open-source availability and tutorials increase potential uptake.</li>
+<li><strong>Major strengths</strong> 1) Addresses a clear and important limitation of existing methods (inability to predict unseen cells and regions simultaneously). 2) The hybrid architecture is a sensible design that leverages complementary data modalities. 3) Comprehensive evaluation across multiple scenarios (within-sample, cross-sample, cross-species) is commendable. 4) Inclusion of interpretability analyses (ISM, TF activity) adds biological value. 5) Open-source implementation and detailed tutorials support reproducibility and community use.</li>
+<li><strong>Major Concerns</strong>  </li>
+<li><strong>R1-M1</strong>  <ul>
+<li><strong>Severity</strong> Major  </li>
+<li><strong>Blocking</strong> Yes  </li>
+<li><strong>Axis</strong> Evidence sufficiency  </li>
+<li><strong>Claim pointer</strong> "XChrom consistently outperforms existing methods in cross-region and cross-cell predictions" (Abstract; Results section)  </li>
+<li><strong>Evidence pointer</strong> Figures 2b–2d, Tables S1–S3; location not provided  </li>
+<li><strong>Concern</strong> The claim of consistent superiority is made, but the actual performance numbers, effect sizes, and statistical significance are not visible in the provided text. Without the figure data or tables, the magnitude and consistency of the improvement cannot be verified.  </li>
+<li><strong>Why it matters</strong> This is the central claim of the paper. If the performance advantage is marginal or inconsistent across datasets, the practical utility of XChrom is weakened.  </li>
+<li><strong>Resolution test</strong> Provide the actual performance metrics (e.g., AUROC/AUPRC values with confidence intervals) for all datasets and comparisons, along with statistical test results, in the main text or supplementary tables.  </li>
+</ul>
+</li>
+<li><strong>R1-M2</strong>  <ul>
+<li><strong>Severity</strong> Major  </li>
+<li><strong>Blocking</strong> Yes  </li>
+<li><strong>Axis</strong> Methodological clarity  </li>
+<li><strong>Claim pointer</strong> "XChrom can predict new samples from the same tissue or organ as the training set" (Results section, cross-sample scenario)  </li>
+<li><strong>Evidence pointer</strong> Figure 5, Tables S5–S6; location not provided  </li>
+<li><strong>Concern</strong> The cross-sample evaluation relies on batch correction (Harmony), but the sensitivity of results to the choice of batch correction method is only briefly mentioned. The claim that XChrom "remains applicable" after correction is plausible but not fully established without showing the range of performance across different correction strategies and the potential failure modes.  </li>
+<li><strong>Why it matters</strong> Cross-sample generalization is a key practical use case. If performance degrades significantly with different batch correction methods or if the correction introduces artifacts, the claim of applicability is overstated.  </li>
+<li><strong>Resolution test</strong> Show performance across all tested batch correction methods (including no correction) with error bars, and discuss conditions under which XChrom fails.  </li>
+</ul>
+</li>
+<li><strong>R1-M3</strong>  <ul>
+<li><strong>Severity</strong> Major  </li>
+<li><strong>Blocking</strong> Yes  </li>
+<li><strong>Axis</strong> Biological validation  </li>
+<li><strong>Claim pointer</strong> "XChrom accurately identifies TF activities in novel but related cell states and reveals pathogenesis-associated regulatory alterations" (Results section, COVID-19 application)  </li>
+<li><strong>Evidence pointer</strong> Figure 7, Tables S9–S10; location not provided  </li>
+<li><strong>Concern</strong> The COVID-19 analysis is presented as a demonstration of biological utility, but the validation is indirect. The claim that predicted TF activities reflect true regulatory changes requires comparison with orthogonal experimental data (e.g., ChIP-seq, ATAC-seq from sorted populations) or at least a clear demonstration that the predicted changes are not artifacts of the model's assumptions.  </li>
+<li><strong>Why it matters</strong> The biological interpretability and disease relevance are major selling points. Without external validation, the findings remain model predictions that may not reflect actual regulatory biology.  </li>
+<li><strong>Resolution test</strong> Provide orthogonal validation (e.g., comparison with published TF ChIP-seq or perturbation data) or clearly state the limitations of the current validation approach.  </li>
+</ul>
+</li>
+<li><strong>R1-M4</strong>  <ul>
+<li><strong>Severity</strong> Major  </li>
+<li><strong>Blocking</strong> No  </li>
+<li><strong>Axis</strong> Generalizability  </li>
+<li><strong>Claim pointer</strong> "XChrom's robust performance and its ability to capture evolutionarily conserved regulatory rules" (Abstract; Results section, cross-species)  </li>
+<li><strong>Evidence pointer</strong> Figure 6, Table S7; location not provided  </li>
+<li><strong>Concern</strong> The cross-species analysis is limited to motor cortex data from four species. The claim of capturing "evolutionarily conserved regulatory rules" is broad and may not hold for other tissues or more divergent species. The analysis of conserved TF activity is correlative and does not establish causality.  </li>
+<li><strong>Why it matters</strong> Overgeneralization could mislead users into applying XChrom to species or tissues where it may not perform well.  </li>
+<li><strong>Resolution test</strong> Acknowledge the scope of cross-species validation and suggest additional tests on more diverse datasets or species.  </li>
+</ul>
+</li>
+<li><strong>Minor Comments</strong>  </li>
+<li><strong>R1-m1</strong>  <ul>
+<li><strong>Severity</strong> Minor  </li>
+<li><strong>Axis</strong> Clarity  </li>
+<li><strong>Affected element</strong> Methods, XChrom Architecture  </li>
+<li><strong>Evidence pointer</strong> Methods section, "XChrom Architecture"  </li>
+<li><strong>Issue</strong> The description of the sequence encoding module is brief; the exact number of parameters, layer sizes, and activation functions are not fully specified.  </li>
+<li><strong>Required correction</strong> Provide a table or detailed text listing all layer dimensions, kernel sizes, strides, and activation functions for reproducibility.  </li>
+</ul>
+</li>
+<li><strong>R1-m2</strong>  <ul>
+<li><strong>Severity</strong> Minor  </li>
+<li><strong>Axis</strong> Statistical rigor  </li>
+<li><strong>Affected element</strong> Results, cross-species analysis  </li>
+<li><strong>Evidence pointer</strong> Figure 6, Table S7; location not provided  </li>
+<li><strong>Issue</strong> The statistical comparison between human and mouse models on macaque/marmoset data is mentioned but the exact test and correction for multiple comparisons are not described.  </li>
+<li><strong>Required correction</strong> Specify the statistical tests used, whether corrections for multiple testing were applied, and report effect sizes.  </li>
+</ul>
+</li>
+<li><strong>R1-m3</strong>  <ul>
+<li><strong>Severity</strong> Minor  </li>
+<li><strong>Axis</strong> Presentation  </li>
+<li><strong>Affected element</strong> Discussion  </li>
+<li><strong>Evidence pointer</strong> Discussion section  </li>
+<li><strong>Issue</strong> The discussion of limitations is brief and does not address potential biases in the training data or the impact of cell type imbalance on predictions.  </li>
+<li><strong>Required correction</strong> Expand the limitations paragraph to include data biases, model assumptions, and potential failure modes.  </li>
+</ul>
+</li>
+<li><strong>R1-m4</strong>  <ul>
+<li><strong>Severity</strong> Minor  </li>
+<li><strong>Axis</strong> Reproducibility  </li>
+<li><strong>Affected element</strong> Data Availability Statement  </li>
+<li><strong>Evidence pointer</strong> Data Availability Statement  </li>
+<li><strong>Issue</strong> The statement mentions processed data on Zenodo, but the raw data access for some datasets (e.g., COVID-19) is not clearly specified.  </li>
+<li><strong>Required correction</strong> Clarify access conditions for all raw and processed datasets, including any restrictions.  </li>
+</ul>
+</li>
+<li><strong>Technical failings that need to be addressed before the case is established</strong>  </li>
+<li>R1-M1 (performance claims not verifiable from provided material)  </li>
+<li>R1-M2 (cross-sample generalizability not fully established)  </li>
+<li>R1-M3 (biological validation insufficient)  </li>
+<li><strong>Assessment against Nature-style criteria</strong>  </li>
+<li><strong>Originality</strong> The idea of jointly modeling sequence and cell state for cross-cell and cross-region prediction is a novel contribution that goes beyond existing methods. The specific architecture and application scenarios are not duplicative of prior work.  </li>
+<li><strong>Scientific importance</strong> The problem addressed is of high importance in single-cell genomics. If the claims hold, the framework could enable broader use of scATAC-seq data and facilitate regulatory studies in understudied cell types and species.  </li>
+<li><strong>Interdisciplinary readership</strong> The work bridges computational method development, single-cell biology, and disease genomics, making it relevant to a broad audience. The COVID-19 application enhances appeal.  </li>
+<li><strong>Technical soundness</strong> The architecture is reasonable, but the evidence provided in the text is insufficient to fully assess technical soundness. Key performance metrics and statistical analyses are not visible. The ablation studies are described but their results are not shown in detail.  </li>
+<li><strong>Readability for nonspecialists</strong> The abstract and introduction are accessible, but the methods and results sections assume familiarity with deep learning and single-cell terminology. Some terms (e.g., "cross-both") are not defined clearly for a general audience.  </li>
+<li><strong>Recommendation posture</strong> Supportive if technical concerns are resolved. The core idea is promising and the scope of evaluation is broad, but the current evidence base does not fully substantiate all claims. The authors should provide the actual data, figures, and statistical outputs to allow verification, and strengthen the biological validation.</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>"XChrom consistently outperforms existing methods" – not verifiable without actual performance numbers.</li>
+<li>"XChrom can predict new samples from the same tissue or organ" – only shown for one tissue type (BMMC) with batch correction; generalizability to other tissues is assumed.</li>
+<li>"XChrom captures evolutionarily conserved regulatory rules" – based on correlative TF activity analysis without causal validation.</li>
+<li>"XChrom accurately identifies TF activities in novel but related cell states" – validation is indirect and lacks orthogonal experimental support.</li>
+<li>"XChrom's predictions benefit from key model components" – ablation results are described but not shown in detail, making the claim difficult to assess.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

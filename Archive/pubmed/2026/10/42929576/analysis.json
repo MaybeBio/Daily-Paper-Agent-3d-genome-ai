@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42929576",
+  "title": "Deciphering Cellular and Spatial Regulatory Identities from Sparse Chromatin Accessibility Landscapes.",
+  "authors": "Wang, Yunhe; Guo, Songyu; Qian, Jingjing; Liang, Heqiu; Su, Yanchi; Yu, Zhuohan; Li, Xiangtao",
+  "journal": "Journal of chemical information and modeling",
+  "published_date": "2026-10-26",
+  "window": {
+    "start": "2026-10-25",
+    "end": "2026-10-31"
+  },
+  "score": 6,
+  "one_liner_zh": "提出CASSIA半监督表示学习框架，从稀疏染色质可及性数据中推断细胞和空间调控身份，涉及染色质可及性建模但未直接建模三维染色质空间架构。",
+  "abstract": "Chromatin accessibility profiling provides a powerful view of regulatory landscapes across heterogeneous biological systems, enabling the investigation of cell-state diversity and spatially organized regulatory programs. However, deciphering meaningful regulatory identities from sparse and noisy accessibility landscapes remains challenging, particularly for closely related cellular states and neighboring regulatory domains. Unlike transcriptomic measurements, chromatin accessibility does not directly capture canonical marker expression, and regulatory identities must therefore be inferred from indirect evidence, including gene activity scores, transcription factor motif activity, and reference-based annotation. These signals often become ambiguous, limiting the reliability of unsupervised clustering followed by post-hoc interpretation. Here, we present CASSIA (Chromatin Accessibility Semi-Supervised Identity-Aware representation learning), a unified label-guided framework for decoding cellular and spatial regulatory identities from chromatin accessibility landscapes. CASSIA leverages limited high-confidence anchors to learn informative accessibility representations while preserving intrinsic regulatory structures. The framework integrates a binary accessibility denoising autoencoder, a Jensen-Shannon divergence-based clustering constraint, and a similarity difference-aware triplet objective; spatial neighborhood consistency is further incorporated to preserve regulatory organization when spatial information is available. Across diverse chromatin accessibility datasets, CASSIA reconstructs cellular and spatial regulatory identities with improved agreement to biological annotations and tissue organization compared with representative baselines. Identity-associated accessible regions and transcription factor activity profiles reveal distinct regulatory programs underlying inferred identities, demonstrating that CASSIA transforms sparse accessibility landscapes into interpretable cellular and tissue-level regulatory maps.",
+  "abstract_zh": "染色质可及性图谱为异质性生物系统中的调控景观提供了强有力的视角，使得研究细胞状态多样性和空间组织的调控程序成为可能。然而，从稀疏且嘈杂的可及性景观中解读有意义的调控身份仍然具有挑战性，尤其是对于密切相关的细胞状态和相邻调控域。与转录组测量不同，染色质可及性并不直接捕获经典标志物表达，因此调控身份必须从间接证据中推断，包括基因活性评分、转录因子基序活性和基于参考的注释。这些信号往往变得模糊，限制了无监督聚类及事后解释的可靠性。在此，我们提出CASSIA（染色质可及性半监督身份感知表示学习），一个统一的标签引导框架，用于从染色质可及性景观中解码细胞和空间调控身份。CASSIA利用有限的高置信度锚点来学习信息丰富的可及性表示，同时保留内在调控结构。该框架整合了二元可及性去噪自编码器、基于Jensen-Shannon散度的聚类约束和相似性差异感知三元目标；当空间信息可用时，进一步引入空间邻域一致性以保留调控组织。在多样化的染色质可及性数据集中，与代表性基线相比，CASSIA重建细胞和空间调控身份时与生物学注释和组织组织的一致性更高。身份相关的可及区域和转录因子活性谱揭示了推断身份背后的不同调控程序，表明CASSIA将稀疏的可及性景观转化为可解释的细胞和组织水平调控图谱。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42929576/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42929576/",
+  "paper_page_path": "papers/pubmed/42929576/index.html"
+}

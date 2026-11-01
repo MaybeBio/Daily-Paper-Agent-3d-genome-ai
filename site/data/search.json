@@ -2,6 +2,306 @@
   "version": 1,
   "documents": [
     {
+      "id": "pubmed:42958318",
+      "title": "GECSI: large-scale chromatin state imputation from gene expression.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42958318/index.html",
+      "meta": [
+        "Fu, Jingyuan; Ernst, Jason",
+        "Genome biology",
+        "2026-10-30"
+      ],
+      "tags": [],
+      "summary": "该文用基因表达数据通过多类逻辑回归集成预测染色质状态注释，虽涉及染色质调控特征，但无三维空间结构建模且方法为传统机器学习，与三维基因组/染色质组织建模关联较弱。",
+      "abstract": "Chromatin state annotations based on epigenetic marks are powerful resources, but many additional samples have gene expression data available while lacking epigenetic mark data and chromatin state annotations. Using the EpiATLAS resource of the International Human Epigenome Consortium (IHEC), we develop Gene Expression-based Chromatin State Imputation (GECSI), which uses an ensemble of multi-class logistic regression classifiers to predict chromatin state annotations from gene expression data. We show in cross-validation that GECSI accurately predicts observed chromatin state annotations. We also apply GECSI using gene expression data in 449 IHEC additional samples, providing an expanded chromatin state annotation resource. 基于表观遗传标记的染色质状态注释是强大的资源，但许多额外样本有基因表达数据可用，却缺乏表观遗传标记数据和染色质状态注释。利用国际人类表观基因组联盟 (International Human Epigenome Consortium, IHEC) 的 EpiATLAS 资源，我们开发了基于基因表达的染色质状态插补 (Gene Expression-based Chromatin State Imputation, GECSI)，它使用多类逻辑回归分类器的集成来从基因表达数据预测染色质状态注释。我们在交叉验证中表明，GECSI 能准确预测观察到的染色质状态注释。我们还对 449 个 IHEC 额外样本应用 GECSI 使用基因表达数据，提供了一个扩展的染色质状态注释资源。",
+      "date": "2026-10-30"
+    },
+    {
+      "id": "pubmed:42960994",
+      "title": "Cross-task benchmarking reveals variable transferability of deep learning models across molecular quantitative trait loci.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42960994/index.html",
+      "meta": [
+        "Chen, Sihan; Wang, Xiaoyu; Peleg, Anton Y; Xu, Shuting; Li, Fuyi; Webb, Geoffrey I; Song, Jiangning",
+        "Briefings in bioinformatics",
+        "2026-10-30"
+      ],
+      "tags": [],
+      "summary": "该文系统评估了深度学习模型在多种分子QTL（含染色质可及性、染色质环等）预测中的跨任务迁移能力，虽以QTL预测为主而非直接建模染色质三维结构，但涉及染色质组织相关调控特征且采用AI方法，对本课题有方法学参考价值。",
+      "abstract": "Most genetic variants associated with complex traits reside in non-coding regions of the genome, complicating their functional interpretation. Recent deep learning models have advanced the prediction of expression quantitative trait loci (eQTLs), but whether these models generalize across diverse molecular phenotypes is unknown. Here, we assess the cross-task transferability of pretrained regulatory features from six representative sequence- and annotation-based models across nine classes of molecular quantitative trait loci (xQTLs). We observe that while all models perform well in eQTL prediction, their performance varies substantially across other xQTL predictions. Chromatin accessibility, transcription factor binding, and histone QTLs are generally well predicted, whereas chromatin looping and microRNA expression QTLs remain challenging. Foundation models, particularly AlphaGenome and Borzoi, consistently outperform models based on local sequence context and exhibit improved robustness across class-imbalance settings. Tree-based ensemble classifiers further enhance predictive performance, suggesting that nonlinear interactions among regulatory features contribute substantially to variant prioritization. Applying AlphaGenome and Borzoi to coronary artery disease-associated genome-wide association studies loci identifies 337 high-confidence candidate chromatin accessibility QTLs, including 11 previously reported and 326 candidates that display significantly larger allele-specific differences in predicted chromatin accessibility signals. Collectively, our results reveal substantial variability in the cross-task performance of current eQTL-centric models, highlight the advantages of long-range genomic representations and inform the prioritization of candidate regulatory variants contributing to complex diseases. 与复杂性状相关的大多数遗传变异位于基因组的非编码区域，这使其功能解读变得复杂。最近的深度学习模型在预测表达数量性状位点（eQTLs）方面取得了进展，但这些模型是否能跨不同的分子表型进行泛化尚不清楚。在此，我们评估了来自六个代表性序列和注释基础模型的预训练调控特征在九类分子数量性状位点（xQTLs）上的跨任务可迁移性。我们观察到，尽管所有模型在eQTL预测中表现良好，但它们在其它xQTL预测中的性能差异显著。染色质可及性、转录因子结合和组蛋白QTLs通常预测良好，而染色质环化和microRNA表达QTLs仍具挑战性。基础模型，特别是AlphaGenome和Borzoi，始终优于基于局部序列上下文的模型，并在类别不平衡设置中表现出更强的鲁棒性。基于树的集成分类器进一步增强了预测性能，表明调控特征之间的非线性交互对变异优先级排序有显著贡献。将AlphaGenome和Borzoi应用于冠状动脉疾病相关的全基因组关联研究位点，识别出337个高置信度候选染色质可及性QTLs，其中包括11个先前报道的和326个在预测染色质可及性信号中表现出显著更大等位基因特异性差异的候选位点。总体而言，我们的结果揭示了当前以eQTL为中心的模型在跨任务性能上的显著变异性，强调了长程基因组表征的优势，并为复杂疾病相关候选调控变异的优先级排序提供了信息。",
+      "date": "2026-10-30"
+    },
+    {
+      "id": "pubmed:42951970",
+      "title": "Genetic variants shape single-cell chromatin accessibility and disease risk.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42951970/index.html",
+      "meta": [
+        "Xue, Angli; Fan, Jianan; Dong, Oscar A; Huang, Hao Lawrence; Chen, Ling; Allen, Peter C; Spenceley, Eleanor; Sagi-Zsigmond, Eszter; Bowen, Blake; Henry, Albert; Cuomo, Anna S E; Tanudisastro, Hope A; Qiao, Zhen; Dorans, Elizabeth; Ben-David, Eyal; Farh, Kyle Kai-How; Hu, Linfeng; Liu, Yijia Christiana; Neavin, Drew R; Lee, Arthur S; Senabouth, Anne; Bartie, Caitlin; McCloy, Rachael A; Chin, Venessa; Zhou, Wei; Price, Alkes L; de Lange, Katrina M; Figtree, Gemma A; Hewitt, Alex W; MacArthur, Daniel G; Powell, Joseph E",
+        "Nature",
+        "2026-10-29"
+      ],
+      "tags": [],
+      "summary": "该研究利用大规模单细胞染色质可及性数据鉴定caQTL，并训练图神经网络推断峰-基因连接，虽聚焦遗传变异与调控，但核心是染色质可及性而非三维空间架构建模，方法上AI应用较浅，故评6分。",
+      "abstract": "Understanding how genetic variation shapes gene regulation at single-cell resolution is crucial for elucidating complex disease mechanisms(1), but has been limited by the lack of large-scale single-cell multi-omics data(2-4). Here we present single-cell assay for transposase-accessible chromatin with sequencing of 3.5 million peripheral blood mononuclear cells from 1,042 donors with matched whole-genome sequencing. Across 28 immune cell types, we tested 440,996 chromatin accessibility peaks and identified 243,225 chromatin accessibility quantitative trait loci (caQTLs) at 100,483 peaks, 60% of them cell-type specific. Rare variant analysis identified 38,161 associated peaks, with predicted transcription factor-binding disruption implicated at individual loci. Colocalization with expression QTLs (eQTLs) from single-cell RNA sequencing data (5.4 million peripheral blood mononuclear cells)(5) defined 28,834 candidate cis-regulatory elements. Across genome-wide association studies for 16 diseases and 44 blood traits, caQTLs colocalized 4.5-22.6% more signals than eQTLs alone. Cell-type-specific and tissue-specific context, distal effects and multi-causal-variant models raised genome-wide association study-eQTL concordance from approximately 16% to approximately 65%. Cell state further modulates genetic effects, with 27% of over 200,000 caQTL-cell-state interactions lacking a main effect. At the inflammatory bowel disease risk gene ADCY7, accessibility effects varied with genotype and G protein-mediated pathway activity in CD4(+) T cells. A graph neural network trained on both eQTL and caQTL layers inferred peak-gene links in unpaired multiome data with up to 17.2% higher accuracy than QTL-agnostic data, uncovering 128 additional transcription factor-target pairs (22% increase). Together, these results show that genetic variants shape chromatin accessibility in a cell-type-specific and cell-state-specific manner, influencing immune function and disease risk. 理解遗传变异如何在单细胞分辨率下塑造基因调控，对于阐明复杂疾病机制至关重要(1)，但由于缺乏大规模单细胞多组学数据而受到限制(2-4)。在此，我们展示了来自1,042名供体的350万个外周血单核细胞的转座酶可及性染色质单细胞测序，并配有匹配的全基因组测序。在28种免疫细胞类型中，我们检测了440,996个染色质可及性峰，并在100,483个峰处鉴定出243,225个染色质可及性数量性状位点（caQTLs），其中60%具有细胞类型特异性。罕见变异分析鉴定出38,161个相关峰，并在个别位点提示预测的转录因子结合破坏。与来自单细胞RNA测序数据的表达QTL（eQTLs）（540万个外周血单核细胞）(5)共定位，定义了28,834个候选顺式调控元件。在针对16种疾病和44种血液性状的全基因组关联研究中，caQTLs比单独eQTLs多共定位4.5-22.6%的信号。细胞类型特异性和组织特异性背景、远端效应以及多因果变异模型将全基因组关联研究-eQTL一致性从约16%提高到约65%。细胞状态进一步调节遗传效应，在超过200,000个caQTL-细胞状态相互作用中，有27%缺乏主效应。在炎症性肠病风险基因ADCY7处，可及性效应随CD4(+) T细胞中的基因型和G蛋白介导通路活性而变化。一个在eQTL和caQTL层上训练的图神经网络在非配对多组学数据中推断峰-基因连接，其准确率比不区分QTL的数据高出多达17.2%，并发现了128个额外的转录因子-靶标对（增加22%）。总之，这些结果表明，遗传变异以细胞类型特异性和细胞状态特异性方式塑造染色质可及性，从而影响免疫功能和疾病风险。",
+      "date": "2026-10-29"
+    },
+    {
+      "id": "pubmed:42952172",
+      "title": "Identification of ageing-related genes in prostate cancer with type 2 Diabetes using machine learning: a multi-omics study focusing on SOX4, PRNP, and FOXO4.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42952172/index.html",
+      "meta": [
+        "Zhang, Wei; Zhang, Xueqian; Zhang, Chenghao; Shi, Xinyang; Deng, Yiheng; Gao, Yan; Bi, Kaipeng; Wang, Zheng; Chen, Guanqiu; Ye, Zhoujie; An, Ziyan; Fu, Weijun",
+        "Artificial cells, nanomedicine, and biotechnology",
+        "2026-10-29"
+      ],
+      "tags": [],
+      "summary": "该研究用机器学习筛选前列腺癌与2型糖尿病及衰老相关的诊断基因标志物（SOX4、PRNP、FOXO4），属临床生物标志物与转录组分析，不涉及染色质三维构架或分子模拟建模，与本课题无关。",
+      "abstract": "Prostate cancer (PCa) demonstrates complex associations with type 2 diabetes mellitus (T2DM) and ageing, though their interconnected molecular mechanisms remain poorly defined. This study aimed to identify and validate diagnostic biomarkers at the intersection of these pathways to enable early detection and risk stratification in high-risk populations. Bioinformatic analysis was performed on PCa and T2DM transcriptomic data downloaded from the GEO database, followed by differential expression analysis, weighted gene co-expression network analysis (WGCNA), and functional enrichment. Eight machine learning algorithms were applied to identify hub ageing-related genes (ARGs), with SHAP analysis interpreting feature importance. A nomogram model was constructed and validated across multiple cohorts. Immune infiltration, drug sensitivity, single-cell RNA sequencing, and spatial transcriptomics were used for mechanistic exploration. Three key ARGs (SOX4, PRNP, and FOXO4) were identified and used to develop a diagnostic model with high accuracy (AUCs: 0.726-0.905). SOX4 promoted immune evasion, PRNP exhibited context-dependent duality, and FOXO4 functioned as a tumor suppressor. Spatial and single-cell analyses revealed cell-type-specific expression and fibroblast-epithelial communication via MIF, LRP1, and FZD1. Drug sensitivity profiling identified abiraterone and docetaxel as potential therapeutics for high- and low-risk patients, respectively. In conclusion, SOX4, PRNP, and FOXO4 are key biomarkers linking PCa, T2DM, and ageing, and the diagnostic model shows robust performance and clinical utility, providing insights into microenvironment-driven mechanisms and personalized treatment strategies for PCa patients with T2DM. 前列腺癌（PCa）与2型糖尿病（T2DM）及衰老之间表现出复杂的关联，尽管其相互关联的分子机制仍不明确。本研究旨在识别并验证这些通路交叉点处的诊断生物标志物，以实现高危人群的早期检测和风险分层。对从GEO数据库下载的PCa和T2DM转录组数据进行了生物信息学分析，随后进行了差异表达分析、加权基因共表达网络分析（WGCNA）和功能富集分析。应用八种机器学习算法识别核心衰老相关基因（ARGs），并通过SHAP分析解释特征重要性。构建了一个列线图模型，并在多个队列中进行了验证。使用免疫浸润、药物敏感性、单细胞RNA测序和空间转录组学进行机制探索。识别出三个关键ARGs（SOX4、PRNP和FOXO4），并用于开发具有高准确性的诊断模型（AUCs：0.726-0.905）。SOX4促进免疫逃逸，PRNP表现出情境依赖性双重作用，而FOXO4作为肿瘤抑制因子发挥作用。空间和单细胞分析揭示了细胞类型特异性表达以及通过MIF、LRP1和FZD1介导的成纤维细胞-上皮细胞通讯。药物敏感性分析确定阿比特龙和多西他赛分别作为高风险和低风险患者的潜在治疗药物。总之，SOX4、PRNP和FOXO4是连接PCa、T2DM和衰老的关键生物标志物，该诊断模型显示出稳健的性能和临床实用性，为伴有T2DM的PCa患者提供了微环境驱动机制和个性化治疗策略的见解。",
+      "date": "2026-10-29"
+    },
+    {
+      "id": "pubmed:42953949",
+      "title": "Genome-Wide and Multi-Omics Analysis Identified DNA-Interacting Circular RNA circFOXK2 as MLL1 Regulator for Histone H3K4 Methylation in Pancreatic Ductal Adenocarcinoma.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42953949/index.html",
+      "meta": [
+        "Wong, Chi Hin; Pena-Paladines, Jessica Jazmin; Leung, Sum Yin Valerie; To, Ka-Fai; Chok, Kenneth Siu Ho; Chen, Yangchao",
+        "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+        "2026-10-29"
+      ],
+      "tags": [],
+      "summary": "该研究通过多组学分析circFOXK2与DNA互作调控H3K4甲基化及基因表达，虽涉及染色质水平调控但无三维基因组空间架构建模，且方法以实验为主，缺乏AI或分子模拟建模。",
+      "abstract": "Pancreatic ductal adenocarcinoma (PDAC) is one of the most devastating malignancies with high lethality despite the current therapeutic interventions. Circular RNAs (circRNAs) play important roles in many biological processes and disease development. However, the underlying mechanism remains largely unexplored. To identify novel druggable targets, we aimed to elucidate the mechanisms contributing to the critical roles of circRNAs in PDAC. We performed a genome-wide and multi-omics investigation on the circFOXK2-DNA interaction in PDAC progression. Single-cell ATAC-sequencing analysis using the publicly available dataset revealed the importance of the circFOXK2-DNA interaction network in intratumoral heterogeneity. Through circRNA-DNA interaction by complementary base pairing, circFOXK2 recognizes targets at different genomic locations: enhancer, promoter, and intragenic region. CircFOXK2 forms a docking pocket by intramolecular base pairing for the N-terminal RNA-recognition motif of PPIE, disrupting the PPIE-MLL1 interaction. This removes the PPIE inhibitory effects on MLL1 for gene-activating H3K4 methylation. Specifically, circFOXK2 promotes TMSB15B and BCAS1 expressions by enhancing H3K4me3 at the promoter. At the gene body, circFOXK2 facilitates transcription elongation of TRIO and LAMA4 by intragenic H3K4me3. At the distal intergenic enhancer, circFOXK2 promotes H3K4me1 of CYP26A1 and TCP11 for gene activation. These results highlight the importance and therapeutic potential of circRNA-DNA interaction in gene regulation. 胰腺导管腺癌（PDAC）是最具破坏性的恶性肿瘤之一，尽管目前已有治疗干预手段，其致死率仍然很高。环状RNA（circRNAs）在许多生物过程和疾病发展中发挥重要作用。然而，其潜在机制在很大程度上仍未得到探索。为了识别新的可药物靶点，我们旨在阐明circRNAs在PDAC中发挥关键作用的机制。我们对circFOXK2-DNA相互作用在PDAC进展中的机制进行了全基因组和多组学研究。利用公开数据集的单细胞ATAC测序分析揭示了circFOXK2-DNA相互作用网络在肿瘤内异质性中的重要性。通过互补碱基配对的circRNA-DNA相互作用，circFOXK2识别不同基因组位置的靶点：增强子、启动子和基因内区域。circFOXK2通过分子内碱基配对形成对接口袋，用于PPIE的N端RNA识别基序，从而破坏PPIE-MLL1相互作用。这消除了PPIE对MLL1在基因激活H3K4甲基化中的抑制作用。具体而言，circFOXK2通过增强启动子处的H3K4me3促进TMSB15B和BCAS1的表达。在基因体区域，circFOXK2通过基因内H3K4me3促进TRIO和LAMA4的转录延伸。在远端基因间增强子处，circFOXK2促进CYP26A1和TCP11的H3K4me1以实现基因激活。这些结果强调了circRNA-DNA相互作用在基因调控中的重要性及其治疗潜力。",
+      "date": "2026-10-29"
+    },
+    {
+      "id": "pubmed:42954985",
+      "title": "Charge-altering histone mutations reprogram electrostatic coupling from single nucleosomes to higher-order chromatin structures.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42954985/index.html",
+      "meta": [
+        "Zhang, Houfang; Hu, Guanhua; Liu, Gege; Xu, Wang; Zhao, Xinyi; Li, Anbang; Peng, Yunhui",
+        "Nanoscale",
+        "2026-10-29"
+      ],
+      "tags": [],
+      "summary": "该研究通过大规模组蛋白突变分析、183个突变体静电建模与18微秒分子动力学模拟，揭示电荷改变型组蛋白突变如何从单核小体静电势重塑到高阶染色质核小体间静电耦合，为染色质高级结构的静电调控与计算建模提供物理框架。",
+      "abstract": "Nucleosomes are stabilized and organized by electrostatic interactions that govern chromatin folding and higher-order structure. Although many cancer-associated histone mutations alter residue charge, how such perturbations propagate from single nucleosomes to higher-order chromatin organization remains unclear. Here, through large-scale analysis of histone mutation datasets, we show that charge-altering mutations are enriched among recurrent high-frequency mutations and exhibit stronger predicted destabilizing effects on nucleosome-associated interactions than charge-neutral variants. We demonstrate that even a single charge-altering mutation can substantially reshape the nucleosome surface electrostatic potential, thereby modulating long-range electrostatic interactions with regulatory proteins. By systematically analyzing 25 experimentally resolved nucleosome-protein complexes and 183 mutant models, we quantify how individual charge-altering mutations substantially alter electrostatic interaction forces. Extensive molecular dynamics simulations totaling 18 mus further reveal that single-point mutations can produce less favorable nucleosome-protein binding-energy estimates and reorganize interfacial hydrogen-bonding networks. Importantly, analysis of higher-order nucleosome assemblies shows that charge-altering mutations can modulate inter-nucleosomal electrostatic interactions in a packing-geometry-dependent manner, while mutations near the acidic patch can also perturb H4 tail-nucleosome electrostatic coupling. Our results provide a physical framework for understanding how local electrostatic perturbations caused by cancer-associated charge-altering histone mutations may influence nucleosome interactions across multiple structural scales. 核小体通过静电相互作用得以稳定和组织，这些相互作用调控染色质折叠及高阶结构。尽管许多癌症相关的组蛋白突变改变残基电荷，但这些扰动如何从单个核小体传播至高阶染色质组织仍不清楚。在此，通过对组蛋白突变数据集的大规模分析，我们表明电荷改变突变在复发性高频突变中富集，并且与电荷中性变异相比，对核小体相关相互作用表现出更强的预测去稳定效应。我们证明，即使单个电荷改变突变也能显著重塑核小体表面静电势，从而调节与调控蛋白的长程静电相互作用。通过系统分析25个实验解析的核小体-蛋白质复合物和183个突变模型，我们量化了单个电荷改变突变如何显著改变静电相互作用力。总计18微秒的广泛分子动力学模拟进一步揭示，单点突变可产生较不利的核小体-蛋白质结合能估计，并重排界面氢键网络。重要的是，对高阶核小体组装的分析表明，电荷改变突变能以堆积几何依赖的方式调节核小体间静电相互作用，而酸性斑块附近的突变也能扰动H4尾部-核小体静电耦合。我们的结果为理解癌症相关电荷改变组蛋白突变引起的局部静电扰动如何可能跨多个结构尺度影响核小体相互作用提供了物理框架。",
+      "date": "2026-10-29"
+    },
+    {
+      "id": "pubmed:42949763",
+      "title": "XChrom: A Cross-Cell Chromatin Accessibility Prediction Model Integrating Genomic Sequence and Cellular Context.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42949763/index.html",
+      "meta": [
+        "Miao, Yuanyuan; Liang, Xuan; Zhang, Wenwen; Han, Dongmei; Li, Yurun; Wang, Zhen",
+        "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+        "2026-10-28"
+      ],
+      "tags": [],
+      "summary": "XChrom是一个整合基因组序列与单细胞转录组细胞身份的深度学习模型，用于跨细胞预测染色质可及性，属于染色质水平调控建模但未涉及三维空间构象。",
+      "abstract": "Single-cell chromatin accessibility offers unique insights into transcriptional regulation beyond gene expression. However, paired datasets of these two modalities remain relatively scarce, and existing computational models cannot simultaneously predict chromatin accessibility for unseen genomic regions and cells. Here, we present XChrom, a deep learning framework for genome-wide cross-cell chromatin accessibility prediction that integrates genomic sequence and single-cell transcriptomics-derived cell identity into a unified model. Comprehensive evaluations show that XChrom consistently outperforms existing methods in cross-region and cross-cell predictions, and uniquely enables cross-both predictions. It also supports cross-sample prediction when batch effects are properly corrected. Cross-species analyses demonstrate XChrom's robust performance and its ability to capture evolutionarily conserved regulatory rules. Applied to peripheral blood mononuclear cells from COVID-19 patients, XChrom accurately identifies transcription factor activities in novel but related cell states and reveals pathogenesis-associated regulatory alterations. XChrom is available as an open-source Python package, facilitating single-cell transcriptional regulation research. 单细胞染色质可及性为转录调控提供了超越基因表达的独特见解。然而，这两种模态的配对数据集仍相对稀缺，现有计算模型无法同时预测未见基因组区域和细胞的染色质可及性。在此，我们提出XChrom，一种用于全基因组跨细胞染色质可及性预测的深度学习框架，将基因组序列和单细胞转录组学衍生的细胞身份整合到一个统一模型中。综合评估显示，XChrom在跨区域和跨细胞预测中始终优于现有方法，并独特地实现了跨两者预测。在批次效应得到适当校正时，它还支持跨样本预测。跨物种分析证明了XChrom的稳健性能及其捕捉进化保守调控规则的能力。应用于COVID-19患者的外周血单核细胞时，XChrom准确识别了新颖但相关细胞状态中的转录因子活性，并揭示了与发病机制相关的调控改变。XChrom作为开源Python包提供，促进了单细胞转录调控研究。",
+      "date": "2026-10-28"
+    },
+    {
+      "id": "pubmed:42950827",
+      "title": "A systematic delineation of 3'UTR regulatory elements and their contextual associations.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42950827/index.html",
+      "meta": [
+        "Liang, Nan; Li, Jing-Yi; Ding, Yang; Wang, Yu; Champer, Jackson; Ren, Li-Chen; Gao, Ge",
+        "Cell systems",
+        "2026-10-28"
+      ],
+      "tags": [],
+      "summary": "该文用深度学习模型系统解析3'UTR调控元件及其对RNA输出和核质分布的影响，对象是RNA调控而非染色质三维组织，虽涉及基因组调控但无染色质空间架构建模，方法可迁移性有限。",
+      "abstract": "The 3'UTR encodes regulatory information that shapes transcript abundance and subcellular distribution, yet the underlying sequence rules remain incompletely defined. We quantified the effects of  approximately 2 million synthetic 3'UTR inserts in A549 and HCT116 cells on RNA output and nuclear-cytoplasmic partitioning. We identified a broad repertoire of short 2- to 8-nt elements. Their effects largely followed a dominant coupled axis linking high RNA output with cytoplasmic enrichment and low RNA output with nuclear enrichment and were predominantly additive. A context-aware deep learning model captures most of this behavior while revealing that strong context dependence is uncommon and emerges mainly in rare, extreme contexts consistent with higher-order constraints. Applying the model to ClinVar 3'UTR variants prioritizes a subset of pathogenic single-nucleotide variants (SNVs) with aberrant predicted effects, frequently explained by creation or disruption of splice-site-like U1 motifs that can trigger telescripting-associated readthrough, highlighting a potent route to 3'UTR-driven disease mechanisms. A record of this paper's transparent peer review process is included in the supplemental information. 3'UTR编码调控信息，这些信息塑造了转录本的丰度和亚细胞分布，然而其背后的序列规则尚未完全明确。我们在A549和HCT116细胞中量化了约200万个合成3'UTR插入片段对RNA输出和核-细胞质分配的影响。我们识别出一系列广泛的2至8核苷酸短元件。它们的作用大多遵循一个主导的耦合轴，将高RNA输出与细胞质富集相关联，低RNA输出与核富集相关联，并且这些作用主要是加性的。一个上下文感知的深度学习模型捕获了大部分这种行为，同时揭示出强上下文依赖性并不常见，主要出现在稀有、极端的上下文中，这与高阶约束一致。将该模型应用于ClinVar 3'UTR变异体，优先筛选出一部分具有异常预测效应的致病性单核苷酸变异（SNVs），这些效应通常由剪接位点样U1基序的创建或破坏所解释，这些基序可触发与telescripting相关的通读，突显了3'UTR驱动疾病机制的一条强效途径。本论文透明同行评审过程的记录包含在补充信息中。",
+      "date": "2026-10-28"
+    },
+    {
+      "id": "pubmed:42934226",
+      "title": "A droplet-based long-read single-cell epigenome sequencing method for the high-throughput profiling of multidimensional regulatory elements within individual cells.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42934226/index.html",
+      "meta": [
+        "Lu, Jiansen; Chen, Kexuan; Jia, Shengtao; Chen, Guodong; Yu, Xianhong; Li, Wen",
+        "Cell discovery",
+        "2026-10-27"
+      ],
+      "tags": [],
+      "summary": "开发基于液滴的长读长单细胞表观基因组测序平台（dscNanoATAC/dscNanoCUT），并利用单倍型数据优化深度学习模型预测等位基因特异性三维基因组结构，与染色质构象计算建模部分相关。",
+      "abstract": "Recently, long-read sequencing methods have revolutionized genomic research by allowing the resolution of previously inaccessible regions across the genome. However, the throughput and scalability of these methods have hindered their general application in the field. To address this limitation, we developed droplet-based methods for the single-cell profiling of chromatin accessibility (droplet-based single-cell Nanopore ATAC-seq, dscNanoATAC) and histone modifications (droplet-based single-cell NanoCUT&Tag, dscNanoCUT) by combining a commercial microfluidic device and long-read sequencing platform, achieving a throughput of ~5000 cells in a single experiment and significantly reducing the time and costs compared with previous techniques. With cultured mammalian cells, we demonstrated the ability of dscNanoATAC and dscNanoCUT to detect allele-specific epigenetics, neighboring co-accessibility, and regulatory elements within low-mappability regions. Furthermore, leveraging the haplotype-resolved data generated from dscNanoATAC, we optimized a deep-learning model to predict allele-specific three-dimensional genome structures with high resolution (10 kb). We also applied dscNanoATAC and dscNanoCUT in complex tissues using the mouse brain as an example, and characterized the allele-specific regulation of the imprinting gene Ube3a in neurons, obtaining insights into the mechanisms underlying the pathogenesis of Prader-Willi and Angelman syndrome. With dscNanoCUT, we systematically evaluated the activity of transposon elements and revealed their potential regulatory functions in the mouse brain. Together, dscNanoATAC and dscNanoCUT serve as a versatile and scalable long-read epigenome sequencing platform, enabling multidimensional analyses of elements ranging from chromatin accessibility to histone modifications and their interplay between chromatin structures. This platform may advance our understanding of epigenetic regulation in complex biological systems. 最近，长读长测序方法通过解析基因组中先前难以触及的区域，彻底改变了基因组研究。然而，这些方法的通量和可扩展性阻碍了它们在该领域的普遍应用。为了解决这一限制，我们通过结合商业微流控装置和长读长测序平台，开发了用于单细胞染色质可及性分析（基于液滴的单细胞Nanopore ATAC-seq，dscNanoATAC）和组蛋白修饰分析（基于液滴的单细胞NanoCUT&Tag，dscNanoCUT）的基于液滴的方法，在单次实验中实现了约5000个细胞的通量，并显著减少了与先前技术相比的时间和成本。利用培养的哺乳动物细胞，我们证明了dscNanoATAC和dscNanoCUT能够检测等位基因特异性表观遗传学、邻近共可及性以及低比对区域内的调控元件。此外，利用dscNanoATAC生成的单倍型解析数据，我们优化了一个深度学习模型，以高分辨率（10 kb）预测等位基因特异性三维基因组结构。我们还将dscNanoATAC和dscNanoCUT应用于复杂组织，以小鼠大脑为例，并表征了神经元中印记基因Ube3a的等位基因特异性调控，从而获得了对Prader-Willi和Angelman综合征发病机制背后机制的见解。利用dscNanoCUT，我们系统评估了转座子元件的活性，并揭示了它们在小鼠大脑中的潜在调控功能。总之，dscNanoATAC和dscNanoCUT作为一个多功能且可扩展的长读长表观基因组测序平台，能够对从染色质可及性到组蛋白修饰的元素及其在染色质结构之间的相互作用进行多维分析。该平台可能促进我们对复杂生物系统中表观遗传调控的理解。",
+      "date": "2026-10-27"
+    },
+    {
+      "id": "pubmed:42935097",
+      "title": "Single-cell multi-omics reveals distinct regulatory architectures coordinating carbon assimilation and cyclic electron flow in maize C(4) photosynthesis.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42935097/index.html",
+      "meta": [
+        "Li, Chuanshun; Zhang, You; Lin, Kande; Liu, Xiaojian; Zhang, Hanxiao; Yang, Jianzhao; Zhao, Caiyao; Yang, Leyi; Long, Zhengbiao; Li, Yangmeihui; Deng, Qilin; Ma, Bin; Wei, Tong; Zhong, Silin; Zhu, Xinguang; Li, Pinghua; Pan, Xiaoyong; Tu, Xiaoyu",
+        "Molecular plant",
+        "2026-10-27"
+      ],
+      "tags": [],
+      "summary": "该文利用单细胞多组学解析玉米C4光合作用中碳同化与环式电子流的调控架构，虽涉及染色质可及性和组蛋白修饰，但核心是转录调控与光合功能，未聚焦三维基因组/染色质空间组织建模，且无AI或分子模拟方法。",
+      "abstract": "C(4) photosynthesis arose repeatedly through redeployment of pre-existing regulatory circuitry, yet how a shared regulatory system coordinates its interdependent photosynthetic functions remains unresolved. Here we integrate single-nucleus RNA-seq and sci-ATAC-seq with bulk histone profiles from mesophyll- and bundle sheath-enriched fractions and transcription factor binding profiles obtained in protoplasts. We compare the C(4) shuttle and Calvin-Benson-Bassham cycle with NDH-mediated cyclic electron flow in bundle sheath cells. Selected carbon assimilation loci were associated with differential H3K27me3, whereas the NDH-associated branch showed regulatory inputs linked to DNA binding with one finger (DOF) transcription factors. Dissection of the ZmNdhU promoter identifies a 49 bp DOF-responsive cis element whose activity is sensitive to local sequence context and insertion position in the promoter constructs tested and that supports vascular bundle-associated reporter expression in a heterologous promoter context. Bundle sheath-enriched expression of ZmDOF30 increases NDH-associated expression, cyclic electron flow, leaf ATP content and photosynthetic performance. In a field trial, the transgenic lines showed increased growth and biomass. Comparative analyses revealed lineage-associated variation in predicted promoter-proximal DOF-binding potential within a broader H3K27me3-associated transcription factor background. These findings distinguish regulatory configurations among maize photosynthetic modules and identify DOF-NDH regulation as a candidate route for improving photosynthetic performance in maize, with broader relevance to NADP-ME grasses. C(4)光合作用通过预先存在的调控回路的重部署而反复出现，然而一个共享的调控系统如何协调其相互依赖的光合功能仍未解决。在此，我们整合了单核RNA-seq和sci-ATAC-seq，以及来自叶肉和束鞘富集组分的批量组蛋白谱和在前原生质体中获得的转录因子结合谱。我们比较了C(4)穿梭和Calvin-Benson-Bassham循环与束鞘细胞中NDH介导的环式电子流。选定的碳同化位点与差异H3K27me3相关，而NDH相关分支显示出与单指DNA结合（DOF）转录因子相关的调控输入。对ZmNdhU启动子的剖析鉴定出一个49 bp的DOF响应顺式元件，其活性对测试的启动子构建体中的局部序列上下文和插入位置敏感，并在异源启动子上下文中支持维管束相关的报告基因表达。束鞘富集的ZmDOF30表达增加了NDH相关表达、环式电子流、叶片ATP含量和光合性能。在田间试验中，转基因品系显示出增加的生长和生物量。比较分析揭示了在更广泛的H3K27me3相关转录因子背景下，谱系相关的预测启动子近端DOF结合潜力变异。这些发现区分了玉米光合模块间的调控配置，并将DOF-NDH调控确定为改善玉米光合性能的候选途径，对NADP-ME禾本科植物具有更广泛的相关性。",
+      "date": "2026-10-27"
+    },
+    {
+      "id": "pubmed:42938289",
+      "title": "A Frozen Plant DNA Language Model for Computational Prioritization and Functional Annotation of Melon (Cucumis melo) Variants.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42938289/index.html",
+      "meta": [
+        "Sun, Guosheng; Wei, Yanping; Li, Entong; Xiao, Mengting; Zhang, Zhilin; Zhang, Zhenchao; Dai, Zhongliang; Ma, Zhihu; Zhang, Changwei",
+        "Genes",
+        "2026-10-27"
+      ],
+      "tags": [],
+      "summary": "该研究将植物DNA语言模型用于甜瓜变异功能注释与顺式调控元件生成，属序列水平基因组预测，未涉及三维基因组或染色质空间架构建模，方法上也无分子模拟，与本课题核心方向关联很弱。",
+      "abstract": "Background/Objectives: Fruit quality in melon is determined by complex traits including sugar accumulation, aroma, flesh color, ripening behavior and disease resistance. Conventional genomic selection provides limited mechanistic interpretation, especially for regulatory and de novo variants. We adapted the EVEE interpretable embedding-probing framework to melon using PlantCAD2 as a frozen DNA language model backbone. Methods: The model was not fine-tuned or further pre-trained. Instead, lightweight probes were trained on fixed embeddings derived from sequence windows surrounding genetic variants. The pipeline integrated supervised variant-effect prediction, functional perturbation profiling, training-free masked log-likelihood ratio scoring, and cis-regulatory element generation. We applied the framework to 32,268 public genotyping-by-sequencing (GBS) SNPs from a melon diversity panel. A total of 30,052 variants were successfully encoded and analyzed. Results: Of these, 31.9% were classified as high predicted functional effect under the GWAS-proximal probe. We adopted a rigorous independent split based on chromosome and locus blocks to ensure test variants and training variants occupy distinct linkage-disequilibrium blocks. In this setting, the covariance probe yields an AUROC of approximately 0.51 with a 95% confidence interval covering 0.50, indicating no predictive advantage over random guessing. The full-cohort AUROC value of 0.748 reported earlier is attributed to linkage-disequilibrium leakage and overlapping positive samples between datasets, and thus does not reflect true independent generalization. The 17-class structural annotation probe reached 95.97% per-position accuracy. Functional perturbation signals were enriched in intronic, coding, and proximal promoter regions, consistent with known regulatory architectures in melon. Using the masked language model head with Gibbs sampling, we generated 76 candidate 400 bp cis-regulatory elements associated with sugar metabolism pathways. A posterior consistency check against 18 published GWAS/QTL loci showed effect-score patterns broadly concordant with reported loci; this is a consistency analysis against known loci, not an independent prospective validation. Variants in the CmTST2 region exhibited elevated mean effect scores of 0.7922 compared with the genome-wide background of 0.406. Conclusions: Overall, this study provides a computational, hypothesis-generating framework in which a frozen plant DNA language model combined with lightweight probes prioritizes melon variants and generates candidate regulatory sequences; all outputs are unverified in-silico predictions requiring experimental validation before any functional or breeding use. Because every variant is scored independently from its local sequence context, the framework necessarily treats genetically linked, network-dependent traits as single-locus effects and does not model epistasis, pathway-level interactions, or genotype-by-environment effects; the outputs are sequence-level priors, not phenotype predictions. The results support a generalizable framework for model-guided functional genomics and precision breeding in Cucurbitaceae crops. 背景/目标：甜瓜果实品质由复杂性状决定，包括糖分积累、香气、果肉颜色、成熟行为和抗病性。传统基因组选择提供的机制解释有限，尤其是对调控变异和新发变异。我们利用PlantCAD2作为冻结DNA语言模型骨干，将EVEE可解释嵌入探测框架应用于甜瓜。方法：模型未进行微调或进一步预训练。相反，轻量级探针在遗传变异周围序列窗口的固定嵌入上训练。该流程整合了监督式变异效应预测、功能扰动分析、无训练掩码对数似然比评分以及顺式调控元件生成。我们将该框架应用于来自甜瓜多样性群体的32,268个公共基因分型测序（GBS）SNP。共成功编码并分析了30,052个变异。结果：其中，31.9%的变异在GWAS邻近探针下被分类为高预测功能效应。我们采用基于染色体和位点区块的严格独立划分，确保测试变异和训练变异位于不同的连锁不平衡区块。在此设置下，协方差探针的AUROC约为0.51，95%置信区间覆盖0.50，表明相对于随机猜测无预测优势。先前报道的全队列AUROC值0.748归因于连锁不平衡泄漏和数据集间阳性样本重叠，因此不能反映真实的独立泛化能力。17类结构注释探针达到95.97%的逐位置准确率。功能扰动信号富集于内含子、编码区和近端启动子区域，与甜瓜已知调控架构一致。利用带吉布斯采样的掩码语言模型头，我们生成了76个与糖代谢途径相关的候选400 bp顺式调控元件。对18个已发表GWAS/QTL位点的后验一致性检查显示效应评分模式与报道位点大致一致；这是对已知位点的一致性分析，而非独立的前瞻性验证。CmTST2区域内的变异表现出平均效应评分0.7922，高于全基因组背景值0.406。结论：总体而言，本研究提供了一个计算性、假设生成的框架，其中冻结植物DNA语言模型结合轻量级探针对甜瓜变异进行优先级排序并生成候选调控序列；所有输出均为未经实验验证的计算机模拟预测，在任何功能或育种应用前需实验验证。由于每个变异均独立于其局部序列上下文进行评分，该框架必然将遗传连锁、网络依赖性性状视为单基因座效应，且不建模上位性、通路级相互作用或基因型-环境互作；输出为序列水平先验，而非表型预测。研究结果支持葫芦科作物中模型引导功能基因组学和精准育种的通用框架。",
+      "date": "2026-10-27"
+    },
+    {
+      "id": "pubmed:42928215",
+      "title": "simPIC: flexible simulation of single-cell ATAC-seq paired-insertion counts from individuals to populations.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42928215/index.html",
+      "meta": [
+        "Chugh, Sagrika; Shim, Heejung; McCarthy, Davis J",
+        "Genome biology",
+        "2026-10-26"
+      ],
+      "tags": [],
+      "summary": "simPIC 是模拟单细胞 ATAC-seq 插入计数的工具，用于群体规模染色质可及性研究，但仅涉及一维可及性统计建模，不涉及三维基因组或空间构象建模。",
+      "abstract": "Single-cell Assay for Transposase Accessible Chromatin (scATAC-seq) is increasingly used at population scale to study how genetic variation shapes chromatin accessibility. Method development is limited by the lack of flexible simulation tools with known ground truth. Here, we present simPIC, a fast, memory-efficient framework for simulating realistic single-cell ATAC-seq count data across individuals and populations. simPIC models cell groups, batch effects, and genotype-dependent accessibility variation, enabling evaluation of population-scale methods, including chromatin accessibility quantitative trait locus mapping. Across multiple datasets and cell types, simPIC closely matches real data distributions while scaling to cohort sizes impractical for current tools. 单细胞转座酶可及染色质分析（scATAC-seq）正日益在群体规模上用于研究遗传变异如何塑造染色质可及性。方法开发受限于缺乏具有已知真实值的灵活模拟工具。在此，我们提出simPIC，一个快速、内存高效的框架，用于模拟跨个体和群体的真实单细胞ATAC-seq计数数据。simPIC模拟细胞群、批次效应和基因型依赖性可及性变异，从而能够评估群体规模方法，包括染色质可及性数量性状基因座定位。在多个数据集和细胞类型中，simPIC紧密匹配真实数据分布，同时扩展到当前工具无法处理的队列规模。",
+      "date": "2026-10-26"
+    },
+    {
+      "id": "pubmed:42929553",
+      "title": "Decoding Conformational Dynamics and Hyperactivity of Histone H3K36 N-Methyltransferase in Oncogenic Mutations via tICA and Markov State Modeling.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42929553/index.html",
+      "meta": [
+        "Shah, Tejas; Heidari, Sahar; Rydzewski, Jakub; Torabifard, Hedieh",
+        "Journal of chemical information and modeling",
+        "2026-10-26"
+      ],
+      "tags": [],
+      "summary": "该研究通过全原子分子动力学模拟、tICA和马尔可夫状态模型，揭示NSD2组蛋白甲基转移酶致癌突变通过构象动力学重排增强催化活性的机制，涉及染色质修饰酶与核小体相互作用，但未直接建模染色质三维空间架构，方法可迁移至染色质相关蛋白的构象动力学研究。",
+      "abstract": "NSD2 is a histone methyltransferase that modifies lysine 36 in histone H3 (H3K36), playing a central role in chromatin organization and transcriptional regulation. Oncogenic mutations, such as E1099K and T1150A in NSD2, have been associated with hyperactive methylation, but the molecular mechanisms underlying this gain of function remain poorly understood. In this study, we performed all-atom molecular dynamics simulations of NSD2 bound to the nucleosome in wild type (WT), E1099K, T1150A, and the E1099K/T1150A double mutant. Analysis of MD simulations reveals that the global dynamics of the enzymes remain unaltered upon mutations. The time-lagged independent component analysis and Markov state modeling uncovered fundamental differences in free-energy landscapes among the variants. The WT NSD2 exhibited energetically and kinetically unfavorable transitions between the macrostates along with extended enzyme-substrate distances. On the other hand, the mutant systems demonstrate reduced SAM-H3K36 distances with modified energy landscapes that facilitate transitions or favor prolonged occupancy of catalytically competent states. Importantly, the mutations reorganize the network of intramolecular contacts around the catalytic site, SAM-binding pocket, and histone-binding interface, optimizing substance engagement geometry. These findings are consistent with experimental observations of enhanced catalytic activity and suggest that oncogenic mutations promote hyperactivity through strategic reorganization of conformational dynamics rather than simple destabilization, balancing local flexibility with global stability to enhance catalytic efficiency. Our results provide mechanistic insights into NSD2 dysregulation in cancer and establish a framework to develop novel therapeutics that target the enzyme's dynamic landscape. NSD2是一种组蛋白甲基转移酶，修饰组蛋白H3中的第36位赖氨酸（H3K36），在染色质组织和转录调控中发挥核心作用。致癌突变，如NSD2中的E1099K和T1150A，与过度活跃的甲基化相关，但这一功能获得背后的分子机制仍知之甚少。在本研究中，我们对野生型（WT）、E1099K、T1150A以及E1099K/T1150A双突变体中与核小体结合的NSD2进行了全原子分子动力学模拟。MD模拟分析显示，突变后酶的全局动力学保持不变。时间滞后独立成分分析和马尔可夫状态建模揭示了各变体之间自由能景观的根本差异。WT NSD2在大状态之间的转变在能量和动力学上均不利，且酶-底物距离延长。另一方面，突变系统表现出减小的SAM-H3K36距离，并具有修饰的能量景观，促进转变或有利于催化活性状态的长时间占据。重要的是，突变重组了催化位点、SAM结合口袋和组蛋白结合界面周围分子内接触的网络，优化了底物结合几何结构。这些发现与增强催化活性的实验观察一致，并表明致癌突变通过构象动力学的战略性重组而非简单去稳定化来促进过度活跃，平衡局部灵活性与全局稳定性以增强催化效率。我们的结果为癌症中NSD2失调提供了机制性见解，并建立了开发靶向该酶动态景观的新型治疗策略的框架。",
+      "date": "2026-10-26"
+    },
+    {
+      "id": "pubmed:42929576",
+      "title": "Deciphering Cellular and Spatial Regulatory Identities from Sparse Chromatin Accessibility Landscapes.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42929576/index.html",
+      "meta": [
+        "Wang, Yunhe; Guo, Songyu; Qian, Jingjing; Liang, Heqiu; Su, Yanchi; Yu, Zhuohan; Li, Xiangtao",
+        "Journal of chemical information and modeling",
+        "2026-10-26"
+      ],
+      "tags": [],
+      "summary": "提出CASSIA半监督表示学习框架，从稀疏染色质可及性数据中推断细胞和空间调控身份，涉及染色质可及性建模但未直接建模三维染色质空间架构。",
+      "abstract": "Chromatin accessibility profiling provides a powerful view of regulatory landscapes across heterogeneous biological systems, enabling the investigation of cell-state diversity and spatially organized regulatory programs. However, deciphering meaningful regulatory identities from sparse and noisy accessibility landscapes remains challenging, particularly for closely related cellular states and neighboring regulatory domains. Unlike transcriptomic measurements, chromatin accessibility does not directly capture canonical marker expression, and regulatory identities must therefore be inferred from indirect evidence, including gene activity scores, transcription factor motif activity, and reference-based annotation. These signals often become ambiguous, limiting the reliability of unsupervised clustering followed by post-hoc interpretation. Here, we present CASSIA (Chromatin Accessibility Semi-Supervised Identity-Aware representation learning), a unified label-guided framework for decoding cellular and spatial regulatory identities from chromatin accessibility landscapes. CASSIA leverages limited high-confidence anchors to learn informative accessibility representations while preserving intrinsic regulatory structures. The framework integrates a binary accessibility denoising autoencoder, a Jensen-Shannon divergence-based clustering constraint, and a similarity difference-aware triplet objective; spatial neighborhood consistency is further incorporated to preserve regulatory organization when spatial information is available. Across diverse chromatin accessibility datasets, CASSIA reconstructs cellular and spatial regulatory identities with improved agreement to biological annotations and tissue organization compared with representative baselines. Identity-associated accessible regions and transcription factor activity profiles reveal distinct regulatory programs underlying inferred identities, demonstrating that CASSIA transforms sparse accessibility landscapes into interpretable cellular and tissue-level regulatory maps. 染色质可及性图谱为异质性生物系统中的调控景观提供了强有力的视角，使得研究细胞状态多样性和空间组织的调控程序成为可能。然而，从稀疏且嘈杂的可及性景观中解读有意义的调控身份仍然具有挑战性，尤其是对于密切相关的细胞状态和相邻调控域。与转录组测量不同，染色质可及性并不直接捕获经典标志物表达，因此调控身份必须从间接证据中推断，包括基因活性评分、转录因子基序活性和基于参考的注释。这些信号往往变得模糊，限制了无监督聚类及事后解释的可靠性。在此，我们提出CASSIA（染色质可及性半监督身份感知表示学习），一个统一的标签引导框架，用于从染色质可及性景观中解码细胞和空间调控身份。CASSIA利用有限的高置信度锚点来学习信息丰富的可及性表示，同时保留内在调控结构。该框架整合了二元可及性去噪自编码器、基于Jensen-Shannon散度的聚类约束和相似性差异感知三元目标；当空间信息可用时，进一步引入空间邻域一致性以保留调控组织。在多样化的染色质可及性数据集中，与代表性基线相比，CASSIA重建细胞和空间调控身份时与生物学注释和组织组织的一致性更高。身份相关的可及区域和转录因子活性谱揭示了推断身份背后的不同调控程序，表明CASSIA将稀疏的可及性景观转化为可解释的细胞和组织水平调控图谱。",
+      "date": "2026-10-26"
+    },
+    {
+      "id": "pubmed:42932848",
+      "title": "EpiInsula: calibrated regression of the Hi-C insulation score from cell-type-specific epigenomic signal.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42932848/index.html",
+      "meta": [
+        "Jin, Yuyu; Chen, Tong; Gao, Jie; Tong, Mengyao; Xu, Guangcheng; Zhang, Xueyu; Liu, Weixu; Shen, Yin",
+        "Briefings in bioinformatics",
+        "2026-10-26"
+      ],
+      "tags": [],
+      "summary": "EpiInsula 用扩张卷积从细胞类型特异的表观基因组信号连续回归预测 Hi-C 绝缘分数（insulation score），直接建模染色质边界/绝缘这一三维基因组组织特征，属 AI 方法驱动的染色质空间架构预测。",
+      "abstract": "Chromatin insulation shapes which regulatory elements can reach which promoters, but much computational prediction of chromatin organisation has been posed as boundary classification, which discards the depth and shape of the insulation profile. We developed EpiInsula, a dilated convolutional framework that predicts the 10-kb Hi-C insulation score as a continuous quantity from six cell-type-specific epigenomic tracks read over a +/-700-kb window. Under a chromosome-disjoint partition that scores every evaluated locus with a model which never saw its chromosome, held-out correlations across four human cell lines are 0.791, 0.780, 0.860 and 0.774, and the regression of measured on predicted insulation has slopes of 0.90-0.95, indicating calibration of the conditional mean, the sense used throughout. Against seven methods fitted under a single evaluation contract, EpiInsula gives the highest correlation and, with boundary thresholds selected on validation chromosomes and frozen before testing, the highest boundary F1 against 4D Nucleome calls in every cell line; the lead is retained on the fine-scale component of the profile, and three published contact-map predictors retrained on the same data give lower correlation on the derived insulation score. On boundaries that differ between IMR-90 and K562 it recovers 0.383 of the contrasts against 0.024-0.264 for all seven comparison methods; it ranks first at every point of a 25-point threshold grid and in all six cell-line pairs, and the remaining methods are ranked differently from pooled correlation. EpiInsula provides a framework for predicting chromatin organisation on a continuous scale from routinely available epigenomic assays. Availability: https://github.com/Yin-Shen/EpiInsula. 染色质绝缘决定了哪些调控元件能够接触到哪些启动子，但许多关于染色质组织的计算预测被设定为边界分类问题，这丢弃了绝缘剖面的深度和形状。我们开发了EpiInsula，一个扩张卷积框架，从读取±700-kb窗口内的六种细胞类型特异性表观基因组轨道中，将10-kb Hi-C绝缘分数预测为连续量。在染色体不相交划分下，每个评估位点均由从未见过其染色体的模型评分，四个人类细胞系中的留出相关性分别为0.791、0.780、0.860和0.774，且实测对预测绝缘的回归斜率在0.90-0.95之间，表明条件均值的校准，这是全文使用的含义。与在单一评估合同下拟合的七种方法相比，EpiInsula给出最高相关性，并且在验证染色体上选择边界阈值并在测试前冻结的情况下，在每个细胞系中针对4D Nucleome调用获得最高边界F1分数；该领先优势在剖面的细尺度成分上得以保留，三种已发表的接触图预测器在相同数据上重新训练后，在派生绝缘分数上给出较低相关性。在IMR-90和K562之间不同的边界上，它恢复了0.383的对比度，而所有七种比较方法仅为0.024-0.264；它在25点阈值网格的每一点以及所有六个细胞系对中均排名第一，而其余方法的排名与合并相关性不同。EpiInsula提供了一个框架，用于从常规可用的表观基因组测定中连续尺度预测染色质组织。可用性：https://github.com/Yin-Shen/EpiInsula。",
+      "date": "2026-10-26"
+    },
+    {
+      "id": "pubmed:42922570",
+      "title": "HiC-LEGO: Biologically Guided High-Resolution 3D Genome Reconstruction Preserves Chromatin Organization at Kilobase Resolution.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42922570/index.html",
+      "meta": [
+        "Pandeya, Abhishek; Chowdhury, Md Fahimul Kabir; Oluwadare, Oluwatosin",
+        "bioRxiv : the preprint server for biology",
+        "2026-10-25"
+      ],
+      "tags": [],
+      "summary": "HiC-LEGO是一个基于图学习与层次化组装的高分辨率三维基因组重构框架，能从Hi-C/Micro-C数据重建染色质空间结构并保留TAD、增强子-启动子互作等组织特征，直接契合三维基因组计算建模课题。",
+      "abstract": "Three-dimensional (3D) chromosome reconstruction from Hi-C contact maps remains challenging because genome organization is hierarchical and fine-resolution models must reconcile local structure with chromosome-scale constraints. Here we present HiC-LEGO, a domain-aware hierarchical framework integrating ensemble chromatin domains with graph-based structural learning and progressive chromosome assembly. By combining ensemble domain selection with hierarchical reconstruction, HiC-LEGO reduces dependence on individual domain definitions while maintaining local organization during chromosome-scale assembly. Across five human cell lines at 5-kb resolution, HiC-LEGO achieves higher reconstruction concordance than evaluated state-of-the-art methods while better preserving domain organization. At 1-kb resolution, HiC-LEGO reconstructs complete GM12878 chromosome 8 and recovers close spatial proximity between an epigenomically supported distal MYC enhancer and its promoter. Reconstructions from 5-kb Micro-C data show that 249 experimentally defined RCMC microcompartment interactions at the Ppm1g locus occupy compact 3D configurations. In the breast cancer dataset, HiC-LEGO reconstructs structures that maintain stable TAD organization across healthy breast, primary tumors, and liver metastases, while revealing greater inter-patient structural heterogeneity in malignant pleural effusion samples. Pore-C validation shows that experimentally observed multi-way contacts spanning 1-5 Mb are enriched in compact reconstructed configurations across all 23 chromosomes. Thus, HiC-LEGO preserves regulatory interactions, disease-associated chromatin organization and higher-order spatial relationships beyond pairwise contact-map concordance. 从Hi-C接触图谱进行三维（3D）染色体重建仍然具有挑战性，因为基因组组织是分层的，且精细分辨率模型必须协调局部结构与染色体尺度约束。在此，我们提出HiC-LEGO，一种域感知的分层框架，整合了集成染色质域、基于图的结构学习和渐进式染色体组装。通过将集成域选择与分层重建相结合，HiC-LEGO减少了对单个域定义的依赖，同时在染色体尺度组装过程中维持局部组织。在五种人类细胞系中，以5-kb分辨率，HiC-LEGO实现了比所评估的最先进方法更高的重建一致性，同时更好地保留了域组织。在1-kb分辨率下，HiC-LEGO重建了完整的GM12878染色体8，并恢复了表观基因组学支持的远端MYC增强子与其启动子之间的紧密空间邻近。从5-kb Micro-C数据进行的重建显示，Ppm1g位点上249个实验定义的RCMC微区室相互作用占据紧凑的3D构型。在乳腺癌数据集中，HiC-LEGO重建的结构在健康乳腺、原发肿瘤和肝转移中维持稳定的TAD组织，同时在恶性胸腔积液样本中揭示了更大的患者间结构异质性。Pore-C验证表明，实验观察到的跨越1-5 Mb的多向接触在所有23条染色体的紧凑重建构型中富集。因此，HiC-LEGO在成对接触图谱一致性之外，保留了调控相互作用、疾病相关染色质组织和更高阶空间关系。",
+      "date": "2026-10-25"
+    },
+    {
+      "id": "pubmed:42924589",
+      "title": "Integrative Transcriptomics and Machine Learning Identify Temporal Stress Signatures and Astrocytic Neurocan Associated With Hypothalamic Injury.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42924589/index.html",
+      "meta": [
+        "Zhu, Weihao; Li, Chenyu; He, Mengting; Shi, Rui; Liu, Xia; Shi, Weibo; Cong, Bin",
+        "CNS neuroscience & therapeutics",
+        "2026-10-25"
+      ],
+      "tags": [],
+      "summary": "该研究通过转录组测序和机器学习识别下丘脑应激时序标志物及星形胶质细胞Ncan功能，属于神经内分泌与应激生物学，未涉及三维基因组或染色质空间架构建模，仅提及Ctcf为预测调控因子，与课题核心方向无关。",
+      "abstract": "BACKGROUND: Stress-related neurological dysfunction evolves dynamically, but molecular markers distinguishing stress stages remain limited. We aimed to characterize temporal hypothalamic transcriptomic changes and identify molecular signatures for stress-stage discrimination. METHODS: Whole-transcriptome sequencing was performed in mouse hypothalami after stress. Differential expression, temporal clustering, co-expression network analysis, and machine learning were integrated to identify stress-associated mRNA and miRNA signatures. Candidate markers were validated by RT-qPCR and single-nucleus RNA sequencing. Ncan function was further evaluated by protein supplementation, perineuronal net analysis, behavioral testing, and regulatory network analysis. RESULTS: mRNAs exhibited strong temporal sensitivity and captured stage-specific transcriptional remodeling, whereas miRNAs primarily reflected stress regardless of duration. A six-mRNA signature (Ncan, Mt2, Nab2, Ptch1, and Catspere1/Catspere2) accurately distinguished control, acute stress, and chronic stress (accuracy, 1.000), while an 11-miRNA signature robustly classified stress states (accuracy, 0.944). Both signatures were validated by RT-qPCR and nested cross-validation, with accuracies of 0.898 and 0.890, respectively. Ncan was consistently top-ranked, predominantly expressed in astrocytes, progressively downregulated by stress, and its supplementation restored PNNs and alleviated depressive-like behaviors. Virtual Ncan knockout disrupted the stress network, with Ctcf predicted as its upstream regulator. CONCLUSION: Our study identifies distinct stress-stage and stress-state transcriptomic signatures and highlights astrocytic Ncan as a candidate biomarker that may contribute to stress-induced neural injury by regulating PNN homeostasis. 背景：应激相关的神经功能障碍呈动态演变，但区分应激阶段的分子标志物仍然有限。我们旨在表征下丘脑时间性转录组变化，并识别用于应激阶段区分的分子特征。方法：在小鼠下丘脑应激后进行全转录组测序。整合差异表达、时间聚类、共表达网络分析和机器学习，以识别应激相关的mRNA和miRNA特征。候选标志物通过RT-qPCR和单核RNA测序进行验证。Ncan功能进一步通过蛋白补充、神经元周围网络分析、行为测试和调控网络分析进行评估。结果：mRNA表现出强烈的时间敏感性，并捕获了阶段特异性的转录重塑，而miRNA主要反映应激状态，与持续时间无关。一个六-mRNA特征（Ncan、Mt2、Nab2、Ptch1和Catspere1/Catspere2）准确区分了对照组、急性应激和慢性应激（准确率，1.000），而一个11-miRNA特征稳健地分类了应激状态（准确率，0.944）。两个特征均通过RT-qPCR和嵌套交叉验证得到验证，准确率分别为0.898和0.890。Ncan始终排名靠前，主要在星形胶质细胞中表达，随应激逐渐下调，其补充恢复了PNN并缓解了抑郁样行为。虚拟Ncan敲除破坏了应激网络，Ctcf被预测为其上游调控因子。结论：我们的研究识别了不同的应激阶段和应激状态转录组特征，并强调星形胶质细胞Ncan作为候选生物标志物，可能通过调控PNN稳态参与应激诱导的神经损伤。",
+      "date": "2026-10-25"
+    },
+    {
+      "id": "pubmed:42925915",
+      "title": "Comparative analysis of KMT2A fusions in human models of acute myeloid leukemia.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42925915/index.html",
+      "meta": [
+        "Safa-Tahar-Henni, Safia; Milan, Thomas; DesCoteaux, Thomas; Roques, Elodie; Bonnet-Magnaval, Florence; Osborne, Michael J; Bresson, Eva; Mathien, Simon; Chazin, Walter J; Hebert, Josee; Borden, Katherine L B; Najmanovich, Rafael; Cellot, Sonia; Barabe, Frederic; Wilhelm, Brian T",
+        "Experimental hematology",
+        "2026-10-25"
+      ],
+      "tags": [],
+      "summary": "该研究比较KMT2A融合AML模型的转录组与表观遗传特征，涉及染色质可及性但无三维基因组/染色质组织建模，且方法以实验测序和药物筛选为主，仅含分子对接模拟，与本课题关联较弱。",
+      "abstract": "Pediatric acute myeloid leukemia (AML) frequently involves chromosomal rearrangements, particularly KMT2A (MLL) gene fusions, with the KMT2A-MLLT4 (KM4-AML) fusion being highly aggressive and associated with poor prognosis. This study presents a comparative analysis of transcriptomic and epigenetic profiles between human leukemia models harboring KM4-AML and KMT2A-MLLT3 (KM3-AML) fusions. Transcriptomic signatures of KM4-AML models closely resembled those of patient samples, underscoring the model's clinical relevance. Epigenetic analysis revealed distinct chromatin accessibility and methylation patterns between KM4-AML and KM3-AML, particularly in enhancer regions linked to aggressive leukemia phenotypes. PROM1 was identified as a potential biomarker for KM4-AML, with its overexpression correlating with poor prognosis. Furthermore, high-throughput drug screening identified dopamine receptor antagonists (DRAs) as promising therapeutic candidates showing selective response for KM4-AML models. Docking simulations and NMR assays confirmed favorable binding interactions between DRAs and S100A8, S100A9 and ANXA6. These findings provide insights into the molecular mechanisms driving KM4-AML and offer potential therapeutic avenues for treatment. 儿童急性髓系白血病（AML）常涉及染色体重排，尤其是KMT2A（MLL）基因融合，其中KMT2A-MLLT4（KM4-AML）融合具有高度侵袭性，并与不良预后相关。本研究对携带KM4-AML和KMT2A-MLLT3（KM3-AML）融合的人白血病模型进行了转录组和表观遗传谱的比较分析。KM4-AML模型的转录组特征与患者样本高度相似，凸显了该模型的临床相关性。表观遗传分析揭示了KM4-AML和KM3-AML之间不同的染色质可及性和甲基化模式，特别是在与侵袭性白血病表型相关的增强子区域。PROM1被确定为KM4-AML的潜在生物标志物，其过表达与不良预后相关。此外，高通量药物筛选鉴定出多巴胺受体拮抗剂（DRAs）作为有前景的治疗候选药物，对KM4-AML模型显示出选择性反应。对接模拟和核磁共振（NMR）实验证实了DRAs与S100A8、S100A9和ANXA6之间的有利结合相互作用。这些发现为驱动KM4-AML的分子机制提供了见解，并为其治疗提供了潜在途径。",
+      "date": "2026-10-25"
+    },
+    {
+      "id": "pubmed:42926727",
+      "title": "Unlocking the Regulatory Genome by ARGUS: An Evidence-Constrained Agentic Framework for Interpreting Single Nucleotide Variants.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42926727/index.html",
+      "meta": [
+        "Dutta, Pratik; Obusan, Matthew B; Chao, Max; Sathian, Rekha; Papineni, Nimisha; Davuluri, Ramana V",
+        "ArXiv",
+        "2026-10-25"
+      ],
+      "tags": [],
+      "summary": "该文提出ARGUS智能体框架，用LLM规划结合DNABERT模型解释非编码单核苷酸变异对转录因子结合的影响，虽涉及染色质水平调控元件（cCRE）和等位基因特异性结合，但核心是变异功能解读而非染色质三维空间架构建模，且方法为LLM代理而非AI/分子模拟建模，与课题关联较弱。",
+      "abstract": "Over 90% of disease-associated variants from genome-wide association studies fall in noncoding regulatory regions, yet their functional interpretation remains a central open problem in genomic medicine. Large language models prompted to interpret such variants routinely hallucinate transcription factor (TF) binding changes, fabricate experimental support, and assign biological significance to statistically negligible signals. We present ARGUS (Agentic Regulatory Genomics for an Uncertainty-aware Scientist), which strictly separates deterministic biological computation from LLM-mediated reasoning. ARGUS wraps 458 DNABERT-based TF binding models in a hypothesis-directed investigation loop where a planner selects evidence sources based on current uncertainty, a verifier deterministically interprets each observation, and intermediate results change the investigation path. On variant rs6983267 at the 8q24 cancer risk locus, the same planner produces four divergent trajectories for four TFs. FOXA1 is rescued in 3 steps when real ADASTRA allele-specific binding data (15 experiments, FDR = 0.030) reveals a model false negative masked by saturation (both alleles predicted at near-maximal binding, leaving the model unable to resolve allelic differences). KLF6 traverses 8 steps across ADASTRA, JASPAR motif analysis, and ENCODE cCRE regulatory annotation before abstaining due to mixed indirect evidence. RAD21 abstains in 8 steps after ADASTRA returns a powered but nonsignificant allelic test (5 experiments, FDR = 0.65), and SP1, which shares FOXA1's saturated retained prediction, abstains because no direct experimental evidence exists at this locus. All trajectories are produced from real data against local ADASTRA, JASPAR, and ENCODE cCRE evidence sources, with no simulated observations. A comparison of fixed-priority and LLM-mediated planning shows that the LLM planner reaches identical verdicts with fewer tool calls by declining evidence that cannot resolve the claim under test. 超过90%的来自全基因组关联研究的疾病相关变异落在非编码调控区，然而其功能解释仍然是基因组医学中一个核心的未解问题。被提示解释此类变异的大语言模型经常幻觉出转录因子（transcription factor, TF）结合变化、捏造实验支持，并将生物学意义赋予统计上可忽略的信号。我们提出ARGUS（Agentic Regulatory Genomics for an Uncertainty-aware Scientist），它将确定性生物计算与LLM介导的推理严格分离。ARGUS将458个基于DNABERT的TF结合模型包裹在一个假设导向的调查循环中，其中规划器根据当前不确定性选择证据来源，验证器确定性地解释每个观察结果，中间结果改变调查路径。在8q24癌症风险位点的变异rs6983267上，同一规划器为四个TF产生四条不同的轨迹。当真实的ADASTRA等位基因特异性结合数据（15个实验，FDR = 0.030）揭示出一个被饱和掩盖的模型假阴性（两个等位基因均被预测为接近最大结合，使模型无法解析等位基因差异）时，FOXA1在3步内被挽救。KLF6跨越ADASTRA、JASPAR基序分析和ENCODE cCRE调控注释历经8步，最终因混合的间接证据而弃权。RAD21在ADASTRA返回一个有统计功效但不显著的等位基因检验（5个实验，FDR = 0.65）后于8步内弃权，而SP1与FOXA1共享饱和的保留预测，因该位点不存在直接实验证据而弃权。所有轨迹均由真实数据针对本地ADASTRA、JASPAR和ENCODE cCRE证据来源产生，没有模拟观察结果。固定优先级规划与LLM介导规划的比较表明，LLM规划器通过拒绝无法解决所检验主张的证据，以更少的工具调用达到相同的判定。",
+      "date": "2026-10-25"
+    },
+    {
+      "id": "pubmed:42928016",
+      "title": "Population epigenomics of plant DNA methylation: perspectives for molecular breeding.",
+      "subtitle": "",
+      "url": "/Daily-Paper-Agent-3d-genome-ai/papers/pubmed/42928016/index.html",
+      "meta": [
+        "Long, Xi; Zheng, Juyun; Fang, Lei; Zhao, Ting",
+        "Journal of Zhejiang University. Science. B",
+        "2026-10-25"
+      ],
+      "tags": [],
+      "summary": "该文综述植物DNA甲基化群体表观基因组学及其在分子育种中的应用，仅在展望中提及三维基因组和深度学习，未涉及染色质空间架构建模或AI/分子模拟方法。",
+      "abstract": "DNA methylation, a key epigenetic modification, contributes to regulatory diversity in plants and plays important roles in phenotypic plasticity and environmental adaptation. Recent population epigenomic studies have revealed extensive methylation variation across plant genomes, characterized genomic distribution and genetic architecture, and demonstrated both its dependence on and partial independence from underlying DNA sequence variation. These studies have further linked methylation variation to gene expression regulation, domestication, local adaptation, and complex trait variation through integrative analyses and epigenome-wide association research. Advances in high-throughput sequencing have enabled the generation of population-scale plant methylomes across natural accessions, wild relatives, landraces, and breeding germplasm, providing new avenues to systematically investigate epigenomic diversity and its functional consequences. In parallel, public methylome resources, epigenomic databases, and multi-omics analytical platforms are accelerating comparative and cross-species analyses of plant epigenomic variation. Future efforts that integrate population methylomes with genomics, transcriptomics, chromatin accessibility, three-dimensional genome organization, deep learning-based analytical frameworks, and targeted epigenome editing are expected to facilitate the discovery of epigenetic breeding markers, promoting the application of epigenomic variation in crop improvement. DNA甲基化作为一种关键的表观遗传修饰， contributes to植物中的调控多样性，并在表型可塑性和环境适应中发挥重要作用。近期的人群表观基因组研究揭示了植物基因组中广泛的甲基化变异，刻画了其基因组分布和遗传结构，并展示了其对底层DNA序列变异的依赖性和部分独立性。这些研究通过整合分析和表观基因组广泛关联研究，进一步将甲基化变异与基因表达调控、驯化、局部适应及复杂性状变异联系起来。高通量测序的进展使得能够在自然种质、野生近缘种、地方品种和育种种质中生成群体规模的植物甲基化组，为系统研究表观基因组多样性及其功能后果提供了新途径。同时，公共甲基化组资源、表观基因组数据库和多组学分析平台正在加速植物表观基因组变异的比较和跨物种分析。未来，将群体甲基化组与基因组学、转录组学、染色质可及性、三维基因组组织、基于深度学习的分析框架以及靶向表观基因组编辑相结合的努力，有望促进表观遗传育种标记的发现，推动表观基因组变异在作物改良中的应用。",
+      "date": "2026-10-25"
+    },
+    {
       "id": "pubmed:42919852",
       "title": "Decoding gene responsiveness to synthetic chromatin reader-actuators with multi-modal epigenomic profiling.",
       "subtitle": "",

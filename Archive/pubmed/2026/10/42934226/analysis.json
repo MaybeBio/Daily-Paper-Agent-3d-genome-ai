@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42934226",
+  "title": "A droplet-based long-read single-cell epigenome sequencing method for the high-throughput profiling of multidimensional regulatory elements within individual cells.",
+  "authors": "Lu, Jiansen; Chen, Kexuan; Jia, Shengtao; Chen, Guodong; Yu, Xianhong; Li, Wen",
+  "journal": "Cell discovery",
+  "published_date": "2026-10-27",
+  "window": {
+    "start": "2026-10-25",
+    "end": "2026-10-31"
+  },
+  "score": 6,
+  "one_liner_zh": "开发基于液滴的长读长单细胞表观基因组测序平台（dscNanoATAC/dscNanoCUT），并利用单倍型数据优化深度学习模型预测等位基因特异性三维基因组结构，与染色质构象计算建模部分相关。",
+  "abstract": "Recently, long-read sequencing methods have revolutionized genomic research by allowing the resolution of previously inaccessible regions across the genome. However, the throughput and scalability of these methods have hindered their general application in the field. To address this limitation, we developed droplet-based methods for the single-cell profiling of chromatin accessibility (droplet-based single-cell Nanopore ATAC-seq, dscNanoATAC) and histone modifications (droplet-based single-cell NanoCUT&Tag, dscNanoCUT) by combining a commercial microfluidic device and long-read sequencing platform, achieving a throughput of ~5000 cells in a single experiment and significantly reducing the time and costs compared with previous techniques. With cultured mammalian cells, we demonstrated the ability of dscNanoATAC and dscNanoCUT to detect allele-specific epigenetics, neighboring co-accessibility, and regulatory elements within low-mappability regions. Furthermore, leveraging the haplotype-resolved data generated from dscNanoATAC, we optimized a deep-learning model to predict allele-specific three-dimensional genome structures with high resolution (10 kb). We also applied dscNanoATAC and dscNanoCUT in complex tissues using the mouse brain as an example, and characterized the allele-specific regulation of the imprinting gene Ube3a in neurons, obtaining insights into the mechanisms underlying the pathogenesis of Prader-Willi and Angelman syndrome. With dscNanoCUT, we systematically evaluated the activity of transposon elements and revealed their potential regulatory functions in the mouse brain. Together, dscNanoATAC and dscNanoCUT serve as a versatile and scalable long-read epigenome sequencing platform, enabling multidimensional analyses of elements ranging from chromatin accessibility to histone modifications and their interplay between chromatin structures. This platform may advance our understanding of epigenetic regulation in complex biological systems.",
+  "abstract_zh": "最近，长读长测序方法通过解析基因组中先前难以触及的区域，彻底改变了基因组研究。然而，这些方法的通量和可扩展性阻碍了它们在该领域的普遍应用。为了解决这一限制，我们通过结合商业微流控装置和长读长测序平台，开发了用于单细胞染色质可及性分析（基于液滴的单细胞Nanopore ATAC-seq，dscNanoATAC）和组蛋白修饰分析（基于液滴的单细胞NanoCUT&Tag，dscNanoCUT）的基于液滴的方法，在单次实验中实现了约5000个细胞的通量，并显著减少了与先前技术相比的时间和成本。利用培养的哺乳动物细胞，我们证明了dscNanoATAC和dscNanoCUT能够检测等位基因特异性表观遗传学、邻近共可及性以及低比对区域内的调控元件。此外，利用dscNanoATAC生成的单倍型解析数据，我们优化了一个深度学习模型，以高分辨率（10 kb）预测等位基因特异性三维基因组结构。我们还将dscNanoATAC和dscNanoCUT应用于复杂组织，以小鼠大脑为例，并表征了神经元中印记基因Ube3a的等位基因特异性调控，从而获得了对Prader-Willi和Angelman综合征发病机制背后机制的见解。利用dscNanoCUT，我们系统评估了转座子元件的活性，并揭示了它们在小鼠大脑中的潜在调控功能。总之，dscNanoATAC和dscNanoCUT作为一个多功能且可扩展的长读长表观基因组测序平台，能够对从染色质可及性到组蛋白修饰的元素及其在染色质结构之间的相互作用进行多维分析。该平台可能促进我们对复杂生物系统中表观遗传调控的理解。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42934226/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42934226/",
+  "paper_page_path": "papers/pubmed/42934226/index.html"
+}
