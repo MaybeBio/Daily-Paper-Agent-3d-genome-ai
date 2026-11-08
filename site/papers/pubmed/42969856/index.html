@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HiCP2GAN: a plug and play foundation model-based GAN for Hi-C enhancement. · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-high">8</span>
+    <div>
+      <h1>HiCP2GAN: a plug and play foundation model-based GAN for Hi-C enhancement.</h1>
+      <div class="meta">Olowofila, Samuel; Oluwadare, Oluwatosin</div>
+      <div class="meta muted">
+        
+        <span class="journal">Briefings in bioinformatics</span>
+        · 2026-11-02
+         · 全文(pmc)
+         · <a href="https://pubmed.ncbi.nlm.nih.gov/42969856/">原文</a>
+      </div>
+      <p class="one-liner">该文提出基于预训练Hi-C基础模型作为判别器的GAN框架HiCP2GAN，用于增强低分辨率Hi-C染色质互作图，直接涉及三维基因组空间互作建模与AI方法，与本课题高度相关。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">The 3D organization of chromatin shapes gene regulation and cellular function, and Hi-C has become the primary technique for mapping chromatin interactions genome-wide. However, high-resolution data remain costly and scarce, leaving many studies with sparse contact maps that limit downstream analysis. Deep learning methods, especially generative adversarial networks (GANs), have shown promise for enhancing low-resolution Hi-C data, but most existing GAN-based approaches rely on custom discriminators trained from scratch, which can yield unstable training and limited generalization. Hi-C foundation models pretrained on large-scale data capture rich, transferable representations of chromatin structure, yet their use as discriminators within adversarial enhancement frameworks had not been explored. We introduce HiCP2GAN, a plug-and-play GAN that employs a pretrained Vision Transformer-based Hi-C foundation model as its discriminator. The discriminator was pretrained on 118 million Hi-C patches across diverse species and cell types, providing biologically meaningful gradients for adversarial supervision. The framework is generator-agnostic: any compatible Hi-C resolution enhancement architecture can serve as the generator, enabling fair comparison across methods. The encoder phase of the foundation model was adapted as a discriminator backbone, finetuning the first few layers from the input while freezing the deeper transformer layers to preserve pretrained knowledge while allowing task-specific adaptation. Experiments across various cell lines show that HiCP2GAN outperforms traditional GAN-based methods in most settings and improves the reconstruction quality and biological reproducibility of existing Hi-C enhancement models in most evaluated cases. HiCP2GAN is publicly available at https://github.com/OluwadareLab/HiCP2GAN.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">染色质的3D组织塑造了基因调控和细胞功能，而Hi-C已成为全基因组范围内绘制染色质相互作用的主要技术。然而，高分辨率数据仍然昂贵且稀缺，导致许多研究仅有稀疏的接触图谱，限制了下游分析。深度学习方法，尤其是生成对抗网络（GANs），在增强低分辨率Hi-C数据方面显示出潜力，但大多数现有的基于GAN的方法依赖于从头训练的自定义判别器，这可能带来训练不稳定和泛化能力有限的问题。在大规模数据上预训练的Hi-C基础模型捕获了丰富、可迁移的染色质结构表征，但其在对抗性增强框架中作为判别器的应用尚未被探索。我们引入了HiCP2GAN，一种即插即用的GAN，采用基于预训练Vision Transformer的Hi-C基础模型作为其判别器。该判别器在跨多种物种和细胞类型的1.18亿个Hi-C片段上进行了预训练，为对抗性监督提供了生物学上有意义的梯度。该框架与生成器无关：任何兼容的Hi-C分辨率增强架构都可以作为生成器，从而支持方法间的公平比较。基础模型的编码器阶段被适配为判别器骨干，从输入微调前几层，同时冻结较深的Transformer层，以保留预训练知识并允许任务特定适应。跨多种细胞系的实验表明，HiCP2GAN在大多数设置中优于传统的基于GAN的方法，并在大多数评估案例中提高了现有Hi-C增强模型的重建质量和生物学可重复性。HiCP2GAN公开可用，网址为https://github.com/OluwadareLab/HiCP2GAN。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：HiCP2GAN: a plug and play foundation model-based GAN for Hi-C enhancement</li>
+<li><strong>作者与单位</strong>：Olowofila, Samuel; Oluwadare, Oluwatosin（美国科罗拉多大学丹佛分校，OluwadareLab）</li>
+<li><strong>期刊/预印本平台</strong>：Briefings in Bioinformatics</li>
+<li><strong>年份</strong>：2026-11-02（在线发表）</li>
+<li><strong>论文类型</strong>：方法学论文（含实验验证）</li>
+<li><strong>领域</strong>：三维基因组 / Hi-C 数据增强 / 生成对抗网络 / 基础模型</li>
+<li><strong>关键词</strong>：Hi-C enhancement, GAN, foundation model, Vision Transformer, plug-and-play</li>
+<li><strong>DOI/arXiv 号</strong>：10.1093/bib/bbag610</li>
+<li><strong>代码</strong>：https://github.com/OluwadareLab/HiCP2GAN</li>
+<li><strong>数据</strong>：GEO GSE63525（Rao et al. 2014）；模型权重：https://zenodo.org/records/20030290</li>
+<li><strong>阅读日期</strong>：未提供</li>
+<li><strong>在课题方向中的位置</strong>：本文属于「三维基因组 × AI 方法」中的 Hi-C 数据增强子领域，首次将 Hi-C 基础模型（HiCFoundation）作为 GAN 判别器引入 Hi-C 增强任务，提出生成器无关的对抗训练框架，兼具基准测试平台与训练脚手架功能。</li>
+</ul>
+<h2>02 一句话总结</h2>
+<p>本文提出 HiCP2GAN——一个生成器无关的对抗增强框架，使用在 1.18 亿 Hi-C patch 上预训练的 Vision Transformer 基础模型（HiCFoundation）作为判别器，通过冻结深层 Transformer 层、微调浅层与特征匹配损失，在 40×40 低深度 Hi-C patch 上提升多种生成器的重建质量与生物学可重复性（GenomeDISCO），并实现跨细胞系与跨物种泛化。</p>
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：如何利用 Hi-C 基础模型的预训练表征，为 Hi-C 分辨率增强提供更稳定、更具生物学意义的对抗监督信号，同时保持生成器架构无关性？</li>
+<li><strong>为什么重要</strong>：高分辨率 Hi-C 数据成本高、稀缺，计算增强是缓解该瓶颈的关键路径。现有 GAN 方法判别器为从零训练的浅层 CNN，难以捕获长程染色质互作依赖，且训练不稳定、泛化有限。</li>
+<li><strong>现有方法不足</strong>：(1) 判别器为浅层 CNN，感受野有限，无法编码长程染色质拓扑；(2) 生成器与判别器紧耦合，难以公平比较不同增强方法；(3) 训练不稳定，判别器易崩溃；(4) 缺乏统一的输入输出接口与数值表示标准。</li>
+<li><strong>精确研究问题（Can 形式）</strong>：Can a pretrained Hi-C foundation model, when adapted as a GAN discriminator with partial layer finetuning and feature matching, provide biologically meaningful adversarial supervision that improves Hi-C enhancement across heterogeneous generator architectures, cross-cell lines, and cross-species?</li>
+</ul>
+<h2>04 背景与发展脉络</h2>
+<blockquote>
+<p>注：以下脉络基于本文 Introduction 与 References 构建，标注为「仅本文框架」，未经外部系统核验。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>代表性方法</th>
+<th>优点</th>
+<th>局限</th>
+<th>本文位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>统计建模</td>
+<td>早期 Hi-C 增强（如 HiCNN1, HiCPlus）</td>
+<td>计算简单，可解释</td>
+<td>表达能力有限，难以捕获复杂非线性互作</td>
+<td>超越</td>
+</tr>
+<tr>
+<td>CNN 深度增强</td>
+<td>HiCNN2, HiCARN1, SRHiC</td>
+<td>非线性映射能力强</td>
+<td>感受野有限，难以建模长程互作</td>
+<td>超越</td>
+</tr>
+<tr>
+<td>GAN 增强</td>
+<td>HiCSR, HiCGAN, DeepHiC, EnHiC</td>
+<td>对抗学习提升感知质量</td>
+<td>判别器为浅层 CNN 从零训练，不稳定，泛化差</td>
+<td>超越</td>
+</tr>
+<tr>
+<td>注意力机制</td>
+<td>DiCARN</td>
+<td>捕获长程依赖</td>
+<td>仍为单模型架构，缺乏统一比较框架</td>
+<td>超越</td>
+</tr>
+<tr>
+<td>基础模型</td>
+<td>HiCFoundation（ViT 预训练）</td>
+<td>大规模预训练表征，捕获全局互作模式</td>
+<td>尚未用于对抗增强</td>
+<td><strong>本文首次将其作为 GAN 判别器</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>本文主张的位置</strong>：在 GAN 增强路径上，用基础模型判别器替代从零训练的 CNN 判别器，实现生成器无关的对抗监督。</p>
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>判别器感受野有限</td>
+<td>浅层 CNN 判别器无法捕获长程染色质互作</td>
+<td>卷积核局部操作，层数浅</td>
+<td>Introduction 节："shallow convolutional discriminators that essentially capture local feature data"</td>
+</tr>
+<tr>
+<td>训练不稳定</td>
+<td>从零训练的 CNN 判别器在相同训练计划下崩溃</td>
+<td>判别器容量不足，对抗训练动态失衡</td>
+<td>Controlled ablation 节："conventional convolutional discriminator trained from scratch collapsed under the same training schedule"</td>
+</tr>
+<tr>
+<td>生成器-判别器紧耦合</td>
+<td>不同增强方法难以公平比较</td>
+<td>各方法输入分辨率、输出范围、预处理流程不一致</td>
+<td>Generator-agnostic interface 节："models differ substantially in their architectural assumptions"</td>
+</tr>
+<tr>
+<td>泛化能力有限</td>
+<td>跨细胞系、跨物种增强效果不稳定</td>
+<td>判别器未见过多样化 Hi-C 数据分布</td>
+<td>跨细胞/跨物种实验结果（Tables 4, 5）</td>
+</tr>
+<tr>
+<td>生物学可重复性不足</td>
+<td>像素级指标提升但下游结构分析获益有限</td>
+<td>对抗监督信号缺乏生物学结构语义</td>
+<td>GenomeDISCO 作为关键判别指标（Controlled ablation 节）</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p><strong>1) 表面方法</strong>：
+- 将 HiCFoundation（ViT 架构，1.18 亿 Hi-C patch 预训练）作为 GAN 判别器
+- 通过轻量卷积适配器将 40×40 单通道 Hi-C patch 投影为 3 通道输入
+- 冻结深层 Transformer 层，微调浅层（输入近端）与分类头
+- 生成器损失 = 对抗损失 + ℓ1 重建损失 + 特征匹配损失
+- 标准化接口：所有生成器统一 40×40 输入输出，输出归一化至 [0,1]</p>
+<p><strong>2) 核心洞察</strong>：
+- 基础模型预训练表征已编码丰富的染色质结构语义（长程互作、多尺度模式），直接作为对抗监督信号可提供比像素级判别更「懂生物学」的反馈
+- 冻结深层、微调浅层的策略在保留预训练知识的同时允许任务自适应
+- 特征匹配损失是实际起作用的辅助项，而非对抗损失本身
+- 生成器无关设计使 HiCP2GAN 成为「公平比较平台」而非「又一个增强模型」</p>
+<p><strong>3) 可能的普适教训 [Analysis]</strong>：
+- 在生物医学图像/矩阵增强任务中，「判别器应该懂领域知识」比「判别器应该更强」更重要——预训练基础模型作为判别器可迁移到其他组学数据增强任务
+- 生成器无关的对抗框架可作为基准测试基础设施，解决领域内「各说各话」的比较困境
+- 特征匹配损失将对抗训练从「二分类博弈」转化为「表征对齐」，更稳定且更可解释</p>
+<h2>07 方法总览</h2>
+<p><strong>输入</strong>：40×40 低深度（低分辨率）Hi-C 接触矩阵 patch，值归一化至 [0,1]</p>
+<p><strong>输出</strong>：40×40 增强后的 Hi-C 接触矩阵 patch，保持相同数值范围</p>
+<p><strong>模块</strong>：
+1. <strong>生成器（可插拔）</strong>：任意 Hi-C 增强架构（本文测试 DiCARN, HiCARN1, HiCNN, HiCPlus），统一 40×40 输入输出
+2. <strong>判别器</strong>：HiCFoundation（ViT）→ 轻量卷积适配器（1×1 conv，单通道→3通道）→ Transformer encoder（冻结深层，微调浅层）→ 分类头（标量真实性分数）
+3. <strong>标准化接口</strong>：分辨率适配（28×28 模型通过面积插值降采样输入、最近邻插值恢复输出）、数值归一化（tanh 输出线性重缩放至 [0,1]）
+4. <strong>损失模块</strong>：对抗损失（BCE with logits）+ ℓ1 重建损失 + 特征匹配损失（判别器中间表征的 ℓ1 距离）</p>
+<p><strong>训练流程</strong>：
+1. 从 GM12878 高分辨率 Hi-C 数据（10 kb bin）均匀降采样生成低深度输入（1/16 和 1/64）
+2. 交替更新判别器和生成器
+3. 判别器：先更新（真实 vs 生成样本的 BCE）
+4. 生成器：复合损失（对抗 + ℓ1 + 特征匹配）
+5. 使用 Adam 优化器，AMP 混合精度训练，梯度裁剪</p>
+<p><strong>关键假设</strong>：
+- 低深度 Hi-C 数据可通过降采样高深度数据模拟
+- 预训练 HiCFoundation 表征可迁移到增强任务的判别
+- 冻结深层 Transformer 足以保留预训练知识</p>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>生成器（可插拔）</td>
+<td>将低深度 Hi-C patch 映射为增强 patch</td>
+<td>任务核心，生成器无关设计保证公平比较</td>
+<td>输入：40×40 LR patch；输出：40×40 SR patch</td>
+<td>所有 4 个生成器在 HiCP2GAN 框架下均提升（Table 3）</td>
+<td>无生成器则任务不存在；移除可插拔性则退化为单模型方法</td>
+</tr>
+<tr>
+<td>轻量卷积适配器</td>
+<td>单通道→3通道投影，适配 ViT 输入</td>
+<td>ViT 预训练输入为 3 通道图像格式</td>
+<td>输入：40×40×1；输出：40×40×3</td>
+<td>Methods 节描述</td>
+<td>预期：无法适配 ViT 输入格式，判别器不可用 [Analysis]</td>
+</tr>
+<tr>
+<td>Transformer encoder（冻结深层）</td>
+<td>提取预训练的染色质结构表征</td>
+<td>保留大规模预训练知识，避免灾难性遗忘</td>
+<td>输入：适配后的 patch 序列；输出：表征序列</td>
+<td>冻结与微调变体均表现稳定（Fig. 2, Table S3）</td>
+<td>预期：完全微调可能导致过拟合与预训练知识丢失 [Analysis]</td>
+</tr>
+<tr>
+<td>分类头</td>
+<td>输出真实性标量分数</td>
+<td>对抗分类</td>
+<td>输入：encoder 表征；输出：标量 logit</td>
+<td>Methods 节</td>
+<td>预期：无法进行对抗判别 [Analysis]</td>
+</tr>
+<tr>
+<td>特征匹配损失</td>
+<td>对齐生成与真实样本的判别器中间表征</td>
+<td>提供结构级监督，而非仅像素级</td>
+<td>输入：判别器中间层表征；输出：ℓ1 距离标量</td>
+<td>消融显示特征匹配是主要贡献项（l1_fm vs l1_adv，Table S8）</td>
+<td>实测：移除后 GenomeDISCO 从 0.913 降至 0.909（l1_adv 设置）</td>
+</tr>
+<tr>
+<td>标准化接口</td>
+<td>统一分辨率与数值范围</td>
+<td>消除跨方法比较的混淆因素</td>
+<td>输入：任意生成器输出；输出：40×40 [0,1] patch</td>
+<td>Methods 节</td>
+<td>预期：无法公平比较不同生成器 [Analysis]</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式符号</h2>
+<p><strong>1) 判别器损失（BCE with logits）</strong>：
+[
+\mathcal{L}<em>D = \ell</em>{\mathrm{BCE}}(D(X_{\mathrm{HR}}), 1) + \ell_{\mathrm{BCE}}(D(\tilde{X}<em>{\mathrm{SR}}), 0)
+]
+- (X</em>{\mathrm{HR}})：真实高分辨率 Hi-C patch
+- (\tilde{X}<em>{\mathrm{SR}} = G(X</em>{\mathrm{LR}}))：生成器输出的归一化增强 patch
+- (D(\cdot))：判别器输出的 logit
+- (\ell_{\mathrm{BCE}})：二元交叉熵损失（with logits）</p>
+<p><strong>2) 生成器对抗损失</strong>：
+[
+\mathcal{L}<em>{\mathrm{adv}} = \ell</em>{\mathrm{BCE}}(D(\tilde{X}_{\mathrm{SR}}), 1)
+]</p>
+<p><strong>3) ℓ1 重建损失</strong>：
+[
+\mathcal{L}<em>1 = | \tilde{X}</em>{\mathrm{SR}} - X_{\mathrm{HR}} |_1
+]</p>
+<p><strong>4) 特征匹配损失</strong>：
+[
+\mathcal{L}<em>{\mathrm{FM}} = |\phi(\tilde{X}</em>{\mathrm{SR}}) - \phi(X_{\mathrm{HR}})|_1
+]
+- (\phi(\cdot))：判别器中间 Transformer 层的池化表征</p>
+<p><strong>5) 总生成器损失</strong>：
+[
+\mathcal{L}<em>G = \lambda</em>{\mathrm{adv}} \mathcal{L}<em>{\mathrm{adv}} + \lambda_1 \mathcal{L}<em>1 + \lambda</em>{\mathrm{FM}} \mathcal{L}</em>{\mathrm{FM}}
+]
+- (\lambda_{\mathrm{adv}}, \lambda_1, \lambda_{\mathrm{FM}})：固定标量权重（具体数值见 Table S2）</p>
+<p><strong>直觉</strong>：对抗损失保证分布匹配，ℓ1 保证像素级保真，特征匹配保证结构级对齐——三者共同将生成器推向「既像素准确又结构可解释」的解。</p>
+<h2>10 实验设计与证据链</h2>
+<p><strong>数据集</strong>：
+- 5 个细胞系：GM12878（人淋巴母细胞）、K562（人白血病细胞）、HMEC（人乳腺上皮细胞）、NHEK（人表皮角质细胞）、CH12-LX（小鼠 B 细胞淋巴瘤）
+- 全部来自 Rao et al. 2014（GEO: GSE63525），10 kb 分辨率
+- 低深度模拟：均匀降采样 1/16 和 1/64</p>
+<p><strong>数据划分</strong>：
+- HiCFoundation 预训练语料：包含 GM12878、K562、HMEC、NHEK（不含 CH12-LX）
+- HiCP2GAN 任务训练：仅 GM12878
+- 完全留出（既不在预训练也不在任务训练）：K562、CH12-LX（跨细胞系/跨物种评估）
+- 染色体级严格划分，防止位点泄漏</p>
+<p><strong>基线</strong>：各生成器独立训练版本（DiCARN, HiCARN1, HiCNN, HiCPlus）+ 传统 GAN 方法（HiCARN2）</p>
+<p><strong>指标</strong>：
+- PSNR（峰值信噪比，像素级重建质量）
+- SSIM（结构相似性，感知/结构一致性）
+- GenomeDISCO（生物学可重复性，Hi-C 互作模式一致性）
+- F1 score（环检测：精确率与召回率的调和平均）</p>
+<p><strong>评测协议</strong>：
+- 环检测：Fit-Hi-C 在增强后 GM12878 测试染色体（chr4, chr14, chr16, chr20）上调用环，与真实高分辨率矩阵检测结果比较
+- TAD 边界：TopDom 检测，Jaccard 相似系数（±5 bins = 50 kb 容差），在 chr4 和 chr14 的紧凑富互作区域（226 个 ~2.4 Mb tile）上评估
+- 3D 结构：3DUnicorn 重建，Spearman 相关系数（SCC）比较 pairwise 距离</p>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的 claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>判别器微调深度消融</td>
+<td>冻结深层、微调浅层有效</td>
+<td>0-24 层微调变体，GM12878 1/16</td>
+<td>全范围表现接近，0-17 层最优</td>
+<td>预训练表征鲁棒，微调深度不敏感</td>
+<td>不能确定最优深度具有统计显著性</td>
+<td>Fig. 2, Table S3</td>
+</tr>
+<tr>
+<td>受控消融（7 配置）</td>
+<td>预训练+特征匹配贡献</td>
+<td>recon_only vs cnn_disc vs random_vit vs l1_adv vs l1_fm vs frozen vs partial_ft</td>
+<td>CNN 判别器崩溃；特征匹配提升 GenomeDISCO 0.909→0.913；预训练优于随机初始化</td>
+<td>预训练表征与特征匹配是核心贡献</td>
+<td>绝对差异小，需更多重复确认</td>
+<td>Table S8</td>
+</tr>
+<tr>
+<td>同细胞系增强（GM12878）</td>
+<td>HiCP2GAN 优于独立生成器</td>
+<td>4 生成器 ± HiCP2GAN</td>
+<td>全部提升，DiCARN 最佳</td>
+<td>框架生成器无关且有效</td>
+<td>提升幅度因生成器而异</td>
+<td>Table 3</td>
+</tr>
+<tr>
+<td>跨细胞系（K562, HMEC, NHEK）</td>
+<td>跨细胞泛化</td>
+<td>GM12878 训练 → 其他细胞测试</td>
+<td>PSNR 16/16 提升，SSIM 14/16，GenomeDISCO 12/16</td>
+<td>跨细胞系泛化良好</td>
+<td>部分 SSIM/GenomeDISCO 例外</td>
+<td>Tables 4, S10, S11</td>
+</tr>
+<tr>
+<td>跨物种（CH12-LX）</td>
+<td>跨物种泛化</td>
+<td>人→小鼠</td>
+<td>PSNR 和 GenomeDISCO 提升</td>
+<td>跨物种迁移可行</td>
+<td>分数低于人细胞系</td>
+<td>Table 5</td>
+</tr>
+<tr>
+<td>环检测</td>
+<td>增强改善下游结构推断</td>
+<td>Fit-Hi-C F1</td>
+<td>HiCP2GAN-DiCARN F1=0.8295 vs 独立 DiCARN 0.8078</td>
+<td>增强提升环检测</td>
+<td>仅 4 条染色体</td>
+<td>Fig. 3, Table S9</td>
+</tr>
+<tr>
+<td>TAD 边界恢复</td>
+<td>增强改善结构域检测</td>
+<td>TopDom Jaccard</td>
+<td>4 生成器全部提升</td>
+<td>增强提升 TAD 恢复</td>
+<td>仅 chr4, chr14</td>
+<td>Table 6, Fig. 4</td>
+</tr>
+<tr>
+<td>3D 结构重建</td>
+<td>增强改善三维重建</td>
+<td>3DUnicorn SCC</td>
+<td>6/8 组合提升，HiCNN 例外</td>
+<td>多数情况下增强改善 3D 重建</td>
+<td>HiCNN 下降，需解释</td>
+<td>Fig. 5, Table S12</td>
+</tr>
+</tbody>
+</table>
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：本文解决的是低深度（浅测序）Hi-C 数据增强，而非低分辨率（大 bin size）超分辨率。输入输出均为 10 kb bin 的 40×40 patch，低深度通过降采样模拟。</li>
+<li><strong>端到端状态</strong>：HiCP2GAN 是训练框架而非推理模型——生成器需在框架内重新训练；判别器权重来自 HiCFoundation 预训练 + 任务微调。</li>
+<li><strong>算力成本</strong>：使用 NVIDIA TITAN RTX GPU，100 epoch 训练（500 epoch 提升有限，不采用）；AMP 混合精度加速。</li>
+<li><strong>数据依赖</strong>：任务训练仅用 GM12878 一个细胞系；跨细胞/跨物种评估依赖预训练语料的多样性（CH12-LX 完全不在预训练语料中）。</li>
+<li><strong>模型依赖</strong>：判别器固定为 HiCFoundation（ViT）；生成器可替换但需兼容 40×40 接口。</li>
+<li><strong>历史数据依赖</strong>：HiCFoundation 预训练语料覆盖多个细胞系/物种，但具体构成需查原文补充材料。</li>
+<li><strong>最难情形</strong>：1/64 极端低深度下，所有方法分数下降，HiCP2GAN 提升幅度减小（Table S7）；跨物种（小鼠）分数显著低于人细胞系。</li>
+<li><strong>边界化复述</strong>：在 10 kb 分辨率、40×40 patch、1/16 和 1/64 低深度模拟条件下，使用 HiCFoundation 判别器 + 特征匹配损失的 HiCP2GAN 框架，在 GM12878 训练、同细胞/跨细胞/跨物种测试中，多数情况下提升生成器的 PSNR、SSIM、GenomeDISCO 及下游环/TAD/3D 结构指标；但提升幅度在强生成器上较小，且存在个别例外（如 HiCNN 在 3D 结构重建中下降）。</li>
+</ul>
+<h2>12 作者自认局限</h2>
+<table>
+<thead>
+<tr>
+<th>局限</th>
+<th>具体表现</th>
+<th>作者提出的未来方向</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>强生成器上提升幅度有限</td>
+<td>受控消融中绝对差异小，GenomeDISCO 0.909→0.913</td>
+<td>未明确提及</td>
+<td>Controlled ablation 节</td>
+</tr>
+<tr>
+<td>极端低深度下效果减弱</td>
+<td>1/64 降采样时提升幅度减小</td>
+<td>未明确提及</td>
+<td>Table S7 相关讨论</td>
+</tr>
+<tr>
+<td>跨物种分数较低</td>
+<td>小鼠 CH12-LX 分数低于人细胞系</td>
+<td>未明确提及</td>
+<td>Table 5 相关讨论</td>
+</tr>
+<tr>
+<td>消融范围有限</td>
+<td>仅测试单一生成器（HiCARN1）的受控消融</td>
+<td>未明确提及</td>
+<td>Controlled ablation 节</td>
+</tr>
+<tr>
+<td>未做统计推断检验</td>
+<td>结果描述性报告，未提供显著性检验</td>
+<td>未明确提及</td>
+<td>全文未提及统计检验</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：作者在 Discussion 中承认消融实验的边际差异较小，并明确将框架定位为「structural floor-raiser」而非「强生成器的增益器」。</p>
+</blockquote>
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>受控消融仅用单一生成器（HiCARN1）</td>
+<td>结论可能不适用于其他生成器架构；特征匹配的贡献可能依赖生成器类型</td>
+<td>框架声称生成器无关，但消融证据仅覆盖一个生成器</td>
+<td>在 DiCARN、HiCNN、HiCPlus 上重复受控消融</td>
+<td>Controlled ablation 节</td>
+</tr>
+<tr>
+<td>判别器微调深度消融中 0 层（完全冻结）表现也接近最优</td>
+<td>可能说明判别器微调并非必要，预训练表征本身已足够</td>
+<td>若完全冻结即可，则训练成本可进一步降低</td>
+<td>在更多数据集上比较 0 层 vs 11 层配置</td>
+<td>Fig. 2, Table S3</td>
+</tr>
+<tr>
+<td>结果以描述性统计为主，无显著性检验</td>
+<td>提升可能不具统计显著性，尤其是小幅度差异</td>
+<td>影响结论可靠性</td>
+<td>增加重复实验次数，报告置信区间</td>
+<td>全文未提及统计检验</td>
+</tr>
+<tr>
+<td>低深度模拟采用均匀降采样，可能不反映真实浅测序的偏差模式</td>
+<td>真实低深度 Hi-C 数据存在系统性偏差（如 GC 偏差、酶切位点偏差）</td>
+<td>影响方法在真实场景的适用性</td>
+<td>使用真实浅测序数据验证</td>
+<td>Methods 节</td>
+</tr>
+<tr>
+<td>环检测仅用 Fit-Hi-C 单一工具</td>
+<td>不同环检测工具对增强质量的敏感度不同</td>
+<td>结论可能依赖工具选择</td>
+<td>使用 HiCCUPS、peakachu 等交叉验证</td>
+<td>Results 节</td>
+</tr>
+<tr>
+<td>3D 结构重建中 HiCNN 下降未解释</td>
+<td>可能反映增强引入的伪影在特定生成器上更严重</td>
+<td>框架并非对所有生成器无害</td>
+<td>分析 HiCNN 增强后矩阵的误差模式</td>
+<td>Fig. 5, Table S12</td>
+</tr>
+<tr>
+<td>判别器为 ViT，计算成本高于 CNN 判别器</td>
+<td>训练效率可能成为实际部署瓶颈</td>
+<td>影响框架可扩展性</td>
+<td>报告训练时间对比</td>
+<td>未提供训练时间数据</td>
+</tr>
+</tbody>
+</table>
+<h2>14 学到什么</h2>
+<p><strong>Agent 提炼的知识候选</strong>：</p>
+<ol>
+<li>
+<p><strong>基础模型作为判别器的范式</strong>：将领域预训练基础模型（而非从零训练的判别器）引入 GAN 框架，可提供更稳定的对抗监督。此思路可迁移到其他组学数据增强任务（如 ATAC-seq、ChIP-seq 增强）。</p>
+</li>
+<li>
+<p><strong>冻结深层 + 微调浅层的迁移策略</strong>：在对抗训练中，冻结预训练模型的深层（保留通用表征）、微调浅层（任务自适应），在保持稳定性的同时允许领域适配。此策略可迁移到三维基因组其他任务（如 TAD 预测、环预测）。</p>
+</li>
+<li>
+<p><strong>特征匹配 &gt; 对抗损失</strong>：消融显示特征匹配是主要贡献项，而非对抗损失本身。这提示在生物医学生成任务中，「表征对齐」可能比「分布对抗」更有效。</p>
+</li>
+<li>
+<p><strong>生成器无关的基准测试框架</strong>：通过标准化输入输出接口和数值表示，将不同增强方法置于统一框架下比较，解决领域内比较混乱的问题。可迁移为三维基因组增强任务的社区基准。</p>
+</li>
+<li>
+<p><strong>生物学可重复性作为关键指标</strong>：像素级指标（PSNR/SSIM）与生物学指标（GenomeDISCO）不完全一致，后者更能反映下游分析价值。在三维基因组 AI 任务中应优先报告生物学指标。</p>
+</li>
+<li>
+<p><strong>跨物种迁移的可行性</strong>：人→小鼠的跨物种增强可行但分数下降，提示预训练语料的物种多样性对泛化至关重要。</p>
+</li>
+<li>
+<p><strong>消融设计的分层策略</strong>：先消融判别器类型（CNN vs ViT vs 预训练 ViT），再消融损失项（ℓ1 vs 对抗 vs 特征匹配），最后消融微调深度——这种分层消融可系统分离各组件贡献。</p>
+</li>
+</ol>
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>HiCFoundation [17]</strong>：本文判别器直接复用该基础模型，其预训练语料覆盖 1.18 亿 Hi-C patch。可查阅 Wang et al. 原文了解预训练细节与表征特性。</li>
+<li><strong>Rao et al. 2014 [21]</strong>：数据来源（GSE63525），5 个细胞系的 10 kb 分辨率 Hi-C 数据，是三维基因组领域的标准基准数据集。</li>
+<li><strong>传统 GAN 增强方法</strong>：HiCSR [9]、HiCGAN [10]、DeepHiC [11]、EnHiC [12]——本文将其作为基线，其判别器均为从零训练的浅层 CNN。</li>
+<li><strong>CNN 增强方法</strong>：HiCNN1/2 [3,5]、HiCPlus [4]、HiCARN1/2 [6]——本文将其作为生成器候选，验证框架的生成器无关性。</li>
+<li><strong>注意力机制</strong>：DiCARN [13,14]——本文最佳生成器，含注意力模块。</li>
+<li><strong>下游分析工具</strong>：Fit-Hi-C [30]（环检测）、TopDom [32]（TAD 检测）、3DUnicorn [34]（三维结构重建）——用于验证增强的生物学价值。</li>
+<li><strong>可迁移方向</strong>：本文的「基础模型判别器 + 特征匹配」框架可迁移到：(1) 其他染色质构象捕获技术（如 Micro-C、HiChIP）的增强；(2) 单细胞 Hi-C 数据增强；(3) 三维基因组结构预测任务中的判别器设计。</li>
+</ul>
+<h2>16 研究想法</h2>
+<p><strong>Agent 生成的研究候选</strong>：</p>
+<ol>
+<li>
+<p><strong>候选名称</strong>：单细胞 Hi-C 增强的 Foundation-GAN 框架
+   - <strong>来源局限/观察</strong>：本文仅验证 bulk Hi-C；单细胞 Hi-C 数据极度稀疏，增强需求更迫切
+   - <strong>核心假设</strong>：预训练基础模型判别器可适应单细胞 Hi-C 的极端稀疏性
+   - <strong>初步方法</strong>：将 HiCP2GAN 框架迁移至 scHi-C，判别器输入改为单细胞 Hi-C 矩阵，生成器采用稀疏感知架构
+   - <strong>验证方式</strong>：在 scHi-C 基准数据上比较增强后的下游分析（如细胞类型聚类、结构域检测）
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：跨物种 Hi-C 基础模型判别器的领域自适应
+   - <strong>来源局限/观察</strong>：本文跨物种（人→小鼠）分数下降，预训练语料物种覆盖不足
+   - <strong>核心假设</strong>：通过领域自适应（如对抗域对齐）可提升跨物种判别器迁移能力
+   - <strong>初步方法</strong>：在 HiCP2GAN 框架中加入域判别器，对齐人/小鼠 Hi-C 的表征分布
+   - <strong>验证方式</strong>：比较自适应前后跨物种增强的 PSNR/GenomeDISCO
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：特征匹配损失的层级加权策略
+   - <strong>来源局限/观察</strong>：本文特征匹配使用池化表征，未区分 Transformer 不同层的语义层级
+   - <strong>核心假设</strong>：浅层特征匹配保局部结构，深层特征匹配保全局拓扑，分层加权可提升增强质量
+   - <strong>初步方法</strong>：对不同 Transformer 层的特征匹配损失赋予可学习权重
+   - <strong>验证方式</strong>：消融不同层级权重组合，评估下游 TAD/环检测
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：HiCP2GAN 增强对等位基因特异 Hi-C 的适用性
+   - <strong>来源局限/观察</strong>：本文未考虑等位基因特异互作；单倍型分辨的 Hi-C 增强是未探索方向
+   - <strong>核心假设</strong>：基础模型判别器可区分等位基因特异的染色质结构模式
+   - <strong>初步方法</strong>：将 HiCP2GAN 应用于等位基因特异 Hi-C 矩阵，评估增强后等位基因特异 TAD/环的恢复
+   - <strong>验证方式</strong>：与亲本来源已知的数据比较等位基因特异互作恢复率
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：Hi-C 增强的生成器-判别器联合架构搜索
+   - <strong>来源局限/观察</strong>：本文固定生成器候选，未探索生成器架构与基础模型判别器的协同设计
+   - <strong>核心假设</strong>：针对基础模型判别器优化的生成器架构可进一步提升增强效果
+   - <strong>初步方法</strong>：使用神经架构搜索（NAS）在 HiCP2GAN 框架下搜索生成器结构
+   - <strong>验证方式</strong>：比较 NAS 搜索生成器与手工设计生成器的增强指标
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+</ol></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Full manuscript text (abstract, introduction, methods, results, discussion, supplementary references)</li>
+<li><strong>Assessment boundary</strong> Scientific and technical evaluation of the presented claims, methods, and results; no assessment of code functionality or reproducibility beyond what is described</li>
+<li><strong>Shared manuscript claim summary</strong> The authors propose HiCP2GAN, a plug-and-play GAN framework that uses a pretrained Vision Transformer-based Hi-C foundation model as its discriminator. They claim this approach improves Hi-C resolution enhancement over standalone generators and traditional GAN-based methods, with benefits in biological reproducibility, loop detection, TAD detection, and 3D genome structure reconstruction, while enabling cross-cell and cross-species transfer.</li>
+<li><strong>Visible evidence base</strong> Main text tables (Tables 2, 3, 4, 5, 6), figures (Figs 1, 2, 3, 4, 5, 6), and references to supplementary materials (Tables S1–S12, Figs S2, S3)</li>
+<li><strong>Missing materials affecting confidence</strong> Supplementary tables and figures referenced throughout (S1–S12, S2, S3) were not provided; exact hyperparameter values, learning rates, and training durations are not fully specified; statistical significance testing is not reported; detailed architecture specifications for the generator models are not provided</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li><strong>Overall assessment</strong> The manuscript presents a conceptually interesting idea: leveraging a pretrained foundation model as a discriminator in a GAN framework for Hi-C enhancement. The plug-and-play, generator-agnostic design is a useful contribution to the field, and the cross-cell and cross-species evaluation is commendable. However, the evidence as presented is incomplete. The central claims of improvement are based on small numerical margins, and the absence of statistical testing, full supplementary data, and detailed experimental specifications limits the ability to assess robustness and significance. The controlled ablation is thoughtfully designed but scoped narrowly, and the authors appropriately acknowledge its limitations. The manuscript would benefit from clearer reporting of variability, significance, and the practical magnitude of improvements.</li>
+<li><strong>Who would be interested in the results, and why</strong> Computational biologists and bioinformaticians working on Hi-C data analysis, particularly those developing or applying deep learning methods for chromatin conformation data. The foundation-model-based approach may also interest researchers working on transfer learning and foundation models in genomics. The plug-and-play framework could serve as a benchmarking tool for the Hi-C enhancement community.</li>
+<li><strong>Major strengths</strong> The idea of using a pretrained foundation model as a discriminator is novel and timely. The generator-agnostic interface addresses a real problem of inconsistent evaluation across methods. The evaluation across multiple cell lines, including cross-species transfer, is thorough in scope. The controlled ablation is well designed to isolate the contribution of pretraining versus architecture versus loss terms. The authors are transparent about limitations and scope of their claims.</li>
+<li><strong>Major Concerns</strong></li>
+<li><strong>Concern ID</strong> R1-M1</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Statistical rigor</li>
+<li><strong>Claim pointer</strong> The manuscript claims that HiCP2GAN "outperforms traditional GAN-based methods in most settings" and "improves the reconstruction quality and biological reproducibility of existing Hi-C enhancement models in most evaluated cases."</li>
+<li><strong>Evidence pointer</strong> Tables 3, 4, 5, 6; Supplementary Tables S5, S6, S7, S10, S11</li>
+<li><strong>Concern</strong> The reported improvements are presented as mean values without any measure of variability, confidence intervals, or statistical significance testing. For example, in the controlled ablation (Supplementary Table S8), the difference in GenomeDISCO between the random ViT and pretrained variants appears small, and the authors themselves note the margins are "small" and "indicative rather than definitive." Yet the central claims of the paper rest on these differences. Without error bars, significance tests, or effect sizes, it is impossible to determine whether the observed improvements are meaningful or within noise.</li>
+<li><strong>Why it matters</strong> The core contribution of the paper is the claim that a pretrained foundation-model discriminator improves Hi-C enhancement. If the improvements are not statistically robust, the central thesis is not established. The authors' own acknowledgment of small margins in the ablation undermines confidence in the broader claims.</li>
+<li><strong>Resolution test</strong> Provide standard deviations, confidence intervals, or statistical tests (e.g., paired tests across chromosomes or repeated runs) for all reported metrics. Clearly state which comparisons are statistically significant and at what threshold. If improvements are not significant, revise the claims accordingly.</li>
+<li><strong>Concern ID</strong> R1-M2</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Evidence completeness</li>
+<li><strong>Claim pointer</strong> The manuscript claims that HiCP2GAN "improves loop detection over standalone generators" and "improves topologically associating domain detection and quality."</li>
+<li><strong>Evidence pointer</strong> Figure 3, Table 6, Supplementary Table S9</li>
+<li><strong>Concern</strong> The loop detection analysis is performed on only four chromosomes (chr4, chr14, chr16, chr20) from a single cell line (GM12878). The TAD analysis is limited to two chromosomes (chr4, chr14) from two cell lines. These are narrow evaluations from which to draw general conclusions. Additionally, the TAD analysis uses a tile-based approach with 226 tiles, but the selection criteria for "compact, contact-rich spans" are not fully described, and the potential for selection bias is not addressed.</li>
+<li><strong>Why it matters</strong> The downstream biological validation is a key part of the paper's claim that improvements extend beyond pixel-level metrics. If the evaluation is too narrow or potentially biased, the generalizability of these claims is questionable.</li>
+<li><strong>Resolution test</strong> Expand the evaluation to more chromosomes and cell lines, or provide a clear justification for the selected subset. Describe the tile selection criteria in detail and demonstrate that results are robust to the choice of tiles. Report results for all chromosomes, not just a selected subset.</li>
+<li><strong>Concern ID</strong> R1-M3</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Methodological detail</li>
+<li><strong>Claim pointer</strong> The manuscript describes the discriminator as "a pretrained Vision Transformer-based Hi-C foundation model" and states that "the optimal finetuning depth is determined experimentally."</li>
+<li><strong>Evidence pointer</strong> Section "Foundation-based discriminator architecture", Section "Discriminator freezing and model validation", Supplementary Table S2</li>
+<li><strong>Concern</strong> The description of the discriminator adaptation is incomplete. The authors mention a "lightweight convolutional adapter" and a "lightweight fully connected classification head" but do not specify the architecture, number of parameters, or how these components were designed. The finetuning procedure is described in terms of number of layers, but details such as learning rate schedules, regularization, and early stopping criteria are not provided. The training procedure for the GAN (e.g., number of iterations, batch size, optimizer settings) is only partially specified.</li>
+<li><strong>Why it matters</strong> Reproducibility is a core requirement for computational methods. Without full architectural and training details, other researchers cannot replicate the experiments or apply the method to their own data.</li>
+<li><strong>Resolution test</strong> Provide complete architectural specifications for the adapter, classification head, and any other trainable components. Report all hyperparameters, including learning rates, schedules, regularization, and stopping criteria. Consider releasing the full training configuration as a configuration file or in the supplementary materials.</li>
+<li><strong>Concern ID</strong> R1-M4</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Comparison fairness</li>
+<li><strong>Claim pointer</strong> The manuscript claims that "HiCP2GAN outperforms traditional GAN-based methods" and compares against "the best traditional GAN-based model (HiCARN2)."</li>
+<li><strong>Evidence pointer</strong> Table 3</li>
+<li><strong>Concern</strong> The comparison against traditional GAN-based methods appears limited to a single model (HiCARN2) in the main text. While the authors state that all baselines were "retrained and evaluated by us under an identical protocol," it is unclear how many baseline methods were considered and whether the comparison is comprehensive. The choice of HiCARN2 as "the best" baseline needs justification. Additionally, the comparison is only shown for GM12878; no cross-cell comparison against traditional GANs is presented.</li>
+<li><strong>Why it matters</strong> The claim of outperforming traditional GAN-based methods is a key selling point. If the comparison is limited or the baseline selection is not justified, the claim is weakened.</li>
+<li><strong>Resolution test</strong> Clearly state how many baseline methods were evaluated and how "best" was determined. Provide cross-cell comparisons against traditional GAN-based methods. If only one baseline was used, justify this choice and acknowledge the limitation.</li>
+<li><strong>Minor Comments</strong></li>
+<li><strong>Concern ID</strong> R1-m1</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Clarity</li>
+<li><strong>Affected element</strong> Terminology</li>
+<li><strong>Evidence pointer</strong> Throughout</li>
+<li><strong>Issue</strong> The term "seen cell line" is used in a nonstandard way. The authors clarify that it means the same cell line with different chromosome splits, but this usage could confuse readers familiar with the standard train/test split terminology.</li>
+<li><strong>Required correction</strong> Use standard terminology such as "same cell line, held-out chromosomes" or define the term clearly at first use.</li>
+<li><strong>Concern ID</strong> R1-m2</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Presentation</li>
+<li><strong>Affected element</strong> Figure 1</li>
+<li><strong>Evidence pointer</strong> Figure 1</li>
+<li><strong>Issue</strong> The overall architecture figure is referenced but not described in the text. The reader is left to interpret the figure without guidance on the key components or data flow.</li>
+<li><strong>Required correction</strong> Add a brief description of Figure 1 in the text, highlighting the key components and how they interact.</li>
+<li><strong>Concern ID</strong> R1-m3</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Completeness</li>
+<li><strong>Affected element</strong> Data availability</li>
+<li><strong>Evidence pointer</strong> Data availability section</li>
+<li><strong>Issue</strong> The authors state that pretrained and trained model weights are available via Zenodo, but the specific contents of this deposit are not described. It is unclear whether all models used in the paper are included.</li>
+<li><strong>Required correction</strong> Describe the contents of the Zenodo deposit, including which models are included and in what format.</li>
+<li><strong>Concern ID</strong> R1-m4</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Statistical reporting</li>
+<li><strong>Affected element</strong> Table 2</li>
+<li><strong>Evidence pointer</strong> Table 2</li>
+<li><strong>Issue</strong> The table reports PSNR values "averaged across runs with their corresponding statistical variability," but the specific measure of variability (e.g., standard deviation, standard error) is not stated.</li>
+<li><strong>Required correction</strong> Specify the measure of variability used and the number of runs.</li>
+<li><strong>Technical failings that need to be addressed before the case is established</strong> R1-M1 (statistical rigor) and R1-M2 (evidence completeness) are the primary technical failings. The absence of statistical testing for the central claims and the narrow downstream evaluation prevent the case from being fully established. R1-M3 (methodological detail) also needs to be addressed for reproducibility.</li>
+<li><strong>Assessment against Nature-style criteria</strong> Originality: The idea of using a pretrained foundation model as a GAN discriminator for Hi-C enhancement is original and timely, building on recent advances in foundation models for genomics. Scientific importance: The problem of Hi-C enhancement is important, and a plug-and-play framework that improves biological reproducibility could be valuable. However, the demonstrated improvements are modest and not statistically validated, limiting the current importance. Interdisciplinary readership: The work bridges deep learning and genomics, and the writing is generally accessible, though some domain-specific terms may require familiarity with Hi-C analysis. Technical soundness: The experimental design is thoughtful, particularly the controlled ablation, but the lack of statistical rigor and incomplete methodological details undermine technical soundness. Readability for nonspecialists: The manuscript is clearly written and the motivation is well explained, but the results section would benefit from more interpretation of the practical significance of the improvements.</li>
+<li><strong>Recommendation posture</strong> Supportive if technical concerns are resolved. The core idea is promising and the framework is potentially useful, but the current evidence does not fully establish the claims. The authors must provide statistical validation, expand the downstream evaluation, and complete the methodological details before the case is convincing.</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>The claim that HiCP2GAN "outperforms traditional GAN-based methods in most settings" is not statistically supported; no significance testing is reported.</li>
+<li>The claim that improvements in loop detection and TAD detection are generalizable is not fully supported given the limited chromosome and cell line coverage.</li>
+<li>The claim that the pretrained foundation-model discriminator provides "biologically meaningful gradients" is asserted but not directly demonstrated; the ablation shows feature matching is the operative term, but the biological interpretability of the gradients is not explored.</li>
+<li>The claim of "robust cross-cell generalization" is based on descriptive comparisons without statistical validation.</li>
+<li>The practical significance of the improvements (e.g., effect sizes in loop detection F1, TAD Jaccard) is not discussed in context of what would be meaningful for downstream biological discovery.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

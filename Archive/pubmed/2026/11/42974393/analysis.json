@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42974393",
+  "title": "AI and computational methods for reconstructing cell-state-specific gene regulatory networks from single-cell transcriptome and chromatin accessibility data in cancer: methods, applications, and perspectives.",
+  "authors": "Wang, Jinying; Chen, Fenjuan",
+  "journal": "Frontiers in genetics",
+  "published_date": "2026-11-03",
+  "window": {
+    "start": "2026-11-01",
+    "end": "2026-11-07"
+  },
+  "score": 5,
+  "one_liner_zh": "该综述聚焦癌症中基于单细胞转录组与染色质可及性数据重建基因调控网络的AI计算方法，虽涉及染色质可及性与顺式调控元件，但核心是基因调控网络而非染色质三维空间架构建模，方法上以图学习等AI为主但缺乏三维基因组结构建模深度。",
+  "abstract": "Tumor heterogeneity is shaped by genetic, epigenetic, microenvironmental, and stochastic factors, among which cell-state-specific regulatory programs are a major determinant. Gene regulatory networks provide a systems-level model linking transcription factors, cis-regulatory elements, and target genes. Paired single-cell RNA sequencing (scRNA-seq) and single-cell assay for transposase-accessible chromatin using sequencing (scATAC-seq) measure chromatin accessibility and gene expression in the same cell, offering a direct view of regulatory elements and transcriptional output; matched-but-unpaired, imputed, and single-modality designs can extend coverage but introduce additional assumptions and artifacts. This mini-review focuses on AI and computational methods for reconstructing cell-state-specific GRNs from single-cell transcriptome and chromatin accessibility data in cancer. We define inclusion criteria, distinguish same-cell paired, matched-unpaired, imputed, and single-modality designs, and organize methods by inference objective and input requirement. We cover motif/co-accessibility inference, deep integration and graph learning, dynamic and cell-state-specific modeling, and virtual perturbation. We then discuss applications in epithelial-mesenchymal transition, treatment resistance, lineage plasticity, and tumor subtyping, emphasizing an evidence hierarchy from statistical association to directional prediction, in silico perturbation, and experimentally supported causal regulation. Finally, we examine benchmarking, limitations, and translational prospects. These approaches may help convert GRNs from descriptive maps into testable models of tumor regulation, but clinical utility still requires prospective validation.",
+  "abstract_zh": "肿瘤异质性由遗传、表观遗传、微环境和随机因素塑造，其中细胞状态特异性调控程序是主要决定因素。基因调控网络提供了连接转录因子、顺式调控元件和靶基因的系统级模型。配对单细胞RNA测序（scRNA-seq）和单细胞转座酶可及染色质测序（scATAC-seq）在同一细胞中测量染色质可及性和基因表达，直接呈现调控元件和转录输出；匹配但未配对、插补和单模态设计可扩展覆盖范围，但引入额外假设和伪影。本迷你综述聚焦于从癌症单细胞转录组和染色质可及性数据重建细胞状态特异性GRN的人工智能和计算方法。我们定义纳入标准，区分同细胞配对、匹配未配对、插补和单模态设计，并按推断目标和输入需求组织方法。我们涵盖基序/共可及性推断、深度整合和图学习、动态及细胞状态特异性建模，以及虚拟扰动。随后，我们讨论在上皮-间质转化、治疗耐药、谱系可塑性和肿瘤亚型分型中的应用，强调从统计关联到方向性预测、计算机模拟扰动和实验支持因果调控的证据层级。最后，我们审视基准测试、局限性和转化前景。这些方法可能有助于将GRN从描述性图谱转化为可测试的肿瘤调控模型，但临床实用性仍需前瞻性验证。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42974393/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42974393/",
+  "paper_page_path": "papers/pubmed/42974393/index.html"
+}

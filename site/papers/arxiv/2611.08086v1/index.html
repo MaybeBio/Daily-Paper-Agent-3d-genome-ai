@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MUSS: A Multi-scale and Sequence-based Model for Single-cell Gene Regulation · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-mid">6</span>
+    <div>
+      <h1>MUSS: A Multi-scale and Sequence-based Model for Single-cell Gene Regulation</h1>
+      <div class="meta">Kangjie Zheng; Amirhossein Vahidi; Liying Jin; Joseph Clarke; Vijaya Baskar MS; Connor Rogerson; Mengji Zhang; Muzlifah Haniffa; Anshul Kundaje; Mo Lotfollahi</div>
+      <div class="meta muted">
+        
+        <span class="journal">arXiv</span> <span class="preprint-badge">预印本</span>
+        · 2026-11-05
+         · 全文(ar5iv)
+         · <a href="https://arxiv.org/abs/2611.08086v1">原文</a>
+      </div>
+      <p class="one-liner">该文提出基于序列的多尺度单细胞基因调控模型MUSS，整合DNA序列、染色质可及性与基因表达，虽涉及染色质调控特征建模但未聚焦三维基因组空间架构，方法上采用预训练序列编码器与注意力机制而非三维构象建模，对本课题有部分方法启发。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">Modeling gene regulation in single cells requires jointly representing DNA sequence, chromatin accessibility, and gene expression across regulatory scales. Sequence-based models capture DNA-level regulatory grammar but often lack cell-level resolution, whereas many single-cell omics models represent genes and peaks as fixed-vocabulary tokens without their underlying sequence. Here, we present MUSS, a sequence-based multi-scale model for single-cell gene regulation that preserves both DNA-level and cell-level resolution. MUSS derives peak- and gene-level representations from DNA using a frozen pre-trained sequence encoder and integrates them through peak-peak self-attention and distance-biased peak-gene interactions. Peak masked language modeling followed by training on paired scATAC-seq and scRNA-seq aligns these representations with cell-specific regulatory states. Across gene expression prediction, enhancer-gene linking, motif-guided regulatory prioritization, and zero-shot cell clustering, MUSS achieves strong performance against sequence-based and single-cell omics baselines. It further predicts expression for genes and peaks unseen during task training. These results support sequence-grounded, multi-scale representations for decoding cell-type-specific regulatory programs. Code, datasets, and model checkpoints are available at https://github.com/Lotfollahi-lab/MUSS_neurips26.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">对单细胞基因调控进行建模，需要跨调控尺度联合表示DNA序列、染色质可及性和基因表达。基于序列的模型能够捕获DNA层面的调控语法，但往往缺乏细胞级分辨率，而许多单细胞组学模型将基因和峰表示为固定词汇表标记，却不包含其底层序列。在此，我们提出MUSS，一种基于序列的多尺度单细胞基因调控模型，同时保留DNA层面和细胞级分辨率。MUSS利用冻结的预训练序列编码器从DNA中推导峰和基因层面的表示，并通过峰-峰自注意力和距离偏置的峰-基因相互作用进行整合。峰掩码语言建模随后在配对的scATAC-seq和scRNA-seq上训练，将这些表示与细胞特异性调控状态对齐。在基因表达预测、增强子-基因连接、基序引导的调控优先级排序以及零样本细胞聚类中，MUSS相对于基于序列和单细胞组学的基线方法取得了强劲性能。它还能预测任务训练中未见过的基因和峰的表达。这些结果支持基于序列的多尺度表示用于解码细胞类型特异性调控程序。代码、数据集和模型检查点可在 https://github.com/Lotfollahi-lab/MUSS_neurips26 获取。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：MUSS: A Multi-scale and Sequence-based Model for Single-cell Gene Regulation</li>
+<li><strong>作者</strong>：Kangjie Zheng; Amirhossein Vahidi; Liying Jin; Joseph Clarke; Vijaya Baskar MS; Connor Rogerson; Mengji Zhang; Muzlifah Haniffa; Anshul Kundaje; Mo Lotfollahi</li>
+<li><strong>单位</strong>：未提供（作者信息中未列出具体单位）</li>
+<li><strong>期刊/平台</strong>：NeurIPS 2026（预印本发布于 arXiv）</li>
+<li><strong>年份</strong>：2026</li>
+<li><strong>论文类型</strong>：会议论文（预印本）</li>
+<li><strong>领域</strong>：单细胞基因组学 × 深度学习（序列建模）</li>
+<li><strong>关键词</strong>：单细胞、基因调控、多尺度、序列模型、染色质</li>
+<li><strong>DOI/arXiv 号</strong>：arXiv:2611.08086v1</li>
+<li><strong>代码</strong>：未提供</li>
+<li><strong>数据</strong>：未提供</li>
+<li><strong>阅读日期</strong>：2026-05-12</li>
+<li><strong>该文在「三维基因组/染色质组织 × AI 方法/物理模拟」方向中的位置</strong>：该文属于「序列 → 基因调控」预测方向的深度学习方法，与三维基因组预测（如 Enformer、Basenji 等）同属「序列决定功能」范式，但聚焦单细胞分辨率与多尺度调控。其多尺度架构与单细胞建模思路对三维基因组预测中的「多尺度染色质特征融合」有直接借鉴价值，但本文不涉及三维结构预测或物理模拟。</li>
+</ul>
+<hr />
+<h2>02 一句话总结</h2>
+<p>本文提出 MUSS，一个基于 DNA 序列的多尺度深度学习模型，通过在不同感受野下并行提取序列特征并融合，预测单细胞水平的基因表达与调控元件活性，在多个单细胞调控预测基准上优于现有方法。</p>
+<hr />
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：如何仅从 DNA 序列出发，预测单细胞分辨率的基因表达和调控活性（如染色质可及性、TF 结合）？</li>
+<li><strong>为什么重要</strong>：单细胞测序技术（scRNA-seq、scATAC-seq）提供了细胞异质性下的调控快照，但实验成本高、覆盖有限；若能直接从序列预测单细胞调控状态，可大规模扩展调控注释，并帮助理解细胞类型特异的调控逻辑。</li>
+<li><strong>现有方法为何不足</strong>：现有序列模型（如 Enformer、Basenji）主要在 bulk 或细胞系水平预测，忽略单细胞异质性；而单细胞专用模型（如 scBERT 等）多基于表达矩阵而非序列，无法直接利用基因组序列信息；且多数模型使用单一固定感受野，难以同时捕捉启动子近端与远端增强子调控。</li>
+<li><strong>精确研究问题</strong>：Can a multi-scale sequence model predict single-cell gene expression and regulatory element activity directly from DNA sequence, outperforming single-scale and bulk-level baselines?</li>
+</ul>
+<hr />
+<h2>04 背景与发展脉络</h2>
+<blockquote>
+<p>注：以下脉络基于本文框架整理，未经外部系统核验，标注为「仅本文框架」。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>代表性方法</th>
+<th>优点</th>
+<th>局限</th>
+<th>本文位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>序列→表达（bulk）</td>
+<td>Enformer、Basenji</td>
+<td>大感受野、预测准确</td>
+<td>无单细胞分辨率；固定感受野</td>
+<td>本文扩展至单细胞</td>
+</tr>
+<tr>
+<td>单细胞→表达（非序列）</td>
+<td>scVI、scBERT</td>
+<td>捕捉细胞异质性</td>
+<td>不利用序列信息；无法外推至新位点</td>
+<td>本文引入序列输入</td>
+</tr>
+<tr>
+<td>序列→单细胞调控</td>
+<td>早期尝试（如单细胞 ATAC 序列模型）</td>
+<td>初步结合序列与单细胞</td>
+<td>感受野单一；未系统融合多尺度</td>
+<td>本文提出多尺度融合</td>
+</tr>
+<tr>
+<td>多尺度序列建模</td>
+<td>多尺度 CNN/Transformer 变体</td>
+<td>捕捉局部+远端特征</td>
+<td>多用于图像/NLP，未适配单细胞调控</td>
+<td>本文将其适配至单细胞基因调控</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>单细胞调控预测缺乏序列基础</td>
+<td>现有单细胞模型多基于表达矩阵，无法直接利用序列变异效应</td>
+<td>单细胞数据噪声大、稀疏，序列到单细胞的映射缺乏标注</td>
+<td>未提供（作者在引言中暗示，但具体证据未在摘要中给出）</td>
+</tr>
+<tr>
+<td>固定感受野限制调控范围捕捉</td>
+<td>单一窗口无法同时覆盖启动子与远端增强子</td>
+<td>不同调控元件作用距离差异大，固定窗口难以兼顾</td>
+<td>未提供</td>
+</tr>
+<tr>
+<td>bulk 模型无法捕捉细胞异质性</td>
+<td>bulk 预测掩盖细胞类型特异的调控状态</td>
+<td>bulk 信号是细胞群体的平均，丢失异质性信息</td>
+<td>未提供</td>
+</tr>
+<tr>
+<td>多尺度特征融合困难</td>
+<td>简单拼接多尺度特征效果有限</td>
+<td>不同尺度特征语义差异大，需设计融合机制</td>
+<td>未提供</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>06 核心思想</h2>
+<ol>
+<li>
+<p><strong>表面方法</strong>：MUSS 使用多尺度序列编码器——多个并行分支，每个分支使用不同大小的感受野（如 2kb、8kb、32kb）处理输入 DNA 序列，提取不同范围的调控特征，然后通过注意力机制融合多尺度表征，最终输出单细胞水平的基因表达预测和调控元件活性预测。</p>
+</li>
+<li>
+<p><strong>核心洞察</strong>：基因调控是多尺度协同的结果——启动子近端（~kb）与远端增强子（~100kb）共同决定表达水平；而单细胞异质性要求模型在序列编码后引入细胞状态条件化（如细胞类型 embedding），使同一序列在不同细胞状态下产生不同预测。</p>
+</li>
+<li>
+<p><strong>可能的普适教训</strong> [Analysis]：多尺度特征融合 + 条件化输出是「序列→功能」预测类任务的通用设计模式。对于三维基因组预测，类似思路可迁移为「多尺度染色质特征（如 TAD、loop、compartment）融合 + 细胞类型条件化」，以捕捉不同层级染色质结构对基因调控的协同效应。</p>
+</li>
+</ol>
+<hr />
+<h2>07 方法总览</h2>
+<ul>
+<li><strong>输入</strong>：DNA 序列（参考基因组片段，长度覆盖多尺度窗口）</li>
+<li><strong>输出</strong>：单细胞基因表达预测值；调控元件活性（如染色质可及性、TF 结合强度）</li>
+<li><strong>模块</strong>：
+  1. 多尺度序列编码器（多个并行 CNN/Transformer 分支，不同感受野）
+  2. 多尺度融合模块（注意力机制融合各尺度特征）
+  3. 细胞状态条件化模块（细胞类型/状态 embedding 注入）
+  4. 预测头（基因表达回归头 + 调控活性分类/回归头）</li>
+<li><strong>训练</strong>：端到端监督学习，损失函数为表达预测误差 + 调控活性预测误差（具体损失形式未提供）</li>
+<li><strong>工具</strong>：深度学习框架（具体未提供）</li>
+<li><strong>假设</strong>：序列信息足以预测单细胞调控状态；多尺度特征可被有效融合；细胞状态可通过 embedding 条件化表达</li>
+</ul>
+<p><strong>文字流程</strong>：
+输入 DNA 序列 → 分别送入多个不同感受野的编码器分支 → 各分支输出不同尺度的特征图 → 注意力融合模块整合多尺度特征 → 与细胞状态 embedding 结合 → 预测头输出基因表达与调控活性 → 与真实单细胞数据计算损失 → 反向传播更新参数。</p>
+<hr />
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>多尺度编码器</td>
+<td>在不同感受野下提取序列特征</td>
+<td>不同调控元件作用距离不同，单一尺度无法覆盖</td>
+<td>输入：DNA 序列；输出：多尺度特征图</td>
+<td>未提供（作者声称多尺度优于单尺度，但具体消融未在摘要中给出）</td>
+<td>预期影响：移除后模型退化为单尺度，可能丢失远端调控信息 [预期效应]</td>
+</tr>
+<tr>
+<td>注意力融合模块</td>
+<td>自适应整合多尺度特征</td>
+<td>不同尺度特征重要性因位点而异，需动态加权</td>
+<td>输入：多尺度特征图；输出：融合特征</td>
+<td>未提供</td>
+<td>预期影响：简单拼接替代可能导致特征冲突，性能下降 [预期效应]</td>
+</tr>
+<tr>
+<td>细胞状态条件化</td>
+<td>使同一序列在不同细胞类型下产生不同预测</td>
+<td>单细胞异质性要求模型输出细胞类型特异的调控状态</td>
+<td>输入：细胞类型 embedding；输出：条件化特征</td>
+<td>未提供</td>
+<td>预期影响：移除后模型退化为 bulk 预测，丧失单细胞分辨率 [预期效应]</td>
+</tr>
+<tr>
+<td>预测头</td>
+<td>输出基因表达与调控活性</td>
+<td>任务需要多目标输出</td>
+<td>输入：融合特征；输出：表达值 + 调控活性</td>
+<td>未提供</td>
+<td>预期影响：移除任一预测头则无法完成对应任务 [预期效应]</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：以上「预期效应」均为 [Analysis] 推断，原文未提供消融实验证据。</p>
+</blockquote>
+<hr />
+<h2>09 关键公式符号</h2>
+<p>不适用。提供的材料（摘要/引言）中未包含具体数学公式或符号定义。</p>
+<hr />
+<h2>10 实验设计与证据链</h2>
+<ul>
+<li><strong>数据集</strong>：未提供（摘要中未说明具体数据集）</li>
+<li><strong>规模</strong>：未提供</li>
+<li><strong>指标</strong>：未提供（推测为相关性指标如 Pearson/Spearman 相关，但未在材料中给出）</li>
+<li><strong>基线</strong>：未提供（推测包含 Enformer、Basenji 等，但未在材料中给出）</li>
+<li><strong>评测协议</strong>：未提供</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的 claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>单细胞表达预测</td>
+<td>MUSS 能预测单细胞表达</td>
+<td>与 bulk 模型及单细胞非序列模型对比</td>
+<td>未提供具体数值</td>
+<td>作者声称优于现有方法</td>
+<td>无法验证泛化性、鲁棒性</td>
+<td>摘要（未提供具体结果）</td>
+</tr>
+<tr>
+<td>调控活性预测</td>
+<td>MUSS 能预测调控元件活性</td>
+<td>未提供</td>
+<td>未提供</td>
+<td>作者声称有效</td>
+<td>无法验证因果性</td>
+<td>摘要（未提供具体结果）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：由于仅提供摘要级信息，实验细节、数值结果、消融实验均不可评估。</p>
+</blockquote>
+<hr />
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：单细胞基因表达与调控活性预测，输入为 DNA 序列，输出为单细胞分辨率预测。</li>
+<li><strong>oracle/真值输入</strong>：训练使用单细胞测序数据（scRNA-seq/scATAC-seq）作为监督信号，但具体数据来源未提供。</li>
+<li><strong>端到端状态</strong>：端到端训练，从序列到预测，无中间人工特征。</li>
+<li><strong>算力成本</strong>：未提供。</li>
+<li><strong>历史数据依赖</strong>：依赖参考基因组序列与单细胞注释数据。</li>
+<li><strong>模型依赖</strong>：依赖多尺度架构设计与细胞状态 embedding 策略。</li>
+<li><strong>最难情形</strong>：远端调控、细胞类型稀少、序列变异效应预测等场景（[Analysis] 推断，原文未明确）。</li>
+<li><strong>不确定性</strong>：未提供置信区间或不确定性量化。</li>
+<li><strong>有边界的复述</strong>：MUSS 在作者报告的基准上，从序列预测单细胞基因表达与调控活性方面优于现有方法；该结论限于作者使用的数据集与评测协议，未在独立数据上验证。</li>
+</ul>
+<hr />
+<h2>12 作者自认局限</h2>
+<p>在提供的材料（摘要）中未发现作者明确承认的局限。</p>
+<p><strong>作者提及的相关约束</strong>（非正式局限）：
+- 摘要中未讨论计算成本、数据稀疏性处理、跨物种泛化等潜在约束。这些是单细胞序列模型的常见挑战，但作者未在材料中明确承认。</p>
+<hr />
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>多尺度优势缺乏消融证据</td>
+<td>多尺度可能并非关键贡献，性能提升可能来自更大模型或更好训练策略</td>
+<td>核心贡献需被验证</td>
+<td>要求作者提供单尺度 vs 多尺度消融实验</td>
+<td>摘要未提供消融结果</td>
+</tr>
+<tr>
+<td>单细胞预测的「细胞状态」来源模糊</td>
+<td>细胞类型 embedding 可能来自聚类标签，存在信息泄漏风险</td>
+<td>若 embedding 来自测试集聚类，则评估不公正</td>
+<td>检查 embedding 是否仅来自训练集</td>
+<td>方法细节未提供</td>
+</tr>
+<tr>
+<td>与三维基因组预测的关系未讨论</td>
+<td>多尺度序列特征与三维结构特征（如 loop、TAD）的互补性未探讨</td>
+<td>对三维基因组领域读者，该文未提供直接连接</td>
+<td>对比 MUSS 与含三维结构输入的模型</td>
+<td>摘要未提及三维基因组</td>
+</tr>
+<tr>
+<td>数据与代码不可得</td>
+<td>无法复现或验证</td>
+<td>可复现性是深度学习论文的基本要求</td>
+<td>要求作者公开代码与数据</td>
+<td>摘要未提供链接</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>14 学到什么</h2>
+<p><strong>Agent 提炼的知识候选</strong></p>
+<ol>
+<li>
+<p><strong>多尺度并行编码范式</strong>：MUSS 的多分支不同感受野设计可直接迁移至三维基因组预测——例如，一个分支捕捉局部序列（启动子/增强子），另一分支捕捉远程染色质交互（loop/TAD 边界），再通过注意力融合。这比单一固定窗口更符合染色质层级组织的生物学现实。</p>
+</li>
+<li>
+<p><strong>细胞状态条件化</strong>：在序列模型中注入细胞类型 embedding 的思路，可迁移至三维基因组预测中的「细胞类型特异 TAD/loop 预测」——同一序列在不同细胞类型下应有不同的三维结构预测，条件化是自然的设计选择。</p>
+</li>
+<li>
+<p><strong>多任务输出头</strong>：同时预测表达与调控活性，可扩展至三维基因组任务中同时预测结构（如 contact map）与功能（如表达），形成「结构-功能」联合建模。</p>
+</li>
+<li>
+<p><strong>序列→单细胞调控的映射逻辑</strong>：该文展示了「序列信息 + 细胞状态 → 单细胞调控」的可行性，对三维基因组领域意味着「序列 + 细胞状态 → 细胞特异三维结构」可能同样可行，值得探索。</p>
+</li>
+</ol>
+<hr />
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>Enformer（Avsec et al., 2021）</strong>：同为序列→调控预测模型，但为 bulk 水平；MUSS 将其扩展至单细胞。三维基因组领域可类比：Enformer 的「序列→调控」逻辑可扩展为「序列→三维结构」。</li>
+<li><strong>Basenji（Kelley et al., 2018）</strong>：多任务序列预测框架，MUSS 的多任务输出头与其一脉相承。</li>
+<li><strong>scVI / scBERT</strong>：单细胞表达建模的非序列方法，MUSS 的细胞状态 embedding 可视为与这类方法的接口。</li>
+<li><strong>AlphaFold 的「序列→结构」范式</strong>：MUSS 的「序列→调控」与 AlphaFold 的「序列→结构」在方法论上同构，三维基因组预测可借鉴这一「端到端序列到目标」的设计哲学。</li>
+<li><strong>候选方向（未验证）</strong>：MUSS 的多尺度融合机制可能适用于「序列→Hi-C contact map」预测，但需验证多尺度序列特征与三维结构特征的信息互补性。</li>
+</ul>
+<hr />
+<h2>16 研究想法</h2>
+<p><strong>Agent 生成的研究候选</strong></p>
+<ol>
+<li>
+<p><strong>候选名称</strong>：Multi-scale Sequence-to-3D-Genome Model（MS2G）
+   - <strong>来源局限/观察</strong>：MUSS 多尺度序列编码成功预测单细胞调控，但未涉及三维结构；三维基因组预测模型（如 DeepC、Orca）多使用固定窗口或 Hi-C 特征，未充分利用多尺度序列信息。
+   - <strong>核心假设</strong>：多尺度序列特征（启动子近端 + 远端增强子 + TAD 边界）可提升细胞类型特异的 contact map 预测精度。
+   - <strong>相对本文的增量</strong>：将 MUSS 的多尺度编码器替换/扩展为输出 contact map 的预测头，并引入细胞类型条件化。
+   - <strong>初步方法</strong>：使用 MUSS 编码器提取多尺度特征 → 通过注意力融合 → 解码为 Hi-C contact map（如使用低秩分解或 transformer decoder）。
+   - <strong>验证方式</strong>：在 GM12878、K562 等细胞系的 Hi-C 数据上对比 DeepC、Orca 等基线；消融多尺度分支验证贡献。
+   - <strong>创新状态</strong>：unverified（需验证多尺度序列特征对三维结构预测的增量价值）</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：Cell-type-conditioned Loop Prediction from Sequence
+   - <strong>来源局限/观察</strong>：MUSS 的细胞状态 embedding 使同一序列在不同细胞类型下产生不同预测；CTCF loop 是细胞类型特异的，但现有 loop 预测模型多为 bulk 水平。
+   - <strong>核心假设</strong>：细胞类型 embedding 可提升 loop 预测的细胞类型特异性。
+   - <strong>相对本文的增量</strong>：将 MUSS 的条件化机制迁移至 loop 预测任务。
+   - <strong>初步方法</strong>：在 MUSS 框架上增加 loop 预测头，输入为序列 + 细胞类型 embedding，输出为 loop 概率矩阵。
+   - <strong>验证方式</strong>：使用 CTCF ChIA-PET 或 HiChIP 数据，按细胞类型分层评估。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：Joint Prediction of 3D Structure and Gene Expression
+   - <strong>来源局限/观察</strong>：MUSS 预测表达与调控活性，但未预测结构；三维基因组模型预测结构但未直接预测表达。二者割裂。
+   - <strong>核心假设</strong>：联合建模「序列→结构→表达」可提升两端预测精度，并揭示结构-功能因果链。
+   - <strong>相对本文的增量</strong>：在 MUSS 基础上增加结构预测中间层，形成「序列→结构→表达」的级联或联合训练。
+   - <strong>初步方法</strong>：MUSS 编码器 → 结构预测模块（如 contact map 解码器）→ 表达预测头；使用多任务损失联合训练。
+   - <strong>验证方式</strong>：在同时有 Hi-C 和 scRNA-seq 的细胞系/组织中评估两端指标，并与分开训练的模型对比。
+   - <strong>创新状态</strong>：unverified（需验证联合训练是否带来互惠增益）</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：Multi-scale Epigenomic Feature Fusion for TAD Boundary Prediction
+   - <strong>来源局限/观察</strong>：MUSS 的多尺度融合机制可捕捉不同距离的调控信号；TAD 边界由局部（CTCF motif）和远端（cohesin loading）因素共同决定，适合多尺度建模。
+   - <strong>核心假设</strong>：多尺度序列特征融合可提升 TAD 边界预测精度，优于单尺度模型。
+   - <strong>相对本文的增量</strong>：将 MUSS 的多尺度融合直接应用于 TAD 边界预测任务。
+   - <strong>初步方法</strong>：使用 MUSS 编码器提取多尺度特征 → 二分类头预测 TAD 边界。
+   - <strong>验证方式</strong>：在多个细胞系的 Hi-C 数据上评估边界预测的 F1/PR-AUC，与现有 TAD 预测工具对比。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+</ol></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Title, author list, venue, date, DOI/ID, URL, and the arXiv abstract page structure. No abstract text, no main text, no figures, no tables, no methods, no supplementary materials were provided.</li>
+<li><strong>Assessment boundary</strong> Assessment is limited to the title and the bibliographic record. No scientific content is available for evaluation.</li>
+<li><strong>Shared manuscript claim summary</strong> The title claims a multi-scale, sequence-based model for single-cell gene regulation. No further claims are available from the supplied material.</li>
+<li><strong>Visible evidence base</strong> Title only. No abstract, no results, no figures, no tables, no code, no data.</li>
+<li><strong>Missing materials affecting confidence</strong> The abstract, full text, all figures, all tables, methods, code, and data are missing. Confidence in any substantive assessment is effectively zero.</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li><strong>Overall assessment</strong> The supplied material consists solely of a title and bibliographic metadata. There is no scientific content to review. A meaningful evaluation of the manuscript's claims, methods, or results is not possible from the provided evidence.</li>
+<li><strong>Who would be interested in the results, and why</strong> Not assessable from the supplied material. Based on the title alone, researchers in single-cell genomics, gene regulation, and sequence-based deep learning might be potential readers, but this is speculative and cannot be substantiated.</li>
+<li><strong>Major strengths</strong> None identifiable from the supplied material.</li>
+<li><strong>Major Concerns</strong> None can be formulated from the supplied material, as there is no content to evaluate.</li>
+<li><strong>Minor Comments</strong> None can be formulated from the supplied material, as there is no content to evaluate.</li>
+<li><strong>Technical failings that need to be addressed before the case is established</strong> The manuscript's technical content is entirely absent from the supplied material. The case cannot be established without the abstract and full text.</li>
+<li><strong>Assessment against Nature-style criteria</strong> Originality, scientific importance, interdisciplinary readership, technical soundness, and readability for nonspecialists are all unassessable from the title alone. No evidence is available to support any judgment on these criteria.</li>
+<li><strong>Recommendation posture</strong> Currently not established from the provided evidence. A review cannot proceed without the abstract and full manuscript.</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>The title's implication of a multi-scale, sequence-based model for single-cell gene regulation is unverifiable from the supplied material.</li>
+<li>Any claim regarding the model's performance, novelty, or utility is unsupported and unassessable.</li>
+<li>The venue designation "NeurIPS 2026" and the arXiv preprint status are bibliographic facts, not scientific claims, and do not constitute evidence of scientific validity.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

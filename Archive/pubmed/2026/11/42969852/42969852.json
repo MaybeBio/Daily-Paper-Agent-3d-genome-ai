@@ -1,0 +1,116 @@
+{
+  "identity": {
+    "pmid": "42969852",
+    "doi": "10.1093/bib/bbag603",
+    "title": "AxialTAD: an axial contrast architecture for TAD boundary prediction from Hi-C."
+  },
+  "content": {
+    "abstract": "Topologically associating domains (TADs) are fundamental units of 3D chromatin organization, and accurate identification of TAD boundaries from Hi-C contact matrices remains an active challenge. Recent deep learning approaches have advanced substantially, but these rely on increasingly large architectures, raising the question of how much of this capacity boundary-centric analysis requires. Here we propose AxialTAD, a compact deep learning model centered on an Axial Contrast Module (ACM) that explicitly encodes directional contrast in contact intensity along the row and column axes of local Hi-C patches, an operator aligned with the geometric signature of TAD boundaries. Evaluated on four human cell lines (GM12878, HeLa-S3, IMR-90, K562) within cell lines and under leave-one-cell-out generalization, AxialTAD performed comparably with a recent convolutional neural network (CNN)+Transformer baseline (deepTAD) while using 76%-80% fewer trainable parameters (113K-137K versus 571K). A parameter-matched conventional CNN achieved similar F1 to AxialTAD in the human 25 kb experiments. When trained and evaluated within each of two mouse datasets, AxialTAD outperformed both this control and deepTAD. Orthogonal validation against CTCF and cohesin ChIP-seq supported the biological plausibility of the predicted boundaries. These results indicate that, within the range of architectures examined, a large architecture is not necessary to reach this level of boundary prediction.",
+    "keywords": [
+      "Hi-C",
+      "TAD boundary prediction",
+      "chromatin organization",
+      "deep learning",
+      "inductive bias",
+      "topologically associating domains"
+    ],
+    "mesh_terms": [
+      "Humans",
+      "*Deep Learning",
+      "*Chromatin/genetics/chemistry/metabolism",
+      "Convolutional Neural Networks"
+    ],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Choi, Woo-Young",
+        "Rhee, Je-Keun"
+      ],
+      "short_names": [
+        "Choi WY",
+        "Rhee JK"
+      ],
+      "auids": [
+        "ORCID: 0000-0003-4811-8895"
+      ],
+      "affiliations": [
+        "Department of Bioinformatics & Life Science, Soongsil University, 369, Sangdo-ro, Dongjak-gu, Seoul 06978, Republic of Korea.",
+        "Department of Bioinformatics & Life Science, Soongsil University, 369, Sangdo-ro, Dongjak-gu, Seoul 06978, Republic of Korea.",
+        "AI-Bio Convergence Research Institute, Soongsil University, 369, Sangdo-ro, Dongjak-gu, Seoul 06978, Republic of Korea."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Choi, Woo-Young",
+        "short_name": "Choi WY",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Bioinformatics & Life Science, Soongsil University, 369, Sangdo-ro, Dongjak-gu, Seoul 06978, Republic of Korea."
+        ]
+      },
+      {
+        "full_name": "Rhee, Je-Keun",
+        "short_name": "Rhee JK",
+        "identifiers": [
+          "0000-0003-4811-8895"
+        ],
+        "affiliations": [
+          "Department of Bioinformatics & Life Science, Soongsil University, 369, Sangdo-ro, Dongjak-gu, Seoul 06978, Republic of Korea.",
+          "AI-Bio Convergence Research Institute, Soongsil University, 369, Sangdo-ro, Dongjak-gu, Seoul 06978, Republic of Korea."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Briefings in bioinformatics"
+    ],
+    "journal_abbrev": [
+      "Brief Bioinform"
+    ],
+    "pub_date": "2026 Nov 2",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/11/02 12:46",
+    "fetched_at": "2026-11-08 11:00:01"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42969852"
+    ],
+    "review": [
+      "42969852"
+    ],
+    "pmc": [
+      "13725924"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/pmid/42969852/",
+        "provider": "PubMed Central",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://academic.oup.com/bib/article-lookup/doi/10.1093/bib/bbag603",
+        "provider": "Silverchair Information Systems",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

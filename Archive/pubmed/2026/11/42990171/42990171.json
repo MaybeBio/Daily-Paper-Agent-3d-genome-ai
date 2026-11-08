@@ -1,0 +1,82 @@
+{
+  "identity": {
+    "pmid": "42990171",
+    "doi": "10.64898/2026.09.28.746288",
+    "title": "Kidzoi Enables Cell-Type-Specific Regulatory Activity and Variant Effect Prediction in Kidney."
+  },
+  "content": {
+    "abstract": "Sequence-to-function (S2F) deep learning models predict genome-wide functional profiles directly from DNA sequences and have significantly advanced our understanding of gene regulation. However, existing S2F models are fundamentally constrained by their initial training datasets, and no single model encompasses the full spectrum of cell types, clinical conditions, and cellular states, while training new models de novo is nontrivial. Here, we develop Kidzoi, a kidney cell-type-specific S2F model obtained by transfer learning from the pretrained model Borzoi using single-nucleus chromatin accessibility data from human kidney tissue. Kidzoi accurately predicts cell-type-specific chromatin accessibility and improves regulatory variant effect prediction in proximal tubule cells by up to 23% in terms of AUROC over existing models. Furthermore, Kidzoi effectively prioritizes genome-wide association study (GWAS) fine-mapped causal variants associated with kidney function (estimated glomerular filtration rate based on both creatinine and cystatin C; eGFRcr-cys) while resolving their cell-type specificity. Systematic ablation of flanking sequence indicates that a local context of 32-64 kbp , representing only 6-12% of the full model input, captures most of the information needed for variant effect prediction. Finally, we show that a multi-task model achieves comparable performance to single-task models at a substantially reduced computational cost.",
+    "keywords": [],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article",
+      "Preprint"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Rather, Arif A",
+        "Lee, Dongwon"
+      ],
+      "short_names": [
+        "Rather AA",
+        "Lee D"
+      ],
+      "auids": [
+        "ORCID: 0000-0002-1568-2249"
+      ],
+      "affiliations": []
+    },
+    "xml": [
+      {
+        "full_name": "Rather, Arif A",
+        "short_name": "Rather AA",
+        "identifiers": [],
+        "affiliations": []
+      },
+      {
+        "full_name": "Lee, Dongwon",
+        "short_name": "Lee D",
+        "identifiers": [
+          "0000-0002-1568-2249"
+        ],
+        "affiliations": []
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "bioRxiv : the preprint server for biology"
+    ],
+    "journal_abbrev": [
+      "bioRxiv"
+    ],
+    "pub_date": "2026 Oct 31",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article",
+      "Preprint"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/11/06 11:33",
+    "fetched_at": "2026-11-08 11:00:01"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42990171"
+    ],
+    "review": [
+      "42990171"
+    ],
+    "pmc": [
+      "13733727"
+    ],
+    "entrez": {},
+    "external": [],
+    "text_mined": []
+  }
+}

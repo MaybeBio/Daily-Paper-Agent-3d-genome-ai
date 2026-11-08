@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42990375",
+  "title": "ChAI-Net learns a regulatory code for chromatin co-accessibility.",
+  "authors": "Lee, Jodi; Zhang, Kaite; Shurberg, Ethan; Ramani, Vijay; Pollard, Katherine S",
+  "journal": "bioRxiv : the preprint server for biology",
+  "published_date": "2026-11-06",
+  "window": {
+    "start": "2026-11-01",
+    "end": "2026-11-07"
+  },
+  "score": 7,
+  "one_liner_zh": "该文用深度学习从DNA序列预测染色质共可及性图谱，解析顺式调控元件内转录因子协同结合的调控语法，虽聚焦可及性而非三维空间折叠，但方法可迁移至染色质空间互作建模。",
+  "abstract": "The regulation of chromatin accessibility is critical for cell function and identity. Advances in single-molecule long-read footprinting have enabled near-nucleotide-resolution readout of chromatin fiber organization, capturing both coordination of transcription factor (TF) binding and variation in nucleosome positioning previously obscured by bulk methods. Here we combine this technique with deep learning to study how protein-DNA interactions are coordinated within different types of cis -regulatory elements in mouse embryonic stem cells. First, we quantify the frequency with which pairs of positions are simultaneously accessible on individual molecules. Then, we train ChAI-Net, a neural network that predicts these locus-specific chromatin co-accessibility maps from the underlying DNA sequence. Through model interpretation and in silico experiments, we show that ChAI-Net learns unique combinations of sequence motifs underlying co-accessibility within enhancers, promoters, and CTCF-bound sites. Many of these motifs are missed when modeling average accessibility, suggesting a specific role in coordinated binding. ChAI-Net's regulatory grammar also highlights the importance of TF motif orientation, spacing, positioning, and co-occurrence in driving co-accessibility. Thus, our framework for extracting regulatory rules from footprinting data expands understanding of TF cooperativity, while laying the groundwork to elucidate how these rules vary across cellular contexts as single-molecule genomics is deployed at scale.",
+  "abstract_zh": "染色质可及性的调控对细胞功能和身份至关重要。单分子长读段足迹分析技术的进步使得能够以近核苷酸分辨率读取染色质纤维组织，捕捉到转录因子（TF）结合的协调性以及核小体定位的变异，这些在批量方法中此前被掩盖。在此，我们将该技术与深度学习相结合，研究小鼠胚胎干细胞中不同类型顺式调控元件内蛋白质-DNA相互作用的协调方式。首先，我们量化单个分子上成对位置同时可及的频率。然后，我们训练ChAI-Net，这是一个神经网络，用于从底层DNA序列预测这些位点特异性的染色质共可及性图谱。通过模型解释和计算机模拟实验，我们表明ChAI-Net学习了增强子、启动子和CTCF结合位点内共可及性背后的独特序列基序组合。在建模平均可及性时，许多这些基序被遗漏，表明它们在协调结合中具有特定作用。ChAI-Net的调控语法还强调了TF基序方向、间距、定位和共现对驱动共可及性的重要性。因此，我们从足迹数据中提取调控规则的框架扩展了对TF协同性的理解，同时为随着单分子基因组学大规模部署，阐明这些规则在不同细胞环境中的变化奠定了基础。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42990375/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42990375/",
+  "paper_page_path": "papers/pubmed/42990375/index.html"
+}

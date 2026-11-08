@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42970013",
+  "title": "Super-enhancers: regulatory mechanisms, biological functions, diseases, and therapeutic targets.",
+  "authors": "Miao, Huijie; Liu, Yuanding; Yang, Kaini; Gu, Ao; Zhang, Cuifeng; Li, Mengyao; Wang, Jie",
+  "journal": "Molecular biomedicine",
+  "published_date": "2026-11-02",
+  "window": {
+    "start": "2026-11-01",
+    "end": "2026-11-07"
+  },
+  "score": 5,
+  "one_liner_zh": "该综述系统讨论超级增强子的调控机制、三维基因组组织及其在疾病和治疗中的角色，虽涉及染色质空间架构但以宽泛综述为主，缺乏AI或分子模拟建模深度，仅部分契合本课题。",
+  "abstract": "Super-enhancers (SEs) are operationally defined as clusters of cis-regulatory elements associated with high transcriptional activity and cell-identity genes. They display dense transcription factor and coactivator occupancy, strong H3K27 acetylation, and enhancer-promoter communication, but their annotation varies across platforms, algorithms, and thresholds. This review examines SE architecture, identification, and validation, distinguishing chromatin-based annotation from functional dependence demonstrated by locus-specific perturbations. Mechanisms of SE-associated transcription include pioneer factors, chromatin remodelers, three-dimensional genome organization, transcriptional condensates, non-coding RNAs, and extrachromosomal DNA. Physiological functions in development, immunity, and metabolic homeostasis are considered alongside context-dependent dysregulation in cancer, inflammatory and autoimmune diseases, neurological disorders, and metabolic diseases. Breast cancer provides a model for examining subtype-specific regulation and transcriptional plasticity. Particular attention is given to enhancer remodeling during endocrine therapy, cyclin-dependent kinase 4/6 (CDK4/6) inhibition, human epidermal growth factor receptor 2 (HER2)-targeted treatment, and chemotherapy, which may support bypass signaling, stemness, and persistent resistance. Causal regulatory changes must nevertheless be distinguished from correlates of treatment selection. Therapeutic approaches targeting bromodomain and extraterminal domain (BET) proteins, CDK7/9, chromatin regulators, enhancer RNAs, and regulatory loci are critically evaluated. Definitional uncertainty, model dependence, limited reproducibility, systemic toxicity, and insufficient clinical validation remain major barriers. Priorities include standardized annotation, temporally resolved perturbation, single-cell and spatial profiling, artificial intelligence-assisted integration, patient-derived models, and biomarker-guided therapeutic development. Together, these perspectives position SEs as a context-dependent framework linking regulatory architecture to disease progression and treatment resistance, while emphasizing the evidence required to establish therapeutic vulnerabilities.",
+  "abstract_zh": "超级增强子（super-enhancers, SEs）在操作上被定义为与高转录活性和细胞身份基因相关的顺式调控元件簇。它们表现出密集的转录因子和共激活因子占据、强烈的H3K27乙酰化以及增强子-启动子通讯，但其注释在不同平台、算法和阈值间存在差异。本综述审视了SE的结构、鉴定和验证，区分了基于染色质的注释与通过位点特异性扰动所证明的功能依赖性。SE相关转录的机制包括先锋因子、染色质重塑因子、三维基因组组织、转录凝聚体、非编码RNA和染色体外DNA。在发育、免疫和代谢稳态中的生理功能，以及癌症、炎症性和自身免疫性疾病、神经系统疾病和代谢疾病中的情境依赖性失调均被考虑。乳腺癌作为研究亚型特异性调控和转录可塑性的模型。特别关注内分泌治疗、细胞周期蛋白依赖性激酶4/6（CDK4/6）抑制、人表皮生长因子受体2（HER2）靶向治疗和化疗期间的增强子重塑，这可能支持旁路信号传导、干性和持续耐药性。然而，因果性调控变化必须与治疗选择的关联因素区分开来。针对溴结构域和末端外结构域（BET）蛋白、CDK7/9、染色质调控因子、增强子RNA和调控位点的治疗方法被批判性评估。定义不确定性、模型依赖性、有限的可重复性、系统性毒性和临床验证不足仍是主要障碍。优先事项包括标准化注释、时间分辨扰动、单细胞和空间分析、人工智能辅助整合、患者来源模型以及生物标志物指导的治疗开发。综合来看，这些视角将SE定位为连接调控架构与疾病进展及治疗耐药性的情境依赖性框架，同时强调建立治疗脆弱性所需的证据。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42970013/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42970013/",
+  "paper_page_path": "papers/pubmed/42970013/index.html"
+}

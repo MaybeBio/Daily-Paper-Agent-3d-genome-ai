@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42968110",
+  "title": "Multi-task adversarial autoencoder for functional genomic element generation with preserved biophysical properties.",
+  "authors": "Adamu, Shamsuddeen; Alhussian, Hitham; Abdulkadir, Said Jadid; Eltahir, Majdy Mohamed Eltayeb; Khairy, Sallam O F; Hassan, Ibrahim Hayatu; Kurah, Ibrahim Muhammad; Mukhtar, Abubakar; Ganesalingam, Vijayakanthan; Ravi, Vaishali; Saidu, Yahaya",
+  "journal": "BioData mining",
+  "published_date": "2026-11-02",
+  "window": {
+    "start": "2026-11-01",
+    "end": "2026-11-07"
+  },
+  "score": 5,
+  "one_liner_zh": "该文提出多任务对抗自编码器生成功能基因组序列并保留顺式调控语法与生物物理特性，虽涉及基因组调控元件生成，但未建模染色质三维空间组织或互作，方法上AI生成模型对序列生成有启发，但与本课题三维基因组架构建模关联较弱。",
+  "abstract": "Generative modeling of genomic sequences presents a stringent test for deep learning, requiring the capture of long-range dependencies and functional constraints beyond local nucleotide statistics. Existing architectures frequently collapse to limited modes or reproduce shallow nucleotide distributions without encoding functional semantics. We introduce the Multi-Task Adversarial Autoencoder (MT-AAE), a hybrid generative framework that integrates adversarial regularization with auxiliary functional and biophysical objectives to enforce structured latent representations. Evaluated on an empirical human gene corpus, MT-AAE achieved a Train-on-Synthetic-Test-on-Real (TRTS) accuracy of 74.7%, compared with 41.0% for a standard GAN baseline. Stratified analysis further showed that functional discriminability increased to 89.3% when sequence lengths aligned with the model's architectural window. Importantly, the learned representations exhibited emergent biological structure: synthetic sequences spontaneously preserved cis-regulatory syntax, including canonical TATA-box motifs recovered across 100% of generated promoter sequences without explicit rule encoding, though positional placement relative to the TSS was not statistically significant (KS [Formula: see text]), and the high occurrence rate is partly attributable to the AT-rich composition of the generated sequences. Representation-level validation using frozen DNABERT-2 and DNABERT-S embeddings confirmed that the generated sequences retained functional information beyond shallow k-mer statistics. Cross-species evaluation on Mus musculus sequences further demonstrated species-specific learning consistent with known human-mouse regulatory divergence. The framework also mitigated mode collapse, maintaining near-uniform generation across functional classes ([Formula: see text]), including rare categories such as tRNAs ([Formula: see text] of the dataset). These findings position MT-AAE as an effective framework for biologically constrained genomic sequence generation.",
+  "abstract_zh": "基因组序列的生成建模对深度学习提出了严格考验，要求捕捉超出局部核苷酸统计的远程依赖关系和功能约束。现有架构常常坍缩至有限模式，或仅复现浅层核苷酸分布，而未编码功能语义。我们引入了多任务对抗自编码器（Multi-Task Adversarial Autoencoder, MT-AAE），这是一种混合生成框架，将对抗正则化与辅助功能和生物物理目标相结合，以强制实现结构化潜在表示。在经验性人类基因语料库上的评估中，MT-AAE 实现了合成训练-真实测试（Train-on-Synthetic-Test-on-Real, TRTS）准确率74.7%，而标准GAN基线仅为41.0%。分层分析进一步表明，当序列长度与模型架构窗口对齐时，功能可区分性提升至89.3%。重要的是，学习到的表示展现出涌现性生物结构：合成序列自发保留了顺式调控语法，包括在100%的生成启动子序列中恢复典型TATA盒基序，而无需显式规则编码，尽管相对于转录起始位点（TSS）的位置分布未达到统计显著性（KS [公式见原文]），且高出现率部分归因于生成序列的AT富集组成。使用冻结的DNABERT-2和DNABERT-S嵌入进行的表示层面验证确认，生成序列保留了超出浅层k-mer统计的功能信息。对小鼠（Mus musculus）序列的跨物种评估进一步展示了与已知人类-小鼠调控差异一致的物种特异性学习。该框架还缓解了模式坍缩，在功能类别间保持近均匀生成（[公式见原文]），包括稀有类别如tRNA（占数据集的[公式见原文]）。这些发现将MT-AAE定位为生物约束基因组序列生成的有效框架。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42968110/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42968110/",
+  "paper_page_path": "papers/pubmed/42968110/index.html"
+}

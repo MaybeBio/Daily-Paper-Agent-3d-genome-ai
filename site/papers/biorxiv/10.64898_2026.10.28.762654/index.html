@@ -1,0 +1,751 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>scSTEC: Annotating Chromatin Subcompartments from Individual Single-Cell Hi-C Data via Direct Two-Dimensional Embedding and Chromosome-wise Consensus · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-high">8</span>
+    <div>
+      <h1>scSTEC: Annotating Chromatin Subcompartments from Individual Single-Cell Hi-C Data via Direct Two-Dimensional Embedding and Chromosome-wise Consensus</h1>
+      <div class="meta">Peng Y; Yang L; Ge H</div>
+      <div class="meta muted">
+        
+        <span class="journal">bioRxiv</span> <span class="preprint-badge">预印本</span>
+        · 2026-11-03
+         · 全文(europepmc)
+         · <a href="https://www.biorxiv.org/content/10.64898/2026.10.28.762654">原文</a>
+      </div>
+      <p class="one-liner">该文提出scSTEC，直接从单细胞Hi-C矩阵进行二维嵌入和染色体一致性注释染色质亚区室，无需跨细胞信息共享，属于三维基因组染色质组织建模且具方法学贡献。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">&lt;h4&gt;Motivation&lt;/h4&gt; Single-cell Hi-C (scHi-C) technologies enable the study of three-dimensional (3D) genome organization at individual-cell resolution. Many computational methods have been developed to infer hierarchical structures from scHi-C data. However, annotating chromatin subcompartments from sparse scHi-C data remains a challenge. The recently developed scGHOST provides a framework for single-cell subcompartment annotation, but relies on a deep learning-based architecture, a multi-step upstream pipeline involving cell embedding and matrix imputation, and cross-cell information sharing. These features complicate algorithmic interpretation and make the annotation of an individual cell dependent on information from other cells in the dataset. Hence, methods are needed that annotate subcompartments directly from an individual cell’s own contact matrix, without complex upstream processing or cross-cell information sharing. &lt;h4&gt;Results&lt;/h4&gt; We developed scSTEC, a computational framework that annotates subcompartments directly from an individual scHi-C matrix without data imputation, complex upstream processing, or cross-cell data sharing. We show that the estimated inter-chromosomal matrix constructed by scGHOST is intrinsically of rank 2, revealing that the geometry relevant to clustering can be represented in two dimensions. Leveraging this low-dimensional structure, scSTEC performs direct subcompartment annotation through 2D genomic embedding and chromosome-wise consensus. Across bulk Hi-C, downsampled simulations, and real scHi-C datasets (four human cell lines, adult mouse cortex, developing mouse embryos, and developing olfactory sensory neurons), scSTEC achieves subcompartment annotations comparable to scGHOST despite operating on each cell independently, while providing greater algorithmic interpretability. Furthermore, subcompartments identified by scSTEC effectively resolve cell types, capture developmental dynamics, and show consistent associations with gene expression and epigenetic profiles. &lt;h4&gt;Availability&lt;/h4&gt; scSTEC is freely available at https://github.com/Ge-lab-pku/scSTEC .</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">&lt;h4&gt;动机&lt;/h4&gt; 单细胞Hi-C（scHi-C）技术使得在单细胞分辨率下研究三维（3D）基因组组织成为可能。许多计算方法已被开发用于从scHi-C数据推断层级结构。然而，从稀疏的scHi-C数据中注释染色质亚区室仍然是一个挑战。最近开发的scGHOST为单细胞亚区室注释提供了一个框架，但其依赖于基于深度学习的架构、涉及细胞嵌入和矩阵插补的多步骤上游流程，以及跨细胞信息共享。这些特性使算法解释复杂化，并使单个细胞的注释依赖于数据集中其他细胞的信息。因此，需要能够直接从单个细胞自身的接触矩阵中注释亚区室的方法，而无需复杂的上游处理或跨细胞信息共享。&lt;h4&gt;结果&lt;/h4&gt; 我们开发了scSTEC，一个直接从单个scHi-C矩阵中注释亚区室的计算框架，无需数据插补、复杂的上游处理或跨细胞数据共享。我们展示了由scGHOST估计的染色体间矩阵本质上具有秩2，揭示了与聚类相关的几何结构可以在二维中表示。利用这种低维结构，scSTEC通过二维基因组嵌入和染色体一致性共识进行直接亚区室注释。在批量Hi-C、降采样模拟和真实scHi-C数据集（四种人类细胞系、成年小鼠皮层、发育中的小鼠胚胎和发育中的嗅觉感觉神经元）中，scSTEC尽管独立处理每个细胞，仍能达到与scGHOST相当的亚区室注释，同时提供更高的算法可解释性。此外，scSTEC识别的亚区室能有效区分细胞类型，捕捉发育动态，并显示与基因表达和表观遗传谱的一致关联。&lt;h4&gt;可用性&lt;/h4&gt; scSTEC可在https://github.com/Ge-lab-pku/scSTEC 免费获取。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：scSTEC: Annotating Chromatin Subcompartments from Individual Single-Cell Hi-C Data via Direct Two-Dimensional Embedding and Chromosome-wise Consensus</li>
+<li><strong>作者与单位</strong>：Peng Y; Yang L; Ge H（北京大学 Ge-lab，具体单位信息未提供）</li>
+<li><strong>期刊/预印本平台</strong>：bioRxiv</li>
+<li><strong>年份</strong>：2026-11-03</li>
+<li><strong>论文类型</strong>：方法学论文（预印本）</li>
+<li><strong>领域</strong>：三维基因组 / 单细胞 Hi-C 数据分析 / 染色质亚区室注释</li>
+<li><strong>关键词</strong>：单细胞 Hi-C、染色质亚区室、二维嵌入、染色体共识、无监督聚类</li>
+<li><strong>DOI/arXiv 号</strong>：10.64898/2026.10.28.762654</li>
+<li><strong>代码</strong>：https://github.com/Ge-lab-pku/scSTEC（另存于 Zenodo: https://doi.org/10.5281/zenodo.23750594）</li>
+<li><strong>数据</strong>：公开数据集（GM12878 bulk Hi-C、LiMCA、HiRES、scMicro-C、CHARM 等），具体清单见补充材料</li>
+<li><strong>阅读日期</strong>：未提供</li>
+<li><strong>在课题方向中的位置</strong>：本文属于「三维基因组 × AI/物理模拟」方向中单细胞 Hi-C 亚区室注释这一细分问题。与 scGHOST 等深度学习方法不同，scSTEC 不依赖跨细胞信息共享和深度学习训练，而是通过数学上证明 scGHOST 估计的染色质间矩阵本质为秩 2 矩阵，从而将高维聚类问题简化为二维嵌入问题。该方法为单细胞染色质组织分析提供了一条无需 GPU、计算开销低的替代路径，同时保持了与 scGHOST 相当的注释质量。</li>
+</ul>
+<h2>02 一句话总结</h2>
+<p>本文提出 scSTEC，通过数学证明 scGHOST 估计的染色质间矩阵为秩 2 矩阵，将单细胞 Hi-C 亚区室注释转化为二维嵌入加染色体间共识投票的问题，在不使用跨细胞信息共享和深度学习的情况下，实现了与 scGHOST 相当的注释精度，并能在约 50–100 kb 分辨率下工作。</p>
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：如何从单个细胞的 Hi-C 接触矩阵直接注释染色质亚区室（A1、A2、B1、B2、B3），而不依赖跨细胞信息共享、数据插补或深度学习训练？</li>
+<li><strong>为什么重要</strong>：单细胞 Hi-C 技术能够揭示三维基因组在单细胞水平的异质性，但数据稀疏且噪声大。亚区室注释是理解染色质功能组织的关键步骤。现有方法 scGHOST 依赖深度学习和跨细胞信息，导致：(1) 算法可解释性差；(2) 单个细胞的注释结果受其他细胞影响，无法真正独立分析；(3) 计算资源需求高。</li>
+<li><strong>现有方法为何不足</strong>：scGHOST 需要先通过 Higashi 进行矩阵插补和细胞嵌入，再使用 GHMM 或 K-means 聚类，流程复杂且依赖跨细胞信息。Rao 等人的 GHMM 方法仅适用于 bulk Hi-C，在单细胞数据上性能迅速退化。</li>
+<li><strong>精确研究问题</strong>：Can a single-cell Hi-C subcompartment annotation method achieve comparable accuracy to scGHOST while operating on each cell independently, without imputation, deep learning, or cross-cell information sharing?</li>
+</ul>
+<h2>04 背景与发展脉络</h2>
+<blockquote>
+<p>注：以下脉络主要基于本文框架，部分经外部核验（标注）。</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Bulk Hi-C 亚区室注释阶段</strong>：Rao et al. (2014) 通过对染色质间 Hi-C 矩阵聚类，将 A/B 区室细分为五个亚区室（A1、A2、B1、B2、B3），每个亚区室具有独特的远程接触模式和表观遗传特征（如组蛋白修饰、复制时序）。这是亚区室概念的奠基性工作。[经外部核验：Rao et al. 2014, Cell]</p>
+</li>
+<li>
+<p><strong>单细胞 Hi-C 技术兴起</strong>：scHi-C 技术（如 LiMCA、HiRES、scMicro-C）使单细胞水平研究三维基因组成为可能，但数据稀疏性严重限制了亚区室等精细结构的检测。[经外部核验：LiMCA 为 Liu et al. 2024 等]</p>
+</li>
+<li>
+<p><strong>单细胞 A/B 区室注释方法</strong>：多种方法（如 scA/B 值）可从单细胞 Hi-C 矩阵估计 A/B 区室状态，但无法提供更精细的亚区室信息。[本文框架]</p>
+</li>
+<li>
+<p><strong>scGHOST 的提出</strong>：scGHOST 利用 Higashi 插补估计染色质间矩阵，再通过 GHMM 或 K-means 聚类实现单细胞亚区室注释。这是首个单细胞亚区室注释框架，但依赖深度学习和跨细胞信息共享。[经外部核验：scGHOST 为 Zhang et al. 2024 左右的工作]</p>
+</li>
+<li>
+<p><strong>scSTEC 的定位</strong>：本文通过数学分析发现 scGHOST 的染色质间矩阵构造本质为秩 2 矩阵，从而将高维聚类问题降为二维嵌入问题。这一发现使得无需显式构造和聚类高维矩阵即可实现等效的几何聚类，同时保持单细胞独立性。[本文核心贡献]</p>
+</li>
+</ol>
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>单细胞 Hi-C 数据极度稀疏</td>
+<td>单细胞接触矩阵中绝大多数条目为零，亚区室信号难以检测</td>
+<td>单细胞中仅捕获有限数量的染色质接触事件</td>
+<td>Methods 节 2.3；Results 图 2D 中 1/6000 采样率下的表现</td>
+</tr>
+<tr>
+<td>现有方法依赖跨细胞信息共享</td>
+<td>单个细胞的注释结果受数据集中其他细胞影响，无法真正独立分析</td>
+<td>scGHOST 使用 Higashi 插补，需要利用所有细胞的联合信息</td>
+<td>Introduction 第 1 节；Discussion 第 4 节</td>
+</tr>
+<tr>
+<td>深度学习方法可解释性差</td>
+<td>难以理解模型为何将特定区域归为特定亚区室</td>
+<td>深度学习模型的内部决策过程不透明</td>
+<td>Introduction 第 1 节；Discussion 第 4 节</td>
+</tr>
+<tr>
+<td>计算资源需求高</td>
+<td>scGHOST 需要 GPU 加速，CPU 运行缓慢</td>
+<td>深度神经网络训练和插补过程计算量大</td>
+<td>Discussion 第 4 节；Supplementary Figure S22</td>
+</tr>
+<tr>
+<td>低覆盖度数据中大量细胞无法分析</td>
+<td>部分细胞因接触数不足而无法通过质量控制</td>
+<td>亚区室注释需要最低数量的信息性接触</td>
+<td>Methods 节 2.3；Discussion 第 4 节</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<h3>1) 表面方法</h3>
+<p>scSTEC 的流程为：(a) 对每个细胞、每条染色体，计算每个基因组位点的二维表示 (aᵢ, bᵢ)，分别代表该位点与 CpG 高密度（A 样）和低密度（B 样）位点的接触加权 CpG 密度；(b) 以每条其他染色体为参考，通过特征向量引导的投影将二维表示变换为二维嵌入；(c) 在二维嵌入上执行 K-means 聚类（k=5），按 CpG 密度均值标记五个亚区室；(d) 跨所有参考染色体进行共识投票，得到最终注释和共识分数。</p>
+<h3>2) 核心洞察</h3>
+<p><strong>scGHOST 的染色质间矩阵本质为秩 2 矩阵</strong>。scGHOST 构造的估计染色质间矩阵 M 的每个元素 Mᵢⱼ 是查询位点 i 和参考位点 j 的二维表示的内积形式。数学上，M = X Xᵀ 的形式使其秩至多为 2。因此，尽管 M 的每一行是 N′ 维向量，其欧几里得几何可以精确地在二维空间中表示。这意味着 scGHOST 中在高维空间执行的聚类，在数学上等价于在二维嵌入上的聚类。这一洞察使得可以完全绕过染色质间矩阵的显式构造和高维聚类，直接进行二维嵌入和聚类。</p>
+<h3>3) 可能的普适教训 [Analysis]</h3>
+<ul>
+<li><strong>高维数据的低秩结构</strong>：许多看似高维的生物数据矩阵可能具有远低于其表观维度的内在秩。识别这种低秩结构可以将复杂的高维聚类问题简化为低维几何问题，从而大幅降低计算复杂度并提高可解释性。</li>
+<li><strong>"等价性"而非"近似"</strong>：scSTEC 的关键优势在于其二维嵌入与 scGHOST 的高维表示在欧几里得几何上精确等价，而非近似。这提示我们在设计简化方法时，寻找数学上可证明的等价变换比追求近似可能更有价值。</li>
+<li><strong>单细胞独立性</strong>：在单细胞分析中，避免跨细胞信息共享不仅是一个计算问题，更是一个概念问题——它确保每个细胞的注释结果真正反映该细胞自身的染色质状态，而非数据集的集体特征。</li>
+</ul>
+<h2>07 方法总览</h2>
+<ul>
+<li><strong>输入</strong>：单个细胞的 Hi-C 接触矩阵（intra-chromosomal），基因组划分为非重叠 bin（默认 500 kb，可支持 50–100 kb）；CpG 密度注释。</li>
+<li><strong>输出</strong>：每个 bin 的亚区室注释（A1、A2、B1、B2、B3）及共识分数。</li>
+<li><strong>模块</strong>：
+  1. <strong>数据预处理与质量控制</strong>：在数据集水平移除总接触数 &lt;10 的 bin；在细胞水平排除稀疏度 &gt;0.98 或总接触数 &lt;3,000 的细胞。
+  2. <strong>二维基因组表示</strong>：对查询染色体每个位点 i，计算 aᵢ = Σⱼ∈S_A cⱼ·Iᵢⱼ 和 bᵢ = −Σⱼ∈S_B cⱼ·Iᵢⱼ，其中 S_A/S_B 为 CpG 密度前/后 30% 的 bin 集合，c 为归一化 CpG 密度，I 为接触矩阵。
+  3. <strong>二维嵌入</strong>：对每个参考染色体 n′，计算特征向量 ν₁、ν₂ 和特征值 λ₁、λ₂，将二维表示投影为嵌入坐标。
+  4. <strong>K-means 聚类与标记</strong>：k=5，按簇内平均 CpG 密度降序标记为 A1、A2、B1、B2、B3。
+  5. <strong>染色体间共识</strong>：对每个查询染色体，跨所有参考染色体投票，取多数类为最终注释，并计算共识分数。</li>
+<li><strong>训练</strong>：无监督方法，无需训练。</li>
+<li><strong>工具</strong>：cooler、cooltools（数据处理）、scHiCluster（用于插补和比较）、scGHOST（基线方法）。</li>
+<li><strong>流程</strong>：输入单细胞接触矩阵 → 数据集级 bin 过滤 → 细胞级 QC → 对每个查询染色体 × 每个参考染色体计算二维表示 → 特征分解 → 二维嵌入 → K-means → 标记 → 跨染色体共识 → 输出注释与共识分数。</li>
+</ul>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>数据集级 bin 过滤</td>
+<td>移除总接触数 &lt;10 的 bin</td>
+<td>低覆盖 bin 无法提供可靠信号，且在不同细胞中可能系统性缺失</td>
+<td>输入：所有细胞的接触矩阵；输出：有效 bin 集合</td>
+<td>Methods 节 2.3</td>
+<td>预期：保留低覆盖 bin 会引入噪声，降低聚类稳定性 [预期效应]</td>
+</tr>
+<tr>
+<td>细胞级 QC</td>
+<td>排除稀疏度 &gt;0.98 或总接触数 &lt;3,000 的细胞</td>
+<td>极低覆盖细胞无法可靠注释亚区室</td>
+<td>输入：单细胞接触矩阵；输出：通过 QC 的细胞集合</td>
+<td>Methods 节 2.3；Supplementary Figure S5</td>
+<td>预期：移除 QC 会保留大量低质量细胞，注释结果噪声增大 [预期效应]</td>
+</tr>
+<tr>
+<td>二维基因组表示 (aᵢ, bᵢ)</td>
+<td>将每个位点表示为与 A 样/B 样位点的接触加权 CpG 密度</td>
+<td>将高维接触模式压缩为两个有生物学意义的坐标</td>
+<td>输入：接触矩阵、CpG 密度；输出：二维表示</td>
+<td>Methods 节 2.1；Figure 1</td>
+<td>实测：直接在此表示上聚类效果差于 scGHOST（Supplementary Figure S1），因此需要后续嵌入步骤</td>
+</tr>
+<tr>
+<td>特征向量引导的二维嵌入</td>
+<td>将二维表示变换为保持 scGHOST 矩阵欧几里得几何的嵌入</td>
+<td>直接聚类二维表示效果不佳，需要几何变换</td>
+<td>输入：二维表示；输出：嵌入坐标</td>
+<td>Methods 节 2.1 公式推导；Supplementary Figure S2</td>
+<td>预期：移除嵌入直接聚类会降低与 scGHOST 的一致性 [预期效应]</td>
+</tr>
+<tr>
+<td>K-means 聚类 (k=5)</td>
+<td>将位点分为五个亚区室</td>
+<td>亚区室是离散的染色质状态</td>
+<td>输入：嵌入坐标；输出：五个簇</td>
+<td>Methods 节 2.2</td>
+<td>预期：改变 k 值会改变亚区室粒度 [预期效应]</td>
+</tr>
+<tr>
+<td>CpG 密度标记</td>
+<td>按簇内平均 CpG 密度降序标记 A1→B3</td>
+<td>亚区室具有特征性 CpG 密度</td>
+<td>输入：簇标签、CpG 密度；输出：亚区室标签</td>
+<td>Methods 节 2.2</td>
+<td>预期：标记错误会导致与表观遗传特征不一致 [预期效应]</td>
+</tr>
+<tr>
+<td>染色体间共识</td>
+<td>跨所有参考染色体投票决定最终注释</td>
+<td>不同参考染色体可能给出不同结果，需要稳健整合</td>
+<td>输入：各参考染色体的注释；输出：最终注释 + 共识分数</td>
+<td>Methods 节 2.2；Supplementary Figure S3</td>
+<td>实测：共识分数在 bulk 数据上均 &gt;50%，A1/B3 共识最高 [实测]</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式符号</h2>
+<p><strong>公式 1：二维基因组表示</strong></p>
+<p>aᵢ = Σⱼ∈S_A cⱼ·Iᵢⱼ
+bᵢ = −Σⱼ∈S_B cⱼ·Iᵢⱼ</p>
+<ul>
+<li>aᵢ, bᵢ：位点 i 的二维表示坐标</li>
+<li>Iᵢⱼ：查询染色体上位点 i 与参考染色体上位点 j 的接触计数</li>
+<li>cⱼ：位点 j 的归一化 CpG 密度，范围 [−0.5, 0.5]</li>
+<li>S_A, S_B：CpG 密度排名前/后 30% 的位点集合</li>
+</ul>
+<p><strong>公式 2：scGHOST 估计的染色质间矩阵</strong></p>
+<p>Mᵢⱼ = aᵢ·aⱼ + bᵢ·bⱼ</p>
+<ul>
+<li>Mᵢⱼ：估计的染色质间矩阵元素</li>
+<li>该矩阵为秩 2 矩阵（M = X Xᵀ，X 为 N×2 矩阵）</li>
+</ul>
+<p><strong>公式 3：行间欧几里得距离的二维等价</strong></p>
+<p>||Mᵢ − Mⱼ||² = (Δa, Δb)·V Vᵀ·(Δa, Δb)ᵀ</p>
+<p>其中 Δa = aᵢ − aⱼ，Δb = bᵢ − bⱼ，V = [ν₁, ν₂] 为特征向量矩阵。</p>
+<p>令 (λ₁, λ₂) 为 V Vᵀ 的特征值，则距离可重写为：</p>
+<p>||Mᵢ − Mⱼ||² = λ₁·(Δa·ν₁₁ + Δb·ν₁₂)² + λ₂·(Δa·ν₂₁ + Δb·ν₂₂)²</p>
+<ul>
+<li>该式表明高维距离可精确表示为二维嵌入坐标的加权欧几里得距离</li>
+<li>当 λ₁ = λ₂ 时，变换为缩放等距，聚类结果不变</li>
+</ul>
+<p><strong>公式 4：共识分数</strong></p>
+<p>ConsensusScore(j) = (1/N) Σᵢ [Lᵢ(j) = 众数标签]</p>
+<ul>
+<li>Lᵢ(j)：细胞 i 中位点 j 的亚区室标签</li>
+<li>N：细胞数</li>
+</ul>
+<h2>10 实验设计与证据链</h2>
+<p><strong>数据集与规模：</strong>
+- GM12878 bulk Hi-C（Rao et al. 2014），500 kb 分辨率
+- 模拟 scHi-C：由 bulk 矩阵二项式降采样生成，采样率 1/10 至 1/6000，各 50 次重复
+- LiMCA 数据集：GM12878、K562、eHAP、BJ 四种人类细胞系；发育中小鼠嗅感觉神经元（411 细胞，6 个时间点）
+- HiRES 数据集：成年小鼠皮层、发育中小鼠胚胎（E7.0–E11.5）
+- scMicro-C 数据集
+- CHARM 数据集：单细胞 Hi-C + H3K27ac 四组学</p>
+<p><strong>指标：</strong>
+- 与 ground truth（bulk 亚区室注释）的 Spearman 相关系数
+- 交集分数（intersection score）：两方法注释一致位点的比例
+- 亚区室间 O/E 归一化接触强度
+- 表观遗传标记富集（H3K36me3、H3K79me2、H3K27ac、H3K4me3、H3K9me3、H3K27me3）
+- 复制时序
+- 细胞类型/发育阶段分辨率（UMAP 聚类）</p>
+<p><strong>基线方法：</strong> scGHOST（GHMM 和 K-means 两种模式）、Rao 的 GHMM 方法</p>
+<p><strong>评测协议：</strong>
+- 模拟数据：以 bulk 注释为 ground truth，比较各方法在不同采样率下的 Spearman 相关
+- 真实数据：与 scGHOST 注释比较交集分数；通过表观遗传特征验证注释的生物学有效性；通过 UMAP 评估细胞类型/发育阶段分辨率</p>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的 claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>模拟数据稀疏性测试</td>
+<td>scSTEC 在稀疏数据下保持鲁棒</td>
+<td>采样率 1/10 至 1/6000，与 scGHOST 和 Rao 方法比较</td>
+<td>1/10 时 scSTEC 与 scGHOST 均 r≈0.7，Rao 方法 r≈0.8；随采样率降低，Rao 方法急剧下降，scSTEC 与 scGHOST 保持 r≈0.6</td>
+<td>scSTEC 在严重稀疏下与 scGHOST 相当，优于 Rao 方法</td>
+<td>未证明 scSTEC 在极低覆盖（&lt;1/6000）下的表现</td>
+<td>Results 图 2D</td>
+</tr>
+<tr>
+<td>Bulk Hi-C 注释一致性</td>
+<td>scSTEC 在 bulk 数据上复现 scGHOST 注释</td>
+<td>GM12878 bulk，与 scGHOST 和 Rao 注释比较</td>
+<td>高交集分数，A1/B3 一致性最高</td>
+<td>scSTEC 的二维嵌入在几何上等价于 scGHOST 的高维聚类</td>
+<td>未证明 scSTEC 优于 scGHOST 的注释质量</td>
+<td>Results 图 2A；Supplementary Figure S3</td>
+</tr>
+<tr>
+<td>亚区室间接触模式</td>
+<td>scSTEC 注释捕获特征性远程接触</td>
+<td>O/E 归一化接触矩阵，比较亚区室间接触强度</td>
+<td>同亚区室接触显著强于异亚区室，接触强度随亚区室差异增大而降低</td>
+<td>scSTEC 注释具有生物学有效性</td>
+<td>未与 scGHOST 的接触模式做定量比较</td>
+<td>Results 图 2B-C</td>
+</tr>
+<tr>
+<td>表观遗传特征验证</td>
+<td>scSTEC 注释与已知表观遗传标记一致</td>
+<td>各亚区室的组蛋白修饰和复制时序</td>
+<td>A1/A2 富集活性标记、早复制；B1 富集 H3K27me3；B2/B3 晚复制</td>
+<td>scSTEC 注释反映已知亚区室功能特征</td>
+<td>未在单细胞水平直接验证表观遗传关联</td>
+<td>Results 图 2C</td>
+</tr>
+<tr>
+<td>人类细胞系注释</td>
+<td>scSTEC 在真实单细胞数据上区分细胞类型</td>
+<td>LiMCA 四细胞系，UMAP 嵌入</td>
+<td>四细胞系清晰分离，与 scGHOST 注释高度一致</td>
+<td>scSTEC 注释保留细胞类型特异性信息</td>
+<td>未与 scHiCluster 等嵌入方法做系统比较</td>
+<td>Results 图 3A-B；Supplementary Figure S9</td>
+</tr>
+<tr>
+<td>发育动态追踪</td>
+<td>scSTEC 捕获发育过程中的亚区室变化</td>
+<td>小鼠胚胎 E7.0–E11.5、嗅感觉神经元发育</td>
+<td>亚区室活性沿发育轨迹变化，与已知发育转变一致</td>
+<td>scSTEC 可追踪发育动态</td>
+<td>未与 RNA 表达动态做定量关联</td>
+<td>Results 图 4E、5B-C</td>
+</tr>
+<tr>
+<td>单细胞水平 H3K27ac 关联</td>
+<td>scSTEC 注释与单细胞 H3K27ac 一致</td>
+<td>CHARM 数据集，单细胞 Hi-C + H3K27ac</td>
+<td>A1 亚区室在单细胞水平富集 H3K27ac</td>
+<td>scSTEC 注释在单细胞水平具有表观遗传意义</td>
+<td>仅验证了 H3K27ac 一种标记</td>
+<td>Supplementary Figure S11</td>
+</tr>
+<tr>
+<td>计算效率</td>
+<td>scSTEC 比 scGHOST 更快</td>
+<td>CPU 运行时间比较</td>
+<td>scSTEC 显著快于 CPU 版 scGHOST，无需 GPU</td>
+<td>scSTEC 计算效率更高</td>
+<td>未提供具体加速比数值</td>
+<td>Discussion；Supplementary Figure S22</td>
+</tr>
+</tbody>
+</table>
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：scSTEC 解决的是单细胞 Hi-C 数据的染色质亚区室注释问题，输出为五个亚区室（A1、A2、B1、B2、B3）的离散标签。它不预测三维结构、不推断染色质环或 TAD 边界。</li>
+<li><strong>oracle/真值输入</strong>：模拟实验中以 bulk Hi-C 的亚区室注释为 ground truth；真实数据中无单细胞水平的 ground truth，通过表观遗传特征和细胞类型分辨率间接验证。</li>
+<li><strong>端到端状态</strong>：scSTEC 是端到端的单细胞注释方法，但依赖数据集级别的 bin 过滤（需要所有细胞的接触信息来定义有效 bin 集合）。这一步骤虽然不涉及跨细胞信息共享用于注释本身，但 bin 集合的定义是数据集级别的。</li>
+<li><strong>算力成本</strong>：无需 GPU，CPU 运行速度显著快于 scGHOST，但未提供具体数值。</li>
+<li><strong>历史数据依赖</strong>：不依赖预训练模型或外部数据集，仅需当前数据集的接触矩阵和 CpG 密度注释。</li>
+<li><strong>模型依赖</strong>：无监督方法，不涉及模型训练；核心依赖是 CpG 密度作为 A/B 区室的代理标记。</li>
+<li><strong>最难情形</strong>：极低覆盖度细胞（总接触数 &lt;3,000 或稀疏度 &gt;0.98）被排除；CpG 密度与 A/B 区室状态关联较弱的基因组区域可能影响注释质量。</li>
+<li><strong>群体/领域边界</strong>：验证覆盖人类细胞系（GM12878、K562、eHAP、BJ）和小鼠（皮层、胚胎、嗅感觉神经元），未验证其他物种或病理状态。</li>
+<li><strong>不确定性</strong>：共识分数提供了注释可靠性的量化指标，但未给出置信区间或概率性注释。</li>
+</ul>
+<p><strong>有边界的复述</strong>：scSTEC 在无需跨细胞信息共享和深度学习的情况下，通过二维嵌入加染色体共识，实现了与 scGHOST 相当的单细胞亚区室注释精度，在模拟数据上对稀疏性鲁棒，在真实数据上能区分细胞类型、追踪发育动态，并与已知表观遗传特征一致。其适用范围限于有足够接触覆盖的细胞和 CpG 密度能有效区分 A/B 区室的基因组区域。</p>
+<h2>12 作者自认局限</h2>
+<table>
+<thead>
+<tr>
+<th>局限</th>
+<th>具体表现</th>
+<th>作者提出的未来方向</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>需要足够的信息性接触</td>
+<td>低覆盖度细胞可能无法通过质量控制，无法可靠注释</td>
+<td>未明确提及</td>
+<td>Discussion 第 4 节</td>
+</tr>
+<tr>
+<td>CpG 密度作为初始参考的依赖</td>
+<td>使用 CpG 密度定义 A 样/B 样参考位点，可能不适用于所有细胞类型或物种</td>
+<td>纳入额外基因组特征以提供更灵活的参考选择</td>
+<td>Discussion 第 4 节</td>
+</tr>
+<tr>
+<td>未整合多组学数据</td>
+<td>推断过程仅使用 Hi-C 数据，未利用匹配的转录组或表观遗传数据</td>
+<td>未来扩展可联合建模 scHi-C 与其他单细胞组学模态</td>
+<td>Discussion 第 4 节</td>
+</tr>
+</tbody>
+</table>
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>秩 2 矩阵的发现依赖于 scGHOST 特定的矩阵构造方式</td>
+<td>该数学性质是 scGHOST 构造的产物，而非染色质相互作用的固有属性；其他插补方法可能产生不同秩的矩阵</td>
+<td>如果 scGHOST 的矩阵构造被修改，scSTEC 的数学基础可能不再成立</td>
+<td>测试不同插补方法（如 Higashi 变体、其他图神经网络）产生的矩阵秩</td>
+<td>Methods 节 2.1 公式推导</td>
+</tr>
+<tr>
+<td>与 scGHOST 的比较可能受实现细节影响</td>
+<td>scGHOST 的默认参数可能未针对所有数据集优化；scSTEC 的 K-means 初始化可能影响结果</td>
+<td>公平比较需要系统性的超参数搜索</td>
+<td>对 scGHOST 进行超参数网格搜索后重新比较</td>
+<td>Methods 节 2.6</td>
+</tr>
+<tr>
+<td>真实数据验证主要依赖间接证据</td>
+<td>无单细胞水平的 ground truth，表观遗传关联和 UMAP 分离是间接验证</td>
+<td>无法排除注释错误但表观遗传特征巧合一致的可能性</td>
+<td>使用正交方法（如单细胞 ATAC-seq 共检测）验证</td>
+<td>Results 节 3.2-3.5</td>
+</tr>
+<tr>
+<td>共识分数作为可靠性指标可能过于乐观</td>
+<td>不同参考染色体给出的注释并非独立——它们共享相同的查询染色体数据，可能产生相关性误差</td>
+<td>共识分数可能高估注释可靠性</td>
+<td>分析共识分数与注释准确率（在模拟数据中）的关系</td>
+<td>Methods 节 2.2</td>
+</tr>
+<tr>
+<td>分辨率声明缺乏系统验证</td>
+<td>声称在 50–100 kb 分辨率下适用，但未提供与 500 kb 结果的系统比较</td>
+<td>高分辨率注释可能在不同基因组区域表现不均</td>
+<td>在多个数据集上系统比较不同分辨率的注释一致性</td>
+<td>Results 节 3.2；Supplementary Figures S14-S15</td>
+</tr>
+<tr>
+<td>排除零接触 bin 可能引入偏差</td>
+<td>在单细胞数据中，零接触可能反映真实的空间分离而非技术缺失</td>
+<td>系统性排除零接触 bin 可能偏向于注释高接触区域</td>
+<td>模拟不同零膨胀水平下的注释稳定性</td>
+<td>Methods 节 2.3</td>
+</tr>
+</tbody>
+</table>
+<h2>14 学到什么</h2>
+<p><strong>Agent 提炼的知识候选</strong>：</p>
+<ol>
+<li>
+<p><strong>低秩结构检测作为降维策略</strong>：在开发三维基因组分析方法时，先检查核心矩阵的数学性质（如秩）可能揭示意想不到的降维机会。scSTEC 的秩 2 发现使得高维聚类问题变为二维问题，这一思路可迁移到其他高维基因组数据的分析中。</p>
+</li>
+<li>
+<p><strong>"单细胞独立性"作为方法设计原则</strong>：在单细胞分析中，避免跨细胞信息共享不仅降低计算成本，还确保每个细胞的注释反映其自身状态。这一原则可推广到其他单细胞表观基因组分析任务（如单细胞 ATAC-seq 的峰注释）。</p>
+</li>
+<li>
+<p><strong>CpG 密度作为 A/B 区室的代理标记</strong>：scSTEC 使用 CpG 密度而非表观遗传数据来定义 A 样/B 样参考位点，这一简化策略在多种细胞类型中表现稳健。可迁移到缺乏匹配表观遗传数据的场景。</p>
+</li>
+<li>
+<p><strong>染色体间共识作为稳健化策略</strong>：跨参考染色体投票的共识机制可提高注释稳健性，且共识分数提供了逐位点的可靠性度量。这一策略可迁移到其他需要整合多参考信息的基因组注释任务。</p>
+</li>
+<li>
+<p><strong>模拟降采样作为验证框架</strong>：通过二项式降采样 bulk Hi-C 生成模拟单细胞数据，以 bulk 注释为 ground truth 进行系统评估，这一验证框架可迁移到其他单细胞方法学研究中。</p>
+</li>
+<li>
+<p><strong>亚区室注释作为细胞类型/发育状态的代理</strong>：scSTEC 证明仅用亚区室注释即可构建 UMAP 并区分细胞类型、追踪发育轨迹，提示亚区室状态可作为单细胞分辨率的生物标志物。</p>
+</li>
+</ol>
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>Rao et al. (2014, Cell)</strong>：定义了五个亚区室（A1、A2、B1、B2、B3）的概念框架，scSTEC 的标签体系直接继承自此工作。本文的 bulk 验证也以此注释为参考。</li>
+<li><strong>scGHOST (Zhang et al., 2024)</strong>：本文的直接基线方法。scSTEC 的二维表示灵感来自 scGHOST 的矩阵构造，但通过秩 2 发现绕过了深度学习和跨细胞插补。</li>
+<li><strong>Higashi (Zhang et al., 2022)</strong>：scGHOST 使用的插补方法，基于图神经网络。scSTEC 的对比凸显了无需插补的替代路径。</li>
+<li><strong>scA/B 值方法</strong>：本文在 UMAP 比较中使用了 scA/B 值作为另一种单细胞区室度量，scSTEC 的二维表示与之有概念上的联系。</li>
+<li><strong>Calder (Liu et al., 2021)</strong>：本文在亚区室边界分析中引用了 Calder 的边界分类框架（level 1/level 2 boundaries）。</li>
+<li><strong>Hi-C 亚区室与表观遗传的关联</strong>：本文验证了亚区室与组蛋白修饰（H3K36me3、H3K27ac、H3K4me3、H3K9me3、H3K27me3）和复制时序的关联，这与 bulk 亚区室研究的既有结论一致。</li>
+<li><strong>单细胞多组学技术</strong>：LiMCA（Hi-C + RNA）和 CHARM（Hi-C + H3K27ac）为验证亚区室的单细胞功能关联提供了数据基础。</li>
+</ul>
+<h2>16 研究想法</h2>
+<p><strong>Agent 生成的研究候选</strong>：</p>
+<ol>
+<li>
+<p><strong>候选名称</strong>：scSTEC-3D：将二维嵌入扩展到三维染色质结构预测
+   - <strong>来源局限/观察</strong>：scSTEC 的秩 2 发现基于 scGHOST 的特定矩阵构造；但真实染色质组织可能包含超出二维的信息
+   - <strong>核心假设</strong>：通过引入额外的基因组特征（如 CTCF 结合、启动子-增强子注释）构造更高秩的矩阵，可以捕获亚区室之外的染色质组织信息
+   - <strong>初步方法</strong>：将 scSTEC 的二维表示扩展为多维表示，使用类似的特征向量引导投影，在三维空间中执行聚类
+   - <strong>验证方式</strong>：在模拟和真实数据上比较多维与二维注释的生物学一致性
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：跨物种亚区室注释的迁移学习框架
+   - <strong>来源局限/观察</strong>：scSTEC 依赖 CpG 密度作为 A/B 区室的代理，但不同物种的 CpG 密度与区室状态的关联强度可能不同
+   - <strong>核心假设</strong>：通过多物种训练，可以学习物种无关的亚区室注释规则
+   - <strong>初步方法</strong>：在多个物种的 bulk Hi-C 上训练一个轻量模型，学习从接触矩阵到亚区室标签的映射，然后迁移到单细胞数据
+   - <strong>验证方式</strong>：在未见过的物种上测试注释一致性
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：亚区室动态与细胞命运决定的因果推断
+   - <strong>来源局限/观察</strong>：scSTEC 在发育数据中观察到亚区室变化与发育轨迹一致，但未建立因果关系
+   - <strong>核心假设</strong>：特定亚区室转变是细胞命运决定的驱动因素而非伴随现象
+   - <strong>初步方法</strong>：利用 scSTEC 的注释和 RNA 速度推断，构建亚区室-基因表达的时序因果模型
+   - <strong>验证方式</strong>：在嗅感觉神经元发育数据中验证预测的因果边
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：亚区室共识分数作为数据质量指标
+   - <strong>来源局限/观察</strong>：scSTEC 的共识分数量化了跨参考染色体的注释一致性，但未用于质量控制
+   - <strong>核心假设</strong>：低共识分数位点对应技术噪声或真实细胞间异质性
+   - <strong>初步方法</strong>：分析共识分数与测序深度、GC 偏倚等技术因素的相关性，建立基于共识分数的 QC 流程
+   - <strong>验证方式</strong>：在已知低质量细胞中验证共识分数的判别能力
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：单细胞亚区室与相分离的物理模型耦合
+   - <strong>来源局限/观察</strong>：scSTEC 提供离散亚区室注释，但未解释其物理机制
+   - <strong>核心假设</strong>：亚区室状态可由局部染色质环境的物理化学性质（如电荷分布、疏水性）预测
+   - <strong>初步方法</strong>：将 scSTEC 的注释与聚合物物理模拟（如粒子和晶格模型）耦合，测试亚区室形成的物理驱动力
+   - <strong>验证方式</strong>：在模拟中重现实验观察到的亚区室分布
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+</ol></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Full manuscript text (abstract, introduction, methods, results, discussion) without figures, tables, or supplementary materials</li>
+<li><strong>Assessment boundary</strong> Scientific validity, methodological soundness, and clarity of claims based on the provided text only; code and data availability statements noted but not independently verified</li>
+<li><strong>Shared manuscript claim summary</strong> The authors present scSTEC, a computational framework for annotating chromatin subcompartments from individual single-cell Hi-C matrices without imputation, complex upstream processing, or cross-cell information sharing. The method is based on a mathematical observation that the estimated inter-chromosomal matrix used by scGHOST is of rank 2, enabling exact two-dimensional embedding of the relevant geometry. The authors validate scSTEC on bulk Hi-C, downsampled simulations, and multiple real scHi-C datasets, reporting comparable performance to scGHOST with greater interpretability and computational efficiency.</li>
+<li><strong>Visible evidence base</strong> Main text only; all figures, supplementary figures, and supplementary methods referenced but not provided</li>
+<li><strong>Missing materials affecting confidence</strong> All figures (Figures 1-5), all supplementary figures (S1-S22), supplementary methods, and supplementary data availability details; without these, quantitative claims and benchmarking results cannot be independently assessed</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li>
+<p><strong>Overall assessment</strong> The manuscript addresses a relevant problem in single-cell genomics: annotating chromatin subcompartments from sparse scHi-C data without relying on complex deep-learning pipelines or cross-cell information sharing. The central mathematical observation regarding the rank-2 structure of scGHOST's estimated inter-chromosomal matrix is potentially interesting and could provide a useful theoretical justification for dimensionality reduction in this context. However, the manuscript as provided cannot be fully evaluated because all figures and supplementary materials are missing. The claims of comparable performance to scGHOST, robustness to sparsity, and biological validity rest entirely on visual and quantitative results presented in figures that were not available for review. The methodological description is also incomplete in places, with key equations and definitions omitted from the text as provided. The writing is generally clear and the logical structure is sound, but the evidence base is insufficient for a definitive assessment.</p>
+</li>
+<li>
+<p><strong>Who would be interested in the results, and why</strong> Computational biologists and bioinformaticians working on single-cell chromatin conformation analysis, particularly those developing or using tools for compartment and subcompartment annotation. The claim of a mathematically grounded, interpretable alternative to deep-learning-based methods may also interest researchers concerned with reproducibility and transparency in computational genomics. Biologists studying 3D genome organization, cell-type-specific chromatin states, and developmental dynamics could find the downstream applications (cell-type resolution, developmental trajectories) relevant, though the biological findings are presented as validations rather than discoveries.</p>
+</li>
+<li>
+<p><strong>Major Strengths</strong></p>
+</li>
+<li>The core idea is conceptually appealing: identifying a low-rank structure in the estimated inter-chromosomal matrix and exploiting it for direct two-dimensional embedding is elegant and potentially generalizable.</li>
+<li>The method addresses a genuine limitation of existing approaches (scGHOST's dependence on cross-cell information and complex pipelines), and the goal of per-cell independent annotation is well motivated.</li>
+<li>The validation strategy is broad, spanning bulk Hi-C, simulations, and multiple real datasets across species and developmental contexts, with attention to both technical performance and biological interpretability.</li>
+<li>
+<p>The discussion of limitations is honest and includes practical guidance on data coverage requirements and potential extensions.</p>
+</li>
+<li>
+<p><strong>Major Concerns</strong></p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M1</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Evidence completeness</li>
+<li><strong>Claim pointer</strong> The manuscript claims that scSTEC achieves subcompartment annotations comparable to scGHOST across bulk Hi-C, downsampled simulations, and real scHi-C datasets, and that it remains robust under severe data sparsity.</li>
+<li><strong>Evidence pointer</strong> Figures 2A-D, 3A-G, 4A-E, 5A-C; Supplementary Figures S1-S22; location not provided</li>
+<li><strong>Concern</strong> All quantitative results supporting the central performance claims are presented in figures and supplementary figures that were not included in the provided material. Without these, the claims of comparability to scGHOST, robustness to sparsity, and biological validity cannot be assessed. This includes the benchmarking against ground truth in simulations, the statistical significance of enrichment analyses, the concordance metrics, and the visual comparisons that are central to the paper's conclusions.</li>
+<li><strong>Why it matters</strong> The core contribution of the manuscript is empirical: demonstrating that a simpler, interpretable method performs comparably to a more complex one. Without access to the actual results, the validity of this claim is unverifiable.</li>
+<li>
+<p><strong>Resolution test</strong> Provide all figures and supplementary figures with full legends, including quantitative values, statistical tests, and sample sizes. The reviewer must be able to evaluate the magnitude of reported effects and the strength of statistical support.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M2</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Methodological completeness</li>
+<li><strong>Claim pointer</strong> The methods section describes a two-dimensional genomic representation and embedding procedure, including equations for the representation, distance calculations, and eigenvalue decomposition.</li>
+<li><strong>Evidence pointer</strong> Section 2.1; location not provided</li>
+<li><strong>Concern</strong> The key equations defining the 2D representation, the distance calculations, and the eigenvalue decomposition are referenced in the text but not actually displayed in the provided manuscript. The definitions of key variables (e.g., the exact form of the representation, the meaning of the eigenvectors and eigenvalues, the precise construction of the embedding) are therefore incomplete. This makes it impossible to fully understand or reproduce the method.</li>
+<li><strong>Why it matters</strong> A computational method must be described with sufficient precision to be implemented by others. Missing equations and variable definitions undermine reproducibility and the ability to assess the mathematical claims.</li>
+<li>
+<p><strong>Resolution test</strong> Provide the complete methods section with all equations explicitly displayed and all variables defined. The derivation of the rank-2 property and the equivalence of the distance metrics should be shown step by step.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M3</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Statistical rigor</li>
+<li><strong>Claim pointer</strong> The manuscript reports that intra-subcompartment contacts are significantly stronger than inter-subcompartment contacts (one-sided P &lt; 5 x 10^-142) and that variable loci exhibit significantly greater transcriptional variability than stable loci (P = 7 x 10^-6), among other statistical claims.</li>
+<li><strong>Evidence pointer</strong> Sections 3.1, 3.2; location not provided</li>
+<li><strong>Concern</strong> The statistical methods used to compute the reported P-values are not described. It is unclear what test was used, how multiple testing was handled, whether the tests account for the spatial autocorrelation inherent in genomic data, and whether the reported P-values are corrected for the number of comparisons performed. The extremely small P-value reported for the contact enrichment analysis raises questions about the effective sample size and whether the test is appropriate for the data structure.</li>
+<li><strong>Why it matters</strong> Without a clear description of the statistical framework, the reported significance levels cannot be interpreted, and the robustness of the biological conclusions is uncertain.</li>
+<li>
+<p><strong>Resolution test</strong> Describe the statistical tests used for each comparison, including the null model, the test statistic, the handling of multiple testing, and any corrections for spatial or technical covariates. Justify the choice of tests given the data structure.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M4</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Comparison fairness</li>
+<li><strong>Claim pointer</strong> The manuscript claims that scSTEC performs comparably to scGHOST and outperforms it in interpretability and computational cost, and that direct clustering on the 2D representation performed worse than the scGHOST framework on simulated datasets.</li>
+<li><strong>Evidence pointer</strong> Supplementary Figures S1, S22; location not provided</li>
+<li><strong>Concern</strong> The comparison with scGHOST is described only in terms of final performance metrics. It is unclear whether both methods were evaluated under identical conditions, including the same input data, the same preprocessing, the same evaluation metrics, and the same computational resources. The claim that scSTEC is markedly faster than CPU-based scGHOST is presented without details on the benchmarking setup, such as hardware, data size, and whether both methods were optimized to a comparable degree.</li>
+<li><strong>Why it matters</strong> Fair benchmarking is essential for claims of comparable performance and improved efficiency. Differences in implementation, optimization, or evaluation protocols could bias the comparison.</li>
+<li>
+<p><strong>Resolution test</strong> Provide a detailed description of the benchmarking protocol, including hardware, software versions, input data, preprocessing steps, evaluation metrics, and the number of runs. Discuss any differences in how the two methods were implemented or optimized.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M5</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Biological validation depth</li>
+<li><strong>Claim pointer</strong> The manuscript claims that subcompartments identified by scSTEC show consistent associations with gene expression and epigenetic profiles, and that developmental dynamics are captured in embryonic and olfactory neuron datasets.</li>
+<li><strong>Evidence pointer</strong> Sections 3.3-3.5, Figures 4A-E, 5A-C; location not provided</li>
+<li><strong>Concern</strong> The biological validations are described at a high level, but the specific analyses are not detailed. For example, it is unclear how "consistent associations" were defined, what the effect sizes were, whether the associations were compared against a null model, and whether the developmental trajectories were statistically supported. The claim that subcompartment changes precede transcriptional changes for 40% of genes is a strong temporal claim that requires careful analysis of the temporal resolution and the statistical framework used to establish ordering.</li>
+<li><strong>Why it matters</strong> The biological relevance of the method is a key part of the paper's contribution. Without detailed descriptions of the validation analyses, the strength of the biological claims cannot be evaluated.</li>
+<li>
+<p><strong>Resolution test</strong> Provide detailed descriptions of the biological validation analyses, including the statistical models, the definition of "consistent association," the handling of multiple testing, and the methods used to establish temporal ordering in the developmental analyses.</p>
+</li>
+<li>
+<p><strong>Minor Comments</strong></p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m1</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Clarity</li>
+<li><strong>Affected element</strong> Section 2.1, definition of the 2D representation</li>
+<li><strong>Evidence pointer</strong> Section 2.1; location not provided</li>
+<li><strong>Issue</strong> The text states that the representation is defined by equations that are not shown. The intuitive description is helpful but insufficient for understanding the exact construction.</li>
+<li>
+<p><strong>Required correction</strong> Display all equations in full and provide a brief numerical example or schematic to illustrate the construction of the representation and embedding.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m2</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Parameter justification</li>
+<li><strong>Affected element</strong> Section 2.1, choice of top and bottom 30% of bins by CpG density</li>
+<li><strong>Evidence pointer</strong> Section 2.1; location not provided</li>
+<li><strong>Issue</strong> The choice of 30% thresholds for defining CpG-high and CpG-low bins appears arbitrary. No sensitivity analysis is described.</li>
+<li>
+<p><strong>Required correction</strong> Provide a sensitivity analysis for this parameter or justify the choice based on prior work or data-driven criteria.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m3</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Methodological detail</li>
+<li><strong>Affected element</strong> Section 2.2, labeling of clusters by CpG density</li>
+<li><strong>Evidence pointer</strong> Section 2.2; location not provided</li>
+<li><strong>Issue</strong> The labeling of the five clusters as A1, A2, B1, B2, and B3 based on decreasing mean CpG density is described, but it is unclear how this labeling relates to the canonical subcompartment definitions from bulk Hi-C data, which are based on chromatin marks and replication timing.</li>
+<li>
+<p><strong>Required correction</strong> Clarify the relationship between CpG-density-based labeling and the canonical subcompartment definitions, and discuss any potential discrepancies.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m4</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Quality control</li>
+<li><strong>Affected element</strong> Section 2.3, quality control thresholds</li>
+<li><strong>Evidence pointer</strong> Section 2.3; location not provided</li>
+<li><strong>Issue</strong> The quality control thresholds (sparsity above 0.98, fewer than 3,000 total contacts) are described as empirical and based on LiMCA data. It is unclear how sensitive the results are to these thresholds.</li>
+<li>
+<p><strong>Required correction</strong> Provide a sensitivity analysis for the QC thresholds or discuss how the choice of thresholds affects the fraction of cells retained and the downstream results.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m5</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Reproducibility</li>
+<li><strong>Affected element</strong> Data availability statement</li>
+<li><strong>Evidence pointer</strong> Data availability section; location not provided</li>
+<li><strong>Issue</strong> The data availability statement indicates that all data are publicly available, but the specific accession numbers or URLs for each dataset are not listed in the provided text.</li>
+<li>
+<p><strong>Required correction</strong> List the specific accession numbers or URLs for each dataset used in the study.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m6</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Terminology</li>
+<li><strong>Affected element</strong> Abstract and Introduction, "direct" annotation</li>
+<li><strong>Evidence pointer</strong> Abstract, Section 1; location not provided</li>
+<li><strong>Issue</strong> The term "direct" is used to describe the annotation approach, but the method still involves multiple steps (representation, embedding, clustering, labeling, consensus). The contrast with scGHOST is clear, but the term "direct" may overstate the simplicity.</li>
+<li>
+<p><strong>Required correction</strong> Consider rephrasing to "annotation from the individual cell's own contact matrix without imputation or cross-cell information" to avoid ambiguity.</p>
+</li>
+<li>
+<p><strong>Technical failings that need to be addressed before the case is established</strong></p>
+</li>
+<li>R1-M1 (missing figures and supplementary materials) must be resolved by providing all visual and quantitative results.</li>
+<li>R1-M2 (missing equations) must be resolved by providing the complete mathematical formulation.</li>
+<li>
+<p>R1-M3 (statistical methods) must be resolved by describing the statistical framework for all reported P-values.</p>
+</li>
+<li>
+<p><strong>Assessment against Nature-style criteria</strong></p>
+</li>
+<li>Originality: The observation of the rank-2 structure in scGHOST's estimated inter-chromosomal matrix and its exploitation for direct two-dimensional embedding is a novel contribution. The idea of per-cell independent annotation without imputation is a meaningful conceptual shift from existing approaches. However, the originality is somewhat tempered by the fact that the method builds directly on scGHOST's framework and uses established techniques (CpG density, K-means clustering, consensus across references).</li>
+<li>Scientific importance: The problem of subcompartment annotation from scHi-C data is of growing importance as single-cell chromatin conformation technologies become more widespread. A method that is interpretable, computationally efficient, and does not require cross-cell information could be valuable for the community. However, the importance depends on whether the performance claims hold up under scrutiny, which cannot be assessed from the provided material.</li>
+<li>Interdisciplinary readership: The manuscript is likely to appeal primarily to computational biologists and bioinformaticians. The biological applications (cell-type resolution, developmental dynamics) may attract some interest from experimental biologists, but the presentation is method-centric and the biological findings are presented as validations rather than discoveries. The interdisciplinary reach is therefore moderate.</li>
+<li>Technical soundness: The mathematical derivation of the rank-2 property and the equivalence of distance metrics is a strength, but the incomplete presentation of equations prevents full evaluation. The benchmarking strategy is broad, but the missing figures and lack of statistical detail undermine confidence. The use of multiple real datasets across species and contexts is commendable.</li>
+<li>
+<p>Readability for nonspecialists: The abstract and introduction are accessible and clearly motivate the problem. The methods section is more technical and would be challenging for nonspecialists, but this is expected for a computational methods paper. The discussion is clear and appropriately contextualizes the findings.</p>
+</li>
+<li>
+<p><strong>Recommendation posture</strong> Currently not established from the provided evidence. The manuscript presents a potentially interesting and useful method, and the conceptual contribution is sound. However, the absence of all figures, supplementary materials, and key equations makes it impossible to verify the central claims of comparable performance, robustness, and biological validity. The statistical framework is also insufficiently described. The authors should be invited to resubmit a complete version of the manuscript with all figures, equations, and statistical details, at which point a full assessment can be made.</p>
+</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>The claim that scSTEC achieves subcompartment annotations comparable to scGHOST is unsupported without the benchmarking figures and quantitative results.</li>
+<li>The claim that scSTEC remains robust under severe data sparsity is unsupported without the simulation results.</li>
+<li>The claim that scSTEC-derived subcompartments show consistent associations with gene expression and epigenetic profiles is unsupported without the relevant figures and statistical analyses.</li>
+<li>The claim that subcompartment changes precede transcriptional changes for a subset of genes is unsupported without the temporal analysis details.</li>
+<li>The mathematical derivation of the rank-2 property and the equivalence of distance metrics is referenced but not shown, making it unverifiable.</li>
+<li>The claim of markedly reduced computational cost relative to scGHOST is unsupported without benchmarking details.</li>
+<li>The generalizability of the CpG-density-based labeling to diverse cell types and species is asserted but not systematically evaluated in the provided text.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

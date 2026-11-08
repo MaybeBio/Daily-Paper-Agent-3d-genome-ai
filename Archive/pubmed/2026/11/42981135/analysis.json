@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42981135",
+  "title": "Cancer-associated histone tail mutations reshape conformational ensembles and DNA-contact states in nucleosomes.",
+  "authors": "Wang, Liujin; Zhang, Houfang; Yuan, Xupeng; Mai, Meiru; Zhao, Yunjie; Peng, Yunhui",
+  "journal": "The Journal of chemical physics",
+  "published_date": "2026-11-04",
+  "window": {
+    "start": "2026-11-01",
+    "end": "2026-11-07"
+  },
+  "score": 7,
+  "one_liner_zh": "该文用全原子分子动力学模拟研究癌症相关组蛋白尾部突变如何重塑核小体中组蛋白尾构象系综与DNA接触状态，虽对象为核小体而非染色质三维组织，但其构象系综与接触状态建模方法对染色质空间架构的分子模拟研究具有可迁移启发。",
+  "abstract": "Cancer-associated histone mutations can perturb chromatin regulation, yet how many noncanonical mutations in intrinsically disordered histone tails alter nucleosome dynamics remains poorly understood. Here, we combine pan-cancer histone mutation profiling with 31.5 mus of all-atom molecular dynamics simulations of complete nucleosomes to investigate recurrent mutations in the H2A, H2B, H3, and H4 tails. We identify recurrent and understudied mutation sites beyond canonical H3 oncohistones and characterize how selected substitutions perturb histone-tail conformational ensembles and DNA contacts in their nucleosomal context. The simulations reveal mutation-specific redistribution of tail-DNA contacts across the nucleosomal DNA surface, accompanied by changes in MM/GBSA-derived relative interaction-energy estimates. For selected systems, Markov state modeling further resolves metastable tail-DNA contact states and shows that mutations alter their structural characteristics and population distributions. These perturbations are not confined to the substituted residues but extend to neighboring interaction networks. Together, our results provide a molecular-level physical picture of how cancer-associated histone-tail mutations reshape conformational and interaction-state landscapes in nucleosomes.",
+  "abstract_zh": "癌症相关的组蛋白突变可扰乱染色质调控，然而 intrinsically disordered 组蛋白尾部中的非经典突变如何改变核小体动力学，目前仍知之甚少。在此，我们结合泛癌组蛋白突变谱分析与总计 31.5 微秒的全原子分子动力学 (molecular dynamics) 模拟，研究 H2A、H2B、H3 和 H4 尾部中的复发性突变。我们识别出经典 H3 癌组蛋白之外的复发且研究不足的突变位点，并表征所选替换如何在核小体背景下扰动组蛋白尾部构象集合及 DNA 接触。模拟揭示了突变特异性的尾部-DNA 接触在核小体 DNA 表面上的重新分布，伴随 MM/GBSA 衍生的相对相互作用能估计值的变化。对于选定系统，马尔可夫状态模型 (Markov state modeling) 进一步解析了亚稳态尾部-DNA 接触状态，并显示突变改变了其结构特征和群体分布。这些扰动不仅限于替换残基，还延伸至邻近相互作用网络。综合来看，我们的结果提供了分子层面的物理图景，展示癌症相关组蛋白尾部突变如何重塑核小体中的构象和相互作用状态景观。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42981135/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42981135/",
+  "paper_page_path": "papers/pubmed/42981135/index.html"
+}

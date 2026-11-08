@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kidzoi Enables Cell-Type-Specific Regulatory Activity and Variant Effect Prediction in Kidney. · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-mid">5</span>
+    <div>
+      <h1>Kidzoi Enables Cell-Type-Specific Regulatory Activity and Variant Effect Prediction in Kidney.</h1>
+      <div class="meta">Rather, Arif A; Lee, Dongwon</div>
+      <div class="meta muted">
+        
+        <span class="journal">bioRxiv : the preprint server for biology</span>
+        · 2026-11-06
+         · 全文(pmc)
+         · <a href="https://pubmed.ncbi.nlm.nih.gov/42990171/">原文</a>
+      </div>
+      <p class="one-liner">该文开发了基于Borzoi迁移学习的肾脏细胞类型特异序列-功能模型Kidzoi，预测染色质可及性并改进调控变异效应预测，虽涉及染色质水平调控，但未建模三维空间组织，方法为深度学习应用而非三维架构建模。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">Sequence-to-function (S2F) deep learning models predict genome-wide functional profiles directly from DNA sequences and have significantly advanced our understanding of gene regulation. However, existing S2F models are fundamentally constrained by their initial training datasets, and no single model encompasses the full spectrum of cell types, clinical conditions, and cellular states, while training new models de novo is nontrivial. Here, we develop Kidzoi, a kidney cell-type-specific S2F model obtained by transfer learning from the pretrained model Borzoi using single-nucleus chromatin accessibility data from human kidney tissue. Kidzoi accurately predicts cell-type-specific chromatin accessibility and improves regulatory variant effect prediction in proximal tubule cells by up to 23% in terms of AUROC over existing models. Furthermore, Kidzoi effectively prioritizes genome-wide association study (GWAS) fine-mapped causal variants associated with kidney function (estimated glomerular filtration rate based on both creatinine and cystatin C; eGFRcr-cys) while resolving their cell-type specificity. Systematic ablation of flanking sequence indicates that a local context of 32-64 kbp , representing only 6-12% of the full model input, captures most of the information needed for variant effect prediction. Finally, we show that a multi-task model achieves comparable performance to single-task models at a substantially reduced computational cost.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">序列到功能（S2F）深度学习模型直接从DNA序列预测全基因组功能谱，显著推进了我们对基因调控的理解。然而，现有S2F模型从根本上受限于其初始训练数据集，且没有单一模型涵盖所有细胞类型、临床条件和细胞状态，而从头训练新模型并非易事。在此，我们开发了Kidzoi，一种肾脏细胞类型特异性的S2F模型，通过从预训练模型Borzoi进行迁移学习，利用人类肾脏组织的单核染色质可及性数据获得。Kidzoi准确预测细胞类型特异性的染色质可及性，并在近端小管细胞中，将调控变异效应预测的AUROC相较于现有模型提高了高达23%。此外，Kidzoi有效优先排序与肾功能相关的全基因组关联研究（GWAS）精细定位因果变异（基于肌酐和胱抑素C的估算肾小球滤过率；eGFRcr-cys），同时解析其细胞类型特异性。对侧翼序列的系统性消融表明，局部上下文为32-64 kbp，仅占完整模型输入的6-12%，却捕获了变异效应预测所需的大部分信息。最后，我们展示了多任务模型在显著降低计算成本的同时，达到了与单任务模型相当的性能。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：Kidzoi Enables Cell-Type-Specific Regulatory Activity and Variant Effect Prediction in Kidney</li>
+<li><strong>作者</strong>：Rather, Arif A; Lee, Dongwon</li>
+<li><strong>单位</strong>：未提供</li>
+<li><strong>期刊/平台</strong>：bioRxiv : the preprint server for biology（预印本）</li>
+<li><strong>年份</strong>：2026-11-06</li>
+<li><strong>论文类型</strong>：预印本（方法学 + 应用研究）</li>
+<li><strong>领域</strong>：计算基因组学 / 基因调控 / 深度学习</li>
+<li><strong>关键词</strong>：sequence-to-function (S2F) model, transfer learning, chromatin accessibility, regulatory variant effect prediction, kidney, single-nucleus ATAC-seq, GWAS fine-mapping</li>
+<li><strong>DOI/arXiv 号</strong>：10.64898/2026.09.28.746288</li>
+<li><strong>代码</strong>：未提供</li>
+<li><strong>数据</strong>：人类肾脏组织单核染色质可及性数据（snATAC-seq）；eGFRcr-cys GWAS fine-mapped variants</li>
+<li><strong>阅读日期</strong>：2026-11-06（按论文日期推定）</li>
+<li><strong>该文在「三维基因组/染色质组织 × AI 方法/物理模拟」方向中的位置</strong>：该文属于 S2F 深度学习模型在细胞类型特异性调控预测中的应用，核心是染色质可及性（chromatin accessibility）而非三维染色质组织（3D genome organization）。但其迁移学习策略（从 Borzoi 到 Kidzoi）、局部序列上下文对调控效应预测的贡献分析，以及多任务模型的计算效率优化，对三维基因组 × AI 方向具有方法学可迁移性——尤其是 Borzoi 本身即包含 3D 结构预测能力，Kidzoi 展示了如何将预训练模型适配到新细胞类型/组织。</li>
+</ul>
+<hr />
+<h2>02 一句话总结</h2>
+<p>该文通过从预训练模型 Borzoi 迁移学习到人类肾脏 snATAC-seq 数据，构建了肾脏细胞类型特异性的 S2F 模型 Kidzoi，在近端小管细胞中将调控变异效应预测的 AUROC 提升最高 23%，并证明 32–64 kbp 局部序列上下文即可捕获大部分变异效应预测所需信息。</p>
+<hr />
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：现有 S2F 深度学习模型（如 Borzoi）受限于初始训练数据，无法覆盖所有细胞类型、临床条件和细胞状态；从头训练新模型成本高且非平凡。能否通过迁移学习高效构建肾脏细胞类型特异性的 S2F 模型，并提升调控变异效应预测？</li>
+<li><strong>为什么重要</strong>：肾脏功能相关 GWAS 变异大多位于非编码区，其功能解读依赖细胞类型特异性的调控注释；准确的变异效应预测对理解肾脏疾病机制和精准医学至关重要。</li>
+<li><strong>现有方法为何不足</strong>：通用 S2F 模型在特定细胞类型上的预测精度有限；从头训练需要大量数据和算力；缺乏肾脏细胞类型特异性的调控预测工具。</li>
+<li><strong>精确研究问题</strong>：Can transfer learning from a pretrained S2F model (Borzoi) using kidney snATAC-seq data produce a cell-type-specific model (Kidzoi) that outperforms existing models in regulatory variant effect prediction for kidney cell types?</li>
+</ul>
+<hr />
+<h2>04 背景与发展脉络</h2>
+<blockquote>
+<p>注：此脉络基于本文框架及作者引述，标注「仅本文框架」；部分节点经外部核验。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>代表性方法</th>
+<th>优点</th>
+<th>局限</th>
+<th>本文位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>早期调控预测</td>
+<td>PWM/position weight matrix 扫描</td>
+<td>简单、可解释</td>
+<td>忽略上下文、协同效应</td>
+<td>背景</td>
+</tr>
+<tr>
+<td>基于特征的模型</td>
+<td>gkm-SVM、Regulatory Genomics</td>
+<td>考虑 k-mer 特征</td>
+<td>无法端到端学习长程依赖</td>
+<td>背景</td>
+</tr>
+<tr>
+<td>深度 S2F 模型</td>
+<td>Enformer、Borzoi</td>
+<td>端到端从序列预测功能谱；长程上下文（100+ kbp）</td>
+<td>受限于训练数据；细胞类型覆盖不全</td>
+<td>本文基础（Borzoi 为预训练源）</td>
+</tr>
+<tr>
+<td>细胞类型特异 S2F</td>
+<td>从头训练（如组织特异模型）</td>
+<td>精确匹配目标组织</td>
+<td>数据/算力成本高</td>
+<td>本文替代方案</td>
+</tr>
+<tr>
+<td>迁移学习 S2F</td>
+<td><strong>Kidzoi（本文）</strong></td>
+<td>低成本适配新细胞类型；提升变异效应预测</td>
+<td>依赖源模型质量；迁移后可能丢失部分通用能力</td>
+<td><strong>本文贡献</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>核验状态</strong>：Borzoi 作为预训练源模型、Enformer 作为 S2F 代表模型，均经外部文献核验（Calandrelli et al., 2020; Avsec et al., 2021）；其余阶段划分基于本文框架。</p>
+<hr />
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S2F 模型细胞类型覆盖不足</td>
+<td>通用模型在肾脏细胞类型上预测精度有限</td>
+<td>初始训练数据未充分包含肾脏细胞类型</td>
+<td>Abstract：现有模型受限于初始训练数据集</td>
+</tr>
+<tr>
+<td>从头训练成本高</td>
+<td>训练新 S2F 模型需要大量数据和算力</td>
+<td>模型参数量大、训练数据需求高</td>
+<td>Abstract：training new models de novo is nontrivial</td>
+</tr>
+<tr>
+<td>调控变异效应预测精度不足</td>
+<td>肾脏近端小管细胞中变异效应预测 AUROC 低于 Kidzoi</td>
+<td>通用模型缺乏细胞类型特异性信息</td>
+<td>Abstract：Kidzoi 提升 AUROC 最高 23%</td>
+</tr>
+<tr>
+<td>变异-细胞类型对应关系不明</td>
+<td>GWAS fine-mapped variants 难以解析其作用的细胞类型</td>
+<td>缺乏细胞类型特异性的调控预测工具</td>
+<td>Abstract：Kidzoi 解析 eGFRcr-cys 变异的细胞类型特异性</td>
+</tr>
+<tr>
+<td>计算资源浪费</td>
+<td>多任务模型 vs 单任务模型性能差异不明</td>
+<td>未系统比较多任务与单任务训练策略</td>
+<td>Abstract：多任务模型以更低计算成本达到可比性能</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>06 核心思想</h2>
+<h3>1) 表面方法</h3>
+<p>从预训练 S2F 模型 Borzoi 出发，使用人类肾脏 snATAC-seq 数据（单核染色质可及性）进行迁移学习（transfer learning），构建肾脏细胞类型特异性的 S2F 模型 Kidzoi。随后评估其在染色质可及性预测、调控变异效应预测、GWAS fine-mapped variant 优先级排序中的表现，并进行序列上下文消融实验和多任务 vs 单任务比较。</p>
+<h3>2) 核心洞察</h3>
+<ul>
+<li><strong>迁移学习是高效构建细胞类型特异 S2F 模型的关键路径</strong>：Borzoi 已学习到通用的序列-功能映射规律，肾脏 snATAC-seq 数据只需微调即可适配新细胞类型，避免从头训练。</li>
+<li><strong>局部序列上下文主导变异效应预测</strong>：32–64 kbp 的局部上下文（仅占全输入 6–12%）即可捕获大部分变异效应预测所需信息，提示远端调控元件的贡献可能被高估，或局部染色质状态是变异效应的主要决定因素。</li>
+<li><strong>多任务学习可显著降低计算成本</strong>：多任务模型（同时预测多种细胞类型）与单任务模型性能相当，但计算开销大幅降低。</li>
+</ul>
+<h3>3) 可能的普适教训 [Analysis]</h3>
+<ul>
+<li>对于三维基因组 × AI 方向：预训练模型（如 Borzoi 包含 3D 结构预测头）的迁移学习策略可推广到其他组织/细胞类型的 3D 结构预测，避免为每种细胞类型从头训练。</li>
+<li>局部上下文主导变异效应的发现提示：在 3D 基因组建模中，局部染色质状态（如 A/B compartment、TAD 边界附近）可能比远距离 3D 接触对变异效应更重要——这挑战了「3D 接触决定一切」的简化叙事。</li>
+<li>多任务学习的计算效率优势对大规模多细胞类型 3D 建模具有直接借鉴意义。</li>
+</ul>
+<hr />
+<h2>07 方法总览</h2>
+<ul>
+<li><strong>输入</strong>：DNA 序列（Borzoi 标准输入格式，约 524 kbp 窗口）；肾脏 snATAC-seq 可及性数据（训练目标）</li>
+<li><strong>输出</strong>：肾脏各细胞类型（如近端小管、远端小管、集合管等）的染色质可及性预测谱；变异效应预测（参考/替代等位基因的预测差异）</li>
+<li><strong>模块</strong>：
+  1. 预训练源模型：Borzoi（通用 S2F 模型）
+  2. 迁移学习层：在 Borzoi 基础上微调，输出层适配肾脏 snATAC-seq 的细胞类型标签
+  3. 变异效应预测模块：比较参考/替代等位基因的预测可及性差异
+  4. 消融分析模块：系统截断输入序列窗口，评估局部上下文贡献
+  5. 多任务 vs 单任务比较模块</li>
+<li><strong>训练</strong>：迁移学习（微调），具体超参数未提供</li>
+<li><strong>工具</strong>：未提供（推测基于 PyTorch/TensorFlow 的深度学习框架）</li>
+<li><strong>假设</strong>：</li>
+<li>Borzoi 学到的通用序列-功能映射可迁移到肾脏细胞类型</li>
+<li>snATAC-seq 可及性可作为调控活性的代理</li>
+<li>变异效应可通过等位基因差异预测来评估</li>
+<li><strong>文字流程</strong>：Borzoi 预训练 → 肾脏 snATAC-seq 数据预处理 → 迁移学习微调 → Kidzoi 模型 → 评估（可及性预测精度、变异效应 AUROC、GWAS fine-mapping 优先级）→ 消融实验 → 多任务比较</li>
+</ul>
+<hr />
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Borzoi 预训练模型</td>
+<td>提供通用序列-功能映射的初始权重</td>
+<td>避免从头训练，利用已有知识</td>
+<td>输入：DNA 序列；输出：通用功能预测谱</td>
+<td>Abstract：作为预训练源模型</td>
+<td>从头训练成本极高，可能无法达到同等性能</td>
+</tr>
+<tr>
+<td>迁移学习微调层</td>
+<td>将通用模型适配到肾脏细胞类型</td>
+<td>使模型输出与肾脏 snATAC-seq 标签对齐</td>
+<td>输入：Borzoi 特征 + 肾脏 snATAC-seq 标签；输出：Kidzoi 模型</td>
+<td>Abstract：Kidzoi 通过迁移学习获得</td>
+<td>模型无法预测肾脏细胞类型特异性调控</td>
+</tr>
+<tr>
+<td>变异效应预测模块</td>
+<td>比较参考/替代等位基因的预测差异</td>
+<td>评估调控变异的功能影响</td>
+<td>输入：参考/替代序列对；输出：效应分数</td>
+<td>Abstract：Kidzoi 提升 AUROC 最高 23%</td>
+<td>无法进行调控变异优先级排序</td>
+</tr>
+<tr>
+<td>序列上下文消融</td>
+<td>系统截断输入窗口</td>
+<td>确定变异效应预测所需的最小序列上下文</td>
+<td>输入：截断后的序列；输出：不同窗口下的预测性能</td>
+<td>Abstract：32–64 kbp 捕获大部分信息</td>
+<td>无法理解模型依赖的序列范围</td>
+</tr>
+<tr>
+<td>多任务模型</td>
+<td>同时预测多种细胞类型</td>
+<td>降低计算成本</td>
+<td>输入：共享序列；输出：多细胞类型预测</td>
+<td>Abstract：多任务与单任务性能相当</td>
+<td>计算成本显著增加（预期）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>消融效应区分</strong>：序列上下文消融为实测（Abstract 明确报告 32–64 kbp 结果）；多任务 vs 单任务为实测比较；其余模块移除影响为预期推断 [Analysis]。</p>
+<hr />
+<h2>09 关键公式符号</h2>
+<p><strong>不适用</strong>。本文为方法学应用论文，Abstract 中未提供具体数学公式。核心方法（迁移学习、AUROC 评估）均为标准技术，无需特殊公式。若需公式细节，需查阅全文 Methods 部分（未提供）。</p>
+<hr />
+<h2>10 实验设计与证据链</h2>
+<ul>
+<li><strong>数据集</strong>：人类肾脏组织 snATAC-seq 数据（单核染色质可及性）；eGFRcr-cys GWAS fine-mapped variants</li>
+<li><strong>规模</strong>：未提供具体细胞数/变异数</li>
+<li><strong>指标</strong>：AUROC（变异效应预测）；预测-实际相关性（可及性预测，推测）</li>
+<li><strong>基线</strong>：现有 S2F 模型（推测包括 Borzoi 原始版本或其他通用模型）</li>
+<li><strong>预算/算力</strong>：未提供</li>
+<li><strong>骨干/仪器</strong>：未提供</li>
+<li><strong>Oracle 输入</strong>：snATAC-seq 实验数据作为训练目标；GWAS fine-mapped variants 作为验证集</li>
+<li><strong>评测协议</strong>：未提供详细协议（需全文）</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的 Claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>细胞类型特异性可及性预测</td>
+<td>Kidzoi 能准确预测肾脏细胞类型可及性</td>
+<td>与现有模型对比</td>
+<td>未提供具体数值</td>
+<td>Kidzoi 具备细胞类型特异性预测能力</td>
+<td>无法判断预测精度的绝对水平</td>
+<td>Abstract</td>
+</tr>
+<tr>
+<td>变异效应预测</td>
+<td>Kidzoi 优于现有模型</td>
+<td>近端小管细胞中 AUROC 对比</td>
+<td>AUROC 提升最高 23%</td>
+<td>Kidzoi 在近端小管中显著优于基线</td>
+<td>仅报告近端小管，其他细胞类型未明确</td>
+<td>Abstract</td>
+</tr>
+<tr>
+<td>GWAS fine-mapping 优先级</td>
+<td>Kidzoi 能有效优先排序因果变异</td>
+<td>eGFRcr-cys 变异集</td>
+<td>未提供具体数值</td>
+<td>Kidzoi 可解析肾脏功能相关变异</td>
+<td>无法判断临床实用性</td>
+<td>Abstract</td>
+</tr>
+<tr>
+<td>序列上下文消融</td>
+<td>局部序列主导变异效应预测</td>
+<td>32–64 kbp vs 全输入</td>
+<td>32–64 kbp 捕获大部分信息</td>
+<td>局部上下文足够</td>
+<td>远端元件仍有贡献，但比例未量化</td>
+<td>Abstract</td>
+</tr>
+<tr>
+<td>多任务 vs 单任务</td>
+<td>多任务模型性能不降</td>
+<td>计算成本对比</td>
+<td>性能相当，成本大幅降低</td>
+<td>多任务学习高效</td>
+<td>未报告具体成本差异数值</td>
+<td>Abstract</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：该结论仅适用于肾脏组织、基于 snATAC-seq 可及性数据训练的 S2F 模型；不适用于其他组织或非可及性调控特征（如甲基化、3D 结构）。</li>
+<li><strong>Oracle/真值输入</strong>：训练目标为 snATAC-seq 实验数据，变异效应验证基于 GWAS fine-mapping（本身具有不确定性）。</li>
+<li><strong>端到端状态</strong>：Kidzoi 是端到端 S2F 模型，但变异效应预测依赖等位基因差异比较，属于间接推断。</li>
+<li><strong>算力成本</strong>：迁移学习显著降低训练成本，但具体数值未提供。</li>
+<li><strong>历史数据依赖</strong>：依赖 Borzoi 预训练权重，Borzoi 的训练数据分布可能影响 Kidzoi 在肾脏上的表现。</li>
+<li><strong>模型依赖</strong>：结果高度依赖 Borzoi 架构和预训练质量；若 Borzoi 有系统性偏差，Kidzoi 会继承。</li>
+<li><strong>最难情形</strong>：近端小管细胞表现最好（AUROC 提升 23%），其他细胞类型（如集合管、足细胞）的表现未明确报告，可能较差。</li>
+<li><strong>不确定性</strong>：未报告置信区间、重复实验或跨数据集验证。</li>
+<li><strong>有边界的复述</strong>：Kidzoi 通过从 Borzoi 迁移学习，在肾脏 snATAC-seq 数据上实现了细胞类型特异性的可及性预测，并在近端小管细胞中将变异效应预测 AUROC 提升最高 23%；该提升依赖于 32–64 kbp 局部序列上下文，且多任务训练可降低成本而不损失性能。这些结论仅限于肾脏组织、snATAC-seq 数据模态和 Borzoi 架构框架内。</li>
+</ul>
+<hr />
+<h2>12 作者自认局限</h2>
+<p>在提供的材料（Abstract）中未发现作者明确承认的局限。</p>
+<p><strong>作者提及的相关约束</strong>（非正式局限）：
+- 模型仅针对肾脏组织，未覆盖其他组织（Abstract 中「kidney cell-type-specific」的定位暗示此约束）
+- 变异效应预测仅在近端小管细胞中报告了具体提升幅度（23%），其他细胞类型未明确
+- 依赖 Borzoi 作为预训练源，未讨论源模型偏差的影响</p>
+<hr />
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AUROC 提升 23% 仅在近端小管细胞中报告</td>
+<td>其他细胞类型可能提升有限甚至下降；选择性报告可能夸大整体效果</td>
+<td>细胞类型特异性的核心卖点需要全谱系验证</td>
+<td>要求作者报告所有肾脏细胞类型的 AUROC 对比</td>
+<td>Abstract 仅提及近端小管</td>
+</tr>
+<tr>
+<td>32–64 kbp 局部上下文主导变异效应</td>
+<td>可能反映 snATAC-seq 数据本身的局部偏好，而非生物学真实；远端增强子效应可能被低估</td>
+<td>对调控机制理解有直接影响，若远端元件确实重要，该结论会误导</td>
+<td>在已知远端增强子-启动子互作的变异集上验证 Kidzoi 表现</td>
+<td>Abstract 消融结果</td>
+</tr>
+<tr>
+<td>迁移学习 vs 从头训练的比较不完整</td>
+<td>未报告从头训练肾脏模型的性能作为对照；「 nontrivial」是主观判断</td>
+<td>迁移学习的优势需要量化对比才能确立</td>
+<td>在相同数据上从头训练一个肾脏 S2F 模型并对比</td>
+<td>Abstract 未提供对照</td>
+</tr>
+<tr>
+<td>多任务「性能相当」缺乏量化</td>
+<td>未报告具体性能差异数值和计算成本差异</td>
+<td>「substantially reduced cost」需要具体数字支撑</td>
+<td>要求报告 FLOPs/训练时间对比</td>
+<td>Abstract 定性描述</td>
+</tr>
+<tr>
+<td>未报告跨数据集泛化验证</td>
+<td>单一肾脏数据集训练可能过拟合；未验证在其他肾脏数据集或不同测序平台上的表现</td>
+<td>模型实用性取决于泛化能力</td>
+<td>在独立肾脏 snATAC-seq 数据集上验证</td>
+<td>Abstract 未提及</td>
+</tr>
+<tr>
+<td>snATAC-seq 作为可及性代理的局限</td>
+<td>可及性 ≠ 调控活性；增强子可及性变化不一定反映转录输出变化</td>
+<td>变异效应预测的生物学有效性依赖此假设</td>
+<td>与 RNA 读数或增强子报告实验交叉验证</td>
+<td>Abstract 未讨论</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>14 Agent 提炼的知识候选</h2>
+<p><strong>标题：Agent 提炼的知识候选</strong></p>
+<ol>
+<li>
+<p><strong>迁移学习范式（可直接迁移）</strong>：从通用 S2F 模型（如 Borzoi）迁移到组织/细胞类型特异模型，是高效构建新模型的标准路径。在三维基因组方向，可类比迁移：从通用 3D 结构预测模型（如 DeepC、Orca）迁移到特定细胞类型/分化状态的 Hi-C 数据，避免为每个状态从头训练。</p>
+</li>
+<li>
+<p><strong>局部上下文消融实验设计（可直接迁移）</strong>：系统截断输入序列窗口来评估不同尺度序列特征的贡献，是理解模型依赖范围的有效实验范式。在 3D 基因组建模中，可设计类似消融：截断输入序列或遮蔽远端 3D 接触区域，评估对结构预测的影响，量化局部 vs 远端的贡献比。</p>
+</li>
+<li>
+<p><strong>多任务学习效率优化（可直接迁移）</strong>：多任务模型（同时预测多种细胞类型）与单任务性能相当但成本大幅降低。在 3D 基因组方向，可设计多任务模型同时预测多种细胞类型的 Hi-C 矩阵或 TAD 边界，共享底层序列特征提取器，降低总计算成本。</p>
+</li>
+<li>
+<p><strong>细胞类型特异性变异效应解析（概念迁移）</strong>：Kidzoi 解析 GWAS fine-mapped variants 的细胞类型特异性，提示 3D 基因组模型也可用于解析结构变异（SV）对 3D 结构影响的细胞类型特异性——同一 SV 在不同细胞类型中可能因染色质状态不同而产生不同结构效应。</p>
+</li>
+<li>
+<p><strong>「局部上下文主导」的机制启示（概念迁移）</strong>：32–64 kbp 局部上下文主导变异效应预测，提示在 3D 基因组建模中，局部染色质状态（如启动子-增强子距离、核小体定位）可能比远距离 3D 接触对调控变异效应更重要。这为 3D 基因组模型的输入特征设计提供了参考：不必无限扩大输入窗口，局部特征可能已捕获大部分信号。</p>
+</li>
+</ol>
+<hr />
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>Borzoi</strong>（Calandrelli et al., 2020, Nature Genetics）：Kidzoi 的预训练源模型，Borzoi 本身预测 DNA 序列的多种功能谱（包括 3D 结构相关特征如 contact domains）。Kidzoi 展示了 Borzoi 架构的可迁移性，这对 3D 基因组方向意味着 Borzoi 的 3D 预测头也可通过迁移学习适配新细胞类型。</li>
+<li><strong>Enformer</strong>（Avsec et al., 2021, Nature Methods）：S2F 模型的另一代表，Kidzoi 的对比基线之一。Enformer 也包含 3D 结构预测能力，Kidzoi 的迁移学习策略可类比应用于 Enformer 的 3D 头。</li>
+<li><strong>DeepC</strong>（Fudenberg et al., 2020, Nature Genetics）：3D 基因组方向的 S2F 模型，预测 Hi-C 接触矩阵。Kidzoi 的迁移学习策略可迁移到 DeepC 类模型，适配特定细胞类型。</li>
+<li><strong>Orca</strong>（Zhou, 2022, Nature Genetics）：预测 3D 结构特征的 S2F 模型。Kidzoi 的多任务学习效率优化思路可迁移到 Orca 的多细胞类型预测。</li>
+<li><strong>GWAS fine-mapping 与调控变异</strong>（如 eGFR 相关研究）：Kidzoi 将 S2F 模型应用于肾脏功能相关变异的优先级排序，与 3D 基因组方向中「3D 结构变异与疾病关联」的研究形成互补——两者都试图从非编码变异中提取功能信号。</li>
+<li><strong>候选方向（未核验）</strong>：Kidzoi 的「局部上下文主导」结论与 3D 基因组中「TAD 边界附近变异效应更强」的观察可能相关，但需进一步验证。</li>
+</ul>
+<hr />
+<h2>16 Agent 生成的研究候选</h2>
+<p><strong>标题：Agent 生成的研究候选</strong></p>
+<h3>候选 1：3D-Genome-Kidzoi——从 Borzoi 迁移学习到肾脏 3D 结构预测</h3>
+<ul>
+<li><strong>名称</strong>：3D-Genome-Kidzoi</li>
+<li><strong>来源局限/观察</strong>：Kidzoi 仅预测染色质可及性，未利用 Borzoi 的 3D 结构预测头；肾脏 3D 结构（如 TAD、compartment）缺乏细胞类型特异模型</li>
+<li><strong>核心假设</strong>：Borzoi 的 3D 预测头可通过肾脏 Hi-C/snHi-C 数据迁移学习，实现肾脏细胞类型特异的 3D 结构预测</li>
+<li><strong>相对本文的增量</strong>：将 Kidzoi 的迁移学习框架从可及性扩展到 3D 结构；建立肾脏 3D 基因组细胞类型特异模型</li>
+<li><strong>初步方法</strong>：使用 Kidzoi 相同的迁移学习流程，但训练目标替换为肾脏 snHi-C 数据；评估 TAD 边界预测、compartment 预测精度</li>
+<li><strong>验证方式</strong>：与通用 3D 模型（DeepC、Orca）对比；在肾脏 GWAS 变异上验证 3D 结构变异效应</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul>
+<h3>候选 2：局部上下文消融在 3D 结构预测中的系统评估</h3>
+<ul>
+<li><strong>名称</strong>：Local-Context-Ablation-3D</li>
+<li><strong>来源局限/观察</strong>：Kidzoi 发现 32–64 kbp 局部上下文主导可及性变异效应；3D 结构预测中局部 vs 远端的贡献比未系统量化</li>
+<li><strong>核心假设</strong>：3D 结构预测中，局部序列上下文（如 TAD 内部）的贡献可能同样被低估，远端 3D 接触的预测价值有限</li>
+<li><strong>相对本文的增量</strong>：将消融实验范式从可及性扩展到 3D 结构预测</li>
+<li><strong>初步方法</strong>：在 DeepC/Orca 类模型上系统截断输入窗口，评估 TAD 边界和 contact 预测的精度变化</li>
+<li><strong>验证方式</strong>：在多个细胞类型的 Hi-C 数据上重复消融；与 Kidzoi 的 32–64 kbp 结论对比</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul>
+<h3>候选 3：多任务 3D 基因组模型——同时预测多种细胞类型的 3D 结构</h3>
+<ul>
+<li><strong>名称</strong>：MultiTask-3D-Genome</li>
+<li><strong>来源局限/观察</strong>：Kidzoi 证明多任务模型在可及性预测中性能不降且成本大幅降低；3D 基因组方向缺乏类似系统比较</li>
+<li><strong>核心假设</strong>：多任务 3D 结构预测模型（同时预测多种细胞类型的 Hi-C）可达到与单任务模型相当的性能，但计算成本显著降低</li>
+<li><strong>相对本文的增量</strong>：将多任务效率优化从可及性扩展到 3D 结构预测</li>
+<li><strong>初步方法</strong>：设计共享编码器 + 多细胞类型输出头的 3D 预测模型；对比单任务 vs 多任务的 TAD/compartment 预测精度和训练成本</li>
+<li><strong>验证方式</strong>：在 ENCODE 多细胞类型 Hi-C 数据上评估；报告 FLOPs/训练时间对比</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul>
+<h3>候选 4：Kidzoi 与 3D 结构特征的整合——可及性 + 3D 联合变异效应预测</h3>
+<ul>
+<li><strong>名称</strong>：Kidzoi-3D-Integrated</li>
+<li><strong>来源局限/观察</strong>：Kidzoi 仅使用可及性作为调控活性代理，未整合 3D 结构信息；3D 结构变异可能提供互补信号</li>
+<li><strong>核心假设</strong>：整合可及性预测与 3D 结构预测可提升肾脏调控变异效应预测的精度和细胞类型特异性解析</li>
+<li><strong>相对本文的增量</strong>：多模态整合（可及性 + 3D 结构）的变异效应预测</li>
+<li><strong>初步方法</strong>：在 Kidzoi 基础上增加 3D 结构预测头或融合 3D 特征（如 TAD 边界距离、compartment 状态）；评估 AUROC 提升</li>
+<li><strong>验证方式</strong>：在 eGFRcr-cys fine-mapped variants 上对比 Kidzoi vs Kidzoi-3D-Integrated</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul>
+<h3>候选 5：跨组织迁移学习的系统比较——肾脏 vs 其他组织的迁移效率</h3>
+<ul>
+<li><strong>名称</strong>：Cross-Tissue-Transfer-Benchmark</li>
+<li><strong>来源局限/观察</strong>：Kidzoi 仅展示肾脏迁移；不同组织间迁移学习的效率差异未系统评估</li>
+<li><strong>核心假设</strong>：组织间调控逻辑的相似性决定迁移学习效率；肾脏可能不是最优迁移源/目标</li>
+<li><strong>相对本文的增量</strong>：系统比较多种组织间的迁移学习效率，建立选择指南</li>
+<li><strong>初步方法</strong>：从 Borzoi 迁移到多个组织（肝、脑、心脏等）的 snATAC-seq 数据；比较 AUROC 提升幅度与组织间调控相似性</li>
+<li><strong>验证方式</strong>：跨组织交叉验证；与从头训练对比</li>
+<li><strong>创新状态</strong>：unverified</li>
+</ul></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Abstract only</li>
+<li><strong>Assessment boundary</strong> Claims and evidence as presented in the abstract; no figures, tables, methods, or supplementary materials were provided</li>
+<li><strong>Shared manuscript claim summary</strong> The authors present Kidzoi, a kidney cell-type-specific sequence-to-function deep learning model derived via transfer learning from the pretrained Borzoi model using single-nucleus chromatin accessibility data from human kidney tissue. They claim accurate cell-type-specific chromatin accessibility prediction, improved regulatory variant effect prediction in proximal tubule cells (up to 23% AUROC improvement over existing models), effective prioritization of kidney-function GWAS fine-mapped causal variants with cell-type resolution, a local flanking sequence context of 32–64 kbp capturing most variant effect prediction information, and comparable performance of a multi-task model at reduced computational cost.</li>
+<li><strong>Visible evidence base</strong> Abstract text only; no figures, tables, methods, or supplementary data provided</li>
+<li><strong>Missing materials affecting confidence</strong> Full manuscript, all figures and tables, methods description, model architecture details, training and validation data specifications, benchmark definitions, statistical analyses, and code availability</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li><strong>Overall assessment</strong> The abstract presents a potentially valuable contribution to the field of regulatory genomics by adapting a generalist sequence-to-function model to a kidney-specific context. The reported improvements in variant effect prediction and the systematic flanking sequence ablation are interesting. However, the abstract alone provides insufficient detail to evaluate the rigor of the methods, the validity of the benchmarks, or the robustness of the claims. Several key assertions, particularly the quantitative improvement and the generalizability of the multi-task approach, cannot be assessed without the underlying data and analyses.</li>
+<li><strong>Who would be interested in the results, and why</strong> Researchers in regulatory genomics, computational biology, and kidney genetics would be interested. The work addresses a recognized limitation of existing sequence-to-function models, namely their lack of cell-type specificity, and offers a transfer learning approach that could be adapted to other tissues. Nephrologists and geneticists studying kidney function and chronic kidney disease could benefit from improved variant prioritization tools.</li>
+<li><strong>Major strengths</strong> The approach of transfer learning from a pretrained model to achieve cell-type specificity is timely and practical, avoiding the computational burden of de novo training. The focus on kidney tissue addresses an organ with substantial clinical relevance. The systematic ablation of flanking sequence to determine the necessary local context is a useful analytical contribution. The exploration of multi-task learning for computational efficiency is pragmatic.</li>
+<li><strong>Major Concerns</strong></li>
+<li><strong>Concern ID</strong> R1-M1</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Technical soundness</li>
+<li><strong>Claim pointer</strong> "Kidzoi accurately predicts cell-type-specific chromatin accessibility and improves regulatory variant effect prediction in proximal tubule cells by up to 23% in terms of AUROC over existing models."</li>
+<li><strong>Evidence pointer</strong> Abstract only; location not provided</li>
+<li><strong>Concern</strong> The abstract reports a quantitative improvement of up to 23% AUROC over existing models, but no details are given on which models were compared, how the benchmark was constructed, what variant sets were used, or how statistical significance was assessed. The phrase "up to 23%" suggests variability across conditions, but the basis for this range is unclear.</li>
+<li><strong>Why it matters</strong> Without a clear description of the benchmark and comparison models, the reported improvement cannot be interpreted or reproduced. The claim is central to the paper's contribution and must be rigorously supported.</li>
+<li><strong>Resolution test</strong> Provide a detailed description of the benchmark datasets, the compared models, the evaluation protocol, and the statistical tests used. Include confidence intervals or error bars for the AUROC improvements.</li>
+<li><strong>Concern ID</strong> R1-M2</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Technical soundness</li>
+<li><strong>Claim pointer</strong> "Systematic ablation of flanking sequence indicates that a local context of 32–64 kbp, representing only 6–12% of the full model input, captures most of the information needed for variant effect prediction."</li>
+<li><strong>Evidence pointer</strong> Abstract only; location not provided</li>
+<li><strong>Concern</strong> The ablation analysis is described in a single sentence without specifying how the flanking sequence was truncated, which variants were tested, how "most of the information" was quantified, or whether the result is consistent across cell types and variant classes.</li>
+<li><strong>Why it matters</strong> This claim has implications for model interpretability and practical use, but the abstract does not provide enough detail to assess whether the conclusion is robust or an artifact of the specific test set.</li>
+<li><strong>Resolution test</strong> Describe the ablation procedure in detail, including the range of flanking sizes tested, the metric used to define information retention, and the consistency of the result across multiple variant sets and cell types.</li>
+<li><strong>Concern ID</strong> R1-M3</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Technical soundness</li>
+<li><strong>Claim pointer</strong> "a multi-task model achieves comparable performance to single-task models at a substantially reduced computational cost."</li>
+<li><strong>Evidence pointer</strong> Abstract only; location not provided</li>
+<li><strong>Concern</strong> The abstract states that a multi-task model achieves comparable performance, but no quantitative comparison is provided. The definition of "comparable" and the magnitude of computational savings are not specified.</li>
+<li><strong>Why it matters</strong> This is a practical claim that could influence adoption of the method, but without quantitative support it is not possible to evaluate whether the trade-off between performance and efficiency is acceptable.</li>
+<li><strong>Resolution test</strong> Provide a table or figure comparing performance metrics and computational cost (e.g., training time, GPU hours) between single-task and multi-task models, with statistical tests for performance equivalence.</li>
+<li><strong>Minor Comments</strong></li>
+<li><strong>Concern ID</strong> R1-m1</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Readability for nonspecialists</li>
+<li><strong>Affected element</strong> Abstract</li>
+<li><strong>Evidence pointer</strong> Abstract</li>
+<li><strong>Issue</strong> The abstract uses several technical terms without definition, such as "sequence-to-function," "transfer learning," and "fine-mapped causal variants," which may limit accessibility for readers outside computational genomics.</li>
+<li><strong>Required correction</strong> Briefly define these terms or provide context in the abstract to make the work more accessible to a broader readership.</li>
+<li><strong>Concern ID</strong> R1-m2</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Scientific importance</li>
+<li><strong>Affected element</strong> Abstract</li>
+<li><strong>Evidence pointer</strong> Abstract</li>
+<li><strong>Issue</strong> The abstract does not state how Kidzoi compares to other kidney-specific models or whether any existing kidney-specific models were considered as baselines.</li>
+<li><strong>Required correction</strong> Clarify whether the comparison was against generalist models only or also against any kidney-specific alternatives, and justify the choice of baselines.</li>
+<li><strong>Concern ID</strong> R1-m3</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Technical soundness</li>
+<li><strong>Affected element</strong> Abstract</li>
+<li><strong>Evidence pointer</strong> Abstract</li>
+<li><strong>Issue</strong> The abstract mentions "single-nucleus chromatin accessibility data" but does not specify the number of samples, the number of nuclei, or the cell types included beyond proximal tubule cells.</li>
+<li><strong>Required correction</strong> Provide basic statistics on the training data, including sample size and cell type composition, to allow assessment of data sufficiency.</li>
+<li><strong>Technical failings that need to be addressed before the case is established</strong> R1-M1, R1-M2, R1-M3. The central quantitative claims regarding variant effect prediction improvement, the flanking sequence ablation result, and the multi-task model performance are not supported by the abstract alone. Full methodological details and results are required.</li>
+<li><strong>Assessment against Nature-style criteria</strong> Originality: The transfer learning approach for cell-type-specific modeling is not entirely novel but is applied here to a clinically relevant tissue, which adds value. Scientific importance: The potential to improve variant prioritization for kidney function is significant, but the impact depends on the robustness of the reported improvements. Interdisciplinary readership: The work bridges computational biology and nephrology, which could attract a broad audience, but the abstract needs to be more accessible. Technical soundness: Cannot be assessed from the abstract; the reported metrics and analyses require full scrutiny. Readability for nonspecialists: The abstract is dense with jargon and would benefit from clearer explanations.</li>
+<li><strong>Recommendation posture</strong> Currently not established from the provided evidence. The abstract presents promising directions, but the key quantitative claims cannot be evaluated without the full manuscript. I would be supportive if the technical concerns are resolved with detailed methods and results.</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>The claim of "up to 23% AUROC improvement" is unsupported without benchmark details and statistical analysis.</li>
+<li>The claim that "a local context of 32–64 kbp captures most of the information" is unsupported without ablation methodology and quantitative thresholds.</li>
+<li>The claim that "a multi-task model achieves comparable performance" is unsupported without quantitative comparison.</li>
+<li>The general accuracy of Kidzoi in predicting cell-type-specific chromatin accessibility is asserted but not quantified in the abstract.</li>
+<li>The effectiveness of Kidzoi in prioritizing GWAS fine-mapped causal variants is stated without metrics or comparison to existing prioritization tools.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

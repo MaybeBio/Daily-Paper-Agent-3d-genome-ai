@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42971985",
+  "title": "PSHIC reveals allele-specific chromatin organization by phasing-free structural modeling.",
+  "authors": "Liu, Wei; Wang, Xueying; Zhang, Yuwei; Pan, Guangze; Li, Shuaicheng",
+  "journal": "Nature communications",
+  "published_date": "2026-11-03",
+  "window": {
+    "start": "2026-11-01",
+    "end": "2026-11-07"
+  },
+  "score": 9,
+  "one_liner_zh": "该文提出PSHIC，通过无分型结构建模从聚合Hi-C数据中解析等位基因特异的染色质三维组织，直接命中三维基因组结构建模与AI/计算方法核心，并涉及X失活、印记等染色质调控特征。",
+  "abstract": "Resolving the distinct 3D chromatin architectures of parental chromosomes is critical for understanding diploid genome function, but many haplotype-resolved Hi-C contact-map methods remain constrained by their reliance on phased single-nucleotide polymorphisms (SNPs). This dependency treats reconstruction as a simple tag-and-sort problem, leading to massive data loss, extreme fragility to phasing errors, and inapplicability in SNP-sparse contexts. We introduce PSHIC, a computational framework that reveals this hidden chromatin organization by employing phasing-free structural modeling, directly from aggregated Hi-C data. PSHIC models chromosomes as continuous manifolds and solves the inverse problem of finding two homolog-specific structures whose combined contacts best explain the observed data. Comprehensive simulations across varying sequencing depths, SNP densities, and phasing error rates demonstrate that PSHIC consistently outperforms established methods, achieving superior accuracy (SCC >/= 0.987), loop detection (F(1)>/= 0.952), and structural fidelity (DER </= 0.04). Applications to real human and mouse Hi-C datasets show that PSHIC recovers known allele-associated features in X-chromosome inactivation, genomic imprinting, and regulatory networks. Results align with orthogonal experimental approaches including 3D DNA-FISH, 4C-seq, and ChIA-PET. PSHIC democratizes diploid chromatin analysis by enabling robust reconstruction in non-model organisms and other SNP-limited or poorly phased contexts.",
+  "abstract_zh": "解析亲本染色体的不同三维染色质结构对于理解二倍体基因组功能至关重要，但许多基于单倍型解析的Hi-C接触图方法仍受限于其对分相单核苷酸多态性（SNPs）的依赖。这种依赖性将重建视为简单的标签-分选问题，导致大量数据丢失、对分相错误极度脆弱，且在SNP稀疏情境下不适用。我们引入PSHIC，一种计算框架，通过采用无分相结构建模，直接从聚合的Hi-C数据中揭示这种隐藏的染色质组织。PSHIC将染色体建模为连续流形，并解决寻找两个同源特异性结构的逆问题，其组合接触最能解释观察到的数据。跨不同测序深度、SNP密度和分相错误率的综合模拟表明，PSHIC始终优于既有方法，实现更高的准确性（SCC >/= 0.987）、环检测（F(1)>/= 0.952）和结构保真度（DER </= 0.04）。应用于真实人类和小鼠Hi-C数据集显示，PSHIC恢复了X染色体失活、基因组印记和调控网络中已知的等位基因相关特征。结果与正交实验方法（包括3D DNA-FISH、4C-seq和ChIA-PET）一致。PSHIC通过实现非模式生物及其他SNP有限或分相不佳情境下的稳健重建，使二倍体染色质分析普及化。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42971985/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42971985/",
+  "paper_page_path": "papers/pubmed/42971985/index.html"
+}

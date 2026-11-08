@@ -1,0 +1,164 @@
+{
+  "identity": {
+    "pmid": "42971985",
+    "doi": "10.1038/s41467-026-78098-4",
+    "title": "PSHIC reveals allele-specific chromatin organization by phasing-free structural modeling."
+  },
+  "content": {
+    "abstract": "Resolving the distinct 3D chromatin architectures of parental chromosomes is critical for understanding diploid genome function, but many haplotype-resolved Hi-C contact-map methods remain constrained by their reliance on phased single-nucleotide polymorphisms (SNPs). This dependency treats reconstruction as a simple tag-and-sort problem, leading to massive data loss, extreme fragility to phasing errors, and inapplicability in SNP-sparse contexts. We introduce PSHIC, a computational framework that reveals this hidden chromatin organization by employing phasing-free structural modeling, directly from aggregated Hi-C data. PSHIC models chromosomes as continuous manifolds and solves the inverse problem of finding two homolog-specific structures whose combined contacts best explain the observed data. Comprehensive simulations across varying sequencing depths, SNP densities, and phasing error rates demonstrate that PSHIC consistently outperforms established methods, achieving superior accuracy (SCC >/= 0.987), loop detection (F(1)>/= 0.952), and structural fidelity (DER </= 0.04). Applications to real human and mouse Hi-C datasets show that PSHIC recovers known allele-associated features in X-chromosome inactivation, genomic imprinting, and regulatory networks. Results align with orthogonal experimental approaches including 3D DNA-FISH, 4C-seq, and ChIA-PET. PSHIC democratizes diploid chromatin analysis by enabling robust reconstruction in non-model organisms and other SNP-limited or poorly phased contexts.",
+    "keywords": [],
+    "mesh_terms": [
+      "*Chromatin/genetics/chemistry/metabolism",
+      "Animals",
+      "Humans",
+      "Polymorphism, Single Nucleotide",
+      "Alleles",
+      "Mice",
+      "Haplotypes"
+    ],
+    "pub_types": [
+      "Journal Article",
+      "Research Support, Non-U.S. Gov't"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Liu, Wei",
+        "Wang, Xueying",
+        "Zhang, Yuwei",
+        "Pan, Guangze",
+        "Li, Shuaicheng"
+      ],
+      "short_names": [
+        "Liu W",
+        "Wang X",
+        "Zhang Y",
+        "Pan G",
+        "Li S"
+      ],
+      "auids": [
+        "ORCID: 0000-0003-4917-8056",
+        "ORCID: 0000-0001-6839-1472",
+        "ORCID: 0000-0002-0620-9353"
+      ],
+      "affiliations": [
+        "Department of Computer Science, College of Computing, City University of Hong Kong, Hong Kong, China.",
+        "Department of Computer Science, Stanford University, Palo Alto, CA, USA.",
+        "Department of Computer Science, College of Computing, City University of Hong Kong, Hong Kong, China.",
+        "City University of Hong Kong (Dongguan), Dongguan, China.",
+        "Department of Biomedical Informatics, Harvard Medical School, Boston, MA, USA.",
+        "Department of Computer Science, College of Computing, City University of Hong Kong, Hong Kong, China.",
+        "Department of Computer Science, College of Computing, City University of Hong Kong, Hong Kong, China. shuaicli@cityu.edu.hk.",
+        "City University of Hong Kong Shenzhen Research Institute, Shenzhen, China. shuaicli@cityu.edu.hk."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Liu, Wei",
+        "short_name": "Liu W",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Computer Science, College of Computing, City University of Hong Kong, Hong Kong, China.",
+          "Department of Computer Science, Stanford University, Palo Alto, CA, USA."
+        ]
+      },
+      {
+        "full_name": "Wang, Xueying",
+        "short_name": "Wang X",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Computer Science, College of Computing, City University of Hong Kong, Hong Kong, China.",
+          "City University of Hong Kong (Dongguan), Dongguan, China."
+        ]
+      },
+      {
+        "full_name": "Zhang, Yuwei",
+        "short_name": "Zhang Y",
+        "identifiers": [
+          "0000-0003-4917-8056"
+        ],
+        "affiliations": [
+          "Department of Biomedical Informatics, Harvard Medical School, Boston, MA, USA."
+        ]
+      },
+      {
+        "full_name": "Pan, Guangze",
+        "short_name": "Pan G",
+        "identifiers": [
+          "0000-0001-6839-1472"
+        ],
+        "affiliations": [
+          "Department of Computer Science, College of Computing, City University of Hong Kong, Hong Kong, China."
+        ]
+      },
+      {
+        "full_name": "Li, Shuaicheng",
+        "short_name": "Li S",
+        "identifiers": [
+          "0000-0002-0620-9353"
+        ],
+        "affiliations": [
+          "Department of Computer Science, College of Computing, City University of Hong Kong, Hong Kong, China. shuaicli@cityu.edu.hk.",
+          "City University of Hong Kong Shenzhen Research Institute, Shenzhen, China. shuaicli@cityu.edu.hk."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Nature communications"
+    ],
+    "journal_abbrev": [
+      "Nat Commun"
+    ],
+    "pub_date": "2026 Oct 5",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article",
+      "Research Support, Non-U.S. Gov't"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/11/03 05:30",
+    "fetched_at": "2026-11-08 11:00:01"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42971985"
+    ],
+    "review": [
+      "42971985"
+    ],
+    "pmc": [
+      "13728184"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://doi.org/10.1038/s41467-026-78098-4",
+        "provider": "Nature Publishing Group",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/pmid/42971985/",
+        "provider": "PubMed Central",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://antibodies.cancer.gov/detail/CPTC-SERPINB3-1",
+        "provider": "NCI CPTC Antibody Characterization Program",
+        "category": "Research Materials",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

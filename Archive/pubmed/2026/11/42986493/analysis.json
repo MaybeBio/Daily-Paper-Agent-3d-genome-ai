@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42986493",
+  "title": "Truncating Kabuki Syndrome-associated KMT2D Mutation in FYR Domain Alters Chromatin Accessibility at Neurodevelopmental Loci.",
+  "authors": "Ozden-Yilmaz, Gulden; Olmez, Akgun; Yilmazbilek, Irem; Tulu, Ahmet Can; Binokay, Leman; Gencpinar, Pinar; Hiz, Ayse Semra; Oktay, Yavuz; Karakulah, Gokhan; Karaca, Ezgi; Senturk, Serif; Erkek-Ozhan, Serap",
+  "journal": "Molecular neurobiology",
+  "published_date": "2026-11-05",
+  "window": {
+    "start": "2026-11-01",
+    "end": "2026-11-07"
+  },
+  "score": 4,
+  "one_liner_zh": "该文研究KMT2D FYR结构域突变对染色质可及性的影响，涉及染色质组织但以ATAC-seq实验为主，仅用AlphaFold3做蛋白结构预测，缺乏三维基因组或染色质空间架构建模，AI/分子模拟方法贡献有限。",
+  "abstract": "Kabuki syndrome (KS) is a congenital neurodevelopmental disorder characterized by distinctive facial features, developmental delay, and multisystem involvement. KS is primarily caused by de novo mutations in KMT2D, a H3 lysine 4 (H3K4) methyltransferase within the MLL3/4 COMPASS-like complex. Although the role of KMT2D in active chromatin organization is well established, the function of its FYR domain remains largely unknown. Here, we report a KS patient carrying a heterozygous KMT2D p.R5282* nonsense mutation located at the C-terminal side of the FYR domain. The patient exhibited a relatively mild phenotype, consistent with previously reported p.R5282* mutation carriers. ATAC-seq analysis of patient-derived PBMCs revealed 451 differentially accessible regions compared to controls, with reduced accessibility mainly at promoter regions of genes involved in neurogenesis. Motif and regulatory enrichment analyses identified loss of CTCF and WRAD complex components (WDR5, RBBP5, ASH2L), suggesting impaired chromatin organization. To examine the functional impact of FYR mutations, we expressed FLAG-tagged KMT2D p.R5282* and another FYR domain hotspot missense mutation (p.R5179C) in HEK293T cells and performed ATAC-seq. p.R5282*-specific chromatin changes mirrored those in the patient and were enriched for promoter regions and WRAD binding sites, whereas p.R5179C showed distinct patterns. AlphaFold3 modeling indicated that p.R5282* truncation disrupts the WIN motif required for WDR5 binding, compromising MLL3/4 complex stability. Both the patient and p.R5282*-expressing cells showed reduced chromatin accessibility at the CHD7 locus, linking KMT2D dysfunction to CHARGE syndrome pathways. These findings highlight the essential role of the KMT2D FYR domain in maintaining WRAD complex integrity and chromatin accessibility.",
+  "abstract_zh": "歌舞伎综合征（Kabuki syndrome, KS）是一种先天性神经发育障碍，以独特的面部特征、发育迟缓和多系统受累为特征。KS主要由KMT2D基因的从头突变引起，该基因编码MLL3/4 COMPASS样复合物中的H3赖氨酸4（H3K4）甲基转移酶。尽管KMT2D在活性染色质组织中的作用已明确，但其FYR结构域的功能仍 largely 未知。本文报道一例携带杂合KMT2D p.R5282*无义突变（位于FYR结构域C端侧）的KS患者。该患者表现出相对温和的表型，与既往报道的p.R5282*突变携带者一致。对患者来源的外周血单个核细胞（PBMCs）进行ATAC-seq分析，发现与对照组相比有451个差异可及区域，可及性降低主要发生在参与神经发生的基因启动子区域。基序和调控富集分析识别出CTCF和WRAD复合物组分（WDR5、RBBP5、ASH2L）的缺失，提示染色质组织受损。为探究FYR突变的功能影响，我们在HEK293T细胞中表达FLAG标记的KMT2D p.R5282*和另一个FYR结构域热点错义突变（p.R5179C），并进行ATAC-seq分析。p.R5282*特异性染色质变化与患者中的变化一致，富集于启动子区域和WRAD结合位点，而p.R5179C则表现出不同模式。AlphaFold3建模表明，p.R5282*截断破坏了WDR5结合所需的WIN基序，损害MLL3/4复合物稳定性。患者和表达p.R5282*的细胞均显示CHD7位点染色质可及性降低，将KMT2D功能障碍与CHARGE综合征通路联系起来。这些发现强调了KMT2D FYR结构域在维持WRAD复合物完整性和染色质可及性中的关键作用。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42986493/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42986493/",
+  "paper_page_path": "papers/pubmed/42986493/index.html"
+}

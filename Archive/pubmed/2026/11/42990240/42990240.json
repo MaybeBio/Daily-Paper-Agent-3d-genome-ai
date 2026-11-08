@@ -1,0 +1,124 @@
+{
+  "identity": {
+    "pmid": "42990240",
+    "doi": "10.64898/2026.08.20.746112",
+    "title": "MultiFlow: coupled flow matching for predicting single-cell multiomic perturbation responses in unseen cellular contexts."
+  },
+  "content": {
+    "abstract": "Predicting cellular responses to perturbation requires resolving coordinated changes across molecular layers, yet most single-cell perturbation models focus on transcriptional responses alone. Here we present MultiFlow, a coupled flow-matching framework that unifies generation and perturbation prediction of paired gene expression and chromatin accessibility. Through bidirectional information exchange between RNA and ATAC generative flows, MultiFlow learns how their joint distribution depends on cellular context and perturbation identity. Across multiomic generation benchmarks, MultiFlow accurately reproduced paired RNA-ATAC states and their population distributions. In multiome perturbation benchmarks, MultiFlow achieved the strongest overall performance in predicting both gene-expression and chromatin-accessibility perturbation responses, outperforming modality-specific perturbation-prediction methods in cell types whose perturbed states were withheld from training. Joint multiomic modeling further preserved perturbation-induced coordination between modalities, including concordant peak-gene effects and cross-modal cellular neighborhood structure. These results establish MultiFlow as a unified generative framework for modeling paired molecular states and predicting their coordinated perturbation responses across cellular contexts. Code and tutorial of MultiFlow are available at https://github.com/liuq-lab/MultiFlow.",
+    "keywords": [],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article",
+      "Preprint"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Wang, Haochen",
+        "Zhang, Charming",
+        "Zhang, Mengran",
+        "Nie, Xiaoming",
+        "Liu, Qiao"
+      ],
+      "short_names": [
+        "Wang H",
+        "Zhang C",
+        "Zhang M",
+        "Nie X",
+        "Liu Q"
+      ],
+      "auids": [
+        "ORCID: 0000-0002-9781-3360"
+      ],
+      "affiliations": [
+        "Department of Biostatistics, Yale University, New Haven, CT, USA.",
+        "Department of Biostatistics, Yale University, New Haven, CT, USA.",
+        "Stanford University School of Medicine, Stanford, CA.",
+        "Department of Biostatistics, Yale University, New Haven, CT, USA.",
+        "Department of Biostatistics, Yale University, New Haven, CT, USA.",
+        "Program in Computational Biology and Bioinformatics, Yale University, New Haven, CT, USA."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Wang, Haochen",
+        "short_name": "Wang H",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Biostatistics, Yale University, New Haven, CT, USA."
+        ]
+      },
+      {
+        "full_name": "Zhang, Charming",
+        "short_name": "Zhang C",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Biostatistics, Yale University, New Haven, CT, USA."
+        ]
+      },
+      {
+        "full_name": "Zhang, Mengran",
+        "short_name": "Zhang M",
+        "identifiers": [],
+        "affiliations": [
+          "Stanford University School of Medicine, Stanford, CA."
+        ]
+      },
+      {
+        "full_name": "Nie, Xiaoming",
+        "short_name": "Nie X",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Biostatistics, Yale University, New Haven, CT, USA."
+        ]
+      },
+      {
+        "full_name": "Liu, Qiao",
+        "short_name": "Liu Q",
+        "identifiers": [
+          "0000-0002-9781-3360"
+        ],
+        "affiliations": [
+          "Department of Biostatistics, Yale University, New Haven, CT, USA.",
+          "Program in Computational Biology and Bioinformatics, Yale University, New Haven, CT, USA."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "bioRxiv : the preprint server for biology"
+    ],
+    "journal_abbrev": [
+      "bioRxiv"
+    ],
+    "pub_date": "2026 Oct 28",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article",
+      "Preprint"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/11/06 11:33",
+    "fetched_at": "2026-11-08 11:00:01"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42990240"
+    ],
+    "review": [
+      "42990240"
+    ],
+    "pmc": [
+      "13733739"
+    ],
+    "entrez": {},
+    "external": [],
+    "text_mined": []
+  }
+}

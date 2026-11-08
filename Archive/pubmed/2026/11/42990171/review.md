@@ -1,0 +1,71 @@
+## Review setup
+- **Input scope** Abstract only
+- **Assessment boundary** Claims and evidence as presented in the abstract; no figures, tables, methods, or supplementary materials were provided
+- **Shared manuscript claim summary** The authors present Kidzoi, a kidney cell-type-specific sequence-to-function deep learning model derived via transfer learning from the pretrained Borzoi model using single-nucleus chromatin accessibility data from human kidney tissue. They claim accurate cell-type-specific chromatin accessibility prediction, improved regulatory variant effect prediction in proximal tubule cells (up to 23% AUROC improvement over existing models), effective prioritization of kidney-function GWAS fine-mapped causal variants with cell-type resolution, a local flanking sequence context of 32–64 kbp capturing most variant effect prediction information, and comparable performance of a multi-task model at reduced computational cost.
+- **Visible evidence base** Abstract text only; no figures, tables, methods, or supplementary data provided
+- **Missing materials affecting confidence** Full manuscript, all figures and tables, methods description, model architecture details, training and validation data specifications, benchmark definitions, statistical analyses, and code availability
+
+## Reviewer
+- **Overall assessment** The abstract presents a potentially valuable contribution to the field of regulatory genomics by adapting a generalist sequence-to-function model to a kidney-specific context. The reported improvements in variant effect prediction and the systematic flanking sequence ablation are interesting. However, the abstract alone provides insufficient detail to evaluate the rigor of the methods, the validity of the benchmarks, or the robustness of the claims. Several key assertions, particularly the quantitative improvement and the generalizability of the multi-task approach, cannot be assessed without the underlying data and analyses.
+- **Who would be interested in the results, and why** Researchers in regulatory genomics, computational biology, and kidney genetics would be interested. The work addresses a recognized limitation of existing sequence-to-function models, namely their lack of cell-type specificity, and offers a transfer learning approach that could be adapted to other tissues. Nephrologists and geneticists studying kidney function and chronic kidney disease could benefit from improved variant prioritization tools.
+- **Major strengths** The approach of transfer learning from a pretrained model to achieve cell-type specificity is timely and practical, avoiding the computational burden of de novo training. The focus on kidney tissue addresses an organ with substantial clinical relevance. The systematic ablation of flanking sequence to determine the necessary local context is a useful analytical contribution. The exploration of multi-task learning for computational efficiency is pragmatic.
+- **Major Concerns**
+  - **Concern ID** R1-M1
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** "Kidzoi accurately predicts cell-type-specific chromatin accessibility and improves regulatory variant effect prediction in proximal tubule cells by up to 23% in terms of AUROC over existing models."
+  - **Evidence pointer** Abstract only; location not provided
+  - **Concern** The abstract reports a quantitative improvement of up to 23% AUROC over existing models, but no details are given on which models were compared, how the benchmark was constructed, what variant sets were used, or how statistical significance was assessed. The phrase "up to 23%" suggests variability across conditions, but the basis for this range is unclear.
+  - **Why it matters** Without a clear description of the benchmark and comparison models, the reported improvement cannot be interpreted or reproduced. The claim is central to the paper's contribution and must be rigorously supported.
+  - **Resolution test** Provide a detailed description of the benchmark datasets, the compared models, the evaluation protocol, and the statistical tests used. Include confidence intervals or error bars for the AUROC improvements.
+  - **Concern ID** R1-M2
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** "Systematic ablation of flanking sequence indicates that a local context of 32–64 kbp, representing only 6–12% of the full model input, captures most of the information needed for variant effect prediction."
+  - **Evidence pointer** Abstract only; location not provided
+  - **Concern** The ablation analysis is described in a single sentence without specifying how the flanking sequence was truncated, which variants were tested, how "most of the information" was quantified, or whether the result is consistent across cell types and variant classes.
+  - **Why it matters** This claim has implications for model interpretability and practical use, but the abstract does not provide enough detail to assess whether the conclusion is robust or an artifact of the specific test set.
+  - **Resolution test** Describe the ablation procedure in detail, including the range of flanking sizes tested, the metric used to define information retention, and the consistency of the result across multiple variant sets and cell types.
+  - **Concern ID** R1-M3
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** "a multi-task model achieves comparable performance to single-task models at a substantially reduced computational cost."
+  - **Evidence pointer** Abstract only; location not provided
+  - **Concern** The abstract states that a multi-task model achieves comparable performance, but no quantitative comparison is provided. The definition of "comparable" and the magnitude of computational savings are not specified.
+  - **Why it matters** This is a practical claim that could influence adoption of the method, but without quantitative support it is not possible to evaluate whether the trade-off between performance and efficiency is acceptable.
+  - **Resolution test** Provide a table or figure comparing performance metrics and computational cost (e.g., training time, GPU hours) between single-task and multi-task models, with statistical tests for performance equivalence.
+- **Minor Comments**
+  - **Concern ID** R1-m1
+  - **Severity** Minor
+  - **Axis** Readability for nonspecialists
+  - **Affected element** Abstract
+  - **Evidence pointer** Abstract
+  - **Issue** The abstract uses several technical terms without definition, such as "sequence-to-function," "transfer learning," and "fine-mapped causal variants," which may limit accessibility for readers outside computational genomics.
+  - **Required correction** Briefly define these terms or provide context in the abstract to make the work more accessible to a broader readership.
+  - **Concern ID** R1-m2
+  - **Severity** Minor
+  - **Axis** Scientific importance
+  - **Affected element** Abstract
+  - **Evidence pointer** Abstract
+  - **Issue** The abstract does not state how Kidzoi compares to other kidney-specific models or whether any existing kidney-specific models were considered as baselines.
+  - **Required correction** Clarify whether the comparison was against generalist models only or also against any kidney-specific alternatives, and justify the choice of baselines.
+  - **Concern ID** R1-m3
+  - **Severity** Minor
+  - **Axis** Technical soundness
+  - **Affected element** Abstract
+  - **Evidence pointer** Abstract
+  - **Issue** The abstract mentions "single-nucleus chromatin accessibility data" but does not specify the number of samples, the number of nuclei, or the cell types included beyond proximal tubule cells.
+  - **Required correction** Provide basic statistics on the training data, including sample size and cell type composition, to allow assessment of data sufficiency.
+- **Technical failings that need to be addressed before the case is established** R1-M1, R1-M2, R1-M3. The central quantitative claims regarding variant effect prediction improvement, the flanking sequence ablation result, and the multi-task model performance are not supported by the abstract alone. Full methodological details and results are required.
+- **Assessment against Nature-style criteria** Originality: The transfer learning approach for cell-type-specific modeling is not entirely novel but is applied here to a clinically relevant tissue, which adds value. Scientific importance: The potential to improve variant prioritization for kidney function is significant, but the impact depends on the robustness of the reported improvements. Interdisciplinary readership: The work bridges computational biology and nephrology, which could attract a broad audience, but the abstract needs to be more accessible. Technical soundness: Cannot be assessed from the abstract; the reported metrics and analyses require full scrutiny. Readability for nonspecialists: The abstract is dense with jargon and would benefit from clearer explanations.
+- **Recommendation posture** Currently not established from the provided evidence. The abstract presents promising directions, but the key quantitative claims cannot be evaluated without the full manuscript. I would be supportive if the technical concerns are resolved with detailed methods and results.
+
+## Risk / unsupported claims
+- The claim of "up to 23% AUROC improvement" is unsupported without benchmark details and statistical analysis.
+- The claim that "a local context of 32–64 kbp captures most of the information" is unsupported without ablation methodology and quantitative thresholds.
+- The claim that "a multi-task model achieves comparable performance" is unsupported without quantitative comparison.
+- The general accuracy of Kidzoi in predicting cell-type-specific chromatin accessibility is asserted but not quantified in the abstract.
+- The effectiveness of Kidzoi in prioritizing GWAS fine-mapped causal variants is stated without metrics or comparison to existing prioritization tools.

@@ -1,0 +1,101 @@
+{
+  "source": "biorxiv",
+  "source_id": "10.64898/2026.11.01.763377",
+  "title": "A compact motif vocabulary is differentially interpreted across human cell types",
+  "doi": "10.64898/2026.11.01.763377",
+  "abstract": "How a common genome generates diverse human cell types may depend less on distinct cis-regulatory vocabularies than on context-dependent use of a shared one. We have developed CNN-CR, an interpretable neural network that learns regulatory motifs while predicting gene expression across 116 human biosamples. Promoter regulation proves highly compressible: dozens of recurrent motif families retain most of the predictive information of much larger cell-type-specific vocabularies and generalize to cellular contexts excluded from their discovery. These motifs are conserved at their binding sites and enriched at fine-mapped regulatory variants. Cellular context acts at two levels: chromatin state gates which motif instances are available for regulatory use, whereas reader identity determines how accessible motifs are interpreted. ChIP-seq data reveal frequent shifts in reader occupancy across cell types, and genome-scale perturbations support corresponding context-dependent reader functions. Thus, regulatory diversity can emerge through differential access to and interpretation of a compact shared DNA vocabulary.",
+  "authors": [
+    "Shen S",
+    "Wang W"
+  ],
+  "published_date": "2026-11-03",
+  "updated_date": "",
+  "journal": "bioRxiv",
+  "category": "",
+  "landing_url": "https://www.biorxiv.org/content/10.64898/2026.11.01.763377",
+  "pdf_url": "https://www.biorxiv.org/content/10.64898/2026.11.01.763377.full.pdf",
+  "pdf_path": "",
+  "pdf_downloaded": false,
+  "query": "(\"3D genome\" OR \"three-dimensional genome\" OR \"genome organization\" OR \"genome architecture\" OR \"genome folding\" OR \"nuclear organization\" OR \"nuclear architecture\" OR \"chromatin organization\" OR \"chromatin architecture\" OR \"chromatin conformation\" OR \"chromatin topology\" OR \"chromatin structure\" OR \"chromatin loop\" OR \"chromatin interaction\" OR \"chromatin domain\" OR \"topologically associating domain\" OR \"A/B compartment\" OR \"chromosome conformation capture\" OR \"Hi-C\" OR HiChIP OR \"loop extrusion\" OR \"loop-extrusion\" OR CTCF OR cohesin OR \"cis-regulatory\" OR \"cis-regulatory element\" OR \"regulatory element\" OR \"regulatory genomics\" OR \"chromatin accessibility\" OR \"enhancer-promoter\" OR \"promoter-enhancer\") AND (\"deep learning\" OR \"machine learning\" OR \"neural network\" OR \"graph neural network\" OR \"convolutional neural network\" OR transformer OR \"language model\" OR \"foundation model\" OR \"diffusion model\" OR generative OR \"flow matching\" OR esmfold OR rosetta OR alphafold OR \"molecular dynamics\" OR simulation OR docking)",
+  "version": "",
+  "keywords": [],
+  "extra": {
+    "provider": "europepmc",
+    "epmc_id": "PPR1357699",
+    "raw_record": {
+      "id": "PPR1357699",
+      "source": "PPR",
+      "doi": "10.64898/2026.11.01.763377",
+      "title": "A compact motif vocabulary is differentially interpreted across human cell types",
+      "authorString": "Shen S, Wang W.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Shen S",
+            "lastName": "Shen",
+            "firstName": "Sam",
+            "initials": "S"
+          },
+          {
+            "fullName": "Wang W",
+            "lastName": "Wang",
+            "firstName": "Wei",
+            "initials": "W"
+          }
+        ]
+      },
+      "pubYear": "2026",
+      "abstractText": "How a common genome generates diverse human cell types may depend less on distinct cis-regulatory vocabularies than on context-dependent use of a shared one. We have developed CNN-CR, an interpretable neural network that learns regulatory motifs while predicting gene expression across 116 human biosamples. Promoter regulation proves highly compressible: dozens of recurrent motif families retain most of the predictive information of much larger cell-type-specific vocabularies and generalize to cellular contexts excluded from their discovery. These motifs are conserved at their binding sites and enriched at fine-mapped regulatory variants. Cellular context acts at two levels: chromatin state gates which motif instances are available for regulatory use, whereas reader identity determines how accessible motifs are interpreted. ChIP-seq data reveal frequent shifts in reader occupancy across cell types, and genome-scale perturbations support corresponding context-dependent reader functions. Thus, regulatory diversity can emerge through differential access to and interpretation of a compact shared DNA vocabulary.",
+      "pubTypeList": {
+        "pubType": [
+          "Preprint"
+        ]
+      },
+      "bookOrReportDetails": {
+        "publisher": "bioRxiv",
+        "yearOfPublication": 2026
+      },
+      "grantsList": {
+        "grant": [
+          {
+            "agency": "NIH",
+            "grantId": "R01HG009626",
+            "orderIn": 0
+          }
+        ]
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Free",
+            "availabilityCode": "F",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.64898/2026.11.01.763377"
+          }
+        ]
+      },
+      "isOpenAccess": "N",
+      "inEPMC": "N",
+      "inPMC": "N",
+      "citedByCount": 0,
+      "hasReferences": "Y",
+      "hasTextMinedTerms": "Y",
+      "hasDbCrossReferences": "N",
+      "hasPDF": "N",
+      "hasBook": "N",
+      "hasSuppl": "N",
+      "hasLabsLinks": "N",
+      "hasData": "N",
+      "license": "cc by",
+      "authMan": "N",
+      "epmcAuthMan": "N",
+      "nihAuthMan": "N",
+      "hasTMAccessionNumbers": "N",
+      "dateOfCreation": "2026-11-04",
+      "firstPublicationDate": "2026-11-03",
+      "firstIndexDate": "2026-11-04",
+      "hasEvaluations": "N"
+    }
+  }
+}

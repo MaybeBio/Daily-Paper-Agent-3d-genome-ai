@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42974766",
+  "title": "Varied Ensembles of Long-range ChROmatin interactions drive chromatin compartmentalization.",
+  "authors": "Ostwal, Yogesh; Muzzopappa, Fernando; Heurteau, Alexandre; Raffel, Raoul; Veluchamy, Alaguraj; Eswara, Karthik; Boudellioua, Ahlem; Ali, Shakila; Kumari, Reema; Depierre, David; Vadlamani, Satya; Schickele, Naomi; Schaak, Stephane; Erdel, Fabian; Cuvier, Olivier; Fischle, Wolfgang",
+  "journal": "Nucleic acids research",
+  "published_date": "2026-11-03",
+  "window": {
+    "start": "2026-11-01",
+    "end": "2026-11-07"
+  },
+  "score": 8,
+  "one_liner_zh": "该研究通过Hi-C与聚合物模拟揭示HPL-2/LIN-61及H3K9me2位点密度驱动的VELCRO长程染色质互作集合介导A/B区室化，直接聚焦染色质三维组织建模，方法上结合实验与聚合物模拟，对三维基因组区室化机理有实质贡献。",
+  "abstract": "The chromatin components that are involved in organizing eukaryotic genomes into active and inactive compartments remain unclear. In analysing viable Caenorhabditis elegans mutants lacking different chromatin-regulatory proteins, we found that the HP1-type factor HPL-2 and the MBT-domain protein LIN-61 jointly contribute to chromatin compartmentalization. Genomic regions bound by both proteins and their cognate histone mark H3 lysine 9 dimethylation (H3K9me2) form broad interfaces of 30-50 kilobases that engage in combinatorial interactions, which we term 'Varied Ensembles of Long-range ChROmatin interactions' (VELCROs). Remarkably, VELCROs are defined by high density of H3K9me2, HPL-2, and LIN-61 sites, but not by the intensity of their individual peaks. Mutants that display defective chromatin compartmentalization are impaired in VELCROs. Polymer simulations show that VELCROs can drive a phase transition that segregates B from A chromatin compartments depending on peak densities. Our work identifies VELCROs as stochastic ensembles of interactions constrained within defined chromatin hubs that shape genome compartmentalization.",
+  "abstract_zh": "参与将真核生物基因组组织成活性与非活性区室的染色质组分仍不清楚。通过分析缺乏不同染色质调控蛋白的可存活秀丽隐杆线虫（Caenorhabditis elegans）突变体，我们发现HP1型因子HPL-2和MBT结构域蛋白LIN-61共同促进染色质区室化。由这两种蛋白及其同源组蛋白标记H3赖氨酸9二甲基化（H3K9me2）结合的基因组区域形成30-50千碱基的广泛界面，这些界面参与组合性相互作用，我们将其称为“长程染色质相互作用的可变集合”（Varied Ensembles of Long-range ChROmatin interactions, VELCROs）。值得注意的是，VELCROs由H3K9me2、HPL-2和LIN-61位点的高密度定义，而非其单个峰值的强度。显示染色质区室化缺陷的突变体在VELCROs中受损。聚合物模拟表明，VELCROs可根据峰值密度驱动相变，将B与A染色质区室分离。我们的工作将VELCROs识别为受限于特定染色质枢纽内的随机相互作用集合，这些枢纽塑造了基因组区室化。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42974766/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42974766/",
+  "paper_page_path": "papers/pubmed/42974766/index.html"
+}

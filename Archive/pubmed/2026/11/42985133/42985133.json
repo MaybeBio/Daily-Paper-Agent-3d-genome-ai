@@ -1,0 +1,163 @@
+{
+  "identity": {
+    "pmid": "42985133",
+    "doi": "10.3389/fpls.2026.1998911",
+    "title": "Identification and expression analysis of intergenic long non-coding RNAs (lincRNA) associated with stripe rust resistance in wheat."
+  },
+  "content": {
+    "abstract": "INTRODUCTION: Long intergenic non-coding RNAs (lincRNAs) have emerged as important regulators of plant immune responses, yet their functional landscape in wheat (Triticum aestivum) during stripe rust (Puccinia striiformis f. sp. tritici) infection remains largely unexplored. METHODS: In this study, a genome-wide identification of lincRNAs was performed using strand-specific RNA-seq data from wheat leaves following Pst inoculation. Functional enrichment, co-expression, lincRNA-miRNA-mRNA network prediction, and AlphaFold-based protein-RNA structure prediction were used to characterize candidate lincRNAs. RESULTS: A total of 2,736 expressed lincRNAs were identified, of which 515 were differentially expressed during infection. Functional enrichment of genes located within 100 kb of the differentially expressed lincRNAs revealed significant associations with defense-related pathways, including MAPK signaling and plant-pathogen interaction. Coordinated expression patterns between lincRNAs and adjacent defense-related mRNAs suggested putative cis-regulatory associations. Furthermore, lincRNA-miRNA-mRNA network prediction identified 65 differentially expressed lincRNAs as potential endogenous target mimics for 21 conserved miRNAs, revealing a widespread competing endogenous RNA (ceRNA) regulatory network. Importantly, AlphaFold-based protein-RNA structure prediction demonstrated that the co-expressed lincRNA MSTRG.56980 forms a stable complex with the RGA1-type resistance protein TraesCS6B03G0179100. DISCUSSION: This provides a first computational prediction of a possible physical interaction between a wheat lincRNA and an immune receptor. These integrative findings substantially expand the current understanding of non-coding regulatory networks in wheat immunity and provide a foundational resource for prioritizing candidate lincRNAs as targets for enhancing stripe rust resistance.",
+    "keywords": [
+      "disease resistance",
+      "intergenic long non-coding RNA",
+      "stripe rust",
+      "transcriptome analysis",
+      "wheat"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Fang, Xiaole",
+        "Wang, Xiaoyu",
+        "Yang, Tian",
+        "Wang, Youning",
+        "Ao, Xue",
+        "Cao, Peina",
+        "Gong, Pan",
+        "Ma, Dongfang"
+      ],
+      "short_names": [
+        "Fang X",
+        "Wang X",
+        "Yang T",
+        "Wang Y",
+        "Ao X",
+        "Cao P",
+        "Gong P",
+        "Ma D"
+      ],
+      "auids": [],
+      "affiliations": [
+        "MARA Key Laboratory of Sustainable Crop Production in the Middle Reaches of the Yangtze River (Co-Construction by Ministry and Province)/Hubei Key Laboratory of Waterlogging Disaster and Agricultural Use of Wetland/Interdisciplinary Innovation Research Center for Fungi and Mycosis Diagnosis and Therapy, College of Agriculture, Yangtze University, Jingzhou, China.",
+        "MARA Key Laboratory of Sustainable Crop Production in the Middle Reaches of the Yangtze River (Co-Construction by Ministry and Province)/Hubei Key Laboratory of Waterlogging Disaster and Agricultural Use of Wetland/Interdisciplinary Innovation Research Center for Fungi and Mycosis Diagnosis and Therapy, College of Agriculture, Yangtze University, Jingzhou, China.",
+        "MARA Key Laboratory of Sustainable Crop Production in the Middle Reaches of the Yangtze River (Co-Construction by Ministry and Province)/Hubei Key Laboratory of Waterlogging Disaster and Agricultural Use of Wetland/Interdisciplinary Innovation Research Center for Fungi and Mycosis Diagnosis and Therapy, College of Agriculture, Yangtze University, Jingzhou, China.",
+        "Hubei Key Laboratory of Resource Utilization and Quality Control of Characteristic Crops, College of Life Science and Technology, Hubei Engineering University, Xiaogan, China.",
+        "MARA Key Laboratory of Sustainable Crop Production in the Middle Reaches of the Yangtze River (Co-Construction by Ministry and Province)/Hubei Key Laboratory of Waterlogging Disaster and Agricultural Use of Wetland/Interdisciplinary Innovation Research Center for Fungi and Mycosis Diagnosis and Therapy, College of Agriculture, Yangtze University, Jingzhou, China.",
+        "State Key Laboratory for Crop Stress Resistance and High-Efficiency Production, College of Plant Protection, Northwest A&F University, Yangling, China.",
+        "MARA Key Laboratory of Sustainable Crop Production in the Middle Reaches of the Yangtze River (Co-Construction by Ministry and Province)/Hubei Key Laboratory of Waterlogging Disaster and Agricultural Use of Wetland/Interdisciplinary Innovation Research Center for Fungi and Mycosis Diagnosis and Therapy, College of Agriculture, Yangtze University, Jingzhou, China.",
+        "MARA Key Laboratory of Sustainable Crop Production in the Middle Reaches of the Yangtze River (Co-Construction by Ministry and Province)/Hubei Key Laboratory of Waterlogging Disaster and Agricultural Use of Wetland/Interdisciplinary Innovation Research Center for Fungi and Mycosis Diagnosis and Therapy, College of Agriculture, Yangtze University, Jingzhou, China."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Fang, Xiaole",
+        "short_name": "Fang X",
+        "identifiers": [],
+        "affiliations": [
+          "MARA Key Laboratory of Sustainable Crop Production in the Middle Reaches of the Yangtze River (Co-Construction by Ministry and Province)/Hubei Key Laboratory of Waterlogging Disaster and Agricultural Use of Wetland/Interdisciplinary Innovation Research Center for Fungi and Mycosis Diagnosis and Therapy, College of Agriculture, Yangtze University, Jingzhou, China."
+        ]
+      },
+      {
+        "full_name": "Wang, Xiaoyu",
+        "short_name": "Wang X",
+        "identifiers": [],
+        "affiliations": [
+          "MARA Key Laboratory of Sustainable Crop Production in the Middle Reaches of the Yangtze River (Co-Construction by Ministry and Province)/Hubei Key Laboratory of Waterlogging Disaster and Agricultural Use of Wetland/Interdisciplinary Innovation Research Center for Fungi and Mycosis Diagnosis and Therapy, College of Agriculture, Yangtze University, Jingzhou, China."
+        ]
+      },
+      {
+        "full_name": "Yang, Tian",
+        "short_name": "Yang T",
+        "identifiers": [],
+        "affiliations": [
+          "MARA Key Laboratory of Sustainable Crop Production in the Middle Reaches of the Yangtze River (Co-Construction by Ministry and Province)/Hubei Key Laboratory of Waterlogging Disaster and Agricultural Use of Wetland/Interdisciplinary Innovation Research Center for Fungi and Mycosis Diagnosis and Therapy, College of Agriculture, Yangtze University, Jingzhou, China."
+        ]
+      },
+      {
+        "full_name": "Wang, Youning",
+        "short_name": "Wang Y",
+        "identifiers": [],
+        "affiliations": [
+          "Hubei Key Laboratory of Resource Utilization and Quality Control of Characteristic Crops, College of Life Science and Technology, Hubei Engineering University, Xiaogan, China."
+        ]
+      },
+      {
+        "full_name": "Ao, Xue",
+        "short_name": "Ao X",
+        "identifiers": [],
+        "affiliations": [
+          "MARA Key Laboratory of Sustainable Crop Production in the Middle Reaches of the Yangtze River (Co-Construction by Ministry and Province)/Hubei Key Laboratory of Waterlogging Disaster and Agricultural Use of Wetland/Interdisciplinary Innovation Research Center for Fungi and Mycosis Diagnosis and Therapy, College of Agriculture, Yangtze University, Jingzhou, China."
+        ]
+      },
+      {
+        "full_name": "Cao, Peina",
+        "short_name": "Cao P",
+        "identifiers": [],
+        "affiliations": [
+          "State Key Laboratory for Crop Stress Resistance and High-Efficiency Production, College of Plant Protection, Northwest A&F University, Yangling, China."
+        ]
+      },
+      {
+        "full_name": "Gong, Pan",
+        "short_name": "Gong P",
+        "identifiers": [],
+        "affiliations": [
+          "MARA Key Laboratory of Sustainable Crop Production in the Middle Reaches of the Yangtze River (Co-Construction by Ministry and Province)/Hubei Key Laboratory of Waterlogging Disaster and Agricultural Use of Wetland/Interdisciplinary Innovation Research Center for Fungi and Mycosis Diagnosis and Therapy, College of Agriculture, Yangtze University, Jingzhou, China."
+        ]
+      },
+      {
+        "full_name": "Ma, Dongfang",
+        "short_name": "Ma D",
+        "identifiers": [],
+        "affiliations": [
+          "MARA Key Laboratory of Sustainable Crop Production in the Middle Reaches of the Yangtze River (Co-Construction by Ministry and Province)/Hubei Key Laboratory of Waterlogging Disaster and Agricultural Use of Wetland/Interdisciplinary Innovation Research Center for Fungi and Mycosis Diagnosis and Therapy, College of Agriculture, Yangtze University, Jingzhou, China."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Frontiers in plant science"
+    ],
+    "journal_abbrev": [
+      "Front Plant Sci"
+    ],
+    "pub_date": "2026",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/11/05 11:46",
+    "fetched_at": "2026-11-08 11:00:01"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42985133"
+    ],
+    "review": [
+      "42985133"
+    ],
+    "pmc": [
+      "13731350"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://doi.org/10.3389/fpls.2026.1998911",
+        "provider": "Frontiers Media SA",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

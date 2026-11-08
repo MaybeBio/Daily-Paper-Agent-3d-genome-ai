@@ -1,0 +1,157 @@
+{
+  "identity": {
+    "pmid": "42982798",
+    "doi": "10.1038/s41421-026-00930-4",
+    "title": "Deciphering the regulatory code of RNA inosine through enzymatic precision mapping and an explainable deep learning model."
+  },
+  "content": {
+    "abstract": "Adenosine-to-inosine (A-to-I) RNA editing is one of the most abundant RNA modifications and is involved in multiple critical biological processes; however, the precise localization of inosine and the mechanisms governing their selective editing remain incompletely understood. Integrating high-accuracy detection technologies with deep learning models can accelerate our understanding of the selective positioning and functional implications of A-to-I editing. To address these challenges, this study simultaneously developed RNA inosine sequencing by endonuclease V (EndoV) and XRN-1 (REX-seq), a highly sensitive and accurate detection method for inosine sites, and Inosine Deep Residual Enhanced Attention Model (InoDREAM), a predictive deep learning framework. REX-seq combines EndoV cleavage specificity with XRN-1 exonuclease activity to enable comprehensive A-to-I editome profiling while maintaining accurate gene expression quantification. Using this method, we identified 590,249 high-confidence inosine sites in HEK293T cells, including 84,645 novel sites. Leveraging the high-confidence A-to-I editing sites identified by REX-seq, we developed InoDREAM, which successfully predicted multiple regulatory proteins that exhibit specific binding affinity to A-to-I edited transcripts while simultaneously identifying disease-associated mutation sites and relevant cis-regulatory elements that are functionally linked to RNA editing events. These findings provide novel mechanistic insights into both the molecular regulation of RNA editing and its pathophysiological implications in disease development.",
+    "keywords": [],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Han, Shaoqing",
+        "Li, Jiehua",
+        "Yang, Wei",
+        "Wei, Qi",
+        "Wang, Yafen",
+        "Zhou, Xiang",
+        "Weng, Xiaocheng"
+      ],
+      "short_names": [
+        "Han S",
+        "Li J",
+        "Yang W",
+        "Wei Q",
+        "Wang Y",
+        "Zhou X",
+        "Weng X"
+      ],
+      "auids": [
+        "ORCID: 0009-0006-8607-217X",
+        "ORCID: 0000-0002-0605-8495"
+      ],
+      "affiliations": [
+        "College of Chemistry and Molecular Sciences, Key Laboratory of Biomedical Polymers of Ministry of Education, Wuhan University, Wuhan, Hubei, China. sqhan1@whu.edu.cn.",
+        "College of Chemistry and Molecular Sciences, Key Laboratory of Biomedical Polymers of Ministry of Education, Wuhan University, Wuhan, Hubei, China.",
+        "College of Chemistry and Molecular Sciences, Key Laboratory of Biomedical Polymers of Ministry of Education, Wuhan University, Wuhan, Hubei, China.",
+        "College of Chemistry and Molecular Sciences, Key Laboratory of Biomedical Polymers of Ministry of Education, Wuhan University, Wuhan, Hubei, China.",
+        "School of Public Health, Wuhan University, Wuhan, Hubei, China.",
+        "College of Chemistry and Molecular Sciences, Key Laboratory of Biomedical Polymers of Ministry of Education, Wuhan University, Wuhan, Hubei, China. xzhou@whu.edu.cn.",
+        "Taikang Center for Life and Medical Sciences, Wuhan University, Wuhan, Hubei, China. xzhou@whu.edu.cn.",
+        "College of Chemistry and Molecular Sciences, Key Laboratory of Biomedical Polymers of Ministry of Education, Wuhan University, Wuhan, Hubei, China. xcweng@whu.edu.cn.",
+        "Taikang Center for Life and Medical Sciences, Wuhan University, Wuhan, Hubei, China. xcweng@whu.edu.cn."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Han, Shaoqing",
+        "short_name": "Han S",
+        "identifiers": [
+          "0009-0006-8607-217X"
+        ],
+        "affiliations": [
+          "College of Chemistry and Molecular Sciences, Key Laboratory of Biomedical Polymers of Ministry of Education, Wuhan University, Wuhan, Hubei, China. sqhan1@whu.edu.cn."
+        ]
+      },
+      {
+        "full_name": "Li, Jiehua",
+        "short_name": "Li J",
+        "identifiers": [],
+        "affiliations": [
+          "College of Chemistry and Molecular Sciences, Key Laboratory of Biomedical Polymers of Ministry of Education, Wuhan University, Wuhan, Hubei, China."
+        ]
+      },
+      {
+        "full_name": "Yang, Wei",
+        "short_name": "Yang W",
+        "identifiers": [],
+        "affiliations": [
+          "College of Chemistry and Molecular Sciences, Key Laboratory of Biomedical Polymers of Ministry of Education, Wuhan University, Wuhan, Hubei, China."
+        ]
+      },
+      {
+        "full_name": "Wei, Qi",
+        "short_name": "Wei Q",
+        "identifiers": [],
+        "affiliations": [
+          "College of Chemistry and Molecular Sciences, Key Laboratory of Biomedical Polymers of Ministry of Education, Wuhan University, Wuhan, Hubei, China."
+        ]
+      },
+      {
+        "full_name": "Wang, Yafen",
+        "short_name": "Wang Y",
+        "identifiers": [],
+        "affiliations": [
+          "School of Public Health, Wuhan University, Wuhan, Hubei, China."
+        ]
+      },
+      {
+        "full_name": "Zhou, Xiang",
+        "short_name": "Zhou X",
+        "identifiers": [],
+        "affiliations": [
+          "College of Chemistry and Molecular Sciences, Key Laboratory of Biomedical Polymers of Ministry of Education, Wuhan University, Wuhan, Hubei, China. xzhou@whu.edu.cn.",
+          "Taikang Center for Life and Medical Sciences, Wuhan University, Wuhan, Hubei, China. xzhou@whu.edu.cn."
+        ]
+      },
+      {
+        "full_name": "Weng, Xiaocheng",
+        "short_name": "Weng X",
+        "identifiers": [
+          "0000-0002-0605-8495"
+        ],
+        "affiliations": [
+          "College of Chemistry and Molecular Sciences, Key Laboratory of Biomedical Polymers of Ministry of Education, Wuhan University, Wuhan, Hubei, China. xcweng@whu.edu.cn.",
+          "Taikang Center for Life and Medical Sciences, Wuhan University, Wuhan, Hubei, China. xcweng@whu.edu.cn."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Cell discovery"
+    ],
+    "journal_abbrev": [
+      "Cell Discov"
+    ],
+    "pub_date": "2026 Nov 4",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/11/05 10:52",
+    "fetched_at": "2026-11-08 11:00:01"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42982798"
+    ],
+    "review": [
+      "42982798"
+    ],
+    "pmc": [
+      "13737063"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://doi.org/10.1038/s41421-026-00930-4",
+        "provider": "Nature Publishing Group",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

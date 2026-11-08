@@ -1,0 +1,87 @@
+## Review setup
+- **Input scope** Full manuscript text (abstract, introduction, methods, results, discussion, supplementary references)
+- **Assessment boundary** Scientific and technical evaluation of the presented claims, methods, and results; no assessment of code functionality or reproducibility beyond what is described
+- **Shared manuscript claim summary** The authors propose HiCP2GAN, a plug-and-play GAN framework that uses a pretrained Vision Transformer-based Hi-C foundation model as its discriminator. They claim this approach improves Hi-C resolution enhancement over standalone generators and traditional GAN-based methods, with benefits in biological reproducibility, loop detection, TAD detection, and 3D genome structure reconstruction, while enabling cross-cell and cross-species transfer.
+- **Visible evidence base** Main text tables (Tables 2, 3, 4, 5, 6), figures (Figs 1, 2, 3, 4, 5, 6), and references to supplementary materials (Tables S1–S12, Figs S2, S3)
+- **Missing materials affecting confidence** Supplementary tables and figures referenced throughout (S1–S12, S2, S3) were not provided; exact hyperparameter values, learning rates, and training durations are not fully specified; statistical significance testing is not reported; detailed architecture specifications for the generator models are not provided
+
+## Reviewer
+- **Overall assessment** The manuscript presents a conceptually interesting idea: leveraging a pretrained foundation model as a discriminator in a GAN framework for Hi-C enhancement. The plug-and-play, generator-agnostic design is a useful contribution to the field, and the cross-cell and cross-species evaluation is commendable. However, the evidence as presented is incomplete. The central claims of improvement are based on small numerical margins, and the absence of statistical testing, full supplementary data, and detailed experimental specifications limits the ability to assess robustness and significance. The controlled ablation is thoughtfully designed but scoped narrowly, and the authors appropriately acknowledge its limitations. The manuscript would benefit from clearer reporting of variability, significance, and the practical magnitude of improvements.
+- **Who would be interested in the results, and why** Computational biologists and bioinformaticians working on Hi-C data analysis, particularly those developing or applying deep learning methods for chromatin conformation data. The foundation-model-based approach may also interest researchers working on transfer learning and foundation models in genomics. The plug-and-play framework could serve as a benchmarking tool for the Hi-C enhancement community.
+- **Major strengths** The idea of using a pretrained foundation model as a discriminator is novel and timely. The generator-agnostic interface addresses a real problem of inconsistent evaluation across methods. The evaluation across multiple cell lines, including cross-species transfer, is thorough in scope. The controlled ablation is well designed to isolate the contribution of pretraining versus architecture versus loss terms. The authors are transparent about limitations and scope of their claims.
+- **Major Concerns**
+  - **Concern ID** R1-M1
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Statistical rigor
+  - **Claim pointer** The manuscript claims that HiCP2GAN "outperforms traditional GAN-based methods in most settings" and "improves the reconstruction quality and biological reproducibility of existing Hi-C enhancement models in most evaluated cases."
+  - **Evidence pointer** Tables 3, 4, 5, 6; Supplementary Tables S5, S6, S7, S10, S11
+  - **Concern** The reported improvements are presented as mean values without any measure of variability, confidence intervals, or statistical significance testing. For example, in the controlled ablation (Supplementary Table S8), the difference in GenomeDISCO between the random ViT and pretrained variants appears small, and the authors themselves note the margins are "small" and "indicative rather than definitive." Yet the central claims of the paper rest on these differences. Without error bars, significance tests, or effect sizes, it is impossible to determine whether the observed improvements are meaningful or within noise.
+  - **Why it matters** The core contribution of the paper is the claim that a pretrained foundation-model discriminator improves Hi-C enhancement. If the improvements are not statistically robust, the central thesis is not established. The authors' own acknowledgment of small margins in the ablation undermines confidence in the broader claims.
+  - **Resolution test** Provide standard deviations, confidence intervals, or statistical tests (e.g., paired tests across chromosomes or repeated runs) for all reported metrics. Clearly state which comparisons are statistically significant and at what threshold. If improvements are not significant, revise the claims accordingly.
+  - **Concern ID** R1-M2
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Evidence completeness
+  - **Claim pointer** The manuscript claims that HiCP2GAN "improves loop detection over standalone generators" and "improves topologically associating domain detection and quality."
+  - **Evidence pointer** Figure 3, Table 6, Supplementary Table S9
+  - **Concern** The loop detection analysis is performed on only four chromosomes (chr4, chr14, chr16, chr20) from a single cell line (GM12878). The TAD analysis is limited to two chromosomes (chr4, chr14) from two cell lines. These are narrow evaluations from which to draw general conclusions. Additionally, the TAD analysis uses a tile-based approach with 226 tiles, but the selection criteria for "compact, contact-rich spans" are not fully described, and the potential for selection bias is not addressed.
+  - **Why it matters** The downstream biological validation is a key part of the paper's claim that improvements extend beyond pixel-level metrics. If the evaluation is too narrow or potentially biased, the generalizability of these claims is questionable.
+  - **Resolution test** Expand the evaluation to more chromosomes and cell lines, or provide a clear justification for the selected subset. Describe the tile selection criteria in detail and demonstrate that results are robust to the choice of tiles. Report results for all chromosomes, not just a selected subset.
+  - **Concern ID** R1-M3
+  - **Severity** Major
+  - **Blocking** No
+  - **Axis** Methodological detail
+  - **Claim pointer** The manuscript describes the discriminator as "a pretrained Vision Transformer-based Hi-C foundation model" and states that "the optimal finetuning depth is determined experimentally."
+  - **Evidence pointer** Section "Foundation-based discriminator architecture", Section "Discriminator freezing and model validation", Supplementary Table S2
+  - **Concern** The description of the discriminator adaptation is incomplete. The authors mention a "lightweight convolutional adapter" and a "lightweight fully connected classification head" but do not specify the architecture, number of parameters, or how these components were designed. The finetuning procedure is described in terms of number of layers, but details such as learning rate schedules, regularization, and early stopping criteria are not provided. The training procedure for the GAN (e.g., number of iterations, batch size, optimizer settings) is only partially specified.
+  - **Why it matters** Reproducibility is a core requirement for computational methods. Without full architectural and training details, other researchers cannot replicate the experiments or apply the method to their own data.
+  - **Resolution test** Provide complete architectural specifications for the adapter, classification head, and any other trainable components. Report all hyperparameters, including learning rates, schedules, regularization, and stopping criteria. Consider releasing the full training configuration as a configuration file or in the supplementary materials.
+  - **Concern ID** R1-M4
+  - **Severity** Major
+  - **Blocking** No
+  - **Axis** Comparison fairness
+  - **Claim pointer** The manuscript claims that "HiCP2GAN outperforms traditional GAN-based methods" and compares against "the best traditional GAN-based model (HiCARN2)."
+  - **Evidence pointer** Table 3
+  - **Concern** The comparison against traditional GAN-based methods appears limited to a single model (HiCARN2) in the main text. While the authors state that all baselines were "retrained and evaluated by us under an identical protocol," it is unclear how many baseline methods were considered and whether the comparison is comprehensive. The choice of HiCARN2 as "the best" baseline needs justification. Additionally, the comparison is only shown for GM12878; no cross-cell comparison against traditional GANs is presented.
+  - **Why it matters** The claim of outperforming traditional GAN-based methods is a key selling point. If the comparison is limited or the baseline selection is not justified, the claim is weakened.
+  - **Resolution test** Clearly state how many baseline methods were evaluated and how "best" was determined. Provide cross-cell comparisons against traditional GAN-based methods. If only one baseline was used, justify this choice and acknowledge the limitation.
+- **Minor Comments**
+  - **Concern ID** R1-m1
+  - **Severity** Minor
+  - **Axis** Clarity
+  - **Affected element** Terminology
+  - **Evidence pointer** Throughout
+  - **Issue** The term "seen cell line" is used in a nonstandard way. The authors clarify that it means the same cell line with different chromosome splits, but this usage could confuse readers familiar with the standard train/test split terminology.
+  - **Required correction** Use standard terminology such as "same cell line, held-out chromosomes" or define the term clearly at first use.
+  - **Concern ID** R1-m2
+  - **Severity** Minor
+  - **Axis** Presentation
+  - **Affected element** Figure 1
+  - **Evidence pointer** Figure 1
+  - **Issue** The overall architecture figure is referenced but not described in the text. The reader is left to interpret the figure without guidance on the key components or data flow.
+  - **Required correction** Add a brief description of Figure 1 in the text, highlighting the key components and how they interact.
+  - **Concern ID** R1-m3
+  - **Severity** Minor
+  - **Axis** Completeness
+  - **Affected element** Data availability
+  - **Evidence pointer** Data availability section
+  - **Issue** The authors state that pretrained and trained model weights are available via Zenodo, but the specific contents of this deposit are not described. It is unclear whether all models used in the paper are included.
+  - **Required correction** Describe the contents of the Zenodo deposit, including which models are included and in what format.
+  - **Concern ID** R1-m4
+  - **Severity** Minor
+  - **Axis** Statistical reporting
+  - **Affected element** Table 2
+  - **Evidence pointer** Table 2
+  - **Issue** The table reports PSNR values "averaged across runs with their corresponding statistical variability," but the specific measure of variability (e.g., standard deviation, standard error) is not stated.
+  - **Required correction** Specify the measure of variability used and the number of runs.
+- **Technical failings that need to be addressed before the case is established** R1-M1 (statistical rigor) and R1-M2 (evidence completeness) are the primary technical failings. The absence of statistical testing for the central claims and the narrow downstream evaluation prevent the case from being fully established. R1-M3 (methodological detail) also needs to be addressed for reproducibility.
+- **Assessment against Nature-style criteria** Originality: The idea of using a pretrained foundation model as a GAN discriminator for Hi-C enhancement is original and timely, building on recent advances in foundation models for genomics. Scientific importance: The problem of Hi-C enhancement is important, and a plug-and-play framework that improves biological reproducibility could be valuable. However, the demonstrated improvements are modest and not statistically validated, limiting the current importance. Interdisciplinary readership: The work bridges deep learning and genomics, and the writing is generally accessible, though some domain-specific terms may require familiarity with Hi-C analysis. Technical soundness: The experimental design is thoughtful, particularly the controlled ablation, but the lack of statistical rigor and incomplete methodological details undermine technical soundness. Readability for nonspecialists: The manuscript is clearly written and the motivation is well explained, but the results section would benefit from more interpretation of the practical significance of the improvements.
+- **Recommendation posture** Supportive if technical concerns are resolved. The core idea is promising and the framework is potentially useful, but the current evidence does not fully establish the claims. The authors must provide statistical validation, expand the downstream evaluation, and complete the methodological details before the case is convincing.
+
+## Risk / unsupported claims
+- The claim that HiCP2GAN "outperforms traditional GAN-based methods in most settings" is not statistically supported; no significance testing is reported.
+- The claim that improvements in loop detection and TAD detection are generalizable is not fully supported given the limited chromosome and cell line coverage.
+- The claim that the pretrained foundation-model discriminator provides "biologically meaningful gradients" is asserted but not directly demonstrated; the ablation shows feature matching is the operative term, but the biological interpretability of the gradients is not explored.
+- The claim of "robust cross-cell generalization" is based on descriptive comparisons without statistical validation.
+- The practical significance of the improvements (e.g., effect sizes in loop detection F1, TAD Jaccard) is not discussed in context of what would be meaningful for downstream biological discovery.

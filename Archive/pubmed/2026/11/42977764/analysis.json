@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42977764",
+  "title": "GATA transcription factors coordinate developmental progression in the arabidopsis root.",
+  "authors": "Denyer, Tom; Solansky, Pavel; Herrmann, Arvid; de Martino, Francesco; Symeonidi, Efthymia; Brosamle, Valentin; Timmermans, Marja C P",
+  "journal": "Nature communications",
+  "published_date": "2026-11-04",
+  "window": {
+    "start": "2026-11-01",
+    "end": "2026-11-07"
+  },
+  "score": 3,
+  "one_liner_zh": "该文利用单细胞转录组和染色质可及性数据及机器学习研究拟南芥根发育中GATA转录因子的协调作用，虽涉及染色质可及性和机器学习，但对象非三维基因组/染色质组织，且无空间架构建模，仅边缘相关。",
+  "abstract": "Proper organ development requires the coordination of cell type-specific differentiation programs with general maturation processes through precise spatiotemporal gene regulation. In plants, where RNA polymerase pausing is not well established, alternative mechanisms must ensure this coordination. Here, using single-cell resolution transcriptomic and chromatin accessibility data, we reconstruct developmental trajectories of the Arabidopsis root ground tissue to investigate these mechanisms. We describe phased transcriptional landscapes governing the transition from stem cell to early differentiation, in which chromatin accessibility marks the activation of key developmental regulators. A major transcriptional switch in the late meristematic zone, underpinned by extensive chromatin remodeling, drives the transition from cell division to differentiation. Leveraging machine learning to examine integrated transcriptomic and chromatin accessibility trajectories, we identify GATA transcription factors (TFs) as central coordinators of this switch; a role we validate experimentally. We show that the GATA TFs sit at the tipping point of a feedback-driven bistable system that integrates inputs from auxin and cytokinin to balance proliferation and differentiation, ensuring temporal precision in root development at both the tissue and organ scales.",
+  "abstract_zh": "器官的正常发育需要细胞类型特异性分化程序与一般成熟过程通过精确的时空基因调控相协调。在植物中，RNA聚合酶暂停机制尚未充分确立，因此必须依赖其他机制来确保这种协调。本研究利用单细胞分辨率的转录组和染色质可及性数据，重建了拟南芥根基本组织的发育轨迹，以探究这些机制。我们描述了调控从干细胞向早期分化转变的分阶段转录景观，其中染色质可及性标志着关键发育调控因子的激活。晚期分生组织区的一个主要转录开关，由广泛的染色质重塑支撑，驱动了从细胞分裂向分化的转变。利用机器学习分析整合的转录组和染色质可及性轨迹，我们识别出GATA转录因子（TFs）作为这一开关的核心协调者，并通过实验验证了这一作用。我们表明，GATA转录因子位于反馈驱动的双稳态系统的临界点，该系统整合了生长素和细胞分裂素的信号，以平衡增殖与分化，确保根发育在组织和器官尺度上的时间精确性。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42977764/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42977764/",
+  "paper_page_path": "papers/pubmed/42977764/index.html"
+}

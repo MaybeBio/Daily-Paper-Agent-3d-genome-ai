@@ -1,0 +1,71 @@
+## Review setup
+- **Input scope** Abstract only
+- **Assessment boundary** Claims and conclusions as presented in the abstract; no methods, figures, or supplementary material were available for evaluation
+- **Shared manuscript claim summary** The authors propose a molecular mechanism by which Hfq and inorganic polyphosphate drive DNA compaction. They claim that under physiological conditions, polyP bridges multiple Hfq hexamers via electrostatic interactions with distal faces, leaving proximal faces free to bind the DNA minor groove through disordered N-termini, promoting compaction. They further claim that under high-salt conditions, electrostatic screening weakens polyP-Hfq association, while stabilization of non-canonical DNA conformations exposes hydrophobic surfaces, shifting Hfq binding toward distal faces and disordered C-termini, reducing compaction. The authors conclude that a conformation-dependent switch in Hfq-DNA interaction modes provides a molecular framework for environment-responsive genome organization in bacteria.
+- **Visible evidence base** Abstract text only; no figures, tables, methods descriptions, or simulation details were provided
+- **Missing materials affecting confidence** Full manuscript, simulation protocols, force field parameters, system construction details, validation metrics, convergence analyses, quantitative results, and all figures and tables
+
+## Reviewer
+- **Overall assessment** The abstract presents a plausible and potentially interesting mechanistic hypothesis for Hfq-polyP-mediated DNA compaction, supported by a dual-resolution simulation approach. However, the evidence base available for review is limited to the abstract, which precludes verification of the central claims. The mechanistic narrative is coherent, but several assertions regarding molecular interactions and conformational switching require quantitative support that is not visible in the abstract. The work may be of interest to the bacterial chromatin and nucleic acid biophysics communities, but the case is not fully established from the supplied material.
+- **Who would be interested in the results, and why** Researchers studying bacterial nucleoid organization, Hfq biology, polyphosphate physiology, and protein-nucleic acid interactions would find these results relevant. The proposed environment-responsive mechanism could inform studies on bacterial stress responses and genome architecture. Computational biophysicists interested in coarse-grained and all-atom simulation approaches for protein-DNA systems may also find the methodological combination of interest.
+- **Major strengths** The abstract addresses a significant open question regarding the molecular mechanism of Hfq-polyP-mediated DNA compaction. The combination of coarse-grained and all-atom simulations is appropriate for capturing both large-scale assembly and detailed interaction modes. The proposed dual-face model of Hfq engagement with DNA, with distinct roles for N-terminal and C-terminal disordered regions, is mechanistically appealing and testable. The emphasis on environmental sensitivity provides a biologically relevant dimension that extends beyond static structural descriptions.
+- **Major Concerns**
+  - **Concern ID** R1-M1
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** The authors claim that polyP electrostatically interacts with the distal faces of multiple Hfq hexamers, clustering them near DNA and leaving proximal faces available to interact with the DNA minor groove via disordered N-termini, thereby promoting compaction.
+  - **Evidence pointer** Abstract; location not provided
+  - **Concern** The abstract provides no quantitative data supporting the proposed interaction geometry. No binding affinities, contact frequencies, free energy estimates, or population analyses are presented. The claim that polyP specifically engages distal faces while proximal faces remain available for DNA binding requires demonstration that these interactions are competitive rather than cooperative, and that the proposed geometry is thermodynamically favored over alternative arrangements.
+  - **Why it matters** The central mechanistic model rests on a specific spatial arrangement of polyP, Hfq hexamers, and DNA. Without quantitative evidence for this arrangement, the model remains speculative. The distinction between distal-face polyP binding and proximal-face DNA binding is critical, as it determines whether the proposed mechanism is physically plausible or merely one of many possible configurations.
+  - **Resolution test** Provide quantitative measures of interaction specificity, such as per-residue contact maps, binding free energy decompositions, or comparative simulations with mutated Hfq variants that disrupt distal-face or proximal-face interactions. Show that the proposed geometry is statistically dominant in equilibrium ensembles.
+  - **Concern ID** R1-M2
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** The authors claim that under high-salt conditions, stabilization of non-canonical DNA conformations exposes hydrophobic surfaces, shifting the mode of Hfq interaction with DNA toward its distal face and disordered C-termini, favoring hydrophobic interactions and reducing compaction.
+  - **Evidence pointer** Abstract; location not provided
+  - **Concern** The causal chain from high-salt conditions to non-canonical DNA conformation to hydrophobic surface exposure to a shift in Hfq binding mode is asserted without supporting evidence. No data are presented showing that non-canonical DNA conformations are indeed stabilized under the simulated high-salt conditions, that such conformations expose hydrophobic surfaces, or that Hfq binding shifts accordingly. The claim that hydrophobic interactions dominate under high-salt conditions requires direct demonstration, as electrostatics are typically the primary driving force in protein-DNA systems.
+  - **Why it matters** The proposed conformation-dependent switch is the central conceptual contribution of the work. If the high-salt branch of the mechanism is not supported, the claim of environment-responsive regulation is weakened. The switch from electrostatic to hydrophobic interaction modes is a strong claim that requires careful energetic analysis.
+  - **Resolution test** Provide free energy profiles or potential of mean force calculations for Hfq-DNA binding under low-salt and high-salt conditions. Show that non-canonical DNA conformations are populated under high-salt conditions and that Hfq binding to these conformations is indeed driven by hydrophobic contacts involving the distal face and C-termini.
+  - **Concern ID** R1-M3
+  - **Severity** Major
+  - **Blocking** No
+  - **Axis** Reproducibility
+  - **Claim pointer** The authors state that they combine coarse-grained and all-atom molecular dynamics simulations to investigate the interplay between Hfq, polyP, and DNA.
+  - **Evidence pointer** Abstract; location not provided
+  - **Concern** No simulation details are provided in the abstract, including system sizes, simulation lengths, force fields, water models, salt concentrations, temperature coupling, or equilibration protocols. The absence of these details prevents assessment of sampling convergence and statistical reliability. It is unclear whether the coarse-grained and all-atom simulations were used in a multiscale workflow or as independent approaches.
+  - **Why it matters** Molecular dynamics results are only meaningful if simulations are sufficiently converged and if the chosen force fields are appropriate for the systems studied. Without these details, the quantitative claims cannot be evaluated, and the reproducibility of the work is uncertain.
+  - **Resolution test** Provide full simulation protocols in the methods section, including convergence metrics such as block error analysis, autocorrelation times, and replicate simulations. Demonstrate that the coarse-grained and all-atom results are consistent where they overlap.
+- **Minor Comments**
+  - **Concern ID** R1-m1
+  - **Severity** Minor
+  - **Axis** Clarity
+  - **Affected element** Terminology
+  - **Evidence pointer** Abstract; location not provided
+  - **Issue** The term "heterochromatin-like structures" is used without definition or contextualization. This analogy may be misleading, as bacterial chromatin does not share the histone-based architecture of eukaryotic heterochromatin.
+  - **Required correction** Clarify what is meant by "heterochromatin-like" in the bacterial context, or replace with a more precise description of the proposed compacted state.
+  - **Concern ID** R1-m2
+  - **Severity** Minor
+  - **Axis** Completeness
+  - **Affected element** Biological relevance
+  - **Evidence pointer** Abstract; location not provided
+  - **Issue** The abstract claims that the findings provide "a molecular framework for environment-responsive genome organization in bacteria," but no connection is made to specific physiological conditions beyond generic "high-salt" and "physiological" states. The relevance to actual bacterial environments is asserted rather than demonstrated.
+  - **Required correction** Either temper the claim of environmental responsiveness or provide a brief statement linking the simulated conditions to biologically relevant contexts, such as osmotic stress or stationary phase.
+  - **Concern ID** R1-m3
+  - **Severity** Minor
+  - **Axis** Specificity
+  - **Affected element** Sequence dependence
+  - **Evidence pointer** Abstract; location not provided
+  - **Issue** The abstract states that the mechanism shows "limited dependence on DNA sequence," but no sequence variants or comparative analyses are described. The basis for this claim is unclear.
+  - **Required correction** Specify which sequences were tested and what comparisons were made to support the claim of limited sequence dependence.
+- **Technical failings that need to be addressed before the case is established** R1-M1 and R1-M2 are blocking because the central mechanistic claims are not quantitatively supported by the abstract. R1-M3 is important for reproducibility but may be addressable in the full manuscript.
+- **Assessment against Nature-style criteria** Originality: The proposed dual-face model of Hfq engagement with DNA, modulated by polyP and environmental conditions, appears conceptually novel. Scientific importance: The work addresses a significant gap in understanding bacterial nucleoid organization and Hfq function, with potential implications for stress responses. Interdisciplinary readership: The topic bridges biophysics, microbiology, and computational biology, and should appeal to a broad audience if the claims are well supported. Technical soundness: Cannot be fully assessed from the abstract; the absence of quantitative results and simulation details is a major limitation. Readability for nonspecialists: The abstract is generally clear, though the "heterochromatin-like" analogy and the conformational switch concept may require additional explanation for readers outside the immediate field.
+- **Recommendation posture** Currently not established from the provided evidence. The mechanistic hypothesis is interesting and the simulation approach is appropriate, but the abstract alone does not provide sufficient quantitative support for the central claims. A full review of the manuscript with methods and figures would be required to determine whether the case can be made.
+
+## Risk / unsupported claims
+- The claim that polyP specifically interacts with distal faces of Hfq hexamers is unsupported by quantitative data in the abstract.
+- The claim that high-salt conditions stabilize non-canonical DNA conformations that expose hydrophobic surfaces is unsupported.
+- The claim that Hfq binding shifts from N-terminal to C-terminal disordered regions under high-salt conditions is unsupported.
+- The claim of limited sequence dependence is unsupported without comparative sequence data.
+- The claim that the mechanism provides a framework for environment-responsive genome organization in bacteria is an extrapolation beyond the presented evidence.

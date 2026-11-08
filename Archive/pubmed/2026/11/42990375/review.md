@@ -1,0 +1,87 @@
+## Review setup
+- **Input scope** Abstract only
+- **Assessment boundary** Claims and evidence presented in the abstract; no methods, figures, or supplementary material were provided
+- **Shared manuscript claim summary** The authors present ChAI-Net, a deep learning model that predicts locus-specific chromatin co-accessibility maps from DNA sequence in mouse embryonic stem cells, and claim that model interpretation reveals sequence motifs and regulatory grammar (motif orientation, spacing, positioning, co-occurrence) that are specific to co-accessibility and missed by average accessibility models.
+- **Visible evidence base** Abstract text only; no figures, tables, methods, or supplementary information were supplied
+- **Missing materials affecting confidence** Full manuscript, methods description, model architecture details, training and evaluation procedures, all figures and tables, supplementary data, and any statistical analyses
+
+## Reviewer
+- **Overall assessment** The abstract describes a potentially valuable integration of single-molecule long-read footprinting with deep learning to infer regulatory grammar governing chromatin co-accessibility. The conceptual framing is clear and the potential biological insights are of interest. However, the abstract alone provides insufficient detail to evaluate the technical soundness of the model, the validity of the interpretation methods, or the robustness of the claimed findings. Several claims are made without visible quantitative support, and the relationship between model performance and biological interpretation is not established from the supplied material.
+- **Who would be interested in the results, and why** Researchers in regulatory genomics, chromatin biology, and computational biology would be interested. Those working on transcription factor cooperativity, cis-regulatory element function, and single-molecule genomics would find the framework relevant. The potential to extract regulatory rules from footprinting data could also appeal to those developing deep learning approaches for genomic sequence interpretation.
+- **Major strengths** The abstract addresses a timely and important problem, namely understanding coordinated protein-DNA interactions at single-molecule resolution. The combination of an emerging experimental technique with deep learning is conceptually appealing. The claim that co-accessibility modeling reveals motifs missed by average accessibility approaches suggests a potentially novel biological insight. The focus on regulatory grammar features such as motif orientation, spacing, and positioning is well aligned with current questions in gene regulation.
+- **Major Concerns**
+  - **Concern ID** R1-M1
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** The authors claim that ChAI-Net predicts locus-specific chromatin co-accessibility maps from DNA sequence.
+  - **Evidence pointer** Abstract only; location not provided
+  - **Concern** No information is provided about model architecture, training data size, input representation, output resolution, or evaluation metrics. It is unclear how co-accessibility maps are defined at the nucleotide level, how many loci were used for training and testing, and how prediction accuracy was quantified.
+  - **Why it matters** Without these details, the core claim that the model successfully learns co-accessibility from sequence cannot be assessed. The biological conclusions depend entirely on the model being accurate and generalizable.
+  - **Resolution test** Provide model architecture, training and test data descriptions, evaluation metrics with performance values, and comparison to appropriate baselines.
+  - **Concern ID** R1-M2
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Evidence strength
+  - **Claim pointer** The authors claim that model interpretation reveals unique combinations of sequence motifs underlying co-accessibility within enhancers, promoters, and CTCF-bound sites, and that many of these motifs are missed when modeling average accessibility.
+  - **Evidence pointer** Abstract only; location not provided
+  - **Concern** No quantitative results are presented to support this claim. There is no indication of how motifs were identified, how significance was determined, how many motifs were found per element type, or how the comparison to average accessibility models was performed.
+  - **Why it matters** This is the central biological finding of the work. Without visible evidence, the claim that co-accessibility modeling uncovers distinct regulatory motifs cannot be evaluated.
+  - **Resolution test** Show motif discovery results with statistical significance, enrichment analyses, and direct comparisons between co-accessibility and average accessibility models.
+  - **Concern ID** R1-M3
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Technical soundness
+  - **Claim pointer** The authors claim that ChAI-Net's regulatory grammar highlights the importance of TF motif orientation, spacing, positioning, and co-occurrence in driving co-accessibility.
+  - **Evidence pointer** Abstract only; location not provided
+  - **Concern** The abstract does not describe how these grammar features were extracted from the model or how their importance was quantified. No in silico experiment details are provided, and no validation of these features against independent biological data is mentioned.
+  - **Why it matters** The claim that specific grammar features drive co-accessibility is strong and requires rigorous demonstration that the model's learned representations correspond to biologically meaningful rules rather than statistical artifacts.
+  - **Resolution test** Describe the interpretation methods, show in silico perturbation results, and validate predicted grammar rules against independent experimental data or known regulatory biology.
+  - **Concern ID** R1-M4
+  - **Severity** Major
+  - **Blocking** No
+  - **Axis** Reproducibility
+  - **Claim pointer** The authors state that their framework extracts regulatory rules from footprinting data and lays groundwork for studying variation across cellular contexts.
+  - **Evidence pointer** Abstract only; location not provided
+  - **Concern** No information is provided about data availability, code availability, or whether the model and analysis pipelines would be released. The generalizability of the framework to other cell types is asserted but not demonstrated.
+  - **Why it matters** Reproducibility and data sharing are essential for the community to build on this work. The claim of broader applicability requires at least a statement of intent or preliminary evidence.
+  - **Resolution test** Include data and code availability statements, and if possible, show preliminary results from an additional cell type or context.
+- **Minor Comments**
+  - **Concern ID** R1-m1
+  - **Severity** Minor
+  - **Axis** Clarity
+  - **Affected element** Abstract wording
+  - **Evidence pointer** Abstract, first sentence
+  - **Issue** The phrase "regulation of chromatin accessibility is critical for cell function and identity" is generic and does not specify the gap this work addresses.
+  - **Required correction** Rephrase to state the specific unresolved question about coordinated accessibility that motivates the study.
+  - **Concern ID** R1-m2
+  - **Severity** Minor
+  - **Axis** Terminology
+  - **Affected element** "co-accessibility maps"
+  - **Evidence pointer** Abstract, methods description
+  - **Issue** The term "co-accessibility maps" is not defined in the abstract. It is unclear whether this refers to pairwise correlations, joint probabilities, or another metric.
+  - **Required correction** Define co-accessibility explicitly, including the mathematical or operational definition used.
+  - **Concern ID** R1-m3
+  - **Severity** Minor
+  - **Axis** Completeness
+  - **Affected element** Model comparison
+  - **Evidence pointer** Abstract, claim about motifs missed by average accessibility
+  - **Issue** The abstract does not specify what "average accessibility" model was used for comparison.
+  - **Required correction** Name the baseline model and briefly describe its architecture or approach.
+  - **Concern ID** R1-m4
+  - **Severity** Minor
+  - **Axis** Scope
+  - **Affected element** "different types of cis-regulatory elements"
+  - **Evidence pointer** Abstract, first paragraph
+  - **Issue** Only three element types are mentioned (enhancers, promoters, CTCF-bound sites), which may not represent the full diversity of cis-regulatory elements.
+  - **Required correction** Clarify whether these three types are the complete set analyzed or a subset, and justify the selection.
+- **Technical failings that need to be addressed before the case is established** R1-M1, R1-M2, R1-M3. The abstract does not provide sufficient technical detail to establish that the model works, that the interpretation is valid, or that the biological claims are supported. These are foundational issues that must be resolved before the scientific case can be assessed.
+- **Assessment against Nature-style criteria** Originality is potentially high, as the combination of single-molecule footprinting with deep learning for co-accessibility modeling appears novel. Scientific importance is potentially significant given the relevance to transcription factor cooperativity and cis-regulatory element function. Interdisciplinary readership is plausible, spanning genomics, computational biology, and molecular biology. Technical soundness cannot be assessed from the abstract alone, which is a critical limitation. Readability for nonspecialists is adequate, though some terms such as "co-accessibility maps" and "regulatory grammar" would benefit from clearer definition.
+- **Recommendation posture** Currently not established from the provided evidence. The abstract presents an interesting concept and promising direction, but the absence of methods, results, and validation details means the core claims cannot be evaluated. A full manuscript with detailed methods, performance metrics, and interpretation validation would be required to assess whether the case is made.
+
+## Risk / unsupported claims
+- The claim that ChAI-Net successfully predicts co-accessibility from sequence is unsupported without model performance data.
+- The claim that co-accessibility modeling reveals motifs missed by average accessibility models is unsupported without comparative results.
+- The claim that motif orientation, spacing, positioning, and co-occurrence drive co-accessibility is unsupported without interpretation and validation details.
+- The claim that the framework expands understanding of TF cooperativity is an extrapolation not directly supported by the abstract.
+- The claim that the framework lays groundwork for studying variation across cellular contexts is speculative without demonstration.

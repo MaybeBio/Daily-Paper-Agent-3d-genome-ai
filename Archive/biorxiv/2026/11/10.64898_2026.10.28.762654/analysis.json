@@ -1,0 +1,24 @@
+{
+  "source": "biorxiv",
+  "id": "10.64898/2026.10.28.762654",
+  "title": "scSTEC: Annotating Chromatin Subcompartments from Individual Single-Cell Hi-C Data via Direct Two-Dimensional Embedding and Chromosome-wise Consensus",
+  "authors": "Peng Y; Yang L; Ge H",
+  "journal": "bioRxiv",
+  "published_date": "2026-11-03",
+  "window": {
+    "start": "2026-11-01",
+    "end": "2026-11-07"
+  },
+  "score": 8,
+  "one_liner_zh": "该文提出scSTEC，直接从单细胞Hi-C矩阵进行二维嵌入和染色体一致性注释染色质亚区室，无需跨细胞信息共享，属于三维基因组染色质组织建模且具方法学贡献。",
+  "abstract": "<h4>Motivation</h4> Single-cell Hi-C (scHi-C) technologies enable the study of three-dimensional (3D) genome organization at individual-cell resolution. Many computational methods have been developed to infer hierarchical structures from scHi-C data. However, annotating chromatin subcompartments from sparse scHi-C data remains a challenge. The recently developed scGHOST provides a framework for single-cell subcompartment annotation, but relies on a deep learning-based architecture, a multi-step upstream pipeline involving cell embedding and matrix imputation, and cross-cell information sharing. These features complicate algorithmic interpretation and make the annotation of an individual cell dependent on information from other cells in the dataset. Hence, methods are needed that annotate subcompartments directly from an individual cell’s own contact matrix, without complex upstream processing or cross-cell information sharing. <h4>Results</h4> We developed scSTEC, a computational framework that annotates subcompartments directly from an individual scHi-C matrix without data imputation, complex upstream processing, or cross-cell data sharing. We show that the estimated inter-chromosomal matrix constructed by scGHOST is intrinsically of rank 2, revealing that the geometry relevant to clustering can be represented in two dimensions. Leveraging this low-dimensional structure, scSTEC performs direct subcompartment annotation through 2D genomic embedding and chromosome-wise consensus. Across bulk Hi-C, downsampled simulations, and real scHi-C datasets (four human cell lines, adult mouse cortex, developing mouse embryos, and developing olfactory sensory neurons), scSTEC achieves subcompartment annotations comparable to scGHOST despite operating on each cell independently, while providing greater algorithmic interpretability. Furthermore, subcompartments identified by scSTEC effectively resolve cell types, capture developmental dynamics, and show consistent associations with gene expression and epigenetic profiles. <h4>Availability</h4> scSTEC is freely available at https://github.com/Ge-lab-pku/scSTEC .",
+  "abstract_zh": "<h4>动机</h4> 单细胞Hi-C（scHi-C）技术使得在单细胞分辨率下研究三维（3D）基因组组织成为可能。许多计算方法已被开发用于从scHi-C数据推断层级结构。然而，从稀疏的scHi-C数据中注释染色质亚区室仍然是一个挑战。最近开发的scGHOST为单细胞亚区室注释提供了一个框架，但其依赖于基于深度学习的架构、涉及细胞嵌入和矩阵插补的多步骤上游流程，以及跨细胞信息共享。这些特性使算法解释复杂化，并使单个细胞的注释依赖于数据集中其他细胞的信息。因此，需要能够直接从单个细胞自身的接触矩阵中注释亚区室的方法，而无需复杂的上游处理或跨细胞信息共享。<h4>结果</h4> 我们开发了scSTEC，一个直接从单个scHi-C矩阵中注释亚区室的计算框架，无需数据插补、复杂的上游处理或跨细胞数据共享。我们展示了由scGHOST估计的染色体间矩阵本质上具有秩2，揭示了与聚类相关的几何结构可以在二维中表示。利用这种低维结构，scSTEC通过二维基因组嵌入和染色体一致性共识进行直接亚区室注释。在批量Hi-C、降采样模拟和真实scHi-C数据集（四种人类细胞系、成年小鼠皮层、发育中的小鼠胚胎和发育中的嗅觉感觉神经元）中，scSTEC尽管独立处理每个细胞，仍能达到与scGHOST相当的亚区室注释，同时提供更高的算法可解释性。此外，scSTEC识别的亚区室能有效区分细胞类型，捕捉发育动态，并显示与基因表达和表观遗传谱的一致关联。<h4>可用性</h4> scSTEC可在https://github.com/Ge-lab-pku/scSTEC 免费获取。",
+  "has_fulltext": true,
+  "fulltext_source": "europepmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://www.biorxiv.org/content/10.64898/2026.10.28.762654",
+  "source_url": "https://www.biorxiv.org/content/10.64898/2026.10.28.762654",
+  "paper_page_path": "papers/biorxiv/10.64898_2026.10.28.762654/index.html"
+}

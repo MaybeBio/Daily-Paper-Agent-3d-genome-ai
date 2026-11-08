@@ -1,0 +1,94 @@
+{
+  "identity": {
+    "pmid": "42984176",
+    "doi": "10.1016/j.bpj.2026.11.002",
+    "title": "Polyphosphate and Disordered Hfq Regions Drive DNA Compaction through Conformation-Dependent Interactions."
+  },
+  "content": {
+    "abstract": "The RNA-binding protein Hfq and inorganic polyphosphate (polyP) were previously suggested to promote DNA compaction of AT-rich regions by forming heterochromatin-like structures, yet the underlying molecular mechanism remains unclear. Here, we combine coarse-grained and all-atom molecular dynamics simulations to investigate the interplay between Hfq, polyP, and DNA. Under physiological conditions, polyP electrostatically interacts with the distal faces of multiple Hfq hexamers, clustering them near DNA and leaving the proximal faces available to interact with the DNA minor groove via the disordered N-termini, thereby promoting compaction. While this mechanism shows limited dependence on DNA sequence, it is highly sensitive to environmental conditions. Under high-salt conditions, electrostatic interactions are screened, weakening polyP-Hfq association and limiting Hfq clustering, while stabilization of non-canonical DNA conformations exposes hydrophobic surfaces. These changes shift the mode of Hfq interaction with DNA toward its distal face and disordered C-termini, favoring hydrophobic interactions and reducing compaction. Together, our findings reveal a conformation-dependent switch in Hfq-DNA interaction modes governed by cellular conditions, providing a molecular framework for environment-responsive genome organization in bacteria.",
+    "keywords": [
+      "Bacterial DNA compaction",
+      "DNA conformational state",
+      "Hfq",
+      "Polyphosphate"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Navon, Yoav",
+        "Levy, Yaakov"
+      ],
+      "short_names": [
+        "Navon Y",
+        "Levy Y"
+      ],
+      "auids": [],
+      "affiliations": [
+        "Department of Chemical and Structural Biology, Weizmann Institute of Science, Rehovot, Israel.",
+        "Department of Chemical and Structural Biology, Weizmann Institute of Science, Rehovot, Israel. Electronic address: koby.levy@weizmann.ac.il."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Navon, Yoav",
+        "short_name": "Navon Y",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Chemical and Structural Biology, Weizmann Institute of Science, Rehovot, Israel."
+        ]
+      },
+      {
+        "full_name": "Levy, Yaakov",
+        "short_name": "Levy Y",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Chemical and Structural Biology, Weizmann Institute of Science, Rehovot, Israel. Electronic address: koby.levy@weizmann.ac.il."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Biophysical journal"
+    ],
+    "journal_abbrev": [
+      "Biophys J"
+    ],
+    "pub_date": "2026 Nov 5",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/11/05 10:52",
+    "fetched_at": "2026-11-08 11:00:01"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42984176"
+    ],
+    "review": [
+      "42984176"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://linkinghub.elsevier.com/retrieve/pii/S0006-3495(26)00753-8",
+        "provider": "Elsevier Science",
+        "category": "Full Text Sources",
+        "attribute": "subscription/membership/fee required",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

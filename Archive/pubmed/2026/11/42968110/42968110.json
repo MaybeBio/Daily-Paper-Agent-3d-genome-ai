@@ -1,0 +1,218 @@
+{
+  "identity": {
+    "pmid": "42968110",
+    "doi": "10.1186/s13040-026-00591-9",
+    "title": "Multi-task adversarial autoencoder for functional genomic element generation with preserved biophysical properties."
+  },
+  "content": {
+    "abstract": "Generative modeling of genomic sequences presents a stringent test for deep learning, requiring the capture of long-range dependencies and functional constraints beyond local nucleotide statistics. Existing architectures frequently collapse to limited modes or reproduce shallow nucleotide distributions without encoding functional semantics. We introduce the Multi-Task Adversarial Autoencoder (MT-AAE), a hybrid generative framework that integrates adversarial regularization with auxiliary functional and biophysical objectives to enforce structured latent representations. Evaluated on an empirical human gene corpus, MT-AAE achieved a Train-on-Synthetic-Test-on-Real (TRTS) accuracy of 74.7%, compared with 41.0% for a standard GAN baseline. Stratified analysis further showed that functional discriminability increased to 89.3% when sequence lengths aligned with the model's architectural window. Importantly, the learned representations exhibited emergent biological structure: synthetic sequences spontaneously preserved cis-regulatory syntax, including canonical TATA-box motifs recovered across 100% of generated promoter sequences without explicit rule encoding, though positional placement relative to the TSS was not statistically significant (KS [Formula: see text]), and the high occurrence rate is partly attributable to the AT-rich composition of the generated sequences. Representation-level validation using frozen DNABERT-2 and DNABERT-S embeddings confirmed that the generated sequences retained functional information beyond shallow k-mer statistics. Cross-species evaluation on Mus musculus sequences further demonstrated species-specific learning consistent with known human-mouse regulatory divergence. The framework also mitigated mode collapse, maintaining near-uniform generation across functional classes ([Formula: see text]), including rare categories such as tRNAs ([Formula: see text] of the dataset). These findings position MT-AAE as an effective framework for biologically constrained genomic sequence generation.",
+    "keywords": [
+      "Adversarial autoencoders",
+      "Generative adversarial networks",
+      "Genomic data augmentation",
+      "Genomic sequence generation",
+      "Multi-task learning"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Adamu, Shamsuddeen",
+        "Alhussian, Hitham",
+        "Abdulkadir, Said Jadid",
+        "Eltahir, Majdy Mohamed Eltayeb",
+        "Khairy, Sallam O F",
+        "Hassan, Ibrahim Hayatu",
+        "Kurah, Ibrahim Muhammad",
+        "Mukhtar, Abubakar",
+        "Ganesalingam, Vijayakanthan",
+        "Ravi, Vaishali",
+        "Saidu, Yahaya"
+      ],
+      "short_names": [
+        "Adamu S",
+        "Alhussian H",
+        "Abdulkadir SJ",
+        "Eltahir MME",
+        "Khairy SOF",
+        "Hassan IH",
+        "Kurah IM",
+        "Mukhtar A",
+        "Ganesalingam V",
+        "Ravi V",
+        "Saidu Y"
+      ],
+      "auids": [
+        "ORCID: 0009-0008-4015-1723"
+      ],
+      "affiliations": [
+        "Computer Information Science Department, Universiti Teknologi PETRONAS, Seri Iskandar, Malaysia. shamsu200@yahoo.com.",
+        "IAIICT, Ahmadu Bello University, Zaria, Nigeria. shamsu200@yahoo.com.",
+        "Computer Information Science Department, Universiti Teknologi PETRONAS, Seri Iskandar, Malaysia. seddig.alhussian@utp.edu.my.",
+        "Computer Information Science Department, Universiti Teknologi PETRONAS, Seri Iskandar, Malaysia.",
+        "King Khalid University, Applied College of Muhayil Asir, Abha, Saudi Arabia.",
+        "Department of Information Systems, College of Economics, Management and Information Systems, University of Nizwa, Al Khuwair, Oman.",
+        "Computer Information Science Department, Universiti Teknologi PETRONAS, Seri Iskandar, Malaysia.",
+        "IAIICT, Ahmadu Bello University, Zaria, Nigeria.",
+        "Computer Information Science Department, Universiti Teknologi PETRONAS, Seri Iskandar, Malaysia.",
+        "Computer Information Science Department, Universiti Teknologi PETRONAS, Seri Iskandar, Malaysia.",
+        "Computer Information Science Department, Universiti Teknologi PETRONAS, Seri Iskandar, Malaysia.",
+        "Computer Information Science Department, Universiti Teknologi PETRONAS, Seri Iskandar, Malaysia.",
+        "Computer Information Science Department, Universiti Teknologi PETRONAS, Seri Iskandar, Malaysia."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Adamu, Shamsuddeen",
+        "short_name": "Adamu S",
+        "identifiers": [
+          "0009-0008-4015-1723"
+        ],
+        "affiliations": [
+          "Computer Information Science Department, Universiti Teknologi PETRONAS, Seri Iskandar, Malaysia. shamsu200@yahoo.com.",
+          "IAIICT, Ahmadu Bello University, Zaria, Nigeria. shamsu200@yahoo.com."
+        ]
+      },
+      {
+        "full_name": "Alhussian, Hitham",
+        "short_name": "Alhussian H",
+        "identifiers": [],
+        "affiliations": [
+          "Computer Information Science Department, Universiti Teknologi PETRONAS, Seri Iskandar, Malaysia. seddig.alhussian@utp.edu.my."
+        ]
+      },
+      {
+        "full_name": "Abdulkadir, Said Jadid",
+        "short_name": "Abdulkadir SJ",
+        "identifiers": [],
+        "affiliations": [
+          "Computer Information Science Department, Universiti Teknologi PETRONAS, Seri Iskandar, Malaysia."
+        ]
+      },
+      {
+        "full_name": "Eltahir, Majdy Mohamed Eltayeb",
+        "short_name": "Eltahir MME",
+        "identifiers": [],
+        "affiliations": [
+          "King Khalid University, Applied College of Muhayil Asir, Abha, Saudi Arabia."
+        ]
+      },
+      {
+        "full_name": "Khairy, Sallam O F",
+        "short_name": "Khairy SOF",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Information Systems, College of Economics, Management and Information Systems, University of Nizwa, Al Khuwair, Oman."
+        ]
+      },
+      {
+        "full_name": "Hassan, Ibrahim Hayatu",
+        "short_name": "Hassan IH",
+        "identifiers": [],
+        "affiliations": [
+          "Computer Information Science Department, Universiti Teknologi PETRONAS, Seri Iskandar, Malaysia.",
+          "IAIICT, Ahmadu Bello University, Zaria, Nigeria."
+        ]
+      },
+      {
+        "full_name": "Kurah, Ibrahim Muhammad",
+        "short_name": "Kurah IM",
+        "identifiers": [],
+        "affiliations": [
+          "Computer Information Science Department, Universiti Teknologi PETRONAS, Seri Iskandar, Malaysia."
+        ]
+      },
+      {
+        "full_name": "Mukhtar, Abubakar",
+        "short_name": "Mukhtar A",
+        "identifiers": [],
+        "affiliations": [
+          "Computer Information Science Department, Universiti Teknologi PETRONAS, Seri Iskandar, Malaysia."
+        ]
+      },
+      {
+        "full_name": "Ganesalingam, Vijayakanthan",
+        "short_name": "Ganesalingam V",
+        "identifiers": [],
+        "affiliations": [
+          "Computer Information Science Department, Universiti Teknologi PETRONAS, Seri Iskandar, Malaysia."
+        ]
+      },
+      {
+        "full_name": "Ravi, Vaishali",
+        "short_name": "Ravi V",
+        "identifiers": [],
+        "affiliations": [
+          "Computer Information Science Department, Universiti Teknologi PETRONAS, Seri Iskandar, Malaysia."
+        ]
+      },
+      {
+        "full_name": "Saidu, Yahaya",
+        "short_name": "Saidu Y",
+        "identifiers": [],
+        "affiliations": [
+          "Computer Information Science Department, Universiti Teknologi PETRONAS, Seri Iskandar, Malaysia."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "BioData mining"
+    ],
+    "journal_abbrev": [
+      "BioData Min"
+    ],
+    "pub_date": "2026 Aug 3",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/11/02 05:29",
+    "fetched_at": "2026-11-08 11:00:01"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42968110"
+    ],
+    "review": [
+      "42968110"
+    ],
+    "pmc": [
+      "13726178"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://biodatamining.biomedcentral.com/articles/10.1186/s13040-026-00591-9",
+        "provider": "BioMed Central",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/pmid/42968110/",
+        "provider": "PubMed Central",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://assays.cancer.gov/non-CPTAC-3409",
+        "provider": "NCI CPTAC Assay Portal",
+        "category": "Miscellaneous",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

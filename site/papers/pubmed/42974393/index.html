@@ -1,0 +1,859 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI and computational methods for reconstructing cell-state-specific gene regulatory networks from single-cell transcriptome and chromatin accessibility data in cancer: methods, applications, and perspectives. · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-mid">5</span>
+    <div>
+      <h1>AI and computational methods for reconstructing cell-state-specific gene regulatory networks from single-cell transcriptome and chromatin accessibility data in cancer: methods, applications, and perspectives.</h1>
+      <div class="meta">Wang, Jinying; Chen, Fenjuan</div>
+      <div class="meta muted">
+        
+        <span class="journal">Frontiers in genetics</span>
+        · 2026-11-03
+         · 全文(pmc)
+         · <a href="https://pubmed.ncbi.nlm.nih.gov/42974393/">原文</a>
+      </div>
+      <p class="one-liner">该综述聚焦癌症中基于单细胞转录组与染色质可及性数据重建基因调控网络的AI计算方法，虽涉及染色质可及性与顺式调控元件，但核心是基因调控网络而非染色质三维空间架构建模，方法上以图学习等AI为主但缺乏三维基因组结构建模深度。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">Tumor heterogeneity is shaped by genetic, epigenetic, microenvironmental, and stochastic factors, among which cell-state-specific regulatory programs are a major determinant. Gene regulatory networks provide a systems-level model linking transcription factors, cis-regulatory elements, and target genes. Paired single-cell RNA sequencing (scRNA-seq) and single-cell assay for transposase-accessible chromatin using sequencing (scATAC-seq) measure chromatin accessibility and gene expression in the same cell, offering a direct view of regulatory elements and transcriptional output; matched-but-unpaired, imputed, and single-modality designs can extend coverage but introduce additional assumptions and artifacts. This mini-review focuses on AI and computational methods for reconstructing cell-state-specific GRNs from single-cell transcriptome and chromatin accessibility data in cancer. We define inclusion criteria, distinguish same-cell paired, matched-unpaired, imputed, and single-modality designs, and organize methods by inference objective and input requirement. We cover motif/co-accessibility inference, deep integration and graph learning, dynamic and cell-state-specific modeling, and virtual perturbation. We then discuss applications in epithelial-mesenchymal transition, treatment resistance, lineage plasticity, and tumor subtyping, emphasizing an evidence hierarchy from statistical association to directional prediction, in silico perturbation, and experimentally supported causal regulation. Finally, we examine benchmarking, limitations, and translational prospects. These approaches may help convert GRNs from descriptive maps into testable models of tumor regulation, but clinical utility still requires prospective validation.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">肿瘤异质性由遗传、表观遗传、微环境和随机因素塑造，其中细胞状态特异性调控程序是主要决定因素。基因调控网络提供了连接转录因子、顺式调控元件和靶基因的系统级模型。配对单细胞RNA测序（scRNA-seq）和单细胞转座酶可及染色质测序（scATAC-seq）在同一细胞中测量染色质可及性和基因表达，直接呈现调控元件和转录输出；匹配但未配对、插补和单模态设计可扩展覆盖范围，但引入额外假设和伪影。本迷你综述聚焦于从癌症单细胞转录组和染色质可及性数据重建细胞状态特异性GRN的人工智能和计算方法。我们定义纳入标准，区分同细胞配对、匹配未配对、插补和单模态设计，并按推断目标和输入需求组织方法。我们涵盖基序/共可及性推断、深度整合和图学习、动态及细胞状态特异性建模，以及虚拟扰动。随后，我们讨论在上皮-间质转化、治疗耐药、谱系可塑性和肿瘤亚型分型中的应用，强调从统计关联到方向性预测、计算机模拟扰动和实验支持因果调控的证据层级。最后，我们审视基准测试、局限性和转化前景。这些方法可能有助于将GRN从描述性图谱转化为可测试的肿瘤调控模型，但临床实用性仍需前瞻性验证。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：AI and computational methods for reconstructing cell-state-specific gene regulatory networks from single-cell transcriptome and chromatin accessibility data in cancer: methods, applications, and perspectives</li>
+<li><strong>作者与单位</strong>：Wang, Jinying; Chen, Fenjuan（单位未提供）</li>
+<li><strong>期刊/预印本平台</strong>：Frontiers in Genetics</li>
+<li><strong>年份</strong>：2026-11-03</li>
+<li><strong>论文类型</strong>：Mini-review（叙述性综述）</li>
+<li><strong>领域</strong>：单细胞多组学 × 基因调控网络 × 癌症</li>
+<li><strong>关键词</strong>：gene regulatory network (GRN)、single-cell multi-omics、scRNA-seq、scATAC-seq、cell-state-specific、cancer、AI、chromatin accessibility</li>
+<li><strong>DOI/arXiv 号</strong>：10.3389/fgene.2026.1982712</li>
+<li><strong>代码</strong>：未提供</li>
+<li><strong>数据</strong>：未提供</li>
+<li><strong>阅读日期</strong>：未提供</li>
+<li><strong>在课题方向中的位置</strong>：本文是面向「三维基因组/染色质组织 × AI 方法」课题的一篇方法学综述，聚焦于从单细胞转录组与染色质可及性数据重建细胞状态特异性基因调控网络（GRN）。其核心对象是 TF–cis-regulatory element–target gene 调控关系，与三维基因组中 enhancer-promoter 互作、染色质高级结构调控基因表达的问题高度相关。本文提供的输入数据分类学（same-cell paired / matched-unpaired / imputed / single-modality）、证据层级（统计关联→方向性预测→in silico perturbation→实验验证）以及方法家族划分（motif/co-accessibility、深度整合与图学习、动态与细胞状态特异性建模、虚拟扰动），对三维基因组领域的 GRN 建模与染色质构象预测具有直接的方法论参考价值。</li>
+</ul>
+<hr />
+<h2>02 一句话总结</h2>
+<p>本文系统梳理了从单细胞转录组（scRNA-seq）与染色质可及性（scATAC-seq）数据重建细胞状态特异性基因调控网络（GRN）的 AI 与计算方法，按输入数据设计和方法目标进行分类，提出从统计关联到实验验证的证据层级，并总结了这些方法在癌症 EMT、耐药、谱系可塑性和亚型分析中的应用与局限。</p>
+<hr />
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：如何从单细胞转录组和染色质可及性数据中重建细胞状态特异性的基因调控网络（GRN），并区分不同方法在输入数据要求、推断目标和证据强度上的差异？</li>
+<li><strong>为什么重要</strong>：肿瘤异质性由遗传、表观遗传、微环境和随机因素共同塑造，其中细胞状态特异性调控程序是主要决定因素。GRN 提供了连接转录因子、顺式调控元件和靶基因的系统级模型，是理解耐药、转移和谱系可塑性的计算基础。</li>
+<li><strong>现有方法为何不足</strong>：经典 GRN 推断依赖 bulk 转录组或单模态 scRNA-seq，无法区分 TF 表达与 TF 活性，也无法将远端增强子分配给其靶基因。已有综述多按方法类别组织或覆盖广泛癌症应用，缺乏以「细胞状态特异性 GRN 重建」为核心、以输入数据设计为分类轴的系统梳理。</li>
+<li><strong>精确研究问题</strong>：Can cell-state-specific GRNs be reliably reconstructed from paired single-cell transcriptome and chromatin accessibility data, and what evidence level can each method family support?</li>
+</ul>
+<hr />
+<h2>04 背景与发展脉络</h2>
+<blockquote>
+<p>注：以下脉络主要基于本文框架，部分代表性方法经外部核验（标注）。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>代表性方法/技术</th>
+<th>优点</th>
+<th>局限</th>
+<th>本文主张的位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>经典 bulk GRN 推断</td>
+<td>WGCNA、ARACNe 等（外部核验）</td>
+<td>可处理 bulk 数据、计算成熟</td>
+<td>混合细胞类型和状态，无法解析细胞状态特异性</td>
+<td>被本文视为 baseline，不满足细胞状态分辨率需求</td>
+</tr>
+<tr>
+<td>单模态 scRNA-seq GRN</td>
+<td>SCENIC（Aibar et al., 2017，外部核验）</td>
+<td>结合共表达与 motif 富集，可识别 regulon 和细胞状态</td>
+<td>无法区分 TF 表达与 TF 活性，缺乏染色质可及性证据</td>
+<td>本文归入 motif/co-accessibility 家族，但指出其单模态局限</td>
+</tr>
+<tr>
+<td>配对单细胞多组学技术</td>
+<td>sci-CAR (2018)、SNARE-seq (2019)、SHARE-seq (2020)、Paired-seq (2019)、10x Multiome</td>
+<td>同一细胞中同时测量染色质可及性与基因表达，直接提供 enhancer-promoter-gene 证据</td>
+<td>数据稀疏、dropout 严重、批次效应强</td>
+<td>本文的核心数据基础，定义 same-cell paired 设计</td>
+</tr>
+<tr>
+<td>深度生成与图学习方法</td>
+<td>LINGER、scMultiomeGRN、DeepMAPS、GLUE</td>
+<td>可处理高维稀疏数据，显式建模基因-峰-细胞关系</td>
+<td>依赖先验质量、可解释性差、需大量计算资源</td>
+<td>本文归入深度整合与图学习家族</td>
+</tr>
+<tr>
+<td>动态与细胞状态特异性建模</td>
+<td>Dictys、inferCSN、scMTNI、scTIGER</td>
+<td>沿轨迹或状态推断网络重连，捕捉调控动态</td>
+<td>伪时间推断引入额外假设，状态边界模糊</td>
+<td>本文强调「每状态一个网络」是近似，需报告边权重变化</td>
+</tr>
+<tr>
+<td>虚拟扰动与因果推断</td>
+<td>CellOracle、Pano、GenKI、scTenifoldKnk、scPRAM</td>
+<td>无需实验即可生成因果候选</td>
+<td>预测不等于因果，需正交实验验证</td>
+<td>本文将其定位为假设生成工具，非因果证明</td>
+</tr>
+<tr>
+<td>基础模型（foundation models）</td>
+<td>scGPT、Geneformer、GET、EpiAgent、RegFormer、ChromBERT</td>
+<td>跨细胞类型迁移、缓解稀疏性</td>
+<td>注意力分数不等于因果、存在预训练偏置和域偏移</td>
+<td>本文主张将其纳入方法学分类，输出需与 baseline 比较并实验验证</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>数据稀疏与 dropout</td>
+<td>scATAC-seq 尤其稀疏，峰检测信噪比低，peak-to-gene 连接不可靠</td>
+<td>单细胞染色质可及性测序深度有限，dropout 非随机，低表达基因和低丰度 TF 易缺失</td>
+<td>Introduction 与 Paired data 节：dropout 非随机，低表达 TF 可能从测量矩阵中缺失</td>
+</tr>
+<tr>
+<td>无法区分 TF 表达与 TF 活性</td>
+<td>单模态 scRNA-seq 中 TF 高表达不等于高活性</td>
+<td>TF 活性受染色质可及性、共因子、翻译后修饰调控，mRNA 丰度不能直接代表调控活性</td>
+<td>Introduction：单模态表达数据无法区分 TF 表达与 TF 活性</td>
+</tr>
+<tr>
+<td>远端增强子-靶基因分配困难</td>
+<td>可及性峰与基因的共定位不等于功能连接</td>
+<td>三维基因组中增强子可能接触远端启动子，线性距离不能决定调控关系</td>
+<td>Paired data 节：可及峰靠近基因可能无关，需考虑三维接触</td>
+</tr>
+<tr>
+<td>批次效应与平台差异</td>
+<td>不同样本/中心合并后产生人工聚类或掩盖真实状态</td>
+<td>技术差异（测序平台、建库方法、样本处理）与生物学变异混杂</td>
+<td>Paired data 节：批次和平台差异可造成人工聚类</td>
+</tr>
+<tr>
+<td>细胞状态连续性与网络离散化矛盾</td>
+<td>肿瘤细胞沿连续轨迹变化，单一静态网络无法刻画状态转换</td>
+<td>细胞状态是连续谱，网络重连是渐进的，「每状态一个网络」是近似</td>
+<td>动态建模节：单状态网络是近似，应报告边权重变化</td>
+</tr>
+<tr>
+<td>因果证据不足</td>
+<td>多数方法输出统计关联或方向性预测，不能证明调控因果性</td>
+<td>缺乏扰动实验，虚拟扰动和注意力分数不等于真实因果</td>
+<td>证据层级节：虚拟扰动和注意力分数应视为假设生成而非因果证明</td>
+</tr>
+<tr>
+<td>基准测试不统一</td>
+<td>不同方法在参考网络、预处理、指标上差异大，跨研究比较困难</td>
+<td>参考网络标签不完整、存在研究偏倚，指标对类别不平衡敏感</td>
+<td>评估节：参考网络标签缺失严重、存在研究偏倚，指标需报告标签覆盖率和可观测上限</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>06 核心思想</h2>
+<h3>1) 表面方法</h3>
+<p>本文是一篇叙述性综述，表面方法为：按输入数据设计（same-cell paired、matched-unpaired、imputed、single-modality）和推断目标（静态 GRN、动态 GRN、虚拟扰动）对现有 AI 与计算方法进行分类，并总结其在癌症中的应用。</p>
+<h3>2) 核心洞察</h3>
+<ul>
+<li><strong>输入数据设计决定方法能力边界</strong>：same-cell paired 数据提供同一细胞中调控元件与转录输出的直接对应，是重建 enhancer-promoter-gene 关系的最强数据基础；matched-unpaired、imputed 和 single-modality 设计虽扩展覆盖，但引入额外假设和伪影。</li>
+<li><strong>证据层级应显式区分</strong>：统计关联 → 方向性预测 → in silico perturbation → 实验支持的因果调控，四层证据强度递增，方法声称的结论不能超出其证据层级。</li>
+<li><strong>方法选择应由数据与问题共同驱动</strong>：静态网络选 motif/co-accessibility 或图学习方法；轨迹动态选 Dictys、inferCSN、scMTNI；因果假设选虚拟扰动方法并配正交实验验证。</li>
+</ul>
+<h3>3) 可能的普适教训 [Analysis]</h3>
+<ul>
+<li><strong>「数据设计分类学」可迁移</strong>：三维基因组领域同样面临 same-cell 多组学（如 Hi-C + RNA）与 matched-unpaired 数据的选择问题，本文的输入数据分类框架可直接用于染色质构象预测方法的评估。</li>
+<li><strong>「证据层级」是通用评估框架</strong>：三维基因组中 enhancer-promoter 互作预测同样需要区分共定位、方向性预测、in silico 扰动（如 CTCF 敲除模拟）和实验验证（如 CRISPR 删除增强子），本文的四层证据框架可迁移。</li>
+<li><strong>「每状态一个网络」的近似警告</strong>：三维基因组中染色质区室（compartment）和 TAD 结构同样随细胞状态连续变化，静态结构预测需警惕过度离散化。</li>
+</ul>
+<hr />
+<h2>07 方法总览</h2>
+<ul>
+<li><strong>输入</strong>：单细胞转录组（scRNA-seq）和/或染色质可及性（scATAC-seq）数据，按设计分为四类：
+  1. Same-cell paired：同一细胞中同时测量两种模态（如 10x Multiome、SHARE-seq、SNARE-seq、sci-CAR、Paired-seq）
+  2. Matched-unpaired：同一样本/供体的不同细胞分别测量两种模态，需锚定或标签迁移
+  3. Imputed/transferred：从一种模态生成另一种模态（如 scMVP、scMOG），引入模型依赖伪影
+  4. Single-modality：仅使用 scRNA-seq 或 scATAC-seq 之一，常需外部先验</li>
+<li><strong>输出</strong>：细胞状态特异性 GRN，包含 TF–enhancer–target gene 边、regulon 活性评分、网络重连轨迹、虚拟扰动预测结果</li>
+<li><strong>方法家族</strong>：
+  1. Motif/co-accessibility 推断：SCENIC、SCENIC+、scREG、FigR、DIRECT-NET、MICA
+  2. 深度整合与图学习：LIGER、scMultiomeGRN、DeepMAPS、GLUE
+  3. 动态与细胞状态特异性建模：Dictys、inferCSN、scMTNI、scTIGER、Inferelator 3.0
+  4. 虚拟扰动：CellOracle、Pano、GenKI、scTenifoldKnk、scPRAM</li>
+<li><strong>流程</strong>（文字描述）：
+  1. 数据预处理与质量控制（dropout 处理、批次校正）
+  2. 按输入数据设计选择方法家族
+  3. 推断 GRN 边（motif 匹配、共可及性、图嵌入）
+  4. 沿轨迹或状态解析网络动态
+  5. 虚拟扰动生成因果候选
+  6. 与实验验证（CRISPR、Perturb-seq）对接</li>
+<li><strong>工具</strong>：未提供统一软件框架；各方法独立实现</li>
+<li><strong>假设</strong>：可及性变化可预测基因表达变化（chromatin potential）；motif 保守性可跨物种迁移；图拓扑携带调控信号；轨迹推断可解析状态转换</li>
+</ul>
+<hr />
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>数据设计分类（same-cell paired / matched-unpaired / imputed / single-modality）</td>
+<td>明确不同数据设计的能力边界和假设</td>
+<td>数据设计决定可推断的调控关系类型和伪影来源</td>
+<td>输入：数据来源描述；输出：方法选择指南</td>
+<td>Paired data 节：四种设计显式区分，imputed 引入模型依赖伪影</td>
+<td>移除后方法选择失去依据，易混淆不同证据强度的结论 [预期]</td>
+</tr>
+<tr>
+<td>Motif/co-accessibility 推断（SCENIC、SCENIC+、scREG、FigR、DIRECT-NET、MICA）</td>
+<td>从序列 motif 和峰-基因共可及性推断 TF–enhancer–gene 边</td>
+<td>提供可解释的调控元件-基因连接，不依赖深度模型</td>
+<td>输入：scRNA-seq/scATAC-seq、motif 数据库；输出：regulon、enhancer-gene 连接</td>
+<td>SCENIC+ 在黑色素瘤、PBMC、ENCODE 细胞系中验证；DIRECT-NET 用独立功能基因组数据验证</td>
+<td>移除后失去可解释的调控元件注释，深度模型输出难以生物学解读 [预期]</td>
+</tr>
+<tr>
+<td>深度整合与图学习（LINGER、scMultiomeGRN、DeepMAPS、GLUE）</td>
+<td>学习高维稀疏多组数据的统一表示，显式建模基因-峰-细胞关系</td>
+<td>捕捉非线性关系和全局拓扑，超越共表达/共可及性</td>
+<td>输入：paired 多组学数据、先验 motif；输出：细胞特异性网络、TF 活性</td>
+<td>LINGER 在报告基准中优于现有方法；DeepMAPS 在肺癌中产生细胞类型特异性网络</td>
+<td>移除后失去非线性建模能力，但保留可解释方法仍可工作 [预期]</td>
+</tr>
+<tr>
+<td>动态与状态特异性建模（Dictys、inferCSN、scMTNI、scTIGER）</td>
+<td>沿轨迹或状态推断网络重连，捕捉调控动态</td>
+<td>肿瘤细胞状态连续变化，静态网络无法刻画转换</td>
+<td>输入：scRNA-seq/scATAC-seq、伪时间；输出：状态特异性网络、边权重变化</td>
+<td>Dictys 在发育轨迹中改善重建精度；scTIGER 在前列腺癌中识别条件特异性网络</td>
+<td>移除后网络无法反映状态转换，回到「每数据集一个网络」的粗粒度 [预期]</td>
+</tr>
+<tr>
+<td>虚拟扰动（CellOracle、Pano、GenKI、scTenifoldKnk、scPRAM）</td>
+<td>通过删除边或改变节点状态模拟基因敲除，生成因果候选</td>
+<td>无需实验即可优先排序候选调控因子</td>
+<td>输入：GRN、细胞状态；输出：扰动后状态变化预测</td>
+<td>CellOracle 在斑马鱼中预测未报道的脊索表型并获验证</td>
+<td>移除后失去因果候选生成能力，但虚拟扰动本身不证明因果 [实测：作者明确标注为假设生成]</td>
+</tr>
+<tr>
+<td>证据层级框架（统计关联→方向性→in silico→实验验证）</td>
+<td>区分方法声称的结论强度</td>
+<td>防止将关联或预测过度解读为因果</td>
+<td>输入：方法输出类型；输出：证据等级标签</td>
+<td>全文反复强调四层区分，尤其虚拟扰动和注意力分数非因果</td>
+<td>移除后结论易被过度解读，临床转化失去依据 [预期]</td>
+</tr>
+<tr>
+<td>评估与基准（ENCODE、DREAM、BEELINE、Perturb-seq）</td>
+<td>提供参考网络和功能验证数据</td>
+<td>衡量边恢复性能和下游效用</td>
+<td>输入：参考网络、扰动数据；输出：AUROC、AUPRC、早期精度等</td>
+<td>评估节：参考网络标签缺失严重、存在研究偏倚，指标需报告标签覆盖率和可观测上限</td>
+<td>移除后无法比较方法优劣，性能数字失去意义 [预期]</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>09 关键公式符号</h2>
+<p>本文为叙述性综述，未提供数学公式。以下为文中隐含的、理解方法所需的概念性「公式」：</p>
+<ul>
+<li>
+<p><strong>Chromatin potential</strong>（SHARE-seq 概念）：<br />
+  ( \text{Chromatin potential} = f(\text{accessibility change}, \text{expression change}) )<br />
+  可及性变化预测尚未发生的基因表达变化。<br />
+  用途：将可及性动态与表达动态关联，用于轨迹推断。<br />
+  直觉：增强子先于基因开放，可及性变化领先于表达变化。</p>
+</li>
+<li>
+<p><strong>Regulon activity score</strong>（SCENIC 概念）：<br />
+  ( \text{Regulon activity} = \text{AUCell}(\text{TF target genes}, \text{cell expression}) )<br />
+  基于 TF 靶基因集的富集评分，衡量单个细胞中 TF 调控程序的活性。<br />
+  用途：将 GRN 边转化为细胞状态可比较的活性值。<br />
+  直觉：TF 靶基因整体上调/下调反映该 TF 调控程序是否激活。</p>
+</li>
+<li>
+<p><strong>虚拟扰动（CellOracle 概念）</strong>：<br />
+  ( \Delta \text{cell state} = g(\text{GRN}, \text{remove edges of TF } X) - g(\text{GRN}, \text{original}) )<br />
+  通过删除目标 TF 的所有出边，比较扰动前后细胞状态表示的变化。<br />
+  用途：生成「该 TF 缺失后细胞状态如何改变」的因果候选。<br />
+  直觉：边删除模拟基因敲除，状态变化大的 TF 更可能是关键调控因子。</p>
+</li>
+<li>
+<p><strong>Cross-modal attention（scMultiomeGRN 概念）</strong>：<br />
+  ( \text{attention}(TF, \text{peak}, \text{gene}) = \text{softmax}(Q_{TF} \cdot K_{\text{peak}}^T / \sqrt{d}) \cdot V_{\text{gene}} )<br />
+  通过注意力机制在转录组和染色质可及性两个模态间建立 TF–peak–gene 三元关系。<br />
+  用途：决定一个 TF 是否通过某个可及峰调控目标基因。<br />
+  直觉：注意力权重高表示该峰对该 TF-基因对贡献大。</p>
+</li>
+</ul>
+<hr />
+<h2>10 实验设计与证据链</h2>
+<p>本文为综述，无原始实验。以下为文中引用的代表性方法及其验证方式：</p>
+<table>
+<thead>
+<tr>
+<th>实验/验证</th>
+<th>检验的 claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SCENIC 在肿瘤和脑数据集中的应用</td>
+<td>共表达+motif 富集可识别 regulon 和细胞状态</td>
+<td>应用于黑色素瘤、脑数据集</td>
+<td>识别出与细胞状态相关的 regulon</td>
+<td>共表达+motif 可推断 regulon 活性</td>
+<td>不能证明 regulon 边是因果调控</td>
+<td>Aibar et al., 2017（文中引用）</td>
+</tr>
+<tr>
+<td>SCENIC+ 在黑色素瘤、PBMC、ENCODE 细胞系、果蝇视网膜中的基准</td>
+<td>enhancer-driven GRN 可从 paired 数据推断</td>
+<td>多组织、多物种基准</td>
+<td>改善 TF 识别和 enhancer-gene 连接</td>
+<td>paired 数据可推断 enhancer-driven GRN</td>
+<td>未在所有癌症类型中验证</td>
+<td>Bravo Gonzalez-Blas et al., 2023（文中引用）</td>
+</tr>
+<tr>
+<td>DIRECT-NET 用独立功能基因组数据验证</td>
+<td>梯度提升可识别全基因组 cis-regulatory elements 及其靶基因</td>
+<td>与现有方法比较</td>
+<td>提高 cis-regulatory element-to-gene 推断精度</td>
+<td>可解释的增强子-基因连接可从 paired 数据推断</td>
+<td>未在三维基因组层面验证增强子-启动子接触</td>
+<td>Zhang et al., 2022（文中引用）</td>
+</tr>
+<tr>
+<td>CellOracle 在斑马鱼中的虚拟扰动</td>
+<td>边删除可预测未报道的表型</td>
+<td>模拟 TF 敲除，与已知表型比较</td>
+<td>预测未报道的脊索表型，后获验证</td>
+<td>虚拟扰动可生成可验证的因果候选</td>
+<td>虚拟扰动本身不证明因果，需实验验证</td>
+<td>Kamimoto et al., 2023（文中引用）</td>
+</tr>
+<tr>
+<td>Pano 在人脑类器官中验证 GLI3</td>
+<td>整合 TF 结合预测与多组学可识别关键调控因子</td>
+<td>与 pooled 遗传扰动比较</td>
+<td>GLI3 被验证为关键调控因子</td>
+<td>多组学+TF 结合预测可优先排序调控因子</td>
+<td>仅验证少数基因，泛化性未证明</td>
+<td>Fleck et al., 2023（文中引用）</td>
+</tr>
+<tr>
+<td>小鼠皮肤鳞癌 EMT 研究</td>
+<td>paired scRNA-seq + scATAC-seq 可解析 EMT 状态调控</td>
+<td>CRISPR/Cas9 功能实验</td>
+<td>Klf5、Pitx1 控制早期 EMT，Nfatc1、Creb3l1 作用于后期</td>
+<td>网络推断可识别 EMT 状态特异性调控因子</td>
+<td>仅一个模型系统，需更多肿瘤类型验证</td>
+<td>Perez-Gonzalez et al., 2026（文中引用）</td>
+</tr>
+<tr>
+<td>黑色素瘤耐药研究</td>
+<td>网络推断可识别耐药状态和组合策略</td>
+<td>in silico 扰动 + 实验验证</td>
+<td>识别去分化耐药状态，组合策略降低耐药态占据</td>
+<td>GRN 可指导组合治疗设计</td>
+<td>临床转化需前瞻性验证</td>
+<td>Pillai et al., 2022（文中引用）</td>
+</tr>
+<tr>
+<td>胶质瘤干细胞样细胞研究</td>
+<td>网络拓扑决定耐药/敏感状态转换</td>
+<td>模拟 + siRNA/联合治疗</td>
+<td>网络拓扑预测治疗反应</td>
+<td>网络拓扑可编码治疗逃逸机制</td>
+<td>仅体外/类器官证据</td>
+<td>Park et al., 2024（文中引用）</td>
+</tr>
+<tr>
+<td>基础模型评估（scGPT、Geneformer）</td>
+<td>注意力分数可预测扰动靶点</td>
+<td>与简单基因统计比较</td>
+<td>注意力分数对扰动靶点预测增益有限</td>
+<td>基础模型输出需与 baseline 比较</td>
+<td>注意力分数不能作为因果证据</td>
+<td>Kendiukhov, 2026c（文中引用）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：本文仅覆盖从单细胞转录组和染色质可及性数据推断 GRN 的方法，不涉及 bulk 数据、不涉及序列-only 预测、不涉及三维基因组构象数据（如 Hi-C）的直接建模。</li>
+<li><strong>oracle/真值输入</strong>：文中方法依赖的「真值」包括 ChIP-seq 结合位点、ENCODE 调控元件注释、已知 TF-motif 数据库、CRISPR 扰动表型。这些真值本身不完整且存在细胞类型偏倚。</li>
+<li><strong>端到端状态</strong>：无任何方法实现从原始测序数据到实验验证的端到端流程；所有方法均需人工选择参考网络、阈值和验证实验。</li>
+<li><strong>算力成本</strong>：文中未报告具体算力需求；深度生成和图学习方法（LIGER、DeepMAPS、GLUE）隐含高计算成本，但未量化。</li>
+<li><strong>历史数据依赖</strong>：所有方法依赖已有参考基因组注释和 motif 数据库，对新物种或非编码区变异敏感。</li>
+<li><strong>最难情形</strong>：低丰度 TF、罕见细胞状态、增强子-启动子三维接触未知、反馈环路、非线性和上下文依赖性调控。</li>
+<li><strong>群体/领域边界</strong>：结论主要基于癌症研究，正常组织、发育和免疫系统的泛化性未系统验证。</li>
+<li><strong>有边界的复述</strong>：本文提供的不是「哪种方法最好」的结论，而是一个分类框架和证据层级：same-cell paired 数据是重建 enhancer-promoter-gene 关系的最强基础；统计关联、方向性预测、in silico perturbation 和实验验证构成递进的证据强度；方法选择应由数据设计和研究问题共同驱动；基础模型输出需与简单 baseline 比较并经实验验证。</li>
+</ul>
+<hr />
+<h2>12 作者自认局限</h2>
+<table>
+<thead>
+<tr>
+<th>局限</th>
+<th>具体表现</th>
+<th>作者提出的未来方向</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>叙述性综述而非系统性综述</td>
+<td>文献检索不穷尽，可能受选择偏倚和发表偏倚影响；未做定量 meta 分析</td>
+<td>未明确提及</td>
+<td>Discussion 节</td>
+</tr>
+<tr>
+<td>文献检索偏倚</td>
+<td>可能受选择偏倚、发表偏倚、英语语言偏倚影响</td>
+<td>未明确提及</td>
+<td>Discussion 节</td>
+</tr>
+<tr>
+<td>方法缺乏独立重复</td>
+<td>多种方法缺乏独立重复</td>
+<td>未明确提及</td>
+<td>Discussion 节</td>
+</tr>
+<tr>
+<td>临床转化证据不足</td>
+<td>多数应用为回顾性或临床前证据</td>
+<td>需要前瞻性验证</td>
+<td>Conclusion 节</td>
+</tr>
+<tr>
+<td>三维基因组信息缺失</td>
+<td>未系统纳入 Hi-C、enhancer-promoter 三维接触数据</td>
+<td>未明确提及</td>
+<td>[Analysis] 作者在 Paired data 节提到三维基因组中增强子可能接触不同启动子，但未将其作为方法分类维度</td>
+</tr>
+</tbody>
+</table>
+<p><strong>作者提及的相关约束</strong>（非正式局限）：
+- 单细胞多组学数据 dropout 非随机，低表达基因和低丰度 TF 可能缺失（Paired data 节）
+- 参考网络标签不完整、存在研究偏倚，评估指标需报告标签覆盖率和可观测上限（评估节）
+- 虚拟扰动和注意力分数应视为假设生成而非因果证明（证据层级节）</p>
+<hr />
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>综述将「same-cell paired」视为最强数据设计，但未讨论 paired 数据中两种模态的测量相互干扰（如 10x Multiome 中 ATAC 建库可能影响 RNA 捕获）</td>
+<td>Paired 数据的优势可能被技术噪声抵消</td>
+<td>方法选择建议可能高估 paired 数据的实际收益</td>
+<td>比较 paired vs matched-unpaired 在同一细胞类型上的 GRN 重建精度</td>
+<td>Paired data 节：作者仅讨论信息优势，未讨论技术干扰</td>
+</tr>
+<tr>
+<td>证据层级将「实验支持的因果调控」置于最高层，但未讨论 CRISPR 筛选本身的脱靶效应和补偿机制</td>
+<td>实验验证也可能产生假阳性和假阴性</td>
+<td>证据层级可能过度简化验证的复杂性</td>
+<td>系统比较 CRISPR 验证与 Perturb-seq 验证的一致性</td>
+<td>证据层级节：作者未讨论验证实验本身的局限</td>
+</tr>
+<tr>
+<td>综述将基础模型（scGPT、Geneformer）的注意力分数视为「假设生成」，但未讨论注意力机制的可解释性是否已被系统验证</td>
+<td>注意力分数可能反映数据统计规律而非生物学调控</td>
+<td>基础模型的调控输出可能误导生物学解读</td>
+<td>在已知调控回路（如 p53 通路）上测试注意力分数与实验验证的一致性</td>
+<td>评估节：作者引用 Kendiukhov 2026c 指出注意力分数增益有限</td>
+</tr>
+<tr>
+<td>综述未将三维基因组数据（Hi-C、enhancer-promoter 接触）纳入方法分类，尽管作者承认增强子可能接触不同启动子</td>
+<td>三维基因组信息可能显著改善 enhancer-gene 分配</td>
+<td>遗漏三维基因组维度可能使分类框架不完整</td>
+<td>比较加入 Hi-C 约束 vs 仅可及性数据的 GRN 重建精度</td>
+<td>Paired data 节：作者提到三维基因组问题但未展开</td>
+</tr>
+<tr>
+<td>综述的「每状态一个网络」批评适用于静态方法，但未讨论动态方法（Dictys、inferCSN）如何验证网络重连的生物学真实性</td>
+<td>动态网络可能过度拟合伪时间轨迹</td>
+<td>动态 GRN 的验证标准不明确</td>
+<td>在已知谱系转换（如 EMT）中比较动态网络预测与实验时间序列</td>
+<td>动态建模节：作者建议报告边权重变化，但未给出验证标准</td>
+</tr>
+<tr>
+<td>综述未讨论批次效应校正方法（如 Harmony、scVI）对 GRN 推断的影响</td>
+<td>批次校正可能消除真实生物学信号或引入人工信号</td>
+<td>批次处理选择可能显著影响 GRN 结果</td>
+<td>在不同批次处理流程下比较同一数据集的 GRN 稳定性</td>
+<td>Paired data 节：作者提到批次效应但未讨论校正方法</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>14 学到什么</h2>
+<h3>Agent 提炼的知识候选</h3>
+<table>
+<thead>
+<tr>
+<th>知识候选</th>
+<th>来源</th>
+<th>可迁移性</th>
+<th>迁移到三维基因组课题的具体方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>输入数据设计分类学</strong>（same-cell paired / matched-unpaired / imputed / single-modality）</td>
+<td>全文核心框架</td>
+<td>高</td>
+<td>三维基因组领域同样面临 Hi-C + RNA 的 same-cell 测量（如 sci-Hi-C）与 matched-unpaired 设计的选择；可据此建立染色质构象预测方法的能力边界分类</td>
+</tr>
+<tr>
+<td><strong>证据层级框架</strong>（统计关联→方向性→in silico 扰动→实验验证）</td>
+<td>全文反复强调</td>
+<td>高</td>
+<td>三维基因组中 enhancer-promoter 接触预测同样需要区分共定位、方向性预测（如 CTCF-CTCF 相互作用）、in silico 扰动（如模拟 CTCF 敲除）和实验验证（如 CRISPR 删除增强子）</td>
+</tr>
+<tr>
+<td><strong>Chromatin potential 概念</strong>（可及性变化预测表达变化）</td>
+<td>SHARE-seq（文中引用）</td>
+<td>高</td>
+<td>三维基因组中可及性变化与基因表达变化的时间差可用于预测 enhancer-promoter 接触的动态重连</td>
+</tr>
+<tr>
+<td><strong>虚拟扰动作为假设生成工具</strong>（CellOracle 的边删除策略）</td>
+<td>CellOracle（文中引用）</td>
+<td>高</td>
+<td>在三维基因组 GRN 中，可通过删除特定 enhancer-promoter 接触边模拟 3D 基因组扰动，预测细胞状态变化</td>
+</tr>
+<tr>
+<td><strong>基础模型输出需与 baseline 比较</strong>（注意力分数≠因果）</td>
+<td>评估节（Kendiukhov 2026c）</td>
+<td>高</td>
+<td>三维基因组基础模型（如 Enformer、Borzoi）的注意力/贡献分数同样需与简单共定位 baseline 比较，避免过度解读</td>
+</tr>
+<tr>
+<td><strong>「每状态一个网络」是近似</strong></td>
+<td>动态建模节</td>
+<td>中</td>
+<td>三维基因组中 TAD/compartment 结构随细胞状态连续变化，静态结构预测需报告结构边界的动态变化</td>
+</tr>
+<tr>
+<td><strong>参考网络标签不完整、存在研究偏倚</strong></td>
+<td>评估节</td>
+<td>中</td>
+<td>三维基因组参考数据（如 ChIA-PET、HiChIP）同样存在细胞类型偏倚和标签缺失，评估指标需报告覆盖率</td>
+</tr>
+<tr>
+<td><strong>多组学整合优于单模态</strong></td>
+<td>全文核心主张</td>
+<td>高</td>
+<td>三维基因组预测应整合转录组、染色质可及性、甲基化等多模态信息，而非仅依赖序列或单一组学</td>
+</tr>
+<tr>
+<td><strong>方法选择由数据与问题共同驱动</strong></td>
+<td>方法选择节</td>
+<td>高</td>
+<td>三维基因组课题中，静态结构预测选图学习方法，动态重连选轨迹建模，因果验证选虚拟扰动+实验</td>
+</tr>
+<tr>
+<td><strong>增强子-启动子分配需考虑三维接触</strong></td>
+<td>Paired data 节（作者提及但未展开）</td>
+<td>高</td>
+<td>这是三维基因组课题的核心切入点：可及性共定位不足以确定 enhancer-promoter 功能连接，需引入 Hi-C/HiChIP 接触信息</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>SCENIC / SCENIC+</strong>（Aibar et al., 2017; Bravo Gonzalez-Blas et al., 2023）：本文将其归入 motif/co-accessibility 家族。SCENIC+ 的 enhancer-driven GRN 推断与三维基因组中 enhancer-promoter 分配问题直接相关，可视为从可及性数据推断调控关系的 baseline。</li>
+<li><strong>GLUE</strong>（Cao and Gao, 2022）：本文将其归入深度整合家族。GLUE 的图链接嵌入框架可迁移到三维基因组中 Hi-C 与 RNA 的联合嵌入。</li>
+<li><strong>CellOracle</strong>（Kamimoto et al., 2023）：虚拟扰动方法，其边删除策略可迁移到三维基因组中模拟 CTCF/cohesin 扰动对基因表达的影响。</li>
+<li><strong>Pando</strong>（Fleck et al., 2023）：整合 TF 结合预测与多组学，在类器官中验证 GLI3，展示了从预测到实验验证的闭环。</li>
+<li><strong>Enformer / Borzoi</strong>（外部知识）：序列到表达的深度模型，本文未直接讨论，但其注意力/贡献分数与本文对基础模型的批判一致——需与简单 baseline 比较。</li>
+<li><strong>Hi-C / HiChIP / ChIA-PET</strong>（外部知识）：三维基因组核心数据，本文未纳入方法分类，但作者在 Paired data 节提到增强子可能接触不同启动子，暗示三维接触信息对 enhancer-promoter 分配的重要性。</li>
+<li><strong>Perturb-seq / CRISPR 筛选</strong>（Dixit et al., 2016; Replogle et al., 2022）：本文将其作为最高证据层级的验证手段，三维基因组课题中同样需要此类功能验证。</li>
+<li><strong>EMT 研究</strong>（Perez-Gonzalez et al., 2026）：本文引用的 EMT 案例展示了 paired 多组学在解析状态转换中的应用，可迁移到三维基因组中 EMT 相关的染色质结构重编程研究。</li>
+</ul>
+<hr />
+<h2>16 研究想法</h2>
+<h3>Agent 生成的研究候选</h3>
+<p><strong>候选 1：三维基因组增强子-启动子分配的统一基准框架</strong>
+- <strong>名称</strong>：3D-GRN-Bench
+- <strong>来源局限/观察</strong>：本文指出可及性共定位不足以确定 enhancer-promoter 功能连接，但未提供系统比较框架；三维基因组领域缺乏统一的 enhancer-promoter 分配基准
+- <strong>核心假设</strong>：整合 Hi-C/HiChIP 接触信息可显著改善 enhancer-promoter 分配精度，且改善幅度可量化
+- <strong>初步方法</strong>：构建包含 same-cell paired（如 10x Multiome + Hi-C）、matched-unpaired、imputed 三种数据设计的基准数据集；比较 motif/co-accessibility 方法（SCENIC+、FigR）与图学习方法（GLUE、DeepMAPS）在 enhancer-promoter 分配上的精度；以 CRISPR 验证和 HiChIP 为真值
+- <strong>验证方式</strong>：在黑色素瘤、结直肠癌、胶质瘤等已有 paired 多组学数据上评估；报告标签覆盖率和可观测上限
+- <strong>创新状态</strong>：unverified</p>
+<p><strong>候选 2：基于染色质状态转移的细胞状态特异性三维 GRN 动态建模</strong>
+- <strong>名称</strong>：Chromatin-State-GRN-Dynamics
+- <strong>来源局限/观察</strong>：本文指出「每状态一个网络」是近似，动态方法需报告边权重变化；三维基因组中 TAD/compartment 结构随细胞状态连续变化
+- <strong>核心假设</strong>：将染色质可及性状态转移（chromatin potential）与三维接触变化联合建模，可预测 EMT 等状态转换中的调控重连
+- <strong>初步方法</strong>：扩展 Dictys 的随机过程网络框架，加入 Hi-C 接触矩阵作为边权重先验；沿伪时间推断 enhancer-promoter 接触的动态重连；以 CRISPR 时序实验验证预测的调控重连
+- <strong>验证方式</strong>：在 EMT 小鼠模型和黑色素瘤耐药模型中验证；比较加入三维接触先验 vs 仅可及性数据的动态 GRN 精度
+- <strong>创新状态</strong>：unverified</p>
+<p><strong>候选 3：虚拟扰动在三维基因组 GRN 中的因果推断扩展</strong>
+- <strong>名称</strong>：3D-Causal-Perturb
+- <strong>来源局限/观察</strong>：本文指出虚拟扰动（CellOracle 等）生成因果候选但需实验验证；三维基因组中 CTCF/cohesin 扰动是天然实验
+- <strong>核心假设</strong>：在三维 GRN 中删除特定 enhancer-promoter 接触边（模拟 CTCF 敲除）可预测细胞状态变化，且预测精度高于仅删除 TF 表达边
+- <strong>初步方法</strong>：在 CellOracle 框架中加入三维接触边作为可删除边；利用 CTCF 降解系统（如 auxin-inducible degron）的 Perturb-seq 数据验证；比较「删除接触边」vs「删除表达边」的预测精度
+- <strong>验证方式</strong>：在胶质瘤干细胞样细胞和黑色素瘤细胞中验证；以 CRISPR 表型为真值
+- <strong>创新状态</strong>：unverified</p>
+<p><strong>候选 4：基础模型在三维基因组 GRN 中的可解释性评估</strong>
+- <strong>名称</strong>：Foundation-GRN-Interpretability
+- <strong>来源局限/观察</strong>：本文指出基础模型（scGPT、Geneformer）的注意力分数对扰动靶点预测增益有限；三维基因组基础模型（Enformer 等）的贡献分数同样缺乏系统评估
+- <strong>核心假设</strong>：基础模型的注意力/贡献分数在三维基因组 GRN 推断中的增量价值有限，需与简单共定位 baseline 比较
+- <strong>初步方法</strong>：在多个癌症 paired 多组学数据集上，比较 Enformer、scGPT、Geneformer 的注意力分数 vs 简单共可及性+motif 匹配的 enhancer-promoter 分配精度；以 CRISPR 验证为真值
+- <strong>验证方式</strong>：报告增量价值（incremental value over baseline）、标签覆盖率和可观测上限
+- <strong>创新状态</strong>：unverified</p>
+<p><strong>候选 5：三维基因组 GRN 的临床转化评估框架</strong>
+- <strong>名称</strong>：3D-GRN-Clinical-Framework
+- <strong>来源局限/观察</strong>：本文指出临床转化需前瞻性验证，但未提供具体框架；三维基因组 GRN 预测的靶点缺乏临床评估标准
+- <strong>核心假设</strong>：将三维 GRN 预测的调控因子与药物反应数据关联，可识别可操作的联合治疗靶点
+- <strong>初步方法</strong>：在黑色素瘤和胶质瘤的 paired 多组学数据上构建三维 GRN；将网络预测的耐药驱动因子与药物筛选数据（如 GDSC、CTRP）关联；在类器官中验证联合治疗策略
+- <strong>验证方式</strong>：以类器官药物反应为真值；报告预测靶点的实验验证率
+- <strong>创新状态</strong>：unverified</p></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Full manuscript text (abstract, main text, references cited within text)</li>
+<li><strong>Assessment boundary</strong> Scientific content, methodological framing, evidence quality, and internal consistency of the review as presented; no external literature verification performed</li>
+<li><strong>Shared manuscript claim summary</strong> The manuscript is a narrative mini-review of AI and computational methods for reconstructing cell-state-specific gene regulatory networks from single-cell transcriptome and chromatin accessibility data in cancer. It proposes a taxonomy of four method families, an evidence hierarchy from statistical association to experimentally supported causal regulation, and a decision framework for method selection. It surveys applications in EMT, treatment resistance, lineage plasticity, and tumor subtyping, and discusses benchmarking, limitations, and translational prospects.</li>
+<li><strong>Visible evidence base</strong> Full text of the manuscript including abstract, introduction, methods sections, applications sections, validation discussion, and conclusion. No figures, tables, or supplementary materials were provided.</li>
+<li><strong>Missing materials affecting confidence</strong> Figures 1 and 2, Table 1, and all cited references were not provided. The absence of Table 1, which is referenced as the comparative summary of methods, limits verification of the claimed taxonomy and method categorization. The absence of figures limits assessment of the decision framework and workflow diagrams.</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li>
+<p><strong>Overall assessment</strong> This is a well-structured and clearly written narrative review that addresses a timely and important topic. The authors propose a useful conceptual framework distinguishing four method families and an explicit evidence hierarchy, which helps clarify the often-conflated claims in this literature. The cancer applications section is informative and appropriately caveated. However, the review is limited by the absence of the comparative table and figures, which are central to the claimed contributions. The evidence hierarchy is well articulated but its application to the surveyed methods is not systematically demonstrated. The benchmarking discussion is thoughtful but lacks concrete recommendations or a critical comparison of existing benchmarks. The review would be strengthened by a more explicit mapping of each method to the evidence hierarchy and by a clearer articulation of what distinguishes this review from prior ones beyond scope.</p>
+</li>
+<li>
+<p><strong>Who would be interested in the results, and why</strong> Computational biologists and bioinformaticians developing or applying single-cell multi-omics integration methods, particularly those focused on gene regulatory network inference. Cancer biologists studying tumor heterogeneity, cell-state transitions, treatment resistance, and lineage plasticity would find the applications section useful. Methodologists interested in benchmarking and validation standards for network inference would also benefit. The review provides a practical entry point for researchers new to this area who need guidance on method selection based on data availability and research question.</p>
+</li>
+<li>
+<p><strong>Major strengths</strong></p>
+</li>
+<li>Clear and explicit taxonomy of four method families based on inference objective and input requirement</li>
+<li>Well-articulated evidence hierarchy distinguishing statistical association, directional prediction, in silico perturbation, and experimentally supported causal regulation</li>
+<li>Practical decision framework for method selection based on data type and research question</li>
+<li>Appropriate caveats about the limitations of virtual perturbation and attention-based interpretability</li>
+<li>Honest acknowledgment of the review's own limitations as a narrative synthesis</li>
+<li>
+<p>Cancer applications are well chosen and illustrate the range of possible uses</p>
+</li>
+<li>
+<p><strong>Major Concerns</strong></p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M1</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Evidence completeness</li>
+<li><strong>Claim pointer</strong> The manuscript claims to provide a comparative analysis of representative methods organized by data type, modeling strategy, cell-state resolution, and validation approach, as stated in the section on AI frameworks for GRN inference.</li>
+<li><strong>Evidence pointer</strong> Table 1, referenced in the text but not provided</li>
+<li><strong>Concern</strong> Table 1, which is described as comparing representative methods by data type, modeling strategy, cell-state resolution, and validation approach, was not included in the provided materials. This table appears central to the review's comparative contribution and to the claimed taxonomy.</li>
+<li><strong>Why it matters</strong> Without the table, the reader cannot verify the categorization of methods into the four families, cannot compare methods across the stated dimensions, and cannot assess whether the taxonomy is consistently applied. The review's practical value as a method selection guide depends substantially on this comparative resource.</li>
+<li>
+<p><strong>Resolution test</strong> Provide Table 1 and confirm that all methods discussed in the text are included, that the categorization is consistent with the text, and that the comparison dimensions are applied uniformly.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M2</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Methodological rigor</li>
+<li><strong>Claim pointer</strong> The manuscript states that benchmarking and limitations are examined, and that benchmarks should state what they can and cannot establish, report label coverage and observable metric ceilings, and test incremental value over simple baselines.</li>
+<li><strong>Evidence pointer</strong> Section "AI frameworks for GRN inference", subsection on evaluating GRN methods</li>
+<li><strong>Concern</strong> The benchmarking discussion is prescriptive but does not provide a concrete assessment of existing benchmarks. The authors do not identify which benchmarks are most useful for cell-state-specific GRN inference, what their specific limitations are, or how the proposed standards would change current practice. The discussion of label completeness and metric ceilings is valuable but remains at the level of general principle.</li>
+<li><strong>Why it matters</strong> A review that identifies benchmarking as a central challenge should provide more specific guidance. Without a critical evaluation of existing benchmarks, the reader is left with principles but no sense of which tools to use or what to expect from them. This weakens the practical utility of the review.</li>
+<li>
+<p><strong>Resolution test</strong> Add a subsection that critically evaluates 2-3 existing benchmarks for single-cell GRN inference, identifies their specific limitations for cell-state-specific reconstruction, and provides concrete recommendations for benchmark design in this setting.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M3</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Evidence hierarchy application</li>
+<li><strong>Claim pointer</strong> The manuscript proposes an evidence hierarchy from statistical association to directional prediction, in silico perturbation, and experimentally supported causal regulation, and states that keeping these levels distinct clarifies what each method can claim.</li>
+<li><strong>Evidence pointer</strong> Section "AI frameworks for GRN inference", final paragraph; Section "Applications of cell-state-specific GRNs in cancer"</li>
+<li><strong>Concern</strong> The evidence hierarchy is clearly defined but is not systematically applied to the surveyed methods. The applications section discusses studies with varying levels of evidence, but the hierarchy is not used to classify or compare the strength of evidence across the presented examples. The reader is told which level each study reaches in some cases, but a systematic mapping is absent.</li>
+<li><strong>Why it matters</strong> The evidence hierarchy is one of the review's main conceptual contributions. If it is not applied consistently to the surveyed literature, its utility as an organizing framework is diminished. A systematic application would help readers understand which methods and applications have the strongest evidentiary support and where the gaps are.</li>
+<li>
+<p><strong>Resolution test</strong> Add a summary table or figure that maps each discussed application or method to its position in the evidence hierarchy, or restructure the applications section to explicitly classify each study by evidence level.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M4</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Novelty and differentiation</li>
+<li><strong>Claim pointer</strong> The manuscript states that existing reviews mostly organize methods by category or cover broad cancer applications, and that none centers on cell-state-specific GRN reconstruction from paired scRNA-seq and scATAC-seq data.</li>
+<li><strong>Evidence pointer</strong> Section "Introduction", third paragraph</li>
+<li><strong>Concern</strong> The claim of novelty is plausible but is not supported by a specific comparison with prior reviews. The authors do not name the prior reviews they are differentiating from, nor do they specify how their treatment of paired, unpaired, and imputed data differs from what has been done before. The statement that "none centers on cell-state-specific GRN reconstruction" is a strong claim that requires more support.</li>
+<li><strong>Why it matters</strong> For a review to justify its existence, it must clearly articulate its contribution relative to prior work. Without a specific comparison, the reader cannot assess whether this review fills a genuine gap or is a re-organisation of existing material.</li>
+<li>
+<p><strong>Resolution test</strong> Add a paragraph that names 3-5 prior reviews, states their scope and limitations, and explicitly articulates how the present review differs in scope, organization, or treatment of the evidence hierarchy.</p>
+</li>
+<li>
+<p><strong>Minor Comments</strong></p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m1</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Clarity</li>
+<li><strong>Affected element</strong> Section "Paired single-cell multi-omics data: technical foundations and challenges", paragraph on data types</li>
+<li><strong>Evidence pointer</strong> Section "Paired single-cell multi-omics data: technical foundations and challenges", fourth paragraph</li>
+<li><strong>Issue</strong> The distinction between "matched-but-unpaired" and "imputed or transferred" designs is stated but not illustrated with concrete examples. The reader may struggle to understand when each design is appropriate and what specific artifacts each introduces.</li>
+<li>
+<p><strong>Required correction</strong> Add one concrete example of each design type, ideally from the cancer literature, and briefly state the specific artifact or assumption each introduces.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m2</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Completeness</li>
+<li><strong>Affected element</strong> Section "AI frameworks for GRN inference", method families</li>
+<li><strong>Evidence pointer</strong> Section "AI frameworks for GRN inference", first paragraph</li>
+<li><strong>Issue</strong> The four method families are described but the number of methods in each family is not stated, and the coverage is not claimed to be exhaustive. The reader cannot tell whether the review covers most available methods or a selected subset.</li>
+<li>
+<p><strong>Required correction</strong> State explicitly whether the method coverage is intended to be representative or comprehensive, and if representative, state the selection criteria.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m3</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Precision</li>
+<li><strong>Affected element</strong> Section "Applications of cell-state-specific GRNs in cancer", paragraph on resistance</li>
+<li><strong>Evidence pointer</strong> Section "Applications of cell-state-specific GRNs in cancer", second paragraph</li>
+<li><strong>Issue</strong> The statement that "network topology determines whether resistant or sensitive cells move through distinct intermediate states" is presented without explaining what aspect of topology is meant. This is a strong claim that needs more specificity.</li>
+<li>
+<p><strong>Required correction</strong> Briefly explain what topological property (e.g., centrality, module structure, feedback loops) was implicated in the cited study.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m4</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Consistency</li>
+<li><strong>Affected element</strong> Section "Controversies, challenges, limitations, and future directions", paragraph on evaluation standards</li>
+<li><strong>Evidence pointer</strong> Section "Controversies, challenges, limitations, and future directions", first paragraph</li>
+<li><strong>Issue</strong> The review cites three works by "Kendiukhov" (2026a, 2026b, 2026c) that are used to make strong claims about the limitations of attention-based interpretability and evaluation metrics. These are cited as if they are established findings, but no details are given about the methods or scope of these studies.</li>
+<li>
+<p><strong>Required correction</strong> Provide one sentence of context for each Kendiukhov citation, stating what was done and in what setting, so the reader can assess the relevance and strength of the evidence.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m5</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Readability</li>
+<li><strong>Affected element</strong> Section "AI frameworks for GRN inference", final paragraph</li>
+<li><strong>Evidence pointer</strong> Section "AI frameworks for GRN inference", final paragraph</li>
+<li><strong>Issue</strong> The decision logic summarized in Figure 2 is described in text but the figure is not provided. The text alone is dense and the decision criteria are not fully specified.</li>
+<li>
+<p><strong>Required correction</strong> Either provide the figure or expand the text to state the decision criteria explicitly in prose.</p>
+</li>
+<li>
+<p><strong>Technical failings that need to be addressed before the case is established</strong></p>
+</li>
+<li>Table 1 is missing, which is central to the comparative claims</li>
+<li>Figures 1 and 2 are missing, which are referenced as summarizing the workflow and decision logic</li>
+<li>The evidence hierarchy is not systematically applied to the surveyed methods</li>
+<li>The claim of novelty relative to prior reviews is not supported by specific comparison</li>
+<li>
+<p>The benchmarking discussion is prescriptive but not evaluative of existing benchmarks</p>
+</li>
+<li>
+<p><strong>Assessment against Nature-style criteria</strong></p>
+</li>
+<li><strong>Originality</strong> The conceptual framework of four method families and the explicit evidence hierarchy are useful organizing principles, but the individual methods and applications surveyed are all previously published. The originality lies in the synthesis and framing rather than in new data or methods. This is adequate for a review but not high originality.</li>
+<li><strong>Scientific importance</strong> The topic is of high importance. Cell-state-specific gene regulatory networks are central to understanding tumor heterogeneity, treatment resistance, and plasticity. The review addresses a genuine need for practical guidance in a rapidly evolving field. The importance is well justified.</li>
+<li><strong>Interdisciplinary readership</strong> The review bridges computational method development and cancer biology applications. It is likely to interest both computational biologists and cancer researchers. However, the level of technical detail in the methods section may be challenging for cancer biologists without computational background, and the cancer applications section may be too brief for computational readers seeking biological depth.</li>
+<li><strong>Technical soundness</strong> The technical content appears sound based on the text provided, but the missing table and figures prevent full verification. The descriptions of methods are accurate at the level of general mechanism, but the lack of a comparative table limits the ability to assess whether the categorizations are correct and consistent.</li>
+<li>
+<p><strong>Readability for nonspecialists</strong> The writing is clear and well organized. The evidence hierarchy is explained in accessible terms. However, the density of method names and the lack of a glossary or summary table will make this challenging for nonspecialists. The abstract is accessible and accurately represents the content.</p>
+</li>
+<li>
+<p><strong>Recommendation posture</strong> Supportive if technical concerns are resolved. The review addresses an important topic with a useful conceptual framework and honest caveats. The main blocking issue is the missing Table 1, which is central to the comparative claims. The other concerns, while not blocking, would substantially strengthen the review. The evidence hierarchy should be applied systematically, the novelty claim should be supported by specific comparison with prior reviews, and the benchmarking discussion should be more concrete.</p>
+</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

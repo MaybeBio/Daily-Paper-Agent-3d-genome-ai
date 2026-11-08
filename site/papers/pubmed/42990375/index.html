@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ChAI-Net learns a regulatory code for chromatin co-accessibility. · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-mid">7</span>
+    <div>
+      <h1>ChAI-Net learns a regulatory code for chromatin co-accessibility.</h1>
+      <div class="meta">Lee, Jodi; Zhang, Kaite; Shurberg, Ethan; Ramani, Vijay; Pollard, Katherine S</div>
+      <div class="meta muted">
+        
+        <span class="journal">bioRxiv : the preprint server for biology</span>
+        · 2026-11-06
+         · 全文(pmc)
+         · <a href="https://pubmed.ncbi.nlm.nih.gov/42990375/">原文</a>
+      </div>
+      <p class="one-liner">该文用深度学习从DNA序列预测染色质共可及性图谱，解析顺式调控元件内转录因子协同结合的调控语法，虽聚焦可及性而非三维空间折叠，但方法可迁移至染色质空间互作建模。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">The regulation of chromatin accessibility is critical for cell function and identity. Advances in single-molecule long-read footprinting have enabled near-nucleotide-resolution readout of chromatin fiber organization, capturing both coordination of transcription factor (TF) binding and variation in nucleosome positioning previously obscured by bulk methods. Here we combine this technique with deep learning to study how protein-DNA interactions are coordinated within different types of cis -regulatory elements in mouse embryonic stem cells. First, we quantify the frequency with which pairs of positions are simultaneously accessible on individual molecules. Then, we train ChAI-Net, a neural network that predicts these locus-specific chromatin co-accessibility maps from the underlying DNA sequence. Through model interpretation and in silico experiments, we show that ChAI-Net learns unique combinations of sequence motifs underlying co-accessibility within enhancers, promoters, and CTCF-bound sites. Many of these motifs are missed when modeling average accessibility, suggesting a specific role in coordinated binding. ChAI-Net&#39;s regulatory grammar also highlights the importance of TF motif orientation, spacing, positioning, and co-occurrence in driving co-accessibility. Thus, our framework for extracting regulatory rules from footprinting data expands understanding of TF cooperativity, while laying the groundwork to elucidate how these rules vary across cellular contexts as single-molecule genomics is deployed at scale.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">染色质可及性的调控对细胞功能和身份至关重要。单分子长读段足迹分析技术的进步使得能够以近核苷酸分辨率读取染色质纤维组织，捕捉到转录因子（TF）结合的协调性以及核小体定位的变异，这些在批量方法中此前被掩盖。在此，我们将该技术与深度学习相结合，研究小鼠胚胎干细胞中不同类型顺式调控元件内蛋白质-DNA相互作用的协调方式。首先，我们量化单个分子上成对位置同时可及的频率。然后，我们训练ChAI-Net，这是一个神经网络，用于从底层DNA序列预测这些位点特异性的染色质共可及性图谱。通过模型解释和计算机模拟实验，我们表明ChAI-Net学习了增强子、启动子和CTCF结合位点内共可及性背后的独特序列基序组合。在建模平均可及性时，许多这些基序被遗漏，表明它们在协调结合中具有特定作用。ChAI-Net的调控语法还强调了TF基序方向、间距、定位和共现对驱动共可及性的重要性。因此，我们从足迹数据中提取调控规则的框架扩展了对TF协同性的理解，同时为随着单分子基因组学大规模部署，阐明这些规则在不同细胞环境中的变化奠定了基础。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：ChAI-Net learns a regulatory code for chromatin co-accessibility</li>
+<li><strong>作者</strong>：Lee, Jodi; Zhang, Kaite; Shurberg, Ethan; Ramani, Vijay; Pollard, Katherine S</li>
+<li><strong>单位</strong>：未提供（根据作者信息推测为 Gladstone Institutes / UCSF 相关机构，但原文未明确）</li>
+<li><strong>期刊/平台</strong>：bioRxiv : the preprint server for biology</li>
+<li><strong>年份</strong>：2026-11-06</li>
+<li><strong>论文类型</strong>：预印本（preprint）</li>
+<li><strong>领域</strong>：三维基因组 / 染色质组织 × AI / 分子模拟</li>
+<li><strong>关键词</strong>：chromatin co-accessibility, single-molecule footprinting, deep learning, regulatory code, transcription factor cooperativity, cis-regulatory elements</li>
+<li><strong>DOI/arXiv 号</strong>：10.64898/2026.10.29.762938</li>
+<li><strong>代码</strong>：未提供</li>
+<li><strong>数据</strong>：未提供（小鼠胚胎干细胞单分子足迹数据）</li>
+<li><strong>阅读日期</strong>：未提供</li>
+<li><strong>该文在课题方向中的位置</strong>：本文属于「染色质可及性 × 深度学习」交叉方向，聚焦于从 DNA 序列预测染色质共可及性（co-accessibility）图谱，属于三维基因组调控编码学习的前沿工作。其核心贡献在于将单分子足迹数据与神经网络结合，学习顺式调控元件内部的 TF 协同结合规则，为理解染色质高级结构的序列编码提供了新视角。</li>
+</ul>
+<hr />
+<h2>02 一句话总结</h2>
+<p>本文利用单分子长读长足迹数据量化染色质共可及性，训练神经网络 ChAI-Net 从 DNA 序列预测位点特异的共可及性图谱，并通过模型解释揭示增强子、启动子和 CTCF 结合位点中驱动协同结合的序列基序组合、方向、间距和定位规则。</p>
+<hr />
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：如何从 DNA 序列预测染色质共可及性（即同一染色质纤维上不同位置同时可及的概率），并解析驱动这种协同可及性的调控编码？</li>
+<li><strong>为什么重要</strong>：染色质可及性调控是细胞功能和身份的核心。传统 bulk 方法（如 ATAC-seq、DNase-seq）只能提供平均可及性，丢失了单分子层面的协同信息。理解共可及性有助于揭示 TF 协同结合、增强子-启动子互作和染色质高级结构的序列基础。</li>
+<li><strong>现有方法为何不足</strong>：现有深度学习方法（如 Basenji、Enformer）主要预测平均可及性或表达量，未建模单分子层面的协同可及性；且缺乏对 TF 结合协调性的直接量化。</li>
+<li><strong>精确研究问题</strong>：Can a neural network learn locus-specific chromatin co-accessibility maps from DNA sequence, and can its interpretation reveal the regulatory grammar (motif combinations, orientation, spacing, positioning) underlying coordinated TF binding within cis-regulatory elements?</li>
+</ul>
+<hr />
+<h2>04 背景与发展脉络</h2>
+<blockquote>
+<p>注：以下脉络基于本文框架，未经外部系统核验，标注为「仅本文框架」。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>代表性方法</th>
+<th>优点</th>
+<th>局限</th>
+<th>本文位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Bulk 可及性测量</td>
+<td>ATAC-seq, DNase-seq</td>
+<td>高通量、成熟</td>
+<td>丢失单分子协同信息</td>
+<td>本文超越此阶段</td>
+</tr>
+<tr>
+<td>2. 单分子足迹</td>
+<td>长读长足迹（如 Smc-seq, 本文所用）</td>
+<td>近核苷酸分辨率，捕获 TF 协同结合和核小体定位变异</td>
+<td>数据稀疏、噪声高</td>
+<td>本文基于此数据</td>
+</tr>
+<tr>
+<td>3. 序列→可及性预测</td>
+<td>Basenji, Enformer, DeepSEA</td>
+<td>可预测平均可及性、TF 结合</td>
+<td>未建模共可及性</td>
+<td>本文扩展至共可及性预测</td>
+</tr>
+<tr>
+<td>4. 共可及性建模</td>
+<td>本文 ChAI-Net</td>
+<td>首次从序列预测共可及性图谱，可解释调控语法</td>
+<td>仅限 mESC，需验证跨细胞类型</td>
+<td>本文核心贡献</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平均可及性丢失协同信息</td>
+<td>传统方法无法区分独立可及与协同可及</td>
+<td>bulk 测量是群体平均，掩盖单分子层面的协调性</td>
+<td>Abstract: "capturing both coordination of TF binding and variation in nucleosome positioning previously obscured by bulk methods"</td>
+</tr>
+<tr>
+<td>单分子数据稀疏</td>
+<td>单分子足迹数据覆盖度低，难以直接建模</td>
+<td>长读长测序通量有限，单分子事件稀有</td>
+<td>未提供具体数值，但 Abstract 暗示需深度学习来弥补</td>
+</tr>
+<tr>
+<td>序列基序与协同结合的关系不明</td>
+<td>已知 motif 但不知其如何组合驱动协同</td>
+<td>缺乏从序列到共可及性的直接映射模型</td>
+<td>Abstract: "Many of these motifs are missed when modeling average accessibility"</td>
+</tr>
+<tr>
+<td>调控语法（方向、间距、定位）未解码</td>
+<td>仅知 motif 存在，不知其空间组织规则</td>
+<td>需要可解释模型来提取规则</td>
+<td>Abstract: "highlights the importance of TF motif orientation, spacing, positioning, and co-occurrence"</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>06 核心思想</h2>
+<h3>1) 表面方法</h3>
+<ul>
+<li>用单分子长读长足迹数据量化每对位置同时可及的概率（共可及性矩阵）。</li>
+<li>训练 ChAI-Net，一个神经网络，以 DNA 序列为输入，预测位点特异的共可及性图谱。</li>
+<li>通过模型解释（如 motif 分析、in silico 突变）提取调控语法。</li>
+</ul>
+<h3>2) 核心洞察</h3>
+<ul>
+<li>共可及性不是平均可及性的简单函数，而是由序列中 TF 基序的组合、方向、间距和定位共同编码的独立调控层。</li>
+<li>深度学习可以从单分子数据中学习到传统平均可及性模型无法捕获的协同结合规则。</li>
+</ul>
+<h3>3) 可能的普适教训 [Analysis]</h3>
+<ul>
+<li>单分子分辨率的数据 + 可解释深度学习 = 解码染色质调控编码的通用范式。</li>
+<li>共可及性可作为连接序列与三维基因组结构的中间表型，其预测模型可能迁移到增强子-启动子互作和 TAD 边界预测。</li>
+</ul>
+<hr />
+<h2>07 方法总览</h2>
+<ul>
+<li><strong>输入</strong>：DNA 序列（位点特异，含 cis-regulatory element 上下文）</li>
+<li><strong>输出</strong>：位点特异的染色质共可及性图谱（每对位置的共可及概率矩阵）</li>
+<li><strong>模块</strong>：
+  1. 数据预处理：从单分子足迹数据中量化共可及性
+  2. ChAI-Net 架构：序列编码器（如 CNN/Transformer）→ 共可及性预测头
+  3. 模型解释：motif 分析、in silico 突变、特征归因</li>
+<li><strong>训练</strong>：监督学习，损失函数基于预测与实测共可及性图谱的差异（具体损失未提供）</li>
+<li><strong>工具</strong>：深度学习框架（未指定）、单分子足迹测序平台</li>
+<li><strong>反馈回路</strong>：模型预测 → 实验验证（in silico 突变）→ 更新调控语法假设</li>
+<li><strong>假设</strong>：共可及性主要由序列决定；单分子足迹数据能反映真实的协同结合状态</li>
+</ul>
+<p><strong>文字流程</strong>：
+1. 对 mESC 进行单分子长读长足迹测序
+2. 在增强子、启动子、CTCF 位点量化成对位置共可及性
+3. 以序列为输入训练 ChAI-Net 预测共可及性图谱
+4. 解释模型权重，提取 motif 组合和空间规则
+5. 通过 in silico 实验验证规则</p>
+<hr />
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>单分子足迹数据量化</td>
+<td>从原始足迹数据计算共可及性矩阵</td>
+<td>提供训练标签，捕获协同信息</td>
+<td>输入：足迹数据；输出：共可及性矩阵</td>
+<td>Abstract: "quantify the frequency with which pairs of positions are simultaneously accessible"</td>
+<td>无此模块则无训练标签，模型无法训练</td>
+</tr>
+<tr>
+<td>ChAI-Net 序列编码器</td>
+<td>从 DNA 序列提取特征</td>
+<td>学习序列-共可及性映射</td>
+<td>输入：one-hot 序列；输出：隐特征</td>
+<td>Abstract: "predicts these locus-specific chromatin co-accessibility maps from the underlying DNA sequence"</td>
+<td>移除后无法预测，预期性能大幅下降（未提供消融数据）</td>
+</tr>
+<tr>
+<td>共可及性预测头</td>
+<td>输出成对位置的可及性概率</td>
+<td>生成图谱</td>
+<td>输入：隐特征；输出：共可及性矩阵</td>
+<td>同上</td>
+<td>移除后无输出，模型失效</td>
+</tr>
+<tr>
+<td>模型解释模块</td>
+<td>提取 motif 组合和空间规则</td>
+<td>揭示调控语法</td>
+<td>输入：训练好的模型；输出：motif 重要性、方向/间距偏好</td>
+<td>Abstract: "Through model interpretation and in silico experiments"</td>
+<td>移除后仅剩黑箱预测，无法提取生物学规则</td>
+</tr>
+<tr>
+<td>In silico 突变实验</td>
+<td>验证 motif 功能</td>
+<td>因果检验</td>
+<td>输入：突变序列；输出：预测共可及性变化</td>
+<td>Abstract: "in silico experiments"</td>
+<td>移除后规则缺乏因果验证</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：所有「移除后影响」均为预期效应，原文未提供系统性消融实验数据。</p>
+</blockquote>
+<hr />
+<h2>09 关键公式符号</h2>
+<p>不适用。原文为预印本摘要，未提供具体数学公式或模型架构细节。</p>
+<hr />
+<h2>10 实验设计与证据链</h2>
+<ul>
+<li><strong>数据集</strong>：小鼠胚胎干细胞（mESC）单分子长读长足迹数据</li>
+<li><strong>规模</strong>：未提供（具体位点数、测序深度未在摘要中给出）</li>
+<li><strong>指标</strong>：未提供（预测准确度、相关性等未在摘要中说明）</li>
+<li><strong>基线</strong>：未提供（未提及与 Basenji/Enformer 等对比）</li>
+<li><strong>预算/骨干/仪器</strong>：未提供</li>
+<li><strong>Oracle 输入</strong>：未提供</li>
+<li><strong>评测协议</strong>：未提供</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的 claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>共可及性量化</td>
+<td>单分子足迹可捕获协同可及性</td>
+<td>与传统 bulk 方法对比（未明确）</td>
+<td>捕获了 bulk 方法遗漏的协同信息</td>
+<td>单分子数据提供新信息层</td>
+<td>未提供定量对比</td>
+<td>Abstract</td>
+</tr>
+<tr>
+<td>ChAI-Net 训练</td>
+<td>序列可预测共可及性</td>
+<td>未提供基线对比</td>
+<td>预测成功（未提供数值）</td>
+<td>序列编码共可及性信息</td>
+<td>未提供准确度上限</td>
+<td>Abstract</td>
+</tr>
+<tr>
+<td>模型解释</td>
+<td>不同元件类型有不同 motif 组合</td>
+<td>增强子 vs 启动子 vs CTCF 位点</td>
+<td>发现独特 motif 组合</td>
+<td>调控语法是元件类型特异的</td>
+<td>未提供统计显著性</td>
+<td>Abstract</td>
+</tr>
+<tr>
+<td>与平均可及性对比</td>
+<td>共可及性模型捕获额外信息</td>
+<td>与平均可及性预测模型对比</td>
+<td>许多 motif 仅在共可及性模型中出现</td>
+<td>共可及性是独立调控层</td>
+<td>未提供定量比较</td>
+<td>Abstract</td>
+</tr>
+<tr>
+<td>In silico 突变</td>
+<td>motif 方向/间距/定位影响共可及性</td>
+<td>突变 vs 野生型序列</td>
+<td>验证了规则（未提供细节）</td>
+<td>调控语法有因果性</td>
+<td>未提供实验验证</td>
+<td>Abstract</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：仅限 mESC 中的增强子、启动子、CTCF 结合位点；不涵盖其他细胞类型或元件类型。</li>
+<li><strong>Oracle/真值输入</strong>：共可及性标签来自单分子足迹数据，其准确性依赖测序技术和量化方法。</li>
+<li><strong>端到端状态</strong>：模型从序列到共可及性图谱的端到端预测，但未验证到三维结构或功能输出。</li>
+<li><strong>算力成本</strong>：未提供。</li>
+<li><strong>历史数据依赖</strong>：依赖 mESC 特定表观状态，跨细胞类型泛化未验证。</li>
+<li><strong>模型依赖</strong>：结果依赖 ChAI-Net 架构和训练策略，不同架构可能得到不同 motif 规则。</li>
+<li><strong>最难情形</strong>：稀疏覆盖区域、重复序列区域、非经典元件类型。</li>
+<li><strong>群体/领域边界</strong>：仅限小鼠；人类或其他物种未验证。</li>
+<li><strong>不确定性</strong>：未提供预测置信区间或误差分析。</li>
+</ul>
+<p><strong>有边界的复述</strong>：ChAI-Net 在 mESC 中能从序列预测位点特异的共可及性图谱，并揭示元件类型特异的 motif 组合和空间规则；这些规则在平均可及性模型中不可见，但其跨细胞类型和物种的泛化性、以及预测的定量精度尚未验证。</p>
+<hr />
+<h2>12 作者自认局限</h2>
+<p>在提供的材料（仅摘要）中未发现作者明确承认的局限。</p>
+<p><strong>作者提及的相关约束</strong>（非正式局限）：
+- 数据仅来自 mESC，作者在 Abstract 末尾提到"as single-molecule genomics is deployed at scale"，暗示当前数据规模有限，跨细胞类型的验证留待未来。</p>
+<hr />
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>共可及性量化的可靠性</td>
+<td>单分子足迹数据噪声高，共可及性矩阵可能受测序深度和比对偏差影响</td>
+<td>若标签有偏，模型学到的规则可能反映技术伪影而非生物学</td>
+<td>用模拟数据或独立技术（如 Hi-C、Micro-C）交叉验证共可及性</td>
+<td>Abstract 未提供 QC 细节</td>
+</tr>
+<tr>
+<td>模型可解释性的因果性</td>
+<td>In silico 突变仅改变序列，可能影响其他未观测特征（如 DNA 形状）</td>
+<td>归因可能混淆</td>
+<td>用正交实验（如 TF 敲低、突变体验证）确认</td>
+<td>Abstract 未提供实验验证</td>
+</tr>
+<tr>
+<td>与平均可及性模型的比较</td>
+<td>未提供定量对比，可能选择性展示有利结果</td>
+<td>无法评估增量贡献</td>
+<td>要求作者提供与 Basenji/Enformer 的定量对比</td>
+<td>Abstract 仅定性描述</td>
+</tr>
+<tr>
+<td>元件类型分类的边界</td>
+<td>增强子/启动子/CTCF 位点的定义可能影响 motif 发现</td>
+<td>分类偏差可能导致规则假象</td>
+<td>用无监督聚类验证元件类型划分</td>
+<td>未提供分类标准</td>
+</tr>
+<tr>
+<td>泛化性声明</td>
+<td>仅 mESC，但 Abstract 暗示"across cellular contexts"</td>
+<td>过度推广风险</td>
+<td>在多种细胞类型和物种上测试</td>
+<td>Abstract 末尾为未来展望</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>14 学到什么</h2>
+<p><strong>Agent 提炼的知识候选</strong></p>
+<ol>
+<li><strong>共可及性作为中间表型</strong>：将单分子足迹数据量化为成对共可及性矩阵，可作为连接序列与三维基因组结构的中间层。可迁移到本课题：用类似方法预测增强子-启动子互作或 TAD 边界。</li>
+<li><strong>可解释深度学习提取调控语法</strong>：通过模型解释（motif 分析、in silico 突变）从黑箱预测中提取可检验的生物学规则。可迁移：用于解析 CTCF/cohesin 结合位点的序列编码。</li>
+<li><strong>元件类型特异的调控规则</strong>：不同 cis-regulatory element 有独特的 motif 组合和空间规则。可迁移：在三维基因组预测中，按元件类型分别建模可能优于统一模型。</li>
+<li><strong>单分子数据 + 深度学习的范式</strong>：单分子分辨率数据为深度学习提供新标签维度。可迁移：将单分子追踪数据（如 DNA 折痕、loop 动态）用于训练三维结构预测模型。</li>
+<li><strong>方向、间距、定位作为特征</strong>：TF motif 的空间组织（方向、间距、定位）是协同结合的关键。可迁移：在预测染色质 loop 或 TAD 边界时，显式编码 motif 空间关系可能提升性能。</li>
+</ol>
+<hr />
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>Basenji / Enformer</strong>（Kelley et al., 2018; Avsec et al., 2021）：预测 bulk 可及性、表达和 Hi-C 的序列模型。本文扩展至共可及性，补充了协同信息维度。</li>
+<li><strong>单分子足迹技术</strong>（如 Smc-seq, 长读长足迹）：与 ATAC-seq 相比提供单分子分辨率，本文首次将其与深度学习结合。</li>
+<li><strong>CTCF/cohesin 介导的 loop 形成</strong>（Rao et al., 2014）：本文对 CTCF 结合位点的共可及性建模，可能为 loop 预测提供序列编码线索。</li>
+<li><strong>TF 协同结合</strong>（如 pioneer factors, 增强子-启动子互作）：本文的 motif 组合分析直接关联 TF cooperativity 研究。</li>
+<li><strong>可解释 AI 在基因组学中的应用</strong>（如 DeepSEA, DeepBind）：本文延续了用模型解释提取调控规则的传统，但首次聚焦共可及性。</li>
+</ul>
+<hr />
+<h2>16 研究想法</h2>
+<p><strong>Agent 生成的研究候选</strong></p>
+<ol>
+<li>
+<p><strong>候选名称</strong>：跨细胞类型的共可及性预测迁移学习
+   - <strong>来源局限/观察</strong>：ChAI-Net 仅限 mESC，泛化性未验证
+   - <strong>核心假设</strong>：共可及性的序列编码在细胞类型间有共享和特异部分
+   - <strong>相对本文的增量</strong>：多细胞类型训练 + 迁移学习，识别通用 vs 细胞类型特异的调控规则
+   - <strong>初步方法</strong>：在多种细胞类型的单分子足迹数据上训练多任务 ChAI-Net，用域适应技术
+   - <strong>验证方式</strong>：跨细胞类型预测准确度对比；motif 规则重叠分析
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：共可及性到三维结构的桥接模型
+   - <strong>来源局限/观察</strong>：本文止步于共可及性预测，未连接三维结构
+   - <strong>核心假设</strong>：共可及性图谱可作为预测增强子-启动子互作和 TAD 边界的中间特征
+   - <strong>相对本文的增量</strong>：将 ChAI-Net 输出作为输入，预测 Hi-C/Micro-C 数据
+   - <strong>初步方法</strong>：两阶段模型：ChAI-Net 预测共可及性 → 图神经网络预测三维互作
+   - <strong>验证方式</strong>：与直接序列→Hi-C 模型对比；消融共可及性特征
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：motif 空间组织规则的因果验证
+   - <strong>来源局限/观察</strong>：in silico 突变缺乏实验验证
+   - <strong>核心假设</strong>：改变 motif 方向/间距/定位会可预测地改变共可及性
+   - <strong>相对本文的增量</strong>：CRISPR 突变 + 单分子足迹验证
+   - <strong>初步方法</strong>：在 mESC 中对预测的关键 motif 进行定向突变，测量共可及性变化
+   - <strong>验证方式</strong>：预测 vs 实测共可及性变化的相关性
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：共可及性预测用于变异效应解读
+   - <strong>来源局限/观察</strong>：本文未涉及遗传变异
+   - <strong>核心假设</strong>：非编码变异通过改变共可及性影响调控功能
+   - <strong>相对本文的增量</strong>：用 ChAI-Net 预测变异对共可及性的影响，关联疾病变异
+   - <strong>初步方法</strong>：对 eQTL/GWAS 变异进行 in silico 突变，比较共可及性预测变化
+   - <strong>验证方式</strong>：与已知调控变异数据库（如 ENCODE, FANTOM）交叉验证
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：单分子足迹数据增强的三维基因组模拟
+   - <strong>来源局限/观察</strong>：本文的共可及性信息未用于物理模拟
+   - <strong>核心假设</strong>：共可及性约束可改进染色质聚合酶链式模拟（如 polymer simulation）的准确性
+   - <strong>相对本文的增量</strong>：将 ChAI-Net 预测的共可及性作为模拟的能量约束
+   - <strong>初步方法</strong>：在 polymer 模拟中引入共可及性偏置势，比较模拟结构与 Hi-C 数据
+   - <strong>验证方式</strong>：模拟结构与实验 Hi-C 的相似度（如 Pearson 相关）
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+</ol></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Abstract only</li>
+<li><strong>Assessment boundary</strong> Claims and evidence presented in the abstract; no methods, figures, or supplementary material were provided</li>
+<li><strong>Shared manuscript claim summary</strong> The authors present ChAI-Net, a deep learning model that predicts locus-specific chromatin co-accessibility maps from DNA sequence in mouse embryonic stem cells, and claim that model interpretation reveals sequence motifs and regulatory grammar (motif orientation, spacing, positioning, co-occurrence) that are specific to co-accessibility and missed by average accessibility models.</li>
+<li><strong>Visible evidence base</strong> Abstract text only; no figures, tables, methods, or supplementary information were supplied</li>
+<li><strong>Missing materials affecting confidence</strong> Full manuscript, methods description, model architecture details, training and evaluation procedures, all figures and tables, supplementary data, and any statistical analyses</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li><strong>Overall assessment</strong> The abstract describes a potentially valuable integration of single-molecule long-read footprinting with deep learning to infer regulatory grammar governing chromatin co-accessibility. The conceptual framing is clear and the potential biological insights are of interest. However, the abstract alone provides insufficient detail to evaluate the technical soundness of the model, the validity of the interpretation methods, or the robustness of the claimed findings. Several claims are made without visible quantitative support, and the relationship between model performance and biological interpretation is not established from the supplied material.</li>
+<li><strong>Who would be interested in the results, and why</strong> Researchers in regulatory genomics, chromatin biology, and computational biology would be interested. Those working on transcription factor cooperativity, cis-regulatory element function, and single-molecule genomics would find the framework relevant. The potential to extract regulatory rules from footprinting data could also appeal to those developing deep learning approaches for genomic sequence interpretation.</li>
+<li><strong>Major strengths</strong> The abstract addresses a timely and important problem, namely understanding coordinated protein-DNA interactions at single-molecule resolution. The combination of an emerging experimental technique with deep learning is conceptually appealing. The claim that co-accessibility modeling reveals motifs missed by average accessibility approaches suggests a potentially novel biological insight. The focus on regulatory grammar features such as motif orientation, spacing, and positioning is well aligned with current questions in gene regulation.</li>
+<li><strong>Major Concerns</strong></li>
+<li><strong>Concern ID</strong> R1-M1</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Technical soundness</li>
+<li><strong>Claim pointer</strong> The authors claim that ChAI-Net predicts locus-specific chromatin co-accessibility maps from DNA sequence.</li>
+<li><strong>Evidence pointer</strong> Abstract only; location not provided</li>
+<li><strong>Concern</strong> No information is provided about model architecture, training data size, input representation, output resolution, or evaluation metrics. It is unclear how co-accessibility maps are defined at the nucleotide level, how many loci were used for training and testing, and how prediction accuracy was quantified.</li>
+<li><strong>Why it matters</strong> Without these details, the core claim that the model successfully learns co-accessibility from sequence cannot be assessed. The biological conclusions depend entirely on the model being accurate and generalizable.</li>
+<li><strong>Resolution test</strong> Provide model architecture, training and test data descriptions, evaluation metrics with performance values, and comparison to appropriate baselines.</li>
+<li><strong>Concern ID</strong> R1-M2</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Evidence strength</li>
+<li><strong>Claim pointer</strong> The authors claim that model interpretation reveals unique combinations of sequence motifs underlying co-accessibility within enhancers, promoters, and CTCF-bound sites, and that many of these motifs are missed when modeling average accessibility.</li>
+<li><strong>Evidence pointer</strong> Abstract only; location not provided</li>
+<li><strong>Concern</strong> No quantitative results are presented to support this claim. There is no indication of how motifs were identified, how significance was determined, how many motifs were found per element type, or how the comparison to average accessibility models was performed.</li>
+<li><strong>Why it matters</strong> This is the central biological finding of the work. Without visible evidence, the claim that co-accessibility modeling uncovers distinct regulatory motifs cannot be evaluated.</li>
+<li><strong>Resolution test</strong> Show motif discovery results with statistical significance, enrichment analyses, and direct comparisons between co-accessibility and average accessibility models.</li>
+<li><strong>Concern ID</strong> R1-M3</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Technical soundness</li>
+<li><strong>Claim pointer</strong> The authors claim that ChAI-Net's regulatory grammar highlights the importance of TF motif orientation, spacing, positioning, and co-occurrence in driving co-accessibility.</li>
+<li><strong>Evidence pointer</strong> Abstract only; location not provided</li>
+<li><strong>Concern</strong> The abstract does not describe how these grammar features were extracted from the model or how their importance was quantified. No in silico experiment details are provided, and no validation of these features against independent biological data is mentioned.</li>
+<li><strong>Why it matters</strong> The claim that specific grammar features drive co-accessibility is strong and requires rigorous demonstration that the model's learned representations correspond to biologically meaningful rules rather than statistical artifacts.</li>
+<li><strong>Resolution test</strong> Describe the interpretation methods, show in silico perturbation results, and validate predicted grammar rules against independent experimental data or known regulatory biology.</li>
+<li><strong>Concern ID</strong> R1-M4</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Reproducibility</li>
+<li><strong>Claim pointer</strong> The authors state that their framework extracts regulatory rules from footprinting data and lays groundwork for studying variation across cellular contexts.</li>
+<li><strong>Evidence pointer</strong> Abstract only; location not provided</li>
+<li><strong>Concern</strong> No information is provided about data availability, code availability, or whether the model and analysis pipelines would be released. The generalizability of the framework to other cell types is asserted but not demonstrated.</li>
+<li><strong>Why it matters</strong> Reproducibility and data sharing are essential for the community to build on this work. The claim of broader applicability requires at least a statement of intent or preliminary evidence.</li>
+<li><strong>Resolution test</strong> Include data and code availability statements, and if possible, show preliminary results from an additional cell type or context.</li>
+<li><strong>Minor Comments</strong></li>
+<li><strong>Concern ID</strong> R1-m1</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Clarity</li>
+<li><strong>Affected element</strong> Abstract wording</li>
+<li><strong>Evidence pointer</strong> Abstract, first sentence</li>
+<li><strong>Issue</strong> The phrase "regulation of chromatin accessibility is critical for cell function and identity" is generic and does not specify the gap this work addresses.</li>
+<li><strong>Required correction</strong> Rephrase to state the specific unresolved question about coordinated accessibility that motivates the study.</li>
+<li><strong>Concern ID</strong> R1-m2</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Terminology</li>
+<li><strong>Affected element</strong> "co-accessibility maps"</li>
+<li><strong>Evidence pointer</strong> Abstract, methods description</li>
+<li><strong>Issue</strong> The term "co-accessibility maps" is not defined in the abstract. It is unclear whether this refers to pairwise correlations, joint probabilities, or another metric.</li>
+<li><strong>Required correction</strong> Define co-accessibility explicitly, including the mathematical or operational definition used.</li>
+<li><strong>Concern ID</strong> R1-m3</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Completeness</li>
+<li><strong>Affected element</strong> Model comparison</li>
+<li><strong>Evidence pointer</strong> Abstract, claim about motifs missed by average accessibility</li>
+<li><strong>Issue</strong> The abstract does not specify what "average accessibility" model was used for comparison.</li>
+<li><strong>Required correction</strong> Name the baseline model and briefly describe its architecture or approach.</li>
+<li><strong>Concern ID</strong> R1-m4</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Scope</li>
+<li><strong>Affected element</strong> "different types of cis-regulatory elements"</li>
+<li><strong>Evidence pointer</strong> Abstract, first paragraph</li>
+<li><strong>Issue</strong> Only three element types are mentioned (enhancers, promoters, CTCF-bound sites), which may not represent the full diversity of cis-regulatory elements.</li>
+<li><strong>Required correction</strong> Clarify whether these three types are the complete set analyzed or a subset, and justify the selection.</li>
+<li><strong>Technical failings that need to be addressed before the case is established</strong> R1-M1, R1-M2, R1-M3. The abstract does not provide sufficient technical detail to establish that the model works, that the interpretation is valid, or that the biological claims are supported. These are foundational issues that must be resolved before the scientific case can be assessed.</li>
+<li><strong>Assessment against Nature-style criteria</strong> Originality is potentially high, as the combination of single-molecule footprinting with deep learning for co-accessibility modeling appears novel. Scientific importance is potentially significant given the relevance to transcription factor cooperativity and cis-regulatory element function. Interdisciplinary readership is plausible, spanning genomics, computational biology, and molecular biology. Technical soundness cannot be assessed from the abstract alone, which is a critical limitation. Readability for nonspecialists is adequate, though some terms such as "co-accessibility maps" and "regulatory grammar" would benefit from clearer definition.</li>
+<li><strong>Recommendation posture</strong> Currently not established from the provided evidence. The abstract presents an interesting concept and promising direction, but the absence of methods, results, and validation details means the core claims cannot be evaluated. A full manuscript with detailed methods, performance metrics, and interpretation validation would be required to assess whether the case is made.</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>The claim that ChAI-Net successfully predicts co-accessibility from sequence is unsupported without model performance data.</li>
+<li>The claim that co-accessibility modeling reveals motifs missed by average accessibility models is unsupported without comparative results.</li>
+<li>The claim that motif orientation, spacing, positioning, and co-occurrence drive co-accessibility is unsupported without interpretation and validation details.</li>
+<li>The claim that the framework expands understanding of TF cooperativity is an extrapolation not directly supported by the abstract.</li>
+<li>The claim that the framework lays groundwork for studying variation across cellular contexts is speculative without demonstration.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{
+  "source": "arxiv",
+  "source_id": "2611.03617v1",
+  "title": "Tracing the Scientific Discovery Capacity of LLMs to Their Training Data",
+  "doi": "",
+  "abstract": "Large language models (LLMs) show growing promise for scientific discovery, yet basic questions remain about what enables reliable discovery. How can we trace the scientific discovery capacity of LLMs to their training data? We study this question as one of missing probability mass and develop a theoretical account in which monofacts-the facts observed once during training-set the discovery capacity. In materials science and regulatory genomics, we directly manipulate monofact rates in training sets and find that more monofacts consistently yield more discoveries across two open-weight model families, sampling strategies, and reasoning budgets. Further experiments show the relationship cannot be explained by training-set diversity alone and can transfer across scientific domains when paired with in-domain data. Together, our results identify monofact rate in training data as a key factor governing discoveries in language models.",
+  "authors": [
+    "Arda Uzunoglu",
+    "Mahler Revsine",
+    "Michael Schatz",
+    "Benjamin Van Durme",
+    "Mehrdad Farajtabar",
+    "Daniel Khashabi",
+    "Eric Nalisnick"
+  ],
+  "published_date": "2026-11-02T18:50:54Z",
+  "updated_date": "2026-11-02T18:50:54Z",
+  "journal": "",
+  "category": "cs.CL, cs.AI",
+  "landing_url": "https://arxiv.org/abs/2611.03617v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.03617v1",
+  "pdf_path": "",
+  "pdf_downloaded": false,
+  "query": "(all:\"3D genome\" OR all:\"three-dimensional genome\" OR all:\"genome organization\" OR all:\"genome architecture\" OR all:\"genome folding\" OR all:\"nuclear organization\" OR all:\"nuclear architecture\" OR all:\"chromatin organization\" OR all:\"chromatin architecture\" OR all:\"chromatin conformation\" OR all:\"chromatin topology\" OR all:\"chromatin structure\" OR all:\"chromatin loop\" OR all:\"chromatin interaction\" OR all:\"chromatin domain\" OR all:\"topologically associating domain\" OR all:\"A/B compartment\" OR all:\"chromosome conformation capture\" OR all:\"Hi-C\" OR all:HiChIP OR all:\"loop extrusion\" OR all:\"loop-extrusion\" OR all:CTCF OR all:cohesin OR all:\"cis-regulatory\" OR all:\"cis-regulatory element\" OR all:\"regulatory element\" OR all:\"regulatory genomics\" OR all:\"chromatin accessibility\" OR all:\"enhancer-promoter\" OR all:\"promoter-enhancer\") AND (all:\"deep learning\" OR all:\"machine learning\" OR all:\"neural network\" OR all:\"graph neural network\" OR all:\"convolutional neural network\" OR all:transformer OR all:\"language model\" OR all:\"foundation model\" OR all:\"diffusion model\" OR all:generative OR all:\"flow matching\" OR all:alphafold OR all:esmfold OR all:rosetta OR all:\"molecular dynamics\" OR all:simulation OR all:docking)\n",
+  "version": "1",
+  "keywords": [
+    "cs.CL",
+    "cs.AI"
+  ],
+  "extra": {
+    "entry_id": "http://arxiv.org/abs/2611.03617v1",
+    "raw_categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "journal_ref": ""
+  }
+}

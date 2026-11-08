@@ -1,0 +1,202 @@
+{
+  "identity": {
+    "pmid": "42990246",
+    "doi": "10.64898/2026.10.12.758580",
+    "title": "A high-resolution protein-RNA binding atlas for structure-aware interaction prediction and post-transcriptional regulatory modeling."
+  },
+  "content": {
+    "abstract": "RNA-binding proteins (RBPs) control post-transcriptional gene expression by regulating RNA processing, localization, stability, and translation. However, our understanding of RNA regulation remains limited by the resolution, scale, and uniformity of available RBP binding maps. Here we introduce eclair CLIP (ecCLIP), a high-throughput CLIP-seq platform that combines endogenous protein tagging for uniform affinity capture with ligation-free library preparation to generate high-resolution RNA-protein binding profiles. We applied ecCLIP to 67 endogenously tagged RBPs in HEK293T cells, generating a high-quality transcriptome-scale atlas that recovered known binding preferences and captured post-transcriptional regulons linked to RNA half-life. To test the utility of the atlas, we incorporated ecCLIP into Borzuki, a Borzoi-derived sequence-to-function model trained on complementary RNA degradation, expression, CLIP, and Perturb-seq data. Inclusion of ecCLIP data improved RNA half-life prediction and assessment of 3 (') UTR variant effects on RNA stability, demonstrating that our atlas helps capture RNA dynamics. To directly model the cis-regulatory grammar underlying these RBP-RNA interactions, we developed Pythia, a structure-aware neural network architecture that incorporates context-free grammar-inspired fixed convolutions to explicitly encode RNA base-pairing features. Pythia predicted RBP binding from sequence and structural context and decomposed predictions into sequence- and structure-dependent components. We tested this decomposition for five RBPs using massively parallel reporter CLIP (MPRC) binding assays in cells, using synthetic RNA libraries containing mutations designed to preserve or disrupt predicted RNA structures across nominated binding sites. We used the same MPRC strategy to confirm allele-specific binding effects for variants prioritized by Pythia. Together, ecCLIP and Pythia provide a resource for structure-aware decoding of RNA-protein interaction grammar and interpretation of post-transcriptional regulatory variation.",
+    "keywords": [],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article",
+      "Preprint"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Karimzadeh, Mehran",
+        "Fish, Lisa",
+        "Karner, Heather",
+        "Linder, Johannes",
+        "Emadi, Ali",
+        "Hernandez-Corchado, Aldo",
+        "Smaili, Fatima Zohra",
+        "Ghavami, Khashayar",
+        "Stewart, Edna S",
+        "Kelley, David",
+        "Wang, Bo",
+        "Najafabadi, Hamed Shateri",
+        "Leonetti, Manuel D",
+        "Goodarzi, Hani"
+      ],
+      "short_names": [
+        "Karimzadeh M",
+        "Fish L",
+        "Karner H",
+        "Linder J",
+        "Emadi A",
+        "Hernandez-Corchado A",
+        "Smaili FZ",
+        "Ghavami K",
+        "Stewart ES",
+        "Kelley D",
+        "Wang B",
+        "Najafabadi HS",
+        "Leonetti MD",
+        "Goodarzi H"
+      ],
+      "auids": [
+        "ORCID: 0000-0002-7324-6074",
+        "ORCID: 0000-0001-9184-0512",
+        "ORCID: 0000-0001-6546-2319",
+        "ORCID: 0000-0003-2134-7292",
+        "ORCID: 0000-0002-2224-8854",
+        "ORCID: 0000-0001-7782-3548",
+        "ORCID: 0000-0003-2735-4231",
+        "ORCID: 0000-0002-4881-405X",
+        "ORCID: 0000-0002-9648-8949"
+      ],
+      "affiliations": []
+    },
+    "xml": [
+      {
+        "full_name": "Karimzadeh, Mehran",
+        "short_name": "Karimzadeh M",
+        "identifiers": [
+          "0000-0002-7324-6074"
+        ],
+        "affiliations": []
+      },
+      {
+        "full_name": "Fish, Lisa",
+        "short_name": "Fish L",
+        "identifiers": [
+          "0000-0001-9184-0512"
+        ],
+        "affiliations": []
+      },
+      {
+        "full_name": "Karner, Heather",
+        "short_name": "Karner H",
+        "identifiers": [
+          "0000-0001-6546-2319"
+        ],
+        "affiliations": []
+      },
+      {
+        "full_name": "Linder, Johannes",
+        "short_name": "Linder J",
+        "identifiers": [
+          "0000-0003-2134-7292"
+        ],
+        "affiliations": []
+      },
+      {
+        "full_name": "Emadi, Ali",
+        "short_name": "Emadi A",
+        "identifiers": [
+          "0000-0002-2224-8854"
+        ],
+        "affiliations": []
+      },
+      {
+        "full_name": "Hernandez-Corchado, Aldo",
+        "short_name": "Hernandez-Corchado A",
+        "identifiers": [],
+        "affiliations": []
+      },
+      {
+        "full_name": "Smaili, Fatima Zohra",
+        "short_name": "Smaili FZ",
+        "identifiers": [],
+        "affiliations": []
+      },
+      {
+        "full_name": "Ghavami, Khashayar",
+        "short_name": "Ghavami K",
+        "identifiers": [],
+        "affiliations": []
+      },
+      {
+        "full_name": "Stewart, Edna S",
+        "short_name": "Stewart ES",
+        "identifiers": [],
+        "affiliations": []
+      },
+      {
+        "full_name": "Kelley, David",
+        "short_name": "Kelley D",
+        "identifiers": [
+          "0000-0001-7782-3548"
+        ],
+        "affiliations": []
+      },
+      {
+        "full_name": "Wang, Bo",
+        "short_name": "Wang B",
+        "identifiers": [],
+        "affiliations": []
+      },
+      {
+        "full_name": "Najafabadi, Hamed Shateri",
+        "short_name": "Najafabadi HS",
+        "identifiers": [
+          "0000-0003-2735-4231"
+        ],
+        "affiliations": []
+      },
+      {
+        "full_name": "Leonetti, Manuel D",
+        "short_name": "Leonetti MD",
+        "identifiers": [
+          "0000-0002-4881-405X"
+        ],
+        "affiliations": []
+      },
+      {
+        "full_name": "Goodarzi, Hani",
+        "short_name": "Goodarzi H",
+        "identifiers": [
+          "0000-0002-9648-8949"
+        ],
+        "affiliations": []
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "bioRxiv : the preprint server for biology"
+    ],
+    "journal_abbrev": [
+      "bioRxiv"
+    ],
+    "pub_date": "2026 Oct 29",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article",
+      "Preprint"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/11/06 11:33",
+    "fetched_at": "2026-11-08 11:00:01"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42990246"
+    ],
+    "review": [
+      "42990246"
+    ],
+    "pmc": [
+      "13733719"
+    ],
+    "entrez": {},
+    "external": [],
+    "text_mined": []
+  }
+}

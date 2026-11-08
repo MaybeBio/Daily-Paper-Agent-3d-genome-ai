@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PSHIC reveals allele-specific chromatin organization by phasing-free structural modeling. · 三维基因组 × AI</title>
+  <link rel="stylesheet" href="/Daily-Paper-Agent-3d-genome-ai/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/Daily-Paper-Agent-3d-genome-ai/">三维基因组 × AI</a>
+    <nav>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/">本周</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/archive.html">归档</a>
+      <a href="/Daily-Paper-Agent-3d-genome-ai/search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+<article class="paper">
+  <div class="paper-head">
+    <span class="score score-high">9</span>
+    <div>
+      <h1>PSHIC reveals allele-specific chromatin organization by phasing-free structural modeling.</h1>
+      <div class="meta">Liu, Wei; Wang, Xueying; Zhang, Yuwei; Pan, Guangze; Li, Shuaicheng</div>
+      <div class="meta muted">
+        
+        <span class="journal">Nature communications</span>
+        · 2026-11-03
+         · 全文(pmc)
+         · <a href="https://pubmed.ncbi.nlm.nih.gov/42971985/">原文</a>
+      </div>
+      <p class="one-liner">该文提出PSHIC，通过无分型结构建模从聚合Hi-C数据中解析等位基因特异的染色质三维组织，直接命中三维基因组结构建模与AI/计算方法核心，并涉及X失活、印记等染色质调控特征。</p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>摘要</h2>
+    <div class="md">Resolving the distinct 3D chromatin architectures of parental chromosomes is critical for understanding diploid genome function, but many haplotype-resolved Hi-C contact-map methods remain constrained by their reliance on phased single-nucleotide polymorphisms (SNPs). This dependency treats reconstruction as a simple tag-and-sort problem, leading to massive data loss, extreme fragility to phasing errors, and inapplicability in SNP-sparse contexts. We introduce PSHIC, a computational framework that reveals this hidden chromatin organization by employing phasing-free structural modeling, directly from aggregated Hi-C data. PSHIC models chromosomes as continuous manifolds and solves the inverse problem of finding two homolog-specific structures whose combined contacts best explain the observed data. Comprehensive simulations across varying sequencing depths, SNP densities, and phasing error rates demonstrate that PSHIC consistently outperforms established methods, achieving superior accuracy (SCC &gt;/= 0.987), loop detection (F(1)&gt;/= 0.952), and structural fidelity (DER &lt;/= 0.04). Applications to real human and mouse Hi-C datasets show that PSHIC recovers known allele-associated features in X-chromosome inactivation, genomic imprinting, and regulatory networks. Results align with orthogonal experimental approaches including 3D DNA-FISH, 4C-seq, and ChIA-PET. PSHIC democratizes diploid chromatin analysis by enabling robust reconstruction in non-model organisms and other SNP-limited or poorly phased contexts.</div>
+  </section>
+  
+  
+  <section>
+    <h2>摘要翻译</h2>
+    <div class="md">解析亲本染色体的不同三维染色质结构对于理解二倍体基因组功能至关重要，但许多基于单倍型解析的Hi-C接触图方法仍受限于其对分相单核苷酸多态性（SNPs）的依赖。这种依赖性将重建视为简单的标签-分选问题，导致大量数据丢失、对分相错误极度脆弱，且在SNP稀疏情境下不适用。我们引入PSHIC，一种计算框架，通过采用无分相结构建模，直接从聚合的Hi-C数据中揭示这种隐藏的染色质组织。PSHIC将染色体建模为连续流形，并解决寻找两个同源特异性结构的逆问题，其组合接触最能解释观察到的数据。跨不同测序深度、SNP密度和分相错误率的综合模拟表明，PSHIC始终优于既有方法，实现更高的准确性（SCC &gt;/= 0.987）、环检测（F(1)&gt;/= 0.952）和结构保真度（DER &lt;/= 0.04）。应用于真实人类和小鼠Hi-C数据集显示，PSHIC恢复了X染色体失活、基因组印记和调控网络中已知的等位基因相关特征。结果与正交实验方法（包括3D DNA-FISH、4C-seq和ChIA-PET）一致。PSHIC通过实现非模式生物及其他SNP有限或分相不佳情境下的稳健重建，使二倍体染色质分析普及化。</div>
+  </section>
+  
+  
+  <section>
+    <h2>Paper Card</h2>
+    <div class="md"><h2>01 基本信息</h2>
+<ul>
+<li><strong>标题</strong>：PSHIC reveals allele-specific chromatin organization by phasing-free structural modeling</li>
+<li><strong>作者</strong>：Liu, Wei; Wang, Xueying; Zhang, Yuwei; Li, Shuaicheng（通讯作者）</li>
+<li><strong>单位</strong>：未提供（Li Shuaicheng 所属机构未在摘要中列出）</li>
+<li><strong>期刊/平台</strong>：Nature Communications</li>
+<li><strong>年份</strong>：2026</li>
+<li><strong>论文类型</strong>：方法学（计算生物学/生物信息学）</li>
+<li><strong>领域</strong>：三维基因组学、Hi-C 数据分析、等位基因特异性染色质结构建模</li>
+<li><strong>关键词</strong>：phasing-free、allele-specific、Hi-C、structural modeling、manifold learning、X-chromosome inactivation、genomic imprinting</li>
+<li><strong>DOI/arXiv</strong>：10.1038/s41467-026-78098-4</li>
+<li><strong>代码</strong>：未提供</li>
+<li><strong>数据</strong>：公开数据（GM12878 in situ Hi-C: GSE63525；小鼠 Patski 细胞 DNase Hi-C: GSM2863686, GSM2863688, GSM2863689；单细胞 Hi-C: GSM3691018；Dip-C 参考结构: GSM3271347）</li>
+<li><strong>阅读日期</strong>：未提供</li>
+<li><strong>在课题方向中的位置</strong>：本文属于「三维基因组 × 物理/几何建模」交叉方向，提出一种无需 phasing 的等位基因特异性染色质结构解析方法，将二倍体 Hi-C 反卷积问题转化为流形嵌入与逆问题求解，是该方向中首个直接输出等位基因特异性 contact maps 和 3D 结构的 phasing-free 框架。</li>
+</ul>
+<h2>02 一句话总结</h2>
+<p>PSHIC 将二倍体 Hi-C 观测矩阵建模为两条同源染色体 contact maps 之和，通过流形学习（manifold learning）与幂律距离-接触转换函数，在无需 SNP phasing 的前提下同时求解两条同源染色体的 3D 结构和等位基因特异性 contact maps，并在模拟和真实数据（X 失活、基因组印记、RNAPII 调控网络）中验证了其准确性与生物学可解释性。</p>
+<h2>03 研究问题</h2>
+<ul>
+<li><strong>具体问题</strong>：如何在不依赖 SNP phasing 的情况下，从混合的二倍体 Hi-C 数据中解析出两条同源染色体各自的 3D 结构和等位基因特异性 contact maps？</li>
+<li><strong>为什么重要</strong>：等位基因特异性染色质组织（如 X 染色体失活、基因组印记、等位基因特异性增强子-启动子互作）是二倍体基因组功能的核心，但传统方法依赖高质量 phased SNP 数据，在非模式生物、低杂合度样本或缺乏 trio 信息的场景中不可用。</li>
+<li><strong>现有方法不足</strong>：</li>
+<li>SNP-based 方法（allele-certain、mate-rescue、ASHIC）依赖 phasing 质量，数据利用率低（大量 reads 因无法分配等位基因而被丢弃），对 phasing 错误极度敏感；</li>
+<li>Diploid-PASTIS 虽为 phasing-free，但仅输出结构而非 contact maps，且精度有限；</li>
+<li>现有方法将问题视为"标签-排序"（tag-and-sort），缺乏对染色质物理连续性和全局几何约束的建模。</li>
+<li><strong>精确研究问题（Can ... ?）</strong>：Can a phasing-free structural modeling approach, which treats diploid Hi-C as a superposition of two homologous chromosome contact maps and leverages manifold geometry and polymer physics constraints, accurately recover allele-specific chromatin organization without any SNP information?</li>
+</ul>
+<h2>04 背景与发展脉络</h2>
+<blockquote>
+<p>注：此脉络基于本文框架整理，未经外部系统核验。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>代表方法</th>
+<th>核心思路</th>
+<th>优点</th>
+<th>局限</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>群体平均结构</td>
+<td>Hi-C 3D 建模（如 PASTIS、MEGABASE）</td>
+<td>从聚合 contact map 重建单一 3D 结构</td>
+<td>计算成熟、可解释</td>
+<td>忽略等位基因差异，混合信号</td>
+</tr>
+<tr>
+<td>SNP-based 等位基因解析</td>
+<td>allele-certain、mate-rescue</td>
+<td>利用 phased SNP 将 reads 分配到亲本</td>
+<td>直接、直观</td>
+<td>数据丢失严重（&gt;90% reads 无法分配）、对 phasing 错误敏感</td>
+</tr>
+<tr>
+<td>概率模型</td>
+<td>ASHIC-PM / ASHIC-ZIPM</td>
+<td>层次贝叶斯建模所有 read 类别</td>
+<td>数据利用率提高</td>
+<td>仍依赖 phased SNP 作为 anchor，phasing 错误时性能崩溃</td>
+</tr>
+<tr>
+<td>Phasing-free 结构推断</td>
+<td>Diploid-PASTIS</td>
+<td>从聚合矩阵直接推断两条同源结构</td>
+<td>无需 SNP</td>
+<td>精度有限，不输出 contact maps，无法直接用于下游 loop/TAD 分析</td>
+</tr>
+<tr>
+<td><strong>本文（PSHIC）</strong></td>
+<td><strong>流形嵌入 + 幂律转换 + 正则化逆问题</strong></td>
+<td><strong>将二倍体 Hi-C 分解为两条同源 contact maps 之和，联合优化结构与转换参数</strong></td>
+<td><strong>完全 phasing-free、输出 maps + 结构、对 phasing 错误免疫、数据利用率 100%</strong></td>
+<td><strong>依赖流形假设与幂律模型；分辨率受限于 bin size</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>本文主张的位置</strong>：PSHIC 填补了 phasing-free 方法在"输出等位基因特异性 contact maps"这一关键空白，将问题从"标签分配"提升为"全局几何逆问题"，是该方向的方法论升级。</p>
+<h2>05 核心痛点</h2>
+<table>
+<thead>
+<tr>
+<th>痛点</th>
+<th>表现</th>
+<th>成因或作者解释</th>
+<th>文中证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SNP 依赖</td>
+<td>非模式生物、低杂合度样本无法进行等位基因分析</td>
+<td>现有方法将 SNP 作为唯一等位基因信息来源</td>
+<td>Introduction 第 3 段："most SNP-driven haplotype-resolved contact-map reconstruction methods..."</td>
+</tr>
+<tr>
+<td>数据大量丢失</td>
+<td>高达 94.1% 的 Hi-C reads 因两端无法同时匹配 SNP 而被丢弃</td>
+<td>双端 reads 同时覆盖 SNP 的概率低</td>
+<td>Introduction 第 3 段："up to 94.1% of Hi-C read pairs are both-end allele-ambiguous"</td>
+</tr>
+<tr>
+<td>Phasing 错误敏感</td>
+<td>0.05% 的 phasing 错误即可导致性能显著下降</td>
+<td>错误分配的 reads 产生系统性偏差</td>
+<td>Results "PSHIC is insensitive to SNP phasing errors" 节</td>
+</tr>
+<tr>
+<td>无法输出 contact maps</td>
+<td>Diploid-PASTIS 仅输出结构，无法直接用于 loop/TAD 等下游分析</td>
+<td>结构推断与 map 重建未联合建模</td>
+<td>Discussion："Diploid-PASTIS...outputs homolog-specific 3D structures rather than allele-specific contact maps directly"</td>
+</tr>
+<tr>
+<td>局部决策 vs 全局几何</td>
+<td>tag-and-sort 方法忽略染色质的物理连续性和全局几何约束</td>
+<td>将问题简化为局部标签分配</td>
+<td>Introduction 第 3 段："treats reconstruction as a simple tag-and-sort problem"</td>
+</tr>
+</tbody>
+</table>
+<h2>06 核心思想</h2>
+<p><strong>1) 表面方法</strong>：
+PSHIC 将观测到的二倍体 Hi-C 矩阵 C_obs 分解为两条同源染色体 contact maps（C_m + C_p）之和，每条同源染色体被嵌入到一个 k 维流形（manifold）中，通过幂律距离-接触转换函数（λ_ij = β·d_ij^(−α)）将流形上的欧氏距离映射为接触概率，然后联合优化两条同源染色体的嵌入坐标和转换参数（α, β），使预测的混合 contact map 与观测数据最佳匹配。</p>
+<p><strong>2) 核心洞察</strong>：
+- <strong>逆问题视角</strong>：将等位基因特异性解析从"标签分配"（需要 SNP）重构为"信号分解"（不需要 SNP）——给定混合信号，找到两个分量信号及其对应的几何结构，使二者之和最优解释观测数据。
+- <strong>全局约束替代局部标签</strong>：流形假设（染色质是连续的低维几何对象）和物理正则化（同源染色体结构相似性、空间体积约束）提供了不依赖 SNP 的等位基因区分信号。
+- <strong>多起始点 + 谱聚类</strong>：由于问题非凸，PSHIC 通过多次随机初始化探索解空间，并利用谱聚类筛选有效解，保证解的稳定性和生物学一致性。</p>
+<p><strong>3) 可能的普适教训 [Analysis]</strong>：
+- 在生物信息学中，当"标签"不可得时，可以尝试将问题转化为"信号分解 + 物理约束"的逆问题，利用全局几何/物理先验替代局部标签信息。
+- 流形学习（manifold learning）不仅适用于降维可视化，也可以作为生成模型（generative model）的一部分，直接参与逆问题求解。
+- 多起始点 + 聚类筛选是处理非凸优化问题的实用策略，尤其适用于生物数据中缺乏唯一 ground truth 的场景。</p>
+<h2>07 方法总览</h2>
+<ul>
+<li><strong>输入</strong>：二倍体 Hi-C contact matrix（C_obs，经 KR 归一化）、bin 数量 n、嵌入维度 k、随机初始化次数 S</li>
+<li><strong>输出</strong>：两条同源染色体的 contact maps（C_m, C_p）、3D 结构坐标（X_m, X_p）、转换函数参数（α, β）</li>
+<li><strong>模块</strong>：
+  1. <strong>预处理</strong>：KR 归一化；去除低覆盖度 outlier bins（row-sum &lt; μ − 2σ）
+  2. <strong>初始化</strong>：C_θ = C_obs/2 + ξ（ξ ~ U(0,1)），通过逆转换函数 D_θ = (β/(C_θ+1))^(1/α) 计算距离矩阵，经典 MDS 得到初始嵌入
+  3. <strong>优化</strong>：迭代更新 X_m, X_p, β（内层循环），再更新 α, β（外层循环），最小化对数压缩的平方误差损失
+  4. <strong>后处理</strong>：谱聚类筛选有效解，去除同一 trial 中两条 map 落入同一聚类的无效解；对有效解取平均</li>
+<li><strong>损失函数</strong>：L = L_stress + λ₁·L_consistency + λ₂·L_volume</li>
+<li>L_stress：对数压缩的预测-观测接触计数平方误差</li>
+<li>L_consistency：同源染色体近基因组距离 bins 的空间距离一致性正则化</li>
+<li>L_volume：空间体积正则化（惩罚超出球体边界的坐标）</li>
+<li><strong>可选模式</strong>：inter-homolog contact modeling mode，显式加入 C_inter 分量（适用于减数分裂等高 inter-homolog 接触场景）</li>
+<li><strong>工具</strong>：Python 3.8.10, NumPy, scikit-learn, PyTorch（GPU 加速）；Juicer v1.6 用于 Hi-C 预处理；HiCRep、Fit-Hi-C 用于评估</li>
+<li><strong>文字流程</strong>：C_obs → 预处理 → 多次随机初始化 → 迭代优化（内层结构 + 外层参数）→ 谱聚类筛选 → 平均 → 输出 C_m, C_p, X_m, X_p</li>
+</ul>
+<h2>08 核心模块拆解</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>为何需要</th>
+<th>输入输出</th>
+<th>支撑证据</th>
+<th>移除后的已知或预期影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>KR 归一化 + outlier 去除</td>
+<td>标准化 contact matrix，去除低质量 bins</td>
+<td>Hi-C 数据存在系统性偏差和低覆盖区域</td>
+<td>输入：raw C_obs；输出：归一化 C_obs</td>
+<td>Methods "Learning Hi-C manifold embedding" 节</td>
+<td>预期：低覆盖 bins 引入噪声，降低 SCC 和 F1</td>
+</tr>
+<tr>
+<td>随机初始化 + MDS</td>
+<td>生成初始嵌入，打破对称性</td>
+<td>问题非凸，需要多起始点探索</td>
+<td>输入：C_obs, k；输出：初始 X_m, X_p</td>
+<td>Methods "Learning Hi-C manifold embedding" 节</td>
+<td>预期：单一初始化可能陷入局部最优，导致两条 map 无法分离</td>
+</tr>
+<tr>
+<td>幂律转换函数</td>
+<td>将距离映射为接触概率</td>
+<td>物理上接触频率与空间距离呈幂律关系</td>
+<td>输入：d_ij, α, β；输出：λ_ij</td>
+<td>Methods 公式 (4)</td>
+<td>预期：错误 α 导致距离-接触关系失真，降低结构保真度</td>
+</tr>
+<tr>
+<td>对数压缩损失</td>
+<td>平衡近/远距离 bins 的贡献</td>
+<td>原始平方误差被高接触 counts 主导</td>
+<td>输入：C_pred, C_obs；输出：L_stress</td>
+<td>Methods 公式 (7)</td>
+<td>预期：移除后近对角线 bins 主导损失，远距离结构信息丢失</td>
+</tr>
+<tr>
+<td>一致性正则化</td>
+<td>约束同源染色体近基因组距离 bins 空间距离相似</td>
+<td>同源染色体在局部应具有相似的空间折叠</td>
+<td>输入：X_m, X_p；输出：L_consistency</td>
+<td>Methods 公式 (8)</td>
+<td>预期：移除后可能出现一条染色体过度紧凑、另一条过度分散的非物理解</td>
+</tr>
+<tr>
+<td>体积正则化</td>
+<td>惩罚超出球体边界的坐标</td>
+<td>防止结构无限膨胀</td>
+<td>输入：X_θ；输出：L_volume</td>
+<td>Methods 公式 (9)</td>
+<td>预期：移除后结构可能发散，β 估计不稳定</td>
+</tr>
+<tr>
+<td>谱聚类筛选</td>
+<td>区分有效/无效解</td>
+<td>部分 trial 可能收敛到两条 map 相似的退化解</td>
+<td>输入：所有 trial 的 C_m, C_p；输出：有效 trial 集合 V</td>
+<td>Methods "Learning Hi-C manifold embedding" 节</td>
+<td>预期：移除后退化解污染平均结果，降低等位基因特异性分辨率</td>
+</tr>
+<tr>
+<td>Inter-homolog 模式</td>
+<td>显式建模同源染色体间接触</td>
+<td>减数分裂等场景 inter-homolog 接触显著</td>
+<td>输入：C_obs；输出：C_m + C_p + C_inter</td>
+<td>Methods "Optional inter-homolog contact modeling mode" 节</td>
+<td>预期：默认模式在 inter-homolog 高场景下产生系统性偏差</td>
+</tr>
+</tbody>
+</table>
+<h2>09 关键公式符号</h2>
+<p><strong>1) 观测模型（公式 2）</strong>：
+C_obs = Σ_{θ∈{m,p}} C_θ
+- C_obs：观测到的二倍体 Hi-C contact matrix
+- C_m, C_p：母源、父源同源染色体的 contact matrices</p>
+<p><strong>2) 幂律距离-接触转换（公式 4）</strong>：
+λ_ij(θ) = E[f_ij(X_θ)] = β · d_ij(X_θ)^(−α)
+- λ_ij(θ)：同源染色体 θ 上 bin i、j 之间的期望接触频率
+- d_ij(X_θ) = ‖x_θ,i − x_θ,j‖₂：嵌入空间中 bin i、j 的欧氏距离
+- α：幂律指数（初始化为 3，基于聚合物物理理论）
+- β：比例常数（反映测序深度、实验条件）</p>
+<p><strong>3) 损失函数（公式 7-9）</strong>：
+L = L_stress + λ₁·L_consistency + λ₂·L_volume</p>
+<p>L_stress = ‖ log(1 + (Σ_θ β·d_ij(X_θ)^(−α) − C_obs,ij)²) ‖₂</p>
+<p>L_consistency = (1/R) Σ_{r=1}^{R} (1/r²) ‖ (|diag_r(D_m) − diag_r(D_p)|) / ((diag_r(D_m) + diag_r(D_p))/2) ‖₂</p>
+<p>L_volume = Σ_θ Σ_{u=1}^{n} [max(0, ‖x_θ,u‖₂ − l)]²</p>
+<ul>
+<li>diag_r(·)：提取距离矩阵的第 r 条对角线（对应基因组距离为 r 的 bin 对）</li>
+<li>R：考虑的对角线范围（短程基因组距离）</li>
+<li>l：球体半径边界</li>
+<li>λ₁, λ₂：正则化权重</li>
+</ul>
+<p><strong>4) 初始化（公式 11）</strong>：
+D_θ = (β / (C_θ + 1))^(1/α)
+- 通过逆转换从初始 contact map 估计距离矩阵，再进行 MDS</p>
+<h2>10 实验设计与证据链</h2>
+<ul>
+<li><strong>数据集</strong>：</li>
+<li>模拟数据：基于 Dip-C 得到的 GM12878 单细胞 3D 结构（GSM3271347）生成 ground-truth 二倍体 contact maps，再模拟 Poisson 采样</li>
+<li>真实数据：小鼠 Patski 细胞 DNase Hi-C（GSM2863686, GSM2863688, GSM2863689）；人 GM12878 in situ Hi-C（GSE63525）；小鼠早期胚胎单细胞 Hi-C（GSM3691018）</li>
+<li><strong>规模</strong>：模拟中每个参数设置 10 个重复；真实数据覆盖 X 染色体、7 号染色体、11 号、12 号染色体区域</li>
+<li><strong>指标</strong>：SCC（HiCRep）、F1（loop 检测）、DER（距离误差率）</li>
+<li><strong>基线</strong>：Diploid-PASTIS、ASHIC-PM、ASHIC-ZIPM、allele-certain、mate-rescue</li>
+<li><strong>评测协议</strong>：模拟中所有方法共享相同的幂律转换函数和 α=3，确保公平比较；真实数据中与 ChIP-seq、4C-seq、3D-FISH、ChIA-PET 等正交实验数据对比</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>实验</th>
+<th>检验的 claim</th>
+<th>对比与条件</th>
+<th>结果</th>
+<th>支持的结论</th>
+<th>不支持更强的结论</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>测序深度敏感性</td>
+<td>PSHIC 在低深度下保持性能</td>
+<td>深度从 25% 到 100% β̂，10 重复</td>
+<td>SCC 0.989–0.994，F1 0.959–0.967，DER 0.010–0.023</td>
+<td>PSHIC 对深度不敏感</td>
+<td>未测试低于 25% 深度的极端场景</td>
+<td>Results 图 2C</td>
+</tr>
+<tr>
+<td>SNP 密度敏感性</td>
+<td>PSHIC 不依赖 SNP 密度</td>
+<td>SNP 密度 1/100bp 到 1/1000bp</td>
+<td>PSHIC 性能不变；SNP-based 方法随密度下降而恶化</td>
+<td>PSHIC 在 SNP 稀疏场景中具有优势</td>
+<td>未测试完全无 SNP 的极端场景</td>
+<td>Results 图 2C</td>
+</tr>
+<tr>
+<td>Phasing 错误鲁棒性</td>
+<td>PSHIC 对 phasing 错误免疫</td>
+<td>错误率 0–2%</td>
+<td>PSHIC 性能恒定；ASHIC 在 0.05% 错误时 SCC 从 0.936 降至 0.514</td>
+<td>PSHIC 消除了 phasing 错误的影响</td>
+<td>未测试 &gt;2% 错误率</td>
+<td>Results "PSHIC is insensitive to SNP phasing errors" 节</td>
+</tr>
+<tr>
+<td>X 失活 bipartite 结构</td>
+<td>PSHIC 能恢复 Xi 的双超结构域</td>
+<td>小鼠 Patsik WT/Del/Inv-Dxz4</td>
+<td>WT 和 Inv 保留 bipartite 结构，Del 丧失；Inv 边界向端粒侧偏移</td>
+<td>PSHIC 能检测等位基因特异性结构变异</td>
+<td>未与单细胞 Hi-C 直接对比</td>
+<td>Results 图 3</td>
+</tr>
+<tr>
+<td>H19/Igf2 印记</td>
+<td>PSHIC 能恢复等位基因特异性印记互作</td>
+<td>小鼠 7 号染色体 1Mb 区域</td>
+<td>母源染色体 H19-DMR 与 CTCF 簇互作更强，母源特异性 sub-TAD 边界</td>
+<td>PSHIC 能检测印记位点的等位基因特异性组织</td>
+<td>未验证功能后果</td>
+<td>Results 图 4</td>
+</tr>
+<tr>
+<td>人 GM12878 验证</td>
+<td>PSHIC 结果与 ChIA-PET 一致</td>
+<td>3 个区域（12 号、11 号、X 染色体）</td>
+<td>RNAPII 互作、IGF2/H19 印记、X 失活结构均与 ChIA-PET 一致</td>
+<td>PSHIC 跨物种、跨区域泛化</td>
+<td>未覆盖全基因组</td>
+<td>Results 图 5</td>
+</tr>
+<tr>
+<td>单细胞数据</td>
+<td>PSHIC 无需 phasing 即可处理单细胞 Hi-C</td>
+<td>小鼠早期胚胎 2-cell 单细胞 Hi-C</td>
+<td>重建的 diploid maps 与 SNP-based 方法高度一致，且信号更强</td>
+<td>PSHIC 可推广至单细胞场景</td>
+<td>样本量有限</td>
+<td>Results "PSHIC reconstructs single-cell diploid contact maps" 节</td>
+</tr>
+</tbody>
+</table>
+<h2>11 结论正确解读</h2>
+<ul>
+<li><strong>任务范围</strong>：PSHIC 解决的是"从聚合二倍体 Hi-C 中恢复等位基因特异性 contact maps 和 3D 结构"这一特定任务，不涉及全基因组从头组装或变异检测。</li>
+<li><strong>Oracle/真值输入</strong>：模拟中使用了 Dip-C 导出的真实 3D 结构作为 ground truth；真实数据中使用了 ChIP-seq、4C-seq、3D-FISH、ChIA-PET 等正交实验作为验证参考。PSHIC 本身不需要任何 oracle 输入。</li>
+<li><strong>端到端状态</strong>：PSHIC 是端到端的——输入 raw Hi-C contact matrix，输出等位基因特异性 maps 和结构。但预处理（Juicer 流程）仍需标准 Hi-C 分析步骤。</li>
+<li><strong>算力成本</strong>：GPU 加速下，染色体尺度（28–1334 bins）单次运行 10–55 分钟；无 SNP 预处理需求，节省约 25.9 小时（对比 SNP calling 流程）。</li>
+<li><strong>历史数据依赖</strong>：不依赖任何历史数据或预训练模型，完全基于当前输入的 contact matrix。</li>
+<li><strong>模型依赖</strong>：依赖幂律距离-接触假设（α=3 初始化）和流形连续性假设；在不符合这些假设的场景（如极端重排）中可能失效。</li>
+<li><strong>最难情形</strong>：低测序深度 + 高 phasing 错误 + 低 SNP 密度的组合场景；全基因组 10kb 分辨率的系统验证尚未完成。</li>
+<li><strong>群体/领域边界</strong>：验证限于人类（GM12878）和小鼠（Patsik、早期胚胎）细胞系/组织，未覆盖其他物种或疾病样本。</li>
+<li><strong>不确定性</strong>：PSHIC 输出的是群体平均的等位基因特异性结构，不反映单细胞异质性；inter-homolog 接触在默认模式中被视为噪声，仅在可选模式中显式建模。</li>
+<li><strong>有边界的复述</strong>：PSHIC 在模拟和真实数据中证明，无需任何 SNP 信息即可从聚合 Hi-C 中恢复等位基因特异性 contact maps 和 3D 结构，在低深度、低 SNP 密度和高 phasing 错误场景下显著优于现有方法，并能检测 X 失活、基因组印记和等位基因特异性调控互作等已知生物学特征。</li>
+</ul>
+<h2>12 作者自认局限</h2>
+<table>
+<thead>
+<tr>
+<th>局限</th>
+<th>具体表现</th>
+<th>作者提出的未来方向</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>仅限染色体内</td>
+<td>当前框架主要聚焦于染色体内（intra-chromosomal）二倍体重建，未显式建模染色体间（inter-chromosomal）长程互作</td>
+<td>未来扩展将纳入染色体间接触和全基因组空间约束</td>
+<td>Discussion 第 2 段</td>
+</tr>
+<tr>
+<td>分辨率受限</td>
+<td>系统分辨率基准测试限于 20kb，因为 Dip-C 导出的 ground truth 坐标最细为 20kb；10kb 全基因组重建未系统验证</td>
+<td>需要更高分辨率的 ground truth 数据来验证 10kb 重建</td>
+<td>Discussion 第 2 段</td>
+</tr>
+<tr>
+<td>分辨率-效率权衡</td>
+<td>250kb–1Mb 在重建精度和计算效率间提供最佳平衡，10–20kb 更适合靶向区域或深度测序数据</td>
+<td>优化算法以支持更高分辨率的全基因组分析</td>
+<td>Discussion 第 2 段</td>
+</tr>
+</tbody>
+</table>
+<h2>13 批判性分析</h2>
+<table>
+<thead>
+<tr>
+<th>[Analysis] 观察</th>
+<th>潜在问题或替代解释</th>
+<th>为何重要</th>
+<th>如何检验</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>模拟中所有方法共享相同的幂律转换函数（α=3）</td>
+<td>这可能有利于 PSHIC，因为其优化框架与模拟生成模型完全一致；其他方法（如 ASHIC）可能因模型不匹配而处于劣势</td>
+<td>模拟基准的公平性直接影响结论的普适性</td>
+<td>使用不同的 ground-truth 生成模型（如非幂律、含 domain 结构）重新模拟，检验 PSHIC 是否仍占优</td>
+<td>Methods "Hi-C manifold embedding" 节</td>
+</tr>
+<tr>
+<td>真实数据验证依赖已知生物学特征（XCI、印记）</td>
+<td>这些特征是强先验，PSHIC 可能只是"重新发现"已知模式，而非发现新等位基因特异性结构</td>
+<td>需要验证 PSHIC 能否发现未知的等位基因特异性结构</td>
+<td>在缺乏先验知识的区域（如常染色体非印记区域）检验 PSHIC 的等位基因特异性预测是否与独立实验一致</td>
+<td>Results 图 3-5</td>
+</tr>
+<tr>
+<td>谱聚类筛选可能引入选择偏差</td>
+<td>丢弃"无效" trial 的标准可能偏向于与已知生物学一致的解，导致过度拟合先验</td>
+<td>如果筛选标准隐含生物学先验，PSHIC 的"发现"可能只是先验的反映</td>
+<td>在模拟中检验筛选标准是否偏向 ground truth；在真实数据中比较筛选前后结果的差异</td>
+<td>Methods "Learning Hi-C manifold embedding" 节</td>
+</tr>
+<tr>
+<td>与 Diploid-PASTIS 的性能差距</td>
+<td>作者归因于 PSHIC 的联合优化和正则化，但 Diploid-PASTIS 可能因实现细节（如收敛标准、初始化）而表现不佳</td>
+<td>需要排除实现差异导致的性能差距</td>
+<td>使用 Diploid-PASTIS 的原始实现和调优参数重新基准测试；检查 PSHIC 是否在相同计算预算下仍占优</td>
+<td>Results 图 2C</td>
+</tr>
+<tr>
+<td>未报告统计显著性</td>
+<td>模拟结果以均值和 SD 呈现，但未提供方法间差异的统计检验</td>
+<td>性能差距可能不显著，特别是在高深度、高 SNP 密度场景</td>
+<td>对每个参数设置进行配对统计检验（如 Wilcoxon 检验），报告效应量和置信区间</td>
+<td>Results 图 2C</td>
+</tr>
+<tr>
+<td>单细胞验证样本量有限</td>
+<td>仅使用 2-cell 胚胎数据，且未报告细胞数量</td>
+<td>单细胞场景的结论可能不稳健</td>
+<td>在更多单细胞数据集上验证，报告细胞数量和重复</td>
+<td>Results "PSHIC reconstructs single-cell diploid contact maps" 节</td>
+</tr>
+</tbody>
+</table>
+<h2>14 学到什么</h2>
+<p><strong>Agent 提炼的知识候选</strong>：</p>
+<ol>
+<li>
+<p><strong>Phasing-free 信号分解范式</strong>：将等位基因特异性解析从"标签分配"重构为"信号分解"——C_obs = C_m + C_p。这一思路可迁移到其他缺乏标签信息的二倍体/多倍体基因组分析任务（如等位基因特异性甲基化、ATAC-seq 等）。</p>
+</li>
+<li>
+<p><strong>流形学习作为生成模型</strong>：MDS/manifold embedding 不仅用于降维可视化，还可以作为生成模型直接参与逆问题求解。在三维基因组建模中，将结构坐标作为可优化变量、通过幂律转换生成 contact map 的思路，可迁移到单倍型分辨的 3D 基因组建模、多细胞类型结构比较等任务。</p>
+</li>
+<li>
+<p><strong>多起始点 + 谱聚类筛选</strong>：对于非凸优化问题，多次随机初始化 + 基于结构相似性的谱聚类筛选是获得稳健解的实用策略。这一策略可迁移到其他生物信息学优化问题（如结构预测、网络推断）。</p>
+</li>
+<li>
+<p><strong>物理正则化的重要性</strong>：一致性正则化（同源染色体局部结构相似）和体积正则化（空间边界约束）显著提升了求解稳定性。在三维基因组建模中，引入聚合物物理约束（如排除体积、链连通性）可以改善解的生物学合理性。</p>
+</li>
+<li>
+<p><strong>评估指标的组合设计</strong>：SCC（map 相似性）+ F1（loop 检测）+ DER（结构距离误差）三者互补，分别评估 contact map 保真度、功能特征恢复和结构精度。这种多维度评估框架可迁移到其他结构预测方法的基准测试。</p>
+</li>
+<li>
+<p><strong>模拟-真实双轨验证策略</strong>：模拟实验隔离方法差异（共享生成模型），真实实验验证生物学可解释性（与 ChIP-seq、4C-seq、FISH、ChIA-PET 正交验证）。这种"受控模拟 + 正交实验验证"的评估范式值得借鉴。</p>
+</li>
+</ol>
+<h2>15 与已有知识连接</h2>
+<ul>
+<li><strong>PASTIS / Diploid-PASTIS</strong>：PSHIC 的幂律距离-接触转换框架直接继承自 PASTIS 系列，但将单倍体扩展为二倍体联合优化，并增加了 consistency 和 volume 正则化。可对比阅读 PASTIS 原文以理解增量贡献。</li>
+<li><strong>ASHIC-PM / ASHIC-ZIPM</strong>：ASHIC 是 SNP-based 概率框架的代表，PSHIC 在模拟中与之对比。两者互补——ASHIC 在高质量 phasing 可用时可能更精确，PSHIC 在 phasing 不可用时是唯一选择。</li>
+<li><strong>HiCRep / Fit-Hi-C</strong>：评估指标 SCC 来自 HiCRep，loop 检测使用 Fit-Hi-C，均为三维基因组分析的标准工具。</li>
+<li><strong>Dip-C</strong>：模拟 ground truth 来自 Dip-C 单细胞 3D 结构，连接了单细胞 Hi-C 与群体 Hi-C 分析。</li>
+<li><strong>Juicer / HiC-Pro</strong>：数据预处理流程，标准 Hi-C 分析工具链。</li>
+<li><strong>聚合物物理模型</strong>：幂律指数 α=3 的初始化基于 fractal globule 和 equilibrium globule 模型的理论预测，连接了三维基因组学与聚合物物理。</li>
+<li><strong>X 失活与基因组印记</strong>：生物学验证场景，连接了三维基因组结构与表观遗传调控。</li>
+<li><strong>可迁移方向</strong>：PSHIC 的"信号分解 + 物理约束"框架可迁移到单细胞 Hi-C 的等位基因解析、多倍体基因组 3D 建模、以及空间转录组与 Hi-C 的整合分析。</li>
+</ul>
+<h2>16 研究想法</h2>
+<p><strong>Agent 生成的研究候选</strong>：</p>
+<ol>
+<li>
+<p><strong>候选名称</strong>：PSHIC-3D Genome-wide phasing-free allele-specific TAD/loop annotation
+   - <strong>来源局限/观察</strong>：PSHIC 目前聚焦于染色体内重建，未系统评估等位基因特异性 TAD 边界和 loop 的注释精度；作者也承认未纳入 inter-chromosomal 互作。
+   - <strong>核心假设</strong>：PSHIC 输出的等位基因特异性 contact maps 可直接用于等位基因特异性 TAD/loop 注释，且比 SNP-based 方法在低 phasing 质量场景下更稳健。
+   - <strong>初步方法</strong>：在 PSHIC 输出的 C_m 和 C_p 上运行 TAD 识别算法（如 TopDom、Armatus）和 loop 调用工具（如 Fit-Hi-C、HiCCUPS），与 SNP-based 方法的结果对比；在模拟中引入已知的等位基因特异性 TAD 差异，检验检测灵敏度。
+   - <strong>验证方式</strong>：使用已发表的等位基因特异性 Hi-C 数据（如 GM12878 phased 数据）作为 benchmark；与 ChIA-PET、3D-FISH 等正交实验对比。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：PSHIC-single-cell：phasing-free 单细胞等位基因特异性结构解析
+   - <strong>来源局限/观察</strong>：作者在补充材料中展示了 PSHIC 在单细胞 Hi-C 上的初步结果，但未系统评估。
+   - <strong>核心假设</strong>：PSHIC 的流形学习框架对稀疏单细胞数据具有天然鲁棒性，可在无需 phasing 的情况下解析单细胞水平的等位基因特异性结构。
+   - <strong>初步方法</strong>：将 PSHIC 应用于单细胞 Hi-C 数据，与 SNP-based 单细胞等位基因解析方法对比；评估不同细胞周期阶段、不同细胞类型中的表现。
+   - <strong>验证方式</strong>：使用已知等位基因特异性结构的单细胞数据（如 X 失活细胞）；与 scHi-C 结构重建方法（如 Higashi）对比。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：PSHIC-phylo：跨物种等位基因特异性结构比较
+   - <strong>来源局限/观察</strong>：PSHIC 不依赖物种特异性 SNP 资源，天然适用于非模式生物。
+   - <strong>核心假设</strong>：PSHIC 可在缺乏 phasing 资源的非模式生物中解析等位基因特异性染色质结构，揭示跨物种保守的等位基因特异性组织模式。
+   - <strong>初步方法</strong>：将 PSHIC 应用于多个物种（如小鼠、大鼠、猪、鸡）的 Hi-C 数据，比较等位基因特异性结构的保守性和差异性。
+   - <strong>验证方式</strong>：与已知的印记基因座结构对比；与系统发育分析结合。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：PSHIC-3D genome-wide phasing-free allele-specific enhancer-promoter interaction prediction
+   - <strong>来源局限/观察</strong>：PSHIC 在 RNAPII 调控网络和印记基因座中展示了等位基因特异性增强子-启动子互作检测能力，但未系统评估其作为预测工具的性能。
+   - <strong>核心假设</strong>：PSHIC 输出的等位基因特异性 contact maps 可预测等位基因特异性增强子-启动子互作，且比基于 SNP 的方法在非编码区更有效。
+   - <strong>初步方法</strong>：在 PSHIC 输出的 maps 上运行增强子-启动子互作预测工具（如 TargetFinder、DeepTACT），与 SNP-based 方法对比；在已知等位基因特异性表达基因座中验证。
+   - <strong>验证方式</strong>：使用 eQTL 和等位基因特异性表达数据；与 CRISPR 验证的增强子-启动子互作对比。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+<li>
+<p><strong>候选名称</strong>：PSHIC-3D genome-wide phasing-free allele-specific structural variant detection
+   - <strong>来源局限/观察</strong>：PSHIC 能检测 Dxz4 编辑引起的结构变化，提示其可能用于检测等位基因特异性结构变异。
+   - <strong>核心假设</strong>：PSHIC 输出的等位基因特异性 contact maps 可检测等位基因特异性结构变异（如倒位、易位、拷贝数变异），且不依赖 SNP phasing。
+   - <strong>初步方法</strong>：在模拟中引入已知的等位基因特异性结构变异，检验 PSHIC 的检测灵敏度；在真实数据中与已知结构变异对比。
+   - <strong>验证方式</strong>：使用已知结构变异的细胞系（如 Dxz4 编辑细胞）；与光学图谱、长读长测序验证对比。
+   - <strong>创新状态</strong>：unverified</p>
+</li>
+</ol></div>
+  </section>
+  
+  
+  <section>
+    <h2>审稿人评审</h2>
+    <div class="md"><h2>Review setup</h2>
+<ul>
+<li><strong>Input scope</strong> Full manuscript text (abstract, introduction, results, discussion, methods, figure legends) without supplementary files or source data.</li>
+<li><strong>Assessment boundary</strong> Scientific validity, methodological soundness, clarity of claims, and alignment with Nature-style criteria. No assessment of code availability, reproducibility scripts, or supplementary figures/tables beyond what is referenced.</li>
+<li><strong>Shared manuscript claim summary</strong> The authors present PSHIC, a computational framework that reconstructs allele-specific (maternal and paternal) Hi-C contact maps and 3D chromatin structures from unphased, aggregated Hi-C data. The method models chromosomes as continuous manifolds, solves an inverse problem to decompose the observed contact matrix into two homolog-specific components, and is claimed to outperform existing SNP-dependent methods across simulations and real datasets, including X-chromosome inactivation, imprinting, and regulatory contexts.</li>
+<li><strong>Visible evidence base</strong> Main text, Methods section, Algorithm 1 pseudocode, and figure legends for Figures 1–5. References to Supplementary Figures 1–8, Supplementary Tables 1, and Supplementary Notes 1–6 are present but not provided.</li>
+<li><strong>Missing materials affecting confidence</strong> Supplementary figures, notes, tables, source data, code, and any benchmarking details beyond the main text. Statistical details for real-data analyses (e.g., number of replicates, confidence intervals) are partially reported but not fully verifiable.</li>
+</ul>
+<h2>Reviewer</h2>
+<ul>
+<li><strong>Overall assessment</strong> The manuscript addresses a significant and timely problem in 3D genomics: recovering allele-specific chromatin organization without phased SNP data. The conceptual shift from tag-and-sort to structural modeling is appealing and could broaden applicability to non-model organisms. However, the current evidence base is insufficient to establish the method's validity. Key concerns include the lack of a formal identifiability argument, unclear handling of inter-homolog contacts in the default mode, potential circularity in real-data validation, and incomplete reporting of statistical and computational details. The method's claimed advantages over Diploid-PASTIS and SNP-based approaches are not fully supported by the presented data.</li>
+<li><strong>Who would be interested in the results, and why</strong> Researchers in 3D genome organization, chromatin structure prediction, and computational genomics. The method could be of interest to those studying allele-specific phenomena (imprinting, X-inactivation) in systems where phased data are unavailable, and to developers of Hi-C analysis tools. The phasing-free aspect may also appeal to the broader chromosome conformation capture community.</li>
+<li><strong>Major strengths</strong></li>
+<li>Addresses a real limitation of existing haplotype-resolved methods: dependence on phased SNPs.</li>
+<li>The manifold-based inverse problem formulation is conceptually novel and distinct from prior tag-and-sort approaches.</li>
+<li>Validation spans multiple biological contexts (X-inactivation, imprinting, regulatory loops) and species (mouse, human), with orthogonal experimental comparisons.</li>
+<li>The method includes practical features such as outlier bin removal, KR normalization, and multi-trial averaging with spectral clustering, suggesting attention to robustness.</li>
+<li>
+<p><strong>Major Concerns</strong></p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M1</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Identifiability and model assumptions</li>
+<li><strong>Claim pointer</strong> The manuscript claims that PSHIC can "reveal" allele-specific chromatin organization from aggregated Hi-C data without phasing, implying that the decomposition into maternal and paternal contact maps is identifiable from the observed sum.</li>
+<li><strong>Evidence pointer</strong> Methods, "Problem formulation" and "Hi-C manifold embedding with adaptive loss"; Algorithm 1.</li>
+<li><strong>Concern</strong> The core assumption is that the observed contact matrix can be uniquely decomposed into two homolog-specific matrices. However, the manuscript does not provide a formal identifiability analysis. The optimization problem is non-convex, and the authors rely on random initialization and spectral clustering to select solutions. It is unclear whether the decomposition is unique, whether different initializations converge to equivalent solutions, or whether the method can distinguish between genuine allele-specific structure and arbitrary splits of the contact matrix. The consistency regularization and volume penalty may bias solutions but do not guarantee identifiability.</li>
+<li><strong>Why it matters</strong> If the decomposition is not identifiable, the recovered "allele-specific" maps may be artifacts of the optimization procedure rather than true biological signals. This is a fundamental issue that undermines the central claim of the manuscript.</li>
+<li>
+<p><strong>Resolution test</strong> Provide a formal identifiability argument or a simulation study where the true allele-specific maps are known and show that PSHIC recovers them uniquely across many random initializations. Demonstrate that the solution is stable and that the loss landscape does not contain multiple equally good but biologically distinct decompositions.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M2</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Validation against ground truth</li>
+<li><strong>Claim pointer</strong> The manuscript claims that PSHIC "consistently outperforms established methods" in simulations, with SCC ≥ 0.987, F1 ≥ 0.952, and DER ≤ 0.04.</li>
+<li><strong>Evidence pointer</strong> Results, "Diploid Hi-C map Reconstruction for in silico datasets"; Figure 2C.</li>
+<li><strong>Concern</strong> The simulation setup is described as deriving ground truth from single-cell Dip-C data, but the details of how the aggregated contact matrix was generated, how noise was added, and how the ground truth was defined are not fully specified. The reported metrics are extremely high (SCC near 0.99), which raises questions about whether the simulation is realistic or overly favorable to PSHIC. The comparison to Diploid-PASTIS, which reportedly has much lower performance, may be due to differences in evaluation criteria or implementation rather than genuine methodological superiority.</li>
+<li><strong>Why it matters</strong> If the simulation is not realistic or is biased, the claimed performance advantage may not translate to real data. The manuscript's central quantitative claims rest on this simulation.</li>
+<li>
+<p><strong>Resolution test</strong> Provide full details of the simulation pipeline, including how the aggregated matrix was generated from Dip-C structures, the noise model, and the exact evaluation protocol. Show that the simulation results are robust to variations in noise, coverage, and ground-truth definition. Consider benchmarking on additional independent simulated datasets or on real data with known allele-specific features.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M3</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> Yes</li>
+<li><strong>Axis</strong> Real-data validation and circularity</li>
+<li><strong>Claim pointer</strong> The manuscript claims that PSHIC recovers allele-specific features consistent with orthogonal experimental approaches (3D DNA-FISH, 4C-seq, ChIA-PET) in mouse and human datasets.</li>
+<li><strong>Evidence pointer</strong> Results, sections on X-inactivation, H19/Igf2 imprinting, and GM12878; Figures 3–5.</li>
+<li><strong>Concern</strong> The real-data validation appears to rely on comparing PSHIC's output to known or expected biological features (e.g., bipartite structure of Xi, imprinted interactions). However, the manuscript does not clearly state whether these features were used to guide the method's parameters or to select among candidate solutions. If the method's output is compared to the same features used for validation, there is a risk of circularity. Additionally, the comparison to SNP-based methods (allele-certain, mate-rescue) in real data is qualitative, and the manuscript does not provide quantitative metrics for how well PSHIC matches the SNP-based results.</li>
+<li><strong>Why it matters</strong> If validation is circular or only qualitative, the claim that PSHIC accurately recovers allele-specific organization in real data is not substantiated.</li>
+<li>
+<p><strong>Resolution test</strong> Clearly state that no biological features were used to guide the method's optimization or solution selection. Provide quantitative comparisons between PSHIC's output and SNP-based methods (e.g., correlation of contact maps, overlap of loops) in real data. For the X-inactivation and imprinting analyses, show that the recovered allele-specific features are not simply a consequence of the method's assumptions.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M4</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Inter-homolog contact modeling</li>
+<li><strong>Claim pointer</strong> The manuscript states that PSHIC's default mode treats inter-homolog contacts as noise, but an optional mode explicitly models them.</li>
+<li><strong>Evidence pointer</strong> Methods, "Optional inter-homolog contact modeling mode"; Supplementary Notes 1–2.</li>
+<li><strong>Concern</strong> The default mode's assumption that inter-homolog contacts are negligible may not hold in all biological contexts, and the manuscript does not provide guidance on when the optional mode should be used. The simulation results for the optional mode are only referenced in supplementary materials, which are not provided. It is unclear whether the optional mode improves accuracy or introduces new biases.</li>
+<li><strong>Why it matters</strong> If the default mode is applied in contexts where inter-homolog contacts are significant, the reconstructed allele-specific maps may be systematically biased. The manuscript's applicability claims may be overstated.</li>
+<li>
+<p><strong>Resolution test</strong> Provide the supplementary results for the inter-homolog mode. Show how the choice of mode affects performance in simulations with varying inter-homolog contact fractions. Provide clear guidance on when each mode is appropriate.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-M5</p>
+</li>
+<li><strong>Severity</strong> Major</li>
+<li><strong>Blocking</strong> No</li>
+<li><strong>Axis</strong> Computational cost and scalability</li>
+<li><strong>Claim pointer</strong> The manuscript claims that PSHIC is computationally feasible at the chromosome scale, with runtimes of 10–55 minutes per run depending on resolution.</li>
+<li><strong>Evidence pointer</strong> Methods, "Convergence and running time"; Supplementary Table 1.</li>
+<li><strong>Concern</strong> The runtime analysis is limited to a single chromosome and does not address genome-wide scalability. The number of random initializations (S) and the criteria for selecting the number of trials are not specified. The comparison to SNP-based methods in terms of total wall-clock time (including preprocessing) is only partially reported.</li>
+<li><strong>Why it matters</strong> If PSHIC does not scale to genome-wide analysis or requires excessive computational resources, its practical utility is limited.</li>
+<li>
+<p><strong>Resolution test</strong> Provide runtime benchmarks for multiple chromosomes or a full genome at typical resolutions. Specify the number of random initializations used and the sensitivity of results to this parameter. Provide a more complete comparison of total analysis time, including preprocessing, for PSHIC versus SNP-based methods.</p>
+</li>
+<li>
+<p><strong>Minor Comments</strong></p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m1</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Clarity of notation</li>
+<li><strong>Affected element</strong> Methods, "Problem formulation" and "Hi manifold embedding with adaptive loss"</li>
+<li><strong>Evidence pointer</strong> Equations 1–15 and Algorithm 1.</li>
+<li><strong>Issue</strong> The notation is dense and sometimes inconsistent. For example, the use of (\hat{\beta}) in the main text is not clearly defined in the Methods, and the relationship between the embedding dimension (k) and the final 3D projection via PCA is not explained in detail.</li>
+<li>
+<p><strong>Required correction</strong> Define all symbols clearly at first use, including (\hat{\beta}), and explain the role of (k) and the PCA projection step in the Methods.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m2</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Statistical reporting</li>
+<li><strong>Affected element</strong> Results, "Diploid Hi-C map Reconstruction for in silico datasets" and real-data sections</li>
+<li><strong>Evidence pointer</strong> Figure 2C, Figure 3C, Figure 4B.</li>
+<li><strong>Issue</strong> The manuscript reports means and standard deviations for some metrics but does not consistently report confidence intervals or statistical tests for comparisons between methods. For real-data analyses, the number of replicates and the variability across replicates are not always clear.</li>
+<li>
+<p><strong>Required correction</strong> Report confidence intervals or effect sizes for key comparisons. For real-data analyses, state the number of independent datasets or replicates and how variability was assessed.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m3</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Parameter sensitivity</li>
+<li><strong>Affected element</strong> Methods, "Hi-C Datasets and simulation" and "Convergence and running time"</li>
+<li><strong>Evidence pointer</strong> Algorithm 1, Supplementary Table 1.</li>
+<li><strong>Issue</strong> The sensitivity of results to key parameters such as the regularization weights (\lambda_1), (\lambda_2), the number of trials (S), and the convergence criteria is not reported.</li>
+<li>
+<p><strong>Required correction</strong> Provide a sensitivity analysis for these parameters, or at least state the values used and justify them.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m4</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Comparison to existing methods</li>
+<li><strong>Affected element</strong> Results, "Diploid Hi-C map Reconstruction for in silico datasets"</li>
+<li><strong>Evidence pointer</strong> Figure 2C.</li>
+<li><strong>Issue</strong> The comparison to existing methods is limited to a single simulation setting. The manuscript does not discuss potential limitations of the compared methods or whether the comparison is fair (e.g., same input data, same evaluation metrics).</li>
+<li>
+<p><strong>Required correction</strong> Clarify the comparison protocol and discuss any limitations of the compared methods that might affect the results.</p>
+</li>
+<li>
+<p><strong>Concern ID</strong> R1-m5</p>
+</li>
+<li><strong>Severity</strong> Minor</li>
+<li><strong>Axis</strong> Readability</li>
+<li><strong>Affected element</strong> Introduction and Discussion</li>
+<li><strong>Evidence pointer</strong> Sections on X-inactivation and imprinting.</li>
+<li><strong>Issue</strong> The biological background is dense and assumes significant prior knowledge. Some terms (e.g., "bipartite structure," "superdomains") are used without clear definitions for a general audience.</li>
+<li>
+<p><strong>Required correction</strong> Provide brief definitions or context for key biological terms to improve accessibility for nonspecialist readers.</p>
+</li>
+<li>
+<p><strong>Technical failings that need to be addressed before the case is established</strong></p>
+</li>
+<li>R1-M1: Lack of identifiability analysis for the core decomposition problem.</li>
+<li>R1-M2: Incomplete simulation details and potential bias in the benchmarking protocol.</li>
+<li>R1-M3: Potential circularity in real-data validation and lack of quantitative comparison to SNP-based methods.</li>
+<li>R1-M4: Unclear handling of inter-homolog contacts and lack of guidance on mode selection.</li>
+<li>
+<p>R1-M5: Incomplete computational scalability analysis.</p>
+</li>
+<li>
+<p><strong>Assessment against Nature-style criteria</strong></p>
+</li>
+<li><strong>Originality</strong> The phasing-free structural modeling approach is conceptually original and distinct from existing SNP-based methods. The idea of treating the decomposition as an inverse problem on manifolds is novel.</li>
+<li><strong>Scientific importance</strong> The problem addressed is important: enabling allele-specific analysis in systems where phased data are unavailable. If validated, the method could have broad impact.</li>
+<li><strong>Interdisciplinary readership</strong> The topic is of interest to computational biologists, genomicists, and chromatin biologists. However, the dense methods and lack of clear biological context may limit accessibility.</li>
+<li><strong>Technical soundness</strong> The technical approach is plausible but not fully validated. The lack of identifiability analysis and incomplete simulation details are significant gaps.</li>
+<li>
+<p><strong>Readability for nonspecialists</strong> The manuscript is technically dense and assumes significant background. The biological significance could be communicated more clearly.</p>
+</li>
+<li>
+<p><strong>Recommendation posture</strong> Currently not established from the provided evidence. The manuscript presents a promising idea but lacks the rigorous validation and analysis needed to support its central claims. Major revisions are required to address the identifiability concern, provide complete simulation and real-data validation, and clarify the method's practical applicability.</p>
+</li>
+</ul>
+<h2>Risk / unsupported claims</h2>
+<ul>
+<li>The claim that PSHIC "consistently outperforms established methods" is not fully supported due to incomplete simulation details and potential bias.</li>
+<li>The claim that PSHIC "reveals" allele-specific organization is not supported without an identifiability analysis.</li>
+<li>The claim that PSHIC's real-data results align with orthogonal experiments is qualitative and may be circular.</li>
+<li>The claim that PSHIC is computationally feasible at the chromosome scale is based on limited benchmarks and does not address genome-wide scalability.</li>
+<li>The claim that PSHIC "democratizes diploid chromatin analysis" is overstated given the unresolved technical concerns.</li>
+</ul></div>
+  </section>
+  
+</article>
+</main>
+</body>
+</html>

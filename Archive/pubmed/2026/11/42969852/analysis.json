@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42969852",
+  "title": "AxialTAD: an axial contrast architecture for TAD boundary prediction from Hi-C.",
+  "authors": "Choi, Woo-Young; Rhee, Je-Keun",
+  "journal": "Briefings in bioinformatics",
+  "published_date": "2026-11-02",
+  "window": {
+    "start": "2026-11-01",
+    "end": "2026-11-07"
+  },
+  "score": 8,
+  "one_liner_zh": "该文提出紧凑深度学习模型AxialTAD，通过轴向对比模块从Hi-C矩阵预测TAD边界，直接针对染色质三维组织中的TAD结构建模，方法上采用AI且验证了生物学合理性，与本课题高度相关。",
+  "abstract": "Topologically associating domains (TADs) are fundamental units of 3D chromatin organization, and accurate identification of TAD boundaries from Hi-C contact matrices remains an active challenge. Recent deep learning approaches have advanced substantially, but these rely on increasingly large architectures, raising the question of how much of this capacity boundary-centric analysis requires. Here we propose AxialTAD, a compact deep learning model centered on an Axial Contrast Module (ACM) that explicitly encodes directional contrast in contact intensity along the row and column axes of local Hi-C patches, an operator aligned with the geometric signature of TAD boundaries. Evaluated on four human cell lines (GM12878, HeLa-S3, IMR-90, K562) within cell lines and under leave-one-cell-out generalization, AxialTAD performed comparably with a recent convolutional neural network (CNN)+Transformer baseline (deepTAD) while using 76%-80% fewer trainable parameters (113K-137K versus 571K). A parameter-matched conventional CNN achieved similar F1 to AxialTAD in the human 25 kb experiments. When trained and evaluated within each of two mouse datasets, AxialTAD outperformed both this control and deepTAD. Orthogonal validation against CTCF and cohesin ChIP-seq supported the biological plausibility of the predicted boundaries. These results indicate that, within the range of architectures examined, a large architecture is not necessary to reach this level of boundary prediction.",
+  "abstract_zh": "拓扑关联结构域（TADs）是三维染色质组织的基本单位，从Hi-C接触矩阵中准确识别TAD边界仍是一个活跃的挑战。近年来的深度学习方法取得了显著进展，但这些方法依赖于日益庞大的架构，引发了一个问题：这种容量中有多少是边界中心分析所必需的。在此，我们提出AxialTAD，一种紧凑的深度学习模型，其核心是轴向对比模块（ACM），该模块显式编码局部Hi-C补丁沿行和列轴的接触强度方向性对比，这一算子与TAD边界的几何特征相一致。在四种人类细胞系（GM12878、HeLa-S3、IMR-90、K562）的细胞系内及留一细胞系泛化评估中，AxialTAD与近期卷积神经网络（CNN）+Transformer基线（deepTAD）表现相当，同时使用的可训练参数减少了76%-80%（113K-137K对比571K）。在人类25 kb实验中，参数匹配的传统CNN在F1分数上与AxialTAD相似。在两个小鼠数据集的训练和评估中，AxialTAD均优于该对照和deepTAD。针对CTCF和cohesin ChIP-seq的正交验证支持了预测边界的生物学合理性。这些结果表明，在所检查的架构范围内，达到这一边界预测水平并不需要大型架构。",
+  "has_fulltext": true,
+  "fulltext_source": "pmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42969852/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42969852/",
+  "paper_page_path": "papers/pubmed/42969852/index.html"
+}

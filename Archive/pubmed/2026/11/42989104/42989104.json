@@ -1,0 +1,163 @@
+{
+  "identity": {
+    "pmid": "42989104",
+    "doi": "10.1186/s12864-026-13246-0",
+    "title": "MutFormer: a multimodal deep learning framework for predicting somatic mutation hotspots from sequence and chromatin features."
+  },
+  "content": {
+    "abstract": "BACKGROUND: Somatic mutations are unevenly distributed across the genome, with certain loci recurrently mutated across independent tumors. Both local DNA sequence context and chromatin organization have been associated with mutation rate variation, yet their combined effects at single-nucleotide resolution remain incompletely characterized. RESULTS: We developed MutFormer, a multimodal framework that integrates sequence context with chromatin-associated features to estimate mutation hotspot susceptibility at single-base resolution. Model performance was evaluated using a chromosome-partitioned strategy to reduce potential bias from local sequence similarity. The model achieved an AUROC of 0.979 and an AUPRC of 0.955 on TCGA data, and showed consistent performance on an independent METABRIC cohort. In addition to overall predictive accuracy, the integration of chromatin features altered the relative ranking of genomic loci. A subset of hotspot positions showed increased predicted susceptibility compared with sequence-only models, suggesting that chromatin context contributes information not captured by sequence composition alone. Sequence-derived features, particularly CpG-related metrics, accounted for the majority of predictive signal, whereas chromatin features provided a secondary, context-dependent contribution. The absolute AUROC gain from chromatin integration over the sequence-only model was modest (DeltaAUROC = 0.004). Chromatin features instead reordered the prediction ranks of a specific subset ( approximately 14%) of hotspot loci, with most loci unaffected. CONCLUSIONS: These results support a model in which intrinsic sequence composition defines baseline mutation susceptibility, while chromatin context modulates the relative prioritization of specific loci. This framework provides a complementary approach for identifying mutation-prone regions beyond sequence-based models. MutFormer runs in a sequence-only mode by default and incorporates chromatin features as an optional enhancement when matched data are available.",
+    "keywords": [
+      "Cancer genomics",
+      "Chromatin features",
+      "Multimodal deep learning",
+      "Mutation susceptibility",
+      "Sequence context",
+      "Somatic mutation hotspots"
+    ],
+    "mesh_terms": [
+      "*Chromatin/genetics",
+      "Humans",
+      "*Mutation",
+      "*Deep Learning",
+      "Genomics/methods",
+      "*Computational Biology/methods"
+    ],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Li, Tianbao",
+        "Jiang, Yan",
+        "Wu, Junjie",
+        "Lin, Junru",
+        "Widjaja, Reisa",
+        "Wang, Ailan",
+        "Liu, Qi",
+        "Zhou, Hongbo"
+      ],
+      "short_names": [
+        "Li T",
+        "Jiang Y",
+        "Wu J",
+        "Lin J",
+        "Widjaja R",
+        "Wang A",
+        "Liu Q",
+        "Zhou H"
+      ],
+      "auids": [],
+      "affiliations": [
+        "School of Software Engineering, Quanzhou University of Information Engineering, Quanzhou, 362000, China.",
+        "School of Software Engineering, Quanzhou University of Information Engineering, Quanzhou, 362000, China.",
+        "School of Software Engineering, Quanzhou University of Information Engineering, Quanzhou, 362000, China.",
+        "Department of Molecular Medicine, UT Health San Antonio, San Antonio, TX, 78229, USA.",
+        "Department of Mathematics and Statistics, University of Wisconsin-La Crosse, La Crosse, WI, 54601, USA.",
+        "School of Software Engineering, Quanzhou University of Information Engineering, Quanzhou, 362000, China.",
+        "Department of Molecular Medicine, UT Health San Antonio, San Antonio, TX, 78229, USA. Qiliu256@gmail.com.",
+        "School of Software Engineering, Quanzhou University of Information Engineering, Quanzhou, 362000, China. zhb591111@163.com."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Li, Tianbao",
+        "short_name": "Li T",
+        "identifiers": [],
+        "affiliations": [
+          "School of Software Engineering, Quanzhou University of Information Engineering, Quanzhou, 362000, China."
+        ]
+      },
+      {
+        "full_name": "Jiang, Yan",
+        "short_name": "Jiang Y",
+        "identifiers": [],
+        "affiliations": [
+          "School of Software Engineering, Quanzhou University of Information Engineering, Quanzhou, 362000, China."
+        ]
+      },
+      {
+        "full_name": "Wu, Junjie",
+        "short_name": "Wu J",
+        "identifiers": [],
+        "affiliations": [
+          "School of Software Engineering, Quanzhou University of Information Engineering, Quanzhou, 362000, China."
+        ]
+      },
+      {
+        "full_name": "Lin, Junru",
+        "short_name": "Lin J",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Molecular Medicine, UT Health San Antonio, San Antonio, TX, 78229, USA."
+        ]
+      },
+      {
+        "full_name": "Widjaja, Reisa",
+        "short_name": "Widjaja R",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Mathematics and Statistics, University of Wisconsin-La Crosse, La Crosse, WI, 54601, USA."
+        ]
+      },
+      {
+        "full_name": "Wang, Ailan",
+        "short_name": "Wang A",
+        "identifiers": [],
+        "affiliations": [
+          "School of Software Engineering, Quanzhou University of Information Engineering, Quanzhou, 362000, China."
+        ]
+      },
+      {
+        "full_name": "Liu, Qi",
+        "short_name": "Liu Q",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Molecular Medicine, UT Health San Antonio, San Antonio, TX, 78229, USA. Qiliu256@gmail.com."
+        ]
+      },
+      {
+        "full_name": "Zhou, Hongbo",
+        "short_name": "Zhou H",
+        "identifiers": [],
+        "affiliations": [
+          "School of Software Engineering, Quanzhou University of Information Engineering, Quanzhou, 362000, China. zhb591111@163.com."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "BMC genomics"
+    ],
+    "journal_abbrev": [
+      "BMC Genomics"
+    ],
+    "pub_date": "2026 Aug 11",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/11/06 07:12",
+    "fetched_at": "2026-11-08 11:00:01"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42989104"
+    ],
+    "review": [
+      "42989104"
+    ],
+    "pmc": [
+      "13741554"
+    ],
+    "entrez": {},
+    "external": [],
+    "text_mined": []
+  }
+}

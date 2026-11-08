@@ -1,0 +1,24 @@
+{
+  "source": "pubmed",
+  "id": "42984176",
+  "title": "Polyphosphate and Disordered Hfq Regions Drive DNA Compaction through Conformation-Dependent Interactions.",
+  "authors": "Navon, Yoav; Levy, Yaakov",
+  "journal": "Biophysical journal",
+  "published_date": "2026-11-05",
+  "window": {
+    "start": "2026-11-01",
+    "end": "2026-11-07"
+  },
+  "score": 7,
+  "one_liner_zh": "该文用粗粒化和全原子分子动力学模拟研究Hfq蛋白与多聚磷酸盐驱动DNA压缩的构象依赖机制，虽对象为细菌DNA而非真核染色质，但其环境响应性DNA空间架构建模思路对染色质组织计算建模有可迁移启发。",
+  "abstract": "The RNA-binding protein Hfq and inorganic polyphosphate (polyP) were previously suggested to promote DNA compaction of AT-rich regions by forming heterochromatin-like structures, yet the underlying molecular mechanism remains unclear. Here, we combine coarse-grained and all-atom molecular dynamics simulations to investigate the interplay between Hfq, polyP, and DNA. Under physiological conditions, polyP electrostatically interacts with the distal faces of multiple Hfq hexamers, clustering them near DNA and leaving the proximal faces available to interact with the DNA minor groove via the disordered N-termini, thereby promoting compaction. While this mechanism shows limited dependence on DNA sequence, it is highly sensitive to environmental conditions. Under high-salt conditions, electrostatic interactions are screened, weakening polyP-Hfq association and limiting Hfq clustering, while stabilization of non-canonical DNA conformations exposes hydrophobic surfaces. These changes shift the mode of Hfq interaction with DNA toward its distal face and disordered C-termini, favoring hydrophobic interactions and reducing compaction. Together, our findings reveal a conformation-dependent switch in Hfq-DNA interaction modes governed by cellular conditions, providing a molecular framework for environment-responsive genome organization in bacteria.",
+  "abstract_zh": "RNA结合蛋白Hfq和无机多聚磷酸盐（polyP）此前被认为通过形成类异染色质结构促进富含AT区域的DNA压缩，但其潜在分子机制仍不清楚。在此，我们结合粗粒化和全原子分子动力学模拟，研究Hfq、polyP与DNA之间的相互作用。在生理条件下，polyP通过静电作用与多个Hfq六聚体的远端面相互作用，使其在DNA附近聚集，同时保留近端面通过无序N端与DNA小沟相互作用，从而促进压缩。尽管该机制对DNA序列的依赖性有限，但对环境条件高度敏感。在高盐条件下，静电相互作用被屏蔽，削弱polyP-Hfq结合并限制Hfq聚集，同时非经典DNA构象的稳定化暴露疏水表面。这些变化将Hfq与DNA的相互作用模式转向其远端面和无序C端，有利于疏水相互作用并减少压缩。总之，我们的发现揭示了由细胞条件调控的Hfq-DNA相互作用模式中的构象依赖性开关，为细菌中环境响应的基因组组织提供了分子框架。",
+  "has_fulltext": false,
+  "fulltext_source": "abstract",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "paper-card.md",
+  "review_path": "review.md",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42984176/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/42984176/",
+  "paper_page_path": "papers/pubmed/42984176/index.html"
+}

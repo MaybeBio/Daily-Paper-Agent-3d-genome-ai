@@ -1,0 +1,24 @@
+{
+  "source": "biorxiv",
+  "id": "10.64898/2026.11.01.763377",
+  "title": "A compact motif vocabulary is differentially interpreted across human cell types",
+  "authors": "Shen S; Wang W",
+  "journal": "bioRxiv",
+  "published_date": "2026-11-03",
+  "window": {
+    "start": "2026-11-01",
+    "end": "2026-11-07"
+  },
+  "score": 4,
+  "one_liner_zh": "该文用可解释CNN预测基因表达并解析顺式调控基序，虽涉及染色质状态门控调控，但核心是序列基序与表达预测，缺乏三维基因组/染色质空间架构建模，AI方法可迁移性有限。",
+  "abstract": "How a common genome generates diverse human cell types may depend less on distinct cis-regulatory vocabularies than on context-dependent use of a shared one. We have developed CNN-CR, an interpretable neural network that learns regulatory motifs while predicting gene expression across 116 human biosamples. Promoter regulation proves highly compressible: dozens of recurrent motif families retain most of the predictive information of much larger cell-type-specific vocabularies and generalize to cellular contexts excluded from their discovery. These motifs are conserved at their binding sites and enriched at fine-mapped regulatory variants. Cellular context acts at two levels: chromatin state gates which motif instances are available for regulatory use, whereas reader identity determines how accessible motifs are interpreted. ChIP-seq data reveal frequent shifts in reader occupancy across cell types, and genome-scale perturbations support corresponding context-dependent reader functions. Thus, regulatory diversity can emerge through differential access to and interpretation of a compact shared DNA vocabulary.",
+  "abstract_zh": "共同的基因组如何生成多样的人类细胞类型，可能更少依赖于不同的顺式调控词汇表，而更多依赖于对共享词汇表的上下文依赖性使用。我们开发了CNN-CR，一种可解释的神经网络，它在预测116个人类生物样本中的基因表达的同时学习调控基序。启动子调控显示出高度可压缩性：数十个反复出现的基序家族保留了远大于细胞类型特异性词汇表的预测信息，并能泛化到其发现过程中未包含的细胞上下文。这些基序在其结合位点上是保守的，并在精细定位的调控变异中富集。细胞上下文在两个层面起作用：染色质状态门控哪些基序实例可用于调控用途，而读取器身份决定可访问基序如何被解释。ChIP-seq数据揭示读取器占用在细胞类型间的频繁变化，基因组规模的扰动支持相应的上下文依赖性读取器功能。因此，调控多样性可以通过对紧凑共享DNA词汇表的差异访问和解释而涌现。",
+  "has_fulltext": true,
+  "fulltext_source": "europepmc",
+  "fulltext_path": "fulltext.md",
+  "paper_card_path": "",
+  "review_path": "",
+  "url": "https://www.biorxiv.org/content/10.64898/2026.11.01.763377",
+  "source_url": "https://www.biorxiv.org/content/10.64898/2026.11.01.763377",
+  "paper_page_path": "papers/biorxiv/10.64898_2026.11.01.763377/index.html"
+}

@@ -1,0 +1,100 @@
+## Review setup
+- **Input scope** Full manuscript text (abstract, introduction, methods, results, discussion) as provided.
+- **Assessment boundary** Scientific and technical evaluation of the manuscript's claims, methods, results, and interpretation, based solely on the supplied text. No external data, code, or supplementary materials were accessed.
+- **Shared manuscript claim summary** The authors propose AxialTAD, a compact deep learning model for TAD boundary prediction from Hi-C data, which uses an Axial Contrast Module (ACM) to explicitly encode directional contrast along row and column axes. They claim performance comparable to a larger CNN+Transformer baseline (deepTAD) in human cell lines with 76-80% fewer parameters, superior performance in mouse datasets, and biological plausibility supported by CTCF/cohesin enrichment.
+- **Visible evidence base** Main text tables (Tables 1-4, 6-7 as referenced), figures (Figures 1-2 as referenced), and supplementary tables/notes (S1-S17, Figures S1-S4) are cited but not fully visible in the provided material. Methodological descriptions are detailed.
+- **Missing materials affecting confidence** Supplementary figures and tables (S1-S17), full figure contents, exact numerical results for all tables, code repository contents, and detailed hyperparameter grid results were not provided. This limits verification of statistical claims and reproducibility assessment.
+
+## Reviewer
+- **Overall assessment** The manuscript addresses a relevant question in 3D genomics: whether large deep learning architectures are necessary for TAD boundary prediction. The proposed AxialTAD model is compact and incorporates a biologically motivated inductive bias. The experimental design includes appropriate baselines, ablations, and orthogonal validation. However, several concerns regarding statistical rigor, interpretation of ablation results, and generalizability claims need to be addressed. The central claim that "a large architecture is not necessary" is supported within the tested range, but the evidence for the specific benefit of the axial design is conditional and not fully established.
+- **Who would be interested in the results, and why** Computational biologists and bioinformaticians developing deep learning methods for genomics, particularly those focused on 3D genome architecture. Researchers studying TAD boundary biology may also find the CTCF/cohesin analyses relevant. The parameter-efficiency question is of general interest to the machine learning for genomics community.
+- **Major strengths** 1) The research question is well-motivated and practically relevant. 2) The ACM is a novel, interpretable architectural component with clear biological rationale. 3) The evaluation framework is thorough, including multiple reference definitions, cross-cell-line generalization, ablations, and orthogonal biological validation. 4) The parameter-efficiency analysis is informative. 5) The discussion of limitations is candid and balanced.
+- **Major Concerns**
+  - **Concern ID** R1-M1
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Statistical rigor
+  - **Claim pointer** "AxialTAD performed comparably with a recent convolutional neural network (CNN)+Transformer baseline (deepTAD) while using 76%–80% fewer trainable parameters" and "A parameter-matched conventional CNN achieved similar F1 to AxialTAD in the human 25 kb experiments."
+  - **Evidence pointer** Table 2, Table 3, Section "Within-cell-line performance and parameter scaling", Section "Architectural ablation and parameter-controlled controls"
+  - **Concern** The claim of "comparable" performance relies on mean F1 values and standard deviations across 10 seeds, but no formal statistical test (e.g., paired t-test, Wilcoxon signed-rank test) is reported for the primary comparison between AxialTAD and deepTAD in Table 2. The text states differences are "within seed-level variation" but does not provide the corresponding test statistics or confidence intervals. For the parameter-matched controls in Table 3, a single P-value is given for the ACM-removed comparison, but the text does not clarify whether the reported P-values for other comparisons (e.g., plain-CNN vs. AxialTAD) are adjusted for multiple testing. The absence of formal statistical comparisons for the main result undermines the strength of the "comparable" claim.
+  - **Why it matters** The central conclusion of the paper is that AxialTAD matches a larger baseline. Without formal statistical evidence, this claim could be driven by insufficient power or high variance. The distinction between "not significantly different" and "comparable" is important for the validity of the conclusions.
+  - **Resolution test** Provide formal statistical tests (e.g., paired t-tests or Wilcoxon signed-rank tests) comparing AxialTAD against deepTAD and the parameter-matched controls for the primary F1 metric, with effect sizes and confidence intervals. Report whether P-values are adjusted for multiple comparisons and clarify the number of paired observations (e.g., per cell line or per chromosome).
+  - **Concern ID** R1-M2
+  - **Severity** Major
+  - **Blocking** Yes
+  - **Axis** Claim substantiation
+  - **Claim pointer** "When trained and evaluated within each of two mouse datasets, AxialTAD outperformed both this control and deepTAD."
+  - **Evidence pointer** Table 7, Section "Evaluation on mouse datasets"
+  - **Concern** The mouse dataset evaluation is presented as a key result supporting the benefit of the axial design. However, the text does not describe the training set sizes, the number of chromosomes used, or the statistical significance of the reported F1 differences. The claim of "outperformed" is made without reporting standard deviations, confidence intervals, or tests. Additionally, the text notes that "the mouse training sets were smaller" but does not quantify this or discuss how it might affect the comparison. The generalizability of this finding is therefore unclear.
+  - **Why it matters** The mouse results are used to argue that the axial design confers an advantage in certain settings. Without statistical support and context on dataset characteristics, this claim is not established and could be due to chance or confounding factors.
+  - **Resolution test** Report the number of training chromosomes, total training samples, and the F1 values with standard deviations or confidence intervals for each architecture in each mouse dataset. Provide statistical tests for the AxialTAD vs. deepTAD and AxialTAD vs. plain-CNN comparisons. Discuss how dataset size and characteristics might influence the observed differences.
+  - **Concern ID** R1-M3
+  - **Severity** Major
+  - **Blocking** No
+  - **Axis** Methodological clarity
+  - **Claim pointer** "The ACM then encodes directional changes in contact intensity through five sequential operations on X" and the description of the architecture in the Methods section.
+  - **Evidence pointer** Section "AxialTAD architecture", Figure 1
+  - **Concern** The architectural description is incomplete. The text describes the shift operations and the concatenation into stacks, but the equations for the shifted tensors are not fully provided (the text says "with analogous definitions for..." without showing the actual formulas). The description of the "two-stage axis-specific convolution" and the "per-axis spatial gating mechanism" is high-level and lacks specific details on kernel sizes, strides, and how the gating is applied. The exact tensor shapes and operations are not fully specified, making it difficult to reproduce the architecture from the text alone.
+  - **Why it matters** Reproducibility is a core requirement for computational methods. An incomplete architectural description prevents others from implementing and validating the method, which is essential for the scientific contribution.
+  - **Resolution test** Provide complete mathematical definitions for all operations in the ACM, including the shift equations, the convolution operations, and the gating mechanism. Include a detailed diagram or pseudocode that fully specifies the data flow and tensor dimensions.
+  - **Concern ID** R1-M4
+  - **Severity** Major
+  - **Blocking** No
+  - **Axis** Evaluation methodology
+  - **Claim pointer** "Orthogonal validation against CTCF and cohesin ChIP-seq supported the biological plausibility of the predicted boundaries."
+  - **Evidence pointer** Section "CTCF and cohesin enrichment analysis", Table 5, Supplementary Figure S2
+  - **Concern** The enrichment analysis compares predicted boundaries to random positions matched for coverage and GC content. However, the text does not report whether the differences in enrichment between AxialTAD and deepTAD are statistically significant. The statement "no apparent architecture-level differences" is qualitative. Additionally, the analysis is performed only on the test chromosomes (chr20-22), which may not be representative of the whole genome. The choice of a ±100 kb window and the central 10 bins for the signal is not justified.
+  - **Why it matters** The biological validation is a secondary but important piece of evidence. Without statistical comparisons, it is unclear whether the predicted boundaries from different architectures differ in biological relevance. The limited genomic scope may limit the generalizability of the conclusion.
+  - **Resolution test** Report statistical tests comparing enrichment values between architectures. Justify the choice of window size and signal aggregation. Consider extending the analysis to additional chromosomes or providing a rationale for the selected test set.
+- **Minor Comments**
+  - **Concern ID** R1-m1
+  - **Severity** Minor
+  - **Axis** Clarity
+  - **Affected element** Abstract
+  - **Evidence pointer** Abstract
+  - **Issue** The abstract states "AxialTAD performed comparably with a recent convolutional neural network (CNN)+Transformer baseline (deepTAD) while using 76%–80% fewer trainable parameters." This is a strong claim that is later qualified in the results. The abstract could benefit from a more nuanced phrasing, such as "performed comparably in the evaluated settings."
+  - **Required correction** Revise the abstract to reflect the conditional nature of the findings, e.g., "in the human cell lines and settings evaluated."
+  - **Concern ID** R1-m2
+  - **Severity** Minor
+  - **Axis** Completeness
+  - **Affected element** Results section
+  - **Evidence pointer** Section "Within-cell-line performance and parameter scaling"
+  - **Issue** The text mentions "representative qualitative examples" in Figure 2 but does not describe what is shown in the figure or how to interpret it. A brief description of the figure content would help the reader.
+  - **Required correction** Add a sentence describing the content of Figure 2 and what the qualitative comparison demonstrates.
+  - **Concern ID** R1-m3
+  - **Severity** Minor
+  - **Axis** Statistical reporting
+  - **Affected element** Results section
+  - **Evidence pointer** Section "Architectural ablation and parameter-matched controls"
+  - **Issue** The text reports "Holm-adjusted P =.003" for the ACM-removed comparison but does not specify how many comparisons were adjusted for or what the unadjusted P-value was.
+  - **Required correction** Report the number of comparisons and the unadjusted P-value for transparency.
+  - **Concern ID** R1-m4
+  - **Severity** Minor
+  - **Axis** Clarity
+  - **Affected element** Methods section
+  - **Evidence pointer** Section "Classical TAD caller comparison"
+  - **Issue** The sentence "To we compared it against the IS via HiCExplorer..." contains a grammatical error ("To we").
+  - **Required correction** Correct the sentence to "We compared it against the IS via HiCExplorer..."
+  - **Concern ID** R1-m5
+  - **Severity** Minor
+  - **Axis** Reproducibility
+  - **Affected element** Methods section
+  - **Evidence pointer** Section "Hi-C data acquisition and preprocessing"
+  - **Issue** The text states that five chromosomes were excluded due to KR balancing failure, but does not specify which chromosomes or provide details on how this was determined.
+  - **Required correction** List the excluded chromosomes and describe the criterion for KR balancing failure.
+- **Technical failings that need to be addressed before the case is established** 1) Lack of formal statistical tests for the primary "comparable" claim (R1-M1). 2) Incomplete reporting of mouse dataset results, including statistical significance (R1-M2). 3) Incomplete architectural description preventing reproduction (R1-M3). 4) Lack of statistical comparison in the biological validation (R1-M4).
+- **Assessment against Nature-style criteria** 
+  - **Originality** The ACM is a novel architectural component specifically designed for TAD boundary detection. The question of whether large models are necessary is timely and relevant. The work is original in its specific focus on axial contrast as an inductive bias.
+  - **Scientific importance** The findings have practical implications for the field, suggesting that compact, well-designed models can match larger baselines. This could influence future method development. However, the importance is moderate, as the performance gains are not dramatic and the conditions favoring the axial design are not fully characterized.
+  - **Interdisciplinary readership** The work is primarily of interest to computational biologists and bioinformaticians. The biological validation with CTCF/cohesin may attract some interest from chromatin biologists, but the overall scope is likely too specialized for a broad interdisciplinary audience.
+  - **Technical soundness** The experimental design is generally sound, with appropriate baselines and ablations. However, the lack of formal statistical testing for key claims and the incomplete architectural description are significant technical weaknesses that need to be addressed.
+  - **Readability for nonspecialists** The manuscript is written in a technical style that assumes familiarity with deep learning and Hi-C data analysis. The abstract is accessible, but the methods and results sections would be challenging for nonspecialists. The biological motivation is clearly explained in the introduction.
+- **Recommendation posture** Supportive if technical concerns are resolved. The core idea is interesting and the experiments are thoughtfully designed, but the statistical rigor and completeness of reporting need to be improved before the claims can be fully accepted.
+
+## Risk / unsupported claims
+- The claim that AxialTAD "performed comparably" with deepTAD is not supported by formal statistical testing in the provided text.
+- The claim that AxialTAD "outperformed" deepTAD and the plain-CNN control in mouse datasets is not supported by statistical evidence in the provided text.
+- The statement that "a large architecture is not necessary to reach this level of boundary prediction" is an extrapolation beyond the tested range of architectures and datasets.
+- The claim that the ACM contributes "at the block level" is based on a single significant ablation comparison and requires further validation.
+- The biological plausibility claim based on CTCF/cohesin enrichment is not statistically substantiated in the provided text.
+- The generalizability of findings to other resolutions, species, and assays is not established and is appropriately framed as future work.
